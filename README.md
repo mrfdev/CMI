@@ -82,8 +82,8 @@ To clarify, you can not use this repository to ask for CMI customer support.
 
 You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
-- Question about 1MB CMI Add-on files
-- Question about some specific 1MB Customization in a CMI-file.
+- You have a question about 1MB CMI Add-on files
+- You have a question about some specific 1MB Customization in a CMI-file.
 - Request to get an update on a specific file on this repository.
 - Request for 'where do I look to get started to fix this'
 - Report an issue with any of the files on this repository.
@@ -95,11 +95,11 @@ You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
 ## Youtube
 
-Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://www.youtube.com/playlist?list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_) as well. They're probably not of any quality, they're probably outdated, but, I made an effort and people ask me for the link every once in a while.
+Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://www.youtube.com/playlist?list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_) as well. They're probably not of any quality, and they're probably outdated, but, I made an effort and people ask me for the link every once in a while.
 
 ## Contributions and bragging rights
 
-I want to say thank you to the following people, myself, because I am selfi.. no just kidding. I want to say thank you to Mikey, Nix, Fumblehead, Zrips, md_5 and the456gamer.
+I want to say thank you to the following people, myself, because I am selfi.. no just kidding. I want to say thank you to Mikey, Nix, Fumblehead, Zrips, md_5 and @the456gamer.
 
 :crown:
 
@@ -109,7 +109,7 @@ Whatever I (Floris) made, I consider 'my work', I highly appreciate it if you at
 
 You are not free to distribute my work, please link others instead to the source here.
 
-CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have a valid and active license. You can buy it from SpigotMC.org. 
+CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have a valid and active license. You can buy it from [SpigotMC.org](https://www.spigotmc.org/resources/3742/). 
 
 
 ## Support this project
