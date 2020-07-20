@@ -100,7 +100,7 @@ Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://
 
 ## Contributions and bragging rights
 
-I want to say thank you to the following people, myself ([@mrfloris](https://github.com/mrfloris)), because I am selfi.. no just kidding. I want to say thank you to Mikey, Nix, Fumblehead, [@Zrips](https://github.com/Zrips), [@md_5](https://github.com/md-5/) and [@the456gamer](https://github.com/the456gamer).
+I want to say thank you to the following people, myself ([@mrfloris](https://github.com/mrfloris)), because I am selfi.. no just kidding. I want to say thank you to Mikey ([@Madmikeyb](https://github.com/Madmikeyb)), Nix, Fumblehead, [@Zrips](https://github.com/Zrips), [@md_5](https://github.com/md-5/) and [@the456gamer](https://github.com/the456gamer).
 
 :crown:
 
