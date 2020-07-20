@@ -15,7 +15,7 @@ Note: I think it's fair to point out a few things
 - Yes, you can [open a New Issue](https://github.com/The456gamerDev/CMI/issues) to request an update on a specific file.
 - And no, this is not the repository to ask for CMI customer support.
 
-Oh yeah, and always make a backup of your data before making any changes.
+Oh yeah, and always make a ***backup*** of your data before making any changes.
 
 
 ## Files
@@ -59,6 +59,7 @@ Basically, these are the easiest steps to use any of these files.
 - Get the file you want, and go through it for the reasons you believe you need it. Either specifically copy/paste something from it to your existing file. Or just completely replace it. This really 100% depends on the file in question and why you want to use any of the files we offer on this repository. 
 - Start your cloned server, and test. Does all the old stuff still work as expected, are the changes you've made working?
 - If everything is fine (otherwise fix it), then make those changes to your live server.
+- There may be extra instructions	
 
 **TLDR;** Get the file you want, use it (partially), test it all first.
 
@@ -99,7 +100,7 @@ Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://
 
 ## Contributions and bragging rights
 
-I want to say thank you to the following people, myself, because I am selfi.. no just kidding. I want to say thank you to Mikey, Nix, Fumblehead, Zrips, md_5 and @the456gamer.
+I want to say thank you to the following people, myself ([@mrfloris](https://github.com/mrfloris)), because I am selfi.. no just kidding. I want to say thank you to Mikey, Nix, Fumblehead, [@Zrips](https://github.com/Zrips), [@md_5](https://github.com/md-5/) and [@the456gamer](https://github.com/the456gamer).
 
 :crown:
 
