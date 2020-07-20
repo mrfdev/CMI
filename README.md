@@ -92,12 +92,13 @@ You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
 For Discord I've created a couple of **CMI FAQ** entries that are pinned to the CMI #help channel. You can find them here as well. And you're free to point out outdated instructions, incorrect information, or contribute with improvement or missed steps/commands/permissions.
 
-- CMI Economy
-- CMI Chat (Chatrooms) (Bungee-chat)
-- CMI Commands
-- CMI Custom Text (/help, /motd, /rules)
-- CMI Votes
-- CMI Hex Colors
+- [CMI Getting Started](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-gettingstarted.md)
+- [CMI Economy](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-economy.md)
+- [CMI Chat](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-chat.md) ([Chatrooms](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-chatrooms.md)) ([Bungee-chat](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-bungee.md))
+- [CMI Commands](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-commands.md)
+- CMI Custom Text ([/help](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-help.md), [/motd](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-motd.md), [/rules](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-rules.md))
+- [CMI Votes](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-votes.md)
+- [CMI Hex Colors](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/FAQ/cmi-hexcolors.md)
 
 *CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
