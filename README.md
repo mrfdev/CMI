@@ -90,11 +90,20 @@ You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 - Report an issue with any of the files on this repository.
 - Make a suggestion or contribution to any of the files on this repository.
 
+For Discord I've created a couple of **CMI FAQ** entries that are pinned to the CMI #help channel. You can find them here as well. And you're free to point out outdated instructions, incorrect information, or contribute with improvement or missed steps/commands/permissions.
+
+- CMI Economy
+- CMI Chat (Chatrooms) (Bungee-chat)
+- CMI Commands
+- CMI Custom Text (/help, /motd, /rules)
+- CMI Votes
+- CMI Hex Colors
+
 *CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
 - View CMI Customer Support tickets: [https://github.com/Zrips/CMI/issues](https://github.com/Zrips/CMI/issues)
 
-## :tv: Youtube
+## :tv: My CMI Youtube Playlist
 
 Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://www.youtube.com/playlist?list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_) as well. They're probably not of any quality, and they're probably outdated, but, I made an effort and people ask me for the link every once in a while.
 
@@ -102,16 +111,15 @@ Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://
 
 I want to say thank you to the following people, myself ([@mrfloris](https://github.com/mrfloris)), because I am selfi.. no just kidding. I want to say thank you to Mikey ([@Madmikeyb](https://github.com/Madmikeyb)), Nix, Fumblehead, [@Zrips](https://github.com/Zrips), [@md_5](https://github.com/md-5/) and [@the456gamer](https://github.com/the456gamer).
 
-:crown:
-
 ## :grey_exclamation: License
 
-Whatever I (Floris) made, I consider 'my work', I highly appreciate it if you at least value that and don't blatantly copy and distribute it. Rather, contribute to the project and get your own name credited where appropriate. You're free to use my work on your own (networked) servers. You do not have to buy a license, pay a fee, or something like that. 
+Whatever I (Floris) make, I consider 'my work', I highly appreciate it if you at least value that; do not blatantly copy and distribute it. Rather, contribute to the project and get your own name credited where appropriate. You're free to use my work on your own (networked) servers. You do not have to buy a license, pay a fee, or something like that. 
 
 You are not free to distribute my work, please link others instead to the source here.
 
 CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have a valid and active license. You can buy it from [SpigotMC.org](https://www.spigotmc.org/resources/3742/). 
 
+_Disclaimer; I am a moderator on their Discord, it's an unpaid position_
 
 ## :punch: Support this project
 
