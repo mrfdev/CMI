@@ -9,10 +9,10 @@ This repository has a few purposes.
 
 Note: I think it's fair to point out a few things
 
-- No, this does not come with the CMI jar, you still have you buy that yourself.
+- No, this does not come with the [CMI jar](https://www.spigotmc.org/resources/3742/), you still have you buy that yourself.
 - No, this is not a complete copy of our live servers, these are select files.
 - No, these are not default files, they're (recently) outdated copies.
-- Yes, you can open a New Issue to request an update on a specific file.
+- Yes, you can [open a New Issue](https://github.com/The456gamerDev/CMI/issues) to request an update on a specific file.
 - And no, this is not the repository to ask for CMI customer support.
 
 Oh yeah, and always make a backup of your data before making any changes.
@@ -22,30 +22,30 @@ Oh yeah, and always make a backup of your data before making any changes.
 
 The most common reason you're perhaps here are some of these add-ons or files
 
-- The 1MoreBlock.com CMI Add-on called "emotes" can be found here.
-- The 1MoreBlock.com CMI Add-on called "finduser" can be found here.
-- The 1MoreBlock.com CMI Add-on called "placeholders" can be found here.
-- The 1MoreBlock.com CMI Custom Alias "commands" can be found here.
-- The 1MoreBlock.com CMI Materials and Item "worth" can be found here.
+- The 1MoreBlock.com CMI Add-on called "[emotes](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/1MB-ADDON-emotes.yml)" 
+- The 1MoreBlock.com CMI Add-on called "[finduser](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/1MB-ADDON-finduser.sh)" 
+- The 1MoreBlock.com CMI Add-on called "[placeholders](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/placeholders.txt)" 
+- The 1MoreBlock.com CMI Custom Alias "[commands](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml)" 
+- The 1MoreBlock.com CMI Materials and Item "[worth](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml)" 
 
 Quick links to other common CMI files are these
 
-- Alias.yml (live, all false, all true)
-- config.yml (live)
-- CustomAlias.yml (live)
-- eventCommands.yml (live)
-- Modules.yml (live, all false, all true)
-- ranks.yml (live)
-- schedules.yml (live)
-- tabList.yml (live)
-- worth.yml (live, does not have 1.16.1 items yet, probably unbalanced)
+- [Alias.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Alias.yml) (live, [all false](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Alias_false.yml), [all true](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Alias_true.yml))
+- [config.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/config.yml) (live)
+- [CustomAlias.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) (live)
+- [eventCommands.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/eventCommands.yml) (live)
+- [Modules.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Modules.yml) (live, [all false](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Modules_false.yml), [all true](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Modules_true.yml))
+- [ranks.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/ranks.yml) (live)
+- [schedules.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/schedules.yml) (live)
+- [tabList.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/tabList.yml) (live)
+- [worth.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (live, does not have 1.16.1 items yet, probably unbalanced)
 
 And if you came here to find examples of the 1MB CMI CustomText/ files
 
-- rules.txt (handy for /rules)
-- welcomeMessage.txt (handy for /motd (and onJoin msg)) 
-- placeholders.txt (1MB CMI add-on for 1MB team command)
-- donate.txt (handy for /donate)
+- [rules.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/rules.txt) (handy for /rules)
+- [welcomeMessage.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
+- [placeholders.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/placeholders.txt) (1MB CMI add-on for 1MB team command)
+- [donate.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/donate.txt) (handy for /donate)
 
 ## How to use any of this?
 
@@ -64,7 +64,7 @@ Basically, these are the easiest steps to use any of these files.
 
 ## What version?
 
-1MB CMI Project version 0.0.1, for live-1mb-2.8.1-mc-1.16.1
+1MB CMI Project version **0.0.1**, for live-1mb-2.8.1-mc-1.16.1
 
 Today it is July 20th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.1-mc-1.16.1`
 ```
@@ -80,7 +80,7 @@ Today it is July 20th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival s
 
 To clarify, you can not use this repository to ask for CMI customer support.
 
-You can open a New Issue, if
+You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
 - Question about 1MB CMI Add-on files
 - Question about some specific 1MB Customization in a CMI-file.
@@ -89,15 +89,13 @@ You can open a New Issue, if
 - Report an issue with any of the files on this repository.
 - Make a suggestion or contribution to any of the files on this repository.
 
-CMI Customer Support will honestly be ignored (ticket closed), nothing personal.
+*CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
 - View CMI Customer Support tickets: [https://github.com/Zrips/CMI/issues](https://github.com/Zrips/CMI/issues)
 
-## Youtube videos
+## Youtube
 
-Just throwing this in here, but I've made some 1MB CMI Youtube videos as well. They're probably not of any quality, they're probably outdated, but, I made an effort and people ask me for the link every once in a while.
-
-https://www.youtube.com/playlist?list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_
+Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://www.youtube.com/playlist?list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_) as well. They're probably not of any quality, they're probably outdated, but, I made an effort and people ask me for the link every once in a while.
 
 ## Contributions and bragging rights
 
