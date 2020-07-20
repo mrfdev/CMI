@@ -1,0 +1,10 @@
+Enabled: false
+# Example: - 'cmi heal:100.5:true'
+# While defining command avoid using alias and use full command name
+# Cost can be any positive number
+# After cost you can use true/false to define if you want to inform player when money is charged after using command or not
+Commands:
+- cmi heal:100.5:true
+- cmi feed:100.5:true
+- cmi home :30:true
+- cmi warp :10:true

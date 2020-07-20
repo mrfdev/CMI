@@ -1,0 +1,224 @@
+# Scheduler file where you can set commands to be performed in regular intervals or in particular time
+# Enabled: (true/false) only schedulers which are enabled will be included
+#   There can be 2 types, performed in regular time intervals (in seconds) or on particular time
+# Delay: (number) defines how long to wait between each action, 600 means that actions will be performed every 10 minutes
+# Randomize: (true/false) if set to true, then only one of defined commands will be used. usefull for repeating random announcements
+# PerformOn: section will define particular times when perform commands. First of name should be defined and then additional time frames should be given
+#   It can have: Month, Day, Hour, Minute, Second sections. All of them in number format and hours uses 24 hour format
+#   Example
+#   PerformOn:
+#     FirstTimeFrame:
+#       Hour: 4
+#     SecondTimeFrame:
+#       Hour: 22
+#       Minute: 30
+#   You can use week day names to indicate at which day in a week this sheduler should be performed. Example - Day: Monday
+#   This will set commands to be performed on 4 a clock in morning and at 22:30. Good way to control server backups when there is less players online
+# Repeat: (true/false) if set to false, action will be performed only once other wise it will be repeated all the time in intervals or on particular time
+# MinPlayers: (amount) Will limit minimum player amount there should be online when command performe
+# MaxPlayers: (amount) Will skip scheduler if there is more than defined amount of players
+# Feedback: (true/false) if set to false will not show feedback message in console in case there is not enough players to perform this schedule
+# Commands: List of commands to be performed when time is correct. 
+#   If command starts with msg! and then player name is given, simple message will be sent to that player if he is online.
+#   If command starts with broadcast! then message will be sent to everyone on server in simple manear
+#   If command starts with actionbar! then all players will get action bar message defined after this variable
+#   If command starts with title! then all players will get title message defined after this variable
+#   If command starts with subtitle! then all players will get subtitle message defined after this variable
+#   If command starts with kickall! then all players will be kicked from server with defined message. Usefull before server stop.
+#   If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we dont know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
+#   If command starts with moneycost:[amount]! then command will get performed if player has enough money. 
+#   If command starts with expcost:[amount]! then command will get performed if player has enough exp.
+#   Insert line with 'delay! 5' to perform rest of commands after 5 seconds from scheduler trigger. This allows to create in example counter before server stop. Check example.
+#   [randomPlayer] placeholder can be used to get random online player name who dont have cmi.scheduler.exclude permission node. This can be used to give rewards for random players on particular time. In example: - cmi give [randomPlayer] diamond %rand/1-5% will give rando mamount from 1 to 5 diamonds to random online player
+#   [allPlayers] placeholder can be used to perform command for all players. In example: cmi heal [allPlayers] will heal everyone who is online.
+# Supports PlaceHolderAPI variables
+# More information about specialized commands can be found at http://www.zrips.net/cmi/commands/specialized/
+
+saveMaps:
+  Enabled: false
+  Delay: 600
+  Repeat: true
+  Commands:
+  - save-all
+GiveDiamonds:
+  Enabled: false
+  MinPlayers: 3
+  Repeat: true
+  PerformOn:
+    '1':
+      Hour: 18
+  Commands:
+  - cmi give [randomPlayer] diamond %rand/1-5%
+  - cmi msg [randomPlayer] &eYou just got diamonds!
+resetWeatherTime:
+  Enabled: true
+  PerformOn:
+    '1':
+      Hour: 6
+    '2':
+      Hour: 18
+  Repeat: true
+  Feedback: true
+  Commands:
+  - cmi killall -monsters
+  - cmi killall bee
+  - cmi groundclean
+  - cmi time unfreeze general
+  - cmi weather unlock general
+  - cmi time unfreeze skyblock
+  - cmi weather unlock skyblock
+  - cmi time unfreeze mine
+  - cmi weather unlock mine
+  - save-all
+mcmmoStart:
+  Enabled: false
+  MinPlayers: 15
+  Delay: 600
+  Repeat: false
+  Feedback: true
+  Commands:
+  - xprate 2 false
+  - cmi broadcast {#Cerulean} 1MB mcMMO »&6 Active (2x)
+mcmmoStop:
+  Enabled: false
+  MinPlayers: 1
+  MaxPlayers: 14
+  Delay: 600
+  Repeat: true
+  Feedback: true
+  Commands:
+  - xprate reset
+StopServer:
+  Enabled: false
+  PerformOn:
+    '1':
+      Hour: 3
+      Minute: 59
+      Second: 30
+  Commands:
+  - actionbar! &eServer will stop in &630 &esec!
+  - delay! 5
+  - actionbar! &eServer will stop in &625 &esec!
+  - delay! 5
+  - actionbar! &eServer will stop in &620 &esec!
+  - delay! 5
+  - actionbar! &eServer will stop in &615 &esec!
+  - delay! 5
+  - actionbar! &eServer will stop in &610 &esec!
+  - delay! 5
+  - actionbar! &eServer will stop in &65 &esec!
+  - delay! 1
+  - actionbar! &eServer will stop in &64 &esec!
+  - delay! 1
+  - actionbar! &eServer will stop in &63 &esec!
+  - delay! 1
+  - actionbar! &eServer will stop in &62 &esec!
+  - delay! 1
+  - actionbar! &eServer will stop in &61 &esec!
+  - delay! 1
+  - kickall! &eServer will be back online soon!
+  - delay! 1
+  - stop
+AllInOneJustExample:
+  Enabled: false
+  MinPlayers: 3
+  MaxPlayers: 10
+  Delay: 600
+  Repeat: true
+  PerformOn:
+    '1':
+      Month: 12
+      Day: 25
+      Hour: 18
+      Minute: 36
+      Second: 15
+    '2':
+      Hour: 18
+  Commands:
+  - cmi give [randomPlayer] diamond %rand/1-5%
+  - msg! [randomPlayer] &eYou just got diamonds!
+  - broadcast! &e[randomPlayer] just got some stuff!
+  - delay! 1
+  - actionbar! &eServer will stop in &61 &esec!
+  - kickall! &eServer will be back online soon!
+Announcer:
+  Enabled: true
+  MinPlayers: 3
+  Delay: 1500
+  Repeat: true
+  Randomize: true
+  Feedback: false
+  Commands:
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} You can sit on stairs! (right click
+    empty handed)
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} You can claim a horse once you tame
+    it!
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Type /menu to find out what else is
+    on our server.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Learn more about horses with the /horse
+    command.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Level up for perks from /mcMMO.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Level up for rewards with /achievements,
+    and /mh achievements
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} RPG mcMMO commands: /mcstats, /mcrank,
+    /mctop :)'
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} RPG features: /horse, /fish, /pvp,
+    /party'
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Protection cmds: /lock, /unlock, /cmodify'
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} You can have 6 homes with the player
+    group.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} You can have 12 homes with the builder
+    group.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} The blue club members can have 14 homes!
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Please join our website: omgboards.com/forums/minecraft/
+    It has fun offtopic discussion, events, inside information, help, and much more.'
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Need resources? You can mine in the
+    temporary /mine world
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Need resources? You can mine in the
+    temporary /nether world
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Need resources? You can mine in the
+    temporary /end world
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Players have access to the /back command
+    to quickly teleport back to their previous location. Super handy if you accidentally
+    died and lost your stuff.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Someone just /msg-ed you? Type /r to
+    quick-reply
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Players cannot create portals, please
+    use /end, /nether, /mine
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Ranks: Yellow, Green, Blue, and Red,
+    to learn more about our ranks, type: /ranks'
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Welcome someone when they join to earn
+    /points
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Grind mcMMO levels to unlock perks and
+    level up your skill abilities.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Eat Pointy Fish to earn up to 5 /points
+    per fish.
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Sell all the types of fish on the:
+    /fish market'
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Server: 1MB version 2.8.1 for Minecraft
+    1.16.1'
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Yellow Players can create up to 6 chest
+    /shops
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Green Players can create up to 12 chest
+    /shops
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} The command /j is a little perk for
+    the Green rank. It allows the player to quickly teleport to where they point.
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Help grow the server, ask your friends
+    to join!
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} First line on a sign [trash] to build
+    a trash-bin!
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} To find out more of where you are, type
+    /here
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Bottle your experience orbs with dragon
+    breath, ask staff how! Location: /warp shops (the bedrock at the enchantment table)'
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Collect all the vote-tokens for unique
+    OP stuff
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} You can sell and buy items on the /market
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Instead of regular operators, we have
+    community helpers, ask away!
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} Player and Admin Shops: /warp shops'
+  - broadcast! {#Cerulean} 1MB Tip »{#Feijoa} You cannot take from chests or break
+    things made by others unless a sign says so. Please type /rules, and play fair.
+    Thank you!
+  - 'broadcast! {#Cerulean} 1MB Tip »{#Feijoa} A great way to make money is with Jobs,
+    players can join up to three. To get started type: "/jobs browse"'

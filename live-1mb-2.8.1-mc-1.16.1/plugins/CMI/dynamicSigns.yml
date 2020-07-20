@@ -1,0 +1,10 @@
+'1':
+  Loc: general;-263.0;81.0;191.0
+  Interval: 5
+  Range: 4
+  Personal: true
+  Lines:
+  - tps
+  - '%cmi_tps_1%'
+  - '%cmi_tps_60%'
+  - '%cmi_tps_300%'

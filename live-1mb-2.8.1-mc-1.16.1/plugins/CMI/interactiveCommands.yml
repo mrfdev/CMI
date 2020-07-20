@@ -1,0 +1,152 @@
+vloopshipstop:
+  Locations:
+  - general;12865.0;172.0;11964.0
+  Commands:
+  - cmi sound block_beacon_deactivate [playerName]
+  - asConsole! cmi msg [playerName] !&b -> Spacestation shutting down. [Emergency
+    Power only]
+mobon:
+  Locations:
+  - run;-165.0;97.0;-88.0
+  Commands:
+  - fromConsole! mvm set monsters true run
+  - fromConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
+  SignLines:
+  - mobon
+  - ' '
+  - ' '
+  - ' '
+jacktest:
+  Locations:
+  - general;12636.0;80.0;-5323.0
+  - general;12636.0;80.0;-5322.0
+  Commands:
+  - fromConsole! cooldown:60#?! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Okay [playerName],
+    let's see how I can help you trade some loot.
+  - cmi sound block_note_block_chime [playerName]
+  - delay! 4
+  - fromConsole! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Sorry though, if what
+    I have to offer isn't what you're looking for. Still learing how to find and forge
+    this loot.
+  - delay! 4
+  - fromConsole! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b One second please, let
+    me grab my loot box and show you what I've got to trade this weekend.
+  - delay! 4
+  - fromConsole! bs open jacky [playerName]
+moboff:
+  Locations:
+  - run;-165.0;97.0;-89.0
+  Commands:
+  - fromConsole! mvm set monsters false run
+  - fromConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
+  SignLines:
+  - moboff
+  - ' '
+  - ' '
+  - ' '
+markettrader:
+  ID:
+  - 522
+  Commands:
+  - msg! [playerName] &e Nice to see you [playerName] - players can put stuff on the
+    global /market
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 5
+  - cmi sound block_beehive_enter [playerName]
+  - asPlayer! ah
+wildtrader:
+  ID:
+  - 519
+  Commands:
+  - msg! [playerName] &e Hey there [playerName], let me see what I have for you today.
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 5
+  - cmi sound block_beehive_enter [playerName]
+  - bs open weekshop [playerName]
+pointstrader:
+  ID:
+  - 521
+  Commands:
+  - msg! [playerName] &e Hi there [playerName] If you have points, then I have some
+    goodies.
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 5
+  - cmi sound block_beehive_enter [playerName]
+  - asPlayer! welcomes shop
+skyblockgreenhouse:
+  Locations:
+  - skyblock;-20.0;136.0;-25.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e For more info about Greenhouses, read:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+trash:
+  Locations:
+  - general;12752.0;32.0;12008.0
+  - general;10275.0;13.0;-751.0
+  - general;-6179.0;11.0;-2814.0
+  - general;12192.0;70.0;11800.0
+  Commands:
+  - click:rightclick! asConsole! cmi dispose [playerName]
+  SignLines:
+  - '&0&l TRASH BIN'
+  - '&7~~~~~~~~~~~~'
+  - '&9&lTry with /sell'
+  - ' '
+  Public: true
+skyblockhelp:
+  Locations:
+  - skyblock;-5.0;135.0;0.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e To learn more about Skyblock, visit:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+clock:
+  Commands:
+  - click:rightclick! clock
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+  SignLines:
+  - '&0&l Time:'
+  - '&7~~~~~~~~~~~~'
+  - '&9&lTry with /clock'
+  - ' '
+  Public: true
+vloopshipstart:
+  Locations:
+  - general;12863.0;172.0;11964.0
+  Commands:
+  - cmi sound block_beacon_activate [playerName]
+  - asConsole! cmi msg [playerName] !&b -> Spacestation activated
+skyblockcobblegen:
+  Locations:
+  - skyblock;-4.0;139.0;24.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e To learn more about Generators, visit:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+spawnertrader:
+  ID:
+  - 523
+  Commands:
+  - msg! [playerName] &eSpicing up your Claims with some mobs [playerName]? Here's
+    what I have to offer..
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 5
+  - cmi sound block_beehive_enter [playerName]
+  - asPlayer! spawners
+warps:
+  Commands:
+  - asConsole! cmi warp $1 [playerName]
+  Public: true
+skyblockchallenges:
+  Locations:
+  - skyblock;23.0;140.0;-29.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e For more info about Challenges read:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261680/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+santa:
+  Locations:
+  - general;-91.0;62.0;447.0
+  Commands:
+  - asPlayer! calendar

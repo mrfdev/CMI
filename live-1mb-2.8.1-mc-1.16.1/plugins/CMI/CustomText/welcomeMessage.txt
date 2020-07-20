@@ -1,0 +1,48 @@
+<AutoPage><AutoAlias><NoReqPermission>
+{#Cerulean} 1MB Server »{#Edward} version 2.8.1, for {#Feijoa}Minecraft 1.16.1
+&8------------------------------------------&r
+{#Cerulean} 1MB Server »{#Feijoa} Family-friendly community, have fun!
+<T>{#Cerulean} 1MB Server »{#Feijoa} Please behave, learn our: &l/rules</T><H>Click to read our rules</H><C>rules</C>
+&8------------------------------------------&r
+{#Cerulean} 1MB Server »{#Feijoa} %server_online%{#Edward}/{#Feijoa}%server_max_players% {#Edward}players: %onlineplayers_displaynames%
+<NextPage>
+&r
+&r
+&r
+&r
+&r
+&r
+&r
+&r
+&2 Your 1MB Account:
+&8------------------------------------------&r
+<T>{#Cerulean} • Username: {#Feijoa}%cmi_user_name% {#Cerulean}(displayname: %cmi_user_display_name%{#Cerulean})</T><H>Click to check your /player details</H><C>player</C>
+<T>{#Cerulean} • Homes: {#Feijoa}%cmi_user_homeamount% {#Cerulean}of {#Feijoa}%cmi_user_maxhomes% {#Cerulean}max.</T><H>Click to load your homes</H><C>homes</C>
+<T>{#Cerulean} • Ping: {#Feijoa}%cmi_user_ping% {#Cerulean}Try again in a minute with: /myping)</T><H>Click to check your ping</H><C>myping</C>
+{#Cerulean} • Current gamemode: {#Feijoa}%cmi_user_gamemode%
+{#Cerulean} • Your /money Balance: {#Feijoa}%cmi_user_balance_formatted%
+<T>{#Cerulean} • Group / Rank : {#Feijoa}%cmi_user_group% {#Cerulean}(playtime: {#Feijoa}%cmi_user_playtime_days% {#Cerulean}days)</T><H>Click to check your /playtime details</H><C>playtime</C>
+<T>{#Cerulean} • Location: {#Feijoa}%player_world% {#Cerulean}({#Feijoa}%player_x%{#Cerulean}, {#Feijoa}%player_y%{#Cerulean}, {#Feijoa}%player_z%{#Cerulean})</T><H>Click to check your /pos</H><C>pos</C>
+&r
+&r
+<NextPage>
+&r
+&r
+&r
+&r
+&r
+&r
+&r
+&r
+&2 Some 1MB links:
+&8------------------------------------------&r
+<T>{#Cerulean} • {#Feijoa}/forum: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>www.1moreblock.com</URL>
+<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/KzTDhxvm</T><H>Click to load our Discord Server</H><URL>discord.gg/KzTDhxvm</URL>
+<T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrpurmerend</T><H>Click to watch our live-stream</H><URL>twitch.tv/mrpurmerend</URL>
+<T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>youtube.com/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>twitter.com/floris</URL>
+
+{#Cerulean} 
+{#Cerulean} Need help? Ask our players, or on /discord
+&r
+&r
