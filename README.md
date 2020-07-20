@@ -1,4 +1,4 @@
-# Welcome to 1MB CMI!
+# :star: Welcome to 1MB CMI!
 
 This repository has a few purposes. 
 
@@ -18,7 +18,7 @@ Note: I think it's fair to point out a few things
 Oh yeah, and always make a ***backup*** of your data before making any changes.
 
 
-## Files
+## :file_folder: Files
 
 The most common reason you're perhaps here are some of these add-ons or files
 
@@ -47,7 +47,7 @@ And if you came here to find examples of the 1MB CMI CustomText/ files
 - [placeholders.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/placeholders.txt) (1MB CMI add-on for 1MB team command)
 - [donate.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/donate.txt) (handy for /donate)
 
-## How to use any of this?
+## :thumbsup: How to use any of this?
 
 As things get created in this github repository, I am sure we will make an attempt at some Wiki pages with extended information. Please check those first before you blindly take a file and assume everything will be fine.
 
@@ -63,7 +63,7 @@ Basically, these are the easiest steps to use any of these files.
 
 **TLDR;** Get the file you want, use it (partially), test it all first.
 
-## What version?
+## :four_leaf_clover: What version?
 
 1MB CMI Project version **0.0.1**, for live-1mb-2.8.1-mc-1.16.1
 
@@ -77,7 +77,7 @@ Today it is July 20th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival s
 ```
 **TLDR;** These files are for 1.16.x and probably any CMI version that works with 1.16.x
 
-## Support
+## :information_source: Support
 
 To clarify, you can not use this repository to ask for CMI customer support.
 
@@ -94,17 +94,17 @@ You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
 - View CMI Customer Support tickets: [https://github.com/Zrips/CMI/issues](https://github.com/Zrips/CMI/issues)
 
-## Youtube
+## :tv: Youtube
 
 Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://www.youtube.com/playlist?list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_) as well. They're probably not of any quality, and they're probably outdated, but, I made an effort and people ask me for the link every once in a while.
 
-## Contributions and bragging rights
+## :crown: Contributions and bragging rights
 
 I want to say thank you to the following people, myself ([@mrfloris](https://github.com/mrfloris)), because I am selfi.. no just kidding. I want to say thank you to Mikey ([@Madmikeyb](https://github.com/Madmikeyb)), Nix, Fumblehead, [@Zrips](https://github.com/Zrips), [@md_5](https://github.com/md-5/) and [@the456gamer](https://github.com/the456gamer).
 
 :crown:
 
-## License
+## :grey_exclamation: License
 
 Whatever I (Floris) made, I consider 'my work', I highly appreciate it if you at least value that and don't blatantly copy and distribute it. Rather, contribute to the project and get your own name credited where appropriate. You're free to use my work on your own (networked) servers. You do not have to buy a license, pay a fee, or something like that. 
 
@@ -113,6 +113,6 @@ You are not free to distribute my work, please link others instead to the source
 CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have a valid and active license. You can buy it from [SpigotMC.org](https://www.spigotmc.org/resources/3742/). 
 
 
-## Support this project
+## :punch: Support this project
 
 This is not my work, there's no salary. This is a hobby, and a hobby costs money. If you wish to say thank you for your support, thank you for sharing what you've learned with others: Please consider a free donation through contributing to this project. Or perhaps through a personal-gift of a beer or pizza slice with [a PayPal donation](https://www.paypal.me/mrfloris). 
