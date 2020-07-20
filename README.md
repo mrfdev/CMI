@@ -101,7 +101,7 @@ Just throwing this in here, but I've made some [1MB CMI Youtube videos](https://
 
 I want to say thank you to the following people, myself, because I am selfi.. no just kidding. I want to say thank you to Mikey, Nix, Fumblehead, Zrips, md_5 and the456gamer.
 
-:crown_icon: (todo)
+:crown:
 
 ## License
 
