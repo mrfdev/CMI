@@ -7,8 +7,7 @@ This repository has a few purposes.
  - Show others examples of how I run CMI sometimes.
  - Share a select few 1MB CMI add-ons with the public.
 
-Table of Contents
-=================
+## Table of Contents
 
    * [<g-emoji class="g-emoji" alias="star" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png">⭐</g-emoji> Welcome to 1MB CMI!](#star-welcome-to-1mb-cmi)
       * [<g-emoji class="g-emoji" alias="file_folder" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c1.png">📁</g-emoji> Files](#file_folder-files)
