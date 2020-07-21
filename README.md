@@ -22,11 +22,11 @@ Oh yeah, and always make a ***backup*** of your data before making any changes.
 
 The most common reason you're perhaps here are some of these 1MoreBlock.com Add-on files:
 
-- [emotes.yml](/Resources/Add-ons/emotes.yml) 
-- [finduser.sh](/Resources/Scripts/finduser.sh) 
-- [placeholders.txt](/Resources/Add-ons/placeholders.txt)
-- [CustomAlias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) 
-- [worth.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (no 1.16.1 items)
+- (Add-on) [emotes.yml](/Resources/Add-ons/emotes.yml)
+- (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
+- (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
+- (Custom) [CustomAlias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) 
+- (Custom) [worth.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (no 1.16.1 items)
 
 Or maybe for one of the common CMI files that I've customized for my server:
 
