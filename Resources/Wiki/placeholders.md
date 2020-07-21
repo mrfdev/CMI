@@ -2,7 +2,7 @@
 
 ## Placeholders
 
-This is a `CustomText/` add-on made by Floris, for CMI 8.7.3.0 or newer and Minecraft 1.16.1. 
+This is a `CustomText/` add-on made by Floris, for CMI 8.7.3.1 or newer and Minecraft 1.16.1. 
 
 1MB Placeholders allows a server owner to get access to an alternative `/cmi placeholders` overview. They will try to be organized for easier finding, some will repeat because of this. And I will try to include hoverover explanations for them. And clicking them should paste it to in-game chat for easy copying to clipboard.
 
