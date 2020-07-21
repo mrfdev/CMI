@@ -6,9 +6,9 @@
 findUser="$1"
 
 if [ "$findUser" == "" ]; then
-	echo -e "Syntax: ./${0} <user|uuid> (error, missing argument)"; exit 0
+	echo -e "Syntax: ${0} <user|uuid> (error, missing argument)"; exit 0
 elif [ $# -gt 1 ]; then
-    echo -e "Syntax: ./${0} <user|uuid> (error, you had too many arguments)"; exit 0
+    echo -e "Syntax: ${0} <user|uuid> (error, you had too many arguments)"; exit 0
 fi
 
 [[ ${#findUser} -gt 25 ]] && findType="player_uuid" || findType="userName"
