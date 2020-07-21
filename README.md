@@ -7,6 +7,20 @@ This repository has a few purposes.
  - Show others examples of how I run CMI sometimes.
  - Share a select few 1MB CMI add-ons with the public.
 
+Table of Contents
+=================
+
+   * [<g-emoji class="g-emoji" alias="star" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png">⭐</g-emoji> Welcome to 1MB CMI!](#star-welcome-to-1mb-cmi)
+      * [<g-emoji class="g-emoji" alias="file_folder" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c1.png">📁</g-emoji> Files](#file_folder-files)
+      * [<g-emoji class="g-emoji" alias=" 1" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png">👍</g-emoji> How to use any of this?](#thumbsup-how-to-use-any-of-this)
+      * [<g-emoji class="g-emoji" alias="four_leaf_clover" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f340.png">🍀</g-emoji> What version?](#four_leaf_clover-what-version)
+      * [<g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Support](#information_source-support)
+      * [<g-emoji class="g-emoji" alias="tv" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4fa.png">📺</g-emoji> My CMI Youtube Playlist](#tv-my-cmi-youtube-playlist)
+      * [<g-emoji class="g-emoji" alias="crown" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f451.png">👑</g-emoji> Contributions and bragging rights](#crown-contributions-and-bragging-rights)
+      * [<g-emoji class="g-emoji" alias="grey_exclamation" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2755.png">❕</g-emoji> License](#grey_exclamation-license)
+      * [<g-emoji class="g-emoji" alias="fist_oncoming" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f44a.png">👊</g-emoji> Support this project](#punch-support-this-project)
+
+
 Note: I think it's fair to point out a few things
 
 - No, this does not come with the [CMI jar](https://www.spigotmc.org/resources/3742/), you still have you buy that yourself.
