@@ -20,25 +20,23 @@ Oh yeah, and always make a ***backup*** of your data before making any changes.
 
 ## :file_folder: Files
 
-The most common reason you're perhaps here are some of these add-ons or files
+The most common reason you're perhaps here are some of these 1MoreBlock.com Add-on files:
 
-- The 1MoreBlock.com CMI Add-on called "[emotes](/Resources/Add-ons/emotes.yml)" 
-- The 1MoreBlock.com CMI Add-on called "[finduser](/Resources/Scripts/finduser.sh)" 
-- The 1MoreBlock.com CMI Add-on called "[placeholders](/Resources/Add-ons/placeholders.txt)" 
-- The 1MoreBlock.com CMI Custom Alias "[commands](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml)" 
-- The 1MoreBlock.com CMI Materials and Item "[worth](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml)" 
+- [emotes.yml](/Resources/Add-ons/emotes.yml) 
+- [finduser.sh](/Resources/Scripts/finduser.sh) 
+- [placeholders.txt](/Resources/Add-ons/placeholders.txt)
+- [CustomAlias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) 
+- [worth.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (no 1.16.1 items)
 
-Quick links to other common CMI files are these
+Or maybe for one of the common CMI files that I've customized for my server:
 
 - [Alias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Alias.yml) (live, [all false](/Resources/Alternatives/Alias_false.yml), [all true](/Resources/Alternatives/Alias_true.yml))
 - [config.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/config.yml) (live)
-- [CustomAlias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) (live)
 - [eventCommands.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/eventCommands.yml) (live)
 - [Modules.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Modules.yml) (live, [all false](/Resources/Alternatives/Modules_false.yml), [all true](/Resources/Alternatives/Modules_true.yml))
 - [ranks.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/ranks.yml) (live)
 - [schedules.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/schedules.yml) (live)
 - [tabList.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/tabList.yml) (live)
-- [worth.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (live, does not have 1.16.1 items yet, probably unbalanced)
 
 And if you came here to find examples of the 1MB CMI CustomText/ files
 
@@ -46,6 +44,8 @@ And if you came here to find examples of the 1MB CMI CustomText/ files
 - [welcomeMessage.txt](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
 - [placeholders.txt](/Resources/Add-ons/placeholders.txt) (1MB CMI add-on for 1MB team command)
 - [donate.txt](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/donate.txt) (handy for /donate)
+
+(See further down the page for the Discord FAQ messages)
 
 ## :thumbsup: How to use any of this?
 
@@ -56,12 +56,13 @@ Oh, and of course backup your data before you make any changes to anything.
 Basically, these are the easiest steps to use any of these files.
 
 - Backup your existing data, clone your live-server, and change the port of it. Then remove certain things like Discord or Voting plugins. Then in CMI's config.yml set the Maintenance to true, and in the server.properties file turn on whitelist. 
-- Get the file you want, and go through it for the reasons you believe you need it. Either specifically copy/paste something from it to your existing file. Or just completely replace it. This really 100% depends on the file in question and why you want to use any of the files we offer on this repository. 
+- Get the file you want, and go through it for the reasons you believe you need it. Either specifically copy/paste something from it to your existing file. Or just completely replace it.  
 - Start your cloned server, and test. Does all the old stuff still work as expected, are the changes you've made working?
 - If everything is fine (otherwise fix it), then make those changes to your live server.
-- There may be extra instructions	
+- If everything is fine, turn off maintenance and invite your testers/players.
+- There may be extra instructions, depending on which file you're trying to use.
 
-**TLDR;** Get the file you want, use it (partially), test it all first.
+**TLDR;** Get the file you want, use it (partially), test it all first. 
 
 ## :four_leaf_clover: What version?
 
