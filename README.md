@@ -83,10 +83,10 @@ Today it is July 21th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival s
 
 Before asking for support, please read the documentation/wiki properly. 
 
-- (Add-on) [emotes.yml](/Resources/Wiki/emotes.md)
-- (Add-on) [social.yml](/Resources/Wiki/social.md)
-- (Add-on) [finduser.sh](/Resources/Wiki/finduser.md) 
-- (Add-on) [placeholders.txt](/Resources/Wiki/placeholders.md)
+- (Add-on) [emotes documentation](/Resources/Wiki/emotes.md)
+- (Add-on) [social documentation](/Resources/Wiki/social.md)
+- (Add-on) [finduser documentation](/Resources/Wiki/finduser.md) 
+- (Add-on) [placeholders documentation](/Resources/Wiki/placeholders.md)
 
 You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
