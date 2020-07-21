@@ -22,30 +22,30 @@ Oh yeah, and always make a ***backup*** of your data before making any changes.
 
 The most common reason you're perhaps here are some of these add-ons or files
 
-- The 1MoreBlock.com CMI Add-on called "[emotes](https://github.com/The456gamerDev/CMI/blob/master/Resources/Add-ons/emotes.yml)" 
-- The 1MoreBlock.com CMI Add-on called "[finduser](https://github.com/The456gamerDev/CMI/blob/master/Resources/Scripts/finduser.sh)" 
-- The 1MoreBlock.com CMI Add-on called "[placeholders](https://github.com/The456gamerDev/CMI/blob/master/Resources/Add-ons/placeholders.txt)" 
-- The 1MoreBlock.com CMI Custom Alias "[commands](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml)" 
-- The 1MoreBlock.com CMI Materials and Item "[worth](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml)" 
+- The 1MoreBlock.com CMI Add-on called "[emotes](/Resources/Add-ons/emotes.yml)" 
+- The 1MoreBlock.com CMI Add-on called "[finduser](/Resources/Scripts/finduser.sh)" 
+- The 1MoreBlock.com CMI Add-on called "[placeholders](/Resources/Add-ons/placeholders.txt)" 
+- The 1MoreBlock.com CMI Custom Alias "[commands](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml)" 
+- The 1MoreBlock.com CMI Materials and Item "[worth](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml)" 
 
 Quick links to other common CMI files are these
 
-- [Alias.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Alias.yml) (live, [all false](https://github.com/The456gamerDev/CMI/blob/master/Resources/Alternatives/Alias_false.yml), [all true](https://github.com/The456gamerDev/CMI/blob/master/Resources/Alternatives/Alias_true.yml))
-- [config.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/config.yml) (live)
-- [CustomAlias.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) (live)
-- [eventCommands.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/eventCommands.yml) (live)
-- [Modules.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Modules.yml) (live, [all false](https://github.com/The456gamerDev/CMI/blob/master/Resources/Alternatives/Modules_false.yml), [all true](https://github.com/The456gamerDev/CMI/blob/master/Resources/Alternatives/Modules_true.yml))
-- [ranks.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/ranks.yml) (live)
-- [schedules.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/schedules.yml) (live)
-- [tabList.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/tabList.yml) (live)
-- [worth.yml](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (live, does not have 1.16.1 items yet, probably unbalanced)
+- [Alias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Alias.yml) (live, [all false](/Resources/Alternatives/Alias_false.yml), [all true](/Resources/Alternatives/Alias_true.yml))
+- [config.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/config.yml) (live)
+- [CustomAlias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) (live)
+- [eventCommands.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/eventCommands.yml) (live)
+- [Modules.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/Modules.yml) (live, [all false](/Resources/Alternatives/Modules_false.yml), [all true](/Resources/Alternatives/Modules_true.yml))
+- [ranks.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/ranks.yml) (live)
+- [schedules.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/schedules.yml) (live)
+- [tabList.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/tabList.yml) (live)
+- [worth.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/worth.yml) (live, does not have 1.16.1 items yet, probably unbalanced)
 
 And if you came here to find examples of the 1MB CMI CustomText/ files
 
-- [rules.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/rules.txt) (handy for /rules)
-- [welcomeMessage.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
-- [placeholders.txt](https://github.com/The456gamerDev/CMI/blob/master/Resources/Add-ons/placeholders.txt) (1MB CMI add-on for 1MB team command)
-- [donate.txt](https://github.com/The456gamerDev/CMI/blob/master/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/donate.txt) (handy for /donate)
+- [rules.txt](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/rules.txt) (handy for /rules)
+- [welcomeMessage.txt](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
+- [placeholders.txt](/Resources/Add-ons/placeholders.txt) (1MB CMI add-on for 1MB team command)
+- [donate.txt](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomText/donate.txt) (handy for /donate)
 
 ## :thumbsup: How to use any of this?
 
@@ -92,13 +92,13 @@ You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
 For Discord I've created a couple of **CMI FAQ** entries that are pinned to the CMI #help channel. You can find them here as well. And you're free to point out outdated instructions, incorrect information, or contribute with improvement or missed steps/commands/permissions.
 
-- [CMI Getting Started](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-gettingstarted.md)
-- [CMI Economy](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-economy.md)
-- [CMI Chat](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-chat.md) ([Chatrooms](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-chatrooms.md)) ([Bungee-chat](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-bungee.md))
-- [CMI Commands](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-commands.md)
-- CMI Custom Text ([/help](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-help.md), [/motd](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-motd.md), [/rules](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-rules.md))
-- [CMI Votes](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-votes.md)
-- [CMI Hex Colors](https://github.com/The456gamerDev/CMI/blob/master/Resources/FAQ/cmi-hexcolors.md)
+- [CMI Getting Started](/Resources/FAQ/cmi-gettingstarted.md)
+- [CMI Economy](/Resources/FAQ/cmi-economy.md)
+- [CMI Chat](/Resources/FAQ/cmi-chat.md) ([Chatrooms](/Resources/FAQ/cmi-chatrooms.md)) ([Bungee-chat](/Resources/FAQ/cmi-bungee.md))
+- [CMI Commands](/Resources/FAQ/cmi-commands.md)
+- CMI Custom Text ([/help](/Resources/FAQ/cmi-help.md), [/motd](/Resources/FAQ/cmi-motd.md), [/rules](/Resources/FAQ/cmi-rules.md))
+- [CMI Votes](/Resources/FAQ/cmi-votes.md)
+- [CMI Hex Colors](/Resources/FAQ/cmi-hexcolors.md)
 
 *CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
