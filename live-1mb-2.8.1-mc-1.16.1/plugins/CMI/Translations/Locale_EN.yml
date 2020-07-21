@@ -184,11 +184,11 @@ info:
   lookAtEntity: '&eLook at entity'
   notOnGround: '&eYou can not perform this while flying'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '{#Cerulean} 1MB Server »{#Feijoa} Welcome new player &6[playerDisplayName]&d
+  FirstJoin: '{#Cerulean} 1MB Server »{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
     to 1MoreBlock.com!'
-  LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r{#Edward} left.'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r {#Feijoa}left.'
   LoginCustom: '{#Cerulean} 1MB Server »{#Feijoa} Welcome back &6[playerDisplayName]
-    {#Cerulean}❤'
+    {#Feijoa}❤'
   deathlocation: '{#Cerulean} 1MB Server »{#Feijoa} You died at x:&6[x]{#Feijoa},
     y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]'
   bungee:
@@ -540,8 +540,6 @@ info:
     - Efficiency
     mending:
     - Mending
-    frost_walker:
-    - FrostWalker
     lure:
     - Lure
     loot_bonus_mobs:
@@ -921,6 +919,25 @@ command:
       click: '&eClick armor stand to duplicate it, or punch any block to cancel process'
       canceled: '&eArmorStand copy process cancelled'
       updated: '&eArmorStand updated'
+      action:
+        head: '&7Head'
+        body: '&7Body'
+        torso: '&7Torso'
+        leftArm: '&7Leftarm'
+        rightArm: '&7Rightarm'
+        leftLeg: '&7Leftleg'
+        rightLeg: '&7Rightleg'
+        pos: '&7Pos'
+        updateitems: '&7Updateitems'
+        plate: '&7Plate'
+        size: '&7Size'
+        visible: '&7Visible'
+        arms: '&7Arms'
+        gravity: '&7Gravity'
+        glow: '&7Glow'
+        invulnerable: '&7Invulnerable'
+        name: '&7Name'
+        interactable: '&7Interactable'
   attachcommand:
     help:
       info: '&eAttaches command to item'
