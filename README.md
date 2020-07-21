@@ -23,6 +23,7 @@ Oh yeah, and always make a ***backup*** of your data before making any changes.
 The most common reason you're perhaps here are some of these 1MoreBlock.com Add-on files:
 
 - (Add-on) [emotes.yml](/Resources/Add-ons/emotes.yml)
+- (Add-on) [social.yml](/Resources/Add-ons/social.yml)
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
 - (Custom) [CustomAlias.yml](/live-1mb-2.8.1-mc-1.16.1/plugins/CMI/CustomAlias.yml) 
