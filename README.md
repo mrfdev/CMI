@@ -81,7 +81,12 @@ Today it is July 21th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival s
 
 ## :information_source: Support
 
-To clarify, you can not use this repository to ask for CMI customer support.
+Before asking for support, please read the documentation/wiki properly. 
+
+- (Add-on) [emotes.yml](/Resources/Wiki/emotes.md)
+- (Add-on) [social.yml](/Resources/Wiki/social.md)
+- (Add-on) [finduser.sh](/Resources/Wiki/finduser.md) 
+- (Add-on) [placeholders.txt](/Resources/Wiki/placeholders.md)
 
 You can [open a New Issue](https://github.com/The456gamerDev/CMI/issues), if
 
@@ -102,7 +107,7 @@ For Discord I've created a couple of **CMI FAQ** entries that are pinned to the 
 - [CMI Votes](/Resources/FAQ/cmi-votes.md)
 - [CMI Hex Colors](/Resources/FAQ/cmi-hexcolors.md)
 
-*CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
+*To clarify, you can not use this repository to ask for CMI customer support. CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
 - View CMI Customer Support tickets: [https://github.com/Zrips/CMI/issues](https://github.com/Zrips/CMI/issues)
 
