@@ -2,7 +2,7 @@
 
 ## Emotes
 
-This is a `CustomAlias.yml` add-on made by Floris, for CMI 8.7.3.1 or newer and Minecraft 1.16.1. 
+This is a `CustomAlias.yml` add-on made by Floris, for CMI 8.7.3.x or newer and Minecraft 1.16.1. 
 
 1MB Emotes allows a server owner to offer a set of creative and fun emotes to their players. And using CMI's built-in `/cmi aliaseditor`, these can be customized on the fly (without having to reload the plugin or restart the server).
 

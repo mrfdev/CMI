@@ -2,7 +2,7 @@
 
 ## finduser
 
-This is a `bash shell script` add-on made by Floris, for CMI 8.7.3.1 or newer and Minecraft 1.16.1. 
+This is a `bash shell script` add-on made by Floris, for CMI 8.7.3.x or newer and Minecraft 1.16.1. 
 
 1MB finduser.sh allows a server owner from the Command Line Interface (CLI) on most Linux distros and macOS to quickly search through the CMI's sqlite database file to find one or more users matching a username string. Alternatively a UUID can be provided.
 

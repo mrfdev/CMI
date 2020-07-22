@@ -2,7 +2,7 @@
 
 ## Social
 
-This is a `CustomAlias.yml` add-on made by Floris, for CMI 8.7.3.1 or newer and Minecraft 1.16.1. 
+This is a `CustomAlias.yml` add-on made by Floris, for CMI 8.7.3.x or newer and Minecraft 1.16.1. 
 
 1MB Social allows a server owner to offer a set of informative commands to their players. These commands focus on the online social platforms like Twitter, Instagram, their website, where they live-stream on Youtube, etc. And using CMI's built-in `/cmi aliaseditor`, these can be customized on the fly (without having to reload the plugin or restart the server).
 
