@@ -25,7 +25,7 @@ Note: I think it's fair to point out a few things
 - No, this does not come with the [CMI jar](https://www.spigotmc.org/resources/3742/), you still have you buy that yourself.
 - No, this is not a complete copy of our live servers, these are select files.
 - No, these are not default files, they're (recently) outdated copies.
-- Yes, you can [open a New Issue](https://github.com/The456gamerDev/CMI/issues) to request an update on a specific file.
+- Yes, you can [open a New Issue](/CMI/issues) to request an update on a specific file.
 - And no, this is not the repository to ask for CMI customer support.
 
 Oh yeah, and always make a ***backup*** of your data before making any changes.
