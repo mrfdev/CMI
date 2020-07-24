@@ -80,9 +80,9 @@ Basically, these are the easiest steps to use any of these files.
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.0.3**, for live-1mb-2.8.1-mc-1.16.1
+1MB CMI Project version **0.0.4**, for live-1mb-2.8.1-mc-1.16.1
 
-Today it is July 24th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.1-mc-1.16.1`
+Today it is July 25th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.1-mc-1.16.1`
 ```
 -live- (live server)
 -1MB- (1moreblock linked to network hub called 1mb)
@@ -96,10 +96,10 @@ Today it is July 24th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival s
 
 Before asking for support, please read the documentation/wiki properly. 
 
-- (Add-on) [emotes documentation](/Resources/Wiki/emotes.md)
-- (Add-on) [social documentation](/Resources/Wiki/social.md)
-- (Add-on) [finduser documentation](/Resources/Wiki/finduser.md) 
-- (Add-on) [placeholders documentation](/Resources/Wiki/placeholders.md)
+- (Add-on) [emotes documentation](https://github.com/mrfdev/CMI/wiki/emotes)
+- (Add-on) [social documentation](https://github.com/mrfdev/CMI/wiki/social)
+- (Add-on) [finduser documentation](https://github.com/mrfdev/CMI/wiki/finduser) 
+- (Add-on) [placeholders documentation](https://github.com/mrfdev/CMI/wiki/placeholders)
 
 You can [open a New Issue](https://github.com/mrfdev/CMI/issues), if
 
