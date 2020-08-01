@@ -66,7 +66,7 @@ cmi.command.server
 cmi.command.sendall 
 ```
 
-**config.yml:*
+**config.yml:**
 ```yaml
   # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
   # Or direct download https://www.zrips.net/cmi/
