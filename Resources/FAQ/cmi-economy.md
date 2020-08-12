@@ -3,7 +3,7 @@
 This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711599643737456712
 
-**CMI can handle Economy**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.1
+**CMI can handle Economy**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.2
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Download and Install CMI's Vault build (<http://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>)
 - Note: If you wish to use the original Vault build, then please get CMI-Injector <http://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)

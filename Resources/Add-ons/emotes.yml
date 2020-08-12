@@ -1,5 +1,5 @@
 ## STOPPPPPPPP, no no no no .. Let me explain how to use this:
-## /stop your Minecraft 1.16 server with CMI installed on it.
+## /stop your Minecraft 1.16.x server with CMI installed on it.
 ## Open the .yml files in (Windows) Notepad++ or (macOS) Sublime Text 3
 ## They are: plugins/CMI/CustomAlias.yml and this 1MB-emotes.yml
 ## Ignore this comment part at the top and copy everything after it.
@@ -10,8 +10,8 @@
 ## or weird wrapping or other things that invalidate YAML files.
 ## Nowwww, you can start your mc server, and you're good to go.
 
-## Version 0.0.1 - dev - Internal release made by mrfloris
-## Test server: 1moreblock.com:255565 (1.16.1), type: /emotes
+## Version 0.0.2 - dev - Internal release made by mrfloris
+## Test server: 1moreblock.com:255565 (1.16.2), type: /emotes
 
 ## TODO: make plugins/CMI/CustomText/emotes.txt
 ## TODO: make plugins/BossShopPro/shops/emotes.yml

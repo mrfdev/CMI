@@ -3,13 +3,13 @@
 This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/734900902594478240
 
-**Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.1
+**Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.2
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
 **Note:** This is perhaps important to mention. CMI is a big package, it covers a lot of server management topics, from kicks and msgs, to warps, kits, and custom commands. It's dynamic and flexible. And since every server is different: The approach to start might differ per server.
 
-- Run Spigot 1.16.1 or Paper 1.16.1, after setting it up /stop it.
+- Run Spigot 1.16.2 or Paper 1.16.2, after setting it up /stop it.
 
 - Put the CMI jar in the plugins/ directory. Start the server back up and let CMI install.
 

@@ -80,7 +80,7 @@ Basically, these are the easiest steps to use any of these files.
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.0.6**, for live-1mb-2.8.1-mc-1.16.1
+1MB CMI Project version **0.0.7** (August 12th 2020), for live-1mb-2.8.1-mc-1.16.1
 
 Today it is July 31st, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.1-mc-1.16.1`
 ```
@@ -88,7 +88,7 @@ Today it is July 31st, 2020. And the `1MoreBlock.com:25565` Minecraft Survival s
 -1MB- (1moreblock linked to network hub called 1mb)
 -2.8.1- (1MB version 2.8.1, network version)
 -mc- (Minecraft, but it is Spigot jar at the moment)
--1.16.1- (Minecraft version 1.16.1)
+-1.16.1- (Minecraft version 1.16.1) (soon 1.16.2)
 ```
 **TLDR;** These files are for 1.16.x and probably any CMI version that works with 1.16.x
 

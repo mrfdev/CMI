@@ -3,7 +3,7 @@
 This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711599754714284216
 
-**CMI can handle the in-game Chat**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.1
+**CMI can handle the in-game Chat**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.2
 - Stop using the old Chat Manager, if you were using one.
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Update `config.yml` (see below)

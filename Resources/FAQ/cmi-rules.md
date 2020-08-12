@@ -3,7 +3,7 @@
 This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/719742400611876956
 
-**CMI can handle custom /rules**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.1 for a dynamic and flexible way of displaying /rules.
+**CMI can handle custom /rules**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.2 for a dynamic and flexible way of displaying /rules.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Inside the `plugins/CMI/CustomText/` directory there is already a file called `rules.txt`, you should go through this and adjust it to your server rules.
