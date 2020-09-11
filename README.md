@@ -82,11 +82,11 @@ Basically, these are the easiest steps to use any of these files.
 
 1MB CMI Project version **0.0.8** (August 13th 2020), for live-1mb-2.8.1-mc-1.16.1
 
-Today it is July 31st, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.1-mc-1.16.1`
+Today it is September 11th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.2-mc-1.16.1`
 ```
 -live- (live server)
 -1MB- (1moreblock linked to network hub called 1mb)
--2.8.1- (1MB version 2.8.1, network version)
+-2.8.2- (1MB version 2.8.2, network version)
 -mc- (Minecraft, but it is Spigot jar at the moment)
 -1.16.1- (Minecraft version 1.16.1) (soon 1.16.2)
 ```
