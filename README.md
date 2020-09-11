@@ -80,7 +80,7 @@ Basically, these are the easiest steps to use any of these files.
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.0.8** (August 13th 2020), for live-1mb-2.8.1-mc-1.16.1
+1MB CMI Project version **0.0.8** (September 11th 2020), for live-1mb-2.8.2-mc-1.16.1
 
 Today it is September 11th, 2020. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.2-mc-1.16.1`
 ```
