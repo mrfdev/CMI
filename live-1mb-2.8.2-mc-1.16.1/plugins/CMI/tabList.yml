@@ -1,0 +1,253 @@
+# To disable tablist handling visit Modules.yml file
+TabList:
+  # Defines if we want to run tablist updater in async mode
+  # While enabled it can increase overall performance but some plugins can have same issues handling async placeholder requests
+  Async: true
+  UpdateTabListNames: true
+  # Enable or disable grouped format tablist's
+  # You can save some resources by disabling this if you are not interested in grouped format tablist feature
+  # If disabled then this will use only default format and will skip checking for custom one to save some resources if needed
+  GroupedEnabled: true
+  Updates:
+    # automatically updates tab list every x seconds for ALL online players
+    # If you are using static Footer and Header you can disable this by setting to -1
+    # Consider setting this to -1 if its completely enough to update on player events
+    AutoInterval: 30
+    OnJoin: true
+    OnLeave: true
+    afkStateChange: true
+    OnWorldChange: true
+    OnDeath: true
+    OnTeleport: true
+    OnNickChange: true
+  # When set to false we will not add header text to tablist
+  addTabListHeader: true
+  # When set to false we will not add footer text to tablist
+  addTabListFooter: true
+  # PlaceholderAPI supported for any custom variable you want to insert into this
+  # In addition CMI will handle some placeholders without PlaceHolderAPI
+  # Full list can be checked ingame with /cmi placeholders
+  GeneralFormat:
+    PlayerName: ' %cmi_user_afk_symbol%&e[playerDisplayName] {#Edward}%multiverse_world_alias%
+      &r'
+    Header:
+      '1':
+      - '{#Cerulean}------------------------------&r'
+      - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+      - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+        server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+      - '{#Cerulean}------------------------------&r'
+    Footer:
+      '1':
+      - '{#Cerulean}------------------------------&r'
+      - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%player_gamemode%
+        &r'
+      - '{#Edward} Group: {#Geyser}Player{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%
+        &r'
+      - '{#Cerulean}------------------------------&r'
+  useGeneralName: false
+  # When this set to true, in case you dint defined PlayerName, Header or Footer in GroupFormat, then default one from GeneralFormat will be used
+  useGeneralHeader: false
+  useGeneralFooter: false
+  # Defines custom formats to be used for players.
+  # Any player which have cmi.tablist.[number] permission node will use defined grouped format in tablist
+  # Id should be a number and in case player has more than one, bigger number id will be used
+  # You can have as many groups as you want by increasing increment
+  GroupFormat:
+    '1':
+      PlayerName: ' %cmi_user_afk_symbol%&e[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},server
+          {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}First{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '2':
+      PlayerName: ' %cmi_user_afk_symbol%&2[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Player{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '3':
+      PlayerName: ' %cmi_user_afk_symbol%&9[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Member{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '4':
+      PlayerName: ' %cmi_user_afk_symbol%{#Cerulean}[playerDisplayName] {#Edward}%multiverse_world_alias%
+        &r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Boosted{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '5':
+      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Builder{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '6':
+      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward}Group: {#Geyser}Donator {#Edward}/ Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '7':
+      PlayerName: ' %cmi_user_afk_symbol%&6[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},server
+          {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Epic{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '8':
+      PlayerName: ' %cmi_user_afk_symbol%&7[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Legendary{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '9':
+      PlayerName: ' %cmi_user_afk_symbol%&9[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}WorldEdit{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '10':
+      PlayerName: ' %cmi_user_afk_symbol%{#Cerulean}[playerDisplayName] {#Edward}%multiverse_world_alias%
+        &r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Helper{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '11':
+      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward} Group: {#Geyser}Admin{#Edward} / Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '12':
+      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward}Group: {#Geyser}Owner {#Edward}/ Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
+    '13':
+      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#Edward}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}Welcome to a &21MB Network {#Edward}server'
+        - '{#Edward}Online {#Geyser}%server_online%{#Edward}/{#Geyser}%server_max_players%{#Edward},
+          server {#Geyser}3{#Edward}/{#Geyser}50+{#Edward}.'
+        - '{#Cerulean}------------------------------&r'
+      Footer:
+        '1':
+        - '{#Cerulean}------------------------------&r'
+        - '{#Edward}World: {#Geyser}%multiverse_world_alias% {#Edward}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Edward}Group: {#Geyser}Unique {#Edward}/ Money: {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}------------------------------&r'
