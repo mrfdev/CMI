@@ -3,7 +3,7 @@
 This is not a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
 
 
-**CMI can deal with % chance**, this is the recommended setup that works well on Spigot/Paper 1.16.3 to make dynamic features using specialized commands and smart use of placeholders.
+**CMI can deal with % chance**, this is the recommended setup that works well on Spigot/Paper 1.16.4 to make dynamic features using specialized commands and smart use of placeholders.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
