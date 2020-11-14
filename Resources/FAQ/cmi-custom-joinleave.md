@@ -60,4 +60,14 @@ firstJoinServer:
 ..etc..
 ```
 
+Optionally, if you wish to hide the join/quit messages for a certain group or user, you can use these permissions:
+```
+cmd> cmi checkperm disable
+  cmi.messages.disablelogin - Disables login message
+  cmi.messages.disablequit - Disables logout message
+```
+LuckPerm: `lp group owner permission set cmi.messages.disablejoin true`
+LuckPerm: `lp user mrfloris permission set cmi.messages.disablequit true`
+
+
 More information about CMI: https://www.zrips.net/cmi/
