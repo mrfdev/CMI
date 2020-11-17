@@ -1,8 +1,8 @@
 #!/bin/bash
 # Quick 1MB CMI Add-on to get uuid/username from cmi.sqlite.db
 # chmod a+x the .sh script, and run it with ./finduser.sh
-# version: 1.0.0 build 0.0.5 for Minecraft 1.16.3
-# Release: September 11th, 2020
+# version: 1.0.0 build 0.0.6 for Minecraft 1.16.4
+# Release: November 18th, 2020
 # Author: Floris Fiedeldij Dop
 
 findUser="$1"
