@@ -1,0 +1,674 @@
+CRecipes:
+  '0':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: IRON_HORSE_ARMOR
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6 Forged Horse Armor
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: IRON_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEAD
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+  '1':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: GOLDEN_HORSE_ARMOR
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6 Forged Horse Armor
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: GOLD_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEAD
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+  '2':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: DIAMOND_HORSE_ARMOR
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6 Forged Horse Armor
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DIAMOND_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEAD
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+  '3':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: SADDLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §6Forged Horse Saddle
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEAD
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+  '4':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: TUBE_CORAL_BLOCK
+      amount: 8
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: WET_SPONGE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_TUBE_CORAL_BLOCK
+  '5':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: BRAIN_CORAL_BLOCK
+      amount: 8
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: WET_SPONGE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BRAIN_CORAL_BLOCK
+  '6':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: BUBBLE_CORAL_BLOCK
+      amount: 8
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: WET_SPONGE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_BUBBLE_CORAL_BLOCK
+  '7':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: HORN_CORAL_BLOCK
+      amount: 8
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: WET_SPONGE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_HORN_CORAL_BLOCK
+  '8':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: FIRE_CORAL_BLOCK
+      amount: 8
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: WET_SPONGE
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DEAD_FIRE_CORAL_BLOCK
+  '9':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: NAME_TAG
+    Recipe:
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: STRING
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: INK_SAC
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: PAPER
+  '10':
+    Type: Furnace
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: EXPERIENCE_BOTTLE
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ENCHANTED_BOOK
+    Cook: 240
+    Exp: 1.0
+  '11':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: COOKIE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §b§lDiamond §6§lCookie
+        enchants:
+          DURABILITY: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        internal: H4sIAAAAAAAAAJ3NQQuCMBjG8ffQIetL6N1kaYJtt0IoEg81DxEhY64atE22VfTt8xJ07vjjz8MzAQhgWq/o2ijFdOfGADCCIOJGu4cSEbiI84grGfZMS8W8NDrk0vK7IBwXKE7zuEDEv6TzpGfW43lOLEZJTnrp+Q0vEVHmKTCKUZJlMSLmcnHCD56hJB3smb0OPvV39ha2ZkqcYfE9deahu/C3hWVNt/TYHjZNtSv37aqpqpK2my39c/UBPFuWNwMBAAA=
+    Recipe:
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: DIAMOND
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: COOKIE
+  '12':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: WOODEN_SHOVEL
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: Leather Shovel
+    Recipe:
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LEATHER
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: STICK
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: STICK
+  '13':
+    Type: Furnace
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §e1MB Hunting Cheque
+        lore:
+        - §fIssued by §6Server
+        - §fRight click to deposit
+        internal: H4sIAAAAAAAAAONiYGBh4PbNz0utdM5ILSxNZYCAaQwA5rykNhoAAAA=
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CREEPER_HEAD
+    Cook: 240
+    Exp: 0.0
+  '14':
+    Type: Furnace
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §e1MB Hunting Cheque
+        lore:
+        - §fIssued by §6Server
+        - §fRight click to deposit
+        internal: H4sIAAAAAAAAAONiYGBh4PbNz0utdM5ILSxNZYCAaQwA5rykNhoAAAA=
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: PLAYER_HEAD
+    Cook: 240
+    Exp: 0.1
+  '15':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: INK_SAC
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LIGHT_BLUE_DYE
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LIGHT_GRAY_DYE
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ORANGE_DYE
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CYAN_DYE
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: PAINTING
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: PINK_DYE
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: PURPLE_DYE
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CAULDRON
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: LIME_DYE
+  '16':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: GLOWSTONE_DUST
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: TORCH
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+  '17':
+    Type: Shaped
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: LEATHER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: §7Weak Leather
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      3:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      4:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      5:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: CHARCOAL
+      6:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      7:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      8:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+      9:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: ROTTEN_FLESH
+  '18':
+    Type: Shapeless
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 2584
+      type: COMPASS
+    Recipe:
+      1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 2584
+        type: COMPASS
