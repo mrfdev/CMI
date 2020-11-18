@@ -35,6 +35,7 @@ Oh yeah, and always make a ***backup*** of your data before making any changes.
 
 The most common reason you're perhaps here are some of these 1MoreBlock.com Add-on files:
 
+- (Add-on) [diamondcookie.md](/Resources/Add-ons/diamondcookie.md)
 - (Add-on) [emotes.yml](/Resources/Add-ons/emotes.yml)
 - (Add-on) [social.yml](/Resources/Add-ons/social.yml)
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
@@ -88,7 +89,7 @@ Today it is November 18th, 2020. And the `1MoreBlock.com:25565` Minecraft Surviv
 -1MB- (1moreblock linked to network hub called 1mb)
 -2.8.4- (1MB version 2.8.4, network version)
 -mc- (Minecraft, but it is Spigot jar at the moment)
--1.16.4- (Minecraft version 1.16.5) 
+-1.16.4- (Minecraft version 1.16.4)
 ```
 **TLDR;** These files are for 1.16.x and probably any CMI version that works with 1.16.x
 
