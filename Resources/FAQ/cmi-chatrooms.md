@@ -1,6 +1,6 @@
 # FAQ - How do I setup CMI Chat for chatrooms?
 
-This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/724622280637939713
 
 **CMI Chat Rooms feature (information, commands, permissions, etc)**

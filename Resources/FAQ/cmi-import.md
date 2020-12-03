@@ -1,6 +1,6 @@
 # FAQ - How can I import from EssentialsX into CMI?
 
-This is not a pinned message (yet?) on the CMI Discord @ https://discord.gg/dDMamN4
+This is not yet an FAQ message (yet?) on the CMI Discord @ https://discord.gg/dDMamN4
 
 
 **CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot/Paper 1.16.4

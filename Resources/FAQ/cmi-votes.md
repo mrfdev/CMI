@@ -1,6 +1,6 @@
 # FAQ - How do I use CMI to deal with Votes?
 
-This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/722010139560771585
 
 **CMI can handle Votes**, this is the recommended setup that works well on Spigot/Paper 1.16.4 to counts, display, and reward players voting.

@@ -1,6 +1,6 @@
 # FAQ - How do I configure CMI for welcome message / motd?
 
-This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711950696982904904
 
 Optional video visually showing the /motd on 1MB https://youtu.be/3yjza6W2NNw

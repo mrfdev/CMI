@@ -1,6 +1,6 @@
 # FAQ - How do I deal with CMI commands?
 
-This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711599520512999536
 
 **CMI can handle Commands.** (Both base commands and your own custom commands)

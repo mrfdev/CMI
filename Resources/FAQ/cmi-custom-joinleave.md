@@ -1,6 +1,6 @@
 # FAQ - How do I configure CMI for custom (first) join / leave messages?
 
-This is not a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711950696982904904
 
 **CMI can handle the custom chat things**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.4 for server owners who want to turn on and display a custom join and leave message to players.

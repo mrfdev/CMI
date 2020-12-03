@@ -1,6 +1,6 @@
 # FAQ - How do I get started with CMI?
 
-This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/734900902594478240
 
 **Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.4

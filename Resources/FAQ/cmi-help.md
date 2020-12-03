@@ -1,6 +1,6 @@
 # FAQ - How do I use CMI to make a custom /help command?
 
-This is a pinned message on the CMI Discord @ https://discord.gg/dDMamN4
+This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/731182532116349020
 
 **CMI can handle custom /help**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.4 for a dynamic and flexible way of displaying /help.
