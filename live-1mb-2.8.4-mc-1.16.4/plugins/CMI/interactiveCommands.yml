@@ -29,8 +29,8 @@ moboff:
   Locations:
   - run;-165.0;97.0;-89.0
   Commands:
-  - fromConsole! mvm set monsters false run
-  - fromConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
+  - asConsole! mvm set monsters false run
+  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
   SignLines:
   - moboff
   - ' '
@@ -56,8 +56,8 @@ mobon:
   Locations:
   - run;-165.0;97.0;-88.0
   Commands:
-  - fromConsole! mvm set monsters true run
-  - fromConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
+  - asConsole! mvm set monsters true run
+  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
   SignLines:
   - mobon
   - ' '
@@ -114,18 +114,18 @@ jacktest:
   - general;12636.0;80.0;-5323.0
   - general;12636.0;80.0;-5322.0
   Commands:
-  - fromConsole! cooldown:60#?! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Okay [playerName],
+  - asConsole! cooldown:60#?! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Okay [playerName],
     let's see how I can help you trade some loot.
   - cmi sound block_note_block_chime [playerName]
   - delay! 4
-  - fromConsole! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Sorry though, if what
+  - asConsole! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Sorry though, if what
     I have to offer isn't what you're looking for. Still learing how to find and forge
     this loot.
   - delay! 4
-  - fromConsole! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b One second please, let
+  - asConsole! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b One second please, let
     me grab my loot box and show you what I've got to trade this weekend.
   - delay! 4
-  - fromConsole! bs open jacky [playerName]
+  - asConsole! bs open jacky [playerName]
 skyblockhelp:
   Locations:
   - skyblock;-5.0;135.0;0.0

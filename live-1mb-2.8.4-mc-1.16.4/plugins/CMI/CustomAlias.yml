@@ -199,7 +199,8 @@ CustomAlias:
     - msg! [playerName] This is now &e/vote tokens
   event:
     Cmds:
-    - 'asConsole! msg! [playerName] &3 1MB Event »&b --- The next event is: /thanksgiving'
+    - asConsole! msg! [playerName] &3 1MB Event »&b --- There is no event active right
+      now. Next one might be at /santa
   warps:
     Cmds:
     - cmi warp
@@ -501,9 +502,7 @@ CustomAlias:
     - votellama
   thanksgiving:
     Cmds:
-    - 'asConsole! cmi msg [playerName] !&6 Sorry, not yet! Try again the 26th of November.
-      \n More info here: https://omgboards.com/threads/261907/'
-    - mvtp thanksgiving
+    - 'asConsole! cmi msg [playerName] !&6 More info here: https://omgboards.com/threads/261907/'
   age:
     Cmds:
     - asConsole! cmi msg [playerName] !&6 The 1MoreBlock.com /Discord, /Website and
@@ -522,9 +521,9 @@ CustomAlias:
     - mv tp uwu
   lectern:
     Cmds:
-    - 'fromConsole! msg! [playerName] &b > To learn how to protect and share lecterns,
+    - 'asConsole! msg! [playerName] &b > To learn how to protect and share lecterns,
       read this:'
-    - fromConsole! msg! [playerName] &b > https://omgboards.com/threads/261776/
+    - asConsole! msg! [playerName] &b > https://omgboards.com/threads/261776/
   alvls:
     Cmds:
     - asConsole! addlevels [playerName] excavation 2
@@ -773,8 +772,8 @@ CustomAlias:
     - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! asConsole! msg!
       [playerName] >> Opening trade in about 10 seconds ...
     - delay! 10
-    - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! fromConsole!
-      bs open SkyblockBeacon [playerName]
+    - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! asConsole! bs
+      open SkyblockBeacon [playerName]
   doublehearts:
     Cmds:
     - ptarget:$1! perm:1mb.tier3.doublehearts?#! asConsole! cmi maxhp set $1 40 -s
@@ -822,16 +821,40 @@ CustomAlias:
   turkey:
     Cmds:
     - msg! [playerName] &6Gobble gobble!&e Thanksgiving Turkey Hunt!
-    - msg! [playerName] &bOn the 26th of November, you can go to /thanksgiving (or
-      type /turkey) and every once in a while there will be escaped turkeys you and
-      others can catch. The first to right click a beacon catches the turkey and then
-      it drops rewards.
-    - msg! [playerName] &3 There are 25 turkeys that can be caught, and you have about
-      5 minutes to do so. It will announce in the chat how many are left.
-    - msg! [playerName] &bThere's more to do in the Thanksgiving world, so explore!
-      Even if it's a small world, it's fun to find builds, and things to do.
-    - thanksgiving
   walk:
     Cmds:
     - infp $1-
     - asConsole! cmi effect [playerName] clear
+  _diamondcookie:
+    Cmds:
+    - asConsole! cmi sound entity_experience_orb_pickup -p:1 -v:0.8 $1 $2 $3 $4 $5
+      -s
+    - asConsole! cmi panimation preset:TpDown;target:$1
+    - asConsole! cmi exp $1 add $6
+    - asConsole! cmi feed $1 -s
+    - asConsole! cmi heal $1 100% -s
+    - asConsole! cmi panimation preset:GColumn;target:$1
+    - asConsole! cmi sound block_beehive_exit -p:0.8 -v:0.8 $1 $2 $3 $4 $5 -s
+    - asConsole! cmi effect $1 regeneration 13 2 -s -visual
+    - asConsole! cmi actionbarmsg $1 {#00d8e6}D{#00d0e6}i{#00cae6}a{#00c3e6}m{#00bce6}o{#00b5e6}n{#00aee6}d
+      {#e67c00}C{#e68200}o{#e68900}o{#e69000}k{#e69700}i{#e69e00}e{#e6a500}s {#680099}are
+      delicious!
+    Perm: true
+  diamondcookie:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#00d8e6}D{#00d0e6}i{#00cae6}a{#00c3e6}m{#00bce6}o{#00b5e6}n{#00aee6}d
+      {#e67c00}C{#e68400}o{#e68c00}o{#e69400}k{#e69c00}i{#e6a500}e {#680099}Information:'
+    - asConsole! cmi msg [playerName] !{#00d8e6}When you're hungry, you can consume
+      a diamond cookie, it will restore your hearts and hunger bar. Feeding you NOMNOM.
+    - asConsole! cmi msg [playerName] !{#00d8e6}It will also give you about 13 seconds
+      of Regeneration II effect. And a bit of random exp!
+    - asConsole! cmi msg [playerName] !{#00d8e6}Players nearby you will notice you're
+      eating this awesome food, because you make a sound, and they can see some cool
+      particles around you. Pretty nifty!
+    - 'asConsole! cmi msg [playerName] !{#e67c00}To craft a diamond cookie: /craft,
+      and in the middle put a diamond, with a cookie on the right. So simple. BUT
+      SO DELICIOUS!'
+  account:
+    Cmds:
+    - asConsole! cmi ctext welcomeMessage [playerName] 2
+    Tab: false
