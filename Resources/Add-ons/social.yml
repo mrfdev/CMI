@@ -72,5 +72,5 @@
     Tab: false
   discord:
     Cmds:
-    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Discord: https://mrfloris.com &r'
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Discord: https://discord.gg/KzTDhxv &r'
     Tab: false
