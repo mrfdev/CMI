@@ -71,7 +71,7 @@
   forums:
     Cmds:
     - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Forums »{#kangaroo} https://omgboards.com/forums/minecraft/'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Forums »{#kangaroo} https://www.1moreblock.com'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Forums »{#kangaroo} Learn about features, post ban-appeals, etc.'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
@@ -85,14 +85,14 @@
   website:
     Cmds:
     - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} https://omgboards.com/forums/minecraft/'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} https://www.1moreblock.com'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} The place for the latest news and info'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
   youtube:
     Cmds:
     - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} https://www.youtube.com/MrFloris'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} https://www.youtube.com/mrfloris'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} Live-streaming player builds and events'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
