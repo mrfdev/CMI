@@ -1,6 +1,18 @@
   social:
     Cmds:
     - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Try: /twitter, /facebook, /discord, /instagram, /forums, /blogs &r'
+    - check:$1==twitter! asPlayer! $1
+    - check:$1==snapchat! asPlayer! $1
+    - check:$1==tiktok! asPlayer! $1
+    - check:$1==facebook! asPlayer! $1
+    - check:$1==forums! asPlayer! $1
+    - check:$1==twitch! asPlayer! $1
+    - check:$1==website! asPlayer! $1
+    - check:$1==youtube! asPlayer! $1
+    - check:$1==instagram! asPlayer! $1
+    - check:$1==reddit! asPlayer! $1
+    - check:$1==blog! asPlayer! $1
+    - check:$1==discord! asPlayer! $1
     CustomTabs:
     - twitter
     - snapchat
