@@ -13,8 +13,7 @@
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} Support us with a follow on /instagram, /discord, etc.'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} We live-stream on /youtube and /twitch too,'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} It is a great way to be part of our community!'
-    - 'asConsole! cmi msg [playerName] !{#orient}`--(1MoreBlock.com Social Media Information)-------------'
-    - 'asConsole! cmi msg [playerName] !&r'
+    - 'asConsole! cmi msg [playerName] !{#orient}`--(1MoreBlock.com Social Media Information)-------------\n&r'
     - check:$1==twitter! asPlayer! $1
     - check:$1==snapchat! asPlayer! $1
     - check:$1==tiktok! asPlayer! $1
@@ -69,13 +68,6 @@
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Facebook »{#kangaroo} Sometimes used for give-aways!'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
-  website:
-    Cmds:
-    - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} https://omgboards.com/forums/minecraft/'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} The place for the latest news and info'
-    - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
-    Tab: false
   forums:
     Cmds:
     - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
@@ -83,18 +75,25 @@
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Forums »{#kangaroo} Learn about features, post ban-appeals, etc.'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
-  youtube:
-    Cmds:
-    - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} https://www.youtube.com/MrFloris'
-    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} Live-streaming player builds and events'
-    - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
-    Tab: false
   twitch:
     Cmds:
     - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Twitch »{#kangaroo} https://www.twitch.tv/mrfloris'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Twitch »{#kangaroo} Live-streaming with players, hangout spot'
+    - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
+    Tab: false
+  website:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} https://omgboards.com/forums/minecraft/'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Website »{#kangaroo} The place for the latest news and info'
+    - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
+    Tab: false
+  youtube:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} https://www.youtube.com/MrFloris'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}YouTube »{#kangaroo} Live-streaming player builds and events'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
   instagram:
