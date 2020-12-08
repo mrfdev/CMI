@@ -1,1 +1,64 @@
-# Get my social links `/<commands>` gathered up for easy sharing.
+  social:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Try: /twitter, /facebook, /discord, /instagram, /forums, /blogs &r'
+    CustomTabs:
+    - twitter
+    - snapchat
+    - tiktok
+    - facebook
+    - forums
+    - twitch
+    - website
+    - youtube
+    - instagram
+    - reddit
+    - blog
+    - discord
+  twitter:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Twitter: https://twitter.com/floris &r'
+    Tab: false
+  snapchat:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Snapchat: https://www.snapchat.com/add/mrfloris &r'
+    Tab: false
+  tiktok:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} TikTok: https://www.tiktok.com/@fjmfd &r'
+    Tab: false
+  facebook:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Facebook: https://facebook.com/floris &r'
+    Tab: false
+  website:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Website: https://omgboards.com/forums/minecraft/ &r'
+    Tab: false
+  forums:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Forums: https://omgboards.com/forums/minecraft/ &r'
+    Tab: false
+  youtube:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} YouTube: https://www.youtube.com/MrFloris &r'
+    Tab: false
+  twitch:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Twitch: https://www.twitch.tv/mrfloris &r'
+    Tab: false
+  instagram:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Instagram: https://www.instagram.com/mrfloris/ &r'
+    Tab: false
+  reddit:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Reddit: https://www.reddit.com/user/Floris &r'
+    Tab: false
+  blog:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Blog: https://mrfloris.com &r'
+    Tab: false
+  discord:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#cerulean}❖ Social »{#kangaroo} Discord: https://mrfloris.com &r'
+    Tab: false
