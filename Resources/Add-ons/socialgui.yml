@@ -1,0 +1,200 @@
+ShopName: socialgui
+DisplayName: '&11MB &5&lSocial Menu'
+Command: socialgui
+signs:
+  text: '[socialgui]'
+  NeedPermissionToCreateSign: true
+shop:
+  Information:
+    MenuItem:
+    - type:skull_banner_pattern
+    - amount:1
+    - 'name:&5Social Media Information (click!)'
+    - lore:&bLearn more about this feature
+    RewardType: PlayerCommand
+    Reward:
+    - bs close %name%
+    - 'social'
+    PriceType: NOTHING
+    Message: 'To re-open the menu, type: /social gui'
+    ExtraPermission: ''
+    InventoryLocation: 5
+  Close:
+    MenuItem:
+    - type:paper
+    - amount:1
+    - name:&5Close
+    - lore:&bClose this menu
+    RewardType: PlayerCommand
+    Reward: bs close %name%
+    PriceType: Free
+    ExtraPermission: ''
+    InventoryLocation: 36
+  twitter:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Twitter
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjNjZjQzY2U5NWI1ZDRjNzI3NGJmMzQxNmYyY2M4NjZhOTk3MmI4ZjcxOWY3NGViODI4NDJkY2I0Mzk1MWYifX19
+    RewardType: PlayerCommand
+    Reward:
+    - twitter
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 11
+  snapchat:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Snapchat
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjVmNmVmYjM3NmVlYjY4ZDgxNDQ5ZjQ1NDMwOTMwYWY2MDg5Mzk1NTdjNjNlNTgxOTJkNzg3MjIzYmQyZDQ5ZiJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - snapchat
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 12
+  tiktok:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9TikTok
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmNmMjEwNWJiNzM3NjM4ODMzMDMzZGQ4MjQ0MDcxZTc1ODcwZTJlMTFjMjYxN2U1NDJlODkyNGZiMmI5MDE4MCJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - tiktok
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 13
+  facebook:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Facebook
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODhhN2Q5ZjZkYzljMjQzMzRlOTJkYmJkMTE3MWM3MDk4ZDM4M2VjNGRhOTU3NjhlNjhjOWI5YThlY2M2YjhhYSJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - facebook
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 14
+  forum:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Forums
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk2MGRhMjYxMjZiYzAyYWU4ODIzMTAxMDVjNzY1ZTEwNjk0NzkyZTY3NzE2ZGQ1MGJhZmVjMTkwZmViZWNmMyJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - forum
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 15
+  twitch:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Twitch
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiZTY1ZjQ0Y2QyMTAxNGM4Y2RkZDAxNThiZjc1MjI3YWRjYjFmZDE3OWY0YzFhY2QxNThjODg4NzFhMTNmIn19fQ==
+    RewardType: PlayerCommand
+    Reward:
+    - twitch
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 16
+  website:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Website
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk2MGRhMjYxMjZiYzAyYWU4ODIzMTAxMDVjNzY1ZTEwNjk0NzkyZTY3NzE2ZGQ1MGJhZmVjMTkwZmViZWNmMyJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - website
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 17
+  youtube:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Youtube
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE0NTFlNWY4NWY4YmY3NDcyZjZlNmQxOWI3ZGRkOGZhZTM5OWUwOTkxMWYyMWJjZTdmOTcxMzFiNDJhNWE1NyJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - youtube
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 21
+  instagram:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Instagram
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM4OGQ2MTYzZmFiZTdjNWU2MjQ1MGViMzdhMDc0ZTJlMmM4ODYxMWM5OTg1MzZkYmQ4NDI5ZmFhMDgxOTQ1MyJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - instagram
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 22
+  reddit:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Reddit
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQ5YmQ0YjJmYThkYTgyNDdhODJjM2QxZmEyNDY3MTVmOWI2ZDk4Yzc3ODM3NGRhNmVmYzEwYzg5Y2Q2NCJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - reddit
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 23
+  blog:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Blog
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTdlZDY2ZjVhNzAyMDlkODIxMTY3ZDE1NmZkYmMwY2EzYmYxMWFkNTRlZDVkODZlNzVjMjY1ZjdlNTAyOWVjMSJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - blog
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 24
+  discord:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Discord
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ4MzNiNTE1NjY1NjU2NThmOTAxMWRlODc4NGU5MGMxYWQ5YmE1ZDMzMzdmOGMwNjkyMTNiYmRlZTk4NjUyMyJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - discord
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 25
