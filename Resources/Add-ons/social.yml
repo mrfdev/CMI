@@ -1,4 +1,4 @@
-# Start 1MB Add-on: CMI Social (version 1.0.1, build 0.0.6) (Made for Minecraft 1.16.4 with CMI 8.7.11.3 or newer)
+# Start 1MB Add-on: CMI Social (version 1.0.1, build 0.0.7) (Made for Minecraft 1.16.4 with CMI 8.7.11.3 or newer)
   # Installation instructions: https://youtu.be/9h0_XcHtwLg 
   # - Download as raw plain text, and then open plugins/CMI/CustomAlias.yml,
   # - Find: CustomAlias:
@@ -30,6 +30,7 @@
     - reddit
     - blog
     - discord
+    - amazon
   # Below are all the social /<commands> (that means the below twitter will be /twitter in-game)
   twitter:
     Cmds:
@@ -113,6 +114,13 @@
     - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Discord »{#kangaroo} https://discord.gg/KzTDhxv'
     - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Discord »{#kangaroo} The best place for live chat and support'
+    - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
+    Tab: false
+  amazon:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Amazon »{#kangaroo} https://www.amazon.nl/hz/wishlist/ls/39TS99YWRKZ0U/'
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}Amazon »{#kangaroo} Surprise the server owner with a gift?'
     - 'asConsole! cmi msg [playerName] !{#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
   # End social commands
