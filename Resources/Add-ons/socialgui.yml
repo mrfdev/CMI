@@ -128,6 +128,20 @@ shop:
     Message: ''
     ExtraPermission: ''
     InventoryLocation: 17
+  amazon:
+    MenuItem:
+    - type:PLAYER_HEAD
+    - amount:1
+    - durability:0
+    - name:&9Amazon
+    - customskull:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTA5ODcwNTk0OWZjNGM0YjI4ZWI4MzQ3NDVjNTc2YTFjMzVkOGQ3MDIyMGM5YTBiNTQyZGVmOGY0NzA5Nzc4YyJ9fX0=
+    RewardType: PlayerCommand
+    Reward:
+    - amazon
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: 20
   youtube:
     MenuItem:
     - type:PLAYER_HEAD
