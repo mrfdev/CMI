@@ -1,0 +1,595 @@
+fossil456:
+  Location: general;-9372.23;66.0;9348.7;-177.19;5.87
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+BlueRoseMarkison:
+  Location: general;-6001.39;66.0;-1601.35;270.01;1.71
+  Page: 3
+  Item:
+    v: 2584
+    type: BLUE_ORCHID
+vanillabuilds:
+  Location: general;12432.28;68.0;1518.33;-272.26;11.25
+  Page: 3
+MTOLYMPUS:
+  Location: general;-301.27;140.5;213.13;-210.16;36.59
+  Page: 2
+  Creator: 243249e7-f17f-4d87-941b-58d0ce7918f5
+uwu:
+  Location: uwu;195.27;82.0;-206.95;-193.58;10.04
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: CAMPFIRE
+batcave:
+  Location: general;-2807.75;105.0;6467.9;-94.55;33.27
+  Page: 2
+fr33:
+  Location: general;7593.63;109.0;11796.52;-226.04;-4.85
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+drowned:
+  Location: general;12783.52;40.0;12023.96;-99.89;-1.0
+  Slot: 37
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §9Drowned
+      lore:
+      - ''
+      internal: H4sIAAAAAAAAAONiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1l4Dq03DKlKL88LzWFgQEAe9AVXScAAAA=
+      skull-owner: §9drowned
+hunting:
+  Location: general;-11713.45;64.5;-5570.25;-265.29;-3.3
+  Slot: 41
+  Item:
+    v: 2584
+    type: GOLDEN_SWORD
+underthesea:
+  Location: general;-808.3;31.0;-198.34;97.7;38.39
+  Page: 3
+fossilmacadam:
+  Location: general;4975.6;63.0;-46.42;-127.84;7.56
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+nether:
+  Location: nether;-140.41;32.0;-8.49;-89.28;0.58
+  Slot: 4
+  Item:
+    v: 2584
+    type: RED_NETHER_BRICKS
+sanctuary:
+  Location: sanctuary;-298.52;136.0;-242.46;-357.96;-3.98
+  Slot: 5
+  Item:
+    v: 2584
+    type: ORANGE_GLAZED_TERRACOTTA
+floris:
+  Location: general;-655.27;62.0;847.28;-180.3;7.35
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of mrfloris
+      internal: H4sIAAAAAAAAAE2UO7KjVhCGmalx1Z1rr8ELMIF4ikswVUaA4PAUbzgZIN4vSYAE5N6CHXkHXoIX4dirMZM56OT/urq/6qDfEeQd+clp5ra9PIa8arM35IsRdxny1j3ydnhU4zvyvqNb9piqbPyKvE3ZMs2PbM8R5NMb8tWpij7+nnz+6z6bt/oqOanQtno++VgYwEYyusoJ2A8AUMZZ7m1xlsgwvzo8ECvCb6hTzHfz6Fax4WyrzpmP9n4QNAl/unkjzJJmz6V28SfHu3UOc1v0tLHpIzblKuUqmkINvFr1B8jkzaOkjMJgrkwj3LkHeDK3RPQC7fpR6f1hEY7u5sAYFGj3fEpWWlGv3EHvp75Gi+TKFtO44XcbYlpmWyFdBKa9LBcfLvfsvC8Ige1QaBX5nZceJF70LuLSWYC4k4aq8UmkFIx8UjDaiHKSJB00FB+Deh/GBo+Gw7kKNE7X4IQ3RxmfcpdiWC7ZLiwLF3FC42ljyo8Gv1k5fqcWnnrRcaLlJ9nAzmYoj+W2G7scjrVzJYrFNG39xLWMw7jX7EDgqRpLIqgHv0lFgW5LKhThDPATm3EmQTLPmg2ASp2TgbhQOPfRBp24lccgbenCZeTQsqqHOhhHoTevA3Wt0gblLhn+Ugcd9lgFYy5qm3jdWJW1b6V54Cf2QQgrXxfxBjg+aywze8DEynqbE0zX6Kf4bNNmDnR+KopguxhyElPRiGIMCORENeJL2TsClqxw9ECokGGPdoTIFMvrdEfHldsoUYvFSRaHK+9ty7zw/ixn3SuDUXg8XTNnIrKnLXxcxsttTEXcsp3uJVXH45mVUaFMUHBWVP04TJc5jLDS8oIBUGSHMmdc7UdgkFL/4KNvb8gPftzO2acwWxUsDvA2Je0yCbnKrEXcEETSqFPSFAChu94I+tOaEPCWSL4CeXAEdbTpgbeZQkNASVwj13oZW0obm11BgcOMrcDNwCKNTqlB9apSWXnCrh2hR5dJ4FVmpUxpB8eEVG7pCvb5xg0SdHmV/RX6SpuG/i3t/AbUNyzt/VbjFQyGJXYNd7aC4+7sOlhr7pwBvb8m3526ncvcUVvZ//XSUxzQbUQqJeytOel8TCPtNpNtPO28ZxTsuQBw2AFK30616cLGqItVF5RS3zjClOwadjplEN62Fw3rgjaEaDFco9RdcYlqu9Y3cb8BLPVApEwBNjqvsHmIfUOQH5HP4Lq/iS/pzx+///vLr68/1H+k3/58/o0g/wE9r0Y4eQQAAA==
+      skull-owner: mrfloris
+mikeylighthouse:
+  Location: spawn;-175.88;63.0;-95.74;-186.29;0.58
+  Page: 2
+mistic:
+  Location: general;-332.69;64.0;121.34;5.09;0.9
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+glo:
+  Location: general;46.29;63.0;501.06;-294.32;13.79
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+spleef:
+  Location: mine;-1584.93;206.0;-1765.42;-119.21;-2.66
+  Page: 4
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+horse:
+  Location: general;10025.43;69.0;8700.2;-192.24;13.71
+  Slot: 32
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: DIAMOND_HORSE_ARMOR
+paprikaatje:
+  Location: general;-528.27;68.0;1210.26;-179.63;13.19
+  Page: 3
+snowball:
+  Location: general;-17045.39;63.0;10749.34;-133.17;9.22
+  ReqPerm: true
+  Slot: 10
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: ICE
+trading:
+  Location: general;11843.21;69.5;8265.56;-318.76;-1.33
+  Page: 3
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: EMERALD
+superfancyspot:
+  Location: general;-5763.44;66.0;-4056.53;-42.74;20.06
+  Page: 5
+  Item:
+    v: 2584
+    type: QUARTZ
+slime:
+  Location: general;361.47;5.0;228.74;-306.85;7.66
+  Page: 2
+mastery:
+  Location: general;57.87;80.0;-2427.67;101.38;25.2
+  Page: 2
+hotel:
+  Location: general;4152.02;40.0;6910.53;-178.12;6.82
+  Page: 2
+  Item:
+    v: 2584
+    type: LIME_GLAZED_TERRACOTTA
+guardian:
+  Location: general;5687.0;5.0;217.09;-136.2;8.85
+  Slot: 33
+  Item:
+    v: 2584
+    type: COOKED_COD
+Grezgov:
+  Location: general;6984.72;69.0;-3508.72;-262.96;12.27
+  Page: 3
+jessehome:
+  Location: general;-788.53;71.5;-483.29;-77.33;23.24
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+mine:
+  Location: mine;9.44;122.0;-141.69;-168.14;1.02
+  Slot: 2
+  Item:
+    v: 2584
+    type: TUBE_CORAL_BLOCK
+therunnerboy:
+  Location: general;-13810.58;63.0;-1197.43;-315.98;-7.87
+  Page: 2
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: BRICKS
+fossiltidala:
+  Location: general;7228.64;87.0;6073.37;-106.38;40.16
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+florissurvivalislandcomehelpme:
+  Location: general;-3075.8;69.0;8779.94;-188.26;41.47
+  Page: 2
+tomb:
+  Location: general;-276.75;64.0;1039.88;-13.28;4.4
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+wildwest:
+  Location: general;14240.55;90.0;-12875.72;-173.0;10.22
+  Slot: 42
+  Item:
+    v: 2584
+    type: SADDLE
+souls:
+  Location: souls;-349.5;97.0;12.47;-270.37;17.84
+  Slot: 13
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: RESPAWN_ANCHOR
+tidal:
+  Location: general;7439.72;65.0;6018.77;-344.23;9.2
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §fSkull of TidalDawn
+      internal: H4sIAAAAAAAAAONiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1l4CzJTEnMSUksz2NgAACe1dmNJgAAAA==
+      skull-owner: tidaldawn
+communitybuild01:
+  Location: general;-11996.22;64.0;8727.06;-180.43;3.6
+  Page: 4
+  Item:
+    v: 2584
+    type: OAK_STAIRS
+egghunt:
+  Location: easter;33.88;100.0;-15.09;-225.26;12.71
+  Page: 4
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §9Easter Egg Surprise
+      Damage: 3
+dungeon:
+  Location: general;12519.92;52.0;-5343.98;-87.95;24.27
+  Slot: 43
+  Item:
+    v: 2584
+    type: WOODEN_AXE
+macadam:
+  Location: general;-6708.17;74.0;4152.87;-270.49;52.99
+  Page: 3
+  Item:
+    v: 2584
+    type: STONE_BRICKS
+treefarm:
+  Location: general;12622.4;64.0;-5333.36;-268.98;11.66
+  Slot: 28
+  Item:
+    v: 2584
+    type: OAK_SAPLING
+enchant:
+  Location: general;12515.58;79.0;-5325.54;-286.99;15.5
+  Slot: 35
+  Item:
+    v: 2584
+    type: ENCHANTING_TABLE
+m0ohome:
+  Location: general;-1111.69;90.0;-251.83;11.53;42.0
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+jacky:
+  Location: general;12620.01;78.0;-5304.57;-85.87;-4.41
+  Page: 2
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: WOODEN_HOE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §6Wizard Wand
+      lore:
+      - §e :( §f Lost its magic
+zombiegrind:
+  Location: general;9131.75;9.0;12677.5;-90.31;16.02
+  Slot: 40
+  Item:
+    v: 2584
+    type: ZOMBIE_HEAD
+heads:
+  Location: general;12798.06;52.0;11436.01;180.18;0.97
+  Page: 3
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+thanksfloris:
+  Location: general;-3011.24;70.0;4540.72;0.96;32.31
+  Slot: 39
+  Item:
+    v: 2584
+    type: FILLED_MAP
+    meta:
+      ==: ItemMeta
+      meta-type: MAP
+      map-id: 260
+spider:
+  Location: general;12932.73;16.0;12000.48;-71.37;7.2
+  Page: 3
+  Item:
+    v: 2584
+    type: STRING
+charlie:
+  Location: general;6444.9;71.0;10281.49;-274.06;15.0
+  Page: 4
+  Item:
+    v: 2584
+    type: BEDROCK
+m0omine:
+  Location: general;-1151.21;40.0;-243.91;20.08;16.04
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+mycelium:
+  Location: general;-13180.15;79.0;-529.91;-279.15;3.3
+  Page: 3
+fossilsonof:
+  Location: general;6275.46;66.0;4557.31;176.27;41.75
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+bee:
+  Location: general;11496.51;72.0;13800.55;-127.08;28.01
+  Slot: 38
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §e1.15 §e§lAngry Bee
+      Damage: 3
+werewolf:
+  Location: general;7620.36;63.0;11317.62;31.31;4.21
+  Page: 6
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: BOWL
+castle:
+  Location: sanctuary;-242.3;90.0;-1617.09;90.08;1.14
+  Page: 2
+  Item:
+    v: 2584
+    type: STONE_BRICKS
+1mb:
+  Location: general;874.27;63.0;543.14;-88.51;6.3
+  Page: 3
+owo:
+  Location: owo;0.5;122.0;0.5;-44.8;-10.04
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: SOUL_CAMPFIRE
+fossilvloop:
+  Location: general;13634.21;75.0;4115.13;-169.21;11.38
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+madmikeyb:
+  Location: general;667.61;69.0;-971.59;-341.6;16.99
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+globug100:
+  Location: general;32.27;61.0;501.72;-267.49;23.31
+  Page: 3
+halloween:
+  Location: halloween;1458.89;64.0;465.92;-44.96;-2.89
+  Page: 5
+  Item:
+    v: 2584
+    type: PUMPKIN
+emmabear:
+  Location: general;99.65;65.0;434.28;-273.17;5.39
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+sushi:
+  Location: sushi;-285.63;100.0;-304.49;-299.39;-22.55
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: TROPICAL_FISH
+train:
+  Location: general;-19999.0;65.0;19998.97;-133.5;11.66
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: MINECART
+freeminigame:
+  Location: general;13311.06;74.56;4757.08;-147.81;60.56
+  Page: 3
+  Item:
+    v: 2584
+    type: OAK_SIGN
+raptorboy_tnt:
+  Location: general;-10403.53;64.0;309.55;-194.32;36.66
+  Page: 3
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: MELON_SLICE
+turtle:
+  Location: general;12640.84;63.0;11599.77;15.33;14.08
+  Page: 3
+mikeytown:
+  Location: general;675.06;70.0;-939.69;-4.31;34.65
+  Page: 2
+jail:
+  Location: general;-584.51;64.0;4935.27;-269.67;11.21
+  Page: 3
+Vloop:
+  Location: general;12789.88;70.0;12017.97;-310.82;25.12
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+murdermansion:
+  Location: general;7626.35;66.0;11539.6;234.13;-9.93
+  Page: 3
+  Item:
+    v: 2584
+    type: ARROW
+MountVille:
+  Location: general;10110.54;77.0;9786.26;-178.3;29.47
+  Page: 2
+  Item:
+    v: 2584
+    type: OAK_WOOD
+shops:
+  Location: general;12567.49;78.0;-5341.45;-271.57;17.12
+  Slot: 30
+  Item:
+    v: 2584
+    type: PAPER
+shop:
+  Location: general;12567.49;78.0;-5341.45;-271.57;17.12
+  Page: 3
+legacy:
+  Location: legacy;291.06;114.0;267.52;-270.14;49.5
+  Slot: 7
+  Item:
+    v: 2584
+    type: COBBLESTONE
+fossilglobug:
+  Location: general;13862.68;77.0;6944.38;-292.24;41.52
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+disco:
+  Location: general;12838.51;69.0;12052.54;-90.31;8.58
+  Page: 3
+fossilhepcat:
+  Location: general;13993.74;64.0;11694.69;-59.24;47.88
+  Page: 4
+  Item:
+    v: 2584
+    type: BONE
+santa:
+  Location: general;-35.36;67.0;448.87;-269.6;4.73
+  AutoLore: false
+  Page: 5
+  Creator: a74d508e-aa4b-48b0-868c-9385c5ed4970
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      internal: H4sIAAAAAAAAAFVUS66jRhSlW93S65dsI5lYigEbbA/eAIP5mQKDTWFqxt/8/8awgiyh1WtIRllElpBBBhlkHS2F191RlFFJ55y699y6R/WMYc/Y9+e0z7JTU4ZxFjxh71QnD7D3Z6fonGfsecaroOnioP2APXXBo+uboH3GMOzNE/bhHEeF84q8/cXkE9jLztKq3Il3FWqUcbXFh+1JaeCuMLPdrdhTg8ZdagbkiPSPqjY2y32zyZryJEJnZ2hlsRURGw0Hkbs9BsgAIMiBTDN+WQGKp7YHCGFaM/VIL/S2uBS22IruAhLGod6sY4GWGKo3zlI+0QsvyQQhNOkuXJ2t2hssg+j5cpKLSyDxbKOIspEFjoA6c5KRtdKKar0pT0AxOZUy1SSptkMLnJM0UMeaMwSl5qRyJO7DxKzOadUbCY8iQ3TrKXs0xDKEDLMgQnzvSuTyKtz8nbDMh8Hd8yTnp5NXVPtTJzPSwyH6frFtL9m24zdWbR9TDhi8kJdenHsTjwLaX29TKR4rjcOTDV47ogVGburUaSPb1FFywsWZH/Haz1XLftC3DQXDrRlc0p35cDxXz0HO+PekwhtH4+Ux4jh4Tx6MZqSE2gkVrfjhfWwum4TvGVb3abDZoTgsNRUE5j40++6kHx7pYQosNN55ArBaSA9LrpMOi5AsxFZT9lflsOuO5/Sh7FYHcZ0wd08eNOcs7b1y5TZTRFcsULhtIljA0k/+puZSxTKvAPBJT50AvbqWHb/UimZImevmFLLGpKtwbx/Z3bqKSPXATieUie26relk1bBGh672RtB9gddJPDrmUKMhsSDdhUxydSdmHdwu4HaK5IC10uVa2jlXxF7EIVxoO+3UP5J4N2mZcxQPV/56p/SXJ+w9dLI+ePMxGMpIYmXcsYjMWxk398rEEldG4GJSGmeu1YQhNS5agXE4SiwTe6J8R3nWIjOb18TQ891EJVGKBImyLT5FuY7buTnZCRjVXF8Bbp+iRCJAbq41VmrZmImkYj+6JKpcAWr23PdbnYttUbh9/lejVoikbr4IRwTlzLvCysvh156iMfqW+U0351g0iJmbvnLtq8/XmS5nPNP+j73q4eiyUqTFTOyIBu5x5V1Z/VdDyYnKzWHi5Xzus1SPrvrdF+D6i4/zdkLJvKAkGoEl53ZuE8ACg2qhXJ3StT0nEnBz0CZ4Qzm6gcstUSePmt/yoXGHwU7MEV1Syp5MXCXBBGYOWdJKisov3kJ9PkX8GOovLxj2HfZW8udv5t3vn//89Ovn49+//fgH9tcPP/2MYf8ADP4qArYEAAA=
+      skull-owner: Santa
+general:
+  Location: general;-305.42;90.0;-55.54;89.54;41.7
+  Slot: 1
+  Item:
+    v: 2584
+    type: GRASS_BLOCK
+xtientjex:
+  Location: general;-3326.47;68.0;-6261.29;-179.62;-21.05
+  Page: 3
+redfox:
+  Location: general;1266.07;102.0;181.77;-86.4;2.08
+  Page: 2
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+end:
+  Location: end;126.47;57.0;100.53;135.24;7.79
+  Slot: 3
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: END_PORTAL_FRAME
+vote:
+  Location: general;12478.64;78.0;-5345.41;-75.61;-1.86
+  Slot: 31
+  Item:
+    v: 2584
+    type: DIAMOND
+herb:
+  Location: general;12097.51;71.0;-2183.29;-359.67;8.72
+  Slot: 27
+  Item:
+    v: 2584
+    type: SUGAR_CANE
+mansion:
+  Location: general;12081.45;71.5;611.76;-180.39;-4.57
+  Page: 2
+npc:
+  Location: general;-752.57;77.0;31.15;-86.85;16.5
+  Slot: 34
+  Item:
+    v: 2584
+    type: COBBLESTONE_STAIRS
+grinder:
+  Location: general;-747.32;43.0;-518.41;-278.98;30.94
+  Page: 2
+banner:
+  Location: general;12961.79;64.0;-5291.43;-85.42;2.02
+  Page: 3
+  Item:
+    v: 2584
+    type: WHITE_BANNER
+jemoeder076:
+  Location: general;13973.34;68.0;-6541.21;-4.89;25.63
+  Page: 4
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+kingdom:
+  Location: general;8260.26;64.0;9350.32;36.07;29.2
+  Page: 3
+  Item:
+    v: 2584
+    type: POLISHED_GRANITE
+oldtown:
+  Location: general;487.86;64.5;-378.01;-359.25;5.4
+  Page: 2
+macadammonument:
+  Location: general;-8447.56;73.0;11755.92;-268.4;45.69
+  Page: 3
+spleef3:
+  Location: mine;-8998.36;206.0;-2647.41;-155.82;7.76
+  ReqPerm: true
+  Page: 5
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+spleef4:
+  Location: mine;-8920.99;206.0;-2660.15;-251.18;9.2
+  ReqPerm: true
+  Page: 5
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+acro:
+  Location: general;9669.7;235.0;13105.57;187.16;10.6
+  Slot: 29
+  Item:
+    v: 2584
+    type: IRON_BOOTS
+spawn:
+  Location: spawn;0.47;64.0;134.04;-0.74;13.79
+  Slot: 0
+  Item:
+    v: 2584
+    type: NETHER_STAR
+spleef1:
+  Location: mine;-8948.65;206.0;-2727.08;9.24;4.07
+  ReqPerm: true
+  Page: 5
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+spleef2:
+  Location: mine;-9015.77;206.0;-2707.52;-81.39;8.79
+  ReqPerm: true
+  Page: 5
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+wild:
+  Location: wild;-0.51;86.0;0.5;-359.97;-5.15
+  Slot: 8
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item:
+    v: 2584
+    type: PLAYER_HEAD
+    meta:
+      ==: ItemMeta
+      meta-type: SKULL
+      display-name: §9Earth
+      Damage: 3

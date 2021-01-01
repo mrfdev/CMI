@@ -1,0 +1,43 @@
+<AutoPage>
+Thank you for supporting the 1MoreBlock.com server by playing. 
+
+Please consider voting for the server. In return we can give you some things.
+
+This book will give you a lot of info about our Voting features.
+<NextPage>
+Voting will give you some stuff, including Vote tokens. They are special and you can trade 64 of them for special items.
+
+Which items, and how this works is explained on this page:
+<T>&2omgboards.com/vote&r</T><URL>https://www.omgboards.com/vote</URL>
+<NextPage>
+Some ways to support us is by being an active player. 
+
+We can rank you up over time for this. 
+
+Another way is to get the word out and invite friends, or say on social media where you're playing. 
+<NextPage>
+Voting for the server tells others that it's a fun place to play.
+
+Donating for the server is also possible. That also helps us to keep going. 
+
+Anyway, this is about voting, so let's talk about that.
+<NextPage>
+Each time you vote we say thank you by giving some in-game money, jobs points, welcome points, exp levels, diamonds, and vote tokens. 
+
+You can use the jobs points in the /jobs shop, the /money in our global /market or when using /trade for items with other users.
+<NextPage>
+Welcome /points can be used to buy some instant items or perks. /exp levels to enchant your resources or rename them. 
+
+Diamonds and other reources for /sell or /craft, or just to collect.
+<NextPage>
+And Vote Tokens are unique to our server, and special. They can give you /money at /warp vote, or they can be collected to display in item frames, to trade with others, sell on /market for a lot, maybe every 16 can be traded at /warp vote for 64,000 /money. 
+<NextPage>
+But most interestingly for most: 64 vote tokens of the same type can be exchanged against a special item, command, tool, weapon, action, perk, etc. 
+
+Something that's otherwise not easily possible.
+<NextPage>
+If you vote for the server seven days in a row you get trade or exchange vote tokens, these can be used to exchange 3 of one type for 3 of another type of vote token. 
+
+This is also done at /warp vote at the exchange table.
+<NextPage>
+There's also a trade table at /warp vote where you can trade old or unstackable tokens for the latest version of the tokens.
