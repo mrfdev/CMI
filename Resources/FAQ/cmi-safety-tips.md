@@ -95,4 +95,9 @@ elytraExploit: true
 - CMI Jail, review who is still in jail, just in case
 ```
 
+- **SECURITY.KEY / cmi.sqlite.db** (Something to consider)
+```
+- Pointing out you should be aware of the files you are sharing. CMI has for example two files like the sqlite database cmi.sqlite.db and the file security.key. These are personal to your server. They contain your player data, and the encryption for attached items. Do not share these with others, and don't just blindly copy these over to another server you run. Let them build a unique new security.key file. This extends to all the files. If you have certain data that you consider confidential/private/personal, or might break some privacy law when you share it, think twice. 
+```
+
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
