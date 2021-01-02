@@ -81,9 +81,9 @@ Basically, these are the easiest steps to use any of these files.
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.1.1** (January 1st, 2021), for live-1mb-2.8.5-mc-1.16.4
+1MB CMI Project version **0.1.2** (January 2nd, 2021), for live-1mb-2.8.5-mc-1.16.4
 
-Today it is January 1st, 2021. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.5-mc-1.16.4`
+Today it is January 2nd, 2021. And the `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.5-mc-1.16.4`
 ```
 -live- (live server)
 -1MB- (1moreblock linked to network hub called 1mb)
@@ -123,7 +123,8 @@ For Discord I've created a couple of **CMI FAQ** entries that are pinned to the 
 - [CMI Import](/Resources/FAQ/cmi-import.md)
 - [CMI Chance](/Resources/FAQ/cmi-chance.md)
 - [CMI Custom Join / Leave](/Resources/FAQ/cmi-custom-joinleave.md)
-- [CMI Prefix with LuckPerms](/Resources/FAQ/cmi-luckperms-prefix.md)
+- [CMI Trash Feature](/Resources/FAQ/cmi-trash.md)
+- [CMI Safety Tips](/Resources/FAQ/cmi-safety-tips.md)
 
 *To clarify, you can not use this repository to ask for CMI customer support. CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
