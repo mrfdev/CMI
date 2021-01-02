@@ -8,6 +8,8 @@ This is not an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 
 Enjoy the server, but as server owner, you might wish to check out a few things every once in a while. I run a few survival servers and I would like to double check some things. Who's still in god mode that shouldn't be? Who is still flying, that shouldn't be? Does anybody have any oversized items in their inventory? Things like that. 
 
+It's worth to mention this is a collection of some basic cmi safety tips to get you started. This does not cover generic server security guidelines, tips to backk up your data, or how to configure your network, firewall, etc. 
+
 Note: This is just the first draft of this document, feel free to make suggestions and I will add your tips as well. I am just making this to a- remind myself, and b- to help others go 'yeah I should probably check that once a year lat least'.
 
 Note: You can always manually inspect a player with `/cmi info playername` and toggle god/fly/etc there.
