@@ -8,7 +8,7 @@ This is not an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 
 Enjoy the server, but as server owner, you might wish to check out a few things every once in a while. I run a few survival servers and I would like to double check some things. Who's still in god mode that shouldn't be? Who is still flying, that shouldn't be? Does anybody have any oversized items in their inventory? Things like that. 
 
-It's worth to mention this is a collection of some basic cmi safety tips to get you started. This does not cover generic server security guidelines, tips to backk up your data, or how to configure your network, firewall, etc. 
+It's worth to mention this is a collection of some basic cmi safety tips to get you started. This does not cover generic server security guidelines, tips to backup your data, or how to configure your network, firewall, etc. 
 
 Note: This is just the first draft of this document, feel free to make suggestions and I will add your tips as well. I am just making this to a- remind myself, and b- to help others go 'yeah I should probably check that once a year lat least'.
 
@@ -75,7 +75,7 @@ Note: You need console access to remove the lock on your own account
 Config.yml:
 
 ExploitPatcher:
-  # When enabled this will prevent exp bootles being destroyed on portal edge and duplicating them in result of that
+  # When enabled this will prevent exp bottles being destroyed on portal edge and duplicating them in result of that
   PreventExpPortals: true
   # When enabled this will prevent players from performing commands which could lead to some bugs
   # By default its disabled to keep vanilla behavior, but is recommended to enable it to avoid issues
@@ -96,8 +96,14 @@ elytraExploit: true
 ```
 
 - **SECURITY.KEY / cmi.sqlite.db** (Something to consider)
-```
-- Pointing out you should be aware of the files you are sharing. CMI has for example two files like the sqlite database cmi.sqlite.db and the file security.key. These are personal to your server. They contain your player data, and the encryption for attached items. Do not share these with others, and don't just blindly copy these over to another server you run. Let them build a unique new security.key file. This extends to all the files. If you have certain data that you consider confidential/private/personal, or might break some privacy law when you share it, think twice. 
-```
+
+`Pointing out you should be aware of the files you are sharing.`
+
+CMI has for example two files like the sqlite database `cmi.sqlite.db` and the file `security.key`. These are personal to your server. They contain your player data, and the encryption for attached items. 
+
+I recommend to be aware of this before sharing files with others. 
+
+Also, perhaps don't just blindly copy these over to another server you run. Let them build a unique new `security.key` file. This extends to all the files. If you have certain data that you consider confidential/ personal.
+
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
