@@ -37,6 +37,9 @@ Alias:
   /attachcommand: false
   /powertool: false
   #  
+  # /cmi autorecharge $1-
+  /autorecharge: false
+  #  
   # /cmi back $1-
   /back: false
   /cback: false
@@ -130,6 +133,7 @@ Alias:
   #  
   # /cmi condense $1-
   /condense: false
+  /compact: false
   #  
   # /cmi counter $1-
   /counter: false
@@ -199,6 +203,8 @@ Alias:
   /ec: false
   /cend: false
   /enderchest: false
+  /oe: false
+  /echest: false
   #  
   # /cmi endgateway $1-
   /endgateway: false
@@ -333,6 +339,7 @@ Alias:
   /inv: false
   /cinv: false
   /invsee: false
+  /oi: false
   #  
   # /cmi invcheck $1-
   /invcheck: false
@@ -395,11 +402,15 @@ Alias:
   # /cmi kick $1-
   /kick: false
   #  
+  # /cmi kill $1-
+  /kill: false
+  #  
   # /cmi killall $1-
   /killall: false
   #  
   # /cmi kit $1-
   /kit: false
+  /kits: false
   # /cmi kit -preview $1-
   /kitpreview: false
   #  
@@ -915,6 +926,9 @@ Alias:
   # /cmi warp $1-
   /warp: false
   #  
+  # /cmi warpgroups $1-
+  /warpgroups: false
+  #  
   # /cmi weather $1-
   /weather: false
   # /cmi weather sun $1-
@@ -937,3 +951,6 @@ Alias:
   #  
   # /cmi worth $1-
   /worth: false
+  #  
+  # /cmi worthlist $1-
+  /worthlist: false
