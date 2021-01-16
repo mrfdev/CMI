@@ -2,8 +2,8 @@
 
 ## Version
 
-This is version: `1.0.0 build 002`, for `CMI version 8.7.10.8`, running on: `Minecraft 1.16.4`. 
-Last updated on November 18th, 2020.
+This is version: `1.0.1 build 003`, for `CMI version 8.8.x.x`, running on: `Minecraft 1.16.5`. 
+Last updated on January 16th, 2021.
 
 ## Introduction
 

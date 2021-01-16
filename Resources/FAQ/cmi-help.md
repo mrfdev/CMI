@@ -3,7 +3,7 @@
 This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/731182532116349020
 
-**CMI can handle custom /help**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.4 for a dynamic and flexible way of displaying /help.
+**CMI can handle custom /help**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 for a dynamic and flexible way of displaying /help.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Inside the `plugins/CMI/CustomText/` directory you can put a file called `help.txt`.

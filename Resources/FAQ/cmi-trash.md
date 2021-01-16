@@ -2,7 +2,7 @@
 
 This is not an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 
-*This is made in CMI version 8.7.12.4 on Minecraft 1.16.4, but should work on older versions*
+*This is made in CMI version 8.8.x.x on Minecraft 1.16.5, but should work on older versions*
 
 
 **Introducetion to Dispose**

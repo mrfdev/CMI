@@ -2,7 +2,7 @@
 
 This is not an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 
-**CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot/Paper 1.16.4 for me.
+**CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot/Paper 1.16.5 for me.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
