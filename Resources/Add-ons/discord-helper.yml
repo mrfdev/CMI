@@ -6,7 +6,7 @@
   # - Find: CustomAlias:
   # - Right below that, on a new line, paste all of this.
   # - Adjust colors and text to your desire.
-  # Note: Make sure you a- do not override existing data, and b- either /cmi reload, or start the server.
+  # Note: Make sure you a- do not override existing data, and b- either /cmi reload, or restart the server.
 
   # mcMMO
   mcstats discord:
@@ -25,8 +25,8 @@
   jobs discord:
     Cmds:
     - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /jobs stats information to Discord.
-    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**: `%jobsr_user_joinedjobcount% / %jobsr_maxjobs%`'
-    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**: %jobsr_user_job_1%(%jobsr_user_jlevel_1%/%jobsr_user_jlvlmax_1%) %jobsr_user_job_2%(%jobsr_user_jlevel_2%/%jobsr_user_jlvlmax_2%) %jobsr_user_job_3%(%jobsr_user_jlevel_3%/%jobsr_user_jlvlmax_3%)'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs Joined**: `%jobsr_user_joinedjobcount% / %jobsr_maxjobs%`'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs list**: %jobsr_user_job_1%(%jobsr_user_jlevel_1%/%jobsr_user_jmaxlvl_1%) %jobsr_user_job_2%(%jobsr_user_jlevel_2%/%jobsr_user_jmaxlvl_2%) %jobsr_user_job_3%(%jobsr_user_jlevel_3%/%jobsr_user_jmaxlvl_3%)'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs skill**: `%jobs_total_levels%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs points**: `%jobsr_user_points_fixed%`'
     Tab: false
