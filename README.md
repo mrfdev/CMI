@@ -40,6 +40,7 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 - (Add-on) [social.yml](/Resources/Add-ons/social.yml)
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
+- (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
 - (Custom) [CustomAlias.yml](/live-1mb-2.8.5-mc-1.16.4/plugins/CMI/CustomAlias.yml) 
 - (Custom) [worth.yml](/live-1mb-2.8.5-mc-1.16.4/plugins/CMI/worth.yml) (no 1.16.x items yet)
 
@@ -81,17 +82,17 @@ Basically, these are the easiest steps to use any of these files.
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.1.4** (January 16th, 2021), for live-1mb-2.8.5-mc-1.16.4
+1MB CMI Project version **0.1.5** (January 20th, 2021), for live-1mb-2.8.6-mc-1.16.5
 
-The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.5-mc-1.16.4`
+The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.8.6-mc-1.16.5`
 ```
 -live- (live server)
 -1MB- (1moreblock linked to network hub called 1mb)
--2.8.5- (1MB version 2.8.5, network version)
+-2.8.6- (1MB version 2.8.6, network version)
 -mc- (Minecraft, but it is Spigot jar at the moment)
--1.16.4- (Minecraft version 1.16.4)
+-1.16.54- (Minecraft version 1.16.5)
 ```
-**TLDR;** These files are for 1.16.x and probably any CMI version that works with 1.16.x
+**TLDR;** These files are for 1.16.x and probably any CMI version 8.8.x.x that works with 1.16.x
 
 ## :information_source: Support
 
