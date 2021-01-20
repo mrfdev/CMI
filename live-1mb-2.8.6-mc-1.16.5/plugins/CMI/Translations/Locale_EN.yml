@@ -131,6 +131,7 @@ info:
   CantTeleportNoWorld: '&cTarget world doesn''t exist. Teleportation canceled'
   CantTeleport: '&eYou can''t teleport because you wear to many limited items. Scroll
     over this line to see the maximum allowed items.'
+  ClickToConfirmDelete: '&eClick to confirm removal of &6[name]'
   teleported: '&eYou have been teleported.'
   BlackList: '&e[material] [amount] &6Max: [max]'
   PlayerSpliter: '&e----- &6[playerDisplayName] &e-----'
@@ -190,17 +191,18 @@ info:
   lookAtEntity: '&eLook at entity'
   notOnGround: '&eYou can not perform this while flying'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '{#Cerulean} 1MB Server »{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
+  FirstJoin: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
     to 1MoreBlock.com!'
   LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r {#Feijoa}left.'
-  LoginCustom: '{#Cerulean} 1MB Server »{#Feijoa} Welcome back &6[playerDisplayName]
+  LoginCustom: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome back &6[playerDisplayName]
     {#Feijoa}❤'
-  deathlocation: '{#Cerulean} 1MB Server »{#Feijoa} You died at x:&6[x]{#Feijoa},
+  deathlocation: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
     y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]'
   combat:
-    CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
+    CantUseShulkerBox: '&cCan not use shulker box while you are in combat with player.
       Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan not use command while in combat mobe. Wait:
+      [time]'
     bossBarPvp: '&cCombat mode [autoTimeLeft]'
     bossBarPve: '&2Combat mode [autoTimeLeft]'
   bungee:
@@ -263,7 +265,7 @@ info:
   sec: '&e[secs] &6sec '
   vanishSymbolOn: '&8[{#Edward}H&8]&r'
   vanishSymbolOff: ''
-  afkSymbolOn: '&6*'
+  afkSymbolOn: '&6●'
   afkSymbolOff: ''
   nextPageConsole: '&fFor next page perform &5[command]'
   prevPage: '&2----<< &6Prev '
@@ -285,6 +287,7 @@ info:
     inside: &e[count]{#Edward}/&e[maxcount]'
   circle: '{#Cerulean}Circle'
   square: '&5Square'
+  clear: '&7Clear'
   protectedArea: '&cProtected area. Can''t do this here.'
   valueToLong: '&eValue is too long. Max: [max]'
   valueToShort: '&eValue is too short. Min: [min]'
@@ -708,6 +711,8 @@ modify:
   listDownSymbolHover: '&eDown'
   listNumber: '&e[number].'
   ChangeHover: '&eClick to change'
+  enabledColor: '&6'
+  disabledColor: '&7'
   commandTitle: ' &e--- &6[name] &e---'
   commandList: ' &e[command]  '
   emptyLine: '{#Edward}[Empty line]'
@@ -782,6 +787,7 @@ Selection:
   SecondaryPoint: '&ePlaced &6Secondary &eSelection Point [point]'
   CoordsTop: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
   CoordsBottom: '&eX:&6[x] &eY:&6[y] &eZ:&6[z]'
+  Area: '&7[world] &f(&6[x1]:[y1]:[z1] &e[x2]:[y2]:[z2]&f)'
 NetherPortal:
   ToHigh: '&cPortal is to big, max height is &6[max]&c!'
   ToWide: '&cPortal is to wide, max width is &6[max]&c!'
@@ -876,6 +882,12 @@ command:
       added: '&eAlert message will be sent to all administrators, if &6[playerDisplayName]
         &ejoin''s in next 24Hours'
       online: '&6[playerDisplayName] &ealready online'
+  alertlist:
+    help:
+      info: '&eLists all recorded alerts'
+      args: ''
+    info:
+      list: ' &e[place]. &6[playerDisplayName] &e[time] &7Reason: [reason]'
   aliaseditor:
     help:
       info: '&eAlias editor'
@@ -1693,6 +1705,13 @@ command:
     info:
       feedback: '&eYou have extinguished {#Cerulean}[playerDisplayName]&e ({#Cerulean}[offon]&e).'
       targetfeedback: '&eYou have been extinguished by {#Cerulean}[senderDisplayName]&e.'
+  falldistance:
+    help:
+      info: '&eSet players falldistance'
+      args: (playerName) (number) (-s)
+    info:
+      feedback: '&eYou have set fall distance to &3[amount]&e for &3[playerDisplayName]&e
+        (&3[offon]&e).'
   feed:
     help:
       info: '&eFeed player'
@@ -1877,6 +1896,8 @@ command:
         {#Cerulean}[senderDisplayName]&e.'
       title: Pick glow color
       incorrect: '&4Incorrect color name'
+      lore: '&2Click to select color'
+      noPerm: '&4No permission yet'
   gm:
     help:
       info: '&eSet players game mode'
@@ -2704,7 +2725,7 @@ command:
     info:
       # [groupLine] can be replaced with specific grouped names like [group1] and [group2] and so on, you can have as many of those as you want and order them by your own liking
       List:
-      - '{#Edward}=[ 1MoreBlock.com Players ]='
+      - '{#Edward}== 1MoreBlock.com Players =='
       - '&ePlayers online &6[amount][hidden]&e/&6[maxamount]'
       - '[adminLine]'
       - '[staffLine]'
@@ -2759,7 +2780,8 @@ command:
       clearMail: '&eAll mails have been removed'
       removedMail: '&eRemoved mail'
       noMailsById: '&eThere is no mails by this id for player'
-      noMails: '&eThere are no mails'
+      noMails: '&eThere are no mails. You can send mail like this: /mail send mrfloris
+        Hi, how are you.'
       mailHover: '&e[senderName] /n &e[time]'
       list: '&6[id]. {#Edward}[senderDisplayName] &e- [mail] '
       waitingMail: '&eYou have &6[amount] &emails. Click to check them out.'
@@ -3104,7 +3126,7 @@ command:
       bungeeSetEmpty: '&eInitiated portal location set at &6[serverName] &eserver,
         but no one is online in this server. This action will not complete until some
         one joins it'
-      list: '&e[number]. &6[portalName]'
+      portalList: '&e[number]. [color][portalName]'
       redefine: '&eRedefine area from current selection'
       particles: '&eParticles: &6[state]'
       particleType: '&eParticle type: &6[type]'
@@ -3407,7 +3429,7 @@ command:
       - ' cmi.command.ride.[entityType] - to have access in riding entity'
     info:
       riding: '&eYou are riding &6[entityName]'
-      cantRide: '&cYou cant ride (&6[entityName]&c) entity'
+      cantRide: '&cYou cant ride (&6[entityName]&c) entity, check &e/ride'
       someOneElse: '&cSome one already riding this entity'
       ridingYou: '&6[playerDisplayName] &eis riding you, do &6/shakeitoff &eto get
         them off'
@@ -3459,7 +3481,9 @@ command:
       give: '&eGive &6[name] &eitem'
       removed: '&eRemoved &6[name] &eitem'
       saved: '&eSaved &6[name] &eitem'
-      title: '&8[current]{#Edward}/&8[total]'
+      uiTitle: 'Category: [category] &8[current]&7/&8[total]'
+      name: '&7Name: &f[name]'
+      category: '&7Category: &f[category]'
   sc:
     help:
       info: '&eStarts sign copy process'
@@ -4535,6 +4559,7 @@ command:
       noMessages: '&eNo public messages'
       fakeJoinLeave: '&eShow fake join/leave messages on vanish state change'
       mobSpawning: '&eMobs will spawn nearby'
+      stopPlaytime: '&ePlaytime will stop increasing'
       bossbarTitle: '&fVanished'
   version:
     help:

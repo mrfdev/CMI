@@ -9,7 +9,7 @@
 &6 * &e You can click on this link for detailed info:
 &6 * &9 https://omgboards.com/threads/260946/
 &6 * &e including, the Mojang Community Standards.
-&6 
+{#Cerulean}&l&m                                                     &r
 &6 * If you disagree to our rules, please disconnect.
 &6 
 <NextPage>
@@ -28,5 +28,5 @@
 &6 11.  0-tick farms are not allowed.
 &6 12.  Fair-play; No game exploiting or cheating (this includes abusing bugs/glitches in the game!)
 &6 13.  Respect all Players, including Staff.
-&6 
+{#Cerulean}&l&m                                                     &r
 &6 13.  Listen to the Staff, their word is final.

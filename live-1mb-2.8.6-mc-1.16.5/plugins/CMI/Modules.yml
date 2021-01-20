@@ -217,6 +217,6 @@ totemBehavior: true
 # Applies for servers from 1.9.x and up
 anvilRenameColor: true
 #  
-# Handling of anvil unlimited repair
-# Applies for servers from 1.9.x and up
-anvilUnlimitedRepair: true
+# Handling of launch command falldamage
+# Applies for servers from 1.7.x and up
+launchPad: true

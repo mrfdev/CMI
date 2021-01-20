@@ -389,6 +389,10 @@ Worth:
   # Color codes and capitalization are being ignored
   BadLore:
   - right click to open /menu
+  # If enabled any item with custom name will not be allowed to be sold with /cmi sell command
+  CustomNameBlocking: true
+  # If enabled any item with custom lore will not be allowed to be sold with /cmi sell command
+  LoreBlocking: true
 BossBar:
   # Enables or disbales bossbar hp bar on 1.9+ servers
   # Only players with cmi.bossbar.hpbar permission node can see it
@@ -453,7 +457,7 @@ ReSpawn:
     - warp!spawn
     - worldSpawn
   # Defines respawn order for defines worlds
-  # Remove world if you want to leave respawn handling for server or 3rd party plugin
+  # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
     spawn:
     - spawn
@@ -677,6 +681,10 @@ Signs:
   # Bigger numbers can help slightly lower server load
   # This is not essential to keep in low numbers
   CheckInterval: 5000
+  # Defines list sign top lines which cant be edited with shift right click
+  # Usually used for preventing shop sign modifications
+  editBlackList:
+  - '[Shop]'
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -925,7 +933,7 @@ Chat:
       # How many commands you can repeat before stopped for cooldown
       MinAmount: 3
   # If set to true, players public message who is in your ignore list will not be shown
-  IgnorePublicMessage: false
+  IgnorePublicMessage: true
   Tag:
     # Enable or not tag system. This will inform player with his name mentioning in public chat if name have @ in front of it
     Enabled: true
@@ -1421,7 +1429,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.elytra.bypass permission node, elytra flight will not be prevented
   # Players joining worlds with disable elytra flight will get their elytra dismounted if posible
   ElytraFlight:
-  - thanksgiving:False
+  - run:False
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
   FlyAboveRoof: true
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
@@ -1670,6 +1678,7 @@ Vanish:
     noMessages: false
     fakeJoinLeave: false
     mobSpawning: false
+    stopPlaytime: true
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1933,6 +1942,17 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    oldtest:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     acid:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1956,17 +1976,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     uwu:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    thanksgiving:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2138,17 +2147,6 @@ RandomTeleportation:
       IgnoreLava: true
       minY: 0
       maxY: 256
-    thanksgiving:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     run:
       Enabled: false
       MaxRange: 1000
@@ -2294,6 +2292,17 @@ RandomTeleportation:
       maxY: 256
     hardcore:
       Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    oldtest:
+      Enabled: true
       MaxRange: 1000
       MinRange: 500
       CenterX: 0

@@ -1,6 +1,6 @@
 <AutoPage>
 BETA /fish 
--
+{#Cerulean}&l&m                                                     &r
 level: %pyrofishingpro_level%
 entropy: %pyrofishingpro_entropy%
 currentxp: %pyrofishingpro_currentxp%

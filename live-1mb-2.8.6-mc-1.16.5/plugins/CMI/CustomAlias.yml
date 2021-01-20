@@ -284,9 +284,6 @@ CustomAlias:
       -t:2 -p:1 -c:green -n:myping'
     - 'asConsole! cmi bossbarmsg [playerName] -s:1 -a:2 Your ping: %player_ping_[playerName]%!
       -t:2 -p:1 -c:green -n:myping'
-  kits:
-    Cmds:
-    - cmi kit $1-
   hide:
     Cmds:
     - asConsole! cmi vanish [playerName] on
@@ -712,18 +709,22 @@ CustomAlias:
     Perm: true
   maintenance:
     Cmds:
-    - check:$1!=False! asConsole! cmi broadcast !&eDuring maintenance mode players
-      can remain in-game, but they cannot join the game.
-    - cmi sound block_note_block_bell -p:0.5 -all -s
-    - check:$1==False! asConsole! cmi broadcast !&e Back from maintenance.
-    - 'check:$1!=False! asConsole! cmi broadcast !&e Maintenance: $1- :) '
-    - delay! 0.2
     - cmi sound block_note_block_bell -p:0.6 -all -s
     - delay! 0.1
     - cmi sound block_note_block_bell -p:0.7 -all -s
     - delay! 0.1
     - asConsole! cmi maintenance $1-
+    - delay! 0.2
+    - check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&eDuring maintenance
+      mode players can remain in-game, but they cannot join the game.
+    - cmi sound block_note_block_bell -p:0.5 -all -s
+    - 'check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&e Maintenance:
+      $1- :)'
+    - check:%cmi_maintenance_state%==False! asConsole! cmi broadcast !&e Back from
+      maintenance.
     Perm: true
+    CustomTabs:
+    - 'False'
   skyblock beacon:
     Cmds:
     - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! msg! [playerName]
@@ -995,3 +996,629 @@ CustomAlias:
     - cmi sound ui_toast_challenge_complete -all
     - asConsole! cmi broadcast !{#cerulean}[PayPal] {#orange}Donation received from
       $1 - Thanks!
+  impossible:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean>} Get Impossible Advancements!{#Lochmara<}
+    - 'asConsole! cmi msg [playerName] !{#Feijoa}&o .. Syncing: '
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Sub Space Bubble</T><H>{#Geyser}Use
+      the Nether to travel 7 km in the Overworld\n(Nether)</H>
+    - asConsole! advancement grant [playerName] only minecraft:nether/fast_travel
+    - delay! 2
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Uneasy Alliance</T><H>{#Geyser}Rescue
+      a Ghast from the Nether\n bring it safely home to the Overworld...\n and then
+      kill it\n(Return to Sender)</H>
+    - asConsole! advancement grant [playerName] only minecraft:nether/uneasy_alliance
+    - delay! 2
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} We Need to Go
+      Deeper</T><H>{#Geyser}Build, light and enter a Nether Portal\n(Ice Bucket Challenge)</H>
+    - asConsole! advancement grant [playerName] only minecraft:story/enter_the_nether
+    - delay! 2
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} The End?</T><H>{#Geyser}Enter
+      the End Portal\n(eye spy)</H>
+    - asConsole! advancement grant [playerName] only minecraft:story/enter_the_end
+    - delay! 2
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Nether</T><H>{#Geyser}Bring
+      summer clothes</H>
+    - asConsole! advancement grant [playerName] only minecraft:nether/root
+    - delay! 2
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} The End</T><H>{#Geyser}Or
+      the beginning?</H>
+    - asConsole! advancement grant [playerName] only minecraft:end/root
+    - delay! 2
+    - asConsole! cmi msg [playerName] !{#Cerulean>} Syncing Completed.{#Lochmara<}
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•&r
+    Tab: false
+  celebration:
+    Cmds:
+    - asPlayer! warp celebration
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#magenta} The {#yellow}1MoreBlock.com Community{#magenta}
+      is now TEN years old! We are celebrating our anniversary throughout the year.
+      Check the {#orange}/forums{#magenta} for detailed information.
+    - asConsole! cmi msg [playerName] !{#yellow} https://omgboards.com/threads/263614/
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#orange} Available commands:'
+    - asConsole! cmi msg [playerName] !{#green} - /celebration
+    - asConsole! cmi msg [playerName] !{#green} - /celebration lootbox
+    - asConsole! cmi msg [playerName] !{#green} - /celebration mikey
+    - asConsole! cmi msg [playerName] !{#green} - /celebration stick
+    - asConsole! cmi msg [playerName] !{#green} - /celebration giveaway
+    - asConsole! cmi msg [playerName] !{#green} - /celebration soulbind
+    - asConsole! cmi msg [playerName] !{#green} - /celebration dropparty
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+  celebration lootbox:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange} In 2021, in any of the main worlds,
+      there are a maximum of twelve special lootboxes available to players. The first
+      to find one will find a book and a special celebration token inside of it. Read
+      the book!
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 1, Unlocked: Yes, Found:
+      Yes (The456Gamer)'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 2, Unlocked: Yes, Found:
+      Yes (RitualRogue47)'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 3, Unlocked: Yes, Found:
+      Yes (_hepcat_)'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 4, Unlocked: No, Found:
+      n/a'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 5-12, Unlocked: No, Found:
+      n/a'
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+  celebration mikey:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange}The Celebration Mikey can be found
+      at /celebration, this is a spawn point with various celebration related things.
+      You need 3 celebration tokens to trade wtih Celebration Mikey, to get some his
+      Celebration Loot
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+  ride:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#magenta}Whooo - you've got yourself a Celebration
+      Stick in 2021. That's so awesome. Thank you for playing. But, what can you do
+      with it?
+    - asConsole! cmi msg [playerName] !{#orange}Active players (Group Member and higher)
+      will be able to ride some additional animals. For example, a member can also
+      jump on a cow. And a boosted member on a mushroom cow. {#yellow}Just right-click
+      the mob to try!
+    - asConsole! cmi msg [playerName] !{#orange}Players need to become a full member
+      first. Builders can also sit on sheep, and rogue players can right click a chicken
+      as well.
+    - 'asConsole! cmi msg [playerName] !{#orange}Oh, and donator: turtle, mvp: panda,
+      and epic even has permission to try a polar bear. Pretty cool huh.'
+  celebration stick:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#magenta}You can ride more animals now (differs
+      per group), check the /market to buy the Celebration stick. once you have it:
+      right click a mob to try and ride it.'
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+  soulbind:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] {#orange} Sorry, no info just yet, stay tuned!
+      First bit of info: Only high end items like vote items, netherite items, and
+      diamond items can be soul bound. It''s meant for armor, weapons, some tools.
+      Check list for all items'
+    - asConsole! cmi msg [playerName] url is missing, we are still making this..
+  _soulbind:
+    Cmds:
+    - asConsole! lp user $1 permission settemp itemsoulbind.bind true 2s replace
+    - delay! 0.2
+    - ptarget:$1! asPlayer! binditem
+    - asConsole! lp user $1 permission unsettemp itemsoulbind.bind
+    Perm: true
+    Tab: false
+  _soulcheck:
+    Cmds:
+    - 'asConsole! cmi msg $1 debug: %cmi_iteminhand_type%'
+    - 'asConsole! cmi msg $1 !&3 1MB Soul » &bIf your item is eligible for soul binding,
+      we will give it a go. If nothing happens, read: /soulbind'
+    - check:%cmi_iteminhand_type%==DIAMOND_PICKAXE! asConsole! _soulbind $1
+    Perm: true
+    Tab: false
+  celebration giveaway:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange}- Every once in a while throughout
+      2021 we have a celebration giveaway. Some are spontanious as a surprise, others
+      are announced ahead of time in the thread
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+  celebration soulbind:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#orange}- This year it will be possible to
+      soulbind your items, info will be on this thread: https://omgboards.com/threads/263617/'
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+  celebration dropparty:
+    Cmds:
+    - asConsole! cmi warp dropparty%cmi_random_1_4% [playerName] -s
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange} Chests will drop from the sky when
+      it starts! Right-click to collect. Pick up what you can and enjoy your loot.
+      We are having a little drop party because the server is celebrating its 10 Years
+      Anniversary in 2021.
+    - asConsole! cmi msg [playerName] !{#magenta}The January drop parties were awesome
+      and over. Next drop parties will be in February 2021.
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    Tab: false
+  elevator:
+    Cmds:
+    - asConsole! cmi msg [playerName] !{#orange} Type {#yellow}[elevator]{#orange}
+      on the first line of a sign, and straight above and below, you repeat that.
+      Then you can use the elevator to go up and down.
+    - asConsole! cmi msg [playerName] !{#orange}Note, your group needs to be Member-Boosted
+      or higher to create elevator signs. To use an elevator, right click on it to
+      go up. and sneak right click on it to go down.
+  soulbind confirm:
+    Cmds:
+    - asConsole! cmi msg [playerName] !&e hi
+    Perm: true
+    Tab: false
+  _angry:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] angry
+    Perm: true
+  _applaud:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] applaud
+    Perm: true
+  _awkward:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] awkward
+    Perm: true
+  _bark:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] bark
+    Perm: true
+  _beg:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] beg
+    Perm: true
+  _bite:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] bite
+    Perm: true
+  _blush:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] blush
+    Perm: true
+  _bored:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] bored
+    Perm: true
+  _bow:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] bow
+    Perm: true
+  _cheeky:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] cheeky
+    Perm: true
+  _cheer:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] cheer
+    Perm: true
+  _clap:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] clap
+    Perm: true
+  _cool:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] cool
+    Perm: true
+  _cringe:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] cringe
+    Perm: true
+  _cry:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] cry
+    Perm: true
+  _dab:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] dab
+    Perm: true
+  _dance:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] dance
+    Perm: true
+  _dealwithit:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] dealwithit
+    Perm: true
+  _die:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] die
+    Perm: true
+  _dizzy:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] dizzy
+    Perm: true
+  _explode:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] explode
+    Perm: true
+  _facepalm:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] facepalm
+    Perm: true
+  _fliptable:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] fliptable
+    Perm: true
+  _flirt:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] flirt
+    Perm: true
+  _frown:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] frown
+    Perm: true
+  _giggle:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] giggle
+    Perm: true
+  _goofy:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] goofy
+    Perm: true
+  _greet:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] greet
+    Perm: true
+  _grin:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] grin
+    Perm: true
+  _growl:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] growl
+    Perm: true
+  _happy:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] happy
+    Perm: true
+  _hate:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] hate
+    Perm: true
+  _highfive:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] highfive
+    Perm: true
+  _hits:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] hits
+    Perm: true
+  _hug:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] hug
+    Perm: true
+  _impressed:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] impressed
+    Perm: true
+  _insult:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] insult
+    Perm: true
+  _kiss:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] kiss
+    Perm: true
+  _laugh:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] laugh
+    Perm: true
+  _lick:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] lick
+    Perm: true
+  _love:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] love
+    Perm: true
+  _lovestruck:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] lovestruck
+    Perm: true
+  _lovey:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] lovey
+    Perm: true
+  _moo:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] moo
+    Perm: true
+  _moustache:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] moustache
+    Perm: true
+  _omg:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] omg
+    Perm: true
+  _poke:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] poke
+    Perm: true
+  _pounce:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] pounce
+    Perm: true
+  _punch:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] punch
+    Perm: true
+  _quack:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] quack
+    Perm: true
+  _rage:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] rage
+    Perm: true
+  _raspberry:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] raspberry
+    Perm: true
+  _relax:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] relax
+    Perm: true
+  _rip:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] rip
+    Perm: true
+  _sad:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] sad
+    Perm: true
+  _scream:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] scream
+    Perm: true
+  _shocked:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] shocked
+    Perm: true
+  _shrug:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] shrug
+    Perm: true
+  _sick:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] sick
+    Perm: true
+  _sing:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] sick
+    Perm: true
+  _slap:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] slap
+    Perm: true
+  _sleep:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] sleep
+    Perm: true
+  _sleepy:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] sleepy
+    Perm: true
+  _smack:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] smack
+    Perm: true
+  _smile:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] smile
+    Perm: true
+  _smirk:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] smirk
+    Perm: true
+  _spicy:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] spicy
+    Perm: true
+  _star:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] star
+    Perm: true
+  _suntan:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] suntan
+    Perm: true
+  _sunburn:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] sunburn
+    Perm: true
+  _surprise:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] surprise
+    Perm: true
+  _surprised:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] surprised
+    Perm: true
+  _takethel:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] takethel
+    Perm: true
+  _tan:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] tan
+    Perm: true
+  _thank:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] thank
+    Perm: true
+  _think:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] think
+    Perm: true
+  _thumbsdown:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] thumbsdown
+    Perm: true
+  _thumbsup:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] thumbsup
+    Perm: true
+  _tongue:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] tongue
+    Perm: true
+  _toocool:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] toocool
+    Perm: true
+  _welcome:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] welcome
+    Perm: true
+  _wink:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] wink
+    Perm: true
+  _yeet:
+    Cmds:
+    - asConsole! broadcast! &3 [playerName] yeet
+    Perm: true
+  _tokenitem:
+    Cmds:
+    - 'asConsole! msg! [playerName] Syntax reminder: /$0 <playername> <unbreakable
+      truefalse> <tier number> <item name>'
+    - asConsole! cmi itemname -p:[playerName] {#Cerulean>} ❖ $4- {#Lochmara<}
+    - asConsole! cmi itemlore -p:[playerName] 1 {#midnight}-{#011736}-{#011937}-{#011a38}-{#021c39}-{#021d3a}-{#021f3b}-{#02203c}-{#03223e}-{#03233f}-{#032540}-{#032641}-{#042842}-{#042943}-{#042b44}-{#042c45}-{#052e47}-{#052f48}-{#053149}-{#05324a}-{#06344b}-{#06354c}-{#06374d}-{#06384e}-{#tarawera}--
+    - 'asConsole! cmi itemlore -p:[playerName] 2 {#hot_toddy}&o Enchantments:'
+    - asConsole! cmi itemlore -p:[playerName] 3 {#midnight}-{#011736}-{#011937}-{#011a38}-{#021c39}-{#021d3a}-{#021f3b}-{#02203c}-{#03223e}-{#03233f}-{#032540}-{#032641}-{#042842}-{#042943}-{#042b44}-{#042c45}-{#052e47}-{#052f48}-{#053149}-{#05324a}-{#06344b}-{#06354c}-{#06374d}-{#06384e}-{#tarawera}--
+    - asConsole! cmi itemlore -p:[playerName] 4 {#orient} Thank you for supporting
+      us
+    - asConsole! cmi itemlore -p:[playerName] 5 {#orient} at 1MoreBlock.com with votes!
+    - asConsole! cmi itemlore -p:[playerName] 6 {#midnight}-{#011736}-{#011937}-{#011a38}-{#021c39}-{#021d3a}-{#021f3b}-{#02203c}-{#03223e}-{#03233f}-{#032540}-{#032641}-{#042842}-{#042943}-{#042b44}-{#042c45}-{#052e47}-{#052f48}-{#053149}-{#05324a}-{#06344b}-{#06354c}-{#06374d}-{#06384e}-{#tarawera}--
+    - asConsole! cmi itemlore -p:[playerName] 7 {#bluelagoon} Forged through Support
+    - asConsole! cmi itemlore -p:[playerName] 8 {#midnight}-{#011736}-{#011937}-{#011a38}-{#021c39}-{#021d3a}-{#021f3b}-{#02203c}-{#03223e}-{#03233f}-{#032540}-{#032641}-{#042842}-{#042943}-{#042b44}-{#042c45}-{#052e47}-{#052f48}-{#053149}-{#05324a}-{#06344b}-{#06354c}-{#06374d}-{#06384e}-{#tarawera}--
+    - asConsole! cmi itemlore -p:[playerName] 9 {#555555} ❖ Tier $3 Vote Item
+    - check:$2==true! asConsole! cmi itemlore -p:[playerName] 10 {#555555} ❖ Forged
+      to Unbreakable
+    - check:$2==true! asConsole! cmi unbreakable [playerName] true
+    - check:$2==false! asConsole! cmi unbreakable [playerName] false
+    - check:$2==true! asPlayer! cmi hideflags [playerName] hide_unbreakable
+    - asPlayer! cmi hideflags [playerName] hide_enchants
+    - asPlayer! cmi hideflags [playerName] hide_attributes
+    - asPlayer! binditem $1
+    Perm: true
+    CustomTabs:
+    - '[playername] false,true 1,2,3'
+  _tokenenchant:
+    Cmds:
+    - asConsole! cmi itemlore -p:[playerName] 3 insert
+    - delay! 0.5
+    - asPlayer! cmi enchant $2 $1
+    - asConsole! cmi usermeta [playerName] add tokenenchant $2-
+    - asConsole! cmi usermeta [playerName] add tokenlevel $1
+    - check:$2==unbreaking! asConsole! cmi usermeta [playerName] add tokenenchant
+      Unbreaking
+    - check:$2==mending! asConsole! cmi usermeta [playerName] add tokenenchant Mending
+    - check:$2==fortune! asConsole! cmi usermeta [playerName] add tokenenchant Fortune
+    - check:$2==looting! asConsole! cmi usermeta [playerName] add tokenenchant Looting
+    - check:$2==protection! asConsole! cmi usermeta [playerName] add tokenenchant
+      Protection
+    - check:$2==sharpness! asConsole! cmi usermeta [playerName] add tokenenchant Sharpness
+    - check:$2==efficiency! asConsole! cmi usermeta [playerName] add tokenenchant
+      Efficiency
+    - check:$2==infinity! asConsole! cmi usermeta [playerName] add tokenenchant Infinity
+    - check:$2==power! asConsole! cmi usermeta [playerName] add tokenenchant Power
+    - check:$2==punch! asConsole! cmi usermeta [playerName] add tokenenchant Punch
+    - check:$2==fireprotection! asConsole! cmi usermeta [playerName] add tokenenchant
+      Fire Protection
+    - check:$2==thorns! asConsole! cmi usermeta [playerName] add tokenenchant Thorns
+    - check:$2==projectileprotection! asConsole! cmi usermeta [playerName] add tokenenchant
+      Projectile Protection
+    - check:$2==knockback! asConsole! cmi usermeta [playerName] add tokenenchant Knockback
+    - check:$2==luck! asConsole! cmi usermeta [playerName] add tokenenchant Luck of
+      the Sea
+    - check:$2==silktouch! asConsole! cmi usermeta [playerName] add tokenenchant Silk
+      Touch
+    - check:$2==smite! asConsole! cmi usermeta [playerName] add tokenenchant Smite
+    - check:$2==fireaspect! asConsole! cmi usermeta [playerName] add tokenenchant
+      Fire Aspect
+    - check:$2==lure! asConsole! cmi usermeta [playerName] add tokenenchant Lure
+    - check:$2==blastprotection! asConsole! cmi usermeta [playerName] add tokenenchant
+      Blast Protection
+    - check:$2==depthstrider! asConsole! cmi usermeta [playerName] add tokenenchant
+      Depth Strider
+    - check:$2==featherfalling! asConsole! cmi usermeta [playerName] add tokenenchant
+      Feather Falling
+    - check:$2==fireaspect! asConsole! cmi usermeta [playerName] add tokenenchant
+      Fire Aspect
+    - check:$2==channeling! asConsole! cmi usermeta [playerName] add tokenenchant
+      Channeling
+    - check:$2==impaling! asConsole! cmi usermeta [playerName] add tokenenchant Impaling
+    - check:$2==loyalty! asConsole! cmi usermeta [playerName] add tokenenchant Loyalty
+    - check:$2==aquaaffinity! asConsole! cmi usermeta [playerName] add tokenenchant
+      Aqua Affinity
+    - check:$2==respiration! asConsole! cmi usermeta [playerName] add tokenenchant
+      Respiration
+    - check:$2==flame! asConsole! cmi usermeta [playerName] add tokenenchant Flame
+    - check:$1==1! asConsole! cmi usermeta [playerName] add tokenlevel I
+    - check:$1==2! asConsole! cmi usermeta [playerName] add tokenlevel II
+    - check:$1==3! asConsole! cmi usermeta [playerName] add tokenlevel III
+    - check:$1==4! asConsole! cmi usermeta [playerName] add tokenlevel IV
+    - check:$1==5! asConsole! cmi usermeta [playerName] add tokenlevel V
+    - check:$1==6! asConsole! cmi usermeta [playerName] add tokenlevel VI
+    - check:$1==7! asConsole! cmi usermeta [playerName] add tokenlevel VII
+    - check:$1==8! asConsole! cmi usermeta [playerName] add tokenlevel VIII
+    - check:$1==9! asConsole! cmi usermeta [playerName] add tokenlevel IX
+    - check:$1==10! asConsole! cmi usermeta [playerName] add tokenenchant X
+    - asConsole! cmi itemlore -p:[playerName] 3 {#hottoddy} • %cmi_user_meta_tokenenchant%
+      %cmi_user_meta_tokenlevel%
+    - asConsole! cmi usermeta [playerName] remove tokenenchant
+    - asConsole! cmi usermeta [playerName] remove tokenlevel
+    Perm: true
+    CustomTabs:
+    - 1,2,3,4,5,6,7,8,9,10 [enchant]
+  mcstats discord:
+    Cmds:
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /mcstats
+      information to Discord.
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :zap: **power level**
+      `%mcmmo_power_level%`'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :boot: **acrobatics**`%mcmmo_level_acrobatics%`
+      (rank: %mcmmo_rank_acrobatics%) / :test_tube: **alchemy** `%mcmmo_level_alchemy%`
+      (rank: %mcmmo_rank_alchemy%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :archery: **archery**`%mcmmo_level_archery%`
+      (rank: %mcmmo_rank_archery%) / :axe: **axes** `%mcmmo_level_axes%` (rank: %mcmmo_rank_axes%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :spoon: **excavation**`%mcmmo_level_excavation%`
+      (rank: %mcmmo_rank_excavation%) / :fish: **fishing** `%mcmmo_level_fishing%`
+      (rank: %mcmmo_rank_fishing%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :herb: **herbalism**`%mcmmo_level_herbalism%`
+      (rank: %mcmmo_rank_herbalism%) / :pick: **mining** `%mcmmo_level_mining%` (rank:
+      %mcmmo_rank_mining%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :tools: **repair**`%mcmmo_level_repair%`
+      (rank: %mcmmo_rank_repair%) / :crossed_swords: **swords** `%mcmmo_level_swords%`
+      (rank: %mcmmo_rank_swords%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :fox: **taming**`%mcmmo_level_taming%`
+      (rank: %mcmmo_rank_taming%) / :mechanical_arm: **unarmed** `%mcmmo_level_unarmed%`
+      (rank: %mcmmo_rank_unarmed%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :axe: **woodcutting**`%mcmmo_level_woodcutting%`
+      (rank: %mcmmo_rank_woodcutting%) / _Want more? Ingame type: /mcstats, /mcrank,
+      /mctop_'
+    Tab: false
+  jobs discord:
+    Cmds:
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /jobs stats
+      information to Discord.
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**:
+      `%jobs_jobs% / %jobsr_maxjobs%`'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**:
+      %jobsr_user_job_1% %jobsr_user_job_2% %jobsr_user_job_3%'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs levels**:
+      `%jobs_total_levels%`'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs points**:
+      `%jobsr_user_points%`'
+    Tab: false

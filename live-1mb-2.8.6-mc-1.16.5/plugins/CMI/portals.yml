@@ -92,6 +92,57 @@ general:
     activationRange: 16
     commandsWithoutTp: false
     commands: []
+  playerportalenderrogue47:
+    Loc: -16913.0:13.0:16563.0:-16912.0:17.0:16563.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    Tp: general;12064.01;57.2;19136.0;-180.17;-3.16
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 5
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - cmi msg [playerName] !{#pink>} -- Whooosh -- {#magenta<}
+  playerportalhepcat:
+    Loc: 12833.0:33.0:11669.0:12855.0:34.0:11689.0
+    enabled: true
+    effect: WitchMagic
+    showParticles: true
+    Tp: general;12466.35;27.3;11551.49;268.92;-0.79
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 32
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 1 1 -s
+    - asConsole! cmi msg [playerName] !{#orange}You feel the corruption around you!
+  playerportalritualrogue47:
+    Loc: -16913.0:13.0:16555.0:-16912.0:17.0:16555.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    Tp: general;9382.45;83.36;12594.53;272.1;8.17
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 5
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - cmi msg [playerName] !{#pink>} -- Whooosh -- {#magenta<}
   plrvloop:
     Loc: 12829.0:60.0:12021.0:12831.0:70.0:12033.0
     enabled: true
@@ -114,7 +165,7 @@ general:
     enabled: true
     effect: EnchantmentTable
     showParticles: true
-    Tp: general;13363.54;63.5;-4280.41;-271.16;6.99
+    Tp: general;13363.54;64.19;-4280.41;-271.16;6.99
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -160,6 +211,7 @@ general:
     enabled: true
     effect: WaterBubble
     showParticles: true
+    Tp: wild;-2.53;33.0;19.57;-221.86;6.53
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -177,7 +229,7 @@ general:
     enabled: true
     effect: Reddust
     showParticles: false
-    Tp: general;7342.48;61.2;6026.55;-89.94;5.1
+    Tp: general;7342.48;62.8;6026.55;-89.94;5.1
     kickBack: true
     particlesByPermission: false
     requiresPerm: false

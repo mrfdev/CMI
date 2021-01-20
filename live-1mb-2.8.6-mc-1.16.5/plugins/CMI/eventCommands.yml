@@ -98,9 +98,17 @@ playerPreWorldChange:
   Commands:
   - cmi invsave [playerName]
 playerGameModeChange:
-  Enabled: true
+  Enabled: false
   Commands:
-  - cmi invsave [playerName]
+  - 'check:%cmi_user_op%==True! asConsole! cmi staffmsg &f [playerName] (g: %cmi_user_gamemode%,
+    pvp: %cmi_user_inpvp%&f, %player_world% xyz: %player_x%, %player_y%, %player_z%
+    opped: %cmi_user_op% '
+  - 'check:%cmi_user_god%==True! asConsole! cmi staffmsg &f [playerName] (g: %cmi_user_gamemode%,
+    pvp: %cmi_user_inpvp%&f, %player_world% xyz: %player_x%, %player_y%, %player_z%
+    god: %cmi_user_god% (tgod: %cmi_user_tgod%)'
+  - 'check:%cmi_user_canfly%==True! asConsole! cmi staffmsg &f [playerName] (g: %cmi_user_gamemode%,
+    pvp: %cmi_user_inpvp%&f, %player_world% xyz: %player_x%, %player_y%, %player_z%
+    fly: %cmi_user_canfly% (tfly: %cmi_user_tfly%)'
 playerKick:
   Enabled: false
   Commands:
