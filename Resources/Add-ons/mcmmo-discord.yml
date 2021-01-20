@@ -12,7 +12,7 @@
     Cmds:
     - cooldown:60?#! asConsole! cmi msg `[playerName]` !{#orange} .. Sending /mcstats information to Discord.
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :zap: **power level** `%mcmmo_power_level%`'
-    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :boot: **acrobatics**`%mcmmo_level_acrobatics%` (rank: %mcmmo_rank_acrobatics%) / :man_mage: **alchemy** `%mcmmo_level_alchemy%`(rank: %mcmmo_rank_alchemy%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :boot: **acrobatics**`%mcmmo_level_acrobatics%` (rank: %mcmmo_rank_acrobatics%) / :test_tube: **alchemy** `%mcmmo_level_alchemy%`(rank: %mcmmo_rank_alchemy%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :archery: **archery**`%mcmmo_level_archery%` (rank: %mcmmo_rank_archery%) / :axe: **axes** `%mcmmo_level_axes%`(rank: %mcmmo_rank_axes%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :spoon: **excavation**`%mcmmo_level_excavation%` (rank: %mcmmo_rank_excavation%) / :fish: **fishing** `%mcmmo_level_fishing%`(rank: %mcmmo_rank_fishing%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :herb: **herbalism**`%mcmmo_level_herbalism%` (rank: %mcmmo_rank_herbalism%) / :pick: **mining** `%mcmmo_level_mining%`(rank: %mcmmo_rank_mining%)'
