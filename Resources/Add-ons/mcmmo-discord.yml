@@ -1,4 +1,5 @@
 # Start 1MB Add-on: CMI mcMMO Stats to Discord (version 1.0.0, build 0.0.3) (Made for Minecraft 1.16.5 with CMI 8.8.x.x or newer)
+  # Created by Floris Fiedeldij Dop, with contributions from smeths and _hepcat_
   # Installation instructions: [yt video pending]
   # - Download as raw plain text, and then open plugins/CMI/CustomAlias.yml,
   # - Find: CustomAlias:
