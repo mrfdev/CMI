@@ -1,6 +1,7 @@
 # Start 1MB Add-on: CMI to Discord Helper (version 1.0.1, build 0.0.6) (Made for Minecraft 1.16.5 with CMI 8.8.x.x or newer)
   # Created by Floris Fiedeldij Dop, with contributions from smeths and _hepcat_
   # Installation instructions: [yt video pending]
+  # - Make sure you are running DiscordSRV, PlaceholderAPI, as well as the Jobs and McMMO extensions
   # - Download as raw plain text, and then open plugins/CMI/CustomAlias.yml,
   # - Find: CustomAlias:
   # - Right below that, on a new line, paste all of this.
@@ -25,8 +26,8 @@
     Cmds:
     - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /jobs stats information to Discord.
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**: `%jobs_jobs% / %jobsr_maxjobs%`'
-    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**: %jobsr_user_job_1% %jobsr_user_job_2% %jobsr_user_job_3%'
-    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs levels**: `%jobs_total_levels%`'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs joined**: %jobsr_user_job_1%(%jobsr_user_jlevel_1%/%jobsr_user_jlvlmax_1%) %jobsr_user_job_2%(%jobsr_user_jlevel_2%/%jobsr_user_jlvlmax_2%) %jobsr_user_job_3%(%jobsr_user_jlevel_3%/%jobsr_user_jlvlmax_3%)'
+    - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs skill**: `%jobs_total_levels%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs points**: `%jobsr_user_points%`'
     Tab: false
 # End 1MB Add-on: CMI to Discord Helper
