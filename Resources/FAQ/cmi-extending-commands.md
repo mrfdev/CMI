@@ -22,23 +22,21 @@ There's a video: https://youtu.be/TLKAusnisqs
 
 Note: I am not saying this is THE WAY to do this, it's an example to help you learn how to disable the base command from CMI and make your own, so you can extend it. Which is fantastic, because you can use sounds, title or action msgs, bossbarmsgs, a list of commands, you can check against conditionals, use chance, placeholders, check against permissions and more. But this example should help you get started.
 
-```
+```yaml
   clearchat:
     Cmds:
     - check:$2==inform! asConsole! cmi sound block_anvil_land -all
     - asPlayer! cmi clearchat
     - check:$1==selfclear! asPlayer! cmi clearchat self
-    - check:$2==inform! check:$3==null! asConsole! cmi broadcast !{#orange} - The
-      chat has been cleared -
-    - check:$2==inform! check:$3==tellstaff! asConsole! cmi broadcast !{#orange} -
-      The chat has been cleared -
-    - check:$2==inform! check:$3==tellall! asConsole! cmi broadcast !{#orange} - The
-      chat has been cleared - ($4)
-    - asPlayer! cmi staffmsg {#orange} cleared the chat, reason:&l $4-
+    - asConsole! cmi broadcast !&r \n {#orange}----------------------------------- \n &r
+    - check:$2==inform! check:$3==null! asConsole! cmi broadcast !{#cerulean} •&l&m &r{#cerulean}• {#feijoa}The chat has been cleared {#cerulean} •&l&m &r{#cerulean}•
+    - check:$2==inform! check:$3==tellstaff! asConsole! cmi broadcast !{#cerulean} •&l&m &r{#cerulean}• {#feijoa}The chat has been cleared {#cerulean} •&l&m &r{#cerulean}•
+    - check:$2==inform! check:$3==tellall! asConsole! cmi broadcast !{#cerulean} •&l&m &r{#cerulean}• {#feijoa}The chat has been cleared {#cerulean} •&l&m &r{#cerulean}• ($4)
+    - asPlayer! cmi staffmsg {#feijoa}Cleaned up chat, reason:{#cerulean}&l $4-
+    - asConsole! cmi broadcast !&r \n {#orange}----------------------------------- \n &r
     Perm: true
     CustomTabs:
-    - selfclear,selfkeep inform,quiet tellall,tellstaff noreason,user-drama,user-swearing,user-hatespeech,event,broadcast
-      [playername]
+    - selfclear,selfkeep inform,quiet tellall,tellstaff noreason,user-drama,user-swearing,user-hatespeech,event,broadcast [playername]
 ```
 
 How to install these examples?
