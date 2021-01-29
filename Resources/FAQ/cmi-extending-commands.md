@@ -1,6 +1,7 @@
 # FAQ - How do I extend a CMI command?
 
-This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
+This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4 
+There's a video: https://youtu.be/TLKAusnisqs
 
 
 **CMI commands can be extended through the aliaseditor**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to make commands even more dynamic and do exactly what you want, using the alias editor.
@@ -33,7 +34,7 @@ Note: I am not saying this is THE WAY to do this, it's an example to help you le
       The chat has been cleared -
     - check:$2==inform! check:$3==tellall! asConsole! cmi broadcast !{#orange} - The
       chat has been cleared - ($4)
-    - asConsole! cmi staffmsg {#orange}by; &l[playername]{#orange}, reason:&l $4-
+    - asPlayer! cmi staffmsg {#orange} cleared the chat, reason:&l $4-
     Perm: true
     CustomTabs:
     - selfclear,selfkeep inform,quiet tellall,tellstaff noreason,user-drama,user-swearing,user-hatespeech,event,broadcast
