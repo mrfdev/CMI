@@ -216,3 +216,7 @@ totemBehavior: false
 # Handling of anvil item renaming and colorization
 # Applies for servers from 1.9.x and up
 anvilRenameColor: false
+#  
+# Handling of launch command falldamage
+# Applies for servers from 1.7.x and up
+launchPad: false
