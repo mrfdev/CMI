@@ -61,9 +61,14 @@ cmi sendall [serverName] (Send all online players to target server)
 
 **Permissions:**
 ```
-cmi.bungee.publicmessages.[servername]
-cmi.command.server 
-cmi.command.sendall 
+cmi.command.serverlist - Show server list
+cmi.command.serverlist.others - Show server list
+cmi.command.server.others - Connect to bungeecord server
+cmi.command.bbroadcast - Sends special message to all players on all servers
+cmi.bungee.publicmessages.spawn - Allows to send public messages to target server
+cmi.command.sendall.bypass - Prevents player from being sent to target server
+cmi.command.sendall - Send all online players to target server
+cmi.command.server - Connect to bungeecord server
 ```
 
 **config.yml:**
