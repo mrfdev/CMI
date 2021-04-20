@@ -193,6 +193,10 @@ disabledEnchants: false
 # Applies for servers from 1.8.x and up
 sitAnimation: false
 #  
+# Handling of ride suffocation detection
+# Applies for servers from 1.7.x and up
+rideAnimation: false
+#  
 # Handling of boss bar compass
 # Applies for servers from 1.9.x and up
 bossBarCompass: false

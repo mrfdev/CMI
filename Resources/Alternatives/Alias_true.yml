@@ -10,956 +10,1666 @@
 Alias:
   #  
   # /cmi actionbarmsg $1-
-  /actionbarmsg: true
+  /actionbarmsg:
+    Enabled: true
+    Tab: true
   #  
   # /cmi afk $1-
-  /afk: true
+  /afk:
+    Enabled: true
+    Tab: true
   #  
   # /cmi afkcheck $1-
-  /afkcheck: true
+  /afkcheck:
+    Enabled: true
+    Tab: true
   #  
   # /cmi air $1-
-  /air: true
+  /air:
+    Enabled: true
+    Tab: true
   #  
   # /cmi alert $1-
-  /alert: true
+  /alert:
+    Enabled: true
+    Tab: true
   #  
   # /cmi alertlist $1-
-  /alertlist: true
+  /alertlist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi aliaseditor $1-
-  /aliaseditor: true
+  /aliaseditor:
+    Enabled: true
+    Tab: true
   #  
   # /cmi anvil $1-
-  /anvil: true
+  /anvil:
+    Enabled: true
+    Tab: true
   #  
   # /cmi armorstand $1-
-  /armorstand: true
+  /armorstand:
+    Enabled: true
+    Tab: true
   #  
   # /cmi attachcommand $1-
-  /attachcommand: true
-  /powertool: true
+  /attachcommand:
+    Enabled: true
+    Tab: true
+  /powertool:
+    Enabled: true
+    Tab: true
   #  
   # /cmi autorecharge $1-
-  /autorecharge: true
+  /autorecharge:
+    Enabled: true
+    Tab: true
   #  
   # /cmi back $1-
-  /back: true
-  /cback: true
+  /back:
+    Enabled: true
+    Tab: true
+  /cback:
+    Enabled: true
+    Tab: true
   #  
   # /cmi balance $1-
-  /balance: true
-  /bal: true
+  /balance:
+    Enabled: true
+    Tab: true
+  /bal:
+    Enabled: true
+    Tab: true
   #  
   # /cmi baltop $1-
-  /baltop: true
+  /baltop:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ban $1-
-  /ban: true
+  /ban:
+    Enabled: true
+    Tab: true
   #  
   # /cmi banlist $1-
-  /banlist: true
+  /banlist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi bbroadcast $1-
-  /bbroadcast: true
+  /bbroadcast:
+    Enabled: true
+    Tab: true
   #  
   # /cmi blockcycling $1-
-  /blockcycling: true
+  /blockcycling:
+    Enabled: true
+    Tab: true
   #  
   # /cmi blockinfo $1-
-  /blockinfo: true
+  /blockinfo:
+    Enabled: true
+    Tab: true
   #  
   # /cmi blocknbt $1-
-  /blocknbt: true
+  /blocknbt:
+    Enabled: true
+    Tab: true
   #  
   # /cmi book $1-
-  /book: true
+  /book:
+    Enabled: true
+    Tab: true
   #  
   # /cmi bossbarmsg $1-
-  /bossbarmsg: true
+  /bossbarmsg:
+    Enabled: true
+    Tab: true
   #  
   # /cmi broadcast $1-
-  /broadcast: true
+  /broadcast:
+    Enabled: true
+    Tab: true
   #  
   # /cmi burn $1-
-  /burn: true
+  /burn:
+    Enabled: true
+    Tab: true
   #  
   # /cmi charges $1-
-  /charges: true
+  /charges:
+    Enabled: true
+    Tab: true
   #  
   # /cmi chat $1-
-  /chat: true
+  /chat:
+    Enabled: true
+    Tab: true
   #  
   # /cmi checkaccount $1-
-  /checkaccount: true
+  /checkaccount:
+    Enabled: true
+    Tab: true
   #  
   # /cmi checkban $1-
-  /checkban: true
+  /checkban:
+    Enabled: true
+    Tab: true
   #  
   # /cmi checkcommand $1-
-  /checkcommand: true
+  /checkcommand:
+    Enabled: true
+    Tab: true
   #  
   # /cmi checkexp $1-
-  /checkexp: true
+  /checkexp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi checkperm $1-
-  /checkperm: true
+  /checkperm:
+    Enabled: true
+    Tab: true
   #  
   # /cmi cheque $1-
-  /cheque: true
+  /cheque:
+    Enabled: true
+    Tab: true
   #  
   # /cmi clear $1-
-  /clear: true
-  /ci: true
+  /clear:
+    Enabled: true
+    Tab: true
+  /ci:
+    Enabled: true
+    Tab: true
   #  
   # /cmi clearchat $1-
-  /clearchat: true
-  /cc: true
+  /clearchat:
+    Enabled: true
+    Tab: true
+  /cc:
+    Enabled: true
+    Tab: true
   #  
   # /cmi clearender $1-
-  /clearender: true
+  /clearender:
+    Enabled: true
+    Tab: true
   #  
   # /cmi colorlimits $1-
-  /colorlimits: true
+  /colorlimits:
+    Enabled: true
+    Tab: true
   #  
   # /cmi colorpicker $1-
-  /colorpicker: true
+  /colorpicker:
+    Enabled: true
+    Tab: true
   #  
   # /cmi colors $1-
-  /colors: true
+  /colors:
+    Enabled: true
+    Tab: true
   #  
   # /cmi commandspy $1-
-  /commandspy: true
+  /commandspy:
+    Enabled: true
+    Tab: true
   #  
   # /cmi compass $1-
-  /compass: true
+  /compass:
+    Enabled: true
+    Tab: true
   #  
   # /cmi condense $1-
-  /condense: true
-  /compact: true
+  /condense:
+    Enabled: true
+    Tab: true
+  /compact:
+    Enabled: true
+    Tab: true
   #  
   # /cmi counter $1-
-  /counter: true
+  /counter:
+    Enabled: true
+    Tab: true
   #  
   # /cmi cplaytime $1-
-  /cplaytime: true
+  /cplaytime:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ctellraw $1-
-  /ctellraw: true
+  /ctellraw:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ctext $1-
-  /ctext: true
+  /ctext:
+    Enabled: true
+    Tab: true
   #  
   # /cmi cuff $1-
-  /cuff: true
+  /cuff:
+    Enabled: true
+    Tab: true
   # /cmi cuff false $1-
-  /uncuff: true
+  /uncuff:
+    Enabled: true
+    Tab: true
   #  
   # /cmi customrecipe $1-
-  /customrecipe: true
+  /customrecipe:
+    Enabled: true
+    Tab: true
   #  
   # /cmi dback $1-
-  /dback: true
+  /dback:
+    Enabled: true
+    Tab: true
   #  
   # /cmi disableenchant $1-
-  /disableenchant: true
+  /disableenchant:
+    Enabled: true
+    Tab: true
   #  
   # /cmi dispose $1-
-  /dispose: true
+  /dispose:
+    Enabled: true
+    Tab: true
   #  
   # /cmi distance $1-
-  /distance: true
+  /distance:
+    Enabled: true
+    Tab: true
   #  
   # /cmi donate $1-
-  /donate: true
+  /donate:
+    Enabled: true
+    Tab: true
   #  
   # /cmi dsign $1-
-  /dsign: true
+  /dsign:
+    Enabled: true
+    Tab: true
   #  
   # /cmi dye $1-
-  /dye: true
+  /dye:
+    Enabled: true
+    Tab: true
   #  
   # /cmi editctext $1-
-  /editctext: true
+  /editctext:
+    Enabled: true
+    Tab: true
   #  
   # /cmi editlocale $1-
-  /editlocale: true
+  /editlocale:
+    Enabled: true
+    Tab: true
   #  
   # /cmi editplaytime $1-
-  /editplaytime: true
+  /editplaytime:
+    Enabled: true
+    Tab: true
   #  
   # /cmi editwarnings $1-
-  /editwarnings: true
+  /editwarnings:
+    Enabled: true
+    Tab: true
   #  
   # /cmi editwarp $1-
-  /editwarp: true
+  /editwarp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi effect $1-
-  /effect: true
+  /effect:
+    Enabled: true
+    Tab: true
   #  
   # /cmi enchant $1-
-  /enchant: true
+  /enchant:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ender $1-
-  /ender: true
-  /ce: true
-  /ec: true
-  /cend: true
-  /enderchest: true
-  /oe: true
-  /echest: true
+  /ender:
+    Enabled: true
+    Tab: true
+  /ce:
+    Enabled: true
+    Tab: true
+  /ec:
+    Enabled: true
+    Tab: true
+  /cend:
+    Enabled: true
+    Tab: true
+  /enderchest:
+    Enabled: true
+    Tab: true
+  /oe:
+    Enabled: true
+    Tab: true
+  /echest:
+    Enabled: true
+    Tab: true
   #  
   # /cmi endgateway $1-
-  /endgateway: true
+  /endgateway:
+    Enabled: true
+    Tab: true
   #  
   # /cmi entityinfo $1-
-  /entityinfo: true
+  /entityinfo:
+    Enabled: true
+    Tab: true
   #  
   # /cmi entitynbt $1-
-  /entitynbt: true
+  /entitynbt:
+    Enabled: true
+    Tab: true
   #  
   # /cmi exp $1-
-  /exp: true
+  /exp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ext $1-
-  /ext: true
+  /ext:
+    Enabled: true
+    Tab: true
   #  
   # /cmi falldistance $1-
-  /falldistance: true
+  /falldistance:
+    Enabled: true
+    Tab: true
   #  
   # /cmi feed $1-
-  /feed: true
+  /feed:
+    Enabled: true
+    Tab: true
   #  
   # /cmi findbiome $1-
-  /findbiome: true
+  /findbiome:
+    Enabled: true
+    Tab: true
   #  
   # /cmi fixchunk $1-
-  /fixchunk: true
+  /fixchunk:
+    Enabled: true
+    Tab: true
   #  
   # /cmi flightcharge $1-
-  /flightcharge: true
+  /flightcharge:
+    Enabled: true
+    Tab: true
   # /cmi flightcharge recharge $1-
-  /recharge: true
-  /fcharge: true
+  /recharge:
+    Enabled: true
+    Tab: true
+  /fcharge:
+    Enabled: true
+    Tab: true
   #  
   # /cmi fly $1-
-  /fly: true
+  /fly:
+    Enabled: true
+    Tab: true
   #  
   # /cmi flyc $1-
-  /flyc: true
+  /flyc:
+    Enabled: true
+    Tab: true
   #  
   # /cmi flyspeed $1-
-  /flyspeed: true
-  /fspeed: true
+  /flyspeed:
+    Enabled: true
+    Tab: true
+  /fspeed:
+    Enabled: true
+    Tab: true
   #  
   # /cmi gamerule $1-
-  /gamerule: true
+  /gamerule:
+    Enabled: true
+    Tab: true
   #  
   # /cmi getbook $1-
-  /getbook: true
+  /getbook:
+    Enabled: true
+    Tab: true
   #  
   # /cmi give $1-
-  /give: true
+  /give:
+    Enabled: true
+    Tab: true
   #  
   # /cmi giveall $1-
-  /giveall: true
+  /giveall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi glow $1-
-  /glow: true
+  /glow:
+    Enabled: true
+    Tab: true
   #  
   # /cmi gm $1-
-  /gm: true
-  /gamemode: true
+  /gm:
+    Enabled: true
+    Tab: true
+  /gamemode:
+    Enabled: true
+    Tab: true
   # /cmi gm creative $1-
-  /gmc: true
+  /gmc:
+    Enabled: true
+    Tab: true
   # /cmi gm survival $1-
-  /gms: true
+  /gms:
+    Enabled: true
+    Tab: true
   # /cmi gm spectator $1-
-  /gmsp: true
+  /gmsp:
+    Enabled: true
+    Tab: true
   # /cmi gm adventure $1-
-  /gma: true
+  /gma:
+    Enabled: true
+    Tab: true
   #  
   # /cmi god $1-
-  /god: true
+  /god:
+    Enabled: true
+    Tab: true
   #  
   # /cmi groundclean $1-
-  /groundclean: true
+  /groundclean:
+    Enabled: true
+    Tab: true
   #  
   # /cmi haspermission $1-
-  /haspermission: true
+  /haspermission:
+    Enabled: true
+    Tab: true
   #  
   # /cmi hat $1-
-  /hat: true
+  /hat:
+    Enabled: true
+    Tab: true
   #  
   # /cmi head $1-
-  /head: true
+  /head:
+    Enabled: true
+    Tab: true
   #  
   # /cmi heal $1-
-  /heal: true
+  /heal:
+    Enabled: true
+    Tab: true
   #  
   # /cmi helpop $1-
-  /helpop: true
+  /helpop:
+    Enabled: true
+    Tab: true
   #  
   # /cmi hideflags $1-
-  /hideflags: true
+  /hideflags:
+    Enabled: true
+    Tab: true
   #  
   # /cmi hologram $1-
-  /hologram: true
+  /hologram:
+    Enabled: true
+    Tab: true
   #  
   # /cmi hologrampages $1-
-  /hologrampages: true
+  /hologrampages:
+    Enabled: true
+    Tab: true
   #  
   # /cmi home $1-
-  /home: true
+  /home:
+    Enabled: true
+    Tab: true
   #  
   # /cmi homes $1-
-  /homes: true
+  /homes:
+    Enabled: true
+    Tab: true
   #  
   # /cmi hunger $1-
-  /hunger: true
+  /hunger:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ic $1-
-  /ic: true
+  /ic:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ifoffline $1-
-  /ifoffline: true
+  /ifoffline:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ifonline $1-
-  /ifonline: true
+  /ifonline:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ignore $1-
-  /ignore: true
-  /ignorelist: true
+  /ignore:
+    Enabled: true
+    Tab: true
+  /ignorelist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi importfrom $1-
-  /importfrom: true
+  /importfrom:
+    Enabled: true
+    Tab: true
   #  
   # /cmi importoldusers $1-
-  /importoldusers: true
+  /importoldusers:
+    Enabled: true
+    Tab: true
   #  
   # /cmi info $1-
-  /info: true
-  /whois: true
+  /info:
+    Enabled: true
+    Tab: true
+  /whois:
+    Enabled: true
+    Tab: true
   #  
   # /cmi inv $1-
-  /inv: true
-  /cinv: true
-  /invsee: true
-  /oi: true
+  /inv:
+    Enabled: true
+    Tab: true
+  /cinv:
+    Enabled: true
+    Tab: true
+  /invsee:
+    Enabled: true
+    Tab: true
+  /oi:
+    Enabled: true
+    Tab: true
   #  
   # /cmi invcheck $1-
-  /invcheck: true
+  /invcheck:
+    Enabled: true
+    Tab: true
   #  
   # /cmi invlist $1-
-  /invlist: true
+  /invlist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi invload $1-
-  /invload: true
+  /invload:
+    Enabled: true
+    Tab: true
   #  
   # /cmi invremove $1-
-  /invremove: true
+  /invremove:
+    Enabled: true
+    Tab: true
   #  
   # /cmi invremoveall $1-
-  /invremoveall: true
+  /invremoveall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi invsave $1-
-  /invsave: true
+  /invsave:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ipban $1-
-  /ipban: true
+  /ipban:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ipbanlist $1-
-  /ipbanlist: true
+  /ipbanlist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi item $1-
-  /item: true
-  /i: true
+  /item:
+    Enabled: true
+    Tab: true
+  /i:
+    Enabled: true
+    Tab: true
   #  
   # /cmi itemcmdata $1-
-  /itemcmdata: true
+  /itemcmdata:
+    Enabled: true
+    Tab: true
   #  
   # /cmi itemframe $1-
-  /itemframe: true
+  /itemframe:
+    Enabled: true
+    Tab: true
   #  
   # /cmi iteminfo $1-
-  /iteminfo: true
+  /iteminfo:
+    Enabled: true
+    Tab: true
   #  
   # /cmi itemlore $1-
-  /itemlore: true
-  /ilore: true
+  /itemlore:
+    Enabled: true
+    Tab: true
+  /ilore:
+    Enabled: true
+    Tab: true
   #  
   # /cmi itemname $1-
-  /itemname: true
-  /iname: true
-  /rename: true
+  /itemname:
+    Enabled: true
+    Tab: true
+  /iname:
+    Enabled: true
+    Tab: true
+  /rename:
+    Enabled: true
+    Tab: true
   #  
   # /cmi itemnbt $1-
-  /itemnbt: true
+  /itemnbt:
+    Enabled: true
+    Tab: true
   #  
   # /cmi jail $1-
-  /jail: true
+  /jail:
+    Enabled: true
+    Tab: true
   #  
   # /cmi jailedit $1-
-  /jailedit: true
+  /jailedit:
+    Enabled: true
+    Tab: true
   #  
   # /cmi jaillist $1-
-  /jaillist: true
+  /jaillist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi jump $1-
-  /jump: true
+  /jump:
+    Enabled: true
+    Tab: true
   #  
   # /cmi kick $1-
-  /kick: true
+  /kick:
+    Enabled: true
+    Tab: true
   #  
   # /cmi kill $1-
-  /kill: true
+  /kill:
+    Enabled: true
+    Tab: true
   #  
   # /cmi killall $1-
-  /killall: true
+  /killall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi kit $1-
-  /kit: true
-  /kits: true
+  /kit:
+    Enabled: true
+    Tab: true
+  /kits:
+    Enabled: true
+    Tab: true
   # /cmi kit -preview $1-
-  /kitpreview: true
+  /kitpreview:
+    Enabled: true
+    Tab: true
+  # /cmi kit -open $1-
+  /kitopen:
+    Enabled: true
+    Tab: true
   #  
   # /cmi kitcdreset $1-
-  /kitcdreset: true
+  /kitcdreset:
+    Enabled: true
+    Tab: true
   #  
   # /cmi kiteditor $1-
-  /kiteditor: true
+  /kiteditor:
+    Enabled: true
+    Tab: true
   #  
   # /cmi kitusagereset $1-
-  /kitusagereset: true
+  /kitusagereset:
+    Enabled: true
+    Tab: true
   #  
   # /cmi lastonline $1-
-  /lastonline: true
+  /lastonline:
+    Enabled: true
+    Tab: true
   #  
   # /cmi launch $1-
-  /launch: true
+  /launch:
+    Enabled: true
+    Tab: true
   #  
   # /cmi lfix $1-
-  /lfix: true
+  /lfix:
+    Enabled: true
+    Tab: true
   #  
   # /cmi list $1-
-  /list: true
+  /list:
+    Enabled: true
+    Tab: true
   #  
   # /cmi lockip $1-
-  /lockip: true
+  /lockip:
+    Enabled: true
+    Tab: true
   #  
   # /cmi mail $1-
-  /mail: true
+  /mail:
+    Enabled: true
+    Tab: true
   #  
   # /cmi mailall $1-
-  /mailall: true
+  /mailall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi maintenance $1-
-  /maintenance: true
+  /maintenance:
+    Enabled: true
+    Tab: true
   #  
   # /cmi maxhp $1-
-  /maxhp: true
+  /maxhp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi maxplayers $1-
-  /maxplayers: true
+  /maxplayers:
+    Enabled: true
+    Tab: true
   #  
   # /cmi me $1-
-  /me: true
+  /me:
+    Enabled: true
+    Tab: true
   #  
   # /cmi merchant $1-
-  /merchant: true
+  /merchant:
+    Enabled: true
+    Tab: true
   #  
   # /cmi migratedatabase $1-
-  /migratedatabase: true
+  /migratedatabase:
+    Enabled: true
+    Tab: true
   #  
   # /cmi mirror $1-
-  /mirror: true
+  /mirror:
+    Enabled: true
+    Tab: true
   #  
   # /cmi mobhead $1-
-  /mobhead: true
+  /mobhead:
+    Enabled: true
+    Tab: true
   #  
   # /cmi money $1-
-  /money: true
+  /money:
+    Enabled: true
+    Tab: true
   #  
   # /cmi more $1-
-  /more: true
+  /more:
+    Enabled: true
+    Tab: true
   #  
   # /cmi msg $1-
-  /msg: true
+  /msg:
+    Enabled: true
+    Tab: true
   #  
   # /cmi msgtoggle $1-
-  /msgtoggle: true
+  /msgtoggle:
+    Enabled: true
+    Tab: true
   #  
   # /cmi mute $1-
-  /mute: true
+  /mute:
+    Enabled: true
+    Tab: true
   #  
   # /cmi mutechat $1-
-  /mutechat: true
+  /mutechat:
+    Enabled: true
+    Tab: true
   #  
   # /cmi nameplate $1-
-  /nameplate: true
+  /nameplate:
+    Enabled: true
+    Tab: true
   #  
   # /cmi near $1-
-  /near: true
+  /near:
+    Enabled: true
+    Tab: true
   #  
   # /cmi nick $1-
-  /nick: true
+  /nick:
+    Enabled: true
+    Tab: true
   #  
   # /cmi notarget $1-
-  /notarget: true
+  /notarget:
+    Enabled: true
+    Tab: true
   #  
   # /cmi note $1-
-  /note: true
+  /note:
+    Enabled: true
+    Tab: true
   #  
   # /cmi openbook $1-
-  /openbook: true
+  /openbook:
+    Enabled: true
+    Tab: true
   #  
   # /cmi oplist $1-
-  /oplist: true
+  /oplist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi panimation $1-
-  /panimation: true
+  /panimation:
+    Enabled: true
+    Tab: true
   #  
   # /cmi patrol $1-
-  /patrol: true
+  /patrol:
+    Enabled: true
+    Tab: true
   #  
   # /cmi pay $1-
-  /pay: true
+  /pay:
+    Enabled: true
+    Tab: true
   #  
   # /cmi paytoggle $1-
-  /paytoggle: true
+  /paytoggle:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ping $1-
-  /ping: true
+  /ping:
+    Enabled: true
+    Tab: true
   #  
   # /cmi placeholders $1-
-  /placeholders: true
+  /placeholders:
+    Enabled: true
+    Tab: true
   #  
   # /cmi playercollision $1-
-  /playercollision: true
+  /playercollision:
+    Enabled: true
+    Tab: true
   #  
   # /cmi playtime $1-
-  /playtime: true
+  /playtime:
+    Enabled: true
+    Tab: true
   #  
   # /cmi playtimetop $1-
-  /playtimetop: true
+  /playtimetop:
+    Enabled: true
+    Tab: true
   #  
   # /cmi point $1-
-  /point: true
+  /point:
+    Enabled: true
+    Tab: true
   #  
   # /cmi portals $1-
-  /portals: true
+  /portals:
+    Enabled: true
+    Tab: true
   #  
   # /cmi pos $1-
-  /pos: true
+  /pos:
+    Enabled: true
+    Tab: true
   #  
   # /cmi preview $1-
-  /preview: true
+  /preview:
+    Enabled: true
+    Tab: true
   #  
   # /cmi prewards $1-
-  /prewards: true
+  /prewards:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ptime $1-
-  /ptime: true
+  /ptime:
+    Enabled: true
+    Tab: true
   #  
   # /cmi purge $1-
-  /purge: true
+  /purge:
+    Enabled: true
+    Tab: true
   #  
   # /cmi pweather $1-
-  /pweather: true
+  /pweather:
+    Enabled: true
+    Tab: true
   #  
   # /cmi rankdown $1-
-  /rankdown: true
+  /rankdown:
+    Enabled: true
+    Tab: true
   #  
   # /cmi rankinfo $1-
-  /rankinfo: true
+  /rankinfo:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ranklist $1-
-  /ranklist: true
+  /ranklist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi rankset $1-
-  /rankset: true
+  /rankset:
+    Enabled: true
+    Tab: true
   #  
   # /cmi rankup $1-
-  /rankup: true
+  /rankup:
+    Enabled: true
+    Tab: true
   #  
   # /cmi realname $1-
-  /realname: true
+  /realname:
+    Enabled: true
+    Tab: true
   #  
   # /cmi recipe $1-
-  /recipe: true
+  /recipe:
+    Enabled: true
+    Tab: true
   #  
   # /cmi reload $1-
-  /reload: true
+  /reload:
+    Enabled: true
+    Tab: true
   #  
   # /cmi removehome $1-
-  /removehome: true
-  /delhome: true
+  /removehome:
+    Enabled: true
+    Tab: true
+  /delhome:
+    Enabled: true
+    Tab: true
   #  
   # /cmi removeuser $1-
-  /removeuser: true
+  /removeuser:
+    Enabled: true
+    Tab: true
   #  
   # /cmi removewarp $1-
-  /removewarp: true
-  /delwarp: true
+  /removewarp:
+    Enabled: true
+    Tab: true
+  /delwarp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi repair $1-
-  /repair: true
+  /repair:
+    Enabled: true
+    Tab: true
   #  
   # /cmi repaircost $1-
-  /repaircost: true
+  /repaircost:
+    Enabled: true
+    Tab: true
   #  
   # /cmi replaceblock $1-
-  /replaceblock: true
+  /replaceblock:
+    Enabled: true
+    Tab: true
   #  
   # /cmi reply $1-
-  /reply: true
-  /r: true
+  /reply:
+    Enabled: true
+    Tab: true
+  /r:
+    Enabled: true
+    Tab: true
+  #  
+  # /cmi resetback $1-
+  /resetback:
+    Enabled: true
+    Tab: true
+  /rback:
+    Enabled: true
+    Tab: true
   #  
   # /cmi resetdbfields $1-
-  /resetdbfields: true
+  /resetdbfields:
+    Enabled: true
+    Tab: true
   #  
   # /cmi ride $1-
-  /ride: true
+  /ride:
+    Enabled: true
+    Tab: true
   #  
   # /cmi rt $1-
-  /rt: true
+  /rt:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sameip $1-
-  /sameip: true
+  /sameip:
+    Enabled: true
+    Tab: true
   #  
   # /cmi saturation $1-
-  /saturation: true
+  /saturation:
+    Enabled: true
+    Tab: true
   #  
   # /cmi saveall $1-
-  /saveall: true
+  /saveall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi saveditems $1-
-  /saveditems: true
+  /saveditems:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sc $1-
-  /sc: true
-  /scopy: true
+  /sc:
+    Enabled: true
+    Tab: true
+  /scopy:
+    Enabled: true
+    Tab: true
   #  
   # /cmi scan $1-
-  /scan: true
+  /scan:
+    Enabled: true
+    Tab: true
   #  
   # /cmi scavenge $1-
-  /scavenge: true
-  /salvage: true
-  /recycle: true
+  /scavenge:
+    Enabled: true
+    Tab: true
+  /salvage:
+    Enabled: true
+    Tab: true
+  /recycle:
+    Enabled: true
+    Tab: true
   #  
   # /cmi schedule $1-
-  /schedule: true
+  /schedule:
+    Enabled: true
+    Tab: true
   #  
   # /cmi se $1-
-  /se: true
+  /se:
+    Enabled: true
+    Tab: true
   #  
   # /cmi search $1-
-  /search: true
+  /search:
+    Enabled: true
+    Tab: true
   #  
   # /cmi seen $1-
-  /seen: true
+  /seen:
+    Enabled: true
+    Tab: true
   #  
   # /cmi select $1-
-  /select: true
+  /select:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sell $1-
-  /sell: true
+  /sell:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sendall $1-
-  /sendall: true
+  /sendall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi server $1-
-  /server: true
+  /server:
+    Enabled: true
+    Tab: true
   #  
   # /cmi serverlist $1-
-  /serverlist: true
+  /serverlist:
+    Enabled: true
+    Tab: true
   #  
   # /cmi servertime $1-
-  /servertime: true
+  /servertime:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setenchantworth $1-
-  /setenchantworth: true
+  /setenchantworth:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setfirstspawn $1-
-  /setfirstspawn: true
+  /setfirstspawn:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sethome $1-
-  /sethome: true
+  /sethome:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setmotd $1-
-  /setmotd: true
+  /setmotd:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setrt $1-
-  /setrt: true
+  /setrt:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setspawn $1-
-  /setspawn: true
+  /setspawn:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setwarp $1-
-  /setwarp: true
+  /setwarp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi setworth $1-
-  /setworth: true
+  /setworth:
+    Enabled: true
+    Tab: true
   #  
   # /cmi shadowmute $1-
-  /shadowmute: true
+  /shadowmute:
+    Enabled: true
+    Tab: true
   #  
   # /cmi shakeitoff $1-
-  /shakeitoff: true
+  /shakeitoff:
+    Enabled: true
+    Tab: true
   #  
   # /cmi shoot $1-
-  /shoot: true
+  /shoot:
+    Enabled: true
+    Tab: true
   #  
   # /cmi signspy $1-
-  /signspy: true
+  /signspy:
+    Enabled: true
+    Tab: true
   #  
   # /cmi silence $1-
-  /silence: true
+  /silence:
+    Enabled: true
+    Tab: true
   #  
   # /cmi silentchest $1-
-  /silentchest: true
+  /silentchest:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sit $1-
-  /sit: true
+  /sit:
+    Enabled: true
+    Tab: true
   #  
   # /cmi skin $1-
-  /skin: true
+  /skin:
+    Enabled: true
+    Tab: true
   #  
   # /cmi smite $1-
-  /smite: true
-  /lightning: true
-  /thor: true
+  /smite:
+    Enabled: true
+    Tab: true
+  /lightning:
+    Enabled: true
+    Tab: true
+  /thor:
+    Enabled: true
+    Tab: true
   #  
   # /cmi socialspy $1-
-  /socialspy: true
+  /socialspy:
+    Enabled: true
+    Tab: true
   #  
   # /cmi solve $1-
-  /solve: true
+  /solve:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sound $1-
-  /sound: true
+  /sound:
+    Enabled: true
+    Tab: true
   #  
   # /cmi spawn $1-
-  /spawn: true
+  /spawn:
+    Enabled: true
+    Tab: true
   #  
   # /cmi spawner $1-
-  /spawner: true
+  /spawner:
+    Enabled: true
+    Tab: true
   #  
   # /cmi spawnereditor $1-
-  /spawnereditor: true
+  /spawnereditor:
+    Enabled: true
+    Tab: true
   #  
   # /cmi spawnmob $1-
-  /spawnmob: true
+  /spawnmob:
+    Enabled: true
+    Tab: true
   #  
   # /cmi staffmsg $1-
-  /staffmsg: true
+  /staffmsg:
+    Enabled: true
+    Tab: true
   #  
   # /cmi stats $1-
-  /stats: true
+  /stats:
+    Enabled: true
+    Tab: true
   #  
   # /cmi statsedit $1-
-  /statsedit: true
+  /statsedit:
+    Enabled: true
+    Tab: true
   #  
   # /cmi status $1-
-  /status: true
-  /gc: true
-  /lag: true
+  /status:
+    Enabled: true
+    Tab: true
+  /gc:
+    Enabled: true
+    Tab: true
+  /lag:
+    Enabled: true
+    Tab: true
   #  
   # /cmi sudo $1-
-  /sudo: true
+  /sudo:
+    Enabled: true
+    Tab: true
   #  
   # /cmi suicide $1-
-  /suicide: true
+  /suicide:
+    Enabled: true
+    Tab: true
   #  
   # /cmi switchplayerdata $1-
-  /switchplayerdata: true
+  /switchplayerdata:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tablistupdate $1-
-  /tablistupdate: true
+  /tablistupdate:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tagtoggle $1-
-  /tagtoggle: true
+  /tagtoggle:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tempban $1-
-  /tempban: true
+  /tempban:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tempipban $1-
-  /tempipban: true
+  /tempipban:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tfly $1-
-  /tfly: true
+  /tfly:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tgod $1-
-  /tgod: true
+  /tgod:
+    Enabled: true
+    Tab: true
   #  
   # /cmi time $1-
-  /time: true
+  /time:
+    Enabled: true
+    Tab: true
   # /cmi time day $1-
-  /day: true
+  /day:
+    Enabled: true
+    Tab: true
   # /cmi time night $1-
-  /night: true
+  /night:
+    Enabled: true
+    Tab: true
   # /cmi time morning $1-
-  /morning: true
+  /morning:
+    Enabled: true
+    Tab: true
   # /cmi time dusk $1-
-  /dusk: true
+  /dusk:
+    Enabled: true
+    Tab: true
   #  
   # /cmi titlemsg $1-
-  /titlemsg: true
+  /titlemsg:
+    Enabled: true
+    Tab: true
   #  
   # /cmi toast $1-
-  /toast: true
+  /toast:
+    Enabled: true
+    Tab: true
   #  
   # /cmi togglecompass $1-
-  /togglecompass: true
+  /togglecompass:
+    Enabled: true
+    Tab: true
   #  
   # /cmi toggleshiftedit $1-
-  /toggleshiftedit: true
+  /toggleshiftedit:
+    Enabled: true
+    Tab: true
   #  
   # /cmi toggletotem $1-
-  /toggletotem: true
+  /toggletotem:
+    Enabled: true
+    Tab: true
   #  
   # /cmi top $1-
-  /top: true
+  /top:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tp $1-
-  /tp: true
+  /tp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpa $1-
-  /tpa: true
+  /tpa:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpaall $1-
-  /tpaall: true
+  /tpaall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpaccept $1-
-  /tpaccept: true
+  /tpaccept:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpahere $1-
-  /tpahere: true
+  /tpahere:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpall $1-
-  /tpall: true
+  /tpall:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpallworld $1-
-  /tpallworld: true
+  /tpallworld:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpbypass $1-
-  /tpbypass: true
+  /tpbypass:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpdeny $1-
-  /tpdeny: true
+  /tpdeny:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tphere $1-
-  /tphere: true
+  /tphere:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpo $1-
-  /tpo: true
+  /tpo:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpohere $1-
-  /tpohere: true
+  /tpohere:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tpopos $1-
-  /tpopos: true
+  /tpopos:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tppos $1-
-  /tppos: true
+  /tppos:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tps $1-
-  /tps: true
+  /tps:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tptoggle $1-
-  /tptoggle: true
+  /tptoggle:
+    Enabled: true
+    Tab: true
   #  
   # /cmi tree $1-
-  /tree: true
+  /tree:
+    Enabled: true
+    Tab: true
   #  
   # /cmi unban $1-
-  /unban: true
+  /unban:
+    Enabled: true
+    Tab: true
   #  
   # /cmi unbreakable $1-
-  /unbreakable: true
+  /unbreakable:
+    Enabled: true
+    Tab: true
   #  
   # /cmi uncondense $1-
-  /uncondense: true
+  /uncondense:
+    Enabled: true
+    Tab: true
   #  
   # /cmi unjail $1-
-  /unjail: true
+  /unjail:
+    Enabled: true
+    Tab: true
   #  
   # /cmi unloadchunks $1-
-  /unloadchunks: true
+  /unloadchunks:
+    Enabled: true
+    Tab: true
   #  
   # /cmi unmute $1-
-  /unmute: true
+  /unmute:
+    Enabled: true
+    Tab: true
   #  
   # /cmi unmutechat $1-
-  /unmutechat: true
+  /unmutechat:
+    Enabled: true
+    Tab: true
   #  
   # /cmi usermeta $1-
-  /usermeta: true
+  /usermeta:
+    Enabled: true
+    Tab: true
   #  
   # /cmi util $1-
-  /util: true
+  /util:
+    Enabled: true
+    Tab: true
   #  
   # /cmi vanish $1-
-  /vanish: true
-  /v: true
+  /vanish:
+    Enabled: true
+    Tab: true
+  /v:
+    Enabled: true
+    Tab: true
   #  
   # /cmi vanishedit $1-
-  /vanishedit: true
+  /vanishedit:
+    Enabled: true
+    Tab: true
   #  
   # /cmi version $1-
-  /version: true
+  /version:
+    Enabled: true
+    Tab: true
   #  
   # /cmi viewrange $1-
-  /viewrange: true
+  /viewrange:
+    Enabled: true
+    Tab: true
   #  
   # /cmi voteedit $1-
-  /voteedit: true
+  /voteedit:
+    Enabled: true
+    Tab: true
   #  
   # /cmi votes $1-
-  /votes: true
+  /votes:
+    Enabled: true
+    Tab: true
   #  
   # /cmi votetop $1-
-  /votetop: true
+  /votetop:
+    Enabled: true
+    Tab: true
   #  
   # /cmi walkspeed $1-
-  /walkspeed: true
-  /wspeed: true
+  /walkspeed:
+    Enabled: true
+    Tab: true
+  /wspeed:
+    Enabled: true
+    Tab: true
   #  
   # /cmi warn $1-
-  /warn: true
+  /warn:
+    Enabled: true
+    Tab: true
   #  
   # /cmi warnings $1-
-  /warnings: true
+  /warnings:
+    Enabled: true
+    Tab: true
   #  
   # /cmi warp $1-
-  /warp: true
+  /warp:
+    Enabled: true
+    Tab: true
   #  
   # /cmi warpgroups $1-
-  /warpgroups: true
+  /warpgroups:
+    Enabled: true
+    Tab: true
   #  
   # /cmi weather $1-
-  /weather: true
+  /weather:
+    Enabled: true
+    Tab: true
   # /cmi weather sun $1-
-  /sun: true
+  /sun:
+    Enabled: true
+    Tab: true
   # /cmi weather rain $1-
-  /rain: true
+  /rain:
+    Enabled: true
+    Tab: true
   # /cmi weather storm $1-
-  /storm: true
+  /storm:
+    Enabled: true
+    Tab: true
   #  
   # /cmi whowas $1-
-  /whowas: true
+  /whowas:
+    Enabled: true
+    Tab: true
   #  
   # /cmi workbench $1-
-  /workbench: true
-  /wb: true
-  /craft: true
+  /workbench:
+    Enabled: true
+    Tab: true
+  /wb:
+    Enabled: true
+    Tab: true
+  /craft:
+    Enabled: true
+    Tab: true
   #  
   # /cmi world $1-
-  /world: true
+  /world:
+    Enabled: true
+    Tab: true
   #  
   # /cmi worth $1-
-  /worth: true
+  /worth:
+    Enabled: true
+    Tab: true
   #  
   # /cmi worthlist $1-
-  /worthlist: true
+  /worthlist:
+    Enabled: true
+    Tab: true
