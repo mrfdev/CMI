@@ -1,0 +1,1676 @@
+# Language file you want to use
+Language: EN
+Economy:
+  Enabled: true
+  Confirmation: false
+  LogEnabled: true
+  log:
+    Unknown: true
+    Transfer: true
+  MaxChequeValue: 250000
+  PaymentWithShorts:
+    Allow: true
+    values:
+    - k-1000
+    - m-1000000
+  BalTop:
+    Exclude:
+    - Notch
+    - PewDiePie
+    DisplayWithShorts: true
+    ExcludeStartingWith:
+    - town_
+    - town-
+    - towny_
+    - towny-
+    IncludeFakes: false
+  Global:
+    StartingAmount: 100.0
+    MinimalAmount: 0.0
+    MaximumAmount: 1.0E8
+    MinimalPay: 0.01
+    Fractions: true
+    CurrencySymbol: $
+    MoneyFormat: '###,##0.00'
+    UseShortNumbers: false
+    ShortNumbersSuffixes:
+    - ''
+    - k
+    - m
+    - b
+    - t
+    - q
+    SwitchPlaces: false
+    Placing: '[symbol][money]'
+FileSave:
+  Async: false
+InteractiveCommands:
+  SignRegex: (\[([a-zA-Z0-9]+)\])
+  SortByDistance: true
+Optimizations:
+  MonochromeConsole: false
+  ImmortalityOnJoin: 3
+  Maintenance: false
+  MaintenanceAutoKick: false
+  MaintenanceBossBar: true
+  DisableTeamManagement: false
+  ArmorStands:
+    CheckBlockPlace: false
+  AutoDownload:
+    GeoIp: true
+    GeoLiteCity: false
+  ShowSkullOwner: false
+  ShowBeeHiveInformation: true
+  ElevatorIndicator: '[Elevator]'
+  ElevatorStaticIndicator: '[*]'
+  LongDateFormat2: dd/MM/yy HH:mm:ss
+  ShortDateFormat: dd/MM/yy
+  SellLog: true
+  PartialPlayerName: true
+  PrioritizeOnlinePlayers: false
+  CommandSorting: true
+  SimilarCommandChecker: 75
+  SimilarCommandPrevention: false
+  RemoveLabel: false
+  PermisionOnError: true
+  PermisionInConsole: true
+  Teleport:
+    SafeLocationDownThenUp: false
+    Invulnerability: 5
+    ToSpawnBefore: false
+    SwitchPlaces: false
+    CurrentLoc: true
+    JumpDefault: 100
+    TpaTime: 45
+    TpaWarmup: 0
+    TpaMove: true
+    TpaBlock: 90
+    TpBypass: 15
+    DenyConfirm: true
+    BlackListedItems:
+      Enabled: false
+      EnabledFor:
+        tp: true
+        tpa: true
+        tpahere: true
+        warp: true
+        home: true
+        spawn: true
+      List:
+      - Diamond
+      - DiamondBlock
+      - DiamondOre
+      - ironore:5
+    BackMinDistance: 5
+    BackWithWE: true
+    BackBlackList:
+    - run
+  Hat:
+    IgnoreLored: true
+  helpop:
+    feedbackMessage: true
+  IP:
+    Record: true
+    delay: 30
+  MaxHp: 200
+  PlayTimeFromStats: false
+  PreloadTopPlaytime: false
+  CMIPlayTimeTracking: true
+  PlaytimeTopExclude:
+  - Notch
+  - PewDiePie
+  - SantaClauseMofo
+  ItemName:
+    MarkChanged: false
+  ItemLore:
+    TypeBlackList:
+    - gold_nugget
+    MarkChanged: false
+  OnDurabilityLoss:
+    Tools:
+      Use: true
+      Percentage: 10
+    Armor:
+      Use: true
+      Percentage: 10
+  OnLimitedItemUse:
+    Inform: true
+  DisableWorldChunkCheckInfo: true
+  PreventEntityBoatEnter:
+    Monsters: false
+    Animals: false
+    Villagers: false
+  PreventBedExplosion:
+    Nether: true
+    TheEnd: true
+  PreventPlayersOnNetherRoof: true
+  PreventPlayersBelowBedrock: true
+  PreventIronGolem:
+    Roses: false
+  PreventHook: false
+  Commands:
+    ShowMainHelpPage: true
+    Near:
+      Approximate: true
+      DefaultDistance: 200
+      PointTo: true
+      Count: 10
+    Clear:
+      Confirmation: true
+      Exclude:
+      - NBT:ItemJoin Name
+      - NBT:ItemJoin.Name
+    List:
+      ASCOrder: true
+  Multicraft:
+    DisableList: false
+PlaytimeRewards:
+  Enabled: false
+  ExcludeAfk: true
+  RewardInform: 15
+  OneTimeAmount: 2
+  RequiresPermission: true
+Sleeping:
+  Speedup:
+    Enabled: true
+    Worlds: []
+    OnlyDurringNight: true
+    InfoType: title
+    ExcludeAfk: true
+    BaseSpeed: 50
+    MinSpeed: 5
+    MinBeforeSpeeding: 1
+    Inform: true
+    InformDelay: 30
+Compass:
+  BossBar: false
+  DefaultState: true
+  RequireCompass: true
+  UpdateInterval: 200
+  Shape: '------SW-------W-------NW-------N-------NE-------E-------SE-------S-'
+  Color: '&7'
+  ShowHome: true
+  Home: ۩
+  ShowSpawn: true
+  Spawn: ⤋
+  ShowDeath: true
+  Death: ☠
+  ShowCompassTarget: true
+  CompassTarget: ꖴ
+  Gradient:
+    Use: true
+    SouthColor: white
+    WestColor: orange
+    NorthColor: vulcan
+    EastColor: bitter_lemon
+ExploitPatcher:
+  PreventExpPortals: true
+  NoCommandsInBed: true
+Vault:
+  Money: true
+  Group: true
+Worth:
+  BadLore:
+  - right click to open /menu
+  CustomNameBlocking: true
+  LoreBlocking: true
+BossBar:
+  HpBarEnabled: true
+  HpBarBlackList:
+  - Ender_dragon
+Ban:
+  OverrideLoginMessage: true
+Homes:
+  Gui: true
+  Groups:
+    default: 6
+    builder: 12
+    donator: 14
+    staff: 100
+  BedInteraction: true
+  onlyShiftBed: false
+  RemoveBedLocationOnBedBreak: true
+  CheckBlockBreak: false
+  DefaultName: Home
+  DefaultBedName: Bed
+  ValidNameRegex: '[^a-zA-Z0-9\-\_]'
+ReSpawn:
+  Immortality: 6
+  Enabled: true
+  Global:
+    PriorityOrder:
+    - bedLocation
+    - homeLocation
+    - spawn
+    - warp!spawn
+    - worldSpawn
+  Specific:
+    spawn:
+    - spawn
+    - bedLocation
+    - homeLocation
+    - worldSpawn
+    mine:
+    - spawn
+    - bedLocation
+    - homeLocation
+    - worldSpawn
+    sanctuary:
+    - spawn
+    - bedLocation
+    - homeLocation
+    - worldSpawn
+    nether:
+    - anchor
+    - homeLocation
+    - spawn
+    - worldSpawn
+    legacy:
+    - bedLocation
+    - homeLocation
+    - spawn
+    - worldSpawn
+    general:
+    - bedLocation
+    - homeLocation
+    - spawn
+    - worldSpawn
+    ASkyGrid:
+    - spawn
+    - bedLocation
+    - homeLocation
+    - worldSpawn
+    end:
+    - spawn
+    - bedLocation
+    - homeLocation
+    - worldSpawn
+    oneblock:
+    - worldSpawn
+    - bedLocation
+    - spawn
+    - homeLocation
+Afk:
+  Enabled: true
+  PreventJumping: true
+  PreventDamage: false
+  CheckInterval: 10
+  StopPlayTime: true
+  AutoAfkIn: 1200
+  AutoAfkCmds:
+  - cmi broadcast !&6 * &l[playerDisplayName]&r &ehas gone AFK &7(Automatically)
+  ManualAfkCmds:
+  - cmi broadcast !&6 * &l[playerDisplayName]&r &ehas gone AFK &7(%cmi_user_afk_msg%)
+  AfkLeaveCmds:
+  - 'cmi ctellraw all <T>&6 * &l[playerDisplayName] &ehas returned from AFK &7(%cmi_user_afk_msg%)</T><H>&7Has
+    been away for: %cmi_user_afk_for%</H>'
+  AutoKickIn: -1
+  RepeatingAutoKickInterval: 300
+  RepeatKickCommand: false
+  AutoKickCmds:
+  - cmi warp spawn [playerName] -s
+  - cmi msg [playerName]  &eYou have been moved to spawn for idling more than [time]
+    - now you are safe!
+  DisabledWorlds:
+  - run
+  DisableOnInteract: true
+  SmartInteractCheck: true
+  AntiAfkMachines: true
+  PreventPushing: false
+  DisableOnInventoryClick: false
+  DisableOnitemDrop: true
+  DisableOnCommand: false
+  DisableOnPublicChat: true
+  DisableOnPrivateChat: true
+  DisableOnMove: true
+  DisableFishing: false
+  DisableItemPickup: true
+  PreventMobSpawning:
+    Enabled: true
+    Natural: true
+    Spawners: true
+    VillageDefence: true
+  DisableExpPickup: false
+Holograms:
+  CheckInterval: 2000
+  Defaults:
+    viewRange: 16
+    updateRange: 8
+    updateInterval: 0.0
+    pageChangeInterval: 0.0
+    placeUp: true
+Votifier:
+  CountVotes: true
+  MaxVotesInADay: 0
+  GeneralCooldown: 0
+  PerformCommands: false
+  CommandsOnVote:
+  - cmi give [playerName] diamond
+  ExtraRewardsEnabled: true
+  ExtraRewards:
+    '10':
+    - cmi heal [playerName]
+    - cmi money give [playerName] 1000
+    - 'cmi msg [playerName] &6 From the server owner: Thank you for voting!'
+    '100':
+    - cmi heal [playerName]
+    - cmi money give [playerName] 10000
+    - cmi give [playerName] diamond 32
+    - 'cmi msg [playerName] &6 From the server owner: Woah, 100 votes? Niiice!'
+    '1000':
+    - cmi heal [playerName]
+    - cmi money give [playerName] 100000
+    - cmi give [playerName] diamond_ore 64
+    - 'cmi msg [playerName] &6 From the server owner: 1k votes, niiiiceeeee !!!!'
+  ExcludeList:
+  - 1MBNetwork
+  - mrfloris
+Ranks:
+  AutoRankUp:
+    Delay: 30
+    Async: false
+    PlayerDelay: 120
+    progressBar: true
+  ListSamePathOnly: false
+  EffectUp: GColumn
+  OnlyHours: false
+  includeMinutes: true
+Signs:
+  CheckInterval: 5000
+  editBlackList:
+  - '[Shop]'
+Skins:
+  AutoApply: false
+  SteveOnOff: false
+  RequireSpecificPerm: false
+  SkinUpdateTimer: 60
+  SkinRequestFrequency: 10
+Alert:
+  Timer: 1440
+Notes:
+  ShowOnAlertEvent: true
+GroundClean:
+  WhiteList:
+  - itemType
+Chat:
+  ModifyChatFormat: true
+  ClickHoverMessages: true
+  DiscordSRV:
+    Enabled: true
+    GlobalChannel: global
+    Label: '(debug: label: {discord}) &2[&7D&2]'
+    UnlinkedLabel: '(debug: unlinked: {discord}) &4[&cD&4]'
+  DynMapChat: false
+  ReplyToLastMessenger: true
+  LastMessengerTimeOut: 120
+  PrivateMessagesGroups: false
+  TranslateLink: true
+  LinkRegex: ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
+  HoverItems: true
+  ItemRegex:
+  - (\[item\])
+  - (\[i\])
+  BungeeMessages: false
+  BungeePublicMessages: false
+  BungeeStaffMessages: false
+  GeneralFormat: '{#Edward}{world} {#Sirocco}<&e{displayName}{#Sirocco}> {#Geyser}{message}'
+  GeneralMessageFormat: '{message}'
+  GeneralRange: -1
+  ShoutRange: -1
+  ShoutCost: 0
+  ChatRoomShout: '!'
+  ChatRoomLife: 3600
+  ClickSuggestions:
+    pubmsg: '/msg [playerDisplayName] '
+    privmsg: '/msg [playerDisplayName] '
+    staffmsg: '/msg [playerDisplayName] '
+    helpop: '/msg [playerDisplayName] '
+    chatroom: '/msg [playerDisplayName] '
+    discord: '/msg [playerDisplayName] '
+  GroupFormat:
+    '1': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '2': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '3': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '4': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#f0ecd1}{message}'
+    '5': '{#Edward}%multiverse_world_alias% {#Sirocco}<&2{displayName}{#Sirocco}>
+      {#d7f0d1}{message}'
+    '6': '{#Edward}%multiverse_world_alias% {#Sirocco}<&2{displayName}{#Sirocco}>
+      {#d7f0d1}{message}'
+    '7': '{#Edward}%multiverse_world_alias% {#Sirocco}<&9{displayName}{#Sirocco}>
+      {#d1d6f0}{message}'
+    '8': '{#Edward}%multiverse_world_alias% {#Sirocco}<&9{displayName}{#Sirocco}>
+      {#d1d6f0}{message}'
+    '9': '{#Edward}%multiverse_world_alias% {#Sirocco}<&6{displayName}{#Sirocco}>
+      {#f0dfd1}{message}'
+    '10': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#895bf3}{displayName}{#Sirocco}>
+      {#d3cadb}{message}'
+    '11': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '12': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#d34087}{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '13': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#d34087}{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '14': '{#Edward}%multiverse_world_alias% {#Sirocco}<&4{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<&3{displayName}{#Sirocco}>
+      {#e6d1f0}{message}'
+  GroupMessageFormat:
+    '1': '{message}'
+    '2': '{message}'
+    '3': '{message}'
+    '4': '{#f0ecd1}{message}'
+    '5': '{#d7f0d1}{message}'
+    '6': '{#d7f0d1}{message}'
+    '7': '{#d1d6f0}{message}'
+    '8': '{#d1d6f0}{message}'
+    '9': '{#f0dfd1}{message}'
+    '10': '{#d3cadb}{message}'
+    '11': '{message}'
+    '12': '{#dbd1ca}{message}'
+    '13': '{#dbd1ca}{message}'
+    '14': '{#dbd1ca}{message}'
+    '15': '{#e6d1f0}{message}'
+  Colors:
+    PublicMessage: true
+    PrivateMessage: true
+    me: true
+    CleanUp:
+      publicmessage: false
+      privatemessage: true
+      me: true
+      signs: false
+      books: true
+      WhiteList:
+      - '&c❤&7'
+    NickName: true
+  IgnorePublicMessage: true
+  Tag:
+    Enabled: true
+    HardCoreMode: true
+    Color: '&b'
+    CommandsOnTag:
+    - asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName] -s
+    - asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName] -s
+    OnlyWhenAfk: false
+    RemoveEta: true
+Command:
+  CommandFilter:
+    Duplicate:
+      Use: true
+      Percentage: 80
+      Interval: 6
+      MinAmount: 3
+      WhiteList:
+      - msg
+      - r
+      - j
+      - jumpto
+      - rtp
+      - warp
+      - bs
+      - cmi
+      - baltop
+      - cmi baltop
+  Spy:
+    BlackListed:
+    - register
+    - login
+    - l
+    CommandList:
+    - cmi spawn
+    - cmi tp
+    - cmi tpa
+    - cmi heal
+    - cmi feed
+    - cmi fly
+PlayerNotes:
+  ExpiresIn: 30
+PlayerMail:
+  ExpiresIn: 364
+  mailAllDays: 7
+DisplayName:
+  Change: true
+  Format: '{prefix}{nickName}&r'
+  ValidNicknameRegex: '[^\p{L}0-9\-\_]'
+NickName:
+  BlackList:
+  - admin
+  - floris
+  - administrator
+  - mod
+  - moderator
+  - team
+  - god
+  - server
+  - staff
+  - staf
+  MinLength: 4
+  MaxLength: 16
+  Prefix: '~'
+  PrefixWhenDifferent: false
+  IncludeInTabComplete: true
+Dye:
+  BoundToPlayer: false
+ShowNewVersion: false
+Spawners:
+  FullDisable: false
+  Break:
+    Enabled: true
+    RequiresExactPermission: true
+    DropExp: true
+    SilkTouchLevel: 5
+    BaseDropChance: 100
+  Place:
+    Enabled: true
+    RequiresPermission: true
+    RequiresExactPermission: true
+  Interact:
+    EggRequiresPermission: true
+  TnTExplosionDrop:
+    use: false
+    Chance: 30
+  CreeperExplosionDrop:
+    use: false
+    Chance: 30
+  Charges:
+    Use: false
+    BreakWithoutCharge: false
+    List:
+      Noob:
+        Use: false
+        StartingCharge: 2
+        MaxCharge: 5
+        Cooldown: 3600
+        Bonus: 10
+      Advanced:
+        Use: false
+        StartingCharge: 3
+        MaxCharge: 6
+        Cooldown: 3000
+        Bonus: 10
+  Proximity:
+    Use: false
+    Range: 3
+ItemRenaming:
+  Prevent: true
+  GlobalDisable: false
+  List:
+  - mobspawner:([A-z]+ (?i)\w*spawner)
+  - GOLD_NUGGET
+SpawnMob:
+  MaxQuantity: 12
+  MaxPassengers: 12
+Counter:
+  Range: 32
+Mirror:
+  MaxRange: 64
+NetherPortal:
+  PreventCreation: true
+  MaxHeight: 23
+  MaxWidth: 23
+Portals:
+  CheckInterval: 250
+  CheckParticleInterval: 500
+  Defaults:
+    PerformCommands: true
+    Commands:
+    - cmi effect [playerName] blindness 2 1 -s
+Animations:
+  SitOnStairs: true
+  StairsAsChairs: true
+  SlabsAsChairs: false
+  CarpetsAsChairs: false
+  RemoveFromChairOnDamage: true
+  DoubleClick: false
+  DoubleClickDelay: 200
+  ChairRange: 3
+DamageControl:
+- nowalldamage:fly_into_wall:0
+- lowermagmacubedamage:hot_floor:0.5
+Totem:
+  RemoveFromInventory: true
+  Cooldown:
+    Use: true
+    Time: 120
+  Warmup:
+    Use: false
+    Time: 10
+  ProtectFromVoid: true
+  Effects:
+    Regeneration: 45
+    FireResistance: 40
+    Absorbtion: 5
+Elytra:
+  Boost:
+    SpeedLimit: 100
+    SpeedLimitStop: false
+    SpeedDecimals: false
+    GeneralMultyplier: 0.1
+    SuperMultyplier: 0.3
+    UseItems: false
+    ConsumedItem: '288'
+    Item: 288
+    LaunchItem: FEATHER
+    RequiresItem: true
+    Amount: 1
+    SuperAmount: 5
+    ShowParticles: true
+  Launch:
+    Time: 2
+  DisableRiptide: true
+  Fix:
+    PreventSelfDamage: true
+    PreventRocketUsage: false
+FlightCharge:
+  ShowBossBar: true
+  EnabledByDefault: true
+  AutoSwitch: false
+  ExpRechargeCost: 1.0
+  MoneyRechargeCost: 1.0
+  MaxChargeLevel: 1000
+  DeductOnIdling: 1
+  DeductOnlyForTime: 0.0
+  AutoRecharge:
+    From: 10.0
+    Amount: 25.0
+  DeductOnFallMulti: 2
+  DamageOnFall: true
+  DamageOnToggle: false
+  KillOnFall: false
+  GlowColor: none
+Point:
+  DefaultParticle: COLOURED_DUST
+Messages:
+  Login:
+    Disabled: false
+    AutoHideFrom: -1
+    Custom:
+      Use: true
+  Logout:
+    Disabled: false
+    AutoHideFrom: -1
+    Custom:
+      Use: true
+  FirstJoinMessage:
+    Use: true
+  DeathMessage:
+    AutoHideFrom: -1
+Books:
+  DefaultAuthor: Server
+  AddDate: false
+Motd: welcomeMessage
+Warnings:
+  Default:
+    LifeTime: 86400
+    Points: 1
+    DefaultReason: '&7Violated server rules'
+  Categories:
+    Swear:
+      LifeTime: 86400
+      Points: 3
+      DefaultReason: '&7Swearing'
+    Grief:
+      LifeTime: 86400
+      Points: 10
+      DefaultReason: '&7Griefing'
+    Bug:
+      LifeTime: 86400
+      Points: 30
+      DefaultReason: '&7Using bugs'
+    Cheat:
+      LifeTime: 86400
+      Points: 50
+      DefaultReason: '&7Using cheats'
+  Perform:
+    '3':
+    - cmi mute [playerName] 10m
+    - cmi msg [playerName] !&cMuted for &710 &cminutes for getting &73 &cwarnings!
+    '5':
+    - cmi kick [playerName] &cKicked for getting 5 warnings!
+    '10':
+    - cmi tempban [playerName] 5m &cTemporary banned for getting 10 warnings!
+Spawn:
+  SpawnOnJoin: false
+  Main:
+    World: spawn
+    X: 0.4647041358464349
+    Y: 64.0
+    Z: 132.81813865614373
+    Pitch: 13.799988
+    Yaw: -0.74994004
+    RespawnLocation: false
+    Rng: 0
+  FirstSpawn:
+    Use: true
+    World: spawn
+    X: 0.4647041358464349
+    Y: 64.0
+    Z: 132.81813865614373
+    Pitch: 0.65329355
+    Yaw: -0.9830429
+Newbie:
+  Kit: Newbie
+Kits:
+  GUI: true
+  FillEmptyFields: true
+  Buttons:
+    Cooldown: Watch
+    Usages: STONE_PLATE
+    Money: GOLD_INGOT
+    Exp: EXP_BOTTLE
+    Desc: WOOL:13
+    Back: Fence
+Warps:
+  GUI: true
+  GUIOnCreation: true
+  MinLenght: 3
+  MaxLenght: 16
+  perPage: 45
+  showCreator: false
+  requirePerm: false
+GlobalGui:
+  EmptyField: GRAY_STAINED_GLASS_PANE
+DynamicViewRange:
+  Enabled: false
+WorldLimits:
+  Enabled: true
+  Gamemode:
+  - spawn:survival
+  - general:survival
+  - sanctuary:adventure
+  - legacy:adventure
+  Fly:
+  - spawn:false
+  - general:false
+  ElytraFlight:
+  - run:False
+  FlyAboveRoof: true
+  FlyAboveRoofLimitations:
+  - spawn-256
+  - mine-256
+  - nether-128
+  - sanctuary-256
+  - builders-256
+  - legacy-256
+  - general-256
+  - end-256
+  - skygrid-256
+  GodMode:
+  - spawn:False
+  SpawnReasons:
+    spawn:
+    - None
+    mine:
+    - None
+    nether:
+    - None
+    sanctuary:
+    - None
+    legacy:
+    - None
+    general:
+    - None
+    ASkyGrid:
+    - None
+    end:
+    - None
+CheckForNameChange:
+  OnLogin: true
+  AmountToShow: 5
+  OnInfoShow: true
+  PerformCommandsOnNewName: true
+  NameChangeCommands:
+  - 'asConsole! cmi broadcast !&3[oldname] logged in with new name: [newname]'
+inv:
+  SaveOnDeath: true
+  IgnoreEmpty: false
+  RequiresPermission: false
+  SavedInventories: 24
+  restore:
+    HP: true
+    XP: true
+    Food: true
+    Saturation: true
+    Potions: true
+    Items: true
+hunger:
+  overide: false
+heal:
+  RemoveNegative:
+    use: false
+    List:
+    - blindness
+    - confusion
+    - harm
+    - hunger
+    - poison
+    - slow
+    - slow_digging
+    - weakness
+    - wither
+Cuff:
+  Mute: true
+  AllowedCommands:
+  - msg
+  - r
+  - helpop
+  - cmi msg
+  - cmi reply
+Mute:
+  DenyPrivateMessages: true
+Dispose:
+  UILines: 4
+ItemRepair:
+  RepairShare:
+    ProtectNormalRepair: false
+    ProtectCommandRepair: false
+    Durability: 0
+    BypassWithRepairPermission: true
+    AddLore: true
+    CancelEvent: true
+    InformWithMessage: true
+  Repair:
+    BlockedCustomDataID:
+    - 298785423
+    Confirmation: true
+    CostsMoney: false
+    BasePrice: 100.0
+    CheckDurability: true
+    WorthPercentage: 10.0
+    enchantWorthPercentage: 10.0
+Cooldowns:
+  Enabled: false
+  List:
+  - Heal:180
+  - Feed:120
+Combat:
+  Timer: 12
+  noGodDamage: true
+  noGodDamageInform: true
+  IncludeVictim: true
+  Player:
+    DisableFlight: true
+    DisableFallDamage: false
+    ShowBossBar: true
+    BlockCommands: true
+    AllowedCommands:
+    - msg
+    - r
+    - tell
+    MakeBlackList: false
+  Mob:
+    DisableFlight: false
+    DisableFallDamage: false
+    ShowBossBar: false
+    BlockCommands: false
+    AllowedCommands:
+    - msg
+    - r
+    - tell
+    MakeBlackList: false
+  Heads:
+    Player:
+      Drop: true
+      Percentage: 25
+      LowerChanceOfterDrop: 50.0
+      LootBonus:
+        Enabled: false
+        Lvl1: 5.0
+        Lvl2: 15.0
+        Lvl3: 30.0
+    Mob:
+      Drop: true
+ShulkerBoxes:
+  PreventInCombat: true
+Vanish:
+  Defaults:
+    damageToEntity: false
+    playerDamage: false
+    itemPickup: false
+    mobAggro: false
+    interaction: false
+    noisyChest: false
+    informOnLeave: false
+    informOnJoin: false
+    nightVision: true
+    bossbar: true
+    afkcommands: false
+    PrivateMessages: false
+    relogDisable: false
+    noMessages: false
+    fakeJoinLeave: false
+    mobSpawning: false
+    stopPlaytime: true
+WarmUps:
+  Enabled: false
+  InformOnNoMove: true
+  showCounterBarInfo: false
+  showBossBarInfo: true
+  List:
+  - tp:5:false
+  - back:3:false
+Jail:
+  CheckInterval: 500
+  DefaultTime: 900
+  ChatRange: 0
+  CountWhileOffline: false
+  NoAfk: false
+  PreventDamage: true
+  PreventHunger: true
+  WhiteListedCmds:
+  - cmi msg
+  - cmi reply
+  - cmi mail
+  - msg
+  - r
+  - reply
+  - mail
+scan:
+  SoftCap: 19.0
+  DefaultSpeed: 15
+  GlobalRangeByDefault: false
+  DefaultRange: 2
+  EnablePurge: false
+search:
+  EnablePurge: false
+lfix:
+  SoftCap: 19.0
+  DefaultSpeed: 15
+purge:
+  CleanOnStart: false
+  OfflineDays: 364
+  PlayerData:
+    Enabled: false
+    SourceFolder: spawn/playerdata
+    DeleteFiles: false
+    DestinationFolder: spawn/playerdata_backup
+  PlayerStats:
+    Enabled: false
+    SourceFolder: spawn/stats
+    DeleteFiles: false
+    DestinationFolder: spawn/stats_backup
+  PlayerAdvancements:
+    Enabled: false
+    SourceFolder: spawn/Advancements
+    DeleteFiles: false
+    DestinationFolder: spawn/Advancements_backup
+  Essentials:
+    Enabled: false
+    SourceFolder: plugins/Essentials/userdata
+    DeleteFiles: false
+    DestinationFolder: plugins/Essentials/userdata_backup
+  LWC:
+    Enabled: false
+Selection:
+  Tool: wooden_shovel
+Time:
+  Day: '12:00'
+  Night: '24:00'
+  Morning: 06:00
+  Dusk: '18:00'
+  AutoTime:
+    Interval: 60
+    Smooth: true
+    SmoothSpeed: 100
+    Worlds: []
+  TimeSpeed:
+    spawn:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    builders:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    legacy:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    owo:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    SpawnPhoenix23:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    PrisonMines:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    run:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    Arenasw1:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    LobbyPhoenix24:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    acid:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    general:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    uwu:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    sushi:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    mine:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    sanctuary:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    debug:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    cave:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    hardcore:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    oneblock:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    pvp:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    oldtest:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    generalx:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    skyblock:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    skygrid:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+RandomTeleportation:
+  AutoGenerateWorlds: true
+  Worlds:
+    mine:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 225
+      CenterZ: 175
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    skygrid:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    nether:
+      Enabled: true
+      MaxRange: 4500
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    sanctuary:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    legacy:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    end:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    spawn:
+      Enabled: false
+      MaxRange: 250
+      MinRange: 50
+      CenterX: 0
+      CenterZ: 132
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    general:
+      Enabled: true
+      MaxRange: 14000
+      MinRange: 1500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: false
+      minY: 54
+      maxY: 250
+    builders:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    run:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    skyblock:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    cave:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    acid:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    uwu:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    pvp:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    oneblock:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    debug:
+      Enabled: false
+      MaxRange: 50
+      MinRange: 5
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    sushi:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    owo:
+      Enabled: false
+      MaxRange: 950
+      MinRange: 250
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    generalx:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    hardcore:
+      Enabled: false
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    oldtest:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    Arenasw1:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    PrisonMines:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    LobbyPhoenix24:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    SpawnPhoenix23:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+  Cooldown: 5
+  MaxTries: 20
+  ExcludedBiomes:
+  - Ocean
+  - Deep ocean
+Enchanting:
+  enchantLimits:
+    Enabled: false
+    MaxLevel:
+      protection_fire: 4
+      damage_all: 5
+      arrow_fire: 1
+      soul_speed: 3
+      water_worker: 1
+      arrow_knockback: 2
+      loyalty: 3
+      depth_strider: 3
+      vanishing_curse: 1
+      durability: 3
+      knockback: 2
+      luck: 3
+      binding_curse: 1
+      loot_bonus_blocks: 3
+      protection_environmental: 4
+      dig_speed: 5
+      mending: 1
+      frost_walker: 2
+      lure: 3
+      loot_bonus_mobs: 3
+      piercing: 4
+      protection_explosions: 4
+      damage_undead: 5
+      multishot: 1
+      fire_aspect: 2
+      channeling: 1
+      sweeping_edge: 3
+      thorns: 3
+      damage_arthropods: 5
+      oxygen: 3
+      riptide: 3
+      silk_touch: 1
+      quick_charge: 3
+      protection_projectile: 4
+      impaling: 5
+      protection_fall: 4
+      arrow_damage: 5
+      arrow_infinite: 1
+  RequireSpecificPermission: false
+  PermissionLevelLimit: false
+Scavenge:
+  ItemBreak:
+    Base: 8.0
+    ForEachEnchant: 2.0
+    ForEachEnchantLevel: 2.0
+    MaxBreakChance: 100.0
+    BreakDurabilityCheck: 50.0
+    DurabilityCheck: true
+    IngredientReturn:
+      Base: 25.0
+  EnchantExtractionFail:
+    Base: 10.0
+    ForEachLevel: 10.0
+    MaxFailChance: 75.0
+    LevelLower:
+      Base: 50.0
+      ForEachLevel: 5.0
+      MaxChance: 75.0
+  Cost:
+    Base: 100.0
+    Extra: 5.0
+  BlackList:
+  - diamond
+  - ironingot
+  - goldingot
+  - coal
+  BlackToWhiteList: false
+  AllowItemPickups: false
+  ResetRepairCost: true
+BungeeCord:
+  Enabled: false
+  NamesInTabComplete: false
+Sounds:
+  Enabled: true
+  WarpGuiOpen: block_beacon_activate:2:1
+  TeleportHome: entity_enderman_teleport:0.5:1
+  TeleportWarp: entity_enderman_teleport:0.5:1
+  TeleportFail: entity_villager_no:2:1
+  PrivateMessage: ''
+  TpaRequest: block_anvil_land:0.5:2
+  MailNotification: block_anvil_land:0.5:2
+  TeleportUp: entity_enderman_teleport:2:1
+  TeleportDown: entity_enderman_teleport:0.2:1
+Particles:
+  Enabled: true
+  TotemHalo: circle;effect:reddust;c:255,255,10;twist;part:3;offset:0,2,0;pitch:90;radius:0.3;interval:2
+  Healing: circle;effect:heart;dur:0.1;part:1;offset:0,1.7,0;radius:0.3
+  GlyphHead: circle;effect:flying_glyph;dur:5;pitchc:15;part:10;offset:0,1.7,0;radius:0.5;yawc:12;color:rs;pitch:90
+  tpaWarmup: circle;effect:flying_glyph;dur:5;pitchc:15;part:10;offset:0,1.7,0;radius:0.5;yawc:12;color:rs;pitch:90
+  GColumn: circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02
+  SmallBoop: circle;effect:flying_glyph;yaw:[playerName];pitch:[playerName];r:0.1;part:3;rc:0.03;mr:0.3;twist
+  HologramInteraction: circle;effect:flying_glyph;yaw:[playerName];pitch:[playerName];r:0.1;part:3;rc:0.03;mr:0.3;twist
+  TpUp: circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0
+  TpDown: circle;c:150,50,10;part:5;r:0.5;pitch:90;move:0,-0.33,0;offset:0,2.2,0
+  custom1: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom2: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom3: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom4: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom5: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom6: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom7: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom8: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom9: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom10: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom11: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom12: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom13: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom14: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom15: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom16: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom17: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom18: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom19: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom20: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom21: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom22: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom23: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom24: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom25: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom26: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom27: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom28: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom29: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+  custom30: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
+TeleportEffects:
+  Unknown:
+    From: ''
+    To: ''
+  Elevator:
+    From: ''
+    To: ''
+  SafeLogin:
+    From: ''
+    To: ''
+  Spawn:
+    From: ''
+    To: ''
+  NetherRoof:
+    From: ''
+    To: ''
+  BelowBedrock:
+    From: ''
+    To: ''
+  Back:
+    From: ''
+    To: ''
+  DBack:
+    From: ''
+    To: ''
+  Home:
+    From: ''
+    To: ''
+  Jump:
+    From: ''
+    To: ''
+  Patrol:
+    From: ''
+    To: ''
+  Portal:
+    From: ''
+    To: ''
+  WarmUp:
+    From: ''
+    To: ''
+  Biome:
+    From: ''
+    To: ''
+  FlightCharge:
+    From: ''
+    To: ''
+  InvEdit:
+    From: ''
+    To: ''
+  TimedCommand:
+    From: ''
+    To: ''
+  TpaAll:
+    From: ''
+    To: ''
+  Tp:
+    From: ''
+    To: ''
+  Top:
+    From: ''
+    To: ''
+  TpAll:
+    From: ''
+    To: ''
+  TpHere:
+    From: ''
+    To: ''
+  TpPos:
+    From: ''
+    To: ''
+  Warp:
+    From: ''
+    To: ''
+  JoinSpawn:
+    From: ''
+    To: ''
+  Totem:
+    From: ''
+    To: ''
+  randomTp:
+    From: ''
+    To: ''
+  World:
+    From: ''
+    To: ''
+  HoloEdit:
+    From: ''
+    To: ''
+PotionEffects:
+  DeductWhileOffline: false

@@ -1,0 +1,42 @@
+Welcome new player!
+
+We are a family friendly community.
+Respect players and their builds.
+Before playing, learn the server /rules
+
+Check the next page to learn about Survival, Oneblock, Skyblock, etc.
+<NextPage>
+Before we tell you about our worlds and features, let's learn about our /rules 
+
+We perm ban rule breakers, we don't want a toxic community
+
+We allow ages 13+, we don't allow grief, item stealing, or use of cheats.
+<NextPage>
+Some of our features
+
+In our main world you can enjoy the most features. There we have: Jobs, mcMMO, Economy, and more. 
+
+Our /forums have indepth guides to most of our features and commands.
+<NextPage>
+Our main survival world is /general Once you find a spot with /rtp you can /sethome base. 
+
+At any point you can type /home base to get there again. 
+
+We never delete our survival worlds.
+<NextPage>
+You can get resources from /mine, /end, and /nether (temp worlds)
+
+We also have gametypes like /oneblock, /skyblock To start your own skyblock just type: /skyblock. 
+
+Check /worlds to learn more
+<NextPage>
+&2 Some 1MB links:
+
+<T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>www.1moreblock.com</URL>
+<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/KzTDhxvm</T><H>Click to load our Discord Server</H><URL>discord.gg/KzTDhxvm</URL>
+<T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>twitch.tv/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>youtube.com/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>twitter.com/floris</URL>
+
+{#Cerulean} 
+{#Cerulean} Need help? Ask our players, or on /discord
