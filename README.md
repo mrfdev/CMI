@@ -149,6 +149,8 @@ CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have
 
 _Disclaimer; I am a moderator on the zrips Discord_
 
+Oh yeah, and Floris, OMGboards.com nor 1MoreBlock.com claim or pretend to be-, nor are associated with-, and are not supported by Zrips, Mojang or Microsoft.
+
 ## :punch: Support this project
 
 This is not my work, there's no salary. This is a hobby, and a hobby costs money. If you wish to say thank you for your support, thank you for sharing what you've learned with others: Please consider a free donation through contributing to this project. Or perhaps through a personal-gift of a beer or pizza slice with [a PayPal donation](https://www.paypal.me/mrfloris). 
