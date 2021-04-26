@@ -1,299 +1,300 @@
 ```
-/cmi actionbarmsg [playerName/all] (-s:[seconds]) [message]
-/cmi afk (-p:playerName) (reason) (-s)
-/cmi afkcheck [playerName]
-/cmi air [playerName] [amount]
-/cmi alert [playerName] (reason)
-/cmi alertlist
-/cmi aliaseditor (new) (alias-cmd)
-/cmi anvil (playerName)
-/cmi armorstand (last/near)
-/cmi attachcommand [command/-clear]
-/cmi autorecharge (playerName) [exp/money/off] (-s)
-/cmi back (playerName) (-s)
-/cmi balance (playerName)
-/cmi baltop (playerName)
-/cmi ban [playerName] (reason) (-s)
-/cmi banlist
-/cmi bbroadcast (!) [message] (-s:[serverName,serverName])
-/cmi blockcycling
-/cmi blockinfo
-/cmi blocknbt
-/cmi book [Author/Title/Unlock] [value]
-/cmi bossbarmsg [playerName/all] (-sec:[seconds])(-t:[timeToKeepFor]) (-n:nameOfBar) (-p:[maxValue/current]) (-c:[color]) (-s:[1,6,10,12,20]) /cmi (-cmd:"command;;command2") (-a:[ticks]) [message] (-cancel:nameOfBar)
-/cmi broadcast (!) [message] (-w:[worldName,worldName]) (-r:[range]) (-c:[world;x;y;z])
-/cmi burn (playerName) (time) (-s)
-/cmi charges [playerName] [add/set/take/clear/reset] (-f)
-/cmi chat [create/join/leave/list/invite/kick/listrooms] (chatName/playerName) (-private) (-locked) (-persistent)
-/cmi checkaccount (playerName/ip)
-/cmi checkban (playerName)
-/cmi checkcommand (keyWord)
-/cmi checkexp (playerName)
-/cmi checkperm (keyWord)
-/cmi cheque (playerName) [amount]
-/cmi clear (playerName) (item(-amount)) (-s) (+clearType)
-/cmi clearchat (self) (-s)
-/cmi clearender [playerName] (-s)
-/cmi colorlimits (playerName)
-/cmi colorpicker (hex/colorname)
-/cmi colors (playerName)
-/cmi commandspy (playerName) (-s)
-/cmi compass (targetName) (sourceName) (x) (z) (worldname) (reset) (-s)
-/cmi condense (itemName)
-/cmi counter [join/leave/start] (t:time) (r:[range/-1]) (c:[world:x:y:z]) (msg:custom_message) (-f)
-/cmi cplaytime (playerName)
-/cmi ctellraw [playerName/all] [formattedMessage]
-/cmi ctext [cText] (playerName/all) (sourcePlayer)
-/cmi cuff [playername] (true/false) (-s)
-/cmi customrecipe
-/cmi dback (playerName) (-s)
-/cmi disableenchant [enchant/id] (disable/enable)
-/cmi dispose (playerName)
-/cmi distance (playerName) (playerName)
-/cmi donate [playerName] (amount)
-/cmi dsign (new [name])
-/cmi dye (playerName) (red,green,blue/hexCode/colorName/random/clear/rainbow/day/biome/health) (-s)
-/cmi editctext
-/cmi editlocale (keyword(-s))
-/cmi editplaytime (playerName) [add/take/set] [amount] (-s)
-/cmi editwarnings (playerName/clearall) (clear)
-/cmi editwarp (warpName) (newName)
-/cmi effect [playername/all] [effect/clear] (duration) (multiplier) (-s) (-visual)
-/cmi enchant (playerName) [enchant] [level] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[itemName(:data)]) (clear)
-/cmi ender (playerName) (playerName)
-/cmi endgateway
-/cmi entityinfo
-/cmi entitynbt (-console)
-/cmi exp [playerName] [add/set/take/clear] [amount][%rand/10-20%] (-s)
-/cmi ext (playerName) (-s)
-/cmi falldistance (playerName) (number) (-s)
-/cmi feed (playerName/all) (-s)
-/cmi findbiome (biomeName/stop/stopall)
-/cmi fixchunk w [worldName] r [range in chunks] c [x:z]
-/cmi flightcharge (add/take/set/show/expcharge/moneycharge/recharge) (playerName) (amount) (-s))
-/cmi fly [playerName] (true/false) (-s)
-/cmi flyc (playerName) (true/false) (-s)
-/cmi flyspeed [playerName] [amount] (-s)
-/cmi gamerule
-/cmi getbook [cTextName] (playerName)
-/cmi give (playerName) [itemname/hand] (amount/playerName) (-slot:[number])
-/cmi giveall [itemname] (amount) (e|l|n|offline)
-/cmi glow (playerName) [true/false/color/gui]
-/cmi gm (playerName) [gamemode]
-/cmi god (playerName) (true/false) (-s)
-/cmi groundclean (+cb) (+cm) (+ci) (+b) (+sh) (+tnt) (+all) (-w:[worldName])
-/cmi haspermission (playerName) [permissionNode]
-/cmi hat (playerName)
-/cmi head [sourceName] (targetName) (-s) (amount)
-/cmi heal [playerName/all] (healamount/healpercent) (-nofeed) (-ignoreffects) (-dontextinguish)
-/cmi helpop [message]
-/cmi hideflags (playerName) [flagName/clear] (flagName)
-/cmi hologram (new [name])
-/cmi hologrampages [holoName] (playerName) (next/prev/[pageNumber])
-/cmi home (homeName) (playerName) (whoTeleport)
-/cmi homes (playerName/near:[range])
-/cmi hunger [playerName] [amount] (-s)
-/cmi ic (new [name])
-/cmi ifoffline [playerName] (command)
-/cmi ifonline [playerName] (command)
-/cmi ignore (playerName/uuid/all)
-/cmi importfrom [essentials/hd] [home/warp/nick/logoutlocation/money/mail]
-/cmi importoldusers
-/cmi info (playerName/uuid)
-/cmi inv [playerName]
-/cmi invcheck (playerName) [id] (-e) (last)
-/cmi invlist (playerName)
-/cmi invload (sourceName) (targetName) [id/last]
-/cmi invremove (playerName) [id/all/last]
-/cmi invremoveall [confirmed]
-/cmi invsave (playerName) (id) (-s)
-/cmi ipban [ip/playerName] (reason) (-s)
-/cmi ipbanlist
-/cmi item [itemname] (amount)
-/cmi itemcmdata [set/delete] (playerName) (id) (-s)
-/cmi iteminfo (playerName)
-/cmi itemlore (-p:[playerName]) [linenumber/*] [remove/insert/ new lore line]
-/cmi itemname (-p:[playerName]) [remove/your new item name]
-/cmi itemnbt (playerName)
-/cmi jail [playerName] (time) (jailName) (cellId) (-s) (r:jail_reasson)
-/cmi jailedit
-/cmi jaillist (jailName) (cellId)
-/cmi jump
-/cmi kick [playerName/all] (message) (-s)
-/cmi killall (-monsters/-pets/-npc/-animals/-ambient/-named/-f/-lightning/-list/-m:[mobType]) (-r:range) (-s) (-w:[worldName])
-/cmi kit [kitName] (playerName) (-preview) (-open)
-/cmi kitcdreset (kitName) (playerName/all)
-/cmi kiteditor
-/cmi kitopen [kitName] (playerName)
-/cmi kitpreview [kitName] (playerName)
-/cmi kitusagereset (kitName) (playerName)
-/cmi lastonline (-p:[page])
-/cmi launch (playerName) (p:[power]) (a:[angle]) (d:[direction]) (loc:[x]:[y]:[z]) (-nodamage)
-/cmi lfix (range) (playerName) (stop/stopall)
-/cmi list
-/cmi lockip (playername) [add/remove/list/clear] [ip]
-/cmi mail [send/clear/read] [playerName] (message)
-/cmi mailall [send/clear/remove] [message]
-/cmi maintenance (true/false) (message)
-/cmi maxhp [set/add/take/clear] [playerName] [amount] (-s)
-/cmi maxplayers [amount]
-/cmi me [message]
-/cmi merchant [type] (playerName)
-/cmi migratedatabase
-/cmi mirror (start/stop)
-/cmi mobhead [mobType] (entryNumber) (playerName) (-s)
-/cmi money [pay/give/take/set] [playerName/all/alloffline] [amount/%rand/1-1000%/1%[min-max][playerName]] (-s)
-/cmi more (playerName) (-clone/[amount])
-/cmi msg [playerName] [message]
-/cmi msgtoggle (playerName)
-/cmi mute [playerName] (time) (-s) (reason)
-/cmi mutechat (time) (-s) (reason)
-/cmi nameplate (playerName) (-pref:[prefix]) (-suf:[suffix]) (-c:[colorCode])
-/cmi near (distance)
-/cmi nick [newNickName/off] (playerName) (-s)
-/cmi notarget (playerName) (true/false) (-s)
-/cmi note (playerName) [add/remove/clear/list] (id/note)
-/cmi openbook (cText) (playerName) (fileName.txt)
-/cmi oplist
-/cmi panimation (variable/playerName/stopAll) (stop)
-/cmi patrol
-/cmi pay [playerName] [amount] (-s)
-/cmi paytoggle (playerName)
-/cmi ping (playerName/message)
-/cmi placeholders (parse) (placeholder) (playerName)
-/cmi playercollision (playerName) [true/false] (-s)
-/cmi playtime (playerName)
-/cmi playtimetop (page)
-/cmi point (particleName) (playerName) (-self) (time) (-s:[speed])
-/cmi portals (new/nearest/forceupdate/setlocation/enabled) (portalName) (world:x:y:z:yaw:pitch)
-/cmi pos (playerName)
-/cmi preview [range] (innerrange)
-/cmi prewards (playerName)
-/cmi ptime (freeze/unfreeze/day/night/dusk/morning/realtime/reset) (playerName) (-s)
-/cmi purge (stop)
-/cmi pweather (playerName) [sun/rain/reset] (-s)
-/cmi rankdown (playerName) (rankName) (confirm) (-cmd) (-cost)
-/cmi rankinfo (playerName) (rankName)
-/cmi ranklist
-/cmi rankset (playerName) [rankName] (-cmd) (-cost)
-/cmi rankup (playerName) (rankName) (confirm)
-/cmi realname (playerName/nickName)
-/cmi recipe (itemName)
-/cmi reload
-/cmi removehome (homeName) (playerName)
-/cmi removeuser [uuid/duplicates]
-/cmi removewarp (warpName)
-/cmi repair [hand/armor/all] (playerName)
-/cmi repaircost (playerName) [amount]
-/cmi replaceblock id [blockName:data/id:data] w [blockName:data/id:data] r [range in chunks/g] y [max height]
-/cmi reply [message]
-/cmi resetback (playerName) (reason) (-death) (-s)
-/cmi resetdbfields [collumnName] (-w:[worldName]) (-p:[playerName])
-/cmi ride
-/cmi rt (playerName) (worldName)
-/cmi sameip
-/cmi saturation (playerName) [amount]
-/cmi saveall (daysRange/-online)
-/cmi saveditems [save/get/remove/list] (savedItemName) (-t:playerName) (-a:amount) (-c:category/all) (-s)
-/cmi sc (playerName)
-/cmi scan
-/cmi scavange (playerName)
-/cmi schedule [scheduleName]
-/cmi se [SignLine] [Text]
-/cmi search
-/cmi seen [playerName/uuid]
-/cmi select (pos1/pos2/shift/expand/contract/clear) (amount)
-/cmi sell (all/blocks/hand/same/gui)
-/cmi sendall [serverName]
-/cmi server [serverName] (playerName) (-f)
-/cmi serverlist
-/cmi servertime
-/cmi setenchantworth
-/cmi setfirstspawn (playerName)
-/cmi sethome (homeName) (playerName) (-p) (-l:worldName;x;y;z) (block/Material) (slotNumber)
-/cmi setmotd [newMotd] (-s)
-/cmi setrt (worldName) (center:[x]:[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled)
-/cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (loc:[world;x;y;z;yaw;pitch])
-/cmi setwarp [warpName] (reqPermission) (hand) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch)
-/cmi setworth (itemname) (-s:[sellPrice])
-/cmi shadowmute [playerName] (time) (-s) (reason)
-/cmi shakeitoff
-/cmi shoot (playerName) (-t:targetPlayer) (type) (speed)
-/cmi signspy (playerName)
-/cmi silence
-/cmi silentchest
-/cmi sit
-/cmi skin [skinName/off/update] (playerName) (-s)
-/cmi smite (playerName) (-s)
-/cmi socialspy (playerName)
-/cmi solve [equation]
-/cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world) (x) (y) (z) (-s)
-/cmi spawn (playerName) (-s)
-/cmi spawner [EntityType]
-/cmi spawnereditor
-/cmi spawnmob [EntityType]
-/cmi staffmsg [message/toggle/on/off]
-/cmi stats (playerName)
-/cmi statsedit (playerName) [add/take/set] [statistic] (subType) [amount] (-s)
-/cmi status
-/cmi sudo [playerName] (command/c:[text])
-/cmi suicide [playerName] (-s)
-/cmi switchplayerdata [sourcePlayerName/uuid] [targetPlayerName/uuid]
-/cmi tablistupdate (playerName)
-/cmi tagtoggle (playerName)
-/cmi tempban [playerName] [timeValue] (reason) (-s)
-/cmi tempipban [ip/playerName] [time] (reason) (-s)
-/cmi tfly [playerName] (timeInSec) (-s)
-/cmi tgod [playerName] (timeInSec) (-s)
-/cmi time (time) (world) (alter [value]) (-smooth)
-/cmi titlemsg [playerName/all] [title \n subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks])
-/cmi toast [playerName/all] (-t:[advType]) (-icon:[material]) [message]
-/cmi togglecompass (playerName) (enable/disable) (-s)
-/cmi toggleshiftedit (playerName) (enable/disable) (-s)
-/cmi toggletotem (playerName) (enable/disable) (-s)
-/cmi top [playerName] (-s)
-/cmi tp [playerName] (playerName)
-/cmi tpa [playerName] (playerName) (-c)
-/cmi tpaall
-/cmi tpaccept (playerName)
-/cmi tpahere [playerName] (playerName) (-c)
-/cmi tpall (playerName)
-/cmi tpallworld [worldName] (worldName;x;y;z(;yaw;pitch)) (-a)
-/cmi tpbypass (playername)
-/cmi tpdeny (playerName)
-/cmi tphere [playerName] (playerName)
-/cmi tpo [playerName] (playerName)
-/cmi tpohere [playerName] (playerName)
-/cmi tpopos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range])
-/cmi tppos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range])
-/cmi tps (-spikes)
-/cmi tptoggle (playerName) (on/off/status) (-s)
-/cmi tree (TreeType) (-p:[playerName])
-/cmi unban [playerName/ip] (-s)
-/cmi unbreakable (playerName) (true/false)
-/cmi uncondense (itemName)
-/cmi unjail [playerName]
-/cmi unloadchunks (-f)
-/cmi unmute [playerName] (-s)
-/cmi unmutechat (-s)
-/cmi usermeta [playerName] [add/remove/clear/list/increment] (key) (value) (-s)
-/cmi util (removeseats/testtarget)
-/cmi vanish (playerName/list) (on/off)
-/cmi vanishedit (playerName)
-/cmi version
-/cmi viewrange [range] (playerName)
-/cmi voteedit (playerName) [add/set/take/clear] [amount] (-s)
-/cmi votes (playerName)
-/cmi votetop (playerName)
-/cmi walkspeed [playerName] [amount]
-/cmi warn [playerName] (category) (reason) (-s)
-/cmi warnings (playerName)
-/cmi warp (warpName) (playerName) (-s) (-g:[groupName]) (-p:[pageNumber])
-/cmi warpgroups
-/cmi weather (sun/rain/storm) (lock/duration) (worldName/all)
-/cmi whowas [playerName]
-/cmi workbench (playerName)
-/cmi world (normal/nether/end/1/2/3...) (playerName) (-s)
-/cmi worth (all/blocks/hand/materialName)
-/cmi worthlist (playerName) (-missing)/cmi 
+/cmi actionbarmsg [playerName/all] (-s:[seconds]) [message] - Sends action bar message to player
+/cmi afk (-p:playerName) (reason) (-s) - Toggle afk mode. Reason could be provided
+/cmi afkcheck [playerName/all] - Check players afk status
+/cmi air [playerName] [amount] - Set players air
+/cmi alert [playerName] (reason) - Alerts administration on players login
+/cmi alertlist  - Lists all recorded alerts
+/cmi aliaseditor (new) (alias-cmd) - Alias editor
+/cmi anvil (playerName) - Open anvil
+/cmi armorstand (last/near) - Open armor stand editor
+/cmi attachcommand [command/-clear] - Attaches command to item
+/cmi autorecharge (playerName) [exp/money/off] (-s) - Toggle auto flight recharge
+/cmi back (playerName) (-s) - Teleports back to last saved location
+/cmi balance (playerName) - Check money balance
+/cmi baltop (playerName) - Check top money list
+/cmi ban [playerName] (reason) (-s) - Ban player
+/cmi banlist  - Ban list
+/cmi bbroadcast (!) [message] (-s:[serverName,serverName]) - Sends special message to all players on all servers
+/cmi blockcycling  - Cycle block states
+/cmi blockinfo  - Check block information
+/cmi blocknbt  - Show block NBT information
+/cmi book [Author/Title/Unlock] [value] - Book editing
+/cmi bossbarmsg [playerName/all] (-sec:[seconds])(-t:[timeToKeepFor]) (-n:nameOfBar) (-p:[maxValue/current]) (-c:[color]) /cmi0]) (-cmd:"command;;command2") (-a:[ticks]) [message] (-cancel:nameOfBar) - Sends boss bar message to player
+/cmi broadcast (!) [message] (-w:[worldName,worldName]) (-r:[range]) (-c:[world;x;y;z]) - Sends special message to all players
+/cmi burn (playerName) (time) (-s) - Burn a player
+/cmi charges [playerName] [add/set/take/clear/reset] (-f) - Shows left spawner charges
+/cmi chat [create/join/leave/list/invite/kick/listrooms] (chatName/playerName) (-private) (-locked) (-persistent) - Create and /cmi
+/cmi checkaccount (playerName/ip) - Search for a players other accounts
+/cmi checkban (playerName) - Check players ban status
+/cmi checkcommand (key word) - Search for possible commands by keyword
+/cmi checkexp (playerName) - Check players exp
+/cmi checkperm (key word) - Check possible permission nodes
+/cmi cheque (playerName) [amount] - Convert money into cheque
+/cmi clear (playerName) (item(-amount)) (-s) (+clearType) - Clear players inventory
+/cmi clearchat (self) (-s) - Clears chat
+/cmi clearender [playerName] (-s) - Clear players ender chest
+/cmi colorlimits (playerName) - Shows all possible colors
+/cmi colorpicker (hex/colorname) - Pick hex color
+/cmi colors (playerName) - Shows all possible colors
+/cmi commandspy (playerName) (-s) - Toggle command spy
+/cmi compass (targetName) (sourceName) (x) (z) (worldname) (reset) (-s) - Set players compass point to your location
+/cmi condense (itemName) - Condense items into blocks
+/cmi counter [join/leave/start] (t:time) (r:[range/-1]) (c:[world:x:y:z]) (msg:custom_message) (-f) - Starts counter for /cmiers
+/cmi cplaytime (playerName) - Detailed playtime
+/cmi ctellraw [playerName/all] [formattedMessage] - Send tellraw type message
+/cmi ctext [cText] (playerName/all) (sourcePlayer) - Shows custom text
+/cmi cuff [playername] (true/false) (-s) - Suspends players actions
+/cmi customrecipe  - Manages item custom recipes
+/cmi dback (playerName) (-s) - Returns to death location
+/cmi disableenchant (enchant/id) (disable/enable) - Disable enchantment
+/cmi dispose (playerName) - Dispose of unneeded items
+/cmi distance (playerName) (playerName) - Check distance between 2 points
+/cmi donate [playerName] (amount) - Donate item you are holding
+/cmi dsign (new) - Manage dynamic signs
+/cmi dye (playerName) (red,green,blue/hexCode/colorName/random/clear/rainbow/day/biome/health) (-s) - Dye leather armor
+/cmi editctext  - Custom text editor
+/cmi editlocale (keyword(-s)) - Edit your locale file
+/cmi editplaytime (playerName) [add/take/set] [amount] (-s) - Edit players playtime
+/cmi editwarnings (playerName/clearall) (clear) - Check player warnings
+/cmi editwarp (warpName) (newName) - Edit warps
+/cmi effect [playername/all] [effect/clear] (duration) (multiplier) (-s) (-visual) - Adds potion effect to player. use clear to /cmits
+/cmi enchant (playerName) [enchant] [level] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[itemName(:data)]) (clear) - /cmi
+/cmi ender (playerName) (playerName) - Opens players ender chest
+/cmi endgateway  - Toggle end gateway beam
+/cmi entityinfo  - Check entity information
+/cmi entitynbt (-console) - Check entity nbt information
+/cmi exp [playerName] [add/set/take/clear] [amount][%rand/10-20%] - Set players exp. Use L to set levels
+/cmi ext (playerName) (-s) - Extinguish a player
+/cmi falldistance (playerName) (number) (-s) - Set players falldistance
+/cmi feed (playerName/all) (-s) - Feed player
+/cmi findbiome (biomeName/stop/stopall) - Finds nearest biome by name
+/cmi fixchunk w [worldName] r [range in chunks] c [x:z]  - Scans for damaged chunks
+/cmi flightcharge (add/take/set/show/expcharge/moneycharge/recharge) (playerName) (amount) (-s) - Manage and check flight charges
+/cmi fly [playerName] (true/false) (-s) - Set players fly true or false
+/cmi flyc (playerName) (true/false) (-s) - Toggle flight charge mode
+/cmi flyspeed [playerName] [amount] (-s) - Set players fly speed from 0 to 10
+/cmi gamerule  - Manage gamerules
+/cmi getbook [cTextName] (playerName) - Get book
+/cmi give (playerName) [itemname/hand] (amount/playerName) (-slot:[number]) - Give item to player
+/cmi giveall [itemname] (amount) (e|l|n|offline) - Give item for all players
+/cmi glow (playerName) [true/false/color/gui] - Set players glow mode
+/cmi gm (playerName) [gamemode] - Set players game mode
+/cmi god [playerName] (true/false) (-s) - Set players god mode to true or false
+/cmi groundclean (+cb) (+cm) (+ci) (+b) (+sh) (+tnt) (+all) (-w:[worldName]) - Clears server from unnecessary items
+/cmi haspermission (playerName) [permissionNode] - Check if player has particular permission
+/cmi hat (playerName) - Place item like hat
+/cmi head [sourceName] (targetName) (-s) (amount) - Get players head
+/cmi heal [playerName/all] (healamount/healpercent) (-nofeed) (-ignoreffects) (-dontextinguish) - Heal player
+/cmi helpop [message] - Sends message for help to staff members
+/cmi hideflags (playerName) [flagName/clear] (flagName) - Hides item flags
+/cmi hologram  - Manage holograms
+/cmi hologrampages [holoName] (playerName) (next/prev/[pageNumber]) - Change hologram page
+/cmi home (homeName) (playerName) (whoTeleport) - Teleport to home location
+/cmi homes (playerName/near:[range]) - A list of homes that you can click to teleport to.
+/cmi hunger [playerName] [amount] (-s) - Set players hunger
+/cmi ic (new) (name) - Create interactive command
+/cmi ifoffline [playerName] (command) - Perform command only when player is offline
+/cmi ifonline [playerName] (command) - Perform command only when player is online
+/cmi ignore (playerName/uuid/all) - Ignores player
+/cmi importfrom [essentials/hd] [home/warp/nick/logoutlocation/money/mail] - Import data from other plugins
+/cmi importoldusers  - Imports users from playerdata folder in main world folder. Server can suffer lag spike during import
+/cmi info [playerName/uuid] - Show players information
+/cmi inv [playerName] - Opens players inventory
+/cmi invcheck (playerName) [id] (-e) (last) - Open saved inventory in preview mode
+/cmi invlist (playerName) - Show saved inventories list
+/cmi invload (sourceName) (targetName) [id/last] - Load saved inventory
+/cmi invremove (playerName) [id/all/last] - Remove saved inventories for player
+/cmi invremoveall [confirmed] - Removes all saved inventories
+/cmi invsave (playerName) (id) (-s) - Save inventory
+/cmi ipban [ip/playerName] (reason) (-s) - Ban ip
+/cmi ipbanlist  - Ban ip list
+/cmi item [itemname] (amount) - Give item to yourself
+/cmi itemcmdata [set/delete] (playerName) (id) (-s) - Check or modify items custom model data
+/cmi itemframe (invisible/fixed/invulnerable) - Manage item frames
+/cmi iteminfo (playerName) - Show item information
+/cmi itemlore (-p:[playerName]) [linenumber/*] [remove/insert/ new lore line] - Change items lore
+/cmi itemname (-p:[playerName]) [remove/your new item name] - Rename items
+/cmi itemnbt (playerName) - Show item NBT information
+/cmi jail [playerName] (time) (jailName) (cellId) (-s) (r:jail_reason) - Jail player for time period
+/cmi jailedit  - Edit jails
+/cmi jaillist (jailName) (cellId) - List jails
+/cmi jump  - Jump to target block
+/cmi kick [playerName/all] (message) (-s) - Kick player with custom message
+/cmi kill [playerName] (-force) (damageCause) (-s) (-lightning) - Kill player
+/cmi killall (-monsters/-pets/-npc/-animals/-ambient/-named/-f/-lightning/-list/-m:[mobType]) (-r:range) (-s) (-w:[worldName]) - /cmi you
+/cmi kit [kitName] (playerName) - Gives predefined kit.
+/cmi kitcdreset (kitName) (playerName/all) - Reset kit timer
+/cmi kiteditor  - Kit editor.
+/cmi kitusagereset (kitName) (playerName) - Reset kit usage counter
+/cmi lastonline (-p:[page]) - Show played players from last x minutes
+/cmi launch (playerName) (p:[power]) (a:[angle]) (d:[direction]) (loc:[x]:[y]:[z]) (-nodamage) - Launch at direction you are /cmigle
+/cmi lfix (range) (playerName) (stop/stopall) - Fix light in chunks around you
+/cmi list  - Shows online player list
+/cmi lockip (playername) [add/remove/list/clear] [ip] - Prevents logging into account from different ip
+/cmi mail [send/clear/read] [playerName] (message) - Send and receive mail
+/cmi mailall [send/clear/remove] [message] - Check or send mail to all players
+/cmi maintenance (true/false) (message) - Set server into maintenance mode
+/cmi maxhp set/add/take/clear [playerName] [amount] (-s) - Set a player's max hp
+/cmi maxplayers [amount] - Changes maximum amount of players who can connect to server
+/cmi me [message] - Sends special message to all players
+/cmi merchant [type] (playerName) - Open merchant trade window
+/cmi migratedatabase  - Changes database system and migrates all data
+/cmi mirror (start/stop) - Starts block place/break mirroring.
+/cmi mobhead [mobType] (entryNumber) (playerName) (-s) - Get mob head
+/cmi money [pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s) - Manage money /cmi
+/cmi more (playerName) (-clone/[amount]) - Fills item stack to maximum amount
+/cmi msg [playerName] [message] - Sends message to player
+/cmi msgtoggle (playerName) - Toggle private messages
+/cmi mute [playerName] (time) (-s) (reason) - Mute player
+/cmi mutechat (time) (-s) (reason) - Prevent public messages
+/cmi nameplate (playerName) (-pref:[some_prefix]) (-suf:[some_suffix]) (-c:[colorCode]) - Set players name plate prefix, suffix or /cmi
+/cmi near (distance) - Check who is near you
+/cmi nick [newNickName/off] (playerName) (-s) - Changes player name
+/cmi notarget (playerName) (true/false) (-s) - Toggle no-mob target mode
+/cmi note (playerName) [add/remove/clear/list] (id/note) - Manage players notes
+/cmi openbook (cText) (playerName) (fileName.txt) - Open book gui
+/cmi oplist  - Check operator player list
+/cmi panimation (variable/playerName/stopAll) (stop) - Play custom particle animation
+/cmi patrol  - Patrol
+/cmi pay [playerName] [amount] (-s) - Perform money transaction
+/cmi paytoggle (playerName) - Toggle payments from another player
+/cmi ping (playerName/message) - Shows players ping
+/cmi placeholders (parse) (placeholder) (playerName) - List out all placeholders
+/cmi playercollision (playerName) [true/false] (-s) - Set players collision mode
+/cmi playtime (playername) - Shows player total play time
+/cmi playtimetop [page] - Shows top list of player total play time
+/cmi point (particleName) (playerName) (-self) (time) (-s:[speed]) - Point to block
+/cmi portals (new/nearest/forceupdate/setlocation/enabled) (portalName) (world:x:y:z:yaw:pitch) - Set portals
+/cmi pos (playerName) - Show current position of a player
+/cmi preview [range] (innerrange) - Load chunk for given range
+/cmi prewards (playerName) - Check playtime rewards
+/cmi ptime (freeze/unfreeze/day/night/dusk/morning/realtime/reset) (playerName) (-s) - Controls player personal time
+/cmi purge (stop) - Cleans player data from world folder by inactive days
+/cmi pweather (playerName) [sun/rain/reset] (-s) - Controls player weather
+/cmi rankdown (playerName) (rankName) (confirm) (-cmd) (-cost) - Decrease your rank
+/cmi rankinfo (playerName) (rankName) - Your rank information
+/cmi ranklist  - List of possible ranks
+/cmi rankset (playerName) [rankName] (-cmd) (-cost) - Set a players rank
+/cmi rankup (playerName) (rankName) (confirm) - Increase your rank
+/cmi realname (playerName/nickName) - Check players real name
+/cmi recipe (itemName) - Check item recipe
+/cmi reload  - Reloads plugins config and locale files
+/cmi removehome (homeName) (playerName) - Remove home
+/cmi removeuser [uuid/duplicates] - Removes user and its data
+/cmi removewarp (warpName) - Remove warp
+/cmi repair [hand/armor/all] (playerName) - Repair items
+/cmi repaircost (playerName) [amount] - Set items repair cost
+/cmi replaceblock id [blockName:data/id:data] w [blockName:data/id:data] r [range in chunks/g] y [max height] - Replaces blocks in /cmiound you
+/cmi reply [message] - Replay to last message sender
+/cmi resetback (playerName) (reason) (-death) (-s) - Resets players back location
+/cmi resetdbfields [collumnName] (-w:[worldName]) (-p:[playerName]) - Resets particular database columns to default value
+/cmi ride  - Ride target entity
+/cmi rt (playerName) (worldName) (-s) - Teleports to random location
+/cmi sameip  - List players logged in from same ip
+/cmi saturation (playerName) [amount] - Set players saturation
+/cmi saveall (daysRange/-online) - Saves every player inventory
+/cmi saveditems [save/get/remove/list] (savedItemName) (-t:playerName) (-a:amount) (-c:category/all) (-s) - Save or manage saved /cmi
+/cmi sc (playerName) - Starts sign copy process
+/cmi scan  - Scans for items in current world
+/cmi scavenge (playerName) - Recycle item and its enchantments
+/cmi schedule [scheduleName] - Trigger schedule
+/cmi se (SignLine) [Text] - Changes sign text line.
+/cmi search  - Search items/enchants/fly/maxhp/gm/oversize modes and other stuff from all users
+/cmi seen [playerName/uuid] - Check when player was last seen
+/cmi select (pos1/pos2/shift/expand/contract/clear) (amount) - Manage selection area
+/cmi sell (all/blocks/hand/same/gui) - Sell items from inventory
+/cmi sendall spawn - Send all online players to target server
+/cmi server spawn (playerName) (-f) - Connect to bungeecord server
+/cmi serverlist  - Show server list
+/cmi servertime  - Show server time
+/cmi setenchantworth  - Change enchantment worth
+/cmi setfirstspawn (playerName) - Sets first spawn point
+/cmi sethome (homeName) (playerName) (-p) (-l:worldName;x;y;z) (block/Material) (slotNumber) - Sets home location
+/cmi setmotd [newMotd] (-s) - Set server motd
+/cmi setrt (worldName) (center:[x]:[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
+/cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (loc:[world;x;y;z;yaw;pitch]) - /cmind teleport point
+/cmi setwarp [warpName] (reqPermission) (hand) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) - Sets warp location
+/cmi setworth (itemname) -s:(sellPrice) - Change item worth
+/cmi shadowmute [playerName] (time) (-s) (reason) - Mute player without telling him that he is muted
+/cmi shakeitoff  - Dismount any entity riding you
+/cmi shoot (playerName) (-t:targetPlayer) (type) (speed) - Shoot projectile
+/cmi signspy (playerName) - Toggle sign spy
+/cmi silence  - Blocks public messages
+/cmi silentchest  - Toggles silent chest
+/cmi sit  - Sit in your position
+/cmi skin [skinName/off/update] (playerName) (-s) - Changes players skin
+/cmi smite (playerName) (-s) - Strike ground or player with lightning
+/cmi socialspy (playerName) - Toggle social spy
+/cmi solve [equation] - Solve equation
+/cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world) (x) (y) (z) (-s) - Play sound at target location
+/cmi spawn (playerName) (-s) - Teleports back to spawn location
+/cmi spawner [EntityType] - Sets spawner
+/cmi spawnereditor  - Edit spawner
+/cmi spawnmob [EntityType] - Spawns entity at your location
+/cmi staffmsg [message/toggle/on/off] - Sends message to staff channel
+/cmi stats (playerName) - Check players stats
+/cmi statsedit (playerName) [add/take/set] [statistic] (subType) [amount] (-s) - Edit players statistics
+/cmi status  - Show server status
+/cmi sudo [playerName] (command/c:[text]) - Force another player to perform command
+/cmi suicide [playerName] (-s) - Kill your self
+/cmi switchplayerdata [sourcePlayerName/uuid] [targetPlayerName/uuid] - Switch all data from one player to another
+/cmi tablistupdate (playerName) - Force tablist update for all or specific player
+/cmi tagtoggle (playerName) - Toggle tag commands
+/cmi tempban [playerName] [timeValue] (reason) (-s) - TempBan player
+/cmi tempipban [ip/playerName] [time] (reason) (-s) - Temp ban ip
+/cmi tfly (playerName) (timeInSec) (-s) - Set temporary players fly mode until relog or until time ends
+/cmi tgod [playerName] (timeInSec) (-s) - Set players temporarily god mode until relog or time end
+/cmi time (time) (world) (alter [value]) (-smooth) - Controls server time
+/cmi titlemsg [playerName/all] [title
+/cmi toast [playerName/all] (-t:[advType]) (-icon:[material]) [message] - Sends toast message to player
+/cmi togglecompass (playerName) (enable/disable) (-s) - Show or hide compass bossbar
+/cmi toggleshiftedit (playerName) (enable/disable) (-s) - Toggles sign shift editing
+/cmi toggletotem (playerName) (enable/disable) (-s) - Show or hide totem cooldown bar
+/cmi top [playerName] (-s) - Teleport to highest point at your location
+/cmi tp [playerName] (playerName) - Teleports to player's location
+/cmi tpa [playerName] (playerName) (-c) - Ask the player if you can teleport to them
+/cmi tpaall  - Ask all online players to teleport to your location
+/cmi tpaccept (playerName) - Accept teleport request
+/cmi tpahere [playerName] (playerName) (-c) - Asks player to accept teleportation to your location
+/cmi tpall (playerName) - Teleports all online players to location
+/cmi tpallworld [worldName] (worldName;x;y;z(;yaw;pitch)) (-a) - Teleports ALL players from specific world
+/cmi tpbypass (playername) - Bypass teleportation to unsafe location
+/cmi tpdeny (playerName) - Deny teleport request
+/cmi tphere [playerName] (playerName) - Teleports player to your location
+/cmi tpo [playerName] (playerName) - Teleports to player's location by force
+/cmi tpohere [playerName] (playerName) - Teleports player to your location by force
+/cmi tpopos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range]) - Teleports to location by force
+/cmi tppos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range]) - Teleports to location
+/cmi tps (-spikes) - Check servers tps status
+/cmi tptoggle (playerName) (on/off/status) (-s) - Toggle teleportation access to player
+/cmi tree (TreeType) (-p:[playerName]) - Spawn tree where you are looking
+/cmi unban [playerName/ip] (-s) - Unban player or ip
+/cmi unbreakable (playerName) (true/false) - Makes item unbreakable
+/cmi uncondense (itemName) - Uncondense items into smaller parts
+/cmi unjail [playerName] - Release player from jail
+/cmi unloadchunks (-f) - Unloads chunks from server memory
+/cmi unmute [playerName] (-s) - Unmute player
+/cmi unmutechat (-s) - Unmute public chat
+/cmi usermeta [playerName] [add/remove/clear/list/increment] (key) (value) (-s) - Manage players meta data
+/cmi util (removeseats/testtarget) - Administration tools
+/cmi vanish (playerName/list) (on/off) - Vanish player
+/cmi vanishedit (playerName) - Edit vanish mode for player
+/cmi version  - Show plugin version
+/cmi viewrange [range] (playerName) - Change view range
+/cmi voteedit (playerName) [add/set/take/clear] [amount] (-s) - Manage players votes
+/cmi votes (playerName) - Check players vote count
+/cmi votetop (playerName) - Check top vote list
+/cmi walkspeed [playerName] [amount] - Set players walk speed from 0 to 10
+/cmi warn [playerName] (category) (reason) (-s) - Warn player
+/cmi warnings (playerName) - Check player warnings
+/cmi warp (warpName) (playerName) (-s) (-g:[groupName]) (-p:[pageNumber]) - Teleports to warp location
+/cmi warpgroups  - Lists warp groups
+/cmi weather (sun/rain/storm) (lock/duration) (worldName/all) - Controls server weather
+/cmi whowas [playerName] - Shows players previous names
+/cmi workbench (playerName) - Open workbench
+/cmi world (normal/nether/end/1/2/3...) (playerName) (-s) - Teleports to different world
+/cmi worth (all/blocks/hand/material) - Check item worth
+/cmi worthlist (playerName) (-missing) - Check list of items with set sell prices
+/cmi[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
 ```
