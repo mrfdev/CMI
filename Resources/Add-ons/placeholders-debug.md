@@ -2,10 +2,10 @@
 %cmi_baltop_money_[1-10]%
 %cmi_baltop_name_[1-10]%
 %cmi_baltop_shortmoney_[1-10]%
-%cmi_bungee_current_spawn%
-%cmi_bungee_motd_spawn%
-%cmi_bungee_onlinestatus_spawn%
-%cmi_bungee_total_spawn%
+%cmi_bungee_current_[serverName]%
+%cmi_bungee_motd_[serverName]%
+%cmi_bungee_onlinestatus_[serverName]%
+%cmi_bungee_total_[serverName]%
 %cmi_chatmute_reason%
 %cmi_chatmute_time%
 %cmi_color_[text]%
@@ -49,6 +49,7 @@
 %cmi_user_afk_msg%
 %cmi_user_afk_symbol%
 %cmi_user_balance%
+%cmi_user_balance_formated%
 %cmi_user_balance_formatted%
 %cmi_user_banned%
 %cmi_user_bungeeserver%
@@ -117,6 +118,7 @@
 %cmi_user_playtime_seconds%
 %cmi_user_playtime_secondst%
 %cmi_user_prefix%
+%cmi_user_rank%
 %cmi_user_rank_displayname%
 %cmi_user_rank_name%
 %cmi_user_rank_percent_[rankName]%
@@ -124,8 +126,10 @@
 %cmi_user_spy%
 %cmi_user_suffix%
 %cmi_user_tfly%
+%cmi_user_tfly_formated%
 %cmi_user_tfly_formatted%
 %cmi_user_tgod%
+%cmi_user_tgod_formated%
 %cmi_user_tgod_formatted%
 %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
 %cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
