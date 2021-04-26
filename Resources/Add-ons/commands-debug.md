@@ -111,6 +111,7 @@ ipban
 ipbanlist
 item
 itemcmdata
+itemframe
 iteminfo
 itemlore
 itemname
@@ -120,12 +121,11 @@ jailedit
 jaillist
 jump
 kick
+kill
 killall
 kit
 kitcdreset
 kiteditor
-kitopen
-kitpreview
 kitusagereset
 lastonline
 launch
@@ -197,7 +197,7 @@ saveall
 saveditems
 sc
 scan
-scavange
+scavenge
 schedule
 se
 search
