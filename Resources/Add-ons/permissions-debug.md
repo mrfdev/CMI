@@ -31,7 +31,7 @@ cmi.command.afk.kickbypass
 cmi.command.afk.kickOutIn.[[seconds]]
 cmi.command.afk.staffinform
 cmi.command.alert.inform
-cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightarm/leftleg/rightleg/pos/torso]
+cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightleg/pos/torso]
 cmi.command.armorstand.movebypass
 cmi.command.attachcommand.cc
 cmi.command.attachcommand.silent
@@ -152,6 +152,7 @@ cmi.command.sethome.iconpicker
 cmi.command.sethome.overwrite
 cmi.command.sethome.unlimited
 cmi.command.setwarp.[anypositivenumber]
+cmi.command.setwarp.multiloc
 cmi.command.setwarp.unlimited
 cmi.command.shoot.[type]
 cmi.command.signspy.hide
