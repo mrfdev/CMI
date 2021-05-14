@@ -81,7 +81,7 @@ And when you start chatting, your chat color should be different.
 ## Default colors
 
 If they of course don't have a color set it will not parse and ends up as `{#}` and can show weird in the chat. You might wish to update a join event in eventcommands.yml from cmi to do something like this:
-`check:%cmi_user_meta_chatcolor%!=null! asConsole! cmi usermeta [playerName] add chatcolor white`
+`check:%cmi_user_meta_chatcolor%==null! asConsole! cmi usermeta [playerName] add chatcolor white`
 (so when they dont have a color, it sets it to white).
 
 Oh and just to clarify; i use white blue green, and they are valid. But any valud hex value for Minecraft is valid here. Like fff000 and 8031b3 etc.
