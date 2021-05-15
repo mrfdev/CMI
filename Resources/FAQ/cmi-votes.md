@@ -56,8 +56,13 @@ cmi.command.votes.others
 - CMI Placeholders: (Note: Placeholders can be used in holograms, in-game chat, tablist, interactive commands, dynamic signs, etc.)
 ```
 %cmi_user_votecount%
+%cmi_user_dailyvotecount%
 %cmi_votetop_[1-10]%
 %cmi_votetopcount_[1-10]%
 ```
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+
+### Version
+
+Version 1.0.1, last updated: May 2021
