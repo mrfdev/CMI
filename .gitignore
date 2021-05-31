@@ -1,6 +1,2 @@
 # Specify filepatterns you want git to ignore.
 .DS_Store
-cmi.sqlite.db
-security.key
-dataBaseInfo.yml
-holograms.yml
