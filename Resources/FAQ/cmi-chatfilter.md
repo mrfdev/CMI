@@ -25,3 +25,15 @@ A great tool created by @dkalaxdk#2228 can be found here: https://dkalaxdk.githu
 I strongly recommend to always test first, back up your existing data before mkaing changes. You don't want to make a mistake and auto ban everybody due to bad filtering. 
 
 When testing, the website [regex101](regex101.com/) can be used to verify/test the different filters, to see whether they catch the expected input.
+
+### Commands
+
+n/a
+
+### Permissions
+
+```
+cmi.chatfilter.bypass.[groupname] - Allows to bypass particular chat filter group
+cmi.chatfilter.inform - Informs player when some one breaks chat filter rules
+cmi.chatfilter.spambypass - Allows to bypass chat spam filter
+```
