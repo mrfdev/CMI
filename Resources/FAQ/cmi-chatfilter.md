@@ -28,7 +28,14 @@ When testing, the website [regex101](regex101.com/) can be used to verify/test t
 
 ### Commands
 
-n/a
+If chat gets out of hand you can't filter it quick enough, you can use commands like these
+```
+/cmi mute [playerName] (time) (-s) (reason)
+and /cmu unmute [playerName] (-s)
+/cmi mutechat (time) (-s) (reason)
+and /cmi unmutechat (-s)
+/cmi clearchat (self) (clears chat for all players (or just you))
+```
 
 ### Permissions
 
