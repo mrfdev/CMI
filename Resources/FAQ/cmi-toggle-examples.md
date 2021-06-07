@@ -11,7 +11,7 @@ CMI is flexible and dynamic enough that it can do fancy tricks. One of them is a
 This one is provided by @dkalaxdk#2228
 
 ```yaml
-check:%cmi_user_metaint_rp%==null! asConsole! usermeta [playerName] add rp 1
+    - check:%cmi_user_metaint_rp%==null! asConsole! usermeta [playerName] add rp 1
     - check:%cmi_user_metaint_trp%==null! asConsole! usermeta [playerName] add trp 0
     - check:%cmi_user_meta_rp%==1! asConsole! msg [playerName] 1
     - check:%cmi_user_meta_rp%==0! asConsole! msg [playerName] 0
