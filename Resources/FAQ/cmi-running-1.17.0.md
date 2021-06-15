@@ -2,7 +2,7 @@
 
 This page should help explain what I personally think is the way to run CMI 9 on Spigot 1.17.0, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
-## Note ahead.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
 - This is about CMI 9 and Spigot server version 1.17.0, this is not about 1.16.5. That's a different document. Nor is this about CMI and Paper 1.17.x
 - CMI version 8.8.5.0 is considered the Stable version you can run on a live production environment. You can not use this on 1.17, use CMI 9.
@@ -10,18 +10,18 @@ This page should help explain what I personally think is the way to run CMI 9 on
 - CMI Lib version 1.0.0.2 will automatically be replaced by version 1.0.1.0. This is okay. You can use 1.0.1.0 with both 8.8.5.0 on 1.16.5 and 9.0.0.0 on 1.17.0
 - Zrips' libraries and other resources are linked below.
 
-### Backup
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
 
 - First, I strongly recommend before making any changes to your live server to take it offline with /stop and make a complete backup of the full directory, do not forget to backup your MySQL databases if you use any. 
 - Why? Because if you have a problem installing or upgrading CMI 9 you can use the backup to go back to the version that did work.
 - Why? Because it also is a great moment to clone your live server and test things first before doing a big upgrade in the (near) future.
 
-### Test setup
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Test setup
 
 - Before you actually update your live server it's recommended to have a test instance you can try stuff out on. This way you can detect issues and concerns early and learn to address those. Without risking your live server. especially while CMI 9 is in Beta, and Minecraft 1.17 is still unstable.
 - If this testing takes hours and days and you have new live data because players keep playing, obviously take the live server offline and backup again, before making the final changes.
 
-### Before we start to install and/or upgrade CMI 9 to the latest available beta setup
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Before we start to install and/or upgrade CMI 9 to the latest available beta setup
 
 - /stop your server. Do the backup thing, and make a test server.
 
@@ -31,7 +31,7 @@ This page should help explain what I personally think is the way to run CMI 9 on
 
 - Now that we have the latest files and are installing or upgrading from an older version to a new version, and we have a backup. It's time to replace any existing jars.
 
-### First time Installalation
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> First time Installalation
 
 If you already are running CMI, you can skip this and go straight to Upgrading (see below).
 
@@ -45,7 +45,7 @@ If you already are running CMI, you can skip this and go straight to Upgrading (
 
 - When the server has started, CMI will automatically download languages, CMI Lib 1.0.1.0 and you're ready to Finish (see below)
 
-### Upgrading CMI
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Upgrading CMI
 
 If you are installing it for the first time, go to the Installing steps above and skip the upgrading steps.
 
@@ -71,7 +71,7 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - If your plugins/ directory has the old CMI Lib `.jar` version 1.0.0.2, it is okay to remove it now. Keep the new 1.0.1.0 jar of course.
 
-### Finishing up.
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Finishing up.
 
 Okay, you've backed everything up, you've made a test setup, and you've either fresh installed or upgraded CMI. Just one more thing before you can play with this test setup.
 
@@ -85,15 +85,15 @@ And that's it! You're done.
 
 What a list huh, okay, let's simplify this:
 
-#### TLDR; Summery
+#### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TLDR; Summery
 
 - Stop the server, back it up, use buildtools.jar from spigotmc to make the latest Spigot 1.17 jar. Remove the old CMI jar if you have it, put new 9.0.0.0 jar there, start the server, then /stop it again, remove cmilib 1.0.0.2 jar, and start the server again. You're done! if the test goes well, upgrade your live server.
 
-#### What about 1.16.5?
+#### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What about 1.16.5?
 
 That's a different page with different instructions. 
 
-#### Resources
+#### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
 SpigotMC's Buildtools.jar can be found here <https://hub.spigotmc.org/jenkins/job/BuildTools/>
 
