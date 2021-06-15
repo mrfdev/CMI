@@ -10,7 +10,6 @@ The example below uses a toggle, to allow you to toggle between two different mo
 
 Whether this two different ranks, or two different command modes for whatever need you may have.
 ```yaml
-<<<<<<< HEAD
 # First two lines adds the required meta values to the player, if they haven't been created before.
 # This can also be done using an OnJoinEvent from eventcommands.
 
@@ -29,15 +28,6 @@ Whether this two different ranks, or two different command modes for whatever ne
     - check:%cmi_user_meta_toggle%==1! asConsole! usermeta [playerName] add temprp 0
     - check:%cmi_user_meta_toggle%==0! asConsole! usermeta [playerName] add temprp 1
     #Resets the toggle when done.
-=======
-    - check:%cmi_user_metaint_rp%==null! asConsole! usermeta [playerName] add rp 1
-    - check:%cmi_user_metaint_trp%==null! asConsole! usermeta [playerName] add trp 0
-    - check:%cmi_user_meta_rp%==1! asConsole! msg [playerName] 1
-    - check:%cmi_user_meta_rp%==0! asConsole! msg [playerName] 0
-    - check:%cmi_user_meta_rp%==1! asConsole! usermeta [playerName] add trp 1
-    - check:%cmi_user_meta_trp%==1! asConsole! usermeta [playerName] add temprp 0
-    - check:%cmi_user_meta_trp%==0! asConsole! usermeta [playerName] add temprp 1
->>>>>>> origin/master
     - asConsole! usermeta [playerName] add trp 0
 ```
 
