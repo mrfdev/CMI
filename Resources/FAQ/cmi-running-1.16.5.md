@@ -2,11 +2,14 @@
 
 This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
+<img width="622" alt="paper-1 16 5-cmi-8 8 5 0-cmilib-1 0 1 0" src="https://user-images.githubusercontent.com/28841349/122098360-0b0b7c00-ce11-11eb-88a4-c1ca34bdc780.png">
+
 ## Note ahead.
 
 - This is about CMI 8 and server version 1.16.5, this is not about 1.17. That's a different document.
 - CMI version 8.8.5.0 is considered the Stable version you can run on a live production environment.
 - CMI Lib version 1.0.0.2 will automatically be replaced by version 1.0.1.0. This is okay.
+- Zrips' compiled Vault 1.7.3, CMI Injector 1.0.2.3, and CMI Bungee 1.0.0.4 can be used on CMI 8.8.5.0 on Minecraft 1.16.5
 
 ### Backup
 
