@@ -11,7 +11,7 @@ This page should help explain what I personally think is the way to run CMI 8 on
 ### Backup
 
 - First, I strongly recommend before making any changes to your live server to take it offline with /stop and make a complete backup of the full directory, do not forget to backup your MySQL databases if you use any. 
-- Why? Because if you have a problem upgrading CMI 8 you can use the backup to go back to the version that did work.
+- Why? Because if you have a problem installing or upgrading CMI 8 you can use the backup to go back to the version that did work.
 - Why? Because it also is a great moment to clone your live server and test things first.
 
 ### Test setup
