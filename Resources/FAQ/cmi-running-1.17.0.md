@@ -8,6 +8,7 @@ This page should help explain what I personally think is the way to run CMI 9 on
 - CMI version 8.8.5.0 is considered the Stable version you can run on a live production environment. You can not use this on 1.17, use CMI 9.
 - CMI version 9.0.0.0 is considered the Beta version you can run on a test environment. It is probably best right now to not run it live.
 - CMI Lib version 1.0.0.2 will automatically be replaced by version 1.0.1.0. This is okay. You can use 1.0.1.0 with both 8.8.5.0 on 1.16.5 and 9.0.0.0 on 1.17.0
+- Zrips' libraries and other resources are linked below.
 
 ### Backup
 
@@ -91,3 +92,20 @@ What a list huh, okay, let's simplify this:
 #### What about 1.16.5?
 
 That's a different page with different instructions. 
+
+#### Resources
+
+SpigotMC's Buildtools.jar can be found here <https://hub.spigotmc.org/jenkins/job/BuildTools/>
+
+These are for CMI 8.x and CMI 9.x:
+`CMI Vault` Economy-compile for best results
+<http://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>
+
+`CMI Injector` Use your own Vault? Use this economy injector
+<http://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>
+
+`CMI Bungee` Basic bungee chat support
+<http://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>
+
+`CMI Library` Base Library 
+<https://www.spigotmc.org/resources/cmilib.87610/>
