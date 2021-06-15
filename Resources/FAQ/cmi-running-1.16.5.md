@@ -1,6 +1,6 @@
 # Running CMI on 1.16.5
 
-This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17 is stable enough.
+This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
 ## Note ahead.
 
