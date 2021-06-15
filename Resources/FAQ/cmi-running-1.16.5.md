@@ -27,7 +27,7 @@ This page should help explain what I personally think is the way to run CMI 8 on
 
 - If you are not yet running CMI Lib 1.0.0.2 or 1.0.1.0 then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download CMI Lib 1.0.1.0 here: <https://www.spigotmc.org/resources/cmilib.87610/download?version=403421>
 
-- Now that we have the latest files and are upgrading from an older version to a new version, and we have a backup. It's time to replace the existing jar.
+- Now that we have the latest files and are installing or upgrading from an older version to a new version, and we have a backup. It's time to replace any existing jars.
 
 ### First time Installalation
 
