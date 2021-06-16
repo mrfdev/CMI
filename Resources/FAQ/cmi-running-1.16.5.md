@@ -66,7 +66,7 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - Keep an eye on the console, the latest.log will also have all the details. If something goes wrong, take note. And try to figure out what is up and try again.
 
-- When the server has started, CMI will automatically download languages, CMI Lib 1.0.1.0 and you're ready to Finish (see below)
+- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.0 and you're ready to Finish (see below)
 
 - If your plugins/ directory has the old CMI Lib `.jar` version 1.0.0.2 or 1.0.1.0, it is okay to remove it now. Keep the new 1.0.2.0 jar of course.
 
