@@ -3,8 +3,7 @@
 This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/722010139560771585
 
-**CMI can handle Votes**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to counts, display, and reward players voting.
-
+**CMI can handle Votes**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to counts, display, and reward players voting. And yes, you can use CMI Votes with CMI 9 on Spigot 1.17.
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Get NuVotifier (<https://www.spigotmc.org/resources/13449/>)
 

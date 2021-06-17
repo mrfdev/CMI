@@ -9,7 +9,9 @@ https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/734900
 
 **Note:** This is perhaps important to mention. CMI is a big package, it covers a lot of server management topics, from kicks and msgs, to warps, kits, and custom commands. It's dynamic and flexible. And since every server is different: The approach to start might differ per server.
 
-- Run Spigot 1.16.5 or Paper 1.16.5, after setting it up /stop it.
+- Run CMI stable on Spigot 1.16.5 or Paper 1.16.5 using version 8.8.5.0, after setting it up /stop it.
+
+- Or Run CMI unstable-beta on Spigot 1.17 using test version 9.0.0.0, after setting it up, /stop it.
 
 - Put the CMI jar in the plugins/ directory. Start the server back up and let CMI install.
 

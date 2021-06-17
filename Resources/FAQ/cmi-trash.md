@@ -2,7 +2,7 @@
 
 This is not an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 
-*This is made in CMI version 8.8.x.x on Minecraft 1.16.5, but should work on older versions*
+*This is made in CMI version 8.8.x.x on Minecraft 1.16.5, but should work on older versions and yes, you can use CMI trash with CMI 9 on Spigot 1.17.*
 
 
 **Introducetion to Dispose**

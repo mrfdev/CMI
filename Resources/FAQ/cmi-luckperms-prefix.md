@@ -2,7 +2,7 @@
 
 This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist.
+**CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist. And yes, you can use CMI and LuckPerms with CMI 9 on Spigot 1.17.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Start using CMI as Chat Manager, if you were using something else.

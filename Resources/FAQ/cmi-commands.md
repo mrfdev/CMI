@@ -1,5 +1,7 @@
 # FAQ - How do I deal with CMI commands?
 
+ You can use this on CMI 8 for Spigot 1.16.5 and on CMI 9 for Spigot 1.17
+
 This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711599520512999536
 

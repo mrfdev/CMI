@@ -1,6 +1,6 @@
-# draft
-
 ## CMI Migrate database
+
+You can do this on CMI 8 on Spigot 1.16.5, or on CMI 9 on Spigot 1.17.
 
 This feature allows you to convert your CMI sqlite database to a MYSQL database.
 

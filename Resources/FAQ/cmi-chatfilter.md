@@ -1,6 +1,6 @@
-# draft
-
 ## CMI Chatfilter
+
+These instructions should work fine for CMI 8 for Spigot/Paper 1.16.5 and CMI 9 for Spigot 1.17
 
 CMI offers a way to filter what players in-game are typing. This can trigger on a word, matching regex, swearing, and capitatlization. 
 

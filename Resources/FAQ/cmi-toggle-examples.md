@@ -2,6 +2,8 @@
 
 CMI is flexible and dynamic enough that it can do fancy tricks. One of them is a way to allow you to toggle certain things. This page has some examples to demonstrate how you could learn from them and apply it to your edge case situation.
 
+These should work on CMI 8 on Spigot 1.16.5, and on CMI 9 on Spigot 1.17.
+
 ### Toggle example 1
 
 This one is provided by @dkalaxdk#2228

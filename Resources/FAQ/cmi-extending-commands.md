@@ -4,7 +4,7 @@ This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
 There's a video: https://youtu.be/TLKAusnisqs
 
 
-**CMI commands can be extended through the aliaseditor**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to make commands even more dynamic and do exactly what you want, using the alias editor.
+**CMI commands can be extended through the aliaseditor**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to make commands even more dynamic and do exactly what you want, using the alias editor. And yes, you can use CMI commands with CMI 9 on Spigot 1.17.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
