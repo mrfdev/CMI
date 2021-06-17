@@ -6,6 +6,7 @@ This repository has a few purposes.
  - Share configurations with our 1MB team members (and you)
  - Show others examples of how I run CMI sometimes.
  - Share a select few 1MB CMI add-ons with the public.
+ - Organize the FAQ entries we link CMI customers to on Zrips' Discord.
 
 ## Table of Contents
 
@@ -24,7 +25,7 @@ Note: I think it's fair to point out a few things
 
 - No, this does not come with the [CMI jar](https://www.spigotmc.org/resources/3742/), you still have you buy that yourself.
 - No, this is not a complete copy of our live servers, these are select files.
-- No, these are not default files, they're (recently) outdated copies.
+- No, these are not default files, they're (fairly) outdated copies.
 - Yes, you can [open a New Issue](https://github.com/mrfdev/CMI/issues) to request an update on a specific file.
 - And no, this is not the repository to ask for CMI customer support.
 
@@ -126,6 +127,7 @@ For Discord I've created a couple of **CMI FAQ** entries that are pinned to the 
 - [CMI Custom Join / Leave](/Resources/FAQ/cmi-custom-joinleave.md)
 - [CMI Trash Feature](/Resources/FAQ/cmi-trash.md)
 - [CMI Safety Tips](/Resources/FAQ/cmi-safety-tips.md)
+- [And more!](/Resources/FAQ/)
 
 *To clarify, you can not use this repository to ask for CMI customer support. CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
 
