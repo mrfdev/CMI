@@ -2,7 +2,7 @@
 
 #### **Did you find a bug?**
 
-* **Do not open up a GitHub issue if the bug is a security vulnerability **
+* **Do not open up a GitHub issue if the bug is a security vulnerability**
 Instead please contact us private to practice responsible disclosure.
 
 * **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/mrfdev/CMI/issues).
