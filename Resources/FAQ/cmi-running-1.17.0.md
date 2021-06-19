@@ -1,12 +1,12 @@
-# Running CMI on Spigot 1.17.0
+# Running CMI on Spigot / Paper 1.17.0
 
-This page should help explain what I personally think is the way to run CMI 9 on Spigot 1.17.0, at least until CMI 9 and Minecraft 1.17 are stable enough.
+This page should help explain what I personally think is the way to run CMI 9 on Spigot and Paper 1.17.0, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
 <img width="473" alt="spigot-1 17 0-cmi-9 0 0 1-cmilib-1 0 2 1" src="https://user-images.githubusercontent.com/28841349/122654209-21377600-d14a-11eb-86af-d665db307f2b.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is about CMI 9 and Spigot server version 1.17.0, this is not about 1.16.5. That's a different document. Nor is this about CMI and Paper 1.17.x
+- This is about CMI 9 and Spigot or Paper server version 1.17.0, this is not about 1.16.5. That's a different document.
 - CMI version 8.8.5.0 is considered the Stable version you can run on a live production environment. You can not use this on 1.17, use CMI 9.
 - CMI version 9.0.0.1 is considered the Beta version you can run on a test environment. It is probably best right now to not run it live.
 - CMI Lib version 1.0.2.0 or older will automatically be replaced by version 1.0.2.1. This is okay. You can use 1.0.2.1 with both 8.8.5.0 on 1.16.5 and 9.0.0.1 on 1.17.0
@@ -20,14 +20,14 @@ This page should help explain what I personally think is the way to run CMI 9 on
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Test setup
 
-- Before you actually update your live server it's recommended to have a test instance you can try stuff out on. This way you can detect issues and concerns early and learn to address those. Without risking your live server. especially while CMI 9 is in Beta, and Minecraft 1.17 is still unstable.
+- Before you actually update your live server it's recommended to have a test instance you can try stuff out on. This way you can detect issues and concerns early and learn to address those. Without risking your live server. especially while CMI 9 is in beta, and Minecraft 1.17 is still unstable.
 - If this testing takes hours and days and you have new live data because players keep playing, obviously take the live server offline and backup again, before making the final changes.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Before we start to install and/or upgrade CMI 9 to the latest available beta setup
 
 - /stop your server. Do the backup thing, and make a test server.
 
-- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.17.0, and get the latest beta build of CMI 9, which is 9.0.0.1, here is the link: <https://www.spigotmc.org/resources/3742/>
+- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.17.0 or download Paper 1.17 from their site, and get the latest beta build of CMI 9, which is 9.0.0.1, here is the link: <https://www.spigotmc.org/resources/3742/>
 
 - If you are not yet running CMI Lib 1.0.2.1 then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download CMI Lib 1.0.2.1 here: <https://www.spigotmc.org/resources/87610/>
 
@@ -111,3 +111,9 @@ These are for CMI 8.x and CMI 9.x:
 
 `CMI Library` Base Library 
 <https://www.spigotmc.org/resources/cmilib.87610/>
+
+`Spigot website` This is where you can get buildtools and make a spigot 1.17.0 jar
+<https://hub.spigotmc.org/jenkins/job/BuildTools/>
+
+`Paper website` This is where you can get Paper's 1.17.0 jar
+<https://papermc.io/downloads>
