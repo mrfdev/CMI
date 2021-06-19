@@ -27,7 +27,7 @@ This page should help explain what I personally think is the way to run CMI 9 on
 
 - /stop your server. Do the backup thing, and make a test server.
 
-- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.17.0, and get the latest beta build of CMI 9, which is 9.0.0.1, here is the link: <https://www.spigotmc.org/resources/cmi-298-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/download?version=403428>
+- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.17.0, and get the latest beta build of CMI 9, which is 9.0.0.1, here is the link: <https://www.spigotmc.org/resources/3742/>
 
 - If you are not yet running CMI Lib 1.0.2.1 then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download CMI Lib 1.0.2.1 here: <https://www.spigotmc.org/resources/87610/>
 
