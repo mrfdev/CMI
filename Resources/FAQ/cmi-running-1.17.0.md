@@ -2,7 +2,7 @@
 
 This page should help explain what I personally think is the way to run CMI 9 on Spigot and Paper 1.17.0, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
-<img width="473" alt="spigot-1 17 0-cmi-9 0 0 1-cmilib-1 0 2 1" src="https://user-images.githubusercontent.com/28841349/122654209-21377600-d14a-11eb-86af-d665db307f2b.png">
+<img width="466" alt="paper-1 17 0-cmi-9 0 0 1-cmilib-1 0 2 1" src="https://user-images.githubusercontent.com/28841349/122655085-2dbecd00-d150-11eb-8277-a14937a5c40a.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
