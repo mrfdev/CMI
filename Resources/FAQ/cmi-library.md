@@ -6,17 +6,22 @@ This page is a quick introduction to the CMI Library.
 
 It's a plugin helper that can deal with frequently used phrases, hex colors, etc. that other zrips plugins can use. This adds consistancy among the various plugins.
 
+You can see the CMI Lib page here: <https://www.zrips.net/cmilib/>
+You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmilib.87610/>
+
 ## Which plugins use this?
 
 It's mainly for the CMI version 9 plugin, but here's the full list.
 
-- CMI version 9.0.0.0
+- CMI version 9.0.0.1
 - Selection Visualizer version 3.0.4.0
-- TryMe version 7.0.0.0
+- TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.0
 - Residence version 5.0.0.0
+- Jobs-Reborn version 5.0.0.0
+- BottledExp version 3.0.0.0
 
-These currently support Spigot 1.17, and require the CMI Lib version 1.0.2.0 or newer to properly operate.
+These currently support Spigot 1.17, and require the CMI Lib version 1.0.2.2 or newer to properly operate.
 
 ## How do I get it?
 
@@ -34,9 +39,9 @@ Yep, I strongly recommend to always back up you whole server before making chang
 
 OMG, I had CMI with Lib 1.0.0.2
 Then TryMe with Lib 1.0.1.0
-And now Residcenw tih Lib 1.0.2.0
+And now Residcen with Lib 1.0.2.0
 
-Don't panic, the latest version can be used by all the plugins. Once you're ready for that final restart, before you start it up, keep 1.0.2.0 and delete older versions like 1.0.0.2 and 1.0.1.0.
+Don't panic, the latest version can be used by all the plugins. Once you're ready for that final restart, before you start it up, keep 1.0.2.2 and delete older versions like 1.0.0.2 and 1.0.1.0.
 
 ## I keep deleting CMI Lib and it keeps coming back!
 
