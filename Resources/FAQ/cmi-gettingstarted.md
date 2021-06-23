@@ -1,9 +1,8 @@
 # FAQ - How do I get started with CMI?
 
-This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
-https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/734900902594478240
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5
+**Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
@@ -11,7 +10,7 @@ https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/734900
 
 - Run CMI stable on Spigot 1.16.5 or Paper 1.16.5 using version 8.8.5.0, after setting it up /stop it.
 
-- Or Run CMI unstable-beta on Spigot 1.17 using test version 9.0.0.0, after setting it up, /stop it.
+- Or Run CMI unstable-beta on Spigot 1.17 using test version 9.0.0.2, after setting it up, /stop it.
 
 - Put the CMI jar in the plugins/ directory. Start the server back up and let CMI install.
 
