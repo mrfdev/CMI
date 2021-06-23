@@ -1,8 +1,8 @@
 # FAQ - How do I configure CMI to use LuckPerms prefix in Chat and Tab?
 
-This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist. And yes, you can use CMI and LuckPerms with CMI 9 on Spigot 1.17.
+**CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist. 
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Start using CMI as Chat Manager, if you were using something else.
@@ -89,5 +89,6 @@ If you for example are in that admin group that has this prefix set up, you can 
 
 - Restart the server, and press tab, it should show up now.
 
+**[TEMPORARY NOTE: Yes,this works on cmi 9 and mc 1.17 as well - will rewrite this when cmi 9 and 1.17 is more stable**
 
 More information about CMI: https://www.zrips.net/cmi/
