@@ -1,4 +1,6 @@
-# Running CMI on 1.16.5
+# FAQ - Running CMI on 1.16.5
+
+Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
@@ -8,7 +10,7 @@ This page should help explain what I personally think is the way to run CMI 8 on
 
 - This is about CMI 8 and server version 1.16.5, this is not about 1.17. That's a different document.
 - CMI version 8.8.5.0 is considered the Stable version you can run on a live production environment.
-- CMI Lib version 1.0.2.0 or older will automatically be replaced by version 1.0.2.1. This is okay.
+- CMI Lib version 1.0.2.3 or older will automatically be replaced by older versions. This is okay.
 - Zrips' compiled Vault 1.7.3, CMI Injector 1.0.2.3, and CMI Bungee 1.0.0.4 can be used on CMI 8.8.5.0 on Minecraft 1.16.5
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
@@ -28,7 +30,7 @@ This page should help explain what I personally think is the way to run CMI 8 on
 
 - Go to SpigotMC and buy CMI if you haven't yet. And download the latest version of Minecraft 1.16.5, which is CMI version 8, especially 8.8.5.0, here is the link: <https://www.spigotmc.org/resources/3742/download?version=402353>
 
-- If you are not yet running CMI Lib 1.0.2.1 then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download CMI Lib 1.0.2.1 here: <https://www.spigotmc.org/resources/87610/>
+- If you are not yet running CMI Lib 1.0.2.3 then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download CMI Lib 1.0.2.3 here: <https://www.spigotmc.org/resources/87610/>
 
 - Now that we have the latest files and are installing or upgrading from an older version to a new version, and we have a backup. It's time to replace any existing jars.
 
@@ -42,7 +44,7 @@ If you already are running CMI, you can skip this and go straight to Upgrading (
 
 - Keep an eye on the console, the latest.log will also have all the details. If something goes wrong, take note. And try to figure out what is up and try again.
 
-- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.1 and you're ready to Finish (see below)
+- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.3 and you're ready to Finish (see below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Upgrading CMI
 
@@ -54,7 +56,7 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - If you don't have the cmilibs folder, don't worry, CMI will create it for you.
 
-- If you have the old CMI Lib version 1.0.2.0 or older installed, don't worry, CMI will auto-upgrade it, and we will clean up after.
+- If you have the old CMI Lib version 1.0.2.2 or older installed, don't worry, CMI will auto-upgrade it, and we will clean up after.
 
 - Remove the old CMI `.jar` you're using from the plugins/ directory. It is okay, you should by now have a copy of it in the backup anyway. 
 
@@ -66,9 +68,9 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - Keep an eye on the console, the latest.log will also have all the details. If something goes wrong, take note. And try to figure out what is up and try again.
 
-- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.0 and you're ready to Finish (see below)
+- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.3 and you're ready to Finish (see below)
 
-- If your plugins/ directory has the old CMI Lib `.jar` version 1.0.2.0 or older, it is okay to remove it now. Keep the new 1.0.2.1 jar of course.
+- If your plugins/ directory has the old CMI Lib `.jar` version 1.0.2.2 or older, it is okay to remove it now. Keep the new 1.0.2.3 jar of course.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Finishing up.
 
@@ -86,7 +88,7 @@ What a list huh, okay, let's simplify this:
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TLDR; Summery
 
-- Stop the server, back it up, remove old jar, put new 8.8.5.0 jar there, start the server, then /stop it again, remove cmilib 1.0.2.0 or older jar, and start the server again. You're done! if the test goes well, upgrade your live server.
+- Stop the server, back it up, remove old jar, put new 8.8.5.0 jar there, start the server, then /stop it again, remove cmilib 1.0.2.3 or older jar, and start the server again. You're done! if the test goes well, upgrade your live server.
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What about 1.17?
 
