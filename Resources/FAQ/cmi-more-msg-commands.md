@@ -1,8 +1,9 @@
 # FAQ - How can I add more CMI /msg commands?
 
-This is not yet an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4 
+Zrips Discord @ https://discord.gg/dDMamN4 
 
-**CMI can do more /msg commands like /w, /whisper and /tell**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 and yes, you can use CMI extending msgs with CMI 9 on Spigot 1.17.
+**CMI can do more /msg commands like /w, /whisper and /tell**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0.
+
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Take the server offline with `/stop`, and backup your (server) data before making any changes.
 
