@@ -1,9 +1,8 @@
 # FAQ - How do I configure CMI for /rules?
 
-This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
-https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/719742400611876956
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle custom /rules**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 for a dynamic and flexible way of displaying /rules. And yes, you can use CMI custom /rules with CMI 9 on Spigot 1.17.
+**CMI can handle custom /rules**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for a dynamic and flexible way of displaying /rules.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Inside the `plugins/CMI/CustomText/` directory there is already a file called `rules.txt`, you should go through this and adjust it to your server rules.
