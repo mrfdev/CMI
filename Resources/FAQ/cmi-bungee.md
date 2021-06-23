@@ -1,10 +1,10 @@
 # FAQ - How can I use CMI Chat with Bungee?
 
-This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
-https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711599896695930942
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Bungee stuff for chat**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 and yes, you can use CMI Bungee with CMI 9 on Spigot 1.17.
-- Buy and Install CMI on all your servers (<https://www.spigotmc.org/resources/3742/>)
+**CMI can handle Bungee wide chat**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 and lower.
+
+- Buy CMI and Install it on all your servers (<https://www.spigotmc.org/resources/3742/>)
 - Download and Install CMI-Bungeecord on your proxy server (<http://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
 - Update CMI's `config.yml` (see below)
 ```yaml
