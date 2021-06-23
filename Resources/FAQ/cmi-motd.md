@@ -1,11 +1,10 @@
 # FAQ - How do I configure CMI for welcome message / motd?
 
-This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
-https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/711950696982904904
-
+Zrips Discord @ https://discord.gg/dDMamN4
 Optional video visually showing the /motd on 1MB https://youtu.be/3yjza6W2NNw
 
-**CMI can handle the MOTD things**, this is the recommended setup that works well with other plugins on Spigot/Paper 1.16.5 for a message of the day. And yes, you can use CMI MOTD with CMI 9 on Spigot 1.17.
+**CMI can handle the MOTD things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for a message of the day. 
+
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Start using CMI as Chat Manager, if you were using something else.
 - Update `config.yml` (see below)
