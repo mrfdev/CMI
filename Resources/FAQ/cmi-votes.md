@@ -1,9 +1,9 @@
 # FAQ - How do I use CMI to deal with Votes?
 
-This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
-https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/722010139560771585
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Votes**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to counts, display, and reward players voting. And yes, you can use CMI Votes with CMI 9 on Spigot 1.17.
+**CMI can handle Votes**, this is the recommended setup that works well on Spigot / Paper 1.17.0 to counts, display, and reward players voting. 
+
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Get NuVotifier (<https://www.spigotmc.org/resources/13449/>)
 
@@ -62,6 +62,3 @@ cmi.command.votes.others
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
 
-### Version
-
-Version 1.0.1, last updated: May 2021
