@@ -1,9 +1,10 @@
 # FAQ - How can I import from EssentialsX into CMI?
 
-This is not yet an FAQ message (yet?) on the CMI Discord @ https://discord.gg/dDMamN4
+Zrips Discord @ https://discord.gg/dDMamN4
 
 
-**CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot/Paper 1.16.5 and yes, you can use CMI Import with CMI 9 on Spigot 1.17.
+**CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot / Paper 1.17.0.
+
 - Buy and Install CMI on all your servers (<https://www.spigotmc.org/resources/3742/>)
 
 - Configure CMI to your liking. 
