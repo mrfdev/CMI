@@ -1,4 +1,6 @@
-# CMI Lib
+# FAQ - CMI Lib
+
+Zrips Discord @ https://discord.gg/dDMamN4
 
 This page is a quick introduction to the CMI Library. 
 
@@ -13,13 +15,15 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 It's mainly for the CMI version 9 plugin, but here's the full list.
 
-- CMI version 9.0.0.1
-- Selection Visualizer version 3.0.4.1
+- CMI version 9.0.0.2
+- Selection Visualizer version 3.0.4.2
 - TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.0
 - Residence version 5.0.0.0
 - Jobs-Reborn version 5.0.0.0
 - BottledExp version 3.0.0.0
+- ReCount version 3.5.0
+- TradeMe version 6.1.0.0
 
 These currently support Spigot and Paper 1.17, and require the CMI Lib version 1.0.2.3 or newer to properly operate.
 
