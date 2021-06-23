@@ -1,8 +1,8 @@
 # FAQ - Some CMI (safety) tips for server owners
 
-This is not an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot/Paper 1.16.5 for me. And yes, you can use CMI 9 on Spigot 1.17 and the same tips apply.
+**CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot / Paper 1.17.0 for me. 
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
