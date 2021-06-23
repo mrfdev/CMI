@@ -1,9 +1,8 @@
 # FAQ - How do I use Hex Colors with CMI?
 
-This is an FAQ message on the CMI Discord @ https://discord.gg/dDMamN4
-https://ptb.discordapp.com/channels/452792793631555594/526402563847880725/728614332069445682
+Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Hex Colors**, this is the recommended setup that works well on Spigot/Paper 1.16.5 to deal with Hex color support. And yes, you can use CMI RGB with CMI 9 on Spigot 1.17.
+**CMI can handle Hex Colors**, this is the recommended setup that works well on Spigot / Paper 1.17.0 to deal with Hex color support. 
 
 Expected format: `{#8b4726}`
 
