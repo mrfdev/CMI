@@ -38,3 +38,5 @@ Whether this two different ranks, or two different command modes for whatever ne
 ```
 
 Using the user meta feature from cmi a temp value can be stored, and then checked against. Allowing you within the same command to manage this value, use it to achieve something unique, including a toggle.
+
+More information about CMI: https://www.zrips.net/cmi/
