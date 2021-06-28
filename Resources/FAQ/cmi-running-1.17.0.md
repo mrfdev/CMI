@@ -110,3 +110,5 @@ These are for CMI 8.x and CMI 9.x:
 
 `Paper website` This is where you can get Paper's 1.17.0 jar
 <https://papermc.io/downloads>
+
+More information about CMI: https://www.zrips.net/cmi/
