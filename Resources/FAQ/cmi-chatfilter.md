@@ -48,3 +48,5 @@ cmi.chatfilter.bypass.[groupname] - Allows to bypass particular chat filter grou
 cmi.chatfilter.inform - Informs player when some one breaks chat filter rules
 cmi.chatfilter.spambypass - Allows to bypass chat spam filter
 ```
+
+More information about CMI: https://www.zrips.net/cmi/
