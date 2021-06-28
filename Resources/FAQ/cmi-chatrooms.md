@@ -45,3 +45,5 @@ Command `/cmi listroom` will display basic information about the available chat 
 You can create private chat rooms by adding `-private`. (Players will require an invitation to join private chat rooms)
 
 Players who got invitation to private chat room can rejoin chat room as many times as he wants, until he gets kicked from it.
+
+More information about CMI: https://www.zrips.net/cmi/
