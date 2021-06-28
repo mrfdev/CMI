@@ -38,3 +38,5 @@ Okay, and finally, the above is for when a player has joined the server. Below i
 
 In the Minecraft Client players can add your server and see it in their list of servers. This also has a message of the day. If you want to use CMI to set this message you can do so with the command:
 `/cmi setmotd &6hi \n &9welcome back`
+
+More information about CMI: https://www.zrips.net/cmi/
