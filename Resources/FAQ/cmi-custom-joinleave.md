@@ -4,8 +4,6 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can handle the custom chat things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for server owners who want to turn on and display a custom join and leave message to players.
 
-**[ TEMPORARY UPDATE: Custom locale for join/leave are global, and moved to CMILib/translations/ I will update these instructions soon.]**
-
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Start using CMI as Chat Manager, if you were using something else.
  * https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md
@@ -39,7 +37,10 @@ Messages:
     # Set to -1 to disable this
     AutoHideFrom: -1
 ```
-Next, inside the `plugins/CMI/Translations/` directory there is at least the file `Locale_EN.yml`, and below is an example of some basic text you could use / customize:
+Note: If you are still on CMI 8.8.5.0, the directory will be `plugins/CMI/Translations`.
+
+Next, inside the `plugins/CMILib/Translations/` directory there is at least the file `Locale_EN.yml`, and below is an example of some basic text you could use / customize:
+
 ```yaml
   FirstJoin: '{#Cerulean} 1MB Server »{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
     to 1MoreBlock.com!'
@@ -47,11 +48,9 @@ Next, inside the `plugins/CMI/Translations/` directory there is at least the fil
   LoginCustom: '{#Cerulean} 1MB Server »{#Feijoa} Welcome back &6[playerDisplayName]
     {#Feijoa}❤'
 ```
-As you can see you can use certain placeholders, cmi's hex colors, and set the text to whatever you want. Note that the above is a customization and not the default text, but gives you the info to search for within the locale file. 
+As you can see you can use certain variables, CMI's hex colors, and set the text to whatever you want. Note that the above is a customization and not the default text, but gives you the info to search for within the locale file. 
 
 Note if you use another language, you have to adjust that file. 
-
-Note that this should work out of the box if you have your CMI Chat configured. New and existing members will both see this on join  message when they join your server, etc.
 
 If you want to give first-time players something extra, you can utalize the `eventCommands.yml` file at the onfirstjoin and onjoin sections: (for example, you can make another .txt file, run certain commands, or do whatever)
 ```yaml
@@ -63,7 +62,7 @@ firstJoinServer:
 
 Optionally, if you wish to hide the join/quit messages for a certain group or user, you can use these permissions:
 ```
-cmd> cmi checkperm disable
+> cmi checkperm disable
   cmi.messages.disablelogin - Disables login message
   cmi.messages.disablequit - Disables logout message
 ```
