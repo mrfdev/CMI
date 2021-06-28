@@ -109,3 +109,5 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 - are my inventories shared between servers? i doubt it, you probably need a bungee-inventory plugin dedicated to this
 - can i use 1 database for all cmi instances? no, default is sqlite, use mysql, and make sure they all use a unique prefix. Using 1 user table for every server for example will very very very likely cause massive issues.
 ```
+
+More information about CMI: https://www.zrips.net/cmi/
