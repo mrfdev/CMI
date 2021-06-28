@@ -1,8 +1,8 @@
-# FAQ
+# FAQ - CMI Chat Filter Information
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-## CMI Chatfilter
+## chatfilter.yml
 
 These instructions should work fine for CMI 8.8.5.0 and CMI 9.x for Spigot / Paper 1.17.0.
 
