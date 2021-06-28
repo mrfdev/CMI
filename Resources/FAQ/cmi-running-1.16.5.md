@@ -110,3 +110,4 @@ These are for CMI 8.x and CMI 9.x:
 
 `CMI Library` Base Library 
 <https://www.spigotmc.org/resources/cmilib.87610/>
+more information here: <https://www.zrips.net/cmilib/>
