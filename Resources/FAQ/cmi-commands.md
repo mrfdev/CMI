@@ -1,8 +1,8 @@
 # FAQ - How do I deal with CMI commands?
 
- You can use this on CMI 8.8.5.0 for Spigot / Papper 1.17.0.
-
 Zrips Discord @ https://discord.gg/dDMamN4
+
+You can use this on CMI 8.8.5.0 for Spigot / Papper 1.17.0.
 
 **CMI can handle Commands.** (Both base commands and your own custom commands)
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
