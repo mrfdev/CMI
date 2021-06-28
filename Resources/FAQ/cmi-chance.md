@@ -2,7 +2,6 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-
 **CMI can deal with % chance**, this is the recommended setup that works well on Spigot / Paper 1.17.0 and lower, to make dynamic features using specialized commands and smart use of placeholders.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
@@ -56,3 +55,5 @@ How to install these examples?
 - Or obviously, what is easier, stop the server, open `CustomAlias.yml` and paste it at the bottom, and start the server again. You can then also edit it in-game. 
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+
+More information about CMI: https://www.zrips.net/cmi/
