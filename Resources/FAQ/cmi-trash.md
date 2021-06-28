@@ -138,3 +138,4 @@ They get a GUI where they can dump their inventory in to dispose of their items.
 
 And they can now also place a sign and type `[trash]` on it. Then it should change the way the sign looks to those lines we've set. And when they right click on the sign it should open the dispose interface. 
 
+More information about CMI: https://www.zrips.net/cmi/
