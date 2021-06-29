@@ -1,0 +1,17 @@
+# When enabled plugin will try to keep CMILib up to date automatically
+AutoUpdate: true
+# Language file you want to use
+Language: EN
+GlobalGui:
+  # Defines item type in empty fields in GUI when its needed to be filled up
+  EmptyField: BLACK_STAINED_GLASS_PANE
+# When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
+AutoFileRemoval: true
+Spawners:
+  # List of spawners to pick from while using spawner:random variable
+  mysterySpawners:
+  - skeleton
+  - zombie
+  - silverfish
+  - panda
+  - fox

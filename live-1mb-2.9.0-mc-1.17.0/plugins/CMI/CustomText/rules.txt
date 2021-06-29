@@ -1,0 +1,32 @@
+<AutoPage>
+&6 * &b Thanks for joining our family-friendly community.
+&6 * &e The 1MB server is a community with players of
+&6 * &e ages 13 and up from all around the world. &o"Hi!"
+&6 * &e Please keep it clean, and be nice to each other.
+&6 * &e Play fair, this includes no misbehaving or cheating.
+
+&6 * &e Please read, understand, and agree to our rules.
+&6 * &e You can click on this link for detailed info:
+&6 * &9 https://omgboards.com/threads/260946/
+&6 * &e including, the Mojang Community Standards.
+{#Cerulean}&l&m                                                     &r
+&6 * If you disagree to our rules, please disconnect.
+&6 
+<NextPage>
+&6  1.  No Griefing or stealing of any type allowed.
+&6  2.  No Spamming/flooding with text or accounts.
+&6  3.  No Excessive shouting in caps, please.
+&6  4.  No Swearing, bullying, trolling, or flaming.
+&6  5.  No Racism or sexist remarks and such either.
+&6  6.  English only in the global chat, please.
+&6 
+<NextPage>
+&6  7.  No begging for OP, Ranks, or Items.
+&6  8.  No Advertising or other-server discussions.
+&6  9.  No Banned Blocks/Items, or duping allowed.
+&6 10.  Being AFK is allowed, anti-afking is not.
+&6 11.  0-tick farms are not allowed.
+&6 12.  Fair-play; No game exploiting or cheating (this includes abusing bugs/glitches in the game!)
+&6 13.  Respect all Players, including Staff.
+{#Cerulean}&l&m                                                     &r
+&6 13.  Listen to the Staff, their word is final.

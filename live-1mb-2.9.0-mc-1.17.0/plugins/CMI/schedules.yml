@@ -95,33 +95,24 @@ mcmmoStop:
   - xprate reset
 StopServer:
   Enabled: false
-  PerformOn:
-    '1':
-      Hour: 3
-      Minute: 59
-      Second: 30
   Commands:
-  - actionbar! &eServer will stop in &630 &esec!
+  - actionbar! &eRestart for quick maintenance in &620 &esec!
   - delay! 5
-  - actionbar! &eServer will stop in &625 &esec!
+  - actionbar! &eRestart for quick maintenance in &615 &esec!
   - delay! 5
-  - actionbar! &eServer will stop in &620 &esec!
+  - actionbar! &eRestart for quick maintenance in &610 &esec!
   - delay! 5
-  - actionbar! &eServer will stop in &615 &esec!
-  - delay! 5
-  - actionbar! &eServer will stop in &610 &esec!
-  - delay! 5
-  - actionbar! &eServer will stop in &65 &esec!
+  - actionbar! &eRestart for quick maintenance in &65 &esec!
   - delay! 1
-  - actionbar! &eServer will stop in &64 &esec!
+  - actionbar! &eRestart for quick maintenance in &64 &esec!
   - delay! 1
-  - actionbar! &eServer will stop in &63 &esec!
+  - actionbar! &eRestart for quick maintenance in &63 &esec!
   - delay! 1
-  - actionbar! &eServer will stop in &62 &esec!
+  - actionbar! &eRestart for quick maintenance in &62 &esec!
   - delay! 1
-  - actionbar! &eServer will stop in &61 &esec!
+  - actionbar! &eRestart for quick maintenance in &61 &esec!
   - delay! 1
-  - kickall! &eServer will be back online soon!
+  - kickall! &eServer will be back online soon Give us a minute!
   - delay! 1
   - stop
 AllInOneJustExample:
@@ -144,7 +135,7 @@ AllInOneJustExample:
   - msg! [randomPlayer] &eYou just got diamonds!
   - broadcast! &e[randomPlayer] just got some stuff!
   - delay! 1
-  - actionbar! &eServer will stop in &61 &esec!
+  - actionbar! &eRestart for quick maintenance in &61 &esec!
   - kickall! &eServer will be back online soon!
 Announcer:
   Enabled: true
@@ -228,8 +219,8 @@ Announcer:
     up to 5 /points per fish.
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sell all the types of
     fish on the: /fish shop'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB version 2.8.9
-    for Minecraft 1.16.5'
+  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB version 2.9.0
+    for Minecraft 1.17'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
     can have up to 1 Chest /shops
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group Player
@@ -281,28 +272,13 @@ Announcer:
     is with Jobs, players can join up to three. To get started type: "/jobs browse"'
 tenyearsweekend:
   Enabled: false
-  MinPlayers: 2
-  Delay: 600
+  MinPlayers: 1
+  Delay: 120
   Repeat: true
   Randomize: true
   Feedback: false
   Commands:
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Special Kit Available NOW!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Keep Inventory is ON!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Keep Exp is ON!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Multiple Drop Parties!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Unique Lootboxes are LIVE!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Discord VC Hangout!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l /warp fish - %server_countdown_H.dd.MM.yyyy_23.05.03.2021%
-    until tournament
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l Super Boosters are LIVE!
-  - asConsole! cmi bossbarmsg all -s:12 -t:14 -n:tenyearsweekend -c:green {#orange>}Celebration
-    Weekend »{#gold<}{#Feijoa}&l PLAY This Weekend For Awesomeness!!!!
+  - asConsole! cmi bossbarmsg all -s:30 -t:30 -n:upgraded -c:green {#orange>}» GRACE
+    PERIOD {#gold<}{#Feijoa}&l Testing 1.17 Fri- Monday!
+  - asConsole! cmi bossbarmsg all -s:30 -t:30 -n:upgraded -c:green {#orange>}» GRACE
+    PERIOD {#gold<}{#Feijoa}&l Report bugs on /Discord

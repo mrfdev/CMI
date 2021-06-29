@@ -43,7 +43,7 @@ quitServer:
   Commands:
   - cmi invsave [playerName]
 playerDeath:
-  Enabled: true
+  Enabled: false
   Commands:
   - 'cmi msg [playerName] !&7>You died here: %player_x%, %player_y%, %player_z% (%player_world%)'
   SourceCommands: []
@@ -80,7 +80,7 @@ bedEnter:
   Commands:
   - cmi invsave [playerName]
   - delay! 1
-  - cmi actionbarmsg all {#orange>}(zZz → [playerName]){#gold<}
+  - cmi actionbarmsg all {#orange>}(zZz → [playerName] in %player_world%){#gold<}
 playerWorldChange:
   Enabled: true
   Commands:
