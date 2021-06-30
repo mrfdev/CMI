@@ -37,6 +37,25 @@ Whether this two different ranks, or two different command modes for whatever ne
     - asConsole! usermeta [playerName] add trp 0
 ```
 
+
+## FLASHLIGHT example
+turn on night vision, and turn it off, using the /flashlight command, append this at the end of customalias.yml and restart
+```yaml
+  flashlight:
+    Cmds:
+    - check:%cmi_user_meta_flashlightToggle%==null! asConsole! cmi usermeta [playerName] add flashlightToggle off
+    - check:%cmi_user_meta_flashlightState%==null! asConsole! cmi usermeta [playerName] add flashlightState off
+    - check:%cmi_user_meta_flashlightState%==off! check:%cmi_user_meta_flashlightToggle%==off! asConsole! cmi effect [playerName] night_vision 999 1
+    - check:%cmi_user_meta_flashlightState%==off! check:%cmi_user_meta_flashlightToggle%==off! asConsole! cmi usermeta [playerName] add flashlightToggle on
+    - check:%cmi_user_meta_flashlightState%==on! check:%cmi_user_meta_flashlightToggle%==on! asConsole! cmi effect [playerName] night_vision 1 1
+    - check:%cmi_user_meta_flashlightState%==on! check:%cmi_user_meta_flashlightToggle%==on! asConsole! cmi usermeta [playerName] add flashlightToggle off
+    - check:%cmi_user_meta_flashlightState%==off! check:%cmi_user_meta_flashlightToggle%==on! asConsole! cmi usermeta [playerName] add flashlightState on
+    - check:%cmi_user_meta_flashlightState%==on! check:%cmi_user_meta_flashlightToggle%==off! asConsole! cmi usermeta [playerName] add flashlightState off
+    Tab: false
+```
+
+
+
 Using the user meta feature from cmi a temp value can be stored, and then checked against. Allowing you within the same command to manage this value, use it to achieve something unique, including a toggle.
 
 More information about CMI: https://www.zrips.net/cmi/
