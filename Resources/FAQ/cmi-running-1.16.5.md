@@ -4,8 +4,6 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17 are stable enough.
 
-<img width="446" alt="paper-1 16 5-cmi-8 8 5 0-cmilib-1 0 2 0" src="https://user-images.githubusercontent.com/28841349/122256667-93e8ed00-cecf-11eb-9328-30a3d149c9b7.png">
-
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
 - This is about CMI 8 and server version 1.16.5, this is not about 1.17. That's a different document.
