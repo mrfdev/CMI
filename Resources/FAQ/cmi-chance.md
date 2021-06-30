@@ -45,6 +45,67 @@ Another example, where we only give a certain item when it's a certain %, instea
 ```
 Please note that there are commands that will stop the later commands from executing  (via the # icon)
 
+
+
+---
+Okay next one, using the above we can make a private random item generator, and a public command for staff that can use this generator to reward players with an item when needed.
+
+```
+  _itemList:
+    Cmds:
+    - asConsole! cmi usermeta $1 remove randomchance -s
+    - asConsole! cmi usermeta $1 remove randomitem -s
+    - asConsole! cmi usermeta $1 add randomchance %cmi_random_1_100% -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<10! asConsole! cmi usermeta $1 add randomitem dirt -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=10#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<20! asConsole! cmi usermeta $1 add randomitem sand -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=20#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<30! asConsole! cmi usermeta $1 add randomitem stone -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=30#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<40! asConsole! cmi usermeta $1 add randomitem emerald -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=40#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<50! asConsole! cmi usermeta $1 add randomitem diamond -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=50#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<60! asConsole! cmi usermeta $1 add randomitem stick -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=60#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<70! asConsole! cmi usermeta $1 add randomitem coarse_dirt -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=70#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<80! asConsole! cmi usermeta $1 add randomitem ancient_debris -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=80#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<90! asConsole! cmi usermeta $1 add randomitem grass_block -s
+    - ptarget:$1! check:%cmi_user_meta_randomchance%>=90#!
+    - ptarget:$1! check:%cmi_user_meta_randomchance%<=100! asConsole! cmi usermeta $1 add randomitem cornflower -s
+    Perm: true
+    Tab: false
+  giverandomitem:
+    Cmds:
+    - 'check:$1==null! asConsole! cmi msg [playerName] !{#orange}Yo, use a playername:
+      /$0 <playername>'
+    - 'check:$1!=null! ifoffline:$1! asConsole! cmi msg [playerName] !{#orange}Yo,
+      it is: /$0 <playername> and that param is not an online player'
+    - check:$1!=null! ifonline:$1! asConsole! _itemList [playerName]
+    - check:$1!=null! ifonline:$1! asConsole! give $1 %cmi_user_meta_randomitem%
+    - 'check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#orange}Given $1 random
+      item: %cmi_user_meta_randomitem%'
+    Perm: true
+    CustomTabs:
+    - '[playername]'
+```
+The above can be added on a new line at the end of customalias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 You can learn more about specialized commands, and placeholders by CMI here:
 - https://www.zrips.net/cmi/commands/specialized/
 - https://www.zrips.net/cmi/placeholders/
