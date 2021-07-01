@@ -2,16 +2,16 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-This page should help explain what I personally think is the way to run CMI 9 on Spigot and Paper 1.17.0, at least until CMI 9 and Minecraft 1.17 are stable enough.
+This page should help explain what I personally think is the way to run CMI 9 on Spigot-, and Paper 1.17.
 
-<img width="463" alt="paper-1 17 0-cmi-9 0 0 3-cmilib-1 0 2 4" src="https://user-images.githubusercontent.com/28841349/123666362-6d18a800-d839-11eb-89a8-af9f5fa95c68.png">
+<img width="445" alt="paper-1 17 0-cmi-9 0 0 4-cmilib-1 0 2 5" src="https://user-images.githubusercontent.com/28841349/124101125-5489d700-da5f-11eb-9936-abff42fa9679.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
 - This is about CMI 9 and Spigot or Paper server version 1.17.0, this is not about 1.16.5. That's a different document.
 - CMI version 8.8.5.0 is considered the Stable version you can run on a live production environment. You can not use this on 1.17, use CMI 9.
 - CMI version 9.0.0.4 is stable enough as an early release for 1.17, if you want to run it live that's fine. But backup your data and test things first!
-- CMI Lib version 1.0.2.4 or older will automatically download. It will replace older CMI Lib jars. This is okay.
+- CMI Lib version 1.0.2.5 or older will automatically download. It will replace older CMI Lib jars. This is okay.
 - Zrips' libraries and other resources are linked below.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
