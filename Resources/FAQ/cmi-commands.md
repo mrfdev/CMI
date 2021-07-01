@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-You can use this on CMI 8.8.5.0/9.0.0.3 for Spigot / Paper 1.16.5/1.17.0.
+You can use this on CMI 8.8.5.0 and 9.0.0.4 for Spigot-, and Paper 1.17 and below.
 
 **CMI can handle Commands.** (Both base commands and your own custom commands)
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
