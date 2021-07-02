@@ -49,6 +49,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi anvilrepaircost $1-
+  /anvilrepaircost:
+    Enabled: false
+    Tab: true
+  #  
   # /cmi armorstand $1-
   /armorstand:
     Enabled: false
@@ -1618,6 +1623,9 @@ Alias:
   #  
   # /cmi warp $1-
   /warp:
+    Enabled: false
+    Tab: true
+  /warps:
     Enabled: false
     Tab: true
   #  
