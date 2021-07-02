@@ -224,3 +224,7 @@ anvilRenameColor: false
 # Handling of launch command falldamage
 # Applies for servers from 1.7.x and up
 launchPad: false
+#  
+# Handling of launch custom death messages
+# Applies for servers from 1.7.x and up
+deathMessages: false
