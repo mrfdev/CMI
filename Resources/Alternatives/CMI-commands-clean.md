@@ -1,5 +1,5 @@
 ```
- subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks])
+subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks])
 actionbarmsg [playerName/all] (-s:[seconds]) [message]
 afk (-p:playerName) (reason) (-s)
 afkcheck [playerName/all]
