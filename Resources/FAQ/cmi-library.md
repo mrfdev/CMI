@@ -15,7 +15,7 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 The full list as of June 30th, 2021
 
-- CMI version 9.0.0.4
+- CMI version 9.0.0.6
 - Selection Visualizer version 3.0.4.2
 - TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.0
@@ -25,7 +25,7 @@ The full list as of June 30th, 2021
 - ReCount version 3.5.0
 - TradeMe version 6.1.0.0
 
-These currently support Spigot-, and Paper 1.17 and lower, and require the CMI Lib version 1.0.2.4 or newer to properly operate.
+These currently support Spigot-, and Paper 1.17 and lower, and require the CMI Lib version 1.0.2.5 or newer to properly operate.
 
 ## How do I get it?
 
@@ -45,7 +45,7 @@ OMG, I had CMI with Lib 1.0.0.2
 Then TryMe with Lib 1.0.1.0
 And now Residcen with Lib 1.0.2.3
 
-Don't panic, the latest version can be used by all the plugins. Once you're ready for that final restart, before you start it up, keep 1.0.2.5 and delete older versions like 1.0.0.2 and 1.0.1.0.
+Don't panic, the latest version can be used by all the plugins. Once you're ready for that final restart, before you start it up, keep the latest, and delete older versions.
 
 From CMI Library version 1.0.2.4 onwards it should automatically clean-up older lib jars. If it does not, you can stop the server, manually remove the older jars and start the server again.
 
