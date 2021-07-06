@@ -55,6 +55,14 @@ WorldLimits:
     world_survival:
     - None
 ```
+  
+You could temporarily disable the module for worldlimits in `modules.yml` and start the server back up again and see if this has any impact on your edge-case problem.
+```yml
+# World limitations: fly, game mode and god mode
+# Applies for servers from 1.7.x and up
+worldLimits: true
+```
+  
 
 Permission wise, make sure you don't wildcard your players, if you want to worldlimit.* them, you also give them bypass permissions; for example:
 ```yml
@@ -96,3 +104,92 @@ And command wise, if you set god to false, do they still have god mode? Or does 
 >
 ```
 
+When players are PVP-ing they are in combat mode, CMI has a few settings for this as well. Double check they're configured properly and don't have crazy values as well. 
+```yml
+Combat:
+  # Defines combat timer to be used in particular features
+  Timer: 10
+  # Prevents damage from players with god mode enabled
+  # Can be bypassed with cmi.pvp.godBypass permission node
+  noGodDamage: true
+  # informs player that he cant damage players while in god mode
+  noGodDamageInform: true
+  # If set to true, then attacked player will be included into combat mode even if he doesnt fight back
+  # If set to false then only attacker will be marked for pvp mode
+  IncludeVictim: true
+  Player:
+    # If set to true, then player who gets placed into combat mode will get its fly mode disabled
+    # This will disable players fly mode which will result in player dropping down and will disable option to start flying
+    # This can be bypassed by player performing fly command if he has access to it and commands durring combat are not blocked
+    # Can be bypassed with cmi.pvp.PFlyBypass permission node
+    DisableFlight: true
+    # If set to true player whose fly mode got disabled will not suffer fall damage, once
+    DisableFallDamage: false
+    # When set to true player will see boss bar message indicating how long until combat mode ends
+    # This only applies for pvp type combat
+    ShowBossBar: true
+    # When set to true players will be only able to use commands defined in the list
+    # This only applies for pvp type combat
+    BlockCommands: true
+    AllowedCommands:
+    - msg
+    - r
+    - tell
+    # When set to true AllowedCommands become black list which will define which commands player cant use
+    MakeBlackList: false
+  Mob:
+    # If set to true, then player who gets placed into combat mode will get its fly mode disabled
+    # Can be bypassed with cmi.pvp.MFlyBypass permission node
+    DisableFlight: false
+    # If set to true player whose fly mode got disabled will not suffer fall damage, once
+    DisableFallDamage: false
+    # When set to true player will see boss bar message indicating how long until combat mode ends
+    # This only applies for pve type combat
+    ShowBossBar: false
+    # When set to true players will be only able to use commands defined in the list
+    # This only applies for pve type combat
+    BlockCommands: false
+    AllowedCommands:
+    - msg
+    - r
+    - tell
+    # When set to true AllowedCommands become black list which will define which commands player cant use
+    MakeBlackList: false
+  Heads:
+    Player:
+      Drop: true
+      # Percentage from 0 to 100 for head to be dropped. Decimals are acceptable, like 0.2
+      # 100 will mean that head will be dropped every time player kills another player
+      # 1 will mean that there is 1% that player will drop head if he is killed by another player
+      Percentage: 25
+      # Percentage from 0 to 100 for lowering chance in getting second head of same player
+      # This will reset on each server restart
+      LowerChanceOfterDrop: 50.0
+      # When enabled player heads will have bigger chance to drop when using tools with looting enchantment
+      # Value is in % and it will add appropriate percentage to current drop chance by using drop chance itself
+      # For example player who has head drop change of 1% with looting 3 which has 30% bonus will have 1.3% as end value (default values)
+      # This only applies for player heads
+      # You can add as many levels as you want, simply duplicate line and set new number, in example
+      # Lvl33: 35.5
+      LootBonus:
+        Enabled: false
+        Lvl1: 5.0
+        Lvl2: 15.0
+        Lvl3: 30.0
+      # List of worlds where we should drop player heads. Keep it empty if you want to include all posible ones
+      Worlds: []
+    Mob:
+      # Enables custom mob heads dropping from mobs with particular chance
+      # Check customHeads.yml for customization by entityType
+      Drop: true
+      # List of worlds where we should drop mob heads. Keep it empty if you want to include all posible ones
+      Worlds: []
+```
+
+You could temporarily disable combat in `modules.yml` and start the server up again, and see if this has an impact on your edge-case problem.
+```yml
+# Handles player combat system
+# Applies for servers from 1.7.x and up
+playerCombat: true
+```
+  
