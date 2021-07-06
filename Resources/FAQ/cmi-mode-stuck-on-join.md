@@ -57,7 +57,7 @@ WorldLimits:
 ```
 
 Permission wise, make sure you don't wildcard your players, if you want to worldlimit.* them, you also give them bypass permissions; for example:
-```
+```yml
 > cmi checkperm worldlimit
 [INFO]: --------------------------------------------------
 [INFO]: 1. cmi.worldlimit.elytra.bypass - Allows to bypass elytra mode limitations by worlds
@@ -67,3 +67,32 @@ Permission wise, make sure you don't wildcard your players, if you want to world
 [INFO]: 5. cmi.worldlimit.gamemode.bypass - Allows to bypass game mode limitations by worlds
 >
 ```
+
+You can also double check their group/player permissions to see if these are properly applied (granted or negated)
+```yml
+> cmi checkperm god
+[INFO]: --------------------------------------------------
+[INFO]: 1. cmi.command.god - Set players god mode to true or false
+[INFO]: 2. cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
+[INFO]: 3. cmi.pvp.godBypass - Allows to damage player while being in god mode
+[INFO]: 4. cmi.command.tgod - Set players temporarily god mode until relog or time end
+[INFO]: 5. cmi.command.god.others - Set players god mode to true or false
+---->When command is used on another player<----
+Base command required
+[INFO]: 6. cmi.command.search - Search items/enchants/fly/maxhp/gm/oversize modes and other stuff from all users
+[INFO]: 7. cmi.command.tgod.others - Set players temporarily god mode until relog or time end
+---->When command is used on another player<----
+Base command required
+>
+```
+
+And command wise, if you set god to false, do they still have god mode? Or does this make them vulnerable again?
+```yml
+> cmi checkcommand god
+[INFO]: --------------------------------------------------
+[INFO]: 1. search
+[INFO]: 2. tgod [playerName] (timeInSec) (-s)
+[INFO]: 3. god [playerName] (true/false) (-s)
+>
+```
+
