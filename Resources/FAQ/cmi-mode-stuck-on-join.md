@@ -193,3 +193,10 @@ You could temporarily disable combat in `modules.yml` and start the server up ag
 playerCombat: true
 ```
   
+You can also check your permissions and commands related to flying, creative mode, god, temp fly, temp god, etc. And make sure you don't run anything in the server before they disconnect that gives them access to these commands, grants them the related permisisons to enable any of this, or some shop item or attachedcommand etc that triggers this stuff. 
+
+  
+## I've tried everything, it is still happening.
+  
+Then stop the server, back it up, then clone it. Start a test setup on a different port, and remove all the plugins. And try with just CMI and ask the player to join and reproduce the issue. 
+
