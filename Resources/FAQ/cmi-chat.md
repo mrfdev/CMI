@@ -3,7 +3,7 @@
 Zrips Discord @ https://discord.gg/dDMamN4
 
 
-**CMI can handle the in-game Chat (Chat Manager)**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0.
+**CMI can handle the in-game Chat (Chat Manager)**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 - Stop using the old Chat Manager, if you were using one.
 - Buy CMI and Install it (<https://www.spigotmc.org/resources/3742/>)
 - Update `config.yml` (see below)
