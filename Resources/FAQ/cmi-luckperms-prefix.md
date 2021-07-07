@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist. 
+**CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist. 
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Start using CMI as Chat Manager, if you were using something else.
