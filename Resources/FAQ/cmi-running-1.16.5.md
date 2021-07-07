@@ -1,8 +1,10 @@
 # FAQ - Running CMI on 1.16.5
 
+**[edit on July 7th: Mojang has released 1.17.1, we recommend to use CMI version 9 - please update to stay current and received bug fixes and better support]**
+
 Zrips Discord @ https://discord.gg/dDMamN4
 
-This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17 are stable enough.
+This page should help explain what I personally think is the way to run CMI 8 on Minecraft 1.16.5, at least until CMI 9 and Minecraft 1.17.1 are stable enough.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
