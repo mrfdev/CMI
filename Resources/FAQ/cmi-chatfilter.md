@@ -4,7 +4,7 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 ## chatfilter.yml
 
-These instructions should work fine for CMI 8.8.5.0 and CMI 9.x for Spigot / Paper 1.17.0.
+These instructions should work fine for CMI 8.8.5.0 and CMI 9.x for Spigot / Paper 1.17.1.
 
 CMI offers a way to filter what players in-game are typing. This can trigger on a word, matching regex, swearing, and capitatlization. 
 
