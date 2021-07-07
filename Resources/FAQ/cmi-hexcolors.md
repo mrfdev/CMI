@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Hex Colors**, this is the recommended setup that works well on Spigot / Paper 1.17.0 to deal with Hex color support. 
+**CMI can handle Hex Colors**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to deal with Hex color support. 
 
 Expected format: `{#8b4726}`
 
