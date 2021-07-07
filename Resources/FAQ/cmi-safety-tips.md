@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot / Paper 1.17.0 for me. 
+**CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot / Paper 1.17.1 for me. 
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
