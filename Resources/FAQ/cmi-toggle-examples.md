@@ -6,7 +6,7 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 CMI is flexible and dynamic enough that it can do fancy tricks. One of them is a way to allow you to toggle certain things. This page has some examples to demonstrate how you could learn from them and apply it to your edge case situation.
 
-These should work on CMI 9 and lower on Spigot / Paper 1.17.0 and lower.
+These should work on CMI 9 and lower on Spigot / Paper 1.17.1 and lower.
 
 ### Toggle example 1
 
