@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle custom /help**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for a dynamic and flexible way of displaying /help. 
+**CMI can handle custom /help**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a dynamic and flexible way of displaying /help. 
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Inside the `plugins/CMI/CustomText/` directory you can put a file called `help.txt`.
