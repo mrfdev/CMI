@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-You can use this on CMI 8.8.5.0 and CMI 9.x for Spigot / Paper 1.17.
+You can use this on CMI 8.8.5.0 and CMI 9.x for Spigot / Paper 1.17.1.
 
 **CMI Chat Rooms feature (information, commands, permissions, etc)**
 
