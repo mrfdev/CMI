@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0
+**Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 
