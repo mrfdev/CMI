@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle the MOTD things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 for a message of the day. 
+**CMI can handle the MOTD things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a message of the day. 
 
 This FAQ covers both the welcome message and the server list welcome message.
 
