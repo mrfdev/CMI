@@ -3,7 +3,7 @@
 Zrips Discord @ https://discord.gg/dDMamN4
 
 
-**CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot / Paper 1.17.0.
+**CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot / Paper 1.17.1.
 
 - Buy and Install CMI on all your servers (<https://www.spigotmc.org/resources/3742/>)
 
