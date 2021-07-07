@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Bungee wide chat**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0 and lower.
+**CMI can handle Bungee wide chat**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 and lower.
 
 - Buy CMI and Install it on all your servers (<https://www.spigotmc.org/resources/3742/>)
 - Download and Install CMI-Bungeecord on your proxy server (<http://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
