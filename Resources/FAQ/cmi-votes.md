@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Votes**, this is the recommended setup that works well on Spigot / Paper 1.17.0 to counts, display, and reward players voting. 
+**CMI can handle Votes**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to counts, display, and reward players voting. 
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Get NuVotifier (<https://www.spigotmc.org/resources/13449/>)
