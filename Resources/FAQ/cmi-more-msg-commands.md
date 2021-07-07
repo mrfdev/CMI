@@ -2,7 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4 
 
-**CMI can do more /msg commands like /w, /whisper and /tell**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.0.
+**CMI can do more /msg commands like /w, /whisper and /tell**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Take the server offline with `/stop`, and backup your (server) data before making any changes.
