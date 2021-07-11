@@ -1,10 +1,19 @@
-# FAQ - Running CMI on Spigot / Paper 1.17.1
+# FAQ - Running CMI on Spigot / Paper 1.17.0 / 1.17.1-beta
+
+**edit on July 11th**
+**Mojang has released 1.17.1 recently, we recommend to use CMI version 9 and upwards - please update to stay current and received bug fixes and better support**
+**This document has been replaced by https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-running-1.17.1.md and will be deleted soon**
+
+--- legacy instructions:
+
+
+
+
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI 9 on Spigot-, and Paper 1.17.1.
 
-<img width="443" alt="paper-1 17 0-cmi-9 0 0 5-cmilib-1 0 2 6" src="https://user-images.githubusercontent.com/28841349/124337203-b5212d00-dba1-11eb-8e19-13ff050b01dd.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
