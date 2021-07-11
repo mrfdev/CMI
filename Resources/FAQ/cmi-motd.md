@@ -46,6 +46,8 @@ Optionally, you can make a `/motd` command. A lot of servers have it, this way p
 In the Minecraft Client players can add your server and see it in their list of servers. This also has a message of the day. If you want to use CMI to set this message you can do so with the command:
 `/cmi setmotd &6hi \n &9welcome back`
 
+You can use legacy code `&` colors as well as the current modern RGB `{#hex}` colors. The `\n` in the example shows you how to split your text to a new line.
+
 ## More information:
 
 More information about CMI: https://www.zrips.net/cmi/
