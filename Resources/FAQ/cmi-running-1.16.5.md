@@ -1,6 +1,10 @@
 # FAQ - Running CMI on 1.16.5
 
-**[edit on July 7th: Mojang has released 1.17.1, we recommend to use CMI version 9 - please update to stay current and received bug fixes and better support]**
+**edit on July 11th**
+**Mojang has released 1.17.1 recently, we recommend to use CMI version 9 and upwards - please update to stay current and received bug fixes and better support**
+**This document has been replaced by https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-running-1.17.1.md and will be deleted soon**
+
+--- legacy instructions:
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
