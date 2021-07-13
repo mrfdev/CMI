@@ -5,7 +5,8 @@ There's a video: https://youtu.be/TLKAusnisqs
 
 **CMI commands can be extended through the aliaseditor**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to make commands even more dynamic and do exactly what you want, using the alias editor. 
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 - Next, you can go to `Alias.yml` and find the command you wish to extend. For example: `/clearchat: true`, make sure it's set to `false`, save the file.
 
