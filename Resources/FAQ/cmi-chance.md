@@ -4,7 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can deal with % chance**, this is the recommended setup that works well on Spigot / Paper 1.17.1 and lower, to make dynamic features using specialized commands and smart use of placeholders.
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 - Next, realise you can use this probably in various features of CMI, such as CMI chat, custom aliassed commands, holograms, etc. Generally everywhere that you can use both specialized commands and placeholders and run commands. So this includes eventcommands.yml and scheduler.yml. 
 
@@ -92,17 +93,6 @@ Okay next one, using the above we can make a private random item generator, and 
     - '[playername]'
 ```
 The above can be added on a new line at the end of customalias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
-
-
-
-
-
-
-
-
-
-
-
 
 
 
