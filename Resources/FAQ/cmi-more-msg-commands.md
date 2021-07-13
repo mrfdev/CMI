@@ -4,7 +4,9 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can do more /msg commands like /w, /whisper and /tell**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
+
 - Take the server offline with `/stop`, and backup your (server) data before making any changes.
 
 - First, negate the `minecraft.command.msg` permission with your permission manager.
