@@ -5,7 +5,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot / Paper 1.17.1.
 
-- Buy and Install CMI on all your servers (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 - Configure CMI to your liking. 
 
