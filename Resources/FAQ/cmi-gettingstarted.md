@@ -4,7 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **Get Started with CMI**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 **Note:** This is perhaps important to mention. CMI is a big package, it covers a lot of server management topics, from kicks and msgs, to warps, kits, and custom commands. It's dynamic and flexible. And since every server is different: The approach to start might differ per server.
 
