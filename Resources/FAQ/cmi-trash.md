@@ -2,7 +2,10 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-*This is made in CMI version 8.8.x.x on Minecraft 1.16.5, but should work on older versions and yes, you can use CMI trash with CMI 9 on Spigot 1.17.*
+You can use this in CMI 9 on 1.17.1 and below.
+
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 
 **Introducetion to Dispose**
