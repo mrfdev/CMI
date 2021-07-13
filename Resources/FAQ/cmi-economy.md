@@ -4,7 +4,9 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can handle Economy**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
+
 - Download and Install CMI's Vault build (<http://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>)
 - Note: If you wish to use the original Vault build, then please get CMI-Injector <http://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)
 - Update `config.yml` (see below)
