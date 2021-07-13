@@ -10,7 +10,9 @@ This FAQ covers both the welcome message and the server list welcome message.
 
 Optional video visually showing the /motd on 1MB https://youtu.be/3yjza6W2NNw
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
+
 - Start using CMI as Chat Manager, if you were using something else.
 - Update `config.yml` (see below)
 ```yaml
