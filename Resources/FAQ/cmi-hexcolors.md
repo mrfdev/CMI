@@ -6,7 +6,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 Expected format: `{#8b4726}`
 
-- Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
+- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
+- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 - Next, set-up CMI to handle the chat.
 In `config.yml`, find the following, set to `true`:
