@@ -4,7 +4,7 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI 9 on Spigot-, and Paper 1.17.1.
 
-<img width="450" alt="paper-1 17 1-cmi-9 0 1 0-cmilib-1 0 2 11" src="https://user-images.githubusercontent.com/28841349/125210817-614dcc80-e2a2-11eb-94d6-d2e9d0e8f09c.png">
+<img width="444" alt="paper-1 17 1-cmi-9 0 1 2-cmilib-1 0 2 12" src="https://user-images.githubusercontent.com/28841349/125773992-b1230788-f4bf-44b7-90d6-a7a28f75e9b5.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
@@ -44,7 +44,7 @@ If you already are running CMI, you can skip this and go straight to Upgrading (
 
 - If you spot any bugs, confirm them, and report them to Zrip's Github as a new issue.
 
-- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.4 and you're ready to **Finish** (see below)
+- When the server has started, CMI will automatically download languages, CMI Lib and you're ready to **Finish** (see below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Upgrading CMI
 
@@ -66,7 +66,7 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - Keep an eye on the console, the `latest.log` will also have all the details. If something goes wrong, take note. And try to figure out what is up and try again.
 
-- When the server has started, CMI will automatically download languages, CMI Lib 1.0.2.4 and you're ready to **Finish** (see below)
+- When the server has started, CMI will automatically download languages, CMI Lib and you're ready to **Finish** (see below)
 
 - If your plugins/ directory has the old CMI Lib `.jar` files, it is okay to remove them now. Keep the new .jar of course.
 
@@ -91,7 +91,7 @@ That's a different page with different instructions:
 
 SpigotMC's Buildtools.jar can be found here <https://hub.spigotmc.org/jenkins/job/BuildTools/>
 
-These are for CMI 8.x and CMI 9.x:
+These are for CMI 9.x:
 `CMI Vault` Economy-compile for best results
 <http://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>
 
@@ -104,10 +104,10 @@ These are for CMI 8.x and CMI 9.x:
 `CMI Library` Base Library 
 <https://www.spigotmc.org/resources/cmilib.87610/>
 
-`Spigot website` This is where you can get buildtools and make a spigot 1.17.0 jar
+`Spigot website` This is where you can get buildtools and make a spigot 1.17.1 jar
 <https://hub.spigotmc.org/jenkins/job/BuildTools/>
 
-`Paper website` This is where you can get Paper's 1.17.0 jar
+`Paper website` This is where you can get Paper's 1.17.1 jar
 <https://papermc.io/downloads>
 
 More information about CMI: https://www.zrips.net/cmi/
