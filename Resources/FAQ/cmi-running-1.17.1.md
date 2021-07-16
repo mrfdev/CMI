@@ -4,7 +4,7 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI 9 on Spigot-, and Paper 1.17.1.
 
-<img width="444" alt="paper-1 17 1-cmi-9 0 1 2-cmilib-1 0 2 12" src="https://user-images.githubusercontent.com/28841349/125773992-b1230788-f4bf-44b7-90d6-a7a28f75e9b5.png">
+<img width="444" alt="paper-1 17 1-cmi-9 0 1 2-cmilib-1 0 2 13" src="https://user-images.githubusercontent.com/28841349/125882279-9f724052-b2bf-47a0-a89b-95653937af59.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
