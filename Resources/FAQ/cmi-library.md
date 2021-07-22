@@ -19,7 +19,7 @@ The full list as of July 22nd, 2021
 - Selection Visualizer version 3.0.5.0
 - TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.0
-- Residence version 5.0.0.0
+- Residence version 5.0.0.1
 - Jobs-Reborn version 5.0.0.6
 - BottledExp version 3.0.0.1
 - ReCount version 3.5.0
