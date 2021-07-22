@@ -4,13 +4,13 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI 9 on Spigot-, and Paper 1.17.1.
 
-<img width="444" alt="paper-1 17 1-cmi-9 0 1 2-cmilib-1 0 2 13" src="https://user-images.githubusercontent.com/28841349/125882279-9f724052-b2bf-47a0-a89b-95653937af59.png">
+<img width="452" alt="paper-1 17 1-cmi-9 0 1 3-cmilib-1 0 2 14" src="https://user-images.githubusercontent.com/28841349/126617353-49ac5379-004d-4b28-9c22-88f4564e8a2d.png">
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
 - This is about CMI 9 and Spigot or Paper server version 1.17.1 mainly, apply to 1.16.5 and other lower versions accordingly.
-- CMI version 9.0.1.2 is considered the Stable version you can run on a live production environment. It is stable enough for 1.17.1, if you want to run it live that's fine. But backup your data and test things first!
-- CMI Lib version 1.0.2.12 or older will automatically download. It will replace older CMI Lib jars. This is okay.
+- CMI version 9.0.1.3 is considered the Stable version you can run on a live production environment. It is stable enough for 1.17.1, if you want to run it live that's fine. But backup your data and test things first!
+- CMI Lib version 1.0.2.14 or older will automatically download. It will replace older CMI Lib jars. This is okay.
 - Zrips' libraries and other resources are linked below.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
