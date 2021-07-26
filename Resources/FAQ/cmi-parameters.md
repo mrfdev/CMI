@@ -42,3 +42,5 @@ $1 $3 == banana superman
 $0 $3 == fruit superman
 
 ```
+
+More information about CMI: https://www.zrips.net/cmi/
