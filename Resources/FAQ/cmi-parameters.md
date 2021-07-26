@@ -1,5 +1,9 @@
 # FAQ - CMI Aliaseditor Parameters Explained
 
+Zrips Discord @ https://discord.gg/dDMamN4
+
+This page is for CMI 9 on Spigot-, and Paper 1.17.1.
+
 ## This is for /cmi aliaseditor
 
 For CMI 9, let's you catch parameters entered in cmi aliaseditor made commands
