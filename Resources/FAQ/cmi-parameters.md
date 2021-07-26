@@ -1,0 +1,40 @@
+# FAQ - CMI Aliaseditor Parameters Explained
+
+## This is for /cmi aliaseditor
+
+For CMI 9, let's you catch parameters entered in cmi aliaseditor made commands
+
+You can then in the commands use $1 $5 $0 .. order doesn't matter. They're a reference to the stuff entered by the player, see example.
+
+## Example
+
+```
+Server owner used /cmi aliaseditor to make a /banana command
+
+Player types:
+
+/fruit banana apple superman
+
+$1 == banana
+$1- == banana apple superman
+
+Please note that just the $1 refers to the first paramter, this can be null, or whatever the player entered. So use wisely.
+Please note that the $1- has a dash behind it, referring to the first and every other parameter behind it. 
+
+$0 == fruit (the command, without the / in front of it)
+
+$1 == banana
+
+$2 == apple
+
+$3 == superman
+
+$1- == banana apple superman
+
+$4 == nothing there, so it is "null"
+
+$1 $3 == banana superman
+
+$0 $3 == fruit superman
+
+```
