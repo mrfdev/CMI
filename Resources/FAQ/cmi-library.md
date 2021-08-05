@@ -13,19 +13,19 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 ## Which plugins use this?
 
-The full list as of July 31st, 2021
+The full list as of August 6th, 2021
 
-- CMI version 9.0.2.3
+- CMI version 9.0.2.4
 - Selection Visualizer version 3.0.5.0
 - TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.0
-- Residence version 5.0.0.1
+- Residence version 5.0.0.2
 - Jobs-Reborn version 5.0.0.6
 - BottledExp version 3.0.0.1
 - ReCount version 3.5.0
 - TradeMe version 6.1.0.1
 
-These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMI Lib version 1.0.3.3 or newer to properly operate.
+These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMI Lib version 1.0.3.4 or newer to properly operate.
 
 ## How do I get it?
 
