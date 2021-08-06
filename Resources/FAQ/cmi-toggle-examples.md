@@ -22,19 +22,19 @@ Whether this two different ranks, or two different command modes for whatever ne
     # State is the current state of the toggle, The name means nothing, and can be replaced with whatever you want(Can also be the current rank of the user).
     # The toggle usermeta, has to be a meta data value.
     # It is recommended to only have one, and then use that for every command, to limit the amount of usermeta needed.
-    - check:%cmi_user_meta_State%==null! asConsole! usermeta [playerName] add rp 1
-    - check:%cmi_user_metaint_toggle%==null! asConsole! usermeta [playerName] add trp 0
+    - check:%cmi_user_meta_State%==null! asConsole! usermeta [playerName] add State 1
+    - check:%cmi_user_metaint_toggle%==null! asConsole! usermeta [playerName] add toggle 0
 
     # The messages can be replaced with whatever command you want to run. (Either permissions change or something like that.)
     - check:%cmi_user_meta_State%==1! asConsole! msg [playerName] 1
     - check:%cmi_user_meta_State%==0! asConsole! msg [playerName] 0
     # The following contains the actual checks.
     # Firstly, it checks the current state, and depending on that, uses usermeta to decide whether or not the value should be toggled.
-    - check:%cmi_user_meta_State%==1! asConsole! usermeta [playerName] add trp 1
-    - check:%cmi_user_meta_toggle%==1! asConsole! usermeta [playerName] add temprp 0
-    - check:%cmi_user_meta_toggle%==0! asConsole! usermeta [playerName] add temprp 1
+    - check:%cmi_user_meta_State%==1! asConsole! usermeta [playerName] add State 1
+    - check:%cmi_user_meta_toggle%==1! asConsole! usermeta [playerName] add toggle 0
+    - check:%cmi_user_meta_toggle%==0! asConsole! usermeta [playerName] add toggle 1
     #Resets the toggle when done.
-    - asConsole! usermeta [playerName] add trp 0
+    - asConsole! usermeta [playerName] add State 0
 ```
 
 
