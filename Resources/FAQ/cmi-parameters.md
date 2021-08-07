@@ -8,7 +8,7 @@ This page is for CMI 9 on Spigot-, and Paper 1.17.1.
 
 For CMI 9, let's you catch parameters entered in cmi aliaseditor made commands
 
-You can then in the commands use $1 $5 $0 .. order doesn't matter. They're a reference to the stuff entered by the player, see example.
+You can then in the commands use `$1` `$5` `$0` .. order doesn't matter. They're a reference to the stuff entered by the player, see example.
 
 ## Example
 
