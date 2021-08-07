@@ -93,13 +93,13 @@ SpigotMC's Buildtools.jar can be found here <https://hub.spigotmc.org/jenkins/jo
 
 These are for CMI 9.x:
 `CMI Vault` Economy-compile for best results
-<http://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>
+<https://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>
 
 `CMI Injector` Use your own Vault? Use this economy injector
-<http://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>
+<https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>
 
 `CMI Bungee` Basic bungee chat support
-<http://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>
+<https://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>
 
 `CMI Library` Base Library 
 <https://www.spigotmc.org/resources/cmilib.87610/>
