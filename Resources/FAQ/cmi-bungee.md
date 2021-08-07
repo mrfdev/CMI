@@ -7,7 +7,7 @@ Zrips Discord @ https://discord.gg/dDMamN4
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
-- Download and Install CMI-Bungeecord on your proxy server (<http://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
+- Download and Install CMI-Bungeecord on your proxy server (<https://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
 - Update CMI's `config.yml` (see below)
 ```yaml
 # Enable CMI Bungee Support 
