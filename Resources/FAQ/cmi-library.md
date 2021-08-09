@@ -15,7 +15,7 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 The full list as of August 6th, 2021
 
-- CMI version 9.0.2.4
+- CMI version 9.0.2.5
 - Selection Visualizer version 3.0.5.0
 - TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.1
