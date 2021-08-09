@@ -53,4 +53,4 @@ From CMI Library version 1.0.2.4 onwards it should automatically clean-up older 
 
 Yes, Zrips plugins require the latest CMI Lib to properly work, you need it, don't delete it.
 
-More information about CMI: https://www.zrips.net/cmi/
+More information about CMILib: https://www.zrips.net/cmilib/
