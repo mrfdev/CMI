@@ -1,10 +1,14 @@
 # FAQ - Setting up CMI Chat Format
 
+Zrips Discord @ https://discord.gg/dDMamN4
+
+This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
+
 This requires you to have set up CMI as Chat Manager (https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md).
 
 This document helps you to change the group format and group message format using LuckPerms, if you use a different way to get prefixes you have to try and understand this method and apply it to your situation. 
 
-This is done on Paper 1.17.1 and CMI 9. It will probably be the same for older/newer versions. Don't forget to back up your data first, before making changes to your server.
+Don't forget to back up your data first, before making changes to your server.
 
 ## Understanding group format and group message format
 
@@ -100,3 +104,13 @@ This is more a bonus, or pro tip, there's a hoverable effect when you use CMI Ch
 In the Locale file of `plugins/CMILib/Translations/Locale_EN.yml` you can find the `Chat:` section, which has `publicHover:` 
 
 You can customize this public hover locale with your own text, CMI hex colors, and placeholders. Making it very dynamic. 
+
+# Prefixes
+
+You can learn how to configure LuckPerms to use LuckPerms prefixes in CMI Chat here:
+
+https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md
+
+# Done
+
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
