@@ -44,6 +44,7 @@ Note: If you use BungeeChord, make sure you also install enable CMI Bungee suppo
 
 Once you're using CMI as Chat Manager, make sure you stop using other chat managers as they can cause conflicts (two plugins trying to do the same thing). Next, you can configure the group format (customize how it looks, and set the right permissions), as well as configure LuckPerms to use its prefixes. 
 
+- [set up cmi chat group chat format](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat-format.md)
 - [chat filter](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chatfilter.md)
 - [chat rooms](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chatrooms.md)
 - [chat bungee](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md)
