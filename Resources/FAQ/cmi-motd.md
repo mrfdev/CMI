@@ -14,18 +14,16 @@ Optional video visually showing the /motd on 1MB https://youtu.be/3yjza6W2NNw
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
 - Start using CMI as Chat Manager, if you were using something else.
-- Update `config.yml` (see below)
+- Update `config.yml` (see below) by finding:
 ```yaml
-# CMI config.yml, find:
-  motd:
-And change that section to this:
-  motd:
-    Cmds:
-    - cmi ctext welcomeMessage
+# Defines name of customtext on players login to server. To disable just set name to non existing customText
+Motd: welcomeMessage
 ```
+If you wish to have it be called differently, you can change it there.
+
 Next, inside the `plugins/CMI/CustomText/` directory make a file called `welcomeMessage.txt`, below is an example of some basic text:
 ```yaml
-&3 Zrips Server »&b %server_online%/%server_max_players%&7 players: %onlineplayers_displaynames%
+&3 Your Server »&b %server_online%/%server_max_players%&7 players: %onlineplayers_displaynames%
 ```
 Of course, you can use the CMI Custom Text features to expand, using pagination, placeholders, clickable events, etc. 
 <https://www.zrips.net/cmi/custom-text/>
