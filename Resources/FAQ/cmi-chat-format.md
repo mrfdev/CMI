@@ -1,2 +1,102 @@
-## FAQ - Setting up CMI Chat Format
+# FAQ - Setting up CMI Chat Format
 
+This requires you to have set up CMI as Chat Manager (https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md).
+
+This document helps you to change the group format and group message format using LuckPerms, if you use a different way to get prefixes you have to try and understand this method and apply it to your situation. 
+
+This is done on Paper 1.17.1 and CMI 9. It will probably be the same for older/newer versions. Don't forget to back up your data first, before making changes to your server.
+
+## Understanding group format and group message format
+
+In CMI's `config.yml` you will find two sections under the chat section. It's `GroupFormat:` and `GroupMessageFormat:`. But what is the difference?
+
+**GroupFormat** will help you build up the part of the in-game chat before the actual message. This is where you can control per group colors, add placeholders, prefixes, and such. Leave the `{message}` part alone.
+
+**GroupMessageFormat** will help you build up the part of the in-game chat that's the actual {message}. This is where you can control how the message itself will show up in the chat. For example, giving each group their own colors. 
+
+## GroupFormat and Permissions
+
+The "groups" part of Groupformat is really handy, because it lets you control per group how things should look. It's important to know that the default and loweest group in LuckPerms should be the lowest in the list. And that you should just up increment the number from there. For eaxmple, if you have set up LuckPerms groups like this:
+```
+default
+vip
+donor
+mod
+admin
+```
+Then the admin is the highest group, they should get the highest number, and the default is the lowest group, and should get the lowest number. Group format would basically look like this:
+```yaml
+  GroupFormat:
+    '1': '{displayName} > {message}'
+    '2': '{displayName} > {message}'
+    '3': '{displayName} > {message}'
+    '4': '{displayName} > {message}'
+    '5': '{displayName} > {message}'
+```
+In this simplified example the 1 would be default, 2 would be vip, etc. And admin would be 5.
+
+As per the commented out section above the `GroupFormat:` section you need to grant each group their CMI permission node in the form of `cmi.chatgroup.[id]`
+
+So run these commands for this example (obviously, change it to the groups you use on your server!):
+```
+lp group default permission set cmi.chatgroup.1 true
+lp group vip permission set cmi.chatgroup.2 true
+lp group donor permission set cmi.chatgroup.3 true
+lp group mod permission set cmi.chatgroup.4 true
+lp group admin permission set cmi.chatgroup.5 true
+```
+
+## GroupFormat customization
+
+If you would use the CMI chat now in-game you won't notice much difference, but let's change that with some temporary debug messages.
+
+```yaml
+  GroupFormat:
+    '1': '&e DEBUG1 {displayName} > {message}'
+    '2': '&6 DEBUG2 {displayName} > {message}'
+    '3': '&b DEBUG3 {displayName} > {message}'
+    '4': '&e DEBUG4 {displayName} > {message}'
+    '5': '&c DEBUG5 {displayName} > {message}'
+```
+As you can see, and when you chat as a person from that particular group, they will have a random color, and a debug msg. Super handy to see what happens to which group for each player. Yes, obviously this is not how you would like it to finally look like - We're learning you step by step what things mean so you can do more complex edge-case personalization to your own server.
+
+## GroupMessageFormat to match
+
+Please note that if you have a certain amount of groups, like the 5 in our example, that you need 1,2,3,4,5 for GroupFormat and 5 for GroupMessageFormat.
+
+```yaml
+  GroupMessageFormat:
+    '1': '{message}'
+    '2': '{message}'
+    '3': '{message}'
+    '4': '{message}'
+    '5': '{message}'
+```
+
+# GroupMessageFormat permissions.
+
+And just like the per group permission nodes for the format, we need them for the message as well. In luckperm, grant the permissions for cmi.chatmessagegroup.1 (and 2,3,4, and 5) as well. Just how we did earlier. 
+
+# GroupMessageFormat customization.
+
+What's next is to customize the way it looks in game per group, you do NOT have to do this, but I know some people like this for their server so including it as an example. You can completely skip this step. 
+
+```yaml
+  GroupMessageFormat:
+    '1': '{#yellow}{message}'
+    '2': '{#orange}{message}'
+    '3': '{#blue}{message}'
+    '4': '{#green}{message}'
+    '5': '{#red}{message}'
+```
+And yes, these are horrible color codes, again, we're just giving you an example. Please pick reasonable ones for your server. CMI Hex Colors are supported for both GroupFormat and GroupMessageFormat. 
+
+# Customizing the Hover Over text.
+
+This is more a bonus, or pro tip, there's a hoverable effect when you use CMI Chat. And you can customize it!
+
+`ClickHoverMessages: true` should be true.
+
+In the Locale file of `plugins/CMILib/Translations/Locale_EN.yml` you can find the `Chat:` section, which has `publicHover:` 
+
+You can customize this public hover locale with your own text, CMI hex colors, and placeholders. Making it very dynamic. 
