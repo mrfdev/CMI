@@ -444,6 +444,11 @@ Alias:
     Enabled: true
     Tab: true
   #  
+  # /cmi generateworth $1-
+  /generateworth:
+    Enabled: true
+    Tab: true
+  #  
   # /cmi getbook $1-
   /getbook:
     Enabled: true
