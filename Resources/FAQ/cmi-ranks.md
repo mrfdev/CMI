@@ -15,7 +15,13 @@ More information: <https://www.zrips.net/cmi/rankup-system/>
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
-- help
+- Go to your server folder, find `spigot.yml` and within it find: `stats->disable-saving: false`, and make sure it is indeed set to `false`.
+
+Please note that a player will get default rank group depending on the set permission node `cmi.rank.[rankName]`, if your first rank is `FirstRankName:` then grant them in LuckPerms (for example) the permission `cmi.rank.FirstRankName` like so: `lp user mrfloris permission set cmi.rank.FirstRankName true`, of course, you can also do this for the default group, like so: `lp group default permission set cmi.rank.FirstRankName true`.
+
+And please note that not enabled ranks will be ignored!
+
+- The CMI plugin directory (`~/pluyins/CMI/ranks.yml`) has a few example ranks, and a big chunk of text at the top (all the text starting with the `#` in front of them). I strongly recommend to take a bit of time to read through these comments, and to try to understand the examples. 
 
 ## More Information
 - <https://www.zrips.net/cmi/rankup-system/>
