@@ -23,6 +23,27 @@ And please note that not enabled ranks will be ignored!
 
 - The CMI plugin directory (`~/pluyins/CMI/ranks.yml`) has a few example ranks, and a big chunk of text at the top (all the text starting with the `#` in front of them). I strongly recommend to take a bit of time to read through these comments, and to try to understand the examples. 
 
+Please note that I strongly recommend to use `double quotes: ".."` around, and to *not* use `spaces` in the `StatsRequirements` that you set. This seems to make for the best working results. And after you set it and start the server up, if CMI updates it to something else, that's perfectly fine. 
+
+Example what not to do:
+```
+  StatsRequirements:
+  - PlayTime:21600
+  -  walk:30000
+  - 'MonsterKills : 1000'
+  - "blocksmined: 30000"
+```
+*Example of what I recommend to do:*
+```yaml
+  StatsRequirements:
+  - "PlayTime:21600"
+  - "walk:30000"
+  - "MonsterKills:1000"
+  - "blocksmined:30000"
+```
+
+
+
 ## More Information
 - <https://www.zrips.net/cmi/rankup-system/>
 
