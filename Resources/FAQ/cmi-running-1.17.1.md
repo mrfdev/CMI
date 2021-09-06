@@ -4,7 +4,17 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.17.1.
 
-<img width="447" alt="paper-1 17 1-cmi-9 0 2 10-cmilib-1 0 3 7" src="https://user-images.githubusercontent.com/28841349/132192697-b73728e8-fca3-4775-b68e-9cca79f247f8.png">
+```
+> cmi version
+    --------------------------------------------------
+    CMI plugin version: 9.0.2.10 SqLite
+    CMILib: 1.0.3.7
+    Server: Paper(251) 1.17.1-R0.1-SNAPSHOT
+    CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
+    Modules -> 55 enabled 1 disabled: flightCharge
+    --------------------------------------------------
+>
+```
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
