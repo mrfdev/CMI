@@ -3,6 +3,8 @@
 Zrip Discord @ https://discord.gg/dDMamN4 
 There's a video: https://youtu.be/TLKAusnisqs
 
+Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` I will update this FAQ page semi soon. Just apply some common sense for now.
+
 **CMI commands can be extended through the aliaseditor**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to make commands even more dynamic and do exactly what you want, using the alias editor. 
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
