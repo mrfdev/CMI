@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` I will update this FAQ page semi soon. Just apply some common sense for now.
+
 ## Learning examples about using CMI to add feature/option toggling.
 
 CMI is flexible and dynamic enough that it can do fancy tricks. One of them is a way to allow you to toggle certain things. This page has some examples to demonstrate how you could learn from them and apply it to your edge case situation.
