@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` I will update this FAQ page semi soon. Just apply some common sense for now.
+
 **CMI can handle the MOTD things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a message of the day. 
 
 This FAQ covers both the welcome message and the server list welcome message.
