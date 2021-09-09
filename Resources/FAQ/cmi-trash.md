@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` I will update this FAQ page semi soon. Just apply some common sense for now.
+
 You can use this in CMI 9 on 1.17.1 and below.
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
