@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can deal with % chance**, this is the recommended setup that works well on Spigot / Paper 1.17.1 and lower, to make dynamic features using specialized commands and smart use of placeholders.
 
+Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml`
+
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
 
