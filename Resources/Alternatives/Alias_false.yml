@@ -137,9 +137,17 @@ Alias:
   /broadcast:
     Enabled: false
     Tab: true
+  /bc:
+    Enabled: false
+    Tab: true
   #  
   # /cmi burn $1-
   /burn:
+    Enabled: false
+    Tab: true
+  #  
+  # /cmi cartographytable $1-
+  /cartographytable:
     Enabled: false
     Tab: true
   #  
@@ -444,6 +452,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi generateworth $1-
+  /generateworth:
+    Enabled: false
+    Tab: true
+  #  
   # /cmi getbook $1-
   /getbook:
     Enabled: false
@@ -490,6 +503,11 @@ Alias:
   #  
   # /cmi god $1-
   /god:
+    Enabled: false
+    Tab: true
+  #  
+  # /cmi grindstone $1-
+  /grindstone:
     Enabled: false
     Tab: true
   #  
@@ -783,6 +801,11 @@ Alias:
   #  
   # /cmi lockip $1-
   /lockip:
+    Enabled: false
+    Tab: true
+  #  
+  # /cmi loom $1-
+  /loom:
     Enabled: false
     Tab: true
   #  
@@ -1278,6 +1301,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi smithingtable $1-
+  /smithingtable:
+    Enabled: false
+    Tab: true
+  #  
   # /cmi socialspy $1-
   /socialspy:
     Enabled: false
@@ -1336,6 +1364,11 @@ Alias:
     Enabled: false
     Tab: true
   /lag:
+    Enabled: false
+    Tab: true
+  #  
+  # /cmi stonecutter $1-
+  /stonecutter:
     Enabled: false
     Tab: true
   #  
