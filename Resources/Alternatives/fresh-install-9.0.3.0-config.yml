@@ -448,6 +448,9 @@ Ban:
   # When set to true players who are banned will get messages modified by CMI instead of seeing vanilla type of message
   OverrideLoginMessage: false
 Homes:
+  # When enabled we will require player to click on ingame chat to confirm hoime location override in case home with same name already exist
+  # This can be dirrectly confirmed with /cmi sethome [homeName] -override
+  Confirmation: true
   # Open gui when using /cmi home command if you have more then one home in your saved list
   Gui: true
   # Homes groups to define max amount homes player can have. Permission: cmi.command.sethome.[groupname]
@@ -503,19 +506,19 @@ ReSpawn:
   # Defines respawn order for defines worlds
   # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
-    spawn:
+    world:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    spawn_nether:
+    world_nether:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    spawn_the_end:
+    world_the_end:
     - anchor
     - bedLocation
     - spawn
@@ -947,6 +950,7 @@ Spawners:
   # This will disable features like, spawner placement, spawner drops, spawner charges and so on
   FullDisable: false
   Break:
+    # ATTENTION! cmi.dropspawner will be required to get spawner dropping for the player
     # Enable or disable spawner handler for spawner break
     # If enabled player will get spawner if using silktouch pickaxe and have cmi.dropspawner permission node
     # If player has cmi.dropspawner.nosilk permission node, player is not required to use silk touch pickaxe to get droped spawner
@@ -1332,10 +1336,10 @@ WorldLimits:
   # If player will have cmi.worldlimit.gamemode.bypass permission node, game mode wont be changed
   # Possible modes: creative, survival, adventure, spectator, 
   Gamemode:
-  - spawn:Survival
+  - testWorld:Survival
   # If player will have cmi.worldlimit.fly.bypass permission node, fly mode wont be changed
   Fly:
-  - spawn:False
+  - testWorld:False
   # If player will have cmi.worldlimit.elytra.bypass permission node, elytra flight will not be prevented
   # Players joining worlds with disable elytra flight will get their elytra dismounted if posible
   ElytraFlight:
@@ -1349,7 +1353,7 @@ WorldLimits:
   - spawn_the_end-256
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
-  - spawn:False
+  - testWorld:False
   # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, FROZEN, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
@@ -1481,11 +1485,8 @@ Cooldowns:
 Combat:
   # Defines combat timer to be used in particular features
   Timer: 15
-  # Prevents damage from players with god mode enabled
-  # Can be bypassed with cmi.pvp.godBypass permission node
-  noGodDamage: false
-  # informs player that he cant damage players while in god mode
-  noGodDamageInform: false
+  # When enabled we will allow for players to be damaged in safe zone if they are tagged for pvp
+  safeZoneDamage: false
   # If set to true, then attacked player will be included into combat mode even if he doesnt fight back
   # If set to false then only attacker will be marked for pvp mode
   IncludeVictim: true
@@ -1500,6 +1501,11 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pvp type combat
     ShowBossBar: false
+    # Prevents damage from players with god mode enabled
+    # Can be bypassed with cmi.pvp.godBypass permission node
+    noGodDamage: false
+    # Informs player that he cant damage players while in god mode
+    noGodDamageInform: false
     # When set to true players will be only able to use commands defined in the list
     # This only applies for pvp type combat
     BlockCommands: false
@@ -1518,6 +1524,11 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pve type combat
     ShowBossBar: false
+    # Prevents damage from players with god mode enabled
+    # Can be bypassed with cmi.pve.godBypass permission node
+    noGodDamage: false
+    # Informs player that he cant damage mobs while in god mode
+    noGodDamageInform: false
     # When set to true players will be only able to use commands defined in the list
     # This only applies for pve type combat
     BlockCommands: false
@@ -1581,6 +1592,7 @@ Vanish:
     fakeJoinLeave: false
     mobSpawning: false
     stopPlaytime: true
+    sleepIgnore: true
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1726,28 +1738,6 @@ RandomTeleportation:
   # If this set to true we will generate random teleport default settings for all detected worlds
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
-  Worlds:
-    spawn_nether:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-    spawn:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-    spawn_the_end:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
