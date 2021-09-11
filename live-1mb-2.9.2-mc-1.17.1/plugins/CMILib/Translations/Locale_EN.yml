@@ -302,6 +302,8 @@ info:
   valueToShort: '&eValue is too short. Min: [min]'
   pvp:
     noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
+  pve:
+    noGodDamage: '!actionbar!&cYou can''t damage mobs while being immortal'
   InvEmpty:
     armor: '&eYour armor slots should be empty!'
     hand: '&eYour hand should be empty!'
@@ -577,8 +579,6 @@ info:
     - Efficiency
     mending:
     - Mending
-    frost_walker:
-    - FrostWalker
     lure:
     - Lure
     loot_bonus_mobs:
@@ -826,6 +826,9 @@ Location:
   Z: '&eZ: &6[z]'
   Pitch: '&ePitch: &6[pitch]'
   Yaw: '&eYaw: &6[yaw]'
+  # Mainly used in %cmi_user_world_formatted% placeholder
+  WorldNames:
+  - spawn-&2Spawn
 Locations: '&7Locations: '
 Ender:
   Title: '{#Edward}Open ender chest'
