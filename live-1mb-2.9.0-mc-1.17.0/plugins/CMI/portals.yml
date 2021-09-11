@@ -1,6 +1,21 @@
 # Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
 
 general:
+  benjaminparticles:
+    Loc: -13436.0:69.0:17670.0:-13436.0:69.0:17670.0
+    enabled: true
+    effect: soul_fire_flame
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   disco:
     Loc: 12851.0:65.0:12042.0:12859.0:69.0:12050.0
     enabled: false
@@ -228,7 +243,6 @@ general:
     enabled: false
     effect: WaterBubble
     showParticles: true
-    Tp: wild;-2.52;33.0;19.57;-221.86;6.53
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -367,7 +381,7 @@ run:
     particleAmount: 70
     particleHide: 0
     activationRange: 16
-    commandsWithoutTp: false
+    commandsWithoutTp: true
     commands:
     - asConsole! cmi effect [playerName] clear -s
   runlevel4:
@@ -382,9 +396,26 @@ run:
     particleAmount: 5
     particleHide: 0
     activationRange: 16
-    commandsWithoutTp: false
+    commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 30 1 -s
+skyblock:
+  skyblockspawn:
+    Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 0
+    particleHide: 0
+    activationRange: 32
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] You falling yikes, let's try to get you to safety
+    - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
 wild:
   wildend:
     Loc: -30.0:57.0:-1.0:-28.0:59.0:1.0

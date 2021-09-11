@@ -95,7 +95,8 @@ Optimizations:
   MonochromeConsole: false
   # Time in seconds we want to give for playes who joins server a immortality state
   # Set this to 0 to disable
-  ImmortalityOnJoin: 3
+  # Max 60 seconds
+  ImmortalityOnJoin: 6
   # Enables or disables maintenance mode
   Maintenance: false
   # Automatically kicks everyone from server when enabling maintenance mode who doesnt have cmi.command.maintenance.bypass permission node
@@ -115,7 +116,7 @@ Optimizations:
     # In case you dont have GeoLiteCity.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
     GeoLiteCity: false
   # When enabled you will see skull owner name in action bar when right clicking it
-  ShowSkullOwner: true
+  ShowSkullOwner: false
   # When enabled you will see beeHive information in action bar when right clicking it
   ShowBeeHiveInformation: true
   # Sets indicator when creating elevator signs. Its case insensitive
@@ -165,6 +166,7 @@ Optimizations:
     # Time in seconds player should be invulnerable after teleporting
     # This will prevent player who teleported to damage others for defined time
     # Set this to 0 if you want to disable it
+    # Max 60 seconds
     Invulnerability: 5
     # When this set to true each time player teleports to any destination he will be teleported to spawn point
     # This is to prevent from people knowing to which direction you have teleported too
@@ -234,6 +236,9 @@ Optimizations:
   # When set to true, player play time will be grabbed from user stats file instead of from CMI user data file
   # This can help to get more accurate play time if you have older server and using players stats feature
   PlayTimeFromStats: false
+  # Do you want to run auto top playtime updater
+  # This is responsible for providing players current top playtimes which gets updated on consistent intervals, useful for placeholders
+  PlayTimeAutoUpdater: true
   # When set to true, playtimetop list will be loaded on server startup
   PreloadTopPlaytime: false
   # Do you want to use CMI playtime tracking
@@ -301,6 +306,11 @@ Optimizations:
       PointTo: true
       # How many lines you want to show when using /near command
       Count: 10
+    Inv:
+      # List of players which you should not be able to open inventories
+      # This can still be bypassed if you are OP
+      BlackList:
+      - Zrips
     Clear:
       # When set to true, /cmi clear comamnd will require confirmation for it to be finalized
       Confirmation: true
@@ -412,6 +422,16 @@ Worth:
   CustomNameBlocking: true
   # If enabled any item with custom lore will not be allowed to be sold with /cmi sell command
   LoreBlocking: true
+  # When enabled we will not allow to sell items which are not fully repaired
+  RequireFullDurability: false
+  # When enabled items which doesnt have full durability will be worth less. 30% left durability will result in items worth going down by 70%
+  # This only works while RequireFullDurability is disabled
+  DevalueByDurability: true
+  AutoGenerate:
+    # Value in percentages in how much more we should add to end product while auto calculating items price based on its ingredient worth
+    # For examplem one stick is worth 0.1 and diamond 44 then end result as diamond_hoe will be worth 88.2 and with extra 2% this will be changed to 89.96
+    # Value can be negative
+    PriceIncrease: 2
 BossBar:
   # Enables or disbales bossbar hp bar on 1.9+ servers
   # Only players with cmi.bossbar.hpbar permission node can see it
@@ -424,6 +444,9 @@ Ban:
   # When set to true players who are banned will get messages modified by CMI instead of seeing vanilla type of message
   OverrideLoginMessage: true
 Homes:
+  # When enabled we will require player to click on ingame chat to confirm hoime location override in case home with same name already exist
+  # This can be dirrectly confirmed with /cmi sethome [homeName] -override
+  Confirmation: true
   # Open gui when using /cmi home command if you have more then one home in your saved list
   Gui: true
   # Homes groups to define max amount homes player can have. Permission: cmi.command.sethome.[groupname]
@@ -458,7 +481,8 @@ ReSpawn:
   # Time in seconds to make player immortal after he respawns
   # Can be used to prevent respawn camping
   # Set to 0 if you want to disable it
-  Immortality: 6
+  # Max 60 seconds
+  Immortality: 12
   # If you want 3rd party plugin to handle player respawning, simply set this to false and reload plugin
   Enabled: true
   Global:
@@ -548,14 +572,18 @@ Afk:
   # Supports specialized commands
   AutoAfkCmds:
   - cmi broadcast !&6 * &l[playerDisplayName]&r &ehas gone AFK &7(Automatically)
+  - discordsrv broadcast **(AFK)** `[playerName]` _went idle (Automatically)_
   # Defines commands to be performed when player enters /cmi afk
   # Supports specialized commands
   ManualAfkCmds:
   - cmi broadcast !&6 * &l[playerDisplayName]&r &ehas gone AFK &7(%cmi_user_afk_msg%)
+  - discordsrv broadcast  **(AFK)** `[playerName]` _went idle (%cmi_user_afk_msg%)_
   # Defines commands to be performed when player leaves afk mode
   AfkLeaveCmds:
   - 'cmi ctellraw all <T>&6 * &l[playerDisplayName] &ehas returned from AFK &7(%cmi_user_afk_msg%)</T><H>&7Has
     been away for: %cmi_user_afk_for%</H>'
+  - discordsrv broadcast  **(AFK)** `[playerName]` _has returned (%cmi_user_afk_msg%)
+    (%cmi_user_afk_for%)_
   # Defines how long to wait after player stops moving to kick player
   # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
   # This can be used not only to kick but to perform repeating action every x seconds if needed
@@ -650,7 +678,7 @@ Votifier:
   # Supports specialized commands and placeholders
   # [serviceName] variable can be used to insert address
   CommandsOnVote:
-  - cmi give [playerName] diamond
+  - cmi msg [playerName] You're pretty awesome for voting
   # Keep it at false if you dont want to give out extra rewards
   ExtraRewardsEnabled: true
   # Commands will be performed when player collect determined amount of votes
@@ -1009,6 +1037,7 @@ Spawners:
   # This will disable features like, spawner placement, spawner drops, spawner charges and so on
   FullDisable: false
   Break:
+    # ATTENTION! cmi.dropspawner will be required to get spawner dropping for the player
     # Enable or disable spawner handler for spawner break
     # If enabled player will get spawner if using silktouch pickaxe and have cmi.dropspawner permission node
     # If player has cmi.dropspawner.nosilk permission node, player is not required to use silk touch pickaxe to get droped spawner
@@ -1423,7 +1452,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - spawn:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, COMMAND, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, FROZEN, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
     - None
@@ -1565,12 +1594,9 @@ Cooldowns:
   - Feed:120
 Combat:
   # Defines combat timer to be used in particular features
-  Timer: 12
-  # Prevents damage from players with god mode enabled
-  # Can be bypassed with cmi.pvp.godBypass permission node
-  noGodDamage: true
-  # informs player that he cant damage players while in god mode
-  noGodDamageInform: true
+  Timer: 15
+  # When enabled we will allow for players to be damaged in safe zone if they are tagged for pvp
+  safeZoneDamage: false
   # If set to true, then attacked player will be included into combat mode even if he doesnt fight back
   # If set to false then only attacker will be marked for pvp mode
   IncludeVictim: true
@@ -1585,6 +1611,11 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pvp type combat
     ShowBossBar: true
+    # Prevents damage from players with god mode enabled
+    # Can be bypassed with cmi.pvp.godBypass permission node
+    noGodDamage: true
+    # Informs player that he cant damage players while in god mode
+    noGodDamageInform: true
     # When set to true players will be only able to use commands defined in the list
     # This only applies for pvp type combat
     BlockCommands: true
@@ -1603,6 +1634,11 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pve type combat
     ShowBossBar: false
+    # Prevents damage from players with god mode enabled
+    # Can be bypassed with cmi.pve.godBypass permission node
+    noGodDamage: false
+    # Informs player that he cant damage mobs while in god mode
+    noGodDamageInform: false
     # When set to true players will be only able to use commands defined in the list
     # This only applies for pve type combat
     BlockCommands: false
@@ -1618,7 +1654,7 @@ Combat:
       # Percentage from 0 to 100 for head to be dropped. Decimals are acceptable, like 0.2
       # 100 will mean that head will be dropped every time player kills another player
       # 1 will mean that there is 1% that player will drop head if he is killed by another player
-      Percentage: 25
+      Percentage: 20
       # Percentage from 0 to 100 for lowering chance in getting second head of same player
       # This will reset on each server restart
       LowerChanceOfterDrop: 50.0
@@ -1666,6 +1702,7 @@ Vanish:
     fakeJoinLeave: false
     mobSpawning: false
     stopPlaytime: true
+    sleepIgnore: true
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1810,6 +1847,28 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    mine:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    sanctuary:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     builders:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1821,7 +1880,40 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    legacy:
+    cave:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    debug:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    hardcore:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    oneblock:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1876,7 +1968,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    Arenasw1:
+    pvp:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1887,7 +1979,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    LobbyPhoenix24:
+    oldtest:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1931,95 +2023,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    sushi:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    mine:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    sanctuary:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    debug:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    cave:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    hardcore:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    oneblock:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    pvp:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    oldtest:
+    skyblock:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2041,7 +2045,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    skyblock:
+    sushi:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2104,17 +2108,6 @@ RandomTeleportation:
       minY: 0
       maxY: 256
     sanctuary:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    legacy:
       Enabled: false
       MaxRange: 1000
       MinRange: 500
@@ -2312,29 +2305,7 @@ RandomTeleportation:
       IgnoreLava: true
       minY: 0
       maxY: 256
-    Arenasw1:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     PrisonMines:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    LobbyPhoenix24:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
@@ -2388,7 +2359,6 @@ Enchanting:
       protection_environmental: 4
       dig_speed: 5
       mending: 1
-      frost_walker: 2
       lure: 3
       loot_bonus_mobs: 3
       piercing: 4

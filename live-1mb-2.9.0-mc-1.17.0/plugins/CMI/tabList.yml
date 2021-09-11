@@ -310,7 +310,7 @@ TabList:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '15':
-      PlayerName: ' %cmi_user_afk_symbol% &4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'

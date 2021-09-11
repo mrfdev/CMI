@@ -137,10 +137,18 @@ Alias:
   /broadcast:
     Enabled: true
     Tab: true
+  /bc:
+    Enabled: true
+    Tab: true
   #  
   # /cmi burn $1-
   /burn:
     Enabled: false
+    Tab: true
+  #  
+  # /cmi cartographytable $1-
+  /cartographytable:
+    Enabled: true
     Tab: true
   #  
   # /cmi charges $1-
@@ -433,7 +441,7 @@ Alias:
   #  
   # /cmi flyspeed $1-
   /flyspeed:
-    Enabled: false
+    Enabled: true
     Tab: true
   /fspeed:
     Enabled: false
@@ -441,6 +449,11 @@ Alias:
   #  
   # /cmi gamerule $1-
   /gamerule:
+    Enabled: false
+    Tab: true
+  #  
+  # /cmi generateworth $1-
+  /generateworth:
     Enabled: false
     Tab: true
   #  
@@ -490,6 +503,11 @@ Alias:
   #  
   # /cmi god $1-
   /god:
+    Enabled: true
+    Tab: true
+  #  
+  # /cmi grindstone $1-
+  /grindstone:
     Enabled: true
     Tab: true
   #  
@@ -591,7 +609,7 @@ Alias:
     Enabled: true
     Tab: true
   /whois:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi inv $1-
@@ -697,7 +715,7 @@ Alias:
   #  
   # /cmi jail $1-
   /jail:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi jailedit $1-
@@ -784,6 +802,11 @@ Alias:
   # /cmi lockip $1-
   /lockip:
     Enabled: false
+    Tab: true
+  #  
+  # /cmi loom $1-
+  /loom:
+    Enabled: true
     Tab: true
   #  
   # /cmi mail $1-
@@ -1278,6 +1301,11 @@ Alias:
     Enabled: true
     Tab: true
   #  
+  # /cmi smithingtable $1-
+  /smithingtable:
+    Enabled: true
+    Tab: true
+  #  
   # /cmi socialspy $1-
   /socialspy:
     Enabled: false
@@ -1337,6 +1365,11 @@ Alias:
     Tab: true
   /lag:
     Enabled: false
+    Tab: true
+  #  
+  # /cmi stonecutter $1-
+  /stonecutter:
+    Enabled: true
     Tab: true
   #  
   # /cmi sudo $1-
@@ -1537,7 +1570,7 @@ Alias:
   #  
   # /cmi unjail $1-
   /unjail:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi unloadchunks $1-
@@ -1547,12 +1580,12 @@ Alias:
   #  
   # /cmi unmute $1-
   /unmute:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi unmutechat $1-
   /unmutechat:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi usermeta $1-
@@ -1563,7 +1596,7 @@ Alias:
   # /cmi util $1-
   /util:
     Enabled: false
-    Tab: true
+    Tab: false
   #  
   # /cmi vanish $1-
   /vanish:
@@ -1585,7 +1618,7 @@ Alias:
   #  
   # /cmi viewrange $1-
   /viewrange:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi voteedit $1-
@@ -1605,7 +1638,7 @@ Alias:
   #  
   # /cmi walkspeed $1-
   /walkspeed:
-    Enabled: false
+    Enabled: true
     Tab: true
   /wspeed:
     Enabled: false
@@ -1626,7 +1659,7 @@ Alias:
     Enabled: true
     Tab: true
   /warps:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi warpgroups $1-

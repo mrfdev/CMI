@@ -52,6 +52,11 @@
 # <CC> performs command from console once
 # <CCI> performs command from console every time player clicks text
 # <URL> includes url
+# 
+# 
+# 
+# ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
+# After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
 command:
   help:
     output:
@@ -136,13 +141,17 @@ command:
       alias: '&6[alias]'
       commandList: ' &e/[command]  '
       commandListDelay: ' &6[command]  '
-      permRequirement: '&2Permission: &6[state]'
+      permRequirements: Permission
       permReqExplanation: '{#Edward}Will require &6cmi.customalias.[alias] {#Edward}to
         use it'
-      tabComplete: ' &2TabComplete: &6[state]'
+      tab: ' TabComplete'
       tabCompleteExplanation: '&7When disabled tabcomplete will not work'
       tabCompletes: '&2TabCompletes: '
-      customTab: ' &7CustomTab'
+      cTab: ' CustomTab'
+      file: ' &2FileName'
+      fileExplanation: '&7Current destination file: &e[file]'
+      addTabComplete: ' AddTab'
+      addTabExplanation: '&6When enabled we will add defined tabs to existing ones'
       newAliasInfo: '&eEnter new alias command name and press enter'
       addInfo: '&eEnter new command. Type &6cancel &eto cancel'
       addInformationHover: "&eGlobal variables supported as of sender category \n\
@@ -255,7 +264,6 @@ command:
       - Global variables working in addition with [itemUses]
     info:
       list: ' &e[id]. &6[cmd]'
-      noCmds: ' &eThere is no comamnds attached to this item'
       uses: '&eItem usages: &6[amount]'
       usesLeft: '!actionbar!&eItem uses left: &6[itemUses]'
       cooldown: '{#Edward}Item is on cooldown. Wait [time]'
@@ -331,7 +339,8 @@ command:
       info: '&eCheck block information'
       args: ''
     info:
-      Info: ' &eId: &6[id][data] &eMaterial: &6[name][ndata]'
+      Id: ' &eId: &6[id][data]'
+      Material: ' &eMaterial: &6[name][ndata]'
       RealName: ' &eReal name: &6[name]'
       TempLight: ' &eTemperature: &6[temp]&e, Light - block: &6[blevel]&e, sky: &6[slevel]&e,
         overral: &6[level]'
@@ -404,6 +413,13 @@ command:
         &e({#Cerulean}[offon]&e).'
       targetfeedback: '&eYou have been put on fire by {#Cerulean}[senderDisplayName]&e
         for &6[time]&e.'
+  cartographytable:
+    help:
+      info: '&eOpen cartography table'
+      args: (playerName)
+    info:
+      feedback: '&eYou have opened cartography table for &3[playerDisplayName]&e (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e opened cartography table for you.'
   charges:
     help:
       info: '&eShows left spawner charges'
@@ -1092,6 +1108,10 @@ command:
     help:
       info: '&eManage gamerules'
       args: ''
+  generateworth:
+    help:
+      info: '&eAuto generate posible item worth values'
+      args: ''
   getbook:
     help:
       info: '&eGet book'
@@ -1178,6 +1198,13 @@ command:
       feedback: '&eYou have set god to {#Cerulean}[boolean]&e for {#Cerulean}[playerDisplayName]&e
         ({#Cerulean}[offon]&e).'
       targetfeedback: '&eYour god mode was set to {#Cerulean}[boolean]&e by {#Cerulean}[senderDisplayName]&e.'
+  grindstone:
+    help:
+      info: '&eOpen grindstone'
+      args: (playerName)
+    info:
+      feedback: '&eYou have opened grindstone for &3[playerDisplayName]&e (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e opened grindstone for you.'
   groundclean:
     help:
       info: '&eClears server from unnecessary items'
@@ -1487,6 +1514,7 @@ command:
       newFlyCharge: '{#Edward}Flight charge: &6[charge]'
       newElytraFlyHover: '{#Edward}Flying with elytra'
       newGodHover: '{#Edward}TempGod for: &e[time]'
+      newNoDamageHover: '&7No Damage Ticks for: &e[time]'
       newSneaking: Sneaking
       newSprint: Sprinting
       newWalkSpeed: '{#Edward}Walk speed: &6[walkspeed]'
@@ -1604,7 +1632,7 @@ command:
         &efor: &6[reason]'
       banedSilent: '{#Edward}[&8Silent{#Edward}]&6[playerDisplayName] &egot ip banned
         by &6[senderDisplayName] &efor: &6[reason]'
-      replacer: '*'
+      replacer: x
   ipbanlist:
     help:
       info: '&eBan ip list'
@@ -2038,6 +2066,13 @@ command:
       ipNotFound: '&cIp not found'
       empty: '&cList is empty'
       list: '&6[place]&e. &6[ip]'
+  loom:
+    help:
+      info: '&eOpen loom'
+      args: (playerName)
+    info:
+      feedback: '&eYou have opened loom for &3[playerDisplayName]&e (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e opened loom for you.'
   mail:
     help:
       info: '&eSend and receive mail'
@@ -2052,6 +2087,7 @@ command:
       noMails: '&eThere are no mails. You can send mail like this: /mail send mrfloris
         Hi, how are you.'
       mailHover: '&e[senderName] /n &e[time]'
+      mailHoverExpires: '/n &eExpires in: &6[time]'
       mailList: ' &7[senderDisplayName]&e: [mail] '
       waitingMail: '&r \n {#orient}•--{#cerulean}❖ 1MB Mail ❖{#orient}-----------------------•
         \n &eYou have &6[amount] &eunread /mail. (Click to read) \n &r'
@@ -2548,6 +2584,8 @@ command:
     info:
       list: '&e[place]. [currentRankMarker]&6[rankName][currentRankMarker]'
       currentRankMarker: '&6+'
+      hoverNext: "&6Next: \n[rankList]"
+      hoverLast: '&2Last rank'
   rankset:
     help:
       info: '&eSet a players rank'
@@ -2672,10 +2710,10 @@ command:
       finished: '&eFinished!!! Replaced: &6[amount] &eblocks! In &6[time]&e.'
   reply:
     help:
-      info: '&eReplay to last message sender'
+      info: '&eReply to last message sender'
       args: '[message]'
     info:
-      noOneToReplay: '&eThere is no one to replay'
+      noOneToReply: '&eThere is no one to reply'
   resetback:
     help:
       info: '&eResets players back location'
@@ -2794,7 +2832,6 @@ command:
       startScanning: '&eFound &6[amount] &echunks to check. Starting!'
       paused: '&eScanning paused, to continue use &6/cmi scan continue.'
       continuing: '&eScanning continuing'
-      holdItem: '&eYou need to hold the item in hand'
       stoped: '&eScanning stoped. You can check the results with /cmi scan info'
       speedChange: '&eSpeed changed to [amount]'
       autospeedChange: '&eAutoSpeed changed to [state]'
@@ -2962,6 +2999,8 @@ command:
       setBed: '&eCreated bed respawn location'
       private: ' &2(private)'
       noMore: '&cYou have reached max allowed home limit'
+      exist: "&cHome location with this name (&6[name]&c) already exists! \n&eClick\
+        \ to confirm overwrite."
       noOverwrite: '&cYou don''t have permission to overwrite existing home location.
         Remove old one or pick different home name.'
       slotTaken: '!actionbar!&cHome slot is already been used by {#Edward}[homeName]&c,
@@ -3103,6 +3142,13 @@ command:
     info:
       gotSmited: '&eYou got smited!'
       targetSmited: '&eSmiting target!'
+  smithingtable:
+    help:
+      info: '&eOpen smithing table'
+      args: (playerName)
+    info:
+      feedback: '&eYou have opened smithing table for &3[playerDisplayName]&e (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e opened smithing table for you.'
   socialspy:
     help:
       info: '&eToggle social spy'
@@ -3342,6 +3388,24 @@ command:
         USE_ITEM: Items used
         PICKUP: Item pickups
         KILL_ENTITY: Monster kills
+        STRIDER_ONE_CM: Strider travel
+        INTERACT_WITH_BLAST_FURNACE: Interaction with blast furnace
+        INTERACT_WITH_SMOKER: Interaction with smoker
+        INTERACT_WITH_LECTERN: Interaction with lectern
+        INTERACT_WITH_CAMPFIRE: Interaction with campfire
+        INTERACT_WITH_CARTOGRAPHY_TABLE: Interaction with cartography table
+        INTERACT_WITH_LOOM: Interaction with loom
+        INTERACT_WITH_STONECUTTER: Interaction with stonecutter
+        INTERACT_WITH_ANVIL: Interaction with anvil
+        INTERACT_WITH_GRINDSTONE: Interaction with grindstone
+        INTERACT_WITH_SMITHING_TABLE: Interaction with smithing table
+        BELL_RING: Bell rings
+        RAID_TRIGGER: Raid triggers
+        RAID_WIN: Raid wins
+        TARGET_HIT: Target hits
+        OPEN_BARREL: Opened barrels
+        DROP_COUNT: Drop count
+        TOTAL_WORLD_TIME: Time in world
   statsedit:
     help:
       info: '&eEdit players statistics'
@@ -3372,6 +3436,13 @@ command:
       DiskUsage: ' &eDisk usage: &6[percent]% &e(&6[current]&e/&6[max] GB&e)'
       Worlds: '&e [number]. &6[world] &e[chunks] Chunks &6[entities] Entities &e[tiles]
         tiles &6[players] players'
+  stonecutter:
+    help:
+      info: '&eOpen stonecutter'
+      args: (playerName)
+    info:
+      feedback: '&eYou have opened stonecutter for &3[playerDisplayName]&e (&3[offon]&e).'
+      targetfeedback: '&3[senderDisplayName]&e opened stonecutter for you.'
   sudo:
     help:
       info: '&eForce another player to perform command'
@@ -3827,6 +3898,7 @@ command:
       fakeJoinLeave: '&eShow fake join/leave messages on vanish state change'
       mobSpawning: '&eMobs will spawn nearby'
       stopPlaytime: '&ePlaytime will stop increasing'
+      sleepIgnore: '&eIgnore for sleeping count'
       bossbarTitle: '&fVanished'
   version:
     help:
@@ -3999,6 +4071,9 @@ command:
       args: (all/blocks/hand/material)
     info:
       worthless: '&eWorthless'
+      damaged: ' &6(&2[percent]% &6damaged)'
+      shulker: '&6Remove items from shulker box before selling'
+      repair: '&eRepair before selling'
       basePrice: '&6[itemName]&e({#Edward}[amount]&e) -> &f[price]'
       fullPrice: '{#Edward}[price]'
       total: '&eTotal worth: {#Edward}[total]'

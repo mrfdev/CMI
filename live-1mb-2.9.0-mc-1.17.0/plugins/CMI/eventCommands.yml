@@ -117,6 +117,11 @@ playerKick:
   Commands:
   - cmi msg [playerName] This is event command example!
   - cmi actionbarmsg [playerName] This is event command example!
+playerBan:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
 playerLevelChange:
   Enabled: false
   Commands:

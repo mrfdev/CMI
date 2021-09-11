@@ -18,6 +18,7 @@
 #   This will set commands to be performed on 4 a clock in morning and at 22:30. Good way to control server backups when there is less players online
 # Repeat: (true/false) if set to false, action will be performed only once other wise it will be repeated all the time in intervals or on particular time
 # MinPlayers: (amount) Will limit minimum player amount there should be online when command performe
+# MinPlayersCommands: List of commands to be performed when online player amount is under specified limit
 # MaxPlayers: (amount) Will skip scheduler if there is more than defined amount of players
 # Feedback: (true/false) if set to false will not show feedback message in console in case there is not enough players to perform this schedule
 # Commands: List of commands to be performed when time is correct. 
@@ -147,20 +148,20 @@ Announcer:
   Commands:
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can sit on stairs!
     (right click empty handed)
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can claim a horse once
-    you tame it!
+  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Tired of regular survival?
+    Try {#yellow}/oneblock
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Type /menu to find out
     what else is on our server.
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Learn more about horses
-    with the /horse command.
+  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Learn more about our features
+    on {#yellow}/forums
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Level up for perks from
     /mcMMO.
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Level up for rewards with
     /achievements
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG mcMMO commands: /mcstats,
     /mcrank, /mctop :)'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG features: /horse,
-    /fish, /pvp, /party'
+  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG features: /fish, /pvp,
+    /party'
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Protection cmds: /lock,
     /unlock, /cmodify'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
@@ -219,8 +220,8 @@ Announcer:
     up to 5 /points per fish.
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sell all the types of
     fish on the: /fish shop'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB version 2.9.0
-    for Minecraft 1.17'
+  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB version 2.9.2
+    for Minecraft 1.17.1'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
     can have up to 1 Chest /shops
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group Player

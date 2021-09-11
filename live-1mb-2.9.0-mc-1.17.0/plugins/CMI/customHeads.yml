@@ -6,9 +6,9 @@
 # Lvl33: 35.5
 LootMobBonus:
   Enabled: true
-  Lvl1: 2.0
-  Lvl2: 6.0
-  Lvl3: 12.0
+  Lvl1: 1.5
+  Lvl2: 3.0
+  Lvl3: 6.0
 # Defines if you want to use default head lore which will be used in case head doesnt have defined lore
 useDefaultHeadLore: true
 # Default lore used when head doesnt have defined head lore set
