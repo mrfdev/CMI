@@ -42,25 +42,25 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
-- (Custom) [CustomAlias.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/CustomAlias.yml) 
-- (Custom) [worth.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/worth.yml) (no 1.16.x items yet)
+- (Custom) [CustomAlias.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/CustomAlias.yml) 
+- (Custom) [worth.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/worth.yml) (no 1.16.x items yet)
 
 Or maybe for one of the common CMI files that I've customized for my server:
 
-- [Alias.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/Alias.yml) (live, [all false](/Resources/Alternatives/Alias_false.yml), [all true](/Resources/Alternatives/Alias_true.yml))
-- [config.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/config.yml) (live)
-- [eventCommands.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/eventCommands.yml) (live)
-- [Modules.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/Modules.yml) (live, [all false](/Resources/Alternatives/Modules_false.yml), [all true](/Resources/Alternatives/Modules_true.yml))
-- [ranks.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/ranks.yml) (live)
-- [schedules.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/schedules.yml) (live)
-- [tabList.yml](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/tabList.yml) (live)
+- [Alias.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/Alias.yml) (live, [all false](/Resources/Alternatives/Alias_false.yml), [all true](/Resources/Alternatives/Alias_true.yml))
+- [config.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/config.yml) (live)
+- [eventCommands.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/eventCommands.yml) (live)
+- [Modules.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/Modules.yml) (live, [all false](/Resources/Alternatives/Modules_false.yml), [all true](/Resources/Alternatives/Modules_true.yml))
+- [ranks.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/ranks.yml) (live)
+- [schedules.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/schedules.yml) (live)
+- [tabList.yml](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/tabList.yml) (live)
 
 And if you came here to find examples of the 1MB CMI CustomText/ files
 
-- [rules.txt](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/CustomText/rules.txt) (handy for /rules)
-- [welcomeMessage.txt](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
+- [rules.txt](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/CustomText/rules.txt) (handy for /rules)
+- [welcomeMessage.txt](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
 - [placeholders.txt](/Resources/Add-ons/placeholders.txt) (1MB CMI add-on for 1MB team command)
-- [donate.txt](/live-1mb-2.9.0-mc-1.17.0/plugins/CMI/CustomText/donate.txt) (handy for /donate)
+- [donate.txt](/live-1mb-2.9.2-mc-1.17.1/plugins/CMI/CustomText/donate.txt) (handy for /donate)
 
 (See further down the page for the Discord FAQ messages)
 
@@ -83,15 +83,15 @@ Basically, these are the easiest steps to use any of these files.
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.1.7** (June 30th, 2021), for live-1mb-2.9.0-mc-1.17.0
+1MB CMI Project version **0.1.8** (September 11th, 2021), for live-1mb-2.9.2-mc-1.17.1
 
-The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.9.0-mc-1.17.0`
+The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.9.2-mc-1.17.1`
 ```
 -live- (live server)
--1MB- (1moreblock linked to network hub called 1mb)
--2.9.0- (1MB version 2.9.0, network version)
+-1MB- (1moreblock linked to network hub called 1MB)
+-2.9.2- (1MB version 2.9.2, network version)
 -mc- (Minecraft, but it is Paper jar at the moment)
--1.17.0- (Minecraft version 1.17.0)
+-1.17.1- (Minecraft version 1.17.1)
 ```
 **TLDR;** These files are for 1.17.x and probably any CMI version 9.x that works with 1.17.x
 
@@ -116,17 +116,25 @@ You can [open a New Issue](https://github.com/mrfdev/CMI/issues), if
 For Discord I've created a couple of **CMI FAQ** entries that are pinned to the CMI #help channel. You can find them here as well. And you're free to point out outdated instructions, incorrect information, or contribute with improvement or missed steps/commands/permissions.
 
 - [CMI Getting Started](/Resources/FAQ/cmi-gettingstarted.md)
+- [CMI Running 1.17.1](/Resources/FAQ/cmi-running-1.17.1.md)
 - [CMI Economy](/Resources/FAQ/cmi-economy.md)
-- [CMI Chat](/Resources/FAQ/cmi-chat.md) ([Chatrooms](/Resources/FAQ/cmi-chatrooms.md)) ([Bungee-chat](/Resources/FAQ/cmi-bungee.md))
-- [CMI Commands](/Resources/FAQ/cmi-commands.md)
+- [CMI Chat](/Resources/FAQ/cmi-chat.md) ([Chatrooms](/Resources/FAQ/cmi-chatrooms.md)) ([Bungee-chat](/Resources/FAQ/cmi-bungee.md)) ([Chat Format](/Resources/FAQ/cmi-chat-format.md)) ([Chat Filter](/Resources/FAQ/cmi-chatfilter.md))
+- [CMI LuckPerms Prefix](/Resources/FAQ/cmi-luckperms-prefix.md)
+- [CMI Commands](/Resources/FAQ/cmi-commands.md) ([Extending Commands](/Resources/FAQ/cmi-extending-commands.md))
 - CMI Custom Text ([/help](/Resources/FAQ/cmi-help.md), [/motd](/Resources/FAQ/cmi-motd.md), [/rules](/Resources/FAQ/cmi-rules.md))
 - [CMI Votes](/Resources/FAQ/cmi-votes.md)
 - [CMI Hex Colors](/Resources/FAQ/cmi-hexcolors.md)
 - [CMI Import](/Resources/FAQ/cmi-import.md)
+- [CMI Migrate Database](/Resources/FAQ/cmi-migrate-database.md)
 - [CMI Chance](/Resources/FAQ/cmi-chance.md)
+- [CMI Paramters](/Resources/FAQ/cmi-parameters.md)
+- [CMI Toggle Examples](/Resources/FAQ/cmi-toggle-examples.md)
+- [CMI Ranks](/Resources/FAQ/cmi-ranks.md)
 - [CMI Custom Join / Leave](/Resources/FAQ/cmi-custom-joinleave.md)
 - [CMI Trash Feature](/Resources/FAQ/cmi-trash.md)
 - [CMI Safety Tips](/Resources/FAQ/cmi-safety-tips.md)
+- [CMI Mode Stuck on Join](/Resources/FAQ/cmi-mode-stuck-on-join.md)
+- [CMI Library (CMILIB)](/Resources/FAQ/cmi-library.md)
 - [And more!](/Resources/FAQ/)
 
 *To clarify, you can not use this repository to ask for CMI customer support. CMI Customer Support on this repository will honestly be ignored (ticket closed), nothing personal. Please use the below link instead*
