@@ -60,10 +60,15 @@ Here you can see they don't have the `:` thingy, but they also don't take a cond
 
 The wiki has way more info about this, go play on a test server with it!
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> misc
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Checking Empty Results
+
+You can check against null and empty, in case you specifically need to know if a paramter for example is empty or not.
+
+In case you want to compare value against empty field, use “`null`” or “`[empty]`” for example `check:$1==null!`
 
 ```
-x
+check:$1==null! msg! [playerName] Please provide an argument
+check:something==[empty]! msg! [playerName] Your argument was empty
 ```
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Stacking Specialized Commands
@@ -96,4 +101,9 @@ You can use this to create "chance" or figure out "random" results. Which is gre
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
 More information about CMI: https://www.zrips.net/cmi/
-More info about Specliaized Commands: 
+More info about Specliaized Commands: https://www.zrips.net/cmi/commands/specialized/
+
+#### Contributions
+
+Thank you Zrips for all the help with expanding this feature over time, it's helping the features on my server to be super flexible and dynamic! 
+And for Cloude_LeCaw, Alax, and others from the Zrips Discord Community with helping explain things and help build this particular FAQ page.
