@@ -76,7 +76,7 @@ The wiki has way more info about this, go play on a test server with it!
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Checking Empty Results
 
-You can check against null and empty, in case you specifically need to know if a paramter for example is empty or not.
+You can check against null and empty, in case you specifically need to know if a (parameter)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-parameters.md] for example is empty or not.
 
 In case you want to compare value against empty field, use “`null`” or “`[empty]`” for example `check:$1==null!`
 
@@ -116,6 +116,7 @@ You can use this to create "chance" or figure out "random" results. Which is gre
 
 More information about CMI: https://www.zrips.net/cmi/
 More info about Specliaized Commands: https://www.zrips.net/cmi/commands/specialized/
+More info about CMI Paramters: https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-parameters.md
 
 #### Contributions
 
