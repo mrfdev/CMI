@@ -18,19 +18,27 @@ There are a few special condition characters or operators that CMI uses in some 
 [#] - break up everything when condition is not true
 ```
 
+You can use `#` specifically to stop the rest of the alias from executing i.e:
+```yml
+- check:someFailedCheck#! First command
+- SecondCOmmand
+- Thirdcommand
+```
+In the example above, no commands would be run.
+
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Comparison Operators Legend
 
 When a specialized command syntax requires a comparison you have to stick to a specific set, these all mean different things. Below is an example that uses the same check for balances, and they help you go check against exact matches, bigger or smaller matches,etc. WHich can be really helpful.
 
 ```
-== (is equal to) 
-!= (is not equal to) 
+==      (is equal to) 
+!=      (is not equal to) 
 
-> (is less than)
->= (is less than or equal to)
+>       (is less than)
+>=      (is less than or equal to)
 
-< (is greater than)
-<= (is greater than or equal to)
+<       (is greater than)
+<=      (is greater than or equal to)
 ```
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What makes them specialized commands? (SYNTAX)
@@ -41,10 +49,11 @@ For example:
 ```
 check:!
 perm:!
-
+```
 i.e.
-check:%placeholder%==banana!
-perm:cmi.something.permname!
+```yml
+- check:%placeholder%==banana! msg! [playerName] It's a banana!
+- perm:cmi.something.permname! msg! [playerName] You have the right permissions!
 ```
 
 Each type of "keyword" might have different expectations, the wiki will have examples and more indepth info. This is more to help you understand how a specialized command is specific to CMI and can be ussed with certain CMI features, such as scheduler / eventcommands / aliaseditor / interactive commands.
@@ -55,7 +64,12 @@ asPlayer!
 asConsole!
 delay! 5
 ```
-
+i.e.
+```yml
+- asPlayer! warp spawn
+- delay! 2.5
+- asConsole! cmi heal [playerName]
+```
 Here you can see they don't have the `:` thingy, but they also don't take a condition. 
 
 The wiki has way more info about this, go play on a test server with it!
@@ -66,9 +80,9 @@ You can check against null and empty, in case you specifically need to know if a
 
 In case you want to compare value against empty field, use “`null`” or “`[empty]`” for example `check:$1==null!`
 
-```
-check:$1==null! msg! [playerName] Please provide an argument
-check:something==[empty]! msg! [playerName] Your argument was empty
+```yml
+- check:$1==null! msg! [playerName] Please provide an argument
+- check:something==[empty]! msg! [playerName] Your argument was empty
 ```
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Stacking Specialized Commands
@@ -87,7 +101,7 @@ If you make a custom alias command with CMI through `/cmi aliaseditor` for examp
 
 You can avoid complex situations by breaking it down to PER line checks. They will either be true or false, and when it's true, the command gets executed. 
 
-```
+```yml
 - check:[playerName]==You! msg! [playerName] This command get executed because your name is "You".
 - check:[playerName]!=You! msg! [playerName] This command get executed because your name is enything elxe than "You".
 - check:%cmi_user_balance%>1000! msg! [playerName] This command get executed because your Balance is higher than 1000.
