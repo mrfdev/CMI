@@ -28,7 +28,7 @@ In the example above, no commands would be run.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Comparison Operators Legend
 
-When a specialized command syntax requires a comparison you have to stick to a specific set, these all mean different things. Below is an example that uses the same check for balances, and they help you go check against exact matches, bigger or smaller matches,etc. WHich can be really helpful.
+When a specialized command syntax requires a comparison you have to stick to a specific set, these all mean different things. Below is an example that uses the same check for balances, and they help you go check against exact matches, bigger or smaller matches, etc. Which can be really helpful.
 
 ```
 ==      (is equal to) 
@@ -56,7 +56,7 @@ i.e.
 - perm:cmi.something.permname! msg! [playerName] You have the right permissions!
 ```
 
-Each type of "keyword" might have different expectations, the wiki will have examples and more indepth info. This is more to help you understand how a specialized command is specific to CMI and can be ussed with certain CMI features, such as scheduler / eventcommands / aliaseditor / interactive commands.
+Each type of "keyword" might have different expectations, the wiki will have examples and more indepth info. This is more to help you understand how a specialized command is specific to CMI and can be ussed with certain CMI features, such as (scheduler)[https://www.zrips.net/schedule/] / (eventcommands)[] / (aliaseditor)[https://www.zrips.net/cmi/commands/custom-alias/] / (interactive commands)[https://www.zrips.net/cmi/commands/interactive-commands/].
 
 There are a few specific exceptions, such as the ones below. 
 ```
@@ -76,10 +76,9 @@ The wiki has way more info about this, go play on a test server with it!
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Checking Empty Results
 
-You can check against null and empty, in case you specifically need to know if a (parameter)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-parameters.md] for example is empty or not.
+You can check against null and empty results, in case you specifically need to know if a (parameter)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-parameters.md] for example is empty or not.
 
-In case you want to compare value against empty field, use “`null`” or “`[empty]`” for example `check:$1==null!`
-
+In case you want to compare value against empty field, use “`null`” or “`[empty]`”:
 ```yml
 - check:$1==null! msg! [playerName] Please provide an argument
 - check:something==[empty]! msg! [playerName] Your argument was empty
@@ -87,30 +86,30 @@ In case you want to compare value against empty field, use “`null`” or “`[
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Stacking Specialized Commands
 
-Yes, it's possible to stack a couple, I would not overdo it.
+Yes, it's possible to stack a couple of them, I would not overdo it. A pro tip for when you really really need to stap loads and it doesn't work or fit, is to make a private custom alias command, feed the info to it, parse things there, and use the results from that to complete this particular command (handy for attachcommands btw)
 
-For example, the easiest stacking is a check if a condition is met, and if someone has a specific permission for example. THEN Run a command, but as a console command. 
+For example, the easiest stacking is a check if a condition is met, and if someone has a specific permission for example. THEN run a command, but as a console command. 
 
 So in this example that would be the use of `check:!` and `perm:!` and then `asConsole!` This is what we consider stacking, and the command only runs if the `check:` and `perm:` results to true for BOTH of them.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Reminder: Every line of commands will get executed.
 
-If you make a custom alias command with CMI through `/cmi aliaseditor` for example, and you add multiple commands to the list, please be reminded that each line will get run. So if you have a check at the top, but then later you should not assume that check is still valid. Recheck, or at least match the conditions. Note that per CMI 9.0.4.x you can also use an if conditional at the top, and then check true or false against that - this could help with more complex repeatative conditions.
+If you make a custom alias command with CMI through `/cmi aliaseditor` for example, and you add multiple commands to the list, please be reminded that each line will get run. So if you have a check at the top, but then later you should not assume that check is still valid. Recheck, or at least match the conditions. Note that per CMI 9.0.4.x you can also use an if conditional at the top, and then check true or false against that - this could help with more complex repeatative conditions. (These are called _Statements_ on the wiki page)
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Simplifying your checks example
 
 You can avoid complex situations by breaking it down to PER line checks. They will either be true or false, and when it's true, the command gets executed. 
 
 ```yml
-- check:[playerName]==You! msg! [playerName] This command get executed because your name is "You".
-- check:[playerName]!=You! msg! [playerName] This command get executed because your name is enything elxe than "You".
-- check:%cmi_user_balance%>1000! msg! [playerName] This command get executed because your Balance is higher than 1000.
-- check:%cmi_user_balance%=<1000! msg! [playerName] This command get executed because your Balance is lower than 1001.
+- check:[playerName]==Notch! msg! [playerName] This command get executed because your name is "Notch".
+- check:[playerName]!=Notch! msg! [playerName] This command get executed because you are nit "Notch".
+- check:%cmi_user_balance%>1000! msg! [playerName] This command get executed because your cmi /balance is more than 1000.
+- check:%cmi_user_balance%=<1000! msg! [playerName] This command get executed because your cmi /balance is less than or equal to 1000.
 ```
 
 This is great for creating very specific situations, so one user in one group in a particular world will have a different result than someone else from another group in another world (to just randomly mention something..) 
 
-You can use this to create "chance" or figure out "random" results. Which is great to help you build a mini "crate" addon with just CMI features. Or have dynamic rewards for voting or kits or teleport locations, etc. 
+You can use this to create "(chance)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chance.md]" or figure out "random" results or even dynamic "(toggles)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-toggle-examples.md]". Which is great to help you build a mini "crate" addon with just CMI features. Or have dynamic rewards for voting or kits or teleport locations, etc. 
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
