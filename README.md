@@ -38,7 +38,7 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 
 - (Add-on) [diamondcookie.md](/Resources/Add-ons/diamondcookie.md)
 - (Add-on) [emotes.yml](/Resources/Add-ons/emotes.yml)
-- (Add-on) [social.yml](/Resources/Add-ons/social/README.md)
+- (Add-on) [social](/Resources/Add-ons/social/)
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
