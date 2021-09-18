@@ -21,7 +21,7 @@ The full list as of September 14th, 2021
 - Mob Farm Manager version 2.0.0.1
 - Residence version 5.0.0.2
 - Jobs-Reborn version 5.0.0.8
-- BottledExp version 3.0.0.1
+- BottledExp version 3.0.0.2
 - ReCount version 3.5.0
 - TradeMe version 6.1.0.2
 
