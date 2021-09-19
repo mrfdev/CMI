@@ -1,17 +1,16 @@
-# Start 1MB Add-on: CMI to Discord Helper (version 1.0.1, build 0.0.8) (Made for Minecraft 1.16.5 with CMI 8.8.x.x or newer)
+# Start 1MB Add-on: CMI to Discord Helper (version 1.1.0, build 0.0.9) (Made for Minecraft 1.17.1 with CMI 9.0.4.1 or newer)
   # Created by Floris Fiedeldij Dop, with contributions from smeths and _hepcat_
-  # Installation instructions: [yt video pending]
-  # - Make sure you are running DiscordSRV, PlaceholderAPI, as well as the Jobs and McMMO extensions
-  # - Download as raw plain text, and then open plugins/CMI/CustomAlias.yml,
-  # - Find: CustomAlias:
-  # - Right below that, on a new line, paste all of this.
-  # - Adjust colors and text to your desire.
-  # Note: Make sure you a- do not override existing data, and b- either /cmi reload, or restart the server.
+  # Installation instructions:
+  # - Make sure you are running DiscordSRV, PlaceholderAPI, as well as the Jobs and McMMO and optionally PyroWelcomes and PyroFishingPro
+  # - Just remove the commands for plugins you're not using. If you have more plugins, this should be a great example on how to make your own.
+  # - Download and then place in `~/plugins/CMI/CustomAlias/` directory.
+  # - And then just /cmi reload.
 
-  # mcMMO
+CustomAlias:
+#/mcstats discord (Displays mcMMO Overhaul 2.x statistics to Discord)
   mcstats discord:
     Cmds:
-    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /mcstats information to Discord.
+    - cooldown:60?#! msg! [playerName] {#orange} .. Sending /mcstats information to Discord.
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :zap: **power level** `%mcmmo_power_level%`'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :boot: **acrobatics**`%mcmmo_level_acrobatics%` (rank: %mcmmo_rank_acrobatics%) / :test_tube: **alchemy** `%mcmmo_level_alchemy%` (rank: %mcmmo_rank_alchemy%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :archery: **archery**`%mcmmo_level_archery%` (rank: %mcmmo_rank_archery%) / :axe: **axes** `%mcmmo_level_axes%` (rank: %mcmmo_rank_axes%)'
@@ -21,13 +20,34 @@
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :fox: **taming**`%mcmmo_level_taming%` (rank: %mcmmo_rank_taming%) / :mechanical_arm: **unarmed** `%mcmmo_level_unarmed%` (rank: %mcmmo_rank_unarmed%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :axe: **woodcutting**`%mcmmo_level_woodcutting%` (rank: %mcmmo_rank_woodcutting%) / _Want more? Ingame type: /mcstats, /mcrank, /mctop_'
     Tab: false
-  # Jobs-Reborn
+#/jobs discord (Displays Jobs-Reborn 5.x statistics to Discord)
   jobs discord:
     Cmds:
-    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /jobs stats information to Discord.
+    - cooldown:60?#! msg! [playerName] {#orange} .. Sending /jobs stats information to Discord.
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs Joined**: `%jobsr_user_joinedjobcount% / %jobsr_maxjobs%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs list**: %jobsr_user_job_1%(%jobsr_user_jlevel_1%/%jobsr_user_jmaxlvl_1%) %jobsr_user_job_2%(%jobsr_user_jlevel_2%/%jobsr_user_jmaxlvl_2%) %jobsr_user_job_3%(%jobsr_user_jlevel_3%/%jobsr_user_jmaxlvl_3%)'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs skill**: `%jobs_total_levels%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs points**: `%jobsr_user_points_fixed%`'
     Tab: false
+#/fish discord (displays PyroFishingPro fishing statistics to Discord)
+  fish discord:
+    Cmds:
+    - cooldown:60?#! msg! [playerName] {#orange} .. Sending /fish stats information to Discord.
+    - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :fish: (/fish) **Level**: `%pyrofishingpro_level%`'
+    - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :fish: (/fish) **Entropy**: `%pyrofishingpro_entropy%`'
+    - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :fish: (/fish) **Total caught**: `%pyrofishingpro_totalfishcaught%`'
+    - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :fish: (/fish) **Tournaments won**: `%pyrofishingpro_tournamentswon%`'
+    - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :fishing_pole_and_fish: (mcMMO) **/fishing level**: `%mcmmo_level_fishing%` | **Rank:** `%mcmmo_rank_fishing%`'
+    - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :fishing_pole_and_fish: (Jobs) **Is a Fisherman?**: `%jobsr_user_isin_Fisherman%` | **Level:** `%jobsr_user_jlevel_Fisherman%`'
+    Tab: false
+#/account discord (displays some account details to Discord, using details from VotingPlugin, Economy, PyroWelcomes, Jobs-reborn)
+  account discord:
+    Cmds:
+    - cooldown:60?#! msg! [playerName] {#orange} .. Sending Account Balances information to Discord.
+    - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/money**: `%cmi_user_balance_formatted%`'
+    - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/points**: `%pyrowelcomes_points%`'
+    - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/vote points**: `%VotingPlugin_Points_format%`'
+    - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/jobs Points **: `%jobsr_user_points%`'
+    Tab: false
+
 # End 1MB Add-on: CMI to Discord Helper
