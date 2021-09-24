@@ -113,3 +113,10 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 ```
 
 More information about CMI: https://www.zrips.net/cmi/
+
+## LATEST
+Per CMI 9.0.4.3 this was in the changelog:
+```
+- Added better support for bungeeservers in the sense that now we can show custom messages when player switch servers to and from it. This will only works after you update CMIB plugin and only applies when you have custom login/logout messages enabled. New locale lines got added to CMI locale file
+- Updating CMIB plugin will properly take player out of afk mode if he uses bungee only commands which previously would have been ignored
+```
