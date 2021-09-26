@@ -211,4 +211,4 @@ In that case the concept is the same, check your commands, the user info, the mo
 
 ---
 
-More information about CMI: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
