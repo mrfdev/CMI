@@ -6,7 +6,7 @@ This page is a quick introduction to the CMI Library.
 
 ---
 
-## What is CMI Library (cmilib)
+## What is CMI Library (CMILib)
 
 It's a plugin helper that can deal with frequently used phrases, hex colors, etc. which all of zrips' plugins can use. This adds consistancy among the various plugins.
 
@@ -27,7 +27,7 @@ The full list as of September 24th, 2021
 - ReCount version 3.5.0
 - TradeMe version 6.1.0.2
 
-These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMI Lib version 1.0.3.10 or newer to properly operate.
+These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMILib version 1.0.3.10 or newer to properly operate.
 
 ## How do I get it?
 
@@ -35,7 +35,7 @@ Upon starting of any of these listed plugins it will try to automatically downlo
 
 ## I have to restart
 
-Yes, the first time a plugin or cmi lib has loaded and converted any data. It's ready to be used after a server restart.
+Yes, the first time a plugin or CMILib has loaded and converted any data. It's ready to be used after a server restart.
 
 ## Backing up and testing?
 
@@ -51,7 +51,7 @@ Don't panic, the latest version can be used by all the plugins. Once you're read
 
 From CMI Library version 1.0.2.4 onwards it should automatically clean-up older lib jars. If it does not, you can stop the server, manually remove the older jars and start the server again.
 
-## I keep deleting this CMI Lib jar and it keeps coming back!
+## I keep deleting this CMILib jar and it keeps coming back!
 
 Yes, Zrips plugins require the latest CMI Lib to properly work, you need it, don't delete it.
 
