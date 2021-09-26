@@ -2,11 +2,11 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can deal with % chance**, this is the recommended setup that works well on Spigot / Paper 1.17.1 and lower, to make dynamic features using specialized commands and smart use of placeholders.
-
-Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml`
+This is the recommended setup that works well on Spigot / Paper 1.17.1 and lower, to make dynamic features using specialized commands and smart use of placeholders.
 
 ---
+
+**CMI can deal with % chance**
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
@@ -97,6 +97,8 @@ Okay next one, using the above we can make a private random item generator, and 
     - '[playername]'
 ```
 The above can be added on a new line at the end of customalias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
+
+Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` you can either add your Custom Alias code there, or make a new files if you rather organize additional commands like these.
 
 You can learn more about specialized commands, and placeholders by CMI here:
 - https://www.zrips.net/cmi/commands/specialized/
