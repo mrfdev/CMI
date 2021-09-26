@@ -6,7 +6,7 @@ This document is to help answer some questions and narrow down if CMI is configu
 
 ---
 
-## Why does this happen?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Why does this happen?
   
 Sometimes server owners run in cracked offline mode (which I personally do not support, respect the EULA please) and have other things installed such as AuthMe and alike plugins which help contorl what a player can and cannot do when they join. 
   
@@ -14,7 +14,7 @@ Another reason could be that a server owner runs plugins for hubs and lobbies to
   
 Together with CMI and/or other plugins it's a combination where it's conflicting with CMI and/or causing states of a player to 'stick'. This isn't particularlly CMI's vault as you can see.
 
-## Stuck in god mode
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Stuck in god mode
 
 In CMI's `config.yml` you can try to find the following code, set it to 0 to test and see if it still happens. The best way is still to `/stop` the server, customize the file, and start the server. This way you know for certain it's edited and not updated on a reload, etc.
   
@@ -200,7 +200,7 @@ playerCombat: true
 You can also check your permissions and commands related to flying, creative mode, god, temp fly, temp god, etc. And make sure you don't run anything in the server before they disconnect that gives them access to these commands, grants them the related permisisons to enable any of this, or some shop item or attachedcommand etc that triggers this stuff. 
 
   
-## I've tried everything, it is still happening.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> I've tried everything, it is still happening.
   
 Then stop the server, back it up, then clone it. Start a test setup on a different port, and remove all the plugins. And try with just CMI and ask the player to join and reproduce the issue. 
 
