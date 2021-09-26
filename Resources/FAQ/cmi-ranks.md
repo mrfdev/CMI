@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 
+---
+
 ## What is a Rankup System?
 
 A 'default' player in the game can be active, levelling up on various statistics, gameplay elements, including levels and points for things like mcMMO and Jobs. As a player grows in their game they can automatically rank up. Going from a beginner to an elite player. You can pick the ranks with CMI, set them up to auto upgrade, and set the requirements. When a rank-up happens, commands can be executed. Which is super helpful to grant perks, manage the permissions involved, etc.
@@ -49,4 +51,8 @@ Example what not to do:
 
 ## Finally
 
-And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+More information on <https://www.zrips.net/cmi/>
