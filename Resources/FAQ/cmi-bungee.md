@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 **CMI can handle Bungee wide chat**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 and lower.
 
+---
+
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
 
@@ -111,6 +113,8 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 - are my inventories shared between servers? i doubt it, you probably need a bungee-inventory plugin dedicated to this
 - can i use 1 database for all cmi instances? no, default is sqlite, use mysql, and make sure they all use a unique prefix. Using 1 user table for every server for example will very very very likely cause massive issues.
 ```
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
 
