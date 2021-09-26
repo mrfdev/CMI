@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
+
 **CMI can handle Economy**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -19,4 +21,8 @@ Economy:
   Enabled: true
 ```
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+- More information on <https://www.zrips.net/cmi/>
