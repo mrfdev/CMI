@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
+
 ## chatfilter.yml
 
 These instructions should work fine for the latest CMI version 9.x on Spigot / Paper 1.17.1 and below.
@@ -48,5 +50,7 @@ cmi.chatfilter.bypass.[groupname] - Allows to bypass particular chat filter grou
 cmi.chatfilter.inform - Informs player when some one breaks chat filter rules
 cmi.chatfilter.spambypass - Allows to bypass chat spam filter
 ```
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
