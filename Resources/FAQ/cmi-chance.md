@@ -6,7 +6,7 @@ This is the recommended setup that works well on Spigot / Paper 1.17.1 and lower
 
 ---
 
-**CMI can deal with % chance**
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can deal with % chance
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
@@ -50,9 +50,6 @@ Another example, where we only give a certain item when it's a certain %, instea
 ```
 Please note that there are commands that will stop the later commands from executing  (via the # icon)
 
-
-
----
 Okay next one, using the above we can make a private random item generator, and a public command for staff that can use this generator to reward players with an item when needed.
 
 ```
