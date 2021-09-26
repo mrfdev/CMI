@@ -6,6 +6,12 @@ Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/pl
 
 You can use this in CMI 9 on 1.17.1 and below.
 
+Note: Per 9.0.4.x the Alias.yml actually has a toggle for `/trash`, you can skip the below CustomAlias.yml step then if you're on the latest version. I will soon(tm) adjust the instructions on this FAQ page.
+
+---
+
+## CMI Dispose (Trash)
+
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
@@ -142,5 +148,7 @@ Okay, we're done. Players can now use:
 They get a GUI where they can dump their inventory in to dispose of their items. 
 
 And they can now also place a sign and type `[trash]` on it. Then it should change the way the sign looks to those lines we've set. And when they right click on the sign it should open the dispose interface. 
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
