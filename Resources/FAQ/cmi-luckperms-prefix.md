@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
+
 **CMI can handle LuckPerms placeholders**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI Tablist. 
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -81,16 +83,18 @@ Here's an example of how this looks and how you can test this:
 
 If you for example are in that admin group that has this prefix set up, you can now see it should reply (owner) or VIP. This means CMI can see the LuckPerms placeholders correctly. You can now use it in CMI Chat and/or CMI Tablist.
 
-- For CMI Chat, open `config.yml` and find `GroupFormat:`, at the `%luckperms_prefix%` at the appropriate place for the right groups.
+- For **CMI Chat**, open `config.yml` and find `GroupFormat:`, at the `%luckperms_prefix%` at the appropriate place for the right groups.
 
 - Restart the server, and start typing, it should show up now.
 
-- For CMI Tablist, open `Modules.yml` and find `tablist: true` make sure it's set to true. 
+- For **CMI Tablist**, open `Modules.yml` and find `tablist: true` make sure it's set to true. 
 
 - Then go to `tablist.yml` and find `GroupFormat:` and go through the `PlayerName:` parts and add the `%luckperms_prefix%` at the appropriate place for the right groups.
 
 - Restart the server, and press tab, it should show up now.
 
 **[TEMPORARY NOTE: Yes,this works on cmi 9 and mc 1.17 as well - will rewrite this when cmi 9 and 1.17 is more stable**
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
