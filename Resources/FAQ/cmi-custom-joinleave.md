@@ -73,4 +73,4 @@ LuckPerm: `lp user mrfloris permission set cmi.messages.disablequit true`
 
 ---
 
-More information about CMI: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
