@@ -1,8 +1,28 @@
 # FAQ - Some CMI (safety) tips for server owners
 
-Zrips Discord @ https://discord.gg/dDMamN4
+<details><summary>FAQ Menu</summary>
+ • <a href="https://example.com">something</a>,
+ • <a href="https://example.com">something</a>,
+ • <a href="https://example.com">something</a>. 
+</details>
 
-This is the recommended setup that works well on Spigot / Paper 1.17.1 for me. 
+<details><summary>Official Zrips Links</summary>
+ • <a href="https://zrips.net/">Zrips Website</a> (The official website, wiki/documentation/information)<br>
+ • <a href="https://discord.gg/dDMamN4">Zrips Discord</a> (The official Discord community, member-driven support)<br>
+ • <a href="https://github.com/Zrips/">Zrips Github</a> (The place for bug reports and feature suggestions).
+</details>
+
+<details><summary>Disclaimer (please read)</summary>
+ • This FAQ page has been written for Spigot / Paper 1.17.1 and CMI 9.0.4.x or newer.<br>
+ • The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.<br>
+ • I am a team member on the Zrips Discord, 
+</details>
+
+|[Zrips Discord](https://discord.gg/dDMamN4)|[Zrips Website](https://zrips.net/)|[Zrips Github](https://github.com/Zrips/CMI)|
+|:--|:--|:--|
+|meow|
+
+
 
 ---
 
