@@ -1,36 +1,31 @@
 # FAQ - Some CMI (safety) tips for server owners
 
-<details><summary>FAQ Menu</summary>
+<details><summary><strong>FAQ Menu</strong></summary>
  • <a href="https://example.com">something</a>,
  • <a href="https://example.com">something</a>,
  • <a href="https://example.com">something</a>. 
 </details>
 
-<details><summary>Official Zrips Links</summary>
- • <a href="https://zrips.net/">Zrips Website</a> (The official website, wiki/documentation/information)<br>
- • <a href="https://discord.gg/dDMamN4">Zrips Discord</a> (The official Discord community, member-driven support)<br>
- • <a href="https://github.com/Zrips/">Zrips Github</a> (The place for bug reports and feature suggestions).
+<details><summary><strong>Official Zrips Links</strong></summary>
+ • <a href="https://zrips.net/">Zrips Website</a> <pre>https://www.zrips.net/<br>The official website, wiki/documentation/information</pre>
+ • <a href="https://discord.gg/dDMamN4">Zrips Discord</a> <pre>https://discord.gg/dDMamN4<br>The official Discord community, member-driven support</pre>
+ • <a href="https://github.com/Zrips/">Zrips Github</a> <pre>https://github.com/Zrips<br>The place for bug reports and feature suggestions</pre>
 </details>
 
-<details><summary>Disclaimer (please read)</summary>
- • This FAQ page has been written for Spigot / Paper 1.17.1 and CMI 9.0.4.x or newer.<br>
+<details><summary><strong>Disclaimer</strong></summary>
  • The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.<br>
- • I am a team member on the Zrips Discord, 
+ • I am a team member on the Zrips Discord, this does not mean what I say is official.
 </details>
 
-|[Zrips Discord](https://discord.gg/dDMamN4)|[Zrips Website](https://zrips.net/)|[Zrips Github](https://github.com/Zrips/CMI)|
-|:--|:--|:--|
-|meow|
-
-
+<details><summary><strong>Prerequisites</strong></summary>
+ • <a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin) <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre>
+ • <a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)<pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre>
+ • All my FAQ pages have been written for Spigot / Paper 1.17.1 and CMI 9.0.4.x or newer.
+</details>
 
 ---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can check for quite some stuff
-
-- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
-- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
-
 
 Enjoy the server, but as server owner, you might wish to check out a few things every once in a while. I run a few survival servers and I would like to double check some things. Who's still in god mode that shouldn't be? Who is still flying, that shouldn't be? Does anybody have any oversized items in their inventory? Things like that. 
 
