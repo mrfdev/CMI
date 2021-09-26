@@ -56,4 +56,4 @@ You can use legacy code `&` colors as well as the current modern RGB `{#hex}` co
 
 ## More information:
 
-More information about CMI: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
