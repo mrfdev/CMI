@@ -39,11 +39,13 @@ Then walk through all the other options related to chat.
 Note: If you use BungeeChord, make sure you also install enable CMI Bungee support (!)
 
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
 ---
 
 ## Misc
+
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
 
 Once you're using CMI as Chat Manager, make sure you stop using other chat managers as they can cause conflicts (two plugins trying to do the same thing). Next, you can configure the group format (customize how it looks, and set the right permissions), as well as configure LuckPerms to use its prefixes. 
 
