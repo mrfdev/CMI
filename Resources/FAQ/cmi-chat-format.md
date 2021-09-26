@@ -10,6 +10,8 @@ This document helps you to change the group format and group message format usin
 
 Don't forget to back up your data first, before making changes to your server.
 
+---
+
 ## Understanding group format and group message format
 
 In CMI's `config.yml` you will find two sections under the chat section. It's `GroupFormat:` and `GroupMessageFormat:`. But what is the difference?
@@ -113,4 +115,8 @@ https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md
 
 # Done
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+- More information on <https://www.zrips.net/cmi/>
