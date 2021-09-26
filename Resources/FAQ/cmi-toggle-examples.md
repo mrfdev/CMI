@@ -6,13 +6,13 @@ Note: Since CMI version 9.0.3.x you can create your own .yml files and store the
 
 ---
 
-## Learning examples about using CMI to add feature/option toggling.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Learning examples about using CMI to add feature/option toggling.
 
 CMI is flexible and dynamic enough that it can do fancy tricks. One of them is a way to allow you to toggle certain things. This page has some examples to demonstrate how you could learn from them and apply it to your edge case situation.
 
 These should work on CMI 9 and lower on Spigot / Paper 1.17.1 and lower.
 
-### Toggle example 1
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Toggle example 1
 
 This one is provided by @dkalaxdk#2228
 
@@ -41,9 +41,9 @@ Whether this two different ranks, or two different command modes for whatever ne
     - asConsole! usermeta [playerName] add State 0
 ```
 
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> FLASHLIGHT example
 
-## FLASHLIGHT example
-turn on night vision, and turn it off, using the /flashlight command, append this at the end of customalias.yml and restart
+Turn on night vision, and turn it off, using the /flashlight command, append this at the end of customalias.yml and restart
 ```yaml
   flashlight:
     Cmds:
@@ -57,8 +57,6 @@ turn on night vision, and turn it off, using the /flashlight command, append thi
     - check:%cmi_user_meta_flashlightState%==on! check:%cmi_user_meta_flashlightToggle%==off! asConsole! cmi usermeta [playerName] add flashlightState off
     Tab: false
 ```
-
-
 
 Using the user meta feature from cmi a temp value can be stored, and then checked against. Allowing you within the same command to manage this value, use it to achieve something unique, including a toggle.
 
