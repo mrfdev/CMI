@@ -3,9 +3,11 @@
 Zrip Discord @ https://discord.gg/dDMamN4 
 There's a video: https://youtu.be/TLKAusnisqs
 
+This is the recommended setup that works well on Spigot / Paper 1.17.1 to make commands even more dynamic and do exactly what you want, using the alias editor. 
+
 ---
 
-**CMI commands can be extended through the aliaseditor**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to make commands even more dynamic and do exactly what you want, using the alias editor. 
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI commands can be extended through the aliaseditor
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
@@ -41,7 +43,8 @@ Note: I am not saying this is THE WAY to do this, it's an example to help you le
     - selfclear,selfkeep inform,quiet tellall,tellstaff noreason,user-drama,user-swearing,user-hatespeech,event,broadcast [playername]
 ```
 
-How to install these examples?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How to install these examples?
+
 - You can install these above examples by openning `CustomAlias.yml` and pasting the code at the bottom. Note that since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
 
 - For best results, stop the server, make your changes, and start the server again. This way commands can register properly and they can be used right away.
