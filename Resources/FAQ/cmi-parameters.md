@@ -8,13 +8,13 @@ This page is for CMI 9 on Spigot-, and Paper 1.17.1.
 
 ---
 
-## This is for /cmi aliaseditor
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> This is for /cmi aliaseditor
 
 For CMI 9, let's you catch parameters entered in cmi aliaseditor made commands
 
 You can then in the commands use `$1` `$5` `$0` .. order doesn't matter. They're a reference to the stuff entered by the player, see example.
 
-## Example
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Example
 
 ```
 Server owner used /cmi aliaseditor to make a /banana command
