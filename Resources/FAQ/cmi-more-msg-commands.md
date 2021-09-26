@@ -68,3 +68,6 @@ cmi.command.msg.vanish - Allows to send private messages to vanished players
 
 More information about Luckperms usage: https://luckperms.net/wiki/Home
 More information about CMI's custom Aliases: https://www.zrips.net/cmi/commands/custom-alias/
+
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
+
