@@ -22,7 +22,7 @@ This page should help explain what I personally think is the way to run CMI on S
 
 - This is about CMI 9 and Spigot or Paper server version 1.17.1 mainly, apply to 1.16.5 and other lower versions accordingly.
 - CMI version 9.0.4.1 is considered the Stable version you can run on a live production environment. It is stable enough for 1.17.1, if you want to run it live that's fine. But backup your data and test things first!
-- CMI Lib version 1.0.3.9 or older will automatically download. It will replace older CMI Lib jars. This is okay.
+- CMILib will try to automatically download and attempt to replace older CMILib jars. This is okay. If it fails, you can do this manually as well.
 - Zrips' libraries and other resources are linked below.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
