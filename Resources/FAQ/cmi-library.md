@@ -57,4 +57,4 @@ Yes, Zrips plugins require the latest CMI Lib to properly work, you need it, don
 
 ---
 
-More information about CMILib: https://www.zrips.net/cmilib/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
