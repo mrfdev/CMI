@@ -2,9 +2,11 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Bungee wide chat**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 and lower.
+This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 and lower.
 
 ---
+
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat + Bungee Chat
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
@@ -41,7 +43,7 @@ Don't forget to set-up appropriate permissions, such as:
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
 
-## Misc.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Misc.
 
 **Placeholders:**
 ```
@@ -116,7 +118,7 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
 
-## LATEST
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> LATEST
 Per CMI 9.0.4.3 this was in the changelog:
 ```
 - Added better support for bungeeservers in the sense that now we can show custom messages when player switch servers to and from it. This will only works after you update CMIB plugin and only applies when you have custom login/logout messages enabled. New locale lines got added to CMI locale file
