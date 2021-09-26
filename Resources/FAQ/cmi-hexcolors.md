@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
+
 **CMI can handle Hex Colors**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to deal with Hex color support. 
 
 Expected format: `{#8b4726}`
@@ -72,4 +74,8 @@ cmi checkperm color
 
 - Note: You can use any valid {#hexcolor}, but the 1500 from CMI can't be customized.
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/hex-colors/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+More information on <https://www.zrips.net/cmi/hex-colors/>
