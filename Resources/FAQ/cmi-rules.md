@@ -4,9 +4,11 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
 
+This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a dynamic and flexible way of displaying /rules.
+
 ---
 
-**CMI can handle custom /rules**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a dynamic and flexible way of displaying /rules.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle custom /rules
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
