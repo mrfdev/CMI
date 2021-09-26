@@ -204,7 +204,7 @@ You can also check your permissions and commands related to flying, creative mod
   
 Then stop the server, back it up, then clone it. Start a test setup on a different port, and remove all the plugins. And try with just CMI and ask the player to join and reproduce the issue. 
 
-## For me it's creative or fly mode, not god mode, now what?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> For me it's creative or fly mode, not god mode, now what?
   
 In that case the concept is the same, check your commands, the user info, the modules related to that, and configuration settings. Double check the permissions. Avoid conflict with other plugins, and test in an isolated setup to confirm it's a bug with cmi or not. 
 
