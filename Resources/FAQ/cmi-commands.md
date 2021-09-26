@@ -39,4 +39,4 @@ A visual youtube tutorial can be found here <https://www.youtube.com/watch?v=LN5
 
 ---
 
-- More information on <https://www.zrips.net/cmi/>
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
