@@ -10,7 +10,7 @@ This FAQ covers both the welcome message and the server list welcome message.
 
 ---
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> ## Customizing the Welcome Message (for when the player joins the server)
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Customizing the Welcome Message (for when the player joins the server)
 
 Optional video visually showing the /motd on 1MB https://youtu.be/3yjza6W2NNw
 
