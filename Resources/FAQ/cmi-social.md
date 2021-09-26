@@ -6,6 +6,8 @@ This is the recommended setup that works well with CMI9 on Spigot / Paper 1.17.1
 
 This shows you how to bulk add custom alias commands into CMI quickly via an example of 'social commands', such as `/social`, `/discord`, `/youtube`, etc.
 
+---
+
 ## Use CMI to add a bunch of Social commands at once
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -16,6 +18,8 @@ This shows you how to bulk add custom alias commands into CMI quickly via an exa
 You can find more information about this add-on here, including download and installation instructions.
 
 https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/social
+
+---
 
 ## Misc.
 
