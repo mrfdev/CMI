@@ -79,11 +79,11 @@ Please note that if you have a certain amount of groups, like the 5 in our examp
     '5': '{message}'
 ```
 
-# GroupMessageFormat permissions.
+## GroupMessageFormat permissions.
 
 And just like the per group permission nodes for the format, we need them for the message as well. In luckperm, grant the permissions for cmi.chatmessagegroup.1 (and 2,3,4, and 5) as well. Just how we did earlier. 
 
-# GroupMessageFormat customization.
+## GroupMessageFormat customization.
 
 What's next is to customize the way it looks in game per group, you do NOT have to do this, but I know some people like this for their server so including it as an example. You can completely skip this step. 
 
@@ -97,7 +97,7 @@ What's next is to customize the way it looks in game per group, you do NOT have 
 ```
 And yes, these are horrible color codes, again, we're just giving you an example. Please pick reasonable ones for your server. CMI Hex Colors are supported for both GroupFormat and GroupMessageFormat. 
 
-# Customizing the Hover Over text.
+## Customizing the Hover Over text.
 
 This is more a bonus, or pro tip, there's a hoverable effect when you use CMI Chat. And you can customize it!
 
@@ -107,13 +107,13 @@ In the Locale file of `plugins/CMILib/Translations/Locale_EN.yml` you can find t
 
 You can customize this public hover locale with your own text, CMI hex colors, and placeholders. Making it very dynamic. 
 
-# Prefixes
+## Prefixes
 
 You can learn how to configure LuckPerms to use LuckPerms prefixes in CMI Chat here:
 
 https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md
 
-# Done
+## Done
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
