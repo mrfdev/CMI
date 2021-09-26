@@ -119,4 +119,4 @@ https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md
 
 ---
 
-- More information on <https://www.zrips.net/cmi/>
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
