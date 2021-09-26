@@ -4,6 +4,8 @@
 
 Hopefully this FAQ helps explain the issues with glow due to conflicting plugins and/or clients.
 
+---
+
 ## CMI Glow
 
 - **Commands**:
@@ -72,5 +74,7 @@ https://github.com/Zrips/CMI/issues
 
 Want to make suggestions to help improve the functionality of the CMI glow feature? Please open a new Discussion on github:
 https://github.com/Zrips/CMI/discussions
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
