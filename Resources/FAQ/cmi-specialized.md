@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page should help explain some of the basics what I personally think is the way to use CMI specialized commands features on Spigot-, and Paper 1.17.1 with CMI 9.x
 
+---
+
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> There's already a wiki page
 
 https://www.zrips.net/cmi/commands/specialized/
@@ -110,6 +112,8 @@ You can avoid complex situations by breaking it down to PER line checks. They wi
 This is great for creating very specific situations, so one user in one group in a particular world will have a different result than someone else from another group in another world (to just randomly mention something..) 
 
 You can use this to create "(chance)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chance.md]" or figure out "random" results or even dynamic "(toggles)[https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-toggle-examples.md]". Which is great to help you build a mini "crate" addon with just CMI features. Or have dynamic rewards for voting or kits or teleport locations, etc. 
+
+---
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
