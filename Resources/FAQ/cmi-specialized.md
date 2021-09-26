@@ -117,9 +117,10 @@ You can use this to create "(chance)[https://github.com/mrfdev/CMI/blob/master/R
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
-More information about CMI: https://www.zrips.net/cmi/
 More info about Specliaized Commands: https://www.zrips.net/cmi/commands/specialized/
 More info about CMI Paramters: https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-parameters.md
+
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
 
 #### Contributions
 
