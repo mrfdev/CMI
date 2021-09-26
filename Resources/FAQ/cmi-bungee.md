@@ -41,9 +41,7 @@ Don't forget to set-up appropriate permissions, such as:
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
 
-
------------ 
-## What's not in the Pinned message, but might still be informational.
+## Misc.
 
 **Placeholders:**
 ```
