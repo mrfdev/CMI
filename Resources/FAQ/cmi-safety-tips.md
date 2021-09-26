@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
+
 **CMI can check for quite some stuff**, this is the recommended setup that works well on Spigot / Paper 1.17.1 for me. 
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -107,5 +109,8 @@ I recommend to be aware of this before sharing files with others.
 
 Also, perhaps don't just blindly copy these over to another server you run. Let them build a unique new `security.key` file. This extends to all the files. If you have certain data that you consider confidential/ personal.
 
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+---
+
+More information on <https://www.zrips.net/cmi/>
