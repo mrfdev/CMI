@@ -41,4 +41,4 @@ Side note: make a full back up of your server before making changes to it.
 
 ---
 
-More information about CMI: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
