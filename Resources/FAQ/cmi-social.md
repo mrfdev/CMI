@@ -23,4 +23,4 @@ https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/social
 
 ## Misc.
 
-More information about the CMI plugin: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
