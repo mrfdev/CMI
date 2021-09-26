@@ -116,7 +116,7 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 
 ---
 
-More information about CMI: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin here: (zrips.net/cmi)[https://www.zrips.net/cmi/]
 
 ## LATEST
 Per CMI 9.0.4.3 this was in the changelog:
