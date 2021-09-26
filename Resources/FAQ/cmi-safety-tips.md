@@ -1,9 +1,37 @@
 # FAQ - Some CMI (safety) tips for server owners
 
 <details><summary><strong>FAQ Menu</strong></summary>
- • <a href="https://example.com">something</a>,
- • <a href="https://example.com">something</a>,
- • <a href="https://example.com">something</a>. 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md">Bungeecord</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chance.md">Chance-Example</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat-format.md">Chat-Format</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md">Chat-Manager</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chatfilter.md">Chat-Filter</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chatrooms.md">Chat-Rooms</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-commands.md">Commands-Manager</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-custom-joinleave.md">Custom-Join-Leave</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-economy.md">Economy-Manager</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-extending-commands.md">Extending-Commands</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-gettingstarted.md">Getting-Started</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-glow.md">Glow</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-help.md">Custom-Help</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-hexcolors.md">Hex-Colors</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md">Importing-Data</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-library.md">CMILib</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md">LuckPerms-Prefix</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-migrate-database.md">Migrate-Database</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-mode-stuck-on-join.md">Mode-Stuck</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-more-msg-commands.md">More-Msg-Commands</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-motd.md">MOTD</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-parameters.md">Parameters</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-ranks.md">Ranks</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-rules.md">Custom-Rules</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-running-1.17.1.md">Running-CMI</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-safety-tips.md">Safety-Tips</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-social.md">Social-Addon</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-specialized.md">Specialized-Cmds</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-toggle-examples.md">Toggle-Example</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-trash.md">Trash</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-votes.md">Vote-Manager</a>.
 </details>
 
 <details><summary><strong>Official Zrips Links</strong></summary>
