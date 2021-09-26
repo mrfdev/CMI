@@ -2,9 +2,11 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for server owners who want to turn on and display a custom join and leave message to players.
+
 ---
 
-**CMI can handle the custom chat things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for server owners who want to turn on and display a custom join and leave message to players.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle the custom chat things
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 - Start using CMI as Chat Manager, if you were using something else.
