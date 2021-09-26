@@ -6,14 +6,14 @@ This page is a quick introduction to the CMI Library.
 
 ---
 
-## What is CMI Library (CMILib)
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What is CMI Library (CMILib)
 
 It's a plugin helper that can deal with frequently used phrases, hex colors, etc. which all of zrips' plugins can use. This adds consistancy among the various plugins.
 
 You can see the CMI Lib page here: <https://www.zrips.net/cmilib/>
 You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmilib.87610/>
 
-## Which plugins use this?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
 The full list as of September 24th, 2021
 
@@ -29,19 +29,19 @@ The full list as of September 24th, 2021
 
 These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMILib version 1.0.3.10 or newer to properly operate.
 
-## How do I get it?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How do I get it?
 
 Upon starting of any of these listed plugins it will try to automatically download it. If this fails, it will let you know where you can download the library .jar file from.
 
-## I have to restart
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> I have to restart
 
 Yes, the first time a plugin or CMILib has loaded and converted any data. It's ready to be used after a server restart.
 
-## Backing up and testing?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backing up and testing?
 
 Yep, I strongly recommend to always back up you whole server before making changes, such as plugin updates. Test the upgrade with CMI Lib first. If it fails you can at least roll back to your back up like nothing happened.
 
-## Mismatching versions!
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Mismatching versions!
 
 OMG, I had CMI with Lib 1.0.0.2
 Then TryMe with Lib 1.0.1.0
@@ -51,7 +51,7 @@ Don't panic, the latest version can be used by all the plugins. Once you're read
 
 From CMI Library version 1.0.2.4 onwards it should automatically clean-up older lib jars. If it does not, you can stop the server, manually remove the older jars and start the server again.
 
-## I keep deleting this CMILib jar and it keeps coming back!
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> I keep deleting this CMILib jar and it keeps coming back!
 
 Yes, Zrips plugins require the latest CMI Lib to properly work, you need it, don't delete it.
 
