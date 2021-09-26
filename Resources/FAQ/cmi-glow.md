@@ -8,7 +8,7 @@ There's a little cmi glow youtube video I made that you can check out here: http
 
 ---
 
-## CMI Glow
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Glow
 
 - **Commands**:
 ```
@@ -39,7 +39,7 @@ cmi.command.armorstand.glow - Optionally you can grant a players to make glowing
 The glow effect does not support hex colors
 ```
 
-## It isn't working - help
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> It isn't working - help
 
 Before we check if another plugin might cause a conflict (see below) we will have to request you to review your current set-up. 
 I personally recommend to use Paper 1.17.1 for the best results. But Spigot and Paper both are fine to use. 
@@ -69,7 +69,7 @@ Known plugins causing conflict:
 - TAB
 - know of one? Let me know!
 
-## Misc.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Misc.
 
 Still having issues and want to report what you believe is a bug with the CMI glow feature? Please open a new Issue on Zrips' Github repository for CMI:
 https://github.com/Zrips/CMI/issues
