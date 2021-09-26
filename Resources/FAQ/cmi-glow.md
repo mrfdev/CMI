@@ -4,6 +4,8 @@
 
 Hopefully this FAQ helps explain the issues with glow due to conflicting plugins and/or clients.
 
+There's a little cmi glow youtube video I made that you can check out here: https://www.youtube.com/watch?v=6qHk9Po0aAg
+
 ---
 
 ## CMI Glow
