@@ -6,7 +6,7 @@ You can use this on CMI version 9.x on Spigot / Paper 1.17.1 and below.
 
 ---
 
-**CMI Chat Rooms feature (information, commands, permissions, etc)**
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat Rooms feature (information, commands, permissions, etc)
 
 The CMI Chat feature allows players to create public and private chat rooms that people can join, away from the global chat. 
 
