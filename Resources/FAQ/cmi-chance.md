@@ -1,17 +1,60 @@
 # FAQ - How do I use chance in CMI commands?
 
-Zrips Discord @ https://discord.gg/dDMamN4
+<details><summary><strong>FAQ Menu</strong></summary>
+ • <a href="https://faq.cmi.support/bungee">Bungeecord-Info</a>, 
+ • <a href="https://faq.cmi.support/chance">Chance-Example</a>, 
+ • <a href="https://faq.cmi.support/format">Chat-Format</a>, 
+ • <a href="https://faq.cmi.support/chat">Chat-Manager</a>, 
+ • <a href="https://faq.cmi.support/chatfilter">Chat-Filter</a>, 
+ • <a href="https://faq.cmi.support/chatrooms">Chat-Rooms</a>, 
+ • <a href="https://faq.cmi.support/commands">Commands-Manager</a>, 
+ • <a href="https://faq.cmi.support/joinleave">Custom-Join-Leave</a>, 
+ • <a href="https://faq.cmi.support/economy">Economy-Manager</a>, 
+ • <a href="https://faq.cmi.support/ext-cmds">Extending-Commands</a>, 
+ • <a href="https://faq.cmi.support/gettingstarted">Getting-Started</a>, 
+ • <a href="https://faq.cmi.support/glow">Glow</a>, 
+ • <a href="https://faq.cmi.support/help">Custom-Help</a>, 
+ • <a href="https://faq.cmi.support/hexcolors">Hex-Colors</a>, 
+ • <a href="https://faq.cmi.support/import">Importing-Data</a>, 
+ • <a href="https://faq.cmi.support/library">CMILib</a>, 
+ • <a href="https://faq.cmi.support/prefix">LuckPerms-Prefix</a>, 
+ • <a href="https://faq.cmi.support/migrate">Migrate-Database</a>, 
+ • <a href="https://faq.cmi.support/mode-stuck">Mode-Stuck</a>, 
+ • <a href="https://faq.cmi.support/more-msg-cmds">More-Msg-Commands</a>, 
+ • <a href="https://faq.cmi.support/motd">MOTD</a>, 
+ • <a href="https://faq.cmi.support/params">Parameters</a>, 
+ • <a href="https://faq.cmi.support/ranks">Ranks</a>, 
+ • <a href="https://faq.cmi.support/rules">Custom-Rules</a>, 
+ • <a href="https://faq.cmi.support/running">Running-CMI</a>, 
+ • <a href="https://faq.cmi.support/safety">Safety-Tips</a>, 
+ • <a href="https://faq.cmi.support/social">Social-Addon</a>, 
+ • <a href="https://faq.cmi.support/specialized">Specialized-Cmds</a>, 
+ • <a href="https://faq.cmi.support/toggle">Toggle-Example</a>, 
+ • <a href="https://faq.cmi.support/trash">Trash</a>, 
+ • <a href="https://faq.cmi.support/votes">Vote-Manager</a>.
+</details>
 
-This is the recommended setup that works well on Spigot / Paper 1.17.1 and lower, to make dynamic features using specialized commands and smart use of placeholders.
+<details><summary><strong>Official Zrips Links</strong></summary>
+ • <a href="https://zrips.net/">Zrips Website</a> <pre>https://www.zrips.net/<br>The official website, wiki/documentation/information</pre>
+ • <a href="https://discord.gg/dDMamN4">Zrips Discord</a> <pre>https://discord.gg/dDMamN4<br>The official Discord community, member-driven support</pre>
+ • <a href="https://github.com/Zrips/">Zrips Github</a> <pre>https://github.com/Zrips<br>The place for bug reports and feature suggestions</pre>
+</details>
+
+<details><summary><strong>Prerequisites</strong></summary>
+ • <a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin) <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre>
+ • <a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)<pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre>
+ • All my FAQ pages have been written for Spigot / Paper 1.17.1 and CMI 9.0.4.x or newer.<br>
+ • The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.<br>
+ • I am a team member on the Zrips Discord, this does not mean what I say is official.
+</details>
+
+You can use CMI to make dynamic features using specialized commands and smart use of placeholders.
 
 ---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can deal with % chance
 
-- Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
-- Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
-
-- Next, realise you can use this probably in various features of CMI, such as CMI chat, custom aliassed commands, holograms, etc. Generally everywhere that you can use both specialized commands and placeholders and run commands. So this includes eventcommands.yml and scheduler.yml. 
+- Realise you can use this probably in various features of CMI, such as CMI chat, custom aliassed commands, holograms, etc. Generally everywhere that you can use both specialized commands and placeholders and run commands. So this includes eventcommands.yml and scheduler.yml. 
 
 - The trick here is to temporary set a randomized result between 1 and 100, and check against it to make CMI do what we want. Below are a few example to demonstrate this.
 
@@ -109,5 +152,3 @@ How to install these examples?
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
 
 ---
-
-You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
