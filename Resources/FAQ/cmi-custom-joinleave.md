@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
+
 **CMI can handle the custom chat things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for server owners who want to turn on and display a custom join and leave message to players.
 
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
@@ -69,5 +71,6 @@ Optionally, if you wish to hide the join/quit messages for a certain group or us
 LuckPerm: `lp group owner permission set cmi.messages.disablejoin true`
 LuckPerm: `lp user mrfloris permission set cmi.messages.disablequit true`
 
+---
 
 More information about CMI: https://www.zrips.net/cmi/
