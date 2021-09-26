@@ -49,7 +49,7 @@ Next is to double check on SpigotMC if (CMI)[https://www.spigotmc.org/resources/
 
 And finally, be sure it's not your client or mods that are causing issues. Use the vanilla launcher and client and use the same version as the server engine. And ask another player to look at your character as you use /cmi glow to make changes.
 
-## It is always white - plugin conflicts
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> It is always white - plugin conflicts
 
 Due to the nature of how vanilla Minecraft is made developers are limited with what we can do/use in regards to using and controlling glow; 
 which is done through the name tag prefix. And every plugin tries their best to work correctly. They're trying to stay in control over the features they offer. 
