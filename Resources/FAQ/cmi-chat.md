@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1.
 
+---
+
 ## CMI can handle the in-game Chat (Chat Manager)
 
 - Stop using the old Chat Manager, if you were using one.
@@ -39,6 +41,7 @@ Note: If you use BungeeChord, make sure you also install enable CMI Bungee suppo
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
 
+---
 
 ## Misc
 
