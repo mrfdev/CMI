@@ -1,4 +1,4 @@
-# FAQ - <mode> stuck for players on join of server
+# FAQ - \<mode\> stuck for players on join of server
   
 Zrips Discord @ https://discord.gg/dDMamN4 
   
