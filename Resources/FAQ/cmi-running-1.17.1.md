@@ -16,6 +16,8 @@ This page should help explain what I personally think is the way to run CMI on S
 >
 ```
 
+---
+
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
 - This is about CMI 9 and Spigot or Paper server version 1.17.1 mainly, apply to 1.16.5 and other lower versions accordingly.
@@ -119,5 +121,7 @@ These are for CMI 9.x:
 
 `Paper website` This is where you can get Paper's 1.17.1 jar
 <https://papermc.io/downloads>
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
