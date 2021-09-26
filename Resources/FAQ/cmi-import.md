@@ -2,6 +2,7 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
+---
 
 **CMI can import data from EssentialsX**, this is the recommended setup that works well for me personally on Spigot / Paper 1.17.1.
 
@@ -57,9 +58,12 @@ Note: Yes, annoying, but .. doing it all at once, I've had issues in the past, e
 - Check the FAQ here, to see how to get started using CMI, for example.. how to setup cmi as chat manager, economy manager, bungee chat, custom /help, custom /rules, deal with NuVotifier votes, hex colors, how to setup custom alias commands or configure cmi's base commands. etc..
 <https://github.com/mrfdev/CMI/tree/master/Resources/FAQ>
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
-
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly.
 
 ## Unofficial Import Tool
 
 Hi there, someone recently made me aware of this import tool. Please note that I did not review the code, or the provided jar file. Please vet it before using it yourself. It's not an official tool, using it is at your own risk. But I think it's worth to mention at least. <https://github.com/BlackBeltPanda/Essentials-Kits-To-CMI> This should help servers with loads of kits to maybe do the bigger part of the import work, after which they can clean things up. Might save time. Also please note the last update was in 2020, Mojang has released 1.17.x since, and CMI now has CMI 9 instead of 8, and CMILib. I haven't heard someone using this on 1.17 yet ~ and that it should work on 1.16.5, something to keep in mind as well. 
+
+---
+
+More information on <https://www.zrips.net/cmi/>
