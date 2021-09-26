@@ -6,6 +6,8 @@ Note: Per 9.0.3.x the CustomAlias.yml files are moved to their own folder: `~/pl
 
 This page is for CMI 9 on Spigot-, and Paper 1.17.1.
 
+---
+
 ## This is for /cmi aliaseditor
 
 For CMI 9, let's you catch parameters entered in cmi aliaseditor made commands
@@ -44,5 +46,7 @@ $1 $3 == banana superman
 $0 $3 == fruit superman
 
 ```
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
