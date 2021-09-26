@@ -2,7 +2,11 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-**CMI can handle Votes**, this is the recommended setup that works well on Spigot / Paper 1.17.1 to counts, display, and reward players voting. 
+This is the recommended setup that works well on Spigot / Paper 1.17.1 to counts, display, and reward players voting. 
+
+---
+
+**CMI can handle Votes**
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://www.spigotmc.org/resources/cmilib.87610/>
@@ -62,5 +66,9 @@ cmi.command.votes.others
 %cmi_votetopcount_[1-10]%
 ```
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+More information on <https://www.zrips.net/cmi/>
 
