@@ -12,7 +12,7 @@ Don't forget to back up your data first, before making changes to your server.
 
 ---
 
-## Understanding group format and group message format
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Understanding group format and group message format
 
 In CMI's `config.yml` you will find two sections under the chat section. It's `GroupFormat:` and `GroupMessageFormat:`. But what is the difference?
 
@@ -20,7 +20,7 @@ In CMI's `config.yml` you will find two sections under the chat section. It's `G
 
 **GroupMessageFormat** will help you build up the part of the in-game chat that's the actual {message}. This is where you can control how the message itself will show up in the chat. For example, giving each group their own colors. 
 
-## GroupFormat and Permissions
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> GroupFormat and Permissions
 
 The "groups" part of Groupformat is really handy, because it lets you control per group how things should look. It's important to know that the default and loweest group in LuckPerms should be the lowest in the list. And that you should just up increment the number from there. For eaxmple, if you have set up LuckPerms groups like this:
 ```
@@ -52,7 +52,7 @@ lp group mod permission set cmi.chatgroup.4 true
 lp group admin permission set cmi.chatgroup.5 true
 ```
 
-## GroupFormat customization
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> GroupFormat customization
 
 If you would use the CMI chat now in-game you won't notice much difference, but let's change that with some temporary debug messages.
 
@@ -66,7 +66,7 @@ If you would use the CMI chat now in-game you won't notice much difference, but 
 ```
 As you can see, and when you chat as a person from that particular group, they will have a random color, and a debug msg. Super handy to see what happens to which group for each player. Yes, obviously this is not how you would like it to finally look like - We're learning you step by step what things mean so you can do more complex edge-case personalization to your own server.
 
-## GroupMessageFormat to match
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> GroupMessageFormat to match
 
 Please note that if you have a certain amount of groups, like the 5 in our example, that you need 1,2,3,4,5 for GroupFormat and 5 for GroupMessageFormat.
 
@@ -79,11 +79,11 @@ Please note that if you have a certain amount of groups, like the 5 in our examp
     '5': '{message}'
 ```
 
-## GroupMessageFormat permissions.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> GroupMessageFormat permissions.
 
 And just like the per group permission nodes for the format, we need them for the message as well. In luckperm, grant the permissions for cmi.chatmessagegroup.1 (and 2,3,4, and 5) as well. Just how we did earlier. 
 
-## GroupMessageFormat customization.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> GroupMessageFormat customization.
 
 What's next is to customize the way it looks in game per group, you do NOT have to do this, but I know some people like this for their server so including it as an example. You can completely skip this step. 
 
@@ -97,7 +97,7 @@ What's next is to customize the way it looks in game per group, you do NOT have 
 ```
 And yes, these are horrible color codes, again, we're just giving you an example. Please pick reasonable ones for your server. CMI Hex Colors are supported for both GroupFormat and GroupMessageFormat. 
 
-## Customizing the Hover Over text.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Customizing the Hover Over text.
 
 This is more a bonus, or pro tip, there's a hoverable effect when you use CMI Chat. And you can customize it!
 
@@ -107,13 +107,13 @@ In the Locale file of `plugins/CMILib/Translations/Locale_EN.yml` you can find t
 
 You can customize this public hover locale with your own text, CMI hex colors, and placeholders. Making it very dynamic. 
 
-## Prefixes
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Prefixes
 
 You can learn how to configure LuckPerms to use LuckPerms prefixes in CMI Chat here:
 
 https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md
 
-## Done
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Done
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
