@@ -6,6 +6,8 @@ Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/pl
 
 You can use this on CMI 9.x on Spigot-, and Paper 1.17.1 and below.
 
+---
+
 **CMI can handle Commands.** (Both base commands and your own custom commands)
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 By default CMI has all it's commands underneath `/cmi <command>` you can find them all by typing: `/cmi help` and by viewing the list on the website here: (<https://www.zrips.net/cmi/commands/>)
@@ -33,4 +35,8 @@ To edit existing custom alias commands, you can type: `/cmi aliaseditor` and the
 
 A visual youtube tutorial can be found here <https://www.youtube.com/watch?v=LN54XU12Zjc>
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+- More information on <https://www.zrips.net/cmi/>
