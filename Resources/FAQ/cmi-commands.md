@@ -4,9 +4,12 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 You can use this on CMI 9.x on Spigot-, and Paper 1.17.1 and below.
 
+(Both base commands and your own custom commands)
+
 ---
 
-**CMI can handle Commands.** (Both base commands and your own custom commands)
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Commands.
+
 - Buy and Install CMI (<https://www.spigotmc.org/resources/3742/>)
 By default CMI has all it's commands underneath `/cmi <command>` you can find them all by typing: `/cmi help` and by viewing the list on the website here: (<https://www.zrips.net/cmi/commands/>)
 If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit the `Alias.yml` file and toggle the false value to true.
