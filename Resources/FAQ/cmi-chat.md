@@ -6,7 +6,7 @@ This is the recommended setup that works well with other plugins on Spigot / Pap
 
 ---
 
-## CMI can handle the in-game Chat (Chat Manager)
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle the in-game Chat (Chat Manager)
 
 - Stop using the old Chat Manager, if you were using one.
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -43,7 +43,7 @@ Note: If you use BungeeChord, make sure you also install enable CMI Bungee suppo
 
 ---
 
-## Misc
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Misc
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
 
