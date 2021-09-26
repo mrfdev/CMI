@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 You can use this on CMI version 9.x on Spigot / Paper 1.17.1 and below.
 
+---
+
 **CMI Chat Rooms feature (information, commands, permissions, etc)**
 
 The CMI Chat feature allows players to create public and private chat rooms that people can join, away from the global chat. 
@@ -45,5 +47,7 @@ Command `/cmi listroom` will display basic information about the available chat 
 You can create private chat rooms by adding `-private`. (Players will require an invitation to join private chat rooms)
 
 Players who got invitation to private chat room can rejoin chat room as many times as he wants, until he gets kicked from it.
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
