@@ -1,6 +1,10 @@
 # FAQ - <mode> stuck for players on join of server
   
-  This document is to help answer some questions and narrow down if CMI is configured incorrectly to cause this, or if another plugin is potentially the cause to why someone might be stuck in fly or god or creative mode when they (re)join the server.
+Zrips Discord @ https://discord.gg/dDMamN4 
+  
+This document is to help answer some questions and narrow down if CMI is configured incorrectly to cause this, or if another plugin is potentially the cause to why someone might be stuck in fly or god or creative mode when they (re)join the server.
+
+---
 
 ## Why does this happen?
   
@@ -202,4 +206,9 @@ Then stop the server, back it up, then clone it. Start a test setup on a differe
 
 ## For me it's creative or fly mode, not god mode, now what?
   
-  In that case the concept is the same, check your commands, the user info, the modules related to that, and configuration settings. Double check the permissions. Avoid conflict with other plugins, and test in an isolated setup to confirm it's a bug with cmi or not. 
+In that case the concept is the same, check your commands, the user info, the modules related to that, and configuration settings. Double check the permissions. Avoid conflict with other plugins, and test in an isolated setup to confirm it's a bug with cmi or not. 
+
+
+---
+
+More information about CMI: https://www.zrips.net/cmi/
