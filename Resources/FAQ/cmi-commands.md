@@ -2,8 +2,6 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
-Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` I will update this FAQ page semi soon. Just apply some common sense for now.
-
 You can use this on CMI 9.x on Spigot-, and Paper 1.17.1 and below.
 
 ---
@@ -23,7 +21,7 @@ If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit
 You can now save the file and type: `/cmi reload`, but to properly register the commands a /stop and restart is required.
 
 Another option is to add your own commands! For example: `/banana`.
-Note: Custom Alias (commands) are stored in the cmi file: `CustomAlias.yml`
+Note: Custom Alias (commands) are stored in the cmi file: `CustomAlias.yml` and from version 9.0.3.x upwards you can also store your own commands in their own .yml file in the `~/plugins/CMI/CustomAlias/` directory.
 To get started, In-game you type: `/cmi aliaseditor new banana` (obvious replace banana with the command you want)
 There will be a green `+` to press, it will now as you to enter a command to execute. 
 Type (without the starting /) for example: `cmi say I am a banana`
