@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 This page is a quick introduction to the CMI Library. 
 
+---
+
 ## What is CMI Library (cmilib)
 
 It's a plugin helper that can deal with frequently used phrases, hex colors, etc. which all of zrips' plugins can use. This adds consistancy among the various plugins.
@@ -52,5 +54,7 @@ From CMI Library version 1.0.2.4 onwards it should automatically clean-up older 
 ## I keep deleting this CMI Lib jar and it keeps coming back!
 
 Yes, Zrips plugins require the latest CMI Lib to properly work, you need it, don't delete it.
+
+---
 
 More information about CMILib: https://www.zrips.net/cmilib/
