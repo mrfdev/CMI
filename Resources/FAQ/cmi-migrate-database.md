@@ -2,6 +2,8 @@
 
 Zrips Discord @ https://discord.gg/dDMamN4 
 
+---
+
 ## Database migration
 
 You can do this on CMI version 9.x on Spigot / Paper 1.17.1 and below.
@@ -36,5 +38,7 @@ Not really existing, https://www.zrips.net/cmi/commands/
 CMI has a databaseinfo.yml file you have to edit to point to the mysql database. I recommend to stop the server, turn on maintenance mode, then edit the yml file and start the server. Do not log in. From console run the migration command and give it reasonable time to complete. When you believe it's done. Stop the server, check your mysql database to see if any cmi data is in there. If so then you can start your server again without maintenance mode. 
 
 Side note: make a full back up of your server before making changes to it.
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
