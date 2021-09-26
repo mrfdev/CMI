@@ -4,13 +4,13 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
 
----
-
-**CMI can handle the MOTD things**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a message of the day. 
+This is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a message of the day. 
 
 This FAQ covers both the welcome message and the server list welcome message.
 
-## Customizing the Welcome Message (for when the player joins the server)
+---
+
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> ## Customizing the Welcome Message (for when the player joins the server)
 
 Optional video visually showing the /motd on 1MB https://youtu.be/3yjza6W2NNw
 
@@ -41,11 +41,11 @@ firstJoinServer:
   Commands:
 ```
 
-## Adding the /motd command (that the player can type in-game)
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Adding the /motd command (that the player can type in-game)
 
 Optionally, you can make a `/motd` command. A lot of servers have it, this way players can pull up the message again later. To achieve this go in-game and create a new custom alias using: `/cmi aliaseditor` and click the green `+` to add a new command, type in the name `motd` and press enter. Then click on the new green `+` to add a command, which should be: `cmi ctext welcomeMessage`.
 
-## Customizing the Welcome Message (the one in the client's server-list)
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Customizing the Welcome Message (the one in the client's server-list)
 
 In the Minecraft Client players can add your server and see it in their list of servers. This also has a message of the day. If you want to use CMI to set this message you can do so with the command:
 `/cmi setmotd &6hi \n &9welcome back`
@@ -53,7 +53,5 @@ In the Minecraft Client players can add your server and see it in their list of 
 You can use legacy code `&` colors as well as the current modern RGB `{#hex}` colors. The `\n` in the example shows you how to split your text to a new line.
 
 ---
-
-## More information:
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
