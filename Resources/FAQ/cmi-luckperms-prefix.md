@@ -41,40 +41,40 @@ You can learn more about LuckPerms prefixes here: <https://github.com/lucko/Luck
 Here's an example of how this looks and how you can test this:
 ```
 > lp editor
-[10:06:03 INFO]: [LP] Preparing a new editor session, please wait...
-[10:06:03 INFO]: [LP] Click the link below to open the editor:
-[10:06:03 INFO]: https://luckperms.net/editor/C0xRbDj9T1
+  [LP] Preparing a new editor session, please wait...
+  [LP] Click the link below to open the editor:
+  https://luckperms.net/editor/C0xRbDj9T1
 > lp user mrfloris info
-[10:08:27 INFO]: [LP] > User Info: mrfloris
-[10:08:27 INFO]: [LP] - UUID: 631e3896-da2a-4077-974b-d047859d76bc
-[10:08:27 INFO]: [LP]     (type: mojang)
-[10:08:27 INFO]: [LP] - Status: Offline
-[10:08:27 INFO]: [LP] - Parent Groups:
-[10:08:27 INFO]: [LP]     > 1mb_owner
-[10:08:27 INFO]: [LP] - Contextual Data: (mode: server)
-[10:08:27 INFO]: [LP]     Contexts: None
-[10:08:27 INFO]: [LP]     Prefix: ""
-[10:08:27 INFO]: [LP]     Suffix: None
-[10:08:27 INFO]: [LP]     Primary Group: 1mb_owner
-[10:08:27 INFO]: [LP]     Meta: (weight=14) (primarygroup=1mb_owner)
+  [LP] > User Info: mrfloris
+  [LP] - UUID: 631e3896-da2a-4077-974b-d047859d76bc
+  [LP]     (type: mojang)
+  [LP] - Status: Offline
+  [LP] - Parent Groups:
+  [LP]     > 1mb_owner
+  [LP] - Contextual Data: (mode: server)
+  [LP]     Contexts: None
+  [LP]     Prefix: ""
+  [LP]     Suffix: None
+  [LP]     Primary Group: 1mb_owner
+  [LP]     Meta: (weight=14) (primarygroup=1mb_owner)
 > lp applyedits AgHNFd5TCt
-[10:09:16 INFO]: [LP] Web editor data was applied to group 1mb_owner successfully.
-[10:09:16 INFO]: [LP] (1 addition and 1 deletion)
-[10:09:16 INFO]: +  prefix.14.&4(Owner) (true)
-[10:09:16 INFO]: -  prefix.14.&4 (true)
+   [LP] Web editor data was applied to group 1mb_owner successfully.
+   [LP] (1 addition and 1 deletion)
+   +  prefix.14.&4(Owner) (true)
+   -  prefix.14.&4 (true)
 > lp user mrfloris info
-[10:09:21 INFO]: [LP] > User Info: mrfloris
-[10:09:21 INFO]: [LP] - UUID: 631e3896-da2a-4077-974b-d047859d76bc
-[10:09:21 INFO]: [LP]     (type: mojang)
-[10:09:21 INFO]: [LP] - Status: Offline
-[10:09:21 INFO]: [LP] - Parent Groups:
-[10:09:21 INFO]: [LP]     > 1mb_owner
-[10:09:21 INFO]: [LP] - Contextual Data: (mode: server)
-[10:09:21 INFO]: [LP]     Contexts: None
-[10:09:21 INFO]: [LP]     Prefix: "(Owner)"
-[10:09:21 INFO]: [LP]     Suffix: None
-[10:09:21 INFO]: [LP]     Primary Group: 1mb_owner
-[10:09:21 INFO]: [LP]     Meta: (weight=14) (primarygroup=1mb_owner)
+  [LP] > User Info: mrfloris
+  [LP] - UUID: 631e3896-da2a-4077-974b-d047859d76bc
+  [LP]     (type: mojang)
+  [LP] - Status: Offline
+  [LP] - Parent Groups:
+  [LP]     > 1mb_owner
+  [LP] - Contextual Data: (mode: server)
+  [LP]     Contexts: None
+  [LP]     Prefix: "(Owner)"
+  [LP]     Suffix: None
+  [LP]     Primary Group: 1mb_owner
+  [LP]     Meta: (weight=14) (primarygroup=1mb_owner)
 >
 ```
 (note, this is just a visual example, those aren't command instructions, I hope that's clear)
