@@ -6,6 +6,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml`
 
+---
+
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://spigotmc.org/resources/3742/>
 - Note: CMI requires the [CMI-Library](https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md) .jar, you can get it here: <https://spigotmc.org/resources/cmilib.87610/>
 
@@ -96,8 +98,6 @@ Okay next one, using the above we can make a private random item generator, and 
 ```
 The above can be added on a new line at the end of customalias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
 
-
-
 You can learn more about specialized commands, and placeholders by CMI here:
 - https://www.zrips.net/cmi/commands/specialized/
 - https://www.zrips.net/cmi/placeholders/
@@ -108,5 +108,7 @@ How to install these examples?
 - Or obviously, what is easier, stop the server, open `CustomAlias.yml` and paste it at the bottom, and start the server again. You can then also edit it in-game. 
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+
+---
 
 More information about CMI: https://www.zrips.net/cmi/
