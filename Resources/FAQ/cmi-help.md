@@ -4,6 +4,8 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` I will update this FAQ page semi soon. Just apply some common sense for now.
 
+---
+
 **CMI can handle custom /help**, this is the recommended setup that works well with other plugins on Spigot / Paper 1.17.1 for a dynamic and flexible way of displaying /help. 
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -24,4 +26,8 @@ Example
 - asConsole! perm:custom.help.staff! cmi ctext helpstaff [playerName]
 ```
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. More information on <https://www.zrips.net/cmi/>
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+
+---
+
+More information on <https://www.zrips.net/cmi/>
