@@ -1,7 +1,7 @@
 # FAQ - Some CMI (safety) tips for server owners
 
 <details><summary><strong>FAQ Menu</strong></summary>
- • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md">Bungeecord</a>, 
+ • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md">Bungeecord-Info</a>, 
  • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chance.md">Chance-Example</a>, 
  • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat-format.md">Chat-Format</a>, 
  • <a href="https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md">Chat-Manager</a>, 
@@ -154,5 +154,3 @@ Also, perhaps don't just blindly copy these over to another server you run. Let 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
 ---
-
-You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
