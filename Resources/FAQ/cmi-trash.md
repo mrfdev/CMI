@@ -151,4 +151,4 @@ And they can now also place a sign and type `[trash]` on it. Then it should chan
 
 ---
 
-More information about CMI: https://www.zrips.net/cmi/
+You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
