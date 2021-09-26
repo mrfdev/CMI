@@ -4,7 +4,7 @@ Zrips Discord @ https://discord.gg/dDMamN4
 
 ---
 
-## Database migration
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Database migration
 
 You can do this on CMI version 9.x on Spigot / Paper 1.17.1 and below.
 
@@ -12,7 +12,7 @@ This feature allows you to convert your CMI sqlite database to a MYSQL database.
 
 Please note that this isn't an migration feature to convert you from other plugins' databases to CMI, and that if you have bungee that you really shouldn't not use the same database for all your instances.
 
-### Commands
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Commands
 
 ```
 > cmi checkcommand migrate
@@ -20,7 +20,7 @@ Please note that this isn't an migration feature to convert you from other plugi
  1. migratedatabase
 ```
 
-### Permissions
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Permissions
 
 ```
 > cmi checkperm migrate
@@ -29,11 +29,11 @@ Please note that this isn't an migration feature to convert you from other plugi
 >
 ```
 
-### Documentation
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Documentation
 
 Not really existing, https://www.zrips.net/cmi/commands/
 
-### Setup
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Setup
 
 CMI has a databaseinfo.yml file you have to edit to point to the mysql database. I recommend to stop the server, turn on maintenance mode, then edit the yml file and start the server. Do not log in. From console run the migration command and give it reasonable time to complete. When you believe it's done. Stop the server, check your mysql database to see if any cmi data is in there. If so then you can start your server again without maintenance mode. 
 
