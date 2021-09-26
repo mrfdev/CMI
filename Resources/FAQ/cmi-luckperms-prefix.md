@@ -1,4 +1,4 @@
-# FAQ - How do I configure CMI to use LuckPerms prefix in Chat and Tab?
+# FAQ - Configuring CMI to use LuckPerms prefix in Chat and Tab
 
 Zrips Discord @ https://discord.gg/dDMamN4
 
