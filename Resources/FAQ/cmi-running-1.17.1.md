@@ -53,9 +53,9 @@ This page should help explain what I personally think is the way to run CMI on S
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.0.4.4 SqLite
-    CMILib: 1.0.3.10
-    Server: Paper(279) 1.17.1-R0.1-SNAPSHOT
+    CMI plugin version: 9.0.4.5 SqLite
+    CMILib: 1.0.3.11
+    Server: Paper(280) 1.17.1-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
