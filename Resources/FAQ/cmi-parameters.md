@@ -60,6 +60,8 @@ You can then in the commands use `$1` `$5` `$0` .. order doesn't matter. They're
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Example
 
+Additional information about CMI's specialized commands and comparison operators can be found here: <https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-specialized.md>
+
 ```
 Server owner used /cmi aliaseditor to make a /banana command
 
@@ -91,7 +93,7 @@ $0 $3 == fruit superman
 
 ```
 
-Additional information about CMI's specialized commands and comparison operators can be found here: <https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-specialized.md>
+
 ---
 
 I hope this info helps!
