@@ -61,9 +61,9 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
-The full list as of September 28th, 2021
+The full list as of October 5th, 2021
 
-- CMI version 9.0.4.5
+- CMI version 9.0.4.6
 - Selection Visualizer version 3.0.5.0
 - TryMe version 7.0.0.1
 - Mob Farm Manager version 2.0.0.1
