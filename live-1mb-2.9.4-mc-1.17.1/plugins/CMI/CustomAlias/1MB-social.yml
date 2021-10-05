@@ -1,0 +1,152 @@
+# 
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  social:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} Support us with a follow
+      on /instagram, /discord, etc.
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} We live-stream on /youtube
+      and /twitch too,
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} It is a great way to be
+      part of our community!
+    - msg! [playerName] {#orient}`--(1MoreBlock.com Social Media Information)-------------\n&r
+    - check:$1==gui! asConsole! bs open socialgui [playerName]
+    - check:$1!=null! check:$1!=gui! asPlayer! $1
+    CustomTabs:
+    - gui
+    - twitter
+    - snapchat
+    - tiktok
+    - facebook
+    - forums
+    - twitch
+    - website
+    - youtube
+    - instagram
+    - reddit
+    - blog
+    - discord
+    - amazon
+    - paypal
+    - donate
+  twitter:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Twitter »{#kangaroo} https://twitter.com/floris
+    - msg! [playerName] {#orient}| {#cerulean}Twitter »{#kangaroo} Stalk the server
+      owner.
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  snapchat:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Snapchat »{#kangaroo} https://www.snapchat.com/add/mrfloris
+    - msg! [playerName] {#orient}| {#cerulean}Snapchat »{#kangaroo} Server behind
+      the scenes screenshots.
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  tiktok:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} https://www.tiktok.com/@fjmfd
+    - msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} 15s player fails
+      videos.
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  facebook:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Facebook »{#kangaroo} https://facebook.com/floris
+    - msg! [playerName] {#orient}| {#cerulean}Facebook »{#kangaroo} Sometimes used
+      for give-aways!
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  forums:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Forums »{#kangaroo} https://www.1moreblock.com
+    - msg! [playerName] {#orient}| {#cerulean}Forums »{#kangaroo} Learn about features,
+      post ban-appeals, etc.
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  twitch:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Twitch »{#kangaroo} https://www.twitch.tv/mrfloris
+    - msg! [playerName] {#orient}| {#cerulean}Twitch »{#kangaroo} Live-streaming with
+      players, hangout spot
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  website:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Website »{#kangaroo} https://www.1moreblock.com
+    - msg! [playerName] {#orient}| {#cerulean}Website »{#kangaroo} The place for the
+      latest news and info
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  youtube:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}YouTube »{#kangaroo} https://www.youtube.com/mrfloris
+    - msg! [playerName] {#orient}| {#cerulean}YouTube »{#kangaroo} Live-streaming
+      player builds and events
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  instagram:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Instagram »{#kangaroo} https://www.instagram.com/mrfloris/
+    - msg! [playerName] {#orient}| {#cerulean}Instagram »{#kangaroo} Player builds
+      highlights, etc.
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  reddit:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Reddit »{#kangaroo} https://www.reddit.com/user/Floris
+    - msg! [playerName] {#orient}| {#cerulean}Reddit »{#kangaroo} Find our secret
+      sub-reddit
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  blog:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Blog »{#kangaroo} https://mrfloris.com
+    - msg! [playerName] {#orient}| {#cerulean}Blog »{#kangaroo} More in-depth server
+      information in longform
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  amazon:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}Amazon »{#kangaroo} https://www.amazon.nl/hz/wishlist/ls/39TS99YWRKZ0U?language=en_GB
+    - msg! [playerName] {#orient}| {#cerulean}Amazon »{#kangaroo} Surprise the server
+      owner with a gift?
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false
+  paypal:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}PayPal »{#kangaroo} https://paypal.me/mrfloris
+    - msg! [playerName] {#orient}| {#cerulean}PayPal »{#kangaroo} Surprise the server
+      owner with a donation!
+    - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
+    Tab: false

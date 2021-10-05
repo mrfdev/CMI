@@ -81,6 +81,7 @@ info:
     DisableTeamManagement is set to true!'
   ModuleNotEnabled: '&cThis module is not enabled!'
   versionNotSupported: '&cServer version is not supported for this feature'
+  spigotNotSupported: '&cYou need Paper branch type server'
   bungeeNoGo: '&cThis feature will not work on bungee network based servers'
   clickToTeleport: '&eClick to teleport'
   UseMaterial: '&4Please use material names!'
@@ -579,6 +580,8 @@ info:
     - Efficiency
     mending:
     - Mending
+    frost_walker:
+    - FrostWalker
     lure:
     - Lure
     loot_bonus_mobs:

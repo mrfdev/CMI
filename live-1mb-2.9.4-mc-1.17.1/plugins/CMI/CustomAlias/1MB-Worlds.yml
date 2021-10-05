@@ -1,0 +1,256 @@
+# 
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  general:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - mv tp general
+    Tab: false
+  spawn:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - mv tp spawn
+    Tab: false
+  nether:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - mv tp nether
+    Tab: false
+  end:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - mv tp end
+    Tab: false
+  mine:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - mv tp mine
+  builders:
+    Cmds:
+    - mvtp [playerName] builders
+    - delay! 0.3
+    - ifinworld:builders#! asConsole! cmi gm [playerName] adventure -s
+    Tab: false
+  hunting:
+    Cmds:
+    - asPlayer! cmi warp hunting
+    Tab: false
+  sanctuary:
+    Cmds:
+    - mv tp sanctuary
+    - delay! 0.3
+    - ifinworld:sanctuary! asConsole! cmi gm [playerName] adventure -s
+    Tab: false
+  here:
+    Cmds:
+    - region info $1
+    - pos
+    Tab: false
+  spleef:
+    Cmds:
+    - asConsole! cmi warp spleef [playerName]
+    - delay! 1
+    - ifinworld:mine#! asConsole! cmi bossbarmsg all -t:7 [playerName] entered the
+      /spleef arena.
+    Perm: true
+  ispawn:
+    Cmds:
+    - asPlayer! is
+  worlds:
+    Cmds:
+    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Worlds ❖{#orient}-----------------------•
+    - 'msg! [playerName] {#Feijoa} Our main survival world that you should build in
+      is (because we will never remove it): {#orange}&l/general &r'
+    - msg! [playerName] {#Feijoa} Please note that 'general' world inventories share
+      with mine/end/nether, but not with other ones.
+    - msg! [playerName] {#Feijoa} We actually have quite a few worlds (including /skyblock
+      and /oneblock), please read the thread below to learn about them.
+    - msg! [playerName] &b https://omgboards.com/threads/260940/ \n&r
+    Tab: false
+  wild:
+    Cmds:
+    - msg! [playerName] {#orange} Sorry, you can't go to the wild, please use /general.
+      https://omgboards.com/threads/263649/
+    Perm: true
+  run:
+    Cmds:
+    - asConsole! cmi invsave [playerName]
+    - ifinworld:run@! tntrun join run
+    - delay! 2
+    - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
+      the /run game.'
+    - asConsole! cmi effect [playerName] clear
+  halloween:
+    Cmds:
+    - msg! [playerName] {#orange}The Halloween Event has ended, hopefully it will
+      be back in November 2021.
+  valentine:
+    Cmds:
+    - msg! [playerName] &6 Sorry :( It's no longer Valentine's Day, this event has
+      ended.
+  easter:
+    Cmds:
+    - msg! [playerName] &3 1MB Easter »&d The event has ended, check back again in
+      2022.
+  tientje:
+    Cmds:
+    - asConsole! ifinworld:sanctuary?#! cmi gm [playerName] creative
+    Perm: true
+  letmebuild:
+    Cmds:
+    - ifinworld:builders#! asConsole! cmi gm [playerName] creative
+    Perm: true
+  clock:
+    Cmds:
+    - msg! [playerName] &3 1MB Time »&7 It's currently &b%world_time12_general%&7
+      in &2/general
+    - msg! [playerName] &3 1MB Time »&7 It's currently &b%world_time12_mine%&7 in
+      &2/mine
+    - msg! [playerName] &3 1MB Time »&7 It's currently &b%world_time12_nether%&7 in
+      &2/nether
+    - msg! [playerName] &3 1MB Time »&7 It's currently &b%world_time12_end%&7 in &2/end
+    - asConsole! cmi bossbarmsg [playerName] -s:3 -t:3 -n:timebar -c:green -s:1 -p:1
+      -a:1 &7 It is &b%world_time12_[worldName]%&7 in &2/[worldName]
+  votellama:
+    Cmds:
+    - 'asConsole! msg! [playerName] &3-----/ &b1MB Voting Llama: Charlie the Pinata&r&3
+      \-----'
+    - asConsole! msg! [playerName] &6->&2 https://omgboards.com/threads/261749/
+    - 'msg! [playerName] &6-> &e&lVotes needed: %pinataparty_votes_needed%, votes
+      left to go: %pinataparty_votes_left%'
+    - 'asConsole! msg! [playerName] &6-> &bCharlie will spawn every 25 votes at: /warp
+      charlie'
+    - asConsole! msg! [playerName] &6-> &bSometimes the 10 lootboxes have stuff in
+      them too!
+  charlie:
+    Cmds:
+    - votellama
+  thanksgiving:
+    Cmds:
+    - 'msg! [playerName] &6 More info here: https://omgboards.com/threads/261907/'
+  santa:
+    Cmds:
+    - msg! [playerName] &6 Sorry, Santa is back at the north pole, he might be back
+      in 2021.
+  uwu:
+    Cmds:
+    - mv tp uwu
+  skyblock menu:
+    Cmds:
+    - menu skyblock
+  cave menu:
+    Cmds:
+    - menu cave
+  acid menu:
+    Cmds:
+    - menu acid
+  skygrid menu:
+    Cmds:
+    - menu skygrid
+  letmeuwu:
+    Cmds:
+    - ifinworld:uwu! check:%cmi_user_name%==globug100! asConsole! cmi gm creative
+      globug100
+    - ifinworld:owo! check:%cmi_user_name%==globug100! asConsole! cmi gm creative
+      globug100
+    Perm: true
+  wild info:
+    Cmds:
+    - 'msg! [playerName] &e Permanent World: /wild, our wilderness.'
+    - msg! [playerName] &e Please note that building here is allowed, but more restricted.
+      This is a build world, not a mining world. Please use /mine instead. See our
+      /rules !
+    - msg! [playerName] &e World border is currently set at 300, and grows over time.
+    - msg! [playerName] &e Breaking is not possible, unless you buy chunks with a
+      claim. You need an iron_hoe for this. Claims cost /money.
+    - 'msg! [playerName] &e Select two points on x and z, (you can ignore y), and
+      type: /claim'
+    - 'msg! [playerName] To learn more about chunks, type: /chunk'
+    - msg! [playerName] {#orange} Sorry, you can't go to the wild, please use /general.
+      https://omgboards.com/threads/263649/
+  chunk:
+    Cmds:
+    - msg! [playerName] We have resource worlds, and permanent worlds. The resource
+      worlds are temporary. They are /mine, /nether, and /end. They reset every once
+      in a while. Permanent worlds will never get deleted. They are /general and /wild.
+    - msg! [playerName] Please build in the /general world, once there you can either
+      explore or type /rtp, to find a random spot to start a base. You're also free
+      to consider building in the /wild world. This one is however more restricted,
+      see /wild info
+    - msg! [playerName] In /general you don't have to claim chunks. Grief and theft
+      isn't allowed on our server, your stuff is safe. In order to build in the /wild
+      world, you will have to buy the /claim
+  claim:
+    Cmds:
+    - msg! [playerName] {#orange} Sorry, Nothing to claim at this point. Please play
+      in /general
+  letmefly:
+    Cmds:
+    - cooldown:900?#! ifinworld:wild#! asConsole! cmi tfly [playerName] 120
+    Perm: true
+  egghunt:
+    Cmds:
+    - msg! [playerName] &3 1MB Easter »&d The event has ended, check back again in
+      2022.
+  egghunt fly:
+    Cmds:
+    - ifinworld:easter! asConsole! cmi tfly [playerName] 1
+    - msg! [playerName] {#magenta}The event is over, no more flying.
+    Perm: true
+    Tab: false
+  letmesushi:
+    Cmds:
+    - ifinworld:sushi#! check:%cmi_user_name%==Tidala! asConsole! cmi gm creative
+      Tidala
+  sushi:
+    Cmds:
+    - mvtp sushi
+  owo:
+    Cmds:
+    - mvtp owo
+  turkey:
+    Cmds:
+    - msg! [playerName] &6Gobble gobble!&e Thanksgiving Turkey Hunt!
+  walk:
+    Cmds:
+    - infp $1-
+    - asConsole! cmi effect [playerName] clear
+  is:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] {#magenta} Hi there :) We have a survival wilderness,
+      and skyblock , oneblock, etc Each world is also a command, for example: /general
+      for the wilderness, and /oneblock to start your oneblock island. And /skyblock.
+      Enjoy !'
+  sanctuary creative:
+    Cmds:
+    - ifinworld:sanctuary@#! msg! [playerName] Oops, /sanctuary creative only works
+      in the Sanctuary world.
+    - ifinworld:sanctuary! perm:1mb.sanctuary.builder! asConsole! cmi gm [playerName]
+      creative
+    Perm: true
+  run spectate:
+    Cmds:
+    - tntrun spectate run
+  souls:
+    Cmds:
+    - msg! [playerName] {#orange} Sorry, you can't go to the souls world, please use
+      /nether for resources. https://omgboards.com/threads/263649/
+  1block:
+    Cmds:
+    - oneblock $1-

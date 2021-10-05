@@ -1,0 +1,48 @@
+# 
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  _diamondcookie:
+    Cmds:
+    - asConsole! cmi sound entity_experience_orb_pickup -p:1 -v:0.8 $1 $2 $3 $4 $5
+      -s
+    - asConsole! cmi panimation preset:TpDown;target:$1
+    - asConsole! cmi exp $1 add $6
+    - asConsole! cmi feed $1 -s
+    - asConsole! cmi heal $1 100% -s
+    - asConsole! cmi panimation preset:GColumn;target:$1
+    - asConsole! cmi sound block_beehive_exit -p:0.8 -v:0.8 $1 $2 $3 $4 $5 -s
+    - asConsole! cmi effect $1 regeneration 13 2 -s -visual
+    - asConsole! cmi actionbarmsg $1 {#00d8e6}D{#00d0e6}i{#00cae6}a{#00c3e6}m{#00bce6}o{#00b5e6}n{#00aee6}d
+      {#e67c00}C{#e68200}o{#e68900}o{#e69000}k{#e69700}i{#e69e00}e{#e6a500}s {#680099}are
+      delicious!
+    Perm: true
+  diamondcookie:
+    Cmds:
+    - 'asConsole! cmi msg [playerName] !{#00d8e6}D{#00d0e6}i{#00cae6}a{#00c3e6}m{#00bce6}o{#00b5e6}n{#00aee6}d
+      {#e67c00}C{#e68400}o{#e68c00}o{#e69400}k{#e69c00}i{#e6a500}e {#680099}Information:'
+    - asConsole! cmi msg [playerName] !{#00d8e6}When you're hungry, you can consume
+      a diamond cookie, it will restore your hearts and hunger bar. Feeding you NOMNOM.
+    - asConsole! cmi msg [playerName] !{#00d8e6}It will also give you about 13 seconds
+      of Regeneration II effect. And a bit of random exp!
+    - asConsole! cmi msg [playerName] !{#00d8e6}Players nearby you will notice you're
+      eating this awesome food, because you make a sound, and they can see some cool
+      particles around you. Pretty nifty!
+    - 'asConsole! cmi msg [playerName] !{#e67c00}To craft a diamond cookie: /craft,
+      and in the middle put a diamond, with a cookie on the right. So simple. BUT
+      SO DELICIOUS!'

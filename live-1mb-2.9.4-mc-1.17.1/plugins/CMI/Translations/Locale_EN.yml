@@ -57,6 +57,9 @@
 # 
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
+info:
+  ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
+  ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
 command:
   help:
     output:
@@ -87,11 +90,21 @@ command:
       - '&2Do not eat too many cookies!'
       - '&2Nice day for fishing'
       - '&2Away from blocks xD'
+      - '&2Boop ya nose!'
+      - '&2Pop the champaigne'
       - '&2Did you fall asleep?'
       - '&2Maybe get a coffee!'
       - '&2Where are you?'
+      - '&2Hey, you. Youre finally awake'
+      - '&2Where did you come from where did you go?'
+      - '&2Do or do not. There is no try.'
       - '&2You feeding a pet?'
+      - '&2We will miss you!'
+      - '&2Taking the hobbits to isengard?'
+      - '&2Progress waits for no miner!'
+      - '&2If youre not there, who is?'
       - '&2Taking a break is important'
+      - '&2Away from basement'
       - '&2Do not forget to hydrate'
   afkcheck:
     help:
@@ -444,6 +457,11 @@ command:
         (-private)'
     info:
       joined: '&eJoined chat room: {#Edward}[chatRoomName]'
+      joinedWatcher: '&eObserving chat room: &7[chatRoomName]'
+      stopeedWatching: '&eStopped observing chat room: &7[chatRoomName]'
+      watcherSymbol: ◕‿◕
+      watcherSymbolActive: '&2'
+      watcherSymbolInactive: '&7'
       joinedInfo: '&e[playerDisplayName] {#Edward}joined chat room'
       alreadyIn: '&eYou are already in &7[chatRoomName]'
       left: '&eLeft {#Edward}[chatRoomName] &echat room'
@@ -458,6 +476,8 @@ command:
       takenName: '&4Chat room name is taken, use different one'
       notIn: '&4User is not in chat room'
       cantJoin: '&4Chat room is private and you don''t have invitation'
+      cantSee: '&4Chat room is private, you don''t have permission to see messages
+        in it'
       kicked: '&6[playerDisplayName] &ekicked from chat room'
       cantleave: '&6Can''t leave locked room'
       gotKicked: '&4You got kicked from {#Edward}[chatRoomName] &4chat room'
@@ -1851,6 +1871,7 @@ command:
       left: '&6Left &eclick to use'
       right: '&6Right &eclick to preview'
       take: '&6Take this kit!'
+      open: '&7Items from &8[kitName] &7kit!'
       eye: ' &e☬'
       use: '&2'
       cantuse: '&7'
@@ -2292,6 +2313,7 @@ command:
       feedback: '&eYou have updated nameplate for {#Cerulean}[playerDisplayName]&e
         ({#Cerulean}[offon]&e).'
       targetfeedback: '&eYour nameplate got updated'
+      namePlate: '&e[playerDisplayName] name plate: &f[namePlate]'
   near:
     help:
       info: '&eCheck who is near you'
@@ -3899,6 +3921,7 @@ command:
       mobSpawning: '&eMobs will spawn nearby'
       stopPlaytime: '&ePlaytime will stop increasing'
       sleepIgnore: '&eIgnore for sleeping count'
+      joinVanished: '&eAlways join in vanish mode'
       bossbarTitle: '&fVanished'
   version:
     help:

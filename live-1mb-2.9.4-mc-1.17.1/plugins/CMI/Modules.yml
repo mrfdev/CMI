@@ -62,11 +62,11 @@ cooldown: true
 warmup: true
 #  
 # Handling of interactive commands
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.8.x and up
 interactiveCommands: true
 #  
 # Handling of attached commands
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.8.x and up
 attachedCommands: true
 #  
 # Handling of player tagging in chat and tabcomplete with @
@@ -90,7 +90,7 @@ vanish: true
 moneyCheque: true
 #  
 # Handles armor stand editor
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.8.x and up
 armorstand: true
 #  
 # Handles dedicated CMI playtime tracker
@@ -174,7 +174,7 @@ selection: true
 hpBossBar: true
 #  
 # Handling of afk feature. This will disable any checks related to afk and players will never get into afk mode
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.8.x and up
 afk: true
 #  
 # Handling timed commands like tfly and tgod
@@ -222,7 +222,7 @@ totemBehavior: true
 anvilRenameColor: true
 #  
 # Handling of launch command falldamage
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.9.x and up
 launchPad: true
 #  
 # Handling of launch custom death messages
