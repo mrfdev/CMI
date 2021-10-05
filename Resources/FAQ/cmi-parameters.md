@@ -91,6 +91,7 @@ $0 $3 == fruit superman
 
 ```
 
+Additional information about CMI's specialized commands and comparison operators can be found here: <https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-specialized.md>
 ---
 
 I hope this info helps!
