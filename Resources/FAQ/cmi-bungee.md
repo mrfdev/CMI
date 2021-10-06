@@ -146,13 +146,18 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 
 **FAQ:**
 ```
-- if i run 2 servers and they're not in the same network, do i need two licenses? yes, basically you do.
-- if i run 3 servers and they're all on the same network, do i need three licenses? no, from what i gather that license covers the network, i dont know the official stance on this though
+- if i run 3 servers and they're all on the same network, do i need three licenses? no, from what i gather that license covers the network
 - is chat global? yes
-- can i sync up economy on all servers? no, probably not
-- can all the /warps be the same on all servers? not that i am aware of.
-- are my inventories shared between servers? i doubt it, you probably need a bungee-inventory plugin dedicated to this
+- can i sync up economy on all servers? no, probably not (mysql player-data bridge plugin supporst cmi though)
+- can all the /warps be the same on all servers? no
+- what about homes? no
+- can i use portals to teleport ppl to another server on the network? yes
+- can i use /server or /server the way i want? yes alias.yml (/cmi server) (there's also /cmi serverlist)
+- if a command doesn't support running on another server, can i still send it? what? no, i dont think so
+- if a command doesn't move a player to another server, can i still do it? no, but yes, with /cmi aliaseditor you can make your own command that uses /cmi server and/or placeholders.
+- are my inventories shared between servers? i doubt it, you probably need a bungee-inventory plugin dedicated to this (mysql player-data bridge plugin supporst cmi though)
 - can i use 1 database for all cmi instances? no, default is sqlite, use mysql, and make sure they all use a unique prefix. Using 1 user table for every server for example will very very very likely cause massive issues.
+- i put CMIB jar on the proxy (bungeecord) but it did not make any files or folders? yes, i dont think it does. On your 'servers' on the network type: /cmi version, if bungee is hooked, it should show there.
 ```
 
 ---
