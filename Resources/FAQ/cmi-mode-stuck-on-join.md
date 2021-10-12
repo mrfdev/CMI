@@ -254,5 +254,8 @@ Then stop the server, back it up, then clone it. Start a test setup on a differe
   
 In that case the concept is the same, check your commands, the user info, the modules related to that, and configuration settings. Double check the permissions. Avoid conflict with other plugins, and test in an isolated setup to confirm it's a bug with cmi or not. 
 
+## LATEST
+
+It's worth noting that there's a unique situation where we now know about that CMI can get god mode stuck under certain conditions. This was reported and addressed in CMI 9.0.5.0, if you're not yet on cmi 9.0.5.x please update and try again. 
 
 ---
