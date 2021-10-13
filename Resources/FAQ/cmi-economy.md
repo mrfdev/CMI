@@ -94,9 +94,21 @@ Once your server starts up and the economy shows properly in `/cmi version`, you
 ```
 TODO: include itemshop page, include worth.yml worth/sell and honorable mentino that cmi holograms can show top balances, and that hologram can be used to show worth and/or sell what they are holding.
 
-TODO: Placeholders
+Placeholders: (that you can consider using)
 ```
-placeholders
+%cmi_user_balance_formatted%
+%cmi_user_balance%
+%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
+%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
+%cmi_iteminhand_worth%
+%cmi_iteminhand_worth_one%
+%cmi_baltop_name_[1-10]%
+%cmi_baltop_money_[1-10]%
+%cmi_baltop_shortmoney_[1-10]%
+%cmi_worth_buy_[itemIdName(:data)]%
+%cmi_worth_sell_[itemIdName(:data)]%
+%vault_eco_balance_formatted%
+... (and possibly some more)
 ```
 
 Note: You can use /pay, /balance, etc as well by configuring `Alias.yml`.
@@ -122,6 +134,11 @@ config.yml > search for: `CurrencySymbol: MoneyFormat: Placing:`
 
 - Can I charge people for using commands? (yes)
 edit file `commandCost.yml`
+
+- I use bungeecord, does it sync over the network? (no)
+Sorry, no, currently network syncing of the economy is not possible. 
+(SpigotMC has a plugin called MySQL Player-data bridge, which has CMI support for syncing some cmi-data, you can consider using this on top of cmi to achieve this)
+
 ---
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
