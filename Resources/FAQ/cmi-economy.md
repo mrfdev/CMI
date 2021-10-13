@@ -70,10 +70,31 @@ Economy:
 
 Once your server starts up and the economy shows properly in `/cmi version`, you can start using commands such as
 ```
-/cmi pay
-/cmi money
-/cmi balance
+/cmi pay [playerName] [amount] (-s)
+-> cmi.command.pay - Perform money transaction
+-> cmi.command.paytoggle - Toggle payments from another player
+-> cmi.command.paytoggle.others - Toggle payments from another player
+
+/cmi money [pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s)
+-> cmi.command.money - Manage money balance
+-> cmi.command.money.betweenworldgroups - Allows money transfer between worlds
+-> cmi.command.money.admin - Allows to manipulate player balance
+
+/cmi baltop (playerName)
+-> cmi.command.baltop - Check top money list
+-> cmi.command.baltop.others - Check top money list
+
+/cmi balance (playerName)
+-> cmi.command.balance - Check money balance
+
+/cmi cheque (playerName) [amount]
+-> cmi.command.cheque - Convert money into cheque
+-> cmi.command.cheque.withdraw - Allows to withdraw cheque balance when option in config file is enabled
+-> cmi.command.cheque.admin - Allows to give out cheque with money amount directly to target player without requiring paper
 ```
+
+Note: You can use /pay, /balance, etc as well by configuring `Alias.yml`.
+
 You can check the commands page on zrips.net and the permissions page on zrips.net to learn which commands and permissions along with them can be part of what you want out of your economy. 
 
 Other plugins can now use CMI's economy engine via hooking into vault to transfer and store money for players. 
