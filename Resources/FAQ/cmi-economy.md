@@ -126,6 +126,18 @@ It's possible to import the money balance from players from EssentialsX into CMI
 - How can I show money with the least or most detail? (shortmoney)
 
 config.yml > search for `PaymentWithShorts`
+```yaml
+  PaymentWithShorts:
+    # When set to true players will be able to make payments by using short amount formats like 10k which results into 10000 and similar
+    # In addition 10.2k will result into 10200
+    Allow: true
+    # List of suffixes we should accept and into what amount it results into
+    # Only one letter is acceptable when defining suffix
+    values:
+    - k-1000
+    - m-1000000
+```
+(above are the values that I use on my servers, these may not be the default)
 
 - Can I log money transactions or sales from players? (moneylog)
 
@@ -137,14 +149,30 @@ config.yml > search for `LogEnabled`
     Unknown: true
     Transfer: true
 ```
+and there's also the option to log /cmi sell transactions under `Optimizations:`
+```yaml
+  # Do you want to record sell hand actions into file
+  SellLog: true
+```
 
 - How can I change how money shows in game? (symbol, format, placement)
 
-config.yml > search for: `CurrencySymbol: MoneyFormat: Placing:`
+config.yml > search for: `CurrencySymbol: MoneyFormat: Placing:` under `Global:`
+```yaml
+    # Currency symbol to be used when showing balance or similar
+    CurrencySymbol: $
+    # Format used for displaying money
+    MoneyFormat: '###,##0.00'
+and
+    # Placing of currency symbol
+    Placing: '[symbol][money]'
+```
+(above are the values that I use on my servers, these may not be the default)
 
 - Can I charge people for using commands? (yes)
 
 edit file `commandCost.yml`
+My pro tip is to read the comments at the top of the file carefully. Using a space or an alias can have a big influence.
 
 - I use bungeecord, does it sync over the network? (no)
 
