@@ -66,6 +66,18 @@ Economy:
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
+## Using the economy
+
+Once your server starts up and the economy shows properly in `/cmi version`, you can start using commands such as
+```
+/cmi pay
+/cmi money
+/cmi balance
+```
+You can check the commands page on zrips.net and the permissions page on zrips.net to learn which commands and permissions along with them can be part of what you want out of your economy. 
+
+Other plugins can now use CMI's economy engine via hooking into vault to transfer and store money for players. 
+
 ---
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
