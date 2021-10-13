@@ -78,6 +78,10 @@ You can check the commands page on zrips.net and the permissions page on zrips.n
 
 Other plugins can now use CMI's economy engine via hooking into vault to transfer and store money for players. 
 
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Importing money balances from other plugins.
+
+It's possible to import the money balance from players from EssentialsX into CMI, other plugins are currently not supported. More information about importing data into CMI can be found [here](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md)
+
 ---
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
