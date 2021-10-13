@@ -53,14 +53,14 @@
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Economy
 
 - Download and Install CMI's Vault build (<https://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>)
-- Note: If you wish to use the original Vault build, then please get CMI-Injector <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)
+- Note: If you wish to use the original Vault build, then please get CMI Economy Injector (.jar) <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)
 - Update `config.yml` (see below)
 -
 ```yaml
 # CMI config.yml, enable:
 Economy:
   # Enable or disable CMI economy in general
-  # In case CMIInjector is present, then this will be set to true automatically.
+  # In case CMIE-Injector.jar is present, then this will be set to true automatically.
   Enabled: true
 ```
 
