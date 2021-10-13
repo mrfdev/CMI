@@ -64,11 +64,17 @@ Economy:
   Enabled: true
 ```
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
+- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly.
+
+### PLEASE NOTE: Everything above this point is enough to use CMI as economy engine. And Everything below this point is additional information to help you customize and use the economy features for your server.
+
+---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Using the economy
 
 Once your server starts up and the economy shows properly in `/cmi version`, you can start using commands such as
+
+### Commands and permissions:
 ```
 /cmi pay [playerName] [amount] (-s)
 -> cmi.command.pay - Perform money transaction
@@ -91,10 +97,13 @@ Once your server starts up and the economy shows properly in `/cmi version`, you
 -> cmi.command.cheque - Convert money into cheque
 -> cmi.command.cheque.withdraw - Allows to withdraw cheque balance when option in config file is enabled
 -> cmi.command.cheque.admin - Allows to give out cheque with money amount directly to target player without requiring paper
-```
-TODO: include itemshop page, include worth.yml worth/sell and honorable mentino that cmi holograms can show top balances, and that hologram can be used to show worth and/or sell what they are holding.
 
-Placeholders: (that you can consider using)
+Other commands related to CMI Economy can be the CMI Worth and CMI Sell features:
+/cmi worth
+/cmi sell
+```
+
+### Placeholders: (that you can consider using)
 ```
 %cmi_user_balance_formatted%
 %cmi_user_balance%
@@ -116,6 +125,95 @@ Note: You can use /pay, /balance, etc as well by configuring `Alias.yml`.
 You can check the commands page on zrips.net and the permissions page on zrips.net to learn which commands and permissions along with them can be part of what you want out of your economy. 
 
 Other plugins can now use CMI's economy engine via hooking into vault to transfer and store money for players. 
+
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji>Chest Shop / Item Shop / Shop Chest / Admin Shop
+
+It is a bit out of the scope of the CMI plugin to have player-shops, admin-shops and such, but using the existing feature set of CMI does allow you to do quite a few things that get very close. Personally I still recommend to use a dedicated plugin on top of CMI for fully fledged player shops and chest shops. But, that being said. CMI is dynamic, modern, and flexible enough to get pretty far. And maybe it can do just what you're looking for. 
+
+Here's an example of using CMI as an item shop: https://www.zrips.net/itemshop/
+
+Using Specialized Commands from CMI and the CMI Interactive Commands features, together with various commands and the CMI Sell features and CMI Economy you can have players click on holograms to sell what they're holding. You can make a block or sign or NPC you have respond with commands, item giving, money taking, or kit giving through left/right clicking them. 
+
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Hologram with Balance or Balance Top Players.
+
+### Balance in hologram.
+
+You can use /cmi hologram to create a new hologram that shows some placeholders that are personal to the player, for example their balance. Check the zrips website to learn more about how to use the CMI Hologram features, and see the above list of placeholders to learn which placeholders you can use to display the balance of the player.
+
+### Top Balance Players in hologram.
+
+The same as what I just mentioned above, but using dynamic placeholders from CMI that can display the i.e. the top 3 balances on the server. 
+```yaml
+1. %cmi_baltop_name_1% - %cmi_baltop_money_1%
+1. %cmi_baltop_name_2% - %cmi_baltop_money_2%
+1. %cmi_baltop_name_3% - %cmi_baltop_money_3%
+```
+Hopefully this gives you an indication what is possible utilizing all the CMI features one way or another to make a custom server experience for your players.
+
+### Using Worth and Sell in hologram.
+
+And finally, another example that you can use the CMI features together. You can use a CMI hologram to run commands, to display dynamic placeholders, etc. And using the CMI Worth and CMI Sell features you can for example display what the player is holding, and say how many of that item they're holding, and how much that is worth if they would sell it. You can add a command as well to a hologram that when they right click the hologram it will sell this and the money goes to their CMI money balance.
+
+Here's an example I use on my servers, note that the name of the world and the hologram location is specific to my server, and won't work on yours. You'd have to change this if you wish to copy paste it to use on your own servers:
+```yaml
+Worth:
+  Loc: world_wild;500.00;65.00;500.00
+  Interval: 0.3
+  Range: 6
+  RangeExtra: 6
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  Interactable: true
+  Commands:
+  - asPlayer! cmi sell hand
+  Lines:
+  - '&6 %cmi_iteminhand_displayname% &fx %cmi_iteminhand_amount%'
+  - '&bWorth: &e %cmi_iteminhand_worth%'
+  - ICON:%iteminhand%
+  ```
+  Note: This is from my hologram.yml file. 
+
+## CMI Worth and Sell features
+
+The CMI plugin also lets you define what an item can be worth. There are ingame commands to manage this, there's even a GUI with items that have no value defined, making managing this a lot easier. But you can also manually customize the `worth.yml` file yourself. 
+
+If you give your players access to `/cmi sell` then what they're holding is either worthless (and won't sell) or it's worth what you've defined. 
+
+Please note that if CMI can figure out how to craft an item, it can calculate the worth with a bonus percentage. So if you define how much an `iron_ingot` or `stone` is worth, you can ask it to automatically calculate what things crafted with stone or this ingot could be worth. Saving you even more time.
+
+### Find Commands:
+```
+> cmi checkcommand worth
+[15:58:18 INFO]: --------------------------------------------------
+[15:58:18 INFO]: 1. generateworth
+[15:58:18 INFO]: 2. setenchantworth
+[15:58:18 INFO]: 3. worth (all/blocks/hand/material)
+[15:58:18 INFO]: 4. setworth (itemname) -s:(sellPrice)
+[15:58:18 INFO]: 5. worthlist (playerName)
+> cmi checkcommand sell
+[15:58:25 INFO]: --------------------------------------------------
+[15:58:25 INFO]: 1. sell (all/blocks/hand/same/gui)
+```
+
+### Find Permissions:
+```
+> cmi checkperm worth
+[15:58:40 INFO]: --------------------------------------------------
+[15:58:40 INFO]: 1. cmi.command.generateworth - Auto generate posible item worth values
+[15:58:40 INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
+[15:58:40 INFO]: 3. cmi.command.worth - Check item worth
+[15:58:40 INFO]: 4. cmi.command.setenchantworth - Change enchantment worth
+[15:58:40 INFO]: 5. cmi.command.worthlist.others - Check list of items with set sell prices
+---->When command is used on another player<----
+Base command required
+[15:58:40 INFO]: 6. cmi.command.setworth - Change item worth
+> cmi checkperm sell
+[15:58:42 INFO]: --------------------------------------------------
+[15:58:42 INFO]: 1. cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
+[15:58:42 INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
+[15:58:42 INFO]: 3. cmi.command.sell - Sell items from inventory
+>
+```
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Importing money balances from other plugins.
 
