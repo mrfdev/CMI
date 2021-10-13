@@ -124,20 +124,26 @@ It's possible to import the money balance from players from EssentialsX into CMI
 ## FAQ
 
 - How can I show money with the least or most detail? (shortmoney)
+
 config.yml > search for `PaymentWithShorts`
 
 - Can I log money transactions or sales from players? (moneylog)
+
 config.yml > search for `LogEnabled`
 
 - How can I change how money shows in game? (symbol, format, placement)
+
 config.yml > search for: `CurrencySymbol: MoneyFormat: Placing:`
 
 - Can I charge people for using commands? (yes)
+
 edit file `commandCost.yml`
 
 - I use bungeecord, does it sync over the network? (no)
+
 Sorry, no, currently network syncing of the economy is not possible. 
-(SpigotMC has a plugin called MySQL Player-data bridge, which has CMI support for syncing some cmi-data, you can consider using this on top of cmi to achieve this)
+(SpigotMC has a [plugin](https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/) called MySQL Player-bridge data, which has CMI support for syncing some cmi-data, you can consider using this on top of cmi to achieve this)
+More information about cmi + bungee can be found [here](https://faq.cmi.support/bungee)
 
 ---
 
