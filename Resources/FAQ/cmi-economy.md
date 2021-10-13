@@ -126,7 +126,7 @@ You can check the commands page on zrips.net and the permissions page on zrips.n
 
 Other plugins can now use CMI's economy engine via hooking into vault to transfer and store money for players. 
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji>Chest Shop / Item Shop / Shop Chest / Admin Shop
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Chest Shop / Item Shop / Shop Chest / Admin Shop
 
 It is a bit out of the scope of the CMI plugin to have player-shops, admin-shops and such, but using the existing feature set of CMI does allow you to do quite a few things that get very close. Personally I still recommend to use a dedicated plugin on top of CMI for fully fledged player shops and chest shops. But, that being said. CMI is dynamic, modern, and flexible enough to get pretty far. And maybe it can do just what you're looking for. 
 
@@ -184,34 +184,34 @@ Please note that if CMI can figure out how to craft an item, it can calculate th
 ### Find Commands:
 ```
 > cmi checkcommand worth
-[15:58:18 INFO]: --------------------------------------------------
-[15:58:18 INFO]: 1. generateworth
-[15:58:18 INFO]: 2. setenchantworth
-[15:58:18 INFO]: 3. worth (all/blocks/hand/material)
-[15:58:18 INFO]: 4. setworth (itemname) -s:(sellPrice)
-[15:58:18 INFO]: 5. worthlist (playerName)
+[INFO]: --------------------------------------------------
+[INFO]: 1. generateworth
+[INFO]: 2. setenchantworth
+[INFO]: 3. worth (all/blocks/hand/material)
+[INFO]: 4. setworth (itemname) -s:(sellPrice)
+[INFO]: 5. worthlist (playerName)
 > cmi checkcommand sell
-[15:58:25 INFO]: --------------------------------------------------
-[15:58:25 INFO]: 1. sell (all/blocks/hand/same/gui)
+[INFO]: --------------------------------------------------
+[INFO]: 1. sell (all/blocks/hand/same/gui)
 ```
 
 ### Find Permissions:
 ```
 > cmi checkperm worth
-[15:58:40 INFO]: --------------------------------------------------
-[15:58:40 INFO]: 1. cmi.command.generateworth - Auto generate posible item worth values
-[15:58:40 INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
-[15:58:40 INFO]: 3. cmi.command.worth - Check item worth
-[15:58:40 INFO]: 4. cmi.command.setenchantworth - Change enchantment worth
-[15:58:40 INFO]: 5. cmi.command.worthlist.others - Check list of items with set sell prices
+[INFO]: --------------------------------------------------
+[INFO]: 1. cmi.command.generateworth - Auto generate posible item worth values
+[INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
+[INFO]: 3. cmi.command.worth - Check item worth
+[INFO]: 4. cmi.command.setenchantworth - Change enchantment worth
+[INFO]: 5. cmi.command.worthlist.others - Check list of items with set sell prices
 ---->When command is used on another player<----
 Base command required
 [15:58:40 INFO]: 6. cmi.command.setworth - Change item worth
 > cmi checkperm sell
-[15:58:42 INFO]: --------------------------------------------------
-[15:58:42 INFO]: 1. cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
-[15:58:42 INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
-[15:58:42 INFO]: 3. cmi.command.sell - Sell items from inventory
+[INFO]: --------------------------------------------------
+[INFO]: 1. cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
+[INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
+[INFO]: 3. cmi.command.sell - Sell items from inventory
 >
 ```
 
