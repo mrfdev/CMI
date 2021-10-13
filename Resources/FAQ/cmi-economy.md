@@ -121,7 +121,7 @@ Other plugins can now use CMI's economy engine via hooking into vault to transfe
 
 It's possible to import the money balance from players from EssentialsX into CMI, other plugins are currently not supported. More information about importing data into CMI can be found [here](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md)
 
-## FAQ
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> FAQ
 
 - How can I show money with the least or most detail? (shortmoney)
 
@@ -130,6 +130,13 @@ config.yml > search for `PaymentWithShorts`
 - Can I log money transactions or sales from players? (moneylog)
 
 config.yml > search for `LogEnabled`
+```yaml
+  # Set to true if you want to log money transfers between players
+  LogEnabled: true
+  log:
+    Unknown: true
+    Transfer: true
+```
 
 - How can I change how money shows in game? (symbol, format, placement)
 
