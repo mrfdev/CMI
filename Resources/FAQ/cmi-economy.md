@@ -92,6 +92,12 @@ Once your server starts up and the economy shows properly in `/cmi version`, you
 -> cmi.command.cheque.withdraw - Allows to withdraw cheque balance when option in config file is enabled
 -> cmi.command.cheque.admin - Allows to give out cheque with money amount directly to target player without requiring paper
 ```
+TODO: include itemshop page, include worth.yml worth/sell and honorable mentino that cmi holograms can show top balances, and that hologram can be used to show worth and/or sell what they are holding.
+
+TODO: Placeholders
+```
+placeholders
+```
 
 Note: You can use /pay, /balance, etc as well by configuring `Alias.yml`.
 
@@ -103,6 +109,19 @@ Other plugins can now use CMI's economy engine via hooking into vault to transfe
 
 It's possible to import the money balance from players from EssentialsX into CMI, other plugins are currently not supported. More information about importing data into CMI can be found [here](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md)
 
+## FAQ
+
+- How can I show money with the least or most detail? (shortmoney)
+config.yml > search for `PaymentWithShorts`
+
+- Can I log money transactions or sales from players? (moneylog)
+config.yml > search for `LogEnabled`
+
+- How can I change how money shows in game? (symbol, format, placement)
+config.yml > search for: `CurrencySymbol: MoneyFormat: Placing:`
+
+- Can I charge people for using commands? (yes)
+edit file `commandCost.yml`
 ---
 
 You can find more information about the CMI plugin on the official site: [zrips.net/cmi](https://www.zrips.net/cmi/)
