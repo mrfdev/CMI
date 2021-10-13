@@ -66,7 +66,7 @@ Economy:
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
-## Using the economy
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Using the economy
 
 Once your server starts up and the economy shows properly in `/cmi version`, you can start using commands such as
 ```
