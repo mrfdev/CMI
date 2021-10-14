@@ -61,7 +61,7 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
-The full list as of October 12th, 2021
+The full list as of October 14th, 2021
 
 - CMI version 9.0.5.0
 - Selection Visualizer version 3.0.5.0
@@ -73,7 +73,7 @@ The full list as of October 12th, 2021
 - ReCount version 3.5.0
 - TradeMe version 6.1.0.2
 
-These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMILib version 1.0.3.11 or newer to properly operate.
+These currently support Spigot-, and Paper 1.17.1 and lower, and require the CMILib version 1.0.4.0 or newer to properly operate.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How do I get it?
 
