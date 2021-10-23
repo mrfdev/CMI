@@ -52,6 +52,11 @@
 
 <details>
     <summary><strong>Prerequisites</strong></summary>
+    <ul>
+        <li><a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin)<br><pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
+        <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)<br><pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
+        <li>Milk</li>
+    </ul>
     <p>
      • The below instructions assume you are using the latest versions of CMI, CMILib, etc.
      • <a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin)
