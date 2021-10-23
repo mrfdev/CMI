@@ -53,20 +53,14 @@
 <details>
     <summary><strong>Prerequisites</strong></summary>
     <ul>
-        <li><a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin)<br><pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
-        <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)<br><pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
-        <li>Milk</li>
+        <li><a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin)
+         <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
+        <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)
+         <pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
+        <li>All my FAQ pages have been written for Spigot / Paper 1.17.1 and CMI 9.0.6.x or newer.</li>
+        <li>The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.</li>
+        <li>I am a team member on the Zrips Discord, this does not mean what I say is official.</li>
     </ul>
-    <p>
-     • The below instructions assume you are using the latest versions of CMI, CMILib, etc.
-     • <a href="https://www.spigotmc.org/resources/3742/">Buy and Download CMI</a> (premium plugin)
-     <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre>
-     • <a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)
-     <pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre>
-     • All my FAQ pages have been written for Spigot / Paper 1.17.1 and CMI 9.0.6.x or newer.<br>
-     • The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.<br>
-     • I am a team member on the Zrips Discord, this does not mean what I say is official.
-    </p>
 </details>
 </topMenu>
 
