@@ -1,5 +1,6 @@
 # FAQ - Running CMI on Spigot / Paper 1.17.1
 
+<topMenu>
 <details><summary><strong>FAQ Menu</strong></summary>
  • <a href="https://faq.cmi.support/bungee">Bungeecord-Info</a>, 
  • <a href="https://faq.cmi.support/chance">Chance-Example</a>, 
@@ -48,6 +49,8 @@
  • I am a team member on the Zrips Discord, this does not mean what I say is official.
 </details>
 
+</topMenu>
+ 
 This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.17.1.
 
 ```
