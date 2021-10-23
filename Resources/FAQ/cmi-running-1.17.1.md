@@ -1,6 +1,5 @@
 # FAQ - Running CMI on Spigot / Paper 1.17.1
 
-<topMenu>
 <details><summary><strong>FAQ Menu</strong></summary>
  • <a href="https://faq.cmi.support/bungee">Bungeecord-Info</a>, 
  • <a href="https://faq.cmi.support/chance">Chance-Example</a>, 
@@ -48,17 +47,15 @@
  • The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.<br>
  • I am a team member on the Zrips Discord, this does not mean what I say is official.
 </details>
-
-</topMenu>
  
 This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.17.1.
 
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.0.5.0 SqLite
-    CMILib: 1.0.4.0
-    Server: Paper(327) 1.17.1-R0.1-SNAPSHOT
+    CMI plugin version: 9.0.6.0 SqLite
+    CMILib: 1.0.4.1
+    Server: Paper(347) 1.17.1-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
