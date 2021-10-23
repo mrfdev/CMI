@@ -3,50 +3,50 @@
 <topMenu>
 <details>
     <summary><strong>FAQ Menu</strong></summary>
-    <p>
-     • <a href="https://faq.cmi.support/bungee">Bungeecord-Info</a>, 
-     • <a href="https://faq.cmi.support/chance">Chance-Example</a>, 
-     • <a href="https://faq.cmi.support/format">Chat-Format</a>, 
-     • <a href="https://faq.cmi.support/chat">Chat-Manager</a>, 
-     • <a href="https://faq.cmi.support/chatfilter">Chat-Filter</a>, 
-     • <a href="https://faq.cmi.support/chatrooms">Chat-Rooms</a>, 
-     • <a href="https://faq.cmi.support/commands">Commands-Manager</a>, 
-     • <a href="https://faq.cmi.support/joinleave">Custom-Join-Leave</a>, 
-     • <a href="https://faq.cmi.support/economy">Economy-Manager</a>, 
-     • <a href="https://faq.cmi.support/ext-cmds">Extending-Commands</a>, 
-     • <a href="https://faq.cmi.support/gettingstarted">Getting-Started</a>, 
-     • <a href="https://faq.cmi.support/glow">Glow</a>, 
-     • <a href="https://faq.cmi.support/help">Custom-Help</a>, 
-     • <a href="https://faq.cmi.support/hexcolors">Hex-Colors</a>, 
-     • <a href="https://faq.cmi.support/import">Importing-Data</a>, 
-     • <a href="https://faq.cmi.support/library">CMILib</a>, 
-     • <a href="https://faq.cmi.support/prefix">LuckPerms-Prefix</a>, 
-     • <a href="https://faq.cmi.support/migrate">Migrate-Database</a>, 
-     • <a href="https://faq.cmi.support/mode-stuck">Mode-Stuck</a>, 
-     • <a href="https://faq.cmi.support/more-msg-cmds">More-Msg-Commands</a>, 
-     • <a href="https://faq.cmi.support/motd">MOTD</a>, 
-     • <a href="https://faq.cmi.support/params">Parameters</a>, 
-     • <a href="https://faq.cmi.support/ranks">Ranks</a>, 
-     • <a href="https://faq.cmi.support/rules">Custom-Rules</a>, 
-     • <a href="https://faq.cmi.support/running">Running-CMI</a>, 
-     • <a href="https://faq.cmi.support/safety">Safety-Tips</a>, 
-     • <a href="https://faq.cmi.support/social">Social-Addon</a>, 
-     • <a href="https://faq.cmi.support/specialized">Specialized-Cmds</a>, 
-     • <a href="https://faq.cmi.support/toggle">Toggle-Example</a>, 
-     • <a href="https://faq.cmi.support/trash">Trash</a>, 
-     • <a href="https://faq.cmi.support/votes">Vote-Manager</a>.
-    </p>
+    <ul>
+        <li><a href="https://faq.cmi.support/bungee">Bungeecord-Info</a>, </li>
+        <li><a href="https://faq.cmi.support/chance">Chance-Example</a>, </li>
+        <li><a href="https://faq.cmi.support/format">Chat-Format</a>, </li>
+        <li><a href="https://faq.cmi.support/chat">Chat-Manager</a>, </li>
+        <li><a href="https://faq.cmi.support/chatfilter">Chat-Filter</a>, </li>
+        <li><a href="https://faq.cmi.support/chatrooms">Chat-Rooms</a>, </li>
+        <li><a href="https://faq.cmi.support/commands">Commands-Manager</a>, </li>
+        <li><a href="https://faq.cmi.support/joinleave">Custom-Join-Leave</a>, </li>
+        <li><a href="https://faq.cmi.support/economy">Economy-Manager</a>, </li>
+        <li><a href="https://faq.cmi.support/ext-cmds">Extending-Commands</a>, </li>
+        <li><a href="https://faq.cmi.support/gettingstarted">Getting-Started</a>, </li>
+        <li><a href="https://faq.cmi.support/glow">Glow</a>, </li>
+        <li><a href="https://faq.cmi.support/help">Custom-Help</a>, </li>
+        <li><a href="https://faq.cmi.support/hexcolors">Hex-Colors</a>, </li>
+        <li><a href="https://faq.cmi.support/import">Importing-Data</a>, </li>
+        <li><a href="https://faq.cmi.support/library">CMILib</a>, </li>
+        <li><a href="https://faq.cmi.support/prefix">LuckPerms-Prefix</a>, </li>
+        <li><a href="https://faq.cmi.support/migrate">Migrate-Database</a>, </li>
+        <li><a href="https://faq.cmi.support/mode-stuck">Mode-Stuck</a>, </li>
+        <li><a href="https://faq.cmi.support/more-msg-cmds">More-Msg-Commands</a>, </li>
+        <li><a href="https://faq.cmi.support/motd">MOTD</a>, </li>
+        <li><a href="https://faq.cmi.support/params">Parameters</a>, </li>
+        <li><a href="https://faq.cmi.support/ranks">Ranks</a>, </li>
+        <li><a href="https://faq.cmi.support/rules">Custom-Rules</a>, </li>
+        <li><a href="https://faq.cmi.support/running">Running-CMI</a>, </li>
+        <li><a href="https://faq.cmi.support/safety">Safety-Tips</a>, </li>
+        <li><a href="https://faq.cmi.support/social">Social-Addon</a>, </li>
+        <li><a href="https://faq.cmi.support/specialized">Specialized-Cmds</a>, </li>
+        <li><a href="https://faq.cmi.support/toggle">Toggle-Example</a>, </li>
+        <li><a href="https://faq.cmi.support/trash">Trash</a>, </li>
+        <li><a href="https://faq.cmi.support/votes">Vote-Manager</a>.</li>
+    </ul>
 </details>
 
 <details>
     <summary><strong>Official Zrips Links</strong></summary>
     <ul>
         <li><a href="https://zrips.net/">Zrips Website</a>
-     <pre>https://www.zrips.net/<br>The official website, wiki/documentation/information</pre></li>
+         <pre>https://www.zrips.net/<br>The official website, wiki/documentation/information</pre></li>
         <li><a href="https://discord.gg/dDMamN4">Zrips Discord</a>
-     <pre>https://discord.gg/dDMamN4<br>The official Discord community, member-driven support</pre></li>
+         <pre>https://discord.gg/dDMamN4<br>The official Discord community server with member-driven support</pre></li>
         <li><a href="https://github.com/Zrips/">Zrips Github</a>
-     <pre>https://github.com/Zrips<br>The place for bug reports and feature suggestions</pre></li>
+         <pre>https://github.com/Zrips<br>The place for bug reports and feature suggestions</pre></li>
     </ul>
 </details>
 
