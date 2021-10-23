@@ -142,8 +142,7 @@ What a list huh, okay, now you have experience, you have tested, and you can do 
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What about 1.16.5?
 
-That's a different page with different instructions:
-<https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-running-1.16.5.md>
+CMI will not run on 1.16.0 or 1.16.1, but 1.16.5 is supported. You can use the latest cmi and cmilib jars on 1.16.5. I always recommend to stay current.
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
