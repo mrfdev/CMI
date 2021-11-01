@@ -293,6 +293,9 @@ Alias:
   /dispose:
     Enabled: true
     Tab: true
+  /trash:
+    Enabled: true
+    Tab: true
   #  
   # /cmi distance $1-
   /distance:
@@ -1113,6 +1116,9 @@ Alias:
   #  
   # /cmi rt $1-
   /rt:
+    Enabled: true
+    Tab: true
+  /rtp:
     Enabled: true
     Tab: true
   #  
