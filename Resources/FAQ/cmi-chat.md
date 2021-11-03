@@ -77,6 +77,8 @@ Chat:
   # Will try to modify chat to display it in defined format
   ModifyChatFormat: true
 ```
+- Personally I also recommend to set `ClickHoverMessages:` to `true` if you want to use some other CMI chat features such as `[item]` which you can configure further down in the config file.
+
 Optionally, if you want custom join/leave msgs, don't forget to enable this.
 ```yaml
 # Enable it in Modules.yml
