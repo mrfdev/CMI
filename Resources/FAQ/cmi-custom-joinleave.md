@@ -68,6 +68,8 @@ Turn on and display a custom join and leave message to players.
 
 ---
 
+# 9.0.7.0 and up, the locale is back in cmi's translation files, after 9.0.7.1 i will update these instructinos and assume people are on the latest version.
+
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle the custom chat things
 
 - Start using CMI as Chat Manager, if you were using something else.
