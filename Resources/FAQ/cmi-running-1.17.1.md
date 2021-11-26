@@ -84,10 +84,8 @@ _(what about 1.18? There's no build out for 1.18)_
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is about CMI 9 and Spigot or Paper server version 1.17.1 mainly, apply to 1.16.5 and other lower versions accordingly.
-- CMI version 9.0.5.x is considered the Stable version you can run on a live production environment. It is stable enough for 1.17.1, if you want to run it live that's fine. But backup your data and test things first! 
-- CMILib will try to automatically download and attempt to replace older CMILib jars. This is okay. If it fails, you can do this manually as well.
-- Zrips' libraries and other resources are linked below.
+- This is made for CMI 9 and a Spigot or Paper server on version 1.17.1. Apply steps to other (lower) versions accordingly.
+- CMILib will be required. Zrips' libraries and other resources are linked below.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
 
@@ -174,7 +172,7 @@ These are for CMI 9.x:
 <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>
 
 `CMI Bungee` Basic bungee chat support
-<https://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>
+<https://www.zrips.net/wp-content/uploads/2021/09/CMIB1.0.1.0.jar>
 
 `CMI Library` Base Library 
 <https://www.spigotmc.org/resources/cmilib.87610/>
