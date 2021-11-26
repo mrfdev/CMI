@@ -66,12 +66,14 @@
  
 This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.17.1.
 
+_(what about 1.18? There's no build out for 1.18)_
+
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.0.6.1 SqLite
-    CMILib: 1.0.4.2
-    Server: Paper(353) 1.17.1-R0.1-SNAPSHOT
+    CMI plugin version: 9.0.7.0 SqLite
+    CMILib: 1.0.4.3
+    Server: Paper(388) 1.17.1-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
