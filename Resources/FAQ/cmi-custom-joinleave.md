@@ -145,8 +145,8 @@ If you wish to hide the join/leave messages for a certain group or user, you can
   cmi.messages.disablelogin - Disables login message
   cmi.messages.disablequit - Disables logout message
 ```
-LuckPerm: `lp group owner permission set cmi.messages.disablejoin true`
-LuckPerm: `lp user mrfloris permission set cmi.messages.disablequit true`
+- LuckPerm: `lp group owner permission set cmi.messages.disablejoin true`
+- LuckPerm: `lp user mrfloris permission set cmi.messages.disablequit true`
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Extending CMI Join Events
 
