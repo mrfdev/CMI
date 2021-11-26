@@ -64,13 +64,11 @@
 </details>
 </topMenu>
 
-Turn on and display a custom join and leave message to players.
+Turn on and display a custom join and leave message to players. _(instructions are for CMI v. 9.0.7.0 or higher)_
 
 ---
 
-# 9.0.7.0 and up, the locale is back in cmi's translation files, after 9.0.7.1 i will update these instructinos and assume people are on the latest version.
-
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle the custom chat things
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat + Custom Join/Leave messages
 
 - Start using CMI as Chat Manager, if you were using something else.
  * https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md
@@ -104,9 +102,26 @@ Messages:
     # Set to -1 to disable this
     AutoHideFrom: -1
 ```
-Note: If you are still on CMI 8.8.5.0, the directory will be `plugins/CMI/Translations`.
+Note: If you are still on an outdated version below 9.0.7.x, the directory will be `plugins/CMILib/Translations`.
 
-Next, inside the `plugins/CMILib/Translations/` directory there is at least the file `Locale_EN.yml`, and below is an example of some basic text you could use / customize:
+Next, inside the `plugins/CMI/Translations/` directory there is at least the file `Locale_EN.yml`, where you can find:
+```yaml
+Chat:
+  localPrefix: ''
+  shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
+  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  # Use \n to add new line
+  publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  privateHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  staffHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  link: '&l&4[&7LINK&4]'
+  item: '&7[%cmi_iteminhand_realname%[amount]&7]'
+  itemAmount: ' x[amount]'
+  itemEmpty: '&7[Mighty fist]'
+```
+And below is an example of some basic text you could use / customize:
 
 ```yaml
   FirstJoin: '{#Cerulean} 1MB Server »{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
@@ -115,25 +130,41 @@ Next, inside the `plugins/CMILib/Translations/` directory there is at least the 
   LoginCustom: '{#Cerulean} 1MB Server »{#Feijoa} Welcome back &6[playerDisplayName]
     {#Feijoa}❤'
 ```
-As you can see you can use certain variables, CMI's hex colors, and set the text to whatever you want. Note that the above is a customization and not the default text, but gives you the info to search for within the locale file. 
+As you can see you can use certain variables, CMI's hex colors, and set the text to whatever you want. Note that the above is a customization and not the default text, but gives you the info to search for within the locale file.
 
-Note if you use another language, you have to adjust that file. 
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Other Languages
 
-If you want to give first-time players something extra, you can utalize the `eventCommands.yml` file at the onfirstjoin and onjoin sections: (for example, you can make another .txt file, run certain commands, or do whatever)
-```yaml
-firstJoinServer:
-  Enabled: true
-  Commands:
-..etc..
-```
+Of course, if you use another language you will have to adjust that file. They are also in the `translations/` directory.
 
-Optionally, if you wish to hide the join/quit messages for a certain group or user, you can use these permissions:
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Hiding certain Groups/Players
+
+If you wish to hide the join/leave messages for a certain group or user, you can use these permissions:
 ```
 > cmi checkperm disable
+
   cmi.messages.disablelogin - Disables login message
   cmi.messages.disablequit - Disables logout message
 ```
 LuckPerm: `lp group owner permission set cmi.messages.disablejoin true`
 LuckPerm: `lp user mrfloris permission set cmi.messages.disablequit true`
+
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Extending CMI Join Events
+
+If you want to give first-time players something extra, you can utilise the `eventCommands.yml` file at the `onfirstjoin` and `onjoin` sections: _(for example, you can make another .txt file, run certain commands, or do whatever)_
+```yaml
+firstJoinServer:
+  Enabled: true
+  Commands:
+  - msg! [playerName] This is event command example!
+..etc..
+```
+
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Switching (Bungee) Servers
+
+In the `~/plugins/CMI/Translations/` folder, the `locale_EN.yml` file has the following, which you can customize:
+```yaml
+  ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
+  ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
+```
 
 ---
