@@ -87,6 +87,15 @@ _(what about 1.18? There's no build out for 1.18)_
 - This is made for CMI 9 and a Spigot or Paper server on version 1.17.1. Apply steps to other (lower) versions accordingly.
 - CMILib will be required. Zrips' libraries and other resources are linked below.
 
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
+
+- Is there a build for 1.18? No. Not yet.
+- Will there be a build for 1.18? Yes, most likely.
+- Do I need to buy a new license to upgrade? No.
+- Can I upgrade from an older version of CMI to the build for 1.18? The best result is to have your currently CMI build be the latest version (9.0.7.0) and the latest version of CMILib. You do not have to fresh-install CMI in order to use it on 1.18 (once there is a build for it that supports 1.18)
+- CMILib will be required? Yes.
+- So where do I download it? You cannot currently download CMI for 1.18, it's still being developed. It will be ready when it is ready. 
+
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
 
 - First, I strongly recommend before making any changes to your live server to take it offline with /stop and make a complete backup of the full directory, do not forget to backup your MySQL databases if you use any. 
