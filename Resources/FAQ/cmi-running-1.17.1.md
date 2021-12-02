@@ -95,12 +95,12 @@ _(what about 1.18? There's no build out for 1.18)_
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.18? No. Not yet.
-- Will there be a build for 1.18? Yes, most likely.
+- Is there a build for 1.18? Yes, CMI 9.1 can be used on 1.18, do not use 9.0.
+- Will there be a build for 1.18? Yes, there is one, make sure you use CMILib 1.1.0.0 or newer
 - Do I need to buy a new license to upgrade? No.
-- Can I upgrade from an older version of CMI to the build for 1.18? The best result is to have your currently CMI build be the latest version (9.0.7.0) and the latest version of CMILib. You do not have to fresh-install CMI in order to use it on 1.18 (once there is a build for it that supports 1.18)
-- CMILib will be required? Yes.
-- So where do I download it? You cannot currently download CMI for 1.18, it's still being developed. It will be ready when it is ready. 
+- Can I upgrade from an older version of CMI to the build for 1.18? The best result is to have your currently CMI build be the latest version (9.0.7.0) and the latest version of CMILib. You do not have to fresh-install CMI in order to use it on 1.18.
+- CMILib will be required? Yes. CMILib 1.1.0.0 or newer is required. 
+- So where do I download it? spigotmc.org
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
 
