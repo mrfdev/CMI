@@ -1,5 +1,11 @@
 # FAQ - Running CMI on Spigot / Paper 1.17.1
 
+# IMPORTANT (do read this)
+
+# If your server is 1.17.1 or lower, for the time being use CMI 9.0, do NOT upgrade to 9.1
+
+# If your server is 1.18 or newer, you can not use 9.0, you have to use 9.1.0.0 (or newer) and CMILib 1.1.0.0 (or newer)
+
 <topMenu>
 <details>
     <summary><strong>FAQ Menu</strong></summary>
