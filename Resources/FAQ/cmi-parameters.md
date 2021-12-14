@@ -79,7 +79,7 @@ You can then in the commands use `$1` `$5` `$0` .. order doesn't matter. They're
 Additional information about CMI's specialized commands and comparison operators can be found here: <https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-specialized.md>
 
 ```
-Server owner used /cmi aliaseditor to make a /banana command
+Server owner used /cmi aliaseditor to make a /fruit command
 
 Player types:
 
@@ -106,6 +106,8 @@ $4 == nothing there, so it is "null"
 $1 $3 == banana superman
 
 $0 $3 == fruit superman
+
+$2- == apple superman
 
 ```
 
