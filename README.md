@@ -81,20 +81,6 @@ Basically, these are the easiest steps to use any of these files.
 
 **TLDR;** Get the file you want, use it (partially), test it all first. 
 
-## :four_leaf_clover: What version?
-
-1MB CMI Project version **0.1.10** (December 14th, 2021), for live-1mb-2.9.4-mc-1.17.1
-
-The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-2.9.4-mc-1.17.1`
-```
--live- (live server)
--1MB- (1moreblock linked to network hub called 1MB)
--2.9.4- (1MB version 2.9.4, network version)
--mc- (Minecraft, but it is Paper jar at the moment)
--1.17.1- (Minecraft version 1.17.1)
-```
-**TLDR;** These files are for 1.17.x and probably any CMI version 9.x that works with 1.17.x
-
 ## :information_source: Support
 
 Before asking for support, please read the documentation/wiki properly. 
@@ -164,3 +150,17 @@ Oh yeah, and Floris, OMGboards.com nor 1MoreBlock.com claim or pretend to be-, n
 ## :punch: Support this project
 
 This is not my work, there's no salary. This is a hobby, and a hobby costs money. If you wish to say thank you for your support, thank you for sharing what you've learned with others: Please consider a free donation through contributing to this project. Or perhaps through a personal-gift of a beer or pizza slice with [a PayPal donation](https://www.paypal.me/mrfloris). 
+
+## :four_leaf_clover: What version?
+
+1MB CMI Project version **0.2.11** (December 16th, 2021), for live-1mb-3.0.0-mc-1.18.1
+
+The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.0.0-mc-1.18.1`
+```
+-live- (live server)
+-1MB- (1moreblock linked to network hub called 1MB)
+-3.0.0- (1MB version 3.0.0, history version)
+-mc- (Minecraft, but it is Paper jar at the moment)
+-1.18.1- (Minecraft version 1.18.1)
+```
+**TLDR;** These files are for 1.18.x and probably any CMI version 9.1.x that works with 1.18.1.
