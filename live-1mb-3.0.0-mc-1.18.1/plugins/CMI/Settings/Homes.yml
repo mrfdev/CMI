@@ -1,0 +1,92 @@
+Homes:
+  # When enabled we will require player to click on ingame chat to confirm home location override in case home with same name already exist
+  # This can be dirrectly confirmed with /cmi sethome [homeName] -override
+  Confirmation: true
+  Gui:
+    # Open gui when using /cmi home command if you have more then one home in your saved list
+    Use: true
+    # When enabled we will create more complex home UI with extra buttons and options while keeping this disabled we will simply list homes in a row
+    Complex: true
+    Options:
+      # When enabled we will expand area for homes from 10 to 28
+      Expanded: true
+      # Keep it empty if you want to use global infill material
+      Border: ''
+      # Material around homes when its not in expanded state
+      Infill: WHITE_STAINED_GLASS_PANE
+      InfoButton:
+        # Extra button to be used in case you want to provide any aditional information when clicking on it
+        Use: true
+        Slot: 1
+        Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+        Commands:
+        - msg! [playerName] "soon" this will be a link more info about 1MB Homes!
+          Until then if you have a question feel free to ask staff.
+        - closeinv!
+      CloseButton:
+        Use: true
+        Slot: 9
+        Material: PINK_STAINED_GLASS_PANE
+        Commands:
+        - closeinv!
+      bedButton:
+        Use: true
+        Slot: 4
+        Material: LIGHT_BLUE_BED
+      homeButton:
+        Use: true
+        Slot: 5
+        Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTJkN2E3NTFlYjA3MWUwOGRiYmM5NWJjNWQ5ZDY2ZTVmNTFkYzY3MTI2NDBhZDJkZmEwM2RlZmJiNjhhN2YzYSJ9fX0=
+      deathButton:
+        Use: true
+        Slot: 6
+        Material: TOTEM_OF_UNDYING
+      prevButton:
+        Slot: 46
+      middleButton:
+        Slot: 50
+      nextButton:
+        Slot: 54
+  # Homes groups to define max amount homes player can have. Permission: cmi.command.sethome.[groupname]
+  # If players home group if not find then amount will be set to 1
+  # To have unlimited homes use cmi.command.sethome.unlimited permission
+  # In addition to this you can use simple numeric permission node cmi.command.sethome.[number] which will define max number of homes player can have
+  Groups:
+    default: 6
+    builder: 12
+    donator: 14
+    staff: 100
+  # Requires cmi.bedhome permission node
+  # When set to true by interacting with bed, regular home location will be created
+  # When set to false vanilla bed home location will be set
+  BedInteraction: true
+  # When set to true, you can only set home location when you shift click a bed
+  onlyShiftBed: false
+  # Removes bed location when home location was created by clicking on that bed
+  RemoveBedLocationOnBedBreak: true
+  # When enabled, plugin will check if player can break block in that area before creating new home location
+  # This allows to prevent setting homes in protected areas
+  # Can be bypassed with cmi.command.sethome.bypass
+  CheckBlockBreak: false
+  # Name for default home location. By default its "Home"
+  DefaultName: Home
+  # Name for bed location. By default its "Home"
+  # Different name can be used to identify home location set by interacting with a bed from home location created with command
+  DefaultBedName: Bed
+  # Defines what characters you can use in your home names
+  ValidNameRegex: '[^a-zA-Z0-9\-\_]'
+  WorldLimits:
+    # Defines what characters you can use in your home names
+    Use: false
+    Groups:
+      Example1:
+        # Amount of homes you can have in this world home group. Setting to 0 would basically disable home creation in this world. Setting to lower than 0 will ignore this world group entirely
+        Amount: 3
+        # World list where this limit should apply to. Multiple worlds can be defined if you want to group them up
+        Worlds:
+        - testWorld
+      Example2:
+        Amount: 5
+        Worlds:
+        - testWorld2
+        - testWorld3

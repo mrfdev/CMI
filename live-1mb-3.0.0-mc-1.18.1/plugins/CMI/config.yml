@@ -48,6 +48,9 @@ Economy:
     # When set to true some fake accounts will be included into baltop list
     # This should include some previously marked accounts as fake which have been created for town usage or similar things
     IncludeFakes: false
+    # Set to 0 or lower to disable this feature
+    # Time in days of player being offline to exclude from being included in balance top list
+    ExcludeInactive: 0
   Global:
     # Starting amount of money players will have
     StartingAmount: 100.0
@@ -174,10 +177,9 @@ Optimizations:
     ToSpawnBefore: false
     # Set to true if you want to use tp commands as /cmi tp [WhoYouWantToTeleport] [WhereToTeleport] when its false, its /cmi tp [whereToTeleport] [WhoYouWantToTeleport]
     SwitchPlaces: false
-    # Applies for tpa, tpahere and tpaall only
-    # If set to true then player will be teleported to current player position after accepting teleport request
-    # If set to false then player will be teleported to player at which teleport request was issued
-    CurrentLoc: true
+    CurrentLoc:
+      # Applies for tpahere only
+      tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
     JumpDefault: 100
     # Defines time in seconds for accepting tpa or tpahere requests
@@ -217,9 +219,13 @@ Optimizations:
     # List of worlds to whichones player can't go back with /back command
     BackBlackList:
     - run
+    - santa
   Hat:
     # When enabled we will not allow to place items into head slot if item has custom lore
     IgnoreLored: true
+    # When enable we wont allow to equip items which are not hat type and has enchantment on it
+    # This will prevent from players having enchantment effects in head slots which should not be present there
+    BlockArmorItems: true
   helpop:
     # When set to true player will not see his sent message to helpop, but rather predefined message informing that his question have been sent to online staff
     feedbackMessage: true
@@ -443,40 +449,6 @@ BossBar:
 Ban:
   # When set to true players who are banned will get messages modified by CMI instead of seeing vanilla type of message
   OverrideLoginMessage: true
-Homes:
-  # When enabled we will require player to click on ingame chat to confirm hoime location override in case home with same name already exist
-  # This can be dirrectly confirmed with /cmi sethome [homeName] -override
-  Confirmation: true
-  # Open gui when using /cmi home command if you have more then one home in your saved list
-  Gui: true
-  # Homes groups to define max amount homes player can have. Permission: cmi.command.sethome.[groupname]
-  # If players home group if not find then amount will be set to 1
-  # To have unlimited homes use cmi.command.sethome.unlimited permission
-  # In addition to this you can use simple numeric permission node cmi.command.sethome.[number] which will define max number of homes player can have
-  Groups:
-    default: 6
-    builder: 12
-    donator: 14
-    staff: 100
-  # Requires cmi.bedhome permission node
-  # When set to true by interacting with bed, regular home location will be created
-  # When set to false vanilla bed home location will be set
-  BedInteraction: true
-  # When set to true, you can only set home location when you shift click a bed
-  onlyShiftBed: false
-  # Removes bed location when home location was created by clicking on that bed
-  RemoveBedLocationOnBedBreak: true
-  # When enabled, plugin will check if player can break block in that area before creating new home location
-  # This allows to prevent setting homes in protected areas
-  # Can be bypassed with cmi.command.sethome.bypass
-  CheckBlockBreak: false
-  # Name for default home location. By default its "Home"
-  DefaultName: Home
-  # Name for bed location. By default its "Home"
-  # Different name can be used to identify home location set by interacting with a bed from home location created with command
-  DefaultBedName: Bed
-  # Defines what characters you can use in your home names
-  ValidNameRegex: '[^a-zA-Z0-9\-\_]'
 ReSpawn:
   # Time in seconds to make player immortal after he respawns
   # Can be used to prevent respawn camping
@@ -1319,10 +1291,6 @@ Messages:
   # Check locale file for translation and custom placeholders: [playername], [totalUsers], [onlinePlayers]
   FirstJoinMessage:
     Use: true
-  DeathMessage:
-    # Defines number of players from which to automatically start hiding death messages
-    # Set to -1 to disable this
-    AutoHideFrom: -1
 Books:
   # Defines default creator name for books when using getbook command
   DefaultAuthor: Server
@@ -1393,12 +1361,12 @@ Kits:
   # When set to true, kit selection gui empty fields will get filled with definet item
   FillEmptyFields: true
   Buttons:
-    Cooldown: Watch
-    Usages: STONE_PLATE
-    Money: GOLD_INGOT
-    Exp: EXP_BOTTLE
-    Desc: WOOL:13
-    Back: Fence
+    Cooldown: clock
+    Usages: polished_blackstone_pressure_plate
+    Money: gold_ingot
+    Exp: experience_bottle
+    Desc: magenta_wool
+    Back: oak_fence
 Warps:
   # When set to true, warps list will be shown in GUI instead of chat list
   GUI: true
@@ -1860,6 +1828,17 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    legacy:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     owo:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1904,6 +1883,17 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    santa:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     acid:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1916,17 +1906,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     general:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    halloween:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1981,7 +1960,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    cave:
+    debug:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1992,7 +1971,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    debug:
+    cave:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2047,7 +2026,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    skyblock:
+    generalx:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2058,7 +2037,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    generalx:
+    skyblock:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2331,6 +2310,28 @@ RandomTeleportation:
       minY: 0
       maxY: 256
     SpawnPhoenix23:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    santa:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    legacy:
       Enabled: true
       MaxRange: 1000
       MinRange: 500

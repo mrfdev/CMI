@@ -1,12 +1,19 @@
 # When enabled plugin will try to keep CMILib up to date automatically
-AutoUpdate: true
+AutoUpdate: false
 # Language file you want to use
 Language: EN
 GlobalGui:
   # Defines item type in empty fields in GUI when its needed to be filled up
   EmptyField: BLACK_STAINED_GLASS_PANE
+  Pages:
+    # Icon for UI previous page button
+    Previous: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzdhZWU5YTc1YmYwZGY3ODk3MTgzMDE1Y2NhMGIyYTdkNzU1YzYzMzg4ZmYwMTc1MmQ1ZjQ0MTlmYzY0NSJ9fX0=
+    # Icon for UI next page button
+    Next: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjgyYWQxYjljYjRkZDIxMjU5YzBkNzVhYTMxNWZmMzg5YzNjZWY3NTJiZTM5NDkzMzgxNjRiYWM4NGE5NmUifX19
+    # Icon for UI information button
+    Middle: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmEyYWZhN2JiMDYzYWMxZmYzYmJlMDhkMmM1NThhN2RmMmUyYmFjZGYxNWRhYzJhNjQ2NjJkYzQwZjhmZGJhZCJ9fX0=
 # When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
-AutoFileRemoval: true
+AutoFileRemoval: false
 Spawners:
   # List of spawners to pick from while using spawner:random variable
   mysterySpawners:

@@ -22,8 +22,7 @@ CustomAlias:
     - asConsole! cmi toast all -t:goal -icon:diamond_block PayPal Donation received
       from $1
     - cmi sound ui_toast_challenge_complete -all
-    - asConsole! cmi broadcast !{#cerulean}[PayPal] {#orange}Donation received from
-      $1 - Thanks!
+    - broadcast! {#cerulean}[PayPal] {#orange}Donation received from $1 - Thanks!
     Perm: true
   _soulbind:
     Cmds:
@@ -60,7 +59,7 @@ CustomAlias:
     Perm: true
   _helper:
     Cmds:
-    - asConsole! cmi msg $2 o---- $3- -----o
+    - msg! $2 o---- $3- -----o
     Perm: true
     Tab: false
   _playtime:
@@ -160,8 +159,8 @@ CustomAlias:
   recalc:
     Cmds:
     - asConsole! skyblockadmin limits calc $1
-    - asConsole! msg! [playerName] Attempted to recalculate skyblock island level
-      for $1, it probably worked.
+    - msg! [playerName] Attempted to recalculate skyblock island level for $1, it
+      probably worked.
     Perm: true
   alvls:
     Cmds:
@@ -263,8 +262,7 @@ CustomAlias:
       &r{#cerulean}• {#feijoa}The chat has been cleared {#cerulean} •&l&m &r{#cerulean}•
       ($4)
     - asPlayer! cmi staffmsg {#feijoa}Cleaned up chat, reason:{#cerulean}&l $4-
-    - asConsole! cmi broadcast !&r \n {#orange}-----------------------------------
-      \n &r
+    - broadcast! &r \n {#orange}----------------------------------- \n &r
     Perm: true
     CustomTabs:
     - selfclear,selfkeep inform,quiet tellall,tellstaff noreason,user-drama,user-swearing,user-hatespeech,event,broadcast

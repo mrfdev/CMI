@@ -98,12 +98,13 @@ CustomAlias:
     - asConsole! cmi effect [playerName] clear
   halloween:
     Cmds:
-    - msg! [playerName] {#orange}The Halloween Event has ended, hopefully it will
-      be back in November 2021.
+    - msg! [playerName] &6 Sorry :( It's no longer Halloween, this event has ended.
+      Check /event to find the next one.
+    Tab: false
   valentine:
     Cmds:
     - msg! [playerName] &6 Sorry :( It's no longer Valentine's Day, this event has
-      ended.
+      ended. Check /event to find the next one.
   easter:
     Cmds:
     - msg! [playerName] &3 1MB Easter »&d The event has ended, check back again in
@@ -129,15 +130,13 @@ CustomAlias:
       -a:1 &7 It is &b%world_time12_[worldName]%&7 in &2/[worldName]
   votellama:
     Cmds:
-    - 'asConsole! msg! [playerName] &3-----/ &b1MB Voting Llama: Charlie the Pinata&r&3
-      \-----'
-    - asConsole! msg! [playerName] &6->&2 https://omgboards.com/threads/261749/
+    - 'msg! [playerName] &3-----/ &b1MB Voting Llama: Charlie the Pinata&r&3 \-----'
+    - msg! [playerName] &6->&2 https://omgboards.com/threads/261749/
     - 'msg! [playerName] &6-> &e&lVotes needed: %pinataparty_votes_needed%, votes
       left to go: %pinataparty_votes_left%'
     - 'asConsole! msg! [playerName] &6-> &bCharlie will spawn every 25 votes at: /warp
       charlie'
-    - asConsole! msg! [playerName] &6-> &bSometimes the 10 lootboxes have stuff in
-      them too!
+    - msg! [playerName] &6-> &bSometimes the 10 lootboxes have stuff in them too!
   charlie:
     Cmds:
     - votellama
@@ -146,8 +145,21 @@ CustomAlias:
     - 'msg! [playerName] &6 More info here: https://omgboards.com/threads/261907/'
   santa:
     Cmds:
-    - msg! [playerName] &6 Sorry, Santa is back at the north pole, he might be back
-      in 2021.
+    - mvtp santa
+    - delay! 2
+    - asConsole! cmi effect [playerName] freeze 60 1
+    - delay! 1
+    - asConsole! cmi effect [playerName] freeze 60 1
+    - delay! 1
+    - asConsole! cmi effect [playerName] freeze 60 1
+    - delay! 1
+    - asConsole! cmi effect [playerName] freeze 60 1
+    - delay! 1
+    - asConsole! cmi effect [playerName] freeze 60 1
+    - delay! 1
+    - asConsole! cmi effect [playerName] freeze 60 1
+    - delay! 1
+    - asConsole! cmi effect [playerName] freeze 60 1
   uwu:
     Cmds:
     - mv tp uwu
@@ -233,8 +245,8 @@ CustomAlias:
     - asConsole! cmi effect [playerName] clear
   is:
     Cmds:
-    - 'asConsole! cmi msg [playerName] {#magenta} Hi there :) We have a survival wilderness,
-      and skyblock , oneblock, etc Each world is also a command, for example: /general
+    - 'msg! [playerName] {#magenta} Hi there :) We have a survival wilderness, and
+      skyblock , oneblock, etc Each world is also a command, for example: /general
       for the wilderness, and /oneblock to start your oneblock island. And /skyblock.
       Enjoy !'
   sanctuary creative:

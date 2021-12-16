@@ -14,6 +14,14 @@ useDefaultHeadLore: true
 # Default lore used when head doesnt have defined head lore set
 defaultHeadLore:
 - '&7Killed by &6[playerName]'
+PlayerHead:
+  # Defines if you want to use player head lore
+  UseLore: true
+  # Lore used for player head drops
+  # Global variables can be used for simple identification who was killed and who killed player
+  # Aditionally placeholders can be used too, but we will use victim as source for their translation if placeholder requires source player
+  Lore:
+  - '&7Killed by &6[playerName]'
 # Custom heads of every entity
 # You can have as many custom heads as you want
 # Format is [dropChance]:[texture]

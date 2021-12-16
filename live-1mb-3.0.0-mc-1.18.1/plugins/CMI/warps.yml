@@ -101,14 +101,6 @@ glo:
   Item:
     v: 2730
     type: PLAYER_HEAD
-spleef:
-  Location: mine;-1529.91;206.0;-1818.92;-81.42;10.05
-  ReqPerm: true
-  Page: 4
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 2730
-    type: SLIME_BLOCK
 horse:
   Location: general;10025.43;69.0;8700.2;-192.24;13.71
   WSlot: 33
@@ -260,6 +252,11 @@ macadam:
   Item:
     v: 2730
     type: STONE_BRICKS
+ritualrogue:
+  Location: general;9374.41;82.0;12582.71;0.06;11.47
+  DisName: RitualRogue
+  Page: 2
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 treefarm:
   Location: general;12622.4;64.0;-5333.36;-268.98;11.66
   WSlot: 29
@@ -609,22 +606,6 @@ oldtown:
 macadammonument:
   Location: general;-8447.56;73.0;11755.92;-268.4;45.69
   Page: 3
-spleef3:
-  Location: mine;-1573.86;206.0;-1821.19;-89.32;3.49
-  ReqPerm: true
-  Page: 8
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 2730
-    type: SLIME_BLOCK
-spleef4:
-  Location: mine;-1518.81;206.0;-1778.8;-179.14;3.9
-  ReqPerm: true
-  Page: 8
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 2730
-    type: SLIME_BLOCK
 acro:
   Location: general;9669.7;235.0;13105.57;187.16;10.6
   WSlot: 30
@@ -637,22 +618,6 @@ spawn:
   Item:
     v: 2730
     type: NETHER_STAR
-spleef1:
-  Location: mine;-1479.03;206.0;-1814.73;-264.35;4.71
-  ReqPerm: true
-  Page: 8
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 2730
-    type: SLIME_BLOCK
-spleef2:
-  Location: mine;-1527.16;206.0;-1858.65;-357.24;6.97
-  ReqPerm: true
-  Page: 8
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 2730
-    type: SLIME_BLOCK
 wild:
   Location: wild;-0.51;86.0;0.5;-359.97;-5.15
   ReqPerm: true

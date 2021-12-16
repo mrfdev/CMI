@@ -89,8 +89,7 @@ general:
     - asConsole! cmi sound ambient_underwater_loop_additions_rare [playerName]
     - cmi effect [playerName] blindness 2 1 -s
     - delay! 2
-    - msg! [playerName] &a -Only a rune crystal will activate real
-      magic-
+    - msg! [playerName] &a -Only a rune crystal will activate real magic-
     - asConsole! cmi sound ambient_underwater_loop_additions_rare [playerName]
   playermacadam:
     Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
@@ -208,21 +207,6 @@ general:
     commandsWithoutTp: false
     commands:
     - msg! [playerName] &6 Teleporting you to the bus stop..
-  snow:
-    Loc: -98.0:63.0:443.0:-77.0:70.0:453.0
-    enabled: true
-    effect: FireworksSpark
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 5
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: false
-    commands:
-    - asConsole! cmi sound AMBIENT_UNDERWATER_LOOP mrfloris -v:0.7
   survivalnether:
     Loc: 10858.0:76.0:4898.0:10859.0:78.0:4898.0
     enabled: true
@@ -252,8 +236,7 @@ general:
     activationRange: 16
     commandsWithoutTp: false
     commands:
-    - msg! [playerName] &9 Taking you to the depths of a sea.. Or /back
-      to return.
+    - msg! [playerName] &9 Taking you to the depths of a sea.. Or /back to return.
     - cmi sound ambient_underwater_enter [playerName]
   tidalminiportal:
     Loc: 7363.0:0.0:6026.0:7363.0:3.0:6026.0
@@ -350,24 +333,6 @@ general:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! walk
-mine:
-  minespleeftemp:
-    Loc: -1582.0:196.0:-1866.0:-1473.0:200.0:-1773.0
-    enabled: true
-    effect: Reddust
-    showParticles: false
-    kickBack: false
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 10
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - asConsole! cmi broadcast !{#orange}[playerName] fall out of the spleef arena
-    - delay! 7
-    - asConsole! cmi warp spleef%cmi_random_1_4% [playerName] -s
 run:
   runlevel3:
     Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
@@ -416,6 +381,22 @@ skyblock:
     commands:
     - msg! [playerName] You falling yikes, let's try to get you to safety
     - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
+santa:
+  snow:
+    Loc: 263.0:68.0:-72.0:280.0:73.0:-63.0
+    enabled: true
+    effect: FireworksSpark
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - asConsole! cmi sound AMBIENT_UNDERWATER_LOOP mrfloris -v:0.7
 wild:
   wildend:
     Loc: -30.0:57.0:-1.0:-28.0:59.0:1.0

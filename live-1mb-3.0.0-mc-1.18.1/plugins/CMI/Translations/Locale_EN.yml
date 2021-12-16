@@ -58,8 +58,205 @@
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
 info:
+  Same: '&cCan''t open your own inventory for editing!'
+  cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
+    &e[oldName]&c. Current: &e[currentName]'
+  Searching: '&eSearching for player data, please wait as this can take some time
+    to finish!'
+  NoCommandWhileSleeping: '&cCan''t perform commands while sleeping!'
+  PurgeNotEnabled: '&cPurge function is not enabled in config file!'
+  TeamManagementDisabled: '{#Edward}This feature will have limited functionalaty while
+    DisableTeamManagement is set to true!'
+  NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
+  NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
+  Cooldowns: '&eCooldown in motion for &6[cmd] &ewait &6[time]'
+  specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
+  specializedRunning: '&eCommand still running, please wait &6[time]'
+  CooldownOneTime: '&eThis command is one time use'
+  WarmUp:
+    canceled: '&eCommand was cancelled due to your movement'
+    counter: '!actionbar!&6--> &e[time] &6<--'
+    DontMove: '!title!!subtitle!&6Don''t move!'
+    Boss:
+      DontMove: '&4Don''t move for {#Edward}[autoTimeLeft] &4seconds!'
+      WaitFor: '&4Wait for {#Edward}[autoTimeLeft] &4seconds!'
+  Spawner: '&r[type] Spawner'
+  FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
+  ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
+  Elevator:
+    created: '&eCreated elevator sign'
+  CantPlaceSpawner: '&eCan''t place spawner so close to another spawner (&6[range]&e)'
+  ChunksLoading: '&eWorld chunk data is still being loaded. Please wait a bit and
+    try again.'
+  CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
+    use them!'
+  CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
+    key for this task. Inform server administration about this'
+  CantTeleport: '&eYou can''t teleport because you wear to many limited items. Scroll
+    over this line to see the maximum allowed items.'
+  BlackList: '&e[material] [amount] &6Max: [max]'
+  wrongPortal: '&cYou are in incorrect area of effect'
+  ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
+  ArmorWillBreak: '!actionbar!&eYour [itemName] will break soon! &e[current]&6/&e[max]'
+  flyingToHigh: '&cYou can''t fly so high, max height is &6[max]&c!'
+  specializedItemFail: '&cCan''t determine specialized command item requirement by
+    value: {#Edward}[value]'
+  sunSpeeding: Sleeping [count] of [total] [hour] hour [speed]X speed
+  sleepersRequired: '&f[sleeping] {#Edward}of &f[required] {#Edward}sleeping from
+    required for night time speedup'
+  sunSpeedingTitle: '{#Edward}[hour]'
+  skippingNight: '!title!{#Edward}Skipping entire night'
+  sunSpeedingSubTitle: '&f[count]{#Edward}/&f[total] {#Edward}(&f[speed]X{#Edward})'
+  repairConfirm: '&eClick to confirm {#Edward}[items] &eitem repair for {#Edward}[cost]'
+  bookDate: '{#Edward}Written at &f[date]'
+  maintenance: '{#Edward}Maintenance mode'
+  mapLimit: '&cCant go beyond 30 000 000 blocks'
+  startedEditingPainting: '&eYou started painting editing. Click any other block to
+    cancel.'
+  canceledEditingPainting: '&eYou canceled painting editing mode'
+  changedPainting: '!actionbar!&eChanged painting to &6[name] &ewith id of &6[id]'
+  noSpam: '!title!&cNo spamming!'
+  noCmdSpam: '!title!&cNo command spamming!'
+  spamConsoleInform: '&cPlayer ({#Edward}[playerName]&c) triggered ({#Edward}[rules]&c)
+    chat filter with:&r [message]'
+  # This line can have extra variables: [totalUsers] [onlinePlayers]
+  FirstJoin: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
+    to 1MoreBlock.com!'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r {#Feijoa}left.'
+  LoginCustom: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome back &6[playerDisplayName]
+    {#Feijoa}❤'
+  deathlocation: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
+    y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]'
+  book:
+    exploit: '&cYou cant create book with more than [amount] pages'
+  combat:
+    CantUseShulkerBox: '&cCan not use shulker box while you are in combat with player.
+      Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan not use command while in combat mobe. Wait:
+      [time]'
+    bossBarPvp: '&cCombat mode [autoTimeLeft]'
+    bossBarPve: '&2Combat mode [autoTimeLeft]'
+  noSchedule: '&cSchedule by this name is not found'
+  totem:
+    cooldown: '&eTotem cooldown: [time]'
+    warmup: '&eTotem effect: [time]'
+    cantConsume: '&eTotem usage was denied due to its cooldown time'
+  InventorySave:
+    info: '&8Info: &8[playerDisplayName]'
+    saved: '&e[time] &eInventory saved with id: &e[id]'
+    NoSavedInv: '&eThis player doesn''t have any saved inventories'
+    NoEntries: '&4File exists, but no inventories were found!'
+    CantFind: '&eCan''t find inventory with this id'
+    TopLine: '&e----------- &6[playerDisplayName] saved inventory &e-----------'
+    List: '&eid: &6[id]&e. &6[time]'
+    KillerSymbol: '&c ☠'
+    Click: '&eClick to check ([id]) saved inventory'
+    IdDontExist: '&4This saves Id doesn''t exist!'
+    Deleted: '&eSaved inventory was successfully deleted!'
+    Restored: '&eYou have restored &e[sourcename] &einventory for &e[targetname] &euser.'
+    GotRestored: '&eYour inventory was restored from &e[sourcename] &esaved inventory
+      on &e[time]'
+    LoadForSelf: '&eLoad this inventory for your self'
+    LoadForOwner: '&eLoad this inventory for owner'
+    NextInventory: '&eNext inventory'
+    PreviousInventory: '&ePrevious inventory'
+    Editable: '&eEdit mode enabled'
+    NonEditable: '&eEdit mode disabled'
+  vanishSymbolOn: '&8[{#Edward}H&8]&r'
+  vanishSymbolOff: ''
+  afkSymbolOn: '&6●'
+  afkSymbolOff: ''
+  beeinfo: '!actionbar!{#Edward}Honey level: &e[level]{#Edward}/&e[maxlevel] {#Edward}Bees
+    inside: &e[count]{#Edward}/&e[maxcount]'
+  pvp:
+    noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
+  pve:
+    noGodDamage: '!actionbar!&cYou can''t damage mobs while being immortal'
+  InvEmpty:
+    armor: '&eYour armor slots should be empty!'
+    hand: '&eYour hand should be empty!'
+    maininv: '&eYour main inventory should be empty!'
+    maininvslots: '&eYour main inventory should have atleast &6[count] &eempty slots!'
+    inv: '&eYour inventory should be empty!'
+    offhand: '&eYour offhand should be empty!'
+    quickbar: '&eYour quick bar should be empty!'
+    quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
+    subinv: '&eYour sub inventory should be empty!'
+    subinvslots: '&eYour  sub inventory should have atleast &6[count] &eempty slots!'
+  CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
+warp:
+  list: '&e[pos]. &6[warpName] &f- {#Edward}[worldName] ([x]:[y]:[z])'
+afk:
+  'off': '{#Edward}Playing'
+  MayNotRespond: '&ePlayer is AFK and may not respond'
+  MayNotRespondStaff: '&eStaff member is AFK and may not respond. Try contacting us
+    through /discord'
+BossBar:
+  hpBar: '&f[victim] &e[max]&f/&e[current] &f(&c-[damage]&f)'
+Potion:
+  Effects: '&8Potion effects'
+  List: '&e[PotionName] [PotionAmplifier] &eDuration: &e[LeftDuration] &esec'
+  NoPotions: '&eNone'
+Information:
+  Title: '&8Players information'
+  Health: '&eHealth: &6[Health]/[maxHealth]'
+  Hunger: '&eHunger: &6[Hunger]'
+  Saturation: '&eSaturation: &6[Saturation]'
+  Exp: '&eExp: &6[Exp]'
+  NotEnoughExp: '&eNot enough exp: &6[Exp]'
+  NotEnoughExpNeed: '&eNot enough exp: &6[Exp]/[need]'
+  tooMuchExp: '&eToo much exp: &6[Exp]/[need]'
+  NotEnoughVotes: '&eNot enough votes: &6[votes]'
+  TooMuchVotes: '&eToo many votes: &6[votes]'
+  BadGameMode: '&cYou can''t do this in your current game mode'
+  BadArea: '&cYou can''t perform this action in this area'
+  GameMode: '&eGameMode: &6[GameMode]'
+  Flying: '&eFlying: &6[Flying]'
+  Uuid: '&6[uuid]'
+  FirstConnection: '&eFirst connection: &6[time]'
+  Lastseen: '&eLast seen: &6[time]'
+  Onlinesince: '&eOnline since: &6[time]'
+  Money: '&eMoney: &6[money]'
+  Group: '&eGroup: &6[group]'
+econ:
+  commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
+  disabled: '&cCan''t use this command while economy support is disabled'
+Elytra:
+  Speed: '&eSpeed: &6[speed]&ekm/h'
+  SpeedBoost: ' &2+ '
+  SpeedSuperBoost: ' &6+ '
+  CanUse: '&cCan''t equip elytra without permission!'
+  CantGlide: '&cCan''t use elytra here!'
+  Charging: '&eCharging &f[percentage]&e%'
+NetherPortal:
+  ToHigh: '&cPortal is to big, max height is &6[max]&c!'
+  ToWide: '&cPortal is to wide, max width is &6[max]&c!'
+  Creation: '!actionbar!{#Edward}Created [height]x[width] nether portal!'
+  Disabled: '&cPortal creation disabled!'
+Ender:
+  Title: '{#Edward}Open ender chest'
+Chat:
+  localPrefix: ''
+  shoutPrefix: '&c[S]&r'
+  LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
+  shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
+  # Use \n to add new line
+  publicHover: '{#Feijoa}Player: {#Geyser}%cmi_user_display_name%{#Feijoa}, ({#Geyser}%luckperms_primary_group_name%{#Feijoa})\n{#Feijoa}Msg
+    was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
+    %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomes_points%
+    \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
+    / Lvls: {#Geyser}%jobs_total_levels%\n&8(click to send private msg)&r'
+  privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
+    \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
+  staffHover: 'Player: %cmi_user_name%, {#Edward}(%cmi_user_group%)\n Chat sent: &6%server_time_hh:mm:ss%&r
+    \n World: {#Edward}%player_world%&r'
+  helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  link: '&l&4[{#Edward}LINK&4]&r'
+  item: '{#Edward}[%cmi_iteminhand_displayname%[amount]{#Edward}]'
+  itemAmount: ' x[amount]'
+  itemEmpty: '{#Edward}[Mighty fist]'
 command:
   help:
     output:
@@ -1392,6 +1589,15 @@ command:
     info:
       nearList: '{#Edward}[number]. &e[playerDisplayName] &6[homeName] {#Edward}[distance]
         blocks away &e[direction]'
+      closeButton: '&7Close'
+      infoButton: '&7Information'
+      bedButton: '&7Bed location'
+      homeButton: '&7Home location'
+      deathButton: '&7Death location'
+      lore: |-
+        &7[world]
+        &f[x]&7:&f[y]&7:&f[z]
+      pickerLore: '&7Middle mouse click to change icon'
   hunger:
     help:
       info: '&eSet players hunger'
@@ -3028,6 +3234,8 @@ command:
       slotTaken: '!actionbar!&cHome slot is already been used by {#Edward}[homeName]&c,
         consider another one'
       setIcon: '!actionbar:3!&7Set home icon as &6[material] &7material'
+      tooManyInWorld: '&cYou cant have any more homes in this world. Max &6[max]&c
+        allowed, you have &6[current]'
   setmotd:
     help:
       info: Set server motd

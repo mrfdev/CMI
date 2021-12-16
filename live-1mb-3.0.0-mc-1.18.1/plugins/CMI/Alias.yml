@@ -1118,6 +1118,9 @@ Alias:
   /rt:
     Enabled: false
     Tab: true
+  /rtp:
+    Enabled: false
+    Tab: true
   #  
   # /cmi sameip $1-
   /sameip:

@@ -39,13 +39,13 @@ CustomAlias:
     Tab: false
   votelink:
     Cmds:
-    - asConsole! msg! [playerName] !{#green}&l https://omgboards.com/vote
+    - msg! [playerName] {#green}&l https://omgboards.com/vote
     Tab: false
   doublehearts:
     Cmds:
     - ptarget:$1! perm:1mb.tier3.doublehearts?#! asConsole! cmi maxhp set $1 40 -s
-    - ptarget:$1! perm:1mb.tier3.doublehearts?#! asConsole! cmi msg $1 !&b Tier 3
-      Double Hearts <3 <3 <3
+    - ptarget:$1! perm:1mb.tier3.doublehearts?#! msg! $1 !&b Tier 3 Double Hearts
+      <3 <3 <3
     Perm: true
   _make:
     Cmds:
@@ -66,8 +66,8 @@ CustomAlias:
     - msg! [playerName] This is now &e/vote tokens
   _tokenitem:
     Cmds:
-    - 'asConsole! msg! [playerName] Syntax reminder: /$0 <playername> <unbreakable
-      truefalse> <tier number> <item name>'
+    - 'msg! [playerName] Syntax reminder: /$0 <playername> <unbreakable truefalse>
+      <tier number> <item name>'
     - asConsole! cmi itemname -p:[playerName] {#Cerulean>} ❖ $4- {#Lochmara<}
     - asConsole! cmi itemlore -p:[playerName] 1 {#midnight}-{#011736}-{#011937}-{#011a38}-{#021c39}-{#021d3a}-{#021f3b}-{#02203c}-{#03223e}-{#03233f}-{#032540}-{#032641}-{#042842}-{#042943}-{#042b44}-{#042c45}-{#052e47}-{#052f48}-{#053149}-{#05324a}-{#06344b}-{#06354c}-{#06374d}-{#06384e}-{#tarawera}--
     - 'asConsole! cmi itemlore -p:[playerName] 2 {#hot_toddy}&o Enchantments:'
