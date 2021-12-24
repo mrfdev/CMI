@@ -1,3 +1,13 @@
+# All Placeholders
+
+Clearn list of available placeholders that come with CMI that you can use in CMI Chat, Holograms, Tablist, etc. 
+
+## List of Placeholders
+
+Made with CMI 9.1.0.4 for Minecraft 1.18.1
+
+More details and information about placeholders on the official website [here](https://www.zrips.net/cmi/placeholders/)
+
 ```
 %cmi_user_charges_left%
 %cmi_user_charges_max%
@@ -9,6 +19,7 @@
 %cmi_user_name%
 %cmi_user_uuid%
 %cmi_user_deathloc%
+%cmi_user_backloc%
 %cmi_user_cuffed%
 %cmi_user_muted%
 %cmi_user_inpvp%
@@ -43,7 +54,6 @@
 %cmi_user_canfly%
 %cmi_user_flying%
 %cmi_user_vanished_symbol%
-%cmi_user_balance_formated%
 %cmi_user_balance_formatted%
 %cmi_user_balance%
 %cmi_user_prefix%
@@ -52,15 +62,12 @@
 %cmi_user_nameplate_prefix%
 %cmi_user_nameplate_suffix%
 %cmi_user_tfly%
-%cmi_user_tfly_formated%
 %cmi_user_tfly_formatted%
 %cmi_user_flightcharge%
 %cmi_user_tgod%
-%cmi_user_tgod_formated%
 %cmi_user_tgod_formatted%
 %cmi_user_votecount%
 %cmi_user_dailyvotecount%
-%cmi_user_rank%
 %cmi_user_rank_displayname%
 %cmi_user_rank_name%
 %cmi_user_nextranks%
@@ -93,8 +100,8 @@
 %cmi_user_online%
 %cmi_user_itemcount_[itemIdName(:data)]%
 %cmi_user_maxperm_[corePerm]_[defaultValue]%
-%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightretedit]%
-%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autofligshiftedit]%
+%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
+%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
 %cmi_equation_[equation]%
 %cmi_equationint_[equation]%
 %cmi_color_[text]%
@@ -140,6 +147,7 @@
 %cmi_chatmute_reason%
 %cmi_user_stats_[mainStat(:optionalSubStat)]%
 %cmi_user_kitcd_[kitName]%
+%cmi_user_kit_available%
 %cmi_user_kit_available_[kitName]%
 %cmi_user_kit_hasaccess_[kitName]%
 %cmi_jail_time_[jailName]_[cellId]%
