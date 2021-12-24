@@ -1,6 +1,6 @@
 ## STOPPPPPPPP, no no no no .. Let me explain how to use this:
-## /stop your Minecraft 1.16.x server with CMI installed on it.
-## Open the .yml files in (Windows) Notepad++ or (macOS) Sublime Text 3
+## /stop your Minecraft 1.18.x server with CMI 9.1.x installed on it.
+## Open the .yml files in (Windows) Notepad++ or (macOS) Sublime Text 4
 ## They are: plugins/CMI/CustomAlias.yml and this 1MB-emotes.yml
 ## Ignore this comment part at the top and copy everything after it.
 ## So from the beginning of the line, including the two spaces 
@@ -10,258 +10,258 @@
 ## or weird wrapping or other things that invalidate YAML files.
 ## Nowwww, you can start your mc server, and you're good to go.
 
-## Version 0.0.1 - dev - Internal release made by mrfloris
-## Test server: 1moreblock.com:255565 (1.16.5), type: /emotes
+## Version 0.0.2 - dev - Internal release made by mrfloris
+## Test server: 1moreblock.com:255565 (1.18.1), type: /emotes
 
 ## TODO: make plugins/CMI/CustomText/emotes.txt
 ## TODO: make plugins/BossShopPro/shops/emotes.yml
 
   angry:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] angry
+    - broadcast! &3 [playerName] angry
   applaud:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] applaud
+    - broadcast! &3 [playerName] applaud
   awkward:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] awkward
+    - broadcast! &3 [playerName] awkward
   bark:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] bark
+    - broadcast! &3 [playerName] bark
   beg:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] beg
+    - broadcast! &3 [playerName] beg
   bite:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] bite
+    - broadcast! &3 [playerName] bite
   blush:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] blush
+    - broadcast! &3 [playerName] blush
   bored:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] bored
+    - broadcast! &3 [playerName] bored
   bow:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] bow
+    - broadcast! &3 [playerName] bow
   cheeky:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] cheeky
+    - broadcast! &3 [playerName] cheeky
   cheer:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] cheer
+    - broadcast! &3 [playerName] cheer
   clap:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] clap
+    - broadcast! &3 [playerName] clap
   cool:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] cool
+    - broadcast! &3 [playerName] cool
   cringe:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] cringe
+    - broadcast! &3 [playerName] cringe
   cry:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] cry
+    - broadcast! &3 [playerName] cry
   dab:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] dab
+    - broadcast! &3 [playerName] dab
   dance:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] dance
+    - broadcast! &3 [playerName] dance
   dealwithit:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] dealwithit
+    - broadcast! &3 [playerName] dealwithit
   die:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] die
+    - broadcast! &3 [playerName] die
   dizzy:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] dizzy
+    - broadcast! &3 [playerName] dizzy
   explode:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] explode
+    - broadcast! &3 [playerName] explode
   facepalm:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] facepalm
+    - broadcast! &3 [playerName] facepalm
   fliptable:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] fliptable
+    - broadcast! &3 [playerName] fliptable
   flirt:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] flirt
+    - broadcast! &3 [playerName] flirt
   frown:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] frown
+    - broadcast! &3 [playerName] frown
   giggle:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] giggle
+    - broadcast! &3 [playerName] giggle
   goofy:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] goofy
+    - broadcast! &3 [playerName] goofy
   greet:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] greet
+    - broadcast! &3 [playerName] greet
   grin:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] grin
+    - broadcast! &3 [playerName] grin
   growl:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] growl
+    - broadcast! &3 [playerName] growl
   happy:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] happy
+    - broadcast! &3 [playerName] happy
   hate:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] hate
+    - broadcast! &3 [playerName] hate
   highfive:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] highfive
+    - broadcast! &3 [playerName] highfive
   hits:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] hits
+    - broadcast! &3 [playerName] hits
   hug:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] hug
+    - broadcast! &3 [playerName] hug
   impressed:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] impressed
+    - broadcast! &3 [playerName] impressed
   insult:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] insult
+    - broadcast! &3 [playerName] insult
   kiss:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] kiss
+    - broadcast! &3 [playerName] kiss
   laugh:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] laugh
+    - broadcast! &3 [playerName] laugh
   lick:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] lick
+    - broadcast! &3 [playerName] lick
   love:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] love
+    - broadcast! &3 [playerName] love
   lovestruck:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] lovestruck
+    - broadcast! &3 [playerName] lovestruck
   lovey:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] lovey
+    - broadcast! &3 [playerName] lovey
   moo:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] moo
+    - broadcast! &3 [playerName] moo
   moustache:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] moustache
+    - broadcast! &3 [playerName] moustache
   omg:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] omg
+    - broadcast! &3 [playerName] omg
   poke:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] poke
+    - broadcast! &3 [playerName] poke
   pounce:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] pounce
+    - broadcast! &3 [playerName] pounce
   punch:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] punch
+    - broadcast! &3 [playerName] punch
   quack:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] quack
+    - broadcast! &3 [playerName] quack
   rage:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] rage
+    - broadcast! &3 [playerName] rage
   raspberry:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] raspberry
+    - broadcast! &3 [playerName] raspberry
   relax:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] relax
+    - broadcast! &3 [playerName] relax
   rip:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] rip
+    - broadcast! &3 [playerName] rip
   sad:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] sad
+    - broadcast! &3 [playerName] sad
   scream:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] scream
+    - broadcast! &3 [playerName] scream
   shocked:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] shocked
+    - broadcast! &3 [playerName] shocked
   shrug:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] shrug
+    - broadcast! &3 [playerName] shrug
   sick:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] sick
+    - broadcast! &3 [playerName] sick
   sing:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] sick
+    - broadcast! &3 [playerName] sick
   slap:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] slap
+    - broadcast! &3 [playerName] slap
   sleep:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] sleep
+    - broadcast! &3 [playerName] sleep
   sleepy:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] sleepy
+    - broadcast! &3 [playerName] sleepy
   smack:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] smack
+    - broadcast! &3 [playerName] smack
   smile:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] smile
+    - broadcast! &3 [playerName] smile
   smirk:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] smirk
+    - broadcast! &3 [playerName] smirk
   spicy:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] spicy
+    - broadcast! &3 [playerName] spicy
   star:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] star
+    - broadcast! &3 [playerName] star
   suntan:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] suntan
+    - broadcast! &3 [playerName] suntan
   sunburn:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] sunburn
+    - broadcast! &3 [playerName] sunburn
   surprise:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] surprise
+    - broadcast! &3 [playerName] surprise
   surprised:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] surprised
+    - broadcast! &3 [playerName] surprised
   takethel:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] takethel
+    - broadcast! &3 [playerName] takethel
   tan:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] tan
+    - broadcast! &3 [playerName] tan
   thank:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] thank
+    - broadcast! &3 [playerName] thank
   think:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] think
+    - broadcast! &3 [playerName] think
   thumbsdown:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] thumbsdown
+    - broadcast! &3 [playerName] thumbsdown
   thumbsup:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] thumbsup
+    - broadcast! &3 [playerName] thumbsup
   tongue:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] tongue
+    - broadcast! &3 [playerName] tongue
   toocool:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] toocool
+    - broadcast! &3 [playerName] toocool
   welcome:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] welcome
+    - broadcast! &3 [playerName] welcome
   wink:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] wink
+    - broadcast! &3 [playerName] wink
   yeet:
     Cmds:
-    - asConsole! broadcast! &3 [playerName] yeet
+    - broadcast! &3 [playerName] yeet
