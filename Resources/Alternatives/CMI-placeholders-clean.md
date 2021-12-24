@@ -1,6 +1,6 @@
 # All Placeholders
 
-Clearn list of available placeholders that come with CMI that you can use in CMI Chat, Holograms, Tablist, etc. 
+Clean list of available placeholders that come with CMI that you can use in CMI Chat, Holograms, Tablist, etc. 
 
 ## List of Placeholders
 
