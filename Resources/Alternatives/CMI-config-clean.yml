@@ -52,6 +52,9 @@ Economy:
     # When set to true some fake accounts will be included into baltop list
     # This should include some previously marked accounts as fake which have been created for town usage or similar things
     IncludeFakes: false
+    # Set to 0 or lower to disable this feature
+    # Time in days of player being offline to exclude from being included in balance top list
+    ExcludeInactive: 0
   Global:
     # Starting amount of money players will have
     StartingAmount: 100.0
@@ -178,10 +181,9 @@ Optimizations:
     ToSpawnBefore: false
     # Set to true if you want to use tp commands as /cmi tp [WhoYouWantToTeleport] [WhereToTeleport] when its false, its /cmi tp [whereToTeleport] [WhoYouWantToTeleport]
     SwitchPlaces: true
-    # Applies for tpa, tpahere and tpaall only
-    # If set to true then player will be teleported to current player position after accepting teleport request
-    # If set to false then player will be teleported to player at which teleport request was issued
-    CurrentLoc: true
+    CurrentLoc:
+      # Applies for tpahere only
+      tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
     JumpDefault: 50
     # Defines time in seconds for accepting tpa or tpahere requests
@@ -224,6 +226,9 @@ Optimizations:
   Hat:
     # When enabled we will not allow to place items into head slot if item has custom lore
     IgnoreLored: false
+    # When enable we wont allow to equip items which are not hat type and has enchantment on it
+    # This will prevent from players having enchantment effects in head slots which should not be present there
+    BlockArmorItems: true
   helpop:
     # When set to true player will not see his sent message to helpop, but rather predefined message informing that his question have been sent to online staff
     feedbackMessage: true
@@ -447,39 +452,6 @@ BossBar:
 Ban:
   # When set to true players who are banned will get messages modified by CMI instead of seeing vanilla type of message
   OverrideLoginMessage: false
-Homes:
-  # When enabled we will require player to click on ingame chat to confirm hoime location override in case home with same name already exist
-  # This can be dirrectly confirmed with /cmi sethome [homeName] -override
-  Confirmation: true
-  # Open gui when using /cmi home command if you have more then one home in your saved list
-  Gui: true
-  # Homes groups to define max amount homes player can have. Permission: cmi.command.sethome.[groupname]
-  # If players home group if not find then amount will be set to 1
-  # To have unlimited homes use cmi.command.sethome.unlimited permission
-  # In addition to this you can use simple numeric permission node cmi.command.sethome.[number] which will define max number of homes player can have
-  Groups:
-    Newbie: 2
-    Advanced: 3
-    Vip: 5
-  # Requires cmi.bedhome permission node
-  # When set to true by interacting with bed, regular home location will be created
-  # When set to false vanilla bed home location will be set
-  BedInteraction: true
-  # When set to true, you can only set home location when you shift click a bed
-  onlyShiftBed: false
-  # Removes bed location when home location was created by clicking on that bed
-  RemoveBedLocationOnBedBreak: true
-  # When enabled, plugin will check if player can break block in that area before creating new home location
-  # This allows to prevent setting homes in protected areas
-  # Can be bypassed with cmi.command.sethome.bypass
-  CheckBlockBreak: false
-  # Name for default home location. By default its "Home"
-  DefaultName: Home
-  # Name for bed location. By default its "Home"
-  # Different name can be used to identify home location set by interacting with a bed from home location created with command
-  DefaultBedName: Home
-  # Defines what characters you can use in your home names
-  ValidNameRegex: '[^a-zA-Z0-9\-\_]'
 ReSpawn:
   # Time in seconds to make player immortal after he respawns
   # Can be used to prevent respawn camping
@@ -506,19 +478,19 @@ ReSpawn:
   # Defines respawn order for defines worlds
   # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
-    world:
+    spawn:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    world_nether:
+    spawn_nether:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    world_the_end:
+    spawn_the_end:
     - anchor
     - bedLocation
     - spawn
@@ -1215,6 +1187,8 @@ Messages:
     Custom:
       # If set to true, custom login message will be used. cmi.messages.disablelogin can be used to disable message for player
       Use: false
+      # When enabled and you have bungeeserver with CMIB on it we will try to detect where player went and we will show switch server message instead of login if posible
+      ServerSwitch: true
   Logout:
     # If set to true, logout message wont be shown
     Disabled: false
@@ -1224,13 +1198,11 @@ Messages:
     Custom:
       # If set to true, custom logout message will be used. cmi.messages.disablequit can be used to disable message for player
       Use: false
+      # When enabled and you have bungeeserver with CMIB on it we will try to detect where player went and we will show switch server message instead of logout if posible
+      ServerSwitch: true
   # Check locale file for translation and custom placeholders: [playername], [totalUsers], [onlinePlayers]
   FirstJoinMessage:
     Use: false
-  DeathMessage:
-    # Defines number of players from which to automatically start hiding death messages
-    # Set to -1 to disable this
-    AutoHideFrom: -1
 Books:
   # Defines default creator name for books when using getbook command
   DefaultAuthor: Server
@@ -1322,9 +1294,6 @@ Warps:
   showCreator: false
   # When set to true, new warps by default will require permission node to use them
   requirePerm: false
-GlobalGui:
-  # Defines item type in empty fields in GUI when its needed to be filled up
-  EmptyField: BLACK_STAINED_GLASS_PANE
 DynamicViewRange:
   # By setting to true will enable dynamic view range feature. Its still in beta stage and can result in some CPU load increase.
   # Don't enable if you are not using this feature on your server
@@ -1348,7 +1317,7 @@ WorldLimits:
   FlyAboveRoof: true
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
   FlyAboveRoofLimitations:
-  - spawn-256
+  - spawn-320
   - spawn_nether-128
   - spawn_the_end-256
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
@@ -1593,6 +1562,7 @@ Vanish:
     mobSpawning: false
     stopPlaytime: true
     sleepIgnore: true
+    joinVanished: false
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1738,6 +1708,44 @@ RandomTeleportation:
   # If this set to true we will generate random teleport default settings for all detected worlds
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
+  Worlds:
+    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
+    spawn:
+      Enabled: true
+      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
+      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
+      MaxRange: 1000
+      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    spawn_nether:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
+    spawn_the_end:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
