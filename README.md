@@ -42,7 +42,7 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
-- (Custom) [CustomAlias.yml](/live-1mb-3.0.0-mc-1.18.1/plugins/CMI/CustomAlias.yml) 
+- (Custom) [CustomAlias.yml](/live-1mb-3.0.0-mc-1.18.1/plugins/CMI/CustomAlias) 
 - (Custom) [worth.yml](/live-1mb-3.0.0-mc-1.18.1/plugins/CMI/worth.yml)
 
 Or maybe for one of the common CMI files that I've customized for my server:
