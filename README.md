@@ -86,7 +86,7 @@ Basically, these are the easiest steps to use any of these files.
 Before asking for support, please read the documentation/wiki properly. 
 
 - (Add-on) [emotes documentation](https://github.com/mrfdev/CMI/wiki/emotes)
-- (Add-on) [social documentation](https://github.com/mrfdev/CMI/wiki/social)
+- (Add-on) [social documentation](/Resources/Add-ons/social)
 - (Add-on) [finduser documentation](https://github.com/mrfdev/CMI/wiki/finduser) 
 - (Add-on) [placeholders documentation](https://github.com/mrfdev/CMI/wiki/placeholders)
 
