@@ -42,7 +42,7 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 - (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
-- (Custom) [CustomAlias.yml](/live-1mb-3.0.0-mc-1.18.1/plugins/CMI/CustomAlias) 
+- (Custom) [CustomAlias/](/live-1mb-3.0.0-mc-1.18.1/plugins/CMI/CustomAlias) 
 - (Custom) [worth.yml](/live-1mb-3.0.0-mc-1.18.1/plugins/CMI/worth.yml)
 
 Or maybe for one of the common CMI files that I've customized for my server:
@@ -153,7 +153,7 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.2.13** (December 24th, 2021), for live-1mb-3.0.0-mc-1.18.1
+1MB CMI Project version **0.2.14** (December 25th, 2021), for live-1mb-3.0.0-mc-1.18.1
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.0.0-mc-1.18.1`
 ```
