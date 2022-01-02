@@ -1,6 +1,6 @@
 <AutoPage><AutoAlias><NoReqPermission>
 {#Cerulean}
-{#Cerulean}    &r{#Cerulean}• &2&l1MoreBlock&r {#Feijoa}v. {#Geyser}3.0.0{#Feijoa} for Minecraft {#Geyser}1.18.1 {#Cerulean}•&r
+{#Cerulean}    &r{#Cerulean}• &2&l1MoreBlock&r {#Feijoa}season {#Geyser}3 (3.0.1){#Feijoa} for Minecraft {#Geyser}1.18.1 {#Cerulean}•&r
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 <T>{#Cerulean>} 1MB Info »{#Lochmara<}{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
 {#Cerulean>} 1MB Info »{#Lochmara<}{#Feijoa} We are a family-friendly community.

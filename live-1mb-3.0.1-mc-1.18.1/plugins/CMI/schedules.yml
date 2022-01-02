@@ -220,7 +220,7 @@ Announcer:
     up to 5 /points per fish.
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sell all the types of
     fish on the: /fish shop'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB version 3.0.0
+  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB season 3 (3.0.1)
     for Minecraft 1.18.1'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
     can have up to 1 Chest /shops
@@ -279,11 +279,11 @@ tenyearsweekend:
   Randomize: true
   Feedback: false
   Commands:
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgraded -c:green {#orange>}» GRACE
-    PERIOD {#gold<}{#Feijoa}&l Testing 1.18.1!
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgraded -c:green {#orange>}» GRACE
-    PERIOD {#gold<}{#Feijoa}&l Report bugs on /discord
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgraded -c:green {#orange>}» WELCOME
-    TO{#gold<}{#Feijoa}&l 1MB Season 3
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgraded -c:green {#orange>}» TESTING{#gold<}{#Feijoa}&l
-    1MB v3 for MC 1.18.1
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange>}» END
+    RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedB -c:green {#orange>}» MINE
+    RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange>}» NETHER
+    RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedD -c:green {#orange>}» WE
+    ARE ON 1.18.1 {#gold<}{#Feijoa}&l New World Heights!

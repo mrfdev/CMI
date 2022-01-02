@@ -1,4 +1,4 @@
-# 
+#
 # Edit custom variables in game if possible
 # Some extra variables can be used, like [playerName] will insert senders name automatically
 # All global variables should work, you can find full list in locale file
@@ -160,6 +160,7 @@ CustomAlias:
     - asConsole! cmi effect [playerName] freeze 60 1
     - delay! 1
     - asConsole! cmi effect [playerName] freeze 60 1
+    - asConsole! cmi tfly [playerName] +60
   uwu:
     Cmds:
     - mv tp uwu

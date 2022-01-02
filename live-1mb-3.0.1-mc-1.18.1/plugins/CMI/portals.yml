@@ -16,6 +16,54 @@ general:
     commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
+  coolbrosend:
+    Loc: 12454.0:240.0:10119.0:12456.0:240.0:10121.0
+    enabled: true
+    effect: ash
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! warp end
+  coolbrosmine:
+    Loc: 12457.0:236.0:10113.0:12457.0:238.0:10115.0
+    enabled: true
+    effect: sneeze
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! warp mine
+  coolbrosnether:
+    Loc: 12452.0:240.0:10111.0:12454.0:242.0:10111.0
+    enabled: true
+    effect: Portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! warp nether
   disco:
     Loc: 12851.0:65.0:12042.0:12859.0:69.0:12050.0
     enabled: false

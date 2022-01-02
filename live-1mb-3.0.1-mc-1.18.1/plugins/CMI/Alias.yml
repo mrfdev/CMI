@@ -3,7 +3,7 @@
 # if it interferes with another plugin, just disable it here and reload plugin with /cmi reload
 # Comment shows command to be performed by using alias defined one line belove it
 # True/false defines if alias is enabled or disabled
-# 
+#
 # ATENTION! If you want to have custom alias and not only presets, use ingame command /cmi aliaseditor for this
 # This file will not accept new custom alias, for that we do have separate file
 

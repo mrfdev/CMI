@@ -52,11 +52,12 @@
 # <CC> performs command from console once
 # <CCI> performs command from console every time player clicks text
 # <URL> includes url
-# 
-# 
-# 
+#
+#
+#
 # ATTENTION! As of 9.0.0.0 CMI version some of the locale lines got moved to CMILib file. This is to centralize some of most used ones across multiple plugins.
 # After you update locale in CMILib file perform /CMIL RELOAD command for changes to take effect
+
 info:
   Same: '&cCan''t open your own inventory for editing!'
   cantLoginWithDifCap: '&cCan''t login with different name capitalization! Old name:
@@ -1774,6 +1775,8 @@ command:
       newSee: ◕‿◕
       newSeeHover: '&6Can see you'
       newSeeHoverNot: '&2Can''t see you'
+      vanished: '(V) '
+      vanishedHover: '&6Vanished'
       newBanned: Banned
       newBannedHover:
       - '{#Edward}Banned by: &e[name]'

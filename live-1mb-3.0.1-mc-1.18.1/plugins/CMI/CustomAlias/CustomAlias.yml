@@ -1,4 +1,4 @@
-# 
+#
 # Edit custom variables in game if possible
 # Some extra variables can be used, like [playerName] will insert senders name automatically
 # All global variables should work, you can find full list in locale file
@@ -46,7 +46,7 @@ CustomAlias:
     - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Red-colored usernames
       are team members, feel free to reach out to them.
     - 'msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Some of our team:
-      mrfloris, the456gamer, tidala, jackPerByte, _hepcat_. \n&r'
+      mrfloris, the456gamer, tidala, jackPerByte, Citebafla, _hepcat_. \n&r'
     - msg! [playerName]  If you are trying to make a team in skyblock or oneblock,
       see &6/teams&r instead.
     Tab: false
@@ -654,9 +654,21 @@ CustomAlias:
     - perm:mcmmo.ability.salvage.all! asConsole! cmi usermeta [playerName] add mcmmosalvage
       false -s
     - asConsole! lp user [playerName] permission set mcmmo.ability.salvage.all %cmi_user_meta_mcmmosalvage%
-    - msg! [playerName] &r\n {#orange}Toggled mcMMO Salvage to %cmi_user_meta_mcmmosalvage%
-      \n&r
+    - msg! [playerName] &r\n {#orange}Toggled mcMMO Salvage to %cmi_user_meta_mcmmosalvage%\n&r
     - asConsole! cmi usermeta [playerName] remove mcmmosalvage -s
+  se toggle:
+    Cmds:
+    - statement:check1! check:%luckperms_in_group_1mb_admin%==yes!
+    - if:check1! perm:cmi.command.se@! asConsole! cmi usermeta [playerName] add signedittoggle
+      true -s
+    - if:check1! perm:cmi.command.se! asConsole! cmi usermeta [playerName] add signedittoggle
+      false -s
+    - if:check1! asConsole! lp user [playerName] permission set cmi.signs.shiftedit
+      %cmi_user_meta_signedittoggle%
+    - if:check1! msg! [playerName] &r\n {#orange}Toggled CMI Sign Edit to %cmi_user_meta_signedittoggle%\n&r
+    - if:check1! asConsole! cmi usermeta [playerName] remove signedittoggle -s
+    - if:check1@! msg! [playerName] You cannot use this right now.
+    Perm: true
     Tab: false
   repair toggle:
     Cmds:
@@ -686,3 +698,11 @@ CustomAlias:
     Cmds:
     - msg! [playerName] &3 1MB Event »&b --- The 2021 "SPOOKY OCTOBER MONTH" event
       has ended. Check back next year. See /event for more events.
+  fix:
+    Cmds:
+    - cmi attachcommand
+    Perm: true
+    Tab: false
+  uuidtest:
+    Cmds:
+    - 'ptarget:$1! msg! mrfloris uuid for $1 is: %cmi_user_uuid%'

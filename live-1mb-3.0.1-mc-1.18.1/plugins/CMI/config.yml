@@ -179,6 +179,8 @@ Optimizations:
     SwitchPlaces: false
     CurrentLoc:
       # Applies for tpahere only
+      # Applies for tpahere only
+      # Applies for tpahere only
       tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
     JumpDefault: 100

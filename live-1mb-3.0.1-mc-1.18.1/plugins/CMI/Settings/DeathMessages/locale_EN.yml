@@ -79,6 +79,9 @@ Custom:
   Freeze:
     General:
     - '&2[playerDisplayName] &7frozen to death'
+  Suicide:
+    General:
+    - '&2[playerDisplayName] &7took their own life'
 Projectile:
   Arrow:
   - '&2[playerDisplayName] &7was shot by arrow'
