@@ -65,8 +65,6 @@
 </details>
 </topMenu>
 
-Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
-
 This FAQ covers both the welcome message and the server list welcome message.
 
 ---
