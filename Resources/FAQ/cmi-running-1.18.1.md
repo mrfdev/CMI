@@ -1,4 +1,4 @@
-# FAQ - Running CMI on Spigot / Paper 1.17.1
+# FAQ - Running CMI on Spigot / Paper 1.18.1
 
 <topMenu>
 <details>
@@ -72,9 +72,9 @@ _(what about 1.18? There's no build out for 1.18)_
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.1.0.4 SqLite
-    CMILib: 1.1.0.4
-    Server: Paper(100) 1.18.1-R0.1-SNAPSHOT
+    CMI plugin version: 9.1.0.5 SqLite
+    CMILib: 1.1.0.6
+    Server: Paper(136) 1.18.1-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
@@ -85,16 +85,16 @@ _(what about 1.18? There's no build out for 1.18)_
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is made for CMI 9 and a Spigot or Paper server on version 1.17.1. Apply steps to other (lower) versions accordingly.
+- This is made for CMI 9.1.x and a Spigot or Paper server on version 1.18.1. Apply steps to other (lower) versions accordingly.
 - CMILib will be required. Zrips' libraries and other resources are linked below.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.18? Yes, CMI 9.1 can be used on 1.18, do not use 9.0.
-- Will there be a build for 1.18? Yes, there is one, make sure you use CMILib 1.1.0.0 or newer
+- Is there a build for 1.18? Yes, CMI 9.1 can be used on 1.18.1, do not use 9.0.
+- Will there be a build for 1.18.1? Yes, there is one, make sure you use CMILib 1.1.0.6 or newer
 - Do I need to buy a new license to upgrade? No.
-- Can I upgrade from an older version of CMI to the build for 1.18? The best result is to have your currently CMI build be the latest version (9.0.7.0) and the latest version of CMILib. You do not have to fresh-install CMI in order to use it on 1.18.
-- CMILib will be required? Yes. CMILib 1.1.0.0 or newer is required. 
+- Can I upgrade from an older version of CMI to the build for 1.18.1? Yes, latest cmi and cmilib jars will achieve this.
+- CMILib will be required? Yes. CMILib 1.1.0.6 or newer is required. 
 - So where do I download it? spigotmc.org
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
