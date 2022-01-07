@@ -65,10 +65,7 @@
 </details>
 </topMenu>
  
-This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.17.1.
-
-_(what about 1.18? There's no build out for 1.18)_
-
+This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.18.1.
 ```
 > cmi version
     --------------------------------------------------
@@ -110,9 +107,9 @@ _(what about 1.18? There's no build out for 1.18)_
 
 - /stop your server. Do the backup thing, and make a test server.
 
-- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.17.0 or download Paper 1.17 from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
+- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.18.1 or download Paper 1.18.1 from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
 
-- If you are not yet running CMI Lib then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download it here: <https://www.spigotmc.org/resources/87610/>
+- If you are not yet running CMILib then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download it here: <https://www.spigotmc.org/resources/87610/>
 
 - Now that we have the latest files and are installing or upgrading from an older version to a new version, and we have a backup. It's time to replace any existing jars.
 
@@ -168,7 +165,7 @@ What a list huh, okay, now you have experience, you have tested, and you can do 
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What about 1.16.5?
 
-CMI will not run on 1.16.0 or 1.16.1, but 1.16.5 is supported. You can use the latest cmi and cmilib jars on 1.16.5. I always recommend to stay current.
+CMI will not run on 1.16.0 or 1.16.1, but 1.16.5 is supported. You can use the latest cmi and cmilib jars on 1.16.5. I always recommend to stay current for each family branch.
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
@@ -187,10 +184,10 @@ These are for CMI 9.x:
 `CMI Library` Base Library 
 <https://www.spigotmc.org/resources/cmilib.87610/>
 
-`Spigot website` This is where you can get buildtools and make a spigot 1.17.1 jar
+`Spigot website` This is where you can get buildtools and make a spigot 1.18.1 jar
 <https://hub.spigotmc.org/jenkins/job/BuildTools/>
 
-`Paper website` This is where you can get Paper's 1.17.1 jar
+`Paper website` This is where you can get Paper's 1.18.1 jar
 <https://papermc.io/downloads>
 
 ---
