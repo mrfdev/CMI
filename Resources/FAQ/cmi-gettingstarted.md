@@ -89,13 +89,13 @@ Setup homes, kits, warps, and start testing all the features.
 
 - By just using the website for commands and permissions, you will slowly learn what does what and how to do this. 
 
-- For [permissions](https://www.zrips.net/cmi/permissions/), I recommend [LuckPerm](https://luckperms.net/) as permission manager.
+- For CMI [permissions](https://www.zrips.net/cmi/permissions/), I recommend [LuckPerms](https://luckperms.net/) as permission manager.
 
-- For Economy, I recommend using CMI's custom compile of Vault 1.7.3.
+- For the [Economy](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-economy.md), I recommend using CMI's custom compile of Vault 1.7.3.
 
-- For Chat, I recommend setting up groups, ranks, and their prefixes through CMI and luckperms.
+- For [Chat](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md), I recommend setting up groups, ranks, and their prefixes through CMI and Luckperms.
 
-- Converting from EssentialsX? Check the website on how to import homes, users, etc.
+- For importing data from from old EssentialsX to modern CMI? I recommend [this guide](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md).
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
