@@ -71,13 +71,13 @@
 
 **Note:** This is perhaps important to mention. CMI is a big package, it covers a lot of server management topics, from kicks and msgs, to warps, kits, and custom commands. It's dynamic and flexible. And since every server is different: The approach to start might differ per server.
 
-- Don't forget to put the cmilib jar in the plugins/ directory as well!
+- Don't forget to put the REQUIRED [CMILib](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-library.md) .jar in the `~/plugins/` directory as well!
 
-- Put the CMI jar in the plugins/ directory. Start the server back up and let CMI install.
+- Put the _latest_ CMI .jar in the `~/plugins/` directory. Start the server back up and let CMI install.
 
-(Upgrading? Then the instructions are basically the same, stay current, backup, test, etc.)
+_(Upgrading? Then the instructions are basically the same, stay current, backup, test, etc.)_
 
-- /stop the server and go through the following files:
+- `/stop` the server and go through the following files:
 ```
 config.yml (main configuration file, nitpick on features here)
 modules.yml (allowing you to globally turn on/off about 50 bigger features)
@@ -87,7 +87,7 @@ Then find out which commands you want them to certainly have, and grant them the
 Setup homes, kits, warps, and start testing all the features. 
 ```
 
-- By just using the website for commands and permissions, you will slowly learn what does what and how to do this. 
+- By just using the website for [commands](https://www.zrips.net/cmi/commands/) and [permissions](https://www.zrips.net/cmi/permissions/), you will slowly learn what does what and how to do this. 
 
 - For CMI [permissions](https://www.zrips.net/cmi/permissions/), I recommend [LuckPerms](https://luckperms.net/) as permission manager.
 
