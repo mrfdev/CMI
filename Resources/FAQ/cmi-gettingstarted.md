@@ -89,7 +89,7 @@ Setup homes, kits, warps, and start testing all the features.
 
 - By just using the website for commands and permissions, you will slowly learn what does what and how to do this. 
 
-- For permissions, I recommend LuckPerm as permission manager.
+- For [permissions](https://www.zrips.net/cmi/permissions/), I recommend [LuckPerm](https://luckperms.net/) as permission manager.
 
 - For Economy, I recommend using CMI's custom compile of Vault 1.7.3.
 
