@@ -65,7 +65,7 @@
 </details>
 </topMenu>
 
-How to use CMI to deal with Hex color support. 
+How to use CMI to deal with Hex color support. More information on the official site [zrips.net](https://www.zrips.net/cmi/hex-colors/) here
 
 ---
 
