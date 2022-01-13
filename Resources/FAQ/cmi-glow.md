@@ -134,6 +134,7 @@ A reasonable way to figure out if it's a plugin that's conflicting:
 
 Known plugins causing conflict:
 - TAB
+- Scoreboard R4
 - know of one? Let me know!
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Misc.
