@@ -1,0 +1,5 @@
+<AutoPage><AutoAlias><ReqPermission>
+&6* Usage:
+&e➢ &a/report &cbug &a<message>
+&e➢ &a/report &dsuggestion &a<message>
+&e➢ &a/report &bplayer &a<name> <reason>
