@@ -49,5 +49,33 @@ CustomAlias:
     - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/vote points**: `%VotingPlugin_Points_format%`'
     - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/jobs Points **: `%jobsr_user_points%`'
     Tab: false
+  report:
+    Cmds:
+    - 'check:$1==player! check:$2!=null! check:$3!=null! asConsole! cooldown:300?!
+      discordsrv broadcast **[PLAYER-REPORT]** \n> __Submitted
+      by__: [playerName] \n> __Reported__ __Player__: $2 \n> __Reason__: \n-> $3-
+      \n> ||@Helper||'
+    - 'check:$1==bug! check:$2!=null! cooldown:300?! asConsole! discordsrv broadcast
+      **[BUG-REPORT]** \n> __Submitted by__: [playerName] \n>
+      __Bug__: \n-> $2- \n> ||@Helper||'
+    - 'check:$1==suggestion! check:$2!=null! cooldown:300?! asConsole! discordsrv
+      broadcast **[SUGGESTION]** \n> __Submitted by__: [playerName]
+      \n> __Suggestion:__: \n-> $2- \n> ||@Admin||'
+    - check:$1==null! asConsole! ctext report [playerName]
+    - check:$2==null! asConsole! ctext report [playerName]
+    - check:$1==player! check:$2!=null! check:$3==null! asConsole! ctext report [playerName]
+    - check:$1==player! check:$2!=null! check:$3!=null! cooldown:300! msg! [playerName]
+      &eYour report has been submitted. It will be reviewed by our staff shortly.
+      If accepted, you will receive a mail.
+    - check:$1==bug! check:$2!=null! cooldown:300! msg! [playerName] &eYour bug report
+      has been submitted. It will be reviewed by our staff shortly. If accepted, you
+      will receive a mail.
+    - check:$1==suggestion! check:$2!=null! cooldown:300! msg! [playerName] &eYour
+      suggestion has been submitted. It will be reviewed by our staff shortly. If
+      accepted, you will receive a mail.
+    CustomTabs:
+    - player [playerName]
+    - suggestion
+    - bug
 
 # End 1MB Add-on: CMI to Discord Helper
