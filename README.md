@@ -143,7 +143,7 @@ You are not free to distribute my work, please link others instead to the source
 
 CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have a valid and active license. You can buy it from [SpigotMC.org](https://www.spigotmc.org/resources/3742/). 
 
-_Disclaimer; I am a moderator on the zrips Discord_
+_Disclaimer; I am an admin on the zrips Discord_
 
 Oh yeah, and Floris, OMGboards.com nor 1MoreBlock.com claim or pretend to be-, nor are associated with-, and are not supported by Zrips, Mojang or Microsoft.
 
