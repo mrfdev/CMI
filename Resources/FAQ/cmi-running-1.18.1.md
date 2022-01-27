@@ -58,7 +58,7 @@
          <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
         <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)
          <pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
-        <li>All my FAQ pages have been written for Spigot / Paper 1.18.1 and CMI 9.1.0.4 or newer.</li>
+        <li>All my FAQ pages have been written for Spigot / Paper 1.18.1 and CMI 9.1.1.1 or newer.</li>
         <li>The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.</li>
         <li>I am a team member on the Zrips Discord, this does not mean what I share on here is official.</li>
     </ul>
@@ -69,9 +69,9 @@ This page should help explain what I personally think is the way to run CMI on S
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.1.0.6 SqLite
-    CMILib: 1.1.0.8
-    Server: Paper(145) 1.18.1-R0.1-SNAPSHOT
+    CMI plugin version: 9.1.1.1 SqLite
+    CMILib: 1.1.1.0
+    Server: Paper(177) 1.18.1-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------

@@ -58,7 +58,7 @@
          <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
         <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)
          <pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
-        <li>All my FAQ pages have been written for Spigot / Paper 1.18.1 and CMI 9.1.0.4 or newer.</li>
+        <li>All my FAQ pages have been written for Spigot / Paper 1.18.1 and CMI 9.1.1.1 or newer.</li>
         <li>The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.</li>
         <li>I am a team member on the Zrips Discord, this does not mean what I share on here is official.</li>
     </ul>
@@ -78,19 +78,19 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmil
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
-The full list as of January 9th, 2022
+The full list as of January 27th, 2022
 
-- CMI version 9.1.0.5
+- CMI version 9.1.1.1
 - Selection Visualizer version 3.1.0.0
 - TryMe version 7.0.0.2
-- Mob Farm Manager version 2.0.1.0
-- Residence version 5.0.1.0
-- Jobs-Reborn version 5.0.1.0
-- BottledExp version 3.0.1.1
+- Mob Farm Manager version 2.0.1.1
+- Residence version 5.0.1.1
+- Jobs-Reborn version 5.0.1.2
+- BottledExp version 3.0.1.2
 - ReCount version 3.5.1
 - TradeMe version 6.1.1.0
 
-These currently support Spigot-, and Paper 1.18.1 and lower, and require the CMILib version 1.1.0.7 or newer to properly operate.
+These currently support Spigot-, and Paper 1.18.1 and lower, and require the CMILib version 1.1.1.0 or newer to properly operate.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How do I get it?
 
