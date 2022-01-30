@@ -1,1 +1,2 @@
 sitting: torso{0:3:0};leftLeg{-92:-11:-1};rightArm{-66:22:10};rightLeg{-96:5:-4};leftArm{-73:-17:-10};head{0:-2:0};extra{arms,nobase}
+jumping: torso{0:-2:0};leftLeg{-64:0:-1};rightArm{-37:0:10};rightLeg{64:0:1};leftArm{18:0:-10};head{18:-5:0};extra{arms,small,nobase}
