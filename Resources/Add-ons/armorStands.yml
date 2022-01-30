@@ -2,3 +2,4 @@ sitting: torso{0:3:0};leftLeg{-92:-11:-1};rightArm{-66:22:10};rightLeg{-96:5:-4}
 jumping: torso{0:-2:0};leftLeg{-64:0:-1};rightArm{-37:0:10};rightLeg{64:0:1};leftArm{18:0:-10};head{18:-5:0};extra{arms,small,nobase}
 running: torso{0:-2:0};leftLeg{-64:0:-1};rightArm{-37:0:10};rightLeg{64:0:1};leftArm{18:0:-10};head{18:-5:0};extra{arms,small,nobase}
 dancing: leftLeg{-23:0:-29};rightArm{-169:34:-30};rightLeg{-67:0:1};leftArm{-141:-34:12};head{-19:-13:-17};extra{arms,small,nobase}
+walking: torso{0:-1:0};leftLeg{21:0:-1};rightArm{-55:-17:90};rightLeg{-10:0:1};leftArm{-27:0:-55};head{22:-9:0};extra{arms,nobase}
