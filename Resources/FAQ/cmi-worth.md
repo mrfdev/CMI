@@ -67,20 +67,105 @@
 
 ---
 
+You can use CMI to make dynamic features using specialized commands and smart use of placeholders.
 
-## draft:
+---
 
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Worth Feature
+
+note: This document isn't finished yet, contributions are welcome.
 
 ```
-You can manually edit worth.yml or in-game with /cmi setworth
-You can get a gui with missing worth items
-And you can run a console command that auto calculates if it can figure out how to craft it from a raw material if it has a set value.
-There's a module perhaps in modules.yml
-There are sell and worth settings in config.yml
-
+todo: There's a module perhaps in modules.yml
+todo: There are sell and worth settings in config.yml
+todo:
 in console, you can find sell money economy and worth commands and permissions with:
 cmi checkcommand <keyword> (like pay, money, sell, worth)
 cmi checkperm <keyword> (like pay, money, sell, worth)
-
-Combining cmi's interactive commands and stuff you can make an item shop sorta thing, but also have holograms you can right click to auto sell, or just walk up to to show worth value of what players are holding. 
 ```
+
+## Commands:
+
+There are a few basic commands for players and admins, together with holograms, placeholders, and cmi's interactive commands feature you can make a pretty dynamic and cool feature with just worth. This is a bit much to explain here, so I am keeping it simple. For now .. 
+
+```
+> cmi checkcommand worth
+ --------------------------------------------------
+ 1. /cmi setworth (itemname) -s:(sellPrice)
+ 2. /cmi worthlist (playerName) (-missing)
+ 3. /cmi setenchantworth
+ 4. /cmi worth (all/blocks/hand/material)
+ 5. /cmi generateworth
+>
+```
+There's also `/cmi sell (all/blocks/hand/same/gui/material)`
+
+### Players
+
+They can either use an item in their hand and walk up to the hologram and it will show the worth because a hologram can show the icon they're holding, the amount of that stack in their hand, and it can show how much it's worth based on the data from the worth.yml file.
+
+Or they can hold the item and type /cmi worth, assuming you granted them permission to the command. And it will show it in chat. 
+
+Optionally if you've granted them permission to use /cmi sell, they can open a sell gui to put the items in and get money for it (the title of the sell gui menu will calculate how much they will earn), or they can use a direct command and it will say in chat how much they've earned.
+
+### Server owner
+
+The server owner has to grant players the permissions to the variety of /cmi sell, and /cmi worth features. 
+
+Then they have to go through the worth.yml list to set it up. Or as server owner you can in-game use the /cmi setworth command.
+
+Pro tip: If you set a base materials' value. You can also run from console: `cmi generateworth` which will try automatically generate what you can craft with those materials. 
+
+Pro tip #2: In-game you can type /cmi worthlist -missing, which will show you a GUI interface with all the items NOT on the worthlist. Making it easy to get an overview of what's still to do.
+
+## Permissions
+
+```
+> cmi checkperm worth
+ --------------------------------------------------
+ 1. cmi.command.generateworth - Auto generate posible item worth values
+ 2. cmi.command.worthlist - Check list of items with set sell prices
+ 3. cmi.command.worth - Check item worth
+ 4. cmi.command.setenchantworth - Change enchantment worth
+ 5. cmi.command.worthlist.others - Check list of items with set sell prices
+ 6. cmi.command.setworth - Change item worth
+>
+> cmi checkperm sell
+ --------------------------------------------------
+ 1. cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
+ 2. cmi.command.worthlist - Check list of items with set sell prices
+ 3. cmi.command.sell - Sell items from inventory
+>
+```
+
+## Sell sign
+
+https://www.youtube.com/watch?v=lK_Pr3h7Bag&list=PLAgWLDdkOWlq8pnYuzIVAl2doNg1vmDD_&index=6
+
+I mentioned earlier that you can use cmi ic feature and sell combo, here's an example of a sell sign.
+
+More info of an item shop here:
+
+https://www.zrips.net/itemshop/
+
+## Visually show what it's worth feature
+
+You can also visually display what something is worth using a combo of features, here's what I use:
+
+From my personal holograms.yml file: (so you HAVE to change the world and location obviously)
+```yaml
+Worth:
+  Loc: world_survival;12551.44;80.06;-5341.47
+  Interval: 0.3
+  Range: 3
+  RangeExtra: 3
+  Spacing: 0.22
+  SpacingIcon: 0.5
+  Interactable: true
+  Commands:
+  - asPlayer! cmi sell hand
+  Lines:
+  - '&6 %cmi_iteminhand_displayname% &fx %cmi_iteminhand_amount%'
+  - '&bWorth: &e %cmi_iteminhand_worth%'
+  - ICON:%iteminhand%
+  ```
