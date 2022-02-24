@@ -97,6 +97,8 @@ InteractiveCommands:
   # Sorting of IC list ether by distance from you or alphabetically
   SortByDistance: true
 Optimizations:
+  # When disabled we wont try to deop fake operator on server starup or unload while at same time disabling asFakeOp! specialized command usage
+  UseFakeOperator: true
   # When this set to true any message sent to console will be strip out of any colors
   # In case you have mohochrome console, keep this at true
   MonochromeConsole: false
@@ -117,6 +119,9 @@ Optimizations:
     # When set to true, plugin will check if player can manipulate armor stand by sending fake block place event and checking if any plugin would want to prevent this action
     # This can help out to minimize posibility for players to manipulate armor stands when they dont have build permission in area where armorstand is standing
     CheckBlockPlace: false
+    Templates:
+      # When set to true player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
+      SpecificPermission: false
   AutoDownload:
     # In case you dont have GeoIP.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
     GeoIp: false
@@ -182,6 +187,10 @@ Optimizations:
     # Set to true if you want to use tp commands as /cmi tp [WhoYouWantToTeleport] [WhereToTeleport] when its false, its /cmi tp [whereToTeleport] [WhoYouWantToTeleport]
     SwitchPlaces: true
     CurrentLoc:
+      # Applies for tpa, tpahere and tpaall only
+      # If set to true then player will be teleported to current player position after accepting teleport request
+      # If set to false then player will be teleported to player at which teleport request was issued
+      tpa: true
       # Applies for tpahere only
       tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
@@ -750,6 +759,8 @@ Chat:
   # Do you want to enable staff messaging over bungeecord
   BungeeStaffMessages: true
   # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message}. Supporting PlaceHolderAPI variables like %player_server%
+
+  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
   GeneralFormat: '{prefix}&f{displayName}&7: &r{message}'
   # Will define message format itself, this allows to have gradients in messages
   # It NEEDS to contain {message} otherwise we will ignore this setup
@@ -784,6 +795,8 @@ Chat:
   # Add as many lines as you need too
   # cmi.chatgroup.[id] permnission node to use
   # Permission example: cmi.chatgroup.2
+
+  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
   GroupFormat:
     '1': '{prefix}&f{displayName}&f: &r{message}'
     '2': '{prefix}&f{displayName}&7: &r{message}'
@@ -909,8 +922,11 @@ NickName:
   Prefix: '~'
   # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without addign prefix
   PrefixWhenDifferent: false
-  # When true, online players nick name will be included into tabcomplete
-  IncludeInTabComplete: true
+  TabComplete:
+    # When true, online players nick name will be used instead of real name in tabcomplete
+    ReplaceReal: true
+    # When true, we will include real name on top of nickname. This only has effect when ReplaceName is enabled
+    IncludeReal: false
 Dye:
   # When set to true colored lether armor will be bound to the player who receives that coloration and will not work on others if he would give it to them
   # Only applies for dynamic armor colors like biome, health and so on
@@ -1323,7 +1339,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - testWorld:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, FROZEN, COMMAND, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
     - None
@@ -1913,6 +1929,8 @@ Particles:
   GColumn: circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02
   SmallBoop: circle;effect:flying_glyph;yaw:[playerName];pitch:[playerName];r:0.1;part:3;rc:0.03;mr:0.3;twist
   HologramInteraction: circle;effect:flying_glyph;yaw:[playerName];pitch:[playerName];r:0.1;part:3;rc:0.03;mr:0.3;twist
+  HologramNewInteraction: circle;effect:reddust;r:0;part:2;rc:0.2;mr:1;color:rs;yaw:[playerName];a:90
+  HologramHover: circle;effect:crit;r:0;part:1;
   TpUp: circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0
   TpDown: circle;c:150,50,10;part:5;r:0.5;pitch:90;move:0,-0.33,0;offset:0,2.2,0
   # From custom1 to custom30 are free to use particle presets which can be utilized for things like command warmups
