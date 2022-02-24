@@ -1,0 +1,230 @@
+# List of modules you can turn on and off if you dont use them to save some server resources
+# This will COMPLETELY disable some of the features
+# For this to take effect you will need to perform full server restart
+# Disabling some of modules will disable appropriate commands, like cuffed will disable cuff command, silentChest will disable silentChest command and so on
+# Disabled commands will not appear in tab complete and it will return error message that command by this name doesnt exist
+
+#  
+# Handles silent chest opening actions
+# Applies for servers from 1.7.x and up
+silentChest: true
+#  
+# Version check when player logs in
+# Applies for servers from 1.7.x and up
+versionCheck: true
+#  
+# World limitations: fly, game mode and god mode
+# Applies for servers from 1.7.x and up
+worldLimits: true
+#  
+# World limitations: elytra mode
+# Applies for servers from 1.9.x and up
+worldLimitsElytra: true
+#  
+# Login, logout and death messages
+# Applies for servers from 1.7.x and up
+customMessages: true
+#  
+# First join messages
+# Applies for servers from 1.7.x and up
+firstJoinMessages: true
+#  
+# Handling of cuffed players
+# Applies for servers from 1.7.x and up
+cuffed: true
+#  
+# Handling of messages appearing when item durability gets low
+# Applies for servers from 1.7.x and up
+durabilityLoss: true
+#  
+# Handling of mirror feature, which checks block place and break actions
+# Applies for servers from 1.7.x and up
+mirror: true
+#  
+# Spawner handling, like drop, place, egg interactions
+# Applies for servers from 1.7.x and up
+spawners: true
+#  
+# Checking spawner place proximity
+# Applies for servers from 1.7.x and up
+spawnerProximity: true
+#  
+# Checking spawner charges
+# Applies for servers from 1.7.x and up
+spawnerCharge: true
+#  
+# Handling of command cooldowns
+# Applies for servers from 1.7.x and up
+cooldown: true
+#  
+# Handling of command warmups
+# Applies for servers from 1.7.x and up
+warmup: true
+#  
+# Handling of interactive commands
+# Applies for servers from 1.8.x and up
+interactiveCommands: true
+#  
+# Handling of attached commands
+# Applies for servers from 1.8.x and up
+attachedCommands: true
+#  
+# Handling of player tagging in chat and tabcomplete with @
+# Applies for servers from 1.7.x and up
+playerChatTag: true
+#  
+# Handling of tablist
+# Applies for servers from 1.7.x and up
+tablist: true
+#  
+# Handling of painting editing with shift+right click
+# Applies for servers from 1.7.x and up
+paintingEditor: true
+#  
+# Handles player vanish mode
+# Applies for servers from 1.7.x and up
+vanish: true
+#  
+# Handles money cheques
+# Applies for servers from 1.7.x and up
+moneyCheque: true
+#  
+# Handles armor stand editor
+# Applies for servers from 1.8.x and up
+armorstand: true
+#  
+# Handles dedicated CMI playtime tracker
+# Applies for servers from 1.7.x and up
+cmiPlaytime: true
+#  
+# Handles hologram updates
+# Applies for servers from 1.7.x and up
+holograms: true
+#  
+# Handles portals
+# Applies for servers from 1.7.x and up
+portals: true
+#  
+# Handles home bed interactions and bed destroy events. Disabling this homes will still work
+# Applies for servers from 1.7.x and up
+homeInteractions: true
+#  
+# Handles dynamic signs
+# Applies for servers from 1.7.x and up
+dynamicSigns: true
+#  
+# Handles leather armor which has dynamic colors
+# Applies for servers from 1.7.x and up
+coloredArmor: true
+#  
+# Handles entity target prevention on player /cmi notarget
+# Applies for servers from 1.7.x and up
+noTarget: true
+#  
+# Handles rankup system
+# Applies for servers from 1.7.x and up
+ranks: true
+#  
+# Handles votifier system
+# Applies for servers from 1.7.x and up
+votifier: true
+#  
+# Handles player combat system
+# Applies for servers from 1.7.x and up
+playerCombat: true
+#  
+# Handles head drops system
+# Applies for servers from 1.7.x and up
+headDrop: true
+#  
+# Handles kit listener, mainly to give out new player kit
+# Applies for servers from 1.7.x and up
+kits: true
+#  
+# Handles schedule system
+# Applies for servers from 1.7.x and up
+schedule: true
+#  
+# Handles player name plates
+# Applies for servers from 1.7.x and up
+namePlates: true
+#  
+# Handles jail system
+# Applies for servers from 1.7.x and up
+jail: true
+#  
+# Handles cmi flight charge system
+# Applies for servers from 1.7.x and up
+flightCharge: true
+#  
+# Handles shulker box as backpacks
+# Applies for servers from 1.11.x and up
+shulkerBackpack: true
+#  
+# Handles player skins
+# Applies for servers from 1.8.x and up
+skin: true
+#  
+# Handles selection areas. While this is disabled, command can still be used
+# Applies for servers from 1.7.x and up
+selection: true
+#  
+# Handles mob and player hp bars as boss bar
+# Applies for servers from 1.9.x and up
+hpBossBar: true
+#  
+# Handling of afk feature. This will disable any checks related to afk and players will never get into afk mode
+# Applies for servers from 1.8.x and up
+afk: true
+#  
+# Handling timed commands like tfly and tgod
+# Applies for servers from 1.7.x and up
+timedCommands: true
+#  
+# Handling of eventCommands.yml feature 
+# Applies for servers from 1.9.x and up
+eventCommands: true
+#  
+# Handling of disabled enchants in inventory
+# Applies for servers from 1.7.x and up
+disabledEnchants: true
+#  
+# Handling of siting on blocks
+# Applies for servers from 1.8.x and up
+sitAnimation: true
+#  
+# Handling of ride suffocation detection
+# Applies for servers from 1.7.x and up
+rideAnimation: true
+#  
+# Handling of boss bar compass
+# Applies for servers from 1.9.x and up
+bossBarCompass: true
+#  
+# Elytra boost
+# Applies for servers from 1.9.x and up
+elytraBoost: true
+#  
+# Elytra launch
+# Applies for servers from 1.9.x and up
+elytraLaunch: true
+#  
+# Exploit prevention, like using trident for infinite flight or self damage with arrow
+# Applies for servers from 1.9.x and up
+elytraExploit: true
+#  
+# Handling of custom totem behavior
+# Applies for servers from 1.11.x and up
+totemBehavior: true
+#  
+# Handling of anvil item renaming and colorization
+# Applies for servers from 1.9.x and up
+anvilRenameColor: true
+#  
+# Handling of launch command falldamage
+# Applies for servers from 1.9.x and up
+launchPad: true
+#  
+# Handling of launch custom death messages
+# Applies for servers from 1.7.x and up
+deathMessages: true
