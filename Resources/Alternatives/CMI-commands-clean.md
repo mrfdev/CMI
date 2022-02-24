@@ -250,7 +250,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi stats (playerName) - Check players stats
 /cmi statsedit (playerName) [add/take/set] [statistic] (subType) [amount] (-s) - Edit players statistics
 /cmi status  - Show server status
-/cmi stonecutter (playerName) - Open stonecutter
+/cmi stonecutter (playerName) (-s) - Open stonecutter
 /cmi sudo [playerName] (command/c:[text]) - Force another player to perform command
 /cmi suicide [playerName] (-s) - Kill your self
 /cmi switchplayerdata [sourcePlayerName/uuid] [targetPlayerName/uuid] - Switch all data from one player to another
@@ -316,4 +316,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Misc.
 
-Created with CMI 9.1.0.4 for Minecraft 1.18.1
+Created with CMI 9.1.2.0 for Minecraft 1.18.1
