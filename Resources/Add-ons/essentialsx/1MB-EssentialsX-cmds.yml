@@ -829,3 +829,243 @@ CustomAlias:
     Cmds:
     - cmi item $1-
     AddTabs: true
+  itemdb:
+    Cmds:
+    - cmi iteminfo $1-
+    AddTabs: true
+  eitemdb:
+    Cmds:
+    - cmi iteminfo $1-
+    AddTabs: true
+  lore:
+    Cmds:
+    - cmi itemlore $1-
+    AddTabs: true
+  elore:
+    Cmds:
+    - cmi itemlore $1-
+    AddTabs: true
+  ilore:
+    Cmds:
+    - cmi itemlore $1-
+    AddTabs: true
+  eilore:
+    Cmds:
+    - cmi itemlore $1-
+    AddTabs: true
+  eitemlore:
+    Cmds:
+    - cmi itemlore $1-
+    AddTabs: true
+  einame:
+    Cmds:
+    - cmi itemname $1-
+    AddTabs: true
+  eitemname:
+    Cmds:
+    - cmi itemname $1-
+    AddTabs: true
+  itemrename:
+    Cmds:
+    - cmi itemname $1-
+    AddTabs: true
+  irename:
+    Cmds:
+    - cmi itemname $1-
+    AddTabs: true
+  eitemrename:
+    Cmds:
+    - cmi itemname $1-
+    AddTabs: true
+  eirename:
+    Cmds:
+    - cmi itemname $1-
+    AddTabs: true
+  jails:
+    Cmds:
+    - cmi jaillist $1-
+    AddTabs: true
+  ejails:
+    Cmds:
+    - cmi jaillist $1-
+    AddTabs: true
+  j:
+    Cmds:
+    - cmi jump $1-
+    AddTabs: true
+  ej:
+    Cmds:
+    - cmi jump $1-
+    AddTabs: true
+  ejump:
+    Cmds:
+    - cmi jump $1-
+    AddTabs: true
+  jumpto:
+    Cmds:
+    - cmi jump $1-
+    AddTabs: true
+  ejumpto:
+    Cmds:
+    - cmi jump $1-
+    AddTabs: true
+  ekick:
+    Cmds:
+    - cmi kick $1-
+    AddTabs: true
+  kickall:
+    Cmds:
+    - cmi kick all $1-
+    AddTabs: true
+  ekickall:
+    Cmds:
+    - cmi kick all $1-
+    AddTabs: true
+  ekill:
+    Cmds:
+    - cmi kill $1-
+    AddTabs: true
+  ekit:
+    Cmds:
+    - cmi kit $1-
+    AddTabs: true
+  ekits:
+    Cmds:
+    - cmi kit $1-
+    AddTabs: true
+  kitreset:
+    Cmds:
+    - cmi kitcdreset $1-
+    AddTabs: true
+  ekitreset:
+    Cmds:
+    - cmi kitcdreset $1-
+    AddTabs: true
+  kitr:
+    Cmds:
+    - cmi kitcdreset $1-
+    AddTabs: true
+  ekitr:
+    Cmds:
+    - cmi kitcdreset $1-
+    AddTabs: true
+  resetkit:
+    Cmds:
+    - cmi kitcdreset $1-
+    AddTabs: true
+  eresetkit:
+    Cmds:
+    - cmi kitcdreset $1-
+    AddTabs: true
+  kittycannon:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ekittycannon:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  elightning:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  shock:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  eshock:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  esmite:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  strike:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  estrike:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  ethor:
+    Cmds:
+    - cmi thor $1-
+    AddTabs: true
+  elist:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  online:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  eonline:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  playerlist:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  eplayerlist:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  plist:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  eplist:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  who:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  ewho:
+    Cmds:
+    - cmi list $1-
+    AddTabs: true
+  eloom:
+    Cmds:
+    - cmi loom $1-
+    AddTabs: true
+  email:
+    Cmds:
+    - cmi mail $1-
+    AddTabs: true
+  eemail:
+    Cmds:
+    - cmi mail $1-
+    AddTabs: true
+  memo:
+    Cmds:
+    - cmi mail $1-
+    AddTabs: true
+  ememo:
+    Cmds:
+    - cmi mail $1-
+    AddTabs: true
+  action:
+    Cmds:
+    - cmi me $1-
+    AddTabs: true
+  eaction:
+    Cmds:
+    - cmi me $1-
+    AddTabs: true
+  describe:
+    Cmds:
+    - cmi me $1-
+    AddTabs: true
+  edescribe:
+    Cmds:
+    - cmi me $1-
+    AddTabs: true
+  eme:
+    Cmds:
+    - cmi me $1-
+    AddTabs: true
