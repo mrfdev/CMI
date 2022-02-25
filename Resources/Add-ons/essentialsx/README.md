@@ -44,7 +44,7 @@ You can now go into the game and try out the commands.
 This website will show you if the EssentialsX command/alias is either in alias.yml or in the custom alias (this addon). If it doesn't mention such a thing, then it's not included yet, as this is a project in progress.
 
 (This list was last updated on February 25th, 2022 | 120 commands/alias)
-version 002, by Floris
+version 003, by Floris
 
 ## How to use the CMI Alias.yml file?
 
@@ -53,3 +53,7 @@ You can map all `/cmi <command>` commands as `/<command>` by editing the `~/plug
 ## Contributions?
 
 You're more than welcome to offer fixes, contributions, adjustments, suggestions. Feel free to clone and make a pull request. We can discuss and review your contributions and probably merge them into the main branch. 
+
+## TODO
+
+The focus is on the main commands now for module Essentials, not e-discord, or e-XMPP, etc. But ideally I'd add these in the future at some point.
