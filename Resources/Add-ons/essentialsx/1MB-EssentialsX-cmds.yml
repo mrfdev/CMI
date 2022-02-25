@@ -1225,3 +1225,19 @@ CustomAlias:
     Cmds:
     - cmi ping $1-
     AddTabs: true
+  potion:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  epotion:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  elixer:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eelixe:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
