@@ -709,10 +709,6 @@ CustomAlias:
     Cmds:
     - cmi hat $1-
     AddTabs: true
-  ehead:
-    Cmds:
-    - cmi head $1-
-    AddTabs: true
   eheal:
     Cmds:
     - cmi heal $1-
@@ -1368,4 +1364,160 @@ CustomAlias:
   emobkill:
     Cmds:
     - cmi killall $1-
+    AddTabs: true
+  fix:
+    Cmds:
+    - cmi repair $1-
+    AddTabs: true
+  efix:
+    Cmds:
+    - cmi repair $1-
+    AddTabs: true
+  erepair:
+    Cmds:
+    - cmi repair $1-
+    AddTabs: true
+  rest:
+    Cmds:
+    - cmi sit $1-
+    AddTabs: true
+  erest:
+    Cmds:
+    - cmi sit $1-
+    AddTabs: true
+  rtoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ertoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  replytoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ereplytoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  rules:
+    Cmds:
+    - asConsole! cmi ctext rules [playerName] $1
+    Tab: false
+  erules:
+    Cmds:
+    - asConsole! cmi ctext rules [playerName] $1
+    Tab: false
+  eseen:
+    Cmds:
+    - cmi seen $1-
+    AddTabs: true
+  esell:
+    Cmds:
+    - cmi sell $1-
+    AddTabs: true
+  esethome:
+    Cmds:
+    - cmi sethome $1-
+    AddTabs: true
+  createhome:
+    Cmds:
+    - cmi sethome $1-
+    AddTabs: true
+  ecreatehome:
+    Cmds:
+    - cmi sethome $1-
+    AddTabs: true
+  setjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  esetjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  createjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  ecreatejail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  settpr:
+    Cmds:
+    - cmi setrt $1-
+    AddTabs: true
+  esettpr:
+    Cmds:
+    - cmi setrt $1-
+    AddTabs: true
+  settprandom:
+    Cmds:
+    - cmi setrt $1-
+    AddTabs: true
+  esettprandom:
+    Cmds:
+    - cmi setrt $1-
+    AddTabs: true
+  createwarp:
+    Cmds:
+    - cmi setwarp $1-
+    AddTabs: true
+  ecreatewarp:
+    Cmds:
+    - cmi setwarp $1-
+    AddTabs: true
+  esetwarp:
+    Cmds:
+    - cmi setwarp $1-
+    AddTabs: true
+  esetworth:
+    Cmds:
+    - cmi setworth $1-
+    AddTabs: true
+  showkit:
+    Cmds:
+    - cmi kit -preview $1- $1-
+    AddTabs: true
+  kitshow:
+    Cmds:
+    - cmi kit -preview $1- $1-
+    AddTabs: true
+  skull:
+    Cmds:
+    - cmi head $1-
+    AddTabs: true
+  playerskull:
+    Cmds:
+    - cmi head $1-
+    AddTabs: true
+  eskull:
+    Cmds:
+    - cmi head $1-
+    AddTabs: true
+  ehead:
+    Cmds:
+    - cmi head $1-
+    AddTabs: true
+  eplayerskull:
+    Cmds:
+    - cmi head $1-
+    AddTabs: true
+  esmithingtable:
+    Cmds:
+    - cmi smithingtable $1-
+    AddTabs: true
+  smithtable:
+    Cmds:
+    - cmi smithingtable $1-
+    AddTabs: true
+  esmithtable:
+    Cmds:
+    - cmi smithingtable $1-
+    AddTabs: true
+  esocialspy:
+    Cmds:
+    - cmi socialspy $1-
     AddTabs: true
