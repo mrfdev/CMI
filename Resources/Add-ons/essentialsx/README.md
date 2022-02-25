@@ -37,15 +37,6 @@ Optionally you can put the BSP file into `~/plugins/BossShopPro/shops/` so you g
 
 You can now go into the game and try out the commands.
 
-## Overview of Commands included:
-
-<https://faq.cmi.support/essentialsx-commands>
-
-This website will show you if the EssentialsX command/alias is either in alias.yml or in the custom alias (this addon). If it doesn't mention such a thing, then it's not included yet, as this is a project in progress.
-
-(This list was last updated on February 25th, 2022 | 120 commands/alias)
-version 004, by Floris
-
 ## How to use the CMI Alias.yml file?
 
 You can map all `/cmi <command>` commands as `/<command>` by editing the `~/plugins/CMI/Alias.yml` file. Full info and instructions can be found here: <https://faq.cmi.support/commands>. And you can find an alternative alias file with every command enabled by default, here: <https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/Alias_true.yml>
@@ -57,3 +48,12 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 ## TODO
 
 The focus is on the main commands now for module Essentials, not e-discord, or e-XMPP, etc. But ideally I'd add these in the future at some point.
+
+## Overview of Commands included:
+
+<https://faq.cmi.support/essentialsx-commands>
+
+This website will show you if the EssentialsX command/alias is either in alias.yml or in the custom alias (this addon). If it doesn't mention such a thing, then it's not included yet, as this is a project in progress.
+
+- This list was last updated on February 25th, 2022
+- 165 commands/alias | version 005, by Floris

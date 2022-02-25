@@ -497,3 +497,199 @@ CustomAlias:
     Cmds:
     - cmi version $1-
     AddTabs: true
+  eexp:
+    Cmds:
+    - cmi exp $1-
+    AddTabs: true
+  xp:
+    Cmds:
+    - cmi exp $1-
+    AddTabs: true
+  eext:
+    Cmds:
+    - cmi ext $1-
+    AddTabs: true
+  extinguish:
+    Cmds:
+    - cmi ext $1-
+    AddTabs: true
+  eextinguish:
+    Cmds:
+    - cmi ext $1-
+    AddTabs: true
+  eat:
+    Cmds:
+    - cmi feed $1-
+    AddTabs: true
+  eeat:
+    Cmds:
+    - cmi feed $1-
+    AddTabs: true
+  efeed:
+    Cmds:
+    - cmi feed $1-
+    AddTabs: true
+  fireball:
+    Cmds:
+    - cmi shoot $1-
+    AddTabs: true
+  fireskull:
+    Cmds:
+    - cmi shoot $1-
+    AddTabs: true
+  firework:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  efirework:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  efly:
+    Cmds:
+    - cmi fly $1-
+    AddTabs: true
+  adventure:
+    Cmds:
+    - cmi gm adventure $1-
+    AddTabs: true
+  eadventure:
+    Cmds:
+    - cmi gm adventure $1-
+    AddTabs: true
+  adventuremode:
+    Cmds:
+    - cmi gm adventure $1-
+    AddTabs: true
+  eadventuremode:
+    Cmds:
+    - cmi gm adventure $1-
+    AddTabs: true
+  creative:
+    Cmds:
+    - cmi gm creative $1-
+    AddTabs: true
+  eecreative:
+    Cmds:
+    - cmi gm creative $1-
+    AddTabs: true
+  creativemode:
+    Cmds:
+    - cmi gm creative $1-
+    AddTabs: true
+  ecreativemode:
+    Cmds:
+    - cmi gm creative $1-
+    AddTabs: true
+  egamemode:
+    Cmds:
+    - cmi gm $1-
+    AddTabs: true
+  egm:
+    Cmds:
+    - cmi gm $1-
+    AddTabs: true
+  egma:
+    Cmds:
+    - cmi gm adventure $1-
+    AddTabs: true
+  egmc:
+    Cmds:
+    - cmi gm creative $1-
+    AddTabs: true
+  egms:
+    Cmds:
+    - cmi gm survival $1-
+    AddTabs: true
+  gmt:
+    Cmds:
+    - cmi gm $1-
+    AddTabs: true
+  egmt:
+    Cmds:
+    - cmi gm $1-
+    AddTabs: true
+  survival:
+    Cmds:
+    - cmi gm survival $1-
+    AddTabs: true
+  esurvival:
+    Cmds:
+    - cmi gm survival $1-
+    AddTabs: true
+  survivalmode:
+    Cmds:
+    - cmi gm survival $1-
+    AddTabs: true
+  esurvivalmode:
+    Cmds:
+    - cmi gm survival $1-
+    AddTabs: true
+  sp:
+    Cmds:
+    - cmi gm spectator $1-
+    AddTabs: true
+  egmsp:
+    Cmds:
+    - cmi gm spectator $1-
+    AddTabs: true
+  spec:
+    Cmds:
+    - cmi gm spectator $1-
+    AddTabs: true
+  spectator:
+    Cmds:
+    - cmi gm spectator $1-
+    AddTabs: true
+  elag:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  egc:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  mem:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  emem:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  memory:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  ememory:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  uptime:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  euptime:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  etps:
+    Cmds:
+    - cmi tps $1-
+    AddTabs: true
+  entities:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  eentities:
+    Cmds:
+    - cmi status $1-
+    AddTabs: true
+  getpos:
+    Cmds:
+    - cmi pos $1-
+    AddTabs: true
+  eposition:
+    Cmds:
+    - cmi pos $1-
+    AddTabs: true
