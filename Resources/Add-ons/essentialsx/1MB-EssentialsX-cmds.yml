@@ -1241,3 +1241,131 @@ CustomAlias:
     Cmds:
     - asPlayer! _nocmifeature
     Perm: true
+  epowertool:
+    Cmds:
+    - cmi attachcommand $1-
+    AddTabs: true
+  pt:
+    Cmds:
+    - cmi attachcommand $1-
+    AddTabs: true
+  ept:
+    Cmds:
+    - cmi attachcommand $1-
+    AddTabs: true
+  powertooltoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  epowertooltoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ptt:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eptt:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  pttoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  epttoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  playertime:
+    Cmds:
+    - cmi ptime $1-
+    AddTabs: true
+  eplayertime:
+    Cmds:
+    - cmi ptime $1-
+    AddTabs: true
+  eptime:
+    Cmds:
+    - cmi ptime $1-
+    AddTabs: true
+  playerweather:
+    Cmds:
+    - cmi pweather $1-
+    AddTabs: true
+  eplayerweather:
+    Cmds:
+    - cmi pweather $1-
+    AddTabs: true
+  epweather:
+    Cmds:
+    - cmi pweather $1-
+    AddTabs: true
+  er:
+    Cmds:
+    - cmi reply $1-
+    AddTabs: true
+  ereply:
+    Cmds:
+    - cmi reply $1-
+    AddTabs: true
+  erealname:
+    Cmds:
+    - cmi realname $1-
+    AddTabs: true
+  formula:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  eformula:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  method:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  emethod:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  erecipe:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  recipes:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  erecipes:
+    Cmds:
+    - cmi recipe $1-
+    AddTabs: true
+  remove:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
+  eremove:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
+  butcher:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
+  ebutcher:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
+  ekillall:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
+  mobkill:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
+  emobkill:
+    Cmds:
+    - cmi killall $1-
+    AddTabs: true
