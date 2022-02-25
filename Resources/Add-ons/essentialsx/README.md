@@ -43,8 +43,8 @@ You can now go into the game and try out the commands.
 
 This website will show you if the EssentialsX command/alias is either in alias.yml or in the custom alias (this addon). If it doesn't mention such a thing, then it's not included yet, as this is a project in progress.
 
-(This list was last updated on February 25th, 2022)
-version 001, by Floris
+(This list was last updated on February 25th, 2022 | 120 commands/alias)
+version 002, by Floris
 
 ## How to use the CMI Alias.yml file?
 
