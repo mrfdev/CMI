@@ -17,10 +17,6 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
-  eco:
-    Cmds:
-    - cmi money $1-
-    AddTabs: true
   eafk:
     Cmds:
     - cmi afk $1-
@@ -349,4 +345,155 @@ CustomAlias:
     Cmds:
     - cmi removehome $1-
     AddTabs: true
-
+  deljail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  edeljail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  remjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  eremjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  rmjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  ermjail:
+    Cmds:
+    - cmi jailedit $1-
+    AddTabs: true
+  delkit:
+    Cmds:
+    - cmi kitedit $1-
+    AddTabs: true
+  edelwarp:
+    Cmds:
+    - cmi removewarp $1-
+    AddTabs: true
+  remwarp:
+    Cmds:
+    - cmi removewarp $1-
+    AddTabs: true
+  eremwarp:
+    Cmds:
+    - cmi removewarp $1-
+    AddTabs: true
+  rmwarp:
+    Cmds:
+    - cmi removewarp $1-
+    AddTabs: true
+  ermwarp:
+    Cmds:
+    - cmi removewarp $1-
+    AddTabs: true
+  depth:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eheight:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  disposal:
+    Cmds:
+    - cmi dispose $1-
+    AddTabs: true
+  edisposal:
+    Cmds:
+    - cmi dispose $1-
+    AddTabs: true
+  etrash:
+    Cmds:
+    - cmi dispose $1-
+    AddTabs: true
+  eco:
+    Cmds:
+    - cmi money $1-
+    AddTabs: true
+  eeco:
+    Cmds:
+    - cmi money $1-
+    AddTabs: true
+  economy:
+    Cmds:
+    - cmi money $1-
+    AddTabs: true
+  eeconomy:
+    Cmds:
+    - cmi money $1-
+    AddTabs: true
+  editsign:
+    Cmds:
+    - cmi se $1-
+    AddTabs: true
+  sign:
+    Cmds:
+    - cmi se $1-
+    AddTabs: true
+  esign:
+    Cmds:
+    - cmi se $1-
+    AddTabs: true
+  eeditsign:
+    Cmds:
+    - cmi se $1-
+    AddTabs: true
+  eenchant:
+    Cmds:
+    - cmi enchant $1-
+    AddTabs: true
+  enchantment:
+    Cmds:
+    - cmi enchant $1-
+    AddTabs: true
+  eenchantment:
+    Cmds:
+    - cmi enchant $1-
+    AddTabs: true
+  eechest:
+    Cmds:
+    - cmi ender $1-
+    AddTabs: true
+  eenderchest:
+    Cmds:
+    - cmi ender $1-
+    AddTabs: true
+  endersee:
+    Cmds:
+    - cmi ender $1-
+    AddTabs: true
+  eendersee:
+    Cmds:
+    - cmi ender $1-
+    AddTabs: true
+  eec:
+    Cmds:
+    - cmi ender $1-
+    AddTabs: true
+  essentials:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
+  eessentials:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
+  ess:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
+  eess:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
+  essversion:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
