@@ -1521,3 +1521,204 @@ CustomAlias:
     Cmds:
     - cmi socialspy $1-
     AddTabs: true
+  changems:
+    Cmds:
+    - cmi spawner $1-
+    AddTabs: true
+  echangems:
+    Cmds:
+    - cmi spawner $1-
+    AddTabs: true
+  espawner:
+    Cmds:
+    - cmi spawner $1-
+    AddTabs: true
+  mobspawner:
+    Cmds:
+    - cmi spawner $1-
+    AddTabs: true
+  emobspawner:
+    Cmds:
+    - cmi spawner $1-
+    AddTabs: true
+  mob:
+    Cmds:
+    - cmi spawnmob $1-
+    AddTabs: true
+  emob:
+    Cmds:
+    - cmi spawnmob $1-
+    AddTabs: true
+  spawnentity:
+    Cmds:
+    - cmi spawnmob $1-
+    AddTabs: true
+  espawnentity:
+    Cmds:
+    - cmi spawnmob $1-
+    AddTabs: true
+  espawnmob:
+    Cmds:
+    - cmi spawnmob $1-
+    AddTabs: true
+  speed:
+    Cmds:
+    - cmi flyspeed $1-
+    - cmi walkspeed $1-
+    AddTabs: true
+  eflyspeed:
+    Cmds:
+    - cmi flyspeed $1-
+    AddTabs: true
+  efspeed:
+    Cmds:
+    - cmi flyspeed $1-
+    AddTabs: true
+  ewalkspeed:
+    Cmds:
+    - cmi walkspeed $1-
+    AddTabs: true
+  ewspeed:
+    Cmds:
+    - cmi walkspeed $1-
+    AddTabs: true
+  estonecutter:
+    Cmds:
+    - cmi stonecutter $1-
+    AddTabs: true
+  esudo:
+    Cmds:
+    - cmi sudo $1-
+    AddTabs: true
+  esuicide:
+    Cmds:
+    - cmi suicide $1-
+    AddTabs: true
+  etempban:
+    Cmds:
+    - cmi tempban $1-
+    AddTabs: true
+  etempbanip:
+    Cmds:
+    - cmi tempbanip $1-
+    AddTabs: true
+  thunder:
+    Cmds:
+    - cmi weather storm $1-
+    AddTabs: true
+  ethunder:
+    Cmds:
+    - cmi weather storm $1-
+    AddTabs: true
+  eday:
+    Cmds:
+    - cmi time day $1-
+    AddTabs: true
+  enight:
+    Cmds:
+    - cmi time night $1-
+    AddTabs: true
+  etime:
+    Cmds:
+    - cmi time $1-
+    AddTabs: true
+  togglejail:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ejail:
+    Cmds:
+    - cmi jail $1-
+    AddTabs: true
+  tjail:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  etjail:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  etogglejail:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eunjail:
+    Cmds:
+    - cmi unjail $1-
+    AddTabs: true
+  toggleshout:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  etoggleshout:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  etop:
+    Cmds:
+    - cmi top $1-
+    AddTabs: true
+  tele:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  etele:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  teleport:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  eteleport:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  etp:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  tp2p:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  etp2p:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  tpask:
+    Cmds:
+    - cmi tpa $1-
+    AddTabs: true
+  etpaall:
+    Cmds:
+    - cmi tpaall $1-
+    AddTabs: true
+  tpacancel:
+    Cmds:
+    - cmi tpdeny $1-
+    AddTabs: true
+  etpacancel:
+    Cmds:
+    - cmi tpdeny $1-
+    AddTabs: true
+  etpaccept:
+    Cmds:
+    - cmi tpaccept $1-
+    AddTabs: true
+  tpyes:
+    Cmds:
+    - cmi tpaccept $1-
+    AddTabs: true
+  etpyes:
+    Cmds:
+    - cmi tpaccept $1-
+    AddTabs: true
+  etpahere:
+    Cmds:
+    - cmi tpahere $1-
+    AddTabs: true
+  etpall:
+    Cmds:
+    - cmi tpall $1-
+    AddTabs: true
