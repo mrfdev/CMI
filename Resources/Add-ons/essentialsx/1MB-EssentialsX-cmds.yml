@@ -693,3 +693,139 @@ CustomAlias:
     Cmds:
     - cmi pos $1-
     AddTabs: true
+  egive:
+    Cmds:
+    - cmi give $1-
+    AddTabs: true
+  tgm:
+    Cmds:
+    - cmi god $1-
+    AddTabs: true
+  egrindstone:
+    Cmds:
+    - cmi grindstone $1-
+    AddTabs: true
+  ehat:
+    Cmds:
+    - cmi hat $1-
+    AddTabs: true
+  ehead:
+    Cmds:
+    - cmi head $1-
+    AddTabs: true
+  eheal:
+    Cmds:
+    - cmi heal $1-
+    AddTabs: true
+  ehelp:
+    Cmds:
+    - cmi help $1-
+    AddTabs: true
+  eamsg:
+    Cmds:
+    - cmi helpop $1-
+    AddTabs: true
+  ehome:
+    Cmds:
+    - cmi home $1-
+    AddTabs: true
+  ehomes:
+    Cmds:
+    - cmi home $1-
+    AddTabs: true
+  ice:
+    Cmds:
+    - cmi cuff $1-
+    AddTabs: true
+  eice:
+    Cmds:
+    - cmi cuff $1-
+    AddTabs: true
+  efreeze:
+    Cmds:
+    - cmi cuff $1-
+    AddTabs: true
+  eignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  unignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  eunignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  delignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  edelignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  remignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  eremignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  rmignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  ermignore:
+    Cmds:
+    - cmi ignore $1-
+    AddTabs: true
+  about:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
+  eabout:
+    Cmds:
+    - cmi version $1-
+    AddTabs: true
+  ifo:
+    Cmds:
+    - cmi info $1-
+    AddTabs: true
+  eifo:
+    Cmds:
+    - cmi info $1-
+    AddTabs: true
+  einfo:
+    Cmds:
+    - cmi info $1-
+    AddTabs: true
+  inform:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  einform:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  news:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  enews:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  einvsee:
+    Cmds:
+    - cmi inv $1-
+    AddTabs: true
+  eitem:
+    Cmds:
+    - cmi item $1-
+    AddTabs: true
+  ei:
+    Cmds:
+    - cmi item $1-
+    AddTabs: true
