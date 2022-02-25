@@ -1069,3 +1069,159 @@ CustomAlias:
     Cmds:
     - cmi me $1-
     AddTabs: true
+  emore:
+    Cmds:
+    - cmi more $1-
+    AddTabs: true
+  motd:
+    Cmds:
+    - asConsole! cmi ctext welcomeMessage [playerName] $1
+    Tab: false
+  emotd:
+    Cmds:
+    - asConsole! cmi ctext welcomeMessage [playerName] $1
+    Tab: false
+  w:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  m:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  t:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  pm:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  emsg:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  epm:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  tell:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  etell:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  whisper:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  ewhisper:
+    Cmds:
+    - cmi msg $1-
+    AddTabs: true
+  emsgtoggle:
+    Cmds:
+    - cmi msgtoggle $1-
+    AddTabs: true
+  emute:
+    Cmds:
+    - cmi mute $1-
+    AddTabs: true
+  esilence:
+    Cmds:
+    - cmi silence $1-
+    AddTabs: true
+  enear:
+    Cmds:
+    - cmi near $1-
+    AddTabs: true
+  nearby:
+    Cmds:
+    - cmi near $1-
+    AddTabs: true
+  enearby:
+    Cmds:
+    - cmi near $1-
+    AddTabs: true
+  enick:
+    Cmds:
+    - cmi nick $1-
+    AddTabs: true
+  nickname:
+    Cmds:
+    - cmi nick $1-
+    AddTabs: true
+  enickname:
+    Cmds:
+    - cmi nick $1-
+    AddTabs: true
+  nuke:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  enuke:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  epay:
+    Cmds:
+    - cmi pay $1-
+    AddTabs: true
+  payconfirmtoggle:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  epayconfirmtoggle:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  payconfirmoff:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  epayconfirmoff:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  payconfirmon:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  epayconfirmon:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  payconfirm:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  epayconfirm:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  payon:
+    Cmds:
+    - cmi paytoggle $1-
+    AddTabs: true
+  echo:
+    Cmds:
+    - cmi ping $1-
+    AddTabs: true
+  eecho:
+    Cmds:
+    - cmi ping $1-
+    AddTabs: true
+  eping:
+    Cmds:
+    - cmi ping $1-
+    AddTabs: true
+  pong:
+    Cmds:
+    - cmi ping $1-
+    AddTabs: true
+  epong:
+    Cmds:
+    - cmi ping $1-
+    AddTabs: true
