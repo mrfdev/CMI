@@ -1,0 +1,352 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  eco:
+    Cmds:
+    - cmi money $1-
+    AddTabs: true
+  eafk:
+    Cmds:
+    - cmi afk $1-
+    AddTabs: true
+  away:
+    Cmds:
+    - cmi afk $1-
+    AddTabs: true
+  eaway:
+    Cmds:
+    - cmi afk $1-
+    AddTabs: true
+  _nocmifeature:
+    Cmds:
+    - msg! [playerName] {#orange}Sorry, this EssentialsX command isn't a CMI feature
+      (yet).
+  antioch:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  tnt:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eanvil:
+    Cmds:
+    - cmi anvil $1-
+    AddTabs: true
+  eback:
+    Cmds:
+    - cmi back $1-
+    AddTabs: true
+  return:
+    Cmds:
+    - cmi back $1-
+    AddTabs: true
+  ereturn:
+    Cmds:
+    - cmi back $1-
+    AddTabs: true
+  backup:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebackup:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebal:
+    Cmds:
+    - cmi balance $1-
+    AddTabs: true
+  ebalance:
+    Cmds:
+    - cmi balance $1-
+    AddTabs: true
+  emoney:
+    Cmds:
+    - cmi emoney $1-
+    AddTabs: true
+  balancetop:
+    Cmds:
+    - cmi baltop $1-
+    AddTabs: true
+  ebalancetop:
+    Cmds:
+    - cmi baltop $1-
+    AddTabs: true
+  ebaltop:
+    Cmds:
+    - cmi baltop $1-
+    AddTabs: true
+  eban:
+    Cmds:
+    - cmi ban $1-
+    AddTabs: true
+  banip:
+    Cmds:
+    - cmi ipban $1-
+    AddTabs: true
+  ebanip:
+    Cmds:
+    - cmi ipban $1-
+    AddTabs: true
+  beezooka:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebeezooka:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  beecannon:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebeecannon:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  bigtree:
+    Cmds:
+    - cmi tree $1-
+    AddTabs: true
+  ebigtree:
+    Cmds:
+    - cmi tree $1-
+    AddTabs: true
+  largetree:
+    Cmds:
+    - cmi tree $1-
+    AddTabs: true
+  elargetree:
+    Cmds:
+    - cmi tree $1-
+    AddTabs: true
+  ebook:
+    Cmds:
+    - cmi book $1-
+    AddTabs: true
+  break:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebreak:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebcast:
+    Cmds:
+    - cmi broadcast $1-
+    AddTabs: true
+  bcast:
+    Cmds:
+    - cmi broadcast $1-
+    AddTabs: true
+  ebc:
+    Cmds:
+    - cmi broadcast $1-
+    AddTabs: true
+  broadcastworld:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  bcw:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebcw:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  bcastw:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebcastw:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ebroadcastworld:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  shoutworld:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eshoutworld:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eburn:
+    Cmds:
+    - cmi burn $1-
+    AddTabs: true
+  ecartographytable:
+    Cmds:
+    - cmi cartographytable $1-
+    AddTabs: true
+  carttable:
+    Cmds:
+    - cmi cartographytable $1-
+    AddTabs: true
+  ecarttable:
+    Cmds:
+    - cmi cartographytable $1-
+    AddTabs: true
+  clearinventory:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  eci:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  clean:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  eclean:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  eclear:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  clearinvent:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  eclearinvent:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  eclearinventory:
+    Cmds:
+    - cmi clear $1-
+    AddTabs: true
+  clearinventoryconfirmtoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eclearinventoryconfirmtoggle:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  clearinventoryconfirmoff:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eclearinventoryconfirmoff:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  clearconfirmoff:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eclearconfirmoff:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  clearconfirmon:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eclearconfirmon:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  clearconfirm:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eclearconfirm:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ecompass:
+    Cmds:
+    - cmi compass $1-
+    AddTabs: true
+  direction:
+    Cmds:
+    - cmi compass $1-
+    AddTabs: true
+  edirection:
+    Cmds:
+    - cmi compass $1-
+    AddTabs: true
+  econdense:
+    Cmds:
+    - cmi condense $1-
+    AddTabs: true
+  ecompact:
+    Cmds:
+    - cmi condense $1-
+    AddTabs: true
+  blocks:
+    Cmds:
+    - cmi condense $1-
+    AddTabs: true
+  eblocks:
+    Cmds:
+    - cmi condense $1-
+    AddTabs: true
+  toblocks:
+    Cmds:
+    - cmi condense $1-
+    AddTabs: true
+  etoblocks:
+    Cmds:
+    - cmi condense $1-
+    AddTabs: true
+  createkit:
+    Cmds:
+    - cmi kiteditor $1-
+    AddTabs: true
+  ck:
+    Cmds:
+    - cmi kiteditor $1-
+    AddTabs: true
+  customtext:
+    Cmds:
+    - cmi aliaseditor $1-
+    AddTabs: true
+  edelhome:
+    Cmds:
+    - cmi removehome $1-
+    AddTabs: true
+  remhome:
+    Cmds:
+    - cmi removehome $1-
+    AddTabs: true
+  eremhome:
+    Cmds:
+    - cmi removehome $1-
+    AddTabs: true
+  rmhome:
+    Cmds:
+    - cmi removehome $1-
+    AddTabs: true
+  ermhome:
+    Cmds:
+    - cmi removehome $1-
+    AddTabs: true
+
