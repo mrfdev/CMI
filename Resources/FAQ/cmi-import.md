@@ -124,4 +124,12 @@ Note: Yes, annoying, but .. doing it all at once, I've had issues in the past, e
 
 Hi there, someone recently made me aware of this import tool. Please note that I did not review the code, or the provided jar file. Please vet it before using it yourself. It's not an official tool, using it is at your own risk. But I think it's worth to mention at least. <https://github.com/BlackBeltPanda/Essentials-Kits-To-CMI> This should help servers with loads of kits to maybe do the bigger part of the import work, after which they can clean things up. Might save time.
 
+## All the EssentialsX Commands ?
+
+Question: Me and my players are used to a lot of the original EssentialsX commands and their aliases, where are they! 
+
+Answer: A lot of them are in the CMI Alias.yml file, go through them. On my github repo here I also have under resources > alternative > alias_true.yml where they're all set to true. 
+
+Anyway, anything that's not in CMI can be manually added, I've made a nice little add-on that you can use, here: <https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/essentialsx> Read the readme before downloading, and backup your data before using it of course.
+
 ---
