@@ -17,6 +17,12 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
+  _nocmifeature:
+    Cmds:
+    - asConsole! cmi sound block_amethyst_cluster_hit -v:0.8 [playerName] -s
+    - msg! [playerName] &r\n{#gold} → Sorry, the legacy command $1 from EssentialsX is not a CMI feature (yet).
+    - check:$2==null! msg! [playerName] &r
+    - check:$2!=null! msg! [playerName] {#gold} → $2- \n&r
   eafk:
     Cmds:
     - cmi afk $1-
@@ -29,17 +35,13 @@ CustomAlias:
     Cmds:
     - cmi afk $1-
     AddTabs: true
-  _nocmifeature:
-    Cmds:
-    - msg! [playerName] {#orange}Sorry, this EssentialsX command isn't a CMI feature
-      (yet).
   antioch:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   tnt:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   eanvil:
     Cmds:
@@ -59,11 +61,11 @@ CustomAlias:
     AddTabs: true
   backup:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ebackup:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ebal:
     Cmds:
@@ -103,19 +105,19 @@ CustomAlias:
     AddTabs: true
   beezooka:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
     Perm: true
   ebeezooka:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
     Perm: true
   beecannon:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
     Perm: true
   ebeecannon:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
     Perm: true
   bigtree:
     Cmds:
@@ -139,11 +141,11 @@ CustomAlias:
     AddTabs: true
   break:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   ebreak:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   ebcast:
     Cmds:
@@ -159,35 +161,35 @@ CustomAlias:
     AddTabs: true
   broadcastworld:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   bcw:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   ebcw:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   bcastw:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   ebcastw:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   ebroadcastworld:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   shoutworld:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   eshoutworld:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   eburn:
     Cmds:
@@ -239,43 +241,43 @@ CustomAlias:
     AddTabs: true
   clearinventoryconfirmtoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   eclearinventoryconfirmtoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   clearinventoryconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   eclearinventoryconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   clearconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   eclearconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   clearconfirmon:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   eclearconfirmon:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   clearconfirm:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   eclearconfirm:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
     Perm: true
   ecompass:
     Cmds:
@@ -395,11 +397,11 @@ CustomAlias:
     AddTabs: true
   depth:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   eheight:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   disposal:
     Cmds:
@@ -539,11 +541,11 @@ CustomAlias:
     AddTabs: true
   firework:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   efirework:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
     Perm: true
   efly:
     Cmds:
@@ -799,19 +801,19 @@ CustomAlias:
     AddTabs: true
   inform:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
     Perm: true
   einform:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
     Perm: true
   news:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
     Perm: true
   enews:
     Cmds:
-    - asPlayer! _nocmifeature
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
     Perm: true
   einvsee:
     Cmds:
@@ -955,11 +957,11 @@ CustomAlias:
     AddTabs: true
   kittycannon:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ekittycannon:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   elightning:
     Cmds:
@@ -1155,11 +1157,11 @@ CustomAlias:
     AddTabs: true
   nuke:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   enuke:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   epay:
     Cmds:
@@ -1223,19 +1225,19 @@ CustomAlias:
     AddTabs: true
   potion:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   epotion:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   elixer:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   eelixe:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   epowertool:
     Cmds:
@@ -1251,27 +1253,27 @@ CustomAlias:
     AddTabs: true
   powertooltoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   epowertooltoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ptt:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   eptt:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   pttoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   epttoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   playertime:
     Cmds:
@@ -1387,19 +1389,19 @@ CustomAlias:
     AddTabs: true
   rtoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ertoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   replytoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ereplytoggle:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   rules:
     Cmds:
@@ -1624,7 +1626,7 @@ CustomAlias:
     AddTabs: true
   togglejail:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
     Perm: true
   ejail:
     Cmds:
@@ -1632,15 +1634,15 @@ CustomAlias:
     AddTabs: true
   tjail:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
     Perm: true
   etjail:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
     Perm: true
   etogglejail:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
     Perm: true
   eunjail:
     Cmds:
@@ -1648,11 +1650,11 @@ CustomAlias:
     AddTabs: true
   toggleshout:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   etoggleshout:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   etop:
     Cmds:
@@ -1724,11 +1726,11 @@ CustomAlias:
     AddTabs: true
   tpauto:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   etpauto:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   etpdeny:
     Cmds:
@@ -1828,11 +1830,11 @@ CustomAlias:
     AddTabs: true
   unlimited:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   eul:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ev:
     Cmds:
@@ -1852,11 +1854,11 @@ CustomAlias:
     AddTabs: true
   warpinfo:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   ewarpinfo:
     Cmds:
-    - asPlayer! _nocmifeature
+    - asPlayer! _nocmifeature $0
     Perm: true
   erain:
     Cmds:
