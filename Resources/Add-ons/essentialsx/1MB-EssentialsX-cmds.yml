@@ -1722,3 +1722,203 @@ CustomAlias:
     Cmds:
     - cmi tpall $1-
     AddTabs: true
+  tpauto:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  etpauto:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  etpdeny:
+    Cmds:
+    - cmi tpdeny $1-
+    AddTabs: true
+  tpno:
+    Cmds:
+    - cmi tpdeny $1-
+    AddTabs: true
+  etpno:
+    Cmds:
+    - cmi tpdeny $1-
+    AddTabs: true
+  s:
+    Cmds:
+    - cmi tphere $1-
+    AddTabs: true
+  etphere:
+    Cmds:
+    - cmi tphere $1-
+    AddTabs: true
+  otp:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  offlinetp:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  tpoff:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  tpoffline:
+    Cmds:
+    - cmi tp $1-
+    AddTabs: true
+  etpohere:
+    Cmds:
+    - cmi tpohere $1-
+    AddTabs: true
+  etppos:
+    Cmds:
+    - cmi tppos $1-
+    AddTabs: true
+  tpr:
+    Cmds:
+    - cmi rt $1-
+    AddTabs: true
+  etpr:
+    Cmds:
+    - cmi rt $1-
+    AddTabs: true
+  tprandom:
+    Cmds:
+    - cmi rt $1-
+    AddTabs: true
+  etprandom:
+    Cmds:
+    - cmi rt $1-
+    AddTabs: true
+  etptoggle:
+    Cmds:
+    - cmi tptoggle $1-
+    AddTabs: true
+  etree:
+    Cmds:
+    - cmi tree $1-
+    AddTabs: true
+  pardon:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  eunban:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  epardon:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  unbanip:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  eunbanip:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  pardonip:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  epardonip:
+    Cmds:
+    - cmi unban $1-
+    AddTabs: true
+  unlimited:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  eul:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ev:
+    Cmds:
+    - cmi vanish $1-
+    AddTabs: true
+  evanish:
+    Cmds:
+    - cmi vanish $1-
+    AddTabs: true
+  ewarp:
+    Cmds:
+    - cmi warp $1-
+    AddTabs: true
+  ewarps:
+    Cmds:
+    - cmi warp $1-
+    AddTabs: true
+  warpinfo:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  ewarpinfo:
+    Cmds:
+    - asPlayer! _nocmifeature
+    Perm: true
+  erain:
+    Cmds:
+    - cmi weather rain $1-
+    AddTabs: true
+  sky:
+    Cmds:
+    - cmi weather $1-
+    AddTabs: true
+  esky:
+    Cmds:
+    - cmi weather $1-
+    AddTabs: true
+  estorm:
+    Cmds:
+    - cmi weather storm $1-
+    AddTabs: true
+  esun:
+    Cmds:
+    - cmi weather sun $1-
+    AddTabs: true
+  eweather:
+    Cmds:
+    - cmi weather $1-
+    AddTabs: true
+  ewhois:
+    Cmds:
+    - cmi info $1-
+    AddTabs: true
+  ecraft:
+    Cmds:
+    - cmi workbench $1-
+    AddTabs: true
+  ewb:
+    Cmds:
+    - cmi workbench $1-
+    AddTabs: true
+  wbench:
+    Cmds:
+    - cmi workbench $1-
+    AddTabs: true
+  ewbench:
+    Cmds:
+    - cmi workbench $1-
+    AddTabs: true
+  eworkbench:
+    Cmds:
+    - cmi workbench $1-
+    AddTabs: true
+  eworld:
+    Cmds:
+    - cmi world $1-
+    AddTabs: true
+  eprice:
+    Cmds:
+    - cmi worth $1-
+    AddTabs: true
+  price:
+    Cmds:
+    - cmi worth $1-
+    AddTabs: true
+  eworth:
+    Cmds:
+    - cmi worth $1-
+    AddTabs: true

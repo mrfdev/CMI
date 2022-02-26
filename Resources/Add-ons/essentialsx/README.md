@@ -56,4 +56,4 @@ The focus is on the main commands now for module Essentials, not e-discord, or e
 This website will show you if the EssentialsX command/alias is either in alias.yml or in the custom alias (this addon). If it doesn't mention such a thing, then it's not included yet, as this is a project in progress.
 
 - This list was last updated on February 26th, 2022
-- 425+ commands/alias | version 012, by Floris
+- 475 EssentialsX commands and their aliases | version 013, by Floris
