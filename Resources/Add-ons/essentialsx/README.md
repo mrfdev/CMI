@@ -37,6 +37,12 @@ Optionally you can put the BSP file into `~/plugins/BossShopPro/shops/` so you g
 
 You can now go into the game and try out the commands.
 
+## How to use this 1MB-Addon .yml file?
+
+You can open it in your favorite editor, make changes accordingly. You can also in-game edit and delete commands, or even add more. 
+
+This video shows you a bit more behind the scenes: <https://youtu.be/oWKW-CZTqB8>
+
 ## How to use the CMI Alias.yml file?
 
 You can map all `/CMI <command>` commands as `/<command>` by editing the `~/plugins/CMI/Alias.yml` file. Full info and instructions can be found here: <https://faq.CMI.support/commands>. And you can find an alternative alias file with every command enabled by default, here: <https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/Alias_true.yml>
@@ -58,4 +64,4 @@ This website will show you if the EssentialsX command/alias is either in alias.y
 Note that at the moment module-addons aren't added (yet).
 
 - This list was last updated on February 26th, 2022
-- 475 EssentialsX commands and their aliases | version 1.0.0 build 014, by Floris
+- 475 EssentialsX commands and their aliases | version 1.0.0 build 015, by Floris
