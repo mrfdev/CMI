@@ -73,24 +73,24 @@ This page is a quick introduction to the CMI Library.
 
 It's a plugin helper that can deal with frequently used phrases, hex colors, etc. which all of zrips' plugins can use. This adds consistancy among the various plugins.
 
-You can see the CMI Lib page here: <https://www.zrips.net/cmilib/>
-You can find the CMI LIb download here: <https://www.spigotmc.org/resources/cmilib.87610/>
+You can see the CMI Lib page here: <https://www.zrips.net/CMILib/>
+You can find the CMI LIb download here: <https://www.spigotmc.org/resources/CMILib.87610/>
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
-The full list as of February 11th, 2022
+The full list as of March 1st, 2022
 
-- CMI version 9.1.1.2
+- CMI version 9.1.2.1
 - Selection Visualizer version 3.1.0.0
 - TryMe version 7.0.0.2
 - Mob Farm Manager version 2.0.1.2
 - Residence version 5.0.1.3
-- Jobs-Reborn version 5.0.1.3
+- Jobs-Reborn version 5.0.1.4
 - BottledExp version 3.0.1.2
 - ReCount version 3.5.1
 - TradeMe version 6.1.1.1
 
-These currently support Spigot-, and Paper 1.18.1 and lower, and require the CMILib version 1.1.1.0 or newer to properly operate.
+These currently support Spigot-, and Paper 1.18.2 and lower, and require the CMILib version 1.1.1.2 or newer to properly operate.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How do I get it?
 
@@ -116,6 +116,6 @@ From CMI Library version 1.0.2.4 onwards it should automatically clean-up older 
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> I keep deleting this CMILib jar and it keeps coming back!
 
-Yes, Zrips plugins require the latest CMI Lib to properly work, you need it, don't delete it.
+Yes, Zrips plugins require the latest CMILib to properly work, you need it, don't delete it.
 
 ---
