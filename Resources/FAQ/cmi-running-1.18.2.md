@@ -1,4 +1,4 @@
-# FAQ - Running CMI on Spigot / Paper 1.18.1
+# FAQ - Running CMI on Spigot / Paper 1.18.2
 
 <topMenu>
 <details>
@@ -58,20 +58,20 @@
          <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
         <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)
          <pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
-        <li>All my FAQ pages have been written for Spigot / Paper 1.18.1 and CMI 9.1.1.1 or newer.</li>
+        <li>All my FAQ pages have been written for Spigot / Paper 1.18.2 and CMI 9.1.3.0 or newer.</li>
         <li>The mrfdev github page is not an official resource, we're sharing our knowledge as a courtesy.</li>
         <li>I am a team member on the Zrips Discord, this does not mean what I share on here is official.</li>
     </ul>
 </details>
 </topMenu>
  
-This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.18.1.
+This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.18.2.
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.1.1.1 SqLite
-    CMILib: 1.1.1.0
-    Server: Paper(177) 1.18.1-R0.1-SNAPSHOT
+    CMI plugin version: 9.1.2.0 SqLite
+    CMILib: 1.1.2.0
+    Server: Spigot 1.18.2-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
@@ -82,16 +82,16 @@ This page should help explain what I personally think is the way to run CMI on S
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is made for CMI 9.1.x and a Spigot or Paper server on version 1.18.1. Apply steps to other (lower) versions accordingly.
-- CMILib will be required. Zrips' libraries and other resources are linked below.
+- This is made for CMI 9.1.3.x and a Spigot-, or Paper servers on version 1.18.2. Apply steps to other (lower) versions accordingly.
+- The LATEST CMILib version will be required. Zrips' libraries and other resources are linked below.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.18? Yes, CMI 9.1 can be used on 1.18.1, do not use 9.0.
-- Will there be a build for 1.18.1? Yes, there is one, make sure you use CMILib 1.1.0.6 or newer
+- Is there a build for 1.18.x? Yes, CMI 9.1.3.x can be used on 1.18.2.
+- Will there be a build for 1.xx? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
-- Can I upgrade from an older version of CMI to the build for 1.18.1? Yes, latest cmi and cmilib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.1.0.6 or newer is required. 
+- Can I upgrade from an older version of CMI to the build for 1.18.2? Yes, latest CMI and CMILib jars will achieve this.
+- CMILib will be required? Yes. CMILib 1.1.2.0 or newer is required for 1.18.2
 - So where do I download it? spigotmc.org
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
@@ -100,14 +100,13 @@ This page should help explain what I personally think is the way to run CMI on S
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Test setup
 
-- Before you actually update your live server it's recommended to have a test instance you can try stuff out on. This way you can detect issues and concerns early and learn to address those. Without risking your live server. especially while CMI 9 is in beta, and Minecraft 1.17 is still unstable.
-- If this testing takes hours and days and you have new live data because players keep playing, obviously take the live server offline and backup again, before making the final changes.
+- Before you actually update your live server it's recommended to have a test instance you can try stuff out on. This way you can detect issues and concerns early and learn to address those.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Before we start to install and/or upgrade CMI 9
 
 - /stop your server. Do the backup thing, and make a test server.
 
-- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.18.1 or download Paper 1.18.1 from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
+- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.18.2 or download Paper 1.18.2 from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
 
 - If you are not yet running CMILib then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download it here: <https://www.spigotmc.org/resources/87610/>
 
@@ -125,7 +124,7 @@ If you already are running CMI, you can skip this and go straight to Upgrading (
 
 - If you spot any bugs, confirm them, and report them to Zrip's Github as a new issue.
 
-- When the server has started, CMI will automatically download languages, CMI Lib and you're ready to **Finish** (see below)
+- When the server has started, CMI will automatically download languages, CMILib and you're ready to **Finish** (see below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Upgrading CMI
 
@@ -135,9 +134,9 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - Keep the existing `plugins/CMILib/` folder, do not delete it.
 
-- If you don't have the cmilib folder, don't worry, CMI will create it for you.
+- If you don't have the CMILib folder, don't worry, CMI will create it for you.
 
-- If you have the old CMI Lib version, don't worry, CMI will auto-upgrade it, and we will clean up after.
+- If you have the old CMILib version, don't worry, CMI will auto-upgrade it, and we will clean up after.
 
 - Remove the old CMI `.jar` you're using from the plugins/ directory. 
 
@@ -147,9 +146,9 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - Keep an eye on the console, the `latest.log` will also have all the details. If something goes wrong, take note. And try to figure out what is up and try again.
 
-- When the server has started, CMI will automatically download languages, CMI Lib and you're ready to **Finish** (see below)
+- When the server has started, CMI will automatically download languages, CMILib and you're ready to **Finish** (see below)
 
-- If your plugins/ directory has the old CMI Lib `.jar` files, it is okay to remove them now. Keep the new .jar of course.
+- If your plugins/ directory has the old CMILib `.jar` files, it is okay to remove them now. Keep the new .jar of course.
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Finishing up.
 
@@ -165,7 +164,7 @@ What a list huh, okay, now you have experience, you have tested, and you can do 
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What about 1.16.5?
 
-CMI will not run on 1.16.0 or 1.16.1, but 1.16.5 is supported. You can use the latest cmi and cmilib jars on 1.16.5. I always recommend to stay current for each family branch.
+CMI will not run on 1.16.0 or 1.16.1, but 1.16.5 is supported. You can use the latest cmi and CMILib jars on 1.16.5. I always recommend to stay current for each family branch.
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
@@ -181,13 +180,13 @@ These are for CMI 9.x:
 `CMI Bungee` Basic bungee chat support
 <https://www.zrips.net/wp-content/uploads/2021/09/CMIB1.0.1.0.jar>
 
-`CMI Library` Base Library 
-<https://www.spigotmc.org/resources/cmilib.87610/>
+`CMILibrary` Base Library 
+<https://www.spigotmc.org/resources/CMILib.87610/>
 
-`Spigot website` This is where you can get buildtools and make a spigot 1.18.1 jar
+`Spigot website` This is where you can get buildtools and make a spigot 1.18.2 jar
 <https://hub.spigotmc.org/jenkins/job/BuildTools/>
 
-`Paper website` This is where you can get Paper's 1.18.1 jar
+`Paper website` This is where you can get Paper's 1.18.2 jar
 <https://papermc.io/downloads>
 
 ---
