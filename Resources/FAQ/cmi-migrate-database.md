@@ -96,7 +96,9 @@ Not really existing, https://www.zrips.net/cmi/commands/
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Setup
 
-CMI has a databaseinfo.yml file you have to edit to point to the mysql database. I recommend to stop the server, turn on maintenance mode, then edit the yml file and start the server. Do not log in. From console run the migration command and give it reasonable time to complete. When you believe it's done. Stop the server, check your mysql database to see if any cmi data is in there. If so then you can start your server again without maintenance mode. 
+CMI has a databaseinfo.yml file you have to edit to point to the mysql database. I recommend to backup the server, turn on maintenance mode, then edit the databaseInfo.yml file and turn on maintenance mode for the server (make sure there are no players online). Do not log in. 
+
+Then from console run the migration command and give it reasonable time to complete. When you believe it's done. Stop the server, check your mysql database to see if any cmi data is in there. If so then you can start your server again without maintenance mode. 
 
 Side note: make a full back up of your server before making changes to it.
 
