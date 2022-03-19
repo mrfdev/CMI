@@ -71,9 +71,9 @@ This page should help explain what I personally think is the way to run CMI on S
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.1.2.0 SqLite
-    CMILib: 1.1.2.0
-    Server: Spigot 1.18.2-R0.1-SNAPSHOT
+    CMI plugin version: 9.1.3.1 SqLite
+    CMILib: 1.1.2.3
+    Server: Paper(264) 1.18.2-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
