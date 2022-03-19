@@ -52,6 +52,7 @@
 # <CC> performs command from console once
 # <CCI> performs command from console every time player clicks text
 # <URL> includes url
+
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&e[&a1MB&e] '
@@ -158,6 +159,7 @@ info:
     flying: '&6Flying'
     notflying: '&6Not flying'
   Inventory:
+    Full: '&5Your inventory is full. Can''t add item'
     FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
   TimeNotRecorded: '&e-No record-'
   years: '&e[years] &6years '
@@ -204,7 +206,7 @@ info:
   NoGameMode: '&cPlease use 0/1/2/3 or Survival/Creative/Adventure/Spectator or s/c/a/sp!'
   NameChange: '&6[playerDisplayName] &elogged in, also known as: &6[namelist]'
   Cooldowns: '&eCooldown in motion for &6[cmd] &ewait &6[time]'
-  specializedCooldowns: '&eCooldown in motion for this command, please wait &6[time]'
+  specializedCooldowns: '&eSorry, cooldown in motion for another &6[time]'
   specializedRunning: '&eCommand still running, please wait &6[time]'
   CooldownOneTime: '&eThis command is one time use'
   WarmUp:
@@ -679,6 +681,7 @@ direction:
   nw: North West
 modify:
   middlemouse: '&2Middle mouse click to edit'
+  qButtonEdit: '&2Click Q to edit'
   newItem: '{#Edward}Place new item here'
   newLine: '&2<NewLine>'
   newLineHover: '&2Add new line'
@@ -720,6 +723,7 @@ modify:
   commandList: ' &e[command]  '
   emptyLine: '{#Edward}[Empty line]'
   commandEdit: '&eEdit list'
+  nameAddInfo: '&eEnter new name. Type &6cancel &eto cancel'
   lineAddInfo: '&eEnter new line. Type &6cancel &eto cancel'
   commandAddInfo: '&eEnter new command. Type &6cancel &eto cancel'
   commandAddInformationHover: "&e[playerName] can be used to get player name \n&eTo\
