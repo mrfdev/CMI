@@ -76,9 +76,9 @@ For server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI 
 - Start using CMI as Chat Manager, if you were using something else.
  * https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md
 
-- Install LuckPerms version 5.3.104 or newer for 1.18.1 (<https://www.spigotmc.org/resources/28140/>)
+- Install LuckPerms version 5.4.10 or newer for 1.18.2 (<https://www.spigotmc.org/resources/28140/>)
 
-- Install PlaceholderAPI version 2.11.2-DEV-148 or newer for 1.18.1 (<https://www.spigotmc.org/resources/6245/>)
+- Install PlaceholderAPI version 2.11.2-DEV-152 or newer for 1.18.2 (<https://www.spigotmc.org/resources/6245/>)
 
 Before we get to the CMI part of things, let's explain this to help you get some overview:
 > In order to get prefixes to show up in CMI, you need LuckPerms and PlaceholderAPI properly installed first. Also, you need to use CMI as chat manager. This way whatever LP placeholder is available to CMI through PAPI. 
