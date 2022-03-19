@@ -19,6 +19,7 @@
 CustomAlias:
   mcstats discord:
     Cmds:
+    - msg! [playerName] {#orange} .. Sending /mcstats information to Discord.
     - cooldown:60?#! msg! [playerName] {#orange} .. Sending /mcstats information to
       Discord.
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :zap: **power level**

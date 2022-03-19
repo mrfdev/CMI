@@ -47,7 +47,7 @@ general:
     commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! warp mine
+    - asPlayer! warp general
   coolbrosnether:
     Loc: 12452.0:240.0:10111.0:12454.0:242.0:10111.0
     enabled: true
@@ -381,6 +381,21 @@ general:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! walk
+valentine:
+  deletemelater:
+    Loc: 368.0:63.0:-129.0:892.0:199.0:395.0
+    enabled: true
+    effect: Heart
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands: []
 run:
   runlevel3:
     Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
@@ -447,8 +462,8 @@ santa:
     - asConsole! cmi sound AMBIENT_UNDERWATER_LOOP mrfloris -v:0.7
 wild:
   wildend:
-    Loc: -30.0:57.0:-1.0:-28.0:59.0:1.0
-    enabled: false
+    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
+    enabled: true
     effect: DepthSuspend
     showParticles: true
     kickBack: true
@@ -458,13 +473,13 @@ wild:
     particleAmount: 20
     particleHide: 0
     activationRange: 16
-    commandsWithoutTp: false
+    commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! end
   wildgeneral:
-    Loc: -7.0:58.0:23.0:-4.0:60.0:23.0
-    enabled: false
+    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
+    enabled: true
     effect: Totem
     showParticles: true
     kickBack: true
@@ -474,29 +489,13 @@ wild:
     particleAmount: 2
     particleHide: 0
     activationRange: 16
-    commandsWithoutTp: false
+    commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! general
-  wildmine:
-    Loc: -6.0:54.0:-25.0:6.0:62.0:-24.0
-    enabled: false
-    effect: Nautilus
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 78
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: false
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! mine
   wildnether:
-    Loc: 28.0:58.0:-1.0:28.0:61.0:1.0
-    enabled: false
+    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
+    enabled: true
     effect: Portal
     showParticles: true
     kickBack: true
@@ -506,7 +505,7 @@ wild:
     particleAmount: 20
     particleHide: 0
     activationRange: 16
-    commandsWithoutTp: false
+    commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! nether

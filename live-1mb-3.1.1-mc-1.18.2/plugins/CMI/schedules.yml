@@ -72,8 +72,11 @@ resetWeatherTime:
   - cmi time unfreeze skyblock
   - cmi weather unlock skyblock
   - delay! 1
-  - cmi time unfreeze mine
-  - cmi weather unlock mine
+  - cmi time unfreeze oneblock
+  - cmi weather unlock oneblock
+  - delay! 1
+  - cmi time unfreeze wild
+  - cmi weather unlock wild
   - delay! 1
   - save-all
 mcmmoStart:
@@ -189,12 +192,6 @@ Announcer:
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Please join our website:
     https://www.omgboards.com It has fun offtopic discussion, events, inside information,
     help, and much more.'
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Need resources? You can
-    mine in the temporary /mine world
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Need resources? You can
-    mine in the temporary /nether world
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Need resources? You can
-    mine in the temporary /end world
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players have access to
     the /back command to quickly teleport back to their previous location. Super handy
     if you accidentally died and lost your stuff.
@@ -206,7 +203,8 @@ Announcer:
     a few! Check /groups'
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Ranks: We have quite a
     few! Check /ranks'
-  - broadcast! {#Cerulean} 1MB Community »{#magenta} We are 10 years old in 2021 WHOOOO!
+  - broadcast! {#Cerulean} 1MB Community »{#magenta} We are 11+ years old in 2022
+    WHOOOO!
   - 'broadcast! {#Cerulean} 1MB Community »{#magenta} Type: /celebration'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can smelt a lot of
     mob heads in a furnace for a cheque.
@@ -220,8 +218,8 @@ Announcer:
     up to 5 /points per fish.
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sell all the types of
     fish on the: /fish shop'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB season 3 (3.0.1)
-    for Minecraft 1.18.1'
+  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB Third Era
+    (3.1.1) for Minecraft 1.18.2'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
     can have up to 1 Chest /shops
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group Player
@@ -272,7 +270,7 @@ Announcer:
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} A great way to make money
     is with Jobs, players can join up to three. To get started type: "/jobs browse"'
 tenyearsweekend:
-  Enabled: true
+  Enabled: false
   MinPlayers: 1
   Delay: 300
   Repeat: true
@@ -281,9 +279,9 @@ tenyearsweekend:
   Commands:
   - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange>}» END
     RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedB -c:green {#orange>}» MINE
-    RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange>}» END
+    RECENTLY RESET {#gold<}{#Feijoa}&l Now a perm world.
   - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange>}» NETHER
     RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedD -c:green {#orange>}» WE
-    ARE ON 1.18.1 {#gold<}{#Feijoa}&l New World Heights!
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange>}» NETHER
+    RECENTLY RESET {#gold<}{#Feijoa}&l Now a perm world

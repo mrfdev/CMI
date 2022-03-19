@@ -17,6 +17,10 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
+  online:
+    Cmds:
+    - list
+    Tab: false
   donate:
     Cmds:
     - ctext donate
@@ -69,11 +73,11 @@ CustomAlias:
   newplayer:
     Cmds:
     - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB New Player Info ❖{#orient}-----------------------•
-    - msg! [playerName] {#Feijoa} Our permanent survival world is {#orange}&l/general{#Feijoa}.
+    - msg! [playerName] {#Feijoa} Our permanent survival world is {#orange}&l/wild{#Feijoa}.
       (You can {#orange}&l/rtp&r{#Feijoa} to try and find untouched land).&r
     - msg! [playerName] {#Feijoa} Don't forget to {#orange}&l/sethome base&r{#Feijoa}
       (/home base to get back). &r
-    - 'msg! [playerName] {#Feijoa} Our temporary resource worlds: {#orange}&l/mine,
+    - 'msg! [playerName] {#Feijoa} Our other perm survival worlds: {#orange}&l/general,
       /nether, /end&r'
     - 'msg! [playerName] {#Feijoa} If you want to play oneblock, cave, skyblock, etc.
       type: {#orange}&l/menu worlds&r{#Feijoa}, or start your island by typing: {#orange}&l/oneblock&r{#Feijoa}
@@ -116,7 +120,8 @@ CustomAlias:
     Cmds:
     - asConsole! msg! [playerName] &3 1MB Event »&b --- The 2021 "10 year Celebration"
       event is now live, check /celebration
-    - asConsole! msg! [playerName] &3 1MB Event »&b --- The next event is /santa
+    - 'asConsole! msg! [playerName] &3 1MB Event »&b --- The next event is the HARDCORE
+      event - More info: https://omgboards.com/threads/hardcore-weekend.263795/'
     Tab: false
   sell:
     Cmds:
@@ -703,6 +708,31 @@ CustomAlias:
     - cmi attachcommand
     Perm: true
     Tab: false
-  uuidtest:
+  events:
     Cmds:
-    - 'ptarget:$1! msg! mrfloris uuid for $1 is: %cmi_user_uuid%'
+    - asPlayer! event
+    - 'msg! [playerName] {#gold} On /discord we have a #schedule channel with a glance
+      at the upcoming events, perfect for those who don''t want to miss a thing! From
+      Valentine''s Day in February all the way to Christmas in December.'
+  hub:
+    Cmds:
+    - msg! [playerName] {#gold} We do not really have a hub/lobby, but I will bring
+      you to our /spawn
+    - asPlayer! spawn
+  lobby:
+    Cmds:
+    - hub
+  mcmmo:
+    Cmds:
+    - msg! [playerName] {#orient},--{#cerulean}❖ mcMMO ❖{#orient}---------------------------------------
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} mcMMO is a cool RPG add-on
+      that helps you gain extra
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} perks when you play. A
+      great way to extra fun playing.
+    - 'msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} Quick help: /mcmmo help,
+      /mcstats, /mctop, /mcrank, and'
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} every skill is a /skillnamecommand
+      like /mining or /axes.
+    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} {#Feijoa}&nhttps://omgboards.com/threads/260970/
+    - msg! [playerName] {#orient}`--(1MoreBlock.com mcMMO Information)------------------\n&r
+    AddTabs: true

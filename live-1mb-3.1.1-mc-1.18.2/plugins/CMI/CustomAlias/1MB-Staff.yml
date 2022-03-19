@@ -185,8 +185,12 @@ CustomAlias:
     Perm: true
   survival:
     Cmds:
-    - cmi gm survival $1
-    - asConsole! cmi god [playerName] false -s
+    - check:$1==null! asConsole! cmi gm survival [playerName]
+    - check:$1!=null! asConsole! cmi gm survival $1
+    - check:$1==null! asConsole! cmi god [playerName] false -s
+    - check:$1!=null! asConsole! cmi god $1 false -s
+    - check:$1==null! asConsole! cmi fly [playerName] false -s
+    - check:$1!=null! asConsole! cmi fly $1 false -s
     Perm: true
   adventure:
     Cmds:

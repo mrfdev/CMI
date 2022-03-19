@@ -44,8 +44,9 @@ drowned:
       display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Drowned"}],"text":""}'
       lore:
       - '{"text":""}'
-      internal: H4sIAAAAAAAA/+NiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1l4Dq03DKlKL88LzWFgQEAe9AVXScAAAA=
-      skull-owner: §9drowned
+      skull-owner:
+        ==: PlayerProfile
+        name: §9drowned
 hunting:
   Location: general;-11713.45;64.5;-5570.25;-265.29;-3.3
   WSlot: 42
@@ -62,7 +63,7 @@ fossilmacadam:
     v: 2865
     type: BONE
 nether:
-  Location: nether;438.86;67.0;368.19;-111.27;-17.04
+  Location: nether;328.54;80.0;-212.55;90.2;-6.17
   WSlot: 5
   Item:
     v: 2865
@@ -84,8 +85,14 @@ floris:
       meta-type: SKULL
       display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Skull
         of mrfloris"}],"text":""}'
-      internal: H4sIAAAAAAAA/02UO7KjVhCGmalx1Z1rr8ELMIF4ikswVUaA4PAUbzgZIN4vSYAE5N6CHXkHXoIX4dirMZM56OT/urq/6qDfEeQd+clp5ra9PIa8arM35IsRdxny1j3ydnhU4zvyvqNb9piqbPyKvE3ZMs2PbM8R5NMb8tWpij7+nnz+6z6bt/oqOanQtno++VgYwEYyusoJ2A8AUMZZ7m1xlsgwvzo8ECvCb6hTzHfz6Fax4WyrzpmP9n4QNAl/unkjzJJmz6V28SfHu3UOc1v0tLHpIzblKuUqmkINvFr1B8jkzaOkjMJgrkwj3LkHeDK3RPQC7fpR6f1hEY7u5sAYFGj3fEpWWlGv3EHvp75Gi+TKFtO44XcbYlpmWyFdBKa9LBcfLvfsvC8Ige1QaBX5nZceJF70LuLSWYC4k4aq8UmkFIx8UjDaiHKSJB00FB+Deh/GBo+Gw7kKNE7X4IQ3RxmfcpdiWC7ZLiwLF3FC42ljyo8Gv1k5fqcWnnrRcaLlJ9nAzmYoj+W2G7scjrVzJYrFNG39xLWMw7jX7EDgqRpLIqgHv0lFgW5LKhThDPATm3EmQTLPmg2ASp2TgbhQOPfRBp24lccgbenCZeTQsqqHOhhHoTevA3Wt0gblLhn+Ugcd9lgFYy5qm3jdWJW1b6V54Cf2QQgrXxfxBjg+aywze8DEynqbE0zX6Kf4bNNmDnR+KopguxhyElPRiGIMCORENeJL2TsClqxw9ECokGGPdoTIFMvrdEfHldsoUYvFSRaHK+9ty7zw/ixn3SuDUXg8XTNnIrKnLXxcxsttTEXcsp3uJVXH45mVUaFMUHBWVP04TJc5jLDS8oIBUGSHMmdc7UdgkFL/4KNvb8gPftzO2acwWxUsDvA2Je0yCbnKrEXcEETSqFPSFAChu94I+tOaEPCWSL4CeXAEdbTpgbeZQkNASVwj13oZW0obm11BgcOMrcDNwCKNTqlB9apSWXnCrh2hR5dJ4FVmpUxpB8eEVG7pCvb5xg0SdHmV/RX6SpuG/i3t/AbUNyzt/VbjFQyGJXYNd7aC4+7sOlhr7pwBvb8m3526ncvcUVvZ//XSUxzQbUQqJeytOel8TCPtNpNtPO28ZxTsuQBw2AFK30616cLGqItVF5RS3zjClOwadjplEN62Fw3rgjaEaDFco9RdcYlqu9Y3cb8BLPVApEwBNjqvsHmIfUOQH5HP4Lq/iS/pzx+///vLr68/1H+k3/58/o0g/wE9r0Y4eQQAAA==
-      skull-owner: mrfloris
+      skull-owner:
+        ==: PlayerProfile
+        uniqueId: 631e3896-da2a-4077-974b-d047859d76bc
+        name: mrfloris
+        properties:
+        - name: textures
+          value: eyJ0aW1lc3RhbXAiOjE1NDE3Njc3ODI2MTUsInByb2ZpbGVJZCI6IjYzMWUzODk2ZGEyYTQwNzc5NzRiZDA0Nzg1OWQ3NmJjIiwicHJvZmlsZU5hbWUiOiJtcmZsb3JpcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJhZDI1ZmI4MzBjOTZkNjgyMDJhMzA2OGRjZmM4N2UzN2U5Zjg5NDYxNTNhMTExYjRjMzE2ZGZhMWE4ODZkMCJ9fX0=
+          signature: quOpjdGScDllMftV0XWZkGNmiSW98II+7SxqlgFG3XfdSCIEi2Vk4BaCmusTiaNSzyMAOrlq/DLG1vTfkDuGLRuhLPVtSUpmS7pxMckR560tfK4TJLJ4oCKin/Z7fkrh4NgN7d7kDqArIv7pbEUWLd8iMn/xD6TzSZaIg+mvvGQci4wfS+qBnj+gbd9gtsz1qRZ0LeRQX5gWORxxPVZxqeFKinXIRS4+iYVmUc/GCEUPExmQI2q3NKLCbYJg7HBJ05NYf333S+XEroKqosk1Yo/FiWLAMLZt1k6H1tfT479AbzP99ZxEt+atz7h8k1pQf1q4xC4w5abLfBHN0FOXHshzmvvTA10luiEEgttzntAl7S7Tde/21cKaGEIjoVkcED5lh4XEZuI1B9eAO237vj9WIK4Fbo2P41A8lWmEzh6Wcl5gT7HXQQirKoN6DnOdo4dick+APe1wKoMZn0iZaAYlkayz9K9RphO/Ct9r2DyCjgazIACekQOerZbQenRADOTNntaFR5OfIMCtggWzPNHba4Ys+07IWHbKNaPhnSD0byZsUIXJ3Xn+m2E7gxwBq+syAz4ELaEtHEodCUzxuxCVuHemweZYX6BdeSt2evRD8PsPpscE1QRSmwGi66F9H+Dhb+IFJKM6otPuXY0hQUWoI43m+7F1KnsIN3GnrCY=
 mikeylighthouse:
   Location: spawn;-175.88;63.0;-95.74;-186.29;0.58
   Page: 2
@@ -166,12 +173,6 @@ jessehome:
   Item:
     v: 2865
     type: PLAYER_HEAD
-mine:
-  Location: mine;-184.5;64.0;72.5;92.31;-2.48
-  WSlot: 3
-  Item:
-    v: 2865
-    type: TUBE_CORAL_BLOCK
 therunnerboy:
   Location: general;-13810.58;63.0;-1197.43;-315.98;-7.87
   Page: 2
@@ -220,8 +221,9 @@ tidal:
       meta-type: SKULL
       display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Skull
         of TidalDawn"}],"text":""}'
-      internal: H4sIAAAAAAAA/+NiYOBi4AnOLs3JCSjKT8vMSeVgYPFLzE1l4CzJTEnMSUksz2NgAACe1dmNJgAAAA==
-      skull-owner: tidaldawn
+      skull-owner:
+        ==: PlayerProfile
+        name: tidaldawn
 communitybuild01:
   Location: general;-11996.22;64.0;8727.06;-180.43;3.6
   Page: 4
@@ -523,8 +525,14 @@ santa:
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      internal: H4sIAAAAAAAA/1VUS66jRhSlW93S65dsI5lYigEbbA/eAIP5mQKDTWFqxt/8/8awgiyh1WtIRllElpBBBhlkHS2F191RlFFJ55y699y6R/WMYc/Y9+e0z7JTU4ZxFjxh71QnD7D3Z6fonGfsecaroOnioP2APXXBo+uboH3GMOzNE/bhHEeF84q8/cXkE9jLztKq3Il3FWqUcbXFh+1JaeCuMLPdrdhTg8ZdagbkiPSPqjY2y32zyZryJEJnZ2hlsRURGw0Hkbs9BsgAIMiBTDN+WQGKp7YHCGFaM/VIL/S2uBS22IruAhLGod6sY4GWGKo3zlI+0QsvyQQhNOkuXJ2t2hssg+j5cpKLSyDxbKOIspEFjoA6c5KRtdKKar0pT0AxOZUy1SSptkMLnJM0UMeaMwSl5qRyJO7DxKzOadUbCY8iQ3TrKXs0xDKEDLMgQnzvSuTyKtz8nbDMh8Hd8yTnp5NXVPtTJzPSwyH6frFtL9m24zdWbR9TDhi8kJdenHsTjwLaX29TKR4rjcOTDV47ogVGburUaSPb1FFywsWZH/Haz1XLftC3DQXDrRlc0p35cDxXz0HO+PekwhtH4+Ux4jh4Tx6MZqSE2gkVrfjhfWwum4TvGVb3abDZoTgsNRUE5j40++6kHx7pYQosNN55ArBaSA9LrpMOi5AsxFZT9lflsOuO5/Sh7FYHcZ0wd08eNOcs7b1y5TZTRFcsULhtIljA0k/+puZSxTKvAPBJT50AvbqWHb/UimZImevmFLLGpKtwbx/Z3bqKSPXATieUie26relk1bBGh672RtB9gddJPDrmUKMhsSDdhUxydSdmHdwu4HaK5IC10uVa2jlXxF7EIVxoO+3UP5J4N2mZcxQPV/56p/SXJ+w9dLI+ePMxGMpIYmXcsYjMWxk398rEEldG4GJSGmeu1YQhNS5agXE4SiwTe6J8R3nWIjOb18TQ891EJVGKBImyLT5FuY7buTnZCRjVXF8Bbp+iRCJAbq41VmrZmImkYj+6JKpcAWr23PdbnYttUbh9/lejVoikbr4IRwTlzLvCysvh156iMfqW+U0351g0iJmbvnLtq8/XmS5nPNP+j73q4eiyUqTFTOyIBu5x5V1Z/VdDyYnKzWHi5Xzus1SPrvrdF+D6i4/zdkLJvKAkGoEl53ZuE8ACg2qhXJ3StT0nEnBz0CZ4Qzm6gcstUSePmt/yoXGHwU7MEV1Syp5MXCXBBGYOWdJKisov3kJ9PkX8GOovLxj2HfZW8udv5t3vn//89Ovn49+//fgH9tcPP/2MYf8ADP4qArYEAAA=
-      skull-owner: Santa
+      skull-owner:
+        ==: PlayerProfile
+        uniqueId: c7fddb9a-adfd-4be3-b326-d700df252e88
+        name: Santa
+        properties:
+        - name: textures
+          value: ewogICJ0aW1lc3RhbXAiIDogMTU5ODU4NjA2ODg3MywKICAicHJvZmlsZUlkIiA6ICJjN2ZkZGI5YWFkZmQ0YmUzYjMyNmQ3MDBkZjI1MmU4OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYW50YSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zZjg2NjgyMWJmYmY1MWMwNWZmNzk4YWYxMDk1NzVhZmZhMThjNzc5MTUxODEwYjUyZTk5YzU0N2MzMzc5ZWI3IgogICAgfQogIH0KfQ==
+          signature: UFjVuJa/WpbzFbL5yJ0Ns0w8PLrV9nUl9hnB5wODTqAMmZ2dKNOyr/Br7lroPHVa9ROon8HZCgwEHDhxwVAMMGJeJ6AdopM5F58EVVVkqAqy6+QsnTnYHsHb+V1REq74iG6IA5uRSImz6+cjlGGfU6tf3SWqcwWR1uFozJnTeIFCrLHJRleaGZtUzJZW3Onp47oPMLUDN5UNjjp8wsMaPIw5KqDRGLqDIoy1vwzA3SkpuRjFZgRHbqzlxr1/fVAA+1f0BbI2/XGhd9G/mwwbBF2DdkzcnpBPtJAIxa1uu+8sTl8tF7WqYKkDMRFGmocimczFZe6d48kIiypOD0j70qaHWMyDztNz7JY5KIaf+SFy0qdmNWYx6h75Vf8UeTk9UxacbQmMmAdvjp0raOFJygDDVvjxAORk1NtGp6LdfvyrT7jFuACQd6M79ZifoONMeUBfUutPQExkEzeWZyvF1MCOf6w/DtIE+f2nHsOLBXLE9tKSkxL93EH4jAvcJwOaSIBco3brzg6pCMLD8jGWMWQPd7qDkLWUXMMFju5PM63XotF/OnrwkAX7PfCRzQNVBYKC94pg2NECzPZlHs4sq6j3rCRtZXY7GQdGFQ20gKmVO6V1+2b+J2DqtHltV8+V8zgJeCWk/4I9aXZCTHwf+O9OPuxji9zOlaKHEXFXv5Q=
 general:
   Location: general;-305.44;90.0;-55.47;104.1;1.61
   WSlot: 2
@@ -548,7 +556,7 @@ redfox:
     v: 2865
     type: PLAYER_HEAD
 end:
-  Location: end;61.63;46.0;-52.8;15.28;-14.96
+  Location: end;107.5;58.0;85.46;135.06;-4.73
   WSlot: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
@@ -620,18 +628,13 @@ spawn:
     v: 2865
     type: NETHER_STAR
 wild:
-  Location: wild;-0.51;86.0;0.5;-359.97;-5.15
+  Location: wild;79.45;86.0;48.53;0.0;-2.66
   ReqPerm: true
   WSlot: 9
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
     v: 2865
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Earth"}],"text":""}'
-      Damage: 3
+    type: COD
 walk:
   Location: general;12619.59;78.0;-5304.59;-76.01;-4.31
   Page: 7

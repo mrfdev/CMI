@@ -1,6 +1,6 @@
 <AutoPage><AutoAlias><NoReqPermission>
 {#Cerulean}
-{#Cerulean}    &r{#Cerulean}• &2&l1MoreBlock&r {#Feijoa}season {#Geyser}3 (3.0.1){#Feijoa} for Minecraft {#Geyser}1.18.1 {#Cerulean}•&r
+{#Cerulean}    &r{#Cerulean}• &2&l1MoreBlock&r {#Feijoa}season {#Geyser}3 (3.1.1){#Feijoa} for Minecraft {#Geyser}1.18.2 {#Cerulean}•&r
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 <T>{#Cerulean>} 1MB Info »{#Lochmara<}{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
 {#Cerulean>} 1MB Info »{#Lochmara<}{#Feijoa} We are a family-friendly community.
@@ -9,7 +9,6 @@
 {#Cerulean>} 1MB Info »{#Lochmara<} {#Geyser}&l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 <T>{#Cerulean>} NEWS »{#Lochmara<}{#Feijoa} 10 Year Anniversary! ({#magenta}/celebration{#Feijoa})</T><H>Up to date news on the forums!\nClick to read!</H><URL>https://omgboards.com/threads/263614/</URL>
-<T>{#Cerulean>} NEXT EVENT »{#Lochmara<}{#Feijoa} HOLIDAY SEASON (december) ({#magenta}/santa{#Feijoa})</T><H>Daily Advent Calendar !\nClick to read!</H><URL>https://omgboards.com/threads/263776/</URL>
 &r
 <NextPage>
 {#Cerulean}
