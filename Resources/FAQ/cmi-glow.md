@@ -112,7 +112,7 @@ Before we check if another plugin might cause a conflict (see below) we will hav
 I personally recommend to use Paper 1.18.2 for the best results. But Spigot and Paper both are fine to use. 
 Please note that forks of forks of forks could be a reason why glow on your server isn't working. Perhaps check first on a backup/test set-up with Spigot or Paper. 
 
-Next is to double check on SpigotMC if (CMI)[https://www.spigotmc.org/resources/3742/] and (CMILib)[https://www.spigotmc.org/resources/87610/] are both up to date. 
+Next is to double check on SpigotMC if [CMI](https://www.spigotmc.org/resources/3742/) and [CMILib](https://www.spigotmc.org/resources/87610/) are both up to date. 
 
 And finally, be sure it's not your client or mods that are causing issues. Use the vanilla launcher and client and use the same version as the server engine. And ask another player to look at your character as you use /cmi glow to make changes.
 
@@ -122,7 +122,7 @@ Due to the nature of how vanilla Minecraft is made developers are limited with w
 which is done through the name tag prefix. And every plugin tries their best to work correctly. They're trying to stay in control over the features they offer. 
 As a consequence you will have multiple plugins conflicting, and when something conflicts and doesn't work you will end up with a non working or white glow, or at least inconsistant results. 
 
-A random example is a popular CMI alternative to tablist.yml called TAB, it lets you resolve the issue by using `%cmi_user_glow_code%` placeholder. More information about that (here)[https://github.com/NEZNAMY/TAB/wiki/How-to-make-TAB-compatible-with-glow-plugins].
+A random example is a popular CMI alternative to tablist.yml called TAB, it lets you resolve the issue by using `%cmi_user_glow_code%` placeholder. More information about that [here](https://github.com/NEZNAMY/TAB/wiki/How-to-make-TAB-compatible-with-glow-plugins).
 
 A reasonable way to figure out if it's a plugin that's conflicting:
 - /stop the server, and back it up. Make a clone of it to test with.
