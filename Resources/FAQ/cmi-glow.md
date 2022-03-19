@@ -109,7 +109,7 @@ The glow effect does not support hex colors
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> It isn't working - help
 
 Before we check if another plugin might cause a conflict (see below) we will have to request you to review your current set-up. 
-I personally recommend to use Paper 1.17.1 for the best results. But Spigot and Paper both are fine to use. 
+I personally recommend to use Paper 1.18.2 for the best results. But Spigot and Paper both are fine to use. 
 Please note that forks of forks of forks could be a reason why glow on your server isn't working. Perhaps check first on a backup/test set-up with Spigot or Paper. 
 
 Next is to double check on SpigotMC if (CMI)[https://www.spigotmc.org/resources/3742/] and (CMILib)[https://www.spigotmc.org/resources/87610/] are both up to date. 
