@@ -4,8 +4,6 @@ Clean list of available permissions that come with CMI that you can use in your 
 
 ## List of permissions
 
-Made with CMI 9.1.2.0 for Minecraft 1.18.1
-
 More details and information about permissions on the official website [here](https://www.zrips.net/cmi/permissions/)
 
 ```
@@ -1516,3 +1514,7 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
   cmi.command.worthlist.others:
     default: op
 ```
+
+## Misc.
+
+Created with CMI 9.1.3.1 for Minecraft 1.18.2

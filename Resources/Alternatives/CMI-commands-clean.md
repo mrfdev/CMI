@@ -261,8 +261,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi tfly (playerName) (timeInSec) (-s) - Set temporary players fly mode until relog or until time ends
 /cmi tgod [playerName] (timeInSec) (-s) - Set players temporarily god mode until relog or time end
 /cmi time (time) (world) (alter [value]) (-smooth) - Controls server time
-/cmi titlemsg [playerName/all] [title
- subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
+/cmi titlemsg [playerName/all] [title subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
 /cmi toast [playerName/all] (-t:[advType]) (-icon:[material]) [message] - Sends toast message to player
 /cmi togglecompass (playerName) (enable/disable) (-s) - Show or hide compass bossbar
 /cmi toggleshiftedit (playerName) (enable/disable) (-s) - Toggles sign shift editing
@@ -316,4 +315,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Misc.
 
-Created with CMI 9.1.2.0 for Minecraft 1.18.1
+Created with CMI 9.1.3.1 for Minecraft 1.18.2

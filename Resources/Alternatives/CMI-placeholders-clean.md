@@ -4,8 +4,6 @@ Clean list of available placeholders that come with CMI that you can use in CMI 
 
 ## List of Placeholders
 
-Made with CMI 9.1.2.0 for Minecraft 1.18.1
-
 More details and information about placeholders on the official website [here](https://www.zrips.net/cmi/placeholders/)
 
 ```
@@ -185,3 +183,7 @@ More details and information about placeholders on the official website [here](h
 %world_time12_[worldName]%
 %world_time24_[worldName]%
 ```
+
+## Misc.
+
+Created with CMI 9.1.3.1 for Minecraft 1.18.2

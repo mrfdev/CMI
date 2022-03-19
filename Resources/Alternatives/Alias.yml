@@ -51,7 +51,7 @@ Alias:
   #  
   # /cmi anvilrepaircost $1-
   /anvilrepaircost:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi armorstand $1-
@@ -61,10 +61,10 @@ Alias:
   #  
   # /cmi attachcommand $1-
   /attachcommand:
-    Enabled: false
+    Enabled: true
     Tab: true
   /powertool:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi autorecharge $1-
@@ -153,7 +153,7 @@ Alias:
   #  
   # /cmi charges $1-
   /charges:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi chat $1-
@@ -163,7 +163,7 @@ Alias:
   #  
   # /cmi checkaccount $1-
   /checkaccount:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi checkban $1-
@@ -224,7 +224,7 @@ Alias:
   #  
   # /cmi colors $1-
   /colors:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi commandspy $1-
@@ -247,7 +247,7 @@ Alias:
   #  
   # /cmi counter $1-
   /counter:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi cplaytime $1-
@@ -267,10 +267,13 @@ Alias:
   #  
   # /cmi cuff $1-
   /cuff:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi cuff false $1-
   /uncuff:
+    Enabled: true
+    Tab: true
+  /freeze:
     Enabled: false
     Tab: true
   #  
@@ -291,7 +294,7 @@ Alias:
   #  
   # /cmi dispose $1-
   /dispose:
-    Enabled: false
+    Enabled: true
     Tab: true
   /trash:
     Enabled: false
@@ -299,7 +302,7 @@ Alias:
   #  
   # /cmi distance $1-
   /distance:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi donate $1-
@@ -417,19 +420,19 @@ Alias:
   #  
   # /cmi fixchunk $1-
   /fixchunk:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi flightcharge $1-
   /flightcharge:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi flightcharge recharge $1-
   /recharge:
-    Enabled: false
+    Enabled: true
     Tab: true
   /fcharge:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi fly $1-
@@ -516,7 +519,7 @@ Alias:
   #  
   # /cmi groundclean $1-
   /groundclean:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi haspermission $1-
@@ -581,12 +584,12 @@ Alias:
   #  
   # /cmi ifoffline $1-
   /ifoffline:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi ifonline $1-
   /ifonline:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi ignore $1-
@@ -594,7 +597,7 @@ Alias:
     Enabled: false
     Tab: true
   /ignorelist:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi importfrom $1-
@@ -631,32 +634,32 @@ Alias:
   #  
   # /cmi invcheck $1-
   /invcheck:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi invlist $1-
   /invlist:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi invload $1-
   /invload:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi invremove $1-
   /invremove:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi invremoveall $1-
   /invremoveall:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi invsave $1-
   /invsave:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi ipban $1-
@@ -679,7 +682,7 @@ Alias:
   #  
   # /cmi itemcmdata $1-
   /itemcmdata:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi itemframe $1-
@@ -694,18 +697,18 @@ Alias:
   #  
   # /cmi itemlore $1-
   /itemlore:
-    Enabled: false
+    Enabled: true
     Tab: true
   /ilore:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi itemname $1-
   /itemname:
-    Enabled: false
+    Enabled: true
     Tab: true
   /iname:
-    Enabled: false
+    Enabled: true
     Tab: true
   /rename:
     Enabled: false
@@ -760,11 +763,11 @@ Alias:
     Tab: true
   # /cmi kit -preview $1-
   /kitpreview:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi kit -open $1-
   /kitopen:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi kitcdreset $1-
@@ -784,7 +787,7 @@ Alias:
   #  
   # /cmi lastonline $1-
   /lastonline:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi launch $1-
@@ -794,7 +797,7 @@ Alias:
   #  
   # /cmi lfix $1-
   /lfix:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi list $1-
@@ -804,7 +807,7 @@ Alias:
   #  
   # /cmi lockip $1-
   /lockip:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi loom $1-
@@ -834,7 +837,7 @@ Alias:
   #  
   # /cmi maxplayers $1-
   /maxplayers:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi me $1-
@@ -844,7 +847,7 @@ Alias:
   #  
   # /cmi merchant $1-
   /merchant:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi migratedatabase $1-
@@ -914,7 +917,7 @@ Alias:
   #  
   # /cmi note $1-
   /note:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi openbook $1-
@@ -939,7 +942,7 @@ Alias:
   #  
   # /cmi pay $1-
   /pay:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi paytoggle $1-
@@ -949,7 +952,7 @@ Alias:
   #  
   # /cmi ping $1-
   /ping:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi placeholders $1-
@@ -964,7 +967,7 @@ Alias:
   #  
   # /cmi playtime $1-
   /playtime:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi playtimetop $1-
@@ -974,7 +977,7 @@ Alias:
   #  
   # /cmi point $1-
   /point:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi portals $1-
@@ -984,22 +987,22 @@ Alias:
   #  
   # /cmi pos $1-
   /pos:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi preview $1-
   /preview:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi prewards $1-
   /prewards:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi ptime $1-
   /ptime:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi purge $1-
@@ -1009,12 +1012,12 @@ Alias:
   #  
   # /cmi pweather $1-
   /pweather:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi rankdown $1-
   /rankdown:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi rankinfo $1-
@@ -1080,7 +1083,7 @@ Alias:
   #  
   # /cmi repaircost $1-
   /repaircost:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi replaceblock $1-
@@ -1147,17 +1150,17 @@ Alias:
     Enabled: false
     Tab: true
   /scopy:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi scan $1-
   /scan:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi scavenge $1-
   /scavenge:
-    Enabled: false
+    Enabled: true
     Tab: true
   /salvage:
     Enabled: false
@@ -1173,12 +1176,12 @@ Alias:
   #  
   # /cmi se $1-
   /se:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi search $1-
   /search:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi seen $1-
@@ -1243,7 +1246,7 @@ Alias:
   #  
   # /cmi setspawn $1-
   /setspawn:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi setwarp $1-
@@ -1288,7 +1291,7 @@ Alias:
   #  
   # /cmi sit $1-
   /sit:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi skin $1-
@@ -1354,7 +1357,7 @@ Alias:
   #  
   # /cmi stats $1-
   /stats:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi statsedit $1-
@@ -1370,7 +1373,7 @@ Alias:
     Enabled: false
     Tab: true
   /lag:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi stonecutter $1-
@@ -1415,33 +1418,33 @@ Alias:
   #  
   # /cmi tfly $1-
   /tfly:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi tgod $1-
   /tgod:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi time $1-
   /time:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi time day $1-
   /day:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi time night $1-
   /night:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi time morning $1-
   /morning:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi time dusk $1-
   /dusk:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi titlemsg $1-
@@ -1506,12 +1509,12 @@ Alias:
   #  
   # /cmi tpallworld $1-
   /tpallworld:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi tpbypass $1-
   /tpbypass:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi tpdeny $1-
@@ -1536,12 +1539,12 @@ Alias:
   #  
   # /cmi tpopos $1-
   /tpopos:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi tppos $1-
   /tppos:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi tps $1-
@@ -1581,7 +1584,7 @@ Alias:
   #  
   # /cmi unloadchunks $1-
   /unloadchunks:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi unmute $1-
@@ -1624,17 +1627,17 @@ Alias:
   #  
   # /cmi viewrange $1-
   /viewrange:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi voteedit $1-
   /voteedit:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi votes $1-
   /votes:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi votetop $1-
@@ -1675,24 +1678,24 @@ Alias:
   #  
   # /cmi weather $1-
   /weather:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi weather sun $1-
   /sun:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi weather rain $1-
   /rain:
-    Enabled: false
+    Enabled: true
     Tab: true
   # /cmi weather storm $1-
   /storm:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi whowas $1-
   /whowas:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi workbench $1-

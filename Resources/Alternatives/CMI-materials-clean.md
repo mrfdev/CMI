@@ -4,7 +4,9 @@ Clean list of available materials that come with 1.18 API/server that you can us
 
 ## List of Material
 
-Made with CMI 9.1.2.0 for Minecraft 1.18.1
+Don't blindly copy this, it contains `LEGACY_` and things like `NONE`. This is just to help you quickly search something.
+
+Protip: In-game you can use `/cmi blockinfo`, `/cmi iteminfo`
 
 ```
 ACACIA_BOAT
@@ -769,6 +771,7 @@ NETHERITE_SCRAP
 NETHERITE_SHOVEL
 NETHERITE_SWORD
 NETHERRACK
+NONE
 NOTE_BLOCK
 OAK_BOAT
 OAK_BUTTON
@@ -1270,3 +1273,7 @@ ZOMBIE_VILLAGER_SPAWN_EGG
 ZOMBIE_WALL_HEAD
 ZOMBIFIED_PIGLIN_SPAWN_EGG
 ```
+
+## Misc.
+
+Created with CMI 9.1.3.1 for Minecraft 1.18.2

@@ -273,6 +273,9 @@ Alias:
   /uncuff:
     Enabled: true
     Tab: true
+  /freeze:
+    Enabled: true
+    Tab: true
   #  
   # /cmi customrecipe $1-
   /customrecipe:
