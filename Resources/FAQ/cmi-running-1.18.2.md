@@ -71,9 +71,9 @@ This page should help explain what I personally think is the way to run CMI on S
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.1.3.1 SqLite
-    CMILib: 1.1.2.3
-    Server: Paper(264) 1.18.2-R0.1-SNAPSHOT
+    CMI plugin version: 9.1.3.2 SqLite
+    CMILib: 1.1.2.4
+    Server: Paper(267) 1.18.2-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
@@ -93,7 +93,7 @@ This page should help explain what I personally think is the way to run CMI on S
 - Will there be a build for 1.xx? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
 - Can I upgrade from an older version of CMI to the build for 1.18.2? Yes, latest CMI and CMILib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.1.2.0 or newer is required for 1.18.2
+- CMILib will be required? Yes. CMILib 1.1.2.3 or newer is required for 1.18.2
 - So where do I download it? spigotmc.org
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
