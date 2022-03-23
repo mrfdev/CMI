@@ -177,6 +177,8 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 - i put CMIB jar on the proxy (bungeecord) but it did not make any files or folders? yes, i dont think it does. On your 'servers' on the network type: /cmi version, if bungee is hooked, it should show there.
 ```
 
+MYSQL player data bridge (third party plugin i was talking about) <https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/>
+
 ---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> LATEST
