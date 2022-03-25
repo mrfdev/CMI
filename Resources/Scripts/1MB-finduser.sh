@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-finduser.sh
-# @Version: 1.1.1, build 011
+# @Version: 1.1.1, build 012
 # @Release: March 25th, 2022
 # @Description: Quick 1MB Add-on to get CMI uuid/username from cmi.sqlite.db
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -61,6 +61,7 @@ for i in $dbresult; do
     oIFS=$IFS
     IFS='|'
     y=($i)
+# TODO ^-- SC2206 (warning): Quote to prevent word splitting/globbing, or split robustly with mapfile or read -a. | https://github.com/koalaman/shellcheck/wiki/SC2206
     IFS=$oIFS
     uuidResult="${y[0]}"
     userResult="${y[1]}"
