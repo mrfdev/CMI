@@ -6,7 +6,7 @@ This repository has a few purposes.
  - Share configurations with our 1MB team members (and you)
  - Show others examples of how I run CMI sometimes.
  - Share a select few 1MB CMI add-ons with the public.
- - Organize the FAQ entries we link CMI customers to on Zrips' Discord.
+ - Build up the FAQ entries we link CMI customers to on Zrips' Discord.
 
 ## Table of Contents
 
@@ -143,7 +143,7 @@ You are not free to distribute my work, please link others instead to the source
 
 CMI is a premium plugin, made by Zrips. In order to use CMI files, you must have a valid and active license. You can buy it from [SpigotMC.org](https://www.spigotmc.org/resources/3742/). 
 
-_Disclaimer; I am an admin on the zrips Discord_
+_Disclaimer; I am an admin on the Zrips Discord_
 
 Oh yeah, and Floris, OMGboards.com nor 1MoreBlock.com claim or pretend to be-, nor are associated with-, and are not supported by Zrips, Mojang or Microsoft.
 
@@ -153,7 +153,7 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.2.22** (March 19th, 2022), for live-1mb-3.1.1-mc-1.18.2
+1MB CMI Project version **0.2.23** (March 25th, 2022), for live-1mb-3.1.1-mc-1.18.2
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.1.1-mc-1.18.2`
 ```
