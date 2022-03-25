@@ -315,4 +315,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Misc.
 
-Created with CMI 9.1.3.1 for Minecraft 1.18.2
+Created with CMI 9.1.3.2 for Minecraft 1.18.2

@@ -439,7 +439,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -1739,21 +1739,13 @@ RandomTeleportation:
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
   Worlds:
-    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
     spawn:
       Enabled: true
-      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
-      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
       MaxRange: 1000
-      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
       MinRange: 500
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     spawn_nether:
       Enabled: true
       MaxRange: 1000
@@ -1761,10 +1753,6 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     spawn_the_end:
       Enabled: true
       MaxRange: 1000
@@ -1772,10 +1760,6 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
@@ -2073,8 +2057,9 @@ PotionEffects:
   # When set to true player poition effect will expire even if player is offline
   # Keep in mind that player potion effect durability will be updated on players login event so by checking players potions effect while he is offline can show incorrect state
   DeductWhileOffline: false
+
 ```
 
 ## Misc.
 
-Created with CMI 9.1.3.1 for Minecraft 1.18.2
+Created with CMI 9.1.3.2 for Minecraft 1.18.2

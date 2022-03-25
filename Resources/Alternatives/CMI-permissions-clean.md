@@ -297,7 +297,7 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Command permissions:
 ```
-   cmi.command.actionbarmsg:
+  cmi.command.actionbarmsg:
     description: Sends action bar message to player
     default: op
   cmi.command.afk:
@@ -1517,4 +1517,4 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Misc.
 
-Created with CMI 9.1.3.1 for Minecraft 1.18.2
+Created with CMI 9.1.3.2 for Minecraft 1.18.2
