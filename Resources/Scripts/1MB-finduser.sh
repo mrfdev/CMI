@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-finduser.sh
-# @Version: 1.1.0, build 010
+# @Version: 1.1.1, build 011
 # @Release: March 25th, 2022
 # @Description: Quick 1MB Add-on to get CMI uuid/username from cmi.sqlite.db
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -23,6 +23,20 @@ findUser="$1"
 # url to query uuid with
 findUrl="https://namemc.com/search?q="
 
+# use tmux to send cmi info to session?
+tmuxEnabled=false
+
+# if tmux is enabled, delay between commands?
+# default is "1s", set to "0s" to disable.
+tmuxDelay="1s"
+    # value requires NUMBER[SUFFIX]
+    # The NUMBER may be a positive integer or a floating-point number.
+    # The SUFFIX may be one of the following:
+    # s - seconds
+    # m - minutes
+    # h - hours
+    # d - days
+
 ### FUNCTIONS AND CODE
 #
 # ! WE ARE DONE, STOP EDITING BEYOND THIS POINT !
@@ -35,9 +49,14 @@ elif [ $# -gt 1 ]; then
     echo -e "Syntax: ${0} <user|uuid> (error, you had too many arguments)"; exit 0
 fi
 
+function keys {
+    tmux send-keys -t mcserver "$*" Enter
+}
+
 [[ ${#findUser} -gt 25 ]] && findType="player_uuid" || findType="userName"
 
 dbresult=$(sqlite3 cmi.sqlite.db "SELECT player_uuid,userName FROM \"main\".\"users\" WHERE $findType LIKE '%$findUser%' ESCAPE '\' ORDER BY \"_rowid_\" ASC LIMIT 0, 49999")
+echo -e "\n starting..."
 for i in $dbresult; do
     oIFS=$IFS
     IFS='|'
@@ -47,7 +66,11 @@ for i in $dbresult; do
     userResult="${y[1]}"
     echo -e "uuid: $uuidResult | $findUrl${uuidResult}"
     echo -e "user: $userResult | cmi info $uuidResult | cmi checkaccount $uuidResult \n"
+    if [[ "${tmuxEnabled}" == "true" ]]; then
+        keys "cmi info $uuidResult"
+        sleep $tmuxDelay
+    fi
 done
-
+echo -e "\n done..."
 
 #EOF Copyright (c) 2011-2022 - Floris Fiedeldij Dop - https://scripts.1moreblock.com
