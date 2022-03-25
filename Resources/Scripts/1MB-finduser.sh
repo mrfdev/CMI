@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-finduser.sh
-# @Version: 1.1.1, build 012
+# @Version: 1.1.2, build 013
 # @Release: March 25th, 2022
 # @Description: Quick 1MB Add-on to get CMI uuid/username from cmi.sqlite.db
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -17,14 +17,37 @@
 #
 ###
 
-# requires cli input, no need to really edit anything
+# Filename of the CMI Sqlite3 database. Default: cmi.sqlite.db
+CMIdb="cmi.sqlite.db"
+
+# Maximum results returned. Default: 10
+CMIdbMax="10"
+
+# No need to edit this one, unless you really want to check a specific username.
 findUser="$1"
 
 # url to query uuid with
 findUrl="https://namemc.com/search?q="
 
-# use tmux to send cmi info to session?
+# use tmux to send cmi info to session? Default: false
 tmuxEnabled=false
+
+# name of tmux session, in case you dont use mcserver (default of 1MB-minecraft.sh)
+tmuxSession="mcserver"
+
+# When we send tmux commands, do we use the UUID or IGN? Default: true
+# When set to true, it will use the uuid, set to false to use the ign
+CMICmdUuid=true
+
+# When tmuxEnabled=true, send 'cmi info'? Default: true
+CMICmdInfo=true
+
+# When tmuxEnabled=true, send 'cmi checkaccount'? Default: false
+CMICmdCheckAccount=false
+
+# Alternative for checkaccount? Handy for mass kick or ban, etc. Default: checkaccount
+# Warning: If you dont know what this means, leave it, because there's no undo button.
+CMICmdAlternative="checkaccount"
 
 # if tmux is enabled, delay between commands?
 # default is "1s", set to "0s" to disable.
@@ -37,26 +60,67 @@ tmuxDelay="1s"
     # h - hours
     # d - days
 
+# Debug mode off or on? Default: false (true means it spits out progress)
+_debug=false
+
 ### FUNCTIONS AND CODE
 #
 # ! WE ARE DONE, STOP EDITING BEYOND THIS POINT !
 #
 ###
 
-if [ "$findUser" == "" ]; then
-    echo -e "Syntax: ${0} <user|uuid> (error, missing argument)"; exit 0
-elif [ $# -gt 1 ]; then
-    echo -e "Syntax: ${0} <user|uuid> (error, you had too many arguments)"; exit 0
-fi
-
-function keys {
-    tmux send-keys -t mcserver "$*" Enter
+function _output {
+    case "$1" in
+    oops)
+        _args="${*:2}"; _prefix="(Script Halted!)";
+        echo -e "\\n$B$Y$_prefix$X $_args $R" >&2; exit 1
+    ;;
+    okay)
+        _args="${*:2}"; _prefix="(Info)";
+        echo -e "$B$Y$_prefix$C $_args $R" >&2; exit 1
+    ;;
+    info)
+        _args="${*:2}"; _prefix="(Info)";
+        echo -e "\\n$B$Y$_prefix$C $_args $R" >&2
+    ;;
+    debug)
+        _args="${*:2}"; _prefix="(Debug)";
+        [[ "$_debug" == true ]] && echo -e "$Y$_prefix$I $_args $R"
+    ;;
+    *)
+        _args="${*:1}"; _prefix="$C$B>$R";
+        echo -e "$_prefix $_args"
+    ;;
+    esac
 }
 
+[ "$EUID" -eq 0 ] && _output oops "*!* This script should not be run using sudo, or as the root user!"
+I="\\033[0;90m"; B="\\033[1m"; Y="\\033[33m"; C="\\033[36m"; X="\\033[91m"; R="\\033[0m" # theme
+
+# Complain if they incorrectly use the script, and exit
+if [ "$findUser" == "" ]; then
+    _output oops "Syntax: ${0} <user|uuid> (error, missing argument)"
+elif [ $# -gt 1 ]; then
+    _output oops "Syntax: ${0} <user|uuid> (error, you had too many arguments)"
+fi
+
+# Used if tmuxEnabled is set to true
+function keys {
+    tmux send-keys -t $tmuxSession "$*" Enter
+    _output debug "Sent tmux send-keys '$*' to session '$tmuxSession'"
+}
+
+# Figure out if we are probably dealing with the UUID or the IGN
 [[ ${#findUser} -gt 25 ]] && findType="player_uuid" || findType="userName"
 
-dbresult=$(sqlite3 cmi.sqlite.db "SELECT player_uuid,userName FROM \"main\".\"users\" WHERE $findType LIKE '%$findUser%' ESCAPE '\' ORDER BY \"_rowid_\" ASC LIMIT 0, 49999")
-echo -e "\n starting..."
+# Lets use the database with our select query, and get the results in basically a string
+dbresult=$(sqlite3 $CMIdb "SELECT player_uuid,userName FROM \"main\".\"users\" WHERE $findType LIKE '%$findUser%' ESCAPE '\' ORDER BY \"_rowid_\" ASC LIMIT 0, $CMIdbMax")
+
+# Time to start the visual output and do something with the database results.
+_output info "Starting ..."
+_output "Trying to find '$CMIdbMax' matches in the CMI Sqlite3 database '$CMIdb' for '$findUser'...\n"
+
+# Go through all the results
 for i in $dbresult; do
     oIFS=$IFS
     IFS='|'
@@ -65,13 +129,28 @@ for i in $dbresult; do
     IFS=$oIFS
     uuidResult="${y[0]}"
     userResult="${y[1]}"
-    echo -e "uuid: $uuidResult | $findUrl${uuidResult}"
-    echo -e "user: $userResult | cmi info $uuidResult | cmi checkaccount $uuidResult \n"
+    CMICmdUse=$uuidResult
+    # if tmux is enabled, try to send the commands to the server
     if [[ "${tmuxEnabled}" == "true" ]]; then
-        keys "cmi info $uuidResult"
-        sleep $tmuxDelay
+        # before we potentially run any commands, are we still using the uuid, or the ign?
+        # CMICmdUuid true|false
+        [[ "$CMICmdUuid" == "false" ]] && CMICmdUse="$userResult"
+        # Do we want to send the info command?
+        [[ "$CMICmdInfo" == true ]] && keys "cmi info $CMICmdUse"
+        # and/or only if we want to also run the checkaccount (or alternative if set)
+        [[ "$CMICmdCheckAccount" == true ]] && keys "cmi $CMICmdAlternative $CMICmdUse"
+        # Only sleep if we are at least doing something, otherwise it is of no use to sleep
+        if [ "$CMICmdInfo" = "true" ] || [ "$CMICmdCheckAccount" = "true" ]; then
+            _output debug "Sleeping for '$tmuxDelay'"
+            sleep $tmuxDelay
+        fi
     fi
+    # Print out the results; the unique id, and conviniently link to namenmc
+    _output "uuid: $C$uuidResult$R | $findUrl${uuidResult}"
+    # Print out the rest of the results; the ign we found, and conviniently list the cmi commands
+    _output "user: $Y$B$userResult$R | cmi info $uuidResult | cmi $CMICmdAlternative ${uuidResult}\n"
 done
-echo -e "\n done..."
+# We are done - let them know
+_output okay "... Done!"
 
 #EOF Copyright (c) 2011-2022 - Floris Fiedeldij Dop - https://scripts.1moreblock.com
