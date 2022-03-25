@@ -39,7 +39,7 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 - (Add-on) [diamondcookie.md](/Resources/Add-ons/diamondcookie.md)
 - (Add-on) [emotes.yml](/Resources/Add-ons/emotes.yml)
 - (Add-on) [social](/Resources/Add-ons/social/)
-- (Add-on) [finduser.sh](/Resources/Scripts/finduser.sh) 
+- (Add-on) [1MB-finduser.sh](/Resources/Scripts/1MB-finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
 - (Custom) [CustomAlias/](/live-1mb-3.1.1-mc-1.18.2/plugins/CMI/CustomAlias) 
@@ -153,7 +153,7 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.2.23** (March 25th, 2022), for live-1mb-3.1.1-mc-1.18.2
+1MB CMI Project version **0.2.24** (March 25th, 2022), for live-1mb-3.1.1-mc-1.18.2
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.1.1-mc-1.18.2`
 ```
