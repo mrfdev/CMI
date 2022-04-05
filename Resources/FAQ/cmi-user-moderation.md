@@ -401,6 +401,12 @@ If you have AND a website, AND a forum, AND more than one server, AND a mailing 
 
 From what I understand there's currently no proxy support, what I do know CMI supports for Bungee I've put in this [article](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md)
 
+## Jail
+
+Certain situations do not justify a perm ban or even a kick, but might be a bit more serious than a quick /cmi mail send or /cmi msg. This is where the CMI Jail feature comes in handy. You can make it clear to the player that they're unable to play until they realise their mistake. Giving you and them time to discuss the situation, etc. 
+
+The commands and perms are listed further up in this document, but full Jail-feature documentation can be found [here](https://www.zrips.net/cmi/jail/)
+
 ## Misc.
 
 ## xx
