@@ -73,7 +73,7 @@ Every server is different, and that means that some people need specialized 'ban
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> User Moderation features
 
-There's no GUI to pick online-users from, what is available is listed below:
+There's no GUI to pick online-users from, what is available is listed below. I would also like to point out that I personally believe a team of staff on any server shouldn't be there to abuse their powers, be toxic, nor that they should not first communicate with their (regular) community members, before jumping to conclussions and perm banning someone. Offer the option of a ban-appeal so mistakes made by team members can be discussed and corrected. You're there to moderate a community, not to police it. Of course, you can make exceptions to that idea in case of blatant breaking of certain rules such as 'no hate speech'.
 
 ## Commands
 
@@ -101,11 +101,30 @@ There's no GUI to pick online-users from, what is available is listed below:
 ```
 
 ```
+> cmi checkcommand clearchat
+ --------------------------------------------------
+ 1. clearchat (self)
+```
+
+```
 > cmi checkcommand spy
  --------------------------------------------------
  1. signspy (playerName)
  2. socialspy (playerName)
  3. commandspy (playerName) (-s)
+```
+
+```
+> cmi checkcommand vanish
+ --------------------------------------------------
+ 1. vanishedit (playerName)
+ 2. vanish (playerName/list) (on/off)
+```
+
+```
+> cmi checkcommand patrol
+ --------------------------------------------------
+ 1. patrol
 ```
 
 ```
@@ -179,6 +198,13 @@ For a list of all the CMI commands, you can go [here](https://www.zrips.net/cmi/
 ```
 
 ```
+> cmi checkperm clearchat
+ --------------------------------------------------
+ 1. cmi.command.clearchat.bypass - Players chat with permission will not be cleared
+ 2. cmi.command.clearchat - Clears chat
+```
+
+```
 > cmi checkperm spy
  --------------------------------------------------
  1. cmi.command.signspy.hide - Hides created signs from signspy
@@ -198,6 +224,28 @@ Base command required
 Base command required
  10. cmi.chat.rangespy - Allows to see all messages over greater distances
  11. cmi.command.commandspy.hide - Hides performed commands from commandspy
+```
+
+```
+> cmi checkperm vanish
+ --------------------------------------------------
+ 1. cmi.command.vanish - Vanish player
+ 2. cmi.command.vanishedit.others - Edit vanish mode for player
+---->When command is used on another player<----
+Base command required
+ 3. cmi.command.vanishedit - Edit vanish mode for player
+ 4. cmi.command.msg.vanish - Allows to send private messages to vanished players
+ 5. cmi.command.vanish.others - Vanish player
+---->When command is used on another player<----
+Base command required
+ 6. cmi.seevanished - Allows to see vanished people
+```
+
+```
+> cmi checkperm patrol
+ --------------------------------------------------
+ 1. cmi.command.patrol - Patrol
+ 2. cmi.command.patrol.bypass - Player with permission will not be included into patrol list
 ```
 
 ```
@@ -283,7 +331,6 @@ For a list of all the CMI permissions, you can go [here](https://www.zrips.net/c
 
 %cmi_user_vanished_symbol%
 
-
 %cmi_user_jailed%
 %cmi_user_jailname%
 %cmi_user_jailcell%
@@ -311,6 +358,34 @@ For a list of all the CMI placehodlers, you can go [here](https://www.zrips.net/
 It's possible as a person or person in a group to have permissions to use certain spy features to help moderate the Minecraft server. This means that when toggled on, and with the correct permission, it will be possible to see what others are messaging each other, what's being put on signs, or which commands they're typing. To be clear, you should respect the privacy of your players, it's merely a tool to help you review potential issues with players suspected of things like breaking the advertising rule. 
 
 The commands, permissions, and placeholders are listed further up in this article. But you might wish to check modules.yml, and config.yml, and think about the available user-toggles to allow team members to have control over some settings.
+
+**Vanish and Patrol**
+
+You can also more actively spy on players by going into vanish mode, there's various settings in a gui (opening a chest silently, etc) and you can use the patrol feature to make sure you go from player to player.
+
+Commands and perms for vanish and patrol can be found in the list higher up on this page.
+
+## Community Wide Moderation
+
+Besides per-user commands to help fix a situation with a rule-breaker. You should not forget that there is a community as a whole. A wider range of features are also available to help manage and moderate all players at once. I'd like to point out a few.
+
+**Maintenance mode**
+
+A quick way to close a server while keeping certain groups online. It isn't meant to be used like this, but it sure is a fun panic button. You can temporarily grant higher groups access to stay during maintenance mode. This way they can still log in while others can't. Especially handy during a flood attack by bots or something along those lines.
+
+**Chat filter**
+
+A global chat filter feature is available by CMI, using dynamic regular expressions to catch phrases and bypasses of phrases in a smart way. This should help auto-replace words in public and private messages, as well as auto warn, kick, ban, mute, etc. So even when you're not online you can fight hate speech, user safety, advertising, and such. 
+
+More about the chat filter features [here](https://www.zrips.net/cmi/extra/chat-filter/)
+
+**Global Chat Mute / Clearing**
+
+If a situation gets out of hand and it doens't involve just one or a couple of users, you can consider using a temporary global chat mute. This way nobody can chat until the chat is unmuted again. Giving your team members time to process what is going on and take appropriate actions if needed.
+
+Mute commands and permissions are listed higher up in this article.
+
+There's also a clearing of the chat feature, allowing you to push some empty lines to remove the chat history really quickly for all players. 
 
 ## Bungeecord / Velocity
 
