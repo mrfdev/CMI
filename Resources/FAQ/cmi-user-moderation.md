@@ -73,7 +73,7 @@ Every server is different, and that means that some people need specialized 'ban
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> User Moderation features
 
-There's no bungeecord support at the moment, as far as I understand. And there's no GUI to pick online-users from, what is available is listed below:
+There's no GUI to pick online-users from, what is available is listed below:
 
 ## Commands
 
@@ -276,9 +276,13 @@ For a list of all the CMI permissions, you can go [here](https://www.zrips.net/c
 
 For a list of all the CMI placehodlers, you can go [here](https://www.zrips.net/cmi/placeholders/)
 
+## Bungeecord / Velocity
 
+From what I understand there's currently no proxy support, what I do know CMI supports for Bungee I've put in this [article](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md)
 
 ## Misc.
+
+## xx
 
 ---
 
