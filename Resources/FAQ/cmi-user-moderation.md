@@ -85,6 +85,12 @@ There's no bungeecord support at the moment, as far as I understand. And there's
 ```
 
 ```
+> cmi checkcommand cuff
+ --------------------------------------------------
+ 1. cuff [playername] (true/false) (-s)
+```
+
+```
 > cmi checkcommand ban
  --------------------------------------------------
  1. unban [playerName/ip] (-s)
@@ -132,6 +138,13 @@ For a list of all the CMI commands, you can go [here](https://www.zrips.net/cmi/
  3. cmi.command.chat.kick - Allows to kick players from chat room
  4. cmi.command.afk.kickbypass - Prevents player from being kicked out of server when afk mode triggers event
  5. cmi.command.afk.kickOutIn.[[seconds]] - Defines time in seconds when player needs to be kicked after he enter afk mode
+```
+
+```
+> cmi checkperm cuff
+ --------------------------------------------------
+ 1. cmi.command.cuff.bypass - Allows command usage while cuffed
+ 2. cmi.command.cuff - Suspends players actions
 ```
 
 ```
