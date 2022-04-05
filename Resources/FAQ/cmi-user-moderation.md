@@ -101,6 +101,14 @@ There's no GUI to pick online-users from, what is available is listed below:
 ```
 
 ```
+> cmi checkcommand spy
+ --------------------------------------------------
+ 1. signspy (playerName)
+ 2. socialspy (playerName)
+ 3. commandspy (playerName) (-s)
+```
+
+```
 > cmi checkcommand ban
  --------------------------------------------------
  1. unban [playerName/ip] (-s)
@@ -168,6 +176,28 @@ For a list of all the CMI commands, you can go [here](https://www.zrips.net/cmi/
  6. cmi.command.unmute - Unmute player
  7. cmi.command.mute.max.[anypositivenumber] - Allows to temp mute for defined max time
  8. cmi.command.mutechat.bypass - Bypass public chat mute
+```
+
+```
+> cmi checkperm spy
+ --------------------------------------------------
+ 1. cmi.command.signspy.hide - Hides created signs from signspy
+ 2. cmi.command.commandspy - Toggle command spy
+ 3. cmi.command.socialspy.others - Toggle social spy
+---->When command is used on another player<----
+Base command required
+ 4. cmi.command.socialspy.hide - Hides social messages from social spy
+ 5. cmi.command.signspy - Toggle sign spy
+ 6. cmi.command.socialspy - Toggle social spy
+ 7. cmi.command.signspy.others - Toggle sign spy
+---->When command is used on another player<----
+Base command required
+ 8. cmi.command.commandspy.bypass - Bypasses blacklisted command spy commands
+ 9. cmi.command.commandspy.others - Toggle command spy
+---->When command is used on another player<----
+Base command required
+ 10. cmi.chat.rangespy - Allows to see all messages over greater distances
+ 11. cmi.command.commandspy.hide - Hides performed commands from commandspy
 ```
 
 ```
@@ -275,6 +305,12 @@ For a list of all the CMI permissions, you can go [here](https://www.zrips.net/c
 ```
 
 For a list of all the CMI placehodlers, you can go [here](https://www.zrips.net/cmi/placeholders/)
+
+## Spy features
+
+It's possible as a person or person in a group to have permissions to use certain spy features to help moderate the Minecraft server. This means that when toggled on, and with the correct permission, it will be possible to see what others are messaging each other, what's being put on signs, or which commands they're typing. To be clear, you should respect the privacy of your players, it's merely a tool to help you review potential issues with players suspected of things like breaking the advertising rule. 
+
+The commands, permissions, and placeholders are listed further up in this article. But you might wish to check modules.yml, and config.yml, and think about the available user-toggles to allow team members to have control over some settings.
 
 ## Bungeecord / Velocity
 
