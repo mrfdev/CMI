@@ -73,7 +73,7 @@ Every server is different, and that means that some people need specialized 'ban
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> User Moderation features
 
-There's no GUI to pick online-users from, what is available is listed below. I would also like to point out that I personally believe a team of staff on any server shouldn't be there to abuse their powers, be toxic, nor that they should not first communicate with their (regular) community members, before jumping to conclussions and perm banning someone. Offer the option of a ban-appeal so mistakes made by team members can be discussed and corrected. You're there to moderate a community, not to police it. Of course, you can make exceptions to that idea in case of blatant breaking of certain rules such as 'no hate speech'.
+There's no GUI to pick online users from, what is available is listed below. I would also like to point out that I personally believe a team of staff on any server shouldn't be there to abuse their powers, or be toxic, nor that they should not first communicate with their (regular) community members, before jumping to conclussions and perm banning someone. Offer the option of a ban appeal so mistakes made by team members can be discussed and corrected. You're there to moderate a community, not to police it. Of course, you can make exceptions to that idea in case of blatant breaking of certain rules such as 'no hate speech'.
 
 ## Commands
 
@@ -351,23 +351,23 @@ For a list of all the CMI permissions, you can go [here](https://www.zrips.net/c
 %cmi_maintenance_message%
 ```
 
-For a list of all the CMI placehodlers, you can go [here](https://www.zrips.net/cmi/placeholders/)
+For a list of all the CMI placeholders, you can go [here](https://www.zrips.net/cmi/placeholders/)
 
 ## Spy features
 
-It's possible as a person or person in a group to have permissions to use certain spy features to help moderate the Minecraft server. This means that when toggled on, and with the correct permission, it will be possible to see what others are messaging each other, what's being put on signs, or which commands they're typing. To be clear, you should respect the privacy of your players, it's merely a tool to help you review potential issues with players suspected of things like breaking the advertising rule. 
+It's possible for a person or person in a group to have permission to use certain spy features to help moderate the Minecraft server. This means that when toggled on, and with the correct permission, it will be possible to see what others are messaging each other, what's being put on signs, or which commands they're typing. To be clear, you should respect the privacy of your players, it's merely a tool to help you review potential issues with players suspected of things like breaking the advertising rule. 
 
 The commands, permissions, and placeholders are listed further up in this article. But you might wish to check modules.yml, and config.yml, and think about the available user-toggles to allow team members to have control over some settings.
 
 **Vanish and Patrol**
 
-You can also more actively spy on players by going into vanish mode, there's various settings in a gui (opening a chest silently, etc) and you can use the patrol feature to make sure you go from player to player.
+You can also more actively spy on players by going into vanish mode, there are various settings in a gui (opening a chest silently, etc) and you can use the patrol feature to make sure you go from player to player.
 
 Commands and perms for vanish and patrol can be found in the list higher up on this page.
 
-## Community Wide Moderation
+## Community-Wide Moderation
 
-Besides per-user commands to help fix a situation with a rule-breaker. You should not forget that there is a community as a whole. A wider range of features are also available to help manage and moderate all players at once. I'd like to point out a few.
+Besides per-user commands to help fix a situation with a rule-breaker. You should not forget that there is a community as a whole. A wider range of features is also available to help manage and moderate all players at once. I'd like to point out a few.
 
 **Maintenance mode**
 
@@ -375,13 +375,13 @@ A quick way to close a server while keeping certain groups online. It isn't mean
 
 **Chat filter**
 
-A global chat filter feature is available by CMI, using dynamic regular expressions to catch phrases and bypasses of phrases in a smart way. This should help auto-replace words in public and private messages, as well as auto warn, kick, ban, mute, etc. So even when you're not online you can fight hate speech, user safety, advertising, and such. 
+A global chat filter feature is available by CMI, using dynamic regular expressions to catchphrases and bypass phrases smartly. This should help auto-replace words in public and private messages, as well as auto warn, kick, ban, mute, etc. So even when you're not online you can fight hate speech, user safety, advertising, and such. 
 
 More about the chat filter features [here](https://www.zrips.net/cmi/extra/chat-filter/)
 
 **Global Chat Mute / Clearing**
 
-If a situation gets out of hand and it doens't involve just one or a couple of users, you can consider using a temporary global chat mute. This way nobody can chat until the chat is unmuted again. Giving your team members time to process what is going on and take appropriate actions if needed.
+If a situation gets out of hand and it does not involve just one or a couple of users, you can consider using a temporary global chat mute. This way nobody can chat until the chat is unmuted again. This will give your team members time to process what is going on and take appropriate actions if needed.
 
 Mute commands and permissions are listed higher up in this article.
 
@@ -389,7 +389,7 @@ There's also a clearing of the chat feature, allowing you to push some empty lin
 
 ## /rules and /motd
 
-It is important to properly inform the community of your existing set of rules, even if it's a quick summery that links to the full set on a website, discord server, etc. For example, I recommend to have a central place where rules can be summerized, and have some examples there. But have the most important top 10 rules listed in a /rules command, and present them as soon as someone joins the server. This way they're informed prior to playing, and in a ban-appeal you can mention this. 
+It is important to properly inform the community of your existing set of rules, even if it's a quick summary that links to the full set on a website, discord server, etc. For example, I recommend having a central place where rules can be summarized, and having some examples there. But have the most important top 10 rules listed in a /rules command, and present them as soon as someone joins the server. This way they're informed before playing, and in a ban appeal you can mention this. 
 
 You can use CMI to create your own welcome message (message of the day) and your own rules command using the custom-text feature of CMI. I've made an FAQ article for both of these to help you get started, you can find them here:
 
@@ -403,7 +403,7 @@ From what I understand there's currently no proxy support, what I do know CMI su
 
 ## Jail
 
-Certain situations do not justify a perm ban or even a kick, but might be a bit more serious than a quick /cmi mail send or /cmi msg. This is where the CMI Jail feature comes in handy. You can make it clear to the player that they're unable to play until they realise their mistake. Giving you and them time to discuss the situation, etc. 
+Certain situations do not justify a perm ban or even a kick, but might be a bit more serious than a quick /cmi mail send or /cmi msg. This is where the CMI Jail feature comes in handy. You can make it clear to the player that they're unable to play until they realize their mistake. Giving you and them time to discuss the situation, etc. 
 
 The commands and perms are listed further up in this document, but full Jail-feature documentation can be found [here](https://www.zrips.net/cmi/jail/)
 
