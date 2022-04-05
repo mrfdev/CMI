@@ -387,6 +387,16 @@ Mute commands and permissions are listed higher up in this article.
 
 There's also a clearing of the chat feature, allowing you to push some empty lines to remove the chat history really quickly for all players. 
 
+## /rules and /motd
+
+It is important to properly inform the community of your existing set of rules, even if it's a quick summery that links to the full set on a website, discord server, etc. For example, I recommend to have a central place where rules can be summerized, and have some examples there. But have the most important top 10 rules listed in a /rules command, and present them as soon as someone joins the server. This way they're informed prior to playing, and in a ban-appeal you can mention this. 
+
+You can use CMI to create your own welcome message (message of the day) and your own rules command using the custom-text feature of CMI. I've made an FAQ article for both of these to help you get started, you can find them here:
+
+- FAQ: [/rules](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-rules.md), and [/motd](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-motd.md)
+
+If you have AND a website, AND a forum, AND more than one server, AND a mailing list, AND a discord, etc. Make sure your rules are mentioned on each one of them, be it in a footer link, welcome message, info channel, etc. 
+
 ## Bungeecord / Velocity
 
 From what I understand there's currently no proxy support, what I do know CMI supports for Bungee I've put in this [article](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md)
