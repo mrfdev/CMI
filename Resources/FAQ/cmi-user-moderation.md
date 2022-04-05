@@ -195,6 +195,51 @@ For a list of all the CMI permissions, you can go [here](https://www.zrips.net/c
 
 ## Placeholders
 
+```
+> cmi placeholders
+
+%cmi_user_name%
+%cmi_user_uuid%
+
+%cmi_user_bungeeserver%
+
+%cmi_user_cuffed%
+%cmi_user_muted%
+
+%cmi_user_warning_count%
+%cmi_user_warning_points%
+
+%cmi_user_spy%
+%cmi_user_cmdspy%
+%cmi_user_signspy%
+
+%cmi_user_banned%
+
+%cmi_user_vanished_symbol%
+
+
+%cmi_user_jailed%
+%cmi_user_jailname%
+%cmi_user_jailcell%
+%cmi_user_jailtime%
+%cmi_user_jailreason%
+
+%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
+%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
+
+%cmi_chatmute_time%
+%cmi_chatmute_reason%
+
+%cmi_jail_time_[jailName]_[cellId]%
+%cmi_jail_username_[jailName]_[cellId]%
+%cmi_jail_reason_[jailName]_[cellId]%
+
+%cmi_maintenance_state%
+%cmi_maintenance_message%
+```
+
+For a list of all the CMI placehodlers, you can go [here](https://www.zrips.net/cmi/placeholders/)
+
 
 
 ## Misc.
