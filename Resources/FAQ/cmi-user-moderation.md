@@ -91,6 +91,16 @@ There's no bungeecord support at the moment, as far as I understand. And there's
 ```
 
 ```
+> cmi checkcommand mute
+ --------------------------------------------------
+ 1. mute [playerName] (time) (-s) (reason)
+ 2. unmutechat (-s)
+ 3. mutechat (time) (-s) (reason)
+ 4. shadowmute [playerName] (time) (-s) (reason)
+ 5. unmute [playerName] (-s)
+```
+
+```
 > cmi checkcommand ban
  --------------------------------------------------
  1. unban [playerName/ip] (-s)
@@ -145,6 +155,19 @@ For a list of all the CMI commands, you can go [here](https://www.zrips.net/cmi/
  --------------------------------------------------
  1. cmi.command.cuff.bypass - Allows command usage while cuffed
  2. cmi.command.cuff - Suspends players actions
+```
+
+```
+> cmi checkperm mute
+ --------------------------------------------------
+ 1. cmi.command.shadowmute - Mute player without telling him that he is muted
+ 2. cmi.command.mute.bypass - Bypass personal public chat mute
+ 3. cmi.command.mute - Mute player
+ 4. cmi.command.mutechat - Prevent public messages
+ 5. cmi.command.unmutechat - Unmute public chat
+ 6. cmi.command.unmute - Unmute player
+ 7. cmi.command.mute.max.[anypositivenumber] - Allows to temp mute for defined max time
+ 8. cmi.command.mutechat.bypass - Bypass public chat mute
 ```
 
 ```
