@@ -33,8 +33,6 @@ Now add the CMI file into `~/plugins/CMI/CustomAlias/` so you get `~/plugins/CMI
 
 - Don't forget if you already have mapped or made any old EssentialsX commands, to either remove that location or remove them from this file. 
 
-Optionally you can put the BSP file into `~/plugins/BossShopPro/shops/` so you get `~/plugins/BossShopPro/shops/1MB-social-gui.yml` and then type `/bs reload`.
-
 You can now go into the game and try out the commands.
 
 ## How to use this 1MB-Addon .yml file?
