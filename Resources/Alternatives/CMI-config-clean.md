@@ -11,7 +11,7 @@ Economy:
   # Attention! For economy to work properly with other plugins you will need ether an injector or recompiled Vault version. 
   # You can find both option at top of plugins page
   # ATTENTION! If you disabled CMI economy while server was running, you will need to perform full server restart for this to take correct effect and avoid any issues while getting players balances
-  Enabled: false
+  Enabled: true
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
   # Set to true if you want to log money transfers between players
@@ -405,9 +405,6 @@ Compass:
   # Enable EXPERIMENTAL boss bar compass
   # Only for 1.9+ servers
   BossBar: false
-  # When set to true then by default player will see bossbar compass, to hide it they will need to use /togglecompass
-  # When set to false bossbar compass will not show up until player uses /togglecompass
-  DefaultState: true
   # Requires to hold compass in had to see it
   RequireCompass: false
   # Compass update interval in milliseconds
@@ -439,7 +436,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -725,10 +722,10 @@ GroundClean:
   - itemType
 Chat:
   # Will try to modify chat to display it in defined format
-  ModifyChatFormat: false
+  ModifyChatFormat: true
   # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
   # To change default hover over messages seen on sent message, go to your locale file to Chat section
-  ClickHoverMessages: false
+  ClickHoverMessages: true
   DiscordSRV:
     # Enables support for DiscordSRV plugin
     Enabled: true
@@ -1303,12 +1300,12 @@ Kits:
   # When set to true, kit selection gui empty fields will get filled with definet item
   FillEmptyFields: true
   Buttons:
-    Cooldown: Watch
-    Usages: STONE_PLATE
-    Money: GOLD_INGOT
-    Exp: EXP_BOTTLE
-    Desc: WOOL:13
-    Back: Fence
+    Cooldown: clock
+    Usages: polished_blackstone_pressure_plate
+    Money: gold_ingot
+    Exp: experience_bottle
+    Desc: magenta_wool
+    Back: oak_fence
 Warps:
   # When set to true, warps list will be shown in GUI instead of chat list
   GUI: true
@@ -1347,7 +1344,7 @@ WorldLimits:
   FlyAboveRoof: true
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
   FlyAboveRoofLimitations:
-  - spawn-320
+  - spawn-256
   - spawn_nether-128
   - spawn_the_end-256
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
@@ -1593,6 +1590,14 @@ Vanish:
     stopPlaytime: true
     sleepIgnore: true
     joinVanished: false
+Player:
+  Options:
+    CloseButton:
+      Use: true
+      Slot: 9
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
+      Commands:
+      - closeinv!
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1739,13 +1744,21 @@ RandomTeleportation:
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
   Worlds:
+    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
     spawn:
       Enabled: true
+      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
+      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
       MaxRange: 1000
+      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
       MinRange: 500
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
     spawn_nether:
       Enabled: true
       MaxRange: 1000
@@ -1753,6 +1766,10 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
     spawn_the_end:
       Enabled: true
       MaxRange: 1000
@@ -1760,6 +1777,10 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      minY: 0
+      maxY: 256
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
@@ -2062,4 +2083,4 @@ PotionEffects:
 
 ## Misc.
 
-Created with CMI 9.1.3.2 for Minecraft 1.18.2
+Created with CMI 9.1.4.0 for Minecraft 1.18.2

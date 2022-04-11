@@ -60,6 +60,7 @@ More details and information about placeholders on the official website [here](h
 %cmi_user_afk_symbol%
 %cmi_user_backloc%
 %cmi_user_balance%
+%cmi_user_balance_formated%
 %cmi_user_balance_formatted%
 %cmi_user_banned%
 %cmi_user_bungeeserver%
@@ -132,6 +133,7 @@ More details and information about placeholders on the official website [here](h
 %cmi_user_playtime_secondst%
 %cmi_user_prefix%
 %cmi_user_pweather%
+%cmi_user_rank%
 %cmi_user_rank_displayname%
 %cmi_user_rank_name%
 %cmi_user_rank_percent_[rankName]%
@@ -140,8 +142,10 @@ More details and information about placeholders on the official website [here](h
 %cmi_user_stats_[mainStat(:optionalSubStat)]%
 %cmi_user_suffix%
 %cmi_user_tfly%
+%cmi_user_tfly_formated%
 %cmi_user_tfly_formatted%
 %cmi_user_tgod%
+%cmi_user_tgod_formated%
 %cmi_user_tgod_formatted%
 %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
 %cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
@@ -182,4 +186,4 @@ More details and information about placeholders on the official website [here](h
 
 ## Misc.
 
-Created with CMI 9.1.3.2 for Minecraft 1.18.2
+Created with CMI 9.1.4.0 for Minecraft 1.18.2

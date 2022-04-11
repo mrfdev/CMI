@@ -150,6 +150,7 @@ cmi.command.nick.bypassinuse - Allows to bypass limitationn in using already exi
 cmi.command.nick.different - Allows to set nick name to different one than original
 cmi.command.note.add - Allows to add notes
 cmi.command.note.remove - Allows to remove or clear notes
+cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney] - Allows to modify specific options
 cmi.command.patrol.bypass - Player with permission will not be included into patrol list
 cmi.command.point.[particletype] - Allows to change particle type
 cmi.command.portal.[portalname] - Allows to use portal
@@ -297,7 +298,7 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Command permissions:
 ```
-  cmi.command.actionbarmsg:
+   cmi.command.actionbarmsg:
     description: Sends action bar message to player
     default: op
   cmi.command.afk:
@@ -452,11 +453,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
     description: Shows all possible colors
     default: op
   cmi.command.colors.others:
-    default: op
-  cmi.command.commandspy:
-    description: Toggle command spy
-    default: op
-  cmi.command.commandspy.others:
     default: op
   cmi.command.compass:
     description: Set players compass point to your location
@@ -906,11 +902,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
   cmi.command.msg:
     description: Sends message to player
     default: op
-  cmi.command.msgtoggle:
-    description: Toggle private messages
-    default: op
-  cmi.command.msgtoggle.others:
-    default: op
   cmi.command.mute:
     description: Mute player
     default: op
@@ -948,6 +939,11 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
   cmi.command.oplist:
     description: Check operator player list
     default: op
+  cmi.command.options:
+    description: Modify personal options
+    default: op
+  cmi.command.options.others:
+    default: op
   cmi.command.panimation:
     description: Play custom particle animation
     default: op
@@ -958,11 +954,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
     default: op
   cmi.command.pay:
     description: Perform money transaction
-    default: op
-  cmi.command.paytoggle:
-    description: Toggle payments from another player
-    default: op
-  cmi.command.paytoggle.others:
     default: op
   cmi.command.ping:
     description: Shows players ping
@@ -1194,11 +1185,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
     default: op
   cmi.command.shoot.others:
     default: op
-  cmi.command.signspy:
-    description: Toggle sign spy
-    default: op
-  cmi.command.signspy.others:
-    default: op
   cmi.command.silence:
     description: Blocks public messages
     default: op
@@ -1224,11 +1210,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
     description: Open smithing table
     default: op
   cmi.command.smithingtable.others:
-    default: op
-  cmi.command.socialspy:
-    description: Toggle social spy
-    default: op
-  cmi.command.socialspy.others:
     default: op
   cmi.command.solve:
     description: Solve equation
@@ -1285,11 +1266,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
   cmi.command.tablistupdate:
     description: Force tablist update for all or specific player
     default: op
-  cmi.command.tagtoggle:
-    description: Toggle tag commands
-    default: op
-  cmi.command.tagtoggle.others:
-    default: op
   cmi.command.tempban:
     description: TempBan player
     default: op
@@ -1314,21 +1290,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
     default: op
   cmi.command.toast:
     description: Sends toast message to player
-    default: op
-  cmi.command.togglecompass:
-    description: Show or hide compass bossbar
-    default: op
-  cmi.command.togglecompass.others:
-    default: op
-  cmi.command.toggleshiftedit:
-    description: Toggles sign shift editing
-    default: op
-  cmi.command.toggleshiftedit.others:
-    default: op
-  cmi.command.toggletotem:
-    description: Show or hide totem cooldown bar
-    default: op
-  cmi.command.toggletotem.others:
     default: op
   cmi.command.top:
     description: Teleport to highest point at your location
@@ -1393,11 +1354,6 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
     default: op
   cmi.command.tps:
     description: Check servers tps status
-    default: op
-  cmi.command.tptoggle:
-    description: Toggle teleportation access to player
-    default: op
-  cmi.command.tptoggle.others:
     default: op
   cmi.command.tree:
     description: Spawn tree where you are looking
@@ -1517,4 +1473,4 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Misc.
 
-Created with CMI 9.1.3.2 for Minecraft 1.18.2
+Created with CMI 9.1.4.0 for Minecraft 1.18.2

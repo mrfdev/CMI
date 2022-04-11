@@ -7,6 +7,7 @@ Documented list with more details, examples, etc. can be found [here](https://ww
 Pro tip, you can search through this list in-game and from console: `/cmi checkcommand KEYWORD`
 
 ```
+ subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
 /cmi actionbarmsg [playerName/all] (-s:[seconds]) [message] - Sends action bar message to player
 /cmi afk (-p:playerName) (reason) (-s) - Toggle afk mode. Reason could be provided
 /cmi afkcheck [playerName/all] - Check players afk status
@@ -47,7 +48,6 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi colorlimits (playerName) - Shows all possible colors
 /cmi colorpicker (hex/colorname) - Pick hex color
 /cmi colors (playerName) - Shows all possible colors
-/cmi commandspy (playerName) (-s) - Toggle command spy
 /cmi compass (targetName) (sourceName) (x) (z) (worldname) (reset) (-s) - Set players compass point to your location
 /cmi condense (itemName) (playerName) (-s) - Condense items into blocks
 /cmi counter [join/leave/start] (t:time) (r:[range/-1]) (c:[world:x:y:z]) (msg:custom_message) (-f) - Starts counter for surrounding players
@@ -158,7 +158,6 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi money [pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s) - Manage money balance
 /cmi more (playerName) (-clone/[amount]) - Fills item stack to maximum amount
 /cmi msg [playerName] [message] - Sends message to player
-/cmi msgtoggle (playerName) - Toggle private messages
 /cmi mute [playerName] (time) (-s) (reason) - Mute player
 /cmi mutechat (time) (-s) (reason) - Prevent public messages
 /cmi nameplate (playerName) (-pref:[some_prefix]) (-suf:[some_suffix]) (-c:[colorCode]) (reset) - Set players name plate prefix, suffix or its color
@@ -168,10 +167,10 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi note (playerName) [add/remove/clear/list] (id/note) - Manage players notes
 /cmi openbook (cText) (playerName) (fileName.txt) - Open book gui
 /cmi oplist  - Check operator player list
+/cmi options (playerName) (option) (enable/disable/status) (-s) - Modify personal options
 /cmi panimation (variable/playerName/stopAll) (stop) - Play custom particle animation
 /cmi patrol  - Patrol
 /cmi pay [playerName] [amount] (-s) - Perform money transaction
-/cmi paytoggle (playerName) - Toggle payments from another player
 /cmi ping (playerName/message) - Shows players ping
 /cmi placeholders (parse) (placeholder) (playerName) - List out all placeholders
 /cmi playercollision (playerName) [true/false] (-s) - Set players collision mode
@@ -232,14 +231,12 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi shadowmute [playerName] (time) (-s) (reason) - Mute player without telling him that he is muted
 /cmi shakeitoff  - Dismount any entity riding you
 /cmi shoot (playerName) (-t:targetPlayer) (type) (speed) - Shoot projectile
-/cmi signspy (playerName) - Toggle sign spy
 /cmi silence  - Blocks public messages
 /cmi silentchest  - Toggles silent chest
 /cmi sit (playerName) (-persistent) (-s) (location) - Sit in your position
 /cmi skin [skinName/off/update] (playerName) (-s) - Changes players skin
 /cmi smite (playerName/location) (-s) - Strike ground or player with lightning
 /cmi smithingtable (playerName) - Open smithing table
-/cmi socialspy (playerName) - Toggle social spy
 /cmi solve [equation] - Solve equation
 /cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world) (x) (y) (z) (-s) - Play sound at target location
 /cmi spawn (playerName) (-s) - Teleports back to spawn location
@@ -255,17 +252,13 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi suicide [playerName] (-s) - Kill your self
 /cmi switchplayerdata [sourcePlayerName/uuid] [targetPlayerName/uuid] - Switch all data from one player to another
 /cmi tablistupdate (playerName) - Force tablist update for all or specific player
-/cmi tagtoggle (playerName) - Toggle tag commands
 /cmi tempban [playerName] [timeValue] (reason) (-s) - TempBan player
 /cmi tempipban [ip/playerName] [time] (reason) (-s) - Temp ban ip
 /cmi tfly (playerName) (timeInSec) (-s) - Set temporary players fly mode until relog or until time ends
 /cmi tgod [playerName] (timeInSec) (-s) - Set players temporarily god mode until relog or time end
 /cmi time (time) (world) (alter [value]) (-smooth) - Controls server time
-/cmi titlemsg [playerName/all] [title subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
+/cmi titlemsg [playerName/all] [title
 /cmi toast [playerName/all] (-t:[advType]) (-icon:[material]) [message] - Sends toast message to player
-/cmi togglecompass (playerName) (enable/disable) (-s) - Show or hide compass bossbar
-/cmi toggleshiftedit (playerName) (enable/disable) (-s) - Toggles sign shift editing
-/cmi toggletotem (playerName) (enable/disable) (-s) - Show or hide totem cooldown bar
 /cmi top [playerName] (-s) - Teleport to highest point at your location
 /cmi tp [playerName] (playerName) - Teleports to player's location
 /cmi tpa [playerName] (playerName) (-c) - Ask the player if you can teleport to them
@@ -282,7 +275,6 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi tpopos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range]) - Teleports to location by force
 /cmi tppos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range]) - Teleports to location
 /cmi tps (-spikes) - Check servers tps status
-/cmi tptoggle (playerName) (on/off/status) (-s) - Toggle teleportation access to player
 /cmi tree (TreeType) (-p:[playerName]) - Spawn tree where you are looking
 /cmi unban [playerName/ip] (-s) - Unban player or ip
 /cmi unbreakable (playerName) (true/false) - Makes item unbreakable
@@ -315,4 +307,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Misc.
 
-Created with CMI 9.1.3.2 for Minecraft 1.18.2
+Created with CMI 9.1.4.0 for Minecraft 1.18.2
