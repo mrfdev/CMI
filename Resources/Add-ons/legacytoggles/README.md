@@ -59,6 +59,8 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 - Request zrips to add a placeholder for tagsound True/False, so we can complete /tagtoggle
 
+- Some commands probably benefit from a perm:check! first, so we can return a custom 'no permission'?
+
 ## The reason for this Add-on
 
 With CMI 9.1.4.x some GUI menu updates have been introduced to match that of /homes, such as /kits, /warps, and now toggles have been moved to one as well, under /options.
@@ -69,4 +71,4 @@ The changelog where this new /options first happened can be found [here](https:/
 
 # Misc.
 
-- Last updated on April 17th, 2022 | Version 1.0.0 build 002, by Floris
+- Last updated on April 17th, 2022 | Version 1.0.1 build 003, by Floris
