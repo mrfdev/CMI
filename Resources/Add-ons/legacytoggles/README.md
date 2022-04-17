@@ -71,4 +71,4 @@ The changelog where this new /options first happened can be found [here](https:/
 
 # Misc.
 
-- Last updated on April 17th, 2022 | Version 1.0.1 build 004, by Floris
+- Last updated on April 17th, 2022 | Version 1.0.2 build 005, by Floris

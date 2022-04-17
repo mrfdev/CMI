@@ -17,6 +17,12 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
+  _togglemsg:
+    Cmds:
+    - asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved to &l/options&r</T><H>click
+      to open the /options menu</H><C>cmi options</C>
+    Perm: true
+    Tab: false
   togglecompass:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpbassbarcompass %cmi_user_togglename_compass%
@@ -24,8 +30,7 @@ CustomAlias:
       enable
     - check:%cmi_user_meta_tmpbassbarcompass%==True! asPlayer! cmi options bassbarcompass
       disable
-    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
-      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpbassbarcompass
     Tab: false
   toggleshiftedit:
@@ -35,8 +40,7 @@ CustomAlias:
       enable
     - check:%cmi_user_meta_tmpshiftSignEdit%==True! asPlayer! cmi options shiftsignedit
       disable
-    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
-      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpshiftSignEdit
     Tab: false
   toggletotem:
@@ -46,22 +50,35 @@ CustomAlias:
       enable
     - check:%cmi_user_meta_tmptotembossbar%==True! asPlayer! cmi options totembossbar
       disable
-    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
-      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmptotembossbar
     Tab: false
   tagtoggle:
     Cmds:
     - asPlayer! cmi options
-    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
-      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - asConsole! _togglemsg [playerName] $0
     Tab: false
   socialspy:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpchatspy %cmi_user_togglename_sospy%
     - check:%cmi_user_meta_tmpchatspy%==False! asPlayer! cmi options chatspy enable
     - check:%cmi_user_meta_tmpchatspy%==True! asPlayer! cmi options chatspy disable
-    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
-      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpchatspy
+    Tab: false
+  commandspy:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpcmdspy %cmi_user_togglename_cospy%
+    - check:%cmi_user_meta_tmpcmdspy%==False! asPlayer! cmi options cmdspy enable
+    - check:%cmi_user_meta_tmpcmdspy%==True! asPlayer! cmi options cmdspy disable
+    - asConsole! _togglemsg [playerName] $0
+    - asConsole! cmi usermeta [playerName] remove tmpcmdspy
+    Tab: false
+  signspy:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpsignspy %cmi_user_togglename_sispy%
+    - check:%cmi_user_meta_tmpsignspy%==False! asPlayer! cmi options signspy enable
+    - check:%cmi_user_meta_tmpsignspy%==True! asPlayer! cmi options signspy disable
+    - asConsole! _togglemsg [playerName] $0
+    - asConsole! cmi usermeta [playerName] remove tmpsignspy
     Tab: false
