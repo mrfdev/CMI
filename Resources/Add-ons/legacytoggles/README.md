@@ -55,7 +55,7 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 ## TODO
 
-- Complete all removed toggle commands, where possible.
+- I've added the ten removed commands, but should I add a command toggle for visible holograms?
 
 - Request zrips to add a placeholder for tagsound True/False, so we can complete /tagtoggle
 
@@ -71,4 +71,4 @@ The changelog where this new /options first happened can be found [here](https:/
 
 # Misc.
 
-- Last updated on April 17th, 2022 | Version 1.0.2 build 007, by Floris
+- Last updated on April 17th, 2022 | Version 1.0.2 build 008, by Floris
