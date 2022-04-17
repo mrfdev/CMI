@@ -20,39 +20,31 @@ CustomAlias:
   _togglemsg:
     Cmds:
     - statement:check1! check:$1!=null! check:$2!=null! check:$1!=[playerName]!
-    - if:check1! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved
-      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
-    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it meant
-      to be used internally only.
+    - if:check1! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is intended for internal use.
     Perm: true
     Tab: false
   togglecompass:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpbassbarcompass %cmi_user_togglename_compass%
-    - check:%cmi_user_meta_tmpbassbarcompass%==False! asPlayer! cmi options bassbarcompass
-      enable
-    - check:%cmi_user_meta_tmpbassbarcompass%==True! asPlayer! cmi options bassbarcompass
-      disable
+    - check:%cmi_user_meta_tmpbassbarcompass%==False! asPlayer! cmi options bassbarcompass enable
+    - check:%cmi_user_meta_tmpbassbarcompass%==True! asPlayer! cmi options bassbarcompass disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpbassbarcompass
     Tab: false
   toggleshiftedit:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpshiftSignEdit %cmi_user_togglename_shiftedit%
-    - check:%cmi_user_meta_tmpshiftSignEdit%==False! asPlayer! cmi options shiftsignedit
-      enable
-    - check:%cmi_user_meta_tmpshiftSignEdit%==True! asPlayer! cmi options shiftsignedit
-      disable
+    - check:%cmi_user_meta_tmpshiftSignEdit%==False! asPlayer! cmi options shiftsignedit enable
+    - check:%cmi_user_meta_tmpshiftSignEdit%==True! asPlayer! cmi options shiftsignedit disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpshiftSignEdit
     Tab: false
   toggletotem:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmptotembossbar %cmi_user_togglename_totem%
-    - check:%cmi_user_meta_tmptotembossbar%==False! asPlayer! cmi options totembossbar
-      enable
-    - check:%cmi_user_meta_tmptotembossbar%==True! asPlayer! cmi options totembossbar
-      disable
+    - check:%cmi_user_meta_tmptotembossbar%==False! asPlayer! cmi options totembossbar enable
+    - check:%cmi_user_meta_tmptotembossbar%==True! asPlayer! cmi options totembossbar disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmptotembossbar
     Tab: false
@@ -88,30 +80,24 @@ CustomAlias:
   msgtoggle:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpacceptingpm %cmi_user_togglename_msg%
-    - check:%cmi_user_meta_tmpacceptingpm%==False! asPlayer! cmi options acceptingpm
-      enable
-    - check:%cmi_user_meta_tmpacceptingpm%==True! asPlayer! cmi options acceptingpm
-      disable
+    - check:%cmi_user_meta_tmpacceptingpm%==False! asPlayer! cmi options acceptingpm enable
+    - check:%cmi_user_meta_tmpacceptingpm%==True! asPlayer! cmi options acceptingpm disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpacceptingpm
     Tab: false
   tptoggle:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpacceptingtpa %cmi_user_togglename_tp%
-    - check:%cmi_user_meta_tmpacceptingtpa%==False! asPlayer! cmi options acceptingtpa
-      enable
-    - check:%cmi_user_meta_tmpacceptingtpa%==True! asPlayer! cmi options acceptingtpa
-      disable
+    - check:%cmi_user_meta_tmpacceptingtpa%==False! asPlayer! cmi options acceptingtpa enable
+    - check:%cmi_user_meta_tmpacceptingtpa%==True! asPlayer! cmi options acceptingtpa disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpacceptingtpa
     Tab: false
   paytoggle:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpacceptingmoney %cmi_user_togglename_pay%
-    - check:%cmi_user_meta_tmpacceptingmoney%==False! asPlayer! cmi options acceptingmoney
-      enable
-    - check:%cmi_user_meta_tmpacceptingmoney%==True! asPlayer! cmi options acceptingmoney
-      disable
+    - check:%cmi_user_meta_tmpacceptingmoney%==False! asPlayer! cmi options acceptingmoney enable
+    - check:%cmi_user_meta_tmpacceptingmoney%==True! asPlayer! cmi options acceptingmoney disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpacceptingmoney
     Tab: false
