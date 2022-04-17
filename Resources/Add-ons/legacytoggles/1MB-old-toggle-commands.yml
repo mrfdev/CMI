@@ -24,7 +24,8 @@ CustomAlias:
       enable
     - check:%cmi_user_meta_tmpbassbarcompass%==True! asPlayer! cmi options bassbarcompass
       disable
-    - msg! [playerName] {#gold}The /$0 command has been moved to &l/options
+    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
+      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
     - asConsole! cmi usermeta [playerName] remove tmpbassbarcompass
     Tab: false
   toggleshiftedit:
@@ -34,7 +35,8 @@ CustomAlias:
       enable
     - check:%cmi_user_meta_tmpshiftSignEdit%==True! asPlayer! cmi options shiftsignedit
       disable
-    - msg! [playerName] {#gold}The /$0 command has been moved to &l/options
+    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
+      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
     - asConsole! cmi usermeta [playerName] remove tmpshiftSignEdit
     Tab: false
   toggletotem:
@@ -44,19 +46,22 @@ CustomAlias:
       enable
     - check:%cmi_user_meta_tmptotembossbar%==True! asPlayer! cmi options totembossbar
       disable
-    - msg! [playerName] {#gold}The /$0 command has been moved to &l/options
+    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
+      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
     - asConsole! cmi usermeta [playerName] remove tmptotembossbar
     Tab: false
   tagtoggle:
     Cmds:
     - asPlayer! cmi options
-    - msg! [playerName] {#gold}The /$0 command has been moved to &l/options
+    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
+      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
     Tab: false
   socialspy:
     Cmds:
     - asConsole! cmi usermeta [playerName] add tmpchatspy %cmi_user_togglename_sospy%
     - check:%cmi_user_meta_tmpchatspy%==False! asPlayer! cmi options chatspy enable
     - check:%cmi_user_meta_tmpchatspy%==True! asPlayer! cmi options chatspy disable
-    - msg! [playerName] {#gold}The /$0 command has been moved to &l/options
+    - asConsole! cmi ctellraw [playerName] <T>{#gold}The /$0 command has been moved
+      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
     - asConsole! cmi usermeta [playerName] remove tmpchatspy
     Tab: false
