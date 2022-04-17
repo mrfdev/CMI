@@ -95,3 +95,23 @@ CustomAlias:
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpacceptingpm
     Tab: false
+  tptoggle:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpacceptingtpa %cmi_user_togglename_tp%
+    - check:%cmi_user_meta_tmpacceptingtpa%==False! asPlayer! cmi options acceptingtpa
+      enable
+    - check:%cmi_user_meta_tmpacceptingtpa%==True! asPlayer! cmi options acceptingtpa
+      disable
+    - asConsole! _togglemsg [playerName] $0
+    - asConsole! cmi usermeta [playerName] remove tmpacceptingtpa
+    Tab: false
+  paytoggle:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpacceptingmoney %cmi_user_togglename_pay%
+    - check:%cmi_user_meta_tmpacceptingmoney%==False! asPlayer! cmi options acceptingmoney
+      enable
+    - check:%cmi_user_meta_tmpacceptingmoney%==True! asPlayer! cmi options acceptingmoney
+      disable
+    - asConsole! _togglemsg [playerName] $0
+    - asConsole! cmi usermeta [playerName] remove tmpacceptingmoney
+    Tab: false
