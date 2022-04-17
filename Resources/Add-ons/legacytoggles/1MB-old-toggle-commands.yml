@@ -19,8 +19,11 @@
 CustomAlias:
   _togglemsg:
     Cmds:
-    - asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved to &l/options&r</T><H>click
-      to open the /options menu</H><C>cmi options</C>
+    - statement:check1! check:$1!=null! check:$2!=null! check:$1!=[playerName]!
+    - if:check1! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved
+      to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it meant
+      to be used internally only.
     Perm: true
     Tab: false
   togglecompass:
@@ -81,4 +84,14 @@ CustomAlias:
     - check:%cmi_user_meta_tmpsignspy%==True! asPlayer! cmi options signspy disable
     - asConsole! _togglemsg [playerName] $0
     - asConsole! cmi usermeta [playerName] remove tmpsignspy
+    Tab: false
+  msgtoggle:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpacceptingpm %cmi_user_togglename_msg%
+    - check:%cmi_user_meta_tmpacceptingpm%==False! asPlayer! cmi options acceptingpm
+      enable
+    - check:%cmi_user_meta_tmpacceptingpm%==True! asPlayer! cmi options acceptingpm
+      disable
+    - asConsole! _togglemsg [playerName] $0
+    - asConsole! cmi usermeta [playerName] remove tmpacceptingpm
     Tab: false
