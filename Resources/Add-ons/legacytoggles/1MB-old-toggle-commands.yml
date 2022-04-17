@@ -1,0 +1,50 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  togglecompass:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpbassbarcompass %cmi_user_togglename_compass%
+    - check:%cmi_user_meta_tmpbassbarcompass%==False! asPlayer! cmi options bassbarcompass
+      enable
+    - check:%cmi_user_meta_tmpbassbarcompass%==True! asPlayer! cmi options bassbarcompass
+      disable
+    - msg! [playerName] {#gold}This command has been moved to &l/options
+    - asConsole! cmi usermeta [playerName] remove tmpbassbarcompass
+    Tab: false
+  toggleshiftedit:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmpshiftSignEdit %cmi_user_togglename_shiftedit%
+    - check:%cmi_user_meta_tmpshiftSignEdit%==False! asPlayer! cmi options shiftsignedit
+      enable
+    - check:%cmi_user_meta_tmpshiftSignEdit%==True! asPlayer! cmi options shiftsignedit
+      disable
+    - msg! [playerName] {#gold}This command has been moved to &l/options
+    - asConsole! cmi usermeta [playerName] remove tmpshiftSignEdit
+    Tab: false
+  toggletotem:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add tmptotembossbar %cmi_user_togglename_totem%
+    - check:%cmi_user_meta_tmptotembossbar%==False! asPlayer! cmi options totembossbar
+      enable
+    - check:%cmi_user_meta_tmptotembossbar%==True! asPlayer! cmi options totembossbar
+      disable
+    - msg! [playerName] {#gold}This command has been moved to &l/options | %cmi_user_togglename_totem%
+    - asConsole! cmi usermeta [playerName] remove tmptotembossbar
+    Tab: false
+
