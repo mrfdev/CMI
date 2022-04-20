@@ -68,10 +68,6 @@
 
 ---
 
-Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
-
----
-
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can do more /msg commands like /w, /whisper and /tell
 
 - Take the server offline with `/stop`, and backup your (server) data before making any changes.
