@@ -158,7 +158,7 @@ Okay next one, using the above we can make a private random item generator, and 
 ```
 The above can be added on a new line at the end of customalias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
 
-Note: Per 9.0.3.0 the CustomAlias.yml files are moved to their own folder: `~/plugins/CMI/CustomAlias/CustomAlias.yml` you can either add your Custom Alias code there, or make a new files if you rather organize additional commands like these.
+Note: You can add custom alias commands to `~/plugins/CMI/CustomAlias/CustomAlias.yml`, or make a new files if you rather organize additional commands like these.
 
 You can learn more about specialized commands, and placeholders by CMI here:
 - https://www.zrips.net/cmi/commands/specialized/
