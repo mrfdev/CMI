@@ -74,7 +74,7 @@ This page should help explain what I personally think is the way to run CMI on S
     --------------------------------------------------
     CMI plugin version: 9.1.4.1 SqLite
     CMILib: 1.1.2.5
-    Server: Paper(287) 1.18.2-R0.1-SNAPSHOT
+    Server: Paper(300) 1.18.2-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
@@ -85,16 +85,16 @@ This page should help explain what I personally think is the way to run CMI on S
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is made for CMI 9.1.3.x and a Spigot-, or Paper servers on version 1.18.2. Apply steps to other (lower) versions accordingly.
+- This is made for CMI 9.1.4.x and a Spigot-, or Paper servers on version 1.18.2. Apply steps to other (lower) versions accordingly.
 - The LATEST CMILib version will be required. Zrips' libraries and other resources are linked below.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.18.x? Yes, CMI 9.1.3.x can be used on 1.18.2.
+- Is there a build for 1.18.x? Yes, CMI 9.1.4.x can be used on 1.18.2.
 - Will there be a build for 1.xx? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
 - Can I upgrade from an older version of CMI to the build for 1.18.2? Yes, latest CMI and CMILib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.1.2.3 or newer is required for 1.18.2
+- CMILib will be required? Yes. CMILib 1.1.2.5 or newer is required for 1.18.2
 - So where do I download it? spigotmc.org
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
