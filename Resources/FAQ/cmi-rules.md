@@ -68,8 +68,6 @@
 
 ---
 
-Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
-
 A dynamic and flexible way of displaying /rules.
 
 ---
