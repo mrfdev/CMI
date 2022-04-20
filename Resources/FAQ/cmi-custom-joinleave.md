@@ -68,7 +68,7 @@
 
 ---
 
-Turn on and display a custom join and leave message to players. _(instructions are for CMI v. 9.0.7.0 or higher)_
+Turn on and display a custom join and leave message to players. 
 
 ---
 
