@@ -68,10 +68,6 @@
 
 ---
 
-Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
-
----
-
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> This is for /cmi aliaseditor
 
 For CMI 9, let's you catch parameters entered in cmi aliaseditor made commands
