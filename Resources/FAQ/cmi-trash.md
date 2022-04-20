@@ -68,12 +68,6 @@
 
 ---
 
-Note: Since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
-
-Note: Per 9.0.4.x the Alias.yml actually has a toggle for `/trash`, you can skip the below CustomAlias.yml step then if you're on the latest version. I will soon(tm) adjust the instructions on this FAQ page.
-
----
-
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Dispose (Trash)
 
 - Buy the [CMI](https://www.zrips.net/cmi/) premium plugin if you haven't already, and Install it on all your servers: <https://www.spigotmc.org/resources/3742/>
@@ -105,28 +99,19 @@ Optionally you could give the admin group the .others permission to manage dispo
 
 
 **Alias.yml**
-If you want to have this base command be accessable without the /cmi prefix, so `/cmi dispose` becomes `/dispose`, then open the `Alias.yml` file and set the value for /dispose to true, like this:
+If you want to have this base command be accessable without the /cmi prefix, so `/cmi dispose` becomes `/dispose`, then open the `Alias.yml` file and set the value for /dispose to true, and of course the same for /trash, like this:
 ```
   # /cmi dispose $1-
-  /dispose: true
+  /dispose:
+    Enabled: true
+    Tab: true
+  /trash:
+    Enabled: true
+    Tab: true
+  #  
 ```
 You can save the file and either restart the server or at least do a `/cmi reload`
 
-
-**Okay, let's get to the trash part**
-
-You might notice that the above is about the Dispose feature of CMI, and now we want to use that to add a `/trash` command. 
-
-
-**CustomAlias.yml**
-Either in-game through `/cmi aliaseditor` you can add a new alias command called `trash` and add the command(s) to it: `asConsole! cmi dispose [playerName]`, or you can open `CustomAlias.yml` and at the very end, add the following on a new line:
-```
-  trash:
-    Cmds:
-    - asConsole! cmi dispose [playerName]
-    Tab: false
-```
-Now, one note to make here. If you skip the above permission and alias section, you can use it like this. If you for some reason know you want to check 'per group' if they can use dispose, based on that permission, change it to `cmi dispose` instead. I hope that makes sense. The asConsole! part ignores the permission check and they can all use /trash regardless of permissions.
 
 Okay, the command will be live right away, especially after a `/cmi reload`, it will remain Red until you restart the server (so it can properly register the new command).
 
@@ -206,8 +191,10 @@ Save the `config.yml` file and do a `/cmi reload`, you can now have a player tes
 Okay, we're done. Players can now use:
 ```
 /cmi dispose
+/cmi trash
 /dispose
 /trash
+and trash signs!
 ```
 They get a GUI where they can dump their inventory in to dispose of their items. 
 
