@@ -23,7 +23,7 @@ CustomAlias:
     - 'if:check1@! msg! [playerName] Help: $0 stands for global command, allowing
       those with permission to run a command from a preset of commands on all online
       players. Please use the tab suggestions to build your command.'
-    - 'if:check1@! msg! [playerName] Syntax: /$0 <command> <params>'
+    - 'if:check1@! msg! [playerName] Syntax: /$0 <command> (params)'
     - if:check1! check:$1==help! msg! [playerName] {#orange}tfly{#gold} - gives all
       players temp fly for time in seconds
     - if:check1! check:$1==help! msg! [playerName] {#orange}tgod{#gold} - gives all

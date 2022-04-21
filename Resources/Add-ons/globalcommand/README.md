@@ -94,4 +94,4 @@ On the Zrips Discord Community server I see the question in the CMI #help channe
 
 # Misc.
 
-- Last updated on April 21st, 2022 | Version 1.0.0 build 002 (first public beta), by Floris
+- Last updated on April 21st, 2022 | Version 1.0.1 build 003 (first public beta), by Floris
