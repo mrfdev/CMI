@@ -57,7 +57,7 @@ Prerequisites. Make sure your Spigot or Paper jar is up to date and at least 1.1
 
 You only need the CMI add-on for this to work.
 
-- :file_folder: (CMI Add-on) [1MB-gcmd.yml](/Resources/Add-ons/essentialsx/1MB-gcmd.yml)
+- :file_folder: (CMI Add-on) [1MB-gcmd.yml](/Resources/Add-ons/globalcommand/1MB-gcmd.yml)
 
 
 ## Installation Instructions
