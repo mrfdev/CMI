@@ -1,0 +1,54 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  gcmd:
+    Cmds:
+    - statement:check1! check:$1!=null!
+    - 'if:check1@! msg! [playerName] Help: $0 stands for global command, allowing
+      those with permission to run a command from a preset of commands on all online
+      players. Please use the tab suggestions to build your command.'
+    - 'if:check1@! msg! [playerName] Syntax: /$0 <command> <params>'
+    - if:check1! check:$1==help! msg! [playerName] {#orange}tfly{#gold} - gives all
+      players temp fly for time in seconds
+    - if:check1! check:$1==help! msg! [playerName] {#orange}tgod{#gold} - gives all
+      players temp immortality for time in seconds
+    - if:check1! check:$1==help! msg! [playerName] {#orange}launch{#gold} - will fling
+      all players into the air (no damage on landing)
+    - if:check1! check:$1==help! msg! [playerName] {#orange}mobs{#gold} - lets you
+      spawn a couple of random mobs around all the players which will target them
+    - if:check1! check:$1==help! msg! [playerName] {#orange}help{#gold} - displays
+      this help page
+    - if:check1! check:$1==tfly! check:$2!=null! asConsole! allPlayers! cmi tfly [allPlayers]
+      $2
+    - if:check1! check:$1==tgod! check:$2!=null! asConsole! allPlayers! cmi tgod [allPlayers]
+      $2
+    - if:check1! check:$1==launch! asConsole! allPlayers! cmi launch [allPlayers]
+      p:2.5 a:25 -nodamage
+    - if:check1! check:$1==mobs! check:$2!=null! asConsole! allPlayers! cmi spawnmob
+      $2 hp:100 sp:3 t:[allPlayers] q:3 [allPlayers]
+    - if:check1! check:$1==msg! check:$2!=null! asConsole! allPlayers! cmi msg [allPlayers]
+      !{#yellow}(Server says) {#gold>}$2-{#orange<}
+    Perm: true
+    CustomTabs:
+    - tfly 60,120,300,600
+    - tgod 60,120,300,600
+    - launch
+    - mobs creeper,zombie,blaze
+    - help
+    - msg YourMsgHere
