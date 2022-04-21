@@ -78,7 +78,7 @@ You can now go into the game and try out the commands on your players.
 
 You can open it in your favorite editor, make changes accordingly. You can also in-game edit and delete commands, or even add more. 
 
-This video shows you a bit more behind the scenes: PENDING
+This video shows you a bit more behind the scenes: https://youtu.be/acZS_Ci88uo
 
 ## Contributions?
 
