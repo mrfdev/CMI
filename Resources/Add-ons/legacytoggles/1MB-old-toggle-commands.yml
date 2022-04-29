@@ -20,84 +20,100 @@ CustomAlias:
   _togglemsg:
     Cmds:
     - statement:check1! check:$1!=null! check:$2!=null! check:$1!=[playerName]!
-    - if:check1! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - if:check1! check:$3==null! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - if:check1! check:$3==nope! msg! $1 {#persianred}Oops, you have no permission to use /$2
     - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is intended for internal use.
     Perm: true
     Tab: false
+  options status:
+    Cmds:
+    - msg! [playerName] {#gold}\nOverview Status of /cmi options Toggles:\n----------------------------------
+    - asPlayer! cmi options bassbarcompass status
+    - asPlayer! cmi options shiftsignedit status
+    - asPlayer! cmi options totembossbar status
+    - asPlayer! cmi options tagsound status
+    - asPlayer! cmi options chatspy status
+    - asPlayer! cmi options cmdspy status
+    - asPlayer! cmi options signspy status
+    - asPlayer! cmi options acceptingpm status
+    - asPlayer! cmi options acceptingtpa status
+    - asPlayer! cmi options acceptingmoney status
+    - asPlayer! cmi options visibleholograms status
+    Tab: false
   togglecompass:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpbassbarcompass %cmi_user_togglename_compass%
-    - check:%cmi_user_meta_tmpbassbarcompass%==False! asPlayer! cmi options bassbarcompass enable
-    - check:%cmi_user_meta_tmpbassbarcompass%==True! asPlayer! cmi options bassbarcompass disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpbassbarcompass
+    - statement:check1! perm:cmi.command.options.bassbarcompass!
+    - if:check1! asPlayer! cmi options bassbarcompass toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   toggleshiftedit:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpshiftSignEdit %cmi_user_togglename_shiftedit%
-    - check:%cmi_user_meta_tmpshiftSignEdit%==False! asPlayer! cmi options shiftsignedit enable
-    - check:%cmi_user_meta_tmpshiftSignEdit%==True! asPlayer! cmi options shiftsignedit disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpshiftSignEdit
+    - statement:check1! perm:cmi.command.options.shiftsignedit!
+    - if:check1! asPlayer! cmi options shiftsignedit toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   toggletotem:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmptotembossbar %cmi_user_togglename_totem%
-    - check:%cmi_user_meta_tmptotembossbar%==False! asPlayer! cmi options totembossbar enable
-    - check:%cmi_user_meta_tmptotembossbar%==True! asPlayer! cmi options totembossbar disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmptotembossbar
+    - statement:check1! perm:cmi.command.options.totembossbar!
+    - if:check1! asPlayer! cmi options totembossbar toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   tagtoggle:
     Cmds:
-    - asPlayer! cmi options
-    - asConsole! _togglemsg [playerName] $0
+    - statement:check1! perm:cmi.command.options.tagsound!
+    - if:check1! asPlayer! cmi options tagsound toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   socialspy:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpchatspy %cmi_user_togglename_sospy%
-    - check:%cmi_user_meta_tmpchatspy%==False! asPlayer! cmi options chatspy enable
-    - check:%cmi_user_meta_tmpchatspy%==True! asPlayer! cmi options chatspy disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpchatspy
+    - statement:check1! perm:cmi.command.options.chatspy!
+    - if:check1! asPlayer! cmi options chatspy toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   commandspy:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpcmdspy %cmi_user_togglename_cospy%
-    - check:%cmi_user_meta_tmpcmdspy%==False! asPlayer! cmi options cmdspy enable
-    - check:%cmi_user_meta_tmpcmdspy%==True! asPlayer! cmi options cmdspy disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpcmdspy
+    - statement:check1! perm:cmi.command.options.cmdspy!
+    - if:check1! asPlayer! cmi options cmdspy toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   signspy:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpsignspy %cmi_user_togglename_sispy%
-    - check:%cmi_user_meta_tmpsignspy%==False! asPlayer! cmi options signspy enable
-    - check:%cmi_user_meta_tmpsignspy%==True! asPlayer! cmi options signspy disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpsignspy
+    - statement:check1! perm:cmi.command.options.signspy!
+    - if:check1! asPlayer! cmi options signspy toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   msgtoggle:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpacceptingpm %cmi_user_togglename_msg%
-    - check:%cmi_user_meta_tmpacceptingpm%==False! asPlayer! cmi options acceptingpm enable
-    - check:%cmi_user_meta_tmpacceptingpm%==True! asPlayer! cmi options acceptingpm disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpacceptingpm
+    - statement:check1! perm:cmi.command.options.acceptingpm!
+    - if:check1! asPlayer! cmi options acceptingpm toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   tptoggle:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpacceptingtpa %cmi_user_togglename_tp%
-    - check:%cmi_user_meta_tmpacceptingtpa%==False! asPlayer! cmi options acceptingtpa enable
-    - check:%cmi_user_meta_tmpacceptingtpa%==True! asPlayer! cmi options acceptingtpa disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpacceptingtpa
+    - statement:check1! perm:cmi.command.options.acceptingtpa!
+    - if:check1! asPlayer! cmi options acceptingtpa toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
   paytoggle:
     Cmds:
-    - asConsole! cmi usermeta [playerName] add tmpacceptingmoney %cmi_user_togglename_pay%
-    - check:%cmi_user_meta_tmpacceptingmoney%==False! asPlayer! cmi options acceptingmoney enable
-    - check:%cmi_user_meta_tmpacceptingmoney%==True! asPlayer! cmi options acceptingmoney disable
-    - asConsole! _togglemsg [playerName] $0
-    - asConsole! cmi usermeta [playerName] remove tmpacceptingmoney
+    - statement:check1! perm:cmi.command.options.acceptingmoney!
+    - if:check1! asPlayer! cmi options acceptingmoney toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  toggleholograms:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.visibleholograms!
+    - if:check1! asPlayer! cmi options visibleholograms toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false

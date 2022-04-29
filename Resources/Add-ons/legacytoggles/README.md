@@ -2,17 +2,30 @@
 
 ## Legacy CMI Toggle Commands / Aliasses
 
-This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.x or newer, and Minecraft 1.18.2
+This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.3 or newer, and Minecraft 1.18.2
 
 1MB Legacy Toggles are a helper to get the old CMI Commands back that were removed in 9.1.4.x. This allows a server owner to offer the set of familiar old legacy commands and their aliases to their players again. 
 
 Where possible, these will try to toggle. They are purposely limitedm, and with purpose display that things have moved to /options. This is because I personally feel that players can simply be told to use /options moving forward. You're of course free to completely revamp how these work on your server. Consider these merely a courtey solution, and / or an example to start with.
 
-Final note: By default, the permissions are not per alias command. They do however require the player to have the appropriate `cmi.command.options`, and `cmi.command.options.[types]` permission nodes. 
+## Permissions
+
+By default, the permissions are not per alias command. They do however require the player to have the appropriate `cmi.command.options`, and `cmi.command.options.[types]` permission nodes.
+
+```
+cmi.command.options - Modify personal options
+
+cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney] - Allows to modify specific options
+
+Optionally (for team members)
+cmi.command.options.others - Modify personal options, of others.
+```
+
+## Prerequisites
 
 Okay, **let's get started**. Thank you for being interested in this little add-on.
 
-Prerequisites. Make sure your Spigot or Paper jar is up to date and at least 1.18.2, as well as CMI / CMILib. And of course backup everything before making changes. We also assume you've updated `Alias.yml` to enable /options, and that you've given players the appropriate permission nodes.
+Make sure your Spigot or Paper jar is up to date and at least 1.18.2, as well as CMI / CMILib. And of course backup everything before making changes. We also assume you've updated `Alias.yml` to enable /options, and that you've given players the appropriate permission nodes.
 
 ## Download Instructions
 
@@ -71,4 +84,4 @@ The changelog where this new /options first happened can be found [here](https:/
 
 # Misc.
 
-- Last updated on April 17th, 2022 | Version 1.0.3 build 009 (first public beta), by Floris
+- Last updated on April 29th, 2022 | Version 1.1.0 build 010 (second public beta), by Floris
