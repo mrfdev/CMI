@@ -70,7 +70,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat + Bungee Chat
 
-- Download and Install the CMI-Bungeecord jar on only your proxy server (<https://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
+- Download and Install the CMI-Bungeecord jar on only your proxy server (<https://www.zrips.net/wp-content/uploads/2021/09/CMIB1.0.1.0.jar>)
 - Update CMI's `config.yml` (see below)
 ```yaml
 # Enable CMI Bungee Support 
