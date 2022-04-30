@@ -70,7 +70,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat + Bungee Chat
 
-- Download and Install CMI-Bungeecord on your proxy server (<https://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
+- Download and Install the CMI-Bungeecord jar on only your proxy server (<https://www.zrips.net/wp-content/uploads/2020/02/CMIB1.0.0.4.jar>)
 - Update CMI's `config.yml` (see below)
 ```yaml
 # Enable CMI Bungee Support 
@@ -155,10 +155,10 @@ BungeeCord:
 ```
 
 **Installation instructions:** (from what i gathered)
-- Buy CMI for the network
-- Install CMI on each server
-- Get CMI Bungee jar and put it on the proxy
-- Configure CMI properly, use CMI chat, and enable Bungee as per above config things.
+- Buy a CMI license to use on your network, if you don't already have one.
+- Install CMI on each individual server, obviously not the proxy server.
+- Get CMI Bungee jar and put it on only the proxy, obviously not the servers behind the proxy.
+- Configure CMI properly, use CMI chat, and enable Bungee as per this article.
 
 I do not believe there's any `modules.yml` things that need to get enabled.
 
@@ -175,7 +175,7 @@ I do not believe there's any `modules.yml` things that need to get enabled.
 - if a command doesn't move a player to another server, can i still do it? no, but yes, with /cmi aliaseditor you can make your own command that uses /cmi server and/or placeholders.
 - are my inventories shared between servers? i doubt it, you probably need a bungee-inventory plugin dedicated to this (mysql player-data bridge plugin supporst cmi though)
 - can i use 1 database for all cmi instances? no, default is sqlite, use mysql, and make sure they all use a unique prefix. Using 1 user table for every server for example will very very very likely cause massive issues.
-- i put CMIB jar on the proxy (bungeecord) but it did not make any files or folders? yes, i dont think it does. On your 'servers' on the network type: /cmi version, if bungee is hooked, it should show there.
+- i put CMIB jar on the proxy (bungeecord) but it did not make any files or folders? yes, i dont think it does. On your 'servers' on the network type: /cmi version, if bungee is hooked, it should show there. Again, cmi goes to the servers behind the proxy, cmib jar goes to the proxy server only.
 ```
 
 MYSQL player data bridge (third party plugin i was talking about) <https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/>
