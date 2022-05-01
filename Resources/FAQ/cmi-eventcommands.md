@@ -74,8 +74,6 @@ A file you can find in the `~/plugins/CMI/` directory, it's called `eventCommand
 
 x
 
-- And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
-
 ## Message of the Day (welcomeMessage.txt, /motd)
 
 The welcome message you can send players when they join the server can be handled by eventCommands.yml, but personally since it's a built-in feature of CMI, I do prefer (and recommend) to use that instead. All you have to do is make a ctext (custom text) file called welcomeMessage.txt and put it in the customText/ directory (and /cmi reload). More about this, and how to add the old familiar /motd command, is all explained here. [faq.cmi.support/motd](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-motd.md)
