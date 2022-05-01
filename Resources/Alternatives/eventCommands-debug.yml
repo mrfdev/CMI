@@ -1,0 +1,118 @@
+# Commands performed on particular event
+# Full color code support and some variables
+# If command starts with msg! and then player name is given, simple message will be sent to that player if he is online.
+# If command starts with broadcast! then message will be sent to everyone on server in simple manear
+# If command starts with actionbar! then all players will get action bar message defined after this variable
+# If command starts with title! then all players will get title message defined after this variable
+# If command starts with subtitle! then all players will get subtitle message defined after this variable
+# If command starts with kickall! then all players will be kicked from server with defined message. Usefull before server stop.
+# If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we dont know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
+# [playerName] to insert target player name
+# [playerDisplayName] to insert player display name
+# [lvl] to insert player level
+# [exp] to insert player total exp
+# [hp] to insert player health
+# [maxHp] to insert player max health
+# [hunger] to insert player hunger level
+# [gameMode] to insert player gamemode
+# Keep in mind that joinServer commands will not be performd on firstJoinServer event
+
+# ATTENTION!
+# Extreme usage of heavy commands could result in increased load for your server. Try using as little of them as possible for one event
+# and if possible spread them out with a delay by using "delay! 0.3" or similar variable
+# This will allow server to catch up with his calculation instead of forcing him to do all of those commands at once
+firstJoinServer:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: firstJoinServer] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+joinServer:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: joinServer] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+quitServer:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: quitServer] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerDeath:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerDeath (Commands)] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+  SourceCommands:
+  - 'broadcast! [EC-Debug: playerDeath (SourceCommands)] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerKillPlayer:
+  # [sourceName] to insert source player name
+  # [sourceDisplayName] to insert player display name
+  # [sourceLvl] to insert player level
+  # [sourceExp] to insert player total exp
+  # [sourceHp] to insert player health
+  # [sourceMaxHp] to insert player max health
+  # [sourceHunger] to insert player hunger level
+  # [sourceGameMode] to insert player gamemode
+  # Keep in mind that in case you are using specialized commands, then Commands section will be performed on player who died and SourceCommands will be performed on player who killed
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerKillPlayer (Commands)] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+  - 'broadcast! [EC-Debug] sourceName: [sourceName], sourceDisplayName: [sourceDisplayName], sourceLvl: [sourceLvl], sourceExp: [sourceExp], sourceHp: [sourceHp], sourceMaxHp: [sourceMaxHp], sourceHunger: [sourceHunger], sourceGameMode: [sourceGameMode].'
+  SourceCommands:
+  - 'broadcast! [EC-Debug: playerKillPlayer (SourceCommands)] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+  - 'broadcast! [EC-Debug] sourceName: [sourceName], sourceDisplayName: [sourceDisplayName], sourceLvl: [sourceLvl], sourceExp: [sourceExp], sourceHp: [sourceHp], sourceMaxHp: [sourceMaxHp], sourceHunger: [sourceHunger], sourceGameMode: [sourceGameMode].'
+playerRespawn:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerRespawn] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerTeleport:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerTeleport] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+bedLeave:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: bedLeave] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+bedEnter:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: bedEnter] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerWorldChange:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerWorldChange] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerPreWorldChange:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerPreWorldChange] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerGameModeChange:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerGameModeChange] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerKick:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerKick] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerBan:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerBan] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+playerLevelChange:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: playerLevelChange] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+voidFall:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: voidFall] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+elytraStartGlide:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: elytraStartGlide] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+elytraEndGlide:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: elytraEndGlide] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+pvpstart:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: pvpstart] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+pvpend:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: pvpend] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
