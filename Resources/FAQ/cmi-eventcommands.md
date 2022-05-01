@@ -99,5 +99,5 @@ The welcome message you can send players when they join the server can be handle
 
 You can find the default file here in case you need it: [eventCommands.yml](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/eventCommands.yml)
 
-And here's an alternative version by me that has all the events enabled, handy for debugging: [eventCommands-debug.yml](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/eventCommands-debug.yml)
+And here's an alternative version by me that has all the events enabled, handy for debugging: [eventCommands-debug.yml](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/eventCommands-debug.yml), by the way, here are [some screenshots](https://imgur.com/a/ewH5B8h) of how that looks
 
