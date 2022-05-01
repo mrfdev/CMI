@@ -1,0 +1,134 @@
+# Commands performed on particular event
+# Full color code support and some variables
+# If command starts with msg! and then player name is given, simple message will be sent to that player if he is online.
+# If command starts with broadcast! then message will be sent to everyone on server in simple manear
+# If command starts with actionbar! then all players will get action bar message defined after this variable
+# If command starts with title! then all players will get title message defined after this variable
+# If command starts with subtitle! then all players will get subtitle message defined after this variable
+# If command starts with kickall! then all players will be kicked from server with defined message. Usefull before server stop.
+# If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we dont know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
+# [playerName] to insert target player name
+# [playerDisplayName] to insert player display name
+# [lvl] to insert player level
+# [exp] to insert player total exp
+# [hp] to insert player health
+# [maxHp] to insert player max health
+# [hunger] to insert player hunger level
+# [gameMode] to insert player gamemode
+# Keep in mind that joinServer commands will not be performd on firstJoinServer event
+
+# ATTENTION!
+# Extreme usage of heavy commands could result in increased load for your server. Try using as little of them as possible for one event
+# and if possible spread them out with a delay by using "delay! 0.3" or similar variable
+# This will allow server to catch up with his calculation instead of forcing him to do all of those commands at once
+firstJoinServer:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+joinServer:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+quitServer:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerDeath:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+  SourceCommands: []
+playerKillPlayer:
+  # [sourceName] to insert source player name
+  # [sourceDisplayName] to insert player display name
+  # [sourceLvl] to insert player level
+  # [sourceExp] to insert player total exp
+  # [sourceHp] to insert player health
+  # [sourceMaxHp] to insert player max health
+  # [sourceHunger] to insert player hunger level
+  # [sourceGameMode] to insert player gamemode
+  # Keep in mind that in case you are using specialized commands, then Commands section will be performed on player who died and SourceCommands will be performed on player who killed
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+  SourceCommands: []
+playerRespawn:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerTeleport:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+bedLeave:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+bedEnter:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerWorldChange:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerPreWorldChange:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerGameModeChange:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerKick:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerBan:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerLevelChange:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+voidFall:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+elytraStartGlide:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+elytraEndGlide:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+pvpstart:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+pvpend:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
