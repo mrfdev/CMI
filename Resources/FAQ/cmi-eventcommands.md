@@ -72,7 +72,22 @@
 
 A file you can find in the `~/plugins/CMI/` directory, it's called `eventCommands.yml` and has a set amount of events that you can use to run commands, even with conditions, to extend the functionality and management of your Minecraft server. It is very dynamic and flexible, but do be aware that the more events and commands you add, the more time the server will need to process it all. Be mindful of the potential perormance impact.
 
-x
+## Custom Join / Leave Mesages
+
+You can use CMI to turn off the default join/leave messages via config.yml, and you can indeed use eventCommands.yml, but personally since I use the CMI CHAT feature of CMI anyway as chat manager, I do prefer (and recommend) to use this method instead: [faq.cmi.support/joinleave](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-custom-joinleave.md)
+
+A note to make here is that it is really cool how dynamic CMI is, you can use the above method for custom join/leave messages, and on top you can still use the event commands feature to extend it. For example, add a custom message to first time players, or a special announcement when a founder or donator joins. Or maybe a private message that only a staff or team member would see. 
+
+For example, in combination with LuckPerms you can check against the highest group and send out a broadcast to everybody when a player in the VIP group has joined:
+```yaml
+joinServer:
+  Enabled: true
+  Commands:
+  - delay! 0.4
+  - check:%luckperms_in_group_vip%==yes! broadcast! {#Denim>} OMG, a &lVIP
+    player{#Cerulean<>} just joined!!{#Denim<}\n&r
+```
+Pro tip; to better control the join event and when a message shows up, I do suggest to consider using a tiny delay of 0.3 or 0.4 with the join event. Giving the welcomeMessage some time to display, as well as the custom message to show after the regular joined-server message. Every server configuration is different; test!
 
 ## Message of the Day (welcomeMessage.txt, /motd)
 
