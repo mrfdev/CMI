@@ -188,3 +188,19 @@ Per CMI 9.0.4.3 this was in the changelog:
 - Added better support for bungeeservers in the sense that now we can show custom messages when player switch servers to and from it. This will only works after you update CMIB plugin and only applies when you have custom login/logout messages enabled. New locale lines got added to CMI locale file
 - Updating CMIB plugin will properly take player out of afk mode if he uses bungee only commands which previously would have been ignored
 ```
+
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Will CMIB help sync x y z?
+
+At the moment the answer is probably no, it won't sync inventories, money, or things like warps and homes. Is there an interest by Zrips to add more support for this? Yes, from what I gathered there is. I have no ETA on this. 
+
+Currently it's mainly for syncing public and private chats, staffmsgs, and to better support /cmi server, /cmi serverlist, and jumping through portals, and custom messages changing between servers. 
+
+There's a third party (and unsupported) plugin on SpigotMC that claims to have support for CMI, <https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/>
+
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Velocity Support
+
+There's currently no Velocity support. A comment below a review had Zrips confirm that it's in the works. I have no ETA for this. 
+
+People have said they are using Snap to get CMI / CMIB combo working on Velocity as well. You need to put the CMIB jar in the plugin directory inside the snap directory, I believe.
+
+
