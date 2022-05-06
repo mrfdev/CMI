@@ -31,7 +31,7 @@ Make sure your Spigot or Paper jar is up to date and at least 1.18.2, as well as
 
 You only need the CMI add-on for this to work.
 
-- :file_folder: (CMI Add-on) [1MB-old-toggle-commands.yml](/Resources/Add-ons/essentialsx/1MB-old-toggle-commands.yml)
+- :file_folder: (CMI Add-on) [1MB-old-toggle-commands.yml](/Resources/Add-ons/legacytoggles/1MB-old-toggle-commands.yml)
 
 
 ## Installation Instructions
