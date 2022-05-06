@@ -1,6 +1,6 @@
 # :star: 1MoreBlock.com CMI Add-on
 
-## Legacy CMI Toggle Commands / Aliasses
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Legacy CMI Toggle Commands / Aliasses
 
 This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.3 or newer, and Minecraft 1.18.2
 
@@ -8,7 +8,7 @@ This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.3 or newer, and
 
 Where possible, these will try to toggle. They are purposely limitedm, and with purpose display that things have moved to /options. This is because I personally feel that players can simply be told to use /options moving forward. You're of course free to completely revamp how these work on your server. Consider these merely a courtey solution, and / or an example to start with.
 
-## Permissions
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Permissions
 
 By default, the permissions are not per alias command. They do however require the player to have the appropriate `cmi.command.options`, and `cmi.command.options.[types]` permission nodes.
 
@@ -21,20 +21,20 @@ Optionally (for team members)
 cmi.command.options.others - Modify personal options, of others.
 ```
 
-## Prerequisites
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Prerequisites
 
 Okay, **let's get started**. Thank you for being interested in this little add-on.
 
 Make sure your Spigot or Paper jar is up to date and at least 1.18.2, as well as CMI / CMILib. And of course backup everything before making changes. We also assume you've updated `Alias.yml` to enable /options, and that you've given players the appropriate permission nodes.
 
-## Download Instructions
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Download Instructions
 
 You only need the CMI add-on for this to work.
 
 - :file_folder: (CMI Add-on) [1MB-old-toggle-commands.yml](/Resources/Add-ons/legacytoggles/1MB-old-toggle-commands.yml)
 
 
-## Installation Instructions
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
 - Get the `.yml` file and open it in your favorite YAML editor. Such as Notepad++ on Windows or Sublime Text 4 on macOS. You cannot use a regular notepad or Microsoft Word.
 
@@ -50,23 +50,23 @@ You only need the CMI add-on for this to work.
 
 You can now go into the game and try out the commands.
 
-## How to use this 1MB-Addon .yml file?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How to use this 1MB-Addon .yml file?
 
 You can open it in your favorite editor, make changes accordingly. You can also in-game edit and delete commands, or even add more. 
 
 This video shows you a bit more behind the scenes: PENDING
 
-## How to use the CMI Alias.yml file?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How to use the CMI Alias.yml file?
 
 You can map all `/CMI <command>` commands as `/<command>` by editing the `~/plugins/CMI/Alias.yml` file. Full info and instructions can be found here: <https://faq.CMI.support/commands>. And you can find an alternative alias file with every command enabled by default, here: <https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/Alias_true.yml>
 
 Note that any command NOT coming default by CMI cannot be added to Alias.yml, you have to use the `/cmi aliaseditor`, this add-on adds those old legacy commands for you. Yay.
 
-## Contributions?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Contributions?
 
 You're more than welcome to offer fixes, contributions, adjustments, suggestions. Feel free to clone and make a pull request. We can discuss and review your contributions and probably merge them into the main branch. 
 
-## TODO
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TODO
 
 - I've added the ten removed commands, but should I add a command toggle for visible holograms?
 
@@ -74,7 +74,7 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 - Some commands probably benefit from a perm:check! first, so we can return a custom 'no permission'?
 
-## The reason for this Add-on
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> The reason for this Add-on
 
 With CMI 9.1.4.x some GUI menu updates have been introduced to match that of /homes, such as /kits, /warps, and now toggles have been moved to one as well, under /options.
 
