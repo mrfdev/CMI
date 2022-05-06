@@ -84,4 +84,4 @@ The changelog where this new /options first happened can be found [here](https:/
 
 # Misc.
 
-- Last updated on April 29th, 2022 | Version 1.1.0 build 010 (second public beta), by Floris
+- Last updated on May 6th, 2022 | Version 1.1.0 build 010 (second public beta), by Floris
