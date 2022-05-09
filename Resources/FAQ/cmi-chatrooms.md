@@ -79,7 +79,7 @@ The CMI Chat feature allows players to create public and private chat rooms that
 You can toggle it to true in alias.yml so you can use /chat
 
 Syntax:
-/cmi chat [create/join/leave/list/invite/kick] (chatName/playerName) (-private)
+/cmi chat [create/join/leave/list/invite/kick] (chatName/playerName) (-private) (-locked) (-persistent)
 ```
 
 **Permissions:**
@@ -109,5 +109,13 @@ Command `/cmi listroom` will display basic information about the available chat 
 You can create private chat rooms by adding `-private`. (Players will require an invitation to join private chat rooms)
 
 Players who got invitation to private chat room can rejoin chat room as many times as he wants, until he gets kicked from it.
+
+`-private` will make chat room accessible only with invites from room creator
+
+`-locked` will prevent players from leaving chat room
+
+`-persistent` creates room which remains after server restart
+
+Note: To remove a persistent room, you have to delete it manually from the `chatRooms.yml` file. Then `/cmi reload`, make sure to kick people out of the room first.
 
 ---
