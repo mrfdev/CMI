@@ -1,1 +1,265 @@
-#
+# 1MB Add-on: CMI Daily Reward, these are the eight kits you have to append to the kits.yml file from CMI. You can edit them in-game via /cmi kiteditor
+DailyRewardMon:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardMon
+  DisplayName: '{#gold}Daily Reward: Monday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Monday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardTue:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardTue
+  DisplayName: '{#gold}Daily Reward: Tuesday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Tuesday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardWed:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardWed
+  DisplayName: '{#gold}Daily Reward: Wednesday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Wednesday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardThu:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardThu
+  DisplayName: '{#gold}Daily Reward: Thursday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Thursday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardFri:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardFri
+  DisplayName: '{#gold}Daily Reward: Friday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Friday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardSat:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardSat
+  DisplayName: '{#gold}Daily Reward: Saturday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Saturday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardSun:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardSun
+  DisplayName: '{#gold}Daily Reward: Sunday!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Sunday!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
+DailyRewardBonus:
+  Description:
+  - This kit should remain disabled, and
+  - players should not get the permission,
+  - because this is used internally by
+  - 'the 1MB Add-on: CMI Daily Reward.'
+  CommandName: DailyRewardBonus
+  DisplayName: '{#gold}Daily Reward: Bonus!'
+  Enabled: false
+  Delay: 10
+  Commands:
+  - asConsole! cmi sound block_amethyst_cluster_fall -p:0.8 [playerName]
+  Items:
+    '28':
+      v: 2975
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FFD700","text":"Daily
+          Reward: Bonus!"}],"text":""}'
+        lore:
+        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
+          click to deposit"}],"text":""}'
+        enchants:
+          LOOT_BONUS_BLOCKS: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAFAYA2T8uEBoAAAA=
+    '29':
+      v: 2975
+      type: OAK_PLANKS
