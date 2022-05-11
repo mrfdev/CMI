@@ -21,31 +21,34 @@ CustomAlias:
     Cmds:
     - statement:check1! check:$1!=null! check:$1==[playerName]! check:$2!=null!
     - if:check1! check:$2==header! asConsole! cmi ctellraw $1 <T>&r\n{#gold>}--❖ Daily
-      Reward {#orange<>}❖----------{#gold<}</T><H> Visit the server daily\n and collect
-      a reward!</H>
+      Reward {#orange<>}❖----------{#gold<}</T><H> {#kangaroo}Visit the server daily
+      to\n {#kangaroo}collect more rewards!</H>
     - if:check1! check:$2==footer! asConsole! cmi ctellraw $1 <T>{#gold>}-------------{#orange<>}-------------{#gold<}\n&r</T>
-    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is
-      intended for internal use.
+    - if:check1@! msg! [playerName] {#cinnabar}Do not call this command directly,
+      it is intended for internal use.
     Perm: true
     Tab: false
   daily:
     Cmds:
-    - delay! 0.1
+    - delay! 0.2
     - _dailyformat [playerName] header
     - statement:check1! check:%server_time_E%==%cmi_user_meta_dailyday%! check:%cmi_user_meta_dailystatus%==true!
-    - if:check1! msg! [playerName] {#cerulean}»{#kangaroo} You have already picked
-      up
-    - if:check1! msg! [playerName] {#cerulean}»{#kangaroo} your reward for today (%server_time_E%)
-    - if:check1! msg! [playerName] {#cerulean}»{#kangaroo} Try again tomorrow :)
-    - if:check1@! check:$1==null! asConsole! cmi ctellraw [playerName] <T>{#cerulean}»{#kangaroo}
+    - if:check1! msg! [playerName] {#gold}»{#kangaroo} You have already picked up
+    - if:check1! msg! [playerName] {#gold}»{#kangaroo} your reward for today (%server_time_E%)
+    - if:check1! msg! [playerName] {#gold}»{#kangaroo} Try again tomorrow :)
+    - if:check1@! check:$1==null! asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName]
+      -s
+    - if:check1@! check:$1==null! asConsole! cmi ctellraw [playerName] <T>{#gold}»{#kangaroo}
       Your reward for today (%server_time_E%)</T>
-    - if:check1@! check:$1==null! asConsole! cmi ctellraw [playerName] <T>{#cerulean}»{#kangaroo}
+    - if:check1@! check:$1==null! asConsole! cmi ctellraw [playerName] <T>{#gold}»{#kangaroo}
       is ready to get picked up. </T>
-    - if:check1@! check:$1==null! asConsole! cmi ctellraw [playerName] <T>{#cerulean}»{#kangaroo}
-      &nClick to collect&r</T><H> You can collect this reward today,\n another one
-      will be ready tomorrow.</H><C>$0 collect</C>
-    - if:check1@! check:$1==collect! msg! [playerName] {#cerulean}»{#kangaroo} ..
-      collected, enjoy!
+    - if:check1@! check:$1==null! asConsole! cmi ctellraw [playerName] <T>{#gold}»{#cerulean}
+      &nClick to collect&r</T><H> {#kangaroo}You can collect this reward today,\n
+      {#kangaroo}another one will be ready tomorrow.</H><C>$0 collect</C>
+    - if:check1@! check:$1==collect! msg! [playerName] {#gold}»{#kangaroo} .. collected,
+      enjoy!
+    - if:check1@! check:$1==collect! asConsole! cmi kit DailyReward%server_time_E%
+      [playerName]
     - if:check1@! check:$1==collect! asConsole! cmi usermeta [playerName] add dailyday
       %server_time_E%
     - if:check1@! check:$1==collect! asConsole! cmi usermeta [playerName] add dailystatus
