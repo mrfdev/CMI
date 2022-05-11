@@ -54,15 +54,13 @@ You can now go into the game and try out the command `/daily`, or join the serve
 
 You can open it in your favorite editor, make changes accordingly. You can also in-game edit and delete commands, or even add more. 
 
-This video shows you a bit more behind the scenes: PENDING
+This video shows you a bit more behind the scenes: https://youtu.be/ldC3LQ0S3DY
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Contributions?
 
 You're more than welcome to offer fixes, contributions, adjustments, suggestions. Feel free to clone and make a pull request. We can discuss and review your contributions and probably merge them into the main branch. 
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TODO
-
-- Make demo youtube video
 
 - Potentially simplify installation
 
@@ -74,4 +72,4 @@ My personal interest has always been there to add a simple daily reward feature 
 
 # Misc.
 
-- Last updated on May 11th, 2022 | Version 0.0.3 build 008 (early alpha, working build), by Floris
+- Last updated on May 11th, 2022 | Version 0.1.0 build 009 (second alpha, working build), by Floris
