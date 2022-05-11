@@ -46,6 +46,10 @@ The other files here, should not replace your existing kits and eventcommands ym
 
 You can now go into the game and try out the command `/daily`, or join the server as a player.
 
+- Optionally, if you want to change the on join delay, edit eventCommands.yml, 5 is the default.
+
+- And finally, in-game you can type `/cmi kiteditor` to customize the kits, by default each day is a custom cheque giving a 100 bucks (and a plank).
+
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How to use this 1MB-Addon .yml file?
 
 You can open it in your favorite editor, make changes accordingly. You can also in-game edit and delete commands, or even add more. 
@@ -70,4 +74,4 @@ My personal interest has always been there to add a simple daily reward feature 
 
 # Misc.
 
-- Last updated on May 11th, 2022 | Version 0.0.1 build 006 (early alpha, working build), by Floris
+- Last updated on May 11th, 2022 | Version 0.0.2 build 007 (early alpha, working build), by Floris
