@@ -1,9 +1,9 @@
 # 1MB Add-on: CMI Daily Reward, these are the two lines you have to add to the eventCommands.yml file from CMI, to the joinServer: event.
   - delay! 5
-  - asPlayer! daily delay
+  - asPlayer! daily
 # This should then look like this:
 # joinServer:
 #   Enabled: true
 #   Commands:
 # - delay! 5
-# - asPlayer! daily delay
+# - asPlayer! daily

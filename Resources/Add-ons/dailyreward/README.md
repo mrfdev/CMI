@@ -74,4 +74,4 @@ My personal interest has always been there to add a simple daily reward feature 
 
 # Misc.
 
-- Last updated on May 11th, 2022 | Version 0.0.2 build 007 (early alpha, working build), by Floris
+- Last updated on May 11th, 2022 | Version 0.0.3 build 008 (early alpha, working build), by Floris
