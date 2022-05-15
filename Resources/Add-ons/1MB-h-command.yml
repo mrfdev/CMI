@@ -1,4 +1,4 @@
-# Made for CMI 9.1.4.x and CMILib 1.1.2.5 (or newer) for Spigot / Paper 1.18.2
+# Made for CMI 9.1.4.x and CMILib 1.1.2.5 (or newer) for Spigot / Paper 1.18.2 / CMI Support requested by Rompepitas#0237 here https://ptb.discord.com/channels/452792793631555594/526402563847880725/975424439376285786
 # This addon is just an example, video here: https://youtu.be/G4kpN1Kc1Ho
 # It will add the /h command to your server, which requires two unique usernames, it will then heal both 100% 
 # Required permission to run /h is cmi.customalias.h
