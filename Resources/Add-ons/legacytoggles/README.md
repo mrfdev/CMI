@@ -6,7 +6,7 @@ This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.3 or newer, and
 
 1MB Legacy Toggles are a helper to get the old CMI Commands back that were removed in 9.1.4.x. This allows a server owner to offer the set of familiar old legacy commands and their aliases to their players again. 
 
-Where possible, these will try to toggle. They are purposely limitedm, and with purpose display that things have moved to /options. This is because I personally feel that players can simply be told to use /options moving forward. You're of course free to completely revamp how these work on your server. Consider these merely a courtey solution, and / or an example to start with.
+Where possible, these will try to toggle. They are purposely limited, and with purpose display that things have moved to /options. This is because I personally feel that players can simply be told to use /options moving forward. You're of course free to completely revamp how these work on your server. Consider these merely a courtey solution, and / or an example to start with.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Permissions
 
@@ -73,6 +73,8 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 - Request zrips to add a placeholder for tagsound True/False, so we can complete /tagtoggle
 
 - Some commands probably benefit from a perm:check! first, so we can return a custom 'no permission'?
+
+- add support for first param - `check:$1!=null` and then run `asPlayer!` options if `$1` is an online player `ifonline:$1!`
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> The reason for this Add-on
 
