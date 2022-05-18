@@ -3,7 +3,7 @@
 # It will add the /h command to your server, which requires two unique usernames, it will then heal both 100% 
 # Required permission to run /h is cmi.customalias.h
 # Author: Floris Fiedeldij Dop (mrfloris in Minecraft, discord.gg/floris
-# Version 1.0.0 build 003
+# Version 1.0.1 build 004
 # Installation instructions: put .yml file in plugins/cmi/customalias/ and start the server
 
 CustomAlias:
@@ -14,9 +14,8 @@ CustomAlias:
     - if:check1! ifonline:$1! msg! $1 {#orange}[Psst] {#gold} [playerName] has healed
       you ♡
     - if:check1! ifonline:$2! asConsole! cmi heal $2 100% -s
-    - if:check1! ifonline:$1! msg! $2 {#orange}[Psst] {#gold} [playerName] has healed
+    - if:check1! ifonline:$2! msg! $2 {#orange}[Psst] {#gold} [playerName] has healed
       you ♡
-    - if:check1! msg! [playerName] DEBUG1 PASS 1 = $1, 2 = $2
     - 'if:check1@! msg! [playerName] {#orange} Syntax: {#gold}/$0 <player1> <player2>'
     Perm: true
     CustomTabs:
