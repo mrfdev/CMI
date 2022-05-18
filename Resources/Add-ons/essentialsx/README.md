@@ -49,6 +49,8 @@ You can map all `/CMI <command>` commands as `/<command>` by editing the `~/plug
 
 You're more than welcome to offer fixes, contributions, adjustments, suggestions. Feel free to clone and make a pull request. We can discuss and review your contributions and probably merge them into the main branch. 
 
+Other contributions by @MrCrazys 
+
 ## TODO
 
 The focus is on the main commands now for module Essentials, not e-discord, or e-XMPP, etc. But ideally, I'd add these in the future at some point.
@@ -61,5 +63,5 @@ This website will show you if the EssentialsX command/alias is either in alias.y
 
 Note that at the moment module-addons aren't added (yet).
 
-- This list was last updated on February 26th, 2022
-- 475 EssentialsX commands and their aliases | version 1.0.0 build 015, by Floris
+- This list was last updated on May 18th, 2022
+- 475 EssentialsX commands and their aliases | version 1.0.1 build 016, by Floris + (contributions)
