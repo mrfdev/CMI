@@ -19,7 +19,7 @@
 CustomAlias:
   _nocmifeature:
     Cmds:
-    - statement:check1! check:$1!=null!
+    - statement:check1! check:$1!=null! check:$1!=[playerName]
     - if:check1! asConsole! cmi sound block_amethyst_cluster_hit -v:0.8 [playerName] -s
     - if:check1! msg! [playerName] &r\n{#gold} → Sorry, the legacy command $1 from EssentialsX
       is not a CMI feature (yet).
