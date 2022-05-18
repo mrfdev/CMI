@@ -19,10 +19,14 @@
 CustomAlias:
   _nocmifeature:
     Cmds:
-    - asConsole! cmi sound block_amethyst_cluster_hit -v:0.8 [playerName] -s
-    - msg! [playerName] &r\n{#gold} → Sorry, the legacy command $1 from EssentialsX is not a CMI feature (yet).
-    - check:$2==null! msg! [playerName] &r
-    - check:$2!=null! msg! [playerName] {#gold} → $2- \n&r
+    - statement:check1! check:$1!=null!
+    - if:check1! asConsole! cmi sound block_amethyst_cluster_hit -v:0.8 [playerName] -s
+    - if:check1! msg! [playerName] &r\n{#gold} → Sorry, the legacy command $1 from EssentialsX
+      is not a CMI feature (yet).
+    - if:check1! check:$2==null! msg! [playerName] &r
+    - if:check1! check:$2!=null! msg! [playerName] {#gold} → $2- \n&r
+    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is intended for internal use.
+    Tab: false
   eafk:
     Cmds:
     - cmi afk $1-
