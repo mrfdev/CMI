@@ -419,6 +419,10 @@ CustomAlias:
     - asConsole! advancement grant [playerName] only minecraft:adventure/kill_all_mobs
       minecraft:zoglin
     - delay! 1.5
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Feels Like Home</T><H>{#Geyser}While
+      riding a strider, travel fifty blocks in lava in the Overworld.</H>
+    - asConsole! advancement grant [playerName] only minecraft:nether/ride_strider_in_overworld_lava
+    - delay! 1.5
     - msg! [playerName] {#Cerulean>} Syncing Completed.{#Lochmara<}
     - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•&r
     Tab: false

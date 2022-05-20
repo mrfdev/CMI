@@ -326,6 +326,13 @@ Optimizations:
       # So instead of having something like 123m you will have ~100m
       Approximate: true
       DefaultDistance: 200
+      Invisibility:
+        # When enabled we will not show players who has invisibility potion effect on them in the list
+        Hide: false
+        # Only applies when previous Hide option is enabled
+        # Will obfuscate players name but stil shows his location in the list
+        # Actual players name wont be used, instead generic 8 character name with &k color format gets used to prevent from people realizing who is near by the lenght of his name
+        Obfuscate: false
       # When enabled, players can click on each player name and simple /cmi point [location] will be performed which shows particles directing towards target player
       PointTo: true
       # How many lines you want to show when using /near command
@@ -396,10 +403,7 @@ Sleeping:
 Compass:
   # Enable EXPERIMENTAL boss bar compass
   # Only for 1.9+ servers
-  BossBar: false
-  # When set to true then by default player will see bossbar compass, to hide it they will need to use /togglecompass
-  # When set to false bossbar compass will not show up until player uses /togglecompass
-  DefaultState: true
+  BossBar: true
   # Requires to hold compass in had to see it
   RequireCompass: true
   # Compass update interval in milliseconds
@@ -928,7 +932,9 @@ Chat:
     # You can use [senderName] to include player name who tagged
     CommandsOnTag:
     - asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName] -s
-    - asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName] -s
+    - 'check:%parseother_{[playerName]}_{cmi_user_afk}%==True! msg! [senderName] !{#gold}
+      Note: [playerName] is afk \n Reason: %parseother_{[playerName]}_{cmi_user_afk_msg}%,
+      Time: %parseother_{[playerName]}_{cmi_user_afk_for}%'
     # Will performd tag commands only when player is afk
     OnlyWhenAfk: false
     # When set to true, @ simbol will be removed
@@ -1353,6 +1359,8 @@ Spawn:
   # Forces players to login in defined spawn point when logging into server
   # Can be bypasses with cmi.spawnonjoin.bypass permission node
   SpawnOnJoin: false
+  # List of worlds which should be ignored and players joining in those servers will not be teleported to appropriate spawn point but will login at their log out location
+  IgnoredWorlds: []
   # Defines players spawn point after death if set to true, if not, then it will be used only for /cmi spawn command
   # RespawnLocation will indicate if you want to use this location as possible respawn point for player after death
   Main:
@@ -1388,6 +1396,20 @@ Kits:
     Exp: experience_bottle
     Desc: magenta_wool
     Back: oak_fence
+  Complex:
+    CloseButton:
+      Use: true
+      Slot: 9
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
+      Commands:
+      - closeinv!
+    InfoButton:
+      # Extra button to be used in case you want to provide any aditional information when clicking on it
+      Use: false
+      Slot: 1
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+      Commands:
+      - closeinv!
 Warps:
   # When set to true, warps list will be shown in GUI instead of chat list
   GUI: true
@@ -1403,6 +1425,20 @@ Warps:
   showCreator: false
   # When set to true, new warps by default will require permission node to use them
   requirePerm: false
+  Complex:
+    CloseButton:
+      Use: true
+      Slot: 9
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
+      Commands:
+      - closeinv!
+    InfoButton:
+      # Extra button to be used in case you want to provide any aditional information when clicking on it
+      Use: false
+      Slot: 1
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+      Commands:
+      - closeinv!
 DynamicViewRange:
   # By setting to true will enable dynamic view range feature. Its still in beta stage and can result in some CPU load increase.
   # Don't enable if you are not using this feature on your server
@@ -1694,6 +1730,38 @@ Vanish:
     stopPlaytime: true
     sleepIgnore: true
     joinVanished: false
+Player:
+  Options:
+    CloseButton:
+      Use: true
+      Slot: 9
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
+      Commands:
+      - closeinv!
+    InfoButton:
+      # Extra button to be used in case you want to provide any aditional information when clicking on it
+      Use: false
+      Slot: 1
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+      Commands:
+      - closeinv!
+    # Defines default states for player options
+    # This will not have any effect if player already edited his options with /cmi options command
+    Defaults:
+      visibleHolograms: true
+      shiftSignEdit: true
+      totemBossBar: true
+      bassBarCompass: true
+      tagSound: true
+      # !Strongly not recommended to be enabled!
+      chatSpy: false
+      # !Strongly not recommended to be enabled!
+      cmdSpy: false
+      # !Strongly not recommended to be enabled!
+      signSpy: false
+      acceptingPM: true
+      acceptingTPA: true
+      acceptingMoney: true
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1838,7 +1906,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    sanctuary:
+    builders:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1849,7 +1917,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    builders:
+    sanctuary:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1871,62 +1939,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    debug:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    legacy:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    tempor:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    hardcore:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     oneblock:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    owo:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1959,17 +1972,6 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    pvp:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     acid:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1992,29 +1994,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    uwu:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     skyblock:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    sushi:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2176,85 +2156,8 @@ RandomTeleportation:
       IgnoreLava: true
       minY: 0
       maxY: 256
-    uwu:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    pvp:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
     oneblock:
       Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    debug:
-      Enabled: false
-      MaxRange: 50
-      MinRange: 5
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    sushi:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    owo:
-      Enabled: false
-      MaxRange: 950
-      MinRange: 250
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    PrisonMines:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    legacy:
-      Enabled: true
       MaxRange: 1000
       MinRange: 500
       CenterX: 0
@@ -2275,18 +2178,7 @@ RandomTeleportation:
       IgnoreLava: true
       minY: 0
       maxY: 256
-    tempor:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    hardcore:
+    PrisonMines:
       Enabled: true
       MaxRange: 1000
       MinRange: 500

@@ -19,22 +19,21 @@
 <T>&6 7. &3 &lAcid&r&e, &e water island survival world.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
 <T>&6 8. &3 &lCave&r&e, &e underground cave survival world.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
 <T>&6 9. &3 &lRun&r&e, &e mini-game world in game mode.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
-<T>&610. &3 &lLegacy&r&e, &e ancient world in adventure mode.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
 &6
 &6 * &e Click on &3NEXT&e below, to get all the info
 &6 * &e about all inventory sharing between worlds.
 &6 
 <NextPage>
 &6
-&6 * &lPermanent and temporary worlds:
+&6 * &lPermanent Worlds:
 &6 * &e Before we continue with the inventories,
 &6 * &e I want to say that some of our worlds are here
-&6 * &e forever, while others are temporary, or reset.
+&6 * &e forever, we never delete our worlds.
 &6
-&6 * Our main world is: GENERAL (so build there!)
+&6 * Our main world is: WILD (so build there!)
 &6
 &6 * &lInventories:
 &6 * &e These worlds share their inventory:
-&6 * &e /spawn, /general, /mine, /end, /nether
+&6 * &e /spawn, /general, /wild, /end, /nether
 &6 * &e All the other worlds have their own.
 &6

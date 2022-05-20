@@ -258,6 +258,14 @@ Chat:
   item: '{#Edward}[%cmi_iteminhand_displayname%[amount]{#Edward}]'
   itemAmount: ' x[amount]'
   itemEmpty: '{#Edward}[Mighty fist]'
+Spy:
+  Chat:
+    msg: '&2Spy&7[&8[senderDisplayName] &7-> &8[playerDisplayName]&7]&f [message]'
+    custom: '&2Spy&8[senderDisplayName] &7-> &4|&8[place]&4|&f [message]'
+  Command:
+    msg: '&5C&2Spy&7[&8[senderDisplayName]&7]&7: &f[command]'
+  Sign:
+    msg: '&5Sign&2Spy&7[&8[senderDisplayName]&7]&7: &f[text]'
 command:
   help:
     output:
@@ -836,24 +844,6 @@ command:
       - '       &%m - &mStrike&r     &%n - &nUline'
       - '       &%o - &oItalic&r      &%r - &rReset'
       - '&e***************************************'
-  commandspy:
-    help:
-      info: '&eToggle command spy'
-      args: (playerName) (-s)
-      explanation:
-      - cmi.command.commandspy.hide - Hides performed commands from commandspy
-    info:
-      command:
-        compass:
-          help:
-            info: '&eSet players compass point to your location'
-            args: (targetName) (sourceName) (x) (z) (worldname) (reset) (-s)
-            explanation:
-            - 'Example: /cmi compass Zhax'
-            - /cmi compass Zhax Zrips
-            - /cmi compass Zhax LT_Craft 0 0 -s
-            - /cmi compass reset Zhax
-      toggled: '&eCommand spy toggled to &6[state] &estate'
   compass:
     help:
       info: '&eSet players compass point to your location'
@@ -1602,6 +1592,7 @@ command:
       noHomes: '&cThere is no saved homes'
       private: '&cThis home location is private!'
       remove: '&cShift+Right click to remove home'
+      missingBed: '&cMissing bed for your home location'
       notAccessible: '&cHome location world (&7[worldName]&c) doesn''t exist!'
       guiTitle: '&0[playerDisplayName] &8homes [current]/[max]'
   homes:
@@ -1941,6 +1932,7 @@ command:
       entityType: ' &eEntity Type: &6[type]'
       customModel: ' &eCustom Model Data: &6[data]'
       durability: ' &eDurability: &6[current]&e/&6[max]'
+      stackSize: ' &eMax stack size: &6[size]'
   itemlore:
     help:
       info: '&eChange items lore'
@@ -2177,6 +2169,7 @@ command:
       despiteWeightExtra:
       - '&ePLayer is not getting access to kit, but can preview it'
       Slot: '&eSlot: &6[slot]'
+      Page: '&ePage: &6[page]'
       SlotAuto: '&6Auto'
       Clone: '&eClone items from inventory'
       CloneExtra:
@@ -2500,13 +2493,6 @@ command:
       consoleMsg: '[[senderDisplayName] -> [playerDisplayName]] [message]'
       noPM: '&cPlayer is not accepting private messages now'
       badGroup: '&cCan''t send private messages to this group of players'
-  msgtoggle:
-    help:
-      info: '&eToggle private messages'
-      args: (playerName)
-    info:
-      feedbackOn: '{#Edward}Accepting private messages'
-      feedbackOff: '{#Edward}No longer accepting private messages'
   mute:
     help:
       info: '&eMute player'
@@ -2597,6 +2583,26 @@ command:
       args: ''
     info:
       feedback: '&e* &6[number]. &e[playerName]'
+  options:
+    help:
+      info: '&eModify personal options'
+      args: (playerName) (option) (enable/disable/status) (-s)
+    info:
+      title: '&11MB &5Feature Toggle Options'
+      state: '&2State: [state]'
+      feedback: '&2[description]: [state]'
+      option:
+        visibleHolograms: '&eVisible holograms'
+        shiftSignEdit: '&eSign shift edit'
+        totemBossBar: '&eTotem BossBar'
+        bassBarCompass: '&eCompass BossBar'
+        tagSound: '&eChat tagging sound'
+        chatSpy: '&eChat spy'
+        cmdSpy: '&eCommand spy'
+        signSpy: '&eSign spy'
+        acceptingPM: '&eAccepting private messages'
+        acceptingTPA: '&eAccepting teleportations to you'
+        acceptingMoney: '&eAccepting money payments'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -2616,13 +2622,6 @@ command:
     help:
       info: '&ePerform money transaction'
       args: '[playerName] [amount] (-s)'
-  paytoggle:
-    help:
-      info: '&eToggle payments from another player'
-      args: (playerName)
-    info:
-      feedbackDisabled: '&eNow you accepting payments from another player'
-      feedbackEnabled: '&eYou no longer accepting payments from another player'
   ping:
     help:
       info: '&eShows players ping'
@@ -3342,15 +3341,6 @@ command:
     help:
       info: '&eShoot projectile'
       args: (playerName) (-t:targetPlayer) (type) (speed)
-  signspy:
-    help:
-      info: '&eToggle sign spy'
-      args: (playerName)
-      explanation:
-      - cmi.command.signspy.hide - Hides created signs from signspy
-    info:
-      text: '&5Sign&2Spy{#Edward}[&8[senderDisplayName]{#Edward}]{#Edward}: &f[text]'
-      toggled: '&eSign spy toggled to &6[state] &estate'
   silence:
     help:
       info: '&eBlocks public messages'
@@ -3403,15 +3393,6 @@ command:
     info:
       feedback: '&eYou have opened smithing table for &3[playerDisplayName]&e (&3[offon]&e).'
       targetfeedback: '&3[senderDisplayName]&e opened smithing table for you.'
-  socialspy:
-    help:
-      info: '&eToggle social spy'
-      args: (playerName)
-    info:
-      msg: '&2Spy{#Edward}[&8[senderDisplayName] {#Edward}-> &8[playerDisplayName]{#Edward}]&f
-        [message]'
-      custom: '&2Spy&8[senderDisplayName] {#Edward}-> &4|&8[place]&4|&f [message]'
-      toggled: '&eSocial spy toggled to &6[state] &estate'
   solve:
     help:
       info: '&eSolve equation'
@@ -3730,13 +3711,6 @@ command:
       args: (playerName)
     info:
       updated: '&eTablist updated'
-  tagtoggle:
-    help:
-      info: '&eToggle tag commands'
-      args: (playerName)
-    info:
-      feedbackDisabled: '&eDisabled tag sounds'
-      feedbackEnabled: '&eEnabled tag sounds'
   tempban:
     help:
       info: '&eTempBan player'
@@ -3863,26 +3837,6 @@ command:
       args: '[playerName/all] (-t:[advType]) (-icon:[material]) [message]'
     info:
       message: '&f[messsage]'
-  togglecompass:
-    help:
-      info: '&eShow or hide compass bossbar'
-      args: ''
-    info:
-      ToggleOff: '&eBoss bar compass got disabled'
-      ToggleOn: '&6Boss bar compass got enabled'
-  toggleshiftedit:
-    help:
-      info: '&eToggles sign shift editing'
-      args: ''
-    info:
-      feedbackDisabled: '&eDisabled shift sign editing'
-      feedbackEnabled: '&eEnabled shift sign editing'
-  toggletotem:
-    help:
-      info: '&eShow or hide totem cooldown bar'
-      args: ''
-    info:
-      toggle: '&eTotem cooldown bar toggled ([state]&e)'
   top:
     help:
       info: '&eTeleport to highest point at your location'
@@ -4025,13 +3979,6 @@ command:
       hover:
       - '[tpscolor][tps]'
       - '&7[time]'
-  tptoggle:
-    help:
-      info: '&eToggle teleportation access to player'
-      args: (playerName)
-    info:
-      feedback: '&eTeleportation prevention: &6[state]'
-      feedbackOther: '&eTeleportation prevention of &6[playerDisplayName]&e: &6[state]'
   tree:
     help:
       info: '&eSpawn tree where you are looking'

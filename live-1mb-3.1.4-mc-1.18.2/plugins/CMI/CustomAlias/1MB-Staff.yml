@@ -149,13 +149,29 @@ CustomAlias:
     Perm: true
   unhide:
     Cmds:
-    - asConsole! cmi vanish [playerName] off
-    - asConsole! cmi gm [playerName] creative -s
-    - asConsole! cmi god [playerName] true -s
-    - asConsole! cmi heal [playerName] 100% -s
-    - asConsole! cmi effect [playerName] clear -s
-    - asConsole! cmi fly [playerName] true -s
+    - check:$2==null! asConsole! cmi usermeta [playerName] add unhidePlayer [playerName]
+      -s
+    - check:$2!=null! asConsole! cmi usermeta [playerName] add unhidePlayer $2 -s
+    - check:$1==null! asConsole! cmi usermeta [playerName] add unhideGamemode creative
+      -s
+    - check:$1!=null! asConsole! cmi usermeta [playerName] add unhideGamemode $1 -s
+    - asConsole! cmi vanish %cmi_user_meta_unhidePlayer% off
+    - asConsole! cmi gm %cmi_user_meta_unhidePlayer% %cmi_user_meta_unhideGamemode%
+      -s
+    - check:%cmi_user_meta_unhideGamemode%==survival! asConsole! cmi god %cmi_user_meta_unhidePlayer%
+      false -s
+    - check:%cmi_user_meta_unhideGamemode%==creative! asConsole! cmi god %cmi_user_meta_unhidePlayer%
+      true -s
+    - check:%cmi_user_meta_unhideGamemode%==survival! asConsole! cmi fly %cmi_user_meta_unhidePlayer%
+      false -s
+    - check:%cmi_user_meta_unhideGamemode%==creative! asConsole! cmi fly %cmi_user_meta_unhidePlayer%
+      true -s
+    - asConsole! cmi heal %cmi_user_meta_unhidePlayer% 100% -s
+    - asConsole! cmi effect %cmi_user_meta_unhidePlayer% clear -s
+    - msg! [playerName] {#gold} ± Made %cmi_user_meta_unhidePlayer% visible (%cmi_user_meta_unhideGamemode%)
     Perm: true
+    CustomTabs:
+    - survival,creative [allPlayername]
   recalc:
     Cmds:
     - asConsole! skyblockadmin limits calc $1

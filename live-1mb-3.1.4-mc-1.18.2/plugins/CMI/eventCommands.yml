@@ -90,8 +90,6 @@ playerWorldChange:
     survival -s
   - ifinworld:spawn#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
     survival -s
-  - ifinworld:mine#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
-    survival -s
   - ifinworld:nether#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
     survival -s
   - ifinworld:end#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]

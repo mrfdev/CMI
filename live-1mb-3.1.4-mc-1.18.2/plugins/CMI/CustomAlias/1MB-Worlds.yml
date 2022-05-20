@@ -74,10 +74,10 @@ CustomAlias:
   worlds:
     Cmds:
     - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Worlds ❖{#orient}-----------------------•
-    - 'msg! [playerName] {#Feijoa} Our main survival world that you should build in
-      is (because we will never remove it): {#orange}&l/wild &r'
+    - 'msg! [playerName] {#Feijoa}Our main survival world that you should build in
+      is: {#orange}&l/wild &r'
     - msg! [playerName] {#Feijoa} Please note that 'general' world inventories share
-      with general/wild/end/nether, but not with other ones.
+      with /general, /wild, /end, /nether, but not with other ones.
     - msg! [playerName] {#Feijoa} We actually have quite a few worlds (including /skyblock
       and /oneblock), please read the thread below to learn about them.
     - msg! [playerName] &b https://omgboards.com/threads/260940/ \n&r

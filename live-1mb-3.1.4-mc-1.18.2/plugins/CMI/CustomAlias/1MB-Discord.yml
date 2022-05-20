@@ -88,4 +88,3 @@ CustomAlias:
       points**: `%VotingPlugin_Points_format%`'
     - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/jobs
       Points **: `%jobsr_user_points%`'
-    Tab: false

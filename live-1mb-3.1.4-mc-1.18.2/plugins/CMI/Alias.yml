@@ -227,11 +227,6 @@ Alias:
     Enabled: true
     Tab: true
   #  
-  # /cmi commandspy $1-
-  /commandspy:
-    Enabled: false
-    Tab: true
-  #  
   # /cmi compass $1-
   /compass:
     Enabled: false
@@ -880,11 +875,6 @@ Alias:
     Enabled: true
     Tab: true
   #  
-  # /cmi msgtoggle $1-
-  /msgtoggle:
-    Enabled: true
-    Tab: true
-  #  
   # /cmi mute $1-
   /mute:
     Enabled: true
@@ -930,6 +920,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi options $1-
+  /options:
+    Enabled: true
+    Tab: true
+  #  
   # /cmi panimation $1-
   /panimation:
     Enabled: true
@@ -942,11 +937,6 @@ Alias:
   #  
   # /cmi pay $1-
   /pay:
-    Enabled: true
-    Tab: true
-  #  
-  # /cmi paytoggle $1-
-  /paytoggle:
     Enabled: true
     Tab: true
   #  
@@ -1274,11 +1264,6 @@ Alias:
     Enabled: false
     Tab: true
   #  
-  # /cmi signspy $1-
-  /signspy:
-    Enabled: false
-    Tab: true
-  #  
   # /cmi silence $1-
   /silence:
     Enabled: true
@@ -1313,11 +1298,6 @@ Alias:
   # /cmi smithingtable $1-
   /smithingtable:
     Enabled: true
-    Tab: true
-  #  
-  # /cmi socialspy $1-
-  /socialspy:
-    Enabled: false
     Tab: true
   #  
   # /cmi solve $1-
@@ -1401,11 +1381,6 @@ Alias:
     Enabled: false
     Tab: true
   #  
-  # /cmi tagtoggle $1-
-  /tagtoggle:
-    Enabled: false
-    Tab: true
-  #  
   # /cmi tempban $1-
   /tempban:
     Enabled: false
@@ -1455,21 +1430,6 @@ Alias:
   # /cmi toast $1-
   /toast:
     Enabled: true
-    Tab: true
-  #  
-  # /cmi togglecompass $1-
-  /togglecompass:
-    Enabled: false
-    Tab: true
-  #  
-  # /cmi toggleshiftedit $1-
-  /toggleshiftedit:
-    Enabled: false
-    Tab: true
-  #  
-  # /cmi toggletotem $1-
-  /toggletotem:
-    Enabled: false
     Tab: true
   #  
   # /cmi top $1-
@@ -1550,11 +1510,6 @@ Alias:
   # /cmi tps $1-
   /tps:
     Enabled: false
-    Tab: true
-  #  
-  # /cmi tptoggle $1-
-  /tptoggle:
-    Enabled: true
     Tab: true
   #  
   # /cmi tree $1-
