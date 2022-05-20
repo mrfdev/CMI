@@ -81,13 +81,13 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/CMIL
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
-The full list as of May 4th, 2022
+The full list as of May 20th, 2022
 
-- CMI version 9.1.4.5
+- CMI version 9.1.4.7
 - Selection Visualizer version 3.1.1.1
-- TryMe version 7.0.0.2
+- TryMe version 7.0.0.3
 - Mob Farm Manager version 2.0.3.0
-- Residence version 5.0.1.5
+- Residence version 5.0.1.6
 - Jobs-Reborn version 5.0.2.1
 - BottledExp version 3.0.2.0
 - ReCount version 3.5.1
