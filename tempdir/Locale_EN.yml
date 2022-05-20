@@ -121,10 +121,13 @@ info:
   spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
     with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
-  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
-  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
-  deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
+  FirstJoin: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
+    to 1MoreBlock.com!'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r {#Feijoa}left.'
+  LoginCustom: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome back &6[playerDisplayName]
+    {#Feijoa}❤'
+  deathlocation: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
+    y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]'
   book:
     exploit: '&cYou cant create book with more than [amount] pages'
   combat:
@@ -161,7 +164,7 @@ info:
     NonEditable: '&eEdit mode disabled'
   vanishSymbolOn: '&8[&7H&8]&r'
   vanishSymbolOff: ''
-  afkSymbolOn: '&8[&7Afk&8]&r'
+  afkSymbolOn: '&6●'
   afkSymbolOff: ''
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   pvp:
@@ -188,7 +191,7 @@ afk:
   'off': '&7Playing'
   MayNotRespond: '&ePlayer is AFK and may not respond'
   MayNotRespondStaff: '&eStaff member is AFK and may not respond. Try contacting us
-    through discord'
+    through /discord'
 BossBar:
   hpBar: '&f[victim] &e[current]&f/&e[max] &f(&c-[damage]&f)'
 Potion:
@@ -214,7 +217,7 @@ Information:
   FirstConnection: '&eFirst connection: &6[time]'
   Lastseen: '&eLast seen: &6[time]'
   Onlinesince: '&eOnline since: &6[time]'
-  Money: '&eBalance: &6[money]'
+  Money: '&Money: &6[money]'
   Group: '&eGroup: &6[group]'
 econ:
   commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
@@ -239,12 +242,18 @@ Chat:
   LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
   shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
   # Use \n to add new line
-  publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  privateHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  staffHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  publicHover: '{#Feijoa}Player: {#Geyser}%cmi_user_display_name%{#Feijoa}, ({#Geyser}%luckperms_primary_group_name%{#Feijoa})\n{#Feijoa}Msg
+    was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
+    %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomes_points%
+    \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
+    / Lvls: {#Geyser}%jobs_total_levels%\n&8(click to send private msg)&r'
+  privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
+    \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
+  staffHover: 'Player: %cmi_user_name%, {#Edward}(%cmi_user_group%)\n Chat sent: &6%server_time_hh:mm:ss%&r
+    \n World: {#Edward}%player_world%&r'
   helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
   link: '&l&4[&7LINK&4]'
-  item: '&7[%cmi_iteminhand_realname%[amount]&7]'
+  item: '{#Edward}[%cmi_iteminhand_displayname%[amount]{#Edward}]'
   itemAmount: ' x[amount]'
   itemEmpty: '&7[Mighty fist]'
 Spy:
@@ -282,10 +291,25 @@ command:
       # This only determines message in title message and not message shown in chat. For chat message check config.yml file
       afkTitle: '&eYou are now AFK'
       afkSubTitle:
-      - '&2Don''t eat to much cookies!'
+      - '&2Do not eat too many cookies!'
       - '&2Nice day for fishing'
-      - '&2Afk, again?'
+      - '&2Away from blocks xD'
+      - '&2Boop ya nose!'
+      - '&2Pop the champaigne'
+      - '&2Did you fall asleep?'
+      - '&2Maybe get a coffee!'
       - '&2Where are you?'
+      - '&2Hey, you. Youre finally awake'
+      - '&2Where did you come from where did you go?'
+      - '&2Do or do not. There is no try.'
+      - '&2You feeding a pet?'
+      - '&2We will miss you!'
+      - '&2Taking the hobbits to isengard?'
+      - '&2Progress waits for no miner!'
+      - '&2If youre not there, who is?'
+      - '&2Taking a break is important'
+      - '&2Away from basement'
+      - '&2Do not forget to hydrate'
   afkcheck:
     help:
       info: '&eCheck players afk status'
@@ -509,9 +533,9 @@ command:
       - cmi.command.ban.bypass - to bypass ban
     info:
       # Make sure that OverrideLoginMessage is enabled in config file
-      message: '&cYou are banned from this server!'
+      message: '&cAccess has been suspended'
       reason: '&6Reason: &e[reason]'
-      defaultReason: '&eViolated server rules'
+      defaultReason: '&eAccess has been suspended'
       messageToAll: '&6[playerDisplayName] &egot banned by &6[senderDisplayName] &efor:
         &6[reason]'
       banedSilent: '&7[&8Silent&7]&6[playerDisplayName] &egot banned by &6[senderDisplayName]
@@ -762,7 +786,9 @@ command:
       clearFeedback: '&eYou have removed &6[amount] &eitems from &3[playerDisplayName]&e
         inventory (&3[offon]&e).'
       target: '&6[amount] &eitems got removed from your inventory by &3[senderDisplayName]&e.'
-      confirm: '&7Click to confirm inventory clear up. &cAll items will be removed!'
+      confirm: '&c&lClick to confirm inventory clear up. {#Cerulean}All items will
+        be removed! Including hotbar, inventory, offhand, and armor. &c There is no
+        way to get any of these items back!'
   clearchat:
     help:
       info: '&eClears chat'
@@ -2250,16 +2276,21 @@ command:
       # ATTENTION! group names should be in 'group[number]' format, where you have word 'group' followed by number. This is required and you cant have custom names as they are not required, but we are using number provided to determine which group goes after which
       # Player need to have appropriate permission node to be placed in group cmi.command.list.group.[groupnumber], bigger number have bigger priority
       groups:
-        group1: '&eGroup1: &f[list]'
-        group2: '&eGroup2: &f[list]'
-        group3: '&eGroup3: &f[list]'
-        group4: '&eGroup4: &f[list]'
-        group5: '&eGroup5: &f[list]'
-        group6: '&eGroup6: &f[list]'
-        group7: '&eGroup7: &f[list]'
-        group8: '&eGroup8: &f[list]'
-        group9: '&eGroup9: &f[list]'
-        group10: '&eGroup10: &f[list]'
+        group1: '&eFirst: &f[list]'
+        group2: '&ePlayer: &f[list]'
+        group3: '&eMember: &f[list]'
+        group4: '&eBoosted: &f[list]'
+        group5: '&eBuilder: &f[list]'
+        group6: '&eRogue: &f[list]'
+        group7: '&eDonator: &f[list]'
+        group8: '&eMVP: &f[list]'
+        group9: '&eEpic: &f[list]'
+        group10: '&eLegendary: &f[list]'
+        group11: '&eWorldedit: &f[list]'
+        group12: '&eHelper: &f[list]'
+        group13: '&eAdmin: &f[list]'
+        group14: '&eOwner: &f[list]'
+        group15: '&eUnique: &f[list]'
       noGroupLine: '&eList'
   lockip:
     help:
@@ -2286,15 +2317,18 @@ command:
       args: '[send/clear/read/sendtemp] [playerName] (message)'
     info:
       sentMail: '&eMail sent to &6[playerDisplayName]'
-      gotMail: '!actionbar!&eYou received mail from &6[senderDisplayName]'
+      gotMail: '<T>&eYou received mail from &6[senderDisplayName]</T><H>Click to read!</H><C>cmi
+              mail read</C>'
       clearMail: '&eAll mail has been cleared!'
       removedMail: '&eRemoved mail'
       noMailsById: '&eThere is no mail by this id for this player'
-      noMails: '&eYou have no mail'
+      noMails: '&eThere are no mails. You can send mail like this: /mail send mrfloris
+        Hi, how are you.'
       mailHover: '&e[senderName] /n &e[time]'
       mailHoverExpires: '/n &eExpires in: &6[time]'
       mailList: ' &7[senderDisplayName]&e: [mail] '
-      waitingMail: '&eYou have &6[amount] &emails. Click to check them out.'
+      waitingMail: '&r \n {#orient}•--{#cerulean}❖ 1MB Mail ❖{#orient}-----------------------•
+        \n &eYou have &6[amount] &eunread /mail. (Click to read) \n &r'
   mailall:
     help:
       info: '&eCheck or send mail to all players'
@@ -4161,9 +4195,10 @@ command:
       noAccess: '&cNo access to this warp'
       guiTitle: '&6Warps'
       pageTitles:
-      - '&2Warps 1'
-      - '&8Warps 2'
-      - '&0Warps 3'
+      - '&11MB &5Server Warps'
+      - '&11MB &5Player Warps'
+      - '&11MB &5Player Warps'
+      - '&11MB &5Fossil Warps'
   warpgroups:
     help:
       info: '&eLists warp groups'
