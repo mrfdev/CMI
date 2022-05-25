@@ -1,0 +1,247 @@
+Alerts: 
+
+# log sign changes to spylog channel
+  - Trigger: SignChangeEvent
+    Channel: spydog
+    Conditions:
+      - 'getLine(0) + getLine(1) + getLine(2) + getLine(3) != ""'
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "https://crafatar.com/avatars/${#event.getPlayer().getUniqueId()}?overlay"
+        Name: '**SIGN SPY**'
+      Description: "Placed by `{name}` : `[/tppos ${#event.getBlock().getLocation().getBlockX() + \" \" + #event.getBlock().getLocation().getBlockY() + \" \" + #event.getBlock().getLocation().getBlockZ()} {world}]`\n```\n${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
+
+# log cmi msgs to spylog channel
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: spydog
+    Conditions:
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"msg\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**MSG SPY**'
+      Description: "Message by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% {world}` \n ```\n/${#command}```"
+
+# log whisper and tell to spylog channel
+  - Trigger: [/w, /tell]
+    Channel: spydog
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**MSG SPY**'
+      Description: "Whisper by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% #{world}` \n ```\n/${#command}```"
+
+# broadcast ingame broadcast msgs to discord global channel
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: global
+    Conditions:
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"broadcast\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**BROADCAST**'
+      Description: "`{username} posted:`\n```md\n# ${#allArgs}\n```"
+
+# announce mcMMO xprate events to discord (when it starts)
+  - Trigger: [/xprate]
+    Channel: global
+    Conditions:
+      - "!(#command.split(\"\\s+|$\")[1].equals(\"reset\"))"
+      - "!(#command.split(\"\\s+|$\")[1].equals(\"clear\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**BOOSTER EVENT**'
+      Description: "```md\n# Server Boosters have been turned on!\n- mcMMO XP Rate is set to: ${#args.get(0)}x\n```\nCommands: `/mctop, /mcrank, /mctop`"
+
+# announce mcMMO xprate events to discord (when it stops)
+  - Trigger: [/xprate]
+    Channel: global
+    Conditions:
+      - "(#command.split(\"\\s+|$\")[1].equals(\"reset\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**BOOSTER EVENT**'
+      Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
+
+# announce mcMMO xprate events to discord (when it stops)
+  - Trigger: [/xprate]
+    Channel: global
+    Conditions:
+      - "(#command.split(\"\\s+|$\")[1].equals(\"clear\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**BOOSTER EVENT**'
+      Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
+
+# log cmi set bans to spydog channel
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: '925133677422317598'
+    Conditions:
+      - '#player.hasPermission("cmi.command.ban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"ban\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**PLAYER BANNED**'
+      Description: "`{username}` has banned `${#args.get(1)}`\n```\n/${#command}```"
+
+# log cmi unbans to spylog channel
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: '925133677422317598'
+    Conditions:
+      - '#player.hasPermission("cmi.command.unban")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"unban\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**PLAYER UN-BANNED**'
+      Description: "`{username}` has removed the ban on `${#args.get(1)}`\n```\n/${#command}```"
+
+# log regular bans just in case
+  - Trigger: [/ban, /unban]
+    Channel: '925133677422317598'
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**DEBUG**'
+      Description: "`${#args.get(0)}` by `{username}` on `${#args.get(1)}`\n```\n/${#command}```"
+
+# every once in a while when someone reaches a new powerlevel in mcMMO, broadcast it to public global discord channel
+  - Trigger: McMMOPlayerLevelUpEvent
+    Channel: global
+    Conditions: 
+      - "(T(java.lang.Integer).parseInt(Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#player, '%mcmmo_power_level%'))) % 20 == 0"
+    Webhook:
+      Enable: true
+      AvatarUrl: "https://files.minecraftpatch.com/addons_new/mcmmo-31030/screenshots/mcmmo-scr-1.png"
+      Name: "mcMMO"
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "{embedavatarurl}"
+      Title:
+        Text: "{displayname} made it to power-level `%mcmmo_power_level%`"
+        Url: "https://omgboards.com/threads/260970/"
+      Fields:
+        - ":boot: acrobatics:;`level: %mcmmo_level_acrobatics%`\n`rank: %mcmmo_rank_acrobatics%`;true"
+        - ":test_tube: alchemy:;`level: %mcmmo_level_alchemy%`\n`rank: %mcmmo_rank_alchemy%`;true"
+        - ":archery: archery:;`level: %mcmmo_level_archery%`\n`rank: %mcmmo_rank_archery%`;true"
+        - ":axe: axes:;`level: %mcmmo_level_axes%`\n`rank: %mcmmo_rank_axes%`;true"
+        - ":spoon: excavation:;`level: %mcmmo_level_excavation%`\n`rank: %mcmmo_rank_excavation%`;true"
+        - ":fish: fishing:;`level: %mcmmo_level_fishing%`\n`rank: %mcmmo_rank_fishing%`;true"
+        - ":herb: herbalism:;`level: %mcmmo_level_herbalism%`\n`rank: %mcmmo_rank_herbalism%`;true"
+        - ":pick: mining:;`level: %mcmmo_level_mining%`\n`rank: %mcmmo_rank_mining%`;true"
+        - ":tools: repair:;`level: %mcmmo_level_repair%`\n`rank: %mcmmo_rank_repair%`;true"
+        - ":crossed_swords: swords:;`level: %mcmmo_level_swords%`\n`rank: %mcmmo_rank_swords%`;true"
+        - ":fox: taming:;`level: %mcmmo_level_taming%`\n`rank: %mcmmo_rank_taming%`;true"
+        - ":mechanical_arm: unarmed:;`level: %mcmmo_level_unarmed%`\n`rank: %mcmmo_rank_unarmed%`;true"
+        - ":axe: woodcutting:;`level: %mcmmo_level_woodcutting%`\n`rank: %mcmmo_rank_woodcutting%`;true"
+      Footer:
+        Text: "Check your own MMO progress in-game: /mcstats, /mcrank, /mctop"
+
+# broadcast private cmi staffmsg to private #team channel
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: '925133677422317598'
+    Conditions:
+      - '#player.hasPermission("cmi.command.staffmsg")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"staffmsg\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '{username} (${#player.address.address.hostAddress}) said via /staffmsg:'
+      Description: "`/${#allArgs}`"
+
+# log book and quill signing to spygod channel
+  - Trigger: PlayerEditBookEvent
+    Channel: spydog
+    Conditions:
+      - 'isSigning() == true'
+    Embed:
+      Color: "#D89869"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '{username} has completed a Book'
+      Description: "**Title:** `${#event.getNewBookMeta().getTitle()}` \n**Author:** `${#event.getNewBookMeta().getAuthor()}` \n ```${T(java.lang.String).join('``` ```',#event.getNewBookMeta().getPages())} \n```"
+
+# broadcast account linking to public global discord channel
+  - Trigger: AccountLinkedEvent
+    Channel: global
+    Embed:
+      Color: "#2496f8"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "{username}"
+      Description: |
+        Discord acccount: <@${#discordsrv.accountLinkManager.getDiscordId(player.uniqueId)}>
+      Timestamp: true
+
+# broadcast someone going afk manually or automatically to public global discord channel
+  - Trigger: CMIAfkEnterEvent
+    Async: true
+    Conditions:
+      - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+    Channel: global
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "{embedavatarurl}"
+      Title:
+        Text: "{displayname} has gone idle."
+        Url: ""
+      Fields:
+        - "AFK reason:;%cmi_user_afk_msg%;true"
+        - "World:;`%cmi_user_world_formatted%`;true"
+        - "Type;${#event.getType().toString() == 'manual' ? 'Manual' : 'Automatic'};false"
+
+# Send a '/cmi afk' alert when someone returns from AFK
+  - Trigger: CMIAfkLeaveEvent
+    Async: false
+    Conditions:
+      - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+    Channel: global
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "{embedavatarurl}"
+      Title:
+        Text: "{displayname} has returned."
+        Url: ""
+      Fields:
+        - "AFK reason:;%cmi_user_afk_msg%;true"
+        - "World:;`%cmi_user_world_formatted%`;true"
+      Footer:
+        Text: "Time away: %cmi_user_afk_for%"
+
+  # Private channel player-join event (with ip, etc)
+  - Trigger: PlayerJoinEvent
+    Channel: global
+    Conditions:
+      - '!#player.hasPermission("discordsrv.silentjoin")'
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "{embedavatarurl}"
+      Title:
+        Text: "{username} has joined the server"
+        Url: ""
+      Fields:
+        - "World:;`{world}`;true"
+        - "Gamemode:;`${#player.gameMode.name().toLowerCase()}`;true"
+        - "Discord:;<@${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)}> [:link:](https://ptb.discord.com/channels/487398800353263616/721697397658353725/839120449887404062);true"
+      Footer:
+        Text: "Total players online: ${#server.onlinePlayers.size()}"
