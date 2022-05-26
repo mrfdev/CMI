@@ -245,3 +245,43 @@ Alerts:
         - "Discord:;<@${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)}> [:link:](https://ptb.discord.com/channels/487398800353263616/721697397658353725/839120449887404062);true"
       Footer:
         Text: "Total players online: ${#server.onlinePlayers.size()}"
+
+# in-game /cmi maintenance true msghere
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: global
+    Conditions:
+      - '#player.hasPermission("cmi.command.maintenance")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"maintenance\"))"
+      - "(#command.split(\"\\s+|$\")[2].equals(\"true\"))"
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "https://cdn.discordapp.com/attachments/895784266976329739/979217380431507516/road-works.png"
+      Title:
+        Text: "The Server is now in Maintenance Mode"
+        Url: ""
+      Description: "_We are oiling up the gears so the server runs a bit smoother_"
+      Fields:
+        - "Reason:;%cmi_maintenance_message%;false"
+        - "Please note;Players cannot join during this time;false"
+      Footer:
+        Text: "Thank you for your patience, we will be back soon."
+
+# in-game /cmi maintenance false
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: global
+    Conditions:
+      - '#player.hasPermission("cmi.command.maintenance")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"maintenance\"))"
+      - "!(#command.split(\"\\s+|$\")[2].equals(\"true\"))"
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "https://cdn.discordapp.com/attachments/895784266976329739/979217380431507516/road-works.png"
+      Title:
+        Text: "Maintenance has Completed!"
+        Url: ""
+      Description: "Sorry that it took a minute. But the server is open now."
+      Fields:
+        - "We are back from:;%cmi_maintenance_message%;false"
+        - "Are you the first?;Players can join again!;false"
