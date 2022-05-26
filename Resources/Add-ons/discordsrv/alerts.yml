@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.1.3 build 007
+## Version 0.1.5 build 009
 ## Installation instructions (see above url)
 
 Alerts:
@@ -186,7 +186,7 @@ Alerts:
         Name: '{username} has completed a Book'
       Description: "**Title:** `${#event.getNewBookMeta().getTitle()}` \n**Author:** `${#event.getNewBookMeta().getAuthor()}` \n ```${T(java.lang.String).join('``` ```',#event.getNewBookMeta().getPages())} \n```"
 
-# mrfloris broadcast account linking to public global discord channel
+# mrfloris broadcast account linking to public global discord channel (inspired by Wolfie https://ptb.discord.com/channels/135634590575493120/889139760067645460/956269618249474100)
   - Trigger: AccountLinkedEvent
     Channel: global
     Embed:
@@ -477,3 +477,25 @@ Alerts:
     Content: |-
       Hey <@&858547638719086613> and <@&931458136584359966> {username} sent some sussy words
       `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+
+# boredmanplays alert when pet dies (One for when a player kills the pet and the other for any other way they can die)
+  - Trigger: EntityDeathEvent
+    Channel: global
+    Conditions:
+      - '#event.getEntity().getOwner() != null' 
+      - '#event.getEntity().getKiller() != null'
+    Embed:
+      Color: "#33ff33"
+      Title:
+        Text: "${#event.getEntity().getOwner().getName()}'s ${#event.getEntity().getType().toString().toLowerCase()} was killed by ${#event.getEntity().getKiller().getName()}" 
+
+# boredmanplays alert when pet dies (One for when a player kills the pet and the other for any other way they can die)
+  - Trigger: EntityDeathEvent
+    Channel: global
+    Conditions:
+      - '#event.getEntity().getOwner() != null' 
+      - '#event.getEntity().getKiller() == null'
+    Embed:
+      Color: "#33ff33"
+      Title:
+        Text: "${#event.getEntity().getOwner().getName()}'s ${#event.getEntity().getType().toString().toLowerCase()} was killed by ${#event.getEntity().getLastDamageCause().getCause().toString().toLowerCase()}"
