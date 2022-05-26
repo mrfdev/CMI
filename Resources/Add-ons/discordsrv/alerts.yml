@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.1.1 build 005
+## Version 0.1.3 build 007
 ## Installation instructions (see above url)
 
 Alerts:
@@ -327,6 +327,26 @@ Alerts:
         ImageUrl: "{embedavatarurl}"
         Name: '**WHITELIST EVENT**'
       Description: "${#args.get(1)} added to whitelist"
+
+# mrfloris cmi gamemode switch between survival and creative, assumes they have the permission
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: '952183639255441468'
+    Conditions:
+      - '#player.hasPermission("cmi.command.gm.creative")'
+      - '#player.hasPermission("cmi.command.gm.survival")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"gm\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "https://crafatar.com/avatars/${player.getUniqueId()}?overlay"
+        Name: '${player.displayName}'
+      Title:
+        Text: "Gamemode updated to:"
+        Url: ""
+      Fields:
+        - "Set to:;${#player.gameMode.name().toLowerCase()};true"
+        - "World:;{world};true"
 
 # boredmanplays cmi player enter vanish event
   - Trigger: CMIPlayerVanishEvent 
