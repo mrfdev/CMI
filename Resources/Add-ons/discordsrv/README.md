@@ -47,10 +47,8 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 TODO, write this text
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> The reason for this Add-on
-
-TODO, write this text
+- Add <https://github.com/mrfdev/CMI/blob/master/Resources/Add-ons/discord-helper.yml> to readme somewhere
 
 ## Misc.
 
-- Last updated on May 26th, 2022 | Version 0.1.3 build 007 (first alpha, lets start a collection), by Floris
+- Last updated on May 26th, 2022 | Version 0.1.4 build 008 (first alpha, lets start a collection), by Floris
