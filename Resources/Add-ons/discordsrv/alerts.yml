@@ -1,6 +1,11 @@
-Alerts: 
+## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.1.0 build 004
+## Installation instructions (see above url)
 
-# log sign changes to spylog channel
+Alerts:
+
+# mrfloris log sign changes to spylog channel
   - Trigger: SignChangeEvent
     Channel: spydog
     Conditions:
@@ -12,7 +17,7 @@ Alerts:
         Name: '**SIGN SPY**'
       Description: "Placed by `{name}` : `[/tppos ${#event.getBlock().getLocation().getBlockX() + \" \" + #event.getBlock().getLocation().getBlockY() + \" \" + #event.getBlock().getLocation().getBlockZ()} {world}]`\n```\n${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
 
-# log cmi msgs to spylog channel
+# mrfloris log cmi msgs to spylog channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: spydog
     Conditions:
@@ -25,7 +30,7 @@ Alerts:
         Name: '**MSG SPY**'
       Description: "Message by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% {world}` \n ```\n/${#command}```"
 
-# log whisper and tell to spylog channel
+# mrfloris log whisper and tell to spylog channel
   - Trigger: [/w, /tell]
     Channel: spydog
     Embed:
@@ -35,7 +40,7 @@ Alerts:
         Name: '**MSG SPY**'
       Description: "Whisper by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% #{world}` \n ```\n/${#command}```"
 
-# broadcast ingame broadcast msgs to discord global channel
+# mrfloris broadcast ingame broadcast msgs to discord global channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -48,7 +53,7 @@ Alerts:
         Name: '**BROADCAST**'
       Description: "`{username} posted:`\n```md\n# ${#allArgs}\n```"
 
-# announce mcMMO xprate events to discord (when it starts)
+# mrfloris announce mcMMO xprate events to discord (when it starts)
   - Trigger: [/xprate]
     Channel: global
     Conditions:
@@ -61,7 +66,7 @@ Alerts:
         Name: '**BOOSTER EVENT**'
       Description: "```md\n# Server Boosters have been turned on!\n- mcMMO XP Rate is set to: ${#args.get(0)}x\n```\nCommands: `/mctop, /mcrank, /mctop`"
 
-# announce mcMMO xprate events to discord (when it stops)
+# mrfloris announce mcMMO xprate events to discord (when it stops)
   - Trigger: [/xprate]
     Channel: global
     Conditions:
@@ -73,7 +78,7 @@ Alerts:
         Name: '**BOOSTER EVENT**'
       Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
 
-# announce mcMMO xprate events to discord (when it stops)
+# mrfloris announce mcMMO xprate events to discord (when it stops)
   - Trigger: [/xprate]
     Channel: global
     Conditions:
@@ -85,7 +90,7 @@ Alerts:
         Name: '**BOOSTER EVENT**'
       Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
 
-# log cmi set bans to spydog channel
+# mrfloris log cmi set bans to spydog channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '925133677422317598'
     Conditions:
@@ -99,7 +104,7 @@ Alerts:
         Name: '**PLAYER BANNED**'
       Description: "`{username}` has banned `${#args.get(1)}`\n```\n/${#command}```"
 
-# log cmi unbans to spylog channel
+# mrfloris log cmi unbans to spylog channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '925133677422317598'
     Conditions:
@@ -113,7 +118,7 @@ Alerts:
         Name: '**PLAYER UN-BANNED**'
       Description: "`{username}` has removed the ban on `${#args.get(1)}`\n```\n/${#command}```"
 
-# log regular bans just in case
+# mrfloris log regular bans just in case
   - Trigger: [/ban, /unban]
     Channel: '925133677422317598'
     Embed:
@@ -123,7 +128,7 @@ Alerts:
         Name: '**DEBUG**'
       Description: "`${#args.get(0)}` by `{username}` on `${#args.get(1)}`\n```\n/${#command}```"
 
-# every once in a while when someone reaches a new powerlevel in mcMMO, broadcast it to public global discord channel
+# mrfloris every once in a while when someone reaches a new powerlevel in mcMMO, broadcast it to public global discord channel
   - Trigger: McMMOPlayerLevelUpEvent
     Channel: global
     Conditions: 
@@ -155,7 +160,7 @@ Alerts:
       Footer:
         Text: "Check your own MMO progress in-game: /mcstats, /mcrank, /mctop"
 
-# broadcast private cmi staffmsg to private #team channel
+# mrfloris broadcast private cmi staffmsg to private #team channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '925133677422317598'
     Conditions:
@@ -169,7 +174,7 @@ Alerts:
         Name: '{username} (${#player.address.address.hostAddress}) said via /staffmsg:'
       Description: "`/${#allArgs}`"
 
-# log book and quill signing to spygod channel
+# mrfloris log book and quill signing to spygod channel
   - Trigger: PlayerEditBookEvent
     Channel: spydog
     Conditions:
@@ -181,7 +186,7 @@ Alerts:
         Name: '{username} has completed a Book'
       Description: "**Title:** `${#event.getNewBookMeta().getTitle()}` \n**Author:** `${#event.getNewBookMeta().getAuthor()}` \n ```${T(java.lang.String).join('``` ```',#event.getNewBookMeta().getPages())} \n```"
 
-# broadcast account linking to public global discord channel
+# mrfloris broadcast account linking to public global discord channel
   - Trigger: AccountLinkedEvent
     Channel: global
     Embed:
@@ -193,7 +198,7 @@ Alerts:
         Discord acccount: <@${#discordsrv.accountLinkManager.getDiscordId(player.uniqueId)}>
       Timestamp: true
 
-# broadcast someone going afk manually or automatically to public global discord channel
+# mrfloris broadcast someone going afk manually or automatically to public global discord channel
   - Trigger: CMIAfkEnterEvent
     Async: true
     Conditions:
@@ -210,7 +215,7 @@ Alerts:
         - "World:;`%cmi_user_world_formatted%`;true"
         - "Type;${#event.getType().toString() == 'manual' ? 'Manual' : 'Automatic'};false"
 
-# Send a '/cmi afk' alert when someone returns from AFK
+# mrfloris Send a '/cmi afk' alert when someone returns from AFK
   - Trigger: CMIAfkLeaveEvent
     Async: false
     Conditions:
@@ -228,7 +233,7 @@ Alerts:
       Footer:
         Text: "Time away: %cmi_user_afk_for%"
 
-  # Private channel player-join event (with ip, etc)
+# mrfloris Private channel player-join event (with ip, etc)
   - Trigger: PlayerJoinEvent
     Channel: global
     Conditions:
@@ -246,7 +251,7 @@ Alerts:
       Footer:
         Text: "Total players online: ${#server.onlinePlayers.size()}"
 
-# in-game /cmi maintenance true msghere
+# mrfloris in-game /cmi maintenance true msghere
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -267,7 +272,7 @@ Alerts:
       Footer:
         Text: "Thank you for your patience, we will be back soon."
 
-# in-game /cmi maintenance false
+# mrfloris in-game /cmi maintenance false
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -285,3 +290,134 @@ Alerts:
       Fields:
         - "We are back from:;%cmi_maintenance_message%;false"
         - "Are you the first?;Players can join again!;false"
+
+# boredmanplays cmi player enter vanish event
+- Trigger: CMIPlayerVanishEvent 
+  Channel: global
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} quit"
+
+# boredmanplays cmi player return from vanish event
+- Trigger: CMIPlayerUnVanishEvent 
+  Channel: global
+  Embed:
+    Color: "#00FF00"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} joined"
+
+# boredmanplays cmi player quits the server event
+- Trigger: PlayerQuitEvent 
+  Channel: global
+  Conditions:
+    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+  Async: false
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} quit"
+
+# boredmanplays cmi player joins the server event
+- Trigger: PlayerJoinEvent
+  Channel: global
+  Conditions:
+    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+  Embed:
+    Color: "#00FF00"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} joined"
+
+# boredmanplays cmi player kicked (but not banned) from server event
+- Trigger: PlayerKickEvent
+  Channel: global
+  Conditions:
+    - '!#event.getPlayer().isBanned()'
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "🥾 %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
+    Description: "**Reason:** ${#event.getReason()}"        
+ 
+# boredmanplays cmi player kicked (and banned) from server event
+- Trigger: PlayerKickEvent
+  Channel: global
+  Conditions:
+    - '#event.getPlayer().isBanned()'
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "🔨 %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
+    Description: "**Reason:** ${#server.getBanList(T(org.bukkit.BanList.Type).NAME).getBanEntry(#event.getPlayer().name).getReason()}"
+
+# boredmanplays discordsrv player linked minecraft/discord event
+- Trigger: AccountLinkedEvent
+  Channel: '978254174665994290'
+  Embed:
+    Color: "#869600"
+    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
+    Title:
+      Text: "Account linked"
+      Url: "https://namemc.com/profile/${#event.player.name}"
+    Fields:
+      - "Minecraft Name:;${#event.player.name};true"
+      - "UUID:;${#event.player.uniqueId};true"
+      - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
+      - "IP:;${#event.player.address};true"
+
+# boredmanplays discordsrv player unlinked minecraft/discord event
+- Trigger: AccountUnlinkedEvent
+  Channel: '978254174665994290'
+  Embed:
+    Color: "#869600"
+    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
+    Title:
+      Text: "Account unlinked"
+      Url: "https://namemc.com/profile/${#event.player.name}"
+    Fields:
+      - "Minecraft Name:;${#event.player.name};true"
+      - "UUID:;${#event.player.uniqueId};true"
+      - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
+      - "IP:;${#event.player.address};true"
+
+
+# boredmanplays player tried to join whitelisted server
+- Trigger: AsyncPlayerPreLoginEvent
+  Channel: '978254174665994290'
+  Conditions:
+    - '#event.getLoginResult().toString().equals("KICK_WHITELIST")'
+  Embed:
+    Color: "#869600"
+    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.getUniqueId()}&name=${#event.getName()}&overlay"
+    Description: "Denied entry due to not being linked to our server"
+    Title:
+      Text: "User denied entry"
+      Url: "https://namemc.com/profile/${#event.getName()}"
+    Fields:
+      - "Minecraft Name:;${#event.getName()};true"
+      - "UUID:;${#event.getUniqueId()};true"
+      - "IP:;${#event.getAddress()};true"
+      
+# boredmanplays catch player trying to run sussy commands
+- Trigger: PlayerCommandPreprocessEvent
+  Channel: '978254174665994290'
+  Conditions:
+    - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
+  Content: |-
+    Hey <@&858547638719086613> and <@&931458136584359966> {username} tried to run a command with some sussy words
+    `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+    
+# boredmanplays catch player trying to say sussy words
+- Trigger: AsyncPlayerChatEvent
+  Channel: '978254174665994290'
+  Conditions:
+    - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
+  Content: |-
+    Hey <@&858547638719086613> and <@&931458136584359966> {username} sent some sussy words
+    `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
