@@ -51,4 +51,6 @@ TODO, write this text
 
 ## Misc.
 
-- Last updated on May 26th, 2022 | Version 0.1.6 build 010 (second alpha, lets start a collection), by Floris
+-  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
+
+- Last updated on May 26th, 2022 | Version 0.1.8 build 012 (second alpha, lets start a collection), by Floris
