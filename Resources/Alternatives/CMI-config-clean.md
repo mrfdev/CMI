@@ -1,6 +1,6 @@
 # Default CMI config.yml
 
-Please note that upon generation it uses the worlds from `server.properties`, for my test server this is called "spawn", so you have to adjust that, this shouldn't be a copy paste for your server, but an example that you can use to search through and compare data with to help you debug.
+Please note that upon generation it uses the worlds from `server.properties`, for my test server this is called "world", so you have to adjust that, this shouldn't be a copy paste for your server, but an example that you can use to search through and compare data with to help you debug.
 
 ```yaml
 # Language file you want to use
@@ -11,7 +11,7 @@ Economy:
   # Attention! For economy to work properly with other plugins you will need ether an injector or recompiled Vault version. 
   # You can find both option at top of plugins page
   # ATTENTION! If you disabled CMI economy while server was running, you will need to perform full server restart for this to take correct effect and avoid any issues while getting players balances
-  Enabled: true
+  Enabled: false
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
   # Set to true if you want to log money transfers between players
@@ -334,6 +334,13 @@ Optimizations:
       # So instead of having something like 123m you will have ~100m
       Approximate: true
       DefaultDistance: 200
+      Invisibility:
+        # When enabled we will not show players who has invisibility potion effect on them in the list
+        Hide: false
+        # Only applies when previous Hide option is enabled
+        # Will obfuscate players name but stil shows his location in the list
+        # Actual players name wont be used, instead generic 8 character name with &k color format gets used to prevent from people realizing who is near by the lenght of his name
+        Obfuscate: false
       # When enabled, players can click on each player name and simple /cmi point [location] will be performed which shows particles directing towards target player
       PointTo: true
       # How many lines you want to show when using /near command
@@ -436,7 +443,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -498,19 +505,19 @@ ReSpawn:
   # Defines respawn order for defines worlds
   # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
-    spawn:
+    world:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    spawn_nether:
+    world_nether:
     - anchor
     - bedLocation
     - spawn
     - homeLocation
     - worldSpawn
-    spawn_the_end:
+    world_the_end:
     - anchor
     - bedLocation
     - spawn
@@ -722,10 +729,10 @@ GroundClean:
   - itemType
 Chat:
   # Will try to modify chat to display it in defined format
-  ModifyChatFormat: true
+  ModifyChatFormat: false
   # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
   # To change default hover over messages seen on sent message, go to your locale file to Chat section
-  ClickHoverMessages: true
+  ClickHoverMessages: false
   DiscordSRV:
     # Enables support for DiscordSRV plugin
     Enabled: true
@@ -1082,8 +1089,8 @@ Animations:
 # Negative values will heal player instead of damaging him
 # If player have more than one permission node for same damage cause, then last one in list will be used to determine final damage
 DamageControl:
-- nowalldamage:fly_into_wall:0
-- lowermagmacubedamage:hot_floor:0.5
+- nowalldamage:fly_into_wall:1
+- lowermagmacubedamage:hot_floor:0.9
 Totem:
   # When this set to true, on players death totem will be used even if he is not holding it in hand
   RemoveFromInventory: false
@@ -1271,6 +1278,8 @@ Spawn:
   # Forces players to login in defined spawn point when logging into server
   # Can be bypasses with cmi.spawnonjoin.bypass permission node
   SpawnOnJoin: false
+  # List of worlds which should be ignored and players joining in those servers will not be teleported to appropriate spawn point but will login at their log out location
+  IgnoredWorlds: []
   # Defines players spawn point after death if set to true, if not, then it will be used only for /cmi spawn command
   # RespawnLocation will indicate if you want to use this location as possible respawn point for player after death
   Main:
@@ -1300,12 +1309,26 @@ Kits:
   # When set to true, kit selection gui empty fields will get filled with definet item
   FillEmptyFields: true
   Buttons:
-    Cooldown: clock
-    Usages: polished_blackstone_pressure_plate
-    Money: gold_ingot
-    Exp: experience_bottle
-    Desc: magenta_wool
-    Back: oak_fence
+    Cooldown: Watch
+    Usages: STONE_PLATE
+    Money: GOLD_INGOT
+    Exp: EXP_BOTTLE
+    Desc: WOOL:13
+    Back: Fence
+  Complex:
+    CloseButton:
+      Use: true
+      Slot: 9
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
+      Commands:
+      - closeinv!
+    InfoButton:
+      # Extra button to be used in case you want to provide any aditional information when clicking on it
+      Use: false
+      Slot: 1
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+      Commands:
+      - closeinv!
 Warps:
   # When set to true, warps list will be shown in GUI instead of chat list
   GUI: true
@@ -1321,6 +1344,20 @@ Warps:
   showCreator: false
   # When set to true, new warps by default will require permission node to use them
   requirePerm: false
+  Complex:
+    CloseButton:
+      Use: true
+      Slot: 9
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
+      Commands:
+      - closeinv!
+    InfoButton:
+      # Extra button to be used in case you want to provide any aditional information when clicking on it
+      Use: false
+      Slot: 1
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+      Commands:
+      - closeinv!
 DynamicViewRange:
   # By setting to true will enable dynamic view range feature. Its still in beta stage and can result in some CPU load increase.
   # Don't enable if you are not using this feature on your server
@@ -1344,19 +1381,19 @@ WorldLimits:
   FlyAboveRoof: true
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
   FlyAboveRoofLimitations:
-  - spawn-256
-  - spawn_nether-128
-  - spawn_the_end-256
+  - world-320
+  - world_nether-128
+  - world_the_end-256
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - testWorld:False
   # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
-    spawn:
+    world:
     - None
-    spawn_nether:
+    world_nether:
     - None
-    spawn_the_end:
+    world_the_end:
     - None
 # Checks and shows on players login if he have been changed hes name over Mojang
 # Looks to be working only with online servers, duhhhh
@@ -1598,6 +1635,30 @@ Player:
       Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
       Commands:
       - closeinv!
+    InfoButton:
+      # Extra button to be used in case you want to provide any aditional information when clicking on it
+      Use: false
+      Slot: 1
+      Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
+      Commands:
+      - closeinv!
+    # Defines default states for player options
+    # This will not have any effect if player already edited his options with /cmi options command
+    Defaults:
+      visibleHolograms: true
+      shiftSignEdit: true
+      totemBossBar: true
+      bassBarCompass: true
+      tagSound: true
+      # !Strongly not recommended to be enabled!
+      chatSpy: false
+      # !Strongly not recommended to be enabled!
+      cmdSpy: false
+      # !Strongly not recommended to be enabled!
+      signSpy: false
+      acceptingPM: true
+      acceptingTPA: true
+      acceptingMoney: true
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1669,29 +1730,29 @@ purge:
     # Do you want to enable player data file cleaning
     Enabled: true
     # Source folder to take files from
-    SourceFolder: spawn/playerdata
+    SourceFolder: world/playerdata
     # When this is false, data files will be moved to backup folder. When its true files will be deleted
     DeleteFiles: false
     # Target folder to put files into if DeleteFiles set to false
-    DestinationFolder: spawn/playerdata_backup
+    DestinationFolder: world/playerdata_backup
   PlayerStats:
     # Do you want to enable player stats file cleaning
     Enabled: true
     # Source folder to take files from
-    SourceFolder: spawn/stats
+    SourceFolder: world/stats
     # When this is false, data files will be moved to backup folder. When its true files will be deleted
     DeleteFiles: false
     # Target folder to put files into if DeleteFiles set to false
-    DestinationFolder: spawn/stats_backup
+    DestinationFolder: world/stats_backup
   PlayerAdvancements:
     # Do you want to enable player Advancements file cleaning
     Enabled: true
     # Source folder to take files from
-    SourceFolder: spawn/Advancements
+    SourceFolder: world/Advancements
     # When this is false, data files will be moved to backup folder. When its true files will be deleted
     DeleteFiles: false
     # Target folder to put files into if DeleteFiles set to false
-    DestinationFolder: spawn/Advancements_backup
+    DestinationFolder: world/Advancements_backup
   Essentials:
     # Do you want to enable essentials playerdata file cleaning
     Enabled: false
@@ -1729,7 +1790,7 @@ Time:
   # Allows you to change vanilla time speed to your own liking and needs
   TimeSpeed:
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    spawn:
+    world:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1744,43 +1805,27 @@ RandomTeleportation:
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
   Worlds:
-    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
-    spawn:
-      Enabled: true
-      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
-      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
-      MaxRange: 1000
-      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    spawn_nether:
+    world:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
-    spawn_the_end:
+    world_nether:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
       CenterX: 0
       CenterZ: 0
       Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      minY: 0
-      maxY: 256
+    world_the_end:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
@@ -2078,9 +2123,8 @@ PotionEffects:
   # When set to true player poition effect will expire even if player is offline
   # Keep in mind that player potion effect durability will be updated on players login event so by checking players potions effect while he is offline can show incorrect state
   DeductWhileOffline: false
-
 ```
 
 ## Misc.
 
-Created with CMI 9.1.4.0 for Minecraft 1.18.2
+Created with CMI 9.1.4.7 for Minecraft 1.18.2
