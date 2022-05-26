@@ -291,14 +291,14 @@ Alerts:
         - "We are back from:;%cmi_maintenance_message%;false"
         - "Are you the first?;Players can join again!;false"
 
-# Private player-join event
+# mrfloris Private player-join event
 # - v002
 # - Includes player IP
 # - SilentJoin perm ignored
 # - Meant for private channel
 # - Tries to link to linked Discord ID
 
-  # Private channel player-join event (with ip, etc)
+# mrfloris Private channel player-join event (with ip, etc)
   - Trigger: PlayerJoinEvent
     Channel: privateChannelNameOrID
     Embed:
@@ -316,133 +316,144 @@ Alerts:
       Footer:
         Text: "Total players online: ${#server.onlinePlayers.size()}"
 
+# mrfloris whitelist event
+  - Trigger: /whitelist
+    Channel: global
+    Conditions:
+      - "!(#command.split(\"\\s+|$\")[1].equals(\"add\"))"
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: '**WHITELIST EVENT**'
+      Description: "${#args.get(1)} added to whitelist"
+
 # boredmanplays cmi player enter vanish event
-- Trigger: CMIPlayerVanishEvent 
-  Channel: global
-  Embed:
-    Color: "#ff0000"
-    Author:
-      ImageUrl: "{embedavatarurl}"
-      Name: "%cmi_user_nameplate_prefix%{displayname} quit"
+  - Trigger: CMIPlayerVanishEvent 
+    Channel: global
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} quit"
 
 # boredmanplays cmi player return from vanish event
-- Trigger: CMIPlayerUnVanishEvent 
-  Channel: global
-  Embed:
-    Color: "#00FF00"
-    Author:
-      ImageUrl: "{embedavatarurl}"
-      Name: "%cmi_user_nameplate_prefix%{displayname} joined"
+  - Trigger: CMIPlayerUnVanishEvent 
+    Channel: global
+    Embed:
+      Color: "#00FF00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} joined"
 
 # boredmanplays cmi player quits the server event
-- Trigger: PlayerQuitEvent 
-  Channel: global
-  Conditions:
-    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
-  Async: false
-  Embed:
-    Color: "#ff0000"
-    Author:
-      ImageUrl: "{embedavatarurl}"
-      Name: "%cmi_user_nameplate_prefix%{displayname} quit"
+  - Trigger: PlayerQuitEvent 
+    Channel: global
+    Conditions:
+      - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+    Async: false
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} quit"
 
 # boredmanplays cmi player joins the server event
-- Trigger: PlayerJoinEvent
-  Channel: global
-  Conditions:
-    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
-  Embed:
-    Color: "#00FF00"
-    Author:
-      ImageUrl: "{embedavatarurl}"
-      Name: "%cmi_user_nameplate_prefix%{displayname} joined"
+  - Trigger: PlayerJoinEvent
+    Channel: global
+    Conditions:
+      - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+    Embed:
+      Color: "#00FF00"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "%cmi_user_nameplate_prefix%{displayname} joined"
 
 # boredmanplays cmi player kicked (but not banned) from server event
-- Trigger: PlayerKickEvent
-  Channel: global
-  Conditions:
-    - '!#event.getPlayer().isBanned()'
-  Embed:
-    Color: "#ff0000"
-    Author:
-      ImageUrl: "{embedavatarurl}"
-      Name: "🥾 %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
-    Description: "**Reason:** ${#event.getReason()}"        
+  - Trigger: PlayerKickEvent
+    Channel: global
+    Conditions:
+      - '!#event.getPlayer().isBanned()'
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "🥾 %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
+      Description: "**Reason:** ${#event.getReason()}"        
  
 # boredmanplays cmi player kicked (and banned) from server event
-- Trigger: PlayerKickEvent
-  Channel: global
-  Conditions:
-    - '#event.getPlayer().isBanned()'
-  Embed:
-    Color: "#ff0000"
-    Author:
-      ImageUrl: "{embedavatarurl}"
-      Name: "🔨 %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
-    Description: "**Reason:** ${#server.getBanList(T(org.bukkit.BanList.Type).NAME).getBanEntry(#event.getPlayer().name).getReason()}"
+  - Trigger: PlayerKickEvent
+    Channel: global
+    Conditions:
+      - '#event.getPlayer().isBanned()'
+    Embed:
+      Color: "#ff0000"
+      Author:
+        ImageUrl: "{embedavatarurl}"
+        Name: "🔨 %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
+      Description: "**Reason:** ${#server.getBanList(T(org.bukkit.BanList.Type).NAME).getBanEntry(#event.getPlayer().name).getReason()}"
 
 # boredmanplays discordsrv player linked minecraft/discord event
-- Trigger: AccountLinkedEvent
-  Channel: '978254174665994290'
-  Embed:
-    Color: "#869600"
-    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
-    Title:
-      Text: "Account linked"
-      Url: "https://namemc.com/profile/${#event.player.name}"
-    Fields:
-      - "Minecraft Name:;${#event.player.name};true"
-      - "UUID:;${#event.player.uniqueId};true"
-      - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
-      - "IP:;${#event.player.address};true"
+  - Trigger: AccountLinkedEvent
+    Channel: '978254174665994290'
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
+      Title:
+        Text: "Account linked"
+        Url: "https://namemc.com/profile/${#event.player.name}"
+      Fields:
+        - "Minecraft Name:;${#event.player.name};true"
+        - "UUID:;${#event.player.uniqueId};true"
+        - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
+        - "IP:;${#event.player.address};true"
 
 # boredmanplays discordsrv player unlinked minecraft/discord event
-- Trigger: AccountUnlinkedEvent
-  Channel: '978254174665994290'
-  Embed:
-    Color: "#869600"
-    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
-    Title:
-      Text: "Account unlinked"
-      Url: "https://namemc.com/profile/${#event.player.name}"
-    Fields:
-      - "Minecraft Name:;${#event.player.name};true"
-      - "UUID:;${#event.player.uniqueId};true"
-      - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
-      - "IP:;${#event.player.address};true"
-
+  - Trigger: AccountUnlinkedEvent
+    Channel: '978254174665994290'
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
+      Title:
+        Text: "Account unlinked"
+        Url: "https://namemc.com/profile/${#event.player.name}"
+      Fields:
+        - "Minecraft Name:;${#event.player.name};true"
+        - "UUID:;${#event.player.uniqueId};true"
+        - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
+        - "IP:;${#event.player.address};true"
 
 # boredmanplays player tried to join whitelisted server
-- Trigger: AsyncPlayerPreLoginEvent
-  Channel: '978254174665994290'
-  Conditions:
-    - '#event.getLoginResult().toString().equals("KICK_WHITELIST")'
-  Embed:
-    Color: "#869600"
-    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.getUniqueId()}&name=${#event.getName()}&overlay"
-    Description: "Denied entry due to not being linked to our server"
-    Title:
-      Text: "User denied entry"
-      Url: "https://namemc.com/profile/${#event.getName()}"
-    Fields:
-      - "Minecraft Name:;${#event.getName()};true"
-      - "UUID:;${#event.getUniqueId()};true"
-      - "IP:;${#event.getAddress()};true"
-      
+  - Trigger: AsyncPlayerPreLoginEvent
+    Channel: '978254174665994290'
+    Conditions:
+      - '#event.getLoginResult().toString().equals("KICK_WHITELIST")'
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.getUniqueId()}&name=${#event.getName()}&overlay"
+      Description: "Denied entry due to not being linked to our server"
+      Title:
+        Text: "User denied entry"
+        Url: "https://namemc.com/profile/${#event.getName()}"
+      Fields:
+        - "Minecraft Name:;${#event.getName()};true"
+        - "UUID:;${#event.getUniqueId()};true"
+        - "IP:;${#event.getAddress()};true"
+
 # boredmanplays catch player trying to run sussy commands
-- Trigger: PlayerCommandPreprocessEvent
-  Channel: '978254174665994290'
-  Conditions:
-    - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
-  Content: |-
-    Hey <@&858547638719086613> and <@&931458136584359966> {username} tried to run a command with some sussy words
-    `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
-    
+  - Trigger: PlayerCommandPreprocessEvent
+    Channel: '978254174665994290'
+    Conditions:
+      - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
+    Content: |-
+      Hey <@&858547638719086613> and <@&931458136584359966> {username} tried to run a command with some sussy words
+      `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+      
 # boredmanplays catch player trying to say sussy words
-- Trigger: AsyncPlayerChatEvent
-  Channel: '978254174665994290'
-  Conditions:
-    - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
-  Content: |-
-    Hey <@&858547638719086613> and <@&931458136584359966> {username} sent some sussy words
-    `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
+  - Trigger: AsyncPlayerChatEvent
+    Channel: '978254174665994290'
+    Conditions:
+      - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
+    Content: |-
+      Hey <@&858547638719086613> and <@&931458136584359966> {username} sent some sussy words
+      `[${#event.getPlayer().getLocation().getBlockX() + \" \" + #event.getPlayer().getLocation().getBlockY() + \" \" + #event.getPlayer().getLocation().getBlockZ()}]`  ${#event.getMessage()}
