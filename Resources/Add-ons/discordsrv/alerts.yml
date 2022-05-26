@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.1.5 build 009
+## Version 0.1.6 build 010
 ## Installation instructions (see above url)
 
 Alerts:
@@ -174,7 +174,7 @@ Alerts:
         Name: '{username} (${#player.address.address.hostAddress}) said via /staffmsg:'
       Description: "`/${#allArgs}`"
 
-# mrfloris log book and quill signing to spygod channel
+# mrfloris log book and quill signing to spygod channel (inspired by Zerek https://ptb.discord.com/channels/135634590575493120/889139760067645460/892857994415599676)
   - Trigger: PlayerEditBookEvent
     Channel: spydog
     Conditions:

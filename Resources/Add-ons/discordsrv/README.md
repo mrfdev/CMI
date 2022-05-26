@@ -51,4 +51,4 @@ TODO, write this text
 
 ## Misc.
 
-- Last updated on May 26th, 2022 | Version 0.1.5 build 009 (first alpha, lets start a collection), by Floris
+- Last updated on May 26th, 2022 | Version 0.1.6 build 010 (second alpha, lets start a collection), by Floris
