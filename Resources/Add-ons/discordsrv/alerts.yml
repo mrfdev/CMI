@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.1.0 build 004
+## Version 0.1.1 build 005
 ## Installation instructions (see above url)
 
 Alerts:
@@ -290,6 +290,31 @@ Alerts:
       Fields:
         - "We are back from:;%cmi_maintenance_message%;false"
         - "Are you the first?;Players can join again!;false"
+
+# Private player-join event
+# - v002
+# - Includes player IP
+# - SilentJoin perm ignored
+# - Meant for private channel
+# - Tries to link to linked Discord ID
+
+  # Private channel player-join event (with ip, etc)
+  - Trigger: PlayerJoinEvent
+    Channel: privateChannelNameOrID
+    Embed:
+      Color: "#869600"
+      ThumbnailUrl: "{embedavatarurl}"
+      Title:
+        Text: "{username} has joined the server"
+        Url: ""
+      Fields:
+        - "Displayname:;`{displayname}`;true"
+        - "World:;`{world}`;true"
+        - "Gamemode:;`${#player.gameMode.name().toLowerCase()}`;true"
+        - "IP:;`${#player.address.address.hostAddress}`;true"
+        - "Discord:;<@${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)}>;true"
+      Footer:
+        Text: "Total players online: ${#server.onlinePlayers.size()}"
 
 # boredmanplays cmi player enter vanish event
 - Trigger: CMIPlayerVanishEvent 
