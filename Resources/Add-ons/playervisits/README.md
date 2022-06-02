@@ -25,14 +25,16 @@ plugins/cmi/translations/ locale file, find for warp:
       - '&8Warps 2'
       - '&0Warps 3'
 ```
-Customize to something like:
-```yaml
-      pageTitles:
-      - '&11MB &5Server Warps'
-      - '&11MB &5Player Visits'
-      - '&11MB &5Player Visits'
-```
 You can make this whatever you want, but in this addon example for my own server, i am going to use page 2 of the warps to put player visits
+
+What we're doing is using the groups feature of CMI Warps, to keep all the player visits separate. 
+
+Permissions for players to allow setting one warp via /visit set:
+```
+cmi.command.warp
+cmi.command.setwarp
+cmi.command.setwarp.1
+```
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
@@ -48,4 +50,4 @@ TODO, finish readme
 
 ## Misc.
 
-- Last updated on June 2nd, 2022 | Version 0.0.1 build 001 (concept alpha) by Floris
+- Last updated on June 2nd, 2022 | Version 0.0.2 build 003 (concept alpha) by Floris

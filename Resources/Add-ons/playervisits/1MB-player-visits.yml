@@ -19,5 +19,4 @@
 CustomAlias:
   visit:
     Cmds:
-    - asConsole! cmi setwarp [playerName] [playerName]
-    Tab: true
+    - asPlayer! cmi setwarp [playerName] false head false -g:visits -confirm
