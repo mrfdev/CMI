@@ -47,6 +47,7 @@ More details and information about placeholders on the official website [here](h
 %cmi_server_online_[worldName]%
 %cmi_server_uptime%
 %cmi_server_uptime_seconds%
+%cmi_server_users%
 %cmi_server_vanished%
 %cmi_server_worlds%
 %cmi_tps_1%
@@ -186,4 +187,4 @@ More details and information about placeholders on the official website [here](h
 
 ## Misc.
 
-Created with CMI 9.1.4.7 for Minecraft 1.18.2
+Created with CMI 9.1.5.0 for Minecraft 1.18.2

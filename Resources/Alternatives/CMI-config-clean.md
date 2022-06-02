@@ -1,6 +1,6 @@
 # Default CMI config.yml
 
-Please note that upon generation it uses the worlds from `server.properties`, for my test server this is called "world", so you have to adjust that, this shouldn't be a copy paste for your server, but an example that you can use to search through and compare data with to help you debug.
+Please note that this shouldn't be a copy paste for your server, but an example that you can use to search through and compare data with to help you debug.
 
 ```yaml
 # Language file you want to use
@@ -368,7 +368,7 @@ PlaytimeRewards:
   # This is required if you want to have auto rewards
   Enabled: false
   # When enabled, while player is in afk mode, repeatable playtime rewards will not increase in playtime
-  # ATENTION! this setting will not have any effect if you have Afk.StopPlayTime set to true
+  # ATTENTION! this setting will not have any effect if you have Afk.StopPlayTime set to true
   # When StopPlayTime set to true, afk will be expluded automatically
   ExcludeAfk: false
   # Defines time in minutes to inform player about pending reward which needs to be claimed
@@ -443,7 +443,7 @@ ExploitPatcher:
   NoCommandsInBed: false
   # Due to major exploit relating to oversized books this is recomended to be enabled
   # While this is set to true players will be limited in how many pages they can create
-  # Limitation is determined by cmi.book.pages.missing locale for command.checkperm.info.variablecolor [20to100]missing locale for command.checkperm.info.permissioncolor  permission node and by default players can create 20 pages
+  # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
@@ -2123,8 +2123,9 @@ PotionEffects:
   # When set to true player poition effect will expire even if player is offline
   # Keep in mind that player potion effect durability will be updated on players login event so by checking players potions effect while he is offline can show incorrect state
   DeductWhileOffline: false
+
 ```
 
 ## Misc.
 
-Created with CMI 9.1.4.7 for Minecraft 1.18.2
+Created with CMI 9.1.5.0 for Minecraft 1.18.2

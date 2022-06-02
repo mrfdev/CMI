@@ -155,6 +155,7 @@ cmi.command.patrol.bypass - Player with permission will not be included into pat
 cmi.command.point.[particletype] - Allows to change particle type
 cmi.command.portal.[portalname] - Allows to use portal
 cmi.command.prewards.others.claim - Allows to claim rewards for others
+cmi.command.pweather.[sun/rain/reset] - Allows to change personal weather to specific state
 cmi.command.removewarp.bypass - Allows to remove warps which belong to anoher player
 cmi.command.repair.[hand/armor/all] - Allows to repair specific area
 cmi.command.repair.repairshare.bypass - Allows to bypass repair share being applied on item
@@ -1473,4 +1474,4 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Misc.
 
-Created with CMI 9.1.4.0 for Minecraft 1.18.2
+Created with CMI 9.1.5.0 for Minecraft 1.18.2

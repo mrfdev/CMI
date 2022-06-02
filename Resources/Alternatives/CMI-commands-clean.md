@@ -7,7 +7,6 @@ Documented list with more details, examples, etc. can be found [here](https://ww
 Pro tip, you can search through this list in-game and from console: `/cmi checkcommand KEYWORD`
 
 ```
- subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
 /cmi actionbarmsg [playerName/all] (-s:[seconds]) [message] - Sends action bar message to player
 /cmi afk (-p:playerName) (reason) (-s) - Toggle afk mode. Reason could be provided
 /cmi afkcheck [playerName/all] - Check players afk status
@@ -122,7 +121,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi ipban [ip/playerName] (reason) (-s) - Ban ip
 /cmi ipbanlist  - Ban ip list
 /cmi item [itemname] (amount) - Give item to yourself
-/cmi itemcmdata [set/delete] (playerName) (id) (-s) - Check or modify items custom model data
+/cmi itemcmdata [set/delete/list] (playerName) (integerId) (-s) - Check or modify items custom model data
 /cmi itemframe (invisible/fixed/invulnerable/all) - Manage item frames
 /cmi iteminfo (playerName) - Show item information
 /cmi itemlore (-p:[playerName]) [linenumber/*] [remove/insert/ new lore line] - Change items lore
@@ -167,7 +166,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi note (playerName) [add/remove/clear/list] (id/note) - Manage players notes
 /cmi openbook (cText) (playerName) (fileName.txt) - Open book gui
 /cmi oplist  - Check operator player list
-/cmi options (playerName) (option) (enable/disable/status) (-s) - Modify personal options
+/cmi options (playerName) (option) (enable/disable/toggle/status) (-s) - Modify personal options
 /cmi panimation (variable/playerName/stopAll) (stop) - Play custom particle animation
 /cmi patrol  - Patrol
 /cmi pay [playerName] [amount] (-s) - Perform money transaction
@@ -226,7 +225,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi setmotd [newMotd] (-s) - Set server motd
 /cmi setrt (worldName) (center:[x]:[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
 /cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (loc:[world;x;y;z;yaw;pitch]) - Sets spawn command teleport point
-/cmi setwarp [warpName] (reqPermission) (hand) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) - Sets warp location
+/cmi setwarp [warpName] (reqPermission) (hand/head/head:[playerName]) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) (-confirm) - Sets warp location
 /cmi setworth (itemname) -s:(sellPrice) - Change item worth
 /cmi shadowmute [playerName] (time) (-s) (reason) - Mute player without telling him that he is muted
 /cmi shakeitoff  - Dismount any entity riding you
@@ -258,6 +257,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi tgod [playerName] (timeInSec) (-s) - Set players temporarily god mode until relog or time end
 /cmi time (time) (world) (alter [value]) (-smooth) - Controls server time
 /cmi titlemsg [playerName/all] [title
+ subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks]) - Sends title message to player
 /cmi toast [playerName/all] (-t:[advType]) (-icon:[material]) [message] - Sends toast message to player
 /cmi top [playerName] (-s) - Teleport to highest point at your location
 /cmi tp [playerName] (playerName) - Teleports to player's location
@@ -285,7 +285,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi unmutechat (-s) - Unmute public chat
 /cmi usermeta [playerName] [add/remove/clear/list/increment] (key) (value) (-s) - Manage players meta data
 /cmi util (removeseats/testtarget) - Administration tools
-/cmi vanish (playerName/list) (on/off) - Vanish player
+/cmi vanish (playerName/list) (on/off) (-s) - Vanish player
 /cmi vanishedit (playerName) - Edit vanish mode for player
 /cmi version  - Show plugin version
 /cmi viewrange [range] (playerName) - Change view range
@@ -299,7 +299,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi warpgroups  - Lists warp groups
 /cmi weather (sun/rain/storm) (lock/duration) (worldName/all) - Controls server weather
 /cmi whowas [playerName] - Shows players previous names
-/cmi workbench (playerName) - Open workbench
+/cmi workbench (playerName) (-s) - Open workbench
 /cmi world (normal/nether/end/1/2/3...) (playerName) (-s) - Teleports to different world
 /cmi worth (all/blocks/hand/material) - Check item worth
 /cmi worthlist (playerName) (-missing) - Check list of items with set sell prices
@@ -307,4 +307,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Misc.
 
-Created with CMI 9.1.4.0 for Minecraft 1.18.2
+Created with CMI 9.1.5.0 for Minecraft 1.18.2
