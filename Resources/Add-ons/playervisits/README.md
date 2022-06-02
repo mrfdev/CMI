@@ -50,4 +50,4 @@ TODO, finish readme
 
 ## Misc.
 
-- Last updated on June 2nd, 2022 | Version 0.0.2 build 003 (concept alpha) by Floris
+- Last updated on June 2nd, 2022 | Version 0.0.3 build 005 (concept alpha) by Floris

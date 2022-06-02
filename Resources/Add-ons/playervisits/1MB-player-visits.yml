@@ -19,4 +19,9 @@
 CustomAlias:
   visit:
     Cmds:
-    - asPlayer! cmi setwarp [playerName] false head false -g:visits -confirm
+    - check:$1==set! asPlayer! cmi setwarp [playerName] head -g:visits
+    - check:$1==unset! asConsole! cmi removewarp [playerName]
+    - check:$1==unset! msg! [playerName] if the visit exists, i've just removed it.
+    - check:$1==list! asPlayer! cmi warp -g:visits
+    - check:$1==null! msg! [playerName] Syntax for this command is /$0 set|unset|list|playerName
+    - check:$1!=set! check:$1!=unset! check:$1!=list! asPlayer! cmi warp $1
