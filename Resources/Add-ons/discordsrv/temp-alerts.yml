@@ -1,0 +1,207 @@
+Alerts:
+
+####################################################
+#
+# Mainenance mode
+#
+####################################################
+- Trigger: PlayerCommandPreprocessEvent 
+  Channel: global
+  Conditions:
+    - '#player.hasPermission("cmi.customalias.maintenance-off")'
+    - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+    - "(#command.split(\"\\s+|$\")[1].equals(\"maintenance\"))"
+    - "(#command.split(\"\\s+|$\")[2].equals(\"true\"))"
+  Embed:
+    Color: "#ff0000"
+    ThumbnailUrl: "https://cdn.discordapp.com/attachments/895784266976329739/979217380431507516/road-works.png"
+    Title:
+      Text: "The server is now in maintenance mode"
+      Url: ""
+    Description: "We are oiling up the gears so the server runs a bit smoother, players cannot join during this time."
+    Footer:
+      Text: "Thank you for your patience, we will be back soon."
+
+- Trigger: PlayerCommandPreprocessEvent 
+  Channel: global
+  Conditions:
+    - '#player.hasPermission("cmi.customalias.maintenance-off")'
+    - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+    - "(#command.split(\"\\s+|$\")[1].equals(\"maintenance\"))"
+    - "(#command.split(\"\\s+|$\")[2].equals(\"false\"))"
+  Embed:
+    Color: "#00ff00"
+    ThumbnailUrl: "https://cdn.discordapp.com/attachments/895784266976329739/979694676548415518/unknown.png"
+    Title:
+      Text: "We have opened the server again!"
+      Url: ""
+    Description: "Maintenance has completed, players can join the server again."
+
+
+####################################################
+#
+# AFK mesages
+#
+####################################################
+- Trigger: CMIAfkEnterEvent
+  Async: true
+  Conditions:
+    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+  Channel: global
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%luckperms_prefix% {displayname} has gone idle"
+      
+- Trigger: CMIAfkLeaveEvent
+  Async: false
+  Conditions:
+    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+  Channel: global
+  Embed:
+    Color: "#00ff00"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%luckperms_prefix% {displayname} has returned"
+    Footer:
+      Text: "Time away: %cmi_user_afk_for%"
+
+
+####################################################
+#
+# Send fake join and leave for vanish
+#
+####################################################
+- Trigger: CMIPlayerVanishEvent 
+  Channel: global
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} quit"
+
+- Trigger: CMIPlayerUnVanishEvent 
+  Channel: global
+  Embed:
+    Color: "#00FF00"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} joined"
+
+
+####################################################
+#
+# Send actual join and leave
+#
+####################################################
+- Trigger: PlayerQuitEvent 
+  Channel: global
+  Conditions:
+    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+  Async: false
+  Embed:
+    Color: "#ff0000"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} quit"
+
+
+- Trigger: PlayerJoinEvent
+  Channel: global
+  Conditions:
+    - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+  Embed:
+    Color: "#00FF00"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "%cmi_user_nameplate_prefix%{displayname} joined"
+
+
+####################################################
+#
+# Log kicks and bans
+#
+####################################################
+- Trigger: PlayerKickEvent
+  Channel: global
+  Conditions:
+    - '!#event.getPlayer().isBanned()'
+  Embed:
+    Color: "#ff0000"
+    ThumbnailUrl: "https://cdn.discordapp.com/attachments/895784266976329739/979606074451714098/unknown.png"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "🥾 Kicked %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
+    Description: "**Reason:** ${#event.getReason()}"        
+ 
+- Trigger: PlayerKickEvent
+  Channel: global
+  Conditions:
+    - '#event.getPlayer().isBanned()'
+  Embed:
+    Color: "#ff0000"
+    ThumbnailUrl: "https://cdn.discordapp.com/attachments/895784266976329739/979605823925919784/unknown.png"
+    Author:
+      ImageUrl: "{embedavatarurl}"
+      Name: "🔨 Banned %cmi_user_nameplate_prefix%${#event.getPlayer().getDisplayName()}"
+    Description: "**Reason:** ${#server.getBanList(T(org.bukkit.BanList.Type).NAME).getBanEntry(#event.getPlayer().name).getReason()}"
+
+
+####################################################
+#
+# Log links and unlinks
+#
+####################################################
+- Trigger: AccountLinkedEvent
+  Channel: '978254174665994290'
+  Embed:
+    Color: "#869600"
+    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
+    Title:
+      Text: "Account linked"
+      Url: "https://namemc.com/profile/${#event.player.name}"
+    Fields:
+      - "Minecraft Name:;${#event.player.name};true"
+      - "UUID:;${#event.player.uniqueId};true"
+      - "Discord:;${#event.getUser().name}#${#event.getUser().discriminator} <${#event.getUser().id}>;true"
+      - "IP:;${#event.player.address};true"
+
+
+- Trigger: AccountUnlinkedEvent
+  Channel: '978254174665994290'
+  Embed:
+    Color: "#869600"
+    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
+    Title:
+      Text: "Account unlinked"
+      Url: "https://namemc.com/profile/${#event.player.name}"
+    Fields:
+      - "Minecraft Name:;${#event.player.name};true"
+      - "UUID:;${#event.player.uniqueId};true"
+      - "Discord:;${#event.user.name}#${#event.user.discriminator} <${#event.user.id}>;true"
+      - "IP:;${#event.player.address};true"
+
+
+####################################################
+#
+# Log unsuccessful logins
+#
+####################################################
+- Trigger: AsyncPlayerPreLoginEvent
+  Channel: '978254174665994290'
+  Conditions:
+    - '!#event.getLoginResult().toString().equals("ALLOWED")'
+  Embed:
+    Color: "#869600"
+    ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.getUniqueId()}&name=${#event.getName()}&overlay"
+    Description: "${#event.getKickMessage()}"
+    Title:
+      Text: "User denied entry"
+      Url: "https://namemc.com/profile/${#event.getName()}"
+    Fields:
+      - "Minecraft Name:;${#event.getName()};true"
+      - "UUID:;${#event.getUniqueId()};true"
+      - "IP:;${#event.getAddress()};true"
+
+  
