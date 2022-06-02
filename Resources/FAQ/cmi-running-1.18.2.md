@@ -72,9 +72,9 @@ This page should help explain what I personally think is the way to run CMI on S
 ```
 > cmi version
     --------------------------------------------------
-    CMI plugin version: 9.1.4.7 SqLite
-    CMILib: 1.1.2.5
-    Server: Paper(341) 1.18.2-R0.1-SNAPSHOT
+    CMI plugin version: 9.1.5.0 SqLite
+    CMILib: 1.1.2.6
+    Server: Paper(366) 1.18.2-R0.1-SNAPSHOT
     CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
     Modules -> 55 enabled 1 disabled: flightCharge
     --------------------------------------------------
@@ -85,7 +85,7 @@ This page should help explain what I personally think is the way to run CMI on S
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is made for CMI 9.1.4.x and a Spigot-, or Paper servers on version 1.18.2. Apply steps to other (lower) versions accordingly.
+- This is made for CMI 9.1.5.x and a Spigot-, or Paper servers on version 1.18.2. Apply steps to other (lower) versions accordingly.
 - The LATEST CMILib version will be required. Zrips' libraries and other resources are linked below.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
