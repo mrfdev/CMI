@@ -70,33 +70,21 @@
 ---
  
 This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.18.2.
-```
-> cmi version
-    --------------------------------------------------
-    CMI plugin version: 9.1.5.0 SqLite
-    CMILib: 1.1.2.6
-    Server: Paper(366) 1.18.2-R0.1-SNAPSHOT
-    CMI economy: Enabled Vault: 1.7.3-b CMI Chat: Enabled
-    Modules -> 55 enabled 1 disabled: flightCharge
-    --------------------------------------------------
->
-```
 
 ---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
 
-- This is made for CMI 9.1.5.x and a Spigot-, or Paper servers on version 1.18.2. Apply steps to other (lower) versions accordingly.
-- The LATEST CMILib version will be required. Zrips' libraries and other resources are linked below.
+The latest version of CMILib is required. Zrips' libraries and other resources are linked below.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.18.x? Yes, CMI 9.1.4.x can be used on 1.18.2.
-- Will there be a build for 1.xx? Future versions are likely to get an update, yes.
+- Is there a build for 1.18.x? Yes, CMI 9.1.5.x can be used on 1.18.2.
+- Will there be a build for 1.19? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
 - Can I upgrade from an older version of CMI to the build for 1.18.2? Yes, latest CMI and CMILib jars will achieve this.
 - CMILib will be required? Yes. CMILib 1.1.2.5 or newer is required for 1.18.2
-- So where do I download it? spigotmc.org
+- So where do I download it? spigotmc.org (link below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
 
@@ -111,6 +99,7 @@ This page should help explain what I personally think is the way to run CMI on S
 - /stop your server. Do the backup thing, and make a test server.
 
 - Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.18.2 or download Paper 1.18.2 from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
+<img width="512" alt="cmi-download-jar-from-spigot-01" src="https://user-images.githubusercontent.com/28841349/172343317-4cad8fac-451e-40ef-a6e1-143a6c850ef0.png">
 
 - If you are not yet running CMILib then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download it here: <https://www.spigotmc.org/resources/87610/>
 
@@ -120,7 +109,7 @@ This page should help explain what I personally think is the way to run CMI on S
 
 If you already are running CMI, you can skip this and go straight to Upgrading (see below).
 
-- Put the downloaded CMI `.jar` in the plugins/ directory. 
+- Put the downloaded CMI `.jar` in the `~/plugins/` directory. 
 
 - Start the server and let it complete loading.
 
@@ -187,10 +176,10 @@ These are for CMI 9.x:
 `CMILibrary` Base Library 
 <https://www.spigotmc.org/resources/CMILib.87610/>
 
-`Spigot website` This is where you can get buildtools and make a spigot 1.18.2 jar
+`Spigot website` This is where you can get buildtools and make a latest Spigot jar
 <https://hub.spigotmc.org/jenkins/job/BuildTools/>
 
-`Paper website` This is where you can get Paper's 1.18.2 jar
+`Paper website` This is where you can get Paper's latest jar
 <https://papermc.io/downloads>
 
 ---
