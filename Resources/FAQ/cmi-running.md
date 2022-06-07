@@ -71,6 +71,8 @@
  
 This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.18.2.
 
+- Video: https://youtu.be/FpHIj_VJ7ho
+
 ---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Note ahead.
