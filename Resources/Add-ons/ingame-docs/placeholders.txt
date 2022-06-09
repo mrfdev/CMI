@@ -36,12 +36,22 @@
 <T>&3•cmi_user_joinedcounter:&r %cmi_user_joinedcounter%</T><H>%%cmi_user_joinedcounter%%\n&bWhether or not the player is in a counter.</H><SC>%%cmi_user_joinedcounter%%</SC>
 <T>&3•cmi_user_glow_code:&r %cmi_user_glow_code%</T><H>%%cmi_user_glow_code%%\n&bPlayer's Bukkit color code from the /cmi glow command.</H><SC>%%cmi_user_glow_code%%</SC>
 <T>&3•cmi_user_glow_name:&r %cmi_user_glow_name%</T><H>%%cmi_user_glow_name%%\n&bPlayer's color name from the /cmi glow command.</H><SC>%%cmi_user_glow_name%%</SC>
+<T>&3•cmi_user_toggle_[msg|pay|tp|compass|sospy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|to]%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
+<T>&3•cmi_user_togglename_[msg|pay|tp|compass|sospy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrec]%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
+<T>&3•cmi_user_togglename_msg:&r %cmi_user_togglename_msg%</T><H>%%cmi_user_togglename_msg%%\n&bReturns 1 or 0 depending on whether or not the player is accepting private messages.</H><SC>%%cmi_user_togglename_msg%%</SC>
+<T>&3•cmi_user_togglename_msg:&r %cmi_user_togglename_msg%</T><H>%%cmi_user_togglename_msg%%\n&bReturns True or False depending on whether or not the player is accepting private messages.</H><SC>%%cmi_user_togglename_msg%%</SC>
+<T>&3•cmi_user_toggle_pay:&r %cmi_user_toggle_pay%</T><H>%%cmi_user_toggle_pay%%\n&bReturns 1 or 0 depending on whether or not the player is accepting money payments.</H><SC>%%cmi_user_toggle_pay%%</SC>
+<T>&3•cmi_user_toggle_tp:&r %cmi_user_toggle_tp%</T><H>%%cmi_user_toggle_tp%%\n&bReturns 1 or 0 depending on whether or not the player is accepting teleportations.</H><SC>%%cmi_user_toggle_tp%%</SC>
+<T>&3•cmi_user_togglename_tp:&r %cmi_user_togglename_tp%</T><H>%%cmi_user_togglename_tp%%\n&bReturns a formatted True or False value depending on whether or not the player is accepting teleportations.</H><SC>%%cmi_user_togglename_tp%%</SC>
 <T>&3•player_world:&r %player_world%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
 <T>&3•player_x:&r %player_x%</T>
 <T>&3•player_y:&r %player_y%</T>
 <T>&3•player_z:&r %player_z%</T>
 <T>&3•player_biome:&r %player_biome%</T>
-<T>&3•cmi_user_toggle_[msg|pay|tp|compass|sospy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|to]%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
+<T>&3•cmi_user_toggle_compass:&r %cmi_user_toggle_compass%</T><H>%%cmi_user_toggle_compass%%\n&bReturns 1 or 0 depending on whether or not the player's bossbar compass is on.</H><SC>%%cmi_user_toggle_compass%%</SC>
+<T>&3•cmi_user_togglename_compass:&r %cmi_user_togglename_compass%</T><H>%%cmi_user_togglename_compass%%\n&bReturns a formatted True or False value depending on whether or not the player's bossbar compass is on.</H><SC>%%cmi_user_togglename_compass%%</SC>
+<T>&3•cmi_user_toggle_sospy:&r %cmi_user_toggle_sospy%</T><H>%%cmi_user_toggle_sospy%%\n&bReturns 1 or 0 depending on whether or not the player's social spy is on.</H><SC>%%cmi_user_toggle_sospy%%</SC>
+<T>&3•cmi_user_togglename_sospy:&r %cmi_user_togglename_sospy%</T><H>%%cmi_user_togglename_sospy%%\n&bReturns a formatted True or False value depending on whether or not the player's social spy is on.</H><SC>%%cmi_user_togglename_sospy%%</SC>
 <NextPage>
 &b = Player Perks
 <T>&3•cmi_user_maxhomes:&r %cmi_user_maxhomes%</T>
