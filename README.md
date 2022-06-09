@@ -40,7 +40,7 @@ The most common reason you're perhaps here are some of these 1MoreBlock.com Add-
 - (Add-on) [emotes.yml](/Resources/Add-ons/emotes.yml)
 - (Add-on) [social](/Resources/Add-ons/social/)
 - (Add-on) [1MB-finduser.sh](/Resources/Scripts/1MB-finduser.sh) 
-- (Add-on) [placeholders.txt](/Resources/Add-ons/placeholders.txt)
+- (Add-on) [placeholders.txt](/Resources/Add-ons/ingame-docs)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
 - (Custom) [CustomAlias/](/live-1mb-3.1.4-mc-1.18.2/plugins/CMI/CustomAlias) 
 - (Custom) [worth.yml](/live-1mb-3.1.4-mc-1.18.2/plugins/CMI/worth.yml)
