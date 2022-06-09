@@ -30,8 +30,10 @@ Contributions by MrCrazyMan02 (i see a duck)
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TODO
 
-TODO, finish readme
+- TODO, finish readme
+- TODO, once placeholders.txt is 100% finished, sort it out visually for /cmi getbook placeholders, so we can have /staff books
+- TODO, add variables.txt, and specialized.txt for additional cmi things.
 
 ## Misc.
 
-- Last updated on June 9th, 2022 | Version 0.1.1 build 007 by Floris
+- Last updated on June 9th, 2022 | Version 0.1.1 build 008 by Floris

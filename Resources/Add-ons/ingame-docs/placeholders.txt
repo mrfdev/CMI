@@ -31,16 +31,17 @@
 <T>&3•cmi_user_afk_msg:&r %cmi_user_afk_msg%</T><H>%%cmi_user_afk_msg%%\n&bThe player's AFK message.</H><SC>%%cmi_user_afk_msg%%</SC>
 <T>&3•cmi_user_afk_for:&r %cmi_user_afk_for%</T><H>%%cmi_user_afk_msg%%\n&bHow long ago the player went AFK.</H><SC>%%cmi_user_afk_for%%</SC>
 <T>&3•cmi_user_afk_in:&r %cmi_user_afk_in%</T><H>%%cmi_user_afk_in%%\n&bThe amount of time until the player will be automatically set as AFK.</H><SC>%%cmi_user_afk_in%%</SC>
-<T>&3•cmi_user_tgod:&r %cmi_user_tgod%</T>
-<T>&3•cmi_user_tgod_formatted:&r %cmi_user_tgod_formatted%</T>
-<T>&3•cmi_user_joinedcounter:&r %cmi_user_joinedcounter%</T>
-<T>&3•cmi_user_glow_code:&r %cmi_user_glow_code%</T>
-<T>&3•cmi_user_glow_name:&r %cmi_user_glow_name%</T>
-<T>&3•player_world:&r %player_world%</T>
+<T>&3•cmi_user_tgod:&r %cmi_user_tgod%</T><H>%%cmi_user_tgod%%\n&bThe duration (in seconds) until the player's temporary god mode expires.</H><SC>%%cmi_user_tgod%%</SC>
+<T>&3•cmi_user_tgod_formatted:&r %cmi_user_tgod_formatted%</T><H>%%cmi_user_tgod_formatted%%\n&bThe duration until the player's temporary god mode expires.</H><SC>%%cmi_user_tgod_formatted%%</SC>
+<T>&3•cmi_user_joinedcounter:&r %cmi_user_joinedcounter%</T><H>%%cmi_user_joinedcounter%%\n&bWhether or not the player is in a counter.</H><SC>%%cmi_user_joinedcounter%%</SC>
+<T>&3•cmi_user_glow_code:&r %cmi_user_glow_code%</T><H>%%cmi_user_glow_code%%\n&bPlayer's Bukkit color code from the /cmi glow command.</H><SC>%%cmi_user_glow_code%%</SC>
+<T>&3•cmi_user_glow_name:&r %cmi_user_glow_name%</T><H>%%cmi_user_glow_name%%\n&bPlayer's color name from the /cmi glow command.</H><SC>%%cmi_user_glow_name%%</SC>
+<T>&3•player_world:&r %player_world%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
 <T>&3•player_x:&r %player_x%</T>
 <T>&3•player_y:&r %player_y%</T>
 <T>&3•player_z:&r %player_z%</T>
 <T>&3•player_biome:&r %player_biome%</T>
+<T>&3•cmi_user_toggle_[msg|pay|tp|compass|sospy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|to]%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
 <NextPage>
 &b = Player Perks
 <T>&3•cmi_user_maxhomes:&r %cmi_user_maxhomes%</T>
