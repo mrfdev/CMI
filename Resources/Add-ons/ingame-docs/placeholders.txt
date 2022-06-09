@@ -1,0 +1,148 @@
+<AutoPage><AutoAlias><NoReqPermission>
+&bHey [playerName], this is an alternative output of an internal command called 'cmi placeholders' from the CMI plugin. This is made by Floris for the 1MoreBlock.com server. But feel free to customize this to your liking. 
+
+&3This is generally not a command for players really, it's more an internal command that helps the server owner with debugging things. So by default the custom alias you create should require a permission.
+
+&3 More CMI placeholders info:&b https://www.zrips.net/cmi/placeholders/
+<NextPage>
+&b = Player Info
+<T>&3•cmi_user_name:&r %cmi_user_name%</T><H>%%cmi_user_name%%\n&bPlayer's username.</H><SC>%%cmi_user_name%%</SC>
+<T>&3•cmi_user_display_name:&r %cmi_user_display_name%</T><H>%%cmi_user_display_name%%\n&bPlayer's formatted display name.</H><SC>%%cmi_user_display_name%%</SC>
+<T>&3•cmi_user_nickname:&r %cmi_user_nickname%</T><H>%%cmi_user_nickname%%\n&bPlayer's nickname.</H><SC>%%%cmi_user_nickname%%</SC>
+<T>&3•cmi_user_group:&r %cmi_user_group%</T><H>%%cmi_user_group%%\n&bPlayer's main group name, set by your permissions plugin.</H><SC>%%cmi_user_group%%</SC>
+<T>&3•cmi_user_ping:&r %cmi_user_ping%</T><H>%%cmi_user_ping%%\n&bPlayer's ping.</H><SC>%%cmi_user_ping%%</SC>
+<T>&3•cmi_user_name_colorcode:&r %cmi_user_name_colorcode%</T><H>%%cmi_user_name_colorcode%%\n&bPlayer's Bukkit color code from the /cmi nameplate command and the -c: variable</H><SC>%%cmi_user_name_colorcode%%</SC>
+<T>&3•cmi_user_prefix:&r %cmi_user_prefix%</T><H>%%cmi_user_prefix%%\n&bPlayer's prefix, pulled from your permissions plugin.</H><SC>%%cmi_user_prefix%%</SC>
+<T>&3•cmi_user_suffix:&r %cmi_user_suffix%</T><H>%%cmi_user_suffix%%\n&bPlayer's suffix, pulled from your permissions plugin.</H><SC>%%cmi_user_suffix%%</SC>
+<T>&3•cmi_user_nameplate_prefix:&r %cmi_user_nameplate_prefix%</T><H>%%cmi_user_nameplate_prefix%%\n&bPlayer's nameplate prefix.</H><SC>%%cmi_user_nameplate_prefix%%</SC>
+<T>&3•cmi_user_nameplate_suffix:&r %cmi_user_nameplate_suffix%</T><H>%%cmi_user_nameplate_suffix%%\n&bPlayer's nameplate suffix.</H><SC>%%cmi_user_nameplate_suffix%%</SC>
+<T>&3•cmi_user_country:&r %cmi_user_country%</T><H>%%cmi_user_country%%\n&bPlayer's country from the GeoIP feature.</H><SC>%%cmi_user_country%%</SC>
+<T>&3•cmi_user_country_code:&r %cmi_user_country_code%</T><H>%%cmi_user_country_code%%\n&bPlayer's country code from the GeoIP feature.</H><SC>%%cmi_user_country_code%%</SC>
+<T>&3•cmi_user_city:&r %cmi_user_city%</T><H>%%cmi_user_city%%\n&bPlayer's city from the GeoIP feature.</H><SC>%%cmi_user_city%%</SC>
+<NextPage>
+&b = Player Status
+<T>&3•cmi_user_cuffed:&r %cmi_user_cuffed%</T><H>%%cmi_user_cuffed%%\n&bWhether or not the player is cuffed.</H><SC>%%cmi_user_cuffed%%</SC>
+<T>&3•cmi_user_muted:&r %cmi_user_muted%</T><H>%%cmi_user_muted%%\n&bWhether or not the player is muted.</H><SC>%%cmi_user_muted%%</SC>
+<T>&3•cmi_user_inpvp:&r %cmi_user_inpvp%</T><H>%%cmi_user_inpvp%%\n&bWhether or not the player is in PvP.</H><SC>%%cmi_user_inpvp%%</SC>
+<T>&3•cmi_user_banned:&r %cmi_user_banned%</T><H>%%cmi_user_banned%%\n&bWhether or not the player is banned.</H><SC>%%cmi_user_banned%%</SC>
+<T>&3•cmi_user_god:&r %cmi_user_god%</T><H>%%cmi_user_banned%%\n&bWhether or not the player is in god mode.</H><SC>%%cmi_user_god%%</SC>
+<T>&3•cmi_user_afk:&r %cmi_user_afk%</T><H>%%cmi_user_afk%%\n&bWhether or not the player is AFK.</H><SC>%%cmi_user_afk%%</SC>
+<T>&3•cmi_user_afk_symbol:&r %cmi_user_afk_symbol%</T><H>%%cmi_user_afk_symbol%%\n&bPrints the AFK symbol.</H><SC>%%cmi_user_afk_symbol%%</SC>
+<T>&3•cmi_user_afk_msg:&r %cmi_user_afk_msg%</T><H>%%cmi_user_afk_msg%%\n&bThe player's AFK message.</H><SC>%%cmi_user_afk_msg%%</SC>
+<T>&3•cmi_user_afk_for:&r %cmi_user_afk_for%</T><H>%%cmi_user_afk_msg%%\n&bHow long ago the player went AFK.</H><SC>%%cmi_user_afk_for%%</SC>
+<T>&3•cmi_user_afk_in:&r %cmi_user_afk_in%</T><H>%%cmi_user_afk_in%%\n&bThe amount of time until the player will be automatically set as AFK.</H><SC>%%cmi_user_afk_in%%</SC>
+<T>&3•cmi_user_tgod:&r %cmi_user_tgod%</T>
+<T>&3•cmi_user_tgod_formatted:&r %cmi_user_tgod_formatted%</T>
+<T>&3•cmi_user_joinedcounter:&r %cmi_user_joinedcounter%</T>
+<T>&3•cmi_user_glow_code:&r %cmi_user_glow_code%</T>
+<T>&3•cmi_user_glow_name:&r %cmi_user_glow_name%</T>
+<T>&3•player_world:&r %player_world%</T>
+<T>&3•player_x:&r %player_x%</T>
+<T>&3•player_y:&r %player_y%</T>
+<T>&3•player_z:&r %player_z%</T>
+<T>&3•player_biome:&r %player_biome%</T>
+<NextPage>
+&b = Player Perks
+<T>&3•cmi_user_maxhomes:&r %cmi_user_maxhomes%</T>
+<T>&3•cmi_user_gamemode:&r %cmi_user_gamemode%</T>
+<T>&3•cmi_user_op:&r %cmi_user_op%</T>
+<T>&3•cmi_user_canfly:&r %cmi_user_canfly%</T>
+<T>&3•cmi_user_flying:&r %cmi_user_flying%</T>
+<T>&3•cmi_user_homeamount:&r %cmi_user_homeamount%</T>
+<T>&3•cmi_user_vanished_symbol:&r %cmi_user_vanished_symbol%</T>
+<NextPage>
+&b = Player Economy
+<T>&3•cmi_user_balance_formatted:&r %cmi_user_balance_formatted%</T>
+<T>&3•cmi_user_balance:&r %cmi_user_balance%</T>
+<T>&3•&3vault_eco_balance_formatted:&r %vault_eco_balance_formatted%</T>
+&b = Server Economy
+<T>&3•cmi_baltop_name_[1-10]:&r %cmi_baltop_name_[1-10]%</T>
+<T>&3•cmi_baltop_money_[1-10]:&r %cmi_baltop_money_[1-10]%</T>
+<NextPage>
+&b = Player Group / Rank
+<T>&3•cmi_user_group:&r %cmi_user_group%</T>
+<T>&3•cmi_user_rank:&r %cmi_user_rank%</T>
+<T>&3•cmi_user_nextranks:&r %cmi_user_nextranks%</T>
+<T>&3•cmi_user_nextrankpercent:&r %cmi_user_nextrankpercent%</T>
+<T>&3•cmi_user_nextvalidranks:&r %cmi_user_nextvalidranks%</T>
+<T>&3•cmi_user_canrankup:&r %cmi_user_canrankup%</T>
+<NextPage>
+&b = Player Jail
+<T>&3•cmi_user_jailname:&r %cmi_user_jailname%</T>
+<T>&3•cmi_user_jailcell:&r %cmi_user_jailcell%</T>
+<T>&3•cmi_user_jailtime:&r %cmi_user_jailtime%</T>
+<T>&3•cmi_user_jailreason:&r %cmi_user_jailreason%</T>
+<T>&3•cmi_jail_time_[jailName]_[cellId]:&r %cmi_jail_time_[jailName]_[cellId]%</T>
+<T>&3•cmi_jail_username_[jailName]_[cellId]:&r %cmi_jail_username_[jailName]_[cellId]%</T>
+<T>&3•cmi_jail_reason_[jailName]_[cellId]:&r %cmi_jail_reason_[jailName]_[cellId]%</T>
+<NextPage>
+&b = Player Playtime
+<T>&3•cmi_user_playtime_formatted:&r %cmi_user_playtime_formatted%</T>
+<T>&3•cmi_user_playtime_days:&r %cmi_user_playtime_days%</T>
+<T>&3•cmi_user_playtime_dayst:&r %cmi_user_playtime_dayst%</T>
+<T>&3•cmi_user_playtime_hours:&r %cmi_user_playtime_hours%</T>
+<T>&3•cmi_user_playtime_hoursf:&r %cmi_user_playtime_hoursf%</T>
+<T>&3•cmi_user_playtime_hourst:&r %cmi_user_playtime_hourst%</T>
+<T>&3•cmi_user_playtime_minutes:&r %cmi_user_playtime_minutes%</T>
+<T>&3•cmi_user_playtime_minutest:&r %cmi_user_playtime_minutest%</T>
+<T>&3•cmi_user_playtime_seconds:&r %cmi_user_playtime_seconds%</T>
+<T>&3•cmi_user_playtime_secondst:&r %cmi_user_playtime_secondst%</T>
+<NextPage>
+&b = Player Item
+<T>&3•cmi_user_itemcount_[itemIdName(:data)]:&r %cmi_user_itemcount_[itemIdName(:data)]%</T>
+<T>&3•cmi_user_maxperm_[corePerm]_[defaultValue]:&r %cmi_user_maxperm_[corePerm]_[defaultValue]%</T>
+<T>&3•cmi_equation_[equation]:&r %cmi_equation_[equation]%</T>
+<T>&3•cmi_equationint_[equation]:&r %cmi_equationint_[equation]%</T>
+<T>&3•cmi_iteminhand_displayname:&r %cmi_iteminhand_displayname%</T>
+<T>&3•cmi_iteminhand_realname:&r %cmi_iteminhand_realname%</T>
+<T>&3•cmi_iteminhand_type:&r %cmi_iteminhand_type%</T>
+<T>&3•cmi_iteminhand_itemdata:&r %cmi_iteminhand_itemdata%</T>
+<T>&3•cmi_iteminhand_amount:&r %cmi_iteminhand_amount%</T>
+<T>&3•cmi_iteminhand_worth:&r %cmi_iteminhand_worth%</T>
+<T>&3•cmi_iteminhand_worth_one:&r %cmi_iteminhand_worth_one%</T>
+<NextPage>
+&b = Player Misc
+<T>&3•cmi_user_votecount:&r %cmi_user_votecount%</T>
+<T>&3•cmi_schedule_nextin_[schedName]:&r %cmi_schedule_nextin_[schedName]%</T>
+<T>&3•cmi_votetop_[1-10]:&r %cmi_votetop_[1-10]%</T>
+<T>&3•cmi_worth_buy_[itemIdName(:data)]:&r %cmi_worth_buy_[itemIdName(:data)]%</T>
+<T>&3•cmi_worth_sell_[itemIdName(:data)]:&r %cmi_worth_sell_[itemIdName(:data)]%</T>
+<T>&3•cmi_user_rank_percent_[rankName]:&r %cmi_user_rank_percent_[rankName]%</T>
+<T>&3•cmi_user_meta_[key]:&r %cmi_user_meta_[key]%</T>
+<T>&3•cmi_user_metaint_[key]:&r %cmi_user_metaint_[key]%</T>
+<T>&3•cmi_user_kitcd_[kitName]:&r %cmi_user_kitcd_[kitName]%</T>
+<T>&3•cmi_user_kit_available_[kitName]:&r %cmi_user_kit_available_[kitName]%</T>
+<T>&3•cmi_user_kit_hasaccess_[kitName]:&r %cmi_user_kit_hasaccess_[kitName]%</T>
+<T>&3•cmi_user_tfly:&r %cmi_user_tfly%</T>
+<T>&3•cmi_user_tfly_formatted:&r %cmi_user_tfly_formatted%</T>
+<T>&3•cmi_user_flightcharge:&r %cmi_user_flightcharge%</T>
+<T>&3•cmi_user_charges_left:&r %cmi_user_charges_left%</T>
+<T>&3•cmi_user_charges_max:&r %cmi_user_charges_max%</T>
+<T>&3•cmi_user_charges_time:&r %cmi_user_charges_time%</T>
+<T>&3•cmi_user_charges_cooldown:&r %cmi_user_charges_cooldown%</T>
+<NextPage>
+&b = Bungee Info 
+<T>&3•cmi_user_bungeeserver:&r %cmi_user_bungeeserver%</T>
+<T>&3•cmi_bungee_total_[serverName]:&r %cmi_bungee_total_[serverName]%</T>
+<T>&3•cmi_bungee_current_[serverName]:&r %cmi_bungee_current_[serverName]%</T>
+<T>&3•cmi_bungee_motd_[serverName]:&r %cmi_bungee_motd_[serverName]%</T>
+<T>&3•cmi_bungee_onlinestatus_[serverName]:&r %cmi_bungee_onlinestatus_[serverName]%</T>
+<NextPage>
+&b = Server Info
+<T>&3•server_online:&r %server_online%</T>
+<T>&3•server_max_players:&r %server_max_players%</T>
+<T>&3•server_unique_joins:&r %server_unique_joins%</T>
+<T>&3•onlineplayers_names:&r %onlineplayers_names%</T>
+<T>&3•onlineplayers_displaynames:&r %onlineplayers_displaynames%</T>
+<T>&3•cmi_tps_1:&r %cmi_tps_1%</T>
+<T>&3•cmi_tps_60:&r %cmi_tps_60%</T>
+<T>&3•cmi_tps_300:&r %cmi_tps_300%</T>
+<NextPage>
+&b = Server Misc.
+<T>&3•cmi_random_player_name:&r %cmi_random_player_name%</T>
+<T>&3•cmi_random_[from]_[to]:&r %cmi_random_[from]_[to]%</T>
+<T>&3•cmi_lastrandom_[playerName]:&r %cmi_lastrandom_[playerName]%</T>
+<T>&3•server_time_[timeFormat]_[timeZone]:&r %server_time_[timeFormat]_[timeZone]%</T>
+<T>&3•server_time_[timeFormat]:&r %server_time_[timeFormat]%</T>
+<T>&3•world_time12_[worldName]:&r %world_time12_[worldName]%</T>
+<T>&3•world_time24_[worldName]:&r %world_time24_[worldName]%</T>
