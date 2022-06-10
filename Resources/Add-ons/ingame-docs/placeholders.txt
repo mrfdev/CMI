@@ -19,13 +19,35 @@
 <T>&3•cmi_user_country:&r %cmi_user_country%</T><H>%%cmi_user_country%%\n&bPlayer's country from the GeoIP feature.</H><SC>%%cmi_user_country%%</SC>
 <T>&3•cmi_user_country_code:&r %cmi_user_country_code%</T><H>%%cmi_user_country_code%%\n&bPlayer's country code from the GeoIP feature.</H><SC>%%cmi_user_country_code%%</SC>
 <T>&3•cmi_user_city:&r %cmi_user_city%</T><H>%%cmi_user_city%%\n&bPlayer's city from the GeoIP feature.</H><SC>%%cmi_user_city%%</SC>
+<T>&3•cmi_user_exp:&r %cmi_user_exp%</T><H>%%cmi_user_exp%%\n&bPlayer's EXP amount for their current level.</H><SC>%%cmi_user_exp%%</SC>
+<T>&3•cmi_user_exp:&r %cmi_user_expp%</T><H>%%cmi_user_expp%%\n&bPlayer's EXP amount for their current level as a percentage.</H><SC>%%cmi_user_expp%%</SC>
+<T>&3•cmi_user_totalexp:&r %cmi_user_totalexp%</T><H>%%cmi_user_totalexp%%\n&bPlayer's total EXP amount.</H><SC>%%cmi_user_totalexp%%</SC>
+<T>&3•cmi_user_playtime_formatted:&r %cmi_user_playtime_formatted%</T><H>%%cmi_user_playtime_formatted%%\n&bPlayer's formatted playtime.</H><SC>%%cmi_user_playtime_formatted%%</SC>
+<T>&3•cmi_user_playtime_days:&r %cmi_user_playtime_days%</T><H>%%cmi_user_playtime_days%%\n&bPlayer's playtime in days.</H><SC>%%cmi_user_playtime_days%%</SC>
+<T>&3•cmi_user_playtime_dayst:&r %cmi_user_playtime_dayst%</T><H>%%cmi_user_playtime_dayst%%\n&bPlayer's playtime in days as a fraction.</H><SC>%%cmi_user_playtime_dayst%%</SC>
+<T>&3•cmi_user_playtime_hours:&r %cmi_user_playtime_hours%</T><H>%%cmi_user_playtime_hours%%\n&bPlayer's playtime in hours.</H><SC>%%cmi_user_playtime_hours%%</SC>
+<T>&3•cmi_user_playtime_hoursf:&r %cmi_user_playtime_hoursf%</T><H>%%cmi_user_playtime_hoursf%%\n&bPlayer's total playtime in hours.</H><SC>%%cmi_user_playtime_hoursf%%</SC>
+<T>&3•cmi_user_playtime_hourst:&r %cmi_user_playtime_hourst%</T><H>%%cmi_user_playtime_hourst%%\n&bPlayer's playtime in hours as a fraction.</H><SC>%%cmi_user_playtime_hourst%%</SC>
+<T>&3•cmi_user_playtime_minutes:&r %cmi_user_playtime_minutes%</T><H>%%cmi_user_playtime_minutes%%\n&bPlayer's playtime in minutes.</H><SC>%%cmi_user_playtime_minutes%%</SC>
+<T>&3•cmi_user_playtime_minutest:&r %cmi_user_playtime_minutest%</T><H>%%cmi_user_playtime_minutest%%\n&bPlayer's total playtime in minutes.</H><SC>%%cmi_user_playtime_minutest%%</SC>
+<T>&3•cmi_user_playtime_seconds:&r %cmi_user_playtime_seconds%</T><H>%%cmi_user_playtime_seconds%%\n&bPlayer's playtime in seconds.</H><SC>%%cmi_user_playtime_seconds%%</SC>
+<T>&3•cmi_user_playtime_secondst:&r %cmi_user_playtime_secondst%</T><H>%%cmi_user_playtime_secondst%%\n&bPlayer's total playtime in seconds.</H><SC>%%cmi_user_playtime_secondst%%</SC>
+<T>&3•cmi_user_playtime_online:&r %cmi_user_online%</T><H>%%cmi_user_online%%\n&bWhether or not the player is online.</H><SC>%%cmi_user_online%%</SC>
+<T>&3•cmi_user_world_formatted:&r %cmi_user_playtime_world_formatted%</T><H>%%cmi_user_world_formatted%%\n&bPlayer's world using custom identification.</H><SC>%%cmi_user_world_formatted%%</SC>
+<T>&3•player_world:&r %player_world%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
+<T>&3•player_x:&r %player_x%</T><H>%%player_x%%\n&bPlayer's X coordinate.</H><SC>%%player_x%%</SC>
+<T>&3•player_y:&r %player_y%</T><H>%%player_y%%\n&bPlayer's Y coordinate.</H><SC>%%player_y%%</SC>
+<T>&3•player_z:&r %player_z%</T><H>%%player_z%%\n&bPlayer's Z coordinate.</H><SC>%%player_z%%</SC>
+<T>&3•player_biome:&r %player_biome%</T><H>%%player_biome%%\n&bPlayer's biome.</H><SC>%%player_biome%%</SC>
 <NextPage>
 &b = Player Status
+<T>&3•cmi_user_gamemode:&r %cmi_user_gamemode%</T><H>%%cmi_user_gamemode%%\n&bPlayer's gamemode.</H><SC>%%cmi_user_gamemode%%</SC>
 <T>&3•cmi_user_cuffed:&r %cmi_user_cuffed%</T><H>%%cmi_user_cuffed%%\n&bWhether or not the player is cuffed.</H><SC>%%cmi_user_cuffed%%</SC>
 <T>&3•cmi_user_muted:&r %cmi_user_muted%</T><H>%%cmi_user_muted%%\n&bWhether or not the player is muted.</H><SC>%%cmi_user_muted%%</SC>
 <T>&3•cmi_user_inpvp:&r %cmi_user_inpvp%</T><H>%%cmi_user_inpvp%%\n&bWhether or not the player is in PvP.</H><SC>%%cmi_user_inpvp%%</SC>
 <T>&3•cmi_user_banned:&r %cmi_user_banned%</T><H>%%cmi_user_banned%%\n&bWhether or not the player is banned.</H><SC>%%cmi_user_banned%%</SC>
 <T>&3•cmi_user_god:&r %cmi_user_god%</T><H>%%cmi_user_banned%%\n&bWhether or not the player is in god mode.</H><SC>%%cmi_user_god%%</SC>
+<T>&3•cmi_user_op:&r %cmi_user_op%</T>
 <T>&3•cmi_user_afk:&r %cmi_user_afk%</T><H>%%cmi_user_afk%%\n&bWhether or not the player is AFK.</H><SC>%%cmi_user_afk%%</SC>
 <T>&3•cmi_user_afk_symbol:&r %cmi_user_afk_symbol%</T><H>%%cmi_user_afk_symbol%%\n&bPrints the AFK symbol.</H><SC>%%cmi_user_afk_symbol%%</SC>
 <T>&3•cmi_user_afk_msg:&r %cmi_user_afk_msg%</T><H>%%cmi_user_afk_msg%%\n&bThe player's AFK message.</H><SC>%%cmi_user_afk_msg%%</SC>
@@ -33,9 +55,13 @@
 <T>&3•cmi_user_afk_in:&r %cmi_user_afk_in%</T><H>%%cmi_user_afk_in%%\n&bThe amount of time until the player will be automatically set as AFK.</H><SC>%%cmi_user_afk_in%%</SC>
 <T>&3•cmi_user_tgod:&r %cmi_user_tgod%</T><H>%%cmi_user_tgod%%\n&bThe duration (in seconds) until the player's temporary god mode expires.</H><SC>%%cmi_user_tgod%%</SC>
 <T>&3•cmi_user_tgod_formatted:&r %cmi_user_tgod_formatted%</T><H>%%cmi_user_tgod_formatted%%\n&bThe duration until the player's temporary god mode expires.</H><SC>%%cmi_user_tgod_formatted%%</SC>
+<T>&3•cmi_user_vanished_symbol:&r %cmi_user_vanished_symbol%</T><H>%%cmi_user_vanished_symbol%%\n&bPrints the vanished symbol.</H><SC>%%cmi_user_vanished_symbol%%</SC>
 <T>&3•cmi_user_joinedcounter:&r %cmi_user_joinedcounter%</T><H>%%cmi_user_joinedcounter%%\n&bWhether or not the player is in a counter.</H><SC>%%cmi_user_joinedcounter%%</SC>
 <T>&3•cmi_user_glow_code:&r %cmi_user_glow_code%</T><H>%%cmi_user_glow_code%%\n&bPlayer's Bukkit color code from the /cmi glow command.</H><SC>%%cmi_user_glow_code%%</SC>
 <T>&3•cmi_user_glow_name:&r %cmi_user_glow_name%</T><H>%%cmi_user_glow_name%%\n&bPlayer's color name from the /cmi glow command.</H><SC>%%cmi_user_glow_name%%</SC>
+<T>&3•cmi_user_spy:&r %cmi_user_spy%</T><H>%%cmi_user_spy%%\n&bWhether or not the player's chat spy is on.</H><SC>%%cmi_user_spy%%</SC>
+<T>&3•cmi_user_spy:&r %cmi_user_cmdspy%</T><H>%%cmi_user_cmdspy%%\n&bWhether or not the player's command spy is on.</H><SC>%%cmi_user_cmdspy%%</SC>
+<T>&3•cmi_user_spy:&r %cmi_user_signspy%</T><H>%%cmi_user_signspy%%\n&bWhether or not the player's sign spy is on.</H><SC>%%cmi_user_signspy%%</SC>
 <T>&3•cmi_user_toggle_[msg|pay|tp|compass|sospy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|to]%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
 <T>&3•cmi_user_togglename_[msg|pay|tp|compass|sospy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrec]%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
 <T>&3•cmi_user_togglename_msg:&r %cmi_user_togglename_msg%</T><H>%%cmi_user_togglename_msg%%\n&bReturns 1 or 0 depending on whether or not the player is accepting private messages.</H><SC>%%cmi_user_togglename_msg%%</SC>
@@ -43,24 +69,28 @@
 <T>&3•cmi_user_toggle_pay:&r %cmi_user_toggle_pay%</T><H>%%cmi_user_toggle_pay%%\n&bReturns 1 or 0 depending on whether or not the player is accepting money payments.</H><SC>%%cmi_user_toggle_pay%%</SC>
 <T>&3•cmi_user_toggle_tp:&r %cmi_user_toggle_tp%</T><H>%%cmi_user_toggle_tp%%\n&bReturns 1 or 0 depending on whether or not the player is accepting teleportations.</H><SC>%%cmi_user_toggle_tp%%</SC>
 <T>&3•cmi_user_togglename_tp:&r %cmi_user_togglename_tp%</T><H>%%cmi_user_togglename_tp%%\n&bReturns a formatted True or False value depending on whether or not the player is accepting teleportations.</H><SC>%%cmi_user_togglename_tp%%</SC>
-<T>&3•player_world:&r %player_world%</T><H>%%player_world%%\n&bPlayer's world.</H><SC>%%player_world%%</SC>
-<T>&3•player_x:&r %player_x%</T>
-<T>&3•player_y:&r %player_y%</T>
-<T>&3•player_z:&r %player_z%</T>
-<T>&3•player_biome:&r %player_biome%</T>
 <T>&3•cmi_user_toggle_compass:&r %cmi_user_toggle_compass%</T><H>%%cmi_user_toggle_compass%%\n&bReturns 1 or 0 depending on whether or not the player's bossbar compass is on.</H><SC>%%cmi_user_toggle_compass%%</SC>
 <T>&3•cmi_user_togglename_compass:&r %cmi_user_togglename_compass%</T><H>%%cmi_user_togglename_compass%%\n&bReturns a formatted True or False value depending on whether or not the player's bossbar compass is on.</H><SC>%%cmi_user_togglename_compass%%</SC>
 <T>&3•cmi_user_toggle_sospy:&r %cmi_user_toggle_sospy%</T><H>%%cmi_user_toggle_sospy%%\n&bReturns 1 or 0 depending on whether or not the player's social spy is on.</H><SC>%%cmi_user_toggle_sospy%%</SC>
 <T>&3•cmi_user_togglename_sospy:&r %cmi_user_togglename_sospy%</T><H>%%cmi_user_togglename_sospy%%\n&bReturns a formatted True or False value depending on whether or not the player's social spy is on.</H><SC>%%cmi_user_togglename_sospy%%</SC>
+<T>&3•cmi_user_toggle_sispy:&r %cmi_user_toggle_sispy%</T><H>%%cmi_user_toggle_sispy%%\n&bReturns 1 or 0 depending on whether or not the player's sign spy is on.</H><SC>%%cmi_user_toggle_sispy%%</SC>
+<T>&3•cmi_user_togglename_sispy:&r %cmi_user_togglename_sispy%</T><H>%%cmi_user_togglename_sispy%%\n&bReturns a formatted True or False value depending on whether or not the player's sign spy is on.</H><SC>%%cmi_user_togglename_sispy%%</SC>
+<T>&3•cmi_user_toggle_cospy:&r %cmi_user_toggle_cospy%</T><H>%%cmi_user_toggle_cospy%%\n&bReturns 1 or 0 depending on whether or not the player's command spy is on.</H><SC>%%cmi_user_toggle_cospy%%</SC>
+<T>&3•cmi_user_togglename_cospy:&r %cmi_user_togglename_cospy%</T><H>%%cmi_user_togglename_cospy%%\n&bReturns a formatted True or False value depending on whether or not the player's command spy is on.</H><SC>%%cmi_user_togglename_cospy%%</SC>
+<T>&3•cmi_user_toggle_schest:&r %cmi_user_toggle_schest%</T><H>%%cmi_user_toggle_schest%%\n&bReturns 1 or 0 depending on whether or not the player's silent chest mode is on.</H><SC>%%cmi_user_toggle_schest%%</SC>
+<T>&3•cmi_user_togglename_schest:&r %cmi_user_togglename_schest%</T><H>%%cmi_user_togglename_schest%%\n&bReturns a formatted True or False value depending on whether or not the player's silent chest mode is on.</H><SC>%%cmi_user_togglename_schest%%</SC>
+<T>&3•cmi_user_toggle_autoflightrecharge:&r %cmi_user_toggle_autoflightrecharge%</T><H>%%cmi_user_toggle_autoflightrecharge%%\n&bReturns 1 or 0 depending on whether or not the player's automatic flight recharge is on.</H><SC>%%cmi_user_toggle_autoflightrecharge%%</SC>
+<T>&3•cmi_user_togglename_autoflightrecharge:&r %cmi_user_togglename_autoflightrecharge%</T><H>%%cmi_user_togglename_autoflightrecharge%%\n&bReturns a formatted True or False value depending on whether or not the player's automatic flight recharge is on.</H><SC>%%cmi_user_togglename_autoflightrecharge%%</SC>
+<T>&3•cmi_user_toggle_totem:&r %cmi_user_toggle_totem%</T><H>%%cmi_user_toggle_totem%%\n&bReturns 1 or 0 depending on whether or not the player's totem bossbar is on.</H><SC>%%cmi_user_toggle_totem%%</SC>
+<T>&3•cmi_user_togglename_totem:&r %cmi_user_togglename_totem%</T><H>%%cmi_user_togglename_totem%%\n&bReturns a formatted True or False value depending on whether or not the player's totem bossbar is on.</H><SC>%%cmi_user_togglename_totem%%</SC>
+<T>&3•cmi_user_toggle_shiftedit:&r %cmi_user_toggle_shiftedit%</T><H>%%cmi_user_toggle_shiftedit%%\n&bReturns 1 or 0 depending on whether or not the player's sign shift edit mode is on.</H><SC>%%cmi_user_toggle_shiftedit%%</SC>
+<T>&3•cmi_user_togglename_shiftedit:&r %cmi_user_togglename_shiftedit%</T><H>%%cmi_user_togglename_shiftedit%%\n&bReturns a formatted True or False value depending on whether or not the player's sign shift edit mode is on.</H><SC>%%cmi_user_togglename_shiftedit%%</SC>
 <NextPage>
 &b = Player Perks
-<T>&3•cmi_user_maxhomes:&r %cmi_user_maxhomes%</T>
-<T>&3•cmi_user_gamemode:&r %cmi_user_gamemode%</T>
-<T>&3•cmi_user_op:&r %cmi_user_op%</T>
-<T>&3•cmi_user_canfly:&r %cmi_user_canfly%</T>
-<T>&3•cmi_user_flying:&r %cmi_user_flying%</T>
-<T>&3•cmi_user_homeamount:&r %cmi_user_homeamount%</T>
-<T>&3•cmi_user_vanished_symbol:&r %cmi_user_vanished_symbol%</T>
+<T>&3•cmi_user_maxhomes:&r %cmi_user_maxhomes%</T><H>%%cmi_user_maxhomes%%\n&bPlayer's maximum number of allowed homes.</H><SC>%%cmi_user_maxhomes%%</SC>
+<T>&3•cmi_user_canfly:&r %cmi_user_canfly%</T><H>%%cmi_user_canfly%%\n&bWhether or not the player can fly.</H><SC>%%cmi_user_canfly%%</SC>
+<T>&3•cmi_user_flying:&r %cmi_user_flying%</T><H>%%cmi_user_flying%%\n&bWhether or not the player is flying.</H><SC>%%cmi_user_flying%%</SC>
+<T>&3•cmi_user_homeamount:&r %cmi_user_homeamount%</T><H>%%cmi_user_homeamount%%\n&bNumber of homes the player has set.</H><SC>%%cmi_user_homeamount%%</SC>
 <NextPage>
 &b = Player Economy
 <T>&3•cmi_user_balance_formatted:&r %cmi_user_balance_formatted%</T>
@@ -71,7 +101,6 @@
 <T>&3•cmi_baltop_money_[1-10]:&r %cmi_baltop_money_[1-10]%</T>
 <NextPage>
 &b = Player Group / Rank
-<T>&3•cmi_user_group:&r %cmi_user_group%</T>
 <T>&3•cmi_user_rank:&r %cmi_user_rank%</T>
 <T>&3•cmi_user_nextranks:&r %cmi_user_nextranks%</T>
 <T>&3•cmi_user_nextrankpercent:&r %cmi_user_nextrankpercent%</T>
