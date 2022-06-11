@@ -2,38 +2,41 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Ingame Documentation
 
-TODO: write this intro
+This little add-on is to assist both server owner, their team, and players, to have an in-game visualization of the CMI placeholders. Grouped, and parsed where possible. In the future we will add further documentation for additional CMI features.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Purpose
 
-TODO: write purpose
+Improve quick access in a visual way of a big plugin that can help server owners and players see what something is. I use this myself all the time, and I thought it would be nice to share with the public.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Prerequisites
 
 Okay, **let's get started**. Thank you for being interested in this little add-on.
 
-TODO: write this
+Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.2.x and CMILib 1.2.x in mind, for Minecraft 1.19.x
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Download Instructions
 
-TODO: write this
+- Get the placeholders.txt file and put it inside the `~/plugins/CMI/CustomText/` directory.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
-TODO: write the instructions
+- After download, reload CMI with `/cmi reload`
+- You can now use `/cmi ctext placeholders` to see what this does. You can use dsign, customalias command, IC, or whatever to point to this command, and/or any section within it. (for page 5: cmi ctext placeholders 5)
+
+And that's it. No server restart required. There are no permissions to set.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Contributions?
 
 You're more than welcome to offer fixes, contributions, adjustments, suggestions. Feel free to clone and make a pull request. We can discuss and review your contributions and probably merge them into the main branch.
 
-Contributions by MrCrazyMan02 (i see a duck)
+Contributions by MrCrazyMan02 (discord: i see a duck)
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TODO
 
-- TODO, finish readme
+- TODO, improve readme
 - TODO, once placeholders.txt is 100% finished, sort it out visually for /cmi getbook placeholders, so we can have /staff books
 - TODO, add variables.txt, and specialized.txt for additional cmi things.
 
 ## Misc.
 
-- Last updated on June 11th, 2022 | Version 0.1.5 build 013 by Floris
+- Last updated on June 11th, 2022 | Version 0.2.0 build 014 (second public beta) by Floris
