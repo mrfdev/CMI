@@ -36,4 +36,4 @@ Contributions by MrCrazyMan02 (i see a duck)
 
 ## Misc.
 
-- Last updated on June 10th, 2022 | Version 0.1.4 build 012 by Floris
+- Last updated on June 11th, 2022 | Version 0.1.5 build 013 by Floris

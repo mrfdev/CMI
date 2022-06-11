@@ -36,6 +36,8 @@
 <T>&3•cmi_user_totalexp:&r %cmi_user_totalexp%</T><H>%%cmi_user_totalexp%%\n&bPlayer's total EXP amount.</H><SC>%%cmi_user_totalexp%%</SC>
 <T>&3•cmi_user_level:&r %cmi_user_level%</T><H>%%cmi_user_level%%\n&bPlayer's EXP level.</H><SC>%%cmi_user_level%%</SC>
 <T>&3•cmi_user_ping:&r %cmi_user_ping%</T><H>%%cmi_user_ping%%\n&bPlayer's ping.</H><SC>%%cmi_user_ping%%</SC>
+<T>&3•cmi_user_balance_formatted:&r %cmi_user_balance_formatted%</T><H>%%cmi_user_balance_formatted%%\n&bPlayer's formatted balance.</H><SC>%%cmi_user_balance_formatted%%</SC>
+<T>&3•cmi_user_balance:&r %cmi_user_balance%</T><H>%%cmi_user_balance%%\n&bPlayer's balance.</H><SC>%%cmi_user_balance%%</SC>
 <T>&3•cmi_user_prefix:&r %cmi_user_prefix%</T><H>%%cmi_user_prefix%%\n&bPlayer's prefix, pulled from your permissions plugin.</H><SC>%%cmi_user_prefix%%</SC>
 <T>&3•cmi_user_suffix:&r %cmi_user_suffix%</T><H>%%cmi_user_suffix%%\n&bPlayer's suffix, pulled from your permissions plugin.</H><SC>%%cmi_user_suffix%%</SC>
 <T>&3•cmi_user_nameplate_prefix:&r %cmi_user_nameplate_prefix%</T><H>%%cmi_user_nameplate_prefix%%\n&bPlayer's nameplate prefix.</H><SC>%%cmi_user_nameplate_prefix%%</SC>
@@ -65,6 +67,7 @@
 <T>&3•player_y:&r %player_y%</T><H>%%player_y%%\n&bPlayer's Y coordinate.</H><SC>%%player_y%%</SC>
 <T>&3•player_z:&r %player_z%</T><H>%%player_z%%\n&bPlayer's Z coordinate.</H><SC>%%player_z%%</SC>
 <T>&3•player_biome:&r %player_biome%</T><H>%%player_biome%%\n&bPlayer's biome.</H><SC>%%player_biome%%</SC>
+<T>&3•&3vault_eco_balance_formatted:&r %vault_eco_balance_formatted%</T><H>%%vault_eco_balance_formatted%%\n&bPlayer's formatted balance.</H><SC>%%vault_eco_balance_formatted%%</SC>
 <NextPage>
 &b = Player Status
 <T>&3•cmi_user_deathloc:&r %cmi_user_deathloc%</T><H>%%cmi_user_deathloc%%\n&bPlayer's death location.</H><SC>%%cmi_user_deathloc%%</SC>
@@ -99,29 +102,19 @@
 <T>&3•cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%</T><H>%%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%%\n&bReturns 1 or 0 depending on whether the specified toggle is enabled or disabled.</H><SC>%%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%%</SC>
 <T>&3•cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]:&r %cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%</T><H>%%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%%\n&bReturns a formatted True or False value depending on whether the specified toggle is enabled or disabled.</H><SC>%%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%%</SC>
 <NextPage>
-&b = Player Economy
-<T>&3•cmi_user_balance_formatted:&r %cmi_user_balance_formatted%</T>
-<T>&3•cmi_user_balance:&r %cmi_user_balance%</T>
-<T>&3•&3vault_eco_balance_formatted:&r %vault_eco_balance_formatted%</T>
-&b = Server Economy
-<T>&3•cmi_baltop_name_[1-10]:&r %cmi_baltop_name_[1-10]%</T>
-<T>&3•cmi_baltop_money_[1-10]:&r %cmi_baltop_money_[1-10]%</T>
+&b = Economy
+<T>&3•cmi_baltop_name_[1-10]:&r %cmi_baltop_name_[1-10]%</T><H>%%cmi_baltop_name_[1-10]%%\n&bName of the player in the specified position of /cmi baltop.</H><SC>%%cmi_baltop_name_[1-10]%%</SC>
+<T>&3•cmi_baltop_money_[1-10]:&r %cmi_baltop_money_[1-10]%</T><H>%%cmi_baltop_money_[1-10]%%\n&bBalance of the player in the specified position of /cmi baltop.</H><SC>%%cmi_baltop_money_[1-10]%%</SC>
+<T>&3•cmi_baltop_shortmoney_[1-10]:&r %cmi_baltop_shortmoney_[1-10]%</T><H>%%cmi_baltop_shortmoney_[1-10]%%\n&bShort balance of the player in the specified position of /cmi baltop.</H><SC>%%cmi_baltop_shortmoney_[1-10]%%</SC>
 <NextPage>
-&b = Player Group / Rank
-<T>&3•cmi_user_rank:&r %cmi_user_rank%</T>
-<T>&3•cmi_user_nextranks:&r %cmi_user_nextranks%</T>
-<T>&3•cmi_user_nextrankpercent:&r %cmi_user_nextrankpercent%</T>
-<T>&3•cmi_user_nextvalidranks:&r %cmi_user_nextvalidranks%</T>
-<T>&3•cmi_user_canrankup:&r %cmi_user_canrankup%</T>
-<NextPage>
-&b = Player Jail
-<T>&3•cmi_user_jailname:&r %cmi_user_jailname%</T>
-<T>&3•cmi_user_jailcell:&r %cmi_user_jailcell%</T>
-<T>&3•cmi_user_jailtime:&r %cmi_user_jailtime%</T>
-<T>&3•cmi_user_jailreason:&r %cmi_user_jailreason%</T>
-<T>&3•cmi_jail_time_[jailName]_[cellId]:&r %cmi_jail_time_[jailName]_[cellId]%</T>
-<T>&3•cmi_jail_username_[jailName]_[cellId]:&r %cmi_jail_username_[jailName]_[cellId]%</T>
-<T>&3•cmi_jail_reason_[jailName]_[cellId]:&r %cmi_jail_reason_[jailName]_[cellId]%</T>
+&b = Jail
+<T>&3•cmi_user_jailname:&r %cmi_user_jailname%</T><H>%%cmi_user_jailname%%\n&bName of the jail the player is currently in.</H><SC>%%cmi_user_jailname%%</SC>
+<T>&3•cmi_user_jailcell:&r %cmi_user_jailcell%</T><H>%%cmi_user_jailcell%%\n&bID of the cell the player is currently in.</H><SC>%%cmi_user_jailcell%%</SC>
+<T>&3•cmi_user_jailtime:&r %cmi_user_jailtime%</T><H>%%cmi_user_jailtime%%\n&bAmount of time until the player is released from jail.</H><SC>%%cmi_user_jailtime%%</SC>
+<T>&3•cmi_user_jailreason:&r %cmi_user_jailreason%</T><H>%%cmi_user_jailreason%%\n&bReason the player is jailed.</H><SC>%%cmi_user_jailreason%%</SC>
+<T>&3•cmi_jail_time_[jailName]_[cellId]:&r %cmi_jail_time_[jailName]_[cellId]%</T><H>%%cmi_jail_time_[jailName]_[cellId]%%\n&bAmount of time the player in the specified jail and cell ID is jailed for.</H><SC>%%cmi_jail_time_[jailName]_[cellId]%%
+<T>&3•cmi_jail_username_[jailName]_[cellId]:&r %cmi_jail_username_[jailName]_[cellId]%</T><H>%%cmi_jail_username_[jailName]_[cellId]%%\n&bName of the player who is in the specified jail and cell ID.</H><SC>%%cmi_jail_username_[jailName]_[cellId]%%
+<T>&3•cmi_jail_reason_[jailName]_[cellId]:&r %cmi_jail_reason_[jailName]_[cellId]%</T><H>%%cmi_jail_reason_[jailName]_[cellId]%%\n&bReason the player in the specified jail and cell ID is jailed.</H><SC>%%cmi_jail_reason_[jailName]_[cellId]%%</SC>
 <NextPage>
 &b = Player Playtime
 <T>&3•cmi_user_playtime_formatted:&r %cmi_user_playtime_formatted%</T>
@@ -135,7 +128,7 @@
 <T>&3•cmi_user_playtime_seconds:&r %cmi_user_playtime_seconds%</T>
 <T>&3•cmi_user_playtime_secondst:&r %cmi_user_playtime_secondst%</T>
 <NextPage>
-&b =Item
+&b = Item
 <T>&3•cmi_user_itemcount_[itemIdName(:data)]:&r %cmi_user_itemcount_[itemIdName(:data)]%</T><H>%%cmi_user_itemcount_[itemIdName(:data)]%%\n&bHow many of the specified material is in the player's inventory.</H><SC>%%cmi_user_itemcount_[itemIdName(:data)]%%</SC>
 <T>&3•cmi_iteminhand_displayname:&r %cmi_iteminhand_displayname%</T><H>%%cmi_iteminhand_displayname%%\n&bDisplay name of the player's item in hand.</H><SC>%%cmi_iteminhand_displayname%%</SC>
 <T>&3•cmi_iteminhand_realname:&r %cmi_iteminhand_realname%</T><H>%%cmi_iteminhand_realname%%\n&bFormatted name of the player's item in hand.</H><SC>%%cmi_iteminhand_realname%%</SC>
