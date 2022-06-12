@@ -2317,8 +2317,8 @@ command:
       args: '[send/clear/read/sendtemp] [playerName] (message)'
     info:
       sentMail: '&eMail sent to &6[playerDisplayName]'
-      gotMail: '<T>&eYou received mail from &6[senderDisplayName]</T><H>Click to read!</H><C>cmi
-              mail read</C>'
+      gotMail: <T>&eYou received mail from &6[senderDisplayName]</T><H>Click to read!</H><C>cmi
+        mail read</C>
       clearMail: '&eAll mail has been cleared!'
       removedMail: '&eRemoved mail'
       noMailsById: '&eThere is no mail by this id for this player'

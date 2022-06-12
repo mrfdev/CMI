@@ -1,0 +1,75 @@
+hourly1:
+  DisplayName: "&7Hourly reward"
+  AutoClaim: true
+  Description:
+  - "&2Get reward for every hour you are online"
+  - "&2Free heal and 20 bucks into your pocket"
+  PayEvery: 3600
+  Commands:
+  - asConsole! cmi heal [playerName] -s
+  - asConsole! cmi money give [playerName] 20
+daily1:
+  DisplayName: "&7Daily reward"
+  AutoClaim: true
+  Description:
+  - "&2Get reward for every 24 hours of playtime"
+  - "&22000 bucks into your pocket!"
+  PayEvery: 86400
+  Commands:
+  - asConsole! cmi money give [playerName] 2000
+1hour:
+  DisplayName: "&fOne hour reward"
+  AutoClaim: false
+  Description:
+  - "&2Get reward for 1 hour you have been online"
+  - "&2500 bucks into your pocket!"
+  PayFor: 3600
+  Commands:
+  - asConsole! cmi money give [playerName] 500
+6hour:
+  DisplayName: "&f6 hour reward"
+  AutoClaim: false
+  Description:
+  - "&2Get reward for 6 hour's you have been online"
+  - "&22,000 bucks into your pocket!"
+  PayFor: 21600
+  Commands:
+  - asConsole! cmi money give [playerName] 2000
+12hour:
+  DisplayName: "&f12 hour reward"
+  AutoClaim: false
+  Description:
+  - "&2Get reward for 12 hour's you have been online"
+  - "&25,000 bucks into your pocket!"
+  PayFor: 43200
+  Commands:
+  - asConsole! cmi money give [playerName] 5000
+24hour:
+  DisplayName: "&f24 hour reward"
+  AutoClaim: false
+  Description:
+  - "&2Get reward for 24 hour's you have been online"
+  - "&215,000 bucks into your pocket!"
+  PayFor: 86400
+  Commands:
+  - asConsole! cmi money give [playerName] 15000
+7days:
+  DisplayName: "&f7 day reward"
+  AutoClaim: false
+  Description:
+  - "&2Get reward for 7 days you have been online"
+  - "&2 50,000 bucks into your pocket!"
+  PayFor: 604800
+  Commands:
+  - asConsole! cmi money give [playerName] 50000
+30days:
+  DisplayName: "&f30 day reward"
+  AutoClaim: false
+  Description:
+  - "&2Get reward for 30 days you have been online"
+  - "&2 500,000 bucks into your pocket!"
+  PayFor: 2592000
+  Commands:
+  - asConsole! cmi money give [playerName] 500000
+
+  

@@ -1,0 +1,511 @@
+# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+
+general:
+  benjaminparticles:
+    Loc: -13436.0:69.0:17670.0:-13436.0:69.0:17670.0
+    enabled: true
+    effect: soul_fire_flame
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  coolbrosend:
+    Loc: 12454.0:240.0:10119.0:12456.0:240.0:10121.0
+    enabled: true
+    effect: ash
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! warp end
+  coolbrosmine:
+    Loc: 12457.0:236.0:10113.0:12457.0:238.0:10115.0
+    enabled: true
+    effect: sneeze
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! warp general
+  coolbrosnether:
+    Loc: 12452.0:240.0:10111.0:12454.0:242.0:10111.0
+    enabled: true
+    effect: Portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! warp nether
+  disco:
+    Loc: 12851.0:65.0:12042.0:12859.0:69.0:12050.0
+    enabled: false
+    effect: Note
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 15
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands: []
+  dungeonwaterportal:
+    Loc: 12513.0:48.0:-5351.0:12526.0:50.0:-5338.0
+    enabled: true
+    effect: WaterBubble
+    showParticles: true
+    Tp: general;12511.55;52.1;-5335.52;-306.32;11.66
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  freemusic:
+    Loc: 7576.0:66.0:11580.0:7576.0:66.0:11580.0
+    enabled: true
+    effect: Note
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 5
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 15 1 -s
+    - msg! [playerName] &b Twinke Twinkle Little Star
+    - delay! 3
+    - msg! [playerName] &b How I wonder what you are..
+    - delay! 4
+    - msg! [playerName] &b up above the world so high ..
+    - delay! 4
+    - msg! [playerName] &b Like a diamond in the sky..
+    - delay! 3
+    - msg! [playerName] &b Twinkle, twinkle little star..
+    - delay! 4
+    - msg! [playerName] &b How I wonder what you are!
+  freerunes:
+    Loc: 7543.0:147.0:11807.0:7552.0:147.0:11818.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - asConsole! cmi sound ambient_underwater_loop_additions_rare [playerName]
+    - cmi effect [playerName] blindness 2 1 -s
+    - delay! 2
+    - msg! [playerName] &a -Only a rune crystal will activate real magic-
+    - asConsole! cmi sound ambient_underwater_loop_additions_rare [playerName]
+  playermacadam:
+    Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
+    enabled: true
+    effect: Reddust
+    showParticles: true
+    Tp: general;6060.62;62.0;14269.23;-175.74;10.36
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands: []
+  playerportalenderrogue47:
+    Loc: -16913.0:13.0:16563.0:-16912.0:17.0:16563.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    Tp: general;12064.01;57.2;19136.0;-180.17;-3.16
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 5
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#pink>} -- Whooosh -- {#magenta<}
+  playerportalhepcat:
+    Loc: 12833.0:33.0:11669.0:12855.0:34.0:11689.0
+    enabled: true
+    effect: WitchMagic
+    showParticles: true
+    Tp: general;12466.35;27.3;11551.49;268.92;-0.79
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 32
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 1 1 -s
+    - msg! [playerName] {#orange}You feel the corruption around you!
+  playerportalritualrogue47:
+    Loc: -16913.0:13.0:16555.0:-16912.0:17.0:16555.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    Tp: general;9382.45;83.36;12594.53;272.1;8.17
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 5
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#pink>} -- Whooosh -- {#magenta<}
+  playertiredpamster:
+    Loc: -16903.0:81.0:11635.0:-16897.0:83.0:11637.0
+    enabled: true
+    effect: soul
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 3
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 3 3 -s
+    - cmi sound entity_ghast_ambient -p:0.8 -v:0.6 [playerName]
+    - cmi actionbarmsg [playerName] {#34004d>}&ltiredpamster birthday gift{#purple<}
+  plrvloop:
+    Loc: 12829.0:60.0:12021.0:12831.0:70.0:12033.0
+    enabled: true
+    effect: Cloud
+    showParticles: true
+    Tp: general;12405.98;105.0;12550.15;-8.18;42.38
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 3
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] &6 > Welcome to Vloop's Birthday Island
+  plrvloop2:
+    Loc: 12752.0:31.0:12027.0:12752.0:33.0:12030.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    Tp: general;13363.54;64.19;-4280.41;-271.16;6.99
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 6
+    particleHide: 0
+    activationRange: 4
+    commandsWithoutTp: false
+    commands:
+    - msg! [playerName] &6 Teleporting you to the bus stop..
+  survivalnether:
+    Loc: 10858.0:76.0:4898.0:10859.0:78.0:4898.0
+    enabled: true
+    effect: WitchMagic
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 4
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  tidaldiver:
+    Loc: 7490.0:59.0:6085.0:7492.0:61.0:6088.0
+    enabled: false
+    effect: WaterBubble
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - msg! [playerName] &9 Taking you to the depths of a sea.. Or /back to return.
+    - cmi sound ambient_underwater_enter [playerName]
+  tidalminiportal:
+    Loc: 7363.0:0.0:6026.0:7363.0:3.0:6026.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    Tp: general;7342.48;62.8;6026.55;-89.94;5.1
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands: []
+  tmptidal:
+    Loc: 7430.0:48.0:6024.0:7430.0:52.0:6033.0
+    enabled: true
+    effect: DripWater
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - msg! [playerName] !&6 FISH GO BLUB
+  vloopendbossbar:
+    Loc: -16775.0:104.0:17146.0:-16769.0:106.0:17152.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 49
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - asConsole! cmi bossbarmsg [playerName] -t:15 -n:vloopenddragon -p:20 -s:1 Vloop's
+      Ender Dragon
+    - asConsole! cmi sound entity_ender_dragon_flap [playerName]
+  vloopendportal:
+    Loc: -15601.0:30.0:-12668.0:-15599.0:30.0:-12666.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    Tp: general;-16766.5;102.69;17123.5;-1.13;-6.95
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 1 1 -s
+  vloopendreturnportal:
+    Loc: -16774.0:103.0:17147.0:-16770.0:103.0:17151.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    Tp: general;-15603.25;31.9;-12679.72;229.44;14.74
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 1 1 -s
+  walk:
+    Loc: 12640.0:80.0:-5298.0:12640.0:80.0:-5298.0
+    enabled: true
+    effect: WaterWake
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! walk
+valentine:
+  deletemelater:
+    Loc: 368.0:63.0:-129.0:892.0:199.0:395.0
+    enabled: true
+    effect: Heart
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 100
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands: []
+run:
+  runlevel3:
+    Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 70
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi effect [playerName] clear -s
+  runlevel4:
+    Loc: -165.0:52.0:-101.0:-140.0:55.0:-76.0
+    enabled: true
+    effect: LargeSmoke
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 30 1 -s
+skyblock:
+  skyblockspawn:
+    Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
+    enabled: true
+    effect: Reddust
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 0
+    particleHide: 0
+    activationRange: 32
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] You falling yikes, let's try to get you to safety
+    - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
+santa:
+  snow:
+    Loc: 263.0:68.0:-72.0:280.0:73.0:-63.0
+    enabled: true
+    effect: FireworksSpark
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - asConsole! cmi sound AMBIENT_UNDERWATER_LOOP mrfloris -v:0.7
+wild:
+  wildend:
+    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
+    enabled: true
+    effect: DepthSuspend
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! end
+  wildgeneral:
+    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
+    enabled: true
+    effect: Totem
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! general
+  wildnether:
+    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
+    enabled: true
+    effect: Portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether

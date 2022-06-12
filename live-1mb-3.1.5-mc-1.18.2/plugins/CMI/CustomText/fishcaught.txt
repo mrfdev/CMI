@@ -1,0 +1,25 @@
+<AutoPage>
+BETA /fish 
+{#Cerulean}&l&m                                                     &r
+level: %pyrofishingpro_level%
+entropy: %pyrofishingpro_entropy%
+currentxp: %pyrofishingpro_currentxp%
+requiredxp: %pyrofishingpro_requiredxp%
+skillpoints: %pyrofishingpro_skillpoints%
+augmentscrafted: %pyrofishingpro_augmentscrafted%
+<NextPage>
+bronzefishcaught: %pyrofishingpro_bronzefishcaught%
+silverfishcaught: %pyrofishingpro_silverfishcaught%
+goldfishcaught: %pyrofishingpro_goldfishcaught%
+diamondfishcaught: %pyrofishingpro_diamondfishcaught%
+platinumfishcaught: %pyrofishingpro_platinumfishcaught%
+mythicalfishcaught: %pyrofishingpro_mythicalfishcaught%
+totalfishcaught: %pyrofishingpro_totalfishcaught%
+<NextPage>
+crabskilled: %pyrofishingpro_crabskilled%
+longestfish: %pyrofishingpro_longestfish%
+moneymade: %pyrofishingpro_moneymade%
+fishkilled: %pyrofishingpro_fishkilled%
+deliveriesmade: %pyrofishingpro_deliveriesmade%
+tournamentswon: %pyrofishingpro_tournamentswon%
+timetilltournament: %pyrofishingpro_timetilltournament%

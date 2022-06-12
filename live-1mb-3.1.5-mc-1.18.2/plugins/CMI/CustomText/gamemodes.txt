@@ -1,0 +1,39 @@
+<AutoPage><AutoAlias>
+&6
+&6 * &b Thanks for playing on our awesome community.
+&6 * &e The 1MB server is a universe with players at
+&6 * &e various locations and we play various modes.
+&6 * &e Please have fun, play together, and be nice!
+&6
+&6 * &e Click on &3NEXT&e below, to get all the info
+&6 * &e about all gamemodes in this Universe of ours.
+&6 
+<NextPage>
+&6
+<T>&6 1. &3 &lSurvival&r&e, &e the main aspect our all worlds.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
+<T>&6 2. &3 &lCreative&r&e, &e limited to 2 worlds and groups.</T><H>(please click)</H><URL>http://omgboards.com/threads/261831/</URL>
+<T>&6 3. &3 &lAdventure&r&e, &e limited to special events.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
+<T>&6 4. &3 &lOneblock&r&e, &e Single block survival world.</T><H>(please click)</H><URL>http://omgboards.com/threads/261862/</URL>
+<T>&6 5. &3 &lSkyblock&r&e, &e sky island survival world.</T><H>(please click)</H><URL>http://omgboards.com/threads/261663/</URL>
+<T>&6 6. &3 &lSkygrid&r&e, &e sky grid parkour world.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
+<T>&6 7. &3 &lAcid&r&e, &e water island survival world.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
+<T>&6 8. &3 &lCave&r&e, &e underground cave survival world.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
+<T>&6 9. &3 &lRun&r&e, &e mini-game world in game mode.</T><H>(please click)</H><URL>http://omgboards.com/threads/260940/</URL>
+&6
+&6 * &e Click on &3NEXT&e below, to get all the info
+&6 * &e about all inventory sharing between worlds.
+&6 
+<NextPage>
+&6
+&6 * &lPermanent Worlds:
+&6 * &e Before we continue with the inventories,
+&6 * &e I want to say that some of our worlds are here
+&6 * &e forever, we never delete our worlds.
+&6
+&6 * Our main world is: WILD (so build there!)
+&6
+&6 * &lInventories:
+&6 * &e These worlds share their inventory:
+&6 * &e /spawn, /general, /wild, /end, /nether
+&6 * &e All the other worlds have their own.
+&6

@@ -1,0 +1,144 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  _togglewho:
+    Cmds:
+    - statement:check1! check:$1!=null! check:$1!=[playerName]!
+    - if:check1! check:$1!=[playerName]! msg! Paprikaatje debug 1 $1, 2 $2
+    - if:check1! asConsole! cmi usermeta $1 add togglewho $1
+    - if:check1! check:$2!=null! ifonline:$2! asConsole! cmi usermeta $1 add togglewho
+      $2
+    - if:check1! check:$2!=null! ifoffline:$2! msg! $1 {#orange}Cannot run command,
+      $2 is not online.
+    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is
+      intended for internal use.
+    Perm: true
+    Tab: false
+  _togglemsg:
+    Cmds:
+    - statement:check1! check:$1!=null! check:$2!=null! check:$1!=[playerName]!
+    - if:check1! check:$3==null! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command
+      has been moved to &l/options&r</T><H>click to open the /options menu</H><C>cmi
+      options</C>
+    - if:check1! check:$3==nope! msg! $1 {#persianred}Oops, you have no permission
+      to use /$2
+    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is
+      intended for internal use.
+    Perm: true
+    Tab: false
+  options status:
+    Cmds:
+    - msg! [playerName] {#gold}\nOverview Status of /cmi options Toggles:\n----------------------------------
+    - asPlayer! cmi options bassbarcompass status
+    - asPlayer! cmi options shiftsignedit status
+    - asPlayer! cmi options totembossbar status
+    - asPlayer! cmi options tagsound status
+    - asPlayer! cmi options chatspy status
+    - asPlayer! cmi options cmdspy status
+    - asPlayer! cmi options signspy status
+    - asPlayer! cmi options acceptingpm status
+    - asPlayer! cmi options acceptingtpa status
+    - asPlayer! cmi options acceptingmoney status
+    - asPlayer! cmi options visibleholograms status
+    Tab: false
+  togglecompass:
+    Cmds:
+    - asConsole! _togglewho [playerName] $1
+    - statement:check1! perm:cmi.command.options.bassbarcompass!
+    - if:check1! check:$1==null! asPlayer! cmi options bassbarcompass toggle
+    - if:check1! check:$1!=null! ifonline:$2! perm:cmi.command.options.others! asPlayer!
+      cmi options %cmi_user_meta_togglewho% bassbarcompass toggle
+    - if:check1! check:$1!=null! ifoffline:$2! perm:cmi.command.options.others! msg!
+      [playerName] Not a valid user
+    - if:check1! check:$1!=null! perm:cmi.command.options.others@! msg! [playerName]
+      You do not have perms to change options for others
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    CustomTabs:
+    - '[playername]'
+  toggleshiftedit:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.shiftsignedit!
+    - if:check1! asPlayer! cmi options shiftsignedit toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  toggletotem:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.totembossbar!
+    - if:check1! asPlayer! cmi options totembossbar toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  tagtoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.tagsound!
+    - if:check1! asPlayer! cmi options tagsound toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  socialspy:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.chatspy!
+    - if:check1! asPlayer! cmi options chatspy toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  commandspy:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.cmdspy!
+    - if:check1! asPlayer! cmi options cmdspy toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  signspy:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.signspy!
+    - if:check1! asPlayer! cmi options signspy toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  msgtoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingpm!
+    - if:check1! asPlayer! cmi options acceptingpm toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  tptoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingtpa!
+    - if:check1! asPlayer! cmi options acceptingtpa toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  paytoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingmoney!
+    - if:check1! asPlayer! cmi options acceptingmoney toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  toggleholograms:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.visibleholograms!
+    - if:check1! asPlayer! cmi options visibleholograms toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false

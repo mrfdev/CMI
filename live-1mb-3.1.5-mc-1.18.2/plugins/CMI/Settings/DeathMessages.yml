@@ -1,0 +1,28 @@
+# Enable or disable custom death messages
+# Check DeathMessages dirrectory for message options
+
+# Not all death situations might be included and future updates might be needed
+# Report any missing death situation you encountered to github issue section with exact way to reproduce death situation
+EnableCustom: true
+# Defines number of players from which to automatically start hiding death messages
+# Set to -1 to disable this
+AutoHideFrom: -1
+# Range in blocks we should broadcast players death message
+# Setting this to any range will automatically exclude players in other worlds
+Range: -1
+# List of worlds where deaths from them are never announced
+DisabledWorlds:
+- ''
+# List of worlds where deaths are not announced to players
+MutedWorlds:
+- ''
+# List of player names we should ignore and not show their death messages
+IgnoredPlayers:
+- ''
+AntiSpam:
+  # Time range in seconds we should check when preventing death message spam
+  # Set to -1 if you want to disable it
+  # Keep in mind that player who dies will continue to see his own death messages even if its over the limit
+  TimeRange: 30
+  # How many death messages we should broadcast from player in previously defined time frame
+  Count: 3

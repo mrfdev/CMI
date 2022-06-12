@@ -1,0 +1,33 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  h:
+    Cmds:
+    - statement:check1! check:$1!=null! check:$2!=null! check:$1!=$2!
+    - if:check1! ifonline:$1! asConsole! cmi heal $1 100% -s
+    - if:check1! ifonline:$1! msg! $1 {#orange}[Psst] {#gold} [playerName] has healed
+      you ♡
+    - if:check1! ifonline:$2! asConsole! cmi heal $2 100% -s
+    - if:check1! ifonline:$1! msg! $2 {#orange}[Psst] {#gold} [playerName] has healed
+      you ♡
+    - if:check1! msg! [playerName] DEBUG1 PASS 1 = $1, 2 = $2
+    - 'if:check1@! msg! [playerName] {#orange} Syntax: {#gold}/$0 <player1> <player2>'
+    Perm: true
+    CustomTabs:
+    - '[playername] [playername]'
