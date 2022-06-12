@@ -1,0 +1,2 @@
+<AutoPage><NoReqPermission>
+CMI specialized commands overview

@@ -1,4 +1,11 @@
-<AutoPage><AutoAlias><NoReqPermission>
+<AutoPage><NoReqPermission>
+* Index
+
+Example code:
+<T> * Introduction ... </T><H>Click to load</H><CCI>cmi ctext cmi_placeholders [playerName] 2</CCI>
+<T> * Player Information ... </T><H>Click to load</H><CCI>cmi ctext cmi_placeholders [playerName] 3</CCI>
+
+<NextPage>
 &bHey [playerName], this is an alternative output of an internal command called 'cmi placeholders' from the CMI plugin. This is made by Floris for the 1MoreBlock.com server. But feel free to customize this to your liking. 
 
 &3This is generally not a command for players really, it's more an internal command that helps the server owner with debugging things. So by default the custom alias you create should require a permission.

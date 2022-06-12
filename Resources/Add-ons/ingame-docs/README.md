@@ -39,4 +39,4 @@ Contributions by MrCrazyMan02 (discord: i see a duck)
 
 ## Misc.
 
-- Last updated on June 11th, 2022 | Version 0.2.0 build 014 (second public beta) by Floris
+- Last updated on June 12th, 2022 | Version 0.3.0 build 015 (prepping third public beta) by Floris
