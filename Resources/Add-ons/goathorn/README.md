@@ -18,7 +18,7 @@ Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.2.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Download Instructions
 
-- Get the 1MB-CMI-GoatHorn-CMD.yml file and put it inside the `~/plugins/CMI/CustomAlias/` directory.
+- Get the [1MB-cmi-goathorn-command.yml](/Resources/Add-ons/goathorn/1MB-cmi-goathorn-command.yml) file and put it inside the `~/plugins/CMI/CustomAlias/` directory.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
@@ -41,4 +41,4 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 ## Misc.
 
-- Last updated on June 16th, 2022 | Version 0.1.0 build 005 (first public beta) by Floris
+- Last updated on June 16th, 2022 | Version 0.1.0 build 006 (first public beta) by Floris
