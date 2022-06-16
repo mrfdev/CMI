@@ -23,7 +23,10 @@ Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.2.
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
 - After download, reload CMI with `/cmi reload`
+
 - Note that the command technically works, but it will be red and won't suggest tab-completion. You'd have to /stop and start the server to properly register commands.
+
+- Permissions: `cmi.customalias.goathorn` is the permission node that's required to use this command.
 
 And that's it. 
 
@@ -38,4 +41,4 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 ## Misc.
 
-- Last updated on June 16th, 2022 | Version 0.0.2 build 04 (first public beta) by Floris
+- Last updated on June 16th, 2022 | Version 0.1.0 build 005 (first public beta) by Floris

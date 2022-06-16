@@ -1,0 +1,23 @@
+#
+# 1MoreBlock.com Add-on for CMI 9.2.x.x and Minecraft 1.19.x
+# Made by Floris
+# Version 0.1.0 build 005 (first public beta)
+# Video: https://www.youtube.com/watch?v=JakS1PLn1g8
+# Installation instructions:
+# Put this .yml file inside plugins/CMI/CustomAlias/
+# and then start your server, you will now have /goathorn
+# Permission: cmi.customalias.goathorn is required
+#
+
+CustomAlias:
+  goathorn:
+    Cmds:
+    - statement:check1! check:$1!=null! check:$2!=null! ifonline:$1!
+    - 'if:check1@! msg! [playerName] {#gold}Syntax: is &l/$0 <player> <horntype>'
+    - if:check1! asConsole! cmi usermeta [playerName] add goatuser $1 -s
+    - if:check1! asConsole! cmi give %cmi_user_meta_goatuser% goat_horn{instrument:"minecraft:$2_goat_horn"} 1
+    - if:check1! msg! %cmi_user_meta_goatuser% {#gold} - You've received one goat horn ($2).
+    - if:check1! asConsole! cmi usermeta [playerName] remove goatuser -s
+    Perm: true
+    CustomTabs:
+    - '[playername] ponder,sing,seek,feel,admire,call,yearn,dream'
