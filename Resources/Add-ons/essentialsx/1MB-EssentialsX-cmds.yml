@@ -27,6 +27,14 @@ CustomAlias:
     - if:check1! check:$2!=null! msg! [playerName] {#gold} → $2- \n&r
     - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is intended for internal use.
     Tab: false
+  _togglemsg:
+    Cmds:
+    - statement:check1! check:$1!=null! check:$2!=null! check:$1!=[playerName]!
+    - if:check1! check:$3==null! asConsole! cmi ctellraw $1 <T>{#gold}The /$2 command has been moved to &l/options&r</T><H>click to open the /options menu</H><C>cmi options</C>
+    - if:check1! check:$3==nope! msg! $1 {#persianred}Oops, you have no permission to use /$2
+    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is intended for internal use.
+    Perm: true
+    Tab: false
   eafk:
     Cmds:
     - cmi afk $1-
@@ -109,19 +117,19 @@ CustomAlias:
     AddTabs: true
   beezooka:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature.
     Perm: true
   ebeezooka:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature.
     Perm: true
   beecannon:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature.
     Perm: true
   ebeecannon:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature
+    - asPlayer! _nocmifeature $0 You can probably achieve this using the /cmi shoot feature.
     Perm: true
   bigtree:
     Cmds:
@@ -145,11 +153,11 @@ CustomAlias:
     AddTabs: true
   break:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   ebreak:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   ebcast:
     Cmds:
@@ -165,35 +173,35 @@ CustomAlias:
     AddTabs: true
   broadcastworld:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   bcw:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   ebcw:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   bcastw:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   ebcastw:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   ebroadcastworld:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   shoutworld:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   eshoutworld:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   eburn:
     Cmds:
@@ -245,43 +253,43 @@ CustomAlias:
     AddTabs: true
   clearinventoryconfirmtoggle:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   eclearinventoryconfirmtoggle:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   clearinventoryconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   eclearinventoryconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   clearconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   eclearconfirmoff:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   clearconfirmon:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   eclearconfirmon:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   clearconfirm:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   eclearconfirm:
     Cmds:
-    - asPlayer! _nocmifeature $0 This is a global setting in CMI config.yml
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
     Perm: true
   ecompass:
     Cmds:
@@ -329,7 +337,7 @@ CustomAlias:
     AddTabs: true
   customtext:
     Cmds:
-    - cmi aliaseditor $1-
+    - cmi ctext $1-
     AddTabs: true
   edelhome:
     Cmds:
@@ -545,11 +553,11 @@ CustomAlias:
     AddTabs: true
   firework:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   efirework:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions'
+    - 'asPlayer! _nocmifeature $0 You can suggest new features here: https://github.com/Zrips/CMI/discussions.'
     Perm: true
   efly:
     Cmds:
@@ -805,19 +813,19 @@ CustomAlias:
     AddTabs: true
   inform:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands.'
     Perm: true
   einform:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands.'
     Perm: true
   news:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands.'
     Perm: true
   enews:
     Cmds:
-    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands'
+    - 'asPlayer! _nocmifeature $0 You can learn how to add new commands here: https://faq.cmi.support/commands.'
     Perm: true
   einvsee:
     Cmds:
@@ -1123,10 +1131,20 @@ CustomAlias:
     Cmds:
     - cmi msg $1-
     AddTabs: true
+  msgtoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingpm!
+    - if:check1! asPlayer! cmi options acceptingpm toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
   emsgtoggle:
     Cmds:
-    - cmi msgtoggle $1-
-    AddTabs: true
+    - statement:check1! perm:cmi.command.options.acceptingpm!
+    - if:check1! asPlayer! cmi options acceptingpm toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
   emute:
     Cmds:
     - cmi mute $1-
@@ -1173,40 +1191,54 @@ CustomAlias:
     AddTabs: true
   payconfirmtoggle:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   epayconfirmtoggle:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   payconfirmoff:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   epayconfirmoff:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   payconfirmon:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   epayconfirmon:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   payconfirm:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   epayconfirm:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
   payon:
     Cmds:
-    - cmi paytoggle $1-
-    AddTabs: true
+    - asPlayer! _nocmifeature $0 This is a global setting in the config.yml file of CMI.
+    Perm: true
+  paytoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingmoney!
+    - if:check1! asPlayer! cmi options acceptingmoney toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
+  epaytoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingmoney!
+    - if:check1! asPlayer! cmi options acceptingmoney toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
   echo:
     Cmds:
     - cmi ping $1-
@@ -1485,11 +1517,11 @@ CustomAlias:
     AddTabs: true
   showkit:
     Cmds:
-    - cmi kit -preview $1- $1-
+    - cmi kit -preview $1-
     AddTabs: true
   kitshow:
     Cmds:
-    - cmi kit -preview $1- $1-
+    - cmi kit -preview $1-
     AddTabs: true
   skull:
     Cmds:
@@ -1567,26 +1599,21 @@ CustomAlias:
     Cmds:
     - cmi spawnmob $1-
     AddTabs: true
-  speed:
-    Cmds:
-    - cmi flyspeed $1-
-    - cmi walkspeed $1-
-    AddTabs: true
   eflyspeed:
     Cmds:
-    - cmi flyspeed $1-
+    - cmi speed $1-
     AddTabs: true
   efspeed:
     Cmds:
-    - cmi flyspeed $1-
+    - cmi speed $1-
     AddTabs: true
   ewalkspeed:
     Cmds:
-    - cmi walkspeed $1-
+    - cmi speed $1-
     AddTabs: true
   ewspeed:
     Cmds:
-    - cmi walkspeed $1-
+    - cmi speed $1-
     AddTabs: true
   estonecutter:
     Cmds:
@@ -1630,7 +1657,7 @@ CustomAlias:
     AddTabs: true
   togglejail:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
+    - asPlayer! _nocmifeature $0 You can use /cmi jail and /cmi unjail.
     Perm: true
   ejail:
     Cmds:
@@ -1638,15 +1665,15 @@ CustomAlias:
     AddTabs: true
   tjail:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
+    - asPlayer! _nocmifeature $0 You can use /cmi jail and /cmi unjail.
     Perm: true
   etjail:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
+    - asPlayer! _nocmifeature $0 You can use /cmi jail and /cmi unjail.
     Perm: true
   etogglejail:
     Cmds:
-    - asPlayer! _nocmifeature $0 You can use /jail and /unjail
+    - asPlayer! _nocmifeature $0 You can use /cmi jail and /cmi unjail.
     Perm: true
   eunjail:
     Cmds:
@@ -1796,10 +1823,20 @@ CustomAlias:
     Cmds:
     - cmi rt $1-
     AddTabs: true
+  tptoggle:
+    Cmds:
+    - statement:check1! perm:cmi.command.options.acceptingtpa!
+    - if:check1! asPlayer! cmi options acceptingtpa toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
   etptoggle:
     Cmds:
-    - cmi tptoggle $1-
-    AddTabs: true
+    - statement:check1! perm:cmi.command.options.acceptingtpa!
+    - if:check1! asPlayer! cmi options acceptingtpa toggle
+    - if:check1! asConsole! _togglemsg [playerName] $0
+    - if:check1@! asConsole! _togglemsg [playerName] $0 nope
+    Tab: false
   etree:
     Cmds:
     - cmi tree $1-
