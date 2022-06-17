@@ -2,7 +2,7 @@
 
 ## Social
 
-This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.0.4 or newer, and Minecraft 1.18.1
+This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.2.x.x or newer, and Minecraft 1.19.x
 
 1MB Social allows a server owner to offer a set of informative commands to their players. These commands focus on the online social platforms like Twitter, Instagram, their website, where they live-stream on Youtube, etc. And using CMI's built-in `/cmi aliaseditor`, these can be customized on the fly (without having to reload the plugin or restart the server).
 
@@ -39,7 +39,7 @@ You can now go into the game and try out the commands.
 
 ## Overview of Social Commands included
 
-(This list was last updated on September 18th, 2021 ~ note please that not all commands are in the yml file yet. Working on it.)
+(This list was last updated on June 17th, 2022 ~ note please that not all commands are in the yml file yet. Working on it.)
 
 ```
 - /social
