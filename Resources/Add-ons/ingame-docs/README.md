@@ -16,7 +16,9 @@ Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.2.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Download Instructions
 
-- Get the placeholders.txt file and put it inside the `~/plugins/CMI/CustomText/` directory.
+- Get the [cmi_placeholders.txt](/Resources/Add-ons/ingame-docs/cmi_placeholders.txt) file and put it inside the `~/plugins/CMI/CustomText/` directory.
+
+- Optionally, if you wish to use MvdW placeholders one as well, get the [cmi_mvdw.txt](/Resources/Add-ons/ingame-docs/cmi_mvdw.txt) file and put it inside the `~/plugins/CMI/CustomText/` directory.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
@@ -39,4 +41,4 @@ Contributions by MrCrazyMan02 (discord: i see a duck)
 
 ## Misc.
 
-- Last updated on June 12th, 2022 | Version 0.3.0 build 015 (prepping third public beta) by Floris
+- Last updated on June 17th, 2022 | Version 0.4.1 build 017 third public beta) by Floris
