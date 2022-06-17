@@ -100,7 +100,7 @@ The latest version of CMILib is required. Zrips' libraries and other resources a
 
 - /stop your server. Do the backup thing, and make a test server.
 
-- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.18.2 or download Paper 1.18.2 from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
+- Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.19.x or download Paper 1.19.x from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
 <img width="512" alt="cmi-download-jar-from-spigot-01" src="https://user-images.githubusercontent.com/28841349/172343317-4cad8fac-451e-40ef-a6e1-143a6c850ef0.png">
 
 - If you are not yet running CMILib then it will automatically download it. If this isn't the case due to firewalls or whatever reason, you can also manually download it here: <https://www.spigotmc.org/resources/87610/>
