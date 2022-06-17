@@ -1,7 +1,7 @@
 # 1MB Add-on: CMI Chat Color Tag
 
-Version 1.1.0, build 0.0.2
-Made for Minecraft 1.18.1 with CMI 9.1.0.4 or newer
+Version 1.1.0, build 003
+Made for Minecraft 1.19 with CMI 9.2.x.x or newer
 
 This little add-on is to help you figure out how to create items with just CMI that you can give your players as a reward, perk, etc. that will let them change the color of their chat.
 
