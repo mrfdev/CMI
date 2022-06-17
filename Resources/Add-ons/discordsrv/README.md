@@ -2,7 +2,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> DiscordSRV Alerts.yml collection
 
-This is a `DiscordSRV Alerts.yml` collection made by Floris, for CMI 9.1.4.7 / CMILib 1.1.2.5 / DisocrdSRV 1.26.x0 ~ or newer, and Minecraft 1.18.2
+This is a `DiscordSRV Alerts.yml` collection made by Floris, for CMI 9.2.x.x / CMILib 1.2.x.x / DisocrdSRV 1.26.x0 ~ or newer, and Minecraft 1.19.x
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Purpose
 
@@ -53,4 +53,4 @@ TODO, write this text
 
 -  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
 
-- Last updated on May 26th, 2022 | Version 0.1.8 build 012 (second alpha, lets start a collection), by Floris
+- Last updated on June 17th, 2022 | Version 0.1.8 build 013 (second alpha, lets start a collection), by Floris
