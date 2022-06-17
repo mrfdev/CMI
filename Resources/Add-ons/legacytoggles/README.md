@@ -2,7 +2,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Legacy CMI Toggle Commands / Aliasses
 
-This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.3 or newer, and Minecraft 1.18.2
+This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.2.x.x or newer, and Minecraft 1.19.x
 
 1MB Legacy Toggles are a helper to get the old CMI Commands back that were removed in 9.1.4.x. This allows a server owner to offer the set of familiar old legacy commands and their aliases to their players again. 
 
@@ -86,4 +86,4 @@ The changelog where this new /options first happened can be found [here](https:/
 
 # Misc.
 
-- Last updated on May 6th, 2022 | Version 1.1.0 build 010 (second public beta), by Floris
+- Last updated on June 17th, 2022 | Version 1.1.0 build 011 (second public beta), by Floris
