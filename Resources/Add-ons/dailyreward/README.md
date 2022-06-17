@@ -2,7 +2,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Daily Reward
 
-This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.5 or newer, and Minecraft 1.18.2
+This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.2.x.x or newer, and Minecraft 1.19.x
 
 1MB Daily Rewards are a few files that together add a new `/daily` command to the server, for players to run daily. When run it will check if they've got a reward pending for pickup, or if they've already gone one. In a future version it will be possible to receive a bonus for a streak.
 
@@ -72,4 +72,4 @@ My personal interest has always been there to add a simple daily reward feature 
 
 # Misc.
 
-- Last updated on May 11th, 2022 | Version 0.1.0 build 009 (second alpha, working build), by Floris
+- Last updated on June 17th, 2022 | Version 0.1.0 build 010 (second alpha, working build), by Floris
