@@ -2,7 +2,7 @@
 
 ## EssentialsX to CMI Mapped Commands / Aliasses
 
-This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.1.4.x or newer, and Minecraft 1.18.2
+This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.2.x.x or newer, and Minecraft 1.19
 
 1MB EssentialsX to CMI Commands allows a server owner to offer the set of familiar old EssentialsX commands and their aliases to their players. These are the ones that do not already default under `/CMI <command>` or aren't mapped by default in `Alias.yml` yet.
 
