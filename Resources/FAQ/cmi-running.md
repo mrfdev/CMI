@@ -69,7 +69,7 @@
 
 ---
  
-This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.18.2.
+This page should help explain what I personally think is the way to run CMI on Spigot-, and Paper 1.19.
 
 - Video: https://youtu.be/FpHIj_VJ7ho
 
@@ -85,7 +85,7 @@ The latest version of CMILib is required. Zrips' libraries and other resources a
 - Will there be a build for 1.20? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
 - Can I upgrade from an older version of CMI to the build for 1.19? Yes, latest CMI and CMILib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.2.0.0 or newer is required for 1.19
+- CMILib will be required? Yes. CMILib 1.2.0.3 or newer is required for 1.19
 - So where do I download it? spigotmc.org (link below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
