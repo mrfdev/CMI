@@ -20,6 +20,8 @@ Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.2.
 
 - Optionally, if you wish to use MvdW placeholders one as well, get the [cmi_mvdw.txt](/Resources/Add-ons/ingame-docs/cmi_mvdw.txt) file and put it inside the `~/plugins/CMI/CustomText/` directory.
 
+- Another file that we've worked on is [cmi_specializedcommands.txt](/Resources/Add-ons/ingame-docs/cmi_specializedcmds.txt).
+
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Installation Instructions
 
 - After download, reload CMI with `/cmi reload`
@@ -37,8 +39,8 @@ Contributions by MrCrazyMan02 (discord: i see a duck)
 
 - TODO, improve readme
 - TODO, once placeholders.txt is 100% finished, sort it out visually for /cmi getbook placeholders, so we can have /staff books
-- TODO, add variables.txt, and specialized.txt for additional cmi things.
+- TODO, add variables.txt, etc. for additional cmi things.
 
 ## Misc.
 
-- Last updated on June 17th, 2022 | Version 0.4.1 build 017 third public beta) by Floris
+- Last updated on June 24th, 2022 | Version 0.5.0 build 018 (fifth public beta) by Floris
