@@ -76,20 +76,22 @@ This article also has a video available. <https://youtu.be/zX_ddc24Mso>
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Economy
 
 - Download and Install CMI's Vault build (<https://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>)
-- Note: If you wish to use the original Vault build, then please get CMI Economy Injector (.jar) <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)
-- Update `config.yml` (see below)
+- Note: If you wish to use the original Vault build, then please get the CMI Economy Injector (.jar) <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)
+- Update the `config.yml` (see below)
 -
 ```yaml
-# CMI config.yml, enable:
 Economy:
   # Enable or disable CMI economy in general
-  # In case CMIE-Injector.jar is present, then this will be set to true automatically.
+  # In case CMIInjector is present, then this will be set to true automatically.
+  # Attention! For economy to work properly with other plugins you will need ether an injector or recompiled Vault version. 
+  # You can find both option at top of plugins page
+  # ATTENTION! If you disabled CMI economy while server was running, you will need to perform full server restart for this to take correct effect and avoid any issues while getting players balances
   Enabled: true
 ```
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly.
 
-### PLEASE NOTE: Everything above this point is enough to use CMI as economy engine. And Everything below this point is additional information to help you customize and use the economy features for your server.
+### PLEASE NOTE: Everything above this point is enough to use CMI as an Economy engine. Everything below this point is additional information to help you customize and use the economy features for your server.
 
 ---
 
@@ -99,31 +101,43 @@ Once your server starts up and the economy shows properly in `/cmi version`, you
 
 ### Commands and permissions:
 ```
-/cmi pay [playerName] [amount] (-s)
--> cmi.command.pay - Perform money transaction
--> cmi.command.paytoggle - Toggle payments from another player
--> cmi.command.paytoggle.others - Toggle payments from another player
-
-/cmi money [pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s)
--> cmi.command.money - Manage money balance
--> cmi.command.money.betweenworldgroups - Allows money transfer between worlds
--> cmi.command.money.admin - Allows to manipulate player balance
+/cmi balance (playerName)
+-> cmi.command.balance.others - Check money balance
+-> cmi.command.balance - Check money balance
 
 /cmi baltop (playerName)
 -> cmi.command.baltop - Check top money list
 -> cmi.command.baltop.others - Check top money list
-
-/cmi balance (playerName)
--> cmi.command.balance - Check money balance
 
 /cmi cheque (playerName) [amount]
 -> cmi.command.cheque - Convert money into cheque
 -> cmi.command.cheque.withdraw - Allows to withdraw cheque balance when option in config file is enabled
 -> cmi.command.cheque.admin - Allows to give out cheque with money amount directly to target player without requiring paper
 
+/cmi money [pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s)
+-> cmi.command.money - Manage money balance
+-> cmi.command.money.betweenworldgroups - Allows money transfer between worlds
+-> cmi.command.money.admin - Allows to manipulate player balance
+
+/cmi options (playerName) (option) (enable/disable/toggle/status) (-s)
+-> cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney] - Allows to modify specific options
+-> cmi.command.options.others - Modify personal options
+-> cmi.command.options - Modify personal options
+
+/cmi pay [playerName] [amount] (-s)
+-> cmi.command.pay - Perform money transaction
+
 Other commands related to CMI Economy can be the CMI Worth and CMI Sell features:
-/cmi worth
-/cmi sell
+/cmi sell (all/blocks/hand/same/gui)
+-> cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
+-> cmi.command.sell - Sell items from inventory
+
+/cmi worth (all/blocks/hand/materialName)
+-> cmi.command.worth - Check item worth
+
+/cmi worthlist (playerName) (-missing)
+-> cmi.command.worthlist - Check list of items with set sell prices
+-> cmi.command.worthlist.others - Check list of items with set sell prices
 ```
 
 ### Placeholders: (that you can consider using)
@@ -134,50 +148,54 @@ Other commands related to CMI Economy can be the CMI Worth and CMI Sell features
 %cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
 %cmi_iteminhand_worth%
 %cmi_iteminhand_worth_one%
+%cmi_iteminhand_worthc%
+%cmi_iteminhand_worthc_one%
 %cmi_baltop_name_[1-10]%
 %cmi_baltop_money_[1-10]%
 %cmi_baltop_shortmoney_[1-10]%
 %cmi_worth_buy_[itemIdName(:data)]%
 %cmi_worth_sell_[itemIdName(:data)]%
+%cmi_worthc_buy_[itemIdName(:data)]%
+%cmi_worthc_sell_[itemIdName(:data)]%
 %vault_eco_balance_formatted%
 ... (and possibly some more)
 ```
 
-Note: You can use /pay, /balance, etc as well by configuring `Alias.yml`.
+Note: You can use /pay, /balance, etc as well by configuring the `Alias.yml` file.
 
-You can check the commands page on zrips.net and the permissions page on zrips.net to learn which commands and permissions along with them can be part of what you want out of your economy. 
+You can check the [commands](https://www.zrips.net/cmi/commands/) page and the [permissions](https://www.zrips.net/cmi/permissions/) page to learn which commands and permissions along with them can be part of what you want out of your economy. 
 
-Other plugins can now use CMI's economy engine via hooking into vault to transfer and store money for players. 
+Other plugins can now use CMI's Economy engine by hooking into Vault to transfer and store money for players. 
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Chest Shop / Item Shop / Shop Chest / Admin Shop
 
-It is a bit out of the scope of the CMI plugin to have player-shops, admin-shops and such, but using the existing feature set of CMI does allow you to do quite a few things that get very close. Personally I still recommend to use a dedicated plugin on top of CMI for fully fledged player shops and chest shops. But, that being said. CMI is dynamic, modern, and flexible enough to get pretty far. And maybe it can do just what you're looking for. 
+It is a bit out of the scope of the CMI plugin to have player shops, admin shops and such, but using CMI's existing features, they dp allow you to do quite a few things that get very close. Personally I still recommend using a dedicated plugin on top of CMI for fully fledged player shops and chest shops. But, that being said, CMI is dynamic, modern, and flexible enough to get pretty far. And maybe it can do just what you're looking for. 
 
 Here's an example of using CMI as an item shop: https://www.zrips.net/itemshop/
 
-Using Specialized Commands from CMI and the CMI Interactive Commands features, together with various commands and the CMI Sell features and CMI Economy you can have players click on holograms to sell what they're holding. You can make a block or sign or NPC you have respond with commands, item giving, money taking, or kit giving through left/right clicking them. 
+Using CMI's Holograms, Specialized Commands and Interactive Commands, combined with various commands, the sell feature and the CMI Economy engine, you can have players click on holograms to sell what they're holding. You can even make a block, sign or NPC that can execute commands, give items, take money, or give kits by left/right clicking them.
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Hologram with Balance or Balance Top Players.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Player's Balance or Top Player Balances in Holograms.
 
-### Balance in hologram.
+### Player's Balance in Holograms.
 
-You can use /cmi hologram to create a new hologram that shows some placeholders that are personal to the player, for example their balance. Check the zrips website to learn more about how to use the CMI Hologram features, and see the above list of placeholders to learn which placeholders you can use to display the balance of the player.
+You can use /cmi hologram to create a new hologram that shows some placeholders that are personal to the player, for example their balance. Check the [Holograms](https://www.zrips.net/cmi/holograms/) page to learn more about how to use the Holograms in CMI. See the above list of placeholders to learn which placeholders you can use to display the balance of the player.
 
-### Top Balance Players in hologram.
+### Top Player Balances in Holograms.
 
-The same as what I just mentioned above, but using dynamic placeholders from CMI that can display the i.e. the top 3 balances on the server. 
+The same as above, but using dynamic placeholders from CMI that can display the top 3 balances on the server. 
 ```yaml
 1. %cmi_baltop_name_1% - %cmi_baltop_money_1%
-1. %cmi_baltop_name_2% - %cmi_baltop_money_2%
-1. %cmi_baltop_name_3% - %cmi_baltop_money_3%
+2. %cmi_baltop_name_2% - %cmi_baltop_money_2%
+3. %cmi_baltop_name_3% - %cmi_baltop_money_3%
 ```
 Hopefully this gives you an indication what is possible utilizing all the CMI features one way or another to make a custom server experience for your players.
 
-### Using Worth and Sell in hologram.
+### Using Worth and Sell in Holograms.
 
-And finally, another example that you can use the CMI features together. You can use a CMI hologram to run commands, to display dynamic placeholders, etc. And using the CMI Worth and CMI Sell features you can for example display what the player is holding, and say how many of that item they're holding, and how much that is worth if they would sell it. You can add a command as well to a hologram that when they right click the hologram it will sell this and the money goes to their CMI money balance.
+And finally, another example that combines multiple CMI features. You can use a hologram to run commands and to display dynamic placeholders. Using CMI's Worth and Sell features, you can, for example, display what the player is holding, and say how much of that item they're holding, and how much it's worth if they were to sell it. You can also add a command to a hologram that when they right click the hologram it will sell what they're holding, and the money goes to their balance.
 
-Here's an example I use on my servers, note that the name of the world and the hologram location is specific to my server, and won't work on yours. You'd have to change this if you wish to copy paste it to use on your own servers:
+Here's an example I use on my servers. Note that the name of the world and the hologram location is specific to my server, and won't work on yours. You'd have to change this if you wish to copy and paste it to use on your own servers.
 ```yaml
 Worth:
   Loc: world_wild;500.00;65.00;500.00
@@ -194,15 +212,15 @@ Worth:
   - '&bWorth: &e %cmi_iteminhand_worth%'
   - ICON:%iteminhand%
   ```
-  Note: This is from my hologram.yml file. 
+  Note: This is from my `holograms.yml` file. 
 
-## CMI Worth and Sell features
+## CMI Worth and Sell Features
 
-The CMI plugin also lets you define what an item can be worth. There are ingame commands to manage this, there's even a GUI with items that have no value defined, making managing this a lot easier. But you can also manually customize the `worth.yml` file yourself. 
+The CMI plugin also lets you define what an item is worth. There are in-game commands to manage this, and there's even a GUI with items that have no value defined, making managing this a lot easier. But you can also manually customize the `worth.yml` file yourself. 
 
 If you give your players access to `/cmi sell` then what they're holding is either worthless (and won't sell) or it's worth what you've defined. 
 
-Please note that if CMI can figure out how to craft an item, it can calculate the worth with a bonus percentage. So if you define how much an `iron_ingot` or `stone` is worth, you can ask it to automatically calculate what things crafted with stone or this ingot could be worth. Saving you even more time.
+Please note that if CMI can figure out how to craft an item, it can calculate the worth with a bonus percentage. So if you define how much an `iron_ingot` or `stone` is worth, you can ask it to automatically calculate what things crafted with stone or an iron ingot could be worth, saving you even more time.
 
 ### Find Commands:
 ```
@@ -229,24 +247,23 @@ Please note that if CMI can figure out how to craft an item, it can calculate th
 [INFO]: 5. cmi.command.worthlist.others - Check list of items with set sell prices
 ---->When command is used on another player<----
 Base command required
-[15:58:40 INFO]: 6. cmi.command.setworth - Change item worth
+[INFO]: 6. cmi.command.setworth - Change item worth
 > cmi checkperm sell
 [INFO]: --------------------------------------------------
 [INFO]: 1. cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
 [INFO]: 2. cmi.command.worthlist - Check list of items with set sell prices
 [INFO]: 3. cmi.command.sell - Sell items from inventory
->
 ```
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Importing money balances from other plugins.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Importing Balances From Other Plugins.
 
-It's possible to import the money balance from players from EssentialsX into CMI, other plugins are currently not supported. More information about importing data into CMI can be found [here](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md)
+It's possible to import player balances from EssentialsX to CMI. Other plugins are currently not supported. More information about importing data into CMI can be found [here](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md).
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> FAQ
 
-- How can I show money with the least or most detail? (shortmoney)
+- How can I show money with the least or most detail?
 
-config.yml > search for `PaymentWithShorts`
+config.yml > search for `PaymentWithShorts:`
 ```yaml
   PaymentWithShorts:
     # When set to true players will be able to make payments by using short amount formats like 10k which results into 10000 and similar
@@ -258,11 +275,11 @@ config.yml > search for `PaymentWithShorts`
     - k-1000
     - m-1000000
 ```
-(above are the values that I use on my servers, these may not be the default)
+The above are the values that I use on my servers, and are not the default values.
 
-- Can I log money transactions or sales from players? (moneylog)
+- Can I log money transactions or sales from players?
 
-config.yml > search for `LogEnabled`
+config.yml > search for `LogEnabled:`
 ```yaml
   # Set to true if you want to log money transfers between players
   LogEnabled: true
@@ -270,36 +287,38 @@ config.yml > search for `LogEnabled`
     Unknown: true
     Transfer: true
 ```
-and there's also the option to log /cmi sell transactions under `Optimizations:`
+There's also the option to log /cmi sell transactions under `Optimizations:`
 ```yaml
   # Do you want to record sell hand actions into file
   SellLog: true
 ```
 
-- How can I change how money shows in game? (symbol, format, placement)
+- How can I change how money shows in game?
 
-config.yml > search for: `CurrencySymbol: MoneyFormat: Placing:` under `Global:`
+config.yml > search for: `CurrencySymbol:`, `MoneyFormat:` or `Placing:` under `Global:`
 ```yaml
     # Currency symbol to be used when showing balance or similar
     CurrencySymbol: $
     # Format used for displaying money
     MoneyFormat: '###,##0.00'
-and
+```
+Additionally, the following is available:
+```yaml
     # Placing of currency symbol
     Placing: '[symbol][money]'
 ```
-(above are the values that I use on my servers, these may not be the default)
+The above are the values that I use on my servers, and are not the default values.
 
-- Can I charge people for using commands? (yes)
+- Can I charge people for using commands?
 
-edit file `commandCost.yml`
+Edit the `commandCost.yml` file.
 My pro tip is to read the comments at the top of the file carefully. Using a space or an alias can have a big influence.
 
-- I use bungeecord, does it sync over the network? (no)
+- I use BungeeCord, does it sync over the network?
 
-Sorry, no, currently network syncing of the economy is not possible. 
-(SpigotMC has a [plugin](https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/) called MySQL Player-bridge data, which has CMI support for syncing some cmi-data, you can consider using this on top of cmi to achieve this)
-More information about cmi + bungee can be found [here](https://faq.cmi.support/bungee)
+Synchronizing money across a BungeeCord network is not current possible. 
+However, there is a [plugin](https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/) called MySQLPlayerDataBridge, which supports synchronizing some of CMI's data across a BungeeCord network. You can consider using this plugin on top of CMI in order to synchronize data over your BungeeCord network.
+More information about CMI and BungeeCord can be found [here](https://faq.cmi.support/bungee).
 
 ---
 
