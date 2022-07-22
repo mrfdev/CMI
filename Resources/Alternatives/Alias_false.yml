@@ -1330,6 +1330,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi speed $1-
+  /speed:
+    Enabled: false
+    Tab: true
+  #  
   # /cmi staffmsg $1-
   /staffmsg:
     Enabled: false
