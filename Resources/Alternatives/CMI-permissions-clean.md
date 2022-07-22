@@ -156,6 +156,7 @@ cmi.command.point.[particletype] - Allows to change particle type
 cmi.command.portal.[portalname] - Allows to use portal
 cmi.command.prewards.others.claim - Allows to claim rewards for others
 cmi.command.pweather.[sun/rain/reset] - Allows to change personal weather to specific state
+cmi.command.recipe.admin - Allows to enable/disable recipes
 cmi.command.removewarp.bypass - Allows to remove warps which belong to anoher player
 cmi.command.repair.[hand/armor/all] - Allows to repair specific area
 cmi.command.repair.repairshare.bypass - Allows to bypass repair share being applied on item
@@ -299,7 +300,7 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Command permissions:
 ```
-   cmi.command.actionbarmsg:
+  cmi.command.actionbarmsg:
     description: Sends action bar message to player
     default: op
   cmi.command.afk:
@@ -1234,6 +1235,11 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
   cmi.command.spawnmob:
     description: Spawns entity at your location
     default: op
+  cmi.command.speed:
+    description: Set players walk or fly speed
+    default: op
+  cmi.command.speed.others:
+    default: op
   cmi.command.staffmsg:
     description: Sends message to staff channel
     default: op
@@ -1474,4 +1480,4 @@ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
 
 ## Misc.
 
-Created with CMI 9.1.5.0 for Minecraft 1.18.2
+Created with CMI 9.2.1.4 for Minecraft 1.19

@@ -82,7 +82,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi flightcharge (add/take/set/show/expcharge/moneycharge/recharge) (playerName) (amount) (-s) - Manage and check flight charges
 /cmi fly [playerName] (true/false) (-s) - Set players fly true or false
 /cmi flyc (playerName) (true/false) (-s) - Toggle flight charge mode
-/cmi flyspeed [playerName] [amount] (-s) - Set players fly speed from 0 to 10
+/cmi flyspeed (playerName) [amount] (-s) - Set players fly speed from 0 to 10
 /cmi gamerule  - Manage gamerules
 /cmi generateworth  - Auto generate posible item worth values
 /cmi getbook [cTextName] (playerName) - Get book
@@ -139,7 +139,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi kiteditor  - Kit editor.
 /cmi kitusagereset (kitName) (playerName) - Reset kit usage counter
 /cmi lastonline (-p:[page]) - Show played players from last x minutes
-/cmi launch (playerName) (p:[power]) (a:[angle]) (d:[direction]) (loc:[x]:[y]:[z]) (-nodamage) - Launch at direction you are looking or at angle
+/cmi[z]) (-nodamage) - Launch at direction you are looking or at angle
 /cmi lfix (range) (playerName) (stop/stopall) - Fix light in chunks around you
 /cmi list  - Shows online player list
 /cmi lockip (playername) [add/remove/list/clear] [ip] - Prevents logging into account from different ip
@@ -223,7 +223,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi setfirstspawn (playerName) - Sets first spawn point
 /cmi sethome (homeName) (playerName) (-p) (-l:worldName;x;y;z) (block/Material) (slotNumber) (-overwrite) - Sets home location
 /cmi setmotd [newMotd] (-s) - Set server motd
-/cmi setrt (worldName) (center:[x]:[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
+/cmi[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
 /cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (loc:[world;x;y;z;yaw;pitch]) - Sets spawn command teleport point
 /cmi setwarp [warpName] (reqPermission) (hand/head/head:[playerName]) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) (-confirm) - Sets warp location
 /cmi setworth (itemname) -s:(sellPrice) - Change item worth
@@ -242,6 +242,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi spawner [EntityType] - Sets spawner
 /cmi spawnereditor  - Edit spawner
 /cmi spawnmob [EntityType] - Spawns entity at your location
+/cmi speed (playerName) [amount] (-s) - Set players walk or fly speed
 /cmi staffmsg [message/toggle/on/off] - Sends message to staff channel
 /cmi stats (playerName) - Check players stats
 /cmi statsedit (playerName) [add/take/set] [statistic] (subType) [amount] (-s) - Edit players statistics
@@ -292,7 +293,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi voteedit (playerName) [add/set/take/clear] [amount] (-s) - Manage players votes
 /cmi votes (playerName) - Check players vote count
 /cmi votetop (playerName) - Check top vote list
-/cmi walkspeed [playerName] [amount] (-s) - Set players walk speed from 0 to 10
+/cmi walkspeed (playerName) [amount] (-s) - Set players walk speed from 0 to 10
 /cmi warn [playerName] (category) (reason) (-s) - Warn player
 /cmi warnings (playerName) - Check player warnings
 /cmi warp (warpName) (playerName) (-s) (-g:[groupName]) (-p:[pageNumber]) - Teleports to warp location
@@ -307,4 +308,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Misc.
 
-Created with CMI 9.1.5.0 for Minecraft 1.18.2
+Created with CMI 9.2.1.4 for Minecraft 1.19

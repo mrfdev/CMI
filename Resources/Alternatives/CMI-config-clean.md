@@ -5,6 +5,9 @@ Please note that this shouldn't be a copy paste for your server, but an example 
 ```yaml
 # Language file you want to use
 Language: EN
+# Defines if you want to auto download default locale files from github repository
+# You can disable this if you are using EN or you already have your locale setup and you dont need to have other languages being downloaded
+LanguageDownload: true
 Economy:
   # Enable or disable CMI economy in general
   # In case CMIInjector is present, then this will be set to true automatically.
@@ -79,6 +82,8 @@ Economy:
     MoneyFormat: '###,##0.00'
     # Converts long numbers to short ones, like 12305122 to 12.3m
     UseShortNumbers: false
+    # This format is only for amounts which gets defines suffix like '1.23k' while numbers lover than 1k will use MoneyFormat
+    shortNumbersFormat: '###,##0.0'
     # Suffixes for short numbers
     ShortNumbersSuffixes:
     - ''
@@ -414,6 +419,10 @@ Compass:
   BossBar: false
   # Requires to hold compass in had to see it
   RequireCompass: false
+  # When enabled we will use recovery compass as regular one when it comes to compass requirements to show bossbar
+  RecoveryAsRegular: false
+  # Requires to hold recovery compass in had to see death location in bossbar
+  RequireRecoveryCompass: false
   # Compass update interval in milliseconds
   UpdateInterval: 200
   # Keep same spacing between each direction. Length can be any you want
@@ -732,7 +741,7 @@ Chat:
   ModifyChatFormat: false
   # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
   # To change default hover over messages seen on sent message, go to your locale file to Chat section
-  ClickHoverMessages: false
+  ClickHoverMessages: true
   DiscordSRV:
     # Enables support for DiscordSRV plugin
     Enabled: true
@@ -759,7 +768,7 @@ Chat:
   # (https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})
   # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?
   # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
-  LinkRegex: ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s|^\)]+)
+  LinkRegex: (^| )((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{1,3}(\/\S*)?([^\s|^\)]+)
   # When set to true, particular variables in chat will be translated into items player are holding. List of variables belove
   HoverItems: true
   # Defines regex when replacing item line in chat with players item in hand information. Only works when CMI hover over chat format is enabled
@@ -1070,7 +1079,7 @@ Portals:
     Commands:
     - cmi effect [playerName] blindness 2 1 -s
 Animations:
-  # Enable siting on stair block by clicking on them with empty hand or by looking and using command
+  # Enable sitting on stair block by clicking on them with empty hand or by looking and using command
   # Requires cmi.command.sit.stairs
   SitOnStairs: true
   StairsAsChairs: true
@@ -1083,7 +1092,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 4
-# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, 
+# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, sonic_boom, 
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1209,7 +1218,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, 
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1387,7 +1396,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - testWorld:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, COMMAND, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     world:
     - None
@@ -1805,13 +1814,22 @@ RandomTeleportation:
   # Setting to false will not longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
   Worlds:
+    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
     world:
       Enabled: true
+      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
+      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
       MaxRange: 1000
+      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
       MinRange: 500
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
     world_nether:
       Enabled: true
       MaxRange: 1000
@@ -1819,6 +1837,11 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
     world_the_end:
       Enabled: true
       MaxRange: 1000
@@ -1826,6 +1849,11 @@ RandomTeleportation:
       CenterX: 0
       CenterZ: 0
       Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
@@ -1865,6 +1893,7 @@ Enchanting:
       protection_explosions: 4
       damage_undead: 5
       multishot: 1
+      swift_sneak: 3
       fire_aspect: 2
       channeling: 1
       sweeping_edge: 3
@@ -2123,9 +2152,8 @@ PotionEffects:
   # When set to true player poition effect will expire even if player is offline
   # Keep in mind that player potion effect durability will be updated on players login event so by checking players potions effect while he is offline can show incorrect state
   DeductWhileOffline: false
-
 ```
 
 ## Misc.
 
-Created with CMI 9.1.5.0 for Minecraft 1.18.2
+Created with CMI 9.2.1.4 for Minecraft 1.19

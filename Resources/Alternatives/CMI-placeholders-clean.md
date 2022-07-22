@@ -187,4 +187,4 @@ More details and information about placeholders on the official website [here](h
 
 ## Misc.
 
-Created with CMI 9.1.5.0 for Minecraft 1.18.2
+Created with CMI 9.2.1.4 for Minecraft 1.19
