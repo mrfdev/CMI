@@ -1,26 +1,46 @@
-skyblockcobblegen:
+spawnteamsign:
   Locations:
-  - skyblock;-4.0;139.0;24.0
+  - spawn;7.0;64.0;133.0
   Commands:
-  - 'asConsole! cmi msg [playerName] !&e To learn more about Generators, visit:'
-  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
-  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-vloopshipstop:
-  Locations:
-  - general;12865.0;172.0;11964.0
+  - asPlayer! team
+skyblockspawnlistofcmds:
+  ID:
+  - 782
   Commands:
-  - cmi sound block_beacon_deactivate [playerName]
-  - asConsole! cmi msg [playerName] !&b -> Spacestation shutting down. [Emergency
-    Power only]
+  - 'msg! [playerName] "{#gold}/skyblock &o<cmd>&r", and &o<cmd>&r can be: count,
+    phases, level, generator, help, border, challenges, team, and more, Enjoy!'
+  - msg! [playerName] {#gold}count&r and {#gold}phases&r is how you progress your
+    island
+  - msg! [playerName] {#gold}level&r and {#gold}challenges&r is how you can get more
+    items
+  - msg! [playerName] {#gold}generator&r lets you get building blocks and ores
+  - msg! [playerName] {#gold}border&r will toggle visual border, your island is 100
+    blocks wide
+  - msg! [playerName] {#gold}team&r lets you add friends to your island (read /teams
+    to learn more)
+testgoogle:
+  Commands: []
 droppartyfly:
   Commands:
   - cooldown:120?! asConsole! cmi tfly [playerName] 30
-spawnfloris:
+spawnstaff:
   Locations:
-  - spawn;6.0;64.0;132.0
+  - spawn;-7.0;64.0;133.0
   Commands:
-  - asPlayer! team
+  - asPlayer! staff
+OneBlockSpawnDayShop:
+  ID:
+  - 775
+  Commands:
+  - asPlayer! bs WeekShop
+warpfishkits:
+  Locations:
+  - general;11923.0;165.0;18883.0
+  Commands:
+  - asPlayer! kits
 spawnertrader:
+  ID:
+  - 523
   Commands:
   - msg! [playerName] &eSpicing up your bases with some mobs [playerName]? Here's
     what I have to offer..
@@ -28,42 +48,17 @@ spawnertrader:
   - delay! 3
   - cmi sound block_beehive_enter [playerName]
   - asPlayer! spawners
-vloopshipstart:
+moboff:
   Locations:
-  - general;12863.0;172.0;11964.0
+  - run;-165.0;97.0;-89.0
   Commands:
-  - cmi sound block_beacon_activate [playerName]
-  - asConsole! cmi msg [playerName] !&b -> Spacestation activated
-VoteTokensTrade:
-  Locations:
-  - general;12493.0;79.0;-5339.0
-  Commands:
-  - asConsole! msg! [playerName] &a This trade allows you to convert old unstackable
-    vote tokens to newer ones that do stack. You give us 8, you get 8 back.
-  - cmi sound block_dispenser_dispense [playerName]
-  - bs open VoteTokens [playerName]
-warpfishworlds:
-  Locations:
-  - general;11884.0;152.0;18851.0
-  Commands:
-  - asPlayer! menu worlds
-googletest:
-  Commands: []
-spawnstaff:
-  Locations:
-  - spawn;-7.0;64.0;133.0
-  Commands:
-  - asPlayer! staff
-spawnskyblock:
-  Locations:
-  - spawn;4.0;65.0;147.0
-  Commands:
-  - asPlayer! skyblock
-warpfishwarps:
-  Locations:
-  - general;11902.0;158.0;18878.0
-  Commands:
-  - asPlayer! warps
+  - asConsole! mvm set monsters false run
+  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
+  SignLines:
+  - moboff
+  - ' '
+  - ' '
+  - ' '
 skyblockchallenges:
   Locations:
   - skyblock;23.0;140.0;-29.0
@@ -71,21 +66,56 @@ skyblockchallenges:
   - 'asConsole! cmi msg [playerName] !&e For more info about Challenges read:'
   - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261680/
   - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-spawnversionmenu:
-  Locations:
-  - spawn;6.0;64.0;146.0
+OneblockSpawnBucketTrades:
+  ID:
+  - 773
   Commands:
-  - asPlayer! menu
-santa:
+  - asPlayer! bs OneBlockBucketTrades
+VoteTokenExchange:
   Locations:
-  - general;-91.0;62.0;447.0
+  - general;12497.0;79.0;-5342.0
   Commands:
-  - asPlayer! calendar
-spawnworlds:
+  - asConsole! msg! [playerName] &a This trade allows you to exchange certain vote
+    tokens. You give us 3 and a streak token, you get 3 of the other type back.
+  - cmi sound block_dispenser_dispense [playerName]
+  - bs open VoteExchange [playerName]
+spawngeneralsign:
   Locations:
-  - spawn;2.0;66.0;147.0
+  - spawn;0.0;64.0;141.0
   Commands:
-  - asPlayer! worlds
+  - asPlayer! rtp
+anvil:
+  Locations:
+  - general;-14777.0;68.0;12450.0
+  - general;12423.0;79.0;-5302.0
+  - general;-14776.0;70.0;12450.0
+  Commands:
+  - asConsole! cmi anvil [playerName]
+  SignLines:
+  - '{#Cerulean}[anvil]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}You can also'
+  - '{#Feijoa}type: /anvil'
+  Public: true
+spawngeneral:
+  Locations:
+  - spawn;4.0;66.0;147.0
+  Commands:
+  - asPlayer! rtp
+wildtrader:
+  ID:
+  - 519
+  Commands:
+  - msg! [playerName] &e Hey there [playerName], let me see what I have for you today.
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - bs open weekshop [playerName]
+spawnskyblock:
+  Locations:
+  - spawn;4.0;65.0;147.0
+  Commands:
+  - asPlayer! skyblock
 jacktest:
   Locations:
   - general;12636.0;80.0;-5323.0
@@ -103,22 +133,170 @@ jacktest:
     me grab my loot box and show you what I've got to trade this weekend.
   - delay! 4
   - asConsole! bs open jacky [playerName]
+warpfishwarps:
+  Locations:
+  - general;11902.0;158.0;18878.0
+  Commands:
+  - asPlayer! warps
+pointstrader:
+  Commands:
+  - msg! [playerName] &e Hi there [playerName] If you have points, then I have some
+    goodies.
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - asPlayer! welcomes shop
+skyblockhelp:
+  Locations:
+  - skyblock;-5.0;135.0;0.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e To learn more about Skyblock, visit:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+mail:
+  Locations:
+  - general;-14777.0;69.0;12450.0
+  - general;12423.0;79.0;-5293.0
+  Commands:
+  - asPlayer! cmi mail read
+  SignLines:
+  - '{#Cerulean}[mail]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}You can send and'
+  - '{#Feijoa}get server /mail'
+  Public: true
+warpfishcontact:
+  Locations:
+  - general;11922.0;156.0;18851.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !{#orange}To contact mrfloris to help build the
+    next /skyblock spawn, use the /mail feaeture, type the following command:'
+  - asConsole! cmi msg [playerName] !{#gold}" /mail send mrfloris Hi, can I help you
+    build the new skyblock spawn? "
 fishparkour:
   Locations:
   - general;11944.0;63.0;18959.0
   Commands:
   - asConsole! cmi warp fishparkour [playerName] -s
+spawnnewplayer:
+  Locations:
+  - spawn;2.0;64.0;135.0
+  Commands:
+  - asPlayer! newplayer
+warpfishrtp:
+  Locations:
+  - general;11884.0;154.0;18871.0
+  Commands:
+  - asPlayer! rtp
+markettrader:
+  Commands:
+  - msg! [playerName] &e Nice to see you [playerName] - players can put stuff on the
+    global /market
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - cmi sound block_beehive_enter [playerName]
+  - asPlayer! ah
+spawndiscord:
+  Locations:
+  - spawn;-7.0;64.0;145.0
+  Commands:
+  - asPlayer! discord
+warpfishskyblock:
+  Locations:
+  - general;11896.0;159.0;18838.0
+  Commands:
+  - asPlayer! skyblock
+skyblockspawnmenu:
+  ID:
+  - 783
+  Commands:
+  - asPlayer! skyblock menu
+oneblockspawnislandgo:
+  ID:
+  - 769
+  Commands:
+  - asPlayer! oneblock
+spawnrules:
+  Locations:
+  - spawn;-6.0;64.0;132.0
+  Commands:
+  - asPlayer! rules
+spawnworlds:
+  Locations:
+  - spawn;2.0;66.0;147.0
+  Commands:
+  - asPlayer! worlds
+skyblockcobblegen:
+  Locations:
+  - skyblock;-4.0;139.0;24.0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e To learn more about Generators, visit:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+warpfishworlds:
+  Locations:
+  - general;11884.0;152.0;18851.0
+  Commands:
+  - asPlayer! menu worlds
+wildspawnpointstrader:
+  ID:
+  - 521
+  Commands:
+  - asPlayer! points
+spawnversion:
+  Locations:
+  - spawn;7.0;64.0;145.0
+  Commands:
+  - asPlayer! changelog
+spawnrulessign:
+  Locations:
+  - spawn;-2.0;66.0;139.0
+  Commands:
+  - asPlayer! rules
+balance:
+  Locations:
+  - general;-14776.0;68.0;12450.0
+  - general;12423.0;79.0;-5296.0
+  Commands:
+  - asPlayer! cmi money
+  - asPlayer! welcomes points
+  - 'asConsole! cmi msg [playerName] Your mcMMO power level: %mcmmo_power_level%'
+  - 'asConsole! cmi msg [playerName] Your Jobs points: %jobsr_user_points_fixed% /
+    Lvls: %jobs_total_levels%'
+  SignLines:
+  - '{#Cerulean}[money]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}There is: /ah'
+  - '{#Feijoa}and /sell'
+  Public: true
 trash:
   Locations:
+  - wild;1309.0;80.0;1485.0
+  - wild;1324.0;95.0;1552.0
+  - wild;1333.0;72.0;1483.0
+  - wild;1313.0;93.0;1604.0
+  - wild;1341.0;94.0;1538.0
+  - wild;1283.0;80.0;1464.0
+  - general;-6179.0;11.0;-2814.0
+  - general;-16495.0;72.0;11642.0
+  - wild;1326.0;126.0;1461.0
+  - wild;1263.0;75.0;1483.0
+  - wild;1374.0;81.0;1535.0
+  - wild;1344.0;100.0;1495.0
+  - wild;1331.0;111.0;1469.0
+  - wild;1336.0;110.0;1477.0
+  - wild;1297.0;80.0;1602.0
   - general;12032.0;65.0;19098.0
   - general;-14778.0;69.0;12450.0
   - general;-12601.0;63.0;-12149.0
-  - general;12423.0;79.0;-5300.0
   - general;12752.0;32.0;12008.0
+  - general;12701.0;77.0;-18303.0
   - general;10275.0;13.0;-751.0
-  - general;-6179.0;11.0;-2814.0
   - general;12192.0;70.0;11800.0
-  - general;-16495.0;72.0;11642.0
+  - wild;1341.0;82.0;1463.0
+  - wild;1278.0;81.0;1489.0
+  - general;12423.0;79.0;-5300.0
+  - wild;1380.0;74.0;1490.0
   Commands:
   - click:rightclick! asConsole! cmi dispose [playerName]
   SignLines:
@@ -128,10 +306,145 @@ trash:
   - '{#Feijoa}what you dispose'
   Public: true
   ReqPerm: false
-quicktest:
+VoteTokensTrade:
+  Locations:
+  - general;12493.0;79.0;-5339.0
   Commands:
-  - perm:cmi.onetimekit@#?! msg! [playerName] you dont have this
-  - msg! [playerName] second command
+  - asConsole! msg! [playerName] &a This trade allows you to convert old unstackable
+    vote tokens to newer ones that do stack. You give us 8, you get 8 back.
+  - cmi sound block_dispenser_dispense [playerName]
+  - bs open VoteTokens [playerName]
+spawnoneblock:
+  Locations:
+  - spawn;4.0;64.0;147.0
+  Commands:
+  - asPlayer! oneblock
+googletest:
+  Commands: []
+oneblockspawnmenu:
+  ID:
+  - 770
+  Commands:
+  - asPlayer! oneblock menu
+warps:
+  Commands:
+  - asConsole! cmi warp $1 [playerName]
+  Public: true
+infiniteanvilspawn:
+  Locations:
+  - spawn;23.0;64.0;137.0
+  Commands:
+  - asConsole! cmi anvil [playerName]
+spawnsocial:
+  Locations:
+  - spawn;-6.0;64.0;146.0
+  Commands:
+  - asPlayer! social gui
+warpfishbeekeeper:
+  Commands:
+  - cooldown:300?#! asConsole! cmi give [playerName] honeycombblock 1
+oneblockspawnteams:
+  ID:
+  - 771
+  Commands:
+  - asPlayer! teams
+skyblockspawnbuckettrades:
+  ID:
+  - 778
+  Commands:
+  - asPlayer! bs OneblockBucketTrades
+santa:
+  Locations:
+  - general;-91.0;62.0;447.0
+  Commands:
+  - asPlayer! calendar
+spawnversionmenu:
+  Locations:
+  - spawn;6.0;64.0;146.0
+  Commands:
+  - asPlayer! menu
+celebrationmikey:
+  Commands:
+  - bs open CelebrationMikey [playerName]
+skyblockspawnteamfriends:
+  Commands:
+  - asPlayer! teams
+vloopshipstop:
+  Locations:
+  - general;12865.0;172.0;11964.0
+  Commands:
+  - cmi sound block_beacon_deactivate [playerName]
+  - asConsole! cmi msg [playerName] !&b -> Spacestation shutting down. [Emergency
+    Power only]
+sell:
+  Locations:
+  - general;12423.0;79.0;-5298.0
+  - general;-14776.0;69.0;12450.0
+  - general;-16496.0;72.0;11641.0
+  Commands:
+  - asPlayer! cmi sell gui
+  SignLines:
+  - '{#Cerulean}[sell]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}You can use'
+  - '{#Feijoa}/sell & /worth'
+  Public: true
+wildspawnglobalmarket:
+  ID:
+  - 522
+  Commands:
+  - asPlayer! ah
+spawnfloris:
+  Locations:
+  - spawn;6.0;64.0;132.0
+  Commands:
+  - asPlayer! team
+skyblockspawndayshop:
+  Commands:
+  - asPlayer! bs WeekShop
+vloopshipstart:
+  Locations:
+  - general;12863.0;172.0;11964.0
+  Commands:
+  - cmi sound block_beacon_activate [playerName]
+  - asConsole! cmi msg [playerName] !&b -> Spacestation activated
+mobon:
+  Locations:
+  - run;-165.0;97.0;-88.0
+  Commands:
+  - asConsole! mvm set monsters true run
+  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
+  SignLines:
+  - mobon
+  - ' '
+  - ' '
+  - ' '
+warpfishoneblock:
+  Locations:
+  - general;11897.0;159.0;18839.0
+  Commands:
+  - asPlayer! oneblock
+warpfishbearsecret:
+  Locations:
+  - general;12007.0;239.0;18874.0
+  Commands:
+  - msg! [playerName] Sorry, this secret was only for those who participated in the
+    july 3rd fishing tournament
+oneblockspawnlistcmds:
+  ID:
+  - 772
+  Commands:
+  - 'msg! [playerName] "{#gold}/oneblock &o<cmd>&r", and &o<cmd>&r can be: count,
+    phases, level, generator, help, border, challenges, team, and more, Enjoy!'
+  - msg! [playerName] {#gold}count&r and {#gold}phases&r is how you progress your
+    island
+  - msg! [playerName] {#gold}level&r and {#gold}challenges&r is how you can get more
+    items
+  - msg! [playerName] {#gold}generator&r lets you get building blocks and ores
+  - msg! [playerName] {#gold}border&r will toggle visual border, your island is 100
+    blocks wide
+  - msg! [playerName] {#gold}team&r lets you add friends to your island (read /teams
+    to learn more)
 clock:
   Commands:
   - click:rightclick! clock
@@ -142,15 +455,14 @@ clock:
   - '&9&lTry with /clock'
   - ' '
   Public: true
-spawndiscord:
-  Locations:
-  - spawn;-7.0;64.0;145.0
+quicktest:
   Commands:
-  - asPlayer! discord
-balance:
+  - perm:cmi.onetimekit@#?! msg! [playerName] you dont have this
+  - msg! [playerName] second command
+money:
   Locations:
-  - general;-14776.0;68.0;12450.0
-  - general;12423.0;79.0;-5296.0
+  - general;-14776.0;67.0;12450.0
+  - general;12423.0;79.0;-5295.0
   Commands:
   - asPlayer! cmi money
   - asPlayer! welcomes points
@@ -168,152 +480,6 @@ spawnlwc:
   - spawn;2.0;64.0;139.0
   Commands:
   - asPlayer! chests
-spawnteamsign:
-  Locations:
-  - spawn;7.0;64.0;133.0
-  Commands:
-  - asPlayer! team
-mail:
-  Locations:
-  - general;-14777.0;69.0;12450.0
-  - general;12423.0;79.0;-5293.0
-  Commands:
-  - asPlayer! cmi mail read
-  SignLines:
-  - '{#Cerulean}[mail]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}You can send and'
-  - '{#Feijoa}get server /mail'
-  Public: true
-warpfishoneblock:
-  Locations:
-  - general;11897.0;159.0;18839.0
-  Commands:
-  - asPlayer! oneblock
-warpfishkits:
-  Locations:
-  - general;11923.0;165.0;18883.0
-  Commands:
-  - asPlayer! kits
-mobon:
-  Locations:
-  - run;-165.0;97.0;-88.0
-  Commands:
-  - asConsole! mvm set monsters true run
-  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
-  SignLines:
-  - mobon
-  - ' '
-  - ' '
-  - ' '
-money:
-  Locations:
-  - general;-14776.0;67.0;12450.0
-  - general;12423.0;79.0;-5295.0
-  Commands:
-  - asPlayer! cmi money
-  - asPlayer! welcomes points
-  - 'asConsole! cmi msg [playerName] Your mcMMO power level: %mcmmo_power_level%'
-  - 'asConsole! cmi msg [playerName] Your Jobs points: %jobsr_user_points_fixed% /
-    Lvls: %jobs_total_levels%'
-  SignLines:
-  - '{#Cerulean}[money]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}There is: /ah'
-  - '{#Feijoa}and /sell'
-  Public: true
-spawnrules:
-  Locations:
-  - spawn;-6.0;64.0;132.0
-  Commands:
-  - asPlayer! rules
-infiniteanvilspawn:
-  Locations:
-  - spawn;23.0;64.0;137.0
-  Commands:
-  - asConsole! cmi anvil [playerName]
-moboff:
-  Locations:
-  - run;-165.0;97.0;-89.0
-  Commands:
-  - asConsole! mvm set monsters false run
-  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
-  SignLines:
-  - moboff
-  - ' '
-  - ' '
-  - ' '
-markettrader:
-  Commands:
-  - msg! [playerName] &e Nice to see you [playerName] - players can put stuff on the
-    global /market
-  - cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - cmi sound block_beehive_enter [playerName]
-  - asPlayer! ah
-warpfishskyblock:
-  Locations:
-  - general;11896.0;159.0;18838.0
-  Commands:
-  - asPlayer! skyblock
-VoteTokenExchange:
-  Locations:
-  - general;12497.0;79.0;-5342.0
-  Commands:
-  - asConsole! msg! [playerName] &a This trade allows you to exchange certain vote
-    tokens. You give us 3 and a streak token, you get 3 of the other type back.
-  - cmi sound block_dispenser_dispense [playerName]
-  - bs open VoteExchange [playerName]
-anvil:
-  Locations:
-  - general;-14777.0;68.0;12450.0
-  - general;12423.0;79.0;-5302.0
-  - general;-14776.0;70.0;12450.0
-  Commands:
-  - asConsole! cmi anvil [playerName]
-  SignLines:
-  - '{#Cerulean}[anvil]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}You can also'
-  - '{#Feijoa}type: /anvil'
-  Public: true
-wildtrader:
-  Commands:
-  - msg! [playerName] &e Hey there [playerName], let me see what I have for you today.
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - bs open weekshop [playerName]
-sell:
-  Locations:
-  - general;12423.0;79.0;-5298.0
-  - general;-14776.0;69.0;12450.0
-  - general;-16496.0;72.0;11641.0
-  Commands:
-  - asPlayer! cmi sell gui
-  SignLines:
-  - '{#Cerulean}[sell]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}You can use'
-  - '{#Feijoa}/sell & /worth'
-  Public: true
-warpfishrtp:
-  Locations:
-  - general;11884.0;154.0;18871.0
-  Commands:
-  - asPlayer! rtp
-warps:
-  Commands:
-  - asConsole! cmi warp $1 [playerName]
-  Public: true
-warpfishcontact:
-  Locations:
-  - general;11922.0;156.0;18851.0
-  Commands:
-  - 'asConsole! cmi msg [playerName] !{#orange}To contact mrfloris to help build the
-    next /skyblock spawn, use the /mail feaeture, type the following command:'
-  - asConsole! cmi msg [playerName] !{#gold}" /mail send mrfloris Hi, can I help you
-    build the new skyblock spawn? "
 skyblockgreenhouse:
   Locations:
   - skyblock;-20.0;136.0;-25.0
@@ -321,61 +487,3 @@ skyblockgreenhouse:
   - 'asConsole! cmi msg [playerName] !&e For more info about Greenhouses, read:'
   - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
   - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-spawnversion:
-  Locations:
-  - spawn;7.0;64.0;145.0
-  Commands:
-  - asPlayer! changelog
-pointstrader:
-  Commands:
-  - msg! [playerName] &e Hi there [playerName] If you have points, then I have some
-    goodies.
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - asPlayer! welcomes shop
-spawnsocial:
-  Locations:
-  - spawn;-6.0;64.0;146.0
-  Commands:
-  - asPlayer! social gui
-spawnnewplayer:
-  Locations:
-  - spawn;2.0;64.0;135.0
-  Commands:
-  - asPlayer! newplayer
-spawngeneralsign:
-  Locations:
-  - spawn;0.0;64.0;141.0
-  Commands:
-  - asPlayer! rtp
-spawngeneral:
-  Locations:
-  - spawn;4.0;66.0;147.0
-  Commands:
-  - asPlayer! rtp
-skyblockhelp:
-  Locations:
-  - skyblock;-5.0;135.0;0.0
-  Commands:
-  - 'asConsole! cmi msg [playerName] !&e To learn more about Skyblock, visit:'
-  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
-  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-celebrationmikey:
-  Commands:
-  - bs open CelebrationMikey [playerName]
-spawnoneblock:
-  Locations:
-  - spawn;4.0;64.0;147.0
-  Commands:
-  - asPlayer! oneblock
-warpfishbeekeeper:
-  Commands:
-  - cooldown:300?#! asConsole! cmi give [playerName] honeycombblock 1
-spawnrulessign:
-  Locations:
-  - spawn;-2.0;66.0;139.0
-  Commands:
-  - asPlayer! rules
-testgoogle:
-  Commands: []

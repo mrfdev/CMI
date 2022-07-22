@@ -460,3 +460,23 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:M2E0OTg2ZmRmMDRjYzg2ZDhhZmYyMDM3YTZiNGRmNTczY2RjMWU3MDhkMDU3OTBjNzY3MjhmYWVmNzk2ZjMzYSJ9fX0=
+  allay:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:YmVlYTg0NWNjMGI1OGZmNzYzZGVjZmZlMTFjZDFjODQ1YzVkMDljM2IwNGZlODBiMDY2M2RhNWM3YzY5OWViMyJ9fX0==
+  frog:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:ZDBlZGNiODk4MzU2ZmQ0MDBjMjA1YzYxMzRlMDk4NjEwYmFmYmJjNTA0MTc3MjlhMTU1Y2U3N2Q3YmNhOThkNCJ9fX0=
+  tadpole:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:YjIzZWJmMjZiN2E0NDFlMTBhODZmYjVjMmE1ZjNiNTE5MjU4YTVjNWRkZGQ2YTFhNzU1NDlmNTE3MzMyODE1YiJ9fX0=
+  warden:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:NmNmMzY3NGIyZGRjMGVmN2MzOWUzYjljNmI1ODY3N2RlNWNmMzc3ZDJlYjA3M2YyZjNmZTUwOTE5YjFjYTRjOSJ9fX0=

@@ -198,7 +198,7 @@ Announcer:
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Someone just /msg-ed you?
     Type /r to quick-reply
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players cannot create portals,
-    please use /end, /nether, /mine
+    please use /end, /nether
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Groups: We have quite
     a few! Check /groups'
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Ranks: We have quite a
@@ -219,7 +219,7 @@ Announcer:
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sell all the types of
     fish on the: /fish shop'
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB Third Era
-    (3.1.5) for Minecraft 1.18.2'
+    (3.2.0) for Minecraft 1.19'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
     can have up to 1 Chest /shops
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group Player

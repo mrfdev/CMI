@@ -20,8 +20,7 @@ Homes:
         Slot: 1
         Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
         Commands:
-        - msg! [playerName] "soon" this will be a link more info about 1MB Homes!
-          Until then if you have a question feel free to ask staff.
+        - msg! [playerName] Learn about the 1MB Homes features! \n https://omgboards.com/threads/263837/
         - closeinv!
       CloseButton:
         Use: true

@@ -1,14 +1,16 @@
 <AutoPage><AutoAlias><NoReqPermission>
 {#Cerulean}
-img:head:[playerName] 8
-imgtext:{#Lochmara} »&2 1MoreBlock {#Feijoa} 3.2.0 for Minecraft 1.19
-imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
-imgtext:<T>{#Lochmara} »{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
-imgtext:{#Lochmara} »{#Feijoa} We are a family-friendly community.
-imgtext:{#Lochmara} »{#Feijoa} Respect players and their builds.
-imgtext:<T>{#Lochmara} »{#Feijoa} Before playing, learn: {#orange}&l/rules</T><H>Click to read our rules</H><C>rules</C>
-imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
-imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
+{#Cerulean} •&l&m                                                &r{#Cerulean}•
+img:helmet:[playerName] <T>{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
+imgtext: {#Feijoa} 
+imgtext: {#orange} &lThe /halloween world is open 
+imgtext: {#Feijoa} 
+imgtext: {#Feijoa} You can hunt ghost chests, and go
+imgtext: {#Feijoa} trick and treating, find secrets, etc.
+imgtext: {#Feijoa} 
+imgtext: {#Feijoa} Note: &lKeep-inventory is NOT on
+ {#Feijoa}Online: {#Geyser} &l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
+{#Cerulean} •&l&m                                                &r{#Cerulean}•
 &r
 <NextPage>
 {#Cerulean}

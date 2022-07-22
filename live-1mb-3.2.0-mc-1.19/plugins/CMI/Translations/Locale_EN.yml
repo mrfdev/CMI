@@ -182,6 +182,7 @@ info:
     quickbarslots: '&eYour quick bar should have atleast &6[count] &eempty slots!'
     subinv: '&eYour sub inventory should be empty!'
     subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
+  Relog: '&eRelog might be needed for change to take effect'
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
@@ -261,9 +262,9 @@ Spy:
     msg: '&2Spy&7[&8[senderDisplayName] &7-> &8[playerDisplayName]&7]&f [message]'
     custom: '&2Spy&8[senderDisplayName] &7-> &4|&8[place]&4|&f [message]'
   Command:
-    msg: '&5C&2Spy&7[&8[senderDisplayName]&7]&7: &f[command]'
+    msg: '{#gossamer}(cmd&lSpy&r{#gossamer}) [senderDisplayName]{#gray} [command]'
   Sign:
-    msg: '&5Sign&2Spy&7[&8[senderDisplayName]&7]&7: &f[text]'
+    msg: '{#gossamer}(sign&lSpy&r{#gossamer}) [senderDisplayName]{#gray} [text]'
 command:
   help:
     output:
@@ -949,6 +950,13 @@ command:
       shapelessRecipe: '&6Make new shapeless recipe'
       shapedRecipe: '&eMake new shaped recipe'
       furnaceRecipe: '&2Make new furnace recipe'
+      campfireRecipe: '&2Make new campfire recipe'
+      smithingRecipe: '&2Make new smithing recipe'
+      stonecuttingRecipe: '&2Make new stonecutting recipe'
+      blastingRecipe: '&2Make new blasting recipe'
+      smokingRecipe: '&2Make new smoking recipe'
+      exact: '&2Require exact ingredients: [state]'
+      exists: '&4Looks like recipe like this already exists'
       mainTitle: '&8Custom recipes (&7[current]&8/&7[total]&8)'
   dback:
     help:
@@ -1602,7 +1610,7 @@ command:
       lore: |-
         &7[world]
         &f[x]&7:&f[y]&7:&f[z]
-      pickerLore: '&7Middle mouse click to change icon'
+      pickerLore: '&7Press Q key to change icon'
   hunger:
     help:
       info: '&eSet players hunger'
@@ -3470,6 +3478,10 @@ command:
       spawnedPasangers: '&eand &6[passengers] &epassengers'
       nothingSpawned: '&eNo entities spawned'
       cantSpawn: '&eCan''t spawn this type of entity'
+  speed:
+    help:
+      info: '&eSet players walk or fly speed'
+      args: (playerName) [amount] (-s)
   staffmsg:
     help:
       info: '&eSends message to staff channel'
@@ -4195,10 +4207,14 @@ command:
       noAccess: '&cNo access to this warp'
       guiTitle: '&6Warps'
       pageTitles:
-      - '&11MB &5Server Warps'
-      - '&11MB &5Player Warps'
-      - '&11MB &5Player Warps'
-      - '&11MB &5Fossil Warps'
+      - '&11MB {#paprika}&l World Warps'
+      - '&11MB {#paprika}&l Server Warps'
+      - '&11MB {#paprika}&l Farm Warps'
+      - '&11MB {#paprika}&l MiniGame Warps'
+      - '&11MB {#paprika}&l Server Event Warps'
+      - '&11MB {#paprika}&l Player Warps (p1)'
+      - '&11MB {#paprika}&l Player Warps (p2)'
+      - '&11MB {#paprika}&l Player Warps (p3)'
   warpgroups:
     help:
       info: '&eLists warp groups'

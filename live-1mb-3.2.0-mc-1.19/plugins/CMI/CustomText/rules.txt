@@ -9,7 +9,7 @@
 {#orange} * {#gold} Please read, understand, and agree to our rules.
 {#orange} * {#gold} You can click on this link for detailed info:
 {#orange} * {#bondiblue} &nhttps://omgboards.com/threads/260946/
-{#orange} * {#gold} including, the Mojang Community Standards.
+{#orange} * {#gold} including Mojang's Community Standards & Guidelines.
 {#Cerulean}&l&m                                                     &r
 {#orange} * If you disagree to our rules, please disconnect.
 {#orange} 
@@ -26,7 +26,7 @@
 {#Cerulean}  8.{#Geyser}  No Advertising or other-server discussions.
 {#Cerulean}  9.{#Geyser}  No Banned Blocks/Items, or duping allowed.
 {#Cerulean} 10.{#Geyser}  Being AFK is allowed, anti-afking is not.
-{#Cerulean} 11.{#Geyser}  0-tick farms + other mechanic abuse arnt allowed.
+{#Cerulean} 11.{#Geyser}  0-tick farms and other mechanic abuse are not allowed.
 {#Cerulean} 12.{#Geyser}  Fair-play; No game exploiting or cheating (this includes abusing bugs/glitches in the game!)
 {#Cerulean} 13.{#Geyser}  Respect all Players, including Staff.
 {#Cerulean}&l&m                                                     &r

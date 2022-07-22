@@ -216,15 +216,6 @@ CustomAlias:
     Cmds:
     - cmi gm spectator $1
     Perm: true
-  sometest:
-    Cmds:
-    - broadcast! &6 Broadcast! &b This is a broadcast
-    - actionbar! &6 This an action bar msg
-    - title! &6 This is title
-    - subtitle! &6 This is a sub title
-    - cmi bossbarmsg all -n:sometest -c:orange &bThis is a bossbarmsg
-    - cmi toast all &bThis is a toast msg
-    Perm: true
   letmeglow:
     Cmds:
     - asConsole! cmi glow [playerName] red

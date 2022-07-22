@@ -1,5 +1,8 @@
 # Language file you want to use
 Language: EN
+# Defines if you want to auto download default locale files from github repository
+# You can disable this if you are using EN or you already have your locale setup and you dont need to have other languages being downloaded
+LanguageDownload: true
 Economy:
   # Enable or disable CMI economy in general
   # In case CMIInjector is present, then this will be set to true automatically.
@@ -70,6 +73,8 @@ Economy:
     MoneyFormat: '###,##0.00'
     # Converts long numbers to short ones, like 12305122 to 12.3m
     UseShortNumbers: false
+    # This format is only for amounts which gets defines suffix like '1.23k' while numbers lover than 1k will use MoneyFormat
+    shortNumbersFormat: '###,##0.0'
     # Suffixes for short numbers
     ShortNumbersSuffixes:
     - ''
@@ -101,7 +106,7 @@ Optimizations:
   # Time in seconds we want to give for playes who joins server a immortality state
   # Set this to 0 to disable
   # Max 60 seconds
-  ImmortalityOnJoin: 6
+  ImmortalityOnJoin: 5
   # Enables or disables maintenance mode
   Maintenance: false
   # Automatically kicks everyone from server when enabling maintenance mode who doesnt have cmi.command.maintenance.bypass permission node
@@ -360,7 +365,7 @@ PlaytimeRewards:
   # This is required if you want to have auto rewards
   Enabled: false
   # When enabled, while player is in afk mode, repeatable playtime rewards will not increase in playtime
-  # ATENTION! this setting will not have any effect if you have Afk.StopPlayTime set to true
+  # ATTENTION! this setting will not have any effect if you have Afk.StopPlayTime set to true
   # When StopPlayTime set to true, afk will be expluded automatically
   ExcludeAfk: true
   # Defines time in minutes to inform player about pending reward which needs to be claimed
@@ -406,6 +411,10 @@ Compass:
   BossBar: true
   # Requires to hold compass in had to see it
   RequireCompass: true
+  # When enabled we will use recovery compass as regular one when it comes to compass requirements to show bossbar
+  RecoveryAsRegular: false
+  # Requires to hold recovery compass in had to see death location in bossbar
+  RequireRecoveryCompass: false
   # Compass update interval in milliseconds
   UpdateInterval: 200
   # Keep same spacing between each direction. Length can be any you want
@@ -962,6 +971,8 @@ Command:
       - cmi
       - baltop
       - cmi baltop
+      - cmi ctext
+      - ctext
   Spy:
     # Commands in this list will not be shown when command spy is enabled for player for security/privacy reasons
     # This can be bypassed with cmi.command.commandspy.bypass permission node
@@ -1151,7 +1162,7 @@ Portals:
     Commands:
     - cmi effect [playerName] blindness 2 1 -s
 Animations:
-  # Enable siting on stair block by clicking on them with empty hand or by looking and using command
+  # Enable sitting on stair block by clicking on them with empty hand or by looking and using command
   # Requires cmi.command.sit.stairs
   SitOnStairs: true
   StairsAsChairs: true
@@ -1164,7 +1175,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 3
-# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, 
+# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, sonic_boom, 
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1290,7 +1301,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, 
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1434,10 +1445,11 @@ Warps:
       - closeinv!
     InfoButton:
       # Extra button to be used in case you want to provide any aditional information when clicking on it
-      Use: false
+      Use: true
       Slot: 1
       Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDZiYTYzMzQ0ZjQ5ZGQxYzRmNTQ4OGU5MjZiZjNkOWUyYjI5OTE2YTZjNTBkNjEwYmI0MGE1MjczZGM4YzgyIn19fQ==
       Commands:
+      - msg! [playerName] Learn more about the 1MB Warps features \n https://omgboards.com/threads/263838/
       - closeinv!
 DynamicViewRange:
   # By setting to true will enable dynamic view range feature. Its still in beta stage and can result in some CPU load increase.
@@ -1452,12 +1464,14 @@ WorldLimits:
   Gamemode:
   - spawn:survival
   - general:survival
+  - wild:survival
   - sanctuary:adventure
   - legacy:adventure
   # If player will have cmi.worldlimit.fly.bypass permission node, fly mode wont be changed
   Fly:
   - spawn:false
   - general:false
+  - wild:false
   # If player will have cmi.worldlimit.elytra.bypass permission node, elytra flight will not be prevented
   # Players joining worlds with disable elytra flight will get their elytra dismounted if posible
   ElytraFlight:
@@ -1467,8 +1481,7 @@ WorldLimits:
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
   FlyAboveRoofLimitations:
   - spawn-256
-  - mine-256
-  - nether-128
+  - nether-256
   - sanctuary-256
   - builders-256
   - legacy-256
@@ -1478,7 +1491,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - spawn:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, COMMAND, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
     - None
@@ -1906,7 +1919,128 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    TmpYellowWinter:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     builders:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    PrisonMines:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    run:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    easter:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    santa:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    acid:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    general:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    halloween:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    TmpPortia:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    TmpYellowSummer:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    TmpDragonhold:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1950,7 +2084,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    PrisonMines:
+    valentine:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1961,7 +2095,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    run:
+    TmpMarketPlace:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1972,18 +2106,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    acid:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    general:
+    thanksgiving:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2017,6 +2140,17 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     wild:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    TmpOrangeVillage:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2044,6 +2178,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     nether:
@@ -2055,6 +2190,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     sanctuary:
@@ -2066,6 +2202,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     end:
@@ -2077,6 +2214,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     spawn:
@@ -2088,6 +2226,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     general:
@@ -2099,6 +2238,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: false
+      ignorePowderSnow: false
       minY: 54
       maxY: 250
     builders:
@@ -2110,6 +2250,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     run:
@@ -2121,6 +2262,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     skyblock:
@@ -2132,6 +2274,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     cave:
@@ -2143,6 +2286,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     acid:
@@ -2154,6 +2298,7 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     oneblock:
@@ -2165,19 +2310,21 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
     wild:
       Enabled: true
-      MaxRange: 975
-      MinRange: 250
+      MaxRange: 2000
+      MinRange: 750
       CenterX: 79
       CenterZ: 48
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
-      minY: 0
-      maxY: 256
+      ignorePowderSnow: true
+      minY: 40
+      maxY: 300
     PrisonMines:
       Enabled: true
       MaxRange: 1000
@@ -2187,6 +2334,139 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    TmpYellowWinter:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    TmpPortia:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    TmpYellowSummer:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    TmpDragonhold:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    TmpMarketPlace:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    TmpOrangeVillage:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    easter:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    santa:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    halloween:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    valentine:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    thanksgiving:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
       minY: 0
       maxY: 256
   # How long force player to wait before using command again.
@@ -2228,6 +2508,7 @@ Enchanting:
       protection_explosions: 4
       damage_undead: 5
       multishot: 1
+      swift_sneak: 3
       fire_aspect: 2
       channeling: 1
       sweeping_edge: 3
