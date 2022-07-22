@@ -81,16 +81,16 @@ The latest version of CMILib is required. Zrips' libraries and other resources a
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.19.x? Yes, CMI 9.2.0.x can be used on 1.19.
+- Is there a build for 1.19.x? Yes, CMI 9.2.x can be used on 1.19.
 - Will there be a build for 1.20? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
 - Can I upgrade from an older version of CMI to the build for 1.19? Yes, latest CMI and CMILib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.2.0.3 or newer is required for 1.19
+- CMILib will be required? Yes. CMILib 1.2.x or newer is required for 1.19
 - So where do I download it? spigotmc.org (link below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
 
-- First, I strongly recommend before making any changes to your live server to take it offline with /stop and make a complete backup of the full directory, do not forget to backup your MySQL databases if you use any. 
+- First, I strongly recommend before making any changes to your live server to take it offline with `/stop` and **make a complete backup** of the full directory, do not forget to backup your MySQL databases if you use any. 
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Test setup
 
@@ -98,7 +98,7 @@ The latest version of CMILib is required. Zrips' libraries and other resources a
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Before we start to install and/or upgrade CMI 9
 
-- /stop your server. Do the backup thing, and make a test server.
+- `/stop` your server. Do the backup thing, and make a test server.
 
 - Go to SpigotMC and buy CMI if you haven't yet. And use BuildTools.jar from SpigotMC to build the latest version of Spigot 1.19.x or download Paper 1.19.x from their site, and get the latest release of CMI 9, here is the link: <https://www.spigotmc.org/resources/3742/>
 <img width="512" alt="cmi-download-jar-from-spigot-01" src="https://user-images.githubusercontent.com/28841349/172343317-4cad8fac-451e-40ef-a6e1-143a6c850ef0.png">
@@ -109,9 +109,11 @@ The latest version of CMILib is required. Zrips' libraries and other resources a
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> First time Installalation
 
-If you already are running CMI, you can skip this and go straight to Upgrading (see below).
+_If you already are running CMI, you can skip this and go straight to Upgrading (see below)._
 
 - Put the downloaded CMI `.jar` in the `~/plugins/` directory. 
+
+- Put the downloaded CMILib `.jar` in the `~/plugins/` directory as well.
 
 - Start the server and let it complete loading.
 
@@ -119,11 +121,11 @@ If you already are running CMI, you can skip this and go straight to Upgrading (
 
 - If you spot any bugs, confirm them, and report them to Zrip's Github as a new issue.
 
-- When the server has started, CMI will automatically download languages, CMILib and you're ready to **Finish** (see below)
+- When the server has started, CMI will automatically download languages, CMILib and you're ready to proceed to the **Finish** step (below).
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Upgrading CMI
 
-If you are installing it for the first time, go to the Installing steps above and skip the upgrading steps.
+_If you are installing it for the first time, go to the Installing steps above and skip the upgrading steps._
 
 - Keep the existing `plugins/CMI/` folder, do not delete it.
 
@@ -137,11 +139,13 @@ If you are installing it for the first time, go to the Installing steps above an
 
 - Put the freshly downloaded CMI `.jar` in the plugins/ directory. 
 
+- Put the freshly downloaded CMILib `.jar` in the plugins/ directory as well.
+
 - Start the server and let it complete loading.
 
 - Keep an eye on the console, the `latest.log` will also have all the details. If something goes wrong, take note. And try to figure out what is up and try again.
 
-- When the server has started, CMI will automatically download languages, CMILib and you're ready to **Finish** (see below)
+- When the server has started, CMI will automatically download languages, CMILib and you're ready to proceed to the **Finish** step (below).
 
 - If your plugins/ directory has the old CMILib `.jar` files, it is okay to remove them now. Keep the new .jar of course.
 
@@ -149,7 +153,7 @@ If you are installing it for the first time, go to the Installing steps above an
 
 Okay, you've backed everything up, you've made a test setup, and you've either fresh installed or upgraded CMI. Just one more thing before you can play with this test setup that is now running.
 
-- This test setup has to /stop and restart once. This way any new languages, converted data, and updated libraries can be put to use.
+- This test setup has to `/stop` and restart once. This way any new languages, converted data, and updated libraries can be put to use.
 
 - And now you can start it again. Keep an eye on the console (or `latest.log`) again and make sure there's no weird errors.
 
@@ -160,6 +164,8 @@ What a list huh, okay, now you have experience, you have tested, and you can do 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> What about 1.16.5?
 
 CMI will not run on 1.16.0 or 1.16.1, but 1.16.5 is supported. You can use the latest cmi and CMILib jars on 1.16.5. I always recommend to stay current for each family branch.
+
+The same goes for other older versions, use the latest build for the branch you're using, so not 1.8.0, but 1.8.8, so not 1.12.0 but 1.12.2. 
 
 #### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Resources
 
