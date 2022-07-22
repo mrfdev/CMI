@@ -343,6 +343,7 @@ info:
     melting: Melting
     poison: Poison
     projectile: Projectile
+    sonic_boom: sonic boom
     starvation: Starvation
     suffocation: Suffocation
     suicide: Suicide
@@ -360,6 +361,7 @@ info:
     CUSTOM: Custom
     DARK_FOREST: Dark forest
     DEEP_COLD_OCEAN: Deep cold ocean
+    DEEP_DARK: Deep dark
     DEEP_FROZEN_OCEAN: Deep frozen ocean
     DEEP_LUKEWARM_OCEAN: Deep lukewarm ocean
     DEEP_OCEAN: Deep ocean
@@ -380,6 +382,7 @@ info:
     JUNGLE: Jungle
     LUKEWARM_OCEAN: Lukewarm ocean
     LUSH_CAVES: Lush caves
+    MANGROVE_SWAMP: Mangrove swamp
     MEADOW: Meadow
     MUSHROOM_FIELDS: Mushroom fields
     NETHER_WASTES: Nether wastes
@@ -413,6 +416,7 @@ info:
     WINDSWEPT_SAVANNA: Windswept savanna
     WOODED_BADLANDS: Wooded badlands
   EntityType:
+    allay: Allay
     area_effect_cloud: Area effect cloud
     armor_stand: Armor stand
     arrow: Arrow
@@ -423,6 +427,7 @@ info:
     boat: Boat
     cat: Cat
     cave_spider: Cave spider
+    chest_boat: Chest boat
     chicken: Chicken
     cod: Cod
     cow: Cow
@@ -448,6 +453,7 @@ info:
     firework: Firework
     fishing_hook: Fishing hook
     fox: Fox
+    frog: Frog
     ghast: Ghast
     giant: Giant
     glow_item_frame: Glow item frame
@@ -507,6 +513,7 @@ info:
     squid: Squid
     stray: Stray
     strider: Strider
+    tadpole: Tadpole
     thrown_exp_bottle: Thrown exp bottle
     trader_llama: Trader llama
     trident: Trident
@@ -517,6 +524,7 @@ info:
     villager: Villager
     vindicator: Vindicator
     wandering_trader: Wandering trader
+    warden: Warden
     witch: Witch
     wither: Wither
     wither_skeleton: Wither skeleton
@@ -576,6 +584,8 @@ info:
     - Smite
     multishot:
     - MULTISHOT
+    swift_sneak:
+    - SWIFTSNEAK
     fire_aspect:
     - FireAspect
     channeling:
@@ -670,6 +680,8 @@ info:
     - Bad omen
     hero_of_the_village:
     - Hero of the village
+    darkness:
+    - Darkness
 direction:
   n: North
   ne: North East
