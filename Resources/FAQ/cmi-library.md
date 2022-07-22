@@ -82,19 +82,19 @@ You can find the CMI LIb download here: <https://www.spigotmc.org/resources/CMIL
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Which plugins use this?
 
-The full list as of June 9th, 2022
+The full list as of July 22nd, 2022
 
-- CMI version 9.2.0.0
-- Selection Visualizer version 3.1.1.1
+- CMI version 9.2.1.4
+- Selection Visualizer version 3.2.0.0
 - TryMe version 7.0.0.3
 - Mob Farm Manager version 2.0.3.0
 - Residence version 5.0.1.6
-- Jobs-Reborn version 5.0.2.1
+- Jobs-Reborn version 5.1.0.0
 - BottledExp version 3.1.0.0
 - ReCount version 3.5.1
-- TradeMe version 6.1.1.1
+- TradeMe version 6.1.2.0
 
-These currently support Spigot-, and Paper 1.19 and lower, and require the CMILib version 1.2.0.0 or newer to properly operate.
+These currently support Spigot-, and Paper 1.19 and lower, and require the CMILib version 1.2.1.2 or newer to properly operate.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How do I get it?
 
@@ -116,7 +116,7 @@ And now Residence with Lib 1.0.2.3
 
 Don't panic, the latest version can be used by all the plugins. Once you're ready for that final restart, before you start it up, keep the latest, and delete older versions.
 
-From CMI Library version 1.0.2.4 onwards it should automatically clean-up older lib jars. If it does not, you can stop the server, manually remove the older jars and start the server again.
+From CMI Library version 1.0.2.4 onwards it should automatically clean-up older lib jars. If it does not, you can stop the server, manually remove the older jars and start the server again. So just make sure your CMILib is always the latest version.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> I keep deleting this CMILib jar and it keeps coming back!
 
