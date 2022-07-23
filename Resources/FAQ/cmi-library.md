@@ -122,4 +122,12 @@ From CMI Library version 1.0.2.4 onwards it should automatically clean-up older 
 
 Yes, Zrips plugins require the latest CMILib to properly work, you need it, don't delete it.
 
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Auto-update Information
+
+The CMILib can be automatically upgraded, but not every operating system, hosting solution, etc. is the same. So it's possible it won't be flawless for you. If something's not working as expected, do not forget to report it as an issue on the github repository of zrips.
+
+In the `~/plugins/CMILib/` directory you can enable/disable the auto-updater feature within the `config.yml` file. 
+
+- Make sure you remove older jars, only use the latest.
+
 ---
