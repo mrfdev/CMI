@@ -1,4 +1,4 @@
-# FAQ - How can I import from EssentialsX into CMI?
+# FAQ - How can I import from other plugins into CMI?
 
 <topMenu>
 <details>
@@ -74,64 +74,109 @@
 - Configure CMI to your liking. 
 
 - Then turn on Maintenance mode:
-```yaml
+```
 /cmi maintenance true Working on the server, back later
 /stop
 ```
-- Start the server again, you will do this quite a few times, hence why I recommend moving to maintenance mode true, and to do the rest from console.
+- Start the server again. You will do this quite a few times, hence why I recommend enabling maintenance mode, and to do the rest from console.
 
 - Do not let anybody, including yourself, login to the server. Work from console.
 
-- First I would import old users into CMI if any, if possible: (# Imports users from playerdata folder in main world folder. Server can suffer lag spike during import)
+- First I would import old users into CMI, if possible:
 Note: When it's done, do a little save-all, stop, and start the server again.
-```yaml
-cmi importoldusers
 ```
+cmi importoldusers
+save-all
+stop
+```
+- Start the server again.
 
-- Before we import from EssentialsX, Essentials plugin is not needed for it to work. But the folder from that plugin obviously is needed. Read up on this page first: <https://www.zrips.net/cmi/faq/> 
+- EssentialsX does not need to be loaded to import data to CMI. The only thing that is needed is the plugin's folder. Read up on this page first: <https://www.zrips.net/cmi/faq/>
 
 - Now to import from EssentialsX, and still from console.
-Note: `importfrom [essentials/hd] [home/warp/nick/logoutlocation/money/mail]`
-Note: After EACH imported bit of data, do a little save-all, stop, and start the server again. Only now, confirm the data is there, if possible.
-```yaml
-cmi importfrom essentials (ONE THING AT A TIME)
-so, .. first, 
-cmi importfrom essentials home
-then, save-all, stop, and start the server again. If all is well:
-cmi importfrom essentials logoutlocation
-then, save-all, stop, and start the server again. If all is well:
-cmi importfrom essentials money
-restart again
-cmi importfrom essentials mail
-restart again
-cmi importfrom essentials nick
-restart again
-cmi importfrom essentials warp
+Note: After each imported bit of data, do a save-all, stop the server, and then start the server again. Next, confirm the imported data is there, if possible.
 ```
+cmi importfrom essentials home
+save-all
+stop
+```
+- Start the server again. If the data was successfully imported:
+```
+cmi importfrom essentials logoutlocation
+save-all
+stop
+```
+- Start the server again. If the data was successfully imported:
+```
+cmi importfrom essentials mail
+save-all
+stop
+```
+- Start the server again. If the data was successfully imported:
+```
+cmi importfrom essentials money
+save-all
+stop
+```
+- Start the server again. If the data was successfully imported:
+```
+cmi importfrom essentials nick
+save-all
+stop
+```
+- Start the server again. If the data was successfully imported:
+```
+cmi importfrom essentials warp
+save-all
+stop
+```
+- Although this is annoying, some servers may have issues doing it all at once. This is what worked for me. Going through it one by one, and checking the data in between. If something worked, I would make a backup, so that I have a copy I can roll back to and try again in case anything goes wrong. 
 
-Note: Yes, annoying, but .. doing it all at once, I've had issues in the past, every server is different. This is what has worked for me. Going through it one by one, and checking the data in between. If something worked, I even made a backup, so i have a snapshot to roll back to and try again. 
+- Next, CMI also has a worth.yml file. You can simply drop the worth.yml file from EssentialsX into the CMI folder, and it will overwrite CMI's worth.yml file. 
 
-- Next, CMI also has a worth.yml file, from what I understand you can just drop the essentialsx worth.yml, overwriting the cmi one. 
+- CMI doesn't have a kit importer, but, you can create the kits in-game using /cmi kiteditor, give yourself the kit from EssentialsX, then put those items in the CMI kit, and you're set.
 
-- And, CMI doesn't have a kit importer, but, you can in-game create the cmi kits with /cmi kiteditor, and then give yourself the essentialsx kit, then put those items in the cmi kit, and you're set.
+- World management addons from EssentialsX are not 100% in CMI, but most features are, and even more so [GriefDefender](https://www.spigotmc.org/resources/1-12-2-1-19-griefdefender-claim-plugin-grief-prevention-protection.68900/), Zrips' [Residence](https://www.spigotmc.org/resources/residence-1-7-10-up-to-1-19.11480/), or [WorldGuard](https://dev.bukkit.org/projects/worldguard), all have world management features that do exactly that anyway.
 
-- World management addons from EssentialsX are not 100% in CMI, but most features are, and even more so grief defender, or zrips' residence, or worldguard, all have world management features that do exactly that anyway.
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can import data from HolographicDisplays
 
-- Check the FAQ here, to see how to get started using CMI, for example.. how to setup cmi as chat manager, economy manager, bungee chat, custom /help, custom /rules, deal with NuVotifier votes, hex colors, how to setup custom alias commands or configure cmi's base commands. etc..
+- Configure CMI to your liking. 
+
+- Then turn on Maintenance mode:
+```
+/cmi maintenance true Working on the server, back later
+/stop
+```
+- Start the server again. You will do this quite a few times, hence why I recommend enabling maintenance mode, and to do the rest from console.
+
+- Do not let anybody, including yourself, login to the server. Work from console.
+
+- HolographicDisplays does not need to be loaded to import data to CMI. The only thing that is needed is the plugin's folder. Read up on this page first: <https://www.zrips.net/cmi/faq/>
+
+- Now to import from HolographicDisplays, and still from console.
+Note: After you have imported the data to CMI, do a save-all, stop the server, and then start the server again. Next, confirm the imported data is there, if possible.
+```
+cmi importfrom hd
+save-all
+stop
+```
+- Start the server again. If the data was successfully imported:
+
+- Check the FAQ here, to see how to get started using CMI, for example how to setup CMI as a chat manager and an economy manager, how to setup BungeeCord chat, custom /help, custom /rules, deal with NuVotifier votes, hex colors, how to setup custom alias commands or configure CMI's base commands, etc.
 <https://github.com/mrfdev/CMI/tree/master/Resources/FAQ>
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Unofficial Import Tool
 
-Hi there, someone recently made me aware of this import tool. Please note that I did not review the code, or the provided jar file. Please vet it before using it yourself. It's not an official tool, using it is at your own risk. But I think it's worth to mention at least. <https://github.com/BlackBeltPanda/Essentials-Kits-To-CMI> This should help servers with loads of kits to maybe do the bigger part of the import work, after which they can clean things up. Might save time.
+Someone recently made me aware of this [import](https://github.com/BlackBeltPanda/Essentials-Kits-To-CMI) tool. Please note that I did not review the code, or the provided jar file. Please vet it before using it yourself. It's not an official tool, using it is at your own risk. But I think it's worth mentioning. This should help servers with loads of kits to maybe do the bigger part of the import work, after which they can clean things up.
 
-## All the EssentialsX Commands ?
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> FAQ
 
-Question: Me and my players are used to a lot of the original EssentialsX commands and their aliases, where are they! 
+- How can I use all the EssentialsX commands and aliases?
 
-Answer: A lot of them are in the CMI Alias.yml file, go through them. On my github repo here I also have under resources > alternative > alias_true.yml where they're all set to true. 
+A lot of them are in the Alias.yml file of CMI. I would recommend going through them. I also have an Alias_true.yml [file](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/Alias_true.yml) on my GitHub repository, under Resources > Alternatives > Alias_true.yml, where all of the commands are set to true.
 
-Anyway, anything that's not in CMI can be manually added, I've made a nice little add-on that you can use, here: <https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/essentialsx> Read the readme before downloading, and backup your data before using it of course.
+Although some of the EssentialsX commands and aliases are there, you may notice that not all of them are there. If you want to be able to use all of EssentialsX's commands and aliases in CMI, you can use this [addon](https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/essentialsx) that I've made, that manually adds all the missing commands and aliases from EssentialsX to CMI. Read the information before downloading, and be sure to backup your data before using it.
 
 ---
