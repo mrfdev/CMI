@@ -39,17 +39,17 @@ CustomAlias:
     - if:check1! check:$1==help! msg! [playerName] {#orange}help{#gold} - displays
       this help page
     - if:check1! check:$1==tfly! check:$2!=null! asConsole! allPlayers! cmi tfly [allPlayers]
-      $2-
+      $2 $3
     - if:check1! check:$1==tgod! check:$2!=null! asConsole! allPlayers! cmi tgod [allPlayers]
-      $2-
+      $2 $3
     - if:check1! check:$1==exp! check:$2==add! check:$3!=null! asConsole! allPlayers!
       cmi exp [allPlayers] $2 $3-
     - if:check1! check:$1==exp! check:$2==clear! asConsole! allPlayers! cmi exp [allPlayers]
-      $2-
+      $2 $3
     - if:check1! check:$1==exp! check:$2==set! asConsole! allPlayers! cmi exp [allPlayers]
-      $2 $3-
+      $2 $3 $4
     - if:check1! check:$1==exp! check:$2==take! asConsole! allPlayers! cmi exp [allPlayers]
-      $2 $3-
+      $2 $3 $4
     - if:check1! check:$1==kit! check:$2!=null! asConsole! allPlayers! cmi kit $2
       [allPlayers] $3
     - if:check1! check:$1==launch! asConsole! allPlayers! cmi launch [allPlayers]
