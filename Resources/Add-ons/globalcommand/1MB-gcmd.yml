@@ -28,6 +28,10 @@ CustomAlias:
       players temp fly for time in seconds
     - if:check1! check:$1==help! msg! [playerName] {#orange}tgod{#gold} - gives all
       players temp immortality for time in seconds
+    - if:check1! check:$1==help! msg! [playerName] {#orange}exp{#gold} - adjusts the
+      EXP of all online players.
+    - if:check1! check:$1==help! msg! [playerName] {#orange}kit{#gold} - gives all
+      players the specified kit.
     - if:check1! check:$1==help! msg! [playerName] {#orange}launch{#gold} - will fling
       all players into the air (no damage on landing)
     - if:check1! check:$1==help! msg! [playerName] {#orange}mobs{#gold} - lets you
@@ -35,9 +39,19 @@ CustomAlias:
     - if:check1! check:$1==help! msg! [playerName] {#orange}help{#gold} - displays
       this help page
     - if:check1! check:$1==tfly! check:$2!=null! asConsole! allPlayers! cmi tfly [allPlayers]
-      $2
+      $2 $3
     - if:check1! check:$1==tgod! check:$2!=null! asConsole! allPlayers! cmi tgod [allPlayers]
-      $2
+      $2 $3
+    - if:check1! check:$1==exp! check:$2==add! check:$3!=null! asConsole! allPlayers!
+      cmi exp [allPlayers] $2 $3-
+    - if:check1! check:$1==exp! check:$2==clear! asConsole! allPlayers! cmi exp [allPlayers]
+      $2 $3
+    - if:check1! check:$1==exp! check:$2==set! asConsole! allPlayers! cmi exp [allPlayers]
+      $2 $3 $4
+    - if:check1! check:$1==exp! check:$2==take! asConsole! allPlayers! cmi exp [allPlayers]
+      $2 $3 $4
+    - if:check1! check:$1==kit! check:$2!=null! asConsole! allPlayers! cmi kit $2
+      [allPlayers] $3
     - if:check1! check:$1==launch! asConsole! allPlayers! cmi launch [allPlayers]
       p:2.5 a:25 -nodamage
     - if:check1! check:$1==mobs! check:$2!=null! asConsole! allPlayers! cmi spawnmob
@@ -46,9 +60,11 @@ CustomAlias:
       !{#yellow}(Server says) {#gold>}$2-{#orange<}
     Perm: true
     CustomTabs:
-    - tfly 60,120,300,600
-    - tgod 60,120,300,600
+    - tfly 60,120,300,600 -s
+    - tgod 60,120,300,600 -s
+    - kit [kit] -s
     - launch
     - mobs creeper,zombie,blaze
     - help
     - msg YourMsgHere
+    - exp add,clear,set,take 1,1L,10,10L
