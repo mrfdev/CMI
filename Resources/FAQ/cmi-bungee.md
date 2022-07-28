@@ -71,7 +71,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat and BungeeCord Chat
 
-- Download and install CMI's BungeeCord jar on your proxy server (<https://www.zrips.net/wp-content/uploads/2021/09/CMIB1.0.1.0.jar>).
+- Download and install CMI's BungeeCord jar on your proxy server (https://www.zrips.net/cmib/).
 - Update the `config.yml` (see below).
 ```yaml
 BungeeCord:
