@@ -307,6 +307,6 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi worthlist (playerName) (-missing) - Check list of items with set sell prices
 ```
 
-## Misc.
+## Miscellaneous
 
 Created with CMI 9.2.3.5 for Minecraft 1.19
