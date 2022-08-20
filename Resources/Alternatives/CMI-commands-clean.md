@@ -85,7 +85,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi flyc (playerName) (true/false) (-s) - Toggle flight charge mode
 /cmi flyspeed (playerName) [amount] (-s) - Set players fly speed from 0 to 10
 /cmi gamerule - Manage gamerules
-/cmi generateworth - Auto generate posible item worth values
+/cmi generateworth - Auto generate possible item worth values
 /cmi getbook [cTextName] (playerName) - Get book
 /cmi give (playerName) [itemname/hand] (amount/playerName) (-slot:[number]) - Give item to player
 /cmi giveall [itemname] (amount) (e|l|n|offline) - Give item for all players
@@ -140,7 +140,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi kiteditor - Kit editor.
 /cmi kitusagereset (kitName) (playerName) - Reset kit usage counter
 /cmi lastonline (-p:[page]) - Show played players from last x minutes
-/cmi[z]) (-nodamage) - Launch at direction you are looking or at angle
+/cmi launch (playerName) (p:[power]) (a:[angle]) (d:[direction]) (loc:[x]:[y]:[z]) (-nodamage) - Launch at direction you are looking or at angle
 /cmi lfix (range) (playerName) (stop/stopall) - Fix light in chunks around you
 /cmi list - Shows online player list
 /cmi lockip (playername) [add/remove/list/clear] [ip] - Prevents logging into account from different ip
@@ -224,7 +224,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi setfirstspawn (playerName) - Sets first spawn point
 /cmi sethome (homeName) (playerName) (-p) (-l:worldName;x;y;z) (block/Material) (slotNumber) (-overwrite) - Sets home location
 /cmi setmotd [newMotd] (-s) - Set server motd
-/cmi[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
+/cmi setrt (worldName) (center:[x]:[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
 /cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (loc:[world;x;y;z;yaw;pitch]) - Sets spawn command teleport point
 /cmi setwarp [warpName] (reqPermission) (hand/head/head:[playerName]) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) (-confirm) - Sets warp location
 /cmi setworth (itemname) -s:(sellPrice) - Change item worth
@@ -309,4 +309,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Miscellaneous
 
-Created with CMI 9.2.3.5 for Minecraft 1.19.x.
+Created with CMI 9.2.3.5 for Minecraft 1.19.2.
