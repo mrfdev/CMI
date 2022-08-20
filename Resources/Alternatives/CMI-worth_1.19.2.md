@@ -1165,6 +1165,6 @@ worth:
   ZOMBIFIED_PIGLIN_SPAWN_EGG>ZOMBIFIED_PIGLIN: '0.01'
 ```
 
-## Misc.
+## Miscellaneous
 
-Created with CMI 9.2.1.4 for Minecraft 1.19
+Created with CMI 9.2.3.2 for Minecraft 1.19.2
