@@ -309,4 +309,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Miscellaneous
 
-Created with CMI 9.2.3.5 for Minecraft 1.19
+Created with CMI 9.2.3.5 for Minecraft 1.19.x.
