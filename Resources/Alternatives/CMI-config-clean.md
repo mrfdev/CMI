@@ -322,6 +322,8 @@ Optimizations:
     TheEnd: false
   # Will teleport players down from nether 'roof'
   PreventPlayersOnNetherRoof: false
+  # Will define nether roof height. Keeping it at 0 will use default nether height, which is 128
+  netherRoofHeight: 0
   # Will teleport players up from beneeth betrock if they are flying or gliding with elytra over there
   PreventPlayersBelowBedrock: false
   PreventIronGolem:
@@ -330,7 +332,7 @@ Optimizations:
   # When set to true, fishing rod will not move grabbed entity towards you
   PreventHook: false
   Commands:
-    # When set to true player will see full list of posible commands when performing /cmi command without defining specific command
+    # When set to true player will see full list of possible commands when performing /cmi command without defining specific command
     # When set to false we will return 'No command found' feedback message
     ShowMainHelpPage: true
     Near:
@@ -637,7 +639,7 @@ Holograms:
     # Defines default page change interval
     # When value is set to 0 or lower, pages will not be changed
     pageChangeInterval: 0.0
-    # Posible values: down, up
+    # Possible values: down, up
     # Defines if we should place lines up from starting position or down
     placeUp: true
 Votifier:
@@ -678,6 +680,9 @@ Ranks:
   # While this is active using command like /cmi setrank will set players rank to highest one he has access too, so as long as player has permission access to third rank you cant go lower than this, 
   # you will have to remove access to specific rank by removing permission node before trying to derank him
   PermissionCheck: false
+  # Defines how often in minutes plugin will recalculate players group
+  # Keeping it at 0 will disable this feature
+  Recalculation: 0
   AutoRankUp:
     # Defines how often in seconds plugin will check for possible player rankups
     # Set it to 0 or less to disable auto rankup checks
@@ -724,7 +729,7 @@ Skins:
   # This only triggers when player joins server or changes skin manually
   SkinUpdateTimer: 1320
   # Defines time in minutes how offten we want to send requests to Mojang servers
-  # This is to limit amount of requests in specific time to avoid cluter with posible requests
+  # This is to limit amount of requests in specific time to avoid cluter with possible requests
   SkinRequestFrequency: 10
 Alert:
   # Time in minutes for how long we want to keep set allert on player when performing /cmi alert command. Default is 24 hours
@@ -1230,7 +1235,7 @@ Messages:
     Custom:
       # If set to true, custom login message will be used. cmi.messages.disablelogin can be used to disable message for player
       Use: false
-      # When enabled and you have bungeeserver with CMIB on it we will try to detect where player went and we will show switch server message instead of login if posible
+      # When enabled and you have bungeeserver with CMIB on it we will try to detect where player went and we will show switch server message instead of login if possible
       ServerSwitch: true
   Logout:
     # If set to true, logout message wont be shown
@@ -1241,7 +1246,7 @@ Messages:
     Custom:
       # If set to true, custom logout message will be used. cmi.messages.disablequit can be used to disable message for player
       Use: false
-      # When enabled and you have bungeeserver with CMIB on it we will try to detect where player went and we will show switch server message instead of logout if posible
+      # When enabled and you have bungeeserver with CMIB on it we will try to detect where player went and we will show switch server message instead of logout if possible
       ServerSwitch: true
   # Check locale file for translation and custom placeholders: [playername], [totalUsers], [onlinePlayers]
   FirstJoinMessage:
@@ -1383,7 +1388,7 @@ WorldLimits:
   Fly:
   - testWorld:False
   # If player will have cmi.worldlimit.elytra.bypass permission node, elytra flight will not be prevented
-  # Players joining worlds with disable elytra flight will get their elytra dismounted if posible
+  # Players joining worlds with disable elytra flight will get their elytra dismounted if possible
   ElytraFlight:
   - worldName:False
   # When set to false, only players with cmi.worldlimit.fly.aboveroof can fly above world build limit
@@ -1396,7 +1401,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - testWorld:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, COMMAND, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, CUSTOM, DEFAULT
   SpawnReasons:
     world:
     - None
@@ -1465,8 +1470,11 @@ Mute:
   # When set to true, player will not be allowed to send private messages while he is muted
   DenyPrivateMessages: true
 Dispose:
-  # defines how big is dispose ui 1-6
+  # Defines how big is dispose ui 1-6
   UILines: 4
+  # Should we allow disposing items with attached commands in them
+  CustomModelData: true
+  AttachedCommands: true
 ItemRepair:
   RepairShare:
     # When neabling you will need to perform full server restart for it to take effect
@@ -1601,13 +1609,13 @@ Combat:
         Lvl1: 5.0
         Lvl2: 15.0
         Lvl3: 30.0
-      # List of worlds where we should drop player heads. Keep it empty if you want to include all posible ones
+      # List of worlds where we should drop player heads. Keep it empty if you want to include all possible ones
       Worlds: []
     Mob:
       # Enables custom mob heads dropping from mobs with particular chance
       # Check customHeads.yml for customization by entityType
       Drop: false
-      # List of worlds where we should drop mob heads. Keep it empty if you want to include all posible ones
+      # List of worlds where we should drop mob heads. Keep it empty if you want to include all possible ones
       Worlds: []
 ShulkerBoxes:
   # When set to true, players will not have option to open shulker boxes while in combat
@@ -1668,6 +1676,18 @@ Player:
       acceptingPM: true
       acceptingTPA: true
       acceptingMoney: true
+    Icons:
+      visibleHolograms: BLACK_STAINED_GLASS
+      shiftSignEdit: OAK_SIGN
+      totemBossBar: TOTEM_OF_UNDYING
+      bassBarCompass: COMPASS
+      tagSound: PAPER
+      chatSpy: BUCKET
+      cmdSpy: WATER_BUCKET
+      signSpy: LAVA_BUCKET
+      acceptingPM: MAP
+      acceptingTPA: CLOCK
+      acceptingMoney: KNOWLEDGE_BOOK
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1707,6 +1727,13 @@ Jail:
   PreventDamage: true
   # Do you want to prevent players hunger while he is in jail
   PreventHunger: true
+  Commands:
+    # Commands to be performed when player gets jailed
+    OnJail:
+    - ''
+    # Commands to be performed when player gets unjailed
+    OnUnJail:
+    - ''
   WhiteListedCmds:
   - cmi msg
   - cmi reply
@@ -1941,7 +1968,7 @@ Scavenge:
     BreakDurabilityCheck: 50.0
     # When set to true, items durability will be taken into consideration when extracting ingredients
     # In example if item has 100 max durability and current is at 50, then only half of ingredients will be considered for extraction
-    # This doesnt mean that player gets 50% of them, it only means that half of posible ingredients will go throw IngredientReturn process
+    # This doesnt mean that player gets 50% of them, it only means that half of possible ingredients will go throw IngredientReturn process
     DurabilityCheck: true
     IngredientReturn:
       # Defines in percentage a max chance to return ingredients of item if it fails extraction process
@@ -2121,6 +2148,9 @@ TeleportEffects:
   Top:
     From: ''
     To: ''
+  Down:
+    From: ''
+    To: ''
   TpAll:
     From: ''
     To: ''
@@ -2154,6 +2184,6 @@ PotionEffects:
   DeductWhileOffline: false
 ```
 
-## Misc.
+## Miscellaneous
 
-Created with CMI 9.2.1.4 for Minecraft 1.19
+Created with CMI 9.2.3.5 for Minecraft 1.19.2
