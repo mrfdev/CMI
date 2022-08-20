@@ -1,6 +1,6 @@
 # Clean list of all material names
 
-Clean list of available materials that come with 1.18 API/server that you can use in CMI where appropriate
+Clean list of available materials that come with 1.19.2 API/server that you can use in CMI where appropriate
 
 ## List of Material
 
@@ -806,6 +806,7 @@ NETHERITE_SCRAP
 NETHERITE_SHOVEL
 NETHERITE_SWORD
 NETHERRACK
+NONE
 NOTE_BLOCK
 OAK_BOAT
 OAK_BUTTON
@@ -1326,6 +1327,6 @@ ZOMBIE_WALL_HEAD
 ZOMBIFIED_PIGLIN_SPAWN_EGG
 ```
 
-## Misc.
+## Miscellaneous
 
-Created with CMI 9.2.1.4 for Minecraft 1.19
+Created with CMI 9.2.3.5 for Minecraft 1.19.2
