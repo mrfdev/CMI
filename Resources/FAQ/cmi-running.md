@@ -1,4 +1,4 @@
-# FAQ - Running CMI on Spigot / Paper 1.19
+# FAQ - Running CMI on Spigot / Paper 1.19.2
 
 <topMenu>
 <details>
@@ -60,7 +60,7 @@
          <pre>https://www.spigotmc.org/resources/3742/<br>Get the CMI plugin if you haven't already, and then Install it on all your servers</pre></li>
         <li><a href="https://www.spigotmc.org/resources/87610/">Also Download CMILib</a> (free library) (<a href="https://github.com/mrfdev/CMI/edit/master/Resources/FAQ/cmi-library.md">more info</a>)
          <pre>https://www.spigotmc.org/resources/87610/<br>All Zrips plugins require the CMILib .jar file. Get it and also put it on all your servers.</pre></li>
-        <li>All my FAQ pages have been written for Spigot / Paper 1.19 and CMI 9.2.x or newer.</li>
+        <li>All my FAQ pages have been written for Spigot / Paper 1.19.2 and CMI 9.2.x or newer.</li>
         <li>The mrfdev github page is not an official resource, we're building up our knowledge base as a courtesy.</li>
         <li>I am an admin on the Zrips Discord, this does not mean what I share on here is official.</li>
     </ul>
@@ -81,11 +81,11 @@ The latest version of CMILib is required. Zrips' libraries and other resources a
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
 
-- Is there a build for 1.19.x? Yes, CMI 9.2.x can be used on 1.19.
+- Is there a build for 1.19.2? Yes, CMI 9.2.3.5 can be used on 1.19.2.
 - Will there be a build for 1.20? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
 - Can I upgrade from an older version of CMI to the build for 1.19? Yes, latest CMI and CMILib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.2.x or newer is required for 1.19
+- CMILib will be required? Yes. CMILib 1.2.3.3 or newer is required for 1.19.2
 - So where do I download it? spigotmc.org (link below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
