@@ -37,14 +37,26 @@ More details and information about placeholders on the official website [here](h
 %cmi_lastrandom_player_name%
 %cmi_maintenance_message%
 %cmi_maintenance_state%
+%cmi_onlineplayers_displaynames%
+%cmi_onlineplayers_names%
+%cmi_p_[playerName]_display_name%
+%cmi_player_biome%
+%cmi_player_world%
+%cmi_player_x%
+%cmi_player_y%
+%cmi_player_z%
 %cmi_playtimetop_name_[1-10]%
 %cmi_playtimetop_time_[1-10]%
 %cmi_random_[from]_[to]%
 %cmi_random_player_name%
 %cmi_schedule_endat_[schedName]%
 %cmi_schedule_nextin_[schedName]%
+%cmi_server_max_players%
 %cmi_server_online%
 %cmi_server_online_[worldName]%
+%cmi_server_time_[timeFormat]%
+%cmi_server_time_[timeFormat]_[timeZone]%
+%cmi_server_unique_joins%
 %cmi_server_uptime%
 %cmi_server_uptime_seconds%
 %cmi_server_users%
@@ -148,8 +160,8 @@ More details and information about placeholders on the official website [here](h
 %cmi_user_tgod%
 %cmi_user_tgod_formated%
 %cmi_user_tgod_formatted%
-%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
-%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit]%
+%cmi_user_toggle_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit|tagsound]%
+%cmi_user_togglename_[msg|pay|tp|compass|sospy|sispy|cospy|schest|autoflightrecharge|totem|shiftedit|tagsound]%
 %cmi_user_totalexp%
 %cmi_user_uuid%
 %cmi_user_vanished_symbol%
@@ -163,6 +175,8 @@ More details and information about placeholders on the official website [here](h
 %cmi_votetopcount_[1-10]%
 %cmi_weather_[worldName]%
 %cmi_weatherduration_[worldName]%
+%cmi_world_time12_[worldName]%
+%cmi_world_time24_[worldName]%
 %cmi_worth_buy_[itemIdName(:data)]%
 %cmi_worth_sell_[itemIdName(:data)]%
 %cmi_worthc_buy_[itemIdName(:data)]%
@@ -185,6 +199,6 @@ More details and information about placeholders on the official website [here](h
 %world_time24_[worldName]%
 ```
 
-## Misc.
+## Miscellaneous
 
-Created with CMI 9.2.1.4 for Minecraft 1.19
+Created with CMI 9.2.3.5 for Minecraft 1.19.2
