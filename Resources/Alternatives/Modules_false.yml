@@ -82,7 +82,7 @@ tablist: false
 paintingEditor: false
 #  
 # Handles player vanish mode
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.19.x and up
 vanish: false
 #  
 # Handles money cheques
