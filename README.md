@@ -102,7 +102,7 @@ You can [open a New Issue](https://github.com/mrfdev/CMI/issues), if
 For Discord I've created a couple of **CMI FAQ** entries that are pinned to the CMI #help channel. You can find them here as well. And you're free to point out outdated instructions, incorrect information, or contribute with improvement or missed steps/commands/permissions.
 
 - [CMI Getting Started](/Resources/FAQ/cmi-gettingstarted.md)
-- [CMI Running 1.18.2](/Resources/FAQ//cmi-running-1.18.2.md)
+- [CMI Running 1.19.2](/Resources/FAQ//cmi-running.md)
 - [CMI Economy](/Resources/FAQ/cmi-economy.md)
 - [CMI Chat](/Resources/FAQ/cmi-chat.md) ([Chatrooms](/Resources/FAQ/cmi-chatrooms.md)) ([Bungee-chat](/Resources/FAQ/cmi-bungee.md)) ([Chat Format](/Resources/FAQ/cmi-chat-format.md)) ([Chat Filter](/Resources/FAQ/cmi-chatfilter.md))
 - [CMI LuckPerms Prefix](/Resources/FAQ/cmi-luckperms-prefix.md)
@@ -153,7 +153,7 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.4.00** (July 22nd, 2022), for live-1mb-3.2.0-mc-1.19
+1MB CMI Project version **0.4.01** (August 20th, 2022), for live-1mb-3.2.0-mc-1.19
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.2.0-mc-1.19`
 ```
@@ -163,4 +163,4 @@ The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.2.0-
 -mc- (Minecraft, but it is Paper jar at the moment)
 -1.19- (Minecraft version 1.19)
 ```
-**TLDR;** These files are for 1.19.x and probably any CMI version 9.2.x.x / CMILib 1.2.x.x
+**TLDR;** These files are for 1.19.2 and probably any CMI version 9.2.3.5 / CMILib 1.2.3.3
