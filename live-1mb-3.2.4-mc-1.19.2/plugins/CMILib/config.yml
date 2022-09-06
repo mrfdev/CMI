@@ -23,7 +23,7 @@ Spawners:
   - panda
   - fox
 RMCCommands:
-  # When enabled we will include when posible a command to indicate which was performed while using rmc commands
+  # When enabled we will include when possible a command to indicate which was performed while using rmc commands
   ConsoleLog: true
 Images:
   # Symbol to be used to create image fields

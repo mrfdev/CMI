@@ -56,7 +56,7 @@
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&e[&a1MB&e] '
-  NoPermission: '&cYou don''t have permission!'
+  NoPermission: '&cYou don''t have permission! test %cmi_user_name% test'
   CantHavePermission: '&cYou can''t have this permission!'
   WrongGroup: '&cYou are in wrong group for this!'
   NoPlayerPermission: '&c[playerName] doesn''t have permission for: [permission]'
@@ -857,6 +857,10 @@ command:
   nocmd:
     help:
       info: '&eShows all available commands'
+      args: ''
+  clearcache:
+    help:
+      info: '&eClear cache'
       args: ''
   reload:
     help:

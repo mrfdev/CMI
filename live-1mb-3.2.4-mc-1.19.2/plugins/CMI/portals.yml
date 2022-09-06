@@ -1,5 +1,22 @@
 # Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
 
+acid:
+  acidspawnparticles:
+    Loc: -388.0:56.0:362.0:-386.0:60.0:362.0
+    enabled: true
+    effect: sneeze
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] Rain and water is acid, /acid create, to get started! Stay
+      alive :)
 general:
   benjaminparticles:
     Loc: -13436.0:69.0:17670.0:-13436.0:69.0:17670.0
@@ -143,6 +160,7 @@ general:
     Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: true
     Tp: general;6060.62;62.0;14269.23;-175.74;10.36
     kickBack: true
@@ -255,6 +273,40 @@ general:
     commandsWithoutTp: false
     commands:
     - msg! [playerName] &6 Teleporting you to the bus stop..
+  spawn_general_endportal:
+    Loc: 76.0:83.0:-236.0:78.0:85.0:-234.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: false
+    Tp: end;111.23;47.0;85.48;90.27;1.7
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  spawn_general_nether1:
+    Loc: 72.0:81.0:-207.0:82.0:88.0:-207.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: false
+    Tp: nether;328.54;80.0;-212.55;90.2;-6.17
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 29
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   survivalnether:
     Loc: 10858.0:76.0:4898.0:10859.0:78.0:4898.0
     enabled: true
@@ -290,6 +342,7 @@ general:
     Loc: 7363.0:0.0:6026.0:7363.0:3.0:6026.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: false
     Tp: general;7342.48;62.8;6026.55;-89.94;5.1
     kickBack: true
@@ -320,6 +373,7 @@ general:
     Loc: -16775.0:104.0:17146.0:-16769.0:106.0:17152.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -337,6 +391,7 @@ general:
     Loc: -15601.0:30.0:-12668.0:-15599.0:30.0:-12666.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: false
     Tp: general;-16766.5;102.69;17123.5;-1.13;-6.95
     kickBack: true
@@ -353,6 +408,7 @@ general:
     Loc: -16774.0:103.0:17147.0:-16770.0:103.0:17151.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: false
     Tp: general;-15603.25;31.9;-12679.72;229.44;14.74
     kickBack: true
@@ -401,6 +457,7 @@ run:
     Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -432,6 +489,7 @@ skyblock:
     Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
     enabled: true
     effect: Reddust
+    color: 8224125
     showParticles: false
     kickBack: true
     particlesByPermission: false

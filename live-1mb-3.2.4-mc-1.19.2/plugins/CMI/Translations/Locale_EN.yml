@@ -43,7 +43,7 @@
 # If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
 # If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
-# If line starts with !bosbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
+# If line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
 # To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
 # <T> and </T> required, other is optional
 # Use /n to break line
@@ -183,6 +183,14 @@ info:
     subinv: '&eYour sub inventory should be empty!'
     subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
   Relog: '&eRelog might be needed for change to take effect'
+  time:
+    # Mainly for placeholder playtime output
+    # Use + sign at the start of line to force include it even if specific and previous time values are 0
+    # Use - sign at the start of line if you want to include it only if its value isn't 0. If entire output results into empty line, then we will output seconds value
+    days: '&2[d]&7d:'
+    hours: '&2[h]&7h '
+    minutes: '&2[m]&7m '
+    seconds: '&2[s]&7s'
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
@@ -296,18 +304,18 @@ command:
       - '&2Nice day for fishing'
       - '&2Away from blocks xD'
       - '&2Boop ya nose!'
-      - '&2Pop the champaigne'
+      - '&2Pop the champagne'
       - '&2Did you fall asleep?'
       - '&2Maybe get a coffee!'
       - '&2Where are you?'
-      - '&2Hey, you. Youre finally awake'
+      - '&2Hey, you. You''re finally awake'
       - '&2Where did you come from where did you go?'
       - '&2Do or do not. There is no try.'
       - '&2You feeding a pet?'
       - '&2We will miss you!'
       - '&2Taking the hobbits to isengard?'
       - '&2Progress waits for no miner!'
-      - '&2If youre not there, who is?'
+      - '&2If you''re not there, who is?'
       - '&2Taking a break is important'
       - '&2Away from basement'
       - '&2Do not forget to hydrate'
@@ -765,7 +773,7 @@ command:
       info: '&eConvert money into cheque'
       args: (playerName) [amount]
     info:
-      transfered: '&eTransfered &6[amount] &eto your account. New balance: &6[balance]'
+      transferred: '&eTransferred &6[amount] &eto your account. New balance: &6[balance]'
       chequeName: '&eCheque for &6[amount]'
       chequeLore:
       - '&r&fIssued by &7[senderDisplayName]'
@@ -978,6 +986,7 @@ command:
       args: (playerName)
     info:
       title: '&cPlace all items you don''t need'
+      cant: '&cYou can''t dispose this item'
   distance:
     help:
       info: '&eCheck distance between 2 points'
@@ -998,6 +1007,12 @@ command:
       doesnthave: '&ePlayer doesn''t have this item anymore'
       'no': '&eNo pending donations'
       list: '&7[number]. &e[playerDisplayName] &e- &7[material] &6x &e[amount]'
+  down:
+    help:
+      info: '&eTeleport one floor down'
+      args: '[playerName] (-s)'
+    info:
+      notFound: '&eNo suitable location'
   dsign:
     help:
       info: '&eManage dynamic signs'
@@ -1145,8 +1160,8 @@ command:
       wrongItem: '&eWrong item in your hand'
       enchantlimit: '&cYou dont have access to this enchantment'
       levellimit: '&cLevel is too high, max allowed is &e[level].'
-      posible: '&ePossible enchants: '
-      posibleList: '&6[enchant]'
+      possible: '&ePossible enchants: '
+      possibleList: '&6[enchant]'
   ender:
     help:
       info: '&eOpens players ender chest'
@@ -1777,6 +1792,7 @@ command:
       newPosHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newAfk: 'AFK '
       newAfkHover: '&6Afk for last: [time]'
+      AfkInHover: '&6Afk in: [time]'
       newBed: '&fBed '
       newBedHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newDeath: '&fDeath '
@@ -1995,17 +2011,18 @@ command:
       createdJail: '&eSuccessfully created new jail (&6[jail]&e)'
       createdCell: '&eSuccessfully created new jail cell (&6[jail]&e:&6[cellId]&e)'
       collides: '&cCollides with &6[jailName] &ejail'
-      jailList: '&e[place]. &6[jail] &eCells:&6[cells] &eJailed: &6[amount]    '
       editCells: '&eEdit cell list'
-      cellList: '&eCell id:&6[id] &ejailed: &6[amount]    '
-      jailListTp: ' &7[tp] '
+      cList: '&eId: &6[id] &eJailed: &6[amount]'
       jailListTpHover: '&eSet outside teleport location'
-      jailListArea: ' &7[area] '
       jailListAreaHover: '&eRedefine area'
       jailRemoved: '&eRemoved (&6[jail]&e) jail'
       jailOutside: '&eSet new outside location'
       jailArea: '&eRedefined area for &6[jail]'
       cellRemoved: '&eRemoved (&6[cellId]&e) cell from &6[jail]'
+      list: '&eCells: &6[cells] &eJailed: &6[amount] &2[jail]'
+      listTp: '[tp] '
+      listArea: '&7[area] '
+      areaShow: '&7[S] '
   jaillist:
     help:
       info: '&eList jails'
@@ -2454,7 +2471,6 @@ command:
       gotMoney: '&eYou got &6[amount] &efrom &6[senderDisplayName]&e. Balance: &6[money]'
       gotMoneyGive: '&eYou received &6[amount]&e. Balance: &6[money]'
       lostMoney: '&6[amount]&e has been removed from your balance. Remaining: &6[money]'
-      noMoney: '&cYou don''t have enough money'
       worldGroups: '&cYou can''t send money between different world groups'
       self: '&cYou can''t send money to yourself!'
       confirm: '&eClick to confirm the &6[money] &etransfer to &6[playerDisplayName]
@@ -2990,7 +3006,7 @@ command:
       info: '&eTeleports to random location'
       args: (playerName) (worldName) (-s)
     info:
-      posible: '&ePossible worlds: &6[worlds]'
+      possible: '&ePossible worlds: &6[worlds]'
       tpLimit: '&eYou can''t teleport so fast, please wait &6[time] &eand try again'
       IncorrectLocation: '&6Could not find correct teleport location, please wait
         &e[time] &6and try again.'
@@ -3211,6 +3227,7 @@ command:
     info:
       listOnline: '&7[place]. &2[serverName] &6[count]&7/&6[max]'
       listOffline: '&7[place]. &c[serverName] &60&7/&60'
+      consoleInfo: ' &f(&2[ip]&f:&2[port]&f)'
   servertime:
     help:
       info: '&eShow server time'
@@ -3315,12 +3332,12 @@ command:
       sellPrice: '&fSell price: &e[amount]'
       buyPrice: '&fBuy price: &2[amount]'
       exploit: '&4Possible EXPLOIT!'
-      ingridient: '&2Ingredients'
-      ingridients: '&7[ingridient]&f(&7[amount]&f) = &e[price]'
+      ingredient: '&2Ingredients'
+      ingredients: '&7[ingredient]&f(&7[amount]&f) = &e[price]'
       notSet: '&eprice not set'
       notSetBuy: '&7Buy price not set'
       result: '&2Crafts into &7[result]&f(&7[amount]&f)'
-      ingridientsPrice: '&cIngredient price: &7[price]'
+      ingredientsPrice: '&cIngredient price: &7[price]'
       resultPrice: '&cCan be sold for: &7[price]'
       explanation: '&2Buy price is only used in detecting posible exploits'
   shadowmute:
@@ -3473,7 +3490,6 @@ command:
         q:10 sp:10 hp:50 s:2'
     info:
       wrongEntityName: '&eIncorrect entity name'
-      wrongPlayerName: '&eIncorrect player name'
       spawnedEntities: '&eSpawned &6[entities] &eentities '
       spawnedPasangers: '&eand &6[passengers] &epassengers'
       nothingSpawned: '&eNo entities spawned'
@@ -3487,7 +3503,7 @@ command:
       info: '&eSends message to staff channel'
       args: '[message/toggle/on/off]'
     info:
-      message: '&2[Staff]&4[&7[senderDisplayName]&4]&r&c [message]'
+      message: '{#gossamer}(/staff&lMsg&r{#gossamer}) [senderDisplayName] {#crimson}[message]'
       toggledOn: '&eA persistent staff chat has been started. You can now write messages
         in public chat.'
       toggledOff: '&eToggled off Persistent staff chat'

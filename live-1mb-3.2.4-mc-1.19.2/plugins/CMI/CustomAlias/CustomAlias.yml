@@ -90,7 +90,8 @@ CustomAlias:
     Tab: false
   market:
     Cmds:
-    - ah $1-
+    - check:$1!=null! ah $1-
+    - check:$1==null! ah
   achievements:
     Cmds:
     - aa list
@@ -106,7 +107,8 @@ CustomAlias:
     Tab: false
   menu:
     Cmds:
-    - bs $1
+    - check:$1==null! asPlayer! bs menu
+    - check:$1!=null! asPlayer! bs $1
     Tab: false
   points:
     Cmds:
@@ -741,3 +743,26 @@ CustomAlias:
     - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} {#Feijoa}&nhttps://omgboards.com/threads/260970/
     - msg! [playerName] {#orient}`--(1MoreBlock.com mcMMO Information)------------------\n&r
     AddTabs: true
+  ip:
+    Cmds:
+    - 'msg! [playerName] You can connect to our server via three different routings:
+      (very handy if you experience quite a high ping (network lag), you can check
+      your ping with: /myping by the way)'
+    - 'msg! [playerName] > Main (best for EU) : 1MoreBlock.com'
+    - 'msg! [playerName] > Cosmic (best for Int) : play.1MoreBlock.com'
+    - 'msg! [playerName] > Shield (best for US) : play2.1MoreBlock.com'
+    Tab: false
+  _getRekt:
+    Cmds:
+    - 'asConsole! cmi staffmsg {#gold}[getRekt] {#orange} Player $1 is trying to use
+      gaslight, saying: ` $1- `'
+    Perm: true
+  sendhidden:
+    Cmds:
+    - asConsole! _getRekt [playerName] $1-
+  sendsystem:
+    Cmds:
+    - asConsole! _getRekt [playerName] $1-
+  sendnormal:
+    Cmds:
+    - asConsole! _getRekt [playerName] $1-

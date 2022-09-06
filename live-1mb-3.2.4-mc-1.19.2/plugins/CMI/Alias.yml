@@ -305,6 +305,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi down $1-
+  /down:
+    Enabled: true
+    Tab: true
+  #  
   # /cmi dsign $1-
   /dsign:
     Enabled: false

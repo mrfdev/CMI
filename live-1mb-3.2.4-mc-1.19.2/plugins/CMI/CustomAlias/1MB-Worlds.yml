@@ -233,4 +233,4 @@ CustomAlias:
     - tntrun spectate run
   1block:
     Cmds:
-    - oneblock $1-
+    - asPlayer! oneblock $1-
