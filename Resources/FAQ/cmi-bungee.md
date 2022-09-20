@@ -1,3 +1,8 @@
+# This page has been moved, the latest version can be found here:
+<https://www.zrips.net/bungeecord/>
+
+# This page will be deleted during the fall of 2022.
+
 # FAQ - How can I use CMI Chat with Bungee?
 
 <topMenu>
