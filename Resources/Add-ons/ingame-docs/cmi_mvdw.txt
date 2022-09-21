@@ -16,6 +16,7 @@
 &b = Player Information
 <T>&3•cmi_user_name:&r {cmi_user_name}</T><H>{cmi_user_name}\n&bPlayer's username.</H><SC>{cmi_user_name}</SC>
 <T>&3•cmi_user_display_name:&r {cmi_user_display_name}</T><H>{cmi_user_display_name}\n&bPlayer's formatted display name.</H><SC>{cmi_user_display_name}</SC>
+<T>&3•cmi_p_*_display_name:&r {cmi_p_*_display_name}</T><H>{cmi_p_*_display_name}\n&bTarget player's formatted display name.</H><SC>{cmi_p_*_display_name}</SC>
 <T>&3•cmi_user_cleannickname:&r {cmi_user_cleannickname}</T><H>{cmi_user_cleannickname}\n&bPlayer's nickname without colors.</H><SC>{cmi_user_cleannickname}</SC>
 <T>&3•cmi_user_nickname:&r {cmi_user_nickname}</T><H>{cmi_user_nickname}\n&bPlayer's nickname.</H><SC>{cmi_user_nickname}</SC>
 <T>&3•cmi_user_uuid:&r {cmi_user_uuid}</T><H>{cmi_user_uuid}\n&bPlayer's UUID.</H><SC>{cmi_user_uuid}</SC>
@@ -69,12 +70,18 @@
 <T>&3•cmi_user_playtime_seconds:&r {cmi_user_playtime_seconds}</T><H>{cmi_user_playtime_seconds}\n&bPlayer's playtime in seconds.</H><SC>{cmi_user_playtime_seconds}</SC>
 <T>&3•cmi_user_playtime_secondst:&r {cmi_user_playtime_secondst}</T><H>{cmi_user_playtime_secondst}\n&bPlayer's total playtime in seconds.</H><SC>{cmi_user_playtime_secondst}</SC>
 <T>&3•cmi_user_world_formatted:&r {cmi_user_world_formatted}</T><H>{cmi_user_world_formatted}\n&bPlayer's world using custom identification.</H><SC>{cmi_user_world_formatted}</SC>
+<T>&3•cmi_user_baltop:&r {cmi_user_baltop}</T><H>{cmi_user_baltop}\n&bPlayer's position in /cmi baltop.</H><SC>{cmi_user_baltop}</SC>
 <T>&3•cmi_user_stats_*:&r {cmi_user_stats_*}</T><H>{cmi_user_stats_*}\n&bPlayer's statistics.</H><SC>{cmi_user_stats_*}</SC>
 <T>&3•player_world:&r {player_world}</T><H>{player_world}\n&bPlayer's world.</H><SC>{player_world}</SC>
+<T>&3•cmi_player_world:&r {cmi_player_world}</T><H>{cmi_player_world}\n&bPlayer's world.</H><SC>{cmi_player_world}</SC>
 <T>&3•player_x:&r {player_x}</T><H>{player_x}\n&bPlayer's X coordinate.</H><SC>{player_x}</SC>
+<T>&3•cmi_player_x:&r {cmi_player_x}</T><H>{cmi_player_x}\n&bPlayer's X coordinate.</H><SC>{cmi_player_x}</SC>
 <T>&3•player_y:&r {player_y}</T><H>{player_y}\n&bPlayer's Y coordinate.</H><SC>{player_y}</SC>
+<T>&3•cmi_player_y:&r {cmi_player_y}</T><H>{cmi_player_y}\n&bPlayer's Y coordinate.</H><SC>{cmi_player_y}</SC>
 <T>&3•player_z:&r {player_z}</T><H>{player_z}\n&bPlayer's Z coordinate.</H><SC>{player_z}</SC>
+<T>&3•cmi_player_z:&r {cmi_player_z}</T><H>{cmi_player_z}\n&bPlayer's Z coordinate.</H><SC>{cmi_player_z}</SC>
 <T>&3•player_biome:&r {player_biome}</T><H>{player_biome}\n&bPlayer's biome.</H><SC>{player_biome}</SC>
+<T>&3•cmi_player_biome:&r {cmi_player_biome}</T><H>{cmi_player_biome}\n&bPlayer's biome.</H><SC>{cmi_player_biome}</SC>
 <T>&3•&3vault_eco_balance_formatted:&r {vault_eco_balance_formatted}</T><H>{vault_eco_balance_formatted}\n&bPlayer's formatted balance.</H><SC>{vault_eco_balance_formatted}</SC>
 <NextPage>
 &b = Player Status
@@ -167,18 +174,27 @@
 <T>&3•cmi_tps_60:&r {cmi_tps_60}</T><H>{cmi_tps_60}\n&bTPS from the last 60 seconds.</H><SC>{cmi_tps_60}</SC>
 <T>&3•cmi_tps_300:&r {cmi_tps_300}</T><H>{cmi_tps_300}\n&bTPS from the last 5 minutes.</H><SC>{cmi_tps_300}</SC>
 <T>&3•cmi_tps_*_colored:&r {cmi_tps_*_colored}</T><H>{cmi_tps_*_colored}\n&bColored TPS from the specified range.</H><SC>{cmi_tps_*_colored}</SC>
-<T>&3•cmi_server_online:&r {cmi_server_online}</T><H>{cmi_server_online}\n&bOnline player count.</H><SC>{cmi_server_online}</SC>
 <T>&3•cmi_server_uptime:&r {cmi_server_uptime}</T><H>{cmi_server_uptime}\n&bServer uptime.</H><SC>{cmi_server_uptime}</SC>
 <T>&3•cmi_server_uptime_seconds:&r {cmi_server_uptime_seconds}</T><H>{cmi_server_uptime_seconds}\n&bServer uptime in seconds.</H><SC>{cmi_server_uptime_seconds}</SC>
 <T>&3•cmi_server_worlds:&r {cmi_server_worlds}</T><H>{cmi_server_worlds}\n&bServer worlds.</H><SC>{cmi_server_worlds}</SC>
+<T>&3•cmi_server_vanished:&r {cmi_server_vanished}</T><H>{cmi_server_vanished}\n&bOnline vanished player count.</H><SC>{cmi_server_vanished}</SC>
+<T>&3•cmi_server_users:&r {cmi_server_users}</T><H>{cmi_server_users}\n&bRecorded user count.</H><SC>{cmi_server_users}</SC>
 <T>&3•server_online:&r {server_online}</T><H>{server_online}\n&bOnline player count.</H><SC>{server_online}</SC>
+<T>&3•cmi_server_online:&r {cmi_server_online}</T><H>{cmi_server_online}\n&bOnline player count.</H><SC>{cmi_server_online}</SC>
 <T>&3•server_max_players:&r {server_max_players}</T><H>{server_max_players}\n&bMaximum player count.</H><SC>{server_max_players}</SC>
-<T>&3•cmi_server_online_*:&r {cmi_server_online_*}</T><H>{cmi_server_online_*}\n&bOnline player count of the specified world.</H><SC>{cmi_server_online_*}</SC>
-<T>&3•server_unique_joins:&r {server_unique_joins}</T><H>{server_unique_joins}\n&bUnique player join count.</H><SC>{server_unique_players}</SC>
+<T>&3•cmi_server_max_players:&r {cmi_server_max_players}</T><H>{cmi_server_max_players}\n&bMaximum player count.</H><SC>{cmi_server_max_players}</SC>
+<T>&3•server_online_*:&r {server_online_*}</T><H>{server_online_*}\n&bOnline player count of the specified world. Don't use _ in the world name.</H><SC>{server_online_*}</SC>
+<T>&3•cmi_server_online_*:&r {cmi_server_online_*}</T><H>{cmi_server_online_*}\n&bOnline player count of the specified world. Don't use _ in the world name.</H><SC>{cmi_server_online_*}</SC>
+<T>&3•server_unique_joins:&r {server_unique_joins}</T><H>{server_unique_joins}\n&bUnique player join count.</H><SC>{server_unique_joins}</SC>
+<T>&3•cmi_server_unique_joins:&r {cmi_server_unique_joins}</T><H>{cmi_server_unique_joins}\n&bUnique player join count.</H><SC>{cmi_server_unique_joins}</SC>
 <T>&3•onlineplayers_names:&r {onlineplayers_names}</T><H>{onlineplayers_names}\n&bFormatted list of all online players.</H><SC>{onlineplayers_names}</SC>
+<T>&3•cmi_onlineplayers_names:&r {cmi_onlineplayers_names}</T><H>{cmi_onlineplayers_names}\n&bFormatted list of all online players.</H><SC>{cmi_onlineplayers_names}</SC>
 <T>&3•onlineplayers_displaynames:&r {onlineplayers_displaynames}</T><H>{onlineplayers_displaynames}\n&bFormatted list of online players using their display names.</H><SC>{onlineplayers_displaynames}</SC>
+<T>&3•cmi_onlineplayers_displaynames:&r {cmi_onlineplayers_displaynames}</T><H>{cmi_onlineplayers_displaynames}\n&bFormatted list of online players using their display names.</H><SC>{cmi_onlineplayers_displaynames}</SC>
 <T>&3•server_time_*_*:&r {server_time_*_*}</T><H>{server_time_*_*}\n&bServer time using the defined format and timezone.</H><SC>{server_time_*_*}</SC>
+<T>&3•cmi_server_time_*_*:&r {cmi_server_time_*_*}</T><H>{cmi_server_time_*_*}\n&bServer time using the defined format and timezone.</H><SC>{cmi_server_time_*_*}</SC>
 <T>&3•server_time_*:&r {server_time_*}</T><H>{server_time_*}\n&bLocal server time using the defined format.</H><SC>{server_time_*}</SC>
+<T>&3•cmi_server_time_*:&r {cmi_server_time_*}</T><H>{cmi_server_time_*}\n&bLocal server time using the defined format.</H><SC>{cmi_server_time_*}</SC>
 <NextPage>
 &b = World
 <T>&3•cmi_user_weather:&r {cmi_user_weather}</T><H>{cmi_user_weather}\n&bWeather in the player's current world.</H><SC>{cmi_user_weather}</SC>
@@ -186,7 +202,9 @@
 <T>&3•cmi_weather_*:&r {cmi_weather_*}</T><H>{cmi_weather_*}\n&bWeather in the specified world.</H><SC>{cmi_weather_*}</SC>
 <T>&3•cmi_weatherduration_*:&r {cmi_weatherduration_*}</T><H>{cmi_weatherduration_*}\n&bWeather duration in the specified world.</H><SC>{cmi_weatherduration_*}</SC>
 <T>&3•world_time12_*:&r {world_time12_*}</T><H>{world_time12_*}\n&b12 hour time of the defined world.</H><SC>{world_time12_*}</SC>
+<T>&3•cmi_world_time12_*:&r {cmi_world_time12_*}</T><H>{cmi_world_time12_*}\n&b12 hour time of the defined world.</H><SC>{cmi_world_time12_*}</SC>
 <T>&3•world_time24_*:&r {world_time24_*}</T><H>{world_time24_*}\n&b24 hour time of the defined world.</H><SC>{world_time24_*}</SC>
+<T>&3•cmi_world_time24_*:&r {cmi_world_time24_*}</T><H>{cmi_world_time24_*}\n&b24 hour time of the defined world.</H><SC>{cmi_world_time24_*}</SC>
 <NextPage>
 &b = Miscellaneous
 <T>&3•cmi_maxperm_*_*:&r {cmi_maxperm_*_*}</T><H>{cmi_maxperm_*_*}\n&bMaximum value of the specified permission node. Returns the default value if it doesn't exist.</H><SC>{cmi_maxperm_*_*}</SC>
