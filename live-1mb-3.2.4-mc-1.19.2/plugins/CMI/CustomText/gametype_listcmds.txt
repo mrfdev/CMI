@@ -2,17 +2,17 @@
 &r
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 
-You can type:{#gold} /%player_world% &l<command>
-And the {#gold}<command>&r part can be: &olevel, count, help, generator, team, border, menu, challenges&r, and more. Enjoy.
+You can type:{#gold} /%cmi_player_world% &l<command>
+And the{#gold} <command>&r part can be: &olevel&r, &ocount&r, &ohelp&r, &ogenerator&r, &oteam&r, &oborder&r, &omenu&r, &ochallenges&r, and more. Enjoy.
 
-{#gold}help&r - will give you additional help, can also be used per command.
-{#gold}level&r - will recalculate your island level, which is handy for the generator and challenges.
-{#gold}challenges&r - a great way to complete challenges on your island to get extra items.
-{#gold}generator&r - upgrade your standard cobblestone generator to get more out of it.
-{#gold}border&r - a way to toggle the visualization of the island border.
-{#gold}team&r - lets you manage your team setup so you can play with friends. Read /teams for more information.
+<T>{#gold}help</T><SC>/%cmi_player_world% help</SC><Next><T>&r - will give you additional help, can also be used per command.</T>
+<T>{#gold}level</T><SC>/%cmi_player_world% level</SC><Next><T>&r - will recalculate your island level, which is handy for the generator and challenges.</T>
+<T>{#gold}challenges</T><SC>/%cmi_player_world% challenges</SC><Next><T>&r - a great way to complete challenges on your island to get extra items.</T>
+<T>{#gold}generator</T><SC>/%cmi_player_world% generator</SC><Next><T>&r - upgrade your standard cobblestone generator to get more out of it.</T>
+<T>{#gold}border</T><SC>/%cmi_player_world% border</SC><Next><T>&r - a way to toggle the visualization of the island border.</T>
+<T>{#gold}team</T><SC>/%cmi_player_world% team</SC><Next><T>&r - lets you manage your team setup so you can play with friends. Read /teams for more information.</T>
 
-On OneBlock, you can also use{#gold} phases&r and{#gold} count&r.
+<T>On OneBlock, you can also use{#gold} </T><Next><T>phases&r</T><SC>/oneblock phases</SC><Next><T> and{#gold} </T><Next><T>count&r</T><SC>/oneblock count</SC>.
 
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 &r
