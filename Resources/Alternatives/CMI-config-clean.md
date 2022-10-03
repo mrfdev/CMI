@@ -287,12 +287,18 @@ Optimizations:
   - Some
   - Names
   - Here
+  # Time in days for player to be offline when he will be excluded from playtimetop list
+  # Set to 0 if you want to disable this
+  PlaytimeTopOffline: 0
   ItemName:
     # For black listed materials check ItemRenaming.list section
 
     # When set to true items which name got changed with /itemname command will be marked with NBT data as 'ModifiedName' boolean type
     MarkChanged: false
   ItemLore:
+    # Defines maximum length of item lore line excluding color codes for itemlore command
+    # Set it to 0 if you want to remove restrictions
+    MaxLength: 64
     # List of materials to block from itemName command
     TypeBlackList:
     - gold_nugget
@@ -476,7 +482,7 @@ Worth:
   DevalueByDurability: false
   AutoGenerate:
     # Value in percentages in how much more we should add to end product while auto calculating items price based on its ingredient worth
-    # For examplem one stick is worth 0.1 and diamond 44 then end result as diamond_hoe will be worth 88.2 and with extra 2% this will be changed to 89.96
+    # For example one stick is worth 0.1 and diamond 44 then end result as diamond_hoe will be worth 88.2 and with extra 2% this will be changed to 89.96
     # Value can be negative
     PriceIncrease: 0
 BossBar:
@@ -1047,6 +1053,9 @@ ItemRenaming:
   # When set to true item renaming will be disabled in general, with anvil or command independent of renamed material
   # This can be bypassed with previous permission node
   GlobalDisable: false
+  # Defines maximum length of item name excluding color codes for itemname command
+  # Set it to 0 if you want to remove restrictions
+  MaxLength: 64
   # List of materials followed with optional regex code which can prevent specific naming, like renaming mob spawners into another type while still allowing renaming spawner into anything else
   List:
   - mobspawner:([A-z]+ (?i)\w*spawner)
@@ -2186,4 +2195,4 @@ PotionEffects:
 
 ## Miscellaneous
 
-Created with CMI 9.2.3.5 for Minecraft 1.19.2
+Created with CMI 9.2.4.3 for Minecraft 1.19.2

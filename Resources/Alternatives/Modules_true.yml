@@ -69,6 +69,10 @@ interactiveCommands: true
 # Applies for servers from 1.8.x and up
 attachedCommands: true
 #  
+# Handling of armor effects
+# Applies for servers from 1.7.x and up
+armorEffects: true
+#  
 # Handling of player tagging in chat and tabcomplete with @
 # Applies for servers from 1.7.x and up
 playerChatTag: true

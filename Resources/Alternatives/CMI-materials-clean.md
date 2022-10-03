@@ -1,12 +1,12 @@
 # Clean list of all material names
 
-Clean list of available materials that come with 1.19.2 API/server that you can use in CMI where appropriate
+Clean list of available materials that come with 1.19.2 API / server that you can use in CMI where appropriate
 
 ## List of Material
 
 Don't blindly copy this, it contains `LEGACY_` and things like `NONE`. This is just to help you quickly search something.
 
-Protip: In-game you can use `/cmi blockinfo`, `/cmi iteminfo`
+Protip: In-game you can use `/cmi blockinfo` to see what you're pointing at, and `/cmi iteminfo` to see what you're holding.
 
 ```
 ACACIA_BOAT
@@ -1329,4 +1329,4 @@ ZOMBIFIED_PIGLIN_SPAWN_EGG
 
 ## Miscellaneous
 
-Created with CMI 9.2.3.5 for Minecraft 1.19.2
+Created with CMI 9.2.4.3 for Minecraft 1.19.2

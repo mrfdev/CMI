@@ -7,295 +7,295 @@ Clean list of available permissions that come with CMI that you can use in your 
 More details and information about permissions on the official website [here](https://www.zrips.net/cmi/permissions/)
 
 ```
-cmi.security.admin - Sets players security level
-cmi.buttonteleport - Allows to teleport to target location when clicking on inventory edit GUI on location icon
-cmi.enderedit - Allows to edit ender chest of some one else
-cmi.bedhome - Allows to set home location on interaction
-cmi.actionbar.colors - Allows to use colors in actionbarmsg command
-cmi.elevator.use - Allows to use elevator based on signs
-cmi.elevator.create - Allows to create elevator signs
-cmi.bossbar.colors - Allows to use colors in bossbarmsg command
-cmi.bossbar.hpbar - Allows to see hp boss bar when dealing damage to entity. Rechecks every minute.
-cmi.dynmap.hidden - Hides player from dynmap map
-cmi.prewards.notification - Allows to see playtime rewards notifications
-cmi.prewards.[preward] - Allows to get particular playtime reward
-cmi.anvil.colors - Allows to use colors when renaming item
-cmi.title.colors - Allows to use colors in titlemsg command
-cmi.tag.color - Tagged player name gets colorized
-cmi.colors.[type].* - Allows all color usage in particular areas
-cmi.colors.[type].[colorname/hex] - Allows color usage in particular areas. Types: publicmessage, privatemessage, nickname, signs, books, me
-cmi.seevanished - Allows to see vanished people
-cmi.messages.disablelogin - Disables login message
-cmi.messages.disablequit - Disables logout message
-cmi.scrollpainting - Allows to modify paintings
-cmi.autorespawn - Allows to respawn automatically
-cmi.elytralaunch - Allows to use elytra launch feature
-cmi.permisiononerror - Allows to see missing permission on error message
-cmi.invedit - Allow to edit players inventory
-cmi.book.colors - Allows to colorize books
-cmi.book.pages.[20to100] - Defines max pages you can create in a book
-cmi.damagecontrol.[groupname] - Defines damage multiplier by group
-cmi.chorusteleport - Allows to use chorus to teleport around
-cmi.teleport.with.[entitytype] - Allows teleportation with defined mount
-cmi.randomteleport.cooldownbypass - Allows to bypass random teleport cooldown
-cmi.fullserver.bypass - Allows to join full server
-cmi.signs.shiftedit - Allows to edit signs with shift right click
-cmi.signs.shifteditbypass - Allows to edit signs on protected land
-cmi.netherportalbypass - Allows nether portal creation when its disabled in config file
-cmi.silentchest.editing - Allows to edit chests while in silent open mode
-cmi.interactivesign.[icname] - Allows to create interactive signs when using [ic:[icName]] as top line of sign
-cmi.versioncheck - Allows to see new version message on login
-cmi.worldlimit.gamemode.bypass - Allows to bypass game mode limitations by worlds
-cmi.worldlimit.fly.bypass - Allows to bypass fly mode limitations by worlds
-cmi.worldlimit.elytra.bypass - Allows to bypass elytra mode limitations by worlds
-cmi.worldlimit.fly.aboveroof - Allows to fly over world build limit. Feature should be enabled in config file
-cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
-cmi.spawners.charge.bypass - Allows to bypass charge limitations
-cmi.namehistory - Allows to see previous players names
-cmi.inventoryhat - Allows to put block on head from inventory
-cmi.minecart.change.[minecarttype] - Allows to change minecart type by right clicking with appropriate item
-cmi.hologram.[hologramname] - Allows to see hologram
-cmi.kit.[kitname] - Allows to use kit
-cmi.kit.[kitname].preview - Allows to preview kit without having access to kit
-cmi.kit.bypass.money - Allows to bypass kit money requirement
-cmi.kit.bypass.exp - Allows to bypass kit exp requirement
-cmi.kit.bypass.time - Allows to bypass kit time limitations
-cmi.kit.bypass.onetimeuse - Allows to bypass kit onetimeuse limitations
-cmi.pvp.cmdBypass - Allows to use commands during combat mode
-cmi.pvp.godBypass - Allows to damage player while being in god mode
-cmi.pve.godBypass - Allows to damage mobs while being in god mode
-cmi.pvp.PFlyBypass - Allows to keep flying while entering combat mode by player
-cmi.pvp.MFlyBypass - Allows to keep flying while entering combat mode by monster
-cmi.spawnonjoin.bypass - Allows to bypass spawnOnJoin option
-cmi.spawngroup.[spawngroup] - Defines player individual spawn point
-cmi.respawngroup.[respawngroup] - Defines player individual respawn point
-cmi.rank.[rankname] - Defines default player rank
-cmi.select - Allows to select with selection tool
-cmi.chatgroup.[groupnumber] - Defines player custom chat group for public message format
-cmi.chatmessagegroup.[groupnumber] - Defines player custom chat message group for public message format
-cmi.chat.shout - Allows to send messges over greater distances
-cmi.chat.rangebypass - Allows to send messages over greater distances
-cmi.chat.rangespy - Allows to see all messages over greater distances
-cmi.tablist.[groupnumber] - Defines player custom tab list group
-cmi.elytra - Allows to equip elytra
-cmi.elytra.boost - Allows to use basic elytra boost. Right click
-cmi.elytra.superboost - Allows to use elytra super boost. +Shift click
-cmi.elytra.speedometer - Allows to see speedometer while flying with elytra
-cmi.elytra.freeflight - Allows to see elytra boost for free
-cmi.hunger.keepafterdeath - Prevents from hunger to be replenished after death
-cmi.anvil.itemrename.bypass - Allows to rename items with black listed names. /itemanem and physical anvil
-cmi.sleepignore - Players with this permission node will be ignored when checking how many players are sleeping in the world to speed up time
-cmi.chatfilter.inform - Informs player when some one breaks chat filter rules
-cmi.chatfilter.bypass.[groupname] - Allows to bypass particular chat filter group
-cmi.commandfilter.bypass - Allows to bypass command spam filter
-cmi.chatfilter.spambypass - Allows to bypass chat spam filter
-cmi.chatfilter.capbypass - Allows to bypass chat caps filter
-cmi.deathlocation - Allows to see death location after death
-cmi.saveinv - Saves player inventory on death to be restored if needed later on
-cmi.scheduler.exclude - Excludes player from scheduler random player list
-cmi.openshulker - Allows to use shulkerbox as backpack
-cmi.openshulker.shift - Allows to use shulkerbox as backpack with shift right click
-cmi.safeteleport - Prevents teleportation to unsafe locations
-cmi.safeteleport.bypass.[lava/void/suffocation/unknown/plugin/unsafeteleportation/noperm] - Allows to teleport into unsafe location without confirmation
-cmi.viewrange - Allows to have custom view range
-cmi.viewrange.[range(1-15)] - Defines custom view range
-cmi.dropspawner - Allows for spawner to be dropped after its being broken
-cmi.dropspawner.[entitytype] - Allows for spawner to be dropped after its being broken by defined type
-cmi.dropspawner.nosilk - Drops spawner without silk touch
-cmi.dropspawner.basedropchance.[positivevalue] - Defines base drop chance. Used in case its higher than defined one in config file
-cmi.spawners.proximity.bypass - Bypass spawner place range limitations
-cmi.spawners.charge.[groupname] - Defines spawner charge group
-cmi.keepinventory - Allows to keep inventory after death
-cmi.keepexp - Allows to keep exp after death
-cmi.informDurability - Player will be informed when durability reaches threshold
-cmi.egginteract.[entitytype] - Allows to change spawner by interacting with egg
-cmi.placespawner - Allows to place spawner and keep its type
-cmi.placespawner.[entitytype] - Allows to place spawner by particular type and keep its type
-cmi.teleport.bypassblacklist - Allows to bypass protection from teleporting with blacklisted items
-cmi.teleport.currentlocation - Allows to initiate teleportation to the current player location
-cmi.armorstand.hands - Allows to spawn armorstand with hands
-cmi.armorstand.offhand - Allows to manipulate armorstand off hand items
-cmi.bungee.publicmessages.[servername] - Allows to send public messages to target server
-cmi.warmupbypass.[commandname] - Allows to bypass particular CMI command warmup
-cmi.command - Gives access to base usage of commands
-cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney] - Allows to modify specific options
-cmi.command.jump.[[distance]] - Defines max jump distance
-cmi.costbypass.[commandname] - Allows to bypass command cost
-cmi.cooldownbypass.[commandname] - Allows to bypass command cooldown
-cmi.cooldown.[some_command].[timer] - Defines command cooldown for player. Spaces need to be separate with _
-cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightarm/leftleg/rightleg/pos/torso] - Allows to access particular armor stand editor features
-cmi.command.armorstand.movebypass - Allows to move armor stand where you cant build. Can help to bypass AntiCheat plugin restrictions
-cmi.command.armorstand.admin - Allows to save/load/deleted saved armor stands
-cmi.command.armorstand.template.[[templatename]] - Allows to deploy saved armor stands
-cmi.command.donate.bypass - Prevents you from getting items with donate command
-cmi.command.donate.accept - Allows you to accept items sent throw donate command
-cmi.command.donate.send - Allows you to send items throw donate command
-cmi.command.portal.[portalname] - Allows to use portal
-cmi.command.kill.byforce - Allows to kill player independent of protection plugins
-cmi.command.kiteditor.admin - Allows to define more dangerous aspects of kits, like commands
-cmi.command.world.[worldname] - Allows to teleport to particular world with command
-cmi.command.skin.perm.[skinname] - Allows to change skin to particular player
-cmi.command.point.[particletype] - Allows to change particle type
-cmi.command.ender.preventmodify - Prevents ender chest modification by some one else
-cmi.command.ender.preventmodify.bypass - Bypass for ender chest modification protection
-cmi.command.inv.preventmodify - Prevent inventory modifications by others
-cmi.command.inv.location - Shows target player location in GUI
-cmi.command.inv.information - Shows target player information in GUI
-cmi.command.inv.preventmodify.bypass - Bypass for regular inventory modification protection
-cmi.command.give.max.[number] - Max item stack size player can use
-cmi.command.tfly.admin - Allows to manage tfly for players
-cmi.command.tfly.maxtime.[seconds] - Defines max amount of time player can have with tfly command
-cmi.command.spawner.shiftclick - Allows to use spawner set GUI on shift clicking it
-cmi.command.spawner.[entitytype] - Allows to change spawner with command to defined type
-cmi.command.repair.[hand/armor/all] - Allows to repair specific area
-cmi.command.head.othersource - Allows to get head of another player
-cmi.command.note.add - Allows to add notes
-cmi.command.note.remove - Allows to remove or clear notes
-cmi.command.gm.[gametype] - Allows to change game mode to particular type
-cmi.command.replaceblock.speed - Allows to adjust replaceblock speed
-cmi.command.scan.speed - Allows to adjust scan speed
-cmi.command.fixchunk.speed - Allows to adjust chunk fix speed
-cmi.command.enchant.bypasslimit - Allows to bypass enchant limitations
-cmi.command.enchant.bypassinvalid - Allows to enchant items with enchants which usually are not possible on items
-cmi.enchantments. - Allows to enchant items with specific enchant
-cmi.enchantments..$2 - Allows to enchant items with specific enchant to specific max level
-cmi.command.attachcommand.cc - Allows to attach console command to item
-cmi.command.attachcommand.silent - Allows to attach silent commands
-cmi.command.sendall.bypass - Prevents player from being sent to target server
-cmi.command.heal.all - Allows to heal every online player
-cmi.command.feed.all - Allows to feed every online player
-cmi.command.[commandname].others - Allows to perform command on another player
-cmi.command.prewards.others.claim - Allows to claim rewards for others
-cmi.command.[commandname].others.[extra] - Allows to perform command on another player
-cmi.command.msg.vanish - Allows to send private messages to vanished players
-cmi.command.msg.togglebypass - Allows to send private messages even if player has pm toggled off
-cmi.command.msg.[maingroupname].send - Allows to send private messages to specific player groups
-cmi.command.bossbarmsg.admin - Allows to use commands in bossbar automated messages
-cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
-cmi.command.patrol.bypass - Player with permission will not be included into patrol list
-cmi.command.afk.auto - Places player into afk mode automatically
-cmi.command.afk.staffinform - Uses different afk auto response message
-cmi.command.afk.kickbypass - Prevents player from being kicked out of server when afk mode triggers event
-cmi.command.afk.kickOutIn.[[seconds]] - Defines time in seconds when player needs to be kicked after he enter afk mode
-cmi.command.cheque.admin - Allows to give out cheque with money amount directly to target player without requiring paper
-cmi.command.cheque.withdraw - Allows to withdraw cheque balance when option in config file is enabled
-cmi.command.invcheck.edit - Allows to edit saved inventory
-cmi.command.warp.[warpname] - Allows to use particular warp if warp requires permission node
-cmi.command.warp.showlist - Allows to see warp list in chat or gui
-cmi.command.warp.redefine - Allows to redefine warps
-cmi.command.warp.specificlocation - Allows to define warps specific location
-cmi.command.warp.diffdisplayname - Allows to define different warp display name
-cmi.command.setwarp.multiloc - Allows to set more than one location for warp point
-cmi.command.setwarp.unlimited - Allows to have unlimited amount of warps
-cmi.command.setwarp.[anypositivenumber] - Allows to have defined amount of warps
-cmi.command.removewarp.bypass - Allows to remove warps which belong to anoher player
-cmi.command.counter.autojoin - Players will automatically join counter group on server join
-cmi.command.tpa.warmupbypass - Allows to bypass tpa command warmup
-cmi.command.tpahere.warmupbypass - Allows to bypass tpahere command warmup
-cmi.command.home.bypassprivate - Allows to teleport to private another player home location
-cmi.command.homes.range - Allows to see homes by range from you
-cmi.command.sethome.unlimited - Allows to have unlimited amount of homes
-cmi.command.sethome.[anypositivenumber] - Allows to have defined amount of homes
-cmi.command.sethome.customloc - Allows to define custom location for new home
-cmi.command.sethome.iconpicker - Allows to see icon picker after using command
-cmi.command.sethome.overwrite - Allows to overwrite existing home location
-cmi.command.sethome.bypass - Allows to bypass block break protection
-cmi.command.sethome.bypasslimit - Allows to bypass limits by worlds
-cmi.command.mail.read - Allows to read mail
-cmi.command.mail.clear - Allows to clear mail
-cmi.command.mail.send - Allows to send mail
-cmi.command.mail.sendtemp - Allows to send timed mail
-cmi.command.glow.color.[colorname] - Allows to change glow color
-cmi.command.walkspeed.[range0-10] - Defines max walkspeed player can set
-cmi.command.tptoggle.bypass - Allows teleportation to players with disabled teleportations
-cmi.command.sudo.bypass - Prevents player from using sudo on player with permission
-cmi.command.repair.repairshare.bypass - Allows to bypass repair share being applied on item
-cmi.command.nick.bypassblacklist - Allows to bypass nick name black list
-cmi.command.nick.bypass.length - Allows to bypass nick name length limitations
-cmi.command.nick.bypassinuse - Allows to bypass limitationn in using already existing name
-cmi.command.nick.different - Allows to set nick name to different one than original
-cmi.command.msg.clean - Allows to send clean messages to player by using ! at beginning
-cmi.command.msg.noreply - Allows to send clean messages to player by using !- at beginning without option to reply
-cmi.command.ignore.bypass - Allows to perform commands on who ignores you
-cmi.command.silence.bypass - Allows to send messages who is in silence mode
-cmi.command.more.oversize - Allows to get oversized stacks
-cmi.command.recipe.admin - Allows to enable/disable recipes
-cmi.command.list.admin - Places player into admin group in list
-cmi.command.list.staff - Places player into staff group in list
-cmi.command.list.hidden - Allows to see hidden players in player list
-cmi.command.list.group.[groupnumber] - Assigns player to defined group
-cmi.command.checkban.seereason - Allows to see players ban reason
-cmi.command.mirror.nodeduct - Will not use blocks when placing them in survival and in mirror mode
-cmi.command.lfix.admin - Allows to fix light in area bigger than you can see
-cmi.command.commandspy.hide - Hides performed commands from commandspy
-cmi.command.commandspy.bypass - Bypasses blacklisted command spy commands
-cmi.command.signspy.hide - Hides created signs from signspy
-cmi.command.socialspy.hide - Hides social messages from social spy
-cmi.command.mute.max.[anypositivenumber] - Allows to temp mute for defined max time
-cmi.command.mute.bypass - Bypass personal public chat mute
-cmi.command.mutechat.bypass - Bypass public chat mute
-cmi.command.money.admin - Allows to manipulate player balance
-cmi.command.money.betweenworldgroups - Allows money transfer between worlds
-cmi.command.time.[freeze/unfreeze/day/morning/night/dusk/add/take/realtime/autorealtime] - Allows to manipulate time
-cmi.command.weather.[sun/rain].[maxvalue] - Allows to define max length player can change weather to
-cmi.command.pweather.[sun/rain/reset] - Allows to change personal weather to specific state
-cmi.command.back.ondeath - Allows returning to death location by using back command after death
-cmi.command.back.worldbypass - Allows returning to blacklisted worlds
-cmi.command.flightcharge.admin - Allows to edit flight charges for players
-cmi.command.nameplate.admin - Allows to edit nameplates for players
-cmi.command.kick.bypass - Prevent player from being kicked from server
-cmi.command.ride.[entitytype] - Allow to ride entity
-cmi.command.sit.stairs - Allows to sit on stairs automatically
-cmi.command.sit.persistent - Allows to sit with persistent mode
-cmi.command.sit.location - Allows to sit in specific location
-cmi.command.maintenance.bypass - Allows to bypass maintenance mode
-cmi.command.alert.inform - Player will get notification on player join with alert
-cmi.command.helpop.inform - Players with permission gets helpop messages
-cmi.command.fly.safelogin - Safely lands player after relog if he is in air
-cmi.command.cuff.bypass - Allows command usage while cuffed
-cmi.command.jail.bypasscmd - Allows command usage while jailed
-cmi.command.jail.bypass - Prevents player from being jailed
-cmi.command.jail.maxtime.[seconds] - Defines max amount of time player can jail someone
-cmi.command.near.hide - Hides player from being shown in near command
-cmi.command.near.max.[blocks] - Defines max distance for near command to override default
-cmi.command.silent - Allows to use -s variable in commands to avoid sending feedback messages to target player
-cmi.command.warn.bypass - Prevents player from being warned
-cmi.command.ban.bypass - Prevents player from being banned
-cmi.command.banip.bypass - Prevents player from being banned by ip
-cmi.command.tempban.bypass - Prevents player from being tempbanned
-cmi.command.tempban.max.unlimited - Allows to temp ban for more than config allows
-cmi.command.tempban.max.[anypositivenumber] - Allows to temp ban for defined max time
-cmi.command.broadcast.colors - Allows to use colors in broadcast messages
-cmi.command.charges.edit - Allows to edit players spawner charges
-cmi.command.checkaccount.showip - Allows to see players ip in check account
-cmi.command.info.ip - Allows to see players ip in info page
-cmi.command.info.pos - Allows to see pos location in info page
-cmi.command.info.bed - Allows to see bed location in info page
-cmi.command.info.back - Allows to see back location in info page
-cmi.command.info.deathlocation - Allows to see death location in info page
-cmi.command.clearchat.bypass - Players chat with permission will not be cleared
-cmi.command.counter.force - Allows to force counter message on surrounding players
-cmi.command.counter.time - Allows to change counter default time
-cmi.command.counter.range - Allows to change counter default range
-cmi.command.counter.center - Allows to use counter custom location
-cmi.command.counter.msg - Allows to change counter default message
-cmi.command.ctext.[ctextname] - Allows to see defined custom message
-cmi.command.flyspeed.[range1-10] - Defines max flight speed player can set
-cmi.command.shoot.[type] - Allows to shoot specific type of entity
-cmi.command.chat.kick - Allows to kick players from chat room
-cmi.command.chat.see - Allows to see messages in chat room
-cmi.command.chat.force - Allows to force join player into chat room
-cmi.command.chat.create - Allows to create chatroom
-cmi.command.chat.create.private - Allows to create private chatrooms
-cmi.command.chat.create.locked - Allows to create locked chatrooms
-cmi.command.chat.leave.locked - Allows to leave locked chatrooms
-cmi.command.chat.create.persistent - Allows to create persistent chatrooms
-cmi.command.chat.invite - Allows to initiate player into chatroom
-cmi.command.chat.joinbypass - Allows to join private chat room without invitation
-cmi.command.chat.seebypass - Allows to see private chat room
-cmi.command.chat.list - Allows to list players in chat room
-cmi.command.chat.listrooms - Allows to list all chat rooms
-cmi.customalias.[alias] - Allows to use particular alias if it requires permission
+ cmi.security.admin - Sets players security level
+ cmi.buttonteleport - Allows to teleport to target location when clicking on inventory edit GUI on location icon
+ cmi.enderedit - Allows to edit ender chest of some one else
+ cmi.bedhome - Allows to set home location on interaction
+ cmi.actionbar.colors - Allows to use colors in actionbarmsg command
+ cmi.elevator.use - Allows to use elevator based on signs
+ cmi.elevator.create - Allows to create elevator signs
+ cmi.bossbar.colors - Allows to use colors in bossbarmsg command
+ cmi.bossbar.hpbar - Allows to see hp boss bar when dealing damage to entity. Rechecks every minute.
+ cmi.dynmap.hidden - Hides player from dynmap map
+ cmi.prewards.notification - Allows to see playtime rewards notifications
+ cmi.prewards.[preward] - Allows to get particular playtime reward
+ cmi.anvil.colors - Allows to use colors when renaming item
+ cmi.title.colors - Allows to use colors in titlemsg command
+ cmi.tag.color - Tagged player name gets colorized
+ cmi.colors.[type].* - Allows all color usage in particular areas
+ cmi.colors.[type].[colorname/hex] - Allows color usage in particular areas. Types: publicmessage, privatemessage, nickname, signs, books, me
+ cmi.seevanished - Allows to see vanished people
+ cmi.messages.disablelogin - Disables login message
+ cmi.messages.disablequit - Disables logout message
+ cmi.scrollpainting - Allows to modify paintings
+ cmi.autorespawn - Allows to respawn automatically
+ cmi.elytralaunch - Allows to use elytra launch feature
+ cmi.permisiononerror - Allows to see missing permission on error message
+ cmi.invedit - Allow to edit players inventory
+ cmi.book.colors - Allows to colorize books
+ cmi.book.pages.[20to100] - Defines max pages you can create in a book
+ cmi.damagecontrol.[groupname] - Defines damage multiplier by group
+ cmi.chorusteleport - Allows to use chorus to teleport around
+ cmi.teleport.with.[entitytype] - Allows teleportation with defined mount
+ cmi.randomteleport.cooldownbypass - Allows to bypass random teleport cooldown
+ cmi.fullserver.bypass - Allows to join full server
+ cmi.signs.shiftedit - Allows to edit signs with shift right click
+ cmi.signs.shifteditbypass - Allows to edit signs on protected land
+ cmi.netherportalbypass - Allows nether portal creation when its disabled in config file
+ cmi.silentchest.editing - Allows to edit chests while in silent open mode
+ cmi.interactivesign.[icname] - Allows to create interactive signs when using [ic:[icName]] as top line of sign
+ cmi.versioncheck - Allows to see new version message on login
+ cmi.worldlimit.gamemode.bypass - Allows to bypass game mode limitations by worlds
+ cmi.worldlimit.fly.bypass - Allows to bypass fly mode limitations by worlds
+ cmi.worldlimit.elytra.bypass - Allows to bypass elytra mode limitations by worlds
+ cmi.worldlimit.fly.aboveroof - Allows to fly over world build limit. Feature should be enabled in config file
+ cmi.worldlimit.god.bypass - Allows to bypass god mode limitations by worlds
+ cmi.spawners.charge.bypass - Allows to bypass charge limitations
+ cmi.namehistory - Allows to see previous players names
+ cmi.inventoryhat - Allows to put block on head from inventory
+ cmi.minecart.change.[minecarttype] - Allows to change minecart type by right clicking with appropriate item
+ cmi.hologram.[hologramname] - Allows to see hologram
+ cmi.kit.[kitname] - Allows to use kit
+ cmi.kit.[kitname].preview - Allows to preview kit without having access to kit
+ cmi.kit.bypass.money - Allows to bypass kit money requirement
+ cmi.kit.bypass.exp - Allows to bypass kit exp requirement
+ cmi.kit.bypass.time - Allows to bypass kit time limitations
+ cmi.kit.bypass.onetimeuse - Allows to bypass kit onetimeuse limitations
+ cmi.pvp.cmdBypass - Allows to use commands during combat mode
+ cmi.pvp.godBypass - Allows to damage player while being in god mode
+ cmi.pve.godBypass - Allows to damage mobs while being in god mode
+ cmi.pvp.PFlyBypass - Allows to keep flying while entering combat mode by player
+ cmi.pvp.MFlyBypass - Allows to keep flying while entering combat mode by monster
+ cmi.spawnonjoin.bypass - Allows to bypass spawnOnJoin option
+ cmi.spawngroup.[spawngroup] - Defines player individual spawn point
+ cmi.respawngroup.[respawngroup] - Defines player individual respawn point
+ cmi.rank.[rankname] - Defines default player rank
+ cmi.select - Allows to select with selection tool
+ cmi.chatgroup.[groupnumber] - Defines player custom chat group for public message format
+ cmi.chatmessagegroup.[groupnumber] - Defines player custom chat message group for public message format
+ cmi.chat.shout - Allows to send messges over greater distances
+ cmi.chat.rangebypass - Allows to send messages over greater distances
+ cmi.chat.rangespy - Allows to see all messages over greater distances
+ cmi.tablist.[groupnumber] - Defines player custom tab list group
+ cmi.elytra - Allows to equip elytra
+ cmi.elytra.boost - Allows to use basic elytra boost. Right click
+ cmi.elytra.superboost - Allows to use elytra super boost. +Shift click
+ cmi.elytra.speedometer - Allows to see speedometer while flying with elytra
+ cmi.elytra.freeflight - Allows to see elytra boost for free
+ cmi.hunger.keepafterdeath - Prevents from hunger to be replenished after death
+ cmi.anvil.itemrename.bypass - Allows to rename items with black listed names. /itemanem and physical anvil
+ cmi.sleepignore - Players with this permission node will be ignored when checking how many players are sleeping in the world to speed up time
+ cmi.chatfilter.inform - Informs player when some one breaks chat filter rules
+ cmi.chatfilter.bypass.[groupname] - Allows to bypass particular chat filter group
+ cmi.commandfilter.bypass - Allows to bypass command spam filter
+ cmi.chatfilter.spambypass - Allows to bypass chat spam filter
+ cmi.chatfilter.capbypass - Allows to bypass chat caps filter
+ cmi.deathlocation - Allows to see death location after death
+ cmi.saveinv - Saves player inventory on death to be restored if needed later on
+ cmi.scheduler.exclude - Excludes player from scheduler random player list
+ cmi.openshulker - Allows to use shulkerbox as backpack
+ cmi.openshulker.shift - Allows to use shulkerbox as backpack with shift right click
+ cmi.safeteleport - Prevents teleportation to unsafe locations
+ cmi.safeteleport.bypass.[lava/void/suffocation/unknown/plugin/unsafeteleportation/noperm] - Allows to teleport into unsafe location without confirmation
+ cmi.viewrange - Allows to have custom view range
+ cmi.viewrange.[range(1-15)] - Defines custom view range
+ cmi.dropspawner - Allows for spawner to be dropped after its being broken
+ cmi.dropspawner.[entitytype] - Allows for spawner to be dropped after its being broken by defined type
+ cmi.dropspawner.nosilk - Drops spawner without silk touch
+ cmi.dropspawner.basedropchance.[positivevalue] - Defines base drop chance. Used in case its higher than defined one in config file
+ cmi.spawners.proximity.bypass - Bypass spawner place range limitations
+ cmi.spawners.charge.[groupname] - Defines spawner charge group
+ cmi.keepinventory - Allows to keep inventory after death
+ cmi.keepexp - Allows to keep exp after death
+ cmi.informDurability - Player will be informed when durability reaches threshold
+ cmi.egginteract.[entitytype] - Allows to change spawner by interacting with egg
+ cmi.placespawner - Allows to place spawner and keep its type
+ cmi.placespawner.[entitytype] - Allows to place spawner by particular type and keep its type
+ cmi.teleport.bypassblacklist - Allows to bypass protection from teleporting with blacklisted items
+ cmi.teleport.currentlocation - Allows to initiate teleportation to the current player location
+ cmi.armorstand.hands - Allows to spawn armorstand with hands
+ cmi.armorstand.offhand - Allows to manipulate armorstand off hand items
+ cmi.bungee.publicmessages.[servername] - Allows to send public messages to target server
+ cmi.warmupbypass.[commandname] - Allows to bypass particular CMI command warmup
+ cmi.command - Gives access to base usage of commands
+ cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney] - Allows to modify specific options
+ cmi.command.jump.[[distance]] - Defines max jump distance
+ cmi.costbypass.[commandname] - Allows to bypass command cost
+ cmi.cooldownbypass.[commandname] - Allows to bypass command cooldown
+ cmi.cooldown.[some_command].[timer] - Defines command cooldown for player. Spaces need to be separate with _
+ cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightarm/leftleg/rightleg/pos/torso] - Allows to access particular armor stand editor features
+ cmi.command.armorstand.movebypass - Allows to move armor stand where you cant build. Can help to bypass AntiCheat plugin restrictions
+ cmi.command.armorstand.admin - Allows to save/load/deleted saved armor stands
+ cmi.command.armorstand.template.[[templatename]] - Allows to deploy saved armor stands
+ cmi.command.donate.bypass - Prevents you from getting items with donate command
+ cmi.command.donate.accept - Allows you to accept items sent throw donate command
+ cmi.command.donate.send - Allows you to send items throw donate command
+ cmi.command.portal.[portalname] - Allows to use portal
+ cmi.command.kill.byforce - Allows to kill player independent of protection plugins
+ cmi.command.kiteditor.admin - Allows to define more dangerous aspects of kits, like commands
+ cmi.command.world.[worldname] - Allows to teleport to particular world with command
+ cmi.command.skin.perm.[skinname] - Allows to change skin to particular player
+ cmi.command.point.[particletype] - Allows to change particle type
+ cmi.command.ender.preventmodify - Prevents ender chest modification by some one else
+ cmi.command.ender.preventmodify.bypass - Bypass for ender chest modification protection
+ cmi.command.inv.preventmodify - Prevent inventory modifications by others
+ cmi.command.inv.location - Shows target player location in GUI
+ cmi.command.inv.information - Shows target player information in GUI
+ cmi.command.inv.preventmodify.bypass - Bypass for regular inventory modification protection
+ cmi.command.give.max.[number] - Max item stack size player can use
+ cmi.command.tfly.admin - Allows to manage tfly for players
+ cmi.command.tfly.maxtime.[seconds] - Defines max amount of time player can have with tfly command
+ cmi.command.spawner.shiftclick - Allows to use spawner set GUI on shift clicking it
+ cmi.command.spawner.[entitytype] - Allows to change spawner with command to defined type
+ cmi.command.repair.[hand/armor/all] - Allows to repair specific area
+ cmi.command.head.othersource - Allows to get head of another player
+ cmi.command.note.add - Allows to add notes
+ cmi.command.note.remove - Allows to remove or clear notes
+ cmi.command.gm.[gametype] - Allows to change game mode to particular type
+ cmi.command.replaceblock.speed - Allows to adjust replaceblock speed
+ cmi.command.scan.speed - Allows to adjust scan speed
+ cmi.command.fixchunk.speed - Allows to adjust chunk fix speed
+ cmi.command.enchant.bypasslimit - Allows to bypass enchant limitations
+ cmi.command.enchant.bypassinvalid - Allows to enchant items with enchants which usually are not possible on items
+ cmi.enchantments. - Allows to enchant items with specific enchant
+ cmi.enchantments..$2 - Allows to enchant items with specific enchant to specific max level
+ cmi.command.attachcommand.cc - Allows to attach console command to item
+ cmi.command.attachcommand.silent - Allows to attach silent commands
+ cmi.command.sendall.bypass - Prevents player from being sent to target server
+ cmi.command.heal.all - Allows to heal every online player
+ cmi.command.feed.all - Allows to feed every online player
+ cmi.command.[commandname].others - Allows to perform command on another player
+ cmi.command.prewards.others.claim - Allows to claim rewards for others
+ cmi.command.[commandname].others.[extra] - Allows to perform command on another player
+ cmi.command.msg.vanish - Allows to send private messages to vanished players
+ cmi.command.msg.togglebypass - Allows to send private messages even if player has pm toggled off
+ cmi.command.msg.[maingroupname].send - Allows to send private messages to specific player groups
+ cmi.command.bossbarmsg.admin - Allows to use commands in bossbar automated messages
+ cmi.command.sell.[blocks/all] - Allows to sell items not only from your hand
+ cmi.command.patrol.bypass - Player with permission will not be included into patrol list
+ cmi.command.afk.auto - Places player into afk mode automatically
+ cmi.command.afk.staffinform - Uses different afk auto response message
+ cmi.command.afk.kickbypass - Prevents player from being kicked out of server when afk mode triggers event
+ cmi.command.afk.kickOutIn.[[seconds]] - Defines time in seconds when player needs to be kicked after he enter afk mode
+ cmi.command.cheque.admin - Allows to give out cheque with money amount directly to target player without requiring paper
+ cmi.command.cheque.withdraw - Allows to withdraw cheque balance when option in config file is enabled
+ cmi.command.invcheck.edit - Allows to edit saved inventory
+ cmi.command.warp.[warpname] - Allows to use particular warp if warp requires permission node
+ cmi.command.warp.showlist - Allows to see warp list in chat or gui
+ cmi.command.warp.redefine - Allows to redefine warps
+ cmi.command.warp.specificlocation - Allows to define warps specific location
+ cmi.command.warp.diffdisplayname - Allows to define different warp display name
+ cmi.command.setwarp.multiloc - Allows to set more than one location for warp point
+ cmi.command.setwarp.unlimited - Allows to have unlimited amount of warps
+ cmi.command.setwarp.[anypositivenumber] - Allows to have defined amount of warps
+ cmi.command.removewarp.bypass - Allows to remove warps which belong to anoher player
+ cmi.command.counter.autojoin - Players will automatically join counter group on server join
+ cmi.command.tpa.warmupbypass - Allows to bypass tpa command warmup
+ cmi.command.tpahere.warmupbypass - Allows to bypass tpahere command warmup
+ cmi.command.home.bypassprivate - Allows to teleport to private another player home location
+ cmi.command.homes.range - Allows to see homes by range from you
+ cmi.command.sethome.unlimited - Allows to have unlimited amount of homes
+ cmi.command.sethome.[anypositivenumber] - Allows to have defined amount of homes
+ cmi.command.sethome.customloc - Allows to define custom location for new home
+ cmi.command.sethome.iconpicker - Allows to see icon picker after using command
+ cmi.command.sethome.overwrite - Allows to overwrite existing home location
+ cmi.command.sethome.bypass - Allows to bypass block break protection
+ cmi.command.sethome.bypasslimit - Allows to bypass limits by worlds
+ cmi.command.mail.read - Allows to read mail
+ cmi.command.mail.clear - Allows to clear mail
+ cmi.command.mail.send - Allows to send mail
+ cmi.command.mail.sendtemp - Allows to send timed mail
+ cmi.command.glow.color.[colorname] - Allows to change glow color
+ cmi.command.walkspeed.[range0-10] - Defines max walkspeed player can set
+ cmi.command.tptoggle.bypass - Allows teleportation to players with disabled teleportations
+ cmi.command.sudo.bypass - Prevents player from using sudo on player with permission
+ cmi.command.repair.repairshare.bypass - Allows to bypass repair share being applied on item
+ cmi.command.nick.bypassblacklist - Allows to bypass nick name black list
+ cmi.command.nick.bypass.length - Allows to bypass nick name length limitations
+ cmi.command.nick.bypassinuse - Allows to bypass limitationn in using already existing name
+ cmi.command.nick.different - Allows to set nick name to different one than original
+ cmi.command.msg.clean - Allows to send clean messages to player by using ! at beginning
+ cmi.command.msg.noreply - Allows to send clean messages to player by using !- at beginning without option to reply
+ cmi.command.ignore.bypass - Allows to perform commands on who ignores you
+ cmi.command.silence.bypass - Allows to send messages who is in silence mode
+ cmi.command.more.oversize - Allows to get oversized stacks
+ cmi.command.recipe.admin - Allows to enable/disable recipes
+ cmi.command.list.admin - Places player into admin group in list
+ cmi.command.list.staff - Places player into staff group in list
+ cmi.command.list.hidden - Allows to see hidden players in player list
+ cmi.command.list.group.[groupnumber] - Assigns player to defined group
+ cmi.command.checkban.seereason - Allows to see players ban reason
+ cmi.command.mirror.nodeduct - Will not use blocks when placing them in survival and in mirror mode
+ cmi.command.lfix.admin - Allows to fix light in area bigger than you can see
+ cmi.command.commandspy.hide - Hides performed commands from commandspy
+ cmi.command.commandspy.bypass - Bypasses blacklisted command spy commands
+ cmi.command.signspy.hide - Hides created signs from signspy
+ cmi.command.socialspy.hide - Hides social messages from social spy
+ cmi.command.mute.max.[anypositivenumber] - Allows to temp mute for defined max time
+ cmi.command.mute.bypass - Bypass personal public chat mute
+ cmi.command.mutechat.bypass - Bypass public chat mute
+ cmi.command.money.admin - Allows to manipulate player balance
+ cmi.command.money.betweenworldgroups - Allows money transfer between worlds
+ cmi.command.time.[freeze/unfreeze/day/morning/night/dusk/add/take/realtime/autorealtime] - Allows to manipulate time
+ cmi.command.weather.[sun/rain].[maxvalue] - Allows to define max length player can change weather to
+ cmi.command.pweather.[sun/rain/reset] - Allows to change personal weather to specific state
+ cmi.command.back.ondeath - Allows returning to death location by using back command after death
+ cmi.command.back.worldbypass - Allows returning to blacklisted worlds
+ cmi.command.flightcharge.admin - Allows to edit flight charges for players
+ cmi.command.nameplate.admin - Allows to edit nameplates for players
+ cmi.command.kick.bypass - Prevent player from being kicked from server
+ cmi.command.ride.[entitytype] - Allow to ride entity
+ cmi.command.sit.stairs - Allows to sit on stairs automatically
+ cmi.command.sit.persistent - Allows to sit with persistent mode
+ cmi.command.sit.location - Allows to sit in specific location
+ cmi.command.maintenance.bypass - Allows to bypass maintenance mode
+ cmi.command.alert.inform - Player will get notification on player join with alert
+ cmi.command.helpop.inform - Players with permission gets helpop messages
+ cmi.command.fly.safelogin - Safely lands player after relog if he is in air
+ cmi.command.cuff.bypass - Allows command usage while cuffed
+ cmi.command.jail.bypasscmd - Allows command usage while jailed
+ cmi.command.jail.bypass - Prevents player from being jailed
+ cmi.command.jail.maxtime.[seconds] - Defines max amount of time player can jail someone
+ cmi.command.near.hide - Hides player from being shown in near command
+ cmi.command.near.max.[blocks] - Defines max distance for near command to override default
+ cmi.command.silent - Allows to use -s variable in commands to avoid sending feedback messages to target player
+ cmi.command.warn.bypass - Prevents player from being warned
+ cmi.command.ban.bypass - Prevents player from being banned
+ cmi.command.banip.bypass - Prevents player from being banned by ip
+ cmi.command.tempban.bypass - Prevents player from being tempbanned
+ cmi.command.tempban.max.unlimited - Allows to temp ban for more than config allows
+ cmi.command.tempban.max.[anypositivenumber] - Allows to temp ban for defined max time
+ cmi.command.broadcast.colors - Allows to use colors in broadcast messages
+ cmi.command.charges.edit - Allows to edit players spawner charges
+ cmi.command.checkaccount.showip - Allows to see players ip in check account
+ cmi.command.info.ip - Allows to see players ip in info page
+ cmi.command.info.pos - Allows to see pos location in info page
+ cmi.command.info.bed - Allows to see bed location in info page
+ cmi.command.info.back - Allows to see back location in info page
+ cmi.command.info.deathlocation - Allows to see death location in info page
+ cmi.command.clearchat.bypass - Players chat with permission will not be cleared
+ cmi.command.counter.force - Allows to force counter message on surrounding players
+ cmi.command.counter.time - Allows to change counter default time
+ cmi.command.counter.range - Allows to change counter default range
+ cmi.command.counter.center - Allows to use counter custom location
+ cmi.command.counter.msg - Allows to change counter default message
+ cmi.command.ctext.[ctextname] - Allows to see defined custom message
+ cmi.command.flyspeed.[range1-10] - Defines max flight speed player can set
+ cmi.command.shoot.[type] - Allows to shoot specific type of entity
+ cmi.command.chat.kick - Allows to kick players from chat room
+ cmi.command.chat.see - Allows to see messages in chat room
+ cmi.command.chat.force - Allows to force join player into chat room
+ cmi.command.chat.create - Allows to create chatroom
+ cmi.command.chat.create.private - Allows to create private chatrooms
+ cmi.command.chat.create.locked - Allows to create locked chatrooms
+ cmi.command.chat.leave.locked - Allows to leave locked chatrooms
+ cmi.command.chat.create.persistent - Allows to create persistent chatrooms
+ cmi.command.chat.invite - Allows to initiate player into chatroom
+ cmi.command.chat.joinbypass - Allows to join private chat room without invitation
+ cmi.command.chat.seebypass - Allows to see private chat room
+ cmi.command.chat.list - Allows to list players in chat room
+ cmi.command.chat.listrooms - Allows to list all chat rooms
+ cmi.customalias.[alias] - Allows to use particular alias if it requires permission
 ```
 
 ## Command permissions:
@@ -336,6 +336,11 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
     description: Set items repair cost
     default: op
   cmi.command.anvilrepaircost.others:
+    default: op
+  cmi.command.armoreffect:
+    description: Modifies armor effects
+    default: op
+  cmi.command.armoreffect.others:
     default: op
   cmi.command.armorstand:
     description: Open armor stand editor
@@ -1139,6 +1144,8 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
   cmi.command.sell:
     description: Sell items from inventory
     default: op
+  cmi.command.sell.others:
+    default: op
   cmi.command.sendall:
     description: Send all online players to target server
     default: op
@@ -1460,9 +1467,6 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
   cmi.command.weather:
     description: Controls server weather
     default: op
-  cmi.command.whowas:
-    description: Shows players previous names
-    default: op
   cmi.command.workbench:
     description: Open workbench
     default: op
@@ -1485,4 +1489,4 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
 
 ## Miscellaneous
 
-Created with CMI 9.2.3.5 for Minecraft 1.19.2
+Created with CMI 9.2.4.3 for Minecraft 1.19.2

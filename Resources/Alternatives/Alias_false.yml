@@ -54,6 +54,11 @@ Alias:
     Enabled: false
     Tab: true
   #  
+  # /cmi armoreffect $1-
+  /armoreffect:
+    Enabled: false
+    Tab: true
+  #  
   # /cmi armorstand $1-
   /armorstand:
     Enabled: false
@@ -1655,11 +1660,6 @@ Alias:
     Tab: true
   # /cmi weather storm $1-
   /storm:
-    Enabled: false
-    Tab: true
-  #  
-  # /cmi whowas $1-
-  /whowas:
     Enabled: false
     Tab: true
   #  
