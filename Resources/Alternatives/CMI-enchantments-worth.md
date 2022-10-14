@@ -65,4 +65,12 @@ Source: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/enchantments/Enchant
 
 More information about Mojang's enchantments for Java Edition, please read https://minecraft.fandom.com/wiki/Enchanting#Summary_of_enchantments
 
-Version 1.0.0, build 001. Created for CMI 9.2.4.x for Minecraft 1.19.2 (Java Edition)
+In worth.yml it will look like this:
+```
+ENCHANTED_BOOK>MENDINGx1: '1000.0'
+```
+And once this list is complete, I will merge it with this document: https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/CMI-worth_1.19.2.md
+
+## Version
+
+Version 1.0.1, build 003. Created for CMI 9.2.4.5 for Minecraft 1.19.2 (Java Edition)
