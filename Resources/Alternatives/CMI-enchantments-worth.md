@@ -10,9 +10,7 @@ At this point I have no idea how to approach this, so my first version, first bu
 
 ## Setting worth value for enchantments in CMI
 
-You can use the `/cmi setenchantworth` in-game to set the worth of an enchantment with CMI.
-
-<img width="509" alt="cmi-setenchantworth" src="https://user-images.githubusercontent.com/28841349/195767711-cfef2279-f453-4cac-9d98-ac5adadc79ea.png">
+You can use the `/cmi setworth` in-game to set the worth of an enchantment with CMI.
 
 ## List of available enchantments
 
