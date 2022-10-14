@@ -2,6 +2,7 @@
 <https://www.zrips.net/bungeecord/>
 
 # This page will be deleted during the fall of 2022.
+Edit: now deprecated, next update in November where this page' content will be purged.
 
 # FAQ - How can I use CMI Chat with Bungee?
 
