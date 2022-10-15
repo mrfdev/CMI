@@ -1259,6 +1259,14 @@ CustomAlias:
     Cmds:
     - cmi ping $1-
     AddTabs: true
+  playtime:
+    Cmds:
+    - cmi playtime $1-
+    AddTabs: true
+  eplaytime:
+    Cmds:
+    - cmi playtime $1-
+    AddTabs: true
   potion:
     Cmds:
     - asPlayer! _nocmifeature $0
@@ -1403,6 +1411,14 @@ CustomAlias:
     Cmds:
     - cmi killall $1-
     AddTabs: true
+  renamehome:
+    Cmds:
+    - asPlayer! _nocmifeature $0
+    Perm: true
+  erenamehome:
+    Cmds:
+    - asPlayer! _nocmifeature $0
+    Perm: true
   fix:
     Cmds:
     - cmi repair $1-
