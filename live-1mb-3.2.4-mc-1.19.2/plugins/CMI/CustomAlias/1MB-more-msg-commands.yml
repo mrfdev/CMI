@@ -19,16 +19,21 @@
 CustomAlias:
   w:
     Cmds:
-    - asPlayer! cmi msg $1 $2-
-    CustomTabs:
-    - '[playername]'
+    - asPlayer! cmi msg $1-
+    AddTabs: true
   whisper:
     Cmds:
-    - asPlayer! cmi msg $1 $2-
-    CustomTabs:
-    - '[playername]'
+    - asPlayer! cmi msg $1-
+    AddTabs: true
   tell:
     Cmds:
-    - asPlayer! cmi msg $1 $2-
-    CustomTabs:
-    - '[playername]'
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  m:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  pm:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
