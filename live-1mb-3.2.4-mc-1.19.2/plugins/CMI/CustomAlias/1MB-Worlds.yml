@@ -95,11 +95,6 @@ CustomAlias:
     - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
       the /run game.'
     - asConsole! cmi effect [playerName] clear
-  halloween:
-    Cmds:
-    - msg! [playerName] &6 Sorry :( It's no longer Halloween, this event has ended.
-      Check /event to find the next one.
-    Tab: false
   valentine:
     Cmds:
     - 'msg! [playerName] {#magenta} Event: Valentine''s Day 2022, has ENDED! Check
@@ -128,18 +123,6 @@ CustomAlias:
       &b%world_time12_end%&7 in &2/end
     - asConsole! cmi bossbarmsg [playerName] -s:3 -t:3 -n:timebar -c:green -s:1 -p:1
       -a:1 &7 It is &b%world_time12_[worldName]%&7 in &2/[worldName]
-  votellama:
-    Cmds:
-    - 'msg! [playerName] &3-----/ &b1MB Voting Llama: Charlie the Pinata&r&3 \-----'
-    - msg! [playerName] &6->&2 https://omgboards.com/threads/261749/
-    - 'msg! [playerName] &6-> &e&lVotes needed: %pinataparty_votes_needed%, votes
-      left to go: %pinataparty_votes_left%'
-    - 'asConsole! msg! [playerName] &6-> &bCharlie will spawn every 25 votes at: /warp
-      charlie'
-    - msg! [playerName] &6-> &bSometimes the 10 lootboxes have stuff in them too!
-  charlie:
-    Cmds:
-    - votellama
   thanksgiving:
     Cmds:
     - 'msg! [playerName] &6 More info here: https://omgboards.com/threads/261907/'
