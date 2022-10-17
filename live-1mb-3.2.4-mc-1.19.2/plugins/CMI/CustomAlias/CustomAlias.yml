@@ -119,13 +119,6 @@ CustomAlias:
     - asConsole! msg! [playerName] &7- Your items are the things in your Inventory,
       just press the Inventory key (E by default) to open it.
     Tab: false
-  event:
-    Cmds:
-    - asConsole! msg! [playerName] &3 1MB Event »&b --- The 2021 "10 year Celebration"
-      event is now live, check /celebration
-    - 'asConsole! msg! [playerName] &3 1MB Event »&b --- The next event is the HARDCORE
-      event - More info: https://omgboards.com/threads/hardcore-weekend.263795/'
-    Tab: false
   sell:
     Cmds:
     - cmi sell gui
@@ -160,8 +153,8 @@ CustomAlias:
     - asConsole! msg! [playerName] &3 ------[ &bSuggestion Information&3 ]--------
     - asConsole! msg! [playerName] &6If you have a suggestion you're free to share
       it with us, we are excited to hear from our players on how to improve our server.
-    - asConsole! msg! [playerName] &3Discord:&7 https://discord.gg/KzTDhxv
-    - asConsole! msg! [playerName] &3Forums:&7 https://omgboards.com/threads/261561/
+    - asConsole! msg! [playerName] &3Discord:&7 https://discord.gg/floris
+    - 'asConsole! msg! [playerName] &3please post it in the #suggestions box :)'
     - asConsole! msg! [playerName] &3 -------------------------------------
     Tab: false
   myping:
@@ -708,19 +701,12 @@ CustomAlias:
     Tab: false
   spooky:
     Cmds:
-    - msg! [playerName] &3 1MB Event »&b --- The 2021 "SPOOKY OCTOBER MONTH" event
-      has ended. Check back next year. See /event for more events.
+    - asPlayer! event
   fix:
     Cmds:
     - cmi attachcommand
     Perm: true
     Tab: false
-  events:
-    Cmds:
-    - asPlayer! event
-    - 'msg! [playerName] {#gold} On /discord we have a #schedule channel with a glance
-      at the upcoming events, perfect for those who don''t want to miss a thing! From
-      Valentine''s Day in February all the way to Christmas in December.'
   hub:
     Cmds:
     - msg! [playerName] {#gold} We do not really have a hub/lobby, but I will bring
@@ -766,3 +752,73 @@ CustomAlias:
   sendnormal:
     Cmds:
     - asConsole! _getRekt [playerName] $1-
+  temptest:
+    Cmds:
+    - msg! [playerName] testing %cmi_player_world% testing
+  expand:
+    Cmds:
+    - msg! [playerName] Please pick a gametype, like /expand oneblock, or /expand
+      skyblock
+  expand oneblock:
+    Cmds:
+    - statement:check1! ifinworld:oneblock! check:%aoneblock_island_protection_range%<100!
+      check:%aoneblock_has_island%==true!
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      msg! [playerName] you are on your own island
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      asConsole! cmi usermeta [playerName] add oneblockislandrank no
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_1%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_2%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_3%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_4%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_5%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_6%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_7%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_8%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_9%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_10%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%cmi_user_meta_oneblockislandrank%==yes! msg! [playerName] {#gold} You
+      appear to be a top island player, you should be eligible. Giving you the island
+      expander item which will allow you to add +25 blocks to your island once you
+      consume it.
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%cmi_user_meta_oneblockislandrank%==yes! asConsole! cmi kit expandisland25
+      [playerName]
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%cmi_user_meta_oneblockislandrank%==no! msg! [playerName] {#orange} Sorry,
+      you are not in the oneblock island top 8 players yet, you can not expand your
+      island range currently. You can recalculate your island level (/oneblock level)
+      after building on it first, and try this command again later.
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      asConsole! cmi usermeta [playerName] remove oneblockislandrank
+    - if:check1! check:%aoneblock_visited_island_owner%!=%cmi_user_name%! msg! [playerName]
+      Go to your own island first!
+    - if:check1! check:%aoneblock_visited_island_owner%==null! msg! [playerName] Go
+      to your own island first!
+    - if:check1@! msg! [playerName] Cannot run this command, either you're not on
+      your own island, you don't have an island, or you already have it expanded to
+      the max range of 100. If you have any questions, please contact staff.
+  fish warp:
+    Cmds:
+    - asPlayer! cmi warp fish
