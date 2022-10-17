@@ -180,7 +180,7 @@ CustomAlias:
     Perm: true
   alvls:
     Cmds:
-    - 'check:$1==null! msg! [playerName] {#orange} Syntax: /alvls <player>'
+    - check:$1==null! asConsole! _syntax [playerName] $0 <player>
     - check:$1!=null! asConsole! addlevels $1 excavation 2
     - check:$1!=null! asConsole! addlevels $1 fishing 1
     - check:$1!=null! asConsole! addlevels $1 herbalism 2
