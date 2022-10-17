@@ -153,13 +153,13 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.4.4** (October 3rd, 2022), for live-1mb-3.2.5-mc-1.19.2
+1MB CMI Project version **0.4.5** (October 17th, 2022), for live-1mb-3.2.6-mc-1.19.2
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.2.5-mc-1.19.2`
 ```
 -live- (live server)
 -1MB- (1moreblock linked to network hub called 1MB)
--3.2.5- (1MB version 3.2.5, history version)
+-3.2.6- (1MB version 3.2.6, history version)
 -mc- (Minecraft, but it is Paper jar at the moment)
 -1.19.2- (Minecraft version 1.19.2)
 ```
