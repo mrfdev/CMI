@@ -83,8 +83,9 @@ Chat:
 - Personally I also recommend to set `ClickHoverMessages:` to `true` if you want to use some other CMI chat features such as `[item]` which you can configure further down in the config file.
 
 Optionally, if you want custom join/leave msgs, don't forget to enable this.
+
+Enable it in Modules.yml
 ```yaml
-# Enable it in Modules.yml
 # Login, logout and death messages
 # Applies for servers from 1.7.x and up
 customMessages: true
