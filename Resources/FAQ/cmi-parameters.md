@@ -111,7 +111,10 @@ $0 $3 == fruit superman
 $2- == apple superman
 
 ```
-
+If you want to see if something's null, you can use `check:!` from specialized commands:
+```yml
+check:$1==null! asConsole! cmi msg [playerName] {#orange} - Syntax is /$0 <something>
+```
 
 ---
 
