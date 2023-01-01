@@ -56,7 +56,7 @@
 info:
   # Use !prefix! in any locale line to automatically include this prefix
   prefix: '&e[&a1MB&e] '
-  NoPermission: '&cYou don''t have permission! test %cmi_user_name% test'
+  NoPermission: '{#red}Sorry, You do not have permission for that.'
   CantHavePermission: '&cYou can''t have this permission!'
   WrongGroup: '&cYou are in wrong group for this!'
   NoPlayerPermission: '&c[playerName] doesn''t have permission for: [permission]'
@@ -142,8 +142,8 @@ info:
     noserver: '&cCan''t find server by this name!'
     server: '&eServer: {#Edward}[name]'
   variables:
-    am: '{#magenta}&oAM'
-    pm: '{#magenta}&oPM'
+    am: '{#009bcc}am'
+    pm: '{#009bcc}pm'
     Online: '&6Online'
     Offline: '&cOffline'
     TrueColor: '&2'
@@ -162,6 +162,10 @@ info:
     Full: '&5Your inventory is full. Can''t add item'
     FullDrop: '&5Not all items fit in your inventory. They have been dropped on ground'
   TimeNotRecorded: '&e-No record-'
+  months: '&e[months] &6months '
+  oneMonth: '&e[months] &6month '
+  weeks: '&e[weeks] &6weeks '
+  oneWeek: '&e[weeks] &6week '
   years: '&e[years] &6years '
   oneYear: '&e[years] &6year '
   day: '&e[days] &6days '
@@ -425,6 +429,7 @@ info:
     bee: Bee
     blaze: Blaze
     boat: Boat
+    camel: Camel
     cat: Cat
     cave_spider: Cave spider
     chest_boat: Chest boat
