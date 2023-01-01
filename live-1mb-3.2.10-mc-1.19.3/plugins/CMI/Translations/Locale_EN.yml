@@ -194,6 +194,10 @@ info:
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
+  months: '&e[months] &6months '
+  oneMonth: '&e[months] &6month '
+  weeks: '&e[weeks] &6weeks '
+  oneWeek: '&e[weeks] &6week '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
@@ -412,6 +416,10 @@ command:
       selffeedback: '&eBase repair cost was set to &3[amount] &efor &3[playerDisplayName]&e
         item in hand (&3[offon]&e).'
       targetfeedback: '&eYour item repair cost was set to &3[amount]&e by &3[senderDisplayName]&e.'
+  armoreffect:
+    help:
+      info: '&eModifies armor effects'
+      args: '[potionEffect]'
   armorstand:
     help:
       info: '&eOpen armor stand editor'
@@ -532,6 +540,8 @@ command:
       topLineHover: '&6Server Total: &c[total]'
       list: '&e[place]. &6[playerDisplayName]: &e[balance]'
       ownLine: '&2[place]. &2[playerDisplayName]: &2[balance]'
+      # Set to empty field if you want to not show hover over message
+      hover: '&2[playerName]'
       recalculating: '&2Baltop is being recalculated, please wait couple seconds and
         try again'
   ban:
@@ -824,6 +834,8 @@ command:
       nickname: ' &eNickName: '
       signs: ' &eSigns: '
       books: ' &eBooks: '
+      itemname: ' &eItemName: '
+      itemlore: ' &eItemLore: '
       me: ' &eMe: '
       None: '&e-'
   colorpicker:
@@ -1801,6 +1813,8 @@ command:
       newBackHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
       newRespawn: '&fRespawn '
       newRespawnHover: '&6[world] (&e[x]&6:&e[y]&6:&e[z]&6)'
+      inv: '&fInv '
+      ender: '&fEnder '
       newSee: '◕‿◕ '
       newSeeHover: '&6Can see you'
       newSeeHoverNot: '&2Can''t see you'
@@ -1834,12 +1848,12 @@ command:
       newChatRoomHover:
       - '&7ChatRoom: &e[name]'
       - '&7Users in: &e[count]'
-      nList:
+      List:
       - '&e------------- [enableColor]Enabled [disableColor]Disabled&e -------------'
       - '&e| [name][balance][UUID][ip]'
       - '&e| [OP][god][fly][gameMode][afk][see]'
       - '&e| [banned][muted][cuffed][jailed][alert][chatroom]'
-      - '&e| [pos][bed][respawn][death][back]'
+      - '&e| [pos][bed][respawn][death][back][ender][inv]'
       - '&e| [homes][mail][warnings]'
       - '&e-----------------------------------------'
   inv:
@@ -1974,6 +1988,7 @@ command:
       noitem: '&cNot holding any item in hand.'
       removed: '&eItem name was removed for &3[playerDisplayName]&e (&3[offon]&e).'
       blocked: '&eThis item is blocked from renaming'
+      maxLength: '&cNew value is to long. Max length &e[length] &ccharacters'
   itemnbt:
     help:
       info: '&eShow item NBT information'
@@ -2599,6 +2614,9 @@ command:
     help:
       info: '&eModify personal options'
       args: (playerName) (option) (enable/disable/toggle/status) (-s)
+      explanation:
+      - 'Posible actions: visibleHolograms, shiftSignEdit, totemBossBar, bassBarCompass,
+        tagSound, chatSpy, cmdSpy, signSpy, acceptingPM, acceptingTPA, acceptingMoney'
     info:
       title: '&8Options'
       state: '&2State: [state]'
@@ -2820,6 +2838,9 @@ command:
       requiredMcmmoList: '&e[color][name] '
       requiredMcmmoListHover: ' &e[color][current]&e/&6[needed]'
       requiredMcmmoPower: Power
+      requiredAurelium: ' &eAurelium: '
+      requiredAureliumList: '&e[color][name] '
+      requiredAureliumListHover: ' &e[color][current]&e/&6[needed]'
       requiredJobs: ' &eJobs: '
       requiredJobsList: ' &e[color][name]'
       requiredJobsListHover: ' &e[color][current]&e/&6[needed]'
@@ -3375,6 +3396,7 @@ command:
     info:
       feedback: '&eYou toggled silent chest mode to &3[offon].'
       onOpen: '&eOpening chest, silently.'
+      cantOpen: '&cUnable to open. Loot not generated yet.'
   sit:
     help:
       info: '&eSit in your position'
@@ -4113,6 +4135,7 @@ command:
       stopPlaytime: '&ePlaytime will stop increasing'
       sleepIgnore: '&eIgnore for sleeping count'
       joinVanished: '&eAlways join in vanish mode'
+      deathMessages: '&eShow death message'
       bossbarTitle: '&fVanished'
   version:
     help:
@@ -4258,14 +4281,6 @@ command:
       sunny: sunny
       rainy: rainy
       thundering: thundering
-  whowas:
-    help:
-      info: '&eShows players previous names'
-      args: '[playerName]'
-    info:
-      list: ' &e[place]. &6[name] - &e[date]'
-      info: ' &e[playerName] &6[uuid]'
-      original: '&eOriginal name'
   workbench:
     help:
       info: '&eOpen workbench'

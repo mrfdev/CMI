@@ -35,7 +35,7 @@ CustomAlias:
     Cmds:
     - 'msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} A peek behind
       the curtain:'
-    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} https://omgboards.com/threads/263613/
+    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} https://omgboards.com/threads/263867/
       \n&r
     Tab: false
   register:
@@ -47,11 +47,11 @@ CustomAlias:
     Cmds:
     - msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} We are not
       looking for new team members.
-    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Red-colored usernames
-      are team members, feel free to reach out to them.
-    - 'msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Some of our team:
-      mrfloris, the456gamer, tidala, jackPerByte, Citebafla, _hepcat_, benjamin433,
-      mrcrazyman02, nikkipixel, and greymagic27, to name a few.. . \n&r'
+    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} These are our
+      current team members, feel free to reach out to them.
+    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} mrfloris, the456gamer,
+      tidala, jackPerByte, Citebafla, benjamin433, mrcrazyman02, nikkipixel, and greymagic27,
+      to name a few.. . \n&r
     - msg! [playerName]  If you are trying to make a team in skyblock or oneblock,
       see &6/teams&r instead.
     Tab: false
@@ -112,7 +112,8 @@ CustomAlias:
     Tab: false
   points:
     Cmds:
-    - welcomes shop
+    - msg! [playerName] {#orange}CLOSED {#gold} Sorry, the /points shop is currently
+      closed, it will return early January.
     Tab: false
   items:
     Cmds:
@@ -699,9 +700,6 @@ CustomAlias:
     Cmds:
     - asConsole! cmi ctext teams [playerName]
     Tab: false
-  spooky:
-    Cmds:
-    - asPlayer! event
   fix:
     Cmds:
     - cmi attachcommand
@@ -822,3 +820,19 @@ CustomAlias:
   fish warp:
     Cmds:
     - asPlayer! cmi warp fish
+  legacy:
+    Cmds:
+    - asConsole! mvtp [playerName] legacy
+  addnpc:
+    Cmds:
+    - asPlayer! npc create $1 --type player
+    - delay! 0.5
+    - asPlayer! npc lookclose
+    Perm: true
+    Tab: false
+  ft types:
+    Cmds:
+    - 'msg! [playerName] {#gold}Valid types: {#gray}LONGEST_LENGTH &rSHORTEST_LENGTH
+      {#gray}CRAB_KILLING &rRANDOM_CATCH {#gray}MOST_CATCH &rBASE_ENTROPY_EARNED {#gray}LONGEST_CAST'
+    Perm: true
+    Tab: false

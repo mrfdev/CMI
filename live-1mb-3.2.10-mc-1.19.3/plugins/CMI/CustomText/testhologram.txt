@@ -1,0 +1,60 @@
+<AutoPage>
+bskyblock:
+%Level_bskyblock_top_name_1% with island level: %Level_bskyblock_top_value_1%
+%Level_bskyblock_top_name_2% with island level: %Level_bskyblock_top_value_2%
+%Level_bskyblock_top_name_3% with island level: %Level_bskyblock_top_value_3%
+%Level_bskyblock_top_name_4% with island level: %Level_bskyblock_top_value_4%
+%Level_bskyblock_top_name_5% with island level: %Level_bskyblock_top_value_5%
+%Level_bskyblock_top_name_6% with island level: %Level_bskyblock_top_value_6%
+%Level_bskyblock_top_name_7% with island level: %Level_bskyblock_top_value_7%
+%Level_bskyblock_top_name_8% with island level: %Level_bskyblock_top_value_8%
+%Level_bskyblock_top_name_9% with island level: %Level_bskyblock_top_value_9%
+%Level_bskyblock_top_name_10% with island level: %Level_bskyblock_top_value_10%
+<NextPage>
+aoneblock:
+%Level_aoneblock_top_name_1% with island level: %Level_aoneblock_top_value_1%
+%Level_aoneblock_top_name_2% with island level: %Level_aoneblock_top_value_2%
+%Level_aoneblock_top_name_3% with island level: %Level_aoneblock_top_value_3%
+%Level_aoneblock_top_name_4% with island level: %Level_aoneblock_top_value_4%
+%Level_aoneblock_top_name_5% with island level: %Level_aoneblock_top_value_5%
+%Level_aoneblock_top_name_6% with island level: %Level_aoneblock_top_value_6%
+%Level_aoneblock_top_name_7% with island level: %Level_aoneblock_top_value_7%
+%Level_aoneblock_top_name_8% with island level: %Level_aoneblock_top_value_8%
+%Level_aoneblock_top_name_9% with island level: %Level_aoneblock_top_value_9%
+%Level_aoneblock_top_name_10% with island level: %Level_aoneblock_top_value_10%
+<NextPage>
+acidisland:
+%Level_acidisland_top_name_1% with island level: %Level_acidisland_top_value_1%
+%Level_acidisland_top_name_2% with island level: %Level_acidisland_top_value_2%
+%Level_acidisland_top_name_3% with island level: %Level_acidisland_top_value_3%
+%Level_acidisland_top_name_4% with island level: %Level_acidisland_top_value_4%
+%Level_acidisland_top_name_5% with island level: %Level_acidisland_top_value_5%
+%Level_acidisland_top_name_6% with island level: %Level_acidisland_top_value_6%
+%Level_acidisland_top_name_7% with island level: %Level_acidisland_top_value_7%
+%Level_acidisland_top_name_8% with island level: %Level_acidisland_top_value_8%
+%Level_acidisland_top_name_9% with island level: %Level_acidisland_top_value_9%
+%Level_acidisland_top_name_10% with island level: %Level_acidisland_top_value_10%
+<NextPage>
+cabeblock:
+%Level_caveblock_top_name_1% with island level: %Level_caveblock_top_value_1%
+%Level_caveblock_top_name_2% with island level: %Level_caveblock_top_value_2%
+%Level_caveblock_top_name_3% with island level: %Level_caveblock_top_value_3%
+%Level_caveblock_top_name_4% with island level: %Level_caveblock_top_value_4%
+%Level_caveblock_top_name_5% with island level: %Level_caveblock_top_value_5%
+%Level_caveblock_top_name_6% with island level: %Level_caveblock_top_value_6%
+%Level_caveblock_top_name_7% with island level: %Level_caveblock_top_value_7%
+%Level_caveblock_top_name_8% with island level: %Level_caveblock_top_value_8%
+%Level_caveblock_top_name_9% with island level: %Level_caveblock_top_value_9%
+%Level_caveblock_top_name_10% with island level: %Level_caveblock_top_value_10%
+<NextPage>
+skygrid:
+%Level_skygrid_top_name_1% with island level: %Level_skygrid_top_value_1%
+%Level_skygrid_top_name_2% with island level: %Level_skygrid_top_value_2%
+%Level_skygrid_top_name_3% with island level: %Level_skygrid_top_value_3%
+%Level_skygrid_top_name_4% with island level: %Level_skygrid_top_value_4%
+%Level_skygrid_top_name_5% with island level: %Level_skygrid_top_value_5%
+%Level_skygrid_top_name_6% with island level: %Level_skygrid_top_value_6%
+%Level_skygrid_top_name_7% with island level: %Level_skygrid_top_value_7%
+%Level_skygrid_top_name_8% with island level: %Level_skygrid_top_value_8%
+%Level_skygrid_top_name_9% with island level: %Level_skygrid_top_value_9%
+%Level_skygrid_top_name_10% with island level: %Level_skygrid_top_value_10%

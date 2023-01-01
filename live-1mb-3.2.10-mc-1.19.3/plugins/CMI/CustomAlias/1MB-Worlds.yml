@@ -95,14 +95,6 @@ CustomAlias:
     - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
       the /run game.'
     - asConsole! cmi effect [playerName] clear
-  valentine:
-    Cmds:
-    - 'msg! [playerName] {#magenta} Event: Valentine''s Day 2022, has ENDED! Check
-      with /events what is next'
-  easter:
-    Cmds:
-    - msg! [playerName] &3 1MB Easter »&d The event has ended, check back again in
-      2022.
   tientje:
     Cmds:
     - asConsole! ifinworld:sanctuary?#! cmi gm [playerName] creative
@@ -113,38 +105,20 @@ CustomAlias:
     Perm: true
   clock:
     Cmds:
-    - msg! [playerName] {#Cerulean>} 1MB Time »{#Lochmara<}{#Feijoa} It's currently
-      &b%world_time12_wild%&7 in &2/wild
-    - msg! [playerName] {#Cerulean>} 1MB Time »{#Lochmara<}{#Feijoa} It's currently
-      &b%world_time12_general%&7 in &2/general
-    - msg! [playerName] {#Cerulean>} 1MB Time »{#Lochmara<}{#Feijoa} It's currently
-      &b%world_time12_nether%&7 in &2/nether
-    - msg! [playerName] {#Cerulean>} 1MB Time »{#Lochmara<}{#Feijoa} It's currently
-      &b%world_time12_end%&7 in &2/end
+    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'msg! [playerName] {#Cerulean} »{#gold} Currently the time in each world:'
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /wild &b%cmi_world_time12_wild%&7 (%cmi_weather_wild%)
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /general &b%cmi_world_time12_general%&7
+      (%cmi_weather_general%)
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /nether &b%cmi_world_time12_nether%&7
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /end &b%cmi_world_time12_end%&7
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /oneblock &b%cmi_world_time12_oneblock%&7
+      (%cmi_weather_oneblock%)
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /skyblock &b%cmi_world_time12_skyblock%&7
+      (%cmi_weather_skyblock%)
+    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
     - asConsole! cmi bossbarmsg [playerName] -s:3 -t:3 -n:timebar -c:green -s:1 -p:1
-      -a:1 &7 It is &b%world_time12_[worldName]%&7 in &2/[worldName]
-  thanksgiving:
-    Cmds:
-    - 'msg! [playerName] &6 More info here: https://omgboards.com/threads/261907/'
-  santa:
-    Cmds:
-    - mvtp santa
-    - delay! 2
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - delay! 1
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - delay! 1
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - delay! 1
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - delay! 1
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - delay! 1
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - delay! 1
-    - asConsole! cmi effect [playerName] freeze 60 1
-    - asConsole! cmi tfly [playerName] +60
-    Perm: true
+      -a:1 &7 It is &b%cmi_world_time12_[worldName]%&7 in &2/[worldName]
   uwu:
     Cmds:
     - mv tp uwu
@@ -194,10 +168,6 @@ CustomAlias:
   turkey:
     Cmds:
     - msg! [playerName] &6Gobble gobble!&e Thanksgiving Turkey Hunt!
-  walk:
-    Cmds:
-    - infp $1-
-    - asConsole! cmi effect [playerName] clear
   is:
     Cmds:
     - 'msg! [playerName] {#magenta} Hi there :) We have a survival wilderness, and

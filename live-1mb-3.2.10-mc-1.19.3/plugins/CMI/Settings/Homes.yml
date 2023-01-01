@@ -2,6 +2,8 @@ Homes:
   # When enabled we will require player to click on ingame chat to confirm home location override in case home with same name already exist
   # This can be dirrectly confirmed with /cmi sethome [homeName] -override
   Confirmation: true
+  # This defines max slot number player could provide while creating home with /sethome [homeName] [slotNumber]
+  MaxGuiSlots: 99
   Gui:
     # Open gui when using /cmi home command if you have more then one home in your saved list
     Use: true

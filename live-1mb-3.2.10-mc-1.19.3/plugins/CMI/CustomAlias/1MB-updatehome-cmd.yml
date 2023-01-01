@@ -17,27 +17,16 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
-  walk:
+  updatehome:
     Cmds:
-    - asPlayer! infinityparkour $1-
-    AddTabs: true
-  w:
+    - asConsole! cmi sethome $1 [playerName] -overwrite
+    - msg! [playerName] {#gold}Boom! Updated&l $1
+    Perm: true
+    CustomTabs:
+    - '[homes]'
+  deletehome:
     Cmds:
-    - asPlayer! cmi msg $1-
+    - asPlayer! cmi removehome $1-
     AddTabs: true
-  whisper:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  tell:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  m:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  pm:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
+    CustomTabs:
+    - '[homes]'

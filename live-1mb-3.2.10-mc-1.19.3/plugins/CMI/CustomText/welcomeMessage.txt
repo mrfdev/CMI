@@ -1,7 +1,7 @@
 <AutoPage><AutoAlias><NoReqPermission>
 {#Cerulean}
 img:head:[playerName] 8
-imgtext:{#Lochmara} »&2 1MoreBlock {#Feijoa} 3.2.4 for Minecraft 1.19.2
+imgtext:{#Lochmara} »&2 1MoreBlock {#Feijoa} 3.2.10 for Minecraft 1.19.3
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:<T>{#Lochmara} »{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
 imgtext:{#Lochmara} »{#Feijoa} We are a family-friendly community.

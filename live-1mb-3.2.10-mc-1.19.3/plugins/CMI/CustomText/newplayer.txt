@@ -32,11 +32,11 @@ Check /worlds to learn more
 <NextPage>
 &2 Some 1MB links:
 
-<T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>www.1moreblock.com</URL>
-<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/KzTDhxvm</T><H>Click to load our Discord Server</H><URL>discord.gg/KzTDhxvm</URL>
-<T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>twitch.tv/mrfloris</URL>
-<T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>youtube.com/mrfloris</URL>
-<T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>twitter.com/floris</URL>
+<T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>https://www.1moreblock.com</URL>
+<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/floris</T><H>Click to load our Discord Server</H><URL>https://discord.gg/floris</URL>
+<T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>https://twitch.tv/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>https://youtube.com/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>https://twitter.com/floris</URL>
 
 {#Cerulean} 
 {#Cerulean} Need help? Ask our players, or on /discord

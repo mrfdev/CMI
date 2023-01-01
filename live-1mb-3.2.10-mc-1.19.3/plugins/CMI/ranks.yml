@@ -5,6 +5,8 @@
 # DefaultRank section defines if player can be assigned to this rank if he dont have any. There can be more than one default rank, and depending on permision node, first rank will be assigned to that player when needed
 # PermissionRequirement section defines list of permissions player should have to rankup to that rank. Optional - For each permission node you can add its name which will be shown in /cmi rankinfo with : In example cmi.command.fly:Fly
 # McMMORequirement section defines list of McMMO skills and levels player should have to rankup to that rank.
+# AureliumRequirement section defines list of Aurelium skills and levels player should have to rankup to that rank.
+# McMMO and Aurelium sections can use skill name as Power to indicate total sum of all skills
 # JobsRequirement section defines list of Jobs and levels player should have to rankup to that rank.
 # ItemRequirement section defines list of items player should have to rankup to that rank. Items will be taken after succesfull rankup from players inventory.
 # AutoRankup section defines if player will be auto ranked to this rank if possible. Keep in mind that if there is more than one legit rankup, player will have to confirm to which rank he wants to rankup

@@ -18,6 +18,25 @@ acid:
     - msg! [playerName] Rain and water is acid, /acid create, to get started! Stay
       alive :)
 general:
+  benjaminfrog:
+    Loc: -13306.0:81.0:17591.0:-13305.0:83.0:17592.0
+    enabled: true
+    effect: Totem
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi effect [playerName] blindness 2 1 -s
+    - asConsole! cmi sound entity_warden_attack_impact [playerName]
+    - asConsole! cmi effect [playerName] darness 2 1 -s
+    - delay! 0.3
+    - asConsole! cmi launch [playerName] -nodamage p:5 a:45
   benjaminparticles:
     Loc: -13436.0:69.0:17670.0:-13436.0:69.0:17670.0
     enabled: true
@@ -273,6 +292,37 @@ general:
     commandsWithoutTp: false
     commands:
     - msg! [playerName] &6 Teleporting you to the bus stop..
+  ShopsCommunityChests:
+    Loc: 12535.0:78.0:-5362.0:12536.0:78.0:-5362.0
+    enabled: true
+    effect: crimson_spore
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 20
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] {#gold}Is there stuff in the chest? Nice! That's donated by
+      other players, you can take those if you want. Is the chest empty? By all means,
+      donate a few of your items for others to enjoy.
+  shopsEnchantTableParticles:
+    Loc: 12510.0:79.0:-5327.0:12514.0:81.0:-5323.0
+    enabled: true
+    effect: EnchantmentTable
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 5
+    activationRange: 6
+    commandsWithoutTp: true
+    commands: []
   spawn_general_endportal:
     Loc: 76.0:83.0:-236.0:78.0:85.0:-234.0
     enabled: true
@@ -452,61 +502,47 @@ valentine:
     activationRange: 16
     commandsWithoutTp: true
     commands: []
-run:
-  runlevel3:
-    Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
+halloween:
+  halloweenLaunchPortalOne:
+    Loc: 1359.0:65.0:699.0:1365.0:67.0:705.0
     enabled: true
-    effect: Reddust
-    color: 8224125
-    showParticles: false
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 70
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - asConsole! cmi effect [playerName] clear -s
-  runlevel4:
-    Loc: -165.0:52.0:-101.0:-140.0:55.0:-76.0
-    enabled: true
-    effect: LargeSmoke
+    effect: soul_fire_flame
     showParticles: true
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
-    particleAmount: 5
+    particleAmount: 19
     particleHide: 0
-    activationRange: 16
+    activationRange: 36
     commandsWithoutTp: true
     commands:
-    - cmi effect [playerName] blindness 30 1 -s
-skyblock:
-  skyblockspawn:
-    Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
+    - cmi effect [playerName] blindness 2 1 -s
+  halloweenLaunchPortalTwo:
+    Loc: 1358.0:66.0:802.0:1359.0:68.0:802.0
     enabled: true
-    effect: Reddust
-    color: 8224125
-    showParticles: false
+    effect: Portal
+    showParticles: true
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
-    particleAmount: 0
+    particleAmount: 10
     particleHide: 0
-    activationRange: 32
+    activationRange: 16
     commandsWithoutTp: true
     commands:
-    - msg! [playerName] You falling yikes, let's try to get you to safety
-    - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
-santa:
-  snow:
-    Loc: 263.0:68.0:-72.0:280.0:73.0:-63.0
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#orange}You've entered the Halloween's Ancient City, explore
+      to find up to four loot boxes with halloween goodies
+    - asConsole! lc respawn Halloween01
+    - asConsole! lc respawn Halloween02
+    - asConsole! lc respawn Halloween03
+    - asConsole! lc respawn Halloween04
+  halloweenPortal:
+    Loc: 1759.0:71.0:848.0:1761.0:75.0:848.0
     enabled: true
-    effect: FireworksSpark
+    effect: DepthSuspend
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -517,8 +553,76 @@ santa:
     activationRange: 16
     commandsWithoutTp: false
     commands:
-    - asConsole! cmi sound AMBIENT_UNDERWATER_LOOP mrfloris -v:0.7
+    - cmi effect [playerName] blindness 2 1 -s
+    - asConsole! cmi msg [playerName] !&6 You found a secret ! You went through the
+      portal to start your adventure to find the HALLOWEEN STICK! sssh, keep secret
+      to yourself ;) it's more fun that way.
+  halloweenspawnsoul:
+    Loc: 1485.0:75.0:492.0:1488.0:77.0:495.0
+    enabled: true
+    effect: soul
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 16
+    particleHide: 10
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asConsole! cmi heal [playerName] -s
+    - msg! [playerName] &r\n&r {#orange} MAKE SURE YOU READ THE BOOKS AND ALL SIGNS
+      !!&r\n&r
+    - asConsole! cmi ctext halloween [playerName] -p 5
+  halloweenstuckportal:
+    Loc: 1663.0:64.0:679.0:1663.0:67.0:679.0
+    enabled: true
+    effect: Totem
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  halloweenwaterdrip:
+    Loc: 1603.0:85.0:799.0:1604.0:88.0:799.0
+    enabled: true
+    effect: DripWater
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
 wild:
+  randyendportal:
+    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
+    enabled: true
+    effect: TownAura
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! mv tp end
   wildend:
     Loc: 50.0:59.0:47.0:52.0:59.0:49.0
     enabled: true
@@ -567,3 +671,600 @@ wild:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! nether
+run:
+  runlevel3:
+    Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 70
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi effect [playerName] clear -s
+  runlevel4:
+    Loc: -165.0:52.0:-101.0:-140.0:55.0:-76.0
+    enabled: true
+    effect: LargeSmoke
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 30 1 -s
+santa:
+  santaparticlestree:
+    Loc: 162.0:74.0:56.0:174.0:95.0:71.0
+    enabled: true
+    effect: SnowBallPoof
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi tfly [playerName] 300 -s
+  santaworldfrostyperk:
+    Loc: 167.0:74.0:54.0:167.0:77.0:55.0
+    enabled: true
+    effect: Reddust
+    color: 12164035
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 3
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands: []
+  snow:
+    Loc: 263.0:68.0:-72.0:280.0:73.0:-63.0
+    enabled: true
+    effect: FireworksSpark
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: false
+    commands:
+    - asConsole! cmi sound AMBIENT_UNDERWATER_LOOP mrfloris -v:0.7
+skyblock:
+  skyblockspawn:
+    Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 0
+    particleHide: 0
+    activationRange: 32
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] You falling yikes, let's try to get you to safety
+    - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
+thanksgiving:
+  thanksgivingturkey1:
+    Loc: 536.0:95.0:-539.0:537.0:99.0:-538.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey10:
+    Loc: 349.0:72.0:-594.0:351.0:75.0:-592.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey11:
+    Loc: 311.0:74.0:-588.0:313.0:77.0:-586.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey12:
+    Loc: 280.0:72.0:-569.0:282.0:75.0:-567.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey13:
+    Loc: 237.0:70.0:-560.0:239.0:72.0:-559.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey14:
+    Loc: 237.0:70.0:-563.0:239.0:72.0:-561.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey15:
+    Loc: 273.0:74.0:-533.0:276.0:77.0:-529.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey16:
+    Loc: 308.0:72.0:-553.0:311.0:74.0:-551.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey17:
+    Loc: 351.0:72.0:-541.0:353.0:75.0:-539.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey18:
+    Loc: 355.0:77.0:-567.0:358.0:80.0:-565.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey19:
+    Loc: 341.0:76.0:-577.0:343.0:79.0:-574.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey2:
+    Loc: 560.0:122.0:-560.0:561.0:125.0:-559.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey20:
+    Loc: 350.0:72.0:-579.0:352.0:75.0:-577.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey21:
+    Loc: 321.0:74.0:-566.0:323.0:77.0:-564.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey22:
+    Loc: 337.0:75.0:-552.0:339.0:78.0:-550.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey23:
+    Loc: 352.0:72.0:-557.0:354.0:75.0:-553.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey24:
+    Loc: 544.0:99.0:-558.0:546.0:102.0:-556.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey25:
+    Loc: 253.0:73.0:-567.0:255.0:76.0:-564.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey3:
+    Loc: 521.0:98.0:-590.0:524.0:101.0:-588.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey4:
+    Loc: 508.0:96.0:-571.0:510.0:100.0:-569.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey5:
+    Loc: 476.0:99.0:-563.0:478.0:102.0:-560.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey6:
+    Loc: 444.0:99.0:-562.0:446.0:102.0:-561.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey7:
+    Loc: 421.0:99.0:-548.0:423.0:102.0:-546.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey8:
+    Loc: 386.0:76.0:-545.0:388.0:79.0:-543.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1
+  thanksgivingturkey9:
+    Loc: 387.0:73.0:-571.0:389.0:76.0:-569.0
+    enabled: true
+    effect: Reddust
+    color: 6265725
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi panimation [playerName] stop
+    - asConsole! cmi sound block_amethyst_block_step [playerName] -s
+    - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
+    - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi effect [playerName] absorption 20 1

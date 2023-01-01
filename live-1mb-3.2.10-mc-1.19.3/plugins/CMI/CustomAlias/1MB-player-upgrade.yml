@@ -17,27 +17,20 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
-  walk:
+  _group:
     Cmds:
-    - asPlayer! infinityparkour $1-
-    AddTabs: true
-  w:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  whisper:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  tell:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  m:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
-  pm:
-    Cmds:
-    - asPlayer! cmi msg $1-
-    AddTabs: true
+    - statement:check1! check:$1!=null! check:$2!=null! ifonline:$1!
+    - if:check1! msg! [playerName] {#orient},--{#cerulean}❖ Account Update ❖{#orient}----------------
+    - if:check1! msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} Player $1 received
+      an upgrade!
+    - if:check1! msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} Old group %parseother_{$1}_{luckperms_primary_group_name}%
+    - if:check1! msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} New group $2
+    - if:check1! msg! [playerName] {#orient}`----------------------------------\n&r
+    - if:check1@! msg! [playerName] Syntax is /$0 <player> <newgroup>
+    - if:check1@! check:$1==null! msg! [playerName] - missing username
+    - if:check1@! check:$2==null! msg! [playerName] - missing newgroup
+    - if:check1@! ifoffline:$1! msg! [playerName] - please pick online username
+    Perm: true
+    CustomTabs:
+    - '[playername]'
+    - 1mb_player,1mb_member,1mb_boosted,1mb_builder,1mb_rogue,1mb_donator,1mb_mvp,1mb_epic

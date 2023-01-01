@@ -61,16 +61,23 @@ resetWeatherTime:
     '2':
       Hour: 18
   Repeat: true
-  Feedback: false
+  Feedback: true
   Commands:
+  - cmi bossbarmsg all -sec:10 -t:10 -n:cleanground -p:10 -c:red -s:10 {#orange}Pick
+    up your stuff, cleaning ground items in 30s
   - cmi killall -monsters
-  - delay! 1
-  - cmi groundclean
+  - delay! 15
+  - cmi bossbarmsg all -sec:10 -t:10 -n:cleanground -p:10 -c:red -s:10 {#orange}Pick
+    up your stuff, cleaning ground items in 15s
   - cmi time unfreeze general
   - cmi weather unlock general
-  - delay! 1
+  - delay! 10
+  - cmi bossbarmsg all -sec:10 -t:10 -n:cleanground -p:10 -c:red -s:10 {#orange}Pick
+    up your stuff, cleaning ground items in 5s
   - cmi time unfreeze skyblock
   - cmi weather unlock skyblock
+  - delay! 5
+  - cmi groundclean
   - delay! 1
   - cmi time unfreeze oneblock
   - cmi weather unlock oneblock
@@ -79,6 +86,116 @@ resetWeatherTime:
   - cmi weather unlock wild
   - delay! 1
   - save-all
+fishtournament:
+  Enabled: false
+  PerformOn:
+    '1':
+      Day: 1
+    '2':
+      Day: 7
+    '3':
+      Day: 14
+    '4':
+      Day: 21
+  Repeat: true
+  Feedback: true
+  Commands:
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l FISHING TOURNAMENT STARTS IN ABOUT 30 MINUTES
+  - 'asConsole! discordsrv broadcast #661710111152275456 :ocean: :fishing_pole_and_fish:
+    **FISHING TOURNAMENT starts in about 30 minutes at /warp fish** \n Prizes for
+    1st, 2nd, and 3rd place winners pay-out automatically. \n The next fishing tournament
+    is in 7 days.'
+  - delay! 1800
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l FISHING TOURNAMENT STARTS IN 5 (FIVE) MINUTES
+  - delay! 180
+  - cmi broadcast !{#gold}&l Fishing Tournament starts in 2 (two) minutes
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 60
+  - cmi broadcast !{#gold}&l Fishing Tournament starts in a minute at /warp fish
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - cmi broadcast !{#gold}&l Fishing Tournament starts in 30 seconds at /warp fish
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - asConsole! cmi sound item_goat_horn_sound_7 -all
+  - cmi broadcast !{#gold} Best of luck Fishing everybody!
+  - asFakeOp! tournaments start Length 30
+mcmmoAutoStart:
+  Enabled: true
+  PerformOn:
+    '1':
+      Day: 2
+    '2':
+      Day: 8
+    '3':
+      Day: 15
+    '4':
+      Day: 22
+  Repeat: true
+  Feedback: true
+  Commands:
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l mcMMO TRIPLE EXP HOUR STARTS IN ABOUT 30 MINUTES
+  - 'asConsole! discordsrv broadcast #661710111152275456 **mcMMO BOOSTER starts in
+    about 30 minutes** \n Rate: TRIPLE, Length: 1 hour \n Commands: /mctop, /mcrank,
+    /mcstats'
+  - delay! 1800
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l mcMMO TRIPLE EXP HOUR STARTS IN 5 (FIVE) MINUTES
+  - delay! 180
+  - cmi broadcast !{#gold}&l mcMMO Triple Exp Booster starts in 2 (two) minutes
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 60
+  - cmi broadcast !{#gold}&l mcMMO Triple Exp Booster starts in a minute
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - cmi broadcast !{#gold}&l mcMMO Triple Exp Booster starts in 30 seconds
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - asConsole! cmi sound item_goat_horn_sound_7 -all
+  - cmi broadcast !{#gold} Best of luck grinding /mcstats everybody!
+  - asFakeOp! xprate 3 true
+  - delay! 3600
+  - asFakeOp! xprate reset
+jobsAutoStart:
+  Enabled: true
+  PerformOn:
+    '1':
+      Day: 3
+    '2':
+      Day: 9
+    '3':
+      Day: 16
+    '4':
+      Day: 23
+  Repeat: true
+  Feedback: true
+  Commands:
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l JOBS TRIPLE EXP HOUR STARTS IN ABOUT 30 MINUTES
+  - 'asConsole! discordsrv broadcast #661710111152275456 **JOBS BOOSTER starts in
+    about 30 minutes** \n Rate: TRIPLE, Length: 1 hour \n Commands: /jobs browse,
+    /jobs stats'
+  - delay! 1800
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l JOBS TRIPLE EXP HOUR STARTS IN 5 (FIVE) MINUTES
+  - delay! 180
+  - cmi broadcast !{#gold}&l JOBS Triple Exp Booster starts in 2 (two) minutes
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 60
+  - cmi broadcast !{#gold}&l JOBS Triple Exp Booster starts in a minute
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - cmi broadcast !{#gold}&l JOBS Triple Exp Booster starts in 30 seconds
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - asConsole! cmi sound item_goat_horn_sound_7 -all
+  - cmi broadcast !{#gold} Best of luck working /jobs stats everybody!
+  - asFakeOp! boostjobs 3
+  - delay! 3600
+  - asFakeOp! boostjobs 0
 mcmmoStart:
   Enabled: false
   MinPlayers: 15
@@ -219,7 +336,7 @@ Announcer:
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sell all the types of
     fish on the: /fish shop'
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB Third Era
-    (3.2.4) for Minecraft 1.19.2'
+    (3.2.10) for Minecraft 1.19.3'
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group First
     can have up to 1 Chest /shops
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players in the group Player
@@ -269,6 +386,12 @@ Announcer:
     play fair. Thank you!
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} A great way to make money
     is with Jobs, players can join up to three. To get started type: "/jobs browse"'
+  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns the 1st,
+    7th, 14th, and 21st of the month, there will be a fish tournament for 30 minutes.
+  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns the 2nd,
+    8th, 15th, and 22nd of the month, there will be an mcMMO booster for an hour
+  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns the 3rd,
+    9th, 16th, and 23rd of the month, there will be an Jobs booster for an hour
 tenyearsweekend:
   Enabled: false
   MinPlayers: 1

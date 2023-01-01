@@ -53,7 +53,7 @@ Economy:
     IncludeFakes: false
     # Set to 0 or lower to disable this feature
     # Time in days of player being offline to exclude from being included in balance top list
-    ExcludeInactive: 0
+    ExcludeInactive: 730
   Global:
     # Starting amount of money players will have
     StartingAmount: 100.0
@@ -280,12 +280,18 @@ Optimizations:
   - PewDiePie
   - SantaClauseMofo
   - mrfloris
+  # Time in days for player to be offline when he will be excluded from playtimetop list
+  # Set to 0 if you want to disable this
+  PlaytimeTopOffline: 730
   ItemName:
     # For black listed materials check ItemRenaming.list section
 
     # When set to true items which name got changed with /itemname command will be marked with NBT data as 'ModifiedName' boolean type
     MarkChanged: false
   ItemLore:
+    # Defines maximum length of item lore line excluding color codes for itemlore command
+    # Set it to 0 if you want to remove restrictions
+    MaxLength: 64
     # List of materials to block from itemName command
     TypeBlackList:
     - gold_nugget
@@ -701,8 +707,7 @@ Votifier:
     - 'cmi msg [playerName] &6 From the server owner: 1k votes, niiiiceeeee !!!!'
   # List of players to be excluded from top voter list
   ExcludeList:
-  - 1MBNetwork
-  - mrfloris
+  - Notch
 Ranks:
   # If set to true we will check players rank by his access to rank by permission node and prioritize any rank which has more weight over current one
   # This means that in case player has access to third rank while recorded one is first one, we will prioritize third one
@@ -802,7 +807,7 @@ Chat:
   # (https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})
   # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?
   # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
-  LinkRegex: ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
+  LinkRegex: (^| )((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{1,3}(\/\S*)?([^\s|^\)^"^'^.]+)
   # When set to true, particular variables in chat will be translated into items player are holding. List of variables belove
   HoverItems: true
   # Defines regex when replacing item line in chat with players item in hand information. Only works when CMI hover over chat format is enabled
@@ -924,6 +929,8 @@ Chat:
       me: true
       signs: false
       books: true
+      itemname: true
+      itemlore: true
       # List of strings to ignore when checking chat for color codes player cant use.
       # This will bypass players colorcode restrictions and will allow usage of particular chat formats
       # Applies only for public and private messages
@@ -1130,6 +1137,9 @@ ItemRenaming:
   # When set to true item renaming will be disabled in general, with anvil or command independent of renamed material
   # This can be bypassed with previous permission node
   GlobalDisable: false
+  # Defines maximum length of item name excluding color codes for itemname command
+  # Set it to 0 if you want to remove restrictions
+  MaxLength: 64
   # List of materials followed with optional regex code which can prevent specific naming, like renaming mob spawners into another type while still allowing renaming spawner into anything else
   List:
   - mobspawner:([A-z]+ (?i)\w*spawner)
@@ -1229,11 +1239,11 @@ Elytra:
     UseItems: false
     # Item material name
     # Defines item which will be consumed for each boost event
-    ConsumedItem: '288'
+    ConsumedItem: STONE
     # Item material name
     # Set it to AIR if you want to allow boost without holding any particular item in your hand
     # Keep in mind that you still need to hold any item or click left mouse button for it to work when its set to AIR
-    Item: 288
+    Item: FEATHER
     # Item material name
     # Set it to AIR if you want to allow launch to be performed without holding any particular item in your hand
     # Keep in mind that you still need to hold any item or look at a block for it to work properly when its set to AIR
@@ -1581,8 +1591,8 @@ Dispose:
   # Defines how big is dispose ui 1-6
   UILines: 4
   # Should we allow disposing items with attached commands in them
-  CustomModelData: false
-  AttachedCommands: false
+  CustomModelData: true
+  AttachedCommands: true
 ItemRepair:
   RepairShare:
     # When neabling you will need to perform full server restart for it to take effect
@@ -1752,6 +1762,7 @@ Vanish:
     stopPlaytime: true
     sleepIgnore: true
     joinVanished: false
+    deathMessages: false
 Player:
   Options:
     CloseButton:
@@ -1947,17 +1958,6 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    TmpYellowWinter:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     builders:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1969,7 +1969,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    PrisonMines:
+    legacy:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1981,17 +1981,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     run:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    easter:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2035,61 +2024,6 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    halloween:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    TmpPortia:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    TmpYellowSummer:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    TmpDragonhold:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    sanctuary:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     cave:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -2102,50 +2036,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     oneblock:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    valentine:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    TmpMarketPlace:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    tempworld2:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    thanksgiving:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2179,17 +2069,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     wild:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    TmpOrangeVillage:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2364,79 +2243,7 @@ RandomTeleportation:
       ignorePowderSnow: true
       minY: 40
       maxY: 300
-    PrisonMines:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
     TmpYellowWinter:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    TmpPortia:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    TmpYellowSummer:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    TmpDragonhold:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    TmpMarketPlace:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    TmpOrangeVillage:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
@@ -2450,8 +2257,8 @@ RandomTeleportation:
       maxY: 256
     easter:
       Enabled: true
-      MaxRange: 1000
-      MinRange: 500
+      MaxRange: 200
+      MinRange: 32
       CenterX: 0
       CenterZ: 0
       Circle: false
@@ -2461,30 +2268,6 @@ RandomTeleportation:
       minY: 0
       maxY: 256
     santa:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    halloween:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      minY: 0
-      maxY: 256
-    valentine:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
@@ -2508,7 +2291,7 @@ RandomTeleportation:
       ignorePowderSnow: false
       minY: 0
       maxY: 256
-    pvp:
+    MHPWorld:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
@@ -2520,7 +2303,19 @@ RandomTeleportation:
       ignorePowderSnow: false
       minY: 0
       maxY: 256
-    tempworld2:
+    legacy:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      minY: 0
+      maxY: 256
+    valentine:
       Enabled: true
       MaxRange: 1000
       MinRange: 500

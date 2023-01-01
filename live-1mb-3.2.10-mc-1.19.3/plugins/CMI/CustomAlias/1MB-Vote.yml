@@ -166,11 +166,13 @@ CustomAlias:
       Please read: {#green} https://omgboards.com/vote \n&r'
   charlie:
     Cmds:
-    - 'msg! [playerName] &3-----/ &b1MB Voting Llama: Charlie the Pinata&r&3 \-----'
-    - msg! [playerName] &6->&2 https://omgboards.com/threads/261749/
-    - 'msg! [playerName] &6-> &e&lVotes needed: %pinataparty_votes_needed%, votes
-      left to go: %pinataparty_votes_left%'
-    - 'asConsole! msg! [playerName] &6-> &bCharlie will spawn every 25 votes at: /warp
-      charlie'
-    - msg! [playerName] &6-> &bOnce Charlie has been defeated, look around for shiny
-      barrels with free loot!
+    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
+    - msg! [playerName] {#Cerulean} »{#gold} Charlie the Voting Pinata
+    - msg! [playerName] {#Cerulean} » ->&2 https://omgboards.com/threads/261749/
+    - 'msg! [playerName] {#Cerulean} »{#Feijoa} &lVotes needed: %pinataparty_votes_needed%,
+      votes left to go: %pinataparty_votes_left%'
+    - 'msg! [playerName] {#Cerulean} »{#Feijoa} Charlie will spawn every 25 votes
+      at: /warp charlie'
+    - msg! [playerName] {#Cerulean} »{#Feijoa} Once Charlie has been defeated, look
+      around for shiny barrels with free loot!
+    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•

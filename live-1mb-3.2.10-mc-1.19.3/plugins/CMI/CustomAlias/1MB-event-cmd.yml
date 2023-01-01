@@ -19,5 +19,23 @@
 CustomAlias:
   event:
     Cmds:
-    - asConsole! cmi ctext halloween [playerName]
+    - asConsole! cmi ctext events [playerName]
     Tab: false
+  halloween:
+    Cmds:
+    - asPlayer! event
+  spooky:
+    Cmds:
+    - asPlayer! event
+  thanksgiving:
+    Cmds:
+    - asPlayer! event
+  santa:
+    Cmds:
+    - asPlayer! event
+  valentine:
+    Cmds:
+    - asPlayer! event
+  easter:
+    Cmds:
+    - asPlayer! event
