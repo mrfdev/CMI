@@ -234,25 +234,6 @@ CustomAlias:
     Cmds:
     - asConsole! cmi gm [playerName] spectator
     Perm: true
-  maintenance:
-    Cmds:
-    - cmi sound block_note_block_bell -p:0.6 -all -s
-    - delay! 0.1
-    - cmi sound block_note_block_bell -p:0.7 -all -s
-    - delay! 0.1
-    - asConsole! cmi maintenance $1-
-    - delay! 0.2
-    - check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&r\n{#orange}During
-      maintenance mode players can remain in-game, but they cannot join the game.
-      We are not restarting, you can keep playing. \n&r
-    - cmi sound block_note_block_bell -p:0.5 -all -s
-    - 'check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&e Maintenance:
-      $1- :)'
-    - check:%cmi_maintenance_state%==False! asConsole! cmi broadcast !&r\n {#orange}Back
-      from maintenance. Thank you for your patience. \n&r
-    Perm: true
-    CustomTabs:
-    - 'False'
   soulbind confirm:
     Cmds:
     - msg! [playerName] &e hi
