@@ -136,7 +136,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi kick [playerName/all] (message) (-s) - Kick player with custom message
 /cmi kill [playerName] (-forced) (damageCause) (-s) (-lightning) - Kill player
 /cmi killall (-monsters/-pets/-npc/-animals/-ambient/-named/-f/-lightning/-list/-m:[mobType]) (-r:range) (-s) (-w:[worldName]) - Kill mobs around you
-/cmi kit [kitName] (playerName) (-s) - Gives predefined kit.
+/cmi kit [kitName] (playerName) (-s) (-open) (-preview) - Gives predefined kit.
 /cmi kitcdreset (kitName) (playerName/all) - Reset kit timer
 /cmi kiteditor  - Kit editor.
 /cmi kitusagereset (kitName) (playerName) - Reset kit usage counter
@@ -227,19 +227,19 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi setmotd [newMotd] (-s) - Set server motd
 /cmi setrt (worldName) (center:[x]:[z]) (min:[range]) (max:[range]) (square/circle) (enabled/disabled) - Set random teleport bounds
 /cmi setspawn (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether) (-loc:[world;x;y;z;yaw;pitch]) - Sets spawn command teleport point
-[09:12:39 INFO]: setwarp [warpName] (reqPermission) (hand/head/head:[playerName]) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) (-confirm) - Sets warp location
+/cmi setwarp [warpName] (reqPermission) (hand/head/head:[playerName]) (slot) (autoLore) (-g:[groupName]) (world;x;y;z;yaw;pitch) (-confirm) - Sets warp location
 /cmi setworth (itemname) -s:(sellPrice) - Change item worth
 /cmi shadowmute [playerName] (time) (-s) (reason) - Mute player without telling him that he is muted
-/cmi shakeitoff  - Dismount any entity riding you
+/cmi shakeitoff (playerName) (-s) - Dismount any entity riding you or target player
 /cmi shoot (playerName) (-t:targetPlayer) (type) (speed) - Shoot projectile
 /cmi silence  - Blocks public messages
 /cmi silentchest  - Toggles silent chest
-/cmi sit (playerName) (-persistent) (-s) (location) - Sit in your position
+/cmi sit (playerName) (-persistent) (-s) (location) (on/off) - Sit in your position
 /cmi skin [skinName/off/update] (playerName) (-s) - Changes players skin
 /cmi smite (playerName/location) (-s) - Strike ground or player with lightning
 /cmi smithingtable (playerName) - Open smithing table
 /cmi solve [equation] - Solve equation
-/cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world) (x) (y) (z) (-s) - Play sound at target location
+/cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world;x;y;z) (-r:[radius]) (-s) - Play sound at target location
 /cmi spawn (playerName) (-s) - Teleports back to spawn location
 /cmi spawner [EntityType] - Sets spawner
 /cmi spawnereditor  - Edit spawner
@@ -309,4 +309,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Miscellaneous
 
-Created with CMI 9.2.4.3 for Minecraft 1.19.2.
+Created with CMI 9.3.0.5 for Minecraft 1.19.3.
