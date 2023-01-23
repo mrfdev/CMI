@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-zripsplugins.sh
-# @Version: 0.1.2, build 013
+# @Version: 0.1.3, build 014
 # @Release: January 23rd, 2023
 # @Description: Helps us get a list of links to latest versions of the Zrips plugins
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -78,6 +78,7 @@ function _output {
 
 # check if jq is installed, if not forcefully halt the script
 (command -v jq >/dev/null) && _output "Found 'jq', which is great ..." || _output oops "Oops, 'jq' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install jq, Ubuntu: apt install jq \\n"
+(command -v curl >/dev/null) && _output "Found 'curl', which is great ..." || _output oops "Oops, 'curl' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install curl, Ubuntu: apt install curl \\n"
 
 function _apiDetails() {
     # resource name
