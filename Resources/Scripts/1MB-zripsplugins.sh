@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-zripsplugins.sh
-# @Version: 0.1.1, build 008
+# @Version: 0.1.2, build 009
 # @Release: January 23rd, 2023
 # @Description: Helps us get a list of links to latest versions of the Zrips plugins
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -57,19 +57,19 @@ function _output {
     case "$1" in
     oops)
         _args="${*:2}"; _prefix="(Script Halted!)";
-        echo -e "\\n$B$Y$_prefix$X $_args $R" >&2; exit 1
+        printf "\n%b" "$B$Y$_prefix $X $_args $R" >&2; exit 1
     ;;
     okay)
         _args="${*:2}"; _prefix="(Info)";
-        echo -e "\\n$B$Y$_prefix$C $_args $R" >&2; exit 1
+        printf "\n%b" "$B$Y$_prefix $C $_args $R" >&2; exit 1
     ;;
     debug)
         _args="${*:2}"; _prefix="(Debug)";
-        [[ "$_debug" == true ]] && echo -e "$Y$_prefix$C $_args $R"
+        [[ "$_debug" == true ]] && printf "%b\n" "$Y$_prefix$C $_args $R" >&2
     ;;
     *)
         _args="${*:1}"; _prefix="(Info)";
-        echo -e "$Y$_prefix$C $_args $R"
+        printf "%b\n" "$Y$_prefix$C $_args $R"
     ;;
     esac
 }
@@ -82,6 +82,24 @@ else
     _output oops "Oops, 'jq' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install jq, Ubuntu: apt install jq \\n"
 fi
 
+function _apiDetails() {
+    # resource name
+    _apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
+    [[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
+    # resource latest release id
+    _apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
+    # resource latest version number
+    _apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
+    # resource filename
+    _apiFile="$_apiDLname-$_apiDLversion.jar"
+    # resource download url
+    _apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
+    # output what we found
+    _output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
+    _output "$_spigotURL/$_apiDLurl"
+    # lets take a little break
+    sleep $_sleepTime
+}
 # List the Zrips Free plugin releases
 _output "List of links to latest versions of the Zrips plugins"
 _output "> Free releases:"
@@ -91,55 +109,21 @@ _output "> Free releases:"
 ##############
 # resource id
 _apiResource="87610"
-
-# resource name
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-# resource latest release id
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-# resource latest version number
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-# resource filename
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-# resource download url
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-# output what we found
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-# lets take a little break
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 ##############
 # Jobs-ReBorn
 ##############
 # resource id
 _apiResource="4216"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 ##############
 # BottledExp
 ##############
 # resource id
 _apiResource="2815"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 # List the Zrips Premium plugin releases
 [[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
@@ -149,81 +133,35 @@ _output "> Premium releases:"
 # TradeMe
 ##############
 # resource id
-_apiResource="7544"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiResource="7544" # resource id
+_apiDetails $_apiResource # call function for plugin
 
 ##############
 # Residence
 ##############
-# resource id
 _apiResource="11480"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 ##############
 # TryMe
 ##############
 # resource id
 _apiResource="3330"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 ##############
 # Recount
 ##############
 # resource id
 _apiResource="3962"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 ##############
 # MobFarmManager
 ##############
 # resource id
 _apiResource="15127"
-
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 ##############
 # SelectionVisualizer
@@ -231,15 +169,7 @@ sleep $_sleepTime
 # resource id
 _apiResource="22631"
 
-_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
-[[ "$_debug" == true ]] && echo -e " " # extra empty line when in debug mode
-_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
-_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/"$_apiDLid" | jq -r ".name")
-_apiFile="$_apiDLname-$_apiDLversion.jar"
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
-_output debug "name: $_apiDLname / ver: $_apiDLversion / id: $_apiDLid" # (todo: cleanup filename) _output debug "file: $_apiFile"
-_output "$_spigotURL/$_apiDLurl"
-sleep $_sleepTime
+_apiDetails $_apiResource
 
 # Report that we have finished listing the plugins.
 _output okay "Done."
