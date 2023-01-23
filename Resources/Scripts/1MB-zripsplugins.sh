@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-zripsplugins.sh
-# @Version: 0.1.2, build 009
+# @Version: 0.1.2, build 011
 # @Release: January 23rd, 2023
 # @Description: Helps us get a list of links to latest versions of the Zrips plugins
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -76,11 +76,8 @@ function _output {
 
 [ "$EUID" -eq 0 ] && _output oops "*!* This script should not be run using sudo, or as the root user!"
 
-if type "jq" >/dev/null 2>&1; then
-    _output debug "Found 'jq', which is great ..."
-else
-    _output oops "Oops, 'jq' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install jq, Ubuntu: apt install jq \\n"
-fi
+# check if jq is installed, if not forcefully halt the script
+(command -v jq >/dev/null) && _output debug "Found 'jq', which is great ..." || _output oops "Oops, 'jq' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install jq, Ubuntu: apt install jq \\n"
 
 function _apiDetails() {
     # resource name
@@ -100,6 +97,7 @@ function _apiDetails() {
     # lets take a little break
     sleep $_sleepTime
 }
+
 # List the Zrips Free plugin releases
 _output "List of links to latest versions of the Zrips plugins"
 _output "> Free releases:"
@@ -107,21 +105,18 @@ _output "> Free releases:"
 ##############
 # CMILib
 ##############
-# resource id
-_apiResource="87610"
-_apiDetails $_apiResource
+_apiResource="87610" # resource id
+_apiDetails $_apiResource # call function with plugin resource id
 
 ##############
 # Jobs-ReBorn
 ##############
-# resource id
 _apiResource="4216"
 _apiDetails $_apiResource
 
 ##############
 # BottledExp
 ##############
-# resource id
 _apiResource="2815"
 _apiDetails $_apiResource
 
@@ -132,9 +127,8 @@ _output "> Premium releases:"
 ##############
 # TradeMe
 ##############
-# resource id
-_apiResource="7544" # resource id
-_apiDetails $_apiResource # call function for plugin
+_apiResource="7544"
+_apiDetails $_apiResource
 
 ##############
 # Residence
@@ -145,28 +139,24 @@ _apiDetails $_apiResource
 ##############
 # TryMe
 ##############
-# resource id
 _apiResource="3330"
 _apiDetails $_apiResource
 
 ##############
 # Recount
 ##############
-# resource id
 _apiResource="3962"
 _apiDetails $_apiResource
 
 ##############
 # MobFarmManager
 ##############
-# resource id
 _apiResource="15127"
 _apiDetails $_apiResource
 
 ##############
 # SelectionVisualizer
 ##############
-# resource id
 _apiResource="22631"
 
 _apiDetails $_apiResource
