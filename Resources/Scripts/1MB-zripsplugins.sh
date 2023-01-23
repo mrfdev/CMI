@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-zripsplugins.sh
-# @Version: 0.1.2, build 011
+# @Version: 0.1.2, build 012
 # @Release: January 23rd, 2023
 # @Description: Helps us get a list of links to latest versions of the Zrips plugins
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -128,6 +128,12 @@ _output "> Premium releases:"
 # TradeMe
 ##############
 _apiResource="7544"
+_apiDetails $_apiResource
+
+##############
+# CMI
+##############
+_apiResource="3742"
 _apiDetails $_apiResource
 
 ##############
