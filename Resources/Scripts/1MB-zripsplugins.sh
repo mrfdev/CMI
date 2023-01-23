@@ -1,20 +1,49 @@
-```bash
 #!/usr/bin/env bash
 
-# zrips plugins downloader / list, version 0.0.2, build 003, by floris
+# zrips plugins downloader / list, version 0.0.3, build 004, by floris
+
+#config
 
 _spigotURL="https://www.spigotmc.org"
 _spigetURL="https://api.spiget.org/v2/resources/"
 _sleepTime="2"
 _userAgent="VersionCheck/1.0"
-# --user-agent "$_userAgent"
+
+_jsonGetter="curl -f -L -s" #todo
+_jarDownload="curl -f -L -s -o" #todo
+# 503 dl $_jarDownload "$_apiFile" "$_spigotURL/$_apiDLurl"
+
+# lets go (no need to config past this point)
+
 echo -e "\\nfree to download"
 
 #cmilib
-_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/87610 | jq -r ".file.url")
-echo -e "$_spigotURL/$_apiDLurl"
+_apiResource="87610"
+#name
+_apiDLname=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".name")
+echo -e "name: $_apiDLname"
 
+#latestid
+_apiDLid=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/latest | jq -r ".id")
+echo -e "id: $_apiDLid"
+
+#versionnumber
+_apiDLversion=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource/versions/$_apiDLid | jq -r ".name")
+echo -e "ver: $_apiDLversion"
+
+#filename
+_apiFile="$_apiDLname-$_apiDLversion.jar"
+echo -e "file: $_apiFile"
+
+#downloadurl
+_apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/$_apiResource | jq -r ".file.url")
+echo -e "ddl: $_spigotURL/$_apiDLurl"
+
+exit 1
 sleep $_sleepTime
+
+
+
 
 #jobs
 _apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/4216 | jq -r ".file.url")
@@ -65,4 +94,3 @@ _apiDLurl=$(curl -f -L -s --user-agent "$_userAgent" $_spigetURL/22631 | jq -r "
 echo -e "$_spigotURL/$_apiDLurl"
 
 echo -e "\\nDone."
-```
