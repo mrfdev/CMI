@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # @Filename: 1MB-zripsplugins.sh
-# @Version: 0.1.2, build 012
+# @Version: 0.1.2, build 013
 # @Release: January 23rd, 2023
 # @Description: Helps us get a list of links to latest versions of the Zrips plugins
 # @Contact: I am @floris on Twitter, and mrfloris in MineCraft.
@@ -42,7 +42,7 @@ _jsonGetter="curl -f -L -s" #todo
 _jarDownload="curl -f -L -s -o"
 # 503 dl $_jarDownload "$_apiFile" "$_spigotURL/$_apiDLurl"
 
-_debug=true # Set to false to minimize output.
+_debug=false # Set to false to minimize output.
 
 Y="\\033[33m"; C="\\033[36m"; R="\\033[0m" # theme
 
@@ -77,7 +77,7 @@ function _output {
 [ "$EUID" -eq 0 ] && _output oops "*!* This script should not be run using sudo, or as the root user!"
 
 # check if jq is installed, if not forcefully halt the script
-(command -v jq >/dev/null) && _output debug "Found 'jq', which is great ..." || _output oops "Oops, 'jq' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install jq, Ubuntu: apt install jq \\n"
+(command -v jq >/dev/null) && _output "Found 'jq', which is great ..." || _output oops "Oops, 'jq' seems to not be installed. This is required. Try installing either. \\n -> macOS: brew install jq, Ubuntu: apt install jq \\n"
 
 function _apiDetails() {
     # resource name
