@@ -94,15 +94,16 @@ Chat:
 ```
 Additionally, you can also enable the following settings:
 ```yaml
-  # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
-  # Or direct download https://www.zrips.net/cmi/
-  # Do you want to enable private messaging over bungeecord
-  BungeeMessages: true
-  # Do you want to enable public messaging over bungeecord
-  # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
-  BungeePublicMessages: true
-  # Do you want to enable staff messaging over bungeecord
-  BungeeStaffMessages: true
+  Bungee:
+    # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
+    # Or direct download https://www.zrips.net/cmi/
+    # Do you want to enable private messaging over bungeecord
+    Messages: false
+    # Do you want to enable public messaging over bungeecord
+    # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
+    PublicMessages: false
+    # Do you want to enable staff messaging over bungeecord
+    StaffMessages: false
 ```
 Then walk through all the other options related to chat. 
 
