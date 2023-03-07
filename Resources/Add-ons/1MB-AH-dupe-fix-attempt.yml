@@ -1,0 +1,20 @@
+# 1MorebBlock - version 1.0.0, build 001, by mrfloris, CMI CustomAlias "Poor mans attempt to hotfix potential dupe in klugens auction house for CMI 9.3.1.x"
+# Don't forget to change the #12345 to your internal discord channel if you use that. 
+CustomAlias:
+  ah:
+    Cmds:
+    - msg! [playerName] Checking global market, one moment..
+    - delay! 0.6
+    - ifonline:[playerName]! asPlayer! auctionhouse:ah $1-
+    - 'ifoffline:[playerName] asConsole! discordsrv broadcast #12345
+      ** Naughty alert! `[playerName]` perhaps tried to dupe auction house items ** " `/$0
+      $1-` (and quickly disconnected)"'
+    AddTabs: true
+  auctionhouse:
+    Cmds:
+    - asPlayer! ah $1-
+    AddTabs: true
+  auction:
+    Cmds:
+    - asPlayer! ah $1-
+    AddTabs: true
