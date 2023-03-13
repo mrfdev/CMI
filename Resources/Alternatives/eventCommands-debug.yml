@@ -36,7 +36,7 @@ quitServer:
 playerDeath:
   Enabled: true
   Commands:
-  - 'broadcast! [EC-Debug: playerDeath (Commands)] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+  - 'broadcast! [EC-Debug: playerDeath] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
   SourceCommands:
   - 'broadcast! [EC-Debug: playerDeath (SourceCommands)] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
 playerKillPlayer:
