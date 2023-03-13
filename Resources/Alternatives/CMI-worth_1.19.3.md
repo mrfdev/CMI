@@ -1,6 +1,6 @@
 # Custom 'default' list for worth.yml
 
-This shouldn't be a copy paste to use, this is an example with something for you to check.
+This shouldn't be a copy/paste to use, this is an example with something for you to check.
 
 ## List of available items
 
@@ -1168,4 +1168,4 @@ worth:
 
 ## Miscellaneous
 
-Created with CMI 9.3.0.5 for Minecraft 1.19.3
+Created with CMI 9.3.2.5 for Minecraft 1.19.3
