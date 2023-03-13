@@ -186,7 +186,7 @@ Optimizations:
   # When set to true, all players can see missing permission node by hovering over error message
   # When set to false only players with cmi.permisiononerror permission node can see missing permission node
   # Keep in mind that by default players have acces to permission node, so negate it if you want to hide missing permission nodes from them
-  PermisionOnError: true
+  PermisionOnError: false
   # When set to true, each time player tries to use something he doesnthave permission, message will be shown in console
   PermisionInConsole: true
   Teleport:
@@ -611,6 +611,8 @@ Afk:
   DisableOnPrivateChat: true
   # Disables afk on move
   DisableOnMove: true
+  # Disables afk on camera movement
+  DisableOnLookAround: false
   # Disables afk on fishing
   DisableFishing: false
   # Disables item pickup while afk
@@ -761,6 +763,9 @@ Chat:
     # Indicator which can be used as {discord} in chat format to indicate that message came from discord and not ingame
     Label: '&2[&7D&2]'
     UnlinkedLabel: '&4[&cD&4]'
+    # When enabled and you have ranged messages enabled, we will send all of them to DiscordSRV
+    # When disabled, only shouts and messages sent by players with cmi.chat.rangebypass permission node will be visible in discord
+    RangedMessages: true
   # Enables support for DynMap web chat
   DynMapChat: true
   # When set to false, each time you will use /r you will reply to person you previously sent message directly or to person who sent you message if there is none you have conversion before
@@ -779,7 +784,7 @@ Chat:
   # (https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})
   # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?
   # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
-  LinkRegex: (^| )((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{1,3}(\/\S*)?([^\s|^\)]+)
+  LinkRegex: (^| )((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s|^\)]+)
   # When set to true, particular variables in chat will be translated into items player are holding. List of variables belove
   HoverItems: true
   # Defines regex when replacing item line in chat with players item in hand information. Only works when CMI hover over chat format is enabled
@@ -787,17 +792,17 @@ Chat:
   - (\%item\%)
   - (\[item\])
   - (\%i\%)
-  # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
-  # Or direct download https://www.zrips.net/cmi/
-  # Do you want to enable private messaging over bungeecord
-  BungeeMessages: true
-  # Do you want to enable public messaging over bungeecord
-  # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
-  BungeePublicMessages: true
-  # Do you want to enable staff messaging over bungeecord
-  BungeeStaffMessages: true
+  Bungee:
+    # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
+    # Or direct download https://www.zrips.net/cmi/
+    # Do you want to enable private messaging over bungeecord
+    Messages: true
+    # Do you want to enable public messaging over bungeecord
+    # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
+    PublicMessages: true
+    # Do you want to enable staff messaging over bungeecord
+    StaffMessages: true
   # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message}. Supporting PlaceHolderAPI variables like %player_server%
-
   # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
   GeneralFormat: '{prefix}&f{displayName}&7: &r{message}'
   # Will define message format itself, this allows to have gradients in messages
@@ -805,16 +810,29 @@ Chat:
   # For 1.16+ servers you can use color gradients like '{#b3a28f>}{message}{#d7b8e6<}'
   # You can have more than 2 colors in gradient. To define it repeat {message} variable. For example '{#b3a28f>}{message}{#5c6999<>}{message}{#d7b8e6<}'
   GeneralMessageFormat: '{message}'
-  # Defines range of regular messages to travel
-  # Set to -1 to disable range restriction
-  GeneralRange: -1
-  # Defines range of shout messages to travel
-  # Shout messages should start with ! and player should have cmi.chat.shout permission
-  # GeneralRange should be enabled
-  # set to 0 to shout across all worlds, -1 to disable
-  ShoutRange: 200
-  # Defines cost for each shout message
-  ShoutCost: 0
+  Ranged:
+    # Defines range of regular messages to travel
+    # Set to -1 to disable range restriction
+    General: -1
+    # Defines range of shout messages to travel
+    # Shout messages should start with ! and player should have cmi.chat.shout permission
+    # GeneralRange should be enabled
+    # set to 0 to shout across all worlds, -1 to disable
+    Shout: 200
+    # Defines cost for each shout message
+    ShoutCost: 0
+    # List of message range limits
+    # Player count fallowed by range
+    # Player amount defines from how many we should use this range
+    Dynamic:
+      Use: false
+      Limits:
+      - 1-0
+      - 10-1000
+      - 20-500
+      - 30-400
+      - 40-300
+      - 50-200
   # Prefix used to indicate that message should be sent to public chat instead of current players chat room
   # Set it to empty field if you want this feature to be disabled
   ChatRoomShout: '!'
@@ -863,6 +881,8 @@ Chat:
       me: true
       signs: false
       books: true
+      itemname: true
+      itemlore: true
       # List of strings to ignore when checking chat for color codes player cant use.
       # This will bypass players colorcode restrictions and will allow usage of particular chat formats
       # Applies only for public and private messages
@@ -1260,6 +1280,14 @@ Messages:
   # Check locale file for translation and custom placeholders: [playername], [totalUsers], [onlinePlayers]
   FirstJoinMessage:
     Use: false
+  # When enabled player names will be checked against provided regex and if match is found then login and/or logout message will not be shown
+  Filter:
+    ForLogin: false
+    ForLogout: false
+    Regex:
+    - b[a@][s\$][t\+][a@]rd
+    - (c|k|ck|q)[o0](c|k|ck|q)[s\$]u(c|k|ck|q)[e3]r
+    - mast(e|ur)b(8|ait|ate)
 Books:
   # Defines default creator name for books when using getbook command
   DefaultAuthor: Server
@@ -1331,6 +1359,8 @@ Kits:
   GUI: true
   # When set to true, kit selection gui empty fields will get filled with definet item
   FillEmptyFields: true
+  # When enabled players can preview kits they have access to or have cmi.kit.[kitName].preview or cmi.kit.[kitName].* permission node
+  KitPreview: true
   Buttons:
     Cooldown: Watch
     Usages: STONE_PLATE
@@ -1653,6 +1683,7 @@ Vanish:
     stopPlaytime: true
     sleepIgnore: true
     joinVanished: false
+    deathMessages: false
 Player:
   Options:
     CloseButton:
@@ -1864,8 +1895,10 @@ RandomTeleportation:
       IgnoreWater: true
       IgnoreLava: true
       ignorePowderSnow: false
-      minY: 0
-      maxY: 256
+      # With this option we will only attempt to teleport player on highest block and ignore any case teleportations
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
     world_nether:
       Enabled: true
       MaxRange: 1000
@@ -1876,8 +1909,9 @@ RandomTeleportation:
       IgnoreWater: true
       IgnoreLava: true
       ignorePowderSnow: false
+      surfaceOnly: false
       minY: 0
-      maxY: 256
+      maxY: 128
     world_the_end:
       Enabled: true
       MaxRange: 1000
@@ -1888,6 +1922,7 @@ RandomTeleportation:
       IgnoreWater: true
       IgnoreLava: true
       ignorePowderSnow: false
+      surfaceOnly: false
       minY: 0
       maxY: 256
   # How long force player to wait before using command again.
@@ -2022,6 +2057,8 @@ Scavenge:
   - ironingot
   - goldingot
   - coal
+  - IRON_NUGGET
+  - GOLD_NUGGET
   # When set to true, balck list becomes whitelist and will allow scavanging of items defined in a blacklist only
   BlackToWhiteList: false
   # When set to false while player have open scavange UI they will not be able to pickup item from ground
@@ -2195,4 +2232,4 @@ PotionEffects:
 
 ## Miscellaneous
 
-Created with CMI 9.2.4.3 for Minecraft 1.19.2
+Created with CMI 9.3.2.0 for Minecraft 1.19.3

@@ -94,7 +94,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi gm (playerName) [gamemode] - Set players game mode
 /cmi god [playerName] (true/false) (-s) - Set players god mode to true or false
 /cmi grindstone (playerName) (-s) - Open grindstone
-/cmi groundclean (+cb) (+cm) (+ci) (+b) (+sh) (+tnt) (+all) (+fl) (+named) (-w:[worldName]) - Clears server from unnecessary items
+/cmi groundclean (+cb) (+cm) (+ci) (+b) (+sh) (+tnt) (+all) (+fl) (+named) (-w:[worldName]) (-s) - Clears server from unnecessary items
 /cmi haspermission (playerName) [permissionNode] - Check if player has particular permission
 /cmi hat (playerName) - Place item like hat
 /cmi head [sourceName] (targetName) (-s) (amount) - Get players head
@@ -146,7 +146,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi list  - Shows online player list
 /cmi lockip (playername) [add/remove/list/clear] [ip] - Prevents logging into account from different ip
 /cmi loom (playerName) - Open loom
-/cmi mail [send/clear/read/sendtemp] [playerName] (message) - Send and receive mail
+/cmi mail [send/clear/read/sendtemp] [playerName] (time) (message) - Send and receive mail
 /cmi mailall [send/clear/remove] [message] - Check or send mail to all players
 /cmi maintenance (true/false) (message) - Set server into maintenance mode
 /cmi maxhp set/add/take/clear [playerName] [amount] (-s) - Set a player's max hp
@@ -309,4 +309,4 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 
 ## Miscellaneous
 
-Created with CMI 9.3.0.5 for Minecraft 1.19.3.
+Created with CMI 9.3.2.0 for Minecraft 1.19.3.

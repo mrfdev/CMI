@@ -81,7 +81,7 @@ More details and information about permissions on the official website [here](ht
  cmi.elytra.boost - Allows to use basic elytra boost. Right click
  cmi.elytra.superboost - Allows to use elytra super boost. +Shift click
  cmi.elytra.speedometer - Allows to see speedometer while flying with elytra
- cmi.elytra.freeflight - Allows to see elytra boost for free
+ cmi.elytra.freeflight - Allows to use elytra boost for free
  cmi.hunger.keepafterdeath - Prevents from hunger to be replenished after death
  cmi.anvil.itemrename.bypass - Allows to rename items with black listed names. /itemanem and physical anvil
  cmi.sleepignore - Players with this permission node will be ignored when checking how many players are sleeping in the world to speed up time
@@ -117,6 +117,7 @@ More details and information about permissions on the official website [here](ht
  cmi.armorstand.offhand - Allows to manipulate armorstand off hand items
  cmi.bungee.publicmessages.[servername] - Allows to send public messages to target server
  cmi.warmupbypass.[commandname] - Allows to bypass particular CMI command warmup
+ cmi.warmuptime.[commandname] - Allows to set warmup time. Lower is prioritized
  cmi.command - Gives access to base usage of commands
  cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney] - Allows to modify specific options
  cmi.command.jump.[[distance]] - Defines max jump distance
@@ -210,6 +211,7 @@ More details and information about permissions on the official website [here](ht
  cmi.command.tptoggle.bypass - Allows teleportation to players with disabled teleportations
  cmi.command.sudo.bypass - Prevents player from using sudo on player with permission
  cmi.command.repair.repairshare.bypass - Allows to bypass repair share being applied on item
+ cmi.command.repair.bypass - Allows to bypass repair cost on item
  cmi.command.nick.bypassblacklist - Allows to bypass nick name black list
  cmi.command.nick.bypass.length - Allows to bypass nick name length limitations
  cmi.command.nick.bypassinuse - Allows to bypass limitationn in using already existing name
@@ -266,6 +268,7 @@ More details and information about permissions on the official website [here](ht
  cmi.command.tempban.max.unlimited - Allows to temp ban for more than config allows
  cmi.command.tempban.max.[anypositivenumber] - Allows to temp ban for defined max time
  cmi.command.broadcast.colors - Allows to use colors in broadcast messages
+ cmi.command.broadcast.clean - Allows to use ! to send clean broadcast messages
  cmi.command.charges.edit - Allows to edit players spawner charges
  cmi.command.checkaccount.showip - Allows to see players ip in check account
  cmi.command.info.ip - Allows to see players ip in info page
@@ -300,7 +303,7 @@ More details and information about permissions on the official website [here](ht
 
 ## Command permissions:
 ```
-   cmi.command.actionbarmsg:
+  cmi.command.actionbarmsg:
     description: Sends action bar message to player
     default: op
   cmi.command.afk:
@@ -1192,7 +1195,9 @@ More details and information about permissions on the official website [here](ht
     description: Mute player without telling him that he is muted
     default: op
   cmi.command.shakeitoff:
-    description: Dismount any entity riding you
+    description: Dismount any entity riding you or target player
+    default: op
+  cmi.command.shakeitoff.others:
     default: op
   cmi.command.shoot:
     description: Shoot projectile
@@ -1489,4 +1494,4 @@ More details and information about permissions on the official website [here](ht
 
 ## Miscellaneous
 
-Created with CMI 9.2.4.3 for Minecraft 1.19.2
+Created with CMI 9.3.2.0 for Minecraft 1.19.3

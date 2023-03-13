@@ -53,13 +53,13 @@ spawnerProximity: false
 # Applies for servers from 1.7.x and up
 spawnerCharge: false
 #  
-# Handling of command cooldowns
-# Applies for servers from 1.7.x and up
-cooldown: false
-#  
 # Handling of command warmups
 # Applies for servers from 1.7.x and up
 warmup: false
+#  
+# Handling of command cooldowns
+# Applies for servers from 1.7.x and up
+cooldown: false
 #  
 # Handling of interactive commands
 # Applies for servers from 1.8.x and up
