@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Submit a Suggestion as a New Discussion!
+    url: https://github.com/Zrips/CMI/discussions
+    about: Please use /issues/ only for bug reports, and use /discussions/ to request feature enhancements or to suggest a new feature.
