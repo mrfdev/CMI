@@ -69,7 +69,7 @@
 
 ---
 
-Turn on and display a custom join and leave message to players. 
+Turn on and display a custom join and leave messages to players. 
 
 ---
 
@@ -107,9 +107,9 @@ Messages:
     # Set to -1 to disable this
     AutoHideFrom: -1
 ```
-Note: If you are still on an outdated version below 9.0.7.x, the directory will be `plugins/CMILib/Translations`.
+Note: If you are still on an outdated version below 9.0.7.x, the directory will be `~/plugins/CMILib/Translations`.
 
-Next, inside the `plugins/CMI/Translations/` directory there is at least the file `Locale_EN.yml`, where you can find:
+Next, inside the `~/plugins/CMI/Translations/` directory there is at least the file `Locale_EN.yml`, where you can find:
 ```yaml
 Chat:
   localPrefix: ''
@@ -155,7 +155,7 @@ If you wish to hide the join/leave messages for a certain group or user, you can
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Extending CMI Join Events
 
-If you want to give first-time players something extra, you can utilise the `eventCommands.yml` file at the `onfirstjoin` and `onjoin` sections: _(for example, you can make another .txt file, run certain commands, or do whatever)_
+If you want to give first-time players something extra, you can utilise the `/Settings/EventCommands.yml` file at the `onfirstjoin` and `onjoin` sections: _(for example, you can make another .txt file, run certain commands, or do whatever)_
 ```yaml
 firstJoinServer:
   Enabled: true

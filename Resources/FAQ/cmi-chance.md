@@ -75,7 +75,7 @@ You can use CMI to make dynamic features using specialized commands and smart us
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can deal with % chance
 
-- Realise you can use this probably in various features of CMI, such as CMI chat, custom aliassed commands, holograms, etc. Generally everywhere that you can use both specialized commands and placeholders and run commands. So this includes eventcommands.yml and scheduler.yml. 
+- Realise you can use this probably in various features of CMI, such as CMI chat, custom aliassed commands, holograms, etc. Generally everywhere that you can use both specialized commands and placeholders and run commands. So this includes Settings/EventCommands.yml and Settings/Scheduler.yml. 
 
 - The trick here is to temporary set a randomized result between 1 and 100, and check against it to make CMI do what we want. Below are a few example to demonstrate this.
 
@@ -157,7 +157,7 @@ Okay next one, using the above we can make a private random item generator, and 
     CustomTabs:
     - '[playername]'
 ```
-The above can be added on a new line at the end of customalias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
+The above can be added on a new line at the end of CustomAlias/CustomAlias.yml, then stop and start the server, dont use `_itemList` yourself, use `/giverandomitem <player>` instead.
 
 Note: You can add custom alias commands to `~/plugins/CMI/CustomAlias/CustomAlias.yml`, or make a new files if you rather organize additional commands like these.
 

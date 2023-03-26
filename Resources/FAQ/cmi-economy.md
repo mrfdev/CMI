@@ -212,11 +212,11 @@ Worth:
   - '&bWorth: &e %cmi_iteminhand_worth%'
   - ICON:%iteminhand%
   ```
-  Note: This is from my `holograms.yml` file. 
+  Note: This is from my `Saves/Holograms.yml` file. 
 
 ## CMI Worth and Sell Features
 
-The CMI plugin also lets you define what an item is worth. There are in-game commands to manage this, and there's even a GUI with items that have no value defined, making managing this a lot easier. But you can also manually customize the `worth.yml` file yourself. 
+The CMI plugin also lets you define what an item is worth. There are in-game commands to manage this, and there's even a GUI with items that have no value defined, making managing this a lot easier. But you can also manually customize the `Saves/Worth.yml` file yourself. 
 
 If you give your players access to `/cmi sell` then what they're holding is either worthless (and won't sell) or it's worth what you've defined. 
 
@@ -311,12 +311,12 @@ The above are the values that I use on my servers, and are not the default value
 
 - Can I charge people for using commands?
 
-Edit the `commandCost.yml` file.
+Edit the `Settings/CommandCost.yml` file.
 My pro tip is to read the comments at the top of the file carefully. Using a space or an alias can have a big influence.
 
 - I use BungeeCord, does it sync over the network?
 
-Synchronizing money across a BungeeCord network is not current possible. 
+Synchronizing money across a BungeeCord network is not currently possible. 
 However, there is a [plugin](https://www.spigotmc.org/resources/mysql-player-data-bridge.8117/) called MySQLPlayerDataBridge, which supports synchronizing some of CMI's data across a BungeeCord network. You can consider using this plugin on top of CMI in order to synchronize data over your BungeeCord network.
 More information about CMI and BungeeCord can be found [here](https://faq.cmi.support/bungee).
 

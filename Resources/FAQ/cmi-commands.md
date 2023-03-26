@@ -76,7 +76,7 @@ Both base commands and your own custom commands
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Commands.
 
 By default CMI has all it's commands underneath `/cmi <command>` you can find them all by typing: `/cmi help` and by viewing the list on the website here: (<https://www.zrips.net/cmi/commands/>)
-If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit the `Alias.yml` file and change the `Enabled` option from false to true.
+If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit the `/Saves/Alias.yml` file and change the `Enabled` option from false to true.
 ```yaml
   #  
   # /cmi home $1-
@@ -86,8 +86,11 @@ If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit
 ```
 You can now save the file and type: `/cmi reload`, but to properly register the commands, you must /stop your server and start it again.
 
+
+## Your own custom alias commands
+
 Another option is to add your own commands. For example: `/banana`.
-Custom Aliases (commands) are stored in the `CustomAlias` folder, and by default, are stored in the `CustomAlias.yml` file. However, as of version 9.0.3.x and upwards, you can also store Custom Aliases in their own .yml file in the `~/plugins/CMI/CustomAlias/` directory.
+Custom Aliases (commands) are stored in the `~/plugins/CMI/CustomAlias/` folder, and by default, are stored in the `CustomAlias.yml` file. However, as of version 9.0.3.x and upwards, you can also store Custom Aliases in their own .yml file in the `~/plugins/CMI/CustomAlias/` directory.
 To get started type `/cmi aliaseditor`. It will come up with an interface of all the registered custom aliases. Clicking on the green `+` will display a prompt in chat, asking you to enter the name of the command in the chat.
 Once you have done this, it will open another interface which will also show a green `+`. Clicking on it will prompt you to enter the command that should be executed in the chat box, without the starting /. For example: `cmi say I am a banana.` 
 You can press the green `+` again to add another command.

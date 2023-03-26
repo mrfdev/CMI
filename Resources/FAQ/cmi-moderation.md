@@ -359,7 +359,7 @@ For a list of all the CMI placeholders, you can go [here](https://www.zrips.net/
 
 It's possible for a person or person in a group to have permission to use certain spy features to help moderate the Minecraft server. This means that when toggled on, and with the correct permission, it will be possible to see what others are messaging each other, what's being put on signs, or which commands they're typing. To be clear, you should respect the privacy of your players, it's merely a tool to help you review potential issues with players suspected of things like breaking the advertising rule. 
 
-The commands, permissions, and placeholders are listed further up in this article. But you might wish to check modules.yml, and config.yml, and think about the available user-toggles to allow team members to have control over some settings.
+The commands, permissions, and placeholders are listed further up in this article. But you might wish to check `Settings/odules.yml`, and `config.yml`, and think about the available user-toggles to allow team members to have control over some settings.
 
 **Vanish and Patrol**
 
@@ -380,6 +380,8 @@ A quick way to close a server while keeping certain groups online. It isn't mean
 A global chat filter feature is available by CMI, using dynamic regular expressions to catchphrases and bypass phrases smartly. This should help auto-replace words in public and private messages, as well as auto warn, kick, ban, mute, etc. So even when you're not online you can fight hate speech, user safety, advertising, and such. 
 
 More about the chat filter features [here](https://www.zrips.net/cmi/extra/chat-filter/)
+
+You can find the file in `Settings/Chatfilter.yml`
 
 **Global Chat Mute / Clearing**
 

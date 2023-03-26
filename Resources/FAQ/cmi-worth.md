@@ -69,7 +69,9 @@
 
 ---
 
-You can use CMI to make dynamic features using specialized commands and smartly using placeholders.
+You can use CMI as economy manager, using /sell, players can sell items if the value is known in the worth.yml file. You can manage the values ingame, you can even see what items are missing, and auto generate worth values if the raw material value is known. You combination of dynamic signs, holograms, and interactive commands, can all be used to show dynamic values, balance top, etc. 
+
+The worth.yml file can be found in the `~/plugins/CMI/Saves/worth.yml` location. 
 
 ---
 

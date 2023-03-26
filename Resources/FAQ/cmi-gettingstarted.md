@@ -82,7 +82,7 @@ _(Upgrading? Then the instructions are basically the same, stay current, backup,
 - `/stop` the server and go through the following files:
 ```
 config.yml (main configuration file, nitpick on features here)
-modules.yml (allowing you to globally turn on/off about 50 bigger features)
+Settings/Modules.yml (allowing you to globally turn on/off about 50 bigger features)
 Decide if you want to use CMI for economy and as chat manager, and follow the steps in the economy and chat FAQ.
 Go to the zrips.net -> cmi -> website and figure out which commands you don't want to give players, give them the base permissions cmi.commands, and then negate the ones they shouldn't have. 
 Then find out which commands you want them to certainly have, and grant them these permissions. 
@@ -97,7 +97,7 @@ Setup homes, kits, warps, and start testing all the features.
 
 - For [Chat](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md), I recommend setting up groups, ranks, and their prefixes through CMI and Luckperms.
 
-- For importing data from from old EssentialsX to modern CMI? I recommend [this guide](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md).
+- For importing data rom old EssentialsX to modern CMI? I recommend [this guide](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-import.md).
 
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 

@@ -78,7 +78,7 @@ How to use CMI to deal with Hex color support. More information on the official 
 Expected format: `{#8b4726}`
 
 - Set-up CMI to handle the chat.
-In `config.yml`, find the following, set to `true`:
+In `Settings/Chat.yml`, find the following, set to `true`:
 ```yaml
 Chat:
   ModifyChatFormat: true
@@ -86,7 +86,7 @@ Chat:
 ```
 
 - Then, make sure CMI is properly configured for your server, so please read and go through the `Colors:` section and adjust accordingly.
-In `config.yml`, find the following, set to `true`:
+In `Settings/Chat.yml`, find the following, set to `true`:
 ```yaml
     PublicMessage: true
     PrivateMessage: true
@@ -94,7 +94,7 @@ In `config.yml`, find the following, set to `true`:
 ```
 
 - Optionally, if you wish to use Hex colors in your custom join/leave messages or other features, you must enable their CMI Module:
-In `modules.yml`, find them and set them to `true`:
+In `Settings/Modules.yml`, find them and set them to `true`:
 ```yaml
 customMessages: true
 firstJoinMessages: true

@@ -73,18 +73,20 @@
 
 - Stop using the old Chat Manager, if you were using one.
 
-- Update `config.yml` (see below)
+- Update `/Settings/Chat.yml` (see below)
 ```yaml
-# CMI config.yml, enable:
 Chat:
   # Will try to modify chat to display it in defined format
   ModifyChatFormat: true
+  # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
+  # To change default hover over messages seen on sent message, go to your locale file to Chat section
+  ClickHoverMessages: true
 ```
-- Personally I also recommend to set `ClickHoverMessages:` to `true` if you want to use some other CMI chat features such as `[item]` which you can configure further down in the config file.
+NOTE: If you want to turn OFF cmi chat, then set BOTH to false, and restart your server.
 
 Optionally, if you want custom join/leave msgs, don't forget to enable this.
 
-Enable it in Modules.yml
+Enable it in Settings/Modules.yml
 ```yaml
 # Login, logout and death messages
 # Applies for servers from 1.7.x and up

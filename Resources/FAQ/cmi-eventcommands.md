@@ -71,9 +71,9 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI EventCommands.yml Introduction
 
-A file you can find in the `~/plugins/CMI/` directory, it's called `eventCommands.yml` and has a set amount of events that you can use to run commands, even with conditions, to extend the functionality and management of your Minecraft server. It is very dynamic and flexible, but do be aware that the more events and commands you add, the more time the server will need to process it all. Be mindful of the potential perormance impact.
+A file you can find in the `~/plugins/CMI/Settings/` directory, it's called `eventCommands.yml` and has a set amount of events that you can use to run commands, even with conditions, to extend the functionality and management of your Minecraft server. It is very dynamic and flexible, but do be aware that the more events and commands you add, the more time the server will need to process it all. Be mindful of the potential performance impact.
 
-## Custom Join / Leave Mesages
+## Custom Join / Leave Messages
 
 You can use CMI to turn off the default join/leave messages via config.yml, and you can indeed use eventCommands.yml, but personally since I use the CMI CHAT feature of CMI anyway as chat manager, I do prefer (and recommend) to use this method instead: [faq.cmi.support/joinleave](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-custom-joinleave.md)
 
@@ -92,13 +92,13 @@ Pro tip; to better control the join event and when a message shows up, I do sugg
 
 ## Message of the Day (welcomeMessage.txt, /motd)
 
-The welcome message you can send players when they join the server can be handled by eventCommands.yml, but personally since it's a built-in feature of CMI, I do prefer (and recommend) to use that instead. All you have to do is make a ctext (custom text) file called welcomeMessage.txt and put it in the customText/ directory (and /cmi reload). More about this, and how to add the old familiar /motd command, is all explained here. [faq.cmi.support/motd](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-motd.md)
+The welcome message you can send players when they join the server can be handled by 'Settings/EventCommands.yml', but personally since it's a built-in feature of CMI, I do prefer (and recommend) to use that instead. All you have to do is make a ctext (custom text) file called welcomeMessage.txt and put it in the CustomText/ directory (and /cmi reload). More about this, and how to add the old familiar /motd command, is all explained here. [faq.cmi.support/motd](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-motd.md)
 
 ---
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Misc
 
-You can find the default file here in case you need it: [eventCommands.yml](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/eventCommands.yml)
+You can find the default file here in case you need it: [Settings/EventCommands.yml](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/eventCommands.yml)
 
 And here's an alternative version by me that has all the events enabled, handy for debugging: [eventCommands-debug.yml](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/eventCommands-debug.yml), by the way, here are [some screenshots](https://imgur.com/a/ewH5B8h) of how that looks
 

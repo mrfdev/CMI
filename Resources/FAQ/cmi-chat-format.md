@@ -79,7 +79,7 @@ Don't forget to back up your data first, before making changes to your server.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Understanding group format and group message format
 
-In CMI's `config.yml` you will find two sections under the chat section. It's `GroupFormat:` and `GroupMessageFormat:`. But what is the difference?
+In CMI's `Settings/Chat.yml` you will find two sections under the chat section. It's `GroupFormat:` and `GroupMessageFormat:`. But what is the difference?
 
 **GroupFormat** will help you build up the part of the in-game chat before the actual message. This is where you can control per group colors, add placeholders, prefixes, and such. Leave the `{message}` part alone.
 
@@ -87,7 +87,7 @@ In CMI's `config.yml` you will find two sections under the chat section. It's `G
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> GroupFormat and Permissions
 
-The "groups" part of Groupformat is really handy, because it lets you control per group how things should look. It's important to know that the default and loweest group in LuckPerms should be the lowest in the list. And that you should just up increment the number from there. For eaxmple, if you have set up LuckPerms groups like this:
+The "groups" part of Groupformat is really handy, because it lets you control per group how things should look. It's important to know that the default and loweest group in LuckPerms should be the lowest in the list. And that you should just up increment the number from there. For example, if you have set up LuckPerms groups like this:
 ```
 default
 vip

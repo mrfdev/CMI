@@ -104,7 +104,7 @@ Whether this two different ranks, or two different command modes for whatever ne
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> FLASHLIGHT example
 
-Turn on night vision, and turn it off, using the /flashlight command, append this at the end of customalias.yml and restart
+Turn on night vision, and turn it off, using the /flashlight command, append this at the end of `CustomAlias/CustomAlias.yml` and restart
 ```yaml
   flashlight:
     Cmds:
@@ -119,6 +119,6 @@ Turn on night vision, and turn it off, using the /flashlight command, append thi
     Tab: false
 ```
 
-Using the user meta feature from cmi a temp value can be stored, and then checked against. Allowing you within the same command to manage this value, use it to achieve something unique, including a toggle.
+Using the user meta feature from CMI a temp value can be stored, and then checked against. Allowing you within the same command to manage this value, use it to achieve something unique, including a toggle.
 
 ---

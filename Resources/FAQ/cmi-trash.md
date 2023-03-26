@@ -76,7 +76,7 @@
 
 
 **Introducetion to Dispose**
-CMI has a dispose feature, we can use this to dispose of items, if you want a trash bin, trash command, or both, this FAQ entry will walk through it. This is meant as an example to learn how to create your own features using CMI, without the neeed of other plugins, etc.
+CMI has a dispose feature, we can use this to dispose of items, if you want a trash bin, trash command, or both, this FAQ entry will walk through it. This is meant as an example to learn how to create your own features using CMI, without the need of other plugins, etc.
 
 What we wish to achieve is a sign that players can right click that opens the menu, and a command like /trash that they can type that opens it. Optionally control permissions, configure the dispose command, etc. 
 
@@ -100,7 +100,7 @@ Optionally you could give the admin group the .others permission to manage dispo
 
 
 **Alias.yml**
-If you want to have this base command be accessable without the /cmi prefix, so `/cmi dispose` becomes `/dispose`, then open the `Alias.yml` file and set the value for /dispose to true, and of course the same for /trash, like this:
+If you want to have this base command be accesiable without the /cmi prefix, so `/cmi dispose` becomes `/dispose`, then open the `Settings/Alias.yml` file and set the value for /dispose to true, and of course the same for /trash, like this:
 ```
   # /cmi dispose $1-
   /dispose:
@@ -124,7 +124,7 @@ If you also want players to type `[trash]` on a sign that turns it into a trash 
 ```
 An in-game chat interface comes up, click on `[Not Public]` which changes it to a Public sign so everybody can use it using a particular permission.
 
-If you want it 100% public, click on the green `[ReqPerm]` will remore the permission requirement. It should now show a grey text saying 'ReqPerm' instead of a green one.
+If you want it 100% public, click on the green `[ReqPerm]` will remove the permission requirement. It should now show a grey text saying 'ReqPerm' instead of a green one.
 
 Then click on the green `+` with hover text 'add block you are looking at', you should see particles around the sign now.
 
@@ -154,7 +154,7 @@ And maybe the third and fourth one can be to give them a warning:
 
 Okay, we're basically done. The sign should work right away now. If you didn't make it public you might need to grant the appropriate groups the permission `cmi.interactivesign.trash` to give them access to make these trash signs.
 
-To double-check your configuration, you could open `interactiveCommands.yml` and find the trash: section, it should look something like this:
+To double-check your configuration, you could open `Saves/interactiveCommands.yml` and find the trash: section, it should look something like this:
 ```
 trash:
   Locations:

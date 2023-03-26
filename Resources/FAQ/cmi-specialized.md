@@ -125,7 +125,7 @@ i.e.
 - perm:cmi.something.permname! msg! [playerName] You have the right permissions!
 ```
 
-Each type of "keyword" might have different expectations, the wiki will have examples and more indepth info. This is more to help you understand how a specialized command is specific to CMI and can be ussed with certain CMI features, such as (scheduler)[https://www.zrips.net/schedule/] / (eventcommands)[] / (aliaseditor)[https://www.zrips.net/cmi/commands/custom-alias/] / (interactive commands)[https://www.zrips.net/cmi/commands/interactive-commands/].
+Each type of "keyword" might have different expectations, the wiki will have examples and more indepth info. This is more to help you understand how a specialized command is specific to CMI and can be used with certain CMI features, such as (scheduler)[https://www.zrips.net/schedule/] / (eventcommands)[] / (aliaseditor)[https://www.zrips.net/cmi/commands/custom-alias/] / (interactive commands)[https://www.zrips.net/cmi/commands/interactive-commands/].
 
 There are a few specific exceptions, such as the ones below. 
 ```
@@ -163,7 +163,7 @@ So in this example that would be the use of `check:!` and `perm:!` and then `asC
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Reminder: Every line of commands will get executed.
 
-If you make a custom alias command with CMI through `/cmi aliaseditor` for example, and you add multiple commands to the list, please be reminded that each line will get run. So if you have a check at the top, but then later you should not assume that check is still valid. Recheck, or at least match the conditions. Note that per CMI 9.0.4.x you can also use an if conditional at the top, and then check true or false against that - this could help with more complex repeatative conditions. (These are called _Statements_ on the wiki page)
+If you make a custom alias command with CMI through `/cmi aliaseditor` for example, and you add multiple commands to the list, please be reminded that each line will get run. So if you have a check at the top, but then later you should not assume that check is still valid. Recheck, or at least match the conditions. Note that per CMI 9.0.4.x you can also use an if conditional at the top, and then check true or false against that - this could help with more complex more complex conditions. (These are called _Statements_ on the wiki page)
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Simplifying your checks example
 

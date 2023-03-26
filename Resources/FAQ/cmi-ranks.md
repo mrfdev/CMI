@@ -83,7 +83,7 @@ Please note that a player will get default rank group depending on the set permi
 
 And please note that not enabled ranks will be ignored!
 
-- The CMI plugin directory (`~/pluyins/CMI/ranks.yml`) has a few example ranks, and a big chunk of text at the top (all the text starting with the `#` in front of them). I strongly recommend to take a bit of time to read through these comments, and to try to understand the examples. 
+- The CMI plugin directory (`~/pluyins/CMI/Settings/Ranks.yml`) has a few example ranks, and a big chunk of text at the top (all the text starting with the `#` in front of them). I strongly recommend to take a bit of time to read through these comments, and to try to understand the examples. 
 
 Please note that I strongly recommend to use `double quotes: ".."` around, and to *not* use `spaces` in the `StatsRequirements` that you set. This seems to make for the best working results. And after you set it and start the server up, if CMI updates it to something else, that's perfectly fine. 
 

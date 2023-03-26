@@ -75,7 +75,7 @@ A dynamic and flexible way of displaying /help.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle custom /help
 
-- Inside the `plugins/CMI/CustomText/` directory you can put a file called `help.txt`.
+- Inside the `~plugins/CMI/CustomText/` directory you can put a file called `help.txt`.
 
 Of course, you can use the CMI Custom Text features to expand on this, using pagination, other placeholders, clickable events, etc. More information here: <https://www.zrips.net/cmi/custom-text/>
 

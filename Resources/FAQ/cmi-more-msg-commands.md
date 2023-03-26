@@ -83,7 +83,7 @@ Note: `/cmi msg` requires the player's base-commands permission node `cmi.comman
   LuckPerms example: `/lp group default permission set cmi.command true`
   See note at the bottom of this page for additional permission information.
 
-- Next, update CMI's `Alias.yml` and set `/chat` from `false` (default) to `true`
+- Next, update CMI's `Settings/Alias.yml` and set `/chat` from `false` (default) to `true`
 ```yaml
   # /cmi msg $1-
   /msg:
@@ -91,7 +91,7 @@ Note: `/cmi msg` requires the player's base-commands permission node `cmi.comman
     Tab: true
 ```
 
-- Next, at the bottom of CMI's `CustomAlias.yml`, add the following commands on a new line: 
+- Next, at the bottom of CMI's `CustomAlias/CustomAlias.yml`, add the following commands on a new line: 
 
 Note: Make sure the indendation is with spaces, and matches the stuff above it)
 ```yaml

@@ -75,11 +75,11 @@ This document is to help answer some questions and narrow down if CMI is configu
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Why does this happen?
   
-Sometimes server owners run in cracked offline mode (which I personally do not support, respect the EULA please) and have other things installed such as AuthMe and alike plugins which help contorl what a player can and cannot do when they join. 
+Sometimes server owners run in cracked offline mode (which I personally do not support, respect the EULA please) and have other things installed such as AuthMe and alike plugins which help control what a player can and cannot do when they join. 
   
-Another reason could be that a server owner runs plugins for hubs and lobbies to give players the ability to safely and freely join the server and exploire before playing. 
+Another reason could be that a server owner runs plugins for hubs and lobbies to give players the ability to safely and freely join the server and explore before playing. 
   
-Together with CMI and/or other plugins it's a combination where it's conflicting with CMI and/or causing states of a player to 'stick'. This isn't particularlly CMI's vault as you can see.
+Together with CMI and/or other plugins it's a combination where it's conflicting with CMI and/or causing states of a player to 'stick'. This isn't particularly CMI's fault as you can see.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Stuck in god mode
 
@@ -93,7 +93,7 @@ ReSpawn:
   Immortality: 6
 ```
 
-Keep these numbers reasonable. You cannot have this to be more than a minute, because yes, they join and can be in 'god mode' for up to a minute. Have rediculous high values here will result in unexpected behaviors.
+Keep these numbers reasonable. You cannot have this to be more than a minute, because yes, they join and can be in 'god mode' for up to a minute. Have ridiculous high values here will result in unexpected behaviors.
 
 Next, you can check with `/cmi info theirname` if they really are in god mode, don't forget, players love to troll you as well. If however, you have evidence they are in god mode, and it shows in the info command they are not. It's likely another plugin causing a conflict. 
 
@@ -127,7 +127,7 @@ WorldLimits:
     - None
 ```
   
-You could temporarily disable the module for worldlimits in `modules.yml` and start the server back up again and see if this has any impact on your edge-case problem.
+You could temporarily disable the module for worldlimits in `Settings/Modules.yml` and start the server back up again and see if this has any impact on your edge-case problem.
 ```yml
 # World limitations: fly, game mode and god mode
 # Applies for servers from 1.7.x and up
@@ -257,14 +257,14 @@ Combat:
       Worlds: []
 ```
 
-You could temporarily disable combat in `modules.yml` and start the server up again, and see if this has an impact on your edge-case problem.
+You could temporarily disable combat in `Settings/Modules.yml` and start the server up again, and see if this has an impact on your edge-case problem.
 ```yml
 # Handles player combat system
 # Applies for servers from 1.7.x and up
 playerCombat: true
 ```
   
-You can also check your permissions and commands related to flying, creative mode, god, temp fly, temp god, etc. And make sure you don't run anything in the server before they disconnect that gives them access to these commands, grants them the related permisisons to enable any of this, or some shop item or attachedcommand etc that triggers this stuff. 
+You can also check your permissions and commands related to flying, creative mode, god, temp fly, temp god, etc. And make sure you don't run anything in the server before they disconnect that gives them access to these commands, grants them the related permissions to enable any of this, or some shop item or attachedcommand etc that triggers this stuff. 
 
   
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> I've tried everything, it is still happening.

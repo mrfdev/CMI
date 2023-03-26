@@ -132,7 +132,7 @@ stop
 ```
 - Although this is annoying, some servers may have issues doing it all at once. This is what worked for me. Going through it one by one, and checking the data in between. If something worked, I would make a backup, so that I have a copy I can roll back to and try again in case anything goes wrong. 
 
-- Next, CMI also has a worth.yml file. You can simply drop the worth.yml file from EssentialsX into the CMI folder, and it will overwrite CMI's worth.yml file. 
+- Next, CMI also has a worth.yml file. You can simply drop the Saves/Worth.yml file from EssentialsX into the CMI folder, and it will overwrite CMI's worth file. 
 
 - CMI doesn't have a kit importer, but, you can create the kits in-game using /cmi kiteditor, give yourself the kit from EssentialsX, then put those items in the CMI kit, and you're set.
 
@@ -175,7 +175,7 @@ Someone recently made me aware of this [import](https://github.com/BlackBeltPand
 
 - How can I use all the EssentialsX commands and aliases?
 
-A lot of them are in the Alias.yml file of CMI. I would recommend going through them. I also have an Alias_true.yml [file](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/Alias_true.yml) on my GitHub repository, under Resources > Alternatives > Alias_true.yml, where all of the commands are set to true.
+A lot of them are in the `Settings/Alias.yml` file of CMI. I would recommend going through them. I also have an Alias_true.yml [file](https://github.com/mrfdev/CMI/blob/master/Resources/Alternatives/Alias_true.yml) on my GitHub repository, under Resources > Alternatives > Alias_true.yml, where all of the commands are set to true.
 
 Although some of the EssentialsX commands and aliases are there, you may notice that not all of them are there. If you want to be able to use all of EssentialsX's commands and aliases in CMI, you can use this [addon](https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/essentialsx) that I've made, that manually adds all the missing commands and aliases from EssentialsX to CMI. Read the information before downloading, and be sure to backup your data before using it.
 

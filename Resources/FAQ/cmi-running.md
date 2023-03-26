@@ -1,4 +1,4 @@
-# FAQ - Running CMI on Spigot / Paper 1.19.2
+# FAQ - Running CMI on Spigot / Paper 1.19.x
 
 <topMenu>
 <details>
@@ -79,13 +79,13 @@ This page should help explain what I personally think is the way to run CMI on S
 
 The latest version of CMILib is required. Zrips' libraries and other resources are linked below.
 
-## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.18
+## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> 1.19.x
 
-- Is there a build for 1.19.2? Yes, CMI 9.2.3.5 can be used on 1.19.2.
+- Is there a build for 1.19.4? Yes, CMI 9.5.x.x can be used on 1.19.4.
 - Will there be a build for 1.20? Future versions are likely to get an update, yes.
 - Do I need to buy a new license to upgrade? No.
-- Can I upgrade from an older version of CMI to the build for 1.19? Yes, latest CMI and CMILib jars will achieve this.
-- CMILib will be required? Yes. CMILib 1.2.3.3 or newer is required for 1.19.2
+- Can I upgrade from an older version of CMI to the build for 1.19.x? Yes, latest CMI and CMILib jars will achieve this.
+- CMILib will be required? Yes. CMILib 1.2.5.x or newer is required for 1.19.4
 - So where do I download it? spigotmc.org (link below)
 
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Backup
@@ -179,7 +179,7 @@ These are for CMI 9.x:
 <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>
 
 `CMI Bungee` Basic bungee chat support
-<https://www.zrips.net/wp-content/uploads/2021/09/CMIB1.0.1.0.jar>
+<https://www.zrips.net/cmi/bungeecord/>
 
 `CMILibrary` Base Library 
 <https://www.spigotmc.org/resources/CMILib.87610/>

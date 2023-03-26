@@ -94,7 +94,7 @@ Of course, you can use the CMI Custom Text features to expand, using pagination,
 
 Note that this should work out of the box if you have your CMI Chat configured. New and existing members will both see this welcome message when they join your server.
 
-If you want to give first-time players something extra, you can customize the `eventCommands.yml` file at this section: (for example, you can make another .txt file or do whatever)
+If you want to give first-time players something extra, you can customize the `Settings/eventCommands.yml` file at this section: (for example, you can make another .txt file or do whatever)
 ```yaml
 firstJoinServer:
   Enabled: false

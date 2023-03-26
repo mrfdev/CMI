@@ -77,7 +77,7 @@ Make commands even more dynamic and do exactly what you want, using the alias ed
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI commands can be extended through the aliaseditor
 
-- You can go to `Alias.yml` and find the command you wish to extend. For example: `/clearchat: true`, make sure it's set to `false`, save the file.
+- You can go to `Saves/Alias.yml` and find the command you wish to extend. For example: `/clearchat: true`, make sure it's set to `false`, save the file.
 
 - Then, either blindly copy the below example (instructions at the end) or make your own comamnds using the in-game custom aliaseditor feature. Let's go with that one for educational purposes.
 
@@ -85,7 +85,7 @@ Make commands even more dynamic and do exactly what you want, using the alias ed
 
 - Then click on the next green `+` icon to start adding commands to it. You can use specialized commands, placeholders, commands from other plugins, and cmi commands. Among a few things. 
 
-- Check the below code to see an example of how it looks inside the `CustomAlias.yml` file. 
+- Check the below code to see an example of how it looks inside the `CustomAlias/CustomAlias.yml` file. 
 
 - In the example of /clearchat we're using tab suggestions, a custom permission, using specialized commands to check against parameters entered, and we show different results to players as we do to staff members. 
 
@@ -110,7 +110,7 @@ Note: I am not saying this is THE WAY to do this, it's an example to help you le
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How to install these examples?
 
-- You can install these above examples by openning `CustomAlias.yml` and pasting the code at the bottom. Note that since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
+- You can install these above examples by opening the `CustomAlias/CustomAlias.yml` and pasting the code at the bottom. Note that since CMI version 9.0.3.x you can create your own .yml files and store them in the `~/plugins/CMI/CustomAlias/` directory.
 
 - For best results, stop the server, make your changes, and start the server again. This way commands can register properly and they can be used right away.
 

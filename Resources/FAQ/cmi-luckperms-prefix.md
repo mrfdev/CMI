@@ -78,9 +78,9 @@ For server owners who want to use add a LuckPerms prefix to CMI Chat and/or CMI 
 - Start using CMI as Chat Manager, if you were using something else.
  * https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md
 
-- Install LuckPerms version 5.4.30 or newer for 1.19.x (<https://www.spigotmc.org/resources/28140/>)
+- Install LuckPerms version 5.4.67 or newer for 1.19.x (<https://www.spigotmc.org/resources/28140/>)
 
-- Install PlaceholderAPI version 2.11.2-DEV-152 or newer for 1.19.x (<https://www.spigotmc.org/resources/6245/>)
+- Install PlaceholderAPI version 2.11.3 or newer for 1.19.x (<https://www.spigotmc.org/resources/6245/>)
 
 Before we get to the CMI part of things, let's explain this to help you get some overview:
 > In order to get prefixes to show up in CMI, you need LuckPerms and PlaceholderAPI properly installed first. Also, you need to use CMI as chat manager. This way whatever LP placeholder is available to CMI through PAPI. 
@@ -149,13 +149,13 @@ Here's an example of how this looks and how you can test this:
 
 If you for example are in that admin group that has this prefix set up, you can now see it should reply (owner) or VIP. This means CMI can see the LuckPerms placeholders correctly. You can now use it in CMI Chat and/or CMI Tablist.
 
-- For **CMI Chat**, open `config.yml` and find `GroupFormat:`, at the `%luckperms_prefix%` at the appropriate place for the right groups.
+- For **CMI Chat**, open `Settings/Chat.yml` and find `GroupFormat:`, at the `%luckperms_prefix%` at the appropriate place for the right groups.
 
 - Restart the server, and start typing, it should show up now.
 
-- For **CMI Tablist**, open `Modules.yml` and find `tablist: true` make sure it's set to true. 
+- For **CMI Tablist**, open `Settings/Modules.yml` and find `tablist: true` make sure it's set to true. 
 
-- Then go to `tablist.yml` and find `GroupFormat:` and go through the `PlayerName:` parts and add the `%luckperms_prefix%` at the appropriate place for the right groups.
+- Then go to `Settings/TabList.yml` and find `GroupFormat:` and go through the `PlayerName:` parts and add the `%luckperms_prefix%` at the appropriate place for the right groups.
 
 - Restart the server, and press tab, it should show up now.
 

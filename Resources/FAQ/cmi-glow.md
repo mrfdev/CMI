@@ -73,7 +73,7 @@
 
 Hopefully this FAQ helps explain the issues with glow due to conflicting plugins and/or clients.
 
-There's a little cmi glow youtube video I made that you can check out here: https://www.youtube.com/watch?v=6qHk9Po0aAg
+There's a little CMI glow youtube video I made that you can check out here: https://www.youtube.com/watch?v=6qHk9Po0aAg
 
 ---
 
@@ -122,9 +122,9 @@ And finally, be sure it's not your client or mods that are causing issues. Use t
 
 Due to the nature of how vanilla Minecraft is made developers are limited with what we can do/use in regards to using and controlling glow; 
 which is done through the name tag prefix. And every plugin tries their best to work correctly. They're trying to stay in control over the features they offer. 
-As a consequence you will have multiple plugins conflicting, and when something conflicts and doesn't work you will end up with a non working or white glow, or at least inconsistant results. 
+As a consequence you will have multiple plugins conflicting, and when something conflicts and doesn't work you will end up with a non working or white glow, or at least inconsistent results. 
 
-A random example is a popular CMI alternative to tablist.yml called TAB, it lets you resolve the issue by using `%cmi_user_glow_code%` placeholder. More information about that [here](https://github.com/NEZNAMY/TAB/wiki/How-to-make-TAB-compatible-with-glow-plugins).
+A random example is a popular CMI alternative to `Settings/TabList.yml` called TAB, it lets you resolve the issue by using `%cmi_user_glow_code%` placeholder. More information about that [here](https://github.com/NEZNAMY/TAB/wiki/How-to-make-TAB-compatible-with-glow-plugins).
 
 A reasonable way to figure out if it's a plugin that's conflicting:
 - /stop the server, and back it up. Make a clone of it to test with.
@@ -132,7 +132,7 @@ A reasonable way to figure out if it's a plugin that's conflicting:
 - Remove all the plugins from the test server - except CMI, CMILib, Vault and start the test server.
 - Login and try to use cmi glow again. 
 - If it still doesn't work, it might be a client-side problem.
-- If it works now, it might be a plugin confict. You can put back all the plugins you think that aren't causing this problem and start, repeat the test. Until you find it to break and then you know which plugin might cause the problem. You can then ask the developer of that plugin to (better) support CMI's glow feature to prevent conflicts.
+- If it works now, it might be a plugin conflict. You can put back all the plugins you think that aren't causing this problem and start, repeat the test. Until you find it to break and then you know which plugin might cause the problem. You can then ask the developer of that plugin to (better) support CMI's glow feature to prevent conflicts.
 
 Known plugins causing conflict:
 - TAB
@@ -141,10 +141,10 @@ Known plugins causing conflict:
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Misc.
 
-Still having issues and want to report what you believe is a bug with the CMI glow feature? Please open a new Issue on Zrips' Github repository for CMI:
+If you are still having issues and want to report what you believe is a bug with the CMI glow feature? Please open a new Issue on Zrips' Github repository for CMI:
 https://github.com/Zrips/CMI/issues
 
-Want to make suggestions to help improve the functionality of the CMI glow feature? Please open a new Discussion on github:
+Want to make suggestions to help improve the functionality of the CMI glow feature? Please open a new Discussion on Github:
 https://github.com/Zrips/CMI/discussions
 
 ---

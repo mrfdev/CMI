@@ -83,7 +83,7 @@ Of course, you can use the CMI Custom Text features to expand on this, using pag
 
 To achieve this go in-game and create a new custom alias using: `/cmi aliaseditor` and click the green `+` to add a new command, type in the name `rules` and press enter. Then click on the new green `+` to add a command, which should be: `cmi ctext rules`. (Note: The command will work, but shows red until you restart the server)
 
-- Optionally, if you want to give first-time players some extra rules attention, you can customize the `eventCommands.yml` file at this section: 
+- Optionally, if you want to give first-time players some extra rules attention, you can customize the `Settings/eventCommands.yml` file at this section: 
 ```yaml
 firstJoinServer:
   Enabled: true

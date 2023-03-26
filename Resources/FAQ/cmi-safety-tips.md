@@ -146,7 +146,7 @@ ExploitPatcher:
   # By default its disabled to keep vanilla behavior, but is recommended to enable it to avoid issues
   NoCommandsInBed: true
 
-Modules.yml:
+Settings/Modules.yml:
 
 # Exploit prevention, like using trident for infinite flight or self damage with arrow
 # Applies for servers from 1.9.x and up

@@ -78,7 +78,7 @@ Counts, display, and reward players voting.
 - Next, confirm that NuVotifier works properly, see incoming votes appear in the console.
 
 - You must enable the CMI Module:
-In `modules.yml`, find the following, and make sure it's set to `true`:
+In `Settings/Modules.yml`, find the following, and make sure it's set to `true`:
 ```yaml
 # Handles votifier system
 # Applies for servers from 1.7.x and up
@@ -95,7 +95,7 @@ Votifier:
 
 - Optinally, you can limit votes per IP per day, exclude playernames from top list, set a cooldown, set it to perform certain commands, and configure additional rewards. 
 
-- Commands: (Note: If you want /votes, instead of /cmi votes, then set the command to true in Alias.yml) 
+- Commands: (Note: If you want /votes, instead of /cmi votes, then set the command to true in Settings/Alias.yml) 
 ```
 Player commands:
 /cmi votes

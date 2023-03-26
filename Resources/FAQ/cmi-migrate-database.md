@@ -71,7 +71,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Database migration
 
-This feature allows you to convert your CMI sqlite database to a MYSQL database.
+This feature allows you to convert your CMI SQLite3 database to a MySQL database.
 
 Please note that this isn't an migration feature to convert you from other plugins' databases to CMI, and that if you have bungee that you really shouldn't not use the same database for all your instances.
 
@@ -98,9 +98,9 @@ Not really existing, https://www.zrips.net/cmi/commands/
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Setup
 
-CMI has a databaseinfo.yml file you have to edit to point to the mysql database. I recommend to backup the server, turn on maintenance mode, then edit the databaseInfo.yml file and turn on maintenance mode for the server (make sure there are no players online). Do not log in. 
+CMI has a `Settings/DataBaseInfo.yml` file you have to edit to point to the MySQL database. I recommend to backup the server, turn on maintenance mode, then edit the DataBaseInfo file and turn on maintenance mode for the server (make sure there are no players online). Do not log in. 
 
-Then from console run the migration command and give it reasonable time to complete. When you believe it's done. Stop the server, check your mysql database to see if any cmi data is in there. If so then you can start your server again without maintenance mode. 
+Then from console run the migration command and give it reasonable time to complete. When you believe it's done. Stop the server, check your m database to see if any cmi data is in there. If so then you can start your server again without maintenance mode. 
 
 Side note: make a full back up of your server before making changes to it.
 
