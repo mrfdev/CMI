@@ -163,4 +163,4 @@ The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.2.10
 -mc- (Minecraft, but it is Paper jar at the moment)
 -1.19.3- (Minecraft version 1.19.3)
 ```
-**TLDR;** These files are for 1.19.3 and probably any CMI version 9.3.0.x / CMILib 1.2.4.x
+**TLDR;** These files are for 1.19.4 and probably any CMI version 9.3.0.x / CMILib 1.2.4.x
