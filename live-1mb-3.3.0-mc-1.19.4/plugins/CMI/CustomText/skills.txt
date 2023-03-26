@@ -1,0 +1,86 @@
+<AutoPage><Hidden><NoReqPermission>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold}Just by playing you automatically collect Knowledge Exp for Knowledge skills. When enough are collected you gain a Knowledge level for that skill. 
+&r
+{#Feijoa}Enough levels give you Knowledge Power, which can be used to activate perks for that skill.
+&r
+{#Feijoa}Each skill has their own perks. And you can earn and use them in every world. They are separate from the Jobs-, and mcMMO features.
+&r
+{#Feijoa} To find out what skills are available, and which perks you can use. &lRight-click the sides of a Fletching table.
+&r
+{#gold} Learn more:{#Geyser} https://omgboards.com/threads/263873/
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Stats>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold} Your knowledge stats:
+{#Cerulean} • {#Feijoa}Power Level:{#Geyser} %adapt_level%
+{#Cerulean} • {#Feijoa}Max Power:{#Geyser} %adapt_maxpower%
+{#Cerulean} • {#Feijoa}Used Power:{#Geyser} %adapt_usedpower%
+{#Cerulean} • {#Feijoa}Available Power:{#Geyser} %adapt_availablepower%
+&r
+{#Cerulean} • {#Feijoa}Master XP:{#Geyser} %adapt_masterxp%
+{#Cerulean} • {#Feijoa}Wisdom:{#Geyser} %adapt_wisdom%
+{#Cerulean} • {#Feijoa}Level Multiplier:{#Geyser} %adapt_multiplier%
+{#Cerulean} • {#Feijoa}Total 'seen things':{#Geyser} %adapt_seenthings%
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Discovery>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⚛&l %adapt_discovery_name%&r</T><H>{#gray}(paper icon in the fletching table)\n{#Geyser}Knowledge EXP is earned by being active,\n{#Geyser}doing things, pickup up xp, etc.\n{#Geyser}Various actions will be detected.&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_discovery_level%&r{#Feijoa}
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_discovery_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_discovery_xp%&r{#Feijoa}
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_discovery_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_discovery_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lUnity,</T><H>{#gray}(redstone icon)\n{#Geyser}Collecting exp orbs\n{#Geyser}adds xp to random skills</H><Next><T>{#Cerulean} • {#Feijoa}&lResistance,</T><H>{#gray}(emerald icon)\n{#Geyser}Consume experience to mitigate the\n{#Geyser}damage you take from all sources</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Agility>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⇉&l %adapt_agility_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}Agility gives you the ability to move quickly\n{#Geyser}fluidly in the face of obstacles.\n{#Geyser}Knowledge EXP is probably earned \n{#Geyser}by probably being a bit speedy.&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_agility_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_agility_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_agility_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_agility_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_agility_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Rift>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ❍&l %adapt_rift_name%&r</T><H>{#gray}(ender eye icon in the fletching table)\n{#Geyser}The rift is a caustic harness,\n{#Geyser}but you have harnessed the harness.\n{#Geyser}Expand your world movements.&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_rift_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_rift_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_rift_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_rift_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_rift_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lRift Gate,</T><H>{#gray}(end portal frame icon)\n{#Geyser}Teleport to a marked location. \n{#Geyser}Craft a unique item that lets you bind a block to a location.\n{#Geyser}Shift + Left click the block. Then when you're ready,\n{#Geyser}consume the special item to teleport back to that marked location.</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Info>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold}1MoreBlock Knowledge MMO: see forum for more details
+{#Cerulean} • {#Feijoa}Every player has a Master XP and a Master level (the culmination of the overall xp that they have).
+&r
+{#Cerulean} • {#Feijoa}Each skill Earns you Xp towards itself. With that Xp in skills you can spend it on its perks, and some perks give you xp for just using them.
+&r
+{#Cerulean} • {#Feijoa}Grinding levels will yield in increased cooldowns it seems.
+&r
+{#Cerulean} • {#Feijoa}Depending on player activity, build activity, community knowledge exp totals gained, we will gradually unlock more skills and more of their skills. Keep active, keep playing, invite your friends, and you will have some awesome perks to play with.
+{#cerulean} •&l&m                                                &r{#Cerulean}•

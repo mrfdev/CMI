@@ -17,6 +17,25 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
+  maintenance:
+    Cmds:
+    - cmi sound block_note_block_bell -p:0.6 -all -s
+    - delay! 0.1
+    - cmi sound block_note_block_bell -p:0.7 -all -s
+    - delay! 0.1
+    - asConsole! cmi maintenance $1-
+    - delay! 0.2
+    - check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&r\n{#orange}During
+      maintenance mode players can remain in-game, but they cannot join the game.
+      We are not restarting, you can keep playing. \n&r
+    - cmi sound block_note_block_bell -p:0.5 -all -s
+    - 'check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&e Maintenance:
+      $1- :)'
+    - check:%cmi_maintenance_state%==False! asConsole! cmi broadcast !&r\n {#orange}Back
+      from maintenance. Thank you for your patience. \n&r
+    Perm: true
+    CustomTabs:
+    - 'False'
   _donation:
     Cmds:
     - asConsole! cmi toast all -t:goal -icon:diamond_block PayPal Donation received
@@ -201,13 +220,18 @@ CustomAlias:
     Perm: true
   survival:
     Cmds:
-    - check:$1==null! asConsole! cmi gm survival [playerName]
-    - check:$1!=null! asConsole! cmi gm survival $1
-    - check:$1==null! asConsole! cmi god [playerName] false -s
-    - check:$1!=null! asConsole! cmi god $1 false -s
-    - check:$1==null! asConsole! cmi fly [playerName] false -s
-    - check:$1!=null! asConsole! cmi fly $1 false -s
+    - statement:check1! check:$1==null!
+    - if:check1! asConsole! cmi gm survival [playerName]
+    - if:check1! asConsole! cmi god [playerName] false -s
+    - if:check1! asConsole! cmi fly [playerName] false -s
+    - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi gm survival $1
+    - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi god $1 false -s
+    - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi fly $1 false -s
+    - if:check1@! perm:cmi.chatgroup.14@! msg! [playerName] {#orange}You can only
+      change your own gamemode.
     Perm: true
+    CustomTabs:
+    - '[playername]'
   adventure:
     Cmds:
     - cmi gm adventure $1

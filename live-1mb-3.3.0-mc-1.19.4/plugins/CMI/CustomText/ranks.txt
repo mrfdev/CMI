@@ -1,24 +1,3 @@
 <AutoPage>
-
-When a player joins, they're a First player. Upon movement they get moved into the 'yellow' player group. This is done automatically. All other group updates are basically manually, and updates happen rarely. Some group upgrades require a request through the forums.
-
-The last group are the team members, they show in 'red'. Though some players are Helpers.
-
-<NextPage>
-
-A player that's new to the server will have some limitations, these get lifted as you get more active. Players that have no infractions on their account and have established a base, and match some other criteria, will be able to upgrade to Member. 
-
-Players in the Member group are eligible sometimes to get upgraded to Boosted or even Builders.
-
-There are a couple of other groups available, but only through a PayPal purchase. The blue Donator group and the orange Epic group.
-
-<NextPage>
-
-The Epic group only have a handful of available slots in 2020, check the /forum for details.
-
-There is also a Legendary group, this is for special legacy players from 2011/2012. It will not be possible to get into this group.
-
-Some groups like Builders, Donators, Epic, will have creative mode access in certain worlds, like /builders, /sanctuary, and Epic even in /Souls and /Wild.
-
-Playing on our server is free, we do not ask for money. However, players that wish to /donate are free to support us that way. 
-
+Moved to: 
+https://omgboards.com/threads/groups-ranks.260941/

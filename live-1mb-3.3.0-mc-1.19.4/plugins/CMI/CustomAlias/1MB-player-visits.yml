@@ -20,3 +20,4 @@ CustomAlias:
   visit:
     Cmds:
     - asConsole! cmi setwarp [playerName] [playerName]
+    Perm: true

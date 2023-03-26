@@ -1,9 +1,9 @@
 <AutoPage><Hidden><AutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
-{#orange} -&l 1MoreBlock 2022 Events
-{#orange} -{#gold} Last event: Christmas '22
+{#orange} -&l 1MoreBlock 2023 Events
+{#orange} -{#gold} Last event: Valentine's Day 2023
 {#orange} -{#gold} Current event: &lNone
-{#orange} -{#gold} Next event: Valentine (/valentine works on 14th february
+{#orange} -{#gold} Next event: Spring or Summer Dance Festival
 {#orange} -{#gold} 
 {#orange} -{#gold} More info: /discord
 {#orange} -{#gold} We have #schedule and #event channels.

@@ -257,9 +257,11 @@ Chat:
   # Use \n to add new line
   publicHover: '{#Feijoa}Player: {#Geyser}%cmi_user_display_name%{#Feijoa}, ({#Geyser}%luckperms_primary_group_name%{#Feijoa})\n{#Feijoa}Msg
     was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
-    %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomes_points%
+    %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomespro_points%
     \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
-    / Lvls: {#Geyser}%jobs_total_levels%\n&8(click to send private msg)&r'
+    / Lvls: {#Geyser}%jobs_total_levels% \n{#Feijoa} Knowledge MMO: Power level: {#Geyser}%adapt_level%{#Feijoa}
+    (used {#Geyser}%adapt_usedpower% {#Feijoa}/ max {#Geyser}%adapt_maxpower%)\n&8(click
+    to send private msg)&r'
   privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
     \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
   staffHover: 'Player: %cmi_user_name%, {#Edward}(%cmi_user_group%)\n Chat sent: &6%server_time_hh:mm:ss%&r
@@ -592,6 +594,8 @@ command:
       noteBlock: ' &eTone: &6[tone] &eOctave: &6[octave] &6Instrument: &e[instrument]
         &6Pitch: &7[pitch]'
       BlockState: ' &7[state]: &f[value]'
+      BlockHitBox: ' &7Height: &f[height] &7Length: &f[length] &7Width: &f[width]'
+      BlockHitBoxHover: '&7From Top: &f[top] &7From Bottom: &f[bottom]'
   blocknbt:
     help:
       info: '&eShow block NBT information'
@@ -1084,6 +1088,8 @@ command:
       autoPage: '&eAuto page: &6[state]'
       autoAlias: '&eAuto alias: &6[state]'
       permReq: '&eRequires permission: &6[state]'
+      pageLabel: ' &e<PageLabel>'
+      pageLabelHover: '&e[value]'
       listTitle: '&eCText''s'
       listFormat: '&6[name]&7: &r[extra]'
   editlocale:
@@ -2326,7 +2332,7 @@ command:
         group8: '&eMVP: &f[list]'
         group9: '&eEpic: &f[list]'
         group10: '&eLegendary: &f[list]'
-        group11: '&eWorldedit: &f[list]'
+        group11: '&eVeteran: &f[list]'
         group12: '&eHelper: &f[list]'
         group13: '&eAdmin: &f[list]'
         group14: '&eOwner: &f[list]'
@@ -2633,6 +2639,7 @@ command:
         acceptingPM: '&eAccepting private messages'
         acceptingTPA: '&eAccepting teleportations to you'
         acceptingMoney: '&eAccepting money payments'
+        chatbubble: '&eChat bubbles'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -3761,7 +3768,7 @@ command:
       - 'Example: '
       - /cmi tempban zrips 5m For swearing
     info:
-      message: '&cTemporarily Banned!'
+      message: '&cTemporarily Banned by &6[senderDisplayName] for [reason] !'
       messageToAll: '&6[playerDisplayName] &egot tempbanned by &6[senderDisplayName]
         &efor: &6[time] &ereason: &6[reason]'
       banedSilent: '&7[&8Silent&7]&6[playerDisplayName] &egot tempbanned by &6[senderDisplayName]
@@ -3795,11 +3802,13 @@ command:
       setTimedFly: '&eYou have set &6[playerDisplayName]&e temporary fly for the next
         [time]'
       addTimedFly: '&eYou have added  an additional [addTime] ([time]) for &6[playerDisplayName]&e'
+      takeTimedFly: '&eYou have taken [addTime] ([time]) for &6[playerDisplayName]&e'
       setUntilRelogFly: '&eYou have set &6[playerDisplayName]&e temporary fly until
         relog.'
       targetTimedEnabled: '&eYour flight was enabled by &3[senderDisplayName]&e for
         the next [time].'
       targetTimedEnabledAdd: '&eYour flight time was increased by [addTime] ([time]).'
+      targetTimedEnabledTake: '&eYour flight time was decreased by [addTime] ([time]).'
       targetUntilRelogEnabled: '&eYour flight was enabled by &3[senderDisplayName]&e
         until you relog.'
       setFor: '&eTemporary fly mode enabled for next [time]'

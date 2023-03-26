@@ -19,7 +19,7 @@
 CustomAlias:
   event:
     Cmds:
-    - asConsole! cmi ctext events [playerName]
+    - asConsole! cmi openbook events [playerName]
     Tab: false
   halloween:
     Cmds:

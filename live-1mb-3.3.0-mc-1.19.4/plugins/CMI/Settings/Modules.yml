@@ -53,13 +53,13 @@ spawnerProximity: true
 # Applies for servers from 1.7.x and up
 spawnerCharge: true
 #  
-# Handling of command cooldowns
-# Applies for servers from 1.7.x and up
-cooldown: true
-#  
 # Handling of command warmups
 # Applies for servers from 1.7.x and up
 warmup: true
+#  
+# Handling of command cooldowns
+# Applies for servers from 1.7.x and up
+cooldown: true
 #  
 # Handling of interactive commands
 # Applies for servers from 1.8.x and up
@@ -76,6 +76,10 @@ armorEffects: true
 # Handling of player tagging in chat and tabcomplete with @
 # Applies for servers from 1.7.x and up
 playerChatTag: true
+#  
+# Handling of chat bubbles
+# Applies for servers from 1.19.x and up
+chatBubble: true
 #  
 # Handling of tablist
 # Applies for servers from 1.7.x and up
@@ -214,7 +218,7 @@ elytraBoost: true
 elytraLaunch: true
 #  
 # Exploit prevention, like using trident for infinite flight or self damage with arrow
-# Applies for servers from 1.9.x and up
+# Applies for servers from 1.15.x and up
 elytraExploit: true
 #  
 # Handling of custom totem behavior

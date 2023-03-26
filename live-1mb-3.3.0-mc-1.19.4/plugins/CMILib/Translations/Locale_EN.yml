@@ -176,15 +176,19 @@ info:
   sec: '&e[secs] &6sec '
   nextPageConsole: '&fFor next page perform &5[command]'
   prevPage: '&2----<< &6Prev '
+  prevCustomPage: '&2----<< &6[value] '
   prevPageGui: '&6Previous page '
   prevPageClean: '&6Prev '
   prevPageOff: '&2----<< {#Edward}Prev '
+  prevCustomPageOff: '&2----<< &7[value] '
   prevPageHover: '{#Edward}<<<'
   firstPageHover: '{#Edward}|<'
   nextPage: '&6 Next &2>>----'
+  nextCustomPage: '&6 [value] &2>>----'
   nextPageGui: '&6Next Page'
   nextPageClean: '&6 Next'
   nextPageOff: '{#Edward} Next &2>>----'
+  nextCustomPageOff: '&7 [value] &2>>----'
   nextPageHover: '{#Edward}>>>'
   lastPageHover: '{#Edward}>|'
   pageCount: '&2[current]{#Edward}/&2[total]'
@@ -360,6 +364,7 @@ info:
     BASALT_DELTAS: Basalt deltas
     BEACH: Beach
     BIRCH_FOREST: Birch forest
+    CHERRY_GROVE: Cherry grove
     COLD_OCEAN: Cold ocean
     CRIMSON_FOREST: Crimson forest
     CUSTOM: Custom
@@ -428,6 +433,7 @@ info:
     bat: Bat
     bee: Bee
     blaze: Blaze
+    block_display: Block display
     boat: Boat
     camel: Camel
     cat: Cat
@@ -469,7 +475,9 @@ info:
     horse: Horse
     husk: Husk
     illusioner: Illusioner
+    interaction: Interaction
     iron_golem: Iron golem
+    item_display: Item display
     item_frame: Item frame
     leash_hitch: Leash hitch
     lightning: Lightning
@@ -510,6 +518,7 @@ info:
     skeleton_horse: Skeleton horse
     slime: Slime
     small_fireball: Small fireball
+    sniffer: Sniffer
     snowball: Snowball
     snowman: Snowman
     spectral_arrow: Spectral arrow
@@ -519,6 +528,7 @@ info:
     stray: Stray
     strider: Strider
     tadpole: Tadpole
+    text_display: Text display
     thrown_exp_bottle: Thrown exp bottle
     trader_llama: Trader llama
     trident: Trident
@@ -538,7 +548,7 @@ info:
     zoglin: Zoglin
     zombie: Zombie
     zombie_horse: Zombie horse
-    zombie_villager: Zombie villager
+    zombie_villager: ZombiE villageR
     zombified_piglin: Zombified piglin
   EnchantAliases:
     protection_fire:

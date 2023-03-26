@@ -1327,7 +1327,7 @@ Alias:
   #  
   # /cmi spawner $1-
   /spawner:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi spawnereditor $1-

@@ -49,8 +49,8 @@ CustomAlias:
       looking for new team members.
     - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} These are our
       current team members, feel free to reach out to them.
-    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} mrfloris, the456gamer,
-      tidala, jackPerByte, Citebafla, benjamin433, mrcrazyman02, nikkipixel, and greymagic27,
+    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} mrfloris, tidala,
+      jackPerByte, Citebafla, benjamin433, mrcrazyman02, nikkipixel, and greymagic27,
       to name a few.. . \n&r
     - msg! [playerName]  If you are trying to make a team in skyblock or oneblock,
       see &6/teams&r instead.
@@ -86,7 +86,7 @@ CustomAlias:
     Tab: false
   ranks:
     Cmds:
-    - asConsole! cmi ctext ranks [playerName]
+    - asPlayer! groups
     Tab: false
   market:
     Cmds:
@@ -112,9 +112,11 @@ CustomAlias:
     Tab: false
   points:
     Cmds:
-    - msg! [playerName] {#orange}CLOSED {#gold} Sorry, the /points shop is currently
-      closed, it will return early January.
-    Tab: false
+    - statement:check1! check:$1==null
+    - if:check1! asPlayer! welcomes shop
+    - if:check1@! asPlayer! welcomes $1-
+    CustomTabs:
+    - balance,info,shop [playername]
   items:
     Cmds:
     - asConsole! msg! [playerName] &7- Your items are the things in your Inventory,
@@ -259,8 +261,8 @@ CustomAlias:
     - asConsole! msg! [playerName] &b > https://omgboards.com/threads/261776/
   gift:
     Cmds:
-    - asConsole! msg! [playerName] !&6 Woops sorry, we can't get /gift to work in
-      1.15.x, please use /trade instead.
+    - asPlayer! trade $1-
+    AddTabs: true
   witchery:
     Cmds:
     - msg! [playerName] Learn more about how to use witchery in Skyblock (and acid,
@@ -316,7 +318,8 @@ CustomAlias:
     - perm:worldguard.region.flag.flags.deny-spawn.*! msg! [playerName] &6Done.
   groups:
     Cmds:
-    - cmi ctext ranks
+    - 'asConsole! msg! [playerName] {#denim} You can find more info about our groups/ranks/roles
+      here: \n https://omgboards.com/threads/260941/'
   report:
     Cmds:
     - msg! [playerName] {#orange}Issue with a player? You can contact staff on /discord
@@ -687,15 +690,6 @@ CustomAlias:
       \n&r
     - asConsole! cmi usermeta [playerName] remove mcmmorepair -s
     Tab: false
-  bottle:
-    Cmds:
-    - check:$1==store! check:$2<0! asConsole! cmi ban [playerName] Exploiting not
-      allowed.
-    - check:$1==null! msg! [playerName] {#orange}Please use the dragonbreathe and
-      bedrock at /warp enchant to store exp into bottles. You cannot use the commands.
-    - check:$1!=null! msg! [playerName] {#orange}Please use the dragonbreathe and
-      bedrock at /warp enchant to store exp into bottles. You cannot use the commands.
-    Tab: false
   teams:
     Cmds:
     - asConsole! cmi ctext teams [playerName]
@@ -729,12 +723,14 @@ CustomAlias:
     AddTabs: true
   ip:
     Cmds:
-    - 'msg! [playerName] You can connect to our server via three different routings:
-      (very handy if you experience quite a high ping (network lag), you can check
+    - 'msg! [playerName] {#gold}You can connect to our server via five different routings:
+      {#geyser} (very handy if you experience quite a high ping (network lag), you can check
       your ping with: /myping by the way)'
-    - 'msg! [playerName] > Main (best for EU) : 1MoreBlock.com'
-    - 'msg! [playerName] > Cosmic (best for Int) : play.1MoreBlock.com'
-    - 'msg! [playerName] > Shield (best for US) : play2.1MoreBlock.com'
+    - 'msg! [playerName] {#cerulean}•> {#geyser}Main (best for EU) :{#gold} 1MoreBlock.com'
+    - 'msg! [playerName] {#cerulean}•> {#geyser}Cosmic (best for Int) :{#gold} play.1MoreBlock.com'
+    - 'msg! [playerName] {#cerulean}•> {#geyser}Shield (best for US) :{#gold} play2.1MoreBlock.com'
+    - 'msg! [playerName] {#cerulean}•> {#geyser}Neo (relay) :{#gold} play3.1MoreBlock.com'
+    - 'msg! [playerName] {#cerulean}•> {#geyser}Infinity (relay) :{#gold} play4.1MoreBlock.com'
     Tab: false
   _getRekt:
     Cmds:
@@ -750,79 +746,9 @@ CustomAlias:
   sendnormal:
     Cmds:
     - asConsole! _getRekt [playerName] $1-
-  temptest:
-    Cmds:
-    - msg! [playerName] testing %cmi_player_world% testing
-  expand:
-    Cmds:
-    - msg! [playerName] Please pick a gametype, like /expand oneblock, or /expand
-      skyblock
-  expand oneblock:
-    Cmds:
-    - statement:check1! ifinworld:oneblock! check:%aoneblock_island_protection_range%<100!
-      check:%aoneblock_has_island%==true!
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      msg! [playerName] you are on your own island
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      asConsole! cmi usermeta [playerName] add oneblockislandrank no
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_1%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_2%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_3%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_4%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_5%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_6%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_7%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_8%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_9%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%Level_aoneblock_top_name_10%==%cmi_user_name%! asConsole! cmi usermeta
-      [playerName] add oneblockislandrank yes
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%cmi_user_meta_oneblockislandrank%==yes! msg! [playerName] {#gold} You
-      appear to be a top island player, you should be eligible. Giving you the island
-      expander item which will allow you to add +25 blocks to your island once you
-      consume it.
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%cmi_user_meta_oneblockislandrank%==yes! asConsole! cmi kit expandisland25
-      [playerName]
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      check:%cmi_user_meta_oneblockislandrank%==no! msg! [playerName] {#orange} Sorry,
-      you are not in the oneblock island top 8 players yet, you can not expand your
-      island range currently. You can recalculate your island level (/oneblock level)
-      after building on it first, and try this command again later.
-    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
-      asConsole! cmi usermeta [playerName] remove oneblockislandrank
-    - if:check1! check:%aoneblock_visited_island_owner%!=%cmi_user_name%! msg! [playerName]
-      Go to your own island first!
-    - if:check1! check:%aoneblock_visited_island_owner%==null! msg! [playerName] Go
-      to your own island first!
-    - if:check1@! msg! [playerName] Cannot run this command, either you're not on
-      your own island, you don't have an island, or you already have it expanded to
-      the max range of 100. If you have any questions, please contact staff.
   fish warp:
     Cmds:
     - asPlayer! cmi warp fish
-  legacy:
-    Cmds:
-    - asConsole! mvtp [playerName] legacy
   addnpc:
     Cmds:
     - asPlayer! npc create $1 --type player
@@ -835,4 +761,35 @@ CustomAlias:
     - 'msg! [playerName] {#gold}Valid types: {#gray}LONGEST_LENGTH &rSHORTEST_LENGTH
       {#gray}CRAB_KILLING &rRANDOM_CATCH {#gray}MOST_CATCH &rBASE_ENTROPY_EARNED {#gray}LONGEST_CAST'
     Perm: true
+    Tab: false
+  bottle:
+    Cmds:
+    - check:$1==store! check:$2<0! asConsole! cmi ban [playerName] Exploiting not
+      allowed.
+    - check:$1==null! msg! [playerName] {#orange}You can use dragon breath. Hold it
+      in your main hand and left-click an enchantment table. It will store some of
+      your exp into a bottle. Which you can smash later to get the exp back. The cost
+      is 100 per hit on the enchantment table, sneak clicking is 10x, and costs 1000.
+    - check:$1!=null! msg! [playerName] msg! [playerName] {#orange}You can use dragon
+      breath. Hold it in your main hand and left-click an enchantment table. It will
+      store some of your exp into a bottle. Which you can smash later to get the exp
+      back. The cost is 100 per hit on the enchantment table, sneak clicking is 10x,
+      and costs 1000.
+    Tab: false
+  skills:
+    Cmds:
+    - asConsole! cmi ctext skills [playerName] $1
+    - delay! 0.5
+    - 'msg! [playerName] More MMO skills: /mcMMO \nMore Jobs skills: /jobs info'
+    Tab: false
+  adapt:
+    Cmds:
+    - asPlayer! skills
+    Tab: false
+  ah sell:
+    Cmds:
+    - msg! [playerName] [please read] {#orange} To guarantee no item loss the option
+      to sell to the global market is temporarily turned off. This is due to the upcoming
+      1.19.4 upgrade. Hopefuly it will return soon. You can still cancel listings,
+      buy items, etc.
     Tab: false

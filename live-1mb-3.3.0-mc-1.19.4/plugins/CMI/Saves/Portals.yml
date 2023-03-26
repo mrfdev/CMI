@@ -175,6 +175,25 @@ general:
     - delay! 2
     - msg! [playerName] &a -Only a rune crystal will activate real magic-
     - asConsole! cmi sound ambient_underwater_loop_additions_rare [playerName]
+  jackperbyteportal1:
+    Loc: 15400.0:67.0:-14922.0:15401.0:69.0:-14922.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: true
+    Tp: wild;2080.5;73.0;-3371.5;179.9;19.89
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 3
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] &lWhoOoOOosh!
+    - asConsole! cmi sound block_portal_trigger [playerName] -v:0.5 -p:2
   playermacadam:
     Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
     enabled: true
@@ -497,7 +516,7 @@ valentine:
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
-    particleAmount: 100
+    particleAmount: 20
     particleHide: 0
     activationRange: 16
     commandsWithoutTp: true
@@ -607,6 +626,25 @@ halloween:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
 wild:
+  jackperbyteportal1back:
+    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: true
+    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] &lWhoOoOOosh!
+    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
   randyendportal:
     Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
     enabled: true
@@ -623,6 +661,22 @@ wild:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! mv tp end
+  randyfortuneteller:
+    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
+    enabled: true
+    effect: composter
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
   wildend:
     Loc: 50.0:59.0:47.0:52.0:59.0:49.0
     enabled: true

@@ -1,0 +1,225 @@
+Chat:
+  # Will try to modify chat to display it in defined format
+  ModifyChatFormat: true
+  # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
+  # To change default hover over messages seen on sent message, go to your locale file to Chat section
+  ClickHoverMessages: true
+  DiscordSRV:
+    # Enables support for DiscordSRV plugin
+    Enabled: true
+    # Defines name of global chat channel in discordsrv
+    GlobalChannel: global
+    # Indicator which can be used as {discord} in chat format to indicate that message came from discord and not ingame
+    Label: '(debug: label: {discord}) &2[&7D&2]'
+    UnlinkedLabel: '(debug: unlinked: {discord}) &4[&cD&4]'
+    # When enabled and you have ranged messages enabled, we will send all of them to DiscordSRV
+    # When disabled, only shouts and messages sent by players with cmi.chat.rangebypass permission node will be visible in discord
+    RangedMessages: true
+  # Enables support for DynMap web chat
+  DynMapChat: false
+  # When set to false, each time you will use /r you will reply to person you previously sent message directly or to person who sent you message if there is none you have conversion before
+  # When this set to true, players with /r will reply to person who last sent private message. This can result in confusion when using /r while getting private messages from multiple players
+  ReplyToLastMessenger: true
+  # If ReplyToLastMessenger is set to false, then timeOut will be taken into consideration to who you should reply
+  # If you had conversation in last 120 seconds (default) then even receiving message from 3rd person, you will still reply to original player
+  # If you had conversation in longer then 120 seconds period, then you will reply to latest person who send you a message
+  LastMessengerTimeOut: 120
+  # When set to true players will need to have cmi.command.msg.[groupname].send where [groupName] is receivers main permission group
+  PrivateMessagesGroups: false
+  # When set to false, web pge links in a chat will not get shortened to default [LINK] format
+  TranslateLink: true
+  # Defines regex when replacing url in chat with short word
+  # Examples:
+  # (https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})
+  # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?
+  # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
+  LinkRegex: (^| )((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{1,3}(\/\S*)?([^\s|^\)^"^'^.]+)
+  # When set to true, particular variables in chat will be translated into items player are holding. List of variables belove
+  HoverItems: true
+  # Defines regex when replacing item line in chat with players item in hand information. Only works when CMI hover over chat format is enabled
+  ItemRegex:
+  - (\[item\])
+  - (\[i\])
+  Bungee:
+    # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
+    # Or direct download https://www.zrips.net/cmi/
+    # Do you want to enable private messaging over bungeecord
+    Messages: false
+    # Do you want to enable public messaging over bungeecord
+    # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
+    PublicMessages: false
+    # Do you want to enable staff messaging over bungeecord
+    StaffMessages: false
+  # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message}. Supporting PlaceHolderAPI variables like %player_server%
+  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
+  GeneralFormat: '{#Edward}{world} {#Sirocco}<&e{displayName}{#Sirocco}> {#Geyser}{message}'
+  # Will define message format itself, this allows to have gradients in messages
+  # It NEEDS to contain {message} otherwise we will ignore this setup
+  # For 1.16+ servers you can use color gradients like '{#b3a28f>}{message}{#d7b8e6<}'
+  # You can have more than 2 colors in gradient. To define it repeat {message} variable. For example '{#b3a28f>}{message}{#5c6999<>}{message}{#d7b8e6<}'
+  GeneralMessageFormat: '{message}'
+  Ranged:
+    # Defines range of regular messages to travel
+    # Set to -1 to disable range restriction
+    General: -1
+    # Defines range of shout messages to travel
+    # Shout messages should start with ! and player should have cmi.chat.shout permission
+    # GeneralRange should be enabled
+    # set to 0 to shout across all worlds, -1 to disable
+    Shout: -1
+    # Defines cost for each shout message
+    ShoutCost: 0
+    # List of message range limits
+    # Player count fallowed by range
+    # Player amount defines from how many we should use this range
+    Dynamic:
+      Use: false
+      Limits:
+      - 1-0
+      - 10-1000
+      - 20-500
+      - 30-400
+      - 40-300
+      - 50-200
+  # Prefix used to indicate that message should be sent to public chat instead of current players chat room
+  # Set it to empty field if you want this feature to be disabled
+  ChatRoomShout: '!'
+  # Time in seconds you want to keep chat rooms alive before removing them
+  # This only applies to empty rooms after last user leaves it
+  ChatRoomLife: 3600
+  # Defines suggested commands when you click on public, private and similar messages. [playerName], [playerDisplayName] and [playerNickName]  can be used to include players name
+  ClickSuggestions:
+    pubmsg: '/msg [playerDisplayName] '
+    privmsg: '/msg [playerDisplayName] '
+    staffmsg: '/staffmsg '
+    helpop: '/msg [playerDisplayName] '
+    chatroom: '/msg [playerDisplayName] '
+    discord: '/msg [playerDisplayName] '
+  # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
+  # Add as many lines as you need too
+  # cmi.chatgroup.[id] permnission node to use
+  # Permission example: cmi.chatgroup.2
+
+  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
+  GroupFormat:
+    '1': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '2': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '3': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '4': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#f0ecd1}{message}'
+    '5': '{#Edward}%multiverse_world_alias% {#Sirocco}<&2{displayName}{#Sirocco}>
+      {#d7f0d1}{message}'
+    '6': '{#Edward}%multiverse_world_alias% {#Sirocco}<&2{displayName}{#Sirocco}>
+      {#d7f0d1}{message}'
+    '7': '{#Edward}%multiverse_world_alias% {#Sirocco}<&9{displayName}{#Sirocco}>
+      {#d1d6f0}{message}'
+    '8': '{#Edward}%multiverse_world_alias% {#Sirocco}<&9{displayName}{#Sirocco}>
+      {#d1d6f0}{message}'
+    '9': '{#Edward}%multiverse_world_alias% {#Sirocco}<&6{displayName}{#Sirocco}>
+      {#f0dfd1}{message}'
+    '10': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#895bf3}{displayName}{#Sirocco}>
+      {#d3cadb}{message}'
+    '11': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+      {#Geyser}{message}'
+    '12': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#d34087}{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '13': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#d34087}{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '14': '{#Edward}%multiverse_world_alias% {#Sirocco}<&4{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<&3{displayName}{#Sirocco}>
+      {#e6d1f0}{message}'
+  # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
+  # Add as many lines as you need too
+  # cmi.chatmessagegroup.[id] permnission node to use
+  # Permission example: cmi.chatmessagegroup.2
+  GroupMessageFormat:
+    '1': '{message}'
+    '2': '{message}'
+    '3': '{message}'
+    '4': '{#f0ecd1}{message}'
+    '5': '{#d7f0d1}{message}'
+    '6': '{#d7f0d1}{message}'
+    '7': '{#d1d6f0}{message}'
+    '8': '{#d1d6f0}{message}'
+    '9': '{#f0dfd1}{message}'
+    '10': '{#d3cadb}{message}'
+    '11': '{#f0dfd1}{message}'
+    '12': '{#dbd1ca}{message}'
+    '13': '{#dbd1ca}{message}'
+    '14': '{#dbd1ca}{message}'
+    '15': '{#e6d1f0}{message}'
+  Colors:
+    # If set to true then all public messages will be filtered from color codes and will allow to colorize them with appropriate permission node
+    # cmi.colors.publicmessage.[colorName]
+    # Colors: black(&0), darkblue(&1), darkgreen(&2), darkaqua(&3), darkred(&4), darkpurple(&5), gold(&6), gray(&7), darkgray(&8), blue(&9), green(&a), aqua(&b), red(&c), lightpurple(&d), yellow(&e), white(&f), magic(&k), bold(&l), strikethrough(&m), underline(&n), italic(&o), reset(&r)
+    PublicMessage: true
+    PrivateMessage: true
+    # If set to true then /me messages will be filtered from color codes and will allow to colorize them with appropriate permission node
+    # cmi.colors.me.[colorName]
+    me: true
+    # If set to true, then color codes will get removed from text instead of leaving them if player dont have appropriate permission node for that color
+    CleanUp:
+      publicmessage: false
+      privatemessage: true
+      me: true
+      signs: false
+      books: true
+      itemname: true
+      itemlore: true
+      # List of strings to ignore when checking chat for color codes player cant use.
+      # This will bypass players colorcode restrictions and will allow usage of particular chat formats
+      # Applies only for public and private messages
+      WhiteList:
+      - '&c❤&7'
+    # If set to true then nickName will be filtered from color codes when player changes it
+    # cmi.colors.nickname.[colorName]
+    NickName: true
+  # If set to true, players public message who is in your ignore list will not be shown
+  IgnorePublicMessage: true
+  Tag:
+    # Enable or not tag system. This will inform player with his name mentioning in public chat if name have @ in front of it
+    Enabled: true
+    # When this is set to true, any player mentionings in public messages will be colorized and player will get informed as usual
+    # This is allot more heavier on server than usual tagging with @, so enable if you know what you are doing
+    HardCoreMode: true
+    # Determines color of taged user name in chat with @ in front of name/nickname. Sender should have cmi.tag.color
+    Color: '&b'
+    # Commands to be performed when player is tagged
+    # Variables like [playerName] will be replaced with tagged player name
+    # You can use [senderName] to include player name who tagged
+    CommandsOnTag:
+    - asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName] -s
+    - 'check:%parseother_{[playerName]}_{cmi_user_afk}%==True! msg! [senderName] !{#gold}
+      Note: [playerName] is afk \n Reason: %parseother_{[playerName]}_{cmi_user_afk_msg}%,
+      Time: %parseother_{[playerName]}_{cmi_user_afk_for}%'
+    # Will performd tag commands only when player is afk
+    OnlyWhenAfk: false
+    # When set to true, @ simbol will be removed
+    RemoveEta: true
+ChatBubble:
+  # Do you want to enable chat bubbles for public messages
+  # Each player can disable this with /options command personally
+  PublicMessages: true
+  # How high we should show chat bubble
+  Offset: 2.5
+  # Base time in seconds for chat bubble to be visible
+  ShowFor: 4
+  # Maximum time bubble will be shown for
+  MaxShowFor: 8
+  # Extra seconds to be added for each letter in a message
+  # This will allow to have shorter times for short messages and increase it for longer ones
+  ExtraTime: 0.02
+  # Scale of chat bubble, default 0.5
+  Scale: 0.5
+  # Line width before warping text to new line
+  LineWidth: 255
+  # Default Color code, this could be overriden if text itself was colorized
+  # Leave it empty for default transparent color
+  # Example of color code: {#gray}
+  BackgroundColor: '{#gray}'
+  # Do you want to add text shadow
+  Shadow: true

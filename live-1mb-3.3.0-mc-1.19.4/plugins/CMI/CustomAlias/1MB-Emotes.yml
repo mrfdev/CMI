@@ -15,8 +15,26 @@
 # Example: ca ?
 # In this case if player performs /ca wrongsub or /ca anotherwrong
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+#
+# 1moreblock emote thing
 
 CustomAlias:
+  _emoteConfig:
+    Cmds:
+    - msg! [playerName] You cannot run this in-game, the server owner has to manually
+      edit 1MB-Emotes.yml
+    - asConsole! cmi usermeta mrfloris add emoteServerOwner mrfloris
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteEconomy 100
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteEconomy stone
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteFamilyFriendly
+      yes
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteColorName
+      magenta
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteColorText
+      gold
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emotePrefix {#cerulean}[emote]
+    - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteCooldown 12
+    Perm: true
   angry:
     Cmds:
     - broadcast! {#cerulean} [playerName] is angry

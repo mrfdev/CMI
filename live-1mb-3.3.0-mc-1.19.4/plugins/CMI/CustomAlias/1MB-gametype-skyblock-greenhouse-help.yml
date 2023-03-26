@@ -1,0 +1,5 @@
+CustomAlias:
+  skyblock greenhouse help:
+    Cmds:
+    - asConsole! cmi ctext skyblockgreenhousehelp [playerName]
+    Tab: false
