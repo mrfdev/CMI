@@ -153,7 +153,7 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.4.10** (March 13th, 2023), for live-1mb-3.2.10-mc-1.19.3
+1MB CMI Project version **0.5.11** (March 26th, 2023), for live-1mb-3.2.10-mc-1.19.3
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.2.10-mc-1.19.3`
 ```
@@ -163,4 +163,4 @@ The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.2.10
 -mc- (Minecraft, but it is Paper jar at the moment)
 -1.19.3- (Minecraft version 1.19.3)
 ```
-**TLDR;** These files are for 1.19.4 and probably any CMI version 9.3.0.x / CMILib 1.2.4.x
+**TLDR;** These files are for 1.19.4 and probably any CMI version 9.5.0.x / CMILib 1.2.5.x
