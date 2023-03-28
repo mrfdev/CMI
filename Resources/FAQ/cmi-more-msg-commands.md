@@ -91,29 +91,33 @@ Note: `/cmi msg` requires the player's base-commands permission node `cmi.comman
     Tab: true
 ```
 
-- Next, at the bottom of CMI's `CustomAlias/CustomAlias.yml`, add the following commands on a new line: 
+- Next, save the below code to a file at this path: `~/plugins/CMI/CustomAlias/1MB-more-msg-cmds.yml`, and type `/cmi reload`
 
-Note: Make sure the indendation is with spaces, and matches the stuff above it)
 ```yaml
+CustomAlias:
   w:
     Cmds:
-    - asPlayer! cmi msg $1 $2-
-    CustomTabs:
-    - '[playername]'
+    - asPlayer! cmi msg $1-
+    AddTabs: true
   whisper:
     Cmds:
-    - asPlayer! cmi msg $1 $2-
-    CustomTabs:
-    - '[playername]'
+    - asPlayer! cmi msg $1-
+    AddTabs: true
   tell:
     Cmds:
-    - asPlayer! cmi msg $1 $2-
-    CustomTabs:
-    - '[playername]'
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  m:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  pm:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
 ```
 
-Note: `[playername]` is all players, but not vanished players. 
-Note: You can obviously customize the above commands as you desire.
+Note: You can customize the above commands as you desire.
 
 - Before we are done, as promised some additional permission information. `/cmi checkperm msg` discloses to us a few specific permissions, review them all for a custom setup and full control:
 ```
@@ -122,10 +126,9 @@ cmi.command.msg.[maingroupname].send - Allows to send private messages to specif
 cmi.command.msg.vanish - Allows to send private messages to vanished players
 ```
 
-- And finally; Start the server back up again and check to guarantee that everything's working properly. 
+- And finally, if you get red commands, then /stop, and start the server back up again.
 
 ---
 
-More information about Luckperms usage: https://luckperms.net/wiki/Home
-More information about CMI's custom Aliases: https://www.zrips.net/cmi/commands/custom-alias/
-
+- More information about Luckperms usage: https://luckperms.net/wiki/Home
+- More information about CMI's custom Aliases: https://www.zrips.net/cmi/commands/custom-alias/
