@@ -142,8 +142,8 @@ info:
     noserver: '&cCan''t find server by this name!'
     server: '&eServer: &7[name]'
   variables:
-    am: '&eAM'
-    pm: '&ePM'
+    am: '{#009bcc}am'
+    pm: '{#009bcc}pm'
     Online: '&6Online'
     Offline: '&cOffline'
     TrueColor: '&2'
@@ -264,10 +264,13 @@ info:
   spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
     with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '&eWelcome &6[playerDisplayName] &eto our server!'
-  LogoutCustom: ' &6[playerDisplayName] &eleft the game'
-  LoginCustom: ' &6[playerDisplayName] &ejoined the game'
-  deathlocation: '&eYou died at x:&6[x]&e, y:&6[y]&e, z:&6[z]&e in &6[world]'
+  FirstJoin: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
+    to 1MoreBlock.com!'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r {#Feijoa}left.'
+  LoginCustom: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome back &6[playerDisplayName]
+    {#Feijoa}❤'
+  deathlocation: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
+    y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]'
   book:
     exploit: '&cYou cant create book with more than [amount] pages'
   combat:
@@ -304,7 +307,7 @@ info:
     NonEditable: '&eEdit mode disabled'
   vanishSymbolOn: '&8[&7H&8]&r'
   vanishSymbolOff: ''
-  afkSymbolOn: '&8[&7Afk&8]&r'
+  afkSymbolOn: '&6●'
   afkSymbolOff: ''
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   pvp:
@@ -855,9 +858,15 @@ Chat:
   LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
   shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
   # Use \n to add new line
-  publicHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  privateHover: '&eSent time: &6%server_time_hh:mm:ss%'
-  staffHover: '&eSent time: &6%server_time_hh:mm:ss%'
+  publicHover: '{#Feijoa}Player: {#Geyser}%cmi_user_display_name%{#Feijoa}, ({#Geyser}%luckperms_primary_group_name%{#Feijoa})\n{#Feijoa}Msg
+    was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
+    %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomes_points%
+    \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
+    / Lvls: {#Geyser}%jobs_total_levels%\n&8(click to send private msg)&r'
+  privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
+    \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
+  staffHover: 'Player: %cmi_user_name%, {#Edward}(%cmi_user_group%)\n Chat sent: &6%server_time_hh:mm:ss%&r
+    \n World: {#Edward}%player_world%&r'
   helpopHover: '&eSent time: &6%server_time_hh:mm:ss%'
   link: '&l&4[&7LINK&4]'
   item: '&7[%cmi_iteminhand_realname%[amount]&7]'
