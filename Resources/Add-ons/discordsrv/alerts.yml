@@ -169,6 +169,10 @@ Alerts:
       - '#player.hasPermission("cmi.command.staffmsg")'
       - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
       - "(#command.split(\"\\s+|$\")[1].equals(\"staffmsg\"))"
+      - "(#args.size() > 1)"
+      - "!(#command.split(\"\\s+|$\")[2].equals(\"on\"))"
+      - "!(#command.split(\"\\s+|$\")[2].equals(\"off\"))"
+      - "!(#command.split(\"\\s+|$\")[2].equals(\"toggle\"))"
     Embed:
       Color: "#000001"
       Author:
