@@ -6,7 +6,7 @@
 
 Alerts:
 
-# mrfloris log sign changes to spylog channel
+# mrfloris > log sign changes to spylog channel
   - Trigger: SignChangeEvent
     Channel: spydog
     Conditions:
@@ -18,7 +18,7 @@ Alerts:
         Name: '**SIGN SPY**'
       Description: "Placed by `{name}` : `[/tppos ${#event.getBlock().getLocation().getBlockX() + \" \" + #event.getBlock().getLocation().getBlockY() + \" \" + #event.getBlock().getLocation().getBlockZ()} {world}]`\n```\n${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
 
-# mrfloris log cmi msgs to spylog channel
+# mrfloris > log cmi msgs to spylog channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: spydog
     Conditions:
@@ -31,7 +31,7 @@ Alerts:
         Name: '**MSG SPY**'
       Description: "Message by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% {world}` \n ```\n/${#command}```"
 
-# mrfloris log whisper and tell to spylog channel
+# mrfloris > log whisper and tell to spylog channel
   - Trigger: [/w, /tell]
     Channel: spydog
     Embed:
@@ -41,7 +41,7 @@ Alerts:
         Name: '**MSG SPY**'
       Description: "Whisper by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% #{world}` \n ```\n/${#command}```"
 
-# mrfloris broadcast ingame broadcast msgs to discord global channel
+# mrfloris > broadcast ingame broadcast msgs to discord global channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -54,7 +54,7 @@ Alerts:
         Name: '**BROADCAST**'
       Description: "`{username} posted:`\n```md\n# ${#allArgs}\n```"
 
-# mrfloris announce mcMMO xprate events to discord (when it starts)
+# mrfloris > announce mcMMO xprate events to discord (when it starts)
   - Trigger: [/xprate]
     Channel: global
     Conditions:
@@ -67,7 +67,7 @@ Alerts:
         Name: '**BOOSTER EVENT**'
       Description: "```md\n# Server Boosters have been turned on!\n- mcMMO XP Rate is set to: ${#args.get(0)}x\n```\nCommands: `/mctop, /mcrank, /mctop`"
 
-# mrfloris announce mcMMO xprate events to discord (when it stops)
+# mrfloris > announce mcMMO xprate events to discord (when it stops)
   - Trigger: [/xprate]
     Channel: global
     Conditions:
@@ -79,7 +79,7 @@ Alerts:
         Name: '**BOOSTER EVENT**'
       Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
 
-# mrfloris announce mcMMO xprate events to discord (when it stops)
+# mrfloris > announce mcMMO xprate events to discord (when it stops)
   - Trigger: [/xprate]
     Channel: global
     Conditions:
@@ -91,7 +91,7 @@ Alerts:
         Name: '**BOOSTER EVENT**'
       Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
 
-# mrfloris log cmi set bans to spydog channel
+# mrfloris > log cmi set bans to spydog channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '925133677422317598'
     Conditions:
@@ -105,7 +105,7 @@ Alerts:
         Name: '**PLAYER BANNED**'
       Description: "`{username}` has banned `${#args.get(1)}`\n```\n/${#command}```"
 
-# mrfloris log cmi unbans to spylog channel
+# mrfloris > log cmi unbans to spylog channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '925133677422317598'
     Conditions:
@@ -119,7 +119,7 @@ Alerts:
         Name: '**PLAYER UN-BANNED**'
       Description: "`{username}` has removed the ban on `${#args.get(1)}`\n```\n/${#command}```"
 
-# mrfloris log regular bans just in case
+# mrfloris > log regular bans just in case
   - Trigger: [/ban, /unban]
     Channel: '925133677422317598'
     Embed:
@@ -129,7 +129,7 @@ Alerts:
         Name: '**DEBUG**'
       Description: "`${#args.get(0)}` by `{username}` on `${#args.get(1)}`\n```\n/${#command}```"
 
-# mrfloris every once in a while when someone reaches a new powerlevel in mcMMO, broadcast it to public global discord channel
+# mrfloris > every once in a while when someone reaches a new powerlevel in mcMMO, broadcast it to public global discord channel
 # learned this from PseudoPanda https://ptb.discord.com/channels/135634590575493120/889139760067645460/889140521799417867
   - Trigger: McMMOPlayerLevelUpEvent
     Channel: global
@@ -162,7 +162,7 @@ Alerts:
       Footer:
         Text: "Check your own MMO progress in-game: /mcstats, /mcrank, /mctop"
 
-# mrfloris broadcast private cmi staffmsg to private #team channel
+# mrfloris > broadcast private cmi staffmsg to private #team channel
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '925133677422317598'
     Conditions:
@@ -176,7 +176,7 @@ Alerts:
         Name: '{username} (${#player.address.address.hostAddress}) said via /staffmsg:'
       Description: "`/${#allArgs}`"
 
-# mrfloris log book and quill signing to spygod channel (inspired by Zerek https://ptb.discord.com/channels/135634590575493120/889139760067645460/892857994415599676)
+# mrfloris > log book and quill signing to spygod channel (inspired by Zerek https://ptb.discord.com/channels/135634590575493120/889139760067645460/892857994415599676)
   - Trigger: PlayerEditBookEvent
     Channel: spydog
     Conditions:
@@ -188,7 +188,7 @@ Alerts:
         Name: '{username} has completed a Book'
       Description: "**Title:** `${#event.getNewBookMeta().getTitle()}` \n**Author:** `${#event.getNewBookMeta().getAuthor()}` \n ```${T(java.lang.String).join('``` ```',#event.getNewBookMeta().getPages())} \n```"
 
-# mrfloris broadcast account linking to public global discord channel (inspired by Wolfie https://ptb.discord.com/channels/135634590575493120/889139760067645460/956269618249474100)
+# mrfloris > broadcast account linking to public global discord channel (inspired by Wolfie https://ptb.discord.com/channels/135634590575493120/889139760067645460/956269618249474100)
   - Trigger: AccountLinkedEvent
     Channel: global
     Embed:
@@ -200,7 +200,7 @@ Alerts:
         Discord acccount: <@${#discordsrv.accountLinkManager.getDiscordId(player.uniqueId)}>
       Timestamp: true
 
-# mrfloris broadcast someone going afk manually or automatically to public global discord channel
+# mrfloris > broadcast someone going afk manually or automatically to public global discord channel
   - Trigger: CMIAfkEnterEvent
     Async: true
     Conditions:
@@ -217,7 +217,7 @@ Alerts:
         - "World:;`%cmi_user_world_formatted%`;true"
         - "Type;${#event.getType().toString() == 'manual' ? 'Manual' : 'Automatic'};false"
 
-# mrfloris Send a '/cmi afk' alert when someone returns from AFK
+# mrfloris > Send a '/cmi afk' alert when someone returns from AFK
   - Trigger: CMIAfkLeaveEvent
     Async: false
     Conditions:
@@ -235,7 +235,7 @@ Alerts:
       Footer:
         Text: "Time away: %cmi_user_afk_for%"
 
-# mrfloris Private channel player-join event (with ip, etc)
+  # mrfloris > Global channel: player-join event (without ip, etc)
   - Trigger: PlayerJoinEvent
     Channel: global
     Conditions:
@@ -249,11 +249,11 @@ Alerts:
       Fields:
         - "World:;`{world}`;true"
         - "Gamemode:;`${#player.gameMode.name().toLowerCase()}`;true"
-        - "Discord:;<@${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)}> [:link:](https://ptb.discord.com/channels/487398800353263616/721697397658353725/839120449887404062);true"
+        - "Discord:;<@${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)}>;true"
       Footer:
         Text: "Total players online: ${#server.onlinePlayers.size()}"
 
-# mrfloris in-game /cmi maintenance true msghere
+# mrfloris > in-game /cmi maintenance true msghere
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -274,7 +274,7 @@ Alerts:
       Footer:
         Text: "Thank you for your patience, we will be back soon."
 
-# mrfloris in-game /cmi maintenance false
+# mrfloris > in-game /cmi maintenance false
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -293,14 +293,14 @@ Alerts:
         - "We are back from:;%cmi_maintenance_message%;false"
         - "Are you the first?;Players can join again!;false"
 
-# mrfloris Private player-join event
+# mrfloris > Private player-join event
 # - v002
 # - Includes player IP
 # - SilentJoin perm ignored
 # - Meant for private channel
 # - Tries to link to linked Discord ID
 
-# mrfloris Private channel player-join event (with ip, etc)
+# mrfloris > Private channel player-join event (with ip, etc)
   - Trigger: PlayerJoinEvent
     Channel: privateChannelNameOrID
     Embed:
@@ -318,7 +318,7 @@ Alerts:
       Footer:
         Text: "Total players online: ${#server.onlinePlayers.size()}"
 
-# mrfloris whitelist event
+# mrfloris > whitelist event
   - Trigger: /whitelist
     Channel: global
     Conditions:
@@ -330,7 +330,7 @@ Alerts:
         Name: '**WHITELIST EVENT**'
       Description: "${#args.get(1)} added to whitelist"
 
-# mrfloris cmi gamemode switch between survival and creative, assumes they have the permission
+# mrfloris > cmi gamemode switch between survival and creative, assumes they have the permission
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: '952183639255441468'
     Conditions:
