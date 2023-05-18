@@ -249,7 +249,7 @@ Alerts:
       Fields:
         - "World:;`{world}`;true"
         - "Gamemode:;`${#player.gameMode.name().toLowerCase()}`;true"
-        - "Discord:;<@${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)}>;true"
+        - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId) == null ? 'None' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.uniqueId)+'>'};true"
       Footer:
         Text: "Total players online: ${#server.onlinePlayers.size()}"
 
