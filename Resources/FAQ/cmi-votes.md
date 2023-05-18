@@ -73,7 +73,7 @@ Counts, display, and reward players voting.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Votes
 
-- Get NuVotifier (<https://www.spigotmc.org/resources/13449/>) / (<https://ci.velocitypowered.com/job/NuVotifier/>)
+- Get NuVotifier (<https://www.spigotmc.org/resources/13449/>) / (<[https://ci.velocitypowered.com/job/NuVotifier/](https://github.com/NuVotifier/NuVotifier/releases)>)
 
 - Next, confirm that NuVotifier works properly, see incoming votes appear in the console.
 
