@@ -153,7 +153,7 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.5.12** (March 26th, 2023), for live-1mb-3.3.0-mc-1.19.4
+1MB CMI Project version **0.5.13** (May 20th, 2023), for live-1mb-3.3.0-mc-1.19.4
 
 The `1MoreBlock.com:25565` Minecraft Survival server is marked: `live-1mb-3.3.0-mc-1.19.4`
 ```
