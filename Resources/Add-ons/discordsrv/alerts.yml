@@ -163,22 +163,15 @@ Alerts:
         Text: "Check your own MMO progress in-game: /mcstats, /mcrank, /mctop"
 
 # mrfloris > broadcast private cmi staffmsg to private #team channel
-  - Trigger: PlayerCommandPreprocessEvent 
-    Channel: '925133677422317598'
-    Conditions:
-      - '#player.hasPermission("cmi.command.staffmsg")'
-      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
-      - "(#command.split(\"\\s+|$\")[1].equals(\"staffmsg\"))"
-      - "(#args.size() > 1)"
-      - "!(#command.split(\"\\s+|$\")[2].equals(\"on\"))"
-      - "!(#command.split(\"\\s+|$\")[2].equals(\"off\"))"
-      - "!(#command.split(\"\\s+|$\")[2].equals(\"toggle\"))"
+# 1MoreBlock.com CMI /staffmsg alert version 2.0.1, build 019 (thank you the456gamer & zrips)
+  - Trigger: CMIStaffMessageEvent
+    Channel: team
     Embed:
       Color: "#000001"
       Author:
-        ImageUrl: "{embedavatarurl}"
-        Name: '{username} (${#player.address.address.hostAddress}) said via /staffmsg:'
-      Description: "`/${#allArgs}`"
+        ImageUrl: "https://crafatar.com/avatars/${#event.getSentBy() instanceof T(org.bukkit.entity.Player) ? #event.getSentBy().getUniqueId().toString() : 'f78a4d8dd51b4b3998a3230f2de0c670'}?overlay"
+        Name: '${#event.getSentBy().getName()}'
+      Description: "`${#event.getMessage()}`"
 
 # mrfloris > log book and quill signing to spygod channel (inspired by Zerek https://ptb.discord.com/channels/135634590575493120/889139760067645460/892857994415599676)
   - Trigger: PlayerEditBookEvent
