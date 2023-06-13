@@ -977,31 +977,31 @@ CustomAlias:
     Perm: true
   elightning:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   shock:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   eshock:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   esmite:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   strike:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   estrike:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   ethor:
     Cmds:
-    - cmi thor $1-
+    - cmi smite $1-
     AddTabs: true
   elist:
     Cmds:
