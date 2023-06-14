@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.1.8 build 013
+## Version 0.2.0 build 015
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -23,6 +23,7 @@ Alerts:
     Channel: spydog
     Conditions:
       - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#args.size() > 1)"
       - "(#command.split(\"\\s+|$\")[1].equals(\"msg\"))"
     Embed:
       Color: "#000001"
@@ -163,9 +164,8 @@ Alerts:
         Text: "Check your own MMO progress in-game: /mcstats, /mcrank, /mctop"
 
 # mrfloris > broadcast private cmi staffmsg to private #team channel
-# 1MoreBlock.com CMI /staffmsg alert version 2.0.1, build 019 (thank you the456gamer & zrips)
   - Trigger: CMIStaffMessageEvent
-    Channel: team
+    Channel: '12345'
     Embed:
       Color: "#000001"
       Author:

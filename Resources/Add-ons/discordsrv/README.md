@@ -26,7 +26,7 @@ Okay, **let's get started**. Thank you for being interested in this little add-o
 
 - Get the alerts.yml and put it in `~/plugins/DiscordSRV/` and do not run the `discord reload` command just yet.
 
-- Customize the globally set channels from your DisordSRV's config.yml, to match the alerts as you would prefer it. Optionally add new ones for stuff like #spydog or #watchdog, or right click specific channels in your Discord server and get the unique id for the channel names. 
+- Customize the globally set channels from your DisordSRV's config.yml, to match the alerts as you would prefer it. Optionally add new ones for stuff like #spydog or #watchdog, or right-click specific channels in your Discord server and get the unique id for the channel names. 
 
 - Optionally remove any alerts you do not want.
 
@@ -53,4 +53,4 @@ TODO, write this text
 
 -  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
 
-- Last updated on June 17th, 2022 | Version 0.1.8 build 013 (second alpha, lets start a collection), by Floris
+- Last updated on June 14th, 2023 | Version 0.2.0 build 015 (third alpha, let's start a collection), by Floris & contributors
