@@ -498,3 +498,21 @@ Alerts:
       Color: "#33ff33"
       Title:
         Text: "${#event.getEntity().getOwner().getName()}'s ${#event.getEntity().getType().toString().toLowerCase()} was killed by ${#event.getEntity().getLastDamageCause().getCause().toString().toLowerCase()}"
+
+  # 1MoreBlock.com PlayerShopGUI+ /ah alert version 1.0.1, build 003 by mrfloris / the456gamer
+  - Trigger: CreateItemLotEvent
+    Channel: '12345'
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "https://example.com/market.png"
+        Name: '1MB Global /market'
+      Description: "Player `${#event.getPlayer().getName()}` put an item up for sale: `${#event.getQuantity()}`x `${(#event.getItemStack().getItemMeta().displayName() == null) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getItemStack().translationKey())) : ((T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName()).length() > 25) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName()).substring(0, 23) + '...' : T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName())) + ' (' + T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getItemStack().translationKey())) + ')'}` for $`${#event.getPrice()}`."
+  - Trigger: PurchaseItemLotEvent
+    Channel: '12345'
+    Embed:
+      Color: "#000001"
+      Author:
+        ImageUrl: "https://example.com/market.png"
+        Name: '1MB Global /market'
+      Description: "Player **`${#event.getBuyer().getName()}`** bought `${#event.getQuantity()}`x `${(#event.getItemStack().getItemMeta().displayName() == null) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getItemStack().translationKey())) : ((T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName()).length() > 25) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName()).substring(0, 23) + '...' : T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName())) + ' (' + T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getItemStack().translationKey())) + ')'}` from `${#event.getSeller().getName()}` for $`${#event.getShopItem().getPrice()}`."
