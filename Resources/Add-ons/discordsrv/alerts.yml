@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.0 build 015
+## Version 0.2.1 build 016
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -19,6 +19,7 @@ Alerts:
       Description: "Placed by `{name}` : `[/tppos ${#event.getBlock().getLocation().getBlockX() + \" \" + #event.getBlock().getLocation().getBlockY() + \" \" + #event.getBlock().getLocation().getBlockZ()} {world}]`\n```\n${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
 
 # mrfloris > log cmi msgs to spylog channel
+# Released here: https://discord.com/channels/135634590575493120/1118487420070006854
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: spydog
     Conditions:
@@ -43,6 +44,7 @@ Alerts:
       Description: "Whisper by `{username}`, Location: `/tppos %player_x% %player_y% %player_z% #{world}` \n ```\n/${#command}```"
 
 # mrfloris > broadcast ingame broadcast msgs to discord global channel
+# Released here: https://discord.com/channels/135634590575493120/1121819783189508106
   - Trigger: PlayerCommandPreprocessEvent 
     Channel: global
     Conditions:
@@ -164,6 +166,7 @@ Alerts:
         Text: "Check your own MMO progress in-game: /mcstats, /mcrank, /mctop"
 
 # mrfloris > broadcast private cmi staffmsg to private #team channel
+# Released here: https://discord.com/channels/135634590575493120/1108842110976786483
   - Trigger: CMIStaffMessageEvent
     Channel: '12345'
     Embed:
