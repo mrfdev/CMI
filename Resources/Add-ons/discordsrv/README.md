@@ -53,4 +53,4 @@ TODO, write this text
 
 -  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
 
-- Last updated on June 14th, 2023 | Version 0.2.0 build 015 (third alpha, let's start a collection), by Floris & contributors
+- Last updated on July 2nd, 2023 | Version 0.2.2 build 017 (public beta), by Floris & contributors

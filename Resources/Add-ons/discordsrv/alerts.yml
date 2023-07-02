@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.1 build 016
+## Version 0.2.2 build 017
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -95,8 +95,9 @@ Alerts:
       Description: "```md\n# Server Boosters have ended!\n- mcMMO XP Rate has been reset.\n```"
 
 # mrfloris > log cmi set bans to spydog channel
+# released here: https://discord.com/channels/135634590575493120/1125109568679182386
   - Trigger: PlayerCommandPreprocessEvent 
-    Channel: '925133677422317598'
+    Channel: '12345'
     Conditions:
       - '#player.hasPermission("cmi.command.ban")'
       - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
@@ -109,8 +110,9 @@ Alerts:
       Description: "`{username}` has banned `${#args.get(1)}`\n```\n/${#command}```"
 
 # mrfloris > log cmi unbans to spylog channel
+# released here: https://discord.com/channels/135634590575493120/1125109568679182386
   - Trigger: PlayerCommandPreprocessEvent 
-    Channel: '925133677422317598'
+    Channel: '12345'
     Conditions:
       - '#player.hasPermission("cmi.command.unban")'
       - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
@@ -124,7 +126,7 @@ Alerts:
 
 # mrfloris > log regular bans just in case
   - Trigger: [/ban, /unban]
-    Channel: '925133677422317598'
+    Channel: '12345'
     Embed:
       Color: "#000001"
       Author:
@@ -332,7 +334,7 @@ Alerts:
 
 # mrfloris > cmi gamemode switch between survival and creative, assumes they have the permission
   - Trigger: PlayerCommandPreprocessEvent 
-    Channel: '952183639255441468'
+    Channel: '12345'
     Conditions:
       - '#player.hasPermission("cmi.command.gm.creative")'
       - '#player.hasPermission("cmi.command.gm.survival")'
@@ -417,7 +419,7 @@ Alerts:
 
 # boredmanplays discordsrv player linked minecraft/discord event
   - Trigger: AccountLinkedEvent
-    Channel: '978254174665994290'
+    Channel: '12345'
     Embed:
       Color: "#869600"
       ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
@@ -432,7 +434,7 @@ Alerts:
 
 # boredmanplays discordsrv player unlinked minecraft/discord event
   - Trigger: AccountUnlinkedEvent
-    Channel: '978254174665994290'
+    Channel: '12345'
     Embed:
       Color: "#869600"
       ThumbnailUrl: "https://heads.discordsrv.com/head.png?&uuid=${#event.player.uniqueId}&name=${#event.player.name}&overlay"
@@ -447,7 +449,7 @@ Alerts:
 
 # boredmanplays player tried to join whitelisted server
   - Trigger: AsyncPlayerPreLoginEvent
-    Channel: '978254174665994290'
+    Channel: '12345'
     Conditions:
       - '#event.getLoginResult().toString().equals("KICK_WHITELIST")'
     Embed:
@@ -464,7 +466,7 @@ Alerts:
 
 # boredmanplays catch player trying to run sussy commands
   - Trigger: PlayerCommandPreprocessEvent
-    Channel: '978254174665994290'
+    Channel: '12345'
     Conditions:
       - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
     Content: |-
@@ -473,7 +475,7 @@ Alerts:
       
 # boredmanplays catch player trying to say sussy words
   - Trigger: AsyncPlayerChatEvent
-    Channel: '978254174665994290'
+    Channel: '12345'
     Conditions:
       - '#event.getMessage().toLowerCase().matches(".*(xray|hack|client|hax|aimbot|evade|evasion|evading|cheat).*")'
     Content: |-
