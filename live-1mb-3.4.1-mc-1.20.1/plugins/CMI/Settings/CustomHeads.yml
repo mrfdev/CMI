@@ -480,3 +480,13 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:NmNmMzY3NGIyZGRjMGVmN2MzOWUzYjljNmI1ODY3N2RlNWNmMzc3ZDJlYjA3M2YyZjNmZTUwOTE5YjFjYTRjOSJ9fX0=
+  camel:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:NzRiOGEzMzNkZmE5MmU3ZTVhOTVhZDRhZTJkODRiMWJhZmEzM2RjMjhjMDU0OTI1Mjc3ZjYwZTc5ZGFmYzhjNCJ9fX0=
+  sniffer:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:ODdhZDkyMGE2NmUzOGNjMzQyNmE1YmZmMDg0NjY3ZTg3NzIxMTY5MTVlMjk4MDk4NTY3YzEzOWYyMjJlMmM0MiJ9fX0=

@@ -293,7 +293,7 @@ Announcer:
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Learn
     more about our features on {#orange}&l/forums{#feijoa}.</T><H>Click to go to /forums.</H><C>forums</C>
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Level
-    up for perks from {#orange}&l/mcmmo{#feijoa}.</T><H>Click to go to /mcmmo.</H><C>mcmmo</C>
+    up for perks from {#orange}&l/mcMMO{#feijoa}.</T><H>Click to go to /mcMMO.</H><C>mcmmo</C>
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Level
     up for rewards from {#orange}&l/achievements{#feijoa}.</T><H>Click to go to /achievements.</H><C>achievements</C>
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG mcMMO commands: {#orange}&l/mcstats{#feijoa},
@@ -372,7 +372,7 @@ Announcer:
     all the types of fish on {#orange}&l/fish shop{#feijoa}.</T><H>Click to view /fish
     shop.</H><C>fish shop</C>
   - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB Third Era
-    (3.3.0) for Minecraft 1.19.4'
+    (%onemb_1mb_version%) for Minecraft %onemb_mc_version%'
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
     in the group First can have up to 1 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
@@ -448,3 +448,10 @@ Announcer:
     2nd, 8th, 15th, and 22nd of the month, there will be an mcMMO booster for an hour
   - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns to the
     3rd, 9th, 16th, and 23rd of the month, there will be a Jobs booster for an hour.
+updateNameplate:
+  Enabled: true
+  Repeat: false
+  Randomize: false
+  Feedback: true
+  Commands:
+  - asConsole! allPlayers! cmi nameplate [allPlayers] -pref:%luckperms__prefix%

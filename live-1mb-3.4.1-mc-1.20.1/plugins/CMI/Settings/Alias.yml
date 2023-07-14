@@ -34,11 +34,6 @@ Alias:
     Enabled: false
     Tab: true
   #  
-  # /cmi alertlist $1-
-  /alertlist:
-    Enabled: false
-    Tab: true
-  #  
   # /cmi aliaseditor $1-
   /aliaseditor:
     Enabled: false
@@ -163,6 +158,11 @@ Alias:
   #  
   # /cmi chat $1-
   /chat:
+    Enabled: true
+    Tab: true
+  #  
+  # /cmi chatcolor $1-
+  /chatcolor:
     Enabled: true
     Tab: true
   #  
@@ -883,6 +883,9 @@ Alias:
   # /cmi msg $1-
   /msg:
     Enabled: true
+    Tab: true
+  /w:
+    Enabled: false
     Tab: true
   #  
   # /cmi mute $1-

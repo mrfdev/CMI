@@ -60,13 +60,19 @@ ChatFilter:
       InformConsole: true
       Regex:
       - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(g(\W|\d|_|)+)+(e(\W|\d|_|)+)+(r(\W|\d|_|)+)+
-      - \b(?i)(N(\W|\d|_|)+)+(I(\W|\d|_|)+)+(G(\W|\d|_|)+)+(G(\W|\d|_|)+)+(E(\W|\d|_|)+)+(R(\W|\d|_|)+)+
+      - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(e(\W|\d|_|)+)+(r(\W|\d|_|)+)+
+      - \b(?i)(n(\W|\d|_|)+)+(e(\W|\d|_|)+)+(g(\W|\d|_|)+)+(e(\W|\d|_|)+)+(r(\W|\d|_|)+)+
+      - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(g(\W|\d|_|)+)+(a(\W|\d|_|)+)+
+      - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(g(\W|\d|_|)+)+(a(\W|\d|_|)+)+(h(\W|\d|_|)+)+
+      - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(a(\W|\d|_|)+)+(h(\W|\d|_|)+)+
       ReplaceWith: -badword-
       BlockType: others
       includePrivateMessages: true
       msgToStaff: '&4!STAFF!&6 [playerName] &4is swearing: &r[message]'
       Commands:
       - cmi ban [senderName] Hate speech not welcome
+      - 'discordsrv broadcast #1102580379434618961 **Chatfilter**: `[senderName]`
+        said `[message]`'
     filterlist:
       Enabled: true
       Group: DontSaytheseThings

@@ -30,6 +30,7 @@ joinServer:
   Enabled: true
   Commands:
   - delay! 0.4
+  - asConsole! cmi nameplate [playerName] reset -s
   - check:%luckperms_in_group_1mb_legendary%==yes! broadcast! {#Denim>} OMG, a &lLegendary
     player{#Cerulean<>} just joined!!{#Denim<}\n&r
   - check:%luckperms_in_group_1mb_epic%==yes! broadcast! {#Denim>} An &lEpic player{#Cerulean<>}
@@ -86,14 +87,16 @@ playerWorldChange:
   Commands:
   - check:%cmi_user_gamemode%==Survival! check:%cmi_user_flying%!=False! check:%cmi_user_tfly%==0!
     asConsole! cmi fly [playerName] false -s
-  - ifinworld:general#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
-    survival -s
-  - ifinworld:spawn#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
-    survival -s
-  - ifinworld:nether#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
-    survival -s
-  - ifinworld:end#! check:%cmi_user_name%!=mrfloris! asConsole! cmi gm [playerName]
-    survival -s
+  - ifinworld:general#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:wild#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:spawn#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:nether#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:end#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
 playerPreWorldChange:
   Enabled: true
   Commands:

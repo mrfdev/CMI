@@ -57,6 +57,7 @@ Chat:
   # It NEEDS to contain {message} otherwise we will ignore this setup
   # For 1.16+ servers you can use color gradients like '{#b3a28f>}{message}{#d7b8e6<}'
   # You can have more than 2 colors in gradient. To define it repeat {message} variable. For example '{#b3a28f>}{message}{#5c6999<>}{message}{#d7b8e6<}'
+  # Use %cmi_user_chatcolor% to add players choosen chat color
   GeneralMessageFormat: '{message}'
   Ranged:
     # Defines range of regular messages to travel
@@ -102,35 +103,35 @@ Chat:
 
   # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
   GroupFormat:
-    '1': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+    '1': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}{#Sirocco}>
       {#Geyser}{message}'
-    '2': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+    '2': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}{#Sirocco}>
       {#Geyser}{message}'
-    '3': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+    '3': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}{#Sirocco}>
       {#Geyser}{message}'
-    '4': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+    '4': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}{#Sirocco}>
       {#f0ecd1}{message}'
-    '5': '{#Edward}%multiverse_world_alias% {#Sirocco}<&2{displayName}{#Sirocco}>
+    '5': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&2{displayName}{#Sirocco}>
       {#d7f0d1}{message}'
-    '6': '{#Edward}%multiverse_world_alias% {#Sirocco}<&2{displayName}{#Sirocco}>
+    '6': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&2{displayName}{#Sirocco}>
       {#d7f0d1}{message}'
-    '7': '{#Edward}%multiverse_world_alias% {#Sirocco}<&9{displayName}{#Sirocco}>
+    '7': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&9{displayName}{#Sirocco}>
       {#d1d6f0}{message}'
-    '8': '{#Edward}%multiverse_world_alias% {#Sirocco}<&9{displayName}{#Sirocco}>
+    '8': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&9{displayName}{#Sirocco}>
       {#d1d6f0}{message}'
-    '9': '{#Edward}%multiverse_world_alias% {#Sirocco}<&6{displayName}{#Sirocco}>
+    '9': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&6{displayName}{#Sirocco}>
       {#f0dfd1}{message}'
-    '10': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#895bf3}{displayName}{#Sirocco}>
+    '10': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%{#895bf3}{displayName}{#Sirocco}>
       {#d3cadb}{message}'
-    '11': '{#Edward}%multiverse_world_alias% {#Sirocco}<&e{displayName}{#Sirocco}>
+    '11': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}{#Sirocco}>
       {#Geyser}{message}'
-    '12': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#d34087}{displayName}{#Sirocco}>
+    '12': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%{#d34087}{displayName}{#Sirocco}>
       {#dbd1ca}{message}'
-    '13': '{#Edward}%multiverse_world_alias% {#Sirocco}<{#d34087}{displayName}{#Sirocco}>
+    '13': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%{#d34087}{displayName}{#Sirocco}>
       {#dbd1ca}{message}'
-    '14': '{#Edward}%multiverse_world_alias% {#Sirocco}<&4{displayName}{#Sirocco}>
+    '14': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}{#Sirocco}>
       {#dbd1ca}{message}'
-    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<&3{displayName}{#Sirocco}>
+    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&3{displayName}{#Sirocco}>
       {#e6d1f0}{message}'
   # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
   # Add as many lines as you need too
@@ -178,6 +179,20 @@ Chat:
     # If set to true then nickName will be filtered from color codes when player changes it
     # cmi.colors.nickname.[colorName]
     NickName: true
+    # Determines /cmi catcolor command contents. What player can pick will be determined by cmi.colors.publicmessages.[colorCode] and will be used in %cmi_user_chatcolor% placeholder
+    Picker:
+    - '&f'
+    - '&2'
+    - '&3'
+    - '&7'
+    - '&8'
+    - '&a'
+    - '&b'
+    - '&c'
+    - '&e'
+    - '&6'
+    - '{#00e625}'
+    - '{#brown}'
   # If set to true, players public message who is in your ignore list will not be shown
   IgnorePublicMessage: true
   Tag:
@@ -205,21 +220,21 @@ ChatBubble:
   # Each player can disable this with /options command personally
   PublicMessages: true
   # How high we should show chat bubble
-  Offset: 2.5
+  Offset: 2.7
   # Base time in seconds for chat bubble to be visible
-  ShowFor: 4
+  ShowFor: 5
   # Maximum time bubble will be shown for
-  MaxShowFor: 8
+  MaxShowFor: 10
   # Extra seconds to be added for each letter in a message
   # This will allow to have shorter times for short messages and increase it for longer ones
-  ExtraTime: 0.02
+  ExtraTime: 0.03
   # Scale of chat bubble, default 0.5
-  Scale: 0.5
+  Scale: 0.9
   # Line width before warping text to new line
   LineWidth: 255
   # Default Color code, this could be overriden if text itself was colorized
   # Leave it empty for default transparent color
   # Example of color code: {#gray}
-  BackgroundColor: '{#gray}'
+  BackgroundColor: '{#1a1219}'
   # Do you want to add text shadow
   Shadow: true
