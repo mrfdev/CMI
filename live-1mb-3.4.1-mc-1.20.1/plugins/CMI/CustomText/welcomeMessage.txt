@@ -1,11 +1,11 @@
 <AutoPage><AutoAlias><NoReqPermission>
 {#Cerulean}
 img:head:[playerName] 8
-imgtext:{#Lochmara} »&2 1MoreBlock {#Feijoa} 3.3.0 for Minecraft 1.19.4
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:<T>{#Lochmara} »{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
-imgtext:{#Lochmara} »{#Feijoa} We are a family-friendly community.
-imgtext:{#Lochmara} »{#Feijoa} Respect players and their builds.
+imgtext:{#Lochmara} »{#white} SUMMER EVENTS ARE LIVE
+imgtext:{#Lochmara} »{#white} DROP PARTY every 2hrs @ /warp summer
+imgtext:{#Lochmara} »{#white} https://omgboards.com/threads/263889/
 imgtext:<T>{#Lochmara} »{#Feijoa} Before playing, learn: {#orange}&l/rules</T><H>Click to read our rules</H><C>rules</C>
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
@@ -44,7 +44,7 @@ imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %o
 &2 Some 1MoreBlock links:
 {#Feijoa} •&l&m                                                &r{#Feijoa}•
 <T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>www.1moreblock.com</URL>
-<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/KzTDhxvm</T><H>Click to load our Discord Server</H><URL>discord.gg/KzTDhxvm</URL>
+<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/floris</T><H>Click to load our Discord Server</H><URL>discord.gg/floris</URL>
 <T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>twitch.tv/mrfloris</URL>
 <T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>youtube.com/mrfloris</URL>
 <T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>twitter.com/floris</URL>
