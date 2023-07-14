@@ -84,13 +84,13 @@ CustomAlias:
     Tab: false
   wild:
     Cmds:
-    - asConsole! cmi gm [playerName] survival -s
+    - check:$1!=info! asConsole! cmi gm [playerName] survival -s
     - check:$1==null! asPlayer! mvtp wild
     - check:$1==info! asConsole! cmi ctext wild [playerName]
   run:
     Cmds:
     - asConsole! cmi invsave [playerName]
-    - ifinworld:run@! tntrun join run
+    - ifinworld:run@! asConsole! trconsole join run [playerName]
     - delay! 2
     - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
       the /run game.'
@@ -108,7 +108,7 @@ CustomAlias:
     - asConsole! mvtp [playerName] legacy
   jackper:
     Cmds:
-    - asPlayer! mv tp jackper
+    - msg! [playerName] Oh, this is an old and now deprecated command.
   letmejackper:
     Cmds:
     - ifinworld:jackper! check:%cmi_user_name%==jackperbyte! asConsole! cmi gm creative
@@ -176,15 +176,10 @@ CustomAlias:
     Cmds:
     - cooldown:900?#! ifinworld:wild#! asConsole! cmi tfly [playerName] 120
     Perm: true
-  egghunt:
-    Cmds:
-    - msg! [playerName] &3 1MB Easter »&d The event has ended, check back again in
-      2022.
   egghunt fly:
     Cmds:
     - ifinworld:easter! asConsole! cmi tfly [playerName] 1
-    - msg! [playerName] {#magenta}The event is over, no more flying.
-    Perm: true
+    - ifinworld:easter! asConsole! cmi flyspeed [playerName] 2 -s
     Tab: false
   letmesushi:
     Cmds:
