@@ -1,12 +1,12 @@
-<AutoPage><AutoAlias>
+<AutoPage>
 &6
 &6 * &b Thanks for playing on our cool community.
 &6 * &e The 1MB server is a universe with players 
 &6 * &e from various locations and you're part of
 &6 * &e our community, considering supporting us?
 &6
-&6 * &e Donating after August 2020 will upgrade you
-&6 * &e to a special Blue Donator rank ($39 and over)
+&6 * &e Donations below $35 are considered anonymous
+&6 * &e And over $35 will receive the blue group/role
 &6
 &6 * &e Click on &3NEXT&e below, to get information
 &6 * &e about how to help and support our community.
