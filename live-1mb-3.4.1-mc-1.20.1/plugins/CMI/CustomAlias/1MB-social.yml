@@ -65,7 +65,7 @@ CustomAlias:
   tiktok:
     Cmds:
     - msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------
-    - msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} https://www.tiktok.com/@fjmfd
+    - msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} https://www.tiktok.com/@1MoreBlock
     - msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} 15s player fails
       videos.
     - msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r
