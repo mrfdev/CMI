@@ -205,16 +205,28 @@ Optimizations:
       tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
     JumpDefault: 100
-    # Defines time in seconds for accepting tpa or tpahere requests
-    TpaTime: 45
-    # Defines time in seconds for player being teleported after tpa or tpahere is being accepted
-    TpaWarmup: 0
-    # Defines if player can move when tpa or tpahere is being accepted
-    TpaMove: true
-    # Defines time in seconds for blocking player teleport offers after denying their request
-    TpaBlock: 90
-    # Defines time in seconds for bypassing prevented teleportation to unsafe location
-    TpBypass: 15
+    Tpa:
+      # Defines time in seconds for accepting tpa or tpahere requests
+      Time: 45
+      # Defines time in seconds for player being teleported after tpa or tpahere is being accepted
+      Warmup: 0
+      # Defines if player can move when tpa or tpahere is being accepted
+      Move: true
+      # Defines time in seconds for blocking player teleport offers after denying their request
+      Block: 90
+      # Distance in blocks for max teleportation range
+      # Set to 0 if you want to disable it
+      # Having it at any positive number will prevent players requesting teleportations to player in other wolds in adition to limiting it by range between players
+      # Can be bypassed by player having cmi.command.tpa.max.[blockcount] permission node
+      MaxDistance: 0
+    TpaHere:
+      # Distance in blocks for max teleportation range
+      # Set to 0 if you want to disable it
+      # Can be bypassed by player having cmi.command.tpahere.max.[blockcount] permission node
+      MaxDistance: 0
+    Tp:
+      # Defines time in seconds for bypassing prevented teleportation to unsafe location
+      Bypass: 15
     # When set to true adds accept and deny buttons when sending tpa or tpahere requests
     DenyConfirm: true
     BlackListedItems:
@@ -239,7 +251,7 @@ Optimizations:
     # When set to false we will not include teleport location when teleporting around with worldedit compass
     # When set to true we will include each teleport action, even if you simply jumped around with compass
     BackWithWE: true
-    # List of worlds to whichones player can't go back with /back command
+    # List of worlds to which players can't return using the /back command
     BackBlackList:
     - run
     - santa
@@ -258,7 +270,7 @@ Optimizations:
     Record: true
     # How long in second to wait until players ip is being recorded into data base
     # This only applies for offline servers to allow for player first of all to login before recording ip
-    # Try to keep this value lower than your login plugin's allowed login time
+    # Try to keep this value higher than your login plugin's allowed login time so that we are recording actual players IP who has permission to use this name
     delay: 30
   # Max amount of hp you can get when using /cmi maxhp command
   MaxHp: 200
@@ -351,11 +363,20 @@ Optimizations:
       PointTo: true
       # How many lines you want to show when using /near command
       Count: 10
+    lastonline:
+      # Time in seconds to be used for lastonline command when showing aditional information about amount of players who logged off in defined period
+      Timers:
+        Time1: 3600
+        Time2: 86400
+        Time3: 604800
+        Time4: 2592000
     Inv:
       # List of players which you should not be able to open inventories
       # This can still be bypassed if you are OP
       BlackList:
       - Zrips
+      # Do you want to disable inv command on players who are offline
+      DisableOffline: false
     Clear:
       # When set to true, /cmi clear comamnd will require confirmation for it to be finalized
       Confirmation: true
@@ -455,6 +476,8 @@ ExploitPatcher:
   # While this is set to true players will be limited in how many pages they can create
   # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
+  # When enabled we will not allow usage of riptide while player has pweather set to rain while players world is in sunny state
+  Riptide: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
   Money: true
@@ -636,7 +659,7 @@ Afk:
   # Disables afk on camera movement
   DisableOnLookAround: false
   # Disables afk on fishing
-  DisableFishing: false
+  DisableFishing: true
   # Disables item pickup while afk
   DisableItemPickup: true
   PreventMobSpawning:
@@ -652,7 +675,7 @@ Afk:
   # Disables exp pickup while afk
   # Attention! Because of weird minecraft handling of exp orbs, best way is to set orb to 0exp and allow it to be obsorbed
   # So by enabling this exp obsorbed by afk players will have no effect
-  DisableExpPickup: false
+  DisableExpPickup: true
 Holograms:
   # Defines in milliseconds how often to check if player entered holograms trigger area
   # Bigger numbers can help slightly lower server load
@@ -817,14 +840,17 @@ Command:
     - cmi heal
     - cmi feed
     - cmi fly
-PlayerNotes:
-  # For how long to keep players notes in days
-  ExpiresIn: 30
-PlayerMail:
-  # For how long to keep players mail in days
-  ExpiresIn: 364
-  # Mailing to all players will send mails to players who loged into server in last x days
-  mailAllDays: 7
+  Notes:
+    # For how long to keep players notes in days
+    ExpiresIn: 30
+  Mail:
+    # For how long to keep players mail in days
+    ExpiresIn: 364
+    # Mailing to all players will send mails to players who loged into server in last x days
+    mailAllDays: 7
+    # How many mails we should keep for each player
+    # When email limit is reached oldest one will be removed
+    MaxMails: 50
 DisplayName:
   # If you have 3rd party plugin changing players display name, set this to false
   Change: true
@@ -970,6 +996,9 @@ Mirror:
   # Defines how far in blocks from mirror center you can build
   # This is mainly to protect from forgeting to turn off mirror and starting to build on different side of map
   MaxRange: 64
+  # When disabled block will not be broken in mirror mode
+  # This is mainly to prevent this feature being used for mining purposes and not for building
+  BreakDisabled: false
 NetherPortal:
   # Can prevent nether portal creation entirely. Option to bypass with cmi.netherportalbypass
   PreventCreation: true
@@ -1006,7 +1035,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 3
-# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, sonic_boom, 
+# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, sonic_boom, 
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1075,7 +1104,7 @@ Elytra:
     Time: 2
   # 1.13+ servers. Do you want to disable riptide enchant usage while flying with elytra and trident which has riptide enchant
   # This combination is dangerous as player can reach extreme speed's if allowed to use it
-  DisableRiptide: true
+  DisableRiptide: false
   Fix:
     # Disables option to damage yourself while flying with arrows to boost up
     PreventSelfDamage: true
@@ -1132,7 +1161,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, cherry_leaves, 
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1254,7 +1283,7 @@ Kits:
       Slot: 9
       Material: head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmNjYmY5ODgzZGQzNTlmZGYyMzg1YzkwYTQ1OWQ3Mzc3NjUzODJlYzQxMTdiMDQ4OTVhYzRkYzRiNjBmYyJ9fX0=
       Commands:
-      - closeinv!
+      - asPlayer! menu
     InfoButton:
       # Extra button to be used in case you want to provide any aditional information when clicking on it
       Use: false
@@ -1383,6 +1412,10 @@ inv:
     Potions: true
     # Set to false if you don't want to restore items
     Items: true
+    # List of materials we should not save
+    # Keep in mind that you might need to include all materials for colored items, like wool or shulker boxes
+    BlackListedItems:
+    - ''
 hunger:
   # Do you want to give more than 20 hunger for players
   overide: false
@@ -1564,6 +1597,10 @@ ShulkerBoxes:
   # When set to true, players will not have option to open shulker boxes while in combat
   # Combat timer can be defined under combat section
   PreventInCombat: true
+  # Money cost to open shulker box, if player doesn't have enough money then we will not allow to open shulker box from inventory
+  # Setting this to 0 will disable money requirement
+  # This can be bypassed with cmi.openshulker.free permission node
+  CostToOpen: 500.0
 Vanish:
   # Defines default states of vanish edit options for players
   # This will not have any effect if player already edited his vanish mode with vanishedit command
@@ -1621,6 +1658,7 @@ Player:
       acceptingTPA: true
       acceptingMoney: true
       chatbubble: true
+      pmSound: true
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1634,6 +1672,7 @@ Player:
       acceptingTPA: CLOCK
       acceptingMoney: KNOWLEDGE_BOOK
       chatbubble: LANTERN
+      pmSound: STONE_BUTTON
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
@@ -1785,6 +1824,17 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    blozzom:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     builders:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1797,6 +1847,17 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     legacy:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    olympus:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1840,7 +1901,7 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    jackper:
+    rustic:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1863,6 +1924,17 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     cave:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    chrome:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1918,6 +1990,28 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     wild:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    cave/bentobox:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    acid/bentobox:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -2302,6 +2396,58 @@ RandomTeleportation:
       minY: -64
       maxY: 320
     skyblock/bentobox:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    blozzom:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    olympus:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    rustic:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    chrome:
       Enabled: true
       MaxRange: 1000
       MinRange: 500
