@@ -17,10 +17,6 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
-  walk:
-    Cmds:
-    - asPlayer! infinityparkour $1-
-    AddTabs: true
   w:
     Cmds:
     - asPlayer! cmi msg $1-
