@@ -1,73 +1,151 @@
-VoteTokensTrade:
+spawn_oneblock_bucket:
   Locations:
-  - general;12493.0;79.0;-5339.0
-  Commands:
-  - asConsole! msg! [playerName] &a This trade allows you to convert old unstackable
-    vote tokens to newer ones that do stack. You give us 8, you get 8 back.
-  - cmi sound block_dispenser_dispense [playerName]
-  - bs open VoteTokens [playerName]
-halloweenlever:
-  Locations:
-  - halloween;1602.0;92.0;802.0
-  Commands:
-  - asConsole! cmi top [playerName] -s
-spawn_oneblock_dayshop:
-  Locations:
-  - acid;-369.0;58.0;337.0
-  - oneblock;10420.0;79.0;-7980.0
+  - oneblock;10420;79;-8020
+  - acid;-363;56;373
   NPC:
-  - 794_fa21577f-455f-4a1b-98d7-31885ffd3433_0
-  - 775_657b32c6-d047-4957-a20f-58255015075f_0
+  - 773_debf099c-b209-4295-b0da-f3d15baf0579_0
+  - 793_7717b0c0-cafc-43c2-8b32-08dd863bd761_0
   Commands:
-  - asPlayer! bs WeekShop
-spawn_oneblock_summerbosstrader:
+  - asPlayer! bs OneBlockBucketTrades
+thanksgivingturkey8:
+  Locations:
+  - thanksgiving;422;100;-547
   Commands:
-  - asPlayer! bs summerbossitems
-clock:
+  - 'msg! [playerName] {#gold}Caught it! #8 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+warpfishbeekeeper:
   Commands:
-  - click:rightclick! clock
+  - cooldown:300?#! asConsole! cmi give [playerName] honeycombblock 1
+spawnteamsign:
+  Locations:
+  - spawn;7;64;133
+  Commands:
+  - asPlayer! team
+spawn_general_oneblockspawn:
+  Locations:
+  - general;80;82;-174
+  Commands:
+  - asPlayer! oneblock spawn
+florishometpssign:
+  Locations:
+  - general;-263;81;191
+  Commands:
+  - asPlayer! tps
+  - delay! 0.1
+  - asPlayer! cmi tps
+skyblockcobblegen:
+  Locations:
+  - skyblock;-4;139;25
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e To learn more about Generators, visit:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
   - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-  SignLines:
-  - '&0&l Time:'
-  - '&7~~~~~~~~~~~~'
-  - '&9&lTry with /clock'
-  - ' '
-  Public: true
-spawn_skygrid_dailyshop:
+spawn_oneblock_island:
   Locations:
-  - skygrid;3.0;129.0;-3.0
+  - oneblock;10400;81;-7990
   NPC:
-  - 802_c960b6e0-fe97-478c-8078-e9299e8cf579_0
+  - 769_6e157205-7396-4ac5-97fb-2322267cb892_0
   Commands:
-  - asPlayer! bs WeekShop
+  - asPlayer! oneblock
+spawn_oneblock_menu:
+  Locations:
+  - oneblock;10400;81;-8010
+  NPC:
+  - 770_67d3a041-e2ed-4836-a690-2680a9a29918_0
+  Commands:
+  - asPlayer! oneblock menu
+spawnstaff:
+  Locations:
+  - spawn;-7;64;133
+  Commands:
+  - asPlayer! staff
+templateshop:
+  Commands:
+  - asConsole! cmi openbook templates [playerName]
+spawn_general_skygridspawn:
+  Locations:
+  - general;80;80;-174
+  Commands:
+  - asPlayer! skygrid spawn
+warpfishworlds:
+  Locations:
+  - general;11884;152;18851
+  Commands:
+  - asPlayer! menu worlds
+VoteTokenExchange:
+  Locations:
+  - general;12497;79;-5342
+  Commands:
+  - asConsole! msg! [playerName] &a This trade allows you to exchange certain vote
+    tokens. You give us 3 and a streak token, you get 3 of the other type back.
+  - cmi sound block_dispenser_dispense [playerName]
+  - bs open VoteExchange [playerName]
+spawn_skyblock_menu:
+  Locations:
+  - skyblock;-108;138;4
+  NPC:
+  - 783_298ce619-6630-4b9e-bc35-b0f862c96716_0
+  Commands:
+  - asPlayer! skyblock menu
+spawnversionmenu:
+  Locations:
+  - spawn;6;64;146
+  Commands:
+  - asPlayer! menu
+spawnsignwarps:
+  Locations:
+  - wild;79;85;41
+  - acid;-391;56;361
+  - skyblock;-6;135;-5
+  - cave;-119;65;257
+  - oneblock;10411;81;-8000
+  - skygrid;-17;130;6
+  Commands:
+  - asPlayer! warps
+spawnnewplayer:
+  Locations:
+  - spawn;2;64;135
+  Commands:
+  - asPlayer! newplayer
 spawn_wild_pointstrader:
   Locations:
-  - wild;93.0;82.0;70.0
+  - wild;93;82;70
   NPC:
   - 521_a558af5e-40eb-47a0-97d5-121b8466a4f2_0
   Commands:
   - asPlayer! points
-spawnrulessign:
-  Locations:
-  - spawn;-2.0;66.0;139.0
+spawn_spawn_summerbosstrader:
   Commands:
-  - asPlayer! rules
-spawnertrader:
+  - asPlayer! bs summerbossitems
+thanksgivingturkey13:
   Locations:
-  - wild;57.0;82.0;61.0
+  - thanksgiving;281;73;-568
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #13 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawn_end_summerbosstrader:
+  Commands:
+  - asPlayer! bs summerbossitems
+warpfishwarps:
+  Locations:
+  - general;11902;158;18878
+  Commands:
+  - asPlayer! warps
+spawn_oneblock_listcmds:
+  Locations:
+  - oneblock;10407;81;-7993
   NPC:
-  - 523_a33992da-2117-4bba-9230-88cc60bb670c_0
+  - 772_9e185fab-dd4a-4fed-ae56-0173db7fa6ee_0
   Commands:
-  - msg! [playerName] &eSpicing up your bases with some mobs [playerName]? Here's
-    what I have to offer..
-  - cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - cmi sound block_beehive_enter [playerName]
-  - asPlayer! spawners
+  - asConsole! cmi ctext gametype_listcmds [playerName]
 jacktest:
   Locations:
-  - general;12636.0;80.0;-5323.0
-  - general;12636.0;80.0;-5322.0
+  - general;12636;80;-5323
+  - general;12636;80;-5322
   Commands:
   - asConsole! cooldown:60#?! msg! [playerName] &7[&6Jacky&7 ->&8 me&7]&b Okay [playerName],
     let's see how I can help you trade some loot.
@@ -81,504 +159,272 @@ jacktest:
     me grab my loot box and show you what I've got to trade this weekend.
   - delay! 4
   - asConsole! bs open jacky [playerName]
-pointstrader:
-  Commands:
-  - msg! [playerName] &e Hi there [playerName] If you have points, then I have some
-    goodies.
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - asPlayer! welcomes shop
-halloweenbanners:
+spawn_skygrid_buckettrades:
   Locations:
-  - halloween;1641.0;76.0;632.0
-  Commands:
-  - perm:cmi.secrethalloweenbanners2022! asConsole! cmi msg [playerName] !&6 Sorry
-    [playerName], one time use only!
-  - perm:cmi.secrethalloweenbanners2022@! asConsole! cmi sound block_beacon_activate
-  - perm:cmi.secrethalloweenbanners2022@! asConsole! cmi sound entity_blaze_hurt
-  - perm:cmi.secrethalloweenbanners2022@! asConsole! cmi broadcast !{#orange} - [playerName]
-    {#fuchsia}Found the Halloween Banners!
-  - perm:cmi.secrethalloweenbanners2022@! asConsole! kit halloweenbanners [playerName]
-  - perm:cmi.secrethalloweenbanners2022@! asConsole! lp user [playerName] permission
-    set cmi.secrethalloweenbanners2022 true
-spawn_skyblock_challenges:
-  Locations:
-  - skyblock;23.0;140.0;-29.0
-  Commands:
-  - 'asConsole! cmi msg [playerName] !&e For more info about Challenges read:'
-  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261680/
-  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-spawn_cave_island:
-  Locations:
-  - cave;-117.0;67.0;240.0
+  - skygrid;-1;129;-3
   NPC:
-  - 809_2cacde3c-7508-43ff-8780-51cd961ae1d6_0
+  - 801_06fdcf24-46be-491c-8b0c-721470059c48_0
   Commands:
-  - asPlayer! cave
-spawn_oneblock_team:
+  - asPlayer! bs OneBlockBucketTrades
+vloopshipstart:
   Locations:
-  - oneblock;10407.0;81.0;-8007.0
-  NPC:
-  - 771_f9e7f63e-e33d-422e-91c5-1e1346fe8f63_0
+  - general;12863;172;11964
   Commands:
-  - asPlayer! teams
-warpfishwarps:
+  - cmi sound block_beacon_activate [playerName]
+  - asConsole! cmi msg [playerName] !&b -> Spacestation activated
+thanksgivingturkey18:
   Locations:
-  - general;11902.0;158.0;18878.0
+  - thanksgiving;310;73;-552
   Commands:
-  - asPlayer! warps
-thanksgivingturkey9:
-  Locations:
-  - thanksgiving;387.0;77.0;-544.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #9 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawnstaff:
-  Locations:
-  - spawn;-7.0;64.0;133.0
-  Commands:
-  - asPlayer! staff
-spawn_spawn_summerbosstrader:
-  Commands:
-  - asPlayer! bs summerbossitems
-spawngeneral:
-  Locations:
-  - spawn;4.0;66.0;147.0
-  Commands:
-  - asPlayer! rtp
-thanksgivingturkey25:
-  Locations:
-  - thanksgiving;351.0;73.0;-578.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #25 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-thanksgivingturkey23:
-  Locations:
-  - thanksgiving;339.0;77.0;-552.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #23 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_general_homes:
-  Locations:
-  - general;67.0;82.0;-198.0
-  Commands:
-  - asPlayer! homes
-thanksgivingturkey22:
-  Locations:
-  - thanksgiving;322.0;75.0;-565.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #22 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #18 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
 spawnsocial:
   Locations:
-  - spawn;-6.0;64.0;146.0
+  - spawn;-6;64;146
   Commands:
   - asPlayer! social gui
-spawn_oneblock_menu:
-  Locations:
-  - oneblock;10400.0;81.0;-8010.0
+spawn_general_points:
   NPC:
-  - 770_67d3a041-e2ed-4836-a690-2680a9a29918_0
+  - 815_1b76127f-85a5-4ce6-b753-c6e7c0d69897_0
   Commands:
-  - asPlayer! oneblock menu
-thanksgivingturkey4:
-  Locations:
-  - thanksgiving;523.0;99.0;-589.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #4 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_oneblock_island:
-  Locations:
-  - oneblock;10400.0;81.0;-7990.0
-  NPC:
-  - 769_6e157205-7396-4ac5-97fb-2322267cb892_0
-  Commands:
-  - asPlayer! oneblock
-VoteTokenExchange:
-  Locations:
-  - general;12497.0;79.0;-5342.0
-  Commands:
-  - asConsole! msg! [playerName] &a This trade allows you to exchange certain vote
-    tokens. You give us 3 and a streak token, you get 3 of the other type back.
-  - cmi sound block_dispenser_dispense [playerName]
-  - bs open VoteExchange [playerName]
-spawn_general_newplayer:
-  Locations:
-  - general;84.0;80.0;-164.0
-  NPC:
-  - 811_13083ab3-1fe1-4cd9-9103-8cee96c96a30_0
-  Commands:
-  - asPlayer! newplayer
-spawn_skygrid_team:
-  Locations:
-  - skygrid;8.0;129.0;19.0
-  NPC:
-  - 798_ac41f658-dd30-407d-9c74-757f732a5c67_0
-  Commands:
-  - asPlayer! teams
-thanksgivingturkey7:
-  Locations:
-  - thanksgiving;445.0;100.0;-562.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #7 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_nether_summerbosstrader:
-  Commands:
-  - asPlayer! bs summerbossitems
-thanksgivingturkey8:
-  Locations:
-  - thanksgiving;422.0;100.0;-547.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #8 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-thanksgivingturkey16:
-  Locations:
-  - thanksgiving;237.0;72.0;-562.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #16 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_skygrid_island:
-  Locations:
-  - skygrid;-9.0;129.0;13.0
-  NPC:
-  - 800_7d15f7b7-d197-495f-85b6-531549822ef0_0
-  Commands:
-  - asPlayer! skygrid
-florishometpssign:
-  Locations:
-  - general;-263.0;81.0;191.0
-  Commands:
-  - asPlayer! tps
-  - delay! 0.1
-  - asPlayer! cmi tps
-spawn_cave_listcmds:
-  Locations:
-  - cave;-138.0;66.0;241.0
-  NPC:
-  - 806_ea75f7dd-7d62-4806-8dfa-8ec8c4f9f288_0
-  Commands:
-  - asConsole! cmi ctext gametype_listcmds [playerName]
-sell:
-  Locations:
-  - general;12423.0;79.0;-5298.0
-  - wild;3560.0;54.0;3353.0
-  - wild;3560.0;55.0;3363.0
-  - wild;3559.0;54.0;3363.0
-  - oneblock;800.0;82.0;-11201.0
-  - general;-14776.0;69.0;12450.0
-  - wild;3568.0;54.0;3355.0
-  - oneblock;802.0;82.0;-11200.0
-  - wild;3559.0;54.0;3353.0
-  - wild;3568.0;54.0;3363.0
-  - wild;3589.0;61.0;3353.0
-  - general;-16496.0;72.0;11641.0
-  Commands:
-  - asPlayer! cmi sell gui
-  SignLines:
-  - '{#Cerulean}[sell]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}You can use'
-  - '{#Feijoa}/sell & /worth'
-  Public: true
-balance:
-  Locations:
-  - general;-14776.0;68.0;12450.0
-  - general;12423.0;79.0;-5296.0
-  Commands:
-  - asPlayer! cmi money
-  - asPlayer! welcomes points
-  - 'asConsole! cmi msg [playerName] Your mcMMO power level: %mcmmo_power_level%'
-  - 'asConsole! cmi msg [playerName] Your Jobs points: %jobsr_user_points_fixed% /
-    Lvls: %jobs_total_levels%'
-  SignLines:
-  - '{#Cerulean}[money]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}There is: /ah'
-  - '{#Feijoa}and /sell'
-  Public: true
-spawnversionmenu:
-  Locations:
-  - spawn;6.0;64.0;146.0
-  Commands:
-  - asPlayer! menu
-spawnnewplayer:
-  Locations:
-  - spawn;2.0;64.0;135.0
-  Commands:
-  - asPlayer! newplayer
-spawnsignwarps:
-  Locations:
-  - wild;79.0;85.0;41.0
-  - acid;-391.0;56.0;361.0
-  - skyblock;-6.0;135.0;-5.0
-  - cave;-119.0;65.0;257.0
-  - oneblock;10411.0;81.0;-8000.0
-  - skygrid;-17.0;130.0;6.0
-  Commands:
-  - asPlayer! warps
-thanksgivingturkey13:
-  Locations:
-  - thanksgiving;281.0;73.0;-568.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #13 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawnfloris:
-  Locations:
-  - spawn;6.0;64.0;132.0
-  Commands:
-  - asPlayer! team
-spawnskyblock:
-  Locations:
-  - spawn;4.0;65.0;147.0
-  Commands:
-  - asPlayer! skyblock
-spawn_wild_summerbosstrader:
-  Commands:
-  - asPlayer! bs summerbossitems
-thanksgivingturkey14:
-  Locations:
-  - thanksgiving;254.0;74.0;-565.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #14 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_skyblock_menu:
-  Locations:
-  - skyblock;-108.0;138.0;4.0
-  NPC:
-  - 783_298ce619-6630-4b9e-bc35-b0f862c96716_0
-  Commands:
-  - asPlayer! skyblock menu
-spawn_skyblock_listcmds:
-  Locations:
-  - skyblock;-110.0;138.0;7.0
-  NPC:
-  - 782_56c01bbb-10e1-4bcb-a9ab-83fb07230993_0
-  Commands:
-  - asConsole! cmi ctext gametype_listcmds [playerName]
-warpfishcontact:
-  Locations:
-  - general;11922.0;156.0;18851.0
-  Commands:
-  - 'asConsole! cmi msg [playerName] !{#orange}To contact mrfloris to help build the
-    next /skyblock spawn, use the /mail feaeture, type the following command:'
-  - asConsole! cmi msg [playerName] !{#gold}" /mail send mrfloris Hi, can I help you
-    build the new skyblock spawn? "
-spawn_general_skygridspawn:
-  Locations:
-  - general;80.0;80.0;-174.0
-  Commands:
-  - asPlayer! skygrid spawn
-thanksgivingturkey10:
-  Locations:
-  - thanksgiving;388.0;74.0;-570.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #10 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_acid_menu:
-  Locations:
-  - acid;-392.0;56.0;365.0
-  NPC:
-  - 789_c0c843c9-5cf0-4e47-af9b-021925c0c995_0
-  Commands:
-  - asPlayer! acid menu
-spawn_general_worlds:
-  Locations:
-  - general;80.0;80.0;-159.0
-  NPC:
-  - 812_b362458a-0fb4-4f44-b401-5cadc381d6c0_0
-  Commands:
-  - asPlayer! worlds
+  - asPlayer! points
 spawn_skyblock_dayshop:
   Locations:
-  - wild;101.0;82.0;62.0
-  - skyblock;-113.0;138.0;8.0
+  - wild;101;82;62
+  - skyblock;-113;138;8
   NPC:
   - 779_be6f8761-3485-4b77-8ee9-bf27b4f16073_0
   - 519_cd434af5-27e4-45e5-828a-08a71b837570_0
   Commands:
   - asPlayer! bs WeekShop
-vloopshipstop:
+mail:
   Locations:
-  - general;12865.0;172.0;11964.0
+  - general;-14777;69;12450
+  - general;12423;79;-5293
   Commands:
-  - cmi sound block_beacon_deactivate [playerName]
-  - asConsole! cmi msg [playerName] !&b -> Spacestation shutting down. [Emergency
-    Power only]
-spawn_acid_listofcmds:
-  Locations:
-  - acid;-435.0;60.0;348.0
-  - acid;-110.0;138.0;7.0
-  NPC:
-  - 792_2eb71f46-cc56-4dff-8a2a-0e181ed7fa43_0
-  Commands:
-  - asConsole! cmi ctext gametype_listcmds [playerName]
-thanksgivingturkey1:
-  Locations:
-  - thanksgiving;561.0;123.0;-560.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #1 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-halloweenlaunchsignOne:
-  Locations:
-  - halloween;1358.0;118.0;662.0
-  - halloween;1359.0;102.0;639.0
-  Commands:
-  - asConsole! cmi launch [playerName] -nodamage p:4 a:45
-warps:
-  Commands:
-  - asConsole! cmi warp $1 [playerName]
+  - asPlayer! cmi mail read
+  SignLines:
+  - '{#Cerulean}[mail]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}You can send and'
+  - '{#Feijoa}get server /mail'
   Public: true
-spawn_cave_dailyshop:
+spawn_general_skyblockspawn:
   Locations:
-  - cave;-151.0;86.0;291.0
-  NPC:
-  - 808_1b3d7e65-0b90-4d45-8b73-97a25ee10ba8_0
+  - general;80;81;-174
   Commands:
-  - asPlayer! bs WeekShop
-spawn_general_cavespawn:
+  - asPlayer! skyblock spawn
+anvil:
   Locations:
-  - general;80.0;83.0;-174.0
+  - general;-14777;68;12450
+  - skyblock;-6398;129;-2425
+  - wild;-4091;66;1272
+  - wild;3589;60;3353
+  - skygrid;3989;125;12014
+  - general;12423;79;-5302
+  - general;-14776;70;12450
+  - cave;259;64;-515
+  - wild;-4118;64;1282
   Commands:
-  - asPlayer! cave spawn
-thanksgivingturkey5:
+  - asConsole! cmi anvil [playerName] -s
+  SignLines:
+  - '{#Cerulean}[anvil]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}Related cmd:'
+  - '{#Feijoa}&l/anvil'
+  Public: true
+celebrationmikey:
+  Commands:
+  - bs open CelebrationMikey [playerName]
+thanksgivingturkey7:
   Locations:
-  - thanksgiving;509.0;97.0;-570.0
+  - thanksgiving;445;100;-562
   Commands:
-  - 'msg! [playerName] {#gold}Caught it! #5 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #7 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+thanksgivingturkey19:
+  Locations:
+  - thanksgiving;352;73;-540
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #19 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+thanksgivingturkey3:
+  Locations:
+  - thanksgiving;536;97;-538
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #3 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawnlwc:
+  Locations:
+  - spawn;2;64;139
+  Commands:
+  - asPlayer! chests
+spawn_general_homes:
+  Locations:
+  - general;67;82;-198
+  Commands:
+  - asPlayer! homes
 spawn_acid_team:
   Locations:
-  - acid;-436.0;60.0;352.0
+  - acid;-436;60;352
   NPC:
   - 791_4d2cf646-c5a0-44f4-8ae8-c4e1c3be8a80_0
   Commands:
   - asPlayer! teams
-spawn_wild_globalmarket:
+stonecutter:
+  Locations:
+  - general;12419;79;-5300
   Commands:
-  - asPlayer! ah
+  - asConsole! cmi stonecutter [playerName] -s
+  SignLines:
+  - '{#Cerulean}[stonecutter]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}Related cmd:'
+  - '{#Feijoa}&l/stonecutter'
+  Public: true
+  ReqPerm: false
+spawn_skyblock_summerbosstrader:
+  Commands:
+  - asPlayer! bs summerbossitems
+fishparkour:
+  Locations:
+  - general;11944;63;18959
+  Commands:
+  - asConsole! cmi warp fishparkour [playerName] -s
 spawn_skyblock_team:
   Locations:
-  - skyblock;-116.0;138.0;5.0
+  - skyblock;-116;138;5
   NPC:
   - 781_675492a2-0819-467c-874e-888f7dd5ff3b_0
   Commands:
   - asPlayer! teams
-spawn_skygrid_summerbosstrader:
-  Locations:
-  - skygrid;-18.0;131.0;-30.0
-  NPC:
-  - 832_19f2c2e8-9414-4e4c-881b-8d9d46dd94bd_0
-  Commands:
-  - asPlayer! bs summerbossitems
-infiniteanvilspawn:
-  Locations:
-  - spawn;23.0;64.0;137.0
-  Commands:
-  - asConsole! cmi anvil [playerName]
-droppartyfly:
-  Commands:
-  - cooldown:120?! asConsole! cmi tfly [playerName] 30
 spawn_general_acidspawn:
   Locations:
-  - general;80.0;84.0;-174.0
+  - general;80;84;-174
   Commands:
   - asPlayer! acid spawn
-spawnversion:
+spawn_nether_summerbosstrader:
+  Commands:
+  - asPlayer! bs summerbossitems
+mobon:
   Locations:
-  - spawn;7.0;64.0;145.0
+  - run;-165;97;-88
   Commands:
-  - asPlayer! changelog
-spawnlwc:
+  - asConsole! mvm set monsters true run
+  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
+  SignLines:
+  - mobon
+  - ' '
+  - ' '
+  - ' '
+thanksgivingturkey14:
   Locations:
-  - spawn;2.0;64.0;139.0
+  - thanksgiving;254;74;-565
   Commands:
-  - asPlayer! chests
-warpfishworlds:
-  Locations:
-  - general;11884.0;152.0;18851.0
-  Commands:
-  - asPlayer! menu worlds
-celebrationmikey:
-  Commands:
-  - bs open CelebrationMikey [playerName]
-spawn_oneblock_listcmds:
-  Locations:
-  - oneblock;10407.0;81.0;-7993.0
-  NPC:
-  - 772_9e185fab-dd4a-4fed-ae56-0173db7fa6ee_0
-  Commands:
-  - asConsole! cmi ctext gametype_listcmds [playerName]
-thanksgivingturkey24:
-  Locations:
-  - thanksgiving;353.0;74.0;-555.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #24 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #14 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawn_skyblock_bucket:
+  Locations:
+  - skyblock;-110;138;-10
+  NPC:
+  - 778_eed43b91-6534-4fa8-b625-17ea888156d2_0
+  Commands:
+  - asPlayer! bs OneblockBucketTrades
+halloweenlever:
+  Locations:
+  - halloween;1602;92;802
+  Commands:
+  - asConsole! cmi top [playerName] -s
+moboff:
+  Locations:
+  - run;-165;97;-89
+  Commands:
+  - asConsole! mvm set monsters false run
+  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
+  SignLines:
+  - moboff
+  - ' '
+  - ' '
+  - ' '
+spawnskyblock:
+  Locations:
+  - spawn;4;65;147
+  Commands:
+  - asPlayer! skyblock
+spawn_skyblock_challenges:
+  Locations:
+  - skyblock;23;140;-29
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e For more info about Challenges read:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261680/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+santaworldfrostyperk:
+  Locations:
+  - santa;167;76;55
+  Commands:
+  - asConsole! lp user [playerName] permission set procosmetics.music.frosty-the-snowman
+    true
+  - msg! [playerName] {#green} If you didn't have this perm, you have it now! "/perk
+    > music > frosty" you can use this in /general and /wild
+spawn_general_warps:
+  NPC:
+  - 823_0b062873-e043-4569-97cc-0f26c4df1193_0
+  Commands:
+  - asPlayer! warps
+halloweenlaunchsignOne:
+  Locations:
+  - halloween;1358;118;662
+  - halloween;1359;102;639
+  Commands:
+  - asConsole! cmi launch [playerName] -nodamage p:4 a:45
 trash:
   Locations:
-  - cave;261.0;64.0;-508.0
-  - wild;1309.0;80.0;1485.0
-  - wild;1333.0;72.0;1483.0
-  - skyblock;-6410.0;119.0;-5603.0
-  - wild;1313.0;93.0;1604.0
-  - general;11797.0;64.0;-12358.0
-  - wild;1341.0;94.0;1538.0
-  - wild;1283.0;80.0;1464.0
-  - general;-6179.0;11.0;-2814.0
-  - wild;1393.0;73.0;1484.0
-  - general;-16495.0;72.0;11642.0
-  - wild;1326.0;126.0;1461.0
-  - wild;1263.0;75.0;1483.0
-  - wild;1344.0;100.0;1495.0
-  - wild;1331.0;111.0;1469.0
-  - wild;1336.0;110.0;1477.0
-  - wild;1282.0;80.0;1487.0
-  - cave;-256.0;64.0;6.0
-  - wild;1297.0;80.0;1602.0
-  - general;12032.0;65.0;19098.0
-  - general;-14778.0;69.0;12450.0
-  - general;-12601.0;63.0;-12149.0
-  - general;12752.0;32.0;12008.0
-  - general;12701.0;77.0;-18303.0
-  - wild;1263.0;75.0;1484.0
-  - wild;1291.0;149.0;1482.0
-  - general;10275.0;13.0;-751.0
-  - general;12192.0;70.0;11800.0
-  - skyblock;-6398.0;128.0;-2425.0
-  - wild;1341.0;82.0;1463.0
-  - wild;1418.0;94.0;1538.0
-  - general;12423.0;79.0;-5300.0
-  - wild;1314.0;92.0;1599.0
-  - wild;1398.0;75.0;1462.0
+  - cave;261;64;-508
+  - wild;1309;80;1485
+  - wild;1333;72;1483
+  - wild;1313;93;1604
+  - general;11797;64;-12358
+  - wild;1341;94;1538
+  - wild;1283;80;1464
+  - general;-6179;11;-2814
+  - general;-16495;72;11642
+  - wild;1326;126;1461
+  - wild;1263;75;1483
+  - wild;1305;51;1484
+  - wild;1344;100;1495
+  - wild;1331;111;1469
+  - wild;1336;110;1477
+  - wild;1282;80;1487
+  - cave;-256;64;6
+  - wild;1297;80;1602
+  - general;12032;65;19098
+  - general;-14778;69;12450
+  - general;-12601;63;-12149
+  - skygrid;3989;125;12013
+  - general;12752;32;12008
+  - general;12701;77;-18303
+  - wild;1263;75;1484
+  - wild;1291;149;1482
+  - general;10275;13;-751
+  - general;12192;70;11800
+  - skyblock;-6398;128;-2425
+  - wild;1051;118;1409
+  - wild;1341;82;1463
+  - wild;1418;94;1538
+  - general;12423;79;-5300
+  - wild;1314;92;1599
+  - skyblock;-6354;126;-5583
+  - wild;1398;75;1462
   Commands:
   - click:rightclick! asConsole! cmi dispose [playerName]
   SignLines:
@@ -588,124 +434,120 @@ trash:
   - '{#Feijoa}what you dispose'
   Public: true
   ReqPerm: false
-skyblockgreenhouse:
+spawn_cave_menu:
   Locations:
-  - skyblock;-20.0;136.0;-25.0
-  Commands:
-  - 'asConsole! cmi msg [playerName] !&e For more info about Greenhouses, read:'
-  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
-  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-moboff:
-  Locations:
-  - run;-165.0;97.0;-89.0
-  Commands:
-  - asConsole! mvm set monsters false run
-  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &coff&e now.
-  SignLines:
-  - moboff
-  - ' '
-  - ' '
-  - ' '
-secrethalloweenstick:
-  Locations:
-  - halloween;1916.0;51.0;481.0
-  Commands:
-  - perm:cmi.secrethalloweenstick2022! asConsole! cmi msg [playerName] !&6 Sorry [playerName],
-    one time use only!
-  - perm:cmi.secrethalloweenstick2022@! asConsole! cmi sound block_beacon_activate
-  - perm:cmi.secrethalloweenstick2022@! asConsole! cmi sound entity_blaze_hurt
-  - perm:cmi.secrethalloweenstick2022@! asConsole! cmi broadcast !{#orange} - [playerName]
-    {#fuchsia}Found the 2nd secret Halloween Sign!
-  - perm:cmi.secrethalloweenstick2022@! asConsole! kit secrethalloweenkit2 [playerName]
-  - perm:cmi.secrethalloweenstick2022@! asConsole! lp user [playerName] permission
-    set cmi.secrethalloweenstick2022 true
-spawn_skyblock_bucket:
-  Locations:
-  - skyblock;-110.0;138.0;-10.0
+  - cave;-141;66;254
   NPC:
-  - 778_eed43b91-6534-4fa8-b625-17ea888156d2_0
+  - 804_8a1c44cc-daee-479f-80c7-ea13c7e1eb77_0
   Commands:
-  - asPlayer! bs OneblockBucketTrades
-spawn_spawn_oneblock:
+  - asPlayer! cave menu
+spawn_cave_dailyshop:
   Locations:
-  - spawn;4.0;64.0;147.0
-  Commands:
-  - asPlayer! oneblock
-spawn_end_summerbosstrader:
-  Commands:
-  - asPlayer! bs summerbossitems
-markettrader:
-  Locations:
-  - wild;65.0;82.0;70.0
+  - cave;-151;86;291
   NPC:
-  - 522_96f53332-659a-4aac-8bf6-41f8ff7dae59_0
+  - 808_1b3d7e65-0b90-4d45-8b73-97a25ee10ba8_0
   Commands:
-  - msg! [playerName] &e Nice to see you [playerName] - players can put stuff on the
-    global /market
-  - cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - cmi sound block_beehive_enter [playerName]
-  - asPlayer! ah
-spawn_acid_summerbosstrader:
+  - asPlayer! bs WeekShop
+spawn_general_worlds:
   Locations:
-  - acid;-423.0;57.0;340.0
+  - general;80;80;-159
   NPC:
-  - 833_6eac522a-5737-4168-953e-be7b8b84fdab_0
-  Commands:
-  - asPlayer! bs summerbossitems
-spawnworlds:
-  Locations:
-  - spawn;2.0;66.0;147.0
+  - 812_b362458a-0fb4-4f44-b401-5cadc381d6c0_0
   Commands:
   - asPlayer! worlds
-warpfishbeekeeper:
-  Commands:
-  - cooldown:300?#! asConsole! cmi give [playerName] honeycombblock 1
-thanksgivingturkey6:
+thanksgivingturkey21:
   Locations:
-  - thanksgiving;477.0;100.0;-562.0
+  - thanksgiving;342;77;-576
   Commands:
-  - 'msg! [playerName] {#gold}Caught it! #6 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #21 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_cave_buckettrade:
+spawnversion:
   Locations:
-  - cave;-137.0;78.0;245.0
+  - spawn;7;64;145
+  Commands:
+  - asPlayer! changelog
+spawn_general_newplayer:
+  Locations:
+  - general;84;80;-164
   NPC:
-  - 807_52d6f077-4158-4304-99f7-f555b11d2c15_0
+  - 811_13083ab3-1fe1-4cd9-9103-8cee96c96a30_0
   Commands:
-  - asPlayer! bs OneBlockBucketTrades
-vloopshipstart:
+  - asPlayer! newplayer
+smithingtable:
   Locations:
-  - general;12863.0;172.0;11964.0
+  - general;12419;79;-5298
   Commands:
-  - cmi sound block_beacon_activate [playerName]
-  - asConsole! cmi msg [playerName] !&b -> Spacestation activated
-santa:
+  - asConsole! cmi smithingtable [playerName] -s
+  SignLines:
+  - '{#Cerulean}[smithingtable]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}Related cmd:'
+  - '{#Feijoa}&l/smithingtable'
+  Public: true
+  ReqPerm: false
+warpfishskyblock:
   Locations:
-  - general;-91.0;62.0;447.0
+  - general;11896;159;18838
   Commands:
-  - asPlayer! calendar
-spawn_general_spawners:
+  - asPlayer! skyblock
+loom:
+  Locations:
+  - general;12419;79;-5296
+  Commands:
+  - asConsole! cmi loom [playerName] -s
+  SignLines:
+  - '{#Cerulean}[loom]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}Related cmd:'
+  - '{#Feijoa}&l/loom'
+  Public: true
+  ReqPerm: false
+spawnshoptemplates:
   NPC:
-  - 817_9f8e8519-4abd-439b-84b2-e268141c016d_0
+  - 1006_66111849-17c6-4bac-b718-13685da9c04d_0
+  - 970_dc7375e8-5a10-46a9-8fcb-a14af8be0934_0
   Commands:
-  - asPlayer! spawners
-spawn_general_kits:
-  NPC:
-  - 824_0c9e1e81-2159-41b5-90ac-0bbb122f27c9_0
-  Commands:
-  - asPlayer! kits
-warpfishbearsecret:
+  - asConsole! shopgui [playerName] island_templates
+thanksgivingturkey23:
   Locations:
-  - general;12007.0;239.0;18874.0
+  - thanksgiving;339;77;-552
   Commands:
-  - msg! [playerName] Sorry, this secret was only for those who participated in the
-    july 3rd fishing tournament
+  - 'msg! [playerName] {#gold}Caught it! #23 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+pointstrader:
+  Commands:
+  - msg! [playerName] &e Hi there [playerName] If you have points, then I have some
+    goodies.
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - asPlayer! welcomes shop
+spawn_skygrid_island:
+  Locations:
+  - skygrid;-9;129;13
+  NPC:
+  - 800_7d15f7b7-d197-495f-85b6-531549822ef0_0
+  Commands:
+  - asPlayer! skygrid
+craft:
+  Locations:
+  - general;12419;79;-5302
+  Commands:
+  - asConsole! cmi workbench [playerName] -s
+  SignLines:
+  - '{#Cerulean}[craft]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}Related cmd:'
+  - '{#Feijoa}&l/craft'
+  Public: true
+  ReqPerm: false
 secrethalloweenkit:
   Locations:
-  - halloween;1750.0;66.0;890.0
+  - halloween;1750;66;890
   Commands:
   - perm:cmi.secrethalloweenkit2022! asConsole! cmi msg [playerName] !&6 Sorry [playerName],
     one time use only!
@@ -716,220 +558,71 @@ secrethalloweenkit:
   - perm:cmi.secrethalloweenkit2022@! asConsole! kit secrethalloweenkit [playerName]
   - perm:cmi.secrethalloweenkit2022@! asConsole! lp user [playerName] permission set
     cmi.secrethalloweenkit2022 true
-skyblockcobblegen:
-  Locations:
-  - skyblock;-4.0;139.0;25.0
+warps:
   Commands:
-  - 'asConsole! cmi msg [playerName] !&e To learn more about Generators, visit:'
-  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
-  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-santaworldfrostyperk:
+  - asConsole! cmi warp $1 [playerName]
+  Public: true
+thanksgivingturkey10:
   Locations:
-  - santa;167.0;76.0;55.0
+  - thanksgiving;388;74;-570
   Commands:
-  - asConsole! lp user [playerName] permission set procosmetics.music.frosty-the-snowman
-    true
-  - msg! [playerName] {#green} If you didn't have this perm, you have it now! "/perk
-    > music > frosty" you can use this in /general and /wild
-thanksgivingturkey15:
-  Locations:
-  - thanksgiving;238.0;71.0;-559.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #15 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #10 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-warpfishkits:
+account:
   Locations:
-  - general;11923.0;165.0;18883.0
+  - general;-14776;67;12450
+  - general;12423;79;-5296
   Commands:
-  - asPlayer! kits
-spawn_general_warps:
-  NPC:
-  - 823_0b062873-e043-4569-97cc-0f26c4df1193_0
-  Commands:
-  - asPlayer! warps
-warpfishrtp:
-  Locations:
-  - general;11884.0;154.0;18871.0
-  Commands:
-  - asPlayer! rtp
-warpfishskyblock:
-  Locations:
-  - general;11896.0;159.0;18838.0
-  Commands:
-  - asPlayer! skyblock
-spawndiscord:
-  Locations:
-  - spawn;-7.0;64.0;145.0
-  Commands:
-  - asPlayer! discord
-wildtrader:
-  Commands:
-  - msg! [playerName] &e Hey there [playerName], let me see what I have for you today.
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - delay! 3
-  - asConsole! cmi sound block_beehive_enter [playerName]
-  - bs open weekshop [playerName]
-thanksgivingturkey12:
-  Locations:
-  - thanksgiving;312.0;75.0;-587.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #12 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_cave_summerbosstrader:
-  Locations:
-  - cave;-117.0;52.0;289.0
-  NPC:
-  - 834_7a7bd111-0fa8-4b5c-925a-d366c4cc09c3_0
-  Commands:
-  - asPlayer! bs summerbossitems
-warpfishoneblock:
-  Locations:
-  - general;11897.0;159.0;18839.0
-  Commands:
-  - asPlayer! oneblock
-spawn_general_points:
-  NPC:
-  - 815_1b76127f-85a5-4ce6-b753-c6e7c0d69897_0
-  Commands:
-  - asPlayer! points
-thanksgivingturkey18:
-  Locations:
-  - thanksgiving;310.0;73.0;-552.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #18 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_general_rtp:
-  Locations:
-  - general;90.0;82.0;-198.0
-  Commands:
-  - asPlayer! rtp
-spawn_acid_island:
-  Locations:
-  - acid;-382.0;56.0;365.0
-  NPC:
-  - 790_14ace783-ea23-419e-9d1d-7d733e6aa369_0
-  Commands:
-  - asPlayer! acid
-thanksgivingturkey20:
-  Locations:
-  - thanksgiving;357.0;78.0;-566.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #20 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_skyblock_summerbosstrader:
-  Commands:
-  - asPlayer! bs summerbossitems
-spawn_skygrid_buckettrades:
-  Locations:
-  - skygrid;-1.0;129.0;-3.0
-  NPC:
-  - 801_06fdcf24-46be-491c-8b0c-721470059c48_0
-  Commands:
-  - asPlayer! bs OneBlockBucketTrades
-spawngeneralsign:
-  Locations:
-  - spawn;0.0;64.0;141.0
-  Commands:
-  - asPlayer! rtp
-spawn_general_wildspawn:
-  Locations:
-  - general;77.0;80.0;-156.0
-  Commands:
-  - asPlayer! wild
-thanksgivingturkey21:
-  Locations:
-  - thanksgiving;342.0;77.0;-576.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #21 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+  - asPlayer! account
+  SignLines:
+  - '{#Cerulean}[account]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}cmd: /balance'
+  - '{#Feijoa}cmd: /account'
+  Public: true
 spawn_general_summerbosstrader:
   Commands:
   - asPlayer! bs summerbossitems
-skyblockhelp:
+spawnworlds:
   Locations:
-  - skyblock;-5.0;135.0;0.0
+  - spawn;2;66;147
   Commands:
-  - 'asConsole! cmi msg [playerName] !&e To learn more about Skyblock, visit:'
-  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - asPlayer! worlds
+clock:
+  Commands:
+  - click:rightclick! clock
   - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
-mobon:
-  Locations:
-  - run;-165.0;97.0;-88.0
-  Commands:
-  - asConsole! mvm set monsters true run
-  - asConsole! cmi msg [playerName] ! &e&l Run > They should be &aon&e now.
   SignLines:
-  - mobon
+  - '&0&l Time:'
+  - '&7~~~~~~~~~~~~'
+  - '&9&lTry with /clock'
   - ' '
-  - ' '
-  - ' '
-spawn_skyblock_island:
-  Locations:
-  - skyblock;-118.0;138.0;-6.0
-  NPC:
-  - 796_ed3203c4-d8bb-45e7-a740-7a3ed1c8d64e_0
+  Public: true
+spawn_wild_summerbosstrader:
   Commands:
-  - asPlayer! skyblock
-thanksgivingturkey17:
+  - asPlayer! bs summerbossitems
+spawn_general_wildspawn:
   Locations:
-  - thanksgiving;275.0;75.0;-532.0
+  - general;77;80;-156
   Commands:
-  - 'msg! [playerName] {#gold}Caught it! #17 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_general_skyblockspawn:
+  - asPlayer! wild
+spawngeneralsign:
   Locations:
-  - general;80.0;81.0;-174.0
+  - spawn;0;64;141
   Commands:
-  - asPlayer! skyblock spawn
+  - asPlayer! rtp
 spawn_skygrid_menu:
   Locations:
-  - skygrid;11.0;129.0;13.0
+  - skygrid;11;129;13
   NPC:
   - 797_b65843cb-6e96-4333-8264-f61bb12834b4_0
   Commands:
   - asPlayer! skygrid menu
-spawn_oneblock_bucket:
-  Locations:
-  - oneblock;10420.0;79.0;-8020.0
-  - acid;-363.0;56.0;373.0
-  NPC:
-  - 773_debf099c-b209-4295-b0da-f3d15baf0579_0
-  - 793_7717b0c0-cafc-43c2-8b32-08dd863bd761_0
-  Commands:
-  - asPlayer! bs OneBlockBucketTrades
-anvil:
-  Locations:
-  - general;-14777.0;68.0;12450.0
-  - skyblock;-6398.0;129.0;-2425.0
-  - wild;-4091.0;66.0;1272.0
-  - wild;3589.0;60.0;3353.0
-  - general;12423.0;79.0;-5302.0
-  - general;-14776.0;70.0;12450.0
-  - cave;259.0;64.0;-515.0
-  - wild;-4118.0;64.0;1282.0
-  Commands:
-  - asConsole! cmi anvil [playerName]
-  SignLines:
-  - '{#Cerulean}[anvil]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}You can also'
-  - '{#Feijoa}type: /anvil'
-  Public: true
 halloweendarkmazeloot:
   Locations:
-  - halloween;1866.0;55.0;857.0
+  - halloween;1866;55;857
   Commands:
   - perm:cmi.halloweendarkmazeloot2022! msg! [playerName] {#orange}&l Sorry [playerName],
     one time use only!
@@ -941,125 +634,459 @@ halloweendarkmazeloot:
     [playerName]
   - perm:cmi.halloweendarkmazeloot2022@! asConsole! lp user [playerName] permission
     set cmi.halloweendarkmazeloot2022 true
-spawn_cave_menu:
+spawn_acid_island:
   Locations:
-  - cave;-141.0;66.0;254.0
+  - acid;-382;56;365
   NPC:
-  - 804_8a1c44cc-daee-479f-80c7-ea13c7e1eb77_0
+  - 790_14ace783-ea23-419e-9d1d-7d733e6aa369_0
   Commands:
-  - asPlayer! cave menu
-thanksgivingturkey2:
+  - asPlayer! acid
+thanksgivingturkey15:
   Locations:
-  - thanksgiving;545.0;100.0;-557.0
+  - thanksgiving;238;71;-559
   Commands:
-  - 'msg! [playerName] {#gold}Caught it! #2 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #15 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-thanksgivingturkey3:
+thanksgivingturkey6:
   Locations:
-  - thanksgiving;536.0;97.0;-538.0
+  - thanksgiving;477;100;-562
   Commands:
-  - 'msg! [playerName] {#gold}Caught it! #3 / 25'
+  - 'msg! [playerName] {#gold}Caught it! #6 / 25'
   - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
   - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
   - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawnrules:
-  Locations:
-  - spawn;-6.0;64.0;132.0
-  Commands:
-  - asPlayer! rules
-spawn_general_market:
+spawn_general_spawners:
   NPC:
-  - 814_da730846-1043-4f0b-b713-e8dd5461e737_0
+  - 817_9f8e8519-4abd-439b-84b2-e268141c016d_0
   Commands:
-  - asPlayer! market
-mail:
+  - asPlayer! spawners
+thanksgivingturkey5:
   Locations:
-  - general;-14777.0;69.0;12450.0
-  - general;12423.0;79.0;-5293.0
+  - thanksgiving;509;97;-570
   Commands:
-  - asPlayer! cmi mail read
-  SignLines:
-  - '{#Cerulean}[mail]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}You can send and'
-  - '{#Feijoa}get server /mail'
-  Public: true
-spawn_skygrid_listcmds:
+  - 'msg! [playerName] {#gold}Caught it! #5 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawn_acid_listofcmds:
   Locations:
-  - skygrid;-6.0;129.0;19.0
+  - acid;-435;60;348
+  - acid;-110;138;7
   NPC:
-  - 799_6986c37b-6f37-41d3-88ef-8c989f6b57eb_0
+  - 792_2eb71f46-cc56-4dff-8a2a-0e181ed7fa43_0
   Commands:
   - asConsole! cmi ctext gametype_listcmds [playerName]
-thanksgivingturkey11:
-  Locations:
-  - thanksgiving;350.0;73.0;-593.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #11 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-money:
-  Locations:
-  - general;-14776.0;67.0;12450.0
-  - general;12423.0;79.0;-5295.0
-  Commands:
-  - asPlayer! cmi money
-  - asPlayer! welcomes points
-  - 'asConsole! cmi msg [playerName] Your mcMMO power level: %mcmmo_power_level%'
-  - 'asConsole! cmi msg [playerName] Your Jobs points: %jobsr_user_points_fixed% /
-    Lvls: %jobs_total_levels%'
-  SignLines:
-  - '{#Cerulean}[money]'
-  - '{#Edward}~~~~~~~~~~~~'
-  - '{#Feijoa}There is: /ah'
-  - '{#Feijoa}and /sell'
-  Public: true
-spawn_general_menu:
-  Locations:
-  - general;70.0;80.0;-164.0
-  NPC:
-  - 810_0b9ce774-a6fe-49bb-b592-141d8284dff2_0
-  Commands:
-  - asPlayer! menu
-thanksgivingturkey19:
-  Locations:
-  - thanksgiving;352.0;73.0;-540.0
-  Commands:
-  - 'msg! [playerName] {#gold}Caught it! #19 / 25'
-  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
-  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
-  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
-spawn_cave_team:
-  Locations:
-  - cave;-137.0;66.0;248.0
-  NPC:
-  - 805_953c4f42-dc1e-4ddb-80f3-abac39e3be48_0
-  Commands:
-  - asPlayer! teams
-spawnteamsign:
-  Locations:
-  - spawn;7.0;64.0;133.0
-  Commands:
-  - asPlayer! team
-spawn_general_oneblockspawn:
-  Locations:
-  - general;80.0;82.0;-174.0
-  Commands:
-  - asPlayer! oneblock spawn
 spawn_general_features:
   Locations:
-  - general;74.0;80.0;-159.0
+  - general;74;80;-159
   NPC:
   - 813_8e1ac1ba-cd1b-4ea3-9a40-a6798f06bb3d_0
   Commands:
   - msg! [playerName] We have /sit, /hat, /homes, /jobs browse, /mcstats, /forums,
     /discord, and more, questions? Ask our staff :) oh and we have /rtp, oh oh, and
     you can /vote
-fishparkour:
-  Locations:
-  - general;11944.0;63.0;18959.0
+spawn_general_kits:
+  NPC:
+  - 824_0c9e1e81-2159-41b5-90ac-0bbb122f27c9_0
   Commands:
-  - asConsole! cmi warp fishparkour [playerName] -s
+  - asPlayer! kits
+spawngeneral:
+  Locations:
+  - spawn;4;66;147
+  Commands:
+  - asPlayer! rtp
+thanksgivingturkey2:
+  Locations:
+  - thanksgiving;545;100;-557
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #2 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+thanksgivingturkey4:
+  Locations:
+  - thanksgiving;523;99;-589
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #4 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+warpfishcontact:
+  Locations:
+  - general;11922;156;18851
+  Commands:
+  - 'asConsole! cmi msg [playerName] !{#orange}To contact mrfloris to help build the
+    next /skyblock spawn, use the /mail feaeture, type the following command:'
+  - asConsole! cmi msg [playerName] !{#gold}" /mail send mrfloris Hi, can I help you
+    build the new skyblock spawn? "
+warpfishrtp:
+  Locations:
+  - general;11884;154;18871
+  Commands:
+  - asPlayer! rtp
+thanksgivingturkey16:
+  Locations:
+  - thanksgiving;237;72;-562
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #16 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+sell:
+  Locations:
+  - wild;3560;54;3353
+  - wild;3560;55;3363
+  - wild;3559;54;3363
+  - oneblock;800;82;-11201
+  - general;-14776;69;12450
+  - wild;3559;54;3353
+  - wild;3589;61;3353
+  - general;-16496;72;11641
+  - oneblock;-799;79;796
+  - general;12423;79;-5298
+  - wild;3568;54;3355
+  - oneblock;802;82;-11200
+  - wild;3568;54;3363
+  Commands:
+  - asPlayer! cmi sell gui
+  SignLines:
+  - '{#Cerulean}[sell]'
+  - '{#Edward}~~~~~~~~~~~~'
+  - '{#Feijoa}You can use'
+  - '{#Feijoa}/sell & /worth'
+  Public: true
+markettrader:
+  Locations:
+  - wild;65;82;70
+  NPC:
+  - 522_96f53332-659a-4aac-8bf6-41f8ff7dae59_0
+  Commands:
+  - msg! [playerName] &e Nice to see you [playerName] - players can put stuff on the
+    global /market
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - cmi sound block_beehive_enter [playerName]
+  - asPlayer! ah
+secrethalloweenstick:
+  Locations:
+  - halloween;1916;51;481
+  Commands:
+  - perm:cmi.secrethalloweenstick2022! asConsole! cmi msg [playerName] !&6 Sorry [playerName],
+    one time use only!
+  - perm:cmi.secrethalloweenstick2022@! asConsole! cmi sound block_beacon_activate
+  - perm:cmi.secrethalloweenstick2022@! asConsole! cmi sound entity_blaze_hurt
+  - perm:cmi.secrethalloweenstick2022@! asConsole! cmi broadcast !{#orange} - [playerName]
+    {#fuchsia}Found the 2nd secret Halloween Sign!
+  - perm:cmi.secrethalloweenstick2022@! asConsole! kit secrethalloweenkit2 [playerName]
+  - perm:cmi.secrethalloweenstick2022@! asConsole! lp user [playerName] permission
+    set cmi.secrethalloweenstick2022 true
+thanksgivingturkey17:
+  Locations:
+  - thanksgiving;275;75;-532
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #17 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawn_wild_globalmarket:
+  Commands:
+  - asPlayer! ah
+spawn_general_menu:
+  Locations:
+  - general;70;80;-164
+  NPC:
+  - 810_0b9ce774-a6fe-49bb-b592-141d8284dff2_0
+  Commands:
+  - asPlayer! menu
+spawn_spawn_oneblock:
+  Locations:
+  - spawn;4;64;147
+  Commands:
+  - asPlayer! oneblock
+spawn_general_cavespawn:
+  Locations:
+  - general;80;83;-174
+  Commands:
+  - asPlayer! cave spawn
+spawn_oneblock_dayshop:
+  Locations:
+  - acid;-369;58;337
+  - oneblock;10420;79;-7980
+  NPC:
+  - 794_fa21577f-455f-4a1b-98d7-31885ffd3433_0
+  - 775_657b32c6-d047-4957-a20f-58255015075f_0
+  Commands:
+  - asPlayer! bs WeekShop
+spawn_general_market:
+  NPC:
+  - 814_da730846-1043-4f0b-b713-e8dd5461e737_0
+  Commands:
+  - asPlayer! market
+spawn_skygrid_dailyshop:
+  Locations:
+  - skygrid;3;129;-3
+  NPC:
+  - 802_c960b6e0-fe97-478c-8078-e9299e8cf579_0
+  Commands:
+  - asPlayer! bs WeekShop
+spawnrules:
+  Locations:
+  - spawn;-6;64;132
+  Commands:
+  - asPlayer! rules
+spawn_acid_menu:
+  Locations:
+  - acid;-392;56;365
+  NPC:
+  - 789_c0c843c9-5cf0-4e47-af9b-021925c0c995_0
+  Commands:
+  - asPlayer! acid menu
+spawn_oneblock_team:
+  Locations:
+  - oneblock;10407;81;-8007
+  NPC:
+  - 771_f9e7f63e-e33d-422e-91c5-1e1346fe8f63_0
+  Commands:
+  - asPlayer! teams
+spawn_cave_buckettrade:
+  Locations:
+  - cave;-137;78;245
+  NPC:
+  - 807_52d6f077-4158-4304-99f7-f555b11d2c15_0
+  Commands:
+  - asPlayer! bs OneBlockBucketTrades
+spawn_skygrid_listcmds:
+  Locations:
+  - skygrid;-6;129;19
+  NPC:
+  - 799_6986c37b-6f37-41d3-88ef-8c989f6b57eb_0
+  Commands:
+  - asConsole! cmi ctext gametype_listcmds [playerName]
+spawn_cave_island:
+  Locations:
+  - cave;-117;67;240
+  NPC:
+  - 809_2cacde3c-7508-43ff-8780-51cd961ae1d6_0
+  Commands:
+  - asPlayer! cave
+spawnertrader:
+  Locations:
+  - wild;57;82;61
+  NPC:
+  - 523_a33992da-2117-4bba-9230-88cc60bb670c_0
+  Commands:
+  - msg! [playerName] &eSpicing up your bases with some mobs [playerName]? Here's
+    what I have to offer..
+  - cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - cmi sound block_beehive_enter [playerName]
+  - asPlayer! spawners
+warpfishkits:
+  Locations:
+  - general;11923;165;18883
+  Commands:
+  - asPlayer! kits
+spawn_oneblock_summerbosstrader:
+  Commands:
+  - asPlayer! bs summerbossitems
+spawn_cave_team:
+  Locations:
+  - cave;-137;66;248
+  NPC:
+  - 805_953c4f42-dc1e-4ddb-80f3-abac39e3be48_0
+  Commands:
+  - asPlayer! teams
+thanksgivingturkey12:
+  Locations:
+  - thanksgiving;312;75;-587
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #12 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawn_acid_summerbosstrader:
+  Locations:
+  - acid;-423;57;340
+  NPC:
+  - 833_6eac522a-5737-4168-953e-be7b8b84fdab_0
+  Commands:
+  - asPlayer! bs summerbossitems
+thanksgivingturkey25:
+  Locations:
+  - thanksgiving;351;73;-578
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #25 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+warpfishoneblock:
+  Locations:
+  - general;11897;159;18839
+  Commands:
+  - asPlayer! oneblock
+spawnrulessign:
+  Locations:
+  - spawn;-2;66;139
+  Commands:
+  - asPlayer! rules
+vloopshipstop:
+  Locations:
+  - general;12865;172;11964
+  Commands:
+  - cmi sound block_beacon_deactivate [playerName]
+  - asConsole! cmi msg [playerName] !&b -> Spacestation shutting down. [Emergency
+    Power only]
+thanksgivingturkey24:
+  Locations:
+  - thanksgiving;353;74;-555
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #24 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+infiniteanvilspawn:
+  Locations:
+  - spawn;23;64;137
+  Commands:
+  - asConsole! cmi anvil [playerName]
+santa:
+  Locations:
+  - general;-91;62;447
+  Commands:
+  - asPlayer! calendar
+wildtrader:
+  Commands:
+  - msg! [playerName] &e Hey there [playerName], let me see what I have for you today.
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - delay! 3
+  - asConsole! cmi sound block_beehive_enter [playerName]
+  - bs open weekshop [playerName]
+spawn_cave_listcmds:
+  Locations:
+  - cave;-138;66;241
+  NPC:
+  - 806_ea75f7dd-7d62-4806-8dfa-8ec8c4f9f288_0
+  Commands:
+  - asConsole! cmi ctext gametype_listcmds [playerName]
+thanksgivingturkey9:
+  Locations:
+  - thanksgiving;387;77;-544
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #9 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+thanksgivingturkey1:
+  Locations:
+  - thanksgiving;561;123;-560
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #1 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawn_general_rtp:
+  Locations:
+  - general;90;82;-198
+  Commands:
+  - asPlayer! rtp
+droppartyfly:
+  Commands:
+  - cooldown:120?! asConsole! cmi tfly [playerName] 30
+thanksgivingturkey20:
+  Locations:
+  - thanksgiving;357;78;-566
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #20 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+skyblockhelp:
+  Locations:
+  - skyblock;-5;135;0
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e To learn more about Skyblock, visit:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+spawn_skygrid_team:
+  Locations:
+  - skygrid;8;129;19
+  NPC:
+  - 798_ac41f658-dd30-407d-9c74-757f732a5c67_0
+  Commands:
+  - asPlayer! teams
+VoteTokensTrade:
+  Locations:
+  - general;12493;79;-5339
+  Commands:
+  - asConsole! msg! [playerName] &a This trade allows you to convert old unstackable
+    vote tokens to newer ones that do stack. You give us 8, you get 8 back.
+  - cmi sound block_dispenser_dispense [playerName]
+  - bs open VoteTokens [playerName]
+spawnfloris:
+  Locations:
+  - spawn;6;64;132
+  Commands:
+  - asPlayer! team
+thanksgivingturkey11:
+  Locations:
+  - thanksgiving;350;73;-593
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #11 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+thanksgivingturkey22:
+  Locations:
+  - thanksgiving;322;75;-565
+  Commands:
+  - 'msg! [playerName] {#gold}Caught it! #22 / 25'
+  - asConsole! cmi sound item_lodestone_compass_lock [playerName] -p:1.5
+  - asConsole! cmi sound item_spyglass_use [playerName] -p:1.5
+  - asConsole! cmi sound ENTITY_EXPERIENCE_ORB_PICKUP [playerName] -p:1.2 -v:0.5
+spawndiscord:
+  Locations:
+  - spawn;-7;64;145
+  Commands:
+  - asPlayer! discord
+warpfishbearsecret:
+  Locations:
+  - general;12007;239;18874
+  Commands:
+  - msg! [playerName] Sorry, this secret was only for those who participated in the
+    july 3rd fishing tournament
+halloweenbanners:
+  Locations:
+  - halloween;1641;76;632
+  Commands:
+  - perm:cmi.secrethalloweenbanners2022! asConsole! cmi msg [playerName] !&6 Sorry
+    [playerName], one time use only!
+  - perm:cmi.secrethalloweenbanners2022@! asConsole! cmi sound block_beacon_activate
+  - perm:cmi.secrethalloweenbanners2022@! asConsole! cmi sound entity_blaze_hurt
+  - perm:cmi.secrethalloweenbanners2022@! asConsole! cmi broadcast !{#orange} - [playerName]
+    {#fuchsia}Found the Halloween Banners!
+  - perm:cmi.secrethalloweenbanners2022@! asConsole! kit halloweenbanners [playerName]
+  - perm:cmi.secrethalloweenbanners2022@! asConsole! lp user [playerName] permission
+    set cmi.secrethalloweenbanners2022 true
+skyblockgreenhouse:
+  Locations:
+  - skyblock;-20;136;-25
+  Commands:
+  - 'asConsole! cmi msg [playerName] !&e For more info about Greenhouses, read:'
+  - asConsole! cmi msg [playerName] !&3 https://omgboards.com/threads/261663/
+  - cmi sound entity_firework_rocket_launch [playerName] -v:0.8 -p:1.2
+spawn_skyblock_listcmds:
+  Locations:
+  - skyblock;-110;138;7
+  NPC:
+  - 782_56c01bbb-10e1-4bcb-a9ab-83fb07230993_0
+  Commands:
+  - asConsole! cmi ctext gametype_listcmds [playerName]
+spawn_skyblock_island:
+  Locations:
+  - skyblock;-118;138;-6
+  NPC:
+  - 796_ed3203c4-d8bb-45e7-a740-7a3ed1c8d64e_0
+  Commands:
+  - asPlayer! skyblock

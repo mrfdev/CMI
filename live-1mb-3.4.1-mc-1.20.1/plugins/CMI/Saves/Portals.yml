@@ -1,4 +1,4 @@
-# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+# Command section can utilize same custom variables as scheduler. Check Schedules.yml file for all possible variables.
 
 acid:
   acidspawnparticles:
@@ -521,6 +521,144 @@ valentine:
     activationRange: 16
     commandsWithoutTp: true
     commands: []
+easter:
+  eastervoidrespawn:
+    Loc: -294.0:-60.0:-343.0:356.0:-35.0:307.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: false
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 300
+    particleHide: 0
+    activationRange: 36
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi tgod [playerName] 3 -s
+    - msg! [playerName] Woops you're falling, trying to help you not die. best of
+      luck! (don't use /back now)
+    - asConsole! cmi effect [playerName] blindness 2 1 -s
+    - delay! 0.5
+    - asPlayer! easter
+wild:
+  fumblemountainlaunch:
+    Loc: 609.0:227.0:1621.0:609.0:227.0:1621.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi launch [playerName] -nodamage p:6 a:35 d:east
+  jackperbyteportal1back:
+    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
+    enabled: true
+    effect: Reddust
+    color: 8224125
+    showParticles: true
+    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] &lWhoOoOOosh!
+    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
+  randyendportal:
+    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
+    enabled: true
+    effect: TownAura
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! mv tp end
+  randyfortuneteller:
+    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
+    enabled: true
+    effect: composter
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
+  wildend:
+    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
+    enabled: true
+    effect: DepthSuspend
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! end
+  wildgeneral:
+    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
+    enabled: true
+    effect: Totem
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! general
+  wildnether:
+    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
+    enabled: true
+    effect: Portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether
 halloween:
   halloweenLaunchPortalOne:
     Loc: 1359.0:65.0:699.0:1365.0:67.0:705.0
@@ -625,106 +763,6 @@ halloween:
     commandsWithoutTp: false
     commands:
     - cmi effect [playerName] blindness 2 1 -s
-wild:
-  jackperbyteportal1back:
-    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
-    enabled: true
-    effect: Reddust
-    color: 8224125
-    showParticles: true
-    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
-    kickBack: false
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 6
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - msg! [playerName] &lWhoOoOOosh!
-    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
-  randyendportal:
-    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
-    enabled: true
-    effect: TownAura
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! mv tp end
-  randyfortuneteller:
-    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
-    enabled: true
-    effect: composter
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 1
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
-  wildend:
-    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
-    enabled: true
-    effect: DepthSuspend
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! end
-  wildgeneral:
-    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
-    enabled: true
-    effect: Totem
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! general
-  wildnether:
-    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
-    enabled: true
-    effect: Portal
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! nether
 run:
   runlevel3:
     Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
