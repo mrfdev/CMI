@@ -15,27 +15,35 @@
 # Example: ca ?
 # In this case if player performs /ca wrongsub or /ca anotherwrong
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+#
+# 1MoreBlock.com (mainly) staff only commands, version 2.1.0, build 007
 
 CustomAlias:
   maintenance:
     Cmds:
-    - cmi sound block_note_block_bell -p:0.6 -all -s
-    - delay! 0.1
-    - cmi sound block_note_block_bell -p:0.7 -all -s
-    - delay! 0.1
-    - asConsole! cmi maintenance $1-
-    - delay! 0.2
-    - check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&r\n{#orange}During
-      maintenance mode players can remain in-game, but they cannot join the game.
-      We are not restarting, you can keep playing. \n&r
-    - cmi sound block_note_block_bell -p:0.5 -all -s
-    - 'check:%cmi_maintenance_state%!=False! asConsole! cmi broadcast !&e Maintenance:
-      $1- :)'
-    - check:%cmi_maintenance_state%==False! asConsole! cmi broadcast !&r\n {#orange}Back
-      from maintenance. Thank you for your patience. \n&r
+    - statement:start! check:%cmi_maintenance_state%==False! check:$1==true!
+    - if:start! cmi sound block_note_block_bell -p:0.6 -all -s
+    - if:start! broadcast! &r\n{#orange} During maintenance mode players can remain
+      in-game, but they cannot join the game.
+    - if:start! check:$2==true! broadcast! &r\n{#orange} In a few minutes we are also
+      restarting, do not panic, you can keep playing until then.&r\n&r
+    - if:start! check:$2!=true! broadcast! &r\n{#orange} Do not panic, we will not
+      be restarting.&r\n&r
+    - if:start! check:$2==true|false! cmi maintenance $1 {#orange}Maintenance mode
+      {#gold}$3-
+    - if:start! check:$2!=true|false! cmi maintenance $1 {#orange}Maintenance mode
+      {#gold}$2-
+    - if:start! cmi sound block_note_block_bell -p:0.7 -all -s
+    - statement:stop! check:%cmi_maintenance_state%==True! check:$1==false!
+    - if:stop! cmi sound block_note_block_bell -p:0.6 -all -s
+    - if:stop! broadcast! &r\n {#orange} Back from maintenance. Thank you for your
+      patience. \n&r
+    - if:stop! cmi maintenance $1
+    - if:stop! cmi sound block_note_block_bell -p:0.7 -all -s
     Perm: true
     CustomTabs:
-    - 'False'
+    - false,true
+    - false,true
   _donation:
     Cmds:
     - asConsole! cmi toast all -t:goal -icon:diamond_block PayPal Donation received
@@ -154,9 +162,7 @@ CustomAlias:
     Perm: true
   boostjobs:
     Cmds:
-    - jobs expboost all $1
-    - jobs pointboost all $1
-    - jobs moneyboost all $1
+    - asConsole! jobs boost all all $1
     - 'cmi broadcast !&b[/jobs]&6 Exp/Money/Points BOOST enabled, rate: $1 x'
     - cmi sound entity_mule_chest -p:0.1 -v:0.9
     - cmi sound entity_mule_chest -p:0.5 -v:0.9
