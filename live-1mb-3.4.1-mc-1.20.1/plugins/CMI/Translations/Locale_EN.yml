@@ -91,10 +91,12 @@ info:
     try again.'
   CantUseNonEncrypted: '!actionbar!&cCommands on this item are not encrypted. Can''t
     use them!'
+  CantUseTrident: '!actionbar!&cCan''t use trident with riptide enchant at this moment!'
   CantDecode: '!actionbar!&cCan''t decode message/command. Key file contains wrong
     key for this task. Inform server administration about this'
   CantTeleport: '&eYou can''t teleport because you have too many limited items. Scroll
     over this line to see the maximum amount of items allowed.'
+  CantTeleportDistance: '&eSorry you cant teleport over &6[amount] &eblocks away!'
   BlackList: '&e[material] [amount] &6Max: [max]'
   wrongPortal: '&cYou are in incorrect area of effect'
   ItemWillBreak: '!actionbar!&eYour item (&6[itemName]&e) will break soon! &e[current]&6/&e[max]'
@@ -194,10 +196,6 @@ info:
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
-  months: '&e[months] &6months '
-  oneMonth: '&e[months] &6month '
-  weeks: '&e[weeks] &6weeks '
-  oneWeek: '&e[weeks] &6week '
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
@@ -357,11 +355,7 @@ command:
       added: '&eAlert message will be sent to all administrators, if &6[playerDisplayName]
         &ejoin''s in next 24Hours'
       online: '&6[playerDisplayName] &ealready online'
-  alertlist:
-    help:
-      info: '&eLists all recorded alerts'
-      args: ''
-    info:
+      add: '&2Add extra day'
       list: ' &e[place]. &6[playerDisplayName] &e[time] &7Reason: [reason]'
   aliaseditor:
     help:
@@ -596,6 +590,8 @@ command:
       BlockState: ' &7[state]: &f[value]'
       BlockHitBox: ' &7Height: &f[height] &7Length: &f[length] &7Width: &f[width]'
       BlockHitBoxHover: '&7From Top: &f[top] &7From Bottom: &f[bottom]'
+      Books: ' &eBooks: &6[list]'
+      Enchant: '&6[name]:&e[level] '
   blocknbt:
     help:
       info: '&eShow block NBT information'
@@ -726,6 +722,12 @@ command:
         Owner: '&7Owner: [playerDisplayName]'
         Ends: ' &7Expires in: [time]'
         Names: '&7[playerDisplayName]'
+  chatcolor:
+    help:
+      info: '&ePick chat color'
+      args: (playerName)
+    info:
+      reset: '&6Reset'
   checkaccount:
     help:
       info: '&eSearch for a players other accounts'
@@ -1640,10 +1642,14 @@ command:
       bedButton: '&7Bed location'
       homeButton: '&7Home location'
       deathButton: '&7Death location'
+      slot: '&7Slot: &e[slot]'
+      private: '&7Private: &e[state]'
+      favorite: '&7Favorite: &e[state]'
       lore: |-
         &7[world]
         &f[x]&7:&f[y]&7:&f[z]
-      pickerLore: '&7Press Q key to change icon'
+      picker: '&7Click to change icon'
+      edit: '&7Click Q to edit'
   hunger:
     help:
       info: '&eSet players hunger'
@@ -2263,6 +2269,8 @@ command:
     info:
       searching: '&eSearching &6[checked]&e/&6[total] &e(&6[found]&e)'
       List: ' &6[place]&e. &2[name] &e-> &6[time].'
+      timeFrame: '&eLast hour (&6[time1]&e), 24 hours (&6[time2]&e), 7 days (&6[time3]&e),
+        30 days (&6[time4]&e)'
   launch:
     help:
       info: '&eLaunch at direction you are looking or at angle'
@@ -2523,7 +2531,6 @@ command:
     info:
       TargetMsg: '&7[&8[senderDisplayName] &7-> &8me&7]&r&f [message]'
       SenderMsg: '&7[&8me &7-> &8[playerDisplayName]&7]&r&f [message]'
-      consoleMsg: '[[senderDisplayName] -> [playerDisplayName]] [message]'
       noPM: '&cPlayer is not accepting private messages now'
       badGroup: '&cCan''t send private messages to this group of players'
   mute:
@@ -2640,6 +2647,7 @@ command:
         acceptingTPA: '&eAccepting teleportations to you'
         acceptingMoney: '&eAccepting money payments'
         chatbubble: '&eChat bubbles'
+        pmSound: '&ePrivate messages sounds'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -2727,6 +2735,8 @@ command:
       redefine: '&eRedefine area from current selection'
       particles: '&eParticles: &6[state]'
       particleType: '&eParticle type: &6[type]'
+      particleColor: '&eParticle color: &6[color]'
+      particleSize: '&eParticle size: &6[size]'
       particleAmount: '&eParticle amount: &6[amount]'
       particlePercent: '&ePercentage of sides shrinked particles: &6[amount]%'
       activationRange: '&eActivation range: &6[amount]'
@@ -3289,6 +3299,7 @@ command:
       set: '&eYou correctly created the home with name of &6[homeName]&e!'
       setBed: '&eCreated bed respawn location'
       private: ' &2(private)'
+      maxFavorites: '&cYou can only have &e[amount] &cfavorite homes at one time'
       noMore: '&cYou have reached max sethome limit'
       exist: "&cHome location with this name (&6[name]&c) already exists! \n&eClick\
         \ to confirm overwrite."
