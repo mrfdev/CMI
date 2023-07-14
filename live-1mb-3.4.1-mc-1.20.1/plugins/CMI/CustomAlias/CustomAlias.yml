@@ -23,7 +23,7 @@ CustomAlias:
     Tab: false
   donate:
     Cmds:
-    - ctext donate
+    - asPlayer! cmi ctext donate
   rules:
     Cmds:
     - asConsole! cmi ctext rules [playerName]
@@ -43,55 +43,16 @@ CustomAlias:
     - msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You do not
       have to register to play on 1MB \n&r
     Tab: false
-  staff:
-    Cmds:
-    - msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} We are not
-      looking for new team members.
-    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} These are our
-      current team members, feel free to reach out to them.
-    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} mrfloris, tidala,
-      jackPerByte, Citebafla, benjamin433, mrcrazyman02, nikkipixel, and greymagic27,
-      to name a few.. . \n&r
-    - msg! [playerName]  If you are trying to make a team in skyblock or oneblock,
-      see &6/teams&r instead.
-    Tab: false
-  apply:
-    Cmds:
-    - msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sorry, we're
-      currently not looking for new team additions. \n&r
-    Tab: false
-  mod:
-    Cmds:
-    - msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Sorry, we're
-      currently not looking for new team additions. \n&r
-    Tab: false
   inventory:
     Cmds:
     - 'asConsole! msg! [playerName] &3 1MB Tip »&7 Shared only in: /spawn, /general,
       /mine, /end, /nether, /souls, and /wild. Other worlds have unique inventories.
       &r'
     Tab: false
-  newplayer:
-    Cmds:
-    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB New Player Info ❖{#orient}-----------------------•
-    - msg! [playerName] {#Feijoa} Our permanent survival world is {#orange}&l/wild{#Feijoa}.
-      (You can {#orange}&l/rtp&r{#Feijoa} to try and find untouched land).&r
-    - msg! [playerName] {#Feijoa} Don't forget to {#orange}&l/sethome base&r{#Feijoa}
-      (/home base to get back). &r
-    - 'msg! [playerName] {#Feijoa} Our other perm survival worlds: {#orange}&l/general,
-      /nether, /end&r'
-    - 'msg! [playerName] {#Feijoa} If you want to play oneblock, cave, skyblock, etc.
-      type: {#orange}&l/menu worlds&r{#Feijoa}, or start your island by typing: {#orange}&l/oneblock&r{#Feijoa}
-      or {#orange}&l/skyblock&r{#Feijoa} \n&r'
-    Tab: false
   ranks:
     Cmds:
     - asPlayer! groups
     Tab: false
-  market:
-    Cmds:
-    - check:$1!=null! ah $1-
-    - check:$1==null! ah
   achievements:
     Cmds:
     - aa list
@@ -236,9 +197,6 @@ CustomAlias:
     Cmds:
     - asConsole! cmi invsave [playerName]
     - bs minigames
-  team:
-    Cmds:
-    - staff
   support:
     Cmds:
     - ctext donate
@@ -545,8 +503,8 @@ CustomAlias:
       the age of the server, sometimes that's pretty handy! in 2021 we celebrate our
       10 years anniversary.
     - check:$1==server! msg! [playerName] - The server started March 2021, that's
-      10 years ago! --> /celebration :) Maybe give mrfloris and madmikeyb a poke to
-      congratulate them!
+      12+ years ago! --> /celebration :) Maybe give mrfloris and madmikeyb a poke
+      to congratulate them!
     - 'check:$1==buy! check:%cmi_iteminhand_type%!=CAKE! check:%cmi_iteminhand_type%!=COOKIE!
       check:%cmi_iteminhand_type%!=PUMPKIN_PIE! msg! [playerName] Oops: \n Eh, pls
       hold a cake, cookie or a pumpkin pie :D \n &r'
@@ -724,13 +682,13 @@ CustomAlias:
   ip:
     Cmds:
     - 'msg! [playerName] {#gold}You can connect to our server via five different routings:
-      {#geyser} (very handy if you experience quite a high ping (network lag), you can check
-      your ping with: /myping by the way)'
-    - 'msg! [playerName] {#cerulean}•> {#geyser}Main (best for EU) :{#gold} 1MoreBlock.com'
-    - 'msg! [playerName] {#cerulean}•> {#geyser}Cosmic (best for Int) :{#gold} play.1MoreBlock.com'
-    - 'msg! [playerName] {#cerulean}•> {#geyser}Shield (best for US) :{#gold} play2.1MoreBlock.com'
-    - 'msg! [playerName] {#cerulean}•> {#geyser}Neo (relay) :{#gold} play3.1MoreBlock.com'
-    - 'msg! [playerName] {#cerulean}•> {#geyser}Infinity (relay) :{#gold} play4.1MoreBlock.com'
+      {#geyser} (very handy if you experience quite a high ping (network lag), you
+      can check your ping with: /myping by the way)'
+    - msg! [playerName] {#cerulean}•> {#geyser}Main (best for EU) :{#gold} 1MoreBlock.com
+    - msg! [playerName] {#cerulean}•> {#geyser}Cosmic (best for Int) :{#gold} play.1MoreBlock.com
+    - msg! [playerName] {#cerulean}•> {#geyser}Shield (best for US) :{#gold} play2.1MoreBlock.com
+    - msg! [playerName] {#cerulean}•> {#geyser}Neo (relay) :{#gold} play3.1MoreBlock.com
+    - msg! [playerName] {#cerulean}•> {#geyser}Infinity (relay) :{#gold} play4.1MoreBlock.com
     Tab: false
   _getRekt:
     Cmds:
@@ -786,10 +744,18 @@ CustomAlias:
     Cmds:
     - asPlayer! skills
     Tab: false
-  ah sell:
+  shop:
     Cmds:
-    - msg! [playerName] [please read] {#orange} To guarantee no item loss the option
-      to sell to the global market is temporarily turned off. This is due to the upcoming
-      1.19.4 upgrade. Hopefuly it will return soon. You can still cancel listings,
-      buy items, etc.
+    - check:$1==null! asPlayer! shopgui
+  egghunt:
+    Cmds:
+    - asPlayer! event
+  market info:
+    Cmds:
+    - msg! [playerName] {#white}To sell to the global market, you can hold the item
+      in your hand and type "/market sell 5", whatever you are holding, and however
+      much of that, it will be listed on the /ah (./market) for $5 for others to buy.
     Tab: false
+  farm info:
+    Cmds:
+    - 'msg! [playerName] {#white} info: https://omgboards.com/threads/263890/'
