@@ -19,7 +19,7 @@
 CustomAlias:
   event:
     Cmds:
-    - asConsole! cmi openbook events [playerName]
+    - asConsole! cmi ctext events [playerName]
     Tab: false
   halloween:
     Cmds:
@@ -39,3 +39,11 @@ CustomAlias:
   easter:
     Cmds:
     - asPlayer! event
+    Tab: false
+  walk:
+    Cmds:
+    - statement:check1! check:%plugin_isenabled_InfinityParkour%!
+    - if:check1! msg! [playerName] asPlayer! infinityparkour $1-
+    - if:check1@! msg! [playerName] {#orange}This mini game will return later this
+      year! You cannot play this right now.
+    AddTabs: true
