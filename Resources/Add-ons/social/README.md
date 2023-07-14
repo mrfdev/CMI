@@ -2,7 +2,7 @@
 
 ## Social
 
-This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.2.x.x or newer, and Minecraft 1.19.x
+This is a `CMI CustomAlias` add-on made by Floris, for CMI 9.6.x.x or newer, and Minecraft 1.20.x
 
 1MB Social allows a server owner to offer a set of informative commands to their players. These commands focus on the online social platforms like Twitter, Instagram, their website, where they live-stream on Youtube, etc. And using CMI's built-in `/cmi aliaseditor`, these can be customized on the fly (without having to reload the plugin or restart the server).
 
@@ -10,7 +10,7 @@ And `/social` (`/social gui` if you have BSP as well) is a way for a player to f
 
 And yes, cooldowns are possible, again, you can customize every social command in-game. 
 
-Final note: By default the permissions are set to false. A quick search/replace on the .yml file before applying it to your server will allow you to mass turn on permissions and disable them all at once. Then just grant the groups access to the commands they should have. Generally a permission for any of the provided commands will be `cmi.customalias.[social]` So `/youtube` will be `cmi.customalias.youtube`. 
+Final note: By default the permissions are set to false. A quick search/replace on the .yml file before applying it to your server will allow you to mass turn-on permissions and disable them all at once. Then just grant the groups access to the commands they should have. Generally a permission for any of the provided commands will be `cmi.customalias.[social]` So `/youtube` will be `cmi.customalias.youtube`. 
 
 Okay, **let's get started**. Thank you for being interested in this little add-on.
 
@@ -39,7 +39,7 @@ You can now go into the game and try out the commands.
 
 ## Overview of Social Commands included
 
-(This list was last updated on June 17th, 2022 ~ note please that not all commands are in the yml file yet. Working on it.)
+(This list was last updated on July 7th, 2023 ~ note please that not all commands are in the yml file yet. Working on it.)
 
 ```
 - /social

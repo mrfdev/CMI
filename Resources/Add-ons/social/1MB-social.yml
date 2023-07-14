@@ -1,4 +1,4 @@
-# Start 1MB Add-on: CMI Social (version 1.1.1, build 012) (Made for Minecraft 1.19.x with CMI 9.2.x.x or newer)
+# Start 1MB Add-on: CMI Social (version 1.1.2, build 013) (Made for Minecraft 1.20.x with CMI 9.6.x.x or newer)
 
 # Installation instructions: https://youtu.be/9h0_XcHtwLg 
 # - More information: https://scripts.1moreblock.com/
@@ -47,8 +47,8 @@ CustomAlias:
   tiktok:
     Cmds:
     - 'msg! [playerName] {#orient},--{#cerulean}❖ Social ❖{#orient}---------------------------------------'
-    - 'msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} https://www.tiktok.com/@fjmfd'
-    - 'msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} 15s player fails videos.'
+    - 'msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} https://www.tiktok.com/@1MoreBlock'
+    - 'msg! [playerName] {#orient}| {#cerulean}TikTok »{#kangaroo} Like some of our clips!'
     - 'msg! [playerName] {#orient}`--(give us a follow)---------------------------------\n&r'
     Tab: false
   facebook:
