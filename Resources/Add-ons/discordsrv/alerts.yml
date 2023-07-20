@@ -405,7 +405,7 @@ Alerts:
       Author:
         ImageUrl: "{embedavatarurl}"
         Name: "🥾 %cmi_user_nameplate_prefix% ${#event.getPlayer().getDisplayName()}"
-      Description: "**Kick reason:** ${#event.getReason()}"      
+      Description: "**Kick reason:** ${#event.getReason()}"
  
 # boredmanplays cmi player kicked (and banned) from server event
   - Trigger: PlayerKickEvent
