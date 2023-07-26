@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.2 alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.3 build 018
+## Version 0.2.4 build 019
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -202,6 +202,8 @@ Alerts:
         Discord acccount: <@${#discordsrv.accountLinkManager.getDiscordId(player.uniqueId)}>
       Timestamp: true
 
+# 1MoreBlock.com CMI /afk alert version 0.2.4 build 019
+# Released here: https://discord.com/channels/135634590575493120/1133773976141832255
 # mrfloris > broadcast someone going afk manually or automatically to public global discord channel
   - Trigger: CMIAfkEnterEvent
     Async: true
@@ -212,13 +214,14 @@ Alerts:
       Color: "#869600"
       ThumbnailUrl: "{embedavatarurl}"
       Title:
-        Text: "{displayname} has gone idle."
+        Text: "{displayname} has ${#event.getType().toString() == 'manual' ? 'manually' : 'automatically'} gone idle."
         Url: ""
       Fields:
         - "AFK reason:;%cmi_user_afk_msg%;true"
-        - "World:;`%cmi_user_world_formatted%`;true"
-        - "Type;${#event.getType().toString() == 'manual' ? 'Manual' : 'Automatic'};false"
+        - "World:;`%cmi_player_world%`;true"
 
+# 1MoreBlock.com CMI /afk alert version 0.2.4 build 019
+# Released here: https://discord.com/channels/135634590575493120/1133773976141832255
 # mrfloris > Send a '/cmi afk' alert when someone returns from AFK
   - Trigger: CMIAfkLeaveEvent
     Async: false
@@ -229,13 +232,11 @@ Alerts:
       Color: "#869600"
       ThumbnailUrl: "{embedavatarurl}"
       Title:
-        Text: "{displayname} has returned."
+        Text: "{displayname} has returned after %cmi_user_afk_for%."
         Url: ""
       Fields:
         - "AFK reason:;%cmi_user_afk_msg%;true"
-        - "World:;`%cmi_user_world_formatted%`;true"
-      Footer:
-        Text: "Time away: %cmi_user_afk_for%"
+        - "World:;`%cmi_player_world%`;true"
 
   # mrfloris > Global channel: player-join event (without ip, etc)
   - Trigger: PlayerJoinEvent
