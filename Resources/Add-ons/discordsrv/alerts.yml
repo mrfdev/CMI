@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.2 alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.7 build 024
+## Version 0.2.7 build 025
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -179,6 +179,9 @@ Alerts:
       Description: "`${#event.getMessage()}`"
 
 # mrfloris > log book and quill signing to spygod channel (inspired by Zerek https://ptb.discord.com/channels/135634590575493120/889139760067645460/892857994415599676)
+# remove these two lines, if you also want to log them writing in a book and pressing DONE, not just when they sign it.
+    # Conditions:
+    #   - 'getLine(0) + getLine(1) + getLine(2) + getLine(3) != ""'
   - Trigger: PlayerEditBookEvent
     Channel: spydog
     Conditions:
