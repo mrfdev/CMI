@@ -1,6 +1,6 @@
 ## DiscordSRV 1.26.2 alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.7 build 025
+## Version 0.2.8, build 026
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -529,8 +529,8 @@ Alerts:
         Name: '1MB Global /market'
       Description: "Player **`${#event.getBuyer().getName()}`** bought `${#event.getQuantity()}`x `${(#event.getItemStack().getItemMeta().displayName() == null) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getItemStack().translationKey())) : ((T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName()).length() > 25) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName()).substring(0, 23) + '...' : T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getItemStack().getItemMeta().displayName())) + ' (' + T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getItemStack().translationKey())) + ')'}` from `${#event.getSeller().getName()}` for $`${#event.getShopItem().getPrice()}`."
 
-  # 1MoreBlock.com ShopGUI+ alert version 0.2.6 build 022
-  # credits: mrfloris with some great help/contributions from Mackenzie and the456gamer
+  # 1MoreBlock.com ShopGUI+ alert version 0.2.8, build 026
+  # credits: mrfloris with some great help/contributions from Mackenzie and the456gamer | sell support contribution by StaceeAnn
   # published here: https://discord.com/channels/135634590575493120/1139010819905048679
   - Trigger: ShopPostTransactionEvent
     Channel: spydog
@@ -539,7 +539,7 @@ Alerts:
       Author:
         ImageUrl: "https://example.com/market.png"
         Name: '/shopgui'
-      Description: "Player `${#event.getResult().getPlayer().getName()}` bought `${#event.getResult().getAmount()}`x `${(#event.getResult().getShopItem().getItem().getItemMeta().displayName() == null) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getResult().getShopItem().getItem().translationKey())) : ((T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getResult().getShopItem().getItem().getItemMeta().displayName()).length() > 25) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getResult().getShopItem().getItem().getItemMeta().displayName()).substring(0, 23) + '...' : T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getResult().getShopItem().getItem().getItemMeta().displayName())) + ' (' + T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getResult().getShopItem().getItem().translationKey())) + ')'}`, for $`${#event.getResult().getPrice()}`"
+      Description: "Player → `${#event.getResult().getPlayer().getName()}` `${#event.getResult().getShopAction()}` `${#event.getResult().getAmount()}`x `${(#event.getResult().getShopItem().getItem().getItemMeta().displayName() == null) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getResult().getShopItem().getItem().translationKey())) : ((T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getResult().getShopItem().getItem().getItemMeta().displayName()).length() > 25) ? T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getResult().getShopItem().getItem().getItemMeta().displayName()).substring(0, 23) + '...' : T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).plainText().serialize(#event.getResult().getShopItem().getItem().getItemMeta().displayName())) + ' (' + T(net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer).builder().flattener(T(io.papermc.paper.text.PaperComponents).flattener()).build().serialize(T(net.kyori.adventure.text.Component).translatable(#event.getResult().getShopItem().getItem().translationKey())) + ')'}`, for $`${#event.getResult().getPrice()}`"
 
   # 1MoreBlock.com CMI /nick change alert version 0.2.7 build 024
   # credits: mrfloris and zrips
