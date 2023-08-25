@@ -143,3 +143,16 @@ cmi checkperm color
 - And finally; `/stop` the server, and start it up again to guarantee that everything's working properly. 
 
 ---
+
+## Other HEX formats
+
+If your CMILib and CMI are both up to date, you will be able to set true for these settings to use janky alternative hex.
+```yaml
+Colors:
+  # When enabled plugin will try to detect simplified hex color codes like #f6f6f6 or #ff6 in addition to {#f6f6f6} and {#red}
+  # Keep in mind that this adds extra checks and the simplified format will not support gradients or named colors so you will still need to use a more complex format for those
+  OfficialHex: false
+  # When enabled plugin will try to detect quirky hex color codes like &#f6f6f6 or &#ff6 in addition to {#f6f6f6} and {#red}
+  # Keep in mind that this adds extra checks and the quirky format will not support gradients or named colors so you will still need to use a more complex format for those
+  QuirkyHex: false
+```
