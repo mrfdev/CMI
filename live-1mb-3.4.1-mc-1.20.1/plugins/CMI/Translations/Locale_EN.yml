@@ -228,7 +228,7 @@ Information:
   FirstConnection: '&eFirst connection: &6[time]'
   Lastseen: '&eLast seen: &6[time]'
   Onlinesince: '&eOnline since: &6[time]'
-  Money: '&Money: &6[money]'
+  Money: '&eBalance: &6[money]'
   Group: '&eGroup: &6[group]'
 econ:
   commandCost: '&7This command cost is &6[cost] &7repeat it or click here to confirm'
@@ -343,7 +343,7 @@ command:
   alert:
     help:
       info: '&eAlerts administration on players login'
-      args: '[playerName] (reason)'
+      args: '[add/list/remove] [playerName] (reason) (-s)'
       explanation:
       - '&ePermissions:'
       - '&6command.alert.info.inform &e- to see alerts on player login'
@@ -445,7 +445,7 @@ command:
       glow: '&7Glowing'
       invulnerable: '&7Invulnerable'
       name: '&7Visible name'
-      nameEdit: '&7Middle mouse click to edit name'
+      nameEdit: '&7Q click to edit name'
       interactable: '&7Interactable'
       explanation: '&8Left or right mouse button adjusts value'
       explanation2: '&8Hold shift to make it 10x faster'
@@ -801,7 +801,7 @@ command:
       info: '&eClear players inventory'
       args: (playerName) (item(:amount)(;data)) (-s) (+clearType)
       explanation:
-      - 'Posible clearTypes: quickbar, inventory, partinventory, weapons, armorslots,
+      - 'Possible clearTypes: quickbar, inventory, partinventory, weapons, armorslots,
         tools, armors, mainhand, offhand'
       - Should start with + sign
       - Multiple types can be used
@@ -1028,7 +1028,7 @@ command:
   down:
     help:
       info: '&eTeleport one floor down'
-      args: '[playerName] (-s)'
+      args: '[playerName] (-s) (max)'
     info:
       notFound: '&eNo suitable location'
   dsign:
@@ -1168,9 +1168,8 @@ command:
       - -o will take item from offhand
     info:
       feedback: '&eYou have enchanted item with &3[enchant]:[level]&e enchantment
-        for &3[playerDisplayName]&e (&3[offon]&e).'
-      removed: '&eYou have removed &3[enchant] &eenchanted from item for &3[playerDisplayName]&e
-        (&3[offon]&e).'
+        for &3[playerDisplayName]'
+      removed: '&eYou have removed &3[enchant] &eenchanted from item for &3[playerDisplayName]'
       clear: '&eCleared enchantments from item for &3[playerDisplayName]'
       clearOne: '&eRemoved &3[enchant] &eenchantment from item for &3[playerDisplayName]'
       noitem: '&cNot holding any item in hand.'
@@ -1276,10 +1275,10 @@ command:
       explanation:
       - '&6SubCommands:'
       - '- &6stats &e- show current scanning stats'
-      - '- &6pause &e- pause scaning'
-      - '- &6continue &e- continue scaning'
-      - '- &6stop &e- stop scaning'
-      - '- &6stopall &e- stop all scanings'
+      - '- &6pause &e- pause scanning'
+      - '- &6continue &e- continue scanning'
+      - '- &6stop &e- stop scanning'
+      - '- &6stopall &e- stop all scanning'
       - '- &6speed [amount] &e- set current scan speed'
       - '- &6autospeed [true/false] &e- set autospeed turned off or on'
       - '- &6messages [true/false] &e- set message output to off or on'
@@ -1357,7 +1356,7 @@ command:
   flyspeed:
     help:
       info: '&eSet players fly speed from 0 to 10'
-      args: '[playerName] [amount] (-s)'
+      args: (playerName) [amount] (-s)
     info:
       feedback: '&eYou have set &3[amount]&e fly speed for &3[playerDisplayName]&e
         (&3[offon]&e).'
@@ -1369,7 +1368,7 @@ command:
       args: ''
   generateworth:
     help:
-      info: '&eAuto generate posible item worth values'
+      info: '&eAuto generate possible item worth values'
       args: ''
   getbook:
     help:
@@ -1467,6 +1466,7 @@ command:
     help:
       info: '&eClears server from unnecessary items'
       args: (+cb) (+cm) (+ci) (+b) (+sh) (+tnt) (+all) (+fl) (+named) (-w:[worldName])
+        (-s)
       explanation:
       - +cm will include minecarts into cleaning
       - +cb will include boats into cleaning
@@ -1554,7 +1554,7 @@ command:
       interval: '&7Update every &6[second] &7seconds'
       intervalLore:
       - '&7How often, in seconds, information on the hologram is updated'
-      - '&7If text is not changing, set it to -1'
+      - '&7If text is not changing, set it to 0'
       pageInterval: '&7Change page every &6[second] &7seconds'
       pageIntervalLore:
       - '&7How often, in seconds, hologram page is changed automatically'
@@ -1630,7 +1630,7 @@ command:
       nextPage: <T>  &6>>>></T><H>  &e>>>></H>
       autoButton: '&7Automatically generate pagination buttons'
       autoButtonLore:
-      - '&eCurrent hologram doesnt have any pages create'
+      - '&eCurrent hologram doesnt have any pages created'
       - '&eUse &6!nextpage! &eas a new line to make next page'
       autoButtonForward: '&2This hologram already has forwards button created'
       autoButtonBackward: '&2This hologram already has backwards button created'
@@ -1793,6 +1793,7 @@ command:
       - '[playerDisplayName]'
       - '[nick]'
       - '[group]'
+      - '[title]'
       - '[knownAs]'
       - '[onlineoffline]'
       - '[playtime]'
@@ -2141,7 +2142,7 @@ command:
   kit:
     help:
       info: '&eGives predefined kit.'
-      args: '[kitName] (playerName) (-s)'
+      args: '[kitName] (playerName) (-s) (-open) (-preview)'
       explanation:
       - '&ePermissions:'
       - '&6cmi.kit.[kitName] &e- allows to use particular kit'
@@ -2307,7 +2308,7 @@ command:
       args: (-p:[page])
     info:
       searching: '&eSearching &6[checked]&e/&6[total] &e(&6[found]&e)'
-      List: ' &6[place]&e. &2[name] &e-> &6[time].'
+      List: ' &6[place]&e. &2[name] &e-> &6[time]'
       timeFrame: '&eLast hour (&6[time1]&e), 24 hours (&6[time2]&e), 7 days (&6[time3]&e),
         30 days (&6[time4]&e)'
   launch:
@@ -2668,7 +2669,8 @@ command:
       args: (playerName) (option) (enable/disable/toggle/status) (-s)
       explanation:
       - 'Posible actions: visibleHolograms, shiftSignEdit, totemBossBar, bassBarCompass,
-        tagSound, chatSpy, cmdSpy, signSpy, acceptingPM, acceptingTPA, acceptingMoney'
+        tagSound, chatSpy, cmdSpy, signSpy, acceptingPM, acceptingTPA, acceptingMoney,
+        chatbubble'
     info:
       title: '&8Options'
       state: '&2State: [state]'
@@ -2959,7 +2961,7 @@ command:
   recipe:
     help:
       info: '&eCheck item recipe'
-      args: (itemName)
+      args: (itemName) (-c)
     info:
       type: '&0[type]'
       types:
@@ -3078,7 +3080,7 @@ command:
   resetdbfields:
     help:
       info: '&eResets particular database columns to default value'
-      args: '[collumnName] (-w:[worldName]) (-p:[playerName])'
+      args: '[columnName] (-w:[worldName]) (-p:[playerName])'
     info:
       feedback: '&eUpdated &7[amount] &eplayers'
       nofield: '&cCant find field by this name'
@@ -3126,7 +3128,7 @@ command:
       explanation:
       - -online variable can be used to save only online player inventories
     info:
-      saving: '[simbol] &2checked: &e[checked]&2 from &e[total]&2 saved: &e[saved]
+      saving: '[symbol] &2checked: &e[checked]&2 from &e[total]&2 saved: &e[saved]
         &2skipped: &e[skipped] [simbol]'
       saved: '&eSave finished. Saved: &6[saved] &eSkipped: &6[skipped]'
   saveditems:
@@ -3164,7 +3166,7 @@ command:
       - '&e- &6pause &e- pause scanning '
       - '- &6continue &e- continue scanning '
       - '- &6stop &e- stop scanning '
-      - '- &6stopall &e- stops all scannings '
+      - '- &6stopall &e- stops all active scans '
       - '- &6speed [amount] &e- set current scan speed '
       - '- &6autospeed [true/false] &e- set AutoSpeed turned off or on '
       - '- &6messages [true/false] &e- set message output to off or on'
@@ -3188,7 +3190,7 @@ command:
       startScanning: '&eFound &6[amount] &echunks to check. Starting!'
       paused: '&eScanning paused, to continue use &6/cmi scan continue.'
       continuing: '&eScanning continuing'
-      stoped: '&eScanning stoppeds. You can check the results with /cmi scan info'
+      stoped: '&eScanning stopped. You can check the results with /cmi scan info'
       speedChange: '&eSpeed changed to [amount]'
       autospeedChange: '&eAutoSpeed changed to [state]'
       messagesChange: '&eMessage state changed to [state]'
@@ -3300,7 +3302,7 @@ command:
   sell:
     help:
       info: '&eSell items from inventory'
-      args: (all/blocks/hand/same/gui/material)
+      args: (all/blocks/hand/same/gui/material) (playerName) (-s)
     info:
       total: '&eEarned &6[total] &eby selling &6[amount] &eitems. New balance &6[balance]'
       close: '&8Place items you want to sell'
@@ -3386,7 +3388,7 @@ command:
     help:
       info: '&eSets spawn command teleport point'
       args: (playerName) (true/false) (-g:[groupName]) (-rng:[range]) (-w:world,world_nether)
-        (loc:[world;x;y;z;yaw;pitch])
+        (-loc:[world;x;y;z;yaw;pitch])
       explanation:
       - More info on command usage at https://www.zrips.net/cmi/commands/spawn/
     info:
@@ -3397,8 +3399,8 @@ command:
   setwarp:
     help:
       info: '&eSets warp location'
-      args: '[warpName] (reqPermission) (hand) (slot) (autoLore) (-g:[groupName])
-        (world;x;y;z;yaw;pitch)'
+      args: '[warpName] (reqPermission) (hand/head/head:[playerName]) (slot) (autoLore)
+        (-g:[groupName]) (world;x;y;z;yaw;pitch) (-confirm)'
       explanation:
       - 'Examples:'
       - /cmi setwarp spawn - simple warp to spawn
@@ -3433,15 +3435,15 @@ command:
       result: '&2Crafts into &7[result]&f(&7[amount]&f)'
       ingredientsPrice: '&cIngredient price: &7[price]'
       resultPrice: '&cCan be sold for: &7[price]'
-      explanation: '&2Buy price is only used in detecting posible exploits'
+      explanation: '&2Buy price is only used in detecting possible exploits'
   shadowmute:
     help:
       info: '&eMute player without telling him that he is muted'
       args: '[playerName] (time) (-s) (reason)'
   shakeitoff:
     help:
-      info: '&eDismount any entity riding you'
-      args: ''
+      info: '&eDismount any entity riding you or target player'
+      args: (playerName) (-s)
     info:
       shaked: '&eYou have shaken off: &6[entity]'
       nothing: '&eNothing to shake off'
@@ -3473,7 +3475,7 @@ command:
   sit:
     help:
       info: '&eSit in your position'
-      args: (playerName) (-persistent) (-s) (location)
+      args: (playerName) (-persistent) (-s) (location) (on/off)
     info:
       onSit: '!actionbar!&eYou are sitting now'
       onStandUp: '!actionbar!&eYou are no longer sitting'
@@ -3512,8 +3514,8 @@ command:
   sound:
     help:
       info: '&ePlay sound at target location'
-      args: '[sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world) (x) (y)
-        (z) (-s)'
+      args: '[sound] (-p:[pitch]) (-v:[volume]) (playerName/-all/-l:playerName) (world;x;y;z)
+        (-r:[radius]) (-s)'
     info:
       playing: "&ePlaying &6[sound] &eat [world] [x]:[y]:[z] \n&ePitch: &6[pitch]\
         \ &eVolume: &6[volume]"
@@ -3555,34 +3557,8 @@ command:
       info: '&eSpawns entity at your location'
       args: '[EntityType]'
       explanation:
-      - ' &e- First argument always is main entities name'
-      - ' &e- You can define entities states: baby, adult, dumb, immortal, tamed,
-        n-[name], upwards, glow, skull-[name], helmet-[itemname], chest-[itemname],
-        legs-[itemname], boots-[itemname], mhand-[itemname], ohand-[itemname], effect-levitation/10/1-speed/10/2.
-        /n Example: horse:baby:tamed:n-Horsy, zombie:skull-Zrips:n-AngryZombie:mhand-Diamond_Sword'
-      - ' &e- some entities have special variables: '
-      - '    &6Sheep &e- white, brown, red, rainbow and so on... &6primed_tnt &e-
-        [ticks], incendiary'
-      - '    &6Horse &e- white, chestnut, creamy, darkbrown, gray, black'
-      - '    &6Ocelot &e- red, siamese, wild, black &6experience_orb &e- [number]'
-      - '    &6Skeleton &e- wither, &6Creeper &e- charged &6Wolf &e- angry'
-      - '    &6Zombie &e- villager, blacksmith, butcher, farmer, priest, librarian'
-      - '    &6Villager &e- blacksmith, butcher, farmer, priest, librarian'
-      - '    &6Slime, MagmaCube &e- size by giving number from 1. slime:3'
-      - '    &6ArmorStands &e- nogravity, noplate, arms, noarms, small'
-      - '    &6ShulkerBullet &e- [target], bounce'
-      - ' &e- Extra variables:'
-      - '     &6ps:zombie:priest:baby-1 &e- passanger with amount'
-      - '     &6hp:20 &e- health'
-      - '     &6sp:3 &e- spreads randomly entities in range'
-      - '     &6s:4 &e- entities speed'
-      - '     &6t:[playername] &e- target which one entities will atack'
-      - '     &6q:10 &e- amount you want to spawn'
-      - '     &6[playername] &e- spawns entities at players location'
-      - '     &6loc:123/13.0/-15/World &e- spawn location. World name is optional
-        if used as player'
-      - 'Example: /cmi spawnmob sheep:adult:rainbow ps:chicken:baby:n-Chick_on_Sheep
-        q:10 sp:10 hp:50 s:2'
+      - 'Example: /cmi spawnmob sheep:adult:rainbow 3 sp:5'
+      - <T>More information at www.zrips.net/cmi/commands/spawnmob/</T><URL>https://www.zrips.net/cmi/commands/spawnmob/</URL>
     info:
       wrongEntityName: '&eIncorrect entity name'
       spawnedEntities: '&eSpawned &6[entities] &eentities '
@@ -3860,14 +3836,14 @@ command:
       args: (playerName) (timeInSec) (-s)
       explanation:
       - 'Examples:'
-      - tfly Zrips 30 - fly mode for next 30 sec
+      - tfly Zrips 30 - fly mode for the next 30 sec
       - tfly Zrips +30 - adds fly mode for an additional 30 sec
       - tfly Zrips 0 - fly mode until relog
       - tfly Zrips - check if player have tfly mode enabled and until when
     info:
       setTimedFly: '&eYou have set &6[playerDisplayName]&e temporary fly for the next
         [time]'
-      addTimedFly: '&eYou have added  an additional [addTime] ([time]) for &6[playerDisplayName]&e'
+      addTimedFly: '&eYou have added an additional [addTime] ([time]) for &6[playerDisplayName]&e'
       takeTimedFly: '&eYou have taken [addTime] ([time]) for &6[playerDisplayName]&e'
       setUntilRelogFly: '&eYou have set &6[playerDisplayName]&e temporary fly until
         relog.'
@@ -3877,18 +3853,18 @@ command:
       targetTimedEnabledTake: '&eYour flight time was decreased by [addTime] ([time]).'
       targetUntilRelogEnabled: '&eYour flight was enabled by &3[senderDisplayName]&e
         until you relog.'
-      setFor: '&eTemporary fly mode enabled for next [time]'
+      setFor: '&eTemporary fly mode enabled for the next [time]'
       setForRelog: '&eTemporary fly mode enabled until relog'
       notSet: '&eTemporary fly mode is not enabled for player'
       willBeDisabled: '&eFly mode will be disabled in [time]'
-      disabled: '&eTemporarly fly mode is disabled!'
+      disabled: '&eTemporary fly mode is disabled!'
   tgod:
     help:
       info: '&eSet players temporarily god mode until relog or time end'
       args: '[playerName] &3(timeInSec) (-s)'
       explanation:
       - 'Examples:'
-      - tgod Zrips 30 - god mode for next 30 sec
+      - tgod Zrips 30 - god mode for the next 30 sec
       - tgod Zrips 0 - god mode until relog
       - tgod Zrips - check how long a player has tgod for, if at all.
     info:
@@ -4121,7 +4097,7 @@ command:
   unjail:
     help:
       info: '&eRelease player from jail'
-      args: '[playerName]'
+      args: '[playerName] (-s)'
     info:
       notInJail: '&cTarget player is not in jail'
       unjailed: '&eYou have released &6[playerDisplayName] &efrom jail'
@@ -4273,7 +4249,7 @@ command:
   walkspeed:
     help:
       info: '&eSet players walk speed from 0 to 10'
-      args: '[playerName] [amount] (-s)'
+      args: (playerName) [amount] (-s)
     info:
       feedback: '&eYou have set &3[amount]&e walk speed for &3[playerDisplayName]&e
         (&3[offon]&e).'
