@@ -134,7 +134,7 @@ info:
   combat:
     CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
       Wait: [time]'
-    CantUseCommand: '!actionbar!&cCan''t use command while in combat mobe. Wait: [time]'
+    CantUseCommand: '!actionbar!&cCan''t use command while in combat mode. Wait: [time]'
     bossBarPvp: '&cCombat mode [autoTimeLeft]'
     bossBarPve: '&2Combat mode [autoTimeLeft]'
   noSchedule: '&cSchedule by this name is not found'
@@ -2408,7 +2408,7 @@ command:
   mail:
     help:
       info: '&eSend and receive mail'
-      args: '[send/clear/read/sendtemp] [playerName] (message)'
+      args: '[send/clear/read/sendtemp] [playerName] (time) (message)'
     info:
       sentMail: '&eMail sent to &6[playerDisplayName]'
       gotMail: <T>&eYou received mail from &6[senderDisplayName]</T><H>Click to read!</H><C>cmi
