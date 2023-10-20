@@ -81,7 +81,6 @@ info:
     Boss:
       DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
       WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
-  Spawner: '&r[type] Spawner'
   FailedSpawnerMine: '!actionbar!&cFailed to mine spawner. &7[percent]% &cdrop chance'
   ClickSpawner: '!actionbar!&7[percent]% &eDrop chance'
   Elevator:
@@ -185,6 +184,7 @@ info:
     subinv: '&eYour sub inventory should be empty!'
     subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
   Relog: '&eRelog might be needed for change to take effect'
+  IncorrectColor: '&4Color defined incorrectly!'
   time:
     # Mainly for placeholder playtime output
     # Use + sign at the start of line to force include it even if specific and previous time values are 0
@@ -257,8 +257,8 @@ Chat:
     was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
     %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomespro_points%
     \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
-    / Lvls: {#Geyser}%jobs_total_levels% \n{#Feijoa} Knowledge MMO: Power level: {#Geyser}%adapt_level%{#Feijoa}
-    (used {#Geyser}%adapt_usedpower% {#Feijoa}/ max {#Geyser}%adapt_maxpower%)\n&8(click
+    / Lvls: {#Geyser}%jobs_total_levels% \n{#Feijoa} Knowledge MMO: Power level: {#Geyser}%adapt_player_level%{#Feijoa}
+    (used {#Geyser}%adapt_player_usedpower% {#Feijoa}/ max {#Geyser}%adapt_player_maxpower%)\n&8(click
     to send private msg)&r'
   privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
     \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
@@ -1069,7 +1069,7 @@ command:
       info: '&eCustom text editor'
       args: ''
     info:
-      noText: '&cCant find custom text by this name'
+      noCText: '&cCant find custom text by this name ([name])'
       editInfo: '&eClick to paste old text. Type &6cancel &eto cancel action. Type
         &6remove &eto remove line'
       addInfo: '&eEnter new line text. Type &6cancel &eto cancel'
@@ -1171,8 +1171,8 @@ command:
         for &3[playerDisplayName]&e (&3[offon]&e).'
       removed: '&eYou have removed &3[enchant] &eenchanted from item for &3[playerDisplayName]&e
         (&3[offon]&e).'
-      cleared: '&eCleared &3ALL &eenchantments from item for &3[playerDisplayName]&e
-        (&3[offon]&e).'
+      clear: '&eCleared enchantments from item for &3[playerDisplayName]'
+      clearOne: '&eRemoved &3[enchant] &eenchantment from item for &3[playerDisplayName]'
       noitem: '&cNot holding any item in hand.'
       invalidEnchant: '&cYou dont have permission to enchant item with invalid enchantment'
       clearedInvalid: '&eRemoved &6[amount] &einvalid enchantments from item'
@@ -1180,6 +1180,7 @@ command:
       wrongItem: '&eWrong item in your hand'
       enchantlimit: '&cYou dont have access to this enchantment'
       levellimit: '&cLevel is too high, max allowed is &e[level].'
+      conflict: '&cConflicting enchantment &7[enchant1] &c-> &7[enchant2]'
       possible: '&ePossible enchants: '
       possibleList: '&6[enchant]'
   ender:
@@ -1595,6 +1596,38 @@ command:
       particleWidth: '&7Particle extra width: &6[amount]'
       particleOffsetX: '&7Particle offset X: &6[amount]'
       particleOffsetY: '&7Particle offset Y: &6[amount]'
+      locationRange: '&7Modify location and range'
+      interactions: '&7Modify interactions'
+      newDisplayMethod: '&7Use new display method: &6[state]'
+      enabled: '&7Activated: &6[state]'
+      followType: '&7Follow type: &6[type]'
+      doubleSided: '&7Double sided: &6[state]'
+      holoYaw: '&7Yaw: &6[angle]'
+      holoPitch: '&7Pitch: &6[angle]'
+      pitchLimits: |-
+        &4When pitch is not at 0 degrees
+        &4interactions with hologram support
+        will be disabled
+      alignment: '&7Text alignment: &6[type]'
+      shadow: '&7Text shadow: &6[state]'
+      textAlpha: '&7Text transparency: &6[alpha]'
+      bgAlpha: '&7Background transparency: &6[alpha]'
+      bgColor: '&7Background color: &6[color]'
+      scaleWidth: '&7Scale width: &6[scale]'
+      scaleHeight: '&7Scale height: &6[scale]'
+      lightLevels: '&7Light levels'
+      levels: |-
+        &7Sky: &6[sky]
+        &7Block: &6[block]
+      iconScale: '&7Icon scale: &6[scale]'
+      iconPitch: '&7Icon pitch: &6[angle]'
+      iconYaw: '&7Icon yaw: &6[angle]'
+      reset: '&7Press &6Q &7to reset'
+      embeddedAutoButton: '&7Enabled pagination buttons: [state]'
+      # Use ctext format to define different behaviors for plain and hover over text
+      # Commands are not supported, only text and hover
+      prevPage: <T>&6<<<<  </T><H>&e<<<<  </H>
+      nextPage: <T>  &6>>>></T><H>  &e>>>></H>
       autoButton: '&7Automatically generate pagination buttons'
       autoButtonLore:
       - '&eCurrent hologram doesnt have any pages create'
@@ -1770,6 +1803,7 @@ command:
       - '[firstLogin]'
       newNameHoverNick: '&7Nick: &f[nick]'
       newNameHoverGroup: '&7Group: &f[group]'
+      newNameHoverTitle: '&7Prefix: &f[prefix] &7Suffix: &f[suffix]'
       newNameHoverKnownAs: '&7Also known as: &f[nameList]'
       newNameHoverIp: '&7Ip: &f[ip]'
       newNameHoverPing: '&7Ping: &f[ping]'
@@ -2057,6 +2091,7 @@ command:
     info:
       jailList: '&6[place]. &e[jailName] &7Cells:&e[cellCount] &7Jailed:&6[count]'
       cellList: '&6[place]. &7Id:&e[cellId] &7Jailed:&6[count]'
+      jailedBy: '&6Jailed by: &e[playerDisplayName]'
       cellJailedList: '&6[place]. &e[playerDisplayName] &7release in &e[time]'
       Release: '&7Click to release'
   jump:
@@ -2243,6 +2278,10 @@ command:
       editDisplayName:
       - '&eClick to change display name'
       - '&eThis only used for visual purposes'
+      fileName: '&7FileName: &r&f[name]'
+      editFileName:
+      - '&eClick to change file name'
+      - '&eWill define where kit should be saved at'
       kitGroup: '&eKit group: &6[group]'
       dropItems: '&eDrop item if full: &6[state]'
       commands: '&eCommands:'
@@ -2648,6 +2687,9 @@ command:
         acceptingMoney: '&eAccepting money payments'
         chatbubble: '&eChat bubbles'
         pmSound: '&ePrivate messages sounds'
+        rideMe: '&ePlayers can ride you'
+        pveDamageNumbers: '&eShows PvE damage numbers'
+        pvpDamageNumbers: '&eShows PvP damage numbers'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -2920,6 +2962,19 @@ command:
       args: (itemName)
     info:
       type: '&0[type]'
+      types:
+        Shaped: Shaped
+        Shapeless: Shapeless
+        Furnace: Furnace
+        Blasting: Blasting
+        Campfire: Campfire
+        Cooking: Cooking
+        Merchant: Merchant
+        Smoking: Smoking
+        Stonecutting: Stonecutting
+        Smithing: Smithing
+        Complex: Complex
+        Unknown: Unknown
       page: ' &0[current]&7/&0[total]'
       noRecipes: '&cCant find any recipes for this item'
   reload:
