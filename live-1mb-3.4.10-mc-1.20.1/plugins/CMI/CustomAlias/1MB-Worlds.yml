@@ -1,0 +1,327 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  general:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - asPlayer! mv tp general
+    Tab: false
+  spawn:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - asPlayer! mv tp spawn
+    Tab: false
+  nether:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - mv tp nether
+    Tab: false
+  end:
+    Cmds:
+    - asConsole! cmi gm [playerName] survival -s
+    - asPlayer! mvtp end
+    Tab: false
+  mine:
+    Cmds:
+    - msg! [playerName] {#gold}Hey [playerName], sorry, in 2022 moving forward, we
+      no longer have temporary worlds. The /mine world has been removed. You can use
+      our perm worlds to play survival, including getting resources from it. Keep
+      your neighbours in mind.
+    - 'msg! [playerName] {#gold}and it wouldn''t hurt to try and keep things a little
+      bit pretty. We have the old veteran world: /general, and a new wilderness world:
+      /wild. Both support /rtp'
+    Tab: false
+  builders:
+    Cmds:
+    - mvtp [playerName] builders
+    - delay! 0.3
+    - ifinworld:builders#! asConsole! cmi gm [playerName] adventure -s
+    Tab: false
+  hunting:
+    Cmds:
+    - asPlayer! cmi warp hunting
+    Tab: false
+  sanctuary:
+    Cmds:
+    - mv tp sanctuary
+    - delay! 0.3
+    - ifinworld:sanctuary! asConsole! cmi gm [playerName] adventure -s
+    Tab: false
+  here:
+    Cmds:
+    - region info $1
+    - pos
+    Tab: false
+  ispawn:
+    Cmds:
+    - asPlayer! is
+  worlds:
+    Cmds:
+    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Worlds ❖{#orient}-----------------------•
+    - 'msg! [playerName] {#Feijoa}Our main survival world that you should build in
+      is: {#orange}&l/wild &r'
+    - msg! [playerName] {#Feijoa} Please note that 'general' world inventories share
+      with /general, /wild, /end, /nether, but not with other ones.
+    - msg! [playerName] {#Feijoa} We actually have quite a few worlds (including /skyblock
+      and /oneblock), please read the thread below to learn about them.
+    - msg! [playerName] &b https://omgboards.com/threads/260940/ \n&r
+    Tab: false
+  wild:
+    Cmds:
+    - check:$1==null! asConsole! cmi gm [playerName] survival -s
+    - check:$1==null! asPlayer! mvtp wild
+    - check:$1==info! asConsole! cmi ctext wild [playerName]
+    Tab: false
+  run:
+    Cmds:
+    - asConsole! cmi invsave [playerName]
+    - ifinworld:run@! asConsole! trconsole join run [playerName]
+    - delay! 2
+    - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
+      the /run game.'
+    - asConsole! cmi effect [playerName] clear
+  tientje:
+    Cmds:
+    - asConsole! ifinworld:sanctuary?#! cmi gm [playerName] creative
+    Perm: true
+  letmebuild:
+    Cmds:
+    - ifinworld:builders#! asConsole! cmi gm [playerName] creative
+    Perm: true
+  legacy:
+    Cmds:
+    - check:$1==null! asConsole! cmi gm [playerName] adventure -s
+    - asConsole! mvtp [playerName] legacy
+    Tab: false
+  letmejackper:
+    Cmds:
+    - ifinworld:jackper! check:%cmi_user_name%==jackperbyte! asConsole! cmi gm creative
+      jackperbyte
+    Perm: true
+    Tab: false
+  pixelasia:
+    Cmds:
+    - asPlayer! mv tp pixelasia
+    Tab: false
+  letmepixelasia:
+    Cmds:
+    - ifinworld:pixelasia! check:%cmi_user_name%==nikkipixel! asConsole! cmi gm creative
+      nikkipixel
+    Perm: true
+    Tab: false
+  vubbo:
+    Cmds:
+    - asPlayer! mv tp vubbo
+    Tab: false
+  letmevubbo:
+    Cmds:
+    - ifinworld:vubbo! check:%cmi_user_name%==vubbo! asConsole! cmi gm creative vubbo
+    Perm: true
+    Tab: false
+  clock:
+    Cmds:
+    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'msg! [playerName] {#Cerulean} »{#gold} Currently the time in each world:'
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /wild &b%cmi_world_time12_wild%&7 (%cmi_weather_wild%)
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /general &b%cmi_world_time12_general%&7
+      (%cmi_weather_general%)
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /nether &b%cmi_world_time12_nether%&7
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /end &b%cmi_world_time12_end%&7
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /oneblock &b%cmi_world_time12_oneblock%&7
+      (%cmi_weather_oneblock%)
+    - msg! [playerName] {#Cerulean} »{#Feijoa} /skyblock &b%cmi_world_time12_skyblock%&7
+      (%cmi_weather_skyblock%)
+    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi bossbarmsg [playerName] -s:3 -t:3 -n:timebar -c:green -s:1 -p:1
+      -a:1 &7 It is &b%cmi_world_time12_[worldName]%&7 in &2/[worldName]
+  uwu:
+    Cmds:
+    - mv tp uwu
+  skyblock menu:
+    Cmds:
+    - menu skyblock
+  cave menu:
+    Cmds:
+    - menu cave
+  acid menu:
+    Cmds:
+    - menu acid
+  skygrid menu:
+    Cmds:
+    - menu skygrid
+  letmeuwu:
+    Cmds:
+    - ifinworld:uwu! check:%cmi_user_name%==globug100! asConsole! cmi gm creative
+      globug100
+    - ifinworld:owo! check:%cmi_user_name%==globug100! asConsole! cmi gm creative
+      globug100
+    Perm: true
+  letmefly:
+    Cmds:
+    - cooldown:900?#! ifinworld:wild#! asConsole! cmi tfly [playerName] 120
+    Perm: true
+  egghunt fly:
+    Cmds:
+    - ifinworld:easter! asConsole! cmi tfly [playerName] 1
+    - ifinworld:easter! asConsole! cmi flyspeed [playerName] 2 -s
+    Tab: false
+  letmesushi:
+    Cmds:
+    - ifinworld:sushi#! check:%cmi_user_name%==Tidala! asConsole! cmi gm creative
+      Tidala
+  sushi:
+    Cmds:
+    - mvtp sushi
+  owo:
+    Cmds:
+    - mvtp owo
+  turkey:
+    Cmds:
+    - msg! [playerName] &6Gobble gobble!&e Thanksgiving Turkey Hunt!
+  is:
+    Cmds:
+    - 'msg! [playerName] {#magenta} Hi there :) We have a survival wilderness, and
+      skyblock , oneblock, etc Each world is also a command, for example: /general
+      for the wilderness, and /oneblock to start your oneblock island. And /skyblock.
+      Enjoy !'
+  sanctuary creative:
+    Cmds:
+    - ifinworld:sanctuary@#! msg! [playerName] Oops, /sanctuary creative only works
+      in the Sanctuary world.
+    - ifinworld:sanctuary! perm:1mb.sanctuary.builder! asConsole! cmi gm [playerName]
+      creative
+    Perm: true
+  run spectate:
+    Cmds:
+    - tntrun spectate run
+  1block:
+    Cmds:
+    - asPlayer! oneblock $1-
+  expand:
+    Cmds:
+    - msg! [playerName] Please pick a gametype, like /expand oneblock, or /expand
+      skyblock
+  expand oneblock:
+    Cmds:
+    - statement:check1! ifinworld:oneblock! check:%aoneblock_island_protection_range%<100!
+      check:%aoneblock_has_island%==true!
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      msg! [playerName] you are on your own island
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      asConsole! cmi usermeta [playerName] add oneblockislandrank no
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_1%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_2%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_3%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_4%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_5%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_6%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_7%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%Level_aoneblock_top_name_8%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add oneblockislandrank yes
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%cmi_user_meta_oneblockislandrank%==yes! msg! [playerName] {#gold} You
+      appear to be a top island player, you should be eligible. Giving you the island
+      expander item which will allow you to add +25 blocks to your island once you
+      consume it.
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%cmi_user_meta_oneblockislandrank%==yes! asConsole! cmi kit expandisland25
+      [playerName]
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      check:%cmi_user_meta_oneblockislandrank%==no! msg! [playerName] {#orange} Sorry,
+      you are not in the oneblock island top 8 players yet, you can not expand your
+      island range currently. You can recalculate your island level (/oneblock level)
+      after building on it first, and try this command again later.
+    - if:check1! check:%aoneblock_visited_island_owner%==%aoneblock_island_owner%!
+      asConsole! cmi usermeta [playerName] remove oneblockislandrank
+    - if:check1! check:%aoneblock_visited_island_owner%!=%cmi_user_name%! msg! [playerName]
+      Go to your own island first!
+    - if:check1! check:%aoneblock_visited_island_owner%==null! msg! [playerName] Go
+      to your own island first!
+    - if:check1@! msg! [playerName] Cannot run this command, either you're not on
+      your own island, you don't have an island, or you already have it expanded to
+      the max range of 100. If you have any questions, please contact staff.
+  expand skyblock:
+    Cmds:
+    - statement:check1! ifinworld:skyblock! check:%bskyblock_island_protection_range%<100!
+      check:%bskyblock_has_island%==true!
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      msg! [playerName] you are on your own island
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      asConsole! cmi usermeta [playerName] add skyblockislandrank no
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_1%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_2%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_3%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_4%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_5%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_6%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_7%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%Level_bskyblock_top_name_8%==%cmi_user_name%! asConsole! cmi usermeta
+      [playerName] add skyblockislandrank yes
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%cmi_user_meta_skyblockislandrank%==yes! msg! [playerName] {#gold} You
+      appear to be a top island player, you should be eligible. Giving you the island
+      expander item which will allow you to add +25 blocks to your island once you
+      consume it.
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%cmi_user_meta_skyblockislandrank%==yes! asConsole! cmi kit expandisland25skyblock
+      [playerName]
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      check:%cmi_user_meta_skyblockislandrank%==no! msg! [playerName] {#orange} Sorry,
+      you are not in the skyblock island top 8 players yet, you can not expand your
+      island range currently. You can recalculate your island level (/skyblock level)
+      after building on it first, and try this command again later.
+    - if:check1! check:%bskyblock_visited_island_owner%==%bskyblock_island_owner%!
+      asConsole! cmi usermeta [playerName] remove skyblockislandrank
+    - if:check1! check:%bskyblock_visited_island_owner%!=%cmi_user_name%! msg! [playerName]
+      Go to your own island first!
+    - if:check1! check:%bskyblock_visited_island_owner%==null! msg! [playerName] Go
+      to your own island first!
+    - if:check1@! msg! [playerName] Cannot run this command, either you're not on
+      your own island, you don't have an island, or you already have it expanded to
+      the max range of 100. If you have any questions, please contact staff.

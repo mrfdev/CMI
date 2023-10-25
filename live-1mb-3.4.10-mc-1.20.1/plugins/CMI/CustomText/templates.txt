@@ -1,0 +1,3 @@
+Each click will cost you $ 12345, so choose carefully. If you bought an item, you have to close the shop and re-open it again to buy more. This is to avoid accidentaly buying.
+<NextPage>
+

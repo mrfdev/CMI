@@ -1,0 +1,8 @@
+#
+
+CustomAlias:
+  _templates:
+    Cmds:
+    - asConsole! ptarget:$1! moneycost:12345?! cmi give $1 $2 1
+    Perm: true
+    Tab: false

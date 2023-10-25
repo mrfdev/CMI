@@ -1,0 +1,14 @@
+# Command section can utilize same custom variables as scheduler. Check schedules.yml file for all possible variables.
+
+1MBJail:
+  Loc: general:-746.0:63.0:4836.0:-555.0:100.0:5027.0
+  safeLoc: general;-492.02;64.0;5094.93;-229.11;47.91
+  cells:
+    '1':
+      location: general;-619.58;73.0;4899.62;-21.49;-19.13
+    '2':
+      location: general;-626.19;73.0;4899.09;-343.23;19.61
+    '3':
+      location: general;-634.36;73.0;4898.94;-321.41;22.49
+    '4':
+      location: general;-643.34;73.0;4899.6;-17.89;29.87

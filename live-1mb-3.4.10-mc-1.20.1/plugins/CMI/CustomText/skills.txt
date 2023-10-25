@@ -1,0 +1,407 @@
+<AutoPage><Hidden><NoReqPermission>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold}Just by playing you automatically collect Knowledge Exp for Knowledge skills. When enough are collected you gain a Knowledge level for that skill. 
+&r
+{#Feijoa}Enough levels give you Knowledge Power, which can be used to activate perks for that skill.
+&r
+{#Feijoa}Each skill has their own perks. And you can earn and use them in every world. They are separate from the Jobs-, and mcMMO features.
+&r
+{#Feijoa} To find out what skills are available, and which perks you can use. &lRight-click the sides of a Fletching table.
+&r
+{#gold} Learn more:{#Geyser} https://omgboards.com/threads/263873/
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Info>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold}1MoreBlock Knowledge MMO: see forum for more details
+{#Cerulean} • {#Feijoa}Every player has a Master XP and a Master level (the culmination of the overall xp that they have).
+&r
+{#Cerulean} • {#Feijoa}Each skill Earns you Xp towards itself. With that Xp in skills you can spend it on its perks, and some perks give you xp for just using them.
+&r
+{#Cerulean} • {#Feijoa}Grinding levels will yield in increased cooldowns it seems.
+&r
+{#Cerulean} • {#Feijoa}Depending on player activity, build activity, community knowledge exp totals gained, we will gradually unlock more skills and more of their skills. Keep active, keep playing, invite your friends, and you will have some awesome perks to play with.
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Stats>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold} Your knowledge stats:
+{#Cerulean} • {#Feijoa}Power Level:{#Geyser} %adapt_player_level%
+{#Cerulean} • {#Feijoa}Max Power:{#Geyser} %adapt_player_maxpower%
+{#Cerulean} • {#Feijoa}Used Power:{#Geyser} %adapt_player_usedpower%
+{#Cerulean} • {#Feijoa}Available Power:{#Geyser} %adapt_player_availablepower%
+&r
+{#Cerulean} • {#Feijoa}Master XP:{#Geyser} %adapt_player_masterxp%
+{#Cerulean} • {#Feijoa}Wisdom:{#Geyser} %adapt_player_wisdom%
+{#Cerulean} • {#Feijoa}Level Multiplier:{#Geyser} %adapt_player_multiplier%
+{#Cerulean} • {#Feijoa}Total 'seen things':{#Geyser} %adapt_player_seenthings%
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<NextPage>
+<pageLabel:{#gold}Skills>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#gold} Tip: Click to load skill details.
+<T>{#Cerulean} •{#Feijoa}</T><T>⇉ Agility</T><H>{#Geyser}Show Agility details..</H><CC>cmi ctext skills [playerName] 5</CC><T>, ⬧ Architect</T><H>{#Geyser}Show Architect details..</H><CC>cmi ctext skills [playerName] 6</CC><T>, 🪓 Axes, </T><H>{#Geyser}Show Axes details..</H><CC>cmi ctext skills [playerName] 7</CC>
+<T>{#Cerulean} •{#Feijoa}</T><T>🛡️ Blocking</T><H>{#Geyser}Show Blocking details..</H><CC>cmi ctext skills [playerName] 8</CC><T>, ❦ Brewing</T><H>{#Geyser}Show Brewing details..</H><CC>cmi ctext skills [playerName] 9</CC><T>, ⌂ Crafting, </T><H>{#Geyser}Show Crafting details..</H><CC>cmi ctext skills [playerName] 10</CC>
+<T>{#Cerulean} •{#Feijoa}</T><T> ⚛ Discovery</T><H>{#Geyser}Show Discovery details..</H><CC>cmi ctext skills [playerName] 11</CC><T>, ♰ Enchanting</T><H>{#Geyser}Show Enchanting details..</H><CC>cmi ctext skills [playerName] 12</CC><T>, ᛳ Excavation, </T><H>{#Geyser}Show Excavation details..</H><CC>cmi ctext skills [playerName] 13</CC>
+<T>{#Cerulean} •{#Feijoa}</T><T> ⚘ Herbalism</T><H>{#Geyser}Show Herbalism details..</H><CC>cmi ctext skills [playerName] 14</CC><T>, ☠ Hunter</T><H>{#Geyser}Show Hunter details..</H><CC>cmi ctext skills [playerName] 15</CC><T>, ₪ Nether,</T><H>{#Geyser}Show Nether details..</H><CC>cmi ctext skills [playerName] 16</CC>
+<T>{#Cerulean} •{#Feijoa}</T><T> ⛏ Pickaxe</T><H>{#Geyser}Show Pickaxe details..</H><CC>cmi ctext skills [playerName] 17</CC><T>, 🏹 Ranged</T><H>{#Geyser}Show Ranged details..</H><CC>cmi ctext skills [playerName] 18</CC><T>, Rift, </T><H>{#Geyser}Show Rift details..</H><CC>cmi ctext skills [playerName] 19</CC>
+<T>{#Cerulean} •{#Feijoa}</T><T> 🎣 Seaborne</T><H>{#Geyser}Show Seaborne details..</H><CC>cmi ctext skills [playerName] 20</CC><T>, ☯ Stealth</T><H>{#Geyser}Show Stealth details..</H><CC>cmi ctext skills [playerName] 21</CC><T>, ⚔ Sword, </T><H>{#Geyser}Show Sword details..</H><CC>cmi ctext skills [playerName] 22</CC>
+<T>{#Cerulean} •{#Feijoa}</T><T> ♥ Taming</T><H>{#Geyser}Show Taming details..</H><CC>cmi ctext skills [playerName] 23</CC><T>, 🗡 TragOul</T><H>{#Geyser}Show TragOul details..</H><CC>cmi ctext skills [playerName] 24</CC><T>, » Unarmed.</T><H>{#Geyser}Show Unarmed details..</H><CC>cmi ctext skills [playerName] 25</CC>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Agility>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⇉&l %adapt_skill_agility_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_agility_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_agility_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_agility_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_agility_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_agility_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Architect>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⬧&l %adapt_skill_architect_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_architect_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_architect_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_architect_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_architect_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_architect_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Axes>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: 🪓&l %adapt_skill_axes_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_axes_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_axes_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_axes_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_axes_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_axes_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lAxe Drop-to-Inventory,</T><H>{#gray}(ladder icon)\n{#Geyser}Items dropped by axes go straight to inventory</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Blocking>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: 🛡️&l %adapt_skill_blocking_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_blocking_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_blocking_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_blocking_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_blocking_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_blocking_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Brewing>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ❦&l %adapt_skill_brewing_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_brewing_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_brewing_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_brewing_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_brewing_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_brewing_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Crafting>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⌂&l %adapt_skill_crafting_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_crafting_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_crafting_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_crafting_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_crafting_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_crafting_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Discovery>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⚛&l %adapt_skill_discovery_name%&r</T><H>{#gray}(paper icon in the fletching table)\n{#Geyser}Knowledge EXP is earned by being active,\n{#Geyser}doing things, pickup up xp, etc.\n{#Geyser}Various actions will be detected.&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_discovery_level%&r{#Feijoa}
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_discovery_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_discovery_xp%&r{#Feijoa}
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_discovery_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_discovery_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lUnity,</T><H>{#gray}(redstone icon)\n{#Geyser}Collecting exp orbs\n{#Geyser}adds xp to random skills</H><Next><T>{#Cerulean} • {#Feijoa}&lResistance,</T><H>{#gray}(emerald icon)\n{#Geyser}Consume experience to mitigate the\n{#Geyser}damage you take from all sources</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Enchanting>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ♰&l %adapt_skill_enchanting_name%&r</T><H>{#gray}(green book icon in the fletching table)\n{#Geyser}Doing enchanting things to get more enchanting things&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_enchanting_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_enchanting_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_enchanting_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_enchanting_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_enchanting_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lQuick-click Enchant,</T><H>{#gray}(ladder icon)\n{#Geyser}Enchant items by clicking enchant books directly on them from within your inventory</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Excavation>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ᛳ&l %adapt_skill_excavation_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_excavation_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_excavation_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_excavation_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_excavation_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_excavation_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Herbalism>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⚘&l %adapt_skill_herbalism_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_herbalism_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_herbalism_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_herbalism_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_herbalism_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_herbalism_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Hunter>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ☠&l %adapt_skill_hunter_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_hunter_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_hunter_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_hunter_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_hunter_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_hunter_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Nether>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ₪&l %adapt_skill_nether_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_nether_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_nether_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_nether_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_nether_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_nether_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Pickaxe>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⛏&l %adapt_skill_pickaxe_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_pickaxe_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_pickaxe_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_pickaxe_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_pickaxe_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_pickaxe_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Ranged>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: 🏹&l %adapt_skill_ranged_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_ranged_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_ranged_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_ranged_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_ranged_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_ranged_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Rift>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ❍&l %adapt_skill_rift_name%&r</T><H>{#gray}(ender eye icon in the fletching table)\n{#Geyser}The rift is a caustic harness,\n{#Geyser}but you have harnessed the harness.\n{#Geyser}Expand your world movements.&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_rift_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_rift_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_rift_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_rift_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_rift_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lRift Gate,</T><H>{#gray}(end portal frame icon)\n{#Geyser}Teleport to a marked location. \n{#Geyser}Craft a unique item that lets you bind a block to a location.\n{#Geyser}Shift + Left click the block. Then when you're ready,\n{#Geyser}consume the special item to teleport back to that marked location.</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Seaborne>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: 🎣&l %adapt_skill_seaborne_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_seaborne_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_seaborne_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_seaborne_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_seaborne_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_seaborne_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Stealth>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ☯&l %adapt_skill_stealth_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_stealth_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_stealth_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_stealth_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_stealth_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_stealth_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Sword>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ⚔&l %adapt_skill_sword_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_sword_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_sword_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_sword_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_sword_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_sword_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Taming>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: ♥&l %adapt_skill_taming_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_taming_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_taming_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_taming_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_taming_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_taming_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}TragOul>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: 🗡&l %adapt_skill_tragoul_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_tragoul_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_tragoul_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_tragoul_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_tragoul_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_tragoul_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+
+<NextPage>
+<pageLabel:{#gold}Unarmed>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#gold}Knowledge Skill: »&l %adapt_skill_unarmed_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+&r
+{#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_unarmed_level%
+{#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_unarmed_knowledge%
+{#Cerulean} • {#Feijoa}Knowledge Exp: {#Geyser}%adapt_skill_unarmed_xp%
+{#Cerulean} • {#Feijoa}Freshness Exp Gain: {#Geyser}%adapt_skill_unarmed_freshness%
+{#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_unarmed_multiplier%
+&r
+{#Cerulean} {#gold}Skill Perks Unlocked:
+<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+&r
+{#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
+{#cerulean} •&l&m                                                &r{#Cerulean}•

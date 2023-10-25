@@ -1,0 +1,39 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  w:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  whisper:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  tell:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  m:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true
+  pm:
+    Cmds:
+    - asPlayer! cmi msg $1-
+    AddTabs: true

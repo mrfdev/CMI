@@ -1,0 +1,32 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  sometest:
+    Cmds:
+    - broadcast! {#orange}[Broadcast test] {#orange>}This is a broadcast test message{#red<}
+    - actionbar! {#orange>}&bThis is an actionbar test message{#red<}
+    - title! {#orange} Big title test
+    - subtitle! {#gold} Small title test
+    - asConsole! cmi bossbarmsg all -n:sometest -c:orange &bThis is a bossbarmsg test
+    - asConsole! cmi toast all &bThis is a test toast
+    - msg! [playerName] {#orange}[/msg test] {#orange>}This is a regular test message{#red<}
+    - asConsole! cmi ctellraw all {#orange}[ctellraw test] <T>{#orange>}This is a
+      clickable/hoverable test message{#red<}</T><H>{#green}Click me</H><CCI>cmi heal
+      [playerName]</CCI>
+    Perm: true

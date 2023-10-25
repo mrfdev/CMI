@@ -1,0 +1,14 @@
+#
+
+CustomAlias:
+  villager:
+    Cmds:
+    - msg! [playerName] {#gold} Mojang has made changes to the gameplay in regards
+      to Villagers, to learn more about that, and what this means for the 1MB server
+      and your villagers, please read this information. (Does not apply to 1.20.1)
+    - msg! [playerName] &r https://omgboards.com/threads/263898/
+    Tab: false
+  villagers:
+    Cmds:
+    - asPlayer! villager
+    Tab: false

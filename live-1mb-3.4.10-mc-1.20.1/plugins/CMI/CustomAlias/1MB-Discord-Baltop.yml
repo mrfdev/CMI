@@ -1,0 +1,42 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  baltop discord:
+    Cmds:
+    - cooldown:60?#! msg! [playerName] {#gold} .. Sending /baltop information to Discord.
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #1 `%cmi_baltop_name_1%`
+      - `%cmi_baltop_money_1%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #2 `%cmi_baltop_name_2%`
+      - `%cmi_baltop_money_2%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #3 `%cmi_baltop_name_3%`
+      - `%cmi_baltop_money_3%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #4 `%cmi_baltop_name_4%`
+      - `%cmi_baltop_money_4%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #5 `%cmi_baltop_name_5%`
+      - `%cmi_baltop_money_5%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #6 `%cmi_baltop_name_6%`
+      - `%cmi_baltop_money_6%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #7 `%cmi_baltop_name_7%`
+      - `%cmi_baltop_money_7%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #8 `%cmi_baltop_name_8%`
+      - `%cmi_baltop_money_8%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #9 `%cmi_baltop_name_9%`
+      - `%cmi_baltop_money_9%`'
+    - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: 10 `%cmi_baltop_name_10%`
+      - `%cmi_baltop_money_10%`'

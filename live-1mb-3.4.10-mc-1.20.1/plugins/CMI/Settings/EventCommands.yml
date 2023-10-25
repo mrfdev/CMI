@@ -1,0 +1,162 @@
+# Commands performed on particular event
+# Full color code support and some variables
+# If command starts with msg! and then player name is given, simple message will be sent to that player if he is online.
+# If command starts with broadcast! then message will be sent to everyone on server in simple manear
+# If command starts with actionbar! then all players will get action bar message defined after this variable
+# If command starts with title! then all players will get title message defined after this variable
+# If command starts with subtitle! then all players will get subtitle message defined after this variable
+# If command starts with kickall! then all players will be kicked from server with defined message. Usefull before server stop.
+# If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we dont know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
+# [playerName] to insert target player name
+# [playerDisplayName] to insert player display name
+# [lvl] to insert player level
+# [exp] to insert player total exp
+# [hp] to insert player health
+# [maxHp] to insert player max health
+# [hunger] to insert player hunger level
+# [gameMode] to insert player gamemode
+# Keep in mind that joinServer commands will not be performd on firstJoinServer event
+
+# ATTENTION!
+# Extreme usage of heavy commands could result in increased load for your server. Try using as little of them as possible for one event
+# and if possible spread them out with a delay by using "delay! 0.3" or similar variable
+# This will allow server to catch up with his calculation instead of forcing him to do all of those commands at once
+firstJoinServer:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+joinServer:
+  Enabled: true
+  Commands:
+  - delay! 0.3
+  - check:%luckperms_in_group_1mb_legendary%==yes! broadcast! {#Denim>} OMG, a &lLegendary
+    player{#Cerulean<>} just joined!!{#Denim<}\n&r
+  - check:%luckperms_in_group_1mb_epic%==yes! broadcast! {#Denim>} An &lEpic player{#Cerulean<>}
+    started playing, awesome!{#Denim<}\n&r
+  - check:%luckperms_in_group_1mb_mvp%==yes! broadcast! {#Denim>} A &lBoosted Donator{#Cerulean<>}
+    started playing!{#Denim<}\n&r
+  - check:%luckperms_in_group_1mb_donator%==yes! broadcast! {#Denim>} A &lDonator{#Cerulean<>}
+    started playing!{#Denim<}\n&r
+quitServer:
+  Enabled: true
+  Commands:
+  - cmi invsave [playerName]
+playerDeath:
+  Enabled: false
+  Commands:
+  - 'cmi msg [playerName] !&7>You died here: %player_x%, %player_y%, %player_z% (%player_world%)'
+  SourceCommands: []
+playerKillPlayer:
+  # [sourceName] to insert source player name
+  # [sourceDisplayName] to insert player display name
+  # [sourceLvl] to insert player level
+  # [sourceExp] to insert player total exp
+  # [sourceHp] to insert player health
+  # [sourceMaxHp] to insert player max health
+  # [sourceHunger] to insert player hunger level
+  # [sourceGameMode] to insert player gamemode
+  # Keep in mind that in case you are using specialized commands, then Commands section will be performed on player who died and SourceCommands will be performed on player who killed
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+  SourceCommands: []
+playerRespawn:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerTeleport:
+  Enabled: false
+  Commands:
+  - cmi invsave [playerName]
+bedLeave:
+  Enabled: false
+  Commands:
+  - cmi invsave [playerName]
+bedEnter:
+  Enabled: true
+  Commands:
+  - cmi invsave [playerName]
+  - delay! 1
+  - cmi actionbarmsg all {#orange>}(zZz → [playerName] in %player_world%){#gold<}
+playerWorldChange:
+  Enabled: true
+  Commands:
+  - check:%cmi_user_gamemode%==Survival! check:%cmi_user_flying%!=False! check:%cmi_user_tfly%==0!
+    asConsole! cmi fly [playerName] false -s
+  - ifinworld:general#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:wild#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:spawn#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:nether#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+  - ifinworld:end#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+    asConsole! cmi gm [playerName] survival -s
+playerPreWorldChange:
+  Enabled: true
+  Commands:
+  - cmi invsave [playerName]
+playerGameModeChange:
+  Enabled: false
+  Commands:
+  - 'check:%cmi_user_op%==True! asConsole! cmi staffmsg &f [playerName] (g: %cmi_user_gamemode%,
+    pvp: %cmi_user_inpvp%&f, %player_world% xyz: %player_x%, %player_y%, %player_z%
+    opped: %cmi_user_op% '
+  - 'check:%cmi_user_god%==True! asConsole! cmi staffmsg &f [playerName] (g: %cmi_user_gamemode%,
+    pvp: %cmi_user_inpvp%&f, %player_world% xyz: %player_x%, %player_y%, %player_z%
+    god: %cmi_user_god% (tgod: %cmi_user_tgod%)'
+  - 'check:%cmi_user_canfly%==True! asConsole! cmi staffmsg &f [playerName] (g: %cmi_user_gamemode%,
+    pvp: %cmi_user_inpvp%&f, %player_world% xyz: %player_x%, %player_y%, %player_z%
+    fly: %cmi_user_canfly% (tfly: %cmi_user_tfly%)'
+playerKick:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerBan:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+playerLevelChange:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+voidFall:
+  Enabled: false
+  Commands:
+  - cmi invsave [playerName]
+  - ifinworld:easter! asConsole! warp egghunt [playerName] -s
+  - ifinworld:easter! asConsole! cmi broadcast !&6 [playerName] teleported to safety
+elytraStartGlide:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+advancementDone:
+  # use [value] variable to insert advancements identificator
+  # This returns path to advancement like recipes/building_blocks/emerald_block which can be used in commands in case you want to filter out specific ones
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+elytraEndGlide:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+pvpstart:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+pvpend:
+  Enabled: false
+  Commands:
+  - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!

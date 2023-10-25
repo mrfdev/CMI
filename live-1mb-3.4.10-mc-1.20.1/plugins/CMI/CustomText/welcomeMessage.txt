@@ -1,0 +1,56 @@
+<AutoPage><AutoAlias><NoReqPermission>
+1MoreBlock.com era %onemb_1mb_version% | Minecraft %onemb_mc_version%
+img:head:[playerName] 8
+imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
+imgtext:<T>{#Lochmara} »{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account</T><H>Click to check your account</H><C>account</C>
+imgtext:{#Lochmara} »{#white} 
+imgtext:{#Lochmara} »{#orange}&l SCARY THINGS ARE NOW LIVE
+imgtext:{#Lochmara} »{#white} 
+imgtext:<T>{#Lochmara} »{#Feijoa} Before playing, learn: {#orange}&l/rules</T><H>Click to read our rules</H><C>rules</C>
+imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
+imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
+&r
+>> Pst! &3&l https://youtu.be/xGnCmpr7omY &r
+<NextPage>
+{#Cerulean}
+{#Cerulean}
+{#Cerulean}
+{#Cerulean}
+{#Cerulean}
+{#Cerulean}
+{#Cerulean}
+{#Cerulean}
+&2 Your 1MoreBlock Account Information:
+{#Cerulean} •&l&m                                                &r{#Cerulean}•
+<T>{#Cerulean} • {#Feijoa}Username: {#Geyser}%cmi_user_name% {#Feijoa}(displayname: %cmi_user_display_name%{#Feijoa})</T><H>Click to check your /player details</H><C>player</C>
+<T>{#Cerulean} • {#Feijoa}Homes: {#Geyser}%cmi_user_homeamount% {#Feijoa}of {#Geyser}%cmi_user_maxhomes% {#Feijoa}max.</T><H>Click to load your homes</H><C>homes</C>
+<T>{#Cerulean} • {#Feijoa}Ping: {#Geyser}%cmi_user_ping% {#Feijoa}Try again in a minute with: {#orange}/myping)&r</T><H>Click to check your ping</H><C>myping</C>
+{#Cerulean} • {#Feijoa}Current gamemode: {#Geyser}%cmi_user_gamemode%
+{#Cerulean} • {#Feijoa}/money balance: {#Geyser}%cmi_user_balance_formatted%
+{#Cerulean} • {#Feijoa}/points balance:{#Geyser} %pyrowelcomespro_points%
+<T>{#Cerulean} • {#Feijoa}Group / Rank : {#Geyser}%luckperms_primary_group_name% {#Feijoa}(playtime: {#Geyser}%cmi_user_playtime_days% {#Feijoa}days)</T><H>Click to check your /playtime details</H><C>playtime</C>
+<T>{#Cerulean} • {#Feijoa}Location: {#Geyser}%player_world% {#Feijoa}({#Geyser}%player_x%{#Feijoa}, {#Geyser}%player_y%{#Feijoa}, {#Geyser}%player_z%{#Feijoa})</T><H>Click to check your /pos</H><C>pos</C>
+{#Cerulean} • {#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs% {#Feijoa}/ Lvls: {#Geyser}%jobs_total_levels%
+<T>{#Cerulean} • {#Feijoa}Knowledge Skills PL:{#Geyser} used {#Geyser}%adapt_player_usedpower% {#Feijoa}/ max {#Geyser}%adapt_player_maxpower%</T><H>Power levels\nPL are gained by earning enough \nknowledge skill levels. \n Right-click the sides of a fletching-table\n to see more details</H><C>skills</C>
+&r
+<NextPage>
+&r
+&r
+&r
+&r
+&r
+&r
+&r
+&r
+&2 Some 1MoreBlock links:
+{#Feijoa} •&l&m                                                &r{#Feijoa}•
+<T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>www.1moreblock.com</URL>
+<T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/floris</T><H>Click to load our Discord Server</H><URL>discord.gg/floris</URL>
+<T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>twitch.tv/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>youtube.com/mrfloris</URL>
+<T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>twitter.com/floris</URL>
+
+{#Cerulean} 
+{#Cerulean} Need help? Ask our players, or on /discord
+&r
+&r

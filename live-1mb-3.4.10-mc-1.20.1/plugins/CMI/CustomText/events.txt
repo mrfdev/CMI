@@ -1,0 +1,13 @@
+<AutoPage><Hidden><NoAutoAlias><NoReqPermission>
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+{#orange} -&l 1MoreBlock 2023 Events
+{#orange} -{#gold} Current event: SCARY OCTOBER MONTH
+>> info: https://omgboards.com/threads/263903/
+>> /tournament is live now
+>> /halloween opens 30th
+>> scary things are nove live!
+{#orange} -{#gold} 
+{#orange} -{#gold} More info: /discord, where we have
+{#orange} -{#gold} an #events channel with specifics.
+{#cerulean} •&l&m                                                &r{#Cerulean}•
+

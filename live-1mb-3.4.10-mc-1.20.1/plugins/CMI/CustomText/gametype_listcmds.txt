@@ -1,0 +1,18 @@
+<AutoPage><NoReqPermission>
+&r
+{#Cerulean} •&l&m                                                &r{#Cerulean}•
+
+You can type:{#gold} /%player_world% &l<command>
+And the {#gold}<command>&r part can be: &olevel, count, help, generator, team, border, menu, challenges&r, and more. Enjoy.
+
+{#gold}help&r - will give you additional help, can also be used per command.
+{#gold}level&r - will recalculate your island level, which is handy for the generator and challenges.
+{#gold}challenges&r - a great way to complete challenges on your island to get extra items.
+{#gold}generator&r - upgrade your standard cobblestone generator to get more out of it.
+{#gold}border&r - a way to toggle the visualization of the island border.
+{#gold}team&r - lets you manage your team setup so you can play with friends. Read /teams for more information.
+
+On OneBlock, you can also use{#gold} phases&r and{#gold} count&r.
+
+{#Cerulean} •&l&m                                                &r{#Cerulean}•
+&r
