@@ -1,8 +1,0 @@
-<AutoPage>
-<T>1. &b&l • planetminecraft.com</T><URL>https://www.planetminecraft.com/server/aurora-1-15-2/vote/</URL>
-<T>2. &b&l • minecraft-mp.com</T><URL>https://minecraft-mp.com/server/261546/vote/</URL>
-<T>3. &b&l • topg.org</T><URL>https://topg.org/Minecraft/in-609639</URL>
-<T>4. &b&l • topminecraftservers.org</T><URL>topminecraftservers.org/vote/12581</URL>
-<T>5. &b&l • minecraftservers.org</T><URL>https://minecraftservers.org/vote/588620</URL>
-<T>6. &b&l • minecraft-server-list.com</T><URL>https://minecraft-server-list.com/server/463254/vote/</URL>
-<T>7. &b&l • serverpact.com</T><URL>https://www.serverpact.com/vote-43930</URL>

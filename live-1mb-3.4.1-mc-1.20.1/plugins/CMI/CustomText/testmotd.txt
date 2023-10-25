@@ -1,2 +1,0 @@
-<AutoPage>
-User is in these jobs: %jobsr_user_title_{jobsr_name_1}% %jobsr_user_title_{jobsr_name_2}% %jobsr_user_title_{jobsr_name_3}% %jobsr_user_title_{jobsr_name_4}% %jobsr_user_title_{jobsr_name_5}% %jobsr_user_title_{jobsr_name_6}% %jobsr_user_title_{jobsr_name_7}% %jobsr_user_title_{jobsr_name_8}% %jobsr_user_title_{jobsr_name_9}% %jobsr_user_title_{jobsr_name_10}% %jobsr_user_title_{jobsr_name_11}% %jobsr_user_title_{jobsr_name_12}% 

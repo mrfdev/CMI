@@ -1,9 +1,0 @@
-<AutoPage><Hidden><NoReqPermission>
-{#cerulean} •&l&m                                                &r{#Cerulean}•
-{#orange} -&l 1MoreBlock 2023 Events
-{#orange} -{#gold} Current event: SUMMER EVENT
-{#orange} -{#gold} https://omgboards.com/threads/263889/
-{#orange} -{#gold} 
-{#orange} -{#gold} More info: /discord, where we have
-{#orange} -{#gold} an #events channel with specifics.
-{#cerulean} •&l&m                                                &r{#Cerulean}•
