@@ -6,6 +6,7 @@
 >> /tournament is live now
 >> /halloween opens 30th
 >> scary things are nove live!
+>> Walk the plank "/warp walk"
 {#orange} -{#gold} 
 {#orange} -{#gold} More info: /discord, where we have
 {#orange} -{#gold} an #events channel with specifics.

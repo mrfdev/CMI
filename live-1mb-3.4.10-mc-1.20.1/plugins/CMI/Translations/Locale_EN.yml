@@ -4203,7 +4203,7 @@ command:
       CMIB: '&7CMIB '
       newVault: '&eVault: &6[version] '
       Modules: '&eModules -> &a[enabled] enabled &7[disabled] disabled&e: &c[list]'
-      Bungee: ' &eBungeeCord '
+      Network: ' &e[type] '
       CMILib: '&eCMILib: &6[version] '
       cmilVersionNew: '&e-> [newVersion]'
   viewrange:

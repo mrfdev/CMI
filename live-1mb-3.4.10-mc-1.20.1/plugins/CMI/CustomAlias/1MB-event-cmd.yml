@@ -42,8 +42,5 @@ CustomAlias:
     Tab: false
   walk:
     Cmds:
-    - statement:check1! check:%plugin_isenabled_InfinityParkour%!
-    - if:check1! msg! [playerName] asPlayer! infinityparkour $1-
-    - if:check1@! msg! [playerName] {#orange}This mini game will return later this
-      year! You cannot play this right now.
+    - asPlayer! infinityparkour $1-
     AddTabs: true
