@@ -155,4 +155,4 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 1MB CMI Project version **0.7.01** (October 27th, 2023), for live-1mb-3.4.10-mc-1.20.1
 
-**TLDR;** These files are for 1.20.1 and probably any CMI version 9.6.x.x / CMILib 1.4.x.x 
+**TLDR;** These files are for 1.20.1 and probably any CMI version 9.6.x.x / CMILib 1.4.x.x
