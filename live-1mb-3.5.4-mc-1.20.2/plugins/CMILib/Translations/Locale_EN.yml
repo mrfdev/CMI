@@ -194,6 +194,8 @@ info:
   pageCount: '&2[current]&7/&2[total]'
   pageCountHover: '&e[totalEntries] entries'
   skullOwner: '!actionbar!&7Owner:&r [playerName]'
+  playerHeadName: '&eHead of &7[playerName]'
+  mobHeadName: '&eHead of &f[mobName]'
   circle: '&3Circle'
   square: '&5Square'
   clear: '&7Clear'

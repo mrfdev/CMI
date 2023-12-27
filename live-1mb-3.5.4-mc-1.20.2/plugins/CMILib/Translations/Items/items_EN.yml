@@ -330,7 +330,7 @@ GOLD_INGOT: Gold Ingot
 GOLD_NUGGET: Gold Nugget
 GOLD_ORE: Gold Ore
 GRANITE: Granite
-GRASS: Grass
+SHORT_GRASS: Short Grass
 GRASS_BLOCK: Grass Block
 GRAVEL: Gravel
 GRAY_BANNER: Gray Banner
@@ -1406,3 +1406,4 @@ WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: Wayfinder armor trim smithing template
 WILD_ARMOR_TRIM_SMITHING_TEMPLATE: Wild armor trim smithing template
 WITHER_SPAWN_EGG: Wither spawn egg
 SIGN: Sign
+GRASS: Grass
