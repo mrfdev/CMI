@@ -210,12 +210,12 @@ Optimizations:
       # Applies for tpahere only
       tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
-    JumpDefault: 100
+    JumpDefault: 128
     Tpa:
       # Defines time in seconds for accepting tpa or tpahere requests
-      Time: 45
+      Time: 40
       # Defines time in seconds for player being teleported after tpa or tpahere is being accepted
-      Warmup: 0
+      Warmup: 1
       # Defines if player can move when tpa or tpahere is being accepted
       Move: true
       # Defines time in seconds for blocking player teleport offers after denying their request
@@ -261,10 +261,11 @@ Optimizations:
     BackBlackList:
     - run
     - santa
+    - winter
   Hat:
     Block:
       # When enabled we will not allow to place items into head slot if item has custom lore
-      # Doesn't limitation doesn't apply to helmet items
+      # Doesn't apply to helmet items
       WithLore: false
       # When enable we wont allow to equip items which are not hat type
       NoneHatItems: false
@@ -492,6 +493,8 @@ ExploitPatcher:
   # While this is set to true players will be limited in how many pages they can create
   # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
+  # While enabled we will prevent items being teleported with end portal and end beacons
+  BlockEndPortalItemTransfers: true
   # When enabled we will not allow usage of riptide while player has pweather set to rain while players world is in sunny state
   Riptide: true
 Vault:
@@ -551,7 +554,7 @@ ReSpawn:
     - spawn
     - warp!spawn
     - worldSpawn
-  # Defines respawn order for defines worlds
+  # Defines respawn order for defined worlds
   # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
     spawn:
@@ -657,6 +660,8 @@ Afk:
   SmartInteractCheck: true
   # Prevents from players abusing afk by constantly moving in afk machine
   AntiAfkMachines: true
+  # Prevents players from being  pooled around while player is in afk mode
+  PreventHook: true
   # EXPERIMENTAL! Prevents players from being pushed around while player is in afk mode
   # Keep in mind that player can still be moved around the same block he is in
   PreventPushing: true
@@ -674,8 +679,8 @@ Afk:
   DisableOnMove: true
   # Disables afk on camera movement
   DisableOnLookAround: false
-  # Disables afk on fishing
-  DisableFishing: true
+  # Disables afk on fishing when you catch fish
+  DisableOnFishing: true
   # Disables item pickup while afk
   DisableItemPickup: true
   PreventMobSpawning:
@@ -900,7 +905,7 @@ NickName:
   MaxLength: 16
   # Adds prefix for players nickname to indicate that its not real name. This can be added to display name with {nicknameprefix}
   Prefix: '~'
-  # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without addign prefix
+  # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without adding prefix
   PrefixWhenDifferent: false
   TabComplete:
     # When true, online players nick name will be used instead of real name in tabcomplete
@@ -1395,17 +1400,6 @@ WorldLimits:
     - None
     end:
     - None
-# Checks and shows on players login if he have been changed hes name over Mojang
-# Looks to be working only with online servers, duhhhh
-CheckForNameChange:
-  OnLogin: true
-  AmountToShow: 5
-  OnInfoShow: true
-  # Do you want to perform commands
-  PerformCommandsOnNewName: true
-  # Command list to be performed in case player logs in with new name
-  NameChangeCommands:
-  - 'asConsole! cmi broadcast !&3[oldname] logged in with new name: [newname]'
 inv:
   # Do you want to save the player's inventory on his death
   SaveOnDeath: true
@@ -1876,7 +1870,40 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    cave/bentobox:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     run:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    santa:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    acid:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1898,7 +1925,18 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    halloween:
+    parkour:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    cave:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1920,7 +1958,73 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    oneblock:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    acid/bentobox:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    skyblock:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    skygrid:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     wild:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    autosorter:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    winter:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600

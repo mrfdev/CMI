@@ -29,14 +29,12 @@ TabList:
   # Full list can be checked ingame with /cmi placeholders
   GeneralFormat:
     # This will define how others see players name in tab list
-    PlayerName: ' %cmi_user_afk_symbol%&e[playerDisplayName] {#Feijoa}%multiverse_world_alias%
-      &r'
+    PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&e[playerDisplayName]
+      {#Feijoa}%multiverse_world_alias% &r'
     Header:
       '1':
       - '{#Cerulean}'
       - '{#Cerulean}     •&l&m         &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
-      - '{#Cerulean}'
-      - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
       - '{#Cerulean}'
     Footer:
       '1':
@@ -56,273 +54,257 @@ TabList:
   # You can have as many groups as you want by increasing increment
   GroupFormat:
     '1':
-      PlayerName: ' %cmi_user_afk_symbol%&e[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&e[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '2':
-      PlayerName: ' %cmi_user_afk_symbol%&2[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&2[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '3':
-      PlayerName: ' %cmi_user_afk_symbol%&9[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&9[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '4':
-      PlayerName: ' %cmi_user_afk_symbol%{#Cerulean}[playerDisplayName] {#sirocco}%multiverse_world_alias%
-        &r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%{#Cerulean}[playerDisplayName]
+        {#sirocco}%multiverse_world_alias% &r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '5':
-      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&4[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '6':
-      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&4[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '7':
-      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&4[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '8':
-      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&4[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '9':
-      PlayerName: ' %cmi_user_afk_symbol%&6[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&6[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '10':
-      PlayerName: ' %cmi_user_afk_symbol%{#895bf3}[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%{#895bf3}[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '11':
-      PlayerName: ' %cmi_user_afk_symbol%&9[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&9[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '12':
-      PlayerName: ' %cmi_user_afk_symbol%{#d34087}[playerDisplayName] {#sirocco}%multiverse_world_alias%
-        &r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%{#d34087}[playerDisplayName]
+        {#sirocco}%multiverse_world_alias% &r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '13':
-      PlayerName: ' %cmi_user_afk_symbol%{#d34087}[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%{#d34087}[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '14':
-      PlayerName: ' %cmi_user_afk_symbol%&r[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&r[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
-        - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
     '15':
-      PlayerName: ' %cmi_user_afk_symbol%&4[playerDisplayName] {#sirocco}%multiverse_world_alias%&r'
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&4[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
       Header:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
-        - '{#Feijoa}12+ Year Anniversary: {#Geyser}/celebration&r'
+      Footer:
+        '1':
+        - '{#Cerulean}'
+        - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
+        - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
+          {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}'
+    '16':
+      PlayerName: ' %cmi_user_nameplate_prefix%%cmi_user_afk_symbol%&4[playerDisplayName]
+        {#sirocco}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}'
+        - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
         - '{#Cerulean}'
       Footer:
         '1':
         - '{#Cerulean}'
         - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
-        - '{#Cerulean}'
         - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'

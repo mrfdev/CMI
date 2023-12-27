@@ -1,26 +1,25 @@
-<AutoPage>
-First time players:
-1MB New
+<AutoPage><NoAutoAlias><NoReqPermission>
+{#deepbronze}First time players:&r
+1MB &lNew
 
-Returning players:
-1MB Player
+{#deepbronze}Returning players:&r
+1MB &lPlayer
 
-Regular players:
-1MB Member
+{#deepbronze}Regular players:&r
+1MB &lMember
 
-Boosted members:
-1MB Boosted
+{#deepbronze}Boosted members:&r
+1MB &lBoosted
 
-Builders:
-1MB Builders
+{#deepbronze}Builders:&r
+1MB &lBuilders
 <NextPage>
-Hello! Nice to meet you.
+Hello &l%cmi_user_name%&r,
+your group right now is:&l %luckperms_primary_group_name%&r
 
-On the 1MB server everybody starts at the 1MB New group.
+On the 1MB server everybody starts at the '1MB New' group.
 
 After someone keeps returning and building up some playtime, they get upgraded to the 1MB Player group.
-
-And then ..
 <NextPage>
 All YOU have to do is have fun playing. If you like the server and keep returning, become a regular, play fair, and simply have fun on the server. We will probably notice you and upgrade you at some point.
 
@@ -52,34 +51,34 @@ There's also 1MB EPIC .. but that's not free.
 <NextPage>
 Talking about not-free groups.
 
-Those who want to show their <3 love <3 for the server can donate any amount over a dollar or euro. 
-But those who donate 35 or more get moved into the 1MB Donator group. 
+Those who want to show their <3 love <3 for the server can gift any amount over a dollar or euro. 
+But those who gifts 35 or more get moved into the 1MB Patron group. 
 <NextPage>
-And if you are in the 1MB Donator group and you donate any amount over a dollar or euro again, you get upgraded to 1MB MVP.
+And if you are in the 1MB Patron group and you gift any amount over a dollar or euro again, you get upgraded to 1MB MVP.
 
 I also mentioned the Epic group. This is 'i show my love' group and access is very limited. We unlock slots once in a rare while. And it ain't cheap.
 <NextPage>
-Okay, we're not after your money, don't worry. We have the groups because once in a while someone who has played for years really want to say thank you and give a personal gift in the form of a PayPal donation. 
+Okay, we're not after your money, don't worry. We have the groups because once in a while someone who has played for years really want to say thank you and give a personal gift in the form of a PayPal transfer. 
 
 But let's summerize!
 <NextPage>
-First time players:
-1MB New
+{#deepbronze}First time players:&r
+1MB &lNew
 
-Returning players:
-1MB Player
+{#deepbronze}Returning players:&r
+1MB &lPlayer
 
-Regular players:
-1MB Member
+{#deepbronze}Regular players:&r
+1MB &lMember
 
-Boosted members:
-1MB Boosted
+{#deepbronze}Boosted members:&r
+1MB &lBoosted
 
-Builders:
-1MB Builders
+{#deepbronze}Builders:&r
+1MB &lBuilders
 <NextPage>
 Oh, before I go, THANK YOU for reading all of this. I know it's overwhelming. Questions? Just ask staff! And on our server, ranks, groups, roles, are all kinda the same thing.
 <NextPage>
 You can find more info, and discuss it, on our forums here:
 
-https://omgboards.com/threads/groups-ranks.260941/
+https://omgboards.com/threads/260941/

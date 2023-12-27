@@ -391,6 +391,22 @@ general:
     commandsWithoutTp: false
     commands:
     - cmi effect [playerName] blindness 2 1 -s
+  tidaladesert1:
+    Loc: 7385.0:56.0:6028.0:7385.0:59.0:6028.0
+    enabled: true
+    effect: dripping_obsidian_tear
+    showParticles: true
+    Tp: wild;-8749.53;64.0;7304.24;-107.07;8.09
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   tidaldiver:
     Loc: 7490.0:59.0:6085.0:7492.0:61.0:6088.0
     enabled: false
@@ -579,6 +595,22 @@ wild:
     - cmi effect [playerName] blindness 2 1 -s
     - msg! [playerName] &lWhoOoOOosh!
     - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
+  perrynetherportal:
+    Loc: -3470.0:55.0:4109.0:-3470.0:59.0:4110.0
+    enabled: true
+    effect: reverse_portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 4
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether
   randyendportal:
     Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
     enabled: true
@@ -611,6 +643,22 @@ wild:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
+  tidalabase2:
+    Loc: -8758.0:65.0:7323.0:-8758.0:68.0:7323.0
+    enabled: true
+    effect: cherry_leaves
+    showParticles: true
+    Tp: general;7384.41;64.0;6025.44;96.76;7.09
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   wildend:
     Loc: 50.0:59.0:47.0:52.0:59.0:49.0
     enabled: true
@@ -650,8 +698,8 @@ wild:
     showParticles: true
     kickBack: false
     particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
+    requiresPerm: true
+    informOnMissingPerm: true
     particleAmount: 10
     particleHide: 0
     activationRange: 8
@@ -704,7 +752,6 @@ halloween:
     enabled: true
     effect: soul_fire_flame
     showParticles: true
-    Tp: halloween;1370.58;81.0;748.36;15.45;36.22
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -720,7 +767,6 @@ halloween:
     enabled: true
     effect: Portal
     showParticles: true
-    Tp: halloween;1551.29;-57.0;728.95;-75.89;8.47
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -742,7 +788,6 @@ halloween:
     enabled: true
     effect: DepthSuspend
     showParticles: true
-    Tp: halloween;1877.25;71.5;484.14;-149.87;15.81
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -780,7 +825,6 @@ halloween:
     enabled: true
     effect: Totem
     showParticles: true
-    Tp: halloween;1681.67;95.29;675.01;-293.46;31.19
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -796,7 +840,6 @@ halloween:
     enabled: true
     effect: DripWater
     showParticles: true
-    Tp: halloween;1605.26;91.19;796.84;-320.75;36.88
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -840,6 +883,21 @@ run:
     commands:
     - cmi effect [playerName] blindness 30 1 -s
 santa:
+  santalecternparticles:
+    Loc: -16.0:154.0:98.0:-16.0:155.0:98.0
+    enabled: true
+    effect: reverse_portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 3
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   santaparticlestree:
     Loc: 162.0:74.0:56.0:174.0:95.0:71.0
     enabled: true
@@ -854,7 +912,7 @@ santa:
     activationRange: 16
     commandsWithoutTp: true
     commands:
-    - asConsole! cmi tfly [playerName] 300 -s
+    - asConsole! cmi tfly [playerName] 120 -s
   santaworldfrostyperk:
     Loc: 167.0:74.0:54.0:167.0:77.0:55.0
     enabled: true

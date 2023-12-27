@@ -23,7 +23,9 @@ CustomAlias:
     Tab: false
   donate:
     Cmds:
-    - asPlayer! cmi ctext donate
+    - msg! [playerName] >> This is an old deprecated command, but you can still become
+      a Patron, loading the "/patron" command for you now......
+    - asPlayer! patron
   rules:
     Cmds:
     - asConsole! cmi ctext rules [playerName]
@@ -70,8 +72,8 @@ CustomAlias:
     Tab: false
   menu:
     Cmds:
-    - check:$1==null! asPlayer! bs menu
-    - check:$1!=null! asPlayer! bs $1
+    - check:$1==null! asConsole! gui openfor [playerName] menu
+    - check:$1!=null! asConsole! gui openfor [playerName] $1
     Tab: false
   points:
     Cmds:
@@ -87,11 +89,11 @@ CustomAlias:
     Tab: false
   sell:
     Cmds:
-    - cmi sell gui
+    - asPlayer! cmi sell gui
     Tab: false
   spawners:
     Cmds:
-    - asConsole! bs open spawners [playerName]
+    - asConsole! gui openfor [playerName] spawners
     Tab: false
   murdergame:
     Cmds:
@@ -173,6 +175,7 @@ CustomAlias:
       to a locked item. You still remain the owner.)
     - msg! [playerName]  {#orange}&l/cinfo &r{#Feijoa} (check locked item information)
     - msg! [playerName] &b https://omgboards.com/threads/261546/ \n&r
+    - msg! [playerName] (You can also use "/trust" to add someone to all your protections)
     Tab: false
   shovel:
     Cmds:
@@ -240,7 +243,7 @@ CustomAlias:
     - cmi ctext placeholders
   oneblock menu:
     Cmds:
-    - menu oneblock
+    - asConsole! gui openfor [playerName] oneblock
   respawn:
     Cmds:
     - asConsole! perm:cmi.autorespawn! msg! [playerName] &3 1MB Death » {#lochmara}Auto-respawn
@@ -688,7 +691,7 @@ CustomAlias:
     - msg! [playerName] {#cerulean}•> {#geyser}Main (best for EU) :{#gold} 1MoreBlock.com
     - msg! [playerName] {#cerulean}•> {#geyser}Cosmic (best for Int) :{#gold} play.1MoreBlock.com
     - msg! [playerName] {#cerulean}•> {#geyser}Shield (best for US) :{#gold} play2.1MoreBlock.com
-    - msg! [playerName] {#cerulean}•> {#geyser}Neo (relay) :{#gold} play3.1MoreBlock.com
+    - msg! [playerName] {#cerulean}•> {#geyser}(OFFLINE) :{#gray} play3.1MoreBlock.com
     - msg! [playerName] {#cerulean}•> {#geyser}Infinity (relay) :{#gold} play4.1MoreBlock.com
     Tab: false
   _getRekt:
@@ -737,7 +740,7 @@ CustomAlias:
     Tab: false
   skills:
     Cmds:
-    - asConsole! cmi ctext skills [playerName] $1
+    - msg! [playerName] This feature is currently unavailable
     - delay! 0.5
     - 'msg! [playerName] More MMO skills: /mcMMO \nMore Jobs skills: /jobs info'
     Tab: false
@@ -784,3 +787,26 @@ CustomAlias:
       groups command for you ..
     - asPlayer! groups
     Tab: false
+  patron:
+    Cmds:
+    - 'msg! [playerName] >> {#gold} Thank you for considering supporting the server.
+      You can learn more about becoming a 1MoreBlock.com Patron member by reading
+      this information: \n *{#green} https://omgboards.com/threads/261543/ &r*'
+  calendar:
+    Cmds:
+    - msg! [playerName] Nope sorry, please explore the /santa world and right-click
+      Santa Clause to open the calendar
+  adventcalendar:
+    Cmds:
+    - asPlayer! calendar
+  acalendar:
+    Cmds:
+    - asPlayer! calendar
+  winter:
+    Cmds:
+    - msg! [playerName] Thank you for having fun in the winter world. It might return
+      in a different form next year. I hope you had some good loot
+    Tab: false
+  run2:
+    Cmds:
+    - asPlayer! tntrun join run2

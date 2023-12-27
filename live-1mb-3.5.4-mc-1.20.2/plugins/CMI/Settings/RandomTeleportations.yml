@@ -463,6 +463,45 @@ RandomTeleportation:
       surfaceOnly: false
       minY: -64
       maxY: 320
+    owo:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    winter:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    autosorter:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      ignorePowderSnow: false
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.

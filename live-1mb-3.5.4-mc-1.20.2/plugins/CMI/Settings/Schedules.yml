@@ -87,7 +87,7 @@ resetWeatherTime:
   - delay! 1
   - save-all
 fishtournament:
-  Enabled: false
+  Enabled: true
   PerformOn:
     '1':
       Day: 1
@@ -121,7 +121,43 @@ fishtournament:
   - delay! 30
   - asConsole! cmi sound item_goat_horn_sound_7 -all
   - cmi broadcast !{#gold} Best of luck Fishing everybody!
-  - asFakeOp! tournaments start Length 30
+  - asFakeOp! ft start LONGEST_LENGTH 900
+farmtournament:
+  Enabled: true
+  PerformOn:
+    '1':
+      Day: 4
+    '2':
+      Day: 10
+    '3':
+      Day: 17
+    '4':
+      Day: 24
+  Repeat: true
+  Feedback: true
+  Commands:
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l FARMING TOURNAMENT STARTS IN ABOUT 30 MINUTES
+  - 'asConsole! discordsrv broadcast #661710111152275456 ## :farmer: :netherite_hoe:
+    **FARMING TOURNAMENT starts in about 30 minutes** \n Prizes for 1st, 2nd, and
+    3rd place winners pay-out automatically. \n The next farming tournament is in
+    7 days.'
+  - delay! 1800
+  - asConsole! cmi sound block_bamboo_fall -all
+  - cmi broadcast !{#gold}&l FARMING TOURNAMENT STARTS IN 5 (FIVE) MINUTES
+  - delay! 180
+  - cmi broadcast !{#gold}&l Farming Tournament starts in 2 (two) minutes
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 60
+  - cmi broadcast !{#gold}&l Farming Tournament starts in a minute
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - cmi broadcast !{#gold}&l Farming Tournament starts in 30 seconds
+  - asConsole! cmi sound block_bamboo_fall -all
+  - delay! 30
+  - asConsole! cmi sound item_goat_horn_sound_7 -all
+  - cmi broadcast !{#gold} Best of luck Farming everybody!
+  - asFakeOp! farmt start MOST_POTATOES 900
 mcmmoAutoStart:
   Enabled: true
   PerformOn:
@@ -321,7 +357,7 @@ Announcer:
     in the group Rogue can have up to 18 {#orange}&l/homes{#feijoa}.</T><H>Click to
     view your /homes.</H><C>cmi homes</C>
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Donator can have up to 22 {#orange}&l/homes{#feijoa}.</T><H>Click
+    in the group Patron can have up to 22 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
     in the group MVP can have up to 23 {#orange}&l/homes{#feijoa}.</T><H>Click to
@@ -392,7 +428,7 @@ Announcer:
     in the group Rogue can have up to 18 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Donator can have up to 20 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+    in the group Patron can have up to 20 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
   - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
     in the group Epic can have up to 25 Chest {#orange}&l/shops{#feijoa}.</T><H>Click

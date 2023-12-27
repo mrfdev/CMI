@@ -171,8 +171,9 @@ CustomAlias:
     - msg! [playerName] {#Cerulean} » ->&2 https://omgboards.com/threads/261749/
     - 'msg! [playerName] {#Cerulean} »{#Feijoa} &lVotes needed: %pinataparty_votes_needed%,
       votes left to go: %pinataparty_votes_left%'
-    - 'msg! [playerName] {#Cerulean} »{#Feijoa} Charlie will spawn every 25 votes
-      at: /warp charlie'
+    - 'asConsole! cmi ctellraw [playerName] <T>{#Cerulean} »{#Feijoa} Charlie will
+      spawn every %pinataparty_votes_needed% votes at: {#orange}&l/warp charlie&r
+      (click cmd)</T><H>Click to go to the /warp charlie arena</H><C>warp charlie</C>'
     - msg! [playerName] {#Cerulean} »{#Feijoa} Once Charlie has been defeated, look
       around for shiny barrels with free loot!
     - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•

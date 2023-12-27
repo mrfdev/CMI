@@ -256,7 +256,7 @@
 <NextPage>
 <pageLabel:{#gold}Pickaxe>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
-<T>{#gold}Knowledge Skill: ⛏&l %adapt_skill_pickaxe_name%&r</T><H>{#gray}(feather icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
+<T>{#gold}Knowledge Skill: ⛏&l %adapt_skill_pickaxe_name%&r</T><H>{#gray}(pickaxe icon in the fletching table)\n{#Geyser}All Agility Skills / XP can be earned by doing various things in the world space; such as: Sneaking, Flying, Sprinting, Falling, and just Moving around&r</H>
 &r
 {#Cerulean} • {#Feijoa}Total skill level: {#Geyser}%adapt_skill_pickaxe_level%
 {#Cerulean} • {#Feijoa}Available knowledge: {#Geyser}%adapt_skill_pickaxe_knowledge%
@@ -265,7 +265,8 @@
 {#Cerulean} • {#Feijoa}Exp Gain Multiplier: {#Geyser}%adapt_skill_pickaxe_multiplier%
 &r
 {#Cerulean} {#gold}Skill Perks Unlocked:
-<T>{#Cerulean} • {#Feijoa}&lWall-Jump,</T><H>{#gray}(ladder icon)\n{#Geyser}Hold shift while mid-air against\n{#Geyser}a wall to wall-latch and jump</H>
+<T>{#Cerulean} • {#Feijoa}&lAuto-Smelt,</T><H>{#gray}(x icon)\n{#Geyser}Mined Ores will be smelted and dropped for you! Works with fortune, and Drop-to-Inventory</H>
+<T>{#Cerulean} • {#Feijoa}&lDrop-To-Inventory,</T><H>{#gray}(x icon)\n{#Geyser}When mining a block that has Drops the items that drop from it will be teleported to your inventory, INCLUDING things in containers like chests and so on, should you break it with a DTI skill</H>
 &r
 {#Cerulean} {#gold}Skill Perks Locked: {#Feijoa}See forum for details
 {#cerulean} •&l&m                                                &r{#Cerulean}•

@@ -20,10 +20,13 @@ CustomAlias:
   event:
     Cmds:
     - asConsole! cmi ctext events [playerName]
+    - msg! [playerName] ----> Rainbows, keep an eye out for rainbows!
     Tab: false
   halloween:
     Cmds:
-    - asPlayer! event
+    - asConsole! cmi gm [playerName] survival -s
+    - msg! [playerName] {#orange}The 2023 halloween event has ended, check back again
+      in 2024.
   spooky:
     Cmds:
     - asPlayer! event
@@ -33,6 +36,7 @@ CustomAlias:
   santa:
     Cmds:
     - asPlayer! event
+    - asPlayer! mvtp santa
   valentine:
     Cmds:
     - asPlayer! event

@@ -50,7 +50,7 @@ Chat:
     PublicMessages: false
     # Do you want to enable staff messaging over bungeecord
     StaffMessages: false
-  # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message}. Supporting PlaceHolderAPI variables like %player_server%
+  # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message} {nicknameprefix}. Supporting PlaceHolderAPI variables like %player_server%
   # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
   GeneralFormat: '{#Edward}{world} {#Sirocco}<&e{displayName}{#Sirocco}> {#Geyser}{message}'
   # Will define message format itself, this allows to have gradients in messages
@@ -96,6 +96,16 @@ Chat:
     helpop: '/msg [playerDisplayName] '
     chatroom: '/msg [playerDisplayName] '
     discord: '/msg [playerDisplayName] '
+  # Defines command (one command per type) to be performed by player when clicked on players name
+  # When this is defined then ClickSuggestions will be changed to shift+left click action for suggested command
+  # Command is performed as player, if you want to perform it from console then add asConsole! variable at the start of it
+  ClickCommands:
+    pubmsg: ''
+    privmsg: ''
+    staffmsg: ''
+    helpop: ''
+    chatroom: ''
+    discord: ''
   # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
   # Add as many lines as you need too
   # cmi.chatgroup.[id] permnission node to use
@@ -131,7 +141,9 @@ Chat:
       {#dbd1ca}{message}'
     '14': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}{#Sirocco}>
       {#dbd1ca}{message}'
-    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&3{displayName}{#Sirocco}>
+    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}{#Sirocco}>
+      {#dbd1ca}{message}'
+    '16': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&3{displayName}{#Sirocco}>
       {#e6d1f0}{message}'
   # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
   # Add as many lines as you need too
@@ -165,7 +177,7 @@ Chat:
     # If set to true, then color codes will get removed from text instead of leaving them if player dont have appropriate permission node for that color
     CleanUp:
       publicmessage: false
-      privatemessage: true
+      privatemessage: false
       me: true
       signs: false
       books: true
@@ -179,7 +191,7 @@ Chat:
     # If set to true then nickName will be filtered from color codes when player changes it
     # cmi.colors.nickname.[colorName]
     NickName: true
-    # Determines /cmi catcolor command contents. What player can pick will be determined by cmi.colors.publicmessages.[colorCode] and will be used in %cmi_user_chatcolor% placeholder
+    # Determines /cmi chatcolor command contents. What player can pick will be determined by cmi.colors.publicmessage.[colorCode] and will be used in %cmi_user_chatcolor% placeholder
     Picker:
     - '&f'
     - '&2'

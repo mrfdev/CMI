@@ -42,7 +42,7 @@
 # If line starts with !actionbar:[seconds]! then player will get action bar message for defined amount of time
 # If line starts with !broadcast! then everyone will receive message. You can add extra !toast! !actionbar! or !title! to send message for everyone to specific place, in example !broadcast!!title!
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
-# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message
+# If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message. Optional time can be defined with !title:4.5! which will keep title message for 4.5 seconds
 # If line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
 # To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
 # <T> and </T> required, other is optional
@@ -122,15 +122,16 @@ info:
   spamConsoleInform: '&cPlayer (&7[playerName]&c) triggered (&7[rules]&c) chat filter
     with:&r [message]'
   # This line can have extra variables: [totalUsers] [onlinePlayers]
-  FirstJoin: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome new player &6[playerDisplayName]{#Feijoa}
-    to 1MoreBlock.com!'
-  LogoutCustom: '{#Cerulean} - {#Feijoa}Player &l[playerDisplayName]&r {#Feijoa}left.'
-  LoginCustom: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} Welcome back &6[playerDisplayName]
-    {#Feijoa}❤'
-  deathlocation: '{#Cerulean>} 1MB Server »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
-    y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]'
+  FirstJoin: '{#Cerulean>} Welcome! »{#Lochmara<}{#Feijoa} A new player &6[playerDisplayName]{#Feijoa}
+    joined 1MoreBlock.com!'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player [playerDisplayName] left. {#gray}(Don''t
+    forget to add 1MoreBlock to your server list!)'
+  LoginCustom: '{#Cerulean>} Welcome! »{#Lochmara<}{#Feijoa} &6&l[playerDisplayName]&r{#Feijoa}
+    has returned! {#Cerulean}❤'
+  deathlocation: \n{#Cerulean>}&l 💀 "/dback" »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
+    y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]\n
   book:
-    exploit: '&cYou cant create book with more than [amount] pages'
+    exploit: '&cYou cannot create a book with more than [amount] pages :('
   combat:
     CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
       Wait: [time]'
@@ -184,6 +185,7 @@ info:
     subinv: '&eYour sub inventory should be empty!'
     subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
   Relog: '&eRelog might be needed for change to take effect'
+  outsideWorldBorder: '&cLocation is outside world border'
   IncorrectColor: '&4Color defined incorrectly!'
   time:
     # Mainly for placeholder playtime output
@@ -257,9 +259,7 @@ Chat:
     was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
     %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomespro_points%
     \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
-    / Lvls: {#Geyser}%jobs_total_levels% \n{#Feijoa} Knowledge MMO: Power level: {#Geyser}%adapt_player_level%{#Feijoa}
-    (used {#Geyser}%adapt_player_usedpower% {#Feijoa}/ max {#Geyser}%adapt_player_maxpower%)\n&8(click
-    to send private msg)&r'
+    / Lvls: {#Geyser}%jobs_total_levels% \n{#Feijoa} \n&8(click to send private msg)&r'
   privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
     \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
   staffHover: 'Player: %cmi_user_name%, {#Edward}(%cmi_user_group%)\n Chat sent: &6%server_time_hh:mm:ss%&r
@@ -271,12 +271,14 @@ Chat:
   itemEmpty: '&7[Mighty fist]'
 Spy:
   Chat:
-    msg: '&2Spy&7[&8[senderDisplayName] &7-> &8[playerDisplayName]&7]&f [message]'
-    custom: '&2Spy&8[senderDisplayName] &7-> &4|&8[place]&4|&f [message]'
+    msg: '{#gossamer}(👁 msg) &8[senderDisplayName] {#gossamer}→ &8[playerDisplayName]:
+      {#gray} [message]'
+    custom: '{#gossamer}(👁 msg) [senderDisplayName] {#gossamer}→ &4|&8[place]: {#gray}
+      [message]'
   Command:
-    msg: '{#gossamer}(cmd&lSpy&r{#gossamer}) [senderDisplayName]{#gray} [command]'
+    msg: '{#gossamer}(👁 cmd) [senderDisplayName]{#gray}: [command]'
   Sign:
-    msg: '{#gossamer}(sign&lSpy&r{#gossamer}) [senderDisplayName]{#gray} [text]'
+    msg: '{#gossamer}(👁 sign) [senderDisplayName]{#gray}: [text]'
 command:
   help:
     output:
@@ -569,7 +571,7 @@ command:
       - If message starts with ! then clean message will be shown
       - Servers can be defined to broadcast messages only in those servers
     info:
-      format: '&e[&4Broadcast&e] &2[message]'
+      format: '{#Cerulean>} !! BROADCAST !! »{#Lochmara<}{#Feijoa}&l [message]'
   blockcycling:
     help:
       info: '&eCycle block states'
@@ -651,7 +653,9 @@ command:
       - If message starts with ! then clean message will be shown
       - Worlds can be defined to broadcast messages only in those worlds
     info:
-      format: '&e[&4Broadcast&e] &2[message]'
+      format: '&r\n {#Cerulean>} !! &rBROADCAST {#Lochmara<}!!{#brightturquoise} (please
+        read) &r\n{#Cerulean} •&l&m                                       &r{#Cerulean}•
+        \n {#gold} [message] \n&r'
   burn:
     help:
       info: '&eBurn a player'
@@ -888,6 +892,8 @@ command:
         by &3[senderName]&e.'
       targetFeedbackCustom: '&eYour compass target was set to &3[x] [z] [world] &elocation
         by &3[sourceDisplayName]&e.'
+      targetPlayerFeedback: '&3[playerDisplayName] &eset their compass towards your
+        location'
       reset: '&eCompass target got reseted'
   condense:
     help:
@@ -1805,7 +1811,6 @@ command:
       newNameHoverNick: '&7Nick: &f[nick]'
       newNameHoverGroup: '&7Group: &f[group]'
       newNameHoverTitle: '&7Prefix: &f[prefix] &7Suffix: &f[suffix]'
-      newNameHoverKnownAs: '&7Also known as: &f[nameList]'
       newNameHoverIp: '&7Ip: &f[ip]'
       newNameHoverPing: '&7Ping: &f[ping]'
       newNameHoverCountry: ' &7[country] &f(&2[countryCode]&f) [city]'
@@ -2025,6 +2030,7 @@ command:
         (&3[offon]&e).'
       maxLines: '&eThere is only &6[lines] &elines of lore.'
       blocked: '&eThis item is blocked from re-loring.'
+      nomodification: '&cYou can''t modify existing lore lines'
   itemname:
     help:
       info: '&eRename items'
@@ -2168,6 +2174,10 @@ command:
       noFoundKit: '&eCan''t find any kits'
       givenKit: '&eYou have given &6[kit] &eto &6[playerDisplayName]'
       title: '&8Kits'
+      # List of custom kit GUI titles based by page
+      # If title isint defined we will use default one
+      titlesByPage:
+      - '&8Kits'
       nameCanUse: '&6[kitName]'
       nameCantUse: '&7[kitName]'
       group: '&eGroup: &6[group]'
@@ -2358,7 +2368,22 @@ command:
       - '&ePlayers online &6[amount][hidden]&e/&6[maxamount]'
       - '[adminLine]'
       - '[staffLine]'
-      - '[groupLine]'
+      - '[group1]'
+      - '[group2]'
+      - '[group3]'
+      - '[group4]'
+      - '[group5]'
+      - '[group6]'
+      - '[group7]'
+      - '[group8]'
+      - '[group9]'
+      - '[group10]'
+      - '[group11]'
+      - '[group12]'
+      - '[group13]'
+      - '[group14]'
+      - '[group15]'
+      - '[group16]'
       - '&7========================'
       staffL: '&7Staff: &f[list]'
       adminL: '&8Admin: &f[list]'
@@ -2370,21 +2395,22 @@ command:
       # ATTENTION! group names should be in 'group[number]' format, where you have word 'group' followed by number. This is required and you cant have custom names as they are not required, but we are using number provided to determine which group goes after which
       # Player need to have appropriate permission node to be placed in group cmi.command.list.group.[groupnumber], bigger number have bigger priority
       groups:
-        group1: '&eFirst: &f[list]'
+        group1: '&eNew: &f[list]'
         group2: '&ePlayer: &f[list]'
         group3: '&eMember: &f[list]'
         group4: '&eBoosted: &f[list]'
         group5: '&eBuilder: &f[list]'
         group6: '&eRogue: &f[list]'
-        group7: '&eDonator: &f[list]'
+        group7: '&ePatron: &f[list]'
         group8: '&eMVP: &f[list]'
         group9: '&eEpic: &f[list]'
         group10: '&eLegendary: &f[list]'
         group11: '&eVeteran: &f[list]'
         group12: '&eHelper: &f[list]'
-        group13: '&eAdmin: &f[list]'
-        group14: '&eOwner: &f[list]'
-        group15: '&eUnique: &f[list]'
+        group13: '&eModerator: &f[list]'
+        group14: '&eAdmin: &f[list]'
+        group15: '&eOwner: &f[list]'
+        group16: '&eUnique: &f[list]'
       noGroupLine: '&eList'
   lockip:
     help:
@@ -2569,8 +2595,8 @@ command:
         and without option to reply
       - Requires cmi.command.msg.noreply permission
     info:
-      TargetMsg: '&7[&8[senderDisplayName] &7-> &8me&7]&r&f [message]'
-      SenderMsg: '&7[&8me &7-> &8[playerDisplayName]&7]&r&f [message]'
+      TargetMsg: '&7[/msg from &8[senderDisplayName]&7]&r{#a1d5e6} [message]'
+      SenderMsg: '&7[/msg sent -> &8[playerDisplayName]&7]&r{#a1d5e6} [message]'
       noPM: '&cPlayer is not accepting private messages now'
       badGroup: '&cCan''t send private messages to this group of players'
   mute:
@@ -2896,6 +2922,9 @@ command:
       requiredExp: ' &eExp: [color][current]&e/&6[needed]'
       requiredVotes: ' &eVotes: [color][current]&e/&6[needed]'
       requiredPerm: ' &ePerm: '
+      requiredPlaceholder: ' &eCustom: '
+      requiredPlaceholderList: '[color][message]'
+      requiredPlaceholderHover: '&e[color][current]&e/&6[needed]'
       requiredMcmmo: ' &eMcmmo: '
       requiredMcmmoList: '&e[color][name] '
       requiredMcmmoListHover: ' &e[color][current]&e/&6[needed]'
@@ -3330,7 +3359,7 @@ command:
       args: ''
     info:
       time: '&eServer time: [time]'
-      format: MM/dd/YYYY HH:mm:ss
+      format: E, dd MMMM, YYYY @ HH:mm:ss (a)
       timeZone: '&eTime zone name: &6[name]'
       timeZoneId: '&eTime zone id: &6[id]'
       timeZoneOffset: '&eTime zone offset: &6[offset]'
@@ -3575,9 +3604,9 @@ command:
       info: '&eSends message to staff channel'
       args: '[message/toggle/on/off]'
     info:
-      message: '{#gossamer}(/staff&lMsg&r{#gossamer}) [senderDisplayName] {#crimson}[message]'
+      message: '{#gossamer}(&b⚜{#gossamer}) [senderDisplayName] {#gossamer}→ {#crimson}[message]'
       toggledOn: '&eA persistent staff chat has been started. You can now write messages
-        in public chat.'
+        in public chat!'
       toggledOff: '&eToggled off Persistent staff chat'
   stats:
     help:

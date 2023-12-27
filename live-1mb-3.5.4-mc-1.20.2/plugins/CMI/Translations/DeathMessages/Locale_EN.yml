@@ -1,3 +1,5 @@
+# Defines prefix for all death messages
+Prefix: '{#riptide}💀 '
 # Defines hover over infomation about player who died. Use basic placeholders like %cmi_user_name% to include any information you would want
 # Set this like to '' if you want to avoid including hover over message
 PlayerHover:
@@ -10,17 +12,23 @@ Escaping:
 - ' &7while escaping &2[sourceDisplayName]'
 - ' &7while fighting &2[sourceDisplayName]'
 RunningAway:
-- ' &7while running away from &2[mobName]'
-- ' &7while fighting &2[mobName]'
+- ' &7while running away from &2[prevMobName]'
+- ' &7while fighting &2[prevMobName]'
 Player:
   General:
   - '&2[playerDisplayName] &7was killed by &2[sourceDisplayName]'
+  - '&2[playerDisplayName] &7was killed by &2[sourceDisplayName] ~ Nobody enters Mordon!'
   - '&2[playerDisplayName] &7died by &2[sourceDisplayName] &7mighty hand'
   - '&2[playerDisplayName] &7was punched to death by &2[sourceDisplayName]'
+  - '&2[playerDisplayName] &7was dealt with by &2[sourceDisplayName] ~ John Wick style'
   Item:
   - '&2[playerDisplayName] &7died by &2[sourceDisplayName] &7hand who used &2[item]'
   Projectile:
   - '&2[playerDisplayName] &7was shot by &2[sourceDisplayName] &7with &2[type]'
+  - '&2[playerDisplayName] &7thought they could sneak into Mordor but &2[sourceDisplayName]
+    &7 caught them with &2[type]'
+  - '&2[playerDisplayName] &7conducted business on continental grounds with &2[sourceDisplayName]
+    &7using &2[type]'
   Fireball:
   - '&2[playerDisplayName] &7was fireballed by &2[sourceDisplayName]'
   Firework:
@@ -57,40 +65,78 @@ Custom:
   Block_explosion:
     General:
     - '&2[playerDisplayName] &7was killed by [Intentional Game Design]'
+  Starvation:
+    General:
+    - '&2[playerDisplayName] &7starved to death'
   Fall:
     Low:
       General:
       - '&2[playerDisplayName] &7hit the ground too hard'
+      - '&2[playerDisplayName] &7found out about gravity'
+      - '&2[playerDisplayName] &7forgot their parachute'
+      - '&2[playerDisplayName] &7tried to be a Christmas reindeer but fell to their
+        death'
     High:
       General:
       - '&2[playerDisplayName] &7fell from a high place'
+      - '&2[playerDisplayName] &7failed to complete the Superhero landing (splat)'
+      - '&2[playerDisplayName] &7tried to level athletics too aggressively'
   Fire:
     General:
     - '&2[playerDisplayName] &7went up in flames'
+    - '&2[playerDisplayName] &7went up in flames, forgotting to stop, drop and roll'
   Fire_tick:
     General:
     - '&2[playerDisplayName] &7burned to death'
+    - '&2[playerDisplayName] &7burned to death, maybe they spontaneously combusted'
   Lightning:
     General:
     - '&2[playerDisplayName] &7was struck by lightning'
+    - '&2[playerDisplayName] &7was struck by lightning, probably angered the son of
+      Odin'
+    - '&2[playerDisplayName] &7was struck by lightning, talk about luck!'
+    - '&2[playerDisplayName] &7was struck by lightning, will it strike in the same
+      place twice?'
   Suffocation:
     General:
     - '&2[playerDisplayName] &7suffocated in a wall'
+    - '&2[playerDisplayName] &7suffocated in a wall, buried alive! oh no'
+    - '&2[playerDisplayName] &7suffocated in a wall, trying to convert to cobblestone?'
   Custom:
     General:
     - '&2[playerDisplayName] &7died'
+    - '&2[playerDisplayName] &7died, were they just killed by a mob or bad luck?'
+    - '&2[playerDisplayName] &7died, maybe they tripped over a stick?'
+    - '&2[playerDisplayName] &7died, and now sits amongst kings in Valhalla (until
+      respawn)'
+    - '&2[playerDisplayName] &7died, now invoking the respawn perk'
   Drowning:
     General:
     - '&2[playerDisplayName] &7drowned'
+    - '&2[playerDisplayName] &7drowned, realised too late they needed more air'
+    - '&2[playerDisplayName] &7drowned, and discovered they are not a squid'
+    - '&2[playerDisplayName] &7drowned, nope, only fish can stay underwater longer'
+    - '&2[playerDisplayName] &7drowned, sorry only zombies convert in water'
   Freeze:
     General:
     - '&2[playerDisplayName] &7frozen to death'
+    - '&2[playerDisplayName] &7frozen to death, maybe they tried to be a snowman?'
   Suicide:
     General:
     - '&2[playerDisplayName] &7took their own life'
+    - '&2[playerDisplayName] &7took their own life (you can use "/dback")'
+    - '&2[playerDisplayName] &7took their own life, hopefully just to test something'
+    - '&2[playerDisplayName] &7took their own life, but what about all their items!'
+    - '&2[playerDisplayName] &7took their own life, rip their exp level.'
   Void:
     General:
     - '&2[playerDisplayName] &7fell out of the world'
+    - '&2[playerDisplayName] &7fell out of the world, welp, /dback is useless now'
+    - '&2[playerDisplayName] &7fell out of the world, always wear your elytra'
+    - '&2[playerDisplayName] &7fell out of the world, oof, rip all their items'
+    - '&2[playerDisplayName] &7fell out of the world, welp, bye bye xp levels'
+    - '&2[playerDisplayName] &7fell out of the world, NOOoOOoo'
+    - '&2[playerDisplayName] &7fell out of the world, please don''t ragequit'
   EndCrystal:
     General:
     - '&2[playerDisplayName] &7shattered like a crystal'
@@ -374,6 +420,7 @@ Mob:
   Phantom:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
+    - '&2[playerDisplayName] &7failed to defeat &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Cod:
@@ -399,6 +446,7 @@ Mob:
   Drowned:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
+    - '&2[playerDisplayName] &7failed to defeat a &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Dolphin:
@@ -484,6 +532,7 @@ Mob:
   Goat:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
+    - '&2[playerDisplayName] &7got headbanged by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Allay:
@@ -504,6 +553,8 @@ Mob:
   Warden:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
+    - '&2[playerDisplayName] &7failed to defeat the &2[mobName]'
+    - '&2[playerDisplayName] &7smashed into another dimension by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Camel:

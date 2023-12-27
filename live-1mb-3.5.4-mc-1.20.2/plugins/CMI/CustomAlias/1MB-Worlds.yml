@@ -155,16 +155,16 @@ CustomAlias:
     - mv tp uwu
   skyblock menu:
     Cmds:
-    - menu skyblock
+    - asConsole! gui openfor [playerName] skyblock
   cave menu:
     Cmds:
-    - menu cave
+    - asConsole! gui openfor [playerName] cave
   acid menu:
     Cmds:
-    - menu acid
+    - asConsole! gui openfor [playerName] acid
   skygrid menu:
     Cmds:
-    - menu skygrid
+    - asConsole! gui openfor [playerName] skygrid
   letmeuwu:
     Cmds:
     - ifinworld:uwu! check:%cmi_user_name%==globug100! asConsole! cmi gm creative

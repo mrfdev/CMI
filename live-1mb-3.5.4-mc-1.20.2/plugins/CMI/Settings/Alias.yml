@@ -239,7 +239,7 @@ Alias:
   #  
   # /cmi condense $1-
   /condense:
-    Enabled: false
+    Enabled: true
     Tab: true
   /compact:
     Enabled: false

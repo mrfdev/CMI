@@ -112,7 +112,6 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:ZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0=
-    - 100:Default:YTNmMTcyZDI5Y2Y5NGJjODk1NjA4YjdhNWRjMmFmMGRlNDljNzg4ZDViZWNiMTYwNWYxZjUzNDg4YTAxNzBiOCJ9fX0=
   skeleton:
     DropChance: 1.0
     LowerWithEachDrop: 50.0

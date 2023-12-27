@@ -77,7 +77,8 @@ Homes:
   # Defines what characters you can use in your home names
   ValidNameRegex: '[^a-zA-Z0-9\-\_]'
   WorldLimits:
-    # Defines what characters you can use in your home names
+    # When enabled home creation will be limited by defined criteria
+    # This can be bypassed if you have cmi.command.sethome.bypasslimit permission node
     Use: false
     Groups:
       Example1:
