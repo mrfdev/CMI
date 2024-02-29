@@ -76,7 +76,7 @@ Both base commands and your own custom commands
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Commands.
 
 By default CMI has all it's commands underneath `/cmi <command>` you can find them all by typing: `/cmi help` and by viewing the list on the website here: (<https://www.zrips.net/cmi/commands/>)
-If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit the `/Saves/Alias.yml` file and change the `Enabled` option from false to true.
+If you wish to use `/<command>` and not just `/cmi <command>`, then you can edit the `/Settings/Alias.yml` file and change the `Enabled` option from false to true.
 ```yaml
   #  
   # /cmi home $1-
