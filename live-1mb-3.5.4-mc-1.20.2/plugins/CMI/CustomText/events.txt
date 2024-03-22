@@ -1,16 +1,9 @@
 <AutoPage><Hidden><NoAutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
-{#orange} -&l 1MoreBlock 2023 Events
-{#orange} -{#gold} Current event: "/santa"
+{#orange} -&l 1MoreBlock 2024 Events
+{#orange} -{#gold} Current event: NUFFIN ! More soon!
 {#orange} -{#gold} 
 {#orange} -{#gold} More info: /discord, where we have
 {#orange} -{#gold} an #events channel with specifics.
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 
->> Advent Calendar: [24 days are over]
->> Xmas Crackers: "ask mrfloris"
->> Santa visit: "he comes to your build!"
->> Custom Tree: Get XmasCrystal & rclick on spruce sapling
->> Christmas "Maps" box on floating island
->> Boosters! 9x rate for 9 mins mcMMO daily
-{#gold} https://omgboards.com/threads/263908/

@@ -1,11 +1,11 @@
-<AutoPage><AutoAlias><NoReqPermission>
+<AutoPage><NoReqPermission>
 img:head:[playerName] 8
 imgtext:{#Lochmara} »{#00d8e6} 1MoreBlock era %onemb_1mb_version% | Minecraft %onemb_mc_version%
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:<T>{#Lochmara} »{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account{#gray} ⇱&r</T><H>Click to check your account</H><C>account</C>
 imgtext:<T>{#Lochmara} »{#Feijoa} Let's have fun, don't grief! {#orange}&l/rules{#gray} ⇱&r</T><H>Click to read our rules</H><C>rules</C>
 imgtext:<T>{#Lochmara} »{#Feijoa} We're on {#orange}&l/discord{#gray} ⇱&r</T><H>Click to learn about our Discord server!</H><C>discord</C><Next><T>{#Feijoa} and pls {#orange}&l/vote{#gray} ⇱&r</T><H>Click to learn about voting!</H><C>votelink</C>
-imgtext:<T>{#Lochmara} »{#Feijoa} Event: {#green}&l/santa{#gray} ⇱</T><H>Click to learn about the event!</H><C>santa</C>
+imgtext:{#Lochmara} »{#Feijoa}
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
 &r
