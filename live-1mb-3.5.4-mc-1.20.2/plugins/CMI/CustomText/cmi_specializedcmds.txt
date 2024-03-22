@@ -1,4 +1,4 @@
-<AutoPage><NoAutoAlias><NoReqPermission>
+<AutoPage>
 <pageLabel:&3Index>
 &b = Index
 <T>&3 * Introduction</T><H>&bClick to go to this page.</H><CCI>cmi ctext cmi_specializedcmds 2 [playerName]</CCI>

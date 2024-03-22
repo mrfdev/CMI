@@ -1,2 +1,2 @@
-<AutoPage><NoReqPermission>
+<AutoPage>
 CMI Variables overview

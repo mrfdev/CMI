@@ -1,4 +1,4 @@
-<AutoPage><Hidden><NoReqPermission>
+<AutoPage><Hidden>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#gold}Just by playing you automatically collect Knowledge Exp for Knowledge skills. When enough are collected you gain a Knowledge level for that skill. 
 &r

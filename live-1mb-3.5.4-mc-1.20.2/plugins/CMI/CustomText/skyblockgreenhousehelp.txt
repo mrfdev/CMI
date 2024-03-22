@@ -1,4 +1,4 @@
-<Hidden><NoReqPermission>
+<Hidden>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#gold}/skyblock greenhouse help (information, read ALL pages!)
 

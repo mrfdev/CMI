@@ -1,4 +1,4 @@
-<AutoPage><NoReqPermission>
+<AutoPage>
 {#Cerulean}
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 img:helmet:[playerName] 8

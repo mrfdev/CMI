@@ -1,4 +1,4 @@
-<AutoPage><NoReqPermission>
+<AutoPage>
 &r
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 

@@ -1,4 +1,4 @@
-<AutoPage><Hidden><NoAutoAlias><NoReqPermission>
+<AutoPage><Hidden>
 You can get points from eating fish called 'pointy fish'. Also, from voting for the server with /vote, and by greeting someone by their name when they join. 
 <NextPage>
 Sometimes you get points from 1MB events, so stick around.

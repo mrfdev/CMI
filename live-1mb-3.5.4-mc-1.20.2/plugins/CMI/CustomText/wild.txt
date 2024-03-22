@@ -1,4 +1,4 @@
-<AutoPage><NoReqPermission>
+<AutoPage>
 &r
 {#Cerulean} •&l&m                                                &r{#Cerulean}•
 <T>{#Feijoa}&l /wild info {#Feijoa}({#Geyser}Hover mouse for a secret!{#Feijoa})</T><H>Reminder! We have /rules\n Click to read them</H><C>rules</C>

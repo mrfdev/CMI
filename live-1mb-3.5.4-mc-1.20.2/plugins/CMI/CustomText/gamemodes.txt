@@ -1,4 +1,4 @@
-<AutoPage><AutoAlias>
+<AutoPage>
 &6
 &6 * &b Thanks for playing on our awesome community.
 &6 * &e The 1MB server is a universe with players at

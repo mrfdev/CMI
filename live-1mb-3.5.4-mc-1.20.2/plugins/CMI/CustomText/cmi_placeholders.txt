@@ -1,4 +1,4 @@
-<AutoPage><NoReqPermission>
+<AutoPage>
 &b = Index
 <T>&3 * Introduction</T><H>&bClick to go to this page.</H><CCI>cmi ctext cmi_placeholders 2 [playerName]</CCI>
 <T>&3 * Player Information</T><H>&bClick to go to this page.</H><CCI>cmi ctext cmi_placeholders 3 [playerName]</CCI>
