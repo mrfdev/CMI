@@ -1,4 +1,4 @@
-<AutoPage><NoAutoAlias><NoReqPermission>
+<AutoPage><NoReqPermission>
 {#deepbronze}First time players:&r
 1MB &lNew
 

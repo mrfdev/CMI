@@ -1,4 +1,4 @@
-<AutoPage><Hidden><NoAutoAlias><NoReqPermission>
+<AutoPage><Hidden><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#orange} -&l 1MoreBlock 2024 Events
 {#orange} -{#gold} Current event: NUFFIN ! More soon!
