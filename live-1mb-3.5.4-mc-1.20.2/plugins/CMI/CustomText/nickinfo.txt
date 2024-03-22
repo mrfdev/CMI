@@ -1,4 +1,4 @@
-<AutoPage><NoReqPermission><Hidden>
+<AutoPage><Hidden>
 &r
 {#Cerulean} Players in the group PATRON and up can set a nick name and pick a color.
 {#Cerulean} More info: https://omgboards.com/threads/263917/

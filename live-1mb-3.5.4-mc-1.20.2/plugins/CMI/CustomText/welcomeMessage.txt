@@ -1,4 +1,4 @@
-<AutoPage><NoReqPermission>
+<AutoPage>
 img:head:[playerName] 8
 imgtext:{#Lochmara} »{#00d8e6} 1MoreBlock era %onemb_1mb_version% | Minecraft %onemb_mc_version%
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
