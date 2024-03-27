@@ -146,7 +146,7 @@ cmi checkperm color
 
 ## Other HEX formats
 
-If your CMILib and CMI are both up to date, you will be able to set true for these settings to use janky alternative hex.
+If your CMILib and CMI are both up to date, you will be able to set true for these settings to use janky alternative hex. Find this in: `cmilib/config.yml`
 ```yaml
 Colors:
   # When enabled plugin will try to detect simplified hex color codes like #f6f6f6 or #ff6 in addition to {#f6f6f6} and {#red}
