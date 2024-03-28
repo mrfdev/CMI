@@ -1,15 +1,17 @@
 <AutoPage>
+<pageLabel:{#gold}MOTD>
 img:head:[playerName] 8
 imgtext:{#Lochmara} »{#00d8e6} 1MoreBlock era %onemb_1mb_version% | Minecraft %onemb_mc_version%
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:<T>{#Lochmara} »{#Feijoa} Welcome %cmi_user_display_name% {#Feijoa}({#Geyser}%luckperms_primary_group_name%{#Feijoa}) {#orange}&l/account{#gray} ⇱&r</T><H>Click to check your account</H><C>account</C>
 imgtext:<T>{#Lochmara} »{#Feijoa} Let's have fun, don't grief! {#orange}&l/rules{#gray} ⇱&r</T><H>Click to read our rules</H><C>rules</C>
 imgtext:<T>{#Lochmara} »{#Feijoa} We're on {#orange}&l/discord{#gray} ⇱&r</T><H>Click to learn about our Discord server!</H><C>discord</C><Next><T>{#Feijoa} and pls {#orange}&l/vote{#gray} ⇱&r</T><H>Click to learn about voting!</H><C>votelink</C>
-imgtext:{#Lochmara} »{#Feijoa}
+imgtext:<T>{#Lochmara} »{#Feijoa} /Mail {#orange}&l%cmi_user_mail_count%{#gray} ⇱&r{#Feijoa} {#white}|</T><H>Read your /mail</H><C>cmi mail read</C><Next><T> | {#magenta}&l/Easter Event: {#Geyser}30th/31st{#gray} ⇱</T><H>Click for more info about the easter event</H><C>easter</C>
 imgtext:{#Cerulean} •&l&m                                       &r{#Cerulean}•
 imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %onlineplayers_displaynames%
 &r
 <NextPage>
+<pageLabel:{#gold}Account Information>
 {#Cerulean}
 {#Cerulean}
 {#Cerulean}
@@ -31,6 +33,7 @@ imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %o
 {#Cerulean} • {#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs% {#Feijoa}/ Lvls: {#Geyser}%jobs_total_levels%
 &r
 <NextPage>
+<pageLabel:{#gold}Social Information>
 &r
 &r
 &r
@@ -40,7 +43,7 @@ imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %o
 &r
 &r
 &2 Some 1MoreBlock links:
-{#Feijoa} •&l&m                                                &r{#Feijoa}•
+{#Cerulean} •&l&m                                       &r{#Cerulean}•
 <T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>www.1moreblock.com</URL>
 <T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/floris</T><H>Click to load our Discord Server</H><URL>discord.gg/floris</URL>
 <T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>twitch.tv/mrfloris</URL>
