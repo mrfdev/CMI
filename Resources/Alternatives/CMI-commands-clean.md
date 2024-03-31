@@ -1,18 +1,15 @@
 # All CMI Commands (that I know of)
-
-Documented list with more details, examples, etc. can be found [here](https://www.zrips.net/cmi/commands/).
+Documented list with more details, examples, etc. can be found on [zrips.net](https://www.zrips.net/cmi/commands/).
 
 ## List of available commands
-
-Pro tip, you can search through this list in-game and from console: `/cmi checkcommand (key word)`
-
+- Pro tip 1, you can search through this list in-game and from console: `/cmi checkcommand (key word)`
+- Pro tip 2, you can quickly check in-game what a command does with: `/cmi <command> ?`
 ```
 /cmi actionbarmsg [playerName/all] (-s:[seconds]) [message] - Sends action bar message to player
 /cmi afk (-p:playerName) (reason) (-s) - Toggle afk mode. Reason could be provided
 /cmi afkcheck [playerName/all] - Check players afk status
 /cmi air [playerName] [amount] (-s) - Set players air
-/cmi alert [playerName] (reason) - Alerts administration on players login
-/cmi alertlist  - Lists all recorded alerts
+/cmi alert [add/list/remove] [playerName] (reason) (-s) - Alerts administration on players login
 /cmi aliaseditor (new) (alias-cmd) - Alias editor
 /cmi anvil (playerName) (-s) - Open anvil
 /cmi anvilrepaircost (playerName) [amount] - Set items repair cost
@@ -36,6 +33,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi cartographytable (playerName) (-s) - Open cartography table
 /cmi charges [playerName] [add/set/take/clear/reset] (-f) - Shows left spawner charges
 /cmi chat [create/join/leave/list/invite/kick/listrooms] (chatName/playerName) (-private) (-locked) (-persistent) - Create and join chat rooms
+/cmi chatcolor (playerName) - Pick chat color
 /cmi checkaccount (playerName/ip) - Search for a players other accounts
 /cmi checkban (playerName) - Check players ban status
 /cmi checkcommand (key word) - Search for possible commands by keyword
@@ -61,7 +59,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi dispose (playerName) - Dispose of unneeded items
 /cmi distance (playerName) (playerName) - Check distance between 2 points
 /cmi donate [playerName] (amount) - Donate item you are holding
-/cmi down [playerName] (-s) - Teleport one floor down
+/cmi down [playerName] (-s) (max) - Teleport one floor down
 /cmi dsign (new) - Manage dynamic signs
 /cmi dye (playerName) (red,green,blue/hexCode/colorName/random/clear/rainbow/day/biome/health) (-s) - Dye leather armor
 /cmi editctext  - Custom text editor
@@ -88,7 +86,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi gamerule  - Manage gamerules
 /cmi generateworth  - Auto generate possible item worth values
 /cmi getbook [cTextName] (playerName) - Get book
-/cmi give (playerName) [itemname/hand] (amount/playerName) (-slot:[number]) - Give item to player
+/cmi give (playerName) [itemdata/hand] (playerName) (-slot:[number]) (unstack) (-s) - Give item to player
 /cmi giveall [itemname] (amount) (e|l|n|offline) - Give item for all players
 /cmi glow (playerName) [true/false/color/gui] - Set players glow mode
 /cmi gm (playerName) [gamemode] - Set players game mode
@@ -136,7 +134,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi kick [playerName/all] (message) (-s) - Kick player with custom message
 /cmi kill [playerName] (-forced) (damageCause) (-s) (-lightning) - Kill player
 /cmi killall (-monsters/-pets/-npc/-animals/-ambient/-named/-f/-lightning/-list/-m:[mobType]) (-r:range) (-s) (-w:[worldName]) - Kill mobs around you
-/cmi kit [kitName] (playerName) (-s) (-open) (-preview) - Gives predefined kit.
+/cmi kit [kitName] (playerName) (-s) (-open) (-preview) (-c) - Gives predefined kit.
 /cmi kitcdreset (kitName) (playerName/all) - Reset kit timer
 /cmi kiteditor  - Kit editor.
 /cmi kitusagereset (kitName) (playerName) - Reset kit usage counter
@@ -201,7 +199,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi replaceblock id [blockName:data/id:data] w [blockName:data/id:data] r [range in chunks/g] y [max height] - Replaces blocks in current world around you
 /cmi reply [message] - Reply to last message sender
 /cmi resetback (playerName) (reason) (-death) (-s) - Resets players back location
-/cmi resetdbfields [collumnName] (-w:[worldName]) (-p:[playerName]) - Resets particular database columns to default value
+/cmi resetdbfields [columnName] (-w:[worldName]) (-p:[playerName]) - Resets particular database columns to default value
 /cmi ride  - Ride target entity
 /cmi rt (playerName) (worldName) (-s) - Teleports to random location
 /cmi sameip  - List players logged in from same ip
@@ -239,7 +237,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi smite (playerName/location) (-s) - Strike ground or player with lightning
 /cmi smithingtable (playerName) - Open smithing table
 /cmi solve [equation] - Solve equation
-/cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all) (world;x;y;z) (-r:[radius]) (-s) - Play sound at target location
+/cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all/-l:playerName) (world;x;y;z) (-r:[radius]) (-s) - Play sound at target location
 /cmi spawn (playerName) (-s) - Teleports back to spawn location
 /cmi spawner [EntityType] - Sets spawner
 /cmi spawnereditor  - Edit spawner
@@ -272,7 +270,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi tpallworld [worldName] (worldName;x;y;z(;yaw;pitch)) (-a) - Teleports ALL players from specific world
 /cmi tpbypass (playername) - Bypass teleportation to unsafe location
 /cmi tpdeny (playerName) - Deny teleport request
-/cmi tphere [playerName] (playerName) - Teleports player to your location
+/cmi tphere [playerName] (playerName) (-s) - Teleports player to your location
 /cmi tpo [playerName] (playerName) - Teleports to player's location by force
 /cmi tpohere [playerName] (playerName) - Teleports player to your location by force
 /cmi tpopos (-p:playerName) [x] [y] [z] (world) (pitch) (yaw) (-rng:[range]) - Teleports to location by force
@@ -282,7 +280,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi unban [playerName/ip] (-s) - Unban player or ip
 /cmi unbreakable (playerName) (true/false) - Makes item unbreakable
 /cmi uncondense (itemName) (playerName) (-s) - Uncondense items into smaller parts
-/cmi unjail [playerName] - Release player from jail
+/cmi unjail [playerName] (-s) - Release player from jail
 /cmi unloadchunks (-f) - Unloads chunks from server memory
 /cmi unmute [playerName] (-s) - Unmute player
 /cmi unmutechat (-s) - Unmute public chat
@@ -295,7 +293,7 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi voteedit (playerName) [add/set/take/clear] [amount] (-s) - Manage players votes
 /cmi votes (playerName) - Check players vote count
 /cmi votetop (playerName) - Check top vote list
-/cmi walkspeed (playerName) [amount] (-s) - Set players walk speed from 0 to 10
+/cmi walkspeed (playerName) [amount] (-s) - Set players walk speed from 0 to 5
 /cmi warn [playerName] (category) (reason) (-s) - Warn player
 /cmi warnings (playerName) - Check player warnings
 /cmi warp (warpName) (playerName) (-s) (-g:[groupName]) (-p:[pageNumber]) - Teleports to warp location
@@ -306,7 +304,5 @@ Pro tip, you can search through this list in-game and from console: `/cmi checkc
 /cmi worth (all/blocks/hand/material) - Check item worth
 /cmi worthlist (playerName) (-missing) - Check list of items with set sell prices
 ```
-
 ## Miscellaneous
-
-Created with CMI 9.3.2.0 for Minecraft 1.19.3.
+Created with CMI 9.7.0.2 for Minecraft 1.20.4
