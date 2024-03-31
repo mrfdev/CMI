@@ -219,12 +219,12 @@ Alias:
   #  
   # /cmi colorlimits $1-
   /colorlimits:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi colorpicker $1-
   /colorpicker:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi colors $1-
@@ -955,7 +955,7 @@ Alias:
   #  
   # /cmi ping $1-
   /ping:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi placeholders $1-

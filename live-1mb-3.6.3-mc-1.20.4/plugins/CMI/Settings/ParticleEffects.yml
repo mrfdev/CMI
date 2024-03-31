@@ -105,6 +105,9 @@ TeleportEffects:
   Tp:
     From: ''
     To: ''
+  Bungee:
+    From: ''
+    To: ''
   Top:
     From: ''
     To: ''

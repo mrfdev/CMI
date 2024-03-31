@@ -16,7 +16,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       # With this option we will only attempt to teleport player on highest block and ignore any cave teleportations
       surfaceOnly: false
       minY: 0
@@ -30,7 +32,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -43,7 +47,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -56,7 +62,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -69,7 +77,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -82,7 +92,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: false
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 54
       maxY: 250
@@ -95,7 +107,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -108,7 +122,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -121,7 +137,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -134,7 +152,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -147,7 +167,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -160,7 +182,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -173,7 +197,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: true
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 40
       maxY: 300
@@ -186,7 +212,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -199,7 +227,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -212,7 +242,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -225,7 +257,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -238,7 +272,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -251,7 +287,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -264,7 +302,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: 0
       maxY: 256
@@ -277,7 +317,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -290,7 +332,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -303,7 +347,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -316,7 +362,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -329,7 +377,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -342,7 +392,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -355,7 +407,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -368,7 +422,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -381,7 +437,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -394,7 +452,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -407,7 +467,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -420,7 +482,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -433,7 +497,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -446,7 +512,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -459,7 +527,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -472,7 +542,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -485,7 +557,9 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320
@@ -498,7 +572,39 @@ RandomTeleportation:
       Circle: false
       IgnoreWater: true
       IgnoreLava: true
+      IgnoreLeaves: false
       ignorePowderSnow: false
+      ignoredMaterials: []
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    debug:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      IgnoreLeaves: false
+      ignorePowderSnow: false
+      ignoredMaterials: []
+      surfaceOnly: false
+      minY: -64
+      maxY: 320
+    summer:
+      Enabled: true
+      MaxRange: 1000
+      MinRange: 500
+      CenterX: 0
+      CenterZ: 0
+      Circle: false
+      IgnoreWater: true
+      IgnoreLava: true
+      IgnoreLeaves: false
+      ignorePowderSnow: false
+      ignoredMaterials: []
       surfaceOnly: false
       minY: -64
       maxY: 320

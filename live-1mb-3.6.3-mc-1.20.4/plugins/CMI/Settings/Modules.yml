@@ -11,7 +11,7 @@ silentChest: true
 #  
 # Version check when player logs in
 # Applies for servers from 1.7.x and up
-versionCheck: true
+versionCheck: false
 #  
 # World limitations: fly, game mode and god mode
 # Applies for servers from 1.7.x and up
@@ -39,7 +39,7 @@ durabilityLoss: true
 #  
 # Handling of mirror feature, which checks block place and break actions
 # Applies for servers from 1.7.x and up
-mirror: true
+mirror: false
 #  
 # Spawner handling, like drop, place, egg interactions
 # Applies for servers from 1.7.x and up
@@ -199,7 +199,7 @@ eventCommands: true
 #  
 # Handling of disabled enchants in inventory
 # Applies for servers from 1.7.x and up
-disabledEnchants: true
+disabledEnchants: false
 #  
 # Handling of siting on blocks
 # Applies for servers from 1.8.x and up
@@ -211,7 +211,7 @@ rideAnimation: true
 #  
 # Handling of boss bar compass
 # Applies for servers from 1.9.x and up
-bossBarCompass: true
+bossBarCompass: false
 #  
 # Elytra boost
 # Applies for servers from 1.9.x and up

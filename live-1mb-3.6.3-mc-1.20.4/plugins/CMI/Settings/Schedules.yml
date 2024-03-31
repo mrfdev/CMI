@@ -21,6 +21,9 @@
 # MinPlayersCommands: List of commands to be performed when online player amount is under specified limit
 # MaxPlayers: (amount) Will skip scheduler if there is more than defined amount of players
 # Feedback: (true/false) if set to false will not show feedback message in console in case there is not enough players to perform this schedule
+# DontTranslatePlaceholders: (true/false) if set to true we will not translate placeholders inside commands before sending them to later processing
+#   This defaults to false and placeholders will be translated before hand
+#   Exception for delay! specialized command variable which always gets translated before hand
 # Commands: List of commands to be performed when time is correct. 
 #   If command starts with msg! and then player name is given, simple message will be sent to that player if he is online.
 #   If command starts with broadcast! then message will be sent to everyone on server in simple manear
@@ -318,174 +321,174 @@ Announcer:
   Randomize: true
   Feedback: false
   Commands:
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can {#orange}&lsit{#feijoa}
-    on stairs by right-clicking empty handed.
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Tired
-    of regular survival? Try {#orange}&l/oneblock{#feijoa}.</T><H>Click to teleport
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    You can {#orange}&l/sit{#feijoa} on stairs by right-clicking empty handed.</T><H>Click
+    to /sit now</H><C>sit</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Tired of regular survival? Try {#orange}&l/oneblock{#feijoa}.</T><H>Click to teleport
     to /oneblock.</H><C>oneblock</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Type
-    {#orange}&l/menu{#feijoa} to find out what else is on our server.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Type {#orange}&l/menu{#feijoa} to find out what else is on our server.</T><H>Click
     to open /menu.</H><C>menu</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Learn
-    more about our features on {#orange}&l/forums{#feijoa}.</T><H>Click to go to /forums.</H><C>forums</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Level
-    up for perks from {#orange}&l/mcMMO{#feijoa}.</T><H>Click to go to /mcMMO.</H><C>mcmmo</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Level
-    up for rewards from {#orange}&l/achievements{#feijoa}.</T><H>Click to go to /achievements.</H><C>achievements</C>
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG mcMMO commands: {#orange}&l/mcstats{#feijoa},
-    {#orange}&l/mcrank{#feijoa}, {#orange}&l/mctop{#feijoa}.'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG features: {#orange}&l/fish{#feijoa},
-    {#orange}&l/pvp{#feijoa}, {#orange}&l/party{#feijoa}.'
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Protection commands: /lock,
-    /unlock, /cmodify'
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group First can have up to 1 {#orange}&l/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Player can have up to 3 {#orange}&l/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Member can have up to 6 {#orange}&l/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Boosted can have up to 8 {#orange}&l/homes{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Learn more about our features on {#orange}&l/forums{#feijoa}.</T><H>Click to go
+    to /forums.</H><C>forums</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Level up for perks from {#orange}&l/mcMMO{#feijoa}.</T><H>Click to go to /mcMMO.</H><C>mcmmo</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Level up for rewards from {#orange}&l/achievements{#feijoa}.</T><H>Click to go
+    to /achievements.</H><C>achievements</C>
+  - 'broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG mcMMO commands:
+    {#orange}&l/mcstats{#feijoa}, {#orange}&l/mcrank{#feijoa}, {#orange}&l/mctop{#feijoa}.'
+  - 'cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG features:
+    </T><Next><T>{#orange}&l/fish{#feijoa}, </T><H>Pyro Fishing feature, click to
+    learn more</H><C>fish menu</C><Next><T>{#orange}&l/pvp{#feijoa}, </T><H>Toggle
+    PVP on or off, click to start</H><C>pvp</C><Next><T>{#orange}&l/party{#feijoa}.</T><H>mcMMO
+    party feature, click to start</H><C>party</C>'
+  - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Protection commands: {#orange}&l/lock{#feijoa}, {#orange}&l/unlock{#feijoa}, {#orange}&l/cmodify&r</T><H>Learn
+    more /chests</H><C>chests</C>'
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Player can have up to 3 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Builder can have up to 16 {#orange}&l/homes{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Member can have up to 6 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Rogue can have up to 18 {#orange}&l/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Patron can have up to 22 {#orange}&l/homes{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Boosted can have up to 8 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group MVP can have up to 23 {#orange}&l/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Epic can have up to 28 {#orange}&l/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Legendary can have up to 50 {#orange}&l/homes{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Builder can have up to 16 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Team can have up to 100 {#orange}/homes{#feijoa}.</T><H>Click to
-    view your /homes.</H><C>cmi homes</C>
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Please join our website:
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Rogue can have up to 18 {#orange}&l/homes{#feijoa}.</T><H>Click
+    to view your /homes.</H><C>cmi homes</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Patron can have up to 22 {#orange}&l/homes{#feijoa}.</T><H>Click
+    to view your /homes.</H><C>cmi homes</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group MVP can have up to 23 {#orange}&l/homes{#feijoa}.</T><H>Click
+    to view your /homes.</H><C>cmi homes</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Epic can have up to 28 {#orange}&l/homes{#feijoa}.</T><H>Click
+    to view your /homes.</H><C>cmi homes</C>
+  - 'broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Please join our website:
     https://www.omgboards.com. It has fun offtopic discussion, events, inside information,
     help, and much more.'
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    have access to {#orange}&l/back{#feijoa} to quickly teleport back to their previous
-    location.</T><H>Click to teleport to your previous location.</H><C>cmi back</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    have access to {#orange}&l/dback{#feijoa} to quickly teleport back to their death
-    location.</T><H>Click to teleport to your death location.</H><C>cmi dback</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Did
-    someone just /msg you? Type {#orange}&l/r{#feijoa} to quickly reply to them.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players have access to {#orange}&l/back{#feijoa} to quickly teleport back to their
+    previous location.</T><H>Click to teleport to your previous location.</H><C>cmi
+    back</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players have access to {#orange}&l/dback{#feijoa} to quickly teleport back to
+    their death location.</T><H>Click to teleport to your death location.</H><C>cmi
+    dback</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Did someone just /msg you? Type {#orange}&l/r{#feijoa} to quickly reply to them.</T><H>Click
     to paste the command in your chat box.</H><SC>/r</SC>
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players cannot create portals,
-    please use /end and /nether.
-  - 'asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Groups:
-    We have quite a few! Check {#orange}&l/groups{#feijoa}.</T><H>Click to view /groups.</H><C>groups</C>'
-  - 'asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Ranks:
-    We have quite a few! Check {#orange}&l/ranks{#feijoa}.</T><H>Click to view /ranks.</H><C>ranks</C>'
-  - broadcast! {#Cerulean} 1MB Community »{#magenta} We are 12+ years old in 2023
-    WHOOOO!
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players cannot create
+    portals, please use /end and /nether.
+  - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Groups: We have quite a few! Check {#orange}&l/groups{#feijoa}.</T><H>Click to
+    view /groups.</H><C>groups</C>'
+  - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Ranks: We have quite a few! Check {#orange}&l/ranks{#feijoa}.</T><H>Click to view
+    /ranks.</H><C>ranks</C>'
+  - broadcast! {#Cerulean} 1MB Community »{#magenta} We started the server 13+ years
+    ago in 2011 WHOOOO!
   - 'broadcast! {#Cerulean} 1MB Community »{#magenta} Type: {#orange}&l/celebration{#magenta}.'
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can smelt a lot of
-    mob heads in a furnace for a cheque.
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Learn which mobs you can
-    /ride
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} When
-    you greet someone by their name when they join, you earn {#orange}&l/points{#feijoa}.</T><H>Click
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can smelt a lot
+    of mob heads in a furnace for a cheque.
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Learn which mobs you can {#orange}&l/ride</T><H>click to learn more</H><C>ride</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    When you greet someone by their name when they join, you earn {#orange}&l/points{#feijoa}.</T><H>Click
     to view /points.</H><C>points</C>
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Grind mcMMO levels to unlock
-    perks and level up your skill abilities.
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Eat
-    Pointy Fish to earn up to 5 {#orange}&l/points{#feijoa} per fish.</T><H>Click
-    to view /points.</H><C>points</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Sell
-    all the types of fish on {#orange}&l/fish shop{#feijoa}.</T><H>Click to view /fish
-    shop.</H><C>fish shop</C>
-  - 'broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB Third Era
-    (%onemb_1mb_version%) for Minecraft %onemb_mc_version%'
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group First can have up to 1 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Grind mcMMO levels
+    to unlock perks and level up your skill abilities.
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Eat special Pointy Fish to earn {#orange}&l/points{#feijoa}!</T><H>Click to view
+    /points.</H><C>points</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Sell all the types of fish on {#orange}&l/fish shop{#feijoa}.</T><H>Click to view
+    /fish shop.</H><C>fish shop</C>
+  - 'broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Server: 1MB Third
+    Era (%onemb_1mb_version%) for Minecraft %onemb_mc_version%'
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group First can have up to 1 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Player can have up to 2 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Player can have up to 5 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Member can have up to 5 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Member can have up to 10 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Boosted can have up to 8 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Boosted can have up to 15 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Builder can have up to 15 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Builder can have up to 25 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Rogue can have up to 18 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Rogue can have up to 30 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Patron can have up to 20 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Patron can have up to 35 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Epic can have up to 25 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group MVP can have up to 40 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Legendary can have up to 50 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Players in the group Epic can have up to 50 Chests {#orange}&l/shops{#feijoa}.</T><H>Click
     to view /shops.</H><C>shops</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Players
-    in the group Team can have up to 100 Chest {#orange}&l/shops{#feijoa}.</T><H>Click
-    to view /shops.</H><C>shops</C>
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} {#orange}&l/j{#feijoa}
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} {#orange}&l/j{#feijoa}
     is a little perk for the Green rank. It allows the player to quickly teleport
     to where they point.
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Help grow the server by
-    asking your friends to join!
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Learn
-    about server signs at {#orange}&l/warp signs{#feijoa}.</T><H>Click to check out
-    /warp signs.</H><C>cmi warp signs</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Type
-    {#orange}&l/here{#feijoa} for more information about where you are.</T><H>Click
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Help grow the server
+    by asking your friends to join!
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Learn about server signs at {#orange}&l/warp signs{#feijoa}.</T><H>Click to check
+    out /warp signs.</H><C>cmi warp signs</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Type {#orange}&l/here{#feijoa} for more information about where you are.</T><H>Click
     to view /here.</H><C>here</C>
-  - 'asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Bottle
-    your experience orbs with dragon breath, ask staff how! Location: {#orange}&l/warp
+  - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Bottle your experience orbs with dragon breath, ask staff how! Location: {#orange}&l/warp
     shops{#feijoa} (the bedrock at the enchantment table).</T><H>Click to check out
     /warp shops.</H><C>cmi warp shops</C>'
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Collect all the vote-tokens
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Collect all the vote-tokens
     for unique OP stuff.
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} You
-    can buy and sell items on {#orange}&l/market{#feijoa}.</T><H>Click to check out
-    /market.</H><C>market</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Stay
-    up2date! We have a daily {#orange}&l/changelog{#feijoa}.</T><H>Click to view today's
-    /changelog.</H><C>changelog</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} You
-    can {#orange}&l/vote{#feijoa} daily for lots of rewards.</T><H>Click to check
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    You can buy and sell items on {#orange}&l/market{#feijoa}.</T><H>Click to check
+    out /market.</H><C>market</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Stay up2date! We have a daily {#orange}&l/changelog{#feijoa}.</T><H>Click to view
+    today's /changelog.</H><C>changelog</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    You can {#orange}&l/vote{#feijoa} daily for lots of rewards.</T><H>Click to check
     out /vote.</H><C>vote</C>
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Instead of regular operators,
-    we have community helpers. Ask away!
-  - 'asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} Player
-    and Admin Shops: {#orange}&l/warp shops{#feijoa}.</T><H>Click to check out /warp
-    shops.</H><C>warp shops</C>'
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} You
-    cannot take from chests or break things made by others unless a sign says so.
-    Please read {#orange}&l/rules{#feijoa}, and play fair. Thank you!</T><H>Click
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Instead of regular
+    operators, we have community helpers. Ask away!
+  - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    Player and Admin Shops: {#orange}&l/warp shops{#feijoa}.</T><H>Click to check
+    out /warp shops.</H><C>warp shops</C>'
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    You cannot take from chests or break things made by others unless a sign says
+    so. Please read {#orange}&l/rules{#feijoa}, and play fair. Thank you!</T><H>Click
     to view /rules.</H><C>rules</C>
-  - asConsole! cmi ctellraw all <T>{#cerulean>} 1MB Tip »{#lochmara<}{#feijoa} A great
-    way to make money is with jobs. Players can join up to three. Type {#orange}&l/jobs
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    A great way to make money is with jobs. Players can join up to three. Type {#orange}&l/jobs
     browse{#feijoa} to get started.</T><H>Click to view /jobs browse.</H><C>jobs browse</C>
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns to the
-    1st, 7th, 14th, and 21st of the month, there will be a fish tournament for 30
-    minutes.
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns to the
-    2nd, 8th, 15th, and 22nd of the month, there will be an mcMMO booster for an hour
-  - broadcast! {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} As the day turns to the
-    3rd, 9th, 16th, and 23rd of the month, there will be a Jobs booster for an hour.
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
+    there will be a fishing tournament for 30 minutes (/fisht info)
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
+    there will be a farming tournament for 30 minutes (/farmt info)
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
+    there will be an mcMMO booster for an hour (/rate)
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
+    there will be a Jobs booster for an hour
 updateNameplate:
-  Enabled: true
+  Enabled: false
   Repeat: false
   Randomize: false
   Feedback: true

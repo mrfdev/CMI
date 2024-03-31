@@ -29,27 +29,19 @@ firstJoinServer:
 joinServer:
   Enabled: true
   Commands:
-  - ifinworld:santa! asConsole! cmi tppos -p:[playerName] spawn -20 65 28 -4 -176
-  - delay! 0.2
-  - asConsole! cmi nameplate [playerName] -suf:{#gold}_[{#harlequin>}Elf{#darkgreen<}{#gold}]_&r
-    -s
   - delay! 0.2
   - check:%luckperms_in_group_1mb_legendary%==yes! broadcast! {#Denim>} OMG, a &lLegendary
-    player{#Cerulean<>} just joined!!{#Denim<}\n&r
+    friend{#Cerulean<>} just joined!!{#Denim<}\n&r
   - check:%luckperms_in_group_1mb_epic%==yes! broadcast! {#Denim>} An &lEpic player{#Cerulean<>}
     started playing, awesome!{#Denim<}\n&r
-  - check:%luckperms_in_group_1mb_mvp%==yes! broadcast! {#Denim>} A &lBoosted Patron{#Cerulean<>}
+  - check:%luckperms_in_group_1mb_mvp%==yes! broadcast! {#Denim>} An &lMVP player{#Cerulean<>}
     started playing!{#Denim<}\n&r
-  - check:%luckperms_in_group_1mb_donator%==yes! broadcast! {#Denim>} A &lPatron{#Cerulean<>}
+  - check:%luckperms_in_group_1mb_donator%==yes! broadcast! {#Denim>} A &lPatron member{#Cerulean<>}
     started playing!{#Denim<}\n&r
-  - delay! 3
-  - asConsole! cmi bossbarmsg all -t:300 -n:santa -s:1 -p:20 -c:red {#gold}&lMerry
-    Christmas from 1MoreBlock.com
 quitServer:
   Enabled: true
   Commands:
-  - cmi invsave [playerName]
-  - ifinworld:santa! asConsole! cmi tppos -p:[playerName] spawn -20 65 28 -4 -176
+  - cmi invsave [playerName] -s
 playerDeath:
   Enabled: false
   Commands:
@@ -158,6 +150,16 @@ elytraEndGlide:
   Enabled: false
   Commands:
   - msg! [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+sneakingSwapHandItems:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+swapHandItems:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
   - cmi actionbarmsg [playerName] This is event command example!
 pvpstart:
   Enabled: false
