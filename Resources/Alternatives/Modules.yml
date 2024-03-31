@@ -77,6 +77,10 @@ armorEffects: true
 # Applies for servers from 1.7.x and up
 playerChatTag: true
 #  
+# Handling of chat bubbles
+# Applies for servers from 1.19.x and up
+chatBubble: true
+#  
 # Handling of tablist
 # Applies for servers from 1.7.x and up
 tablist: true
@@ -116,6 +120,10 @@ homeInteractions: true
 # Handles dynamic signs
 # Applies for servers from 1.7.x and up
 dynamicSigns: true
+#  
+# Handles sign editing
+# Applies for servers from 1.20.x and up
+signEdit: true
 #  
 # Handles leather armor which has dynamic colors
 # Applies for servers from 1.7.x and up
@@ -178,7 +186,7 @@ selection: true
 hpBossBar: true
 #  
 # Handling of afk feature. This will disable any checks related to afk and players will never get into afk mode
-# Applies for servers from 1.8.x and up
+# Applies for servers from 1.9.x and up
 afk: true
 #  
 # Handling timed commands like tfly and tgod
@@ -186,7 +194,7 @@ afk: true
 timedCommands: true
 #  
 # Handling of eventCommands.yml feature 
-# Applies for servers from 1.9.x and up
+# Applies for servers from 1.12.x and up
 eventCommands: true
 #  
 # Handling of disabled enchants in inventory
@@ -214,7 +222,7 @@ elytraBoost: true
 elytraLaunch: true
 #  
 # Exploit prevention, like using trident for infinite flight or self damage with arrow
-# Applies for servers from 1.9.x and up
+# Applies for servers from 1.15.x and up
 elytraExploit: true
 #  
 # Handling of custom totem behavior
