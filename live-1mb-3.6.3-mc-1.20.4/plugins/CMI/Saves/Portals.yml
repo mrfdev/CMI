@@ -52,54 +52,21 @@ general:
     commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
-  coolbrosend:
-    Loc: 12454.0:240.0:10119.0:12456.0:240.0:10121.0
+  citebaflaportal:
+    Loc: -6541.0:60.0:1268.0:-6539.0:64.0:1268.0
     enabled: true
-    effect: ash
+    effect: soul_fire_flame
     showParticles: true
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
-    particleAmount: 10
+    particleAmount: 1
     particleHide: 0
     activationRange: 16
     commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! warp end
-  coolbrosmine:
-    Loc: 12457.0:236.0:10113.0:12457.0:238.0:10115.0
-    enabled: true
-    effect: sneeze
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! warp general
-  coolbrosnether:
-    Loc: 12452.0:240.0:10111.0:12454.0:242.0:10111.0
-    enabled: true
-    effect: Portal
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 10
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! warp nether
   disco:
     Loc: 12851.0:65.0:12042.0:12859.0:69.0:12050.0
     enabled: false
@@ -553,7 +520,7 @@ easter:
     activationRange: 36
     commandsWithoutTp: true
     commands:
-    - asConsole! cmi tgod [playerName] 3 -s
+    - asConsole! cmi tgod [playerName] 4 -s
     - msg! [playerName] Woops you're falling, trying to help you not die. best of
       luck! (don't use /back now)
     - asConsole! cmi effect [playerName] blindness 2 1 -s
@@ -595,6 +562,22 @@ wild:
     - cmi effect [playerName] blindness 2 1 -s
     - msg! [playerName] &lWhoOoOOosh!
     - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
+  koolkidportaltemp:
+    Loc: 2306.0:73.0:1811.0:2309.0:76.0:1811.0
+    enabled: true
+    effect: crimson_spore
+    showParticles: true
+    Tp: wild;1422.0;-32.0;1566.13;67.49;5.69
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   perrynetherportal:
     Loc: -3470.0:55.0:4109.0:-3470.0:59.0:4110.0
     enabled: true
@@ -961,6 +944,25 @@ skyblock:
     commands:
     - msg! [playerName] You falling yikes, let's try to get you to safety
     - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
+summer:
+  summerbuildparticles:
+    Loc: 107.0:78.0:-61.0:109.0:79.0:-61.0
+    enabled: true
+    effect: Heart
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] {#buttercup}&l - The team at 1MoreBlock.com really appreciates
+      all the contributions from developers, build teams, builder group players, and
+      all staff members. They've done an amazing job creating a really cool summer
+      event location. <3
 thanksgiving:
   thanksgivingturkey1:
     Loc: 536.0:95.0:-539.0:537.0:99.0:-538.0

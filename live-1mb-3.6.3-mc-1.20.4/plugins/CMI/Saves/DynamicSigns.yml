@@ -1,23 +1,23 @@
 '1':
-  Loc: spawn;6.0;64.0;146.0
-  Interval: 20.0
-  Range: 6
-  Personal: false
+  Loc: general;-619.0;74.0;4897.0
+  Interval: 5.0
+  Range: 5
+  Personal: true
   Lines:
-  - Which era of the
-  - 1MoreBlock.com
-  - server is this?
-  - 'Version: %onemb_1mb_version%'
+  - '%cmi_jail_username_1MBJail_1%'
+  - '%cmi_jail_time_1MBJail_1%'
+  - 'Reason:'
+  - '%cmi_jail_reason_1MBJail_1%'
 '2':
-  Loc: spawn;7.0;64.0;145.0
-  Interval: 20.0
-  Range: 6
-  Personal: false
+  Loc: general;-643.0;74.0;4897.0
+  Interval: 5.0
+  Range: 5
+  Personal: true
   Lines:
-  - This is a Paper
-  - Minecraft %onemb_mc_version%
-  - Survival Server
-  - ^_^
+  - '%cmi_jail_username_1MBJail_4%'
+  - '%cmi_jail_time_1MBJail_4%'
+  - 'Reason:'
+  - '%cmi_jail_reason_1MBJail_4%'
 '3':
   Loc: spawn;0.0;66.0;137.0
   Interval: 20.0
@@ -29,26 +29,16 @@
   - a Minecraft %onemb_mc_version%
   - Survival Server
 '4':
-  Loc: general;-619.0;74.0;4897.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
+  Loc: spawn;7.0;64.0;145.0
+  Interval: 20.0
+  Range: 6
+  Personal: false
   Lines:
-  - '%cmi_jail_username_1MBJail_1%'
-  - '%cmi_jail_time_1MBJail_1%'
-  - 'Reason:'
-  - '%cmi_jail_reason_1MBJail_1%'
+  - This is a Paper
+  - Minecraft %onemb_mc_version%
+  - Survival Server
+  - ^_^
 '5':
-  Loc: general;-263.0;81.0;191.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
-  Lines:
-  - '{#03181a}&lserver tps'
-  - 1s %cmi_tps_1_colored% &r| 10s %cmi_tps_10_colored%
-  - 1m %cmi_tps_60_colored% &r| 5m %cmi_tps_300_colored%
-  - 10m %cmi_tps_600_colored% &r15m %cmi_tps_900_colored%
-'6':
   Loc: general;-627.0;74.0;4897.0
   Interval: 5.0
   Range: 5
@@ -58,17 +48,17 @@
   - '%cmi_jail_time_1MBJail_2%'
   - 'Reason:'
   - '%cmi_jail_reason_1MBJail_2%'
-'7':
-  Loc: general;-643.0;74.0;4897.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
+'6':
+  Loc: spawn;6.0;64.0;146.0
+  Interval: 20.0
+  Range: 6
+  Personal: false
   Lines:
-  - '%cmi_jail_username_1MBJail_4%'
-  - '%cmi_jail_time_1MBJail_4%'
-  - 'Reason:'
-  - '%cmi_jail_reason_1MBJail_4%'
-'8':
+  - Which era of the
+  - 1MoreBlock.com
+  - server is this?
+  - 'Version: %onemb_1mb_version%'
+'7':
   Loc: general;-635.0;74.0;4897.0
   Interval: 5.0
   Range: 5
