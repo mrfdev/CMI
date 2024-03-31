@@ -20,7 +20,6 @@ CustomAlias:
   event:
     Cmds:
     - asConsole! cmi ctext events [playerName]
-    - msg! [playerName] ----> Rainbows, keep an eye out for rainbows!
     Tab: false
   halloween:
     Cmds:
@@ -36,13 +35,13 @@ CustomAlias:
   santa:
     Cmds:
     - asPlayer! event
-    - asPlayer! mvtp santa
   valentine:
     Cmds:
     - asPlayer! event
   easter:
     Cmds:
     - asPlayer! event
+    - asPlayer! mv tp easter
     Tab: false
   walk:
     Cmds:

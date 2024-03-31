@@ -37,3 +37,7 @@ CustomAlias:
     Cmds:
     - asPlayer! cmi msg $1-
     AddTabs: true
+  s:
+    Cmds:
+    - asPlayer! cmi staffmsg $1-
+    AddTabs: true

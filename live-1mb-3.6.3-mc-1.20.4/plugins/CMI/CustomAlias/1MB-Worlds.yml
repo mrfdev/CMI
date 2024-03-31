@@ -91,7 +91,8 @@ CustomAlias:
   run:
     Cmds:
     - asConsole! cmi invsave [playerName]
-    - ifinworld:run@! asConsole! trconsole join run [playerName]
+    - check:%cmi_player_world%!=run|parkour|builders! asConsole! trconsole join run
+      [playerName]
     - delay! 2
     - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
       the /run game.'
@@ -178,8 +179,11 @@ CustomAlias:
     Perm: true
   egghunt fly:
     Cmds:
-    - ifinworld:easter! asConsole! cmi tfly [playerName] 1
-    - ifinworld:easter! asConsole! cmi flyspeed [playerName] 2 -s
+    - ifinworld:easter! asConsole! cmi tfly [playerName] 170 -s
+    - ifinworld:easter! asConsole! cmi flyspeed [playerName] 1 -s
+    - 'msg! [playerName] {#buttercup} ## If you are in the /easter world, you should
+      now have about 1,5 minutes of temporary fly! Go get those eggs! Or have fun
+      exploring. Remember, there''s a void!! Don''t die :)'
     Tab: false
   letmesushi:
     Cmds:
@@ -212,6 +216,10 @@ CustomAlias:
     - tntrun spectate run
   1block:
     Cmds:
+    - msg! [playerName] This is an old command, please use /oneblock, for now .. in
+      two seconds, we will run the command for you, in the future /1block as command
+      will be removed.
+    - delay! 3
     - asPlayer! oneblock $1-
   expand:
     Cmds:

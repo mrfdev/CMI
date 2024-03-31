@@ -93,7 +93,7 @@ CustomAlias:
     Tab: false
   spawners:
     Cmds:
-    - asConsole! gui openfor [playerName] spawners
+    - asConsole! bs open Spawners [playerName]
     Tab: false
   murdergame:
     Cmds:
@@ -159,23 +159,29 @@ CustomAlias:
     Tab: false
   cheque:
     Cmds:
-    - 'msg! [playerName] &3 Balance: &6%cmi_user_balance_formatted%&3, trying to withdraw
-      &6$1'
+    - 'msg! [playerName] &3 Current Balance: &6%cmi_user_balance_formatted%&3, trying
+      to withdraw &6$1'
     - cmi cheque $1
-    - 'msg! [playerName] &3 Balance: &6%cmi_user_balance_formatted% &3/money'
+    - delay! 2
+    - 'msg! [playerName] &3 New Balance: &6%cmi_user_balance_formatted% &3/money'
+    - msg! [playerName] &e (Cheques max out to 250,000 ~ if you withdraw a bigger
+      amount it might say it will attempt to do so, but your /balance will go down
+      by max 250k)
   chests:
     Cmds:
-    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Chest Locking Info ❖{#orient}-----------------------•
+    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Item Protection Info ❖{#orient}-----------------------•
     - msg! [playerName] {#Feijoa} When you place a door, furnace, shulker box, barrel
       or chest, things like that, they are automatically locked into your name.
-    - msg! [playerName]  {#orange}&l/lock&r{#Feijoa} (lock certain items to your name)
-    - msg! [playerName]  {#orange}&l/unlock&r{#Feijoa} (to remove a lock from the
-      item)
-    - msg! [playerName]  {#orange}&l/cmodify <player>&r{#Feijoa} (To add a friend
-      to a locked item. You still remain the owner.)
+    - msg! [playerName] {#orange}&l/lock&r{#Feijoa} (and /unlock) can be used to (un)lock
+      certain items to your name. Or to make them public again.
+    - msg! [playerName] {#orange}&l/cmodify <player>&r{#Feijoa} (To add a friend to
+      a locked item. You still remain the owner.)
     - msg! [playerName]  {#orange}&l/cinfo &r{#Feijoa} (check locked item information)
+    - msg! [playerName] {#orange}&l/trust&r{#Feijoa} (to manage auto-trust a friend
+      to all items)
+    - msg! [playerName] {#orange}&l/cdonate&r{#Feijoa} (to let others use lecterns,
+      or to make a add-only containers)
     - msg! [playerName] &b https://omgboards.com/threads/261546/ \n&r
-    - msg! [playerName] (You can also use "/trust" to add someone to all your protections)
     Tab: false
   shovel:
     Cmds:
@@ -197,7 +203,7 @@ CustomAlias:
     Tab: false
   gamemodes:
     Cmds:
-    - ctext gamemodes
+    - asConsole! cmi ctext gamemodes [playerName]
   minigames:
     Cmds:
     - asConsole! cmi invsave [playerName]
@@ -219,18 +225,13 @@ CustomAlias:
     - cmodify display
   lectern:
     Cmds:
-    - 'asConsole! msg! [playerName] &b > To learn how to protect and share lecterns,
-      read this:'
-    - asConsole! msg! [playerName] &b > https://omgboards.com/threads/261776/
+    - asPlayer! chests
   gift:
     Cmds:
     - asPlayer! trade $1-
     AddTabs: true
   witchery:
     Cmds:
-    - msg! [playerName] Learn more about how to use witchery in Skyblock (and acid,
-      cave, skygrid) by reading this information. Talk to other players to find out
-      which mobs you can spawn, and what recipes to use!
     - msg! [playerName] https://omgboards.com/threads/261787/
   achievements top:
     Cmds:
@@ -385,6 +386,9 @@ CustomAlias:
       riding a strider, travel fifty blocks in lava in the Overworld.</H>
     - asConsole! advancement grant [playerName] only minecraft:nether/ride_strider_in_overworld_lava
     - delay! 1.5
+    - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Voted 10 times</T><H>{#Geyser}Shows
+      you are a fan of the server.</H>
+    - asConsole! aach add 10 Custom.votes [playerName]
     - msg! [playerName] {#Cerulean>} Syncing Completed.{#Lochmara<}
     - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•&r
     Tab: false
@@ -561,14 +565,8 @@ CustomAlias:
     Tab: false
   needstaff:
     Cmds:
-    - msg! [playerName] {#red} WARNING {#orange} This is meant to be used in emergencies
-      to try and get staff attention. Do not spam staff with this.
-    - 'asConsole! staffmsg HELP NEEDED by [playerName] &e: $1-'
-    - 'asConsole! discordsrv broadcast #807177293943275530 **NEED STAFF** report by
-      `[playerName]` They submitted: ```\n $1- \n```'
-    - msg! [playerName] &eOkay, staff informed. They will follow up when they can.
-    CustomTabs:
-    - lostinventory,spammer,advertising,swearing,other [playername] extra_info
+    - msg! [playerName] {#orange} You can poke in-game staff for their attention with
+      a /msg or use our /discord to open a new ticket.
   streamer:
     Cmds:
     - 'check:$1==null! msg! [playerName] {#orange}&lHelp: \n{#gold}/streamer set streamname
@@ -754,6 +752,11 @@ CustomAlias:
   egghunt:
     Cmds:
     - asPlayer! event
+    - msg! [playerName] {#gold}To participate in the /easter event, type /easter,
+      this will being you to the custom Easter world where you can hunt for easter
+      eggs when they are announced. You can use /egghunt fly to get temporary fly
+      to move to new places.
+    - asPlayer! egghunt:egghunt
   market info:
     Cmds:
     - msg! [playerName] {#white}To sell to the global market, you can hold the item
@@ -810,3 +813,67 @@ CustomAlias:
   run2:
     Cmds:
     - asPlayer! tntrun join run2
+  fart info:
+    Cmds:
+    - msg! [playerName] * PPPRrrFFFfftttttt *
+    - asPlayer! farmt info
+    Tab: false
+  fish guide:
+    Cmds:
+    - asConsole! cmi openbook fishguide [playerName]
+    Tab: false
+  nick info:
+    Cmds:
+    - asConsole! cmi ctext nickinfo [playerName]
+    Tab: false
+  nick menu:
+    Cmds:
+    - asConsole! gui openfor [playerName] nickmenu
+    Tab: false
+  angelchest:
+    Cmds:
+    - 'msg! [playerName] {#gold}More information here:'
+    - msg! [playerName] {#gold}&n https://omgboards.com/threads/263918/
+    - asPlayer! acgui
+    Tab: false
+  vote info:
+    Cmds:
+    - asPlayer! votelink
+  informer:
+    Cmds:
+    - msg! [playerName] Informer, ya' no say daddy me Snow me I go blame ~ A licky
+      boom boom down
+  nikkipixel:
+    Cmds:
+    - actionbar! {#gold} NikkiPixel should really get some proper sleep.
+  _staffprefix:
+    Cmds:
+    - statement:check1! check:$1==null!
+    - if:check1! asConsole! cmi nameplate [playerName] -pref:{#driftwood}༶ -suf:{#driftwood}༶
+    - if:check1@! msg! [playerName] Sorry, you cannot change this for others, only
+      yourself! :)
+    - if:check1! check:[playerName]==yakirarage! asConsole! cmi nameplate [playerName]
+      -pref:{#lochmara}༶ -suf:{#lochmara}༶
+    Perm: true
+  collect:
+    Cmds:
+    - msg! [playerName] This is currently not a feature you can use. And it's only
+      available during certain (future) events
+  worldtrade:
+    Cmds:
+    - msg! [playerName] &r\n&r\n&r\nBefore trading your "extra vote tokens" for "world
+      trade vouchers" please carefully read the information in this thread so you're
+      fully aware of any limitations.
+    - msg! [playerName] -> &nhttps://omgboards.com/threads/263926/
+    - asConsole! gui openfor [playerName] worldtrade
+  fixvotetokens:
+    Cmds:
+    - asConsole! gui openfor [playerName] fixvotetokens
+    Perm: true
+  aprilfools:
+    Cmds:
+    - asConsole! undisguiseplayer [playerName]
+    - msg! [playerName] &r\n&r\n&r\nWhaaat?????????????????
+    - msg! [playerName] Is it the first of April again? Okay! HAHA .. Joke's over
+      .. Let's get back to normal you again.
+    - msg! [playerName] If you want to become a villager again, just re-log.&r\n&r\n

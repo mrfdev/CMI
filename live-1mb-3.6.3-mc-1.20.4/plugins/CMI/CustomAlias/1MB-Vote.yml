@@ -17,26 +17,6 @@
 # Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
 
 CustomAlias:
-  diamondvote:
-    Cmds:
-    - msg! [playerName] This is now &e/vote tokens
-    Tab: false
-  emeraldvote:
-    Cmds:
-    - msg! [playerName] This is now &e/vote tokens
-    Tab: false
-  ironvote:
-    Cmds:
-    - msg! [playerName] This is now &e/vote tokens
-    Tab: false
-  goldvote:
-    Cmds:
-    - msg! [playerName] This is now &e/vote tokens
-    Tab: false
-  quartzvote:
-    Cmds:
-    - msg! [playerName] This is now &e/vote tokens
-    Tab: false
   votelink:
     Cmds:
     - msg! [playerName] {#green}&l https://omgboards.com/vote
@@ -61,9 +41,6 @@ CustomAlias:
     - asConsole! cmi enchant [playerName] unbreaking 1
     - cmi hideflags hide_enchants
     Perm: true
-  netheritevote:
-    Cmds:
-    - msg! [playerName] This is now &e/vote tokens
   _tokenitem:
     Cmds:
     - 'msg! [playerName] Syntax reminder: /$0 <playername> <unbreakable truefalse>
@@ -172,8 +149,8 @@ CustomAlias:
     - 'msg! [playerName] {#Cerulean} »{#Feijoa} &lVotes needed: %pinataparty_votes_needed%,
       votes left to go: %pinataparty_votes_left%'
     - 'asConsole! cmi ctellraw [playerName] <T>{#Cerulean} »{#Feijoa} Charlie will
-      spawn every %pinataparty_votes_needed% votes at: {#orange}&l/warp charlie&r
-      (click cmd)</T><H>Click to go to the /warp charlie arena</H><C>warp charlie</C>'
+      spawn for every %pinataparty_votes_needed% in-game votes made, at: {#orange}&l/warp
+      charlie{#gray} ⇱&r</T><H>Click to go to the /warp charlie arena</H><C>warp charlie</C>'
     - msg! [playerName] {#Cerulean} »{#Feijoa} Once Charlie has been defeated, look
       around for shiny barrels with free loot!
     - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
