@@ -117,7 +117,24 @@ elytraStartGlide:
   Commands:
   - cmi msg [playerName] This is event command example!
   - cmi actionbarmsg [playerName] This is event command example!
+advancementDone:
+  # use [value] variable to insert advancements identificator
+  # This returns path to advancement like recipes/building_blocks/emerald_block which can be used in commands in case you want to filter out specific ones
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
 elytraEndGlide:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+sneakingSwapHandItems:
+  Enabled: false
+  Commands:
+  - cmi msg [playerName] This is event command example!
+  - cmi actionbarmsg [playerName] This is event command example!
+swapHandItems:
   Enabled: false
   Commands:
   - cmi msg [playerName] This is event command example!
