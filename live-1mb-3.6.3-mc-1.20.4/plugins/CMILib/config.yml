@@ -7,6 +7,12 @@ LanguageDownload: true
 AutoUpdate: false
 # When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
 AutoFileRemoval: false
+ExploitPatcher:
+  Placeholders:
+    blocked:
+      # By default we are blocking PAPI %checkitem_...% placeholder to avoid potential serious issues with it
+      # Only disable this if you have dedicated protection for it
+      checkItem: true
 GlobalGui:
   # Defines item type in empty fields in GUI when its needed to be filled up
   EmptyField: BLACK_STAINED_GLASS_PANE
@@ -36,6 +42,9 @@ Heads:
   # When processing head item stack we will apply owners name instead of letting game client to use its own
   # This will change 'Zrips's head' to 'Head of Zrips'
   PlayerName: true
+  # When processing head item stack we will apply monsters name instead of letting game client to use its own
+  # This will change 'Zrips's head' to 'Head of Chicken' in case custom skin is applyed to it
+  MobName: false
 Images:
   # Symbol to be used to create image fields
   # Color codes are NOT supported here
