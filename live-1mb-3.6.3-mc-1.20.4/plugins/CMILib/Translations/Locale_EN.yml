@@ -314,6 +314,7 @@ info:
     blaze: Blaze
     block_display: Block display
     boat: Boat
+    breeze: Breeze
     camel: Camel
     cat: Cat
     cave_spider: Cave spider
@@ -419,6 +420,7 @@ info:
     vindicator: Vindicator
     wandering_trader: Wandering trader
     warden: Warden
+    wind_charge: Wind charge
     witch: Witch
     wither: Wither
     wither_skeleton: Wither skeleton
@@ -430,152 +432,152 @@ info:
     zombie_villager: Zombie villager
     zombified_piglin: Zombified piglin
   EnchantAliases:
-    protection_fire:
-    - FireProtection
-    damage_all:
-    - Sharpness
-    arrow_fire:
-    - Flame
-    soul_speed:
-    - SOULSPEED
-    water_worker:
-    - AquaAffinity
-    arrow_knockback:
-    - Punch
-    loyalty:
-    - Loyalty
-    depth_strider:
-    - DepthStrider
-    vanishing_curse:
-    - VanishingCurse
-    durability:
-    - Unbreaking
-    knockback:
-    - Knockback
-    luck:
-    - Luck
-    binding_curse:
-    - BindingCurse
-    loot_bonus_blocks:
-    - Fortune
-    protection_environmental:
-    - Protection
-    dig_speed:
-    - Efficiency
-    mending:
-    - Mending
-    frost_walker:
-    - FrostWalker
-    lure:
-    - Lure
-    loot_bonus_mobs:
-    - Looting
-    piercing:
-    - Piercing
-    protection_explosions:
-    - BlastProtection
-    damage_undead:
-    - Smite
-    multishot:
-    - Multishot
     swift_sneak:
     - SWIFTSNEAK
-    fire_aspect:
-    - FireAspect
-    channeling:
-    - Channeling
-    sweeping_edge:
-    - SweepingEdge
-    thorns:
-    - Thorns
-    damage_arthropods:
-    - BaneOfArthropods
-    oxygen:
-    - Respiration
-    riptide:
-    - Riptide
-    silk_touch:
-    - SilkTouch
-    quick_charge:
-    - QUICKCHARGE
-    protection_projectile:
-    - ProjectileProtection
-    impaling:
-    - Impaling
     protection_fall:
     - FallProtection
     - FeatherFalling
-    arrow_damage:
-    - Power
     arrow_infinite:
     - Infinity
+    arrow_fire:
+    - Flame
+    impaling:
+    - Impaling
+    protection_environmental:
+    - Protection
+    knockback:
+    - Knockback
+    depth_strider:
+    - DepthStrider
+    luck:
+    - Luck
+    silk_touch:
+    - SilkTouch
+    loyalty:
+    - Loyalty
+    vanishing_curse:
+    - VanishingCurse
+    protection_fire:
+    - FireProtection
+    channeling:
+    - Channeling
+    binding_curse:
+    - BindingCurse
+    sweeping_edge:
+    - SweepingEdge
+    quick_charge:
+    - QUICKCHARGE
+    damage_arthropods:
+    - BaneOfArthropods
+    frost_walker:
+    - FrostWalker
+    multishot:
+    - Multishot
+    protection_projectile:
+    - ProjectileProtection
+    water_worker:
+    - AquaAffinity
+    soul_speed:
+    - SOULSPEED
+    loot_bonus_mobs:
+    - Looting
+    damage_undead:
+    - Smite
+    piercing:
+    - Piercing
+    lure:
+    - Lure
+    riptide:
+    - Riptide
+    arrow_damage:
+    - Power
+    protection_explosions:
+    - BlastProtection
+    mending:
+    - Mending
+    fire_aspect:
+    - FireAspect
+    oxygen:
+    - Respiration
+    thorns:
+    - Thorns
+    arrow_knockback:
+    - Punch
+    damage_all:
+    - Sharpness
+    dig_speed:
+    - Efficiency
+    loot_bonus_blocks:
+    - Fortune
+    durability:
+    - Unbreaking
   PotionEffectAliases:
-    speed:
-    - Speed
-    slow:
-    - Slow
-    fast_digging:
-    - Fast digging
-    slow_digging:
-    - Slow digging
-    increase_damage:
-    - Increase damage
-    heal:
-    - Heal
-    harm:
-    - Harm
-    jump:
-    - Jump
-    confusion:
-    - Confusion
-    regeneration:
-    - Regeneration
-    damage_resistance:
-    - Damage resistance
     fire_resistance:
     - Fire resistance
     water_breathing:
     - Water breathing
-    invisibility:
-    - Invisibility
-    blindness:
-    - Blindness
-    night_vision:
-    - Night vision
-    hunger:
-    - Hunger
-    weakness:
-    - Weakness
-    poison:
-    - Poison
-    wither:
-    - Wither
-    health_boost:
-    - Health boost
-    absorption:
-    - Absorption
+    jump:
+    - Jump
     saturation:
     - Saturation
-    glowing:
-    - Glowing
-    levitation:
-    - Levitation
-    luck:
-    - Luck
-    unluck:
-    - Unluck
+    health_boost:
+    - Health boost
+    night_vision:
+    - Night vision
+    weakness:
+    - Weakness
+    wither:
+    - Wither
+    slow_digging:
+    - Slow digging
     slow_falling:
     - Slow falling
-    conduit_power:
-    - Conduit power
-    dolphins_grace:
-    - Dolphins grace
-    bad_omen:
-    - Bad omen
+    luck:
+    - Luck
+    increase_damage:
+    - Increase damage
+    poison:
+    - Poison
     hero_of_the_village:
     - Hero of the village
+    unluck:
+    - Unluck
+    invisibility:
+    - Invisibility
+    absorption:
+    - Absorption
+    slow:
+    - Slow
+    fast_digging:
+    - Fast digging
+    glowing:
+    - Glowing
+    bad_omen:
+    - Bad omen
+    dolphins_grace:
+    - Dolphins grace
+    levitation:
+    - Levitation
+    conduit_power:
+    - Conduit power
+    blindness:
+    - Blindness
+    harm:
+    - Harm
+    confusion:
+    - Confusion
+    heal:
+    - Heal
+    regeneration:
+    - Regeneration
+    hunger:
+    - Hunger
+    speed:
+    - Speed
     darkness:
     - Darkness
+    damage_resistance:
+    - Damage resistance
 direction:
   n: North
   ne: North East
