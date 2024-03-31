@@ -20,7 +20,7 @@ Be sure to include a **title and clear description**, as much relevant informati
 
 Changes that are cosmetic in nature and do not add anything substantial we do kind of prefer you contact Floris manually, but you're still free to report it, either collect them together in a single new issue. Or fix them all at once as a contribution.
 
-#### **Do you want to contribute to the Rails documentation?**
+#### **Do you want to contribute to the documentation?**
 
 * Please contact Floris on the Zrips Discord. And let's have a conversation first.
 
