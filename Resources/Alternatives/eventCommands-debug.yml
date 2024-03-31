@@ -104,10 +104,24 @@ elytraStartGlide:
   Enabled: true
   Commands:
   - 'broadcast! [EC-Debug: elytraStartGlide] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+advancementDone:
+  # use [value] variable to insert advancements identificator
+  # This returns path to advancement like recipes/building_blocks/emerald_block which can be used in commands in case you want to filter out specific ones
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: advancementDone] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode], value: [value]'
 elytraEndGlide:
   Enabled: true
   Commands:
   - 'broadcast! [EC-Debug: elytraEndGlide] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+sneakingSwapHandItems:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: sneakingSwapHandItems] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
+swapHandItems:
+  Enabled: true
+  Commands:
+  - 'broadcast! [EC-Debug: swapHandItems] playerName: [playerName], playerDisplayName: [playerDisplayName], lvl: [lvl], exp: [exp], hp: [hp], maxHp: [maxHp], hunger: [hunger], gameMode: [gameMode]'
 pvpstart:
   Enabled: true
   Commands:
