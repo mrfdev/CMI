@@ -1,8 +1,13 @@
 # Default CMI config.yml
-
 Please note that this shouldn't be a copy paste for your server, but an example that you can use to search through and compare data with to help you debug.
 
+## Generated configuration file from first time installation on a new server.
+- A lot of settings have moved to `~/plugins/CMI/Settings/` and `~/plugins/CMI/Saves/`.
 ```yaml
+# ********************************************
+# ** For more options check Settings folder **
+# ********************************************
+
 # Language file you want to use
 Language: EN
 # Defines if you want to auto download default locale files from github repository
@@ -30,6 +35,12 @@ Economy:
     Paper: true
     # When set to true player will be required to have cmi.command.cheque.withdraw permission node to withdraw cheque
     Permission: false
+    # Should we allow checque usage in creative mode
+    # If you have creative server, keep this at false or players could start duplicating items
+    InCreative: false
+    # Should we accept old cheque item stacks with non encoded data in them
+    # Keep it at false for most security
+    AcceptNotEncoded: false
   PaymentWithShorts:
     # When set to true players will be able to make payments by using short amount formats like 10k which results into 10000 and similar
     # In addition 10.2k will result into 10200
@@ -108,7 +119,9 @@ InteractiveCommands:
   SortByDistance: true
 Optimizations:
   # When disabled we wont try to deop fake operator on server starup or unload while at same time disabling asFakeOp! specialized command usage
-  UseFakeOperator: true
+  UseFakeOperator: false
+  # When disabled we will not check for posible infinite loops while performing custom alias commands
+  InfiniteLoopDetection: true
   # When this set to true any message sent to console will be strip out of any colors
   # In case you have mohochrome console, keep this at true
   MonochromeConsole: false
@@ -172,6 +185,8 @@ Optimizations:
   # When set to true, commands in help page will be sorted alphabeticaly
   # If set to false, commands will be sorted by priority
   CommandSorting: true
+  # By default we will not allow Rcon type commands, if you have your server properly setup to accept remote console commands safely and you have a need then you can enable it
+  AllowRconCommands: false
   # Percentage value (1-100) to pick best command match if command cant be found
   # Example: /cmi spawnmb will have 87.5% match with /cmi spawnmob
   # Set to 0 to disable
@@ -214,16 +229,28 @@ Optimizations:
       tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
     JumpDefault: 50
-    # Defines time in seconds for accepting tpa or tpahere requests
-    TpaTime: 60
-    # Defines time in seconds for player being teleported after tpa or tpahere is being accepted
-    TpaWarmup: 3
-    # Defines if player can move when tpa or tpahere is being accepted
-    TpaMove: false
-    # Defines time in seconds for blocking player teleport offers after denying their request
-    TpaBlock: 120
-    # Defines time in seconds for bypassing prevented teleportation to unsafe location
-    TpBypass: 15
+    Tpa:
+      # Defines time in seconds for accepting tpa or tpahere requests
+      Time: 60
+      # Defines time in seconds for player being teleported after tpa or tpahere is being accepted
+      Warmup: 3
+      # Defines if player can move when tpa or tpahere is being accepted
+      Move: false
+      # Defines time in seconds for blocking player teleport offers after denying their request
+      Block: 120
+      # Distance in blocks for max teleportation range
+      # Set to 0 if you want to disable it
+      # Having it at any positive number will prevent players requesting teleportations to player in other wolds in adition to limiting it by range between players
+      # Can be bypassed by player having cmi.command.tpa.max.[blockcount] permission node
+      MaxDistance: 0
+    TpaHere:
+      # Distance in blocks for max teleportation range
+      # Set to 0 if you want to disable it
+      # Can be bypassed by player having cmi.command.tpahere.max.[blockcount] permission node
+      MaxDistance: 0
+    Tp:
+      # Defines time in seconds for bypassing prevented teleportation to unsafe location
+      Bypass: 15
     # When set to true adds accept and deny buttons when sending tpa or tpahere requests
     DenyConfirm: true
     BlackListedItems:
@@ -248,15 +275,25 @@ Optimizations:
     # When set to false we will not include teleport location when teleporting around with worldedit compass
     # When set to true we will include each teleport action, even if you simply jumped around with compass
     BackWithWE: true
-    # List of worlds to whichones player can't go back with /back command
+    # List of worlds to which players can't return using the /back command
     BackBlackList:
     - TeztWorldz
   Hat:
-    # When enabled we will not allow to place items into head slot if item has custom lore
-    IgnoreLored: false
-    # When enable we wont allow to equip items which are not hat type and has enchantment on it
-    # This will prevent from players having enchantment effects in head slots which should not be present there
-    BlockArmorItems: true
+    Block:
+      # When enabled we will not allow to place items into head slot if item has custom lore
+      # Doesn't apply to helmet items
+      WithLore: false
+      # When enable we wont allow to equip items which are not hat type
+      NoneHatItems: true
+      # When enable we wont allow to equip none hat items with enchant on it
+      NoneHatEnchanted: true
+    Allow:
+      # When enabled we will allow player to put on mob head without cmi.inventoryhat permission node
+      # When disabled player will need to have cmi.inventoryhat to put on mob heads as hats
+      MobHeads: true
+    # List of materials to be allowed on players head
+    WhiteList:
+    - bedrock
   helpop:
     # When set to true player will not see his sent message to helpop, but rather predefined message informing that his question have been sent to online staff
     feedbackMessage: true
@@ -266,10 +303,10 @@ Optimizations:
     Record: true
     # How long in second to wait until players ip is being recorded into data base
     # This only applies for offline servers to allow for player first of all to login before recording ip
-    # Try to keep this value lower than your login plugin's allowed login time
+    # Try to keep this value higher than your login plugin's allowed login time so that we are recording actual players IP who has permission to use this name
     delay: 30
   # Max amount of hp you can get when using /cmi maxhp command
-  MaxHp: 200
+  MaxHp: 1000
   # When set to true, player play time will be grabbed from user stats file instead of from CMI user data file
   # This can help to get more accurate play time if you have older server and using players stats feature
   PlayTimeFromStats: true
@@ -330,7 +367,7 @@ Optimizations:
   PreventPlayersOnNetherRoof: false
   # Will define nether roof height. Keeping it at 0 will use default nether height, which is 128
   netherRoofHeight: 0
-  # Will teleport players up from beneeth betrock if they are flying or gliding with elytra over there
+  # This will teleport players up from beneath bedrock, if they ave flying or gliding with the elytra on.
   PreventPlayersBelowBedrock: false
   PreventIronGolem:
     # When set to true, iron golems will not drop roses on death
@@ -358,11 +395,20 @@ Optimizations:
       PointTo: true
       # How many lines you want to show when using /near command
       Count: 10
+    lastonline:
+      # Time in seconds to be used for lastonline command when showing aditional information about amount of players who logged off in defined period
+      Timers:
+        Time1: 3600
+        Time2: 86400
+        Time3: 604800
+        Time4: 2592000
     Inv:
       # List of players which you should not be able to open inventories
       # This can still be bypassed if you are OP
       BlackList:
       - Zrips
+      # Do you want to disable inv command on players who are offline
+      DisableOffline: false
     Clear:
       # When set to true, /cmi clear comamnd will require confirmation for it to be finalized
       Confirmation: true
@@ -462,6 +508,15 @@ ExploitPatcher:
   # While this is set to true players will be limited in how many pages they can create
   # Limitation is determined by cmi.book.pages.§f[20to100]§6 permission node and by default players can create 20 pages
   LimitBooks: true
+  # While enabled we will prevent items being teleported with end portal and end beacons
+  BlockEndPortalItemTransfers: true
+  # When enabled we will not allow usage of riptide while player has pweather set to rain while players world is in sunny state
+  Riptide: true
+  Placeholders:
+    blocked:
+      # By default we are blocking PAPI %checkitem_...% placeholder to avoid potential serious issues with it
+      # Only disable this if you have dedicated protection for it
+      checkItem: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
   Money: true
@@ -519,7 +574,7 @@ ReSpawn:
     - spawn
     - homeLocation
     - worldSpawn
-  # Defines respawn order for defines worlds
+  # Defines respawn order for defined worlds
   # Set respawn priority to [] or to random respawn criteria if you want to leave respawn handling for server or 3rd party plugin
   Specific:
     world:
@@ -596,6 +651,8 @@ Afk:
   SmartInteractCheck: true
   # Prevents from players abusing afk by constantly moving in afk machine
   AntiAfkMachines: true
+  # Prevents players from being  pooled around while player is in afk mode
+  PreventHook: true
   # EXPERIMENTAL! Prevents players from being pushed around while player is in afk mode
   # Keep in mind that player can still be moved around the same block he is in
   PreventPushing: false
@@ -613,8 +670,8 @@ Afk:
   DisableOnMove: true
   # Disables afk on camera movement
   DisableOnLookAround: false
-  # Disables afk on fishing
-  DisableFishing: false
+  # Disables afk on fishing when you catch fish
+  DisableOnFishing: false
   # Disables item pickup while afk
   DisableItemPickup: false
   PreventMobSpawning:
@@ -749,167 +806,6 @@ GroundClean:
   # List of item types not to be removed on ground clean action
   WhiteList:
   - itemType
-Chat:
-  # Will try to modify chat to display it in defined format
-  ModifyChatFormat: false
-  # When set to true, regular and private messages (excludes clean messages) will have additional information when hovering over it (PlaceHolderAPI supported) and can be clicked for quick reply option
-  # To change default hover over messages seen on sent message, go to your locale file to Chat section
-  ClickHoverMessages: true
-  DiscordSRV:
-    # Enables support for DiscordSRV plugin
-    Enabled: true
-    # Defines name of global chat channel in discordsrv
-    GlobalChannel: global
-    # Indicator which can be used as {discord} in chat format to indicate that message came from discord and not ingame
-    Label: '&2[&7D&2]'
-    UnlinkedLabel: '&4[&cD&4]'
-    # When enabled and you have ranged messages enabled, we will send all of them to DiscordSRV
-    # When disabled, only shouts and messages sent by players with cmi.chat.rangebypass permission node will be visible in discord
-    RangedMessages: true
-  # Enables support for DynMap web chat
-  DynMapChat: true
-  # When set to false, each time you will use /r you will reply to person you previously sent message directly or to person who sent you message if there is none you have conversion before
-  # When this set to true, players with /r will reply to person who last sent private message. This can result in confusion when using /r while getting private messages from multiple players
-  ReplyToLastMessenger: false
-  # If ReplyToLastMessenger is set to false, then timeOut will be taken into consideration to who you should reply
-  # If you had conversation in last 120 seconds (default) then even receiving message from 3rd person, you will still reply to original player
-  # If you had conversation in longer then 120 seconds period, then you will reply to latest person who send you a message
-  LastMessengerTimeOut: 120
-  # When set to true players will need to have cmi.command.msg.[groupname].send where [groupName] is receivers main permission group
-  PrivateMessagesGroups: false
-  # When set to false, web pge links in a chat will not get shortened to default [LINK] format
-  TranslateLink: true
-  # Defines regex when replacing url in chat with short word
-  # Examples:
-  # (https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9]\.[^\s]{2,})
-  # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?
-  # ((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s]+)
-  LinkRegex: (^| )((http|https|ftp|ftps)\:\/\/)?[a-zA-Z0-9\-]+\.[a-zA-Z]{2,3}(\/\S*)?([^\s|^\)]+)
-  # When set to true, particular variables in chat will be translated into items player are holding. List of variables belove
-  HoverItems: true
-  # Defines regex when replacing item line in chat with players item in hand information. Only works when CMI hover over chat format is enabled
-  ItemRegex:
-  - (\%item\%)
-  - (\[item\])
-  - (\%i\%)
-  Bungee:
-    # Attention! This will require you to have CMI Bungee plugin which can be found at zrips.net
-    # Or direct download https://www.zrips.net/cmi/
-    # Do you want to enable private messaging over bungeecord
-    Messages: true
-    # Do you want to enable public messaging over bungeecord
-    # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
-    PublicMessages: true
-    # Do you want to enable staff messaging over bungeecord
-    StaffMessages: true
-  # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message}. Supporting PlaceHolderAPI variables like %player_server%
-  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
-  GeneralFormat: '{prefix}&f{displayName}&7: &r{message}'
-  # Will define message format itself, this allows to have gradients in messages
-  # It NEEDS to contain {message} otherwise we will ignore this setup
-  # For 1.16+ servers you can use color gradients like '{#b3a28f>}{message}{#d7b8e6<}'
-  # You can have more than 2 colors in gradient. To define it repeat {message} variable. For example '{#b3a28f>}{message}{#5c6999<>}{message}{#d7b8e6<}'
-  GeneralMessageFormat: '{message}'
-  Ranged:
-    # Defines range of regular messages to travel
-    # Set to -1 to disable range restriction
-    General: -1
-    # Defines range of shout messages to travel
-    # Shout messages should start with ! and player should have cmi.chat.shout permission
-    # GeneralRange should be enabled
-    # set to 0 to shout across all worlds, -1 to disable
-    Shout: 200
-    # Defines cost for each shout message
-    ShoutCost: 0
-    # List of message range limits
-    # Player count fallowed by range
-    # Player amount defines from how many we should use this range
-    Dynamic:
-      Use: false
-      Limits:
-      - 1-0
-      - 10-1000
-      - 20-500
-      - 30-400
-      - 40-300
-      - 50-200
-  # Prefix used to indicate that message should be sent to public chat instead of current players chat room
-  # Set it to empty field if you want this feature to be disabled
-  ChatRoomShout: '!'
-  # Time in seconds you want to keep chat rooms alive before removing them
-  # This only applies to empty rooms after last user leaves it
-  ChatRoomLife: 3600
-  # Defines suggested commands when you click on public, private and similar messages. [playerName], [playerDisplayName] and [playerNickName]  can be used to include players name
-  ClickSuggestions:
-    pubmsg: '/msg [playerNickName] '
-    privmsg: '/msg [playerNickName] '
-    staffmsg: '/msg [playerNickName] '
-    helpop: '/msg [playerNickName] '
-    chatroom: '/msg [playerNickName] '
-    discord: '/msg [playerNickName] '
-  # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
-  # Add as many lines as you need too
-  # cmi.chatgroup.[id] permnission node to use
-  # Permission example: cmi.chatgroup.2
-
-  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
-  GroupFormat:
-    '1': '{prefix}&f{displayName}&f: &r{message}'
-    '2': '{prefix}&f{displayName}&7: &r{message}'
-    '3': '{prefix}&f{displayName}&8: &r{message}'
-  # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
-  # Add as many lines as you need too
-  # cmi.chatmessagegroup.[id] permnission node to use
-  # Permission example: cmi.chatmessagegroup.2
-  GroupMessageFormat:
-    '1': '{message}'
-    '2': '{message}'
-    '3': '{message}'
-  Colors:
-    # If set to true then all public messages will be filtered from color codes and will allow to colorize them with appropriate permission node
-    # cmi.colors.publicmessage.[colorName]
-    # Colors: black(&0), darkblue(&1), darkgreen(&2), darkaqua(&3), darkred(&4), darkpurple(&5), gold(&6), gray(&7), darkgray(&8), blue(&9), green(&a), aqua(&b), red(&c), lightpurple(&d), yellow(&e), white(&f), magic(&k), bold(&l), strikethrough(&m), underline(&n), italic(&o), reset(&r)
-    PublicMessage: true
-    PrivateMessage: true
-    # If set to true then /me messages will be filtered from color codes and will allow to colorize them with appropriate permission node
-    # cmi.colors.me.[colorName]
-    me: true
-    # If set to true, then color codes will get removed from text instead of leaving them if player dont have appropriate permission node for that color
-    CleanUp:
-      publicmessage: true
-      privatemessage: true
-      me: true
-      signs: false
-      books: true
-      itemname: true
-      itemlore: true
-      # List of strings to ignore when checking chat for color codes player cant use.
-      # This will bypass players colorcode restrictions and will allow usage of particular chat formats
-      # Applies only for public and private messages
-      WhiteList:
-      - '&c❤&7'
-    # If set to true then nickName will be filtered from color codes when player changes it
-    # cmi.colors.nickname.[colorName]
-    NickName: true
-  # If set to true, players public message who is in your ignore list will not be shown
-  IgnorePublicMessage: true
-  Tag:
-    # Enable or not tag system. This will inform player with his name mentioning in public chat if name have @ in front of it
-    Enabled: true
-    # When this is set to true, any player mentionings in public messages will be colorized and player will get informed as usual
-    # This is allot more heavier on server than usual tagging with @, so enable if you know what you are doing
-    HardCoreMode: false
-    # Determines color of taged user name in chat with @ in front of name/nickname. Sender should have cmi.tag.color
-    Color: '&c'
-    # Commands to be performed when player is tagged
-    # Variables like [playerName] will be replaced with tagged player name
-    # You can use [senderName] to include player name who tagged
-    CommandsOnTag:
-    - asConsole! cmi sound BLOCK_NOTE_BLOCK_HARP:3:1 [playerName] -s
-    # Will performd tag commands only when player is afk
-    OnlyWhenAfk: false
-    # When set to true, @ simbol will be removed
-    RemoveEta: false
 Command:
   CommandFilter:
     Duplicate:
@@ -942,14 +838,17 @@ Command:
     - cmi heal
     - cmi feed
     - cmi fly
-PlayerNotes:
-  # For how long to keep players notes in days
-  ExpiresIn: 30
-PlayerMail:
-  # For how long to keep players mail in days
-  ExpiresIn: 30
-  # Mailing to all players will send mails to players who loged into server in last x days
-  mailAllDays: 7
+  Notes:
+    # For how long to keep players notes in days
+    ExpiresIn: 30
+  Mail:
+    # For how long to keep players mail in days
+    ExpiresIn: 30
+    # Mailing to all players will send mails to players who loged into server in last x days
+    mailAllDays: 7
+    # How many mails we should keep for each player
+    # When email limit is reached oldest one will be removed
+    MaxMails: 50
 DisplayName:
   # If you have 3rd party plugin changing players display name, set this to false
   Change: true
@@ -978,7 +877,7 @@ NickName:
   MaxLength: 16
   # Adds prefix for players nickname to indicate that its not real name. This can be added to display name with {nicknameprefix}
   Prefix: '~'
-  # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without addign prefix
+  # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without adding prefix
   PrefixWhenDifferent: false
   TabComplete:
     # When true, online players nick name will be used instead of real name in tabcomplete
@@ -1062,8 +961,8 @@ Spawners:
   Proximity:
     # Allows to limit how tight spawners can be placed from each other
     Use: false
-    # Radius in blocks from blaced block. Max range is 16
-    # Can bypass with cmi.spawners.proximity.bypass
+    # Radius in blocks from placed block. Max range is 16
+    # Can be bypassed with cmi.spawners.proximity.bypass
     Range: 3
 ItemRenaming:
   # When set to true, players will be denyied from renaming defined items in anvil or with itemname command
@@ -1081,7 +980,7 @@ ItemRenaming:
   - mobspawner:([A-z]+ (?i)\w*spawner)
 SpawnMob:
   # Defines how many passengers entities can be spawned at once
-  MaxQuantity: 10
+  MaxQuantity: 25
   MaxPassengers: 10
 Counter:
   # Default range to use when performing /counter start
@@ -1090,6 +989,9 @@ Mirror:
   # Defines how far in blocks from mirror center you can build
   # This is mainly to protect from forgeting to turn off mirror and starting to build on different side of map
   MaxRange: 50
+  # When disabled block will not be broken in mirror mode
+  # This is mainly to prevent this feature being used for mining purposes and not for building
+  BreakDisabled: false
 NetherPortal:
   # Can prevent nether portal creation entirely. Option to bypass with cmi.netherportalbypass
   PreventCreation: false
@@ -1126,7 +1028,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 4
-# All possible damage causes: contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, sonic_boom, 
+# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, cramming, dryout, freeze, sonic_boom, 
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1252,7 +1154,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, cherry_leaves, 
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1448,12 +1350,8 @@ WorldLimits:
     - None
     world_the_end:
     - None
-# Checks and shows on players login if he have been changed hes name over Mojang
-# Looks to be working only with online servers, duhhhh
+# Checks if players name changed from last known
 CheckForNameChange:
-  OnLogin: false
-  AmountToShow: 3
-  OnInfoShow: true
   # Do you want to perform commands
   PerformCommandsOnNewName: false
   # Command list to be performed in case player logs in with new name
@@ -1481,13 +1379,17 @@ inv:
     Potions: true
     # Set to false if you don't want to restore items
     Items: true
+    # List of materials we should not save
+    # Keep in mind that you might need to include all materials for colored items, like wool or shulker boxes
+    BlackListedItems:
+    - ''
 hunger:
   # Do you want to give more than 20 hunger for players
   overide: false
 heal:
   RemoveNegative:
     # Do you want to remove negative potion effects from player on heal
-    use: false
+    use: true
     List:
     - blindness
     - confusion
@@ -1590,6 +1492,9 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pvp type combat
     ShowBossBar: false
+    # When enabled we will show damage numbers in a form of holograms when damaging players
+    ShowDamageNumbers: true
+    DamageNumbersFormat: '&c⚔[damage]'
     # Prevents damage from players with god mode enabled
     # Can be bypassed with cmi.pvp.godBypass permission node
     noGodDamage: false
@@ -1613,6 +1518,12 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pve type combat
     ShowBossBar: false
+    # When enabled we will include damage from environmental damage into mob combat timer
+    # This can include damage from cactus, magma blocks, suffocation, burning, fall damage and similar
+    IncludeEnvironment: true
+    # When enabled we will show damage numbers in a form of holograms when damaging mobs
+    ShowDamageNumbers: true
+    DamageNumbersFormat: '&c❤[damage]'
     # Prevents damage from players with god mode enabled
     # Can be bypassed with cmi.pve.godBypass permission node
     noGodDamage: false
@@ -1652,7 +1563,7 @@ Combat:
       Worlds: []
     Mob:
       # Enables custom mob heads dropping from mobs with particular chance
-      # Check customHeads.yml for customization by entityType
+      # Check CustomHeads.yml for customization by entityType
       Drop: false
       # List of worlds where we should drop mob heads. Keep it empty if you want to include all possible ones
       Worlds: []
@@ -1660,6 +1571,10 @@ ShulkerBoxes:
   # When set to true, players will not have option to open shulker boxes while in combat
   # Combat timer can be defined under combat section
   PreventInCombat: true
+  # Money cost to open shulker box, if player doesn't have enough money then we will not allow to open shulker box from inventory
+  # Setting this to 0 will disable money requirement
+  # This can be bypassed with cmi.openshulker.free permission node
+  CostToOpen: 0.0
 Vanish:
   # Defines default states of vanish edit options for players
   # This will not have any effect if player already edited his vanish mode with vanishedit command
@@ -1684,6 +1599,7 @@ Vanish:
     sleepIgnore: true
     joinVanished: false
     deathMessages: false
+    hookPlayers: false
 Player:
   Options:
     CloseButton:
@@ -1716,6 +1632,12 @@ Player:
       acceptingPM: true
       acceptingTPA: true
       acceptingMoney: true
+      chatbubble: true
+      pmSound: true
+      rideMe: true
+      pveDamageNumbers: true
+      pvpDamageNumbers: true
+      InformDurability: true
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1728,12 +1650,18 @@ Player:
       acceptingPM: MAP
       acceptingTPA: CLOCK
       acceptingMoney: KNOWLEDGE_BOOK
+      chatbubble: LANTERN
+      pmSound: STONE_BUTTON
+      rideMe: SADDLE
+      pveDamageNumbers: WOODEN_SWORD
+      pvpDamageNumbers: DIAMOND_SWORD
+      InformDurability: ANVIL
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
   # false variable is optional and when its set to false player cant move while warmup is counting
   # If you dont want to deny empty warp command but want to deny any extra variable after that, then just add space, in example 'warp :5:false'
-  # When setting warmups for CMI commands, use full command name and not allias, in example 'cmi warp:5false'
+  # When setting warmups for CMI commands, use full command name and not allias, in example 'cmi warp:5:false'
   # Administration can bypass limitations with cmi.warmupbypass.[commandname] permission node
   # ATTENTION! cmi home command is being handled in special way and to prevent double warmup, add space, example: - cmi home :5:false
   # Experimental: add GlyphHead to the warmup to show particle effect while command is on warmup period. Like
@@ -1876,111 +1804,56 @@ Time:
       night: 420
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-RandomTeleportation:
-  # If this set to true we will generate random teleport default settings for all detected worlds
-  # Setting to false will not longer generate world setups, but you can add them manually if needed
-  AutoGenerateWorlds: true
-  Worlds:
-    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
-    world:
-      Enabled: true
-      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
-      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
-      MaxRange: 1000
-      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      # With this option we will only attempt to teleport player on highest block and ignore any case teleportations
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    world_nether:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      surfaceOnly: false
-      minY: 0
-      maxY: 128
-    world_the_end:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      ignorePowderSnow: false
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-  # How long force player to wait before using command again.
-  Cooldown: 5
-  # How many times to try find correct location for teleportation.
-  # Keep it at low number, as player always can try again after delay
-  MaxTries: 20
-  # List of biomes to exclude from random teleportation
-  ExcludedBiomes:
-  - Ocean
-  - Deep ocean
 Enchanting:
   enchantLimits:
     # By disabling this, no limitation to enchanting will be applied
     # This only applies for enchant command not for natural enchanting
     Enabled: true
     MaxLevel:
-      protection_fire: 4
-      damage_all: 5
-      arrow_fire: 1
-      soul_speed: 3
-      water_worker: 1
-      arrow_knockback: 2
-      loyalty: 3
-      depth_strider: 3
-      vanishing_curse: 1
-      durability: 3
-      knockback: 2
-      luck: 3
-      binding_curse: 1
-      loot_bonus_blocks: 3
-      protection_environmental: 4
-      dig_speed: 5
-      mending: 1
-      frost_walker: 2
-      lure: 3
-      loot_bonus_mobs: 3
-      piercing: 4
-      protection_explosions: 4
-      damage_undead: 5
-      multishot: 1
       swift_sneak: 3
-      fire_aspect: 2
-      channeling: 1
-      sweeping_edge: 3
-      thorns: 3
-      damage_arthropods: 5
-      oxygen: 3
-      riptide: 3
-      silk_touch: 1
-      quick_charge: 3
-      protection_projectile: 4
-      impaling: 5
       protection_fall: 4
-      arrow_damage: 5
       arrow_infinite: 1
+      arrow_fire: 1
+      impaling: 5
+      protection_environmental: 4
+      knockback: 2
+      depth_strider: 3
+      luck: 3
+      silk_touch: 1
+      loyalty: 3
+      vanishing_curse: 1
+      protection_fire: 4
+      channeling: 1
+      binding_curse: 1
+      sweeping_edge: 3
+      quick_charge: 3
+      damage_arthropods: 5
+      frost_walker: 2
+      multishot: 1
+      protection_projectile: 4
+      water_worker: 1
+      soul_speed: 3
+      loot_bonus_mobs: 3
+      damage_undead: 5
+      piercing: 4
+      lure: 3
+      riptide: 3
+      arrow_damage: 5
+      protection_explosions: 4
+      mending: 1
+      fire_aspect: 2
+      oxygen: 3
+      thorns: 3
+      arrow_knockback: 2
+      damage_all: 5
+      dig_speed: 5
+      loot_bonus_blocks: 3
+      durability: 3
   # When set to true, players will be required to have cmi.enchantments.[enchantname] permission node
   RequireSpecificPermission: false
+  # When enabled we will only allow to enchant items with valid enchantments
+  # This can be bypasses with cmi.command.enchant.bypassinvalid permission node
+  EnforceValidEnchants: true
   # When set to true, players will be required to have cmi.enchantments.[enchantname].[maxlevel] permission node to be abble to enchant item to defined max level
   # Higest permission will be taken if player has more then one
   # Keep in mind that this will not prevent player from enchanting item to lower levels then permission was set too
@@ -2069,9 +1942,21 @@ BungeeCord:
   # You can disable bungeecord support entirely if you are exrperiencing issues with it
   # When setting this to false some features like public messages over bungee cord, private messages over bungeecord, portals over bungecoord and other features will stop working
   # Keep in mind that regular behavior of those features will remain intacted
-  Enabled: true
+  Enabled: false
   # When set to true player names from entire bungee network will be included into tab complete
   NamesInTabComplete: false
+  # When enabled player can return to previous server when using /back comand instead of being teleported to previous location on that server
+  # This only applies if player came to this server without teleporting around
+  BackToPreviousServer: false
+Recipes:
+  Condense:
+    # When enabled trying to condsense or uncondense we will check for backwards recipe and will not allow to perform those actions if player is unable to revert his actions
+    # While disabled we will ignore backwards recipe check
+    # Keep in mind that disabling might result in unpredicted behavior where 4 wood planks gets converted into workbench
+    RequireBackwards: true
+    # Should we condense recipes with 4 same ingredients
+    # While this is enabled and RequireBackwards disabled then oak plants might be converted into workbenches
+    4Sized: true
 # If you want to disable particular sound entirely, set it to "" 
 Sounds:
   Enabled: true
@@ -2084,152 +1969,10 @@ Sounds:
   MailNotification: entity_creeper_hurt:1:0.5
   TeleportUp: entity_enderman_teleport:2:1
   TeleportDown: entity_enderman_teleport:0.2:1
-# If you want to disable particular particle entirely, set it to "" 
-# More information how to set up this one can be found at https://www.zrips.net/cmi/extra/particles/
-Particles:
-  Enabled: true
-  TotemHalo: circle;effect:reddust;c:255,255,10;twist;part:3;offset:0,2,0;pitch:90;radius:0.3;interval:2
-  Healing: circle;effect:heart;dur:0.1;part:1;offset:0,1.7,0;radius:0.3
-  GlyphHead: circle;effect:flying_glyph;dur:5;pitchc:15;part:10;offset:0,1.7,0;radius:0.5;yawc:12;color:rs;pitch:90
-  tpaWarmup: circle;effect:flying_glyph;dur:5;pitchc:15;part:10;offset:0,1.7,0;radius:0.5;yawc:12;color:rs;pitch:90
-  GColumn: circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02
-  SmallBoop: circle;effect:flying_glyph;yaw:[playerName];pitch:[playerName];r:0.1;part:3;rc:0.03;mr:0.3;twist
-  HologramInteraction: circle;effect:flying_glyph;yaw:[playerName];pitch:[playerName];r:0.1;part:3;rc:0.03;mr:0.3;twist
-  HologramNewInteraction: circle;effect:reddust;r:0;part:2;rc:0.2;mr:1;color:rs;yaw:[playerName];a:90
-  HologramHover: circle;effect:crit;r:0;part:1;
-  TpUp: circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0
-  TpDown: circle;c:150,50,10;part:5;r:0.5;pitch:90;move:0,-0.33,0;offset:0,2.2,0
-  # From custom1 to custom30 are free to use particle presets which can be utilized for things like command warmups
-  custom1: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom2: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom3: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom4: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom5: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom6: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom7: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom8: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom9: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom10: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom11: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom12: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom13: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom14: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom15: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom16: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom17: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom18: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom19: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom20: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom21: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom22: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom23: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom24: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom25: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom26: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom27: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom28: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom29: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-  custom30: circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:4
-# Defined animated particles will be shown on player teleportation on particular action from place and to destination
-# if you don't want it to be shown then set it to empty field
-# Animation names should be used from Particles section from above like TpUp
-TeleportEffects:
-  Unknown:
-    From: ''
-    To: ''
-  Elevator:
-    From: ''
-    To: ''
-  SafeLogin:
-    From: ''
-    To: ''
-  Spawn:
-    From: ''
-    To: ''
-  NetherRoof:
-    From: ''
-    To: ''
-  BelowBedrock:
-    From: ''
-    To: ''
-  Back:
-    From: ''
-    To: ''
-  DBack:
-    From: ''
-    To: ''
-  Home:
-    From: ''
-    To: ''
-  Jump:
-    From: ''
-    To: ''
-  Patrol:
-    From: ''
-    To: ''
-  Portal:
-    From: ''
-    To: ''
-  WarmUp:
-    From: ''
-    To: ''
-  Biome:
-    From: ''
-    To: ''
-  FlightCharge:
-    From: ''
-    To: ''
-  InvEdit:
-    From: ''
-    To: ''
-  TimedCommand:
-    From: ''
-    To: ''
-  TpaAll:
-    From: ''
-    To: ''
-  Tp:
-    From: ''
-    To: ''
-  Top:
-    From: ''
-    To: ''
-  Down:
-    From: ''
-    To: ''
-  TpAll:
-    From: ''
-    To: ''
-  TpHere:
-    From: ''
-    To: ''
-  TpPos:
-    From: ''
-    To: ''
-  Warp:
-    From: ''
-    To: ''
-  JoinSpawn:
-    From: ''
-    To: ''
-  Totem:
-    From: ''
-    To: ''
-  randomTp:
-    From: ''
-    To: ''
-  World:
-    From: ''
-    To: ''
-  HoloEdit:
-    From: ''
-    To: ''
 PotionEffects:
   # When set to true player poition effect will expire even if player is offline
   # Keep in mind that player potion effect durability will be updated on players login event so by checking players potions effect while he is offline can show incorrect state
   DeductWhileOffline: false
 ```
-
 ## Miscellaneous
-
-Created with CMI 9.3.2.0 for Minecraft 1.19.3
+Created with CMI 9.7.0.2 for Minecraft 1.20.4.
