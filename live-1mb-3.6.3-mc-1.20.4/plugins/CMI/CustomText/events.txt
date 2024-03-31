@@ -1,9 +1,9 @@
-<AutoPage><Hidden>
+<AutoPage><Hidden><NoAutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#orange} -&l 1MoreBlock 2024 Events
-{#orange} -{#gold} Current event: Easter Weekend! 30th & 31st
-{#orange} -{#gold} 
-{#orange} -{#gold} More info: /discord, where we have
-{#orange} -{#gold} an #events channel with specifics.
+{#orange} -{#gold} Easter Weekend! 30th & 31st !!!!
+{#orange} -{#gold} To play, collect eggs in /easter world.
+{#orange} -{#gold} Check your progress & hints: /egghunt
+{#orange} -{#gold} 1,5 minutes of bunny fly! /egghunt fly
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 
