@@ -29,6 +29,12 @@ Economy:
     Paper: true
     # When set to true player will be required to have cmi.command.cheque.withdraw permission node to withdraw cheque
     Permission: false
+    # Should we allow checque usage in creative mode
+    # If you have creative server, keep this at false or players could start duplicating items
+    InCreative: false
+    # Should we accept old cheque item stacks with non encoded data in them
+    # Keep it at false for most security
+    AcceptNotEncoded: true
   PaymentWithShorts:
     # When set to true players will be able to make payments by using short amount formats like 10k which results into 10000 and similar
     # In addition 10.2k will result into 10200
@@ -169,6 +175,8 @@ Optimizations:
   # When set to true, commands in help page will be sorted alphabeticaly
   # If set to false, commands will be sorted by priority
   CommandSorting: true
+  # By default we will not allow Rcon type commands, if you have your server properly setup to accept remote console commands safely and you have a need then you can enable it
+  AllowRconCommands: false
   # Percentage value (1-100) to pick best command match if command cant be found
   # Example: /cmi spawnmb will have 87.5% match with /cmi spawnmob
   # Set to 0 to disable
@@ -210,7 +218,7 @@ Optimizations:
       # Applies for tpahere only
       tpahere: true
     # Default distance for jump command. Can be overriden with cmi.command.jump.[amount] permission node
-    JumpDefault: 128
+    JumpDefault: 192
     Tpa:
       # Defines time in seconds for accepting tpa or tpahere requests
       Time: 40
@@ -497,6 +505,11 @@ ExploitPatcher:
   BlockEndPortalItemTransfers: true
   # When enabled we will not allow usage of riptide while player has pweather set to rain while players world is in sunny state
   Riptide: true
+  Placeholders:
+    blocked:
+      # By default we are blocking PAPI %checkitem_...% placeholder to avoid potential serious issues with it
+      # Only disable this if you have dedicated protection for it
+      checkItem: true
 Vault:
   # If your having issues with vault grabbing correct players' group or balance, consider to turn this to false
   Money: true
@@ -625,14 +638,14 @@ Afk:
   # Defines commands to be performed when player enters afk mode automatically while addling
   # Supports specialized commands
   AutoAfkCmds:
-  - cmi broadcast !{#orange} * &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(Automatically)
+  - cmi broadcast !{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(Automatically)
   # Defines commands to be performed when player enters /cmi afk
   # Supports specialized commands
   ManualAfkCmds:
-  - cmi broadcast !{#orange} * &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(%cmi_user_afk_msg%)
+  - cmi broadcast !{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(%cmi_user_afk_msg%)
   # Defines commands to be performed when player leaves afk mode
   AfkLeaveCmds:
-  - 'cmi ctellraw all <T>{#orange} * &l[playerDisplayName] {#yellow}has returned from
+  - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName] {#yellow}has returned from
     idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#geyser}Has been away for: %cmi_user_afk_for%</H>'
   # Defines how long to wait after player stops moving to kick player
   # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
@@ -708,7 +721,7 @@ Holograms:
     viewRange: 16
     # Defines default update interval
     # Bigger this number is better performance we will have
-    updateRange: 8
+    updateRange: 16
     updateInterval: 0.0
     # Defines default page change interval
     # When value is set to 0 or lower, pages will not be changed
@@ -853,6 +866,9 @@ Command:
     - register
     - login
     - l
+    - s
+    - staffmsg
+    - cmi staffmsg
     # Players without cmi.security.admin will only see commands from this list with command spy feature
     CommandList:
     - cmi spawn
@@ -899,6 +915,8 @@ NickName:
   - server
   - staff
   - staf
+  - info
+  - menu
   # Min length of nick name, can be bypassed with cmi.command.nick.bypass.length
   MinLength: 4
   # Max length of nick name, can be bypassed with cmi.command.nick.bypass.length
@@ -1400,6 +1418,13 @@ WorldLimits:
     - None
     end:
     - None
+# Checks if players name changed from last known
+CheckForNameChange:
+  # Do you want to perform commands
+  PerformCommandsOnNewName: false
+  # Command list to be performed in case player logs in with new name
+  NameChangeCommands:
+  - 'asConsole! cmi broadcast !&2[oldname] logged in with new name: [newname]'
 inv:
   # Do you want to save the player's inventory on his death
   SaveOnDeath: true
@@ -1514,10 +1539,11 @@ Cooldowns:
   # KEEP IN MIND that for permission to work you need to set base command cooldown in this list, otherwise permission node will have no effect
   # -----
   # ATTENTION! If you have command like "/cmi home" and you want to prevent teleportation to home but allow gui opening without restrictions, use space after command, in example "cmi home :10"
-  Enabled: false
+  Enabled: true
   List:
   - Heal:180
   - Feed:120
+  - nick:120
 Combat:
   # Defines combat timer to be used in particular features
   Timer: 15
@@ -1563,6 +1589,9 @@ Combat:
     # When set to true player will see boss bar message indicating how long until combat mode ends
     # This only applies for pve type combat
     ShowBossBar: false
+    # When enabled we will include damage from environmental damage into mob combat timer
+    # This can include damage from cactus, magma blocks, suffocation, burning, fall damage and similar
+    IncludeEnvironment: true
     # When enabled we will show damage numbers in a form of holograms when damaging mobs
     ShowDamageNumbers: true
     DamageNumbersFormat: '&c❤[damage]'
@@ -1641,6 +1670,7 @@ Vanish:
     sleepIgnore: true
     joinVanished: false
     deathMessages: false
+    hookPlayers: false
 Player:
   Options:
     CloseButton:
@@ -1702,7 +1732,7 @@ WarmUps:
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
   # false variable is optional and when its set to false player cant move while warmup is counting
   # If you dont want to deny empty warp command but want to deny any extra variable after that, then just add space, in example 'warp :5:false'
-  # When setting warmups for CMI commands, use full command name and not allias, in example 'cmi warp:5false'
+  # When setting warmups for CMI commands, use full command name and not allias, in example 'cmi warp:5:false'
   # Administration can bypass limitations with cmi.warmupbypass.[commandname] permission node
   # ATTENTION! cmi home command is being handled in special way and to prevent double warmup, add space, example: - cmi home :5:false
   # Experimental: add GlyphHead to the warmup to show particle effect while command is on warmup period. Like
@@ -1892,7 +1922,18 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    santa:
+    easter:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    summer:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
@@ -1969,6 +2010,17 @@ Time:
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    skygrid/bentobox:
+      Enabled: false
+      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
+      day: 600
+      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
+      sunset: 90
+      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
+      night: 420
+      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
+      sunrise: 90
+    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     acid/bentobox:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -2012,73 +2064,51 @@ Time:
       night: 420
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    autosorter:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    winter:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
 Enchanting:
   enchantLimits:
     # By disabling this, no limitation to enchanting will be applied
     # This only applies for enchant command not for natural enchanting
     Enabled: false
     MaxLevel:
-      protection_fire: 4
-      damage_all: 5
-      arrow_fire: 1
-      soul_speed: 3
-      water_worker: 1
-      arrow_knockback: 2
-      loyalty: 3
-      depth_strider: 3
-      vanishing_curse: 1
-      durability: 3
-      knockback: 2
-      luck: 3
-      binding_curse: 1
-      loot_bonus_blocks: 3
-      protection_environmental: 4
-      dig_speed: 5
-      mending: 1
-      frost_walker: 2
-      lure: 3
-      loot_bonus_mobs: 3
-      piercing: 4
-      protection_explosions: 4
-      damage_undead: 5
-      multishot: 1
       swift_sneak: 3
-      fire_aspect: 2
-      channeling: 1
-      sweeping_edge: 3
-      thorns: 3
-      damage_arthropods: 5
-      oxygen: 3
-      riptide: 3
-      silk_touch: 1
-      quick_charge: 3
-      protection_projectile: 4
-      impaling: 5
       protection_fall: 4
-      arrow_damage: 5
       arrow_infinite: 1
+      arrow_fire: 1
+      impaling: 5
+      protection_environmental: 4
+      knockback: 2
+      depth_strider: 3
+      luck: 3
+      silk_touch: 1
+      loyalty: 3
+      vanishing_curse: 1
+      protection_fire: 4
+      channeling: 1
+      binding_curse: 1
+      sweeping_edge: 3
+      quick_charge: 3
+      damage_arthropods: 5
+      frost_walker: 2
+      multishot: 1
+      protection_projectile: 4
+      water_worker: 1
+      soul_speed: 3
+      loot_bonus_mobs: 3
+      damage_undead: 5
+      piercing: 4
+      lure: 3
+      riptide: 3
+      arrow_damage: 5
+      protection_explosions: 4
+      mending: 1
+      fire_aspect: 2
+      oxygen: 3
+      thorns: 3
+      arrow_knockback: 2
+      damage_all: 5
+      dig_speed: 5
+      loot_bonus_blocks: 3
+      durability: 3
   # When set to true, players will be required to have cmi.enchantments.[enchantname] permission node
   RequireSpecificPermission: false
   # When enabled we will only allow to enchant items with valid enchantments
@@ -2173,6 +2203,9 @@ BungeeCord:
   Enabled: false
   # When set to true player names from entire bungee network will be included into tab complete
   NamesInTabComplete: false
+  # When enabled player can return to previous server when using /back comand instead of being teleported to previous location on that server
+  # This only applies if player came to this server without teleporting around
+  BackToPreviousServer: false
 Recipes:
   Condense:
     # When enabled trying to condsense or uncondense we will check for backwards recipe and will not allow to perform those actions if player is unable to revert his actions
