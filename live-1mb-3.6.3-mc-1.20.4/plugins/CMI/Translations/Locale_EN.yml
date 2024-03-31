@@ -44,14 +44,6 @@
 # If line starts with !customtext:[cTextName]! then custom text will be taken by name provided and shown for player. In case its used after !broadcast! then everyone who is online will get this custom text message
 # If line starts with !title! then player will get title message defined after this variable, in addition it can contain !subtitle! which will add subtitle message. Optional time can be defined with !title:4.5! which will keep title message for 4.5 seconds
 # If line starts with !bossbar:[name]-[timer]! then player will get bossbar message defined after this variable, in addition you can define how long this message will be visible. You need to define bossbar name which can be anything you want, but lines with same name will override each other to prevent stacking
-# To include clickable messages: <T>Text</T><H>Hover text</H><C>command</C><SC>Suggested text</SC>
-# <T> and </T> required, other is optional
-# Use /n to break line
-# To have more than one JSON message use <Next>
-# <C> performs command as a player who clicked
-# <CC> performs command from console once
-# <CCI> performs command from console every time player clicks text
-# <URL> includes url
 #
 #
 #
@@ -124,8 +116,8 @@ info:
   # This line can have extra variables: [totalUsers] [onlinePlayers]
   FirstJoin: '{#Cerulean>} Welcome! »{#Lochmara<}{#Feijoa} A new player &6[playerDisplayName]{#Feijoa}
     joined 1MoreBlock.com!'
-  LogoutCustom: '{#Cerulean} - {#Feijoa}Player [playerDisplayName] left. {#gray}(Don''t
-    forget to add 1MoreBlock to your server list!)'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player [playerDisplayName] {#Feijoa}left.
+    {#gray}'
   LoginCustom: '{#Cerulean>} Welcome! »{#Lochmara<}{#Feijoa} &6&l[playerDisplayName]&r{#Feijoa}
     has returned! {#Cerulean}❤'
   deathlocation: \n{#Cerulean>}&l 💀 "/dback" »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
@@ -133,6 +125,7 @@ info:
   book:
     exploit: '&cYou cannot create a book with more than [amount] pages :('
   combat:
+    CostToOpen: '!actionbar!&eCharged for opening: [amount]'
     CantUseShulkerBox: '&cCan''t use shulker box while you are in combat with player.
       Wait: [time]'
     CantUseCommand: '!actionbar!&cCan''t use command while in combat mode. Wait: [time]'
@@ -164,9 +157,9 @@ info:
     PreviousInventory: '&ePrevious inventory'
     Editable: '&eEdit mode enabled'
     NonEditable: '&eEdit mode disabled'
-  vanishSymbolOn: '&8[&7H&8]&r'
+  vanishSymbolOn: '{#gray}●&r'
   vanishSymbolOff: ''
-  afkSymbolOn: '&6●'
+  afkSymbolOn: '{#orange}●&r'
   afkSymbolOff: ''
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
   pvp:
@@ -255,11 +248,12 @@ Chat:
   LocalNoOne: '!actionbar!&cNobody hear you, write ! before message for global chat'
   shoutDeduction: '!actionbar!&cDeducted &e[amount] &cfor shout'
   # Use \n to add new line
-  publicHover: '{#Feijoa}Player: {#Geyser}%cmi_user_display_name%{#Feijoa}, ({#Geyser}%luckperms_primary_group_name%{#Feijoa})\n{#Feijoa}Msg
-    was sent in {#Geyser}%player_world% {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser}
-    %cmi_user_balance_formatted% {#Feijoa}| /points: {#Geyser}%pyrowelcomespro_points%
-    \n{#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa}
-    / Lvls: {#Geyser}%jobs_total_levels% \n{#Feijoa} \n&8(click to send private msg)&r'
+  publicHover: '{#Feijoa}Player (%cmi_user_name%): {#Geyser}%cmi_user_display_name%{#Feijoa},
+    ({#Geyser}%luckperms_primary_group_name%{#Feijoa})\n{#Feijoa}Msg was sent in {#Geyser}%player_world%
+    {#Feijoa}at {#Geyser}%server_time_hh:mm% \n{#Feijoa}/money:{#Geyser} %cmi_user_balance_formatted%
+    {#Feijoa}| /points: {#Geyser}%pyrowelcomespro_points% \n{#Feijoa}mcMMO PL:{#Geyser}
+    %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs%{#Feijoa} / Lvls: {#Geyser}%jobs_total_levels%
+    \n{#Feijoa} \n&8(click to send private msg)&r'
   privateHover: 'Player: %cmi_user_name%, {#Edward}(%luckperms_primary_group_name%)
     \nPrivate msg sent: &6%server_time_hh:mm:ss%&r  World: {#Edward}%player_world%&r'
   staffHover: 'Player: %cmi_user_name%, {#Edward}(%cmi_user_group%)\n Chat sent: &6%server_time_hh:mm:ss%&r
@@ -800,6 +794,8 @@ command:
       - '&r&fRight click to deposit'
       holdPaper: '&eHold paper in your hand'
       cantUse: '&eCan''t use this piece of paper. It is a cheque already!'
+      clarification: '&cThis type of cheque is no longer accepted. Please contact
+        with staff member to update it'
   clear:
     help:
       info: '&eClear players inventory'
@@ -2021,7 +2017,7 @@ command:
       info: '&eChange items lore'
       args: (-p:[playerName]) [linenumber/*] [remove/insert/ new lore line]
     info:
-      feedback: '&eYou have changed lore line to ''&r&5[loreLine]&e'' for &3[playerDisplayName]&e
+      feedback: '&eYou have changed lore line [line] to ''&r&5[loreLine]&e'' for &3[playerDisplayName]&e
         (&3[offon]&e).'
       noitem: '&cNot holding any item in hand.'
       removed: '&eItem lore line &6[line] &ewas removed for &3[playerDisplayName]&e
@@ -2437,8 +2433,8 @@ command:
       args: '[send/clear/read/sendtemp] [playerName] (time) (message)'
     info:
       sentMail: '&eMail sent to &6[playerDisplayName]'
-      gotMail: <T>&eYou received mail from &6[senderDisplayName]</T><H>Click to read!</H><C>cmi
-        mail read</C>
+      gotMail: '<T>&eYou received mail from: &6&l[senderDisplayName] ~ {#gold}You
+        can read it with: &l/mail read</T><C>cmi mail read</C>'
       clearMail: '&eAll mail has been cleared!'
       removedMail: '&eRemoved mail'
       noMailsById: '&eThere is no mail by this id for this player'
@@ -2745,7 +2741,6 @@ command:
     info:
       feedback: '&ePing: &6[ping]ms'
       selffeedback: '&eYour ping is &6[ping]ms'
-      customMessage: '[message]'
   placeholders:
     help:
       info: '&eList out all placeholders'
@@ -2932,6 +2927,9 @@ command:
       requiredAurelium: ' &eAurelium: '
       requiredAureliumList: '&e[color][name] '
       requiredAureliumListHover: ' &e[color][current]&e/&6[needed]'
+      requiredAuraSkills: ' &eAuraSkills: '
+      requiredAuraSkillsList: '&e[color][name]'
+      requiredAuraSkillsListHover: ' &e[color][current]&e/&6[needed]'
       requiredJobs: ' &eJobs: '
       requiredJobsList: ' &e[color][name]'
       requiredJobsListHover: ' &e[color][current]&e/&6[needed]'
@@ -3136,7 +3134,7 @@ command:
       IncorrectLocation: '&6Could not find correct teleport location, please wait
         &e[time] &6and try again.'
       teleported: '!actionbar!&6Whoosh!!!'
-      waiting: '!actionbar!&6Looking for suitable location. Please wait'
+      searching: '!actionbar!&7Searching'
   sameip:
     help:
       info: '&eList players logged in from same ip'
@@ -3968,8 +3966,9 @@ command:
       bad:
         msg: '&cTeleport location is unsafe. [reason]'
         extraMsg: '&eUse &6/tpbypass &eto bypass this. You have [time]'
-        lava: '&cLava'
+        badfloor: '&cBad floor ([material])'
         void: '&cVoid'
+        fall: '&cFall ([distance])'
         suffocation: '&cSuffocation'
         unknown: '&cUnknown'
         plugin: '&c3rd party plugin'
@@ -4217,6 +4216,7 @@ command:
       sleepIgnore: '&eIgnore for sleeping count'
       joinVanished: '&eAlways join in vanish mode'
       deathMessages: '&eShow death message'
+      hookPlayers: '&eHooking entities'
       bossbarTitle: '&fVanished'
   version:
     help:

@@ -33,6 +33,8 @@ Player:
   - '&2[playerDisplayName] &7was fireballed by &2[sourceDisplayName]'
   Firework:
   - '&2[playerDisplayName] &7went off with a bang due to &2[sourceDisplayName]'
+  Tnt:
+  - '&2[playerDisplayName] &7was blown up by &2[sourceDisplayName]'
 FallingBlocks:
   Anvil:
     General:
@@ -563,6 +565,11 @@ Mob:
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Sniffer:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Breeze:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
