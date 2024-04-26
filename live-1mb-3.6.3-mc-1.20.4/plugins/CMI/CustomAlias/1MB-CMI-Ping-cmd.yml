@@ -3,10 +3,9 @@
 CustomAlias:
   ping:
     Cmds:
-    - asConsole! staffmsg [ping] Player [playerName] tried to use /ping (if they are
-      a new players and just joined, please report to floris)
     - statement:check1! check:$1==null!
     - if:check1! asPlayer! cmi ping
     - if:check1@! ifonline:$1! asPlayer! cmi ping $1
     - if:check1@! ifoffline:$1! asConsole! cmi kick [playerName] 91N6
-    Tab: false
+    CustomTabs:
+    - '[playername]'
