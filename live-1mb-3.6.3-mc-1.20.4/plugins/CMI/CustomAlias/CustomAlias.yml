@@ -557,10 +557,10 @@ CustomAlias:
       this special bedrocker is to help you fix wrongfully placed bedrocks.
     - msg! [playerName] {#orange}it breaks bedrock almost instantly. But there's a
       cooldown before you can break another bedrock. You cannot break bedrock layers
-      that make up the world borders, such as 125-128 and 0-4.
+      that make up the world borders.
     - msg! [playerName] {#orange}Each hit takes a lot of durability, use it wisely!
       And no, you are not allowed to repair, enchant, merge, the pickaxe. Using tricks
-      to repair it etc will possibly resutl in a server ban. Please play nice.
+      to repair it etc will possibly result in a server ban. Please play nice.
     - msg! [playerName] {#magenta} https://omgboards.com/threads/263637/
     Tab: false
   needstaff:
@@ -661,9 +661,8 @@ CustomAlias:
     Tab: false
   hub:
     Cmds:
-    - msg! [playerName] {#gold} We do not really have a hub/lobby, but I will bring
-      you to our /spawn
-    - asPlayer! spawn
+    - msg! [playerName] {#gold} We do not really have a hub/lobby, try ./spawn (cannot
+      be used to avoid void deaths)
   lobby:
     Cmds:
     - hub
