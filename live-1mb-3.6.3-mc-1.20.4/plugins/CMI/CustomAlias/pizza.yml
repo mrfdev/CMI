@@ -1,0 +1,8 @@
+#
+
+CustomAlias:
+  pizza:
+    Cmds:
+    - msg! [playerName] Join us on the 26th of April. \n Until then, you can claim
+      "/kit pizza" (in any world)
+    - asPlayer! skyblock warp nikkipixel
