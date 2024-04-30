@@ -1,9 +1,9 @@
-# 1MoreBlock.com Staff "/faq" command, by Floris Fiedeldij Dop (c)2024 1MoreBlock.com, version 0.0.4
+# 1MoreBlock.com Staff "/faq" command, by Floris Fiedeldij Dop (c)2024 1MoreBlock.com, version 0.0.5
 
 CustomAlias:
   faq:
     Cmds:
-    - gcooldown:3#?!
+    - gcooldown:25#?!
     - 'check:$1!=null! asConsole! cmi usermeta [playerName] add tempfaq %cmi_random_1_4% -s'
     - 'check:$1==debug! msg! [playerName] debug: %cmi_lastrandom_[playerName]% 1=$1, 2=$2, 3=$3, 4+=$4-'
     - check:$1==null~! msg! [playerName] Please make a tab-complete selection. For example, "/$0 <type> <player>" /$0 welcome, /$0 kits Notch (sometimes playername is required, usually it's optional)
