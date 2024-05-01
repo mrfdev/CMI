@@ -1,2 +1,0 @@
-<AutoPage>
-CMI event commands overview

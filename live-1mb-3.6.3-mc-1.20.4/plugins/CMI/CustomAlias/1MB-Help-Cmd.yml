@@ -1,7 +1,0 @@
-CustomAlias:
-  help:
-    Cmds:
-    - asConsole! cmi ctext help [playerName]
-    CustomTabs:
-    - mcMMO
-    - Jobs
