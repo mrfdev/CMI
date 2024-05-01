@@ -22,6 +22,13 @@ PlayerHead:
   # Aditionally placeholders can be used too, but we will use victim as source for their translation if placeholder requires source player
   Lore:
   - '&7Killed by &6[playerName]'
+HeadHandling:
+  Maintain:
+    # Defines if we should maintain heads custom name when head is placed and then broken
+    # Vanilla minecraft will remove any custom information about head when you place it, this can help out to maintain data
+    Name: true
+    Lore: true
+    Enchants: true
 # Custom heads of every entity
 # You can have as many custom heads as you want
 # Format is [dropChance]:[texture]

@@ -876,3 +876,7 @@ CustomAlias:
     - msg! [playerName] Is it the first of April again? Okay! HAHA .. Joke's over
       .. Let's get back to normal you again.
     - msg! [playerName] If you want to become a villager again, just re-log.&r\n&r\n
+  summer:
+    Cmds:
+    - msg! [playerName] In the Summer Season this command will bring you to the Summer
+      Festival, stay tuned!

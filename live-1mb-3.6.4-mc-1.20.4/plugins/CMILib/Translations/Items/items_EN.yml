@@ -709,7 +709,7 @@ SAND: Sand
 SANDSTONE: Sandstone
 SANDSTONE_SLAB: Sandstone Slab
 SANDSTONE_STAIRS: Sandstone Stairs
-SCUTE: Scute
+TURTLE_SCUTE: Turtle Scute
 SEAGRASS: Seagrass
 SEA_LANTERN: Sea Lantern
 SEA_PICKLE: Sea Pickle
@@ -1405,5 +1405,8 @@ WARPED_WALL_HANGING_SIGN: Warped wall hanging sign
 WAYFINDER_ARMOR_TRIM_SMITHING_TEMPLATE: Wayfinder armor trim smithing template
 WILD_ARMOR_TRIM_SMITHING_TEMPLATE: Wild armor trim smithing template
 WITHER_SPAWN_EGG: Wither spawn egg
+ARMADILLO_SCUTE: Armadillo Scute
+WOLF_ARMOR: Wolf Armor
+ARMADILLO_SPAWN_EGG: Armadillo Spawn Egg
 SIGN: Sign
 GRASS: Grass

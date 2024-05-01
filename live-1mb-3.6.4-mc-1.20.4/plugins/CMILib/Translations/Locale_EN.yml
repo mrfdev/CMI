@@ -431,86 +431,47 @@ info:
     zombie_horse: Zombie horse
     zombie_villager: Zombie villager
     zombified_piglin: Zombified piglin
-  EnchantAliases:
-    swift_sneak:
-    - SWIFTSNEAK
-    protection_fall:
-    - FallProtection
-    - FeatherFalling
-    arrow_infinite:
-    - Infinity
-    arrow_fire:
-    - Flame
-    impaling:
-    - Impaling
-    protection_environmental:
-    - Protection
-    knockback:
-    - Knockback
-    depth_strider:
-    - DepthStrider
-    luck:
-    - Luck
-    silk_touch:
-    - SilkTouch
-    loyalty:
-    - Loyalty
-    vanishing_curse:
-    - VanishingCurse
-    protection_fire:
-    - FireProtection
-    channeling:
-    - Channeling
-    binding_curse:
-    - BindingCurse
-    sweeping_edge:
-    - SweepingEdge
-    quick_charge:
-    - QUICKCHARGE
-    damage_arthropods:
-    - BaneOfArthropods
-    frost_walker:
-    - FrostWalker
-    multishot:
-    - Multishot
-    protection_projectile:
-    - ProjectileProtection
-    water_worker:
-    - AquaAffinity
-    soul_speed:
-    - SOULSPEED
-    loot_bonus_mobs:
-    - Looting
-    damage_undead:
-    - Smite
-    piercing:
-    - Piercing
-    lure:
-    - Lure
-    riptide:
-    - Riptide
-    arrow_damage:
-    - Power
-    protection_explosions:
-    - BlastProtection
-    mending:
-    - Mending
-    fire_aspect:
-    - FireAspect
-    oxygen:
-    - Respiration
-    thorns:
-    - Thorns
-    arrow_knockback:
-    - Punch
-    damage_all:
-    - Sharpness
-    dig_speed:
-    - Efficiency
-    loot_bonus_blocks:
-    - Fortune
-    durability:
-    - Unbreaking
+  # Avoid adding color codes to the enchant name
+  EnchantNames:
+    dig_speed: Efficiency
+    loot_bonus_mobs: Looting
+    silk_touch: SilkTouch
+    quick_charge: QUICKCHARGE
+    soul_speed: SOULSPEED
+    arrow_fire: Flame
+    loot_bonus_blocks: Fortune
+    multishot: Multishot
+    water_worker: AquaAffinity
+    channeling: Channeling
+    loyalty: Loyalty
+    binding_curse: BindingCurse
+    arrow_knockback: Punch
+    protection_projectile: ProjectileProtection
+    arrow_damage: Power
+    damage_all: Sharpness
+    frost_walker: FrostWalker
+    protection_fire: FireProtection
+    impaling: Impaling
+    luck: Luck
+    riptide: Riptide
+    protection_environmental: Protection
+    mending: Mending
+    oxygen: Respiration
+    piercing: Piercing
+    swift_sneak: SWIFTSNEAK
+    protection_fall: FallProtection
+    durability: Unbreaking
+    damage_undead: Smite
+    lure: Lure
+    fire_aspect: FireAspect
+    knockback: Knockback
+    depth_strider: DepthStrider
+    sweeping_edge: SweepingEdge
+    arrow_infinite: Infinity
+    vanishing_curse: VanishingCurse
+    damage_arthropods: BaneOfArthropods
+    protection_explosions: BlastProtection
+    thorns: Thorns
   PotionEffectAliases:
     fire_resistance:
     - Fire resistance

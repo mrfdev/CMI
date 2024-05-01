@@ -177,6 +177,8 @@ Optimizations:
   CommandSorting: true
   # By default we will not allow Rcon type commands, if you have your server properly setup to accept remote console commands safely and you have a need then you can enable it
   AllowRconCommands: false
+  # When enabled Rcon feedback message will not include color codes for cleaner display
+  CleanRconCommands: false
   # Percentage value (1-100) to pick best command match if command cant be found
   # Example: /cmi spawnmb will have 87.5% match with /cmi spawnmob
   # Set to 0 to disable
@@ -301,6 +303,7 @@ Optimizations:
   MaxHp: 200
   # When set to true, player play time will be grabbed from user stats file instead of from CMI user data file
   # This can help to get more accurate play time if you have older server and using players stats feature
+  # Recommended to keep this at true
   PlayTimeFromStats: false
   # Do you want to run auto top playtime updater
   # This is responsible for providing players current top playtimes which gets updated on consistent intervals, useful for placeholders
@@ -440,9 +443,12 @@ Sleeping:
     # Keep in mind that time speed up only works on a normal type world and by default you will have only one
     # Set this list to [] if you want to include all possible worlds
     Worlds: []
-    # When this set to true time will be speed up only between 13000 and 24000 ticks of the day
+    # When this set to true time will be speed up only between 12542 and 24000 ticks of the day
     # When having this set to false players can speed up day durring storms or other events
     OnlyDurringNight: true
+    # Time when night starts
+    # This is in ticks, so 12542 will be 18:32:00
+    NightStartsAt: 12542
     # Type of speedup information, can be: none, title, bossbar
     InfoType: title
     # When set to true, players who are in afk mode will be excluded from speed calculations
@@ -831,9 +837,13 @@ Notes:
   # When enebled, when player logs in who has alert set on him, staff member will get notification that this player have some notes attached to him
   ShowOnAlertEvent: true
 GroundClean:
-  # List of item types not to be removed on ground clean action
   WhiteList:
-  - itemType
+    # List of item types not to be removed on ground clean action
+    Material:
+    - itemType
+    # List of item types not to be removed on ground clean action
+    EntityType:
+    - entityType
 Command:
   CommandFilter:
     Duplicate:
@@ -887,7 +897,7 @@ Command:
     mailAllDays: 7
     # How many mails we should keep for each player
     # When email limit is reached oldest one will be removed
-    MaxMails: 50
+    MaxMails: 150
 DisplayName:
   # If you have 3rd party plugin changing players display name, set this to false
   Change: true
@@ -1740,7 +1750,11 @@ WarmUps:
   Enabled: false
   InformOnNoMove: true
   showCounterBarInfo: false
-  showBossBarInfo: true
+  BossBarInfo:
+    Enabled: true
+    Color: blue
+    # Options: 1, 6, 10, 12, 20
+    Segments: '1'
   List:
   - tp:5:false
   - back:3:false
@@ -1912,17 +1926,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     run:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    easter:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600

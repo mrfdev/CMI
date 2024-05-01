@@ -179,6 +179,7 @@ info:
     subinvslots: '&eYour sub inventory should have atleast &6[count] &eempty slots!'
   Relog: '&eRelog might be needed for change to take effect'
   outsideWorldBorder: '&cLocation is outside world border'
+  noWorldAccess: '&cNo world access'
   IncorrectColor: '&4Color defined incorrectly!'
   time:
     # Mainly for placeholder playtime output
@@ -1211,6 +1212,8 @@ command:
       health: '&eHealth: &6[current]&e/&6[max]'
       lastDamage: '&eLast damage cause: &6[cause]'
       tamed: '&eTamed: &6[state]'
+      id: '&eID: &7[id]'
+      uuid: '&7[uuid]'
       owner: '&eOwner: &6[playerDisplayName]'
       grows: '&eGrows up in: &6[time]'
       horse: '&eHorse: jump &6[jump] &eblocks, speed &6[speed] &eblocks/sec'
@@ -1725,7 +1728,6 @@ command:
       exists: '&cInteractive command with this name already exists'
       blockExist: '&cThis block is already being used by &e[name]'
       entityExist: '&cThis entity is already being used by &e[name]'
-      cantUsePlayer: '&cYou cant use regular player as command entity'
       addInfo: '&eEnter new command. Type &6cancel &eto cancel'
       addInformationHover: "&eGlobal variables supported as of sender category \n\
         &eTo include delay in commands: \n&edelay! 5 \n&eAdditional variables can\
@@ -2170,6 +2172,8 @@ command:
       noFoundKit: '&eCan''t find any kits'
       givenKit: '&eYou have given &6[kit] &eto &6[playerDisplayName]'
       title: '&8Kits'
+      # [kitName] or [kitDisplayName] can be used
+      kitGuiTitle: '&8[kitDisplayName]'
       # List of custom kit GUI titles based by page
       # If title isint defined we will use default one
       titlesByPage:
@@ -2493,6 +2497,21 @@ command:
       incorrect: '&cIncorrect profession.'
       feedback: '&eYou have opened &6[type] &etrade for &3[playerDisplayName]&e (&3[offon]&e).'
       targetfeedback: '&3[senderDisplayName]&e opened &6[type] &etrade for you.'
+      professions:
+        armorer: Armorer
+        butcher: Butcher
+        cartographer: Cartographer
+        cleric: Cleric
+        farmer: Farmer
+        fisherman: Fisherman
+        fletcher: Fletcher
+        leatherworker: Leatherworker
+        librarian: Librarian
+        mason: Mason
+        nitwit: Nitwit
+        shepherd: Shepherd
+        toolsmith: Toolsmith
+        weaponsmith: Weaponsmith
   migratedatabase:
     help:
       info: '&eChanges database system and migrates all data'
@@ -3131,6 +3150,7 @@ command:
     info:
       possible: '&ePossible worlds: &6[worlds]'
       tpLimit: '&eYou can''t teleport so fast, please wait &6[time] &eand try again'
+      cantDo: '&eYou can''t use random teleport from different world'
       IncorrectLocation: '&6Could not find correct teleport location, please wait
         &e[time] &6and try again.'
       teleported: '!actionbar!&6Whoosh!!!'
@@ -3184,6 +3204,14 @@ command:
         process'
       canceled: '&eSign copy process cancelled'
       updated: '&eSign updated'
+  scale:
+    help:
+      info: '&eSet entities scale'
+      args: set/add/take/clear (playerName) [amount] (-s)
+    info:
+      feedback: '&eYou have set &3[scale] &e scale for &3[entityName]&e.'
+      scale: '&eScale: &3[scale]'
+      targetfeedback: '&eYour scale was set to &3[scale] &eby &3[senderDisplayName]&e.'
   scan:
     help:
       info: '&eScans for items in current world'

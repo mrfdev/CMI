@@ -158,8 +158,12 @@ ChatFilter:
     # For example ':DDD' would be made of 2 letters with 3 capitalized letters which would make it 75% capitalized
     IgnoreUnder: 6
     # Amount in percentage of capitalized letters we should not cross over.
-    # In example 'GOOD thing' would be 4 capitalized and 5 not, spaces gets ignored, whic makes it 44% capitalized and passes check
+    # In example 'GOOD thing' would be 4 capitalized and 5 not, spaces gets ignored, which makes it 44% capitalized and passes check
     Percentage: 50
+    # When capitalized text is detected, should we lower case text
+    LowerCase: true
+    # Should we cancel chat event if we detect too many caps
+    CancelEvent: false
     # List of commands you want to perform when player uses too many caps
     Commands:
     - asConsole! cmi titlemsg [playerName] &cToo many caps! -keep:20

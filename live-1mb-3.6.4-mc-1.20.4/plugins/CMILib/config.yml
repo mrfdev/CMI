@@ -38,13 +38,6 @@ Spawners:
 RMCCommands:
   # When enabled we will (where possible) include which command was performed when using rmc commands
   ConsoleLog: true
-Heads:
-  # When processing head item stack we will apply owners name instead of letting game client to use its own
-  # This will change 'Zrips's head' to 'Head of Zrips'
-  PlayerName: true
-  # When processing head item stack we will apply monsters name instead of letting game client to use its own
-  # This will change 'Zrips's head' to 'Head of Chicken' in case custom skin is applyed to it
-  MobName: false
 Images:
   # Symbol to be used to create image fields
   # Color codes are NOT supported here

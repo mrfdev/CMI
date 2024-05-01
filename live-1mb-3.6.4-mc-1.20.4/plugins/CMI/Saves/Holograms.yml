@@ -356,6 +356,30 @@ eastercake:
     IScale: 7.03
   Lines:
   - ICON:CAKE
+pizza:
+  Loc: skyblock;-6365.65;129.47;-5584.92
+  HoverParticles:
+    Count: 1
+  Range: 50
+  RangeExtra: 50
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 45
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+    IScale: 44.09
+  Lines:
+  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmYwYjEwYTRkZjYwNDZjY2JhN2I2YmM1MjM4ZTgyYmFlNjM4NWFhYjdiMWE2ZGIwYTgzMTQ4NzBjMTJmOTAwNyJ9fX0=
 halloweenholo2:
   Loc: halloween;1474.37;69.54;489.97
   HoverParticles:
@@ -772,8 +796,8 @@ adminstats:
     Align: CENTER
     TAlpha: 255
     Shadow: true
-    Yaw: 325
-    Pitch: -45
+    Yaw: 340
+    Pitch: 0
     Double: true
     BColor: '{#Black}'
     BAlpha: 255

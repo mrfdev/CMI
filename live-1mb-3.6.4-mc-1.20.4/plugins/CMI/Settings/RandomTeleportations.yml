@@ -1,613 +1,4 @@
 RandomTeleportation:
-  # If this set to true we will generate random teleport default settings for all detected worlds
-  # Setting to false will not longer generate world setups, but you can add them manually if needed
-  AutoGenerateWorlds: true
-  Worlds:
-    # World name to use this feature. Add annother one with appropriate name to enable random teleportation
-    skygrid:
-      Enabled: false
-      # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
-      # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
-      MaxRange: 1000
-      # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      # With this option we will only attempt to teleport player on highest block and ignore any cave teleportations
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    nether:
-      Enabled: true
-      MaxRange: 4500
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    sanctuary:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    end:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    spawn:
-      Enabled: false
-      MaxRange: 250
-      MinRange: 50
-      CenterX: 0
-      CenterZ: 132
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    general:
-      Enabled: true
-      MaxRange: 14000
-      MinRange: 1500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: false
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 54
-      maxY: 250
-    builders:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    run:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    skyblock:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    cave:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    acid:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    oneblock:
-      Enabled: false
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    wild:
-      Enabled: true
-      MaxRange: 2000
-      MinRange: 750
-      CenterX: 79
-      CenterZ: 48
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: true
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 40
-      maxY: 300
-    TmpYellowWinter:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    easter:
-      Enabled: true
-      MaxRange: 200
-      MinRange: 32
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    santa:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    thanksgiving:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    MHPWorld:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    legacy:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    valentine:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: 0
-      maxY: 256
-    jackper:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    pixelasia:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    vubbo:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    TmpLoveInTheAir:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    skygrid/bentobox:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    cave/bentobox:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    oneblock/bentobox:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    acid/bentobox:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    skyblock/bentobox:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    blozzom:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    olympus:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    rustic:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    chrome:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    parkour:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    halloween:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    owo:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    winter:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    autosorter:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    debug:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
-    summer:
-      Enabled: true
-      MaxRange: 1000
-      MinRange: 500
-      CenterX: 0
-      CenterZ: 0
-      Circle: false
-      IgnoreWater: true
-      IgnoreLava: true
-      IgnoreLeaves: false
-      ignorePowderSnow: false
-      ignoredMaterials: []
-      surfaceOnly: false
-      minY: -64
-      maxY: 320
   # How long force player to wait before using command again.
   Cooldown: 5
   # How many times to try find correct location for teleportation.
@@ -617,3 +8,986 @@ RandomTeleportation:
   ExcludedBiomes:
   - Ocean
   - Deep ocean
+  # If this set to true we will generate random teleport default settings for all detected worlds
+  # Setting to false will no longer generate world setups, but you can add them manually if needed
+  AutoGenerateWorlds: true
+  Worlds:
+    # World name to use this feature. Add another one with appropriate name to enable random teleportation
+    skygrid:
+      Enabled: false
+      # Amount of times we should try to find valid location. This is mostly directly correlates with amount of chunks we will check
+      # If set to 0 we will use default MaxTries set at the top of file
+      MaxTries: 0
+      Range:
+        # Max coordinate to teleport, setting to 1000, player can be teleported between -1000 and 1000 blocks between defined center location
+        # For example having centerX at 2000 and centerZ at 3000 while MaxRange is set to 1500 we will teleport player between x:500;z:1500 and x:3500;z:4500 coordinates
+        Max: 1000
+        # If maxcord set to 1000 and mincord to 500, then player can be teleported between -1000 to -500 and 1000 to 500 coordinates
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      # Shape of area player can be teleported into. If yuor map is square shaped then keep this at false
+      Circle: false
+      # With this option we will only attempt to teleport player on highest block and ignore any cave teleportations
+      # Exception when you have Ignore.Leaves set to true which will attempt to place player under the tree leaves if there is any empty space
+      SurfaceOnly: false
+      # When enabled player will be able to random teleport at specied world while being in another one
+      FromAnotherWorld: true
+      # When enabled player will be required to have (cmi.randomteleport.§f[worldname]§6) permission node to random teleport inside this world
+      RequireWorldPermission: false
+      YLimits:
+        # Location detection limitations on Y axis. If you want to minimize teleportations underground then you can set this value to 63
+        # Higher limitations might increase time needed to find valid one
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        # List of floor materials we should ignore when random teleporting
+        Materials: []
+        # List of biomes we should ignore when random teleporting
+        # Keeping it empty will include all of them
+        # If this is empty and ExcludedBiomes contains set biomes then we will use it
+        Biomes: []
+      # List of biomes we should look for when random teleporting
+      # If this contains biome names then we will ignore Ignore.Biomes section
+      PreferredBiomes: []
+    nether:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 4500
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    sanctuary:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    end:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    spawn:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 250
+        Min: 50
+      Center:
+        X: 0
+        Z: 132
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    general:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 14000
+        Min: 1500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 54
+        Max: 250
+      Ignore:
+        Water: true
+        Lava: false
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    builders:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    run:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    skyblock:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    cave:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    acid:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    oneblock:
+      Enabled: false
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    wild:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 2000
+        Min: 750
+      Center:
+        X: 79
+        Z: 48
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 40
+        Max: 300
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: true
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    TmpYellowWinter:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    easter:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 200
+        Min: 32
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    santa:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    thanksgiving:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    MHPWorld:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    legacy:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    valentine:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: 0
+        Max: 256
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    jackper:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    pixelasia:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    vubbo:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    TmpLoveInTheAir:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    skygrid/bentobox:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    cave/bentobox:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    oneblock/bentobox:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    acid/bentobox:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    skyblock/bentobox:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    blozzom:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    olympus:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    rustic:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    chrome:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    parkour:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    halloween:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    owo:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    winter:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    autosorter:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    debug:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []
+    summer:
+      Enabled: true
+      MaxTries: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: false
+        PowderSnow: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []

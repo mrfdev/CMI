@@ -41,6 +41,9 @@ FallingBlocks:
     - '&2[playerDisplayName] &7was squashed by a falling anvil'
     - '&2[playerDisplayName] &7was crushed by anvil'
     - '&2[playerDisplayName] &7hit anvil with his head'
+  Pointed_dripstone:
+    General:
+    - '&2[playerDisplayName] &7was skewered by a falling stalactite'
 Block:
   Cactus:
     General:

@@ -4,6 +4,10 @@ fossil456:
   Item:
     v: 3700
     type: BONE
+merielmuseum:
+  Location: wild;-2057.39;41.0;2851.5;-91.05;4.64
+  Page: 7
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 tempoz:
   Location: skygrid;1.44;129.0;5.65;-1.63;5.57
   Page: 7
@@ -508,6 +512,10 @@ werewolf:
   Item:
     v: 3700
     type: BOWL
+battleship:
+  Location: wild;-3069.7;65.0;2696.52;-89.9;31.35
+  Page: 8
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 castle:
   Location: sanctuary;-242.3;90.0;-1617.09;90.08;1.14
   Page: 7
@@ -761,6 +769,10 @@ redfox:
   Item:
     v: 3700
     type: PLAYER_HEAD
+AurynFactory:
+  Location: general;12693.54;69.0;16350.99;-88.95;10.74
+  Page: 7
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 end:
   Location: end;111.23;47.0;85.48;90.27;1.7
   DisName: '{#gold}/end'

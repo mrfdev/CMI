@@ -146,7 +146,7 @@ votifier: true
 playerCombat: true
 #  
 # Handles head drops system
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.16.x and up
 headDrop: true
 #  
 # Handles kit listener, mainly to give out new player kit
