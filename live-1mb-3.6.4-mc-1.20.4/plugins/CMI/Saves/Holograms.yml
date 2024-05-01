@@ -1,0 +1,1024 @@
+runtop:
+  Loc: run;-141.57;98.47;-72.73
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.2
+  Lines:
+  - 1MB /run Top 5 scores
+  - '{#Crusoe>}#1 %tntrun_leaderboard_wins_player_1% %tntrun_leaderboard_wins_score_1%{#Malachite<}'
+  - '{#Crusoe>}#2 %tntrun_leaderboard_wins_player_2% %tntrun_leaderboard_wins_score_2%{#Malachite<}'
+  - '{#Crusoe>}#3 %tntrun_leaderboard_wins_player_3% %tntrun_leaderboard_wins_score_3%{#Malachite<}'
+  - '{#Crusoe>}#4 %tntrun_leaderboard_wins_player_4% %tntrun_leaderboard_wins_score_4%{#Malachite<}'
+  - '{#Crusoe>}#5 %tntrun_leaderboard_wins_player_5% %tntrun_leaderboard_wins_score_5%{#Malachite<}'
+celebrationbarrel3:
+  Loc: general;5758.55;129.91;336.24
+  HoverParticles:
+    Count: 1
+  Range: 6
+  RangeExtra: 6
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+santavubbomaps:
+  Loc: santa;-143.5;230.62;-265.41
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Shadow: true
+    Yaw: 30
+    Pitch: -30
+    Double: true
+    BColor: '{#Deep_Fir}'
+    BAlpha: 255
+    ScaleW: 0.7
+    ScaleH: 0.7
+    SL: -1
+    BL: -1
+  Lines:
+  - '"I can no longer trade"'
+  - '- Vubbo'
+celebrationbarrel2:
+  Loc: general;894.43;67.95;543.41
+  HoverParticles:
+    Count: 1
+  Range: 6
+  RangeExtra: 8
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+yourfishstats:
+  Loc: general;11985.22;70.29;18933.53
+  Interval: 0.1
+  LOSInterval: 1.0
+  HoverParticles:
+    Count: 1
+  Range: 6
+  RangeExtra: 12
+  Spacing: 0.24
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Downriver}'
+    BAlpha: 125
+    ScaleW: 1.1
+    ScaleH: 1.1
+    SL: -1
+    BL: -1
+  BigButton: false
+  Lines:
+  - Personal stats
+  - '{#gold}Fishing level:{#orange} %pyrofishingpro_level%'
+  - '{#gold}Entropy balance:{#orange} %pyrofishingpro_entropy%'
+  - '{#gold}Current fishing xp:{#orange} %pyrofishingpro_currentxp%'
+  - '{#gold}Total fish caught:{#orange} %pyrofishingpro_totalfishcaught%'
+  - '{#gold}Total custom fish caught:{#orange} %pyrofishingpro_totalcustomcaught%'
+  - '{#gold}Crabs killed:{#orange} %pyrofishingpro_crabskilled%'
+  - '{#gold}Fish killed:{#orange} %pyrofishingpro_fishkilled%'
+  - '!nextpage!'
+  - '{#gold}Bronze fish caught:{#orange} %pyrofishingpro_bronzefishcaught%'
+  - '{#gold}Silver fish caught:{#orange} %pyrofishingpro_silverfishcaught%'
+  - '{#gold}Gold fish caught:{#orange} %pyrofishingpro_goldfishcaught%'
+  - '{#gold}Diamond fish caught:{#orange} %pyrofishingpro_diamondfishcaught%'
+  - '{#gold}Platinum fish caught:{#orange} %pyrofishingpro_platinumfishcaught%'
+  - '{#gold}Mythical fish caught:{#orange} %pyrofishingpro_mythicalfishcaught%'
+  - '!nextpage!'
+  - '{#gold}Required xp:{#orange} %pyrofishingpro_requiredxp%'
+  - '{#gold}Augments crafted in total:{#orange} %pyrofishingpro_augmentscrafted%'
+  - '{#gold}Tournaments won:{#orange} %pyrofishingpro_tournamentswon%'
+  - '{#gold}Longest fish from tournaments:{#orange} %pyrofishingpro_longestfish%'
+  - '{#gold}Money made from fishing:{#orange} %pyrofishingpro_moneymade%'
+  - '{#gold}Amount of fish gutted:{#orange} %pyrofishingpro_fishgutted%'
+  - '{#gold}Deliveries made:{#orange} %pyrofishingpro_deliveriesmade%'
+  - '{#gold}How many fish until next delivery:{#orange} %pyrofishingpro_fishtilldelivery%'
+  - '!nextpage!'
+  - '{#gold}Time until next tournament:{#orange} %pyrofishingpro_timetilltournament%'
+  - '{#gold}First place:{#orange} %pyrofishingpro_tournament_first_name%{#gold} (score:{#orange}
+    %pyrofishingpro_tournament_first_score%{#gold})'
+  - '{#gold}Second place:{#orange} %pyrofishingpro_tournament_second_name%{#gold}
+    (score:{#orange} %pyrofishingpro_tournament_second_score%{#gold})'
+  - '{#gold}Third place:{#orange} %pyrofishingpro_tournament_third_name%{#gold} (score:{#orange}
+    %pyrofishingpro_tournament_third_score%{#gold})'
+  - '{#gray}Shows data on the active tournament'
+easterspaw:
+  Loc: easter;30.93;103.12;-18.0
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Please read the books'
+  - '{#magenta}in the lectern to start.'
+  - 'Commands:'
+  - '{#gold}/easter'
+  - '{#gold}/egghunt'
+  - '{#gold}/egghunt fly'
+spawn_oneblock_topplayers:
+  Loc: oneblock;10423.25;82.62;-7999.6
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Shadow: true
+    Yaw: 90
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 200
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#orange}&l/%player_world% Top 8 Islands'
+  - '#1 {#gold}&l %Level_aoneblock_top_name_1% &r{#gold}with level:&l %Level_aoneblock_top_value_1%'
+  - '#2 {#gold}&l %Level_aoneblock_top_name_2% &r{#gold}with level: %Level_aoneblock_top_value_2%'
+  - '#3 {#gold}&l %Level_aoneblock_top_name_3% &r{#gold}with level: %Level_aoneblock_top_value_3%'
+  - '#4 {#gold}&l %Level_aoneblock_top_name_4% &r{#gold}with level: %Level_aoneblock_top_value_4%'
+  - '#5 {#gold}&l %Level_aoneblock_top_name_5% &r{#gold}with level: %Level_aoneblock_top_value_5%'
+  - '#6 {#gold}&l %Level_aoneblock_top_name_6% &r{#gold}with level: %Level_aoneblock_top_value_6%'
+  - '#7 {#gold}&l %Level_aoneblock_top_name_7% &r{#gold}with level: %Level_aoneblock_top_value_7%'
+  - '#8 {#gold}&l %Level_aoneblock_top_name_8% &r{#gold}with level: %Level_aoneblock_top_value_8%'
+santatalks:
+  Loc: santa;277.16;67.68;-66.45
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 32
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Shadow: true
+    Yaw: 90
+    Pitch: 15
+    Double: true
+    BColor: '{#1d3300}'
+    BAlpha: 255
+    ScaleW: 0.5
+    ScaleH: 0.5
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold} "Sorry %cmi_user_name%,'
+  - '{#gold} The advent is 24 days,'
+  - '{#yellow} and they have passed.'
+  - '{#yellow} Show floris your 24 giftbag collection'
+  - '&o'
+  - '{#orange} before 30th, for a bonus box'
+  - '&o'
+  - '{#red}- Santa'
+spawn_acid_topplayers:
+  Loc: acid;-385.47;61.75;391.53
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#orange}&l/%player_world% Top 5 Islands'
+  - '#1 {#gold}&l %Level_acidisland_top_name_1% &r{#gold}with level: %Level_acidisland_top_value_1%'
+  - '#2 {#gold}&l %Level_acidisland_top_name_2% &r{#gold}with level: %Level_acidisland_top_value_2%'
+  - '#3 {#gold}&l %Level_acidisland_top_name_3% &r{#gold}with level: %Level_acidisland_top_value_3%'
+  - '#4 {#gold}&l %Level_acidisland_top_name_4% &r{#gold}with level: %Level_acidisland_top_value_4%'
+  - '#5 {#gold}&l %Level_acidisland_top_name_5% &r{#gold}with level: %Level_acidisland_top_value_5%'
+celebrationbarrel6:
+  Loc: general;-14373.58;142.02;11673.48
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+celebrationbarrel5:
+  Loc: wild;84.4;59.81;47.59
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+Worth:
+  Loc: general;12551.44;80.25;-5341.47
+  Interval: 0.3
+  HoverParticles:
+    Count: 1
+  Range: 3
+  RangeExtra: 3
+  Spacing: 0.22
+  Interactable: true
+  Commands:
+  - asPlayer! cmi sell hand
+  Lines:
+  - '{#orange}%cmi_iteminhand_displayname% {#geyser}x %cmi_iteminhand_amount%'
+  - '{#orange}Worth:{#gold} %cmi_iteminhand_worth%'
+  - ICON:%iteminhand%
+celebrationbarrel4:
+  Loc: general;-19985.5;14.94;10000.45
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+halloweennpcchat3:
+  Loc: halloween;1677.9;74.84;640.84
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 180
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 125
+    ScaleW: 0.9
+    ScaleH: 0.9
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}I am Madam Nixxy!'
+  - '{#gold}What will your'
+  - '{#gold}future hold?'
+halloweennpcchat2:
+  Loc: halloween;1655.24;72.55;756.77
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 230
+    Shadow: true
+    Yaw: 330
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    ScaleW: 0.7
+    ScaleH: 0.7
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}Nice to see you in my store'
+  - '{#gold}Please look around, and'
+  - '{#gold}let me know if you need help!'
+halloweennpcchat1:
+  Loc: halloween;1672.41;72.8;715.29
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Shadow: true
+    Yaw: 10
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 30
+    ScaleW: 0.7
+    ScaleH: 0.8
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}Welcome to the Halloween'
+  - '{#gold}Bootastic Books Bookstore!'
+  - '{#gold}Feel free to check out'
+  - '{#gold}our spooky section!'
+eastercake:
+  Loc: easter;-120.5;55.62;276.89
+  HoverParticles:
+    Count: 1
+  Range: 64
+  RangeExtra: 64
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+    IScale: 7.03
+  Lines:
+  - ICON:CAKE
+halloweenholo2:
+  Loc: halloween;1474.37;69.54;489.97
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 225
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+    IScale: 10.09
+    IYaw: 330
+  Lines:
+  - ICON:pitcher_plant
+halloweenholo1:
+  Loc: halloween;1463.15;65.25;480.61
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 225
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+    IScale: 10.09
+  Lines:
+  - ICON:carved_pumpkin
+spawn_skygrid_topplayers:
+  Loc: skygrid;19.39;131.75;9.44
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#orange}&l/%player_world% Top 5 Islands'
+  - '#1 {#gold}&l %Level_skygrid_top_name_1% &r{#gold}with level: %Level_skygrid_top_value_1%'
+  - '#2 {#gold}&l %Level_skygrid_top_name_2% &r{#gold}with level: %Level_skygrid_top_value_2%'
+  - '#3 {#gold}&l %Level_skygrid_top_name_3% &r{#gold}with level: %Level_skygrid_top_value_3%'
+  - '#4 {#gold}&l %Level_skygrid_top_name_4% &r{#gold}with level: %Level_skygrid_top_value_4%'
+  - '#5 {#gold}&l %Level_skygrid_top_name_5% &r{#gold}with level: %Level_skygrid_top_value_5%'
+ajlbFishingTop:
+  Loc: wild;-3870.63;97.62;-4520.63
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - The /fish top level
+  - '%ajlb_lb_pyrofishingpro_level_1_alltime_name% %ajlb_lb_pyrofishingpro_level_1_alltime_value%'
+halloweennpcchat6:
+  Loc: halloween;1558.51;73.65;759.47
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 180
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 50
+    ScaleW: 0.8
+    ScaleH: 0.8
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}Under New'
+  - '{#gold}Management..'
+halloweennpcchat5:
+  Loc: halloween;1892.46;82.29;702.01
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 85
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}Enjoy your stay!'
+halloweenholo4:
+  Loc: halloween;1475.07;65.43;472.14
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 225
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+    IScale: 11.09
+  Lines:
+  - ICON:spawner
+halloweennpcchat4:
+  Loc: halloween;1885.0;82.85;704.31
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 90
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}Happy Halloween!'
+  - '{#gold}Book a room,'
+  - '{#gold}if you DARE!!'
+halloweenholo3:
+  Loc: halloween;1484.94;82.27;491.71
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 32
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 255
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+    IScale: 14.09
+    IPitch: 30
+    IYaw: 240
+  Lines:
+  - ICON:piglin_head
+spawn_skyblock_topplayers:
+  Loc: skyblock;50.48;135.75;27.52
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#orange}&l/%player_world% Top 8 Islands'
+  - '#1 {#gold}&l %Level_bskyblock_top_name_1% &r{#gold}with level: %Level_bskyblock_top_value_1%'
+  - '#2 {#gold}&l %Level_bskyblock_top_name_2% &r{#gold}with level: %Level_bskyblock_top_value_2%'
+  - '#3 {#gold}&l %Level_bskyblock_top_name_3% &r{#gold}with level: %Level_bskyblock_top_value_3%'
+  - '#4 {#gold}&l %Level_bskyblock_top_name_4% &r{#gold}with level: %Level_bskyblock_top_value_4%'
+  - '#5 {#gold}&l %Level_bskyblock_top_name_5% &r{#gold}with level: %Level_bskyblock_top_value_5%'
+  - '#6 {#gold}&l %Level_bskyblock_top_name_6% &r{#gold}with level: %Level_bskyblock_top_value_6%'
+  - '#7 {#gold}&l %Level_bskyblock_top_name_7% &r{#gold}with level: %Level_bskyblock_top_value_7%'
+  - '#8 {#gold}&l %Level_bskyblock_top_name_8% &r{#gold}with level: %Level_bskyblock_top_value_8%'
+  - '{#gray}Players in this list can: &l/expand skyblock'
+spawn_cave_topplayers:
+  Loc: cave;-124.66;55.95;301.39
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    ScaleW: 0.8
+    ScaleH: 0.8
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#orange}&l/%player_world% Top 8 Islands'
+  - '#1 {#gold}&l %Level_caveblock_top_name_1% &r{#gold}with level: %Level_caveblock_top_value_1%'
+  - '#2 {#gold}&l %Level_caveblock_top_name_2% &r{#gold}with level: %Level_caveblock_top_value_2%'
+  - '#3 {#gold}&l %Level_caveblock_top_name_3% &r{#gold}with level: %Level_caveblock_top_value_3%'
+  - '#4 {#gold}&l %Level_caveblock_top_name_4% &r{#gold}with level: %Level_caveblock_top_value_4%'
+  - '#5 {#gold}&l %Level_caveblock_top_name_5% &r{#gold}with level: %Level_caveblock_top_value_5%'
+  - '#6 {#gold}&l %Level_caveblock_top_name_6% &r{#gold}with level: %Level_caveblock_top_value_6%'
+  - '#7 {#gold}&l %Level_caveblock_top_name_7% &r{#gold}with level: %Level_caveblock_top_value_7%'
+  - '#8 {#gold}&l %Level_caveblock_top_name_8% &r{#gold}with level: %Level_caveblock_top_value_8%'
+halloweenghosthunt:
+  Loc: halloween;1483.66;76.7;493.54
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}&lJoin the Ghost Hunt!'
+  - Right-click alll the pumpkin chests
+  - on chains (like this one) to collect
+  - all of the 50 ghosts, and
+  - you get extra loot!
+santasworkshopsign:
+  Loc: santa;212.04;77.81;-72.03
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 56
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 255
+    Shadow: true
+    Yaw: 90
+    Pitch: 10
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 255
+    ScaleW: 6.09
+    ScaleH: 6.09
+    SL: -1
+    BL: -1
+    IScale: 2.1
+    IPitch: 20
+  Lines:
+  - '{#red>}Santa''s Workshop{#orange<}'
+  - '&o'
+  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIxYjZhNmMwNTQzMTg3NTc5YmU4N2E5ODRjZWE5OGU4ODhmOWU2MDdjZTA4Y2I5NjU2NjJhZWFlNzMyNGE2OSJ9fX0=
+  - '&o'
+newspawnmenu2:
+  Loc: builders;655.27;67.62;-646.79
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#orange}&lServer Menu <3'
+  - menu item 1
+  - menu item 2
+  - menu item 3
+halloweenplayerface:
+  Loc: halloween;1491.42;77.01;503.38
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU5NTVjM2MyZGNiYjZmYzY2NDdmZDVkMTFlMDNmYTI2OTgwMTI2ZmY1NTEwZDZiYjNiOWY3ODY3MWY1ODQwNyJ9fX0=
+  - 'Ghost tracker for: &l %cmi_user_name%'
+  - Ghosts found:{#orange} %ghostscavengerhunt_player_found% / 50
+  - '&7"pumpkin chests on chains ghosts"'
+newspawnmenu1#<:
+  Loc: builders;646.25;66.77;-646.21
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Interactable: true
+  Lines:
+  - <T>§6Prev </T><H>§6Prev </H><C>cmi hologrampages newspawnmenu1 [playerName] prev</C>
+newspawnmenu1#>:
+  Loc: builders;645.25;66.77;-646.21
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Interactable: true
+  Lines:
+  - <T>§6 Next</T><H>§6 Next</H><C>cmi hologrampages newspawnmenu1 [playerName] next</C>
+newspawnmenu1:
+  Loc: builders;645.75;67.62;-646.71
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Interactable: true
+  Lines:
+  - <T>{#orange}&lNew Player?</T><H>{#orange}Left-click to select</H>
+  - <T>{#geyser}Read &l/rules</T><H>{#gold}Read &l/rules</H><C>asConsole! cmi ctext
+    rules [playerName]</C>
+  - <T>{#geyser}Read welcome book</T><H>{#gold}Read welcome book</H><C>asConsole!
+    cmi ctext gamemodes [playerName]</C>
+  - '!nextpage!'
+  - <T>{#geyser}Read &l/newplayer{#geyser} info</T><H>{#gold}Read &l/newplayer{#gold}
+    info</H><C>asConsole! cmi ctext newplayer [playerName]</C>
+  - <T>{#geyser}Pick a &l/gametype{#geyser} to start..</T><H>{#gold}Pick a &l/gametype{#gold}
+    to start..</H><C>asConsole! cmi ctext gametype [playerName]</C>
+valentinekits:
+  Loc: valentine;692.19;72.12;88.48
+  HoverParticles:
+    Effect: HEART
+    Spacing: 0.5
+    Count: 1
+    ExtraWidth: 0.3
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 255
+    Shadow: true
+    Yaw: 90
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 195
+    SL: -1
+    BL: -1
+  Commands:
+  - asPlayer! kits
+  Lines:
+  - '{#magenta}&l /kits'
+  - '{#gray}---^ Right-click ^---'
+adminstats:
+  Loc: general;-259.26;85.1;193.71
+  HoverParticles:
+    Effect: CRIMSON_SPORE
+    Spacing: 0.1
+    Count: 1
+    ExtraWidth: -0.2
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 255
+    Shadow: true
+    Yaw: 325
+    Pitch: -45
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 255
+    ScaleW: 1.2
+    ScaleH: 1.2
+    SL: -1
+    BL: -1
+  RequiresPermission: true
+  Commands:
+  - asPlayer! tps
+  - delay! 0.6
+  - asPlayer! cmi tps
+  Lines:
+  - 'Players online: {#yellow}%cmi_server_online%&r / Uptime: %cmi_server_uptime%'
+  - 'TPS: %cmi_tps_1_colored% &r/ %cmi_tps_60_colored% &r/ %cmi_tps_300_colored%'
+yourfishstats#>:
+  Loc: general;11985.0;67.75;18934.13
+  LOSInterval: 1.0
+  HoverParticles:
+    Count: 1
+  Range: 6
+  RangeExtra: 12
+  Spacing: 0.24
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+  BigButton: false
+  Lines:
+  - <T>{#yellow}More stats!</T><H>&6Click for next page</H><C>cmi hologrampages yourfishstats
+    [playerName] next</C>
+eastercakeshulker:
+  Loc: easter;-120.5;56.91;293.5
+  HoverParticles:
+    Count: 1
+  Range: 16
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 255
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 135
+    ScaleW: 1.4
+    ScaleH: 1.4
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#0085e6>}Team Bo{#caribbeangreen<>}x Spring 2024{#gold<}'
+ShopsCommunityChest01:
+  Loc: general;12536.04;79.31;-5361.43
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#Lima}&lCommunity Chest'
+  - '{#gray}(free to take from)'
+summerthankyou:
+  Loc: summer;108.51;79.73;-60.27
+  HoverParticles:
+    Count: 1
+  Range: 11
+  RangeExtra: 32
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 155
+    SL: -1
+    BL: -1
+    IScale: 2.5
+  Lines:
+  - ICON:CHERRY_SAPLING
+  - '&r'
+  - '&r'
+  - '&r &r {#darkgreen>}THANK YOU BUILDERS!!!!!!!!{#buttercup<} &r &r'
+  - '&r'
+fish:
+  Loc: general;11965.58;66.62;18947.7
+  LOSInterval: 1.0
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#gold>} Tournaments are coming back soon!! I PWOMIWESEs {#orange<}'
+halloweennpcchat69:
+  Loc: halloween;1460.9;66.65;478.24
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 230
+    Shadow: true
+    Yaw: 35
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 125
+    ScaleW: 0.7
+    ScaleH: 0.7
+    SL: -1
+    BL: -1
+  Lines:
+  - '{#gold}"Don''t forget to {#orange}&l/vote{#gold} today'
+  - '{#gold}on findmcserver for 1MB"'
+  - '- stifflered'
+spawnplaytimetop:
+  Loc: spawn;25.51;65.81;130.16
+  Interval: 60.0
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 230
+    Shadow: true
+    Yaw: 90
+    Pitch: 0
+    Double: false
+    BColor: '{#Black}'
+    BAlpha: 125
+    SL: -1
+    BL: -1
+  Commands:
+  - asPlayer! playtime
+  Lines:
+  - '{#orange}Players with most /playtime'
+  - '1 - %cmi_playtimetop_name_1% : %cmi_playtimetop_time_1%'
+  - '2 - %cmi_playtimetop_name_2% : %cmi_playtimetop_time_2%'
+  - '3 - %cmi_playtimetop_name_3% : %cmi_playtimetop_time_3%'
+  - '4 - %cmi_playtimetop_name_4% : %cmi_playtimetop_time_4%'
+  - '5 - %cmi_playtimetop_name_5% : %cmi_playtimetop_time_5%'
+  - '6 - %cmi_playtimetop_name_6% : %cmi_playtimetop_time_6%'
+  - '7 - %cmi_playtimetop_name_7% : %cmi_playtimetop_time_7%'
+  - '8 - %cmi_playtimetop_name_8% : %cmi_playtimetop_time_8%'
+  - (right-click to see your /playtime)
+santareadbook:
+  Loc: santa;-15.47;157.05;97.3
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 0
+    Pitch: 0
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 0
+    SL: -1
+    BL: -1
+    IScale: 3.1
+  Lines:
+  - ICON:writable_book
+celebrationbarrel:
+  Loc: general;13661.61;81.62;4040.48
+  HoverParticles:
+    Count: 1
+  Range: 8
+  RangeExtra: 16
+  Spacing: 0.24
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+spawngroup:
+  Loc: spawn;0.51;66.48;156.86
+  HoverParticles:
+    Effect: HAPPY_VILLAGER
+    Spacing: 1.0
+    Count: 1
+    ExtraHeight: 0.2
+    ExtraWidth: 0.2
+    OffsetY: -0.2
+  Range: 6
+  RangeExtra: 12
+  Spacing: 0.24
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: false
+    Bill: FIXED
+    Align: CENTER
+    TAlpha: 230
+    Shadow: true
+    Yaw: 180
+    Pitch: 0
+    Double: true
+    BColor: '{#Turtle_Green}'
+    BAlpha: 230
+    ScaleW: 1.2
+    ScaleH: 1.2
+    SL: -1
+    BL: -1
+  Commands:
+  - asPlayer! groups
+  Lines:
+  - Hey %cmi_user_name% :)
+  - ICON:head:%cmi_user_name%
+  - 'Your current group:'
+  - '&l %luckperms_primary_group_name% &r'
+  - '{#gray}(right-click for info)'

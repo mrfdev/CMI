@@ -1,0 +1,16 @@
+<AutoPage>
+This page should link to the individual files
+
+customText/
+
+cmi_index.txt
+ -> cmi_placeholders.txt
+ -> cmi_specializedcmds.txt
+ -> cmi_variables.txt
+ -> cmi_eventcmds.txt
+ -> cmi_whatever.txt
+ -> cmi_mvdw.txt
+
+Example code:
+<T> * Placeholders ... </T><H>Click to load</H><CCI>cmi ctext cmi_placeholders [playerName] 1</CCI>
+<T> * Specialized Commands ... </T><H>Click to load</H><CCI>cmi ctext cmi_placeholders [playerName] 1</CCI>

@@ -1,0 +1,167 @@
+<AutoPage>
+This book will act like a 'quick' in-game guide for the basics of 1MB PyroFishing. 
+
+Written by: Nebih
+
+There is also a really good thread that I took inspiration from, you should read it too!
+
+/fish info
+<NextPage>
+Quick Command Guide:
+/fish sell (Sell fish)
+/fish bag (Store fish)
+/fish gut (Extract Entropy from fish)
+/fish deliveries (Bonus entropy & items) 
+/fish augment (For adding augments to rod)
+/fish augments (Special augments and their crafting ingredients)
+<NextPage>
+Let's start with the basics.
+
+'/fish menu' will load the 1MB Fishing Menu with quick & easy access to the rest of the previously mentioned commands.
+
+'/fish codex' shows a description of every special fish
+<NextPage>
+'/fish sell' Here you can sell fish for money. 
+
+Raw Fish* - $10
+Bronze - $100
+Silver - $550
+Gold - $1,500
+Diamond - $5,000
+Platinum - $10,000
+Mythical - $25,000
+
+*Pufferfish, Raw Cod /
+Salmon, Tropical Fish
+<NextPage>
+This menu will also show the "Special Fish" which can be sold for 1.5x it's base price. This changes every 6 hours.
+
+'/fish scales' allows you to weigh your fish to increase profits. You can select different risk levels for even higher returns.
+<NextPage>
+"What is Entropy?"
+
+Entropy is the main custom currency used by the fish plugin. It's what's used when upgrading delivery upgrades, totem upgrades, or crafting augments.
+
+You can earn Entropy from fishing, gutting, and doing deliveries.
+<NextPage>
+"How much Entropy do I get per catch?"
+
+You get the same amount of base xp & base entropy when catching special fish:
+
+Bronze - 30
+Silver - 60
+Gold - 100
+Diamond - 200
+Platinum - 550
+Mythical - 750
+<NextPage>
+Party Fishing:
+~~~~~~~~~~
+You can also gain more entropy and xp by fishing within 30 blocks of other players.
+
+*To get the full buff, 4 players are required*
+
+[Fun Fact: You can Shift-Click your rod to open the '/fish menu']
+<NextPage>
+"What are the odds of catching a higher tier fish?"
+
+Here's what the base odds are for each fish type:
+
+Bronze - 60%
+Silver - 15%
+Gold - 5%
+Diamond - 1%
+Platinum - 0.2%
+Mythical - 0.04%
+<NextPage>
+'/fish deliveries' ??? 
+~~~~~~~~~~~  
+Deliveries are earned every 180 custom fish caught. 
+Example Delivery: 
+- 20x Bass; You must have 20x Bass in your inventory before starting the delivery. 
+
+Once the timer runs out, you click again to claim the reward!
+<NextPage>
+"How does Augment crafting work?"
+
+- First, you need a Cauldron with water, and the exact amount of items required for the augment being crafted (including entropy and /fish lvl!)
+Throw all the items into the cauldron, and Shift-Click with your fishing rod.
+<NextPage>
+- Crabs have a 4% base chance of being fished up and 20% chance of dropping a claw/scale when killed. 
+
+- Dolphins have a 70% chance to drop a dolphin tail when killed.
+
+- Squid have a 10% chance to drop a squid tentacle when killed.
+<NextPage>
+Hot Spot - Gives you a
+~~~~~~chance to get more than one fish per catch.
+- Fishing lvl: 10
+- Entropy: 50,000
+- Max lvl: 13 (32%)
+
+Saturate - Randomly ~~~~~~ replenishes hunger when fishing.
+- Fishing lvl: 12
+- Entropy: 35,000
+- Max lvl: 5 (50%)
+<NextPage>
+Sage - Boosts the ~~~~ 1MB PyroFishing XP gained per catch.
+- Fishing lvl: 12
+- Entropy: 57,500
+- Max lvl: 10 (1.425x)
+
+Call of the Storm -  ~~~~~~~~~~~~ Rain boosts chance to get more fish per catch.
+- Fishing lvl: 12 
+- Entropy: 60,000
+- Max lvl: 3 (50%)
+<NextPage>
+Biome Disruption -  ~~~~~~~~~~~~Catch fish from any biome with a % chance.
+- Fishing lvl: 16
+- Entropy: 60,000
+- Max lvl: 3 (60%)
+
+Precision Cutting - Get ~~~~~~~~~~~~moreentropy from gutting.
+- Fishing lvl: 22
+- Entropy: 70,000
+- Max lvl: 8 (70%)
+<NextPage>
+Crab Bait - Increases
+~~~~~~~ chance to fish up a crab.
+- Fishing lvl: 25
+- Entropy: 40,000
+- Max lvl: 5 (1.5x)
+
+Perception - Gives
+~~~~~~~~ you more entropy from catching custom fish.
+- Fishing lvl: 28
+- Entropy: 75,000
+- Max lvl: 7 (1.4x)
+<NextPage>
+Trophy - Gives you a ~~~~~ higher chance to profit from fish scales.
+- Fishing lvl: 35
+- Entropy: 60,000
+- Max lvl: 6 (+18%)
+
+Solar Rage - Boosts ~~~~~~~~ money from selling fish.
+- Fishing lvl: 35
+- Entropy: 75,000
+- Max lvl: 5 (+25%)
+<NextPage>
+Master Fisherman - ~~~~~~~~~~~~~ Gives you a higher chance to catch higher tier fish. More like a prestigious token than anything.
+- Fishing lvl: 45
+- Entropy: 120,000
+- Max lvl: 20 (200%)
+<NextPage>
+Again, '/fish info' will have a lot of good info about this too, but this should be enough to get you started until you feel comfortable trying other things in the '/fish menu' 
+
+You can also ask in chat, maybe someone online knows the answer! Best of luck!
+<NextPage>
+...and Happy Fishing :) 
+
+P.S. Here's some bonus info I gathered:
+
+SnowGlobe randomly creates globes of snow that when fished in will give the player more entropy and fishing xp. Higher the lvl, higher the bonus.
+Works for those who fish inside of radius.
+<NextPage>
+page21?
+<NextPage>
+page22?

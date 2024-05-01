@@ -1,0 +1,84 @@
+<AutoPage>
+{#deepbronze}First time players:&r
+1MB &lNew
+
+{#deepbronze}Returning players:&r
+1MB &lPlayer
+
+{#deepbronze}Regular players:&r
+1MB &lMember
+
+{#deepbronze}Boosted members:&r
+1MB &lBoosted
+
+{#deepbronze}Builders:&r
+1MB &lBuilders
+<NextPage>
+Hello &l%cmi_user_name%&r,
+your group right now is:&l %luckperms_primary_group_name%&r
+
+On the 1MB server everybody starts at the '1MB New' group.
+
+After someone keeps returning and building up some playtime, they get upgraded to the 1MB Player group.
+<NextPage>
+All YOU have to do is have fun playing. If you like the server and keep returning, become a regular, play fair, and simply have fun on the server. We will probably notice you and upgrade you at some point.
+
+But wait, there's more!
+<NextPage>
+1MB Members have a few more perms over 1MB Players, all higher groups have.
+
+For example, you get more /market slots, and more /homes, and maybe you can buy more /spawners types, and all sorts of little things. 
+<NextPage>
+And if you're building pretty great, have filled up all your home slots, have quite a bit of playtime, and have no infractions on your /account, you can request to become a Boosted member. You will then get upgraded to the group 1MB Boosted.
+<NextPage>
+And to be honest, if your builds stand out, your a smile in the community, hang around almost on the daily, and have contributed to the server with saying hi to new members, or inviting a friend, or maybe helped build some warp things. You can get a special upgrade........
+<NextPage>
+1MB Boosted Members can get invited once in a while to join the special 1MB Builders group. 
+
+This gives you creative access in /builders where you can get loads of /plot to show off your skills. Some might end up in events, spawn, etc. 
+<NextPage>
+From 1MB Builders the long term builders can request to become Rogue players. They are like a Boosted Builder. Giving you a few more builder friendly tools to make your daily creativity even more fun.
+
+And those are all the free groups, basically.
+<NextPage>
+There are of course special groups like Team members have. Such as 1MB Helper, or 1MB Admin. 
+
+Maybe don't ask to be staff, but, keep an eye on our /discord announcement channel. You might just be who we're looking for. 
+<NextPage>
+Other special groups are the very old legacy players like the 1MB Legendary group. Nobody can enter this group. It's reserved for those who were friends and actively played in 2011/2012, maybe moons ago. 
+
+There's also 1MB EPIC .. but that's not free.
+<NextPage>
+Talking about not-free groups.
+
+Those who want to show their <3 love <3 for the server can gift any amount over a dollar or euro. 
+But those who gifts 35 or more get moved into the 1MB Patron group. 
+<NextPage>
+And if you are in the 1MB Patron group and you gift any amount over a dollar or euro again, you get upgraded to 1MB MVP.
+
+I also mentioned the Epic group. This is 'i show my love' group and access is very limited. We unlock slots once in a rare while. And it ain't cheap.
+<NextPage>
+Okay, we're not after your money, don't worry. We have the groups because once in a while someone who has played for years really want to say thank you and give a personal gift in the form of a PayPal transfer. 
+
+But let's summerize!
+<NextPage>
+{#deepbronze}First time players:&r
+1MB &lNew
+
+{#deepbronze}Returning players:&r
+1MB &lPlayer
+
+{#deepbronze}Regular players:&r
+1MB &lMember
+
+{#deepbronze}Boosted members:&r
+1MB &lBoosted
+
+{#deepbronze}Builders:&r
+1MB &lBuilders
+<NextPage>
+Oh, before I go, THANK YOU for reading all of this. I know it's overwhelming. Questions? Just ask staff! And on our server, ranks, groups, roles, are all kinda the same thing.
+<NextPage>
+You can find more info, and discuss it, on our forums here:
+
+https://omgboards.com/threads/260941/

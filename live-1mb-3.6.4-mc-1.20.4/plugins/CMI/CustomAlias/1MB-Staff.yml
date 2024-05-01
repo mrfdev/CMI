@@ -1,0 +1,283 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+#
+# 1MoreBlock.com (mainly) staff only commands, version 2.1.0, build 007
+
+CustomAlias:
+  maintenance:
+    Cmds:
+    - statement:start! check:%cmi_maintenance_state%==False! check:$1==true!
+    - if:start! cmi sound block_note_block_bell -p:0.6 -all -s
+    - if:start! broadcast! &r\n{#orange} During maintenance mode players can remain
+      in-game, but they cannot join the game.
+    - if:start! check:$2==true! broadcast! &r\n{#orange} In a few minutes we are also
+      restarting, do not panic, you can keep playing until then.&r\n&r
+    - if:start! check:$2!=true! broadcast! &r\n{#orange} Do not panic, we will not
+      be restarting.&r\n&r
+    - if:start! check:$2==true|false! cmi maintenance $1 {#orange}Maintenance mode
+      {#gold}$3-
+    - if:start! check:$2!=true|false! cmi maintenance $1 {#orange}Maintenance mode
+      {#gold}$2-
+    - if:start! cmi sound block_note_block_bell -p:0.7 -all -s
+    - statement:stop! check:%cmi_maintenance_state%==True! check:$1==false!
+    - if:stop! cmi sound block_note_block_bell -p:0.6 -all -s
+    - if:stop! broadcast! &r\n {#orange} Back from maintenance. Thank you for your
+      patience. \n&r
+    - if:stop! cmi maintenance $1
+    - if:stop! cmi sound block_note_block_bell -p:0.7 -all -s
+    Perm: true
+    CustomTabs:
+    - false,true
+    - false,true
+  _donation:
+    Cmds:
+    - asConsole! cmi toast all -t:goal -icon:diamond_block New Patron $1 in our community
+    - cmi sound ui_toast_challenge_complete -all
+    - broadcast! {#cerulean}[PayPal] {#orange}Patron Support received from $1 - Thanks!
+      And welcome to the 1MB Patron group.
+    Perm: true
+  _soulbind:
+    Cmds:
+    - asConsole! lp user $1 permission settemp itemsoulbind.bind true 2s replace
+    - delay! 0.2
+    - ptarget:$1! asPlayer! binditem
+    - asConsole! lp user $1 permission unsettemp itemsoulbind.bind
+    Perm: true
+    Tab: false
+  _soulcheck:
+    Cmds:
+    - 'asConsole! cmi msg $1 debug: %cmi_iteminhand_type%'
+    - 'asConsole! cmi msg $1 !&3 1MB Soul » &bIf your item is eligible for soul binding,
+      we will give it a go. If nothing happens, read: /soulbind'
+    - check:%cmi_iteminhand_type%==DIAMOND_PICKAXE! asConsole! _soulbind $1
+    Perm: true
+    Tab: false
+  _paste:
+    Cmds:
+    - msg! [playerName] debug0 - start
+    - schem load testthings%cmi_random_1_5%
+    - delay! 1
+    - msg! [playerName] debug1 - flipping
+    - asPlayer! /flip
+    - delay! 1
+    - msg! [playerName] debug2 - pasting
+    - asPlayer! /paste -sea
+    - delay! 1
+    - msg! [playerName] debug3 - expanding
+    - asPlayer! /expand vert
+    - msg! [playerName] debug4 - done
+    - asPlayer! region define pasteStick-%cmi_user_name%-%player_world%-x%player_x%-y%player_y%-z%player_z%-%server_time_yyyy-dd-M-HHmmss%
+      %cmi_user_name%
+    Perm: true
+  _helper:
+    Cmds:
+    - msg! $2 o---- $3- -----o
+    Perm: true
+    Tab: false
+  _playtime:
+    Cmds:
+    - 'check:$1==null! msg! [playerName] {#red}Syntax: /$0 <player>'
+    - 'check:$1!=null! ifoffline:$1! msg! [playerName] {#red}Error: $1 not found.'
+    - 'check:$1!=null! ifonline:$1! msg! [playerName] {#gold}\n\n\n\n&lPLAYTIME STATS:'
+    - 'check:$1!=null! ifonline:$1! msg! [playerName] {#gold} \nPlayers with most
+      playtime:'
+    - check:$1!=null! ifonline:$1! msg! [playerName] {#gold} %cmi_playtimetop_name_1%
+      - %cmi_playtimetop_time_1%
+    - check:$1!=null! ifonline:$1! msg! [playerName] {#gold} %cmi_playtimetop_name_2%
+      - %cmi_playtimetop_time_2%
+    - check:$1!=null! ifonline:$1! msg! [playerName] {#gold} %cmi_playtimetop_name_3%
+      - %cmi_playtimetop_time_3%
+    - 'check:$1!=null! ifonline:$1! msg! [playerName] {#gold} \nPlaytime statistics
+      for $1:'
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_formatted%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_days%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_dayst%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_hours%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_hoursf%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_hourst%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_minutes%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_minutest%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_seconds%
+    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_secondst%
+    Perm: true
+    CustomTabs:
+    - '[playername]'
+  eventgive:
+    Cmds:
+    - asConsole! aach give yourAch1 $1-
+    Perm: true
+  profile:
+    Cmds:
+    - cmi pos $1-
+    - cmi playtime $1-
+    - cmi seen $1-
+    - cmi info $1-
+    - cmi whowas $1-
+    - cmi stats $1-
+    - cmi ping $1-
+    - cmi checkaccount $1-
+    Perm: true
+  hide:
+    Cmds:
+    - asConsole! cmi vanish [playerName] on
+    - asConsole! cmi gm [playerName] spectator -s
+    Perm: true
+  startfun:
+    Cmds:
+    - tryme amode
+    Perm: true
+  lightningbolts:
+    Cmds:
+    - lightning
+    - lightning
+    - delay! 1
+    - lightning
+    - delay! 1
+    - lightning
+    - lightning
+    - delay! 2
+    - lightning
+    - lightning
+    - delay! 3
+    - lightning
+    - delay! 1
+    - lightning
+    - lightning
+    - lightning
+    Perm: true
+  boostjobs:
+    Cmds:
+    - asConsole! jobs boost all all $1
+    - 'asConsole! cmi broadcast !&b[Boosters!]&6 /jobs Exp/Money/Points BOOST enabled,
+      rate: $1 x'
+    - asConsole! cmi sound entity_mule_chest -p:0.1 -v:0.9 -all -s
+    - asConsole! cmi sound entity_mule_chest -p:0.5 -v:0.9 -all -s
+    - asConsole! cmi sound entity_mule_chest -p:0.9 -v:0.9 -all -s
+    Perm: true
+  croc:
+    Cmds:
+    - cmi spawnmob evoker_fangs
+    Perm: true
+  unhide:
+    Cmds:
+    - check:$2==null! asConsole! cmi usermeta [playerName] add unhidePlayer [playerName]
+      -s
+    - check:$2!=null! asConsole! cmi usermeta [playerName] add unhidePlayer $2 -s
+    - check:$1==null! asConsole! cmi usermeta [playerName] add unhideGamemode creative
+      -s
+    - check:$1!=null! asConsole! cmi usermeta [playerName] add unhideGamemode $1 -s
+    - asConsole! cmi vanish %cmi_user_meta_unhidePlayer% off
+    - asConsole! cmi gm %cmi_user_meta_unhidePlayer% %cmi_user_meta_unhideGamemode%
+      -s
+    - check:%cmi_user_meta_unhideGamemode%==survival! asConsole! cmi god %cmi_user_meta_unhidePlayer%
+      false -s
+    - check:%cmi_user_meta_unhideGamemode%==creative! asConsole! cmi god %cmi_user_meta_unhidePlayer%
+      true -s
+    - check:%cmi_user_meta_unhideGamemode%==survival! asConsole! cmi fly %cmi_user_meta_unhidePlayer%
+      false -s
+    - check:%cmi_user_meta_unhideGamemode%==creative! asConsole! cmi fly %cmi_user_meta_unhidePlayer%
+      true -s
+    - asConsole! cmi heal %cmi_user_meta_unhidePlayer% 100% -s
+    - asConsole! cmi effect %cmi_user_meta_unhidePlayer% clear -s
+    - msg! [playerName] {#gold} ± Made %cmi_user_meta_unhidePlayer% visible (%cmi_user_meta_unhideGamemode%)
+    Perm: true
+    CustomTabs:
+    - survival,creative [allPlayername]
+  recalc:
+    Cmds:
+    - asConsole! skyblockadmin limits calc $1
+    - msg! [playerName] Attempted to recalculate skyblock island level for $1, it
+      probably worked.
+    Perm: true
+  alvls:
+    Cmds:
+    - check:$1==null! asConsole! _syntax [playerName] $0 <player>
+    - check:$1!=null! asConsole! addlevels $1 excavation 2
+    - check:$1!=null! asConsole! addlevels $1 fishing 1
+    - check:$1!=null! asConsole! addlevels $1 herbalism 2
+    - check:$1!=null! asConsole! addlevels $1 mining 3
+    - check:$1!=null! asConsole! addlevels $1 woodcutting 1
+    - check:$1!=null! asConsole! addlevels $1 archery 1
+    - check:$1!=null! asConsole! addlevels $1 axes 2
+    - check:$1!=null! asConsole! addlevels $1 swords 2
+    - check:$1!=null! asConsole! addlevels $1 taming 1
+    - check:$1!=null! asConsole! addlevels $1 unarmed 1
+    - check:$1!=null! asConsole! addlevels $1 acrobatics 1
+    - check:$1!=null! asConsole! addlevels $1 alchemy 1
+    - check:$1!=null! asConsole! addlevels $1 repair 2
+    - check:$1!=null! asConsole! addlevels $1 crossbows 1
+    Perm: true
+  creative:
+    Cmds:
+    - cmi gm creative $1
+    Perm: true
+  survival:
+    Cmds:
+    - statement:check1! check:$1==null!
+    - if:check1! asConsole! cmi gm survival [playerName]
+    - if:check1! asConsole! cmi god [playerName] false -s
+    - if:check1! asConsole! cmi fly [playerName] false -s
+    - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi gm survival $1
+    - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi god $1 false -s
+    - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi fly $1 false -s
+    - if:check1@! perm:cmi.chatgroup.14@! msg! [playerName] {#orange}You can only
+      change your own gamemode.
+    Perm: true
+    CustomTabs:
+    - '[playername]'
+  adventure:
+    Cmds:
+    - cmi gm adventure $1
+    Perm: true
+  spectator:
+    Cmds:
+    - cmi gm spectator $1
+    Perm: true
+  letmeglow:
+    Cmds:
+    - asConsole! cmi glow [playerName] red
+    - delay! 3
+    - asConsole! cmi glow [playerName] green
+    - delay! 3
+    - asConsole! cmi glow [playerName] blue
+    - delay! 3
+    - asConsole! cmi glow [playerName] yellow
+    - delay! 3
+    - asConsole! cmi glow [playerName] pink
+    - delay! 3
+    - asConsole! cmi glow [playerName] orange
+    Perm: true
+  spec:
+    Cmds:
+    - asConsole! cmi gm [playerName] spectator
+    Perm: true
+  soulbind confirm:
+    Cmds:
+    - msg! [playerName] &e hi
+    Perm: true
+    Tab: false
+  clearchat:
+    Cmds:
+    - asConsole! cmi sound block_anvil_land -all
+    - asPlayer! cmi clearchat
+    - asConsole! cmi broadcast !&r \n {#orange}-----------------------------------
+      \n &r
+    - asConsole! cmi broadcast !{#cerulean} •&l&m &r{#cerulean}• {#feijoa}The chat
+      has been cleared {#cerulean} •&l&m &r{#cerulean}•
+    - broadcast! &r \n {#orange}----------------------------------- \n &r
+    Perm: true

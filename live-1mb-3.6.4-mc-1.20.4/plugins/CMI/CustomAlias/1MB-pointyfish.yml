@@ -1,0 +1,16 @@
+# 1MoreBlock.com PyroFishingPro Custom Pointy Fish
+# version 0.3.2, build 016 - Floris Fiedeldij Dop
+
+CustomAlias:
+  _pointyfishes:
+    Cmds:
+    - asConsole! cmi ctellraw $1 <T>{#Lochmara} 🐠 {#gray}-{#Feijoa} You ate this
+      $3 Pointy Fish for &a+$2 {#orange}&l/points{#gray} ⇱&r</T><H>Click to open points
+      shop</H><C>points</C>
+    - asConsole! pyrowelcomespro:pyrowelcomespro add $1 $2 -s
+    - asConsole! cmi panimation circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - asConsole! cmi feed $1 -s
+    - asConsole! cmi sound block_amethyst_cluster_step $1 -s
+    - asConsole! cmi titlemsg $1 {#Cerulean} 🐠 &r\n{#gold}&a&l+$2 &a/points&3 received
+    Perm: true
+    Tab: false
