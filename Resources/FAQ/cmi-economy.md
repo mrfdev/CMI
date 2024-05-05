@@ -76,7 +76,7 @@ This article also has a video available. <https://youtu.be/zX_ddc24Mso>
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI can handle Economy
 
 - Download and Install CMI's Vault build (<https://www.zrips.net/wp-content/uploads/2020/07/Vault-1.7.3.jar>)
-- Note: If you wish to use the original Vault build, then please get the CMI Economy Injector (.jar) <https://www.zrips.net/wp-content/uploads/2020/07/CMIEInjector1.0.2.3.jar>)
+- Note: If you wish to use the original Vault build, then please get the CMI Economy Injector (.jar) <https://www.zrips.net/wp-content/uploads/2024/03/CMIEInjector1.0.2.4.jar>)
 - Update the `config.yml` (see below)
 -
 ```yaml
