@@ -153,6 +153,6 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **0.9.2 build 102** (May 1st, 2024), for live-1mb-3.6.4-mc-1.20.4
+1MB CMI Project version **0.9.3 build 103** (May 6th, 2024), for live-1mb-3.6.4-mc-1.20.4
 
-**TLDR;** These files are for 1.20.4 and probably any CMI version 9.7.x.x / CMILib 1.4.7.x 
+**TLDR;** These files are for 1.20.4/6 and probably any CMI version 9.7.x.x / CMILib 1.4.7.x 
