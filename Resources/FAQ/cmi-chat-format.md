@@ -168,7 +168,7 @@ This is more a bonus, or pro tip, there's a hoverable effect when you use CMI Ch
 
 `ClickHoverMessages: true` should be true.
 
-In the Locale file of `plugins/CMILib/Translations/Locale_EN.yml` you can find the `Chat:` section, which has `publicHover:` 
+In the Locale file of `~/plugins/CMI/Translations/Locale_EN.yml` you can find the `Chat:` section, which has `publicHover:` 
 
 You can customize this public hover locale with your own text, CMI hex colors, and placeholders. Making it very dynamic. 
 
