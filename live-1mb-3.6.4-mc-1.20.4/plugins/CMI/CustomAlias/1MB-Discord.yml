@@ -45,7 +45,8 @@ CustomAlias:
       **woodcutting**`%mcmmo_level_woodcutting%` (rank: %mcmmo_rank_woodcutting%)
       / :mcmmocrossbows: **crossbows**`%mcmmo_level_crossbows%` (rank: %mcmmo_rank_crossbows%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmosmelting:
-      **smelting**`%mcmmo_level_smelting%` / :mcmmosalvage: **salvage**`%mcmmo_level_salvage%`'
+      **smelting**`%mcmmo_level_smelting%` / :mcmmosalvage: **salvage**`%mcmmo_level_salvage%`
+      / :mcmmotridents: **tridents**`%mcmmo_level_tridents%`'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :gear: _Want more?
       Ingame type: /mcstats, /mcrank, /mctop_'
     Tab: false
@@ -57,7 +58,8 @@ CustomAlias:
       `%jobsr_user_joinedjobcount% / %jobsr_maxjobs%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs list**:
       %jobsr_user_job_1%(%jobsr_user_jlevel_1%/%jobsr_user_jmaxlvl_1%) %jobsr_user_job_2%(%jobsr_user_jlevel_2%/%jobsr_user_jmaxlvl_2%)
-      %jobsr_user_job_3%(%jobsr_user_jlevel_3%/%jobsr_user_jmaxlvl_3%)'
+      %jobsr_user_job_3%(%jobsr_user_jlevel_3%/%jobsr_user_jmaxlvl_3%) %jobsr_user_job_4%(%jobsr_user_jlevel_4%/%jobsr_user_jmaxlvl_4%)
+      %jobsr_user_job_5%(%jobsr_user_jlevel_5%/%jobsr_user_jmaxlvl_5%)'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs skill**:
       `%jobs_total_levels%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs points**:

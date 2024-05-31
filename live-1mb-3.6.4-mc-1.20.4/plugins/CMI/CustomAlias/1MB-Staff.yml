@@ -120,7 +120,10 @@ CustomAlias:
   eventgive:
     Cmds:
     - asConsole! aach give yourAch1 $1-
+    - asConsole! cmi toast all -t:challenge -icon:emerald Event Participated \n $1
     Perm: true
+    CustomTabs:
+    - '[playername]'
   profile:
     Cmds:
     - cmi pos $1-
@@ -221,10 +224,13 @@ CustomAlias:
     - check:$1!=null! asConsole! addlevels $1 alchemy 1
     - check:$1!=null! asConsole! addlevels $1 repair 2
     - check:$1!=null! asConsole! addlevels $1 crossbows 1
+    - check:$1!=null! asConsole! addlevels $1 tridents 1
     Perm: true
   creative:
     Cmds:
-    - cmi gm creative $1
+    - statement:check1! check:$1==null!
+    - if:check1! asConsole! cmi gm [playerName] creative
+    - if:check1@! asConsole! cmi gm $1 creative
     Perm: true
   survival:
     Cmds:

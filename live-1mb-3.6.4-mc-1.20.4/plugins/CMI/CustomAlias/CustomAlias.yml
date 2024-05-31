@@ -804,19 +804,9 @@ CustomAlias:
   acalendar:
     Cmds:
     - asPlayer! calendar
-  winter:
-    Cmds:
-    - msg! [playerName] Thank you for having fun in the winter world. It might return
-      in a different form next year. I hope you had some good loot
-    Tab: false
   run2:
     Cmds:
     - asPlayer! tntrun join run2
-  fart info:
-    Cmds:
-    - msg! [playerName] * PPPRrrFFFfftttttt *
-    - asPlayer! farmt info
-    Tab: false
   fish guide:
     Cmds:
     - asConsole! cmi openbook fishguide [playerName]
@@ -838,13 +828,6 @@ CustomAlias:
   vote info:
     Cmds:
     - asPlayer! votelink
-  informer:
-    Cmds:
-    - msg! [playerName] Informer, ya' no say daddy me Snow me I go blame ~ A licky
-      boom boom down
-  nikkipixel:
-    Cmds:
-    - actionbar! {#gold} NikkiPixel should really get some proper sleep.
   _staffprefix:
     Cmds:
     - statement:check1! check:$1==null!
@@ -865,10 +848,6 @@ CustomAlias:
       fully aware of any limitations.
     - msg! [playerName] -> &nhttps://omgboards.com/threads/263926/
     - asConsole! gui openfor [playerName] worldtrade
-  fixvotetokens:
-    Cmds:
-    - asConsole! gui openfor [playerName] fixvotetokens
-    Perm: true
   aprilfools:
     Cmds:
     - asConsole! undisguiseplayer [playerName]
@@ -876,7 +855,11 @@ CustomAlias:
     - msg! [playerName] Is it the first of April again? Okay! HAHA .. Joke's over
       .. Let's get back to normal you again.
     - msg! [playerName] If you want to become a villager again, just re-log.&r\n&r\n
+    Perm: true
   summer:
     Cmds:
     - msg! [playerName] In the Summer Season this command will bring you to the Summer
-      Festival, stay tuned!
+      Festival, stay tuned for some fun in July and August.
+  notable:
+    Cmds:
+    - asConsole! cmi ctext notable [playerName]

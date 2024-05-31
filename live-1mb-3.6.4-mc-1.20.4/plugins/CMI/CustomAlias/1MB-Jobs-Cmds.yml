@@ -1,0 +1,76 @@
+# 1MoreBlock.com /jobs info <jobname> custom alias commands for Minecraft 1.20.4+ and Jobs 5.2.3.x
+# Version 0.0.2
+
+CustomAlias:
+  fisherman:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  miner:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  builder:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  farmer:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  digger:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  enchanter:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  hunter:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  brewer:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  crafter:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  explorer:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  woodcutter:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
+  weaponsmith:
+    Cmds:
+    - 'msg! [playerName] The /$0 command is part of the Jobs feature that we offer
+      on this server. You can join multiple jobs by typing: /jobs'
+    - asPlayer! jobs info $0
+    Tab: false
