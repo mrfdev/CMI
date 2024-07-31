@@ -309,3 +309,19 @@ TabList:
         - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
           {#Geyser}%vault_eco_balance_formatted%&r'
         - '{#Cerulean}'
+    '17':
+      PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
+        {#sirocco}%multiverse_world_alias%&r'
+      Header:
+        '1':
+        - '{#Cerulean}'
+        - '{#Cerulean}     •&l&m        &r{#Cerulean}• &2&l1MoreBlock.com&r {#Cerulean}•&l&m         &r{#Cerulean}•     &r'
+        - '{#Cerulean}'
+      Footer:
+        '1':
+        - '{#Cerulean}'
+        - '{#Cerulean}•&l&m                                            &r{#Cerulean}•'
+        - '{#Feijoa}Online: {#Geyser}%server_online% players {#Feijoa}/ Mode: {#Geyser}%cmi_user_gamemode%&r'
+        - '{#Feijoa}Group: {#Geyser}%luckperms_primary_group_name% {#Feijoa}/ Money:
+          {#Geyser}%vault_eco_balance_formatted%&r'
+        - '{#Cerulean}'

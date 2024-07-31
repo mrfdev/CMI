@@ -1,5 +1,10 @@
 ChatFilter:
   Enabled: true
+  # Priority of chat filter listener
+  # Changed priority will only take effect on full server restart
+  # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+  # Default: LOW
+  Priority: LOW
   Deny:
     ipBlock:
       # If not set to true, this filter will not be used
@@ -71,7 +76,7 @@ ChatFilter:
       msgToStaff: '&4!STAFF!&6 [playerName] &4is swearing: &r[message]'
       Commands:
       - cmi ban [senderName] Hate speech not welcome
-      - 'discordsrv broadcast #1102580379434618961 **Chatfilter**: `[senderName]`
+      - 'discordsrv broadcast #1186634863827234836 **Chatfilter**: `[senderName]`
         said `[message]`'
     filterlist:
       Enabled: true
@@ -87,8 +92,8 @@ ChatFilter:
       msgToStaff: '&4!STAFF!&6 [playerName] &4msg filtered: &r[message]'
       Commands:
       - cmi shadowmute [senderName] 60 -s ChatFilter - DontSaytheseThings
-      - 'discordsrv broadcast #807177293943275530 **Chatfilter**: `[senderName]` said
-        `[message]`'
+      - 'discordsrv broadcast #1186634863827234836 **Chatfilter**: `[senderName]`
+        said `[message]`'
     repeatgroups:
       Enabled: false
       Group: repeatgroups
@@ -101,8 +106,8 @@ ChatFilter:
       msgToStaff: '&4!Attn:!&6 [playerName] &4msg filtered (repeatgroups): &r[message]'
       Commands:
       - cmi shadowmute [senderName] 10 ChatFilter repeatgroups
-      - 'discordsrv broadcast #952183639255441468 **Chatfilter** (repeatgroups): `[senderName]`
-        said `[message]`'
+      - 'discordsrv broadcast #1186634863827234836 **Chatfilter** (repeatgroups):
+        `[senderName]` said `[message]`'
     politics:
       Enabled: true
       Group: politics
@@ -116,10 +121,10 @@ ChatFilter:
       msgToStaff: '&4!STAFF!&6 [playerName] &4msg filtered: &r[message]'
       Commands:
       - cmi shadowmute [senderName] 60 -s ChatFilter - noPolitics
-      - 'discordsrv broadcast #807177293943275530 **Chatfilter**: `[senderName]` said
-        `[message]`'
+      - 'discordsrv broadcast #1186634863827234836 **Chatfilter**: `[senderName]`
+        said `[message]`'
     cve:
-      Enabled: true
+      Enabled: false
       Group: cve
       InformConsole: true
       Regex:
@@ -131,8 +136,8 @@ ChatFilter:
       includePrivateMessages: true
       msgToStaff: '&4!STAFF!&6 [playerName] &4msg filtered: &r[message]'
       Commands:
-      - 'discordsrv broadcast #807177293943275530 **Chatfilter**: `[senderName]` said
-        `[message]`'
+      - 'discordsrv broadcast #1186634863827234836 **Chatfilter**: `[senderName]`
+        said `[message]`'
   # List of regex filter to exlude from block list. Usefull if you want to block all ip/host address but want to allow usage of your own server.
   WhiteList:
   - \byoutube.\s?([a-zA-Z]{2,4})\b
@@ -144,6 +149,11 @@ ChatFilter:
   DuplicatedMessagePrevention:
     # When set to true, plugin will prevent spaming of same or similar messages in short time range. Can be bypased with cmi.chatfilter.spambypass permission
     Use: true
+    # Priority of chat spam listener
+    # Changed priority will only take effect on full server restart
+    # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+    # Default: LOW
+    Priority: LOW
     # How much in percentage message is counted as same
     Percentage: 80
     # Defines how often in seconds you can send same/similar message
@@ -154,6 +164,11 @@ ChatFilter:
     # When nebaled we will try to prevent chat messages with multiple capitalized letters by defined criteria
     # Can be bypassed with cmi.chatfilter.capbypass permission node
     Filter: true
+    # Priority of chat capitalization listener
+    # Changed priority will only take effect on full server restart
+    # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+    # Default: LOW
+    Priority: MONITOR
     # Defines amount of letters we can ignore
     # For example ':DDD' would be made of 2 letters with 3 capitalized letters which would make it 75% capitalized
     IgnoreUnder: 6

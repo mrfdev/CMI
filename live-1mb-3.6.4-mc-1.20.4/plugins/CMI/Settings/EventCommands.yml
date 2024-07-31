@@ -30,14 +30,16 @@ joinServer:
   Enabled: true
   Commands:
   - delay! 0.2
-  - check:%luckperms_in_group_1mb_legendary%==yes! broadcast! {#Denim>} OMG, a &lLegendary
-    friend{#Cerulean<>} just joined!!{#Denim<}\n&r
-  - check:%luckperms_in_group_1mb_epic%==yes! broadcast! {#Denim>} An &lEpic player{#Cerulean<>}
-    started playing, awesome!{#Denim<}\n&r
-  - check:%luckperms_in_group_1mb_mvp%==yes! broadcast! {#Denim>} An &lMVP player{#Cerulean<>}
-    started playing!{#Denim<}\n&r
-  - check:%luckperms_in_group_1mb_donator%==yes! broadcast! {#Denim>} A &lPatron member{#Cerulean<>}
-    started playing!{#Denim<}\n&r
+  - check:%cmi_user_vanished_symbol%==null! check:%luckperms_in_group_1mb_legendary%==yes!
+    broadcast! {#Denim>} OMG, a &lLegendary friend{#Cerulean<>} just joined!!{#Denim<}\n&r
+  - check:%cmi_user_vanished_symbol%==null! check:%luckperms_in_group_1mb_epic%==yes!
+    broadcast! {#Denim>} An &lEpic player{#Cerulean<>} started playing, awesome!{#Denim<}\n&r
+  - check:%cmi_user_vanished_symbol%==null! check:%luckperms_in_group_1mb_mvp%==yes!
+    broadcast! {#Denim>} An &lMVP player{#Cerulean<>} started playing!{#Denim<}\n&r
+  - check:%cmi_user_vanished_symbol%==null! check:%luckperms_in_group_1mb_donator%==yes!
+    broadcast! {#Denim>} A &lPatron member{#Cerulean<>} started playing!{#Denim<}\n&r
+  - delay! 0.2
+  - check:[playerName]==Aibopals! asConsole! cmi god Aibopals true -s
 quitServer:
   Enabled: true
   Commands:
@@ -153,6 +155,8 @@ elytraEndGlide:
   - cmi actionbarmsg [playerName] This is event command example!
 sneakingSwapHandItems:
   Enabled: false
+  # Item swap event can be canceled if needed. This only works if event monitor is enabled
+  CancelEvent: false
   Commands:
   - cmi msg [playerName] This is event command example!
   - cmi actionbarmsg [playerName] This is event command example!

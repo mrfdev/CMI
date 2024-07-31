@@ -33,6 +33,26 @@ firstJoinMessages: true
 # Applies for servers from 1.7.x and up
 cuffed: true
 #  
+# Handling of elevators
+# Applies for servers from 1.7.x and up
+elevator: true
+#  
+# Handling of night speedup when players sleep in beds
+# Applies for servers from 1.7.x and up
+nightSpeedup: true
+#  
+# Handling of damage control
+# Applies for servers from 1.7.x and up
+damageControl: true
+#  
+# Handling of portal creation
+# Applies for servers from 1.7.x and up
+portalCreation: true
+#  
+# Handling of portal creation
+# Applies for servers from 1.7.x and up
+teleportWith: true
+#  
 # Handling of messages appearing when item durability gets low
 # Applies for servers from 1.7.x and up
 durabilityLoss: true
@@ -173,6 +193,10 @@ flightCharge: false
 # Applies for servers from 1.11.x and up
 shulkerBackpack: true
 #  
+# Handles decorated pot content display
+# Applies for servers from 1.20.x and up
+decoratedpot: true
+#  
 # Handles player skins
 # Applies for servers from 1.8.x and up
 skin: true
@@ -240,3 +264,7 @@ launchPad: true
 # Handling of launch custom death messages
 # Applies for servers from 1.7.x and up
 deathMessages: true
+#  
+# Handling of server links
+# Applies for servers from 1.7.x and up
+serverLinks: true

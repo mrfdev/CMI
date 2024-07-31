@@ -496,3 +496,7 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:ODdhZDkyMGE2NmUzOGNjMzQyNmE1YmZmMDg0NjY3ZTg3NzIxMTY5MTVlMjk4MDk4NTY3YzEzOWYyMjJlMmM0MiJ9fX0=
+  breeze:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads: []

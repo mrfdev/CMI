@@ -372,9 +372,8 @@ Announcer:
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Players in the group Epic can have up to 28 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
-  - 'broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Please join our website:
-    https://www.omgboards.com. It has fun offtopic discussion, events, inside information,
-    help, and much more.'
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} When both parties are
+    in /oneblock, then the island owner can type /oneblock team invite
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Players have access to {#orange}&l/back{#feijoa} to quickly teleport back to their
     previous location.</T><H>Click to teleport to your previous location.</H><C>cmi
@@ -462,8 +461,8 @@ Announcer:
     You can buy and sell items on {#orange}&l/market{#feijoa}.</T><H>Click to check
     out /market.</H><C>market</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
-    Stay up2date! We have a daily {#orange}&l/changelog{#feijoa}.</T><H>Click to view
-    today's /changelog.</H><C>changelog</C>
+    Stay up2date! We have an Announcement channel on {#orange}&l/discord{#feijoa}.</T><H>Click
+    to join discord.gg/floris</H><C>discord</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     You can {#orange}&l/vote{#feijoa} daily for lots of rewards.</T><H>Click to check
     out /vote.</H><C>vote</C>
@@ -477,7 +476,7 @@ Announcer:
     so. Please read {#orange}&l/rules{#feijoa}, and play fair. Thank you!</T><H>Click
     to view /rules.</H><C>rules</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
-    A great way to make money is with jobs. Players can join up to three. Type {#orange}&l/jobs
+    A great way to make money is with jobs. Players can join multiple. Type {#orange}&l/jobs
     browse{#feijoa} to get started.</T><H>Click to view /jobs browse.</H><C>jobs browse</C>
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
     there will be a fishing tournament for 30 minutes (/fisht info)
@@ -487,6 +486,10 @@ Announcer:
     there will be an mcMMO booster for an hour (/rate)
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
     there will be a Jobs booster for an hour
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players can use /craft,
+    /ec, /anvil, and a few more! Check /warp signs
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} In a lot of worlds,
+    a wandering trader offers micro-blocks!
 updateNameplate:
   Enabled: false
   Repeat: false
