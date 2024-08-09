@@ -14,6 +14,36 @@
 {#deepbronze}Builders:&r
 1MB &lBuilders
 <NextPage>
+{#deepbronze}Boosted Builder:&r
+1MB &lRogue
+
+{#deepbronze}Supporting player:&r
+1MB &lPatron
+
+{#deepbronze}Boosted Patron:&r
+1MB &lMVP
+
+{#deepbronze}OG Supporters:&r
+1MB &lEPIC, Veteran
+
+{#deepbronze}OG Friends:&r
+1MB &lLegendary
+<NextPage>
+{#deepbronze}Notable Members:&r
+1MB &lNotable
+
+{#deepbronze}Team Helper:&r
+1MB &lHelper
+
+{#deepbronze}Team Mod:&r
+1MB &lModerator
+
+{#deepbronze}Team Admin:&r
+1MB &lAdministrator
+
+{#deepbronze}Server owner:&r
+1MB &lOwner (mrfloris)
+<NextPage>
 Hello &l%cmi_user_name%&r,
 your group right now is:&l %luckperms_primary_group_name%&r
 
@@ -62,20 +92,9 @@ Okay, we're not after your money, don't worry. We have the groups because once i
 
 But let's summerize!
 <NextPage>
-{#deepbronze}First time players:&r
-1MB &lNew
+First time players are 'new', when they return they become a 'player', and if they stay active, they become a 'member'. 
 
-{#deepbronze}Returning players:&r
-1MB &lPlayer
-
-{#deepbronze}Regular players:&r
-1MB &lMember
-
-{#deepbronze}Boosted members:&r
-1MB &lBoosted
-
-{#deepbronze}Builders:&r
-1MB &lBuilders
+Eventually someone can become a 'builder' or even 'staff', supporters of the community become 'patrons'.
 <NextPage>
 Oh, before I go, THANK YOU for reading all of this. I know it's overwhelming. Questions? Just ask staff! And on our server, ranks, groups, roles, are all kinda the same thing.
 <NextPage>
