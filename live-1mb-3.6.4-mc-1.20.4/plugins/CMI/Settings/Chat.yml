@@ -255,9 +255,9 @@ ChatBubble:
   # How high we should show chat bubble
   Offset: 2.5
   # Base time in seconds for chat bubble to be visible
-  ShowFor: 6
+  ShowFor: 5.5
   # Maximum time bubble will be shown for
-  MaxShowFor: 10
+  MaxShowFor: 9
   # Extra seconds to be added for each letter in a message
   # This will allow to have shorter times for short messages and increase it for longer ones
   ExtraTime: 0.03
