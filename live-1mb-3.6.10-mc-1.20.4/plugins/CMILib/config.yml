@@ -5,8 +5,6 @@ Language: EN
 LanguageDownload: true
 # When enabled plugin will try to keep CMILib up to date automatically
 AutoUpdate: false
-# When enabled plugin will try to clean up outdated CMILib files. This only works when autoUpdate is enabled
-AutoFileRemoval: false
 ExploitPatcher:
   Placeholders:
     blocked:

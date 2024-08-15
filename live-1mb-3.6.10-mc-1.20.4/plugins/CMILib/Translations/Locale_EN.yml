@@ -435,35 +435,35 @@ info:
   EnchantNames:
     dig_speed: Efficiency
     loot_bonus_mobs: Looting
-    silk_touch: SilkTouch
     quick_charge: QUICKCHARGE
+    silk_touch: SilkTouch
     soul_speed: SOULSPEED
     arrow_fire: Flame
     loot_bonus_blocks: Fortune
-    multishot: Multishot
     water_worker: AquaAffinity
+    multishot: Multishot
     channeling: Channeling
     loyalty: Loyalty
     binding_curse: BindingCurse
     arrow_knockback: Punch
-    protection_projectile: ProjectileProtection
     arrow_damage: Power
+    protection_projectile: ProjectileProtection
     damage_all: Sharpness
     frost_walker: FrostWalker
     protection_fire: FireProtection
     impaling: Impaling
     luck: Luck
     riptide: Riptide
-    protection_environmental: Protection
     mending: Mending
+    protection_environmental: Protection
     oxygen: Respiration
     piercing: Piercing
-    swift_sneak: SWIFTSNEAK
     protection_fall: FallProtection
+    swift_sneak: SWIFTSNEAK
     durability: Unbreaking
-    damage_undead: Smite
-    lure: Lure
     fire_aspect: FireAspect
+    lure: Lure
+    damage_undead: Smite
     knockback: Knockback
     depth_strider: DepthStrider
     sweeping_edge: SweepingEdge
@@ -473,72 +473,72 @@ info:
     protection_explosions: BlastProtection
     thorns: Thorns
   PotionEffectAliases:
-    fire_resistance:
-    - Fire resistance
-    water_breathing:
-    - Water breathing
-    jump:
-    - Jump
-    saturation:
-    - Saturation
-    health_boost:
-    - Health boost
-    night_vision:
-    - Night vision
-    weakness:
-    - Weakness
-    wither:
-    - Wither
-    slow_digging:
-    - Slow digging
-    slow_falling:
-    - Slow falling
-    luck:
-    - Luck
-    increase_damage:
-    - Increase damage
-    poison:
-    - Poison
-    hero_of_the_village:
-    - Hero of the village
-    unluck:
-    - Unluck
+    instanthealth:
+    - Instant health
     invisibility:
     - Invisibility
-    absorption:
-    - Absorption
-    slow:
-    - Slow
-    fast_digging:
-    - Fast digging
-    glowing:
-    - Glowing
-    bad_omen:
-    - Bad omen
-    dolphins_grace:
-    - Dolphins grace
-    levitation:
-    - Levitation
-    conduit_power:
-    - Conduit power
+    waterbreathing:
+    - Water breathing
+    resistance:
+    - Resistance
+    unluck:
+    - Unluck
     blindness:
     - Blindness
-    harm:
-    - Harm
-    confusion:
-    - Confusion
-    heal:
-    - Heal
-    regeneration:
-    - Regeneration
+    haste:
+    - Haste
+    poison:
+    - Poison
+    slowness:
+    - Slowness
     hunger:
     - Hunger
+    slowfalling:
+    - Slow falling
+    fireresistance:
+    - Fire resistance
+    saturation:
+    - Saturation
+    jumpboost:
+    - Jump boost
+    dolphinsgrace:
+    - Dolphins grace
+    miningfatigue:
+    - Mining fatigue
+    healthboost:
+    - Health boost
+    regeneration:
+    - Regeneration
+    conduitpower:
+    - Conduit power
+    badomen:
+    - Bad omen
+    luck:
+    - Luck
     speed:
     - Speed
+    strength:
+    - Strength
     darkness:
     - Darkness
-    damage_resistance:
-    - Damage resistance
+    heroofthevillage:
+    - Hero of the village
+    levitation:
+    - Levitation
+    instantdamage:
+    - Instant damage
+    weakness:
+    - Weakness
+    nausea:
+    - Nausea
+    absorption:
+    - Absorption
+    wither:
+    - Wither
+    glowing:
+    - Glowing
+    nightvision:
+    - Night vision
 direction:
   n: North
   ne: North East
