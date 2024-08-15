@@ -13,3 +13,4 @@ sittinglarge: helmet{PLAYER_HEAD:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly9
 sittingsmall: helmet{SANDSTONE_STAIRS};torso{0:-4:0};head{1:-9:0};rightArm{-14:0:10};extra{invisible}
 temp1: helmet{DRAGON_HEAD};head{38:6:-4};rightArm{-14:0:10};torso{0:-2:0};extra{arms,nogravity,invisible}
 HangingShears: offhand{SHEARS};rightArm{-14:0:10};extra{nogravity}
+drinkinhand: offhand{PLAYER_HEAD:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM0Zjk4NWM2NDFhNjY2NjBmYzVjYTU5NDRkOGEyMThmMDEwMTI1YzAwZjcwODU3ODNlMmU4MDA1N2I4M2VlNyJ9fX0=;n{§9Coconut_Drink_(red)}};leftArm{-46:14:-1};rightArm{-14:0:10};extra{nogravity}

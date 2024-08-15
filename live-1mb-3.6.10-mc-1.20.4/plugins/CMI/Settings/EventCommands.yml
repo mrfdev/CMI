@@ -40,6 +40,8 @@ joinServer:
     broadcast! {#Denim>} A &lPatron member{#Cerulean<>} started playing!{#Denim<}\n&r
   - delay! 0.2
   - check:[playerName]==Aibopals! asConsole! cmi god Aibopals true -s
+  - check:%cmi_user_nameplate_prefix%=={#b3a636}☼! perm:cmi.customalias.hug@! asConsole!
+    cmi kit emoteHug [playerName]
 quitServer:
   Enabled: true
   Commands:

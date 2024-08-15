@@ -1,0 +1,33 @@
+# 1MoreBlock.com, LuckPerms group check helper, (c) Floris Fiedeldij Dop, version 0.0.8
+
+CustomAlias:
+  _lpcheck:
+    Cmds:
+    - statement:luckperms1! ifonline:$1!
+    - if:luckperms1! msg! [playerName] {#denim}Checking LP groups for:&l $1
+    - if:luckperms1! msg! [playerName] {#wedgewood}Playtime:{#orchid} %parseother_{$1}_{cmi_user_playtime_formatted}%
+    - if:luckperms1! msg! [playerName] {#wedgewood} luckperms_groups:{#orchid} %parseother_{$1}_{luckperms_groups}%
+    - if:luckperms1! msg! [playerName] {#wedgewood} luckperms_inherited_groups:{#orchid}
+      %parseother_{$1}_{luckperms_inherited_groups}%
+    - if:luckperms1! msg! [playerName] {#wedgewood} luckperms_primary_group_name:{#orchid}
+      %parseother_{$1}_{luckperms_primary_group_name}%
+    - if:luckperms1! msg! [playerName] {#wedgewood} luckperms_highest_group_by_weight:{#orchid}
+      %parseother_{$1}_{luckperms_highest_group_by_weight}%
+    - if:luckperms1! msg! [playerName] {#wedgewood} luckperms_highest_inherited_group_by_weight:{#orchid}
+      %parseother_{$1}_{luckperms_highest_inherited_group_by_weight}%
+    - if:luckperms1@! msg! [playerName] {#gold}Could not find $1 online
+    - statement:luckperms2! ifonline:$1! check:%parseother_{$1}_{luckperms_groups}%==New!
+      check:%parseother_{$1}_{luckperms_primary_group_name}%==New! check:%parseother_{$1}_{luckperms_highest_group_by_weight}%==New!
+    - if:luckperms2! msg! [playerName] {#green} $1 seems to be default (New) and is
+      ready for an upgrade to (1mb_player) Player. {#orchid} Check playtime next!
+    - if:luckperms2! cmi ctellraw [playerName] <T>{#gold}[looks good, click to upgrade]</T><H>Change
+      $1 from new to player group</H><CC>lp user $1 parent set 1mb_player</CC>
+    - if:luckperms2! cmi ctellraw [playerName] <T>{#gold}[looks good, click to send
+      /mail]</T><H>sends a /mail to $1</H><C>cmi mail send $1 Hey $1, thank you for
+      joining the 1MoreBlock.com server! Your rank has been upgraded from NEW to PLAYER,
+      thanks again for playing ^_^</C>
+    - if:luckperms2@! msg! [playerName] {#gold}Either, $1 is offline, or they are
+      not exclusively in the default group, manually review please.
+    Perm: true
+    CustomTabs:
+    - '[allIGNPlayername]'

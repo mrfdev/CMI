@@ -110,7 +110,7 @@ tablist: true
 paintingEditor: true
 #  
 # Handles player vanish mode
-# Applies for servers from 1.19.x and up
+# Applies for servers from 1.21.x and up
 vanish: true
 #  
 # Handles money cheques

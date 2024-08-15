@@ -21,6 +21,8 @@ Economy:
   log:
     Unknown: true
     Transfer: true
+    IgnoredUsers:
+    - Zrips
   Cheque:
     # Determines max amount of cheque player can create
     # Set it to 0 to remove limit
@@ -144,6 +146,8 @@ Optimizations:
   ShowSkullOwner: false
   # When enabled you will see beeHive information in action bar when right clicking it
   ShowBeeHiveInformation: true
+  # When enabled you will see decorated pot contents information in action bar when right clicking it
+  ShowDecoratedPotInformation: true
   # Sets indicator when creating elevator signs. Its case insensitive
   ElevatorIndicator: '[Elevator]'
   SignEdit:
@@ -724,7 +728,7 @@ Holograms:
   Defaults:
     # Default value for hologram view range
     # This defines from how far holograms will appear for the player or when they will disapear
-    viewRange: 16
+    viewRange: 32
     # Defines default update interval
     # Bigger this number is better performance we will have
     updateRange: 16
@@ -732,7 +736,6 @@ Holograms:
     # Defines default page change interval
     # When value is set to 0 or lower, pages will not be changed
     pageChangeInterval: 0.0
-    # Possible values: down, up
     # Defines if we should place lines up from starting position or down
     placeUp: true
 Votifier:
@@ -869,6 +872,11 @@ Command:
       - cmi baltop
       - cmi ctext
       - ctext
+    # Priority of command spam listener
+    # Changed priority will only take effect on full server restart
+    # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+    # Default: LOW
+    Priority: LOW
   Spy:
     # Commands in this list will not be shown when command spy is enabled for player for security/privacy reasons
     # This can be bypassed with cmi.command.commandspy.bypass permission node
@@ -879,6 +887,8 @@ Command:
     - s
     - staffmsg
     - cmi staffmsg
+    - cmi checkaccount
+    - checkaccount
     # Players without cmi.security.admin will only see commands from this list with command spy feature
     CommandList:
     - cmi spawn
@@ -978,9 +988,10 @@ Spawners:
     # If set to false, then player will need to have basic cmi.placespawner permission to place any type of spawner
     RequiresExactPermission: true
   Interact:
-    # When set to true, players trying to change spawner with monster egg will require appropriate permission node
-    # In example: player should have cmi.egginteract.pig to change spawner into pig, or cmi.egginteract.zombie to change into zombie spawner
-    EggRequiresPermission: true
+    Spawner:
+      # When set to true, players trying to change spawner with monster egg will require appropriate permission node
+      # In example: player should have cmi.egginteract.pig to change spawner into pig, or cmi.egginteract.zombie to change into zombie spawner
+      RequiresPermission: false
   # If set to true, spawners will have chance to be dropped when destroying with tnt
   TnTExplosionDrop:
     use: false
@@ -1095,6 +1106,9 @@ DamageControl:
 Totem:
   # When this set to true, on players death totem will be used even if he is not holding it in hand
   RemoveFromInventory: true
+  # Require permission node for totem to be taken from inventory
+  # RemoveFromInventory should be set to true and if this enabled player will need cmi.totem.frominventory
+  RequirePermission: false
   Cooldown:
     # When this set to true player can use totem only every X second's
     Use: true
@@ -1210,7 +1224,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, cherry_leaves, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, cherry_leaves, small_gust, trial_spawner_detection_ominous, vault_connection, infested, item_cobweb, ominous_spawning, raid_omen, trial_omen, poof, explosion_emitter, firework, bubble, fishing, underwater, enchanted_hit, effect, instant_effect, entity_effect, witch, dripping_water, dripping_lava, mycelium, enchant, item_snowball, item_slime, item, block, rain, elder_guardian, falling_dust, totem_of_undying, dust_color_transition, vibration, sculk_charge, shriek, egg_crack, dust_plume, white_smoke, gust, gust_emitter_large, gust_emitter_small, trial_spawner_detection, dust_pillar, 
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1254,9 +1268,13 @@ Books:
 # Defines name of customtext on players login to server. To disable just set name to non existing customText
 Motd: welcomeMessage
 Warnings:
+  # Should be always present. This will be used when category of warning isint being defined when warning player
   Default:
+    # Time in seconds for how long this warning applies to player
     LifeTime: 86400
+    # Warning point amount player receives for warning
     Points: 1
+    # Default reason used when reason is not provided when warning player
     DefaultReason: '&7Violated server rules'
   Categories:
     Swear:
@@ -1291,6 +1309,7 @@ Spawn:
   IgnoredWorlds: []
   # Defines players spawn point after death if set to true, if not, then it will be used only for /cmi spawn command
   # RespawnLocation will indicate if you want to use this location as possible respawn point for player after death
+  # TeleportFrom will indicate list of worlds from which player should be teleported to this spawn point
   Main:
     World: spawn
     X: 0.4647041358464349
@@ -1300,6 +1319,7 @@ Spawn:
     Yaw: -0.74994004
     RespawnLocation: false
     Rng: 0
+    TeleportFrom: []
   # Defines players first spawn point when he logs into server for the first time
   FirstSpawn:
     Use: true
@@ -1785,6 +1805,7 @@ Jail:
     # Commands to be performed when player gets unjailed
     OnUnJail:
     - ''
+  # If you want to white list base CMI command then use its full name and not its shortened alias version
   WhiteListedCmds:
   - cmi msg
   - cmi reply
@@ -1926,17 +1947,6 @@ Time:
       sunrise: 90
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     run:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    summer:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600

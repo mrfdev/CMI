@@ -1,4 +1,4 @@
-# 1MoreBlock.com Staff "/faq" command, by Floris Fiedeldij Dop (c)2024 1MoreBlock.com, version 0.1.1
+# 1MoreBlock.com Staff "/faq" command, by Floris Fiedeldij Dop (c)2024 1MoreBlock.com, version 0.1.2
 
 CustomAlias:
   faq:
@@ -133,23 +133,23 @@ CustomAlias:
       c:{#dbd1ca}In the wilderness, if you die, type {#orange}/dback{#dbd1ca} to return
       to your death spot. Most of your items will be in an Angel Chest, and the chat
       will display the coordinates. $2
-    - statement:check9! check:$1==1206!
+    - statement:check9! check:$1==1211!
     - if:check9! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi sudo [playerName]
       c:{#dbd1ca}This is a {#orange}1.20.4{#dbd1ca} server engine. We currently are
       waiting for all the plugins to upgrade before we can start testing. More information
-      about {#orange}1.20.6{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
+      about {#orange}1.21.x{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
     - if:check9! check:%cmi_lastrandom_[playerName]%==2! asConsole! cmi sudo [playerName]
       c:{#dbd1ca}This is a {#orange}1.20.4{#dbd1ca} server engine. We currently are
       waiting for all the plugins to upgrade before we can start testing. More information
-      about {#orange}1.20.6{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
+      about {#orange}1.21.x{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
     - if:check9! check:%cmi_lastrandom_[playerName]%==3! asConsole! cmi sudo [playerName]
       c:{#dbd1ca}This is a {#orange}1.20.4{#dbd1ca} server engine. We currently are
       waiting for all the plugins to upgrade before we can start testing. More information
-      about {#orange}1.20.6{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
+      about {#orange}1.21.x{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
     - if:check9! check:%cmi_lastrandom_[playerName]%==4! asConsole! cmi sudo [playerName]
       c:{#dbd1ca}This is a {#orange}1.20.4{#dbd1ca} server engine. We currently are
       waiting for all the plugins to upgrade before we can start testing. More information
-      about {#orange}1.20.6{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
+      about {#orange}1.21.x{#dbd1ca} can be found on {#orange}/discord{#dbd1ca} $2
     - statement:check10! check:$1==ip! check:$2!=null!
     - if:check10! asConsole! cmi mail send $2 Connection issues? Try an alternative
       route to the server. {#orange}/ip{#dbd1ca} has a list. This might help smooth
@@ -182,6 +182,6 @@ CustomAlias:
     - teams cave,acid,skygrid,skyblock,parkour,oneblock [playername]
     - kits [playername]
     - dback [playername]
-    - 1206 [playername]
+    - 1211 [playername]
     - ip [playername]
     - notable [playername]

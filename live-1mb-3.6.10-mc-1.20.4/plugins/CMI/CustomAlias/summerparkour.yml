@@ -1,0 +1,14 @@
+CustomAlias:
+  _summerClean:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] remove summerParkourStart
+    - asConsole! cmi usermeta [playerName] remove summerParkourOne
+    - asConsole! cmi usermeta [playerName] remove summerParkourTwo
+    - asConsole! cmi usermeta [playerName] remove summerParkourThree
+    - asConsole! cmi usermeta [playerName] remove summerParkourFour
+    - asConsole! cmi usermeta [playerName] remove summerParkourFive
+    - asConsole! cmi usermeta [playerName] remove summerParkourSix
+    - asConsole! cmi usermeta [playerName] remove summerParkourFinish
+    - asConsole! cmi usermeta [playerName] remove summerParkourCompleted
+    - asConsole! lp user [playerName] permission set cmi.kit.summerparkour false
+    Perm: true

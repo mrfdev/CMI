@@ -70,6 +70,9 @@ Custom:
   Block_explosion:
     General:
     - '&2[playerDisplayName] &7was killed by [Intentional Game Design]'
+  World_border:
+    General:
+    - '&2[playerDisplayName] &7left the confines of this world'
   Starvation:
     General:
     - '&2[playerDisplayName] &7starved to death'

@@ -9,6 +9,6 @@ CustomAlias:
     - asConsole! cmi panimation preset:TpUp;target:$2
     - asConsole! sound entity_experience_orb_pickup $1 -s
     - asConsole! sound entity_experience_orb_pickup $2 -s
-    - asConsole! cmi smite $2 -s
+    - asConsole! cmi smite $2 -s -safe
     - asConsole! cmi launch $2 -nodamage p:3 a:45
     Perm: true

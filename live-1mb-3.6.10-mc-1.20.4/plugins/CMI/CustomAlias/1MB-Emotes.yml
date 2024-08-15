@@ -1,22 +1,8 @@
-#
-# Edit custom variables in game if possible
-# Some extra variables can be used, like [playerName] will insert senders name automatically
-# All global variables should work, you can find full list in locale file
-# You can add delay between commands by inserting line like
-# delay! 5
-# This will delay next commands by defines time in seconds
-# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
-# Example: /cmi heal Zrips 
-# Can be shortened with custom alias to something like /h zrips by using alias command like
-# cmi heal $1
-# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
-# Example: cmi tppos $1-
-# In case you want to print out help page if player enters wrong subcommand, use ? in alias
-# Example: ca ?
-# In this case if player performs /ca wrongsub or /ca anotherwrong
-# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
-#
-# 1moreblock emote thing
+# 1MoreBlock.com /emotes thing, for CMI 9.7.5.0 for 1MB -live- 3.6.9, for Minecraft 1.20.4
+# (c) Floris Fiedeldij Dop, but feel free to use this on your server, clone & pr for improvements, suggestions
+# Version 0.1.0 - dev - Internal release made by mrfloris
+# Credits / Contributions:
+# /hug via yakirarage
 
 CustomAlias:
   _emoteConfig:
@@ -97,10 +83,19 @@ CustomAlias:
     - '[playername]'
   cheer:
     Cmds:
-    - broadcast! {#cerulean} [playerName] is cheering
+    - statement:nullcheck! check:$1==null~!
+    - 'if:nullcheck! asConsole! cmi ctellraw [playerName] <T>&ePlease provide an on-line
+      playername (required). \nCommand usage: &6/$0 <playername></T>'
+    - if:nullcheck@! gcooldown:60#?!
+    - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#royalblue}cheers %cmi_p_$1_display_name% {#royalblue>}on with
+      much joy!{#pictonblue<} {#5ce6a3}\☺/</T>
+    - if:nullcheck@! asConsole! cmi launch [playerName] a:90 p:0.5 -nodamage
+    - if:nullcheck@! ifonline:$1! asConsole! cmi sound entity_experience_orb_pickup
+      $1
     Perm: true
     CustomTabs:
-    - '[playername]'
+    - '[playerName]'
   clap:
     Cmds:
     - broadcast! {#cerulean} [playerName] is clapping
@@ -241,7 +236,15 @@ CustomAlias:
     - '[playername]'
   hug:
     Cmds:
-    - broadcast! {#cerulean} [playerName] is hugging
+    - gcooldown:60#?!
+    - statement:nullcheck! check:$1==null~!
+    - if:nullcheck! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#orchid>}sends hugs to the whole server!{#deepblush<}</T>
+    - if:nullcheck! asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#orchid>}sends some well deserved hugs to{#deepblush<} %cmi_p_$1_display_name%!</T>
+    - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -533,3 +536,6 @@ CustomAlias:
     Perm: true
     CustomTabs:
     - '[playername]'
+  emotes:
+    Cmds:
+    - asConsole! gui openfor [playerName] emotes

@@ -24,8 +24,8 @@ CustomAlias:
   halloween:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - msg! [playerName] {#orange}The 2023 halloween event has ended, check back again
-      in 2024.
+    - msg! [playerName] {#orange}The /halloween world will open the evening before
+      Halloween 2024.
   spooky:
     Cmds:
     - asPlayer! event

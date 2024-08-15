@@ -162,6 +162,7 @@ info:
   afkSymbolOn: '{#orange}●&r'
   afkSymbolOff: ''
   beeinfo: '!actionbar!&7Honey level: &e[level]&7/&e[maxlevel] &7Bees inside: &e[count]&7/&e[maxcount]'
+  decoratedpotinfo: '!actionbar!&7Contents: &e[items]'
   pvp:
     noGodDamage: '!actionbar!&cYou can''t damage players while being immortal'
   pve:
@@ -196,6 +197,7 @@ warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
   'off': '&7Playing'
+  # Placeholders can be used for MayNotRespond and MayNotRespondStaff
   MayNotRespond: '&ePlayer is AFK and may not respond'
   MayNotRespondStaff: '&eStaff member is AFK and may not respond. Try contacting us
     through /discord'
@@ -1615,6 +1617,7 @@ command:
         will be disabled
       alignment: '&7Text alignment: &6[type]'
       shadow: '&7Text shadow: &6[state]'
+      fadeIn: '&7Fade in animation: &6[state]'
       textAlpha: '&7Text transparency: &6[alpha]'
       bgAlpha: '&7Background transparency: &6[alpha]'
       bgColor: '&7Background color: &6[color]'
@@ -1704,6 +1707,8 @@ command:
       notPublic: ' &7[NotPublic]'
       reqPerm: ' &2[ReqPerm]'
       noPerm: ' &7[ReqPerm]'
+      cancelEvent: ' &2[cancelEvent]'
+      passEvent: ' &7[passEvent]'
       permHover: ' &eRequires &7[permission] &epermission to place this sign'
       editSign: ' &e[EditSignLines]'
       publicHover: "&eChange public status. \nSigns top line &7[ic:[name]]"
@@ -2013,6 +2018,7 @@ command:
       entityType: ' &eEntity Type: &6[type]'
       customModel: ' &eCustom Model Data: &6[data]'
       durability: ' &eDurability: &6[current]&e/&6[max]'
+      unbreakable: ' &7(Unbreakable)'
       stackSize: ' &eMax stack size: &6[size]'
   itemlore:
     help:
@@ -2384,6 +2390,7 @@ command:
       - '[group14]'
       - '[group15]'
       - '[group16]'
+      - '[group17]'
       - '&7========================'
       staffL: '&7Staff: &f[list]'
       adminL: '&8Admin: &f[list]'
@@ -2406,11 +2413,12 @@ command:
         group9: '&eEpic: &f[list]'
         group10: '&eLegendary: &f[list]'
         group11: '&eVeteran: &f[list]'
-        group12: '&eHelper: &f[list]'
-        group13: '&eModerator: &f[list]'
-        group14: '&eAdmin: &f[list]'
-        group15: '&eOwner: &f[list]'
-        group16: '&eUnique: &f[list]'
+        group12: '&eNotable: &f[list]'
+        group13: '&eHelper: &f[list]'
+        group14: '&eModerator: &f[list]'
+        group15: '&eAdmin: &f[list]'
+        group16: '&eOwner: &f[list]'
+        group17: '&eUnique: &f[list]'
       noGroupLine: '&eList'
   lockip:
     help:
@@ -3371,6 +3379,12 @@ command:
     help:
       info: '&eConnect to bungeecord server'
       args: '[serverName] (playerName) (-f)'
+  serverlinks:
+    help:
+      info: '&eSet server links'
+      args: ''
+      explanation:
+      - Separate display name and link with ;
   serverlist:
     help:
       info: '&eShow server list'
@@ -3815,6 +3829,8 @@ command:
       DiskUsage: ' &eDisk usage: &6[percent]% &e(&6[current]&e/&6[max] GB&e)'
       Worlds: '&e [number]. &6[world] &e[chunks] Chunks &6[entities] Entities &e[tiles]
         tiles &6[players] players'
+      MostTiles: '&7Most tiles (&f[tiles]&7) in &f[coord] &7chunk'
+      MostEntities: '&7Most entities (&f[entities]&7) in &f[coord] &7chunk'
   stonecutter:
     help:
       info: '&eOpen stonecutter'

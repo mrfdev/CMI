@@ -372,9 +372,10 @@ Announcer:
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Players in the group Epic can have up to 28 {#orange}&l/homes{#feijoa}.</T><H>Click
     to view your /homes.</H><C>cmi homes</C>
-  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa} When both parties are
-    in {#orange}&l/oneblock{#feijoa}, then the island owner can type {#orange}&l/oneblock team invite{#feijoa}</T>
-    <H>Click to invite your friend.</H><C>oneblock team invite</C>
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
+    When both parties are in {#orange}&l/oneblock{#feijoa}, then the island owner
+    can type {#orange}&l/oneblock team invite{#feijoa}</T> <H>Click to invite your
+    friend.</H><C>oneblock team invite</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Players have access to {#orange}&l/back{#feijoa} to quickly teleport back to their
     previous location.</T><H>Click to teleport to your previous location.</H><C>cmi

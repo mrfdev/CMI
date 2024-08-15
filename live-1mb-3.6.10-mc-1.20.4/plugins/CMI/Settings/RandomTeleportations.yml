@@ -27,14 +27,14 @@ RandomTeleportation:
       Center:
         X: 0
         Z: 0
-      # Shape of area player can be teleported into. If yuor map is square shaped then keep this at false
+      # Shape of area player can be teleported into. If your map is square shaped then keep this at false
       Circle: false
       # With this option we will only attempt to teleport player on highest block and ignore any cave teleportations
       # Exception when you have Ignore.Leaves set to true which will attempt to place player under the tree leaves if there is any empty space
       SurfaceOnly: false
       # When enabled player will be able to random teleport at specied world while being in another one
       FromAnotherWorld: true
-      # When enabled player will be required to have (cmi.randomteleport.§f[worldname]§6) permission node to random teleport inside this world
+      # When enabled player will be required to have (cmi.randomteleport.skygrid) permission node to random teleport inside this world
       RequireWorldPermission: false
       YLimits:
         # Location detection limitations on Y axis. If you want to minimize teleportations underground then you can set this value to 63

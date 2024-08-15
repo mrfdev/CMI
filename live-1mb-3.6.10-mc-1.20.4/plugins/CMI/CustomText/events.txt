@@ -1,9 +1,9 @@
 <AutoPage><Hidden><NoAutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#orange} -&l 1MoreBlock 2024 Events
-{#orange} -{#gold} Summer Festival dates: July 10th to 20th, and August 1st to 10th.
+{#orange} -{#gold} Next event: Probably Halloween 2024
 {#orange} -{#gold} 
-{#orange} -{#gold} Command:&l /summer
+{#orange} -{#gold} Command:&l /halloween
 {#orange} -{#gold} 
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 

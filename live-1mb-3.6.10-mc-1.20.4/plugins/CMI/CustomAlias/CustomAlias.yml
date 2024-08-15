@@ -68,7 +68,8 @@ CustomAlias:
     - cmi playtime
   hopper:
     Cmds:
-    - lwc flag hopper on
+    - msg! [playerName] Sorry, this is an old LWC command, you cannot use this right
+      now in Bolt. Hopper flags are automatically handled now.
     Tab: false
   menu:
     Cmds:
@@ -510,8 +511,8 @@ CustomAlias:
     - check:$1==information! msg! [playerName] - /birthday server , this shows you
       the age of the server, sometimes that's pretty handy! in 2021 we celebrate our
       10 years anniversary.
-    - check:$1==server! msg! [playerName] - The server started March 2021, that's
-      12+ years ago! --> /celebration :) Maybe give mrfloris and madmikeyb a poke
+    - check:$1==server! msg! [playerName] - The server started March 2011, that's
+      13+ years ago! --> /celebration :) Maybe give mrfloris and madmikeyb a poke
       to congratulate them!
     - 'check:$1==buy! check:%cmi_iteminhand_type%!=CAKE! check:%cmi_iteminhand_type%!=COOKIE!
       check:%cmi_iteminhand_type%!=PUMPKIN_PIE! msg! [playerName] Oops: \n Eh, pls
@@ -858,8 +859,74 @@ CustomAlias:
     Perm: true
   summer:
     Cmds:
-    - msg! [playerName] In the Summer Season this command will bring you to the Summer
-      Festival, stay tuned for some fun in July and August.
-  notable:
+    - msg! [playerName] The /summer world will re-open July 2025.
+  pw:
     Cmds:
-    - asConsole! cmi ctext notable [playerName]
+    - asConsole! staffmsg Pay attention to me [playerName], I might have joined to
+      try and exploit a plugin. If you see me do anything with %placeholders% in it,
+      then just ban me please.
+    - asConsole! cmi kick [playerName] error prawreyalp - logged -
+  pw rate:
+    Cmds:
+    - asPlayer! pw $1-
+  pw desc:
+    Cmds:
+    - asPlayer! pw $1-
+  bac:
+    Cmds:
+    - msg! [playerName] HEY, it is BACK not BAC
+    - asPlayer! back
+  teamup:
+    Cmds:
+    - msg! [playerName] {#green}You can team up with others if you want!
+    - msg! [playerName] There's a wilderness warp called /warp teamup, this command
+      will bring you there too, read the lectern, it has all the info you need.
+    - msg! [playerName] Oh, looking to team up on skyblock or oneblock? Read /teams
+    - asPlayer! cmi warp teamup
+  _lorehelp:
+    Cmds:
+    - asPlayer! cmi itemlore 1 {#sandybrown>}-------------{#conifer<>}-------------{#turquoiseblue<}
+    - delay! 0.2
+    - asPlayer! cmi itemlore 2 {#sandybrown} Summer Festival Event 2025!
+    - delay! 0.2
+    - asPlayer! cmi itemlore 3 {#sandybrown} (read the book for details)
+    - delay! 0.2
+    - asPlayer! cmi itemlore 4 {#sandybrown>}-------------{#conifer<>}-------------{#turquoiseblue<}
+    Perm: true
+  _namehelper:
+    Cmds:
+    - asPlayer! cmi itemname {#sandybrown>}1MB Beach{#conifer<>} Floaties{#turquoiseblue<}
+    Perm: true
+  deletemelater:
+    Cmds:
+    - check:%cmi_user_nameplate_prefix%=={#b3a636}☼! perm:cmi.customalias.hug@! asConsole!
+      cmi kit emoteHug [playerName]
+    Perm: true
+  cinfo:
+    Cmds:
+    - asPlayer! bolt info
+  cdisplay:
+    Cmds:
+    - asPlayer! bolt lock display
+  cdonation:
+    Cmds:
+    - asPlayer! bolt lock deposit
+  cpersist:
+    Cmds:
+    - asPlayer! bolt mode persist
+  cmodify:
+    Cmds:
+    - statement:check1! check:$1==null!
+    - 'if:check1! msg! [playerName] Usage: /cmodify add|remove <playername>'
+    - if:check1@! asPlayer! bolt edit $1 $2
+    CustomTabs:
+    - add,remove [allIGNPlayerName]
+  trust:
+    Cmds:
+    - statement:check1! check:$1==null!
+    - 'if:check1! msg! [playerName] Usage: /trust add|remove <playername>'
+    - if:check1@! asPlayer! bolt trust $1 player $2
+    - delay! 0.2
+    - asPlayer! bolt trust
+    CustomTabs:
+    - add,remove [allIGNPlayerName]

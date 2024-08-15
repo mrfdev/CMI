@@ -40,23 +40,13 @@ husk:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-farm:
-  Location: wild;-3980.18;64.0;3450.22;71.33;-2.84
+teamup:
+  Location: wild;-11018.5;66.0;-10841.5;0.32;13.17
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
     v: 3700
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"Cow"}],"text":""}'
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 04049c90-d3e9-4621-9caf-0000aaa42530
-        properties:
-        - name: textures
-          value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODRmNDA5OTIwYWQ4MTY3YTIwYTFiNzJkZGJhNjVmMWU3ZWNhODViMDNkNDIxMDlkODE1ODQzMjEyYjg5MTk4YSJ9fX0=
+    type: COOKIE
 batcave:
   Location: general;-2807.75;105.0;6467.9;-94.55;33.27
   Page: 2
@@ -424,12 +414,6 @@ jacky:
       lore:
       - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"
         :( "},{"italic":false,"color":"white","text":" Lost its magic"}],"text":""}'
-zombiegrind:
-  Location: general;9131.75;9.0;12677.5;-90.31;16.02
-  Page: 3
-  Item:
-    v: 3700
-    type: ZOMBIE_HEAD
 heads:
   Location: general;12798.06;52.0;11436.01;180.18;0.97
   Page: 4
@@ -448,7 +432,7 @@ thanksfloris:
       meta-type: MAP
       map-id: 260
 spider:
-  Location: general;12932.73;16.0;12000.48;-71.37;7.2
+  Location: wild;-3652.5;-17.0;2624.5;-33.67;8.43
   Page: 3
   Item:
     v: 3700

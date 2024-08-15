@@ -1,0 +1,28 @@
+# 1MoreBlock.com Notables "/notable" command, by Floris Fiedeldij Dop (c)2024 1MoreBlock.com, version 0.0.3
+
+CustomAlias:
+  notable:
+    Cmds:
+    - gcooldown:25#?!
+    - check:$1!=null! asConsole! cmi usermeta [playerName] add tempfaq %cmi_random_1_4%
+      -s
+    - delay! 0.2
+    - check:$1==null~! asConsole! cmi ctext notable [playerName]
+    - statement:check1! check:$1==welcome! perm:group.1mb_notable!
+    - if:check1@! msg! [playerName] Sorry, you cannot use this (sub) command.
+    - if:check1! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi sudo [playerName]
+      c:{#dbd1ca}Begin by typing {#orange}/newplayer{#dbd1ca} and familiarize yourself
+      with the {#orange}/rules{#dbd1ca} :) .{#dbd1ca} $2
+    - if:check1! check:%cmi_lastrandom_[playerName]%==2! asConsole! cmi sudo [playerName]
+      c:{#dbd1ca}Get started with {#orange}/newplayer{#dbd1ca} and go over the {#orange}/rules{#dbd1ca}
+      to launch your journey.{#dbd1ca} $2
+    - if:check1! check:%cmi_lastrandom_[playerName]%==3! asConsole! cmi sudo [playerName]
+      c:{#dbd1ca}Start your journey by using {#orange}/newplayer{#dbd1ca} and reading
+      the {#orange}/rules{#dbd1ca} $2
+    - if:check1! check:%cmi_lastrandom_[playerName]%==4! asConsole! cmi sudo [playerName]
+      c:{#dbd1ca}Nice to meet you, check out {#orange}/newplayer{#dbd1ca} and do not
+      forget to check the {#orange}/rules{#dbd1ca} $2
+    - delay! 0.2
+    - check:$1!=null! asConsole! cmi usermeta [playerName] remove tempfaq
+    CustomTabs:
+    - welcome [playername]

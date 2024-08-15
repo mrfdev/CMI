@@ -5134,8 +5134,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5147,8 +5146,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5160,8 +5158,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5173,8 +5170,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5186,19 +5182,13 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: SKULL
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"
-          Thank you {DISPLAYNAME} "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" Thank you {DISPLAYNAME} ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
         lore:
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"
-          -------------------------------"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          This is a unique item, that is"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          just for you {USERNAME} for"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          being so awesome to donate."}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"dark_aqua","text":"
-          -------------------------------"}],"text":""}'
+        - '{"text":"","extra":[{"text":" -------------------------------","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false}]}'
+        - '{"text":"","extra":[{"text":" This is a unique item, that is","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+        - '{"text":"","extra":[{"text":" just for you {USERNAME} for","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+        - '{"text":"","extra":[{"text":" being so awesome to donate.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+        - '{"text":"","extra":[{"text":" -------------------------------","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false}]}'
         Damage: 3
         skull-owner:
           ==: PlayerProfile
@@ -5212,8 +5202,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5225,8 +5214,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5238,8 +5226,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5251,8 +5238,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5264,8 +5250,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5277,8 +5262,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5290,8 +5274,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5303,8 +5286,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5316,8 +5298,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: BOOK_SIGNED
-        display-name: '{"extra":[{"bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"blue","text":"OMG
-          {USERNAME}"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":"OMG {USERNAME}","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
         title: Thank you!
         author: mrfloris
         pages:
@@ -5336,8 +5317,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5349,8 +5329,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5362,8 +5341,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5375,8 +5353,7 @@ ThankYou:
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"aqua","text":"
-          ❤ "}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" ❤ ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
         enchants:
           DURABILITY: 1
         ItemFlags:
@@ -5401,7 +5378,9 @@ ThankYou:
           DURABILITY: 1
         ItemFlags:
         - HIDE_ENCHANTS
-        internal: H4sIAAAAAAAA/xXOy3ZDQAAAUIsu+vgUCw2TYJEFZhQNEYRhRzCIoJl4xNf35AfuuZ8M88F8OWqg9bdb2uX0nWGYNwZbE9R18V5wg3AZrcHhkIwdkqzSISkTMYTWncCDVyGzjBdwEdvJjaIKRS0ki7A2Uw3S6pbHW47Udhf/mFUtB6Y07/cM5hdVLTXpnu9gRgKsJv7tyArKmJZtZeAZtTjfwMOkAT70fOvoRWcE1vrx0NNhMBV/ycZoRBtna0sV4EyXfqehipSXbCyVcg1mIkD+z/LqUVlmbGLD2XQi5nCTOt0zc+nTxIIar1duiUKepb4FCcF6pm2xZBYFYLvTzivCjOtFqrnidHrJ/iGHk90bTWAPJEso9ZWFxBP2RaKUbFM+NcrCRO6A+1fKcNRg6e/OdxQD4PZar8dykVkwoo23PfPpr2yhVuiC1/kfdtdq0n8BAAA=
+        - HIDE_ATTRIBUTES
+        - HIDE_POTION_EFFECTS
+        internal: H4sIAAAAAAAA/yXN0QqCMBQA0Ntblh+jU5cEPpQUUyTRTVu9SQoW6rW5sPr6Hjo/cFYABqxPexFi31dDPS0BYAHywx2t9AXVpgwfLtLM6viNuHSIU/HkTMlXlaWJtLFrcx6n+bk4uN+71sdqHKMdfzOH4zWfFGOqaEXSyNmnfhYEBpiRbvoQsatxHv6baZMtIYR6nm1R+AEbm3lRkwAAAA==
 d20:
   CommandName: d20
   Delay: 10
@@ -22599,3 +22578,955 @@ pizzastaff:
         - HIDE_ATTRIBUTES
         - HIDE_POTION_EFFECTS
         internal: H4sIAAAAAAAA/xXRR5KbQABA0XZ547HnJiwANUjgqlmQjEAEqWniziQhMgiRTjLH9fgCv17V/wnAG/hliVjqmuZvmz5/AAC+g0+X9LQqtxwraK5S1KF+KFLHEaNpNAjVcZ+jGV7re+JlXEKQVnzxU6V8kcJGr8glpb2IVW3SGXPGrxUbmUSwKuNBK4AOcXqGwXRR66IqfCTGgeKpNns/H4XBv/kOsvcQpYgJe67diMpV3Ocymkg4xusrvH18gM9avPGnxauaSPX6Gh5o9yAEDYeVuBcoPHQLLNB2jnXCZUM6d4skKu/hpnhuyZt6bglUTuR2UNtys0htHBiq3xV6qsxyo61Igkk7d7CX8HCEudkODFsQG/+n7Y1HH8VZnxBTu2olbWrzUC/u5UFr4Y7F5UsWFKwFHxpHdia2ZXNyqJna5we+5VlvqFWJxX1obThKgVwpJ93A6FzjuLWYEwM7Nq0QO8jzXA46l17HccmlpD/w3lf5DbxrU9ZIXVen3dL+P/QNvEPq9wHyR4qD1AH8AwCgy2bHAQAA
+summer2024:
+  Description:
+  - summer kit for 2024
+  - You can get this once.
+  CommandName: summer2024
+  DisplayName: '{#00e6ca>}Summer Box 2024{#caribbeangreen<}'
+  Delay: 10
+  MaxUsages: 1
+  MoneyCost: 2500.0
+  ExpCost: 5
+  Commands:
+  - 'asConsole! discordsrv broadcast #661710111152275456 ### :sun_with_face: **[Summer
+    Event]** `[playerName]` picked up the Summer Box 2024 from /kits'
+  - asConsole! cmi broadcast !{#gold}[Summer Event] {#8acfe6} [playerName] {#8acfe6}picked
+    up the {#00e6ca>}Summer Box 2024{#caribbeangreen<} {#8acfe6}from &l/kits
+  - asConsole! cmi sound block_amethyst_block_step -all
+  - delay! 0.3
+  - asConsole! cmi sound block_amethyst_block_step -all
+  - delay! 0.3
+  - asConsole! cmi sound block_amethyst_block_step -all
+  Items:
+    '28':
+      v: 3700
+      type: BARREL
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        display-name: '{"text":"","extra":[{"text":"S","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00E6CA","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00E4C6","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00E2C3","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00E0BF","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00DEBC","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00DCB8","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00DAB5","bold":false},{"text":"B","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D9B1","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D7AE","bold":false},{"text":"x","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D5AA","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D3A7","bold":false},{"text":"2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D1A3","bold":false},{"text":"0","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00CFA0","bold":false},{"text":"2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00CD9C","bold":false},{"text":"4","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00CC99","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" Every season we offer players a kit !","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F3AD16","bold":false}]}'
+        - '{"text":"","extra":[{"text":" These are some OP goodies that are","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F3AD16","bold":false}]}'
+        - '{"text":"","extra":[{"text":" really hard or impossible to get.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F3AD16","bold":false}]}'
+        internal: H4sIAAAAAAAA/8VVy27UMBR1p495AH2/K1AUJDaUlxAsZsWjVEJiVzYIIcuJncQax45unLZT1L/gH/gJPo6bcWcSyaPCBpFF4knOOb733Os7A0IGZPWdMvHog7bSjj+ztEc6kpP1XGoRA0vsMGIAQvXJ8kcr8nJACDlaIEtnyljisPsN1jJeGCVoVMUjYRfI8ntTaXzeEBYcYbMlLgTVovShHQ9aMIkx6nRAFi3De78VcvecgWTakrUGf8GsAEI85UWnfNgKouIchSnLhc3Gc4JZcpSWeARVmblIFsnKCctZKkh9edxlx91quKlhlmYGtOP3yEDq0kKVC0zgoMFxECynM7QvveKk91oUERvAvDktzCyNzhTfdfidBg8siqSliTF+0j2HftAKXJkIa8u0FkALZtFf7dH6jtbOQ5YxTYCldYL0lccYeGFFLI+MofXaQ9/xk0Zpo2mEdtnMw9/1asf0uVQe7p7D3W9w9QpqIzHPMS0zAdxjrXqsAuSV+ANrzbMWhNSJgRgrx4UoSoVF9Gjrjva43ePAKYPcALUgc1rm0mZ1K+NRLeZqbDiNo0ZDyTSzNFKVoDHTXM04wZSz6Z+YGl1mlRqhQ5G59LbZcpRHc7dJFbvCRNEgYDEaxab0N1P6tl9kyXKjOQrgsPK22/GKHGc4LjzdXYfbbRW5KmVMJy3qd+aeg2+3hxAONk7zinva+w680R5uHDDa6cDq4i5YlHGfLH0yIHqTafHje2jFpQ2HYXgc4gJYOPw6exc8u9HAjyZKqjKuD3c4TJgqxXEoLVMynv2sNBegcPsGgXNF4iTOwFRpNnsbG2UA5R+evnx78uI1ikdGTUnX367njLEDl92TJjuNsgKkFbQqUmBc/EX3Hfoe4b+LFHCLRx3y81aPvpgqwMYNtLFBPQNGAQZRBpNG+Ve2nT7Hy7ft162BnlmWJMGFVKoVq7THQSIvJ08DQSrPBa6DCPvs6f8rOiG/AXazNJcbCAAA
+        blockMaterial: BARREL
+summersecretkit:
+  CommandName: summersecretkit
+  Enabled: false
+  Delay: 10
+  MaxUsages: 1
+  Items:
+    '25':
+      v: 3700
+      type: FIREWORK_ROCKET
+      amount: 32
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        display-name: '{"text":"","extra":[{"text":"SummerSolarStars","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false}]}'
+        firework-effects:
+        - ==: Firework
+          flicker: true
+          trail: false
+          colors:
+          - ==: Color
+            ALPHA: 255
+            RED: 222
+            BLUE: 42
+            GREEN: 207
+          - ==: Color
+            ALPHA: 255
+            RED: 235
+            BLUE: 68
+            GREEN: 136
+          fade-colors:
+          - ==: Color
+            ALPHA: 255
+            RED: 179
+            BLUE: 44
+            GREEN: 49
+          type: BALL_LARGE
+        - ==: Firework
+          flicker: false
+          trail: true
+          colors:
+          - ==: Color
+            ALPHA: 255
+            RED: 222
+            BLUE: 42
+            GREEN: 207
+          - ==: Color
+            ALPHA: 255
+            RED: 235
+            BLUE: 68
+            GREEN: 136
+          fade-colors:
+          - ==: Color
+            ALPHA: 255
+            RED: 179
+            BLUE: 44
+            GREEN: 49
+          type: BALL
+        - ==: Firework
+          flicker: false
+          trail: true
+          colors:
+          - ==: Color
+            ALPHA: 255
+            RED: 179
+            BLUE: 44
+            GREEN: 49
+          - ==: Color
+            ALPHA: 255
+            RED: 123
+            BLUE: 190
+            GREEN: 47
+          fade-colors:
+          - ==: Color
+            ALPHA: 255
+            RED: 216
+            BLUE: 152
+            GREEN: 129
+          type: STAR
+        power: 1
+    '26':
+      v: 3700
+      type: TROPICAL_FISH_SPAWN_EGG
+    '27':
+      v: 3700
+      type: GOLDEN_CARROT
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Hot ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false},{"text":"Carrot","italic":false,"color":"yellow"}]}'
+        enchants:
+          LURE: 0
+        ItemFlags:
+        - HIDE_ENCHANTS
+    '28':
+      v: 3700
+      type: CROSSBOW
+      meta:
+        ==: ItemMeta
+        meta-type: CROSSBOW
+        display-name: '{"text":"","extra":[{"text":"I","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#C5F9D7","bold":false},{"text":"s","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#CFF1C6","bold":false},{"text":"l","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D9EAB6","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E3E2A6","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EDDB96","bold":false},{"text":"d","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F7D486","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F7D486","bold":false},{"text":"A","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F6C584","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F5B683","bold":false},{"text":"c","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F4A781","bold":false},{"text":"h","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F39880","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F2897E","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F27A7D","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"--------------------","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8ABFE6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"☼ Thank you for playing on ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8AE698","bold":false},{"text":"1MoreBlock.com","obfuscated":false,"clickEvent":{"action":"open_url","value":"http://1MoreBlock.com"},"italic":false,"underlined":false,"strikethrough":false,"color":"#8AE698","bold":false},{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8AE698","bold":false}]}'
+        - '{"text":"","extra":[{"text":"☼ during the summer of 2024! Here''s to endless","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8AE698","bold":false}]}'
+        - '{"text":"","extra":[{"text":"☼ sun-soaked adventures and vibrant summer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8AE698","bold":false}]}'
+        - '{"text":"","extra":[{"text":"☼ parties under the pixelated sky!","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8AE698","bold":false}]}'
+        - '{"text":"","extra":[{"text":"--------------------","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#8ABFE6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"🌴 Summer Festival Suit (Secret Item)","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F27A7D","bold":false}]}'
+        enchants:
+          LOYALTY: 1
+          MENDING: 3
+          MULTISHOT: 1
+          PROTECTION_ENVIRONMENTAL: 6
+          QUICK_CHARGE: 4
+          DURABILITY: 2
+        ItemFlags:
+        - HIDE_ATTRIBUTES
+        - HIDE_POTION_EFFECTS
+        charged: true
+        charged-projectiles:
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3700
+          type: FIREWORK_ROCKET
+          meta:
+            ==: ItemMeta
+            meta-type: FIREWORK
+            display-name: '{"text":"","extra":[{"text":"SummerSolarStars","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false}]}'
+            firework-effects:
+            - ==: Firework
+              flicker: true
+              trail: false
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 222
+                BLUE: 42
+                GREEN: 207
+              - ==: Color
+                ALPHA: 255
+                RED: 235
+                BLUE: 68
+                GREEN: 136
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              type: BALL_LARGE
+            - ==: Firework
+              flicker: false
+              trail: true
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 222
+                BLUE: 42
+                GREEN: 207
+              - ==: Color
+                ALPHA: 255
+                RED: 235
+                BLUE: 68
+                GREEN: 136
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              type: BALL
+            - ==: Firework
+              flicker: false
+              trail: true
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              - ==: Color
+                ALPHA: 255
+                RED: 123
+                BLUE: 190
+                GREEN: 47
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 216
+                BLUE: 152
+                GREEN: 129
+              type: STAR
+            power: 1
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3700
+          type: FIREWORK_ROCKET
+          meta:
+            ==: ItemMeta
+            meta-type: FIREWORK
+            display-name: '{"text":"","extra":[{"text":"SummerSolarStars","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false}]}'
+            firework-effects:
+            - ==: Firework
+              flicker: true
+              trail: false
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 222
+                BLUE: 42
+                GREEN: 207
+              - ==: Color
+                ALPHA: 255
+                RED: 235
+                BLUE: 68
+                GREEN: 136
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              type: BALL_LARGE
+            - ==: Firework
+              flicker: false
+              trail: true
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 222
+                BLUE: 42
+                GREEN: 207
+              - ==: Color
+                ALPHA: 255
+                RED: 235
+                BLUE: 68
+                GREEN: 136
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              type: BALL
+            - ==: Firework
+              flicker: false
+              trail: true
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              - ==: Color
+                ALPHA: 255
+                RED: 123
+                BLUE: 190
+                GREEN: 47
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 216
+                BLUE: 152
+                GREEN: 129
+              type: STAR
+            power: 1
+        - ==: org.bukkit.inventory.ItemStack
+          v: 3700
+          type: FIREWORK_ROCKET
+          meta:
+            ==: ItemMeta
+            meta-type: FIREWORK
+            display-name: '{"text":"","extra":[{"text":"SummerSolarStars","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false}]}'
+            firework-effects:
+            - ==: Firework
+              flicker: true
+              trail: false
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 222
+                BLUE: 42
+                GREEN: 207
+              - ==: Color
+                ALPHA: 255
+                RED: 235
+                BLUE: 68
+                GREEN: 136
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              type: BALL_LARGE
+            - ==: Firework
+              flicker: false
+              trail: true
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 222
+                BLUE: 42
+                GREEN: 207
+              - ==: Color
+                ALPHA: 255
+                RED: 235
+                BLUE: 68
+                GREEN: 136
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              type: BALL
+            - ==: Firework
+              flicker: false
+              trail: true
+              colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 179
+                BLUE: 44
+                GREEN: 49
+              - ==: Color
+                ALPHA: 255
+                RED: 123
+                BLUE: 190
+                GREEN: 47
+              fade-colors:
+              - ==: Color
+                ALPHA: 255
+                RED: 216
+                BLUE: 152
+                GREEN: 129
+              type: STAR
+            power: 1
+    '29':
+      v: 3700
+      type: MAGENTA_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: bri
+        - ==: Pattern
+          color: BLACK
+          pattern: bt
+        - ==: Pattern
+          color: MAGENTA
+          pattern: ss
+        - ==: Pattern
+          color: WHITE
+          pattern: ms
+        - ==: Pattern
+          color: MAGENTA
+          pattern: mc
+        - ==: Pattern
+          color: BLACK
+          pattern: cbo
+    '30':
+      v: 3700
+      type: CYAN_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: PURPLE
+          pattern: bri
+        - ==: Pattern
+          color: BLACK
+          pattern: bt
+        - ==: Pattern
+          color: CYAN
+          pattern: ss
+        - ==: Pattern
+          color: WHITE
+          pattern: ms
+        - ==: Pattern
+          color: CYAN
+          pattern: mc
+        - ==: Pattern
+          color: BLACK
+          pattern: cbo
+    '31':
+      v: 3700
+      type: BLACK_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: mc
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: cre
+        - ==: Pattern
+          color: BLACK
+          pattern: sc
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: cbo
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: ts
+        - ==: Pattern
+          color: BLUE
+          pattern: gra
+    '32':
+      v: 3700
+      type: LIGHT_BLUE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: WHITE
+          pattern: cr
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: hh
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: bs
+        - ==: Pattern
+          color: WHITE
+          pattern: bs
+        - ==: Pattern
+          color: WHITE
+          pattern: gra
+        - ==: Pattern
+          color: WHITE
+          pattern: tts
+    '33':
+      v: 3700
+      type: MAGENTA_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: LIME
+          pattern: rs
+        - ==: Pattern
+          color: BLUE
+          pattern: cs
+        - ==: Pattern
+          color: BLUE
+          pattern: tl
+        - ==: Pattern
+          color: BLUE
+          pattern: bri
+        - ==: Pattern
+          color: YELLOW
+          pattern: bs
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: gra
+    '34':
+      v: 3700
+      type: BLACK_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: YELLOW
+          pattern: sc
+        - ==: Pattern
+          color: RED
+          pattern: bri
+        - ==: Pattern
+          color: ORANGE
+          pattern: ls
+        - ==: Pattern
+          color: ORANGE
+          pattern: rs
+        - ==: Pattern
+          color: BLACK
+          pattern: bo
+        - ==: Pattern
+          color: BLACK
+          pattern: cbo
+    '35':
+      v: 3700
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAA/y3KQQ5AMBBG4Z8S1YU4jyWxt3CBUSWNmiY1G7dHYvnyPQMYNH2I9hhZvNwz7Rq5X9Genp1NtEm3ELNLNfREIi7xZQBkGtXfUFuICuUQQ0wvFVAoerrctwEPucCT7WQAAAA=
+        blockMaterial: SHIELD
+    '36':
+      v: 3700
+      type: SHIELD
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAA/y3JQQ5AMBBG4Z8S1YU4jyWxt3CBUSWNmiY1G7dHYve+PAMYNH2I9hhZvNwz7Rq5X9Genp1NtEm3ELNLNfREIi7xZQBkGtVvqC1EhXKIIaZvQaHo6XJvF8AD2bzf2GQAAAA=
+        blockMaterial: SHIELD
+summerfestivalbonusbox2024:
+  Description:
+  - summer festival bonus box for 2024
+  - You can get this once during the event
+  CommandName: summerfestivalbonusbox2024
+  DisplayName: '{#c5f9d7>}Summer Festi{#f7d486<>}val Event Bonus Box{#f27a7d<}'
+  Enabled: false
+  Delay: 10
+  MaxUsages: 1
+  MoneyCost: 2500.0
+  ExpCost: 20
+  Commands:
+  - 'asConsole! discordsrv broadcast #661710111152275456 ### :sun_with_face: **[Summer
+    Event]** `[playerName]` picked up the Summer Festival BONUS BOX from /kits'
+  - asConsole! cmi broadcast !{#gold}[Summer Event] {#8acfe6} [playerName] {#8acfe6}picked
+    up the {#00e6ca>}Summer BONUS BOX {#caribbeangreen<} {#8acfe6}from &l/kits
+  - asConsole! cmi sound block_amethyst_block_step -all
+  - delay! 0.3
+  - asConsole! cmi sound block_amethyst_block_step -all
+  - delay! 0.3
+  - asConsole! cmi sound block_amethyst_block_step -all
+  Items:
+    '28':
+      v: 3700
+      type: YELLOW_SHULKER_BOX
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        display-name: '{"text":"","extra":[{"text":"S","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#C5F9D7","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#C9F5CF","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#CEF2C8","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D2EEC0","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D7EBB9","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DBE8B2","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E0E4AA","bold":false},{"text":"F","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E4E1A3","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E9DE9C","bold":false},{"text":"s","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EDDA94","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F2D78D","bold":false},{"text":"i","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F7D486","bold":false},{"text":"v","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F7D486","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F6CF85","bold":false},{"text":"l","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F6C985","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F6C584","bold":false},{"text":"E","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F5C084","bold":false},{"text":"v","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F5BB83","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F5B683","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F5B182","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F4AC82","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F4A781","bold":false},{"text":"B","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F4A281","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F39D80","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F39880","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F3937F","bold":false},{"text":"s","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F38E7F","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F2897E","bold":false},{"text":"B","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F2847E","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F27F7D","bold":false},{"text":"x","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F27A7D","bold":false}]}'
+        ItemFlags:
+        - HIDE_POTION_EFFECTS
+        internal: H4sIAAAAAAAA/+2YW4/bRBTHvZeyl5YWCr1RirbhpUh9SJykqCtVYnedpI46kybrxJ1BKHJsx7exvdhOExv1IyAVHpCQKiQu6gNC4oVvwqfgW3DcdHe9TZqgLepTHlaJfc5/br85l80mx21y53eZrzoVL7KiWFKMDe6MGOluuMlx3PUlbnWf+RG3zi1bGnfJtTxdDZR+tH3AlFgPuqauaJvcSqQYm9yaZoXp63VuFSuuzv3wTS7SR1FuO5e7nYMvgZLb/vLonRT4B5aqsK1qMLAi8PB7/UGoKpGu5bb7Cgv12zkrUpilHj0OPE0PGCzh2COMAsvRIzPwB4Z59Fb1mR/AHD020GHkns8OFU++egI73tx3Bow1hp4eHC723H3YiaBESk8JdfB4CMvTg8jSww1uPV3yINBfHMnSOnemo8DA3F96XM/TR2Zee1RnaizegWdpP88aon3wueh14t6eeEd0wX5/586D+G7GtxwpcpmRYt2kXnPQczv5B8UW0++3CqrbftwQOg7mxYTaO2ViGzxKSIHY2CFSJY/kjtWokZgKzEZS1W3IbR7LzRGySakh7JSxrZnEVoeY71hIEItIqiTIxibeq9/tP8rf47iz3LKowUZWV1efPf37n+rNZ39y3O+/fp+DvXFn9vyBFy1xL7kvLbi/Ve67DgbmSDJ4LJA8ddsxrVV4VKu7SFJ5JOwkxCVF4oplarcsXGvyFO4KrVXBLpaw5CRIxiaR23mS1F1cQzy25nG/OYX78oL7W+SOJDQkcqWE3Eoay0UKMYsTo4yTukNsiHW3biLbGQHvPE5jW6gkVEAF4M03BAPeUYvITWCO8nBfEizUTdEr3O03783gvjWF+8r/z/2B7vre1q19AKtrny24Z7hjWSwRySlRuVIkSctCwBwJRpkkJMa2E1OZFMCngGQx5QyfdZfwIjCu2jghPEmcPJXUPJGBfKKWqI3iedx/3tudwn31NNy/nckdKZ7hL3BncFOpWWpIHZNIpIjsJiDHjNjNIXap1ZB2ClTALnabCZarNhUIpH3EU7uSJ5JRIGDBPOC3jXKjJpag3Oex2y6iOWX9N2M4BfeZBe63kNUTNGrU6ozI9bRzK2JBc0gCGVzCNkmRC2oBuaiEhWYR8RWo5KhE+MoIur24IbWgi4M8kHTchlSJkdAeUcEpzs/q0hTc75wG99OZuPcjJehbobkgns3nAoU6rTGgxtJgRkKVoWRnBDW7SG2jRN2WRWtN6NHrNuT5BKe9PfTsSNAYlVGC+Qr09S2HCqaNeVJCQJ/EswP8F/nKFOJrpyH+02ziiqdt7SlhxHRo4Xwv2hJ8gLXgn4l4Hnp2WwN+VejBKzwk+lL6v1dar4F3CZiWsUQKaa3GtbqFgH9ax1FSdUmyazZqaQ9IGST4mMgthuV2jOb0789vPZ3Cf/00/H/8z/wlf6gv0GfRE9tkSKIWtZkDiEdYYg61xUJDYC61VR5L1G0Img2t2jB9hvo/pEIFWjlqYqkNdb5uYR7qfq0NrT+0czIp0Tm1/fmt76ag3xijv3qMPgRyYeR7eneoMHYo+OJQsDkWnD8pmHA7O3b7+NhNNa1QZ7rWPZpgQnRuLPo0M7br+5HZDbKybsiU3oT23YkJT4qmbub8WPTJ7AknZBfGshvHsqFpRbCwSEnvbtdgShhOqN6bmMwPoA2aJ3t/LMsdy5hlmFE3vfpzpBfH0ouZuAb3yPKMw6DeOPodb51be6wEluJFWbZ9K9Cn3JoPTjfwhcyBQRoIpoz84RuPrCtBZE4Z+dIbH8bQ8rQpA1+eGFhV3IP05CZcr4xdr51w1Vk3PFCGXlc3jAnF1bHieuaGela/D7n59ZprY82V7CzRDP+Pxv6XX73OPcWD/Hl4OhO/+64/VCKA6L1ImtA0rr185lY0Fq6kk0COBtM5LmNbjrKmd7KmlV5gvdam9vyMjZuhO2Fb7kUnTFl8K9xSPHZ/pfiF5oA5cMI9fwQ+SeoDnyNu/OXsHhJ3FdV5CH/GHze+5v4FrQzjORYXAAA=
+        blockMaterial: YELLOW_SHULKER_BOX
+summerparkour:
+  CommandName: summerparkour
+  DisplayName: '{#00e6ca>}Summer Festival Pool Parkour Box{#caribbeangreen<}'
+  Enabled: false
+  Delay: 10
+  MaxUsages: 1
+  Commands:
+  - asConsole! cmi broadcast !{#gold}[Summer Event] {#8acfe6} [playerName] {#8acfe6}completed
+    the {#00e6ca>}Summer Festival Pool Parkour{#caribbeangreen<} {#8acfe6}and picked
+    up their reward from &l/kits
+  - 'asConsole! discordsrv broadcast #661710111152275456 ### :sun_with_face: **[Summer
+    Event]** `[playerName]` picked up the Summer Festival Pool Parkour Box 2024 from
+    /kits'
+  - asConsole! cmi sound block_amethyst_block_step -all
+  - delay! 0.3
+  - asConsole! cmi sound block_amethyst_block_step -all
+  - delay! 0.3
+  - asConsole! cmi sound block_amethyst_block_step -all
+  Items:
+    '1':
+      v: 3700
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Sun","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa64105
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGE5N2NkZWQ0N2U5MzA5NzYzZjcyMmJkYWMxZmJlNzUyNGRmMmE1ZWFjNTI1NzkyZDdlMTQzMGYyNDRiNjU5ZCJ9fX0=
+    '2':
+      v: 3700
+      type: TURTLE_SPAWN_EGG
+    '3':
+      v: 3700
+      type: GLOW_BERRIES
+      amount: 5
+    '4':
+      v: 3700
+      type: COAST_ARMOR_TRIM_SMITHING_TEMPLATE
+    '5':
+      v: 3700
+      type: EXPLORER_POTTERY_SHERD
+    '6':
+      v: 3700
+      type: DECORATED_POT
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAA/3XKMQ5AMBQG4H8QweAGxDmMEjewS6NPNaqV5w16e4lFQszfVwAFys6Fae29WImDMjnSYyHWRwYgQbVZTxOrWdqFFMu4BxHiON4J9cMzW/L635U3jvjlzeN07i7wZ+AC0wGr7aUAAAA=
+        blockMaterial: DECORATED_POT
+    '7':
+      v: 3700
+      type: MAP
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"A","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#000000","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#050505","bold":false},{"text":"c","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0A0A0A","bold":false},{"text":"i","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#101010","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#151515","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#1A1A1A","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#202020","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#252525","bold":false},{"text":"S","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#2A2A2A","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#303030","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#353535","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3A3A3A","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#404040","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#454545","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#4A4A4A","bold":false},{"text":"B","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#505050","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#555555","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5A5A5A","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#606060","bold":false},{"text":"s","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#656565","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#6A6A6A","bold":false},{"text":"L","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#707070","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#757575","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#7A7A7A","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#808080","bold":false}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":["Find the barrel? All yours.."]}'
+        - '{"text":"","extra":["Can''t find it? Someone got it first."]}'
+        - '{"text":"","extra":["Want it? Maybe it''s there again in a day?"]}'
+        - '{"text":"","extra":["5656 -51 4646"]}'
+        - '{"text":"","extra":["oof, explore, dont die !"]}'
+        - '{"text":"","extra":["lootbox stops spawning after August 17th 2024"]}'
+        enchants:
+          DURABILITY: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        - HIDE_POTION_EFFECTS
+        - HIDE_DYE
+        - HIDE_ARMOR_TRIM
+    '8':
+      v: 3700
+      type: BLACK_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: YELLOW
+          pattern: sku
+        - ==: Pattern
+          color: PURPLE
+          pattern: ms
+        - ==: Pattern
+          color: PURPLE
+          pattern: ts
+        - ==: Pattern
+          color: PURPLE
+          pattern: hhb
+        - ==: Pattern
+          color: BLACK
+          pattern: bs
+        - ==: Pattern
+          color: BLACK
+          pattern: bo
+    '9':
+      v: 3700
+      type: RED_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: YELLOW
+          pattern: cre
+        - ==: Pattern
+          color: YELLOW
+          pattern: ms
+        - ==: Pattern
+          color: BROWN
+          pattern: pig
+        - ==: Pattern
+          color: GREEN
+          pattern: ts
+        - ==: Pattern
+          color: CYAN
+          pattern: bo
+        - ==: Pattern
+          color: RED
+          pattern: bs
+    '10':
+      v: 3700
+      type: AMETHYST_BLOCK
+      amount: 5
+    '11':
+      v: 3700
+      type: BUDDING_AMETHYST
+      amount: 5
+    '12':
+      v: 3700
+      type: SMALL_AMETHYST_BUD
+      amount: 5
+    '13':
+      v: 3700
+      type: MEDIUM_AMETHYST_BUD
+    '14':
+      v: 3700
+      type: LARGE_AMETHYST_BUD
+    '15':
+      v: 3700
+      type: AMETHYST_CLUSTER
+    '16':
+      v: 3700
+      type: BAMBOO
+      amount: 16
+    '17':
+      v: 3700
+      type: PAINTING
+      meta:
+        ==: ItemMeta
+        meta-type: ENTITY_TAG
+        internal: H4sIAAAAAAAA/+NiYOBi4HTNK8ksqQxJTOdgYC9LLMpMzCthEMjNzEtNLkpMK7FKL0rMSMxlYAAAhpfw2C0AAAA=
+    '18':
+      v: 3700
+      type: MUSIC_DISC_5
+    '19':
+      v: 3700
+      type: GOLDEN_APPLE
+    '20':
+      v: 3700
+      type: BARREL
+      amount: 3
+    '21':
+      v: 3700
+      type: DIAMOND_AXE
+    '22':
+      v: 3700
+      type: SPYGLASS
+    '23':
+      v: 3700
+      type: BAMBOO_CHEST_RAFT
+    '24':
+      v: 3700
+      type: TADPOLE_BUCKET
+    '25':
+      v: 3700
+      type: GOAT_HORN
+      meta:
+        ==: ItemMeta
+        meta-type: MUSIC_INSTRUMENT
+        instrument: minecraft:sing_goat_horn
+    '26':
+      v: 3700
+      type: FIREWORK_ROCKET
+      amount: 64
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        power: 2
+    '27':
+      v: 3700
+      type: CARROT_ON_A_STICK
+    '28':
+      v: 3700
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Beach Ball","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-00000aaa8455
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGFhYTZlZWRhOTg0MjdiZjQxYjJhMWQ3OGQ5YjE1ZDAxYjVjNzlhNGVkYmI1ZWZiMTA0OGY1YzU2Nzk0NGYifX19
+    '29':
+      v: 3700
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Sweet Berries","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa96959
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZhODk0YmIwNDViY2I5MzZhZTQ0NTMyYzNiYzk1MmU3MDBkODFjNTMwZjY4MGUzYmI1MjkzMjRlYmU2NTczNCJ9fX0=
+    '30':
+      v: 3700
+      type: WHITE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: LIME
+          pattern: mr
+        - ==: Pattern
+          color: LIME
+          pattern: ms
+        - ==: Pattern
+          color: WHITE
+          pattern: drs
+        - ==: Pattern
+          color: LIME
+          pattern: bo
+    '31':
+      v: 3700
+      type: LIGHT_BLUE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: WHITE
+          pattern: bs
+        - ==: Pattern
+          color: WHITE
+          pattern: ls
+        - ==: Pattern
+          color: WHITE
+          pattern: rs
+        - ==: Pattern
+          color: LIGHT_BLUE
+          pattern: bo
+    '32':
+      v: 3700
+      type: RED_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: WHITE
+          pattern: tt
+        - ==: Pattern
+          color: RED
+          pattern: tts
+        - ==: Pattern
+          color: WHITE
+          pattern: ls
+        - ==: Pattern
+          color: WHITE
+          pattern: rs
+        - ==: Pattern
+          color: RED
+          pattern: bo
+    '33':
+      v: 3700
+      type: YELLOW_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: WHITE
+          pattern: tt
+        - ==: Pattern
+          color: YELLOW
+          pattern: tts
+        - ==: Pattern
+          color: WHITE
+          pattern: ls
+        - ==: Pattern
+          color: WHITE
+          pattern: rs
+        - ==: Pattern
+          color: YELLOW
+          pattern: bo
+    '34':
+      v: 3700
+      type: BLUE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: WHITE
+          pattern: ls
+        - ==: Pattern
+          color: WHITE
+          pattern: ts
+        - ==: Pattern
+          color: WHITE
+          pattern: ms
+        - ==: Pattern
+          color: WHITE
+          pattern: bs
+        - ==: Pattern
+          color: BLUE
+          pattern: bo
+    '35':
+      v: 3700
+      type: MAGENTA_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        patterns:
+        - ==: Pattern
+          color: WHITE
+          pattern: hh
+        - ==: Pattern
+          color: MAGENTA
+          pattern: cs
+        - ==: Pattern
+          color: WHITE
+          pattern: ts
+        - ==: Pattern
+          color: WHITE
+          pattern: ls
+        - ==: Pattern
+          color: WHITE
+          pattern: drs
+        - ==: Pattern
+          color: MAGENTA
+          pattern: bo
+    '36':
+      v: 3700
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Coconut","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa14332
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2M4MmJiN2Q5N2M4ZmI5NTUzOTQxZDc3NGY2YWU4ODhkY2MzMzU1OTNiOWMxNDJlNjI4ZGRhNWE3MzUifX19

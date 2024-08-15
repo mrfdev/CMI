@@ -4,7 +4,7 @@ acid:
   acidspawnparticles:
     Loc: -388.0:56.0:362.0:-386.0:60.0:362.0
     enabled: true
-    effect: sneeze
+    effect: Sneeze
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -40,7 +40,7 @@ general:
   benjaminparticles:
     Loc: -13436.0:69.0:17670.0:-13436.0:69.0:17670.0
     enabled: true
-    effect: soul_fire_flame
+    effect: SoulFireFlame
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -55,7 +55,7 @@ general:
   citebaflaportal:
     Loc: -6541.0:60.0:1268.0:-6539.0:64.0:1268.0
     enabled: true
-    effect: soul_fire_flame
+    effect: SoulFireFlame
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -126,7 +126,8 @@ general:
   freerunes:
     Loc: 7543.0:147.0:11807.0:7552.0:147.0:11818.0
     enabled: true
-    effect: EnchantmentTable
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -145,8 +146,7 @@ general:
   jackperbyteportal1:
     Loc: 15400.0:67.0:-14922.0:15401.0:69.0:-14922.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: true
     Tp: wild;2080.5;73.0;-3371.5;179.9;19.89
     kickBack: false
@@ -164,8 +164,7 @@ general:
   playermacadam:
     Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: true
     Tp: general;6060.62;62.0;14269.23;-175.74;10.36
     kickBack: true
@@ -180,7 +179,8 @@ general:
   playerportalenderrogue47:
     Loc: -16913.0:13.0:16563.0:-16912.0:17.0:16563.0
     enabled: true
-    effect: EnchantmentTable
+    effect: Dust
+    color: 8224125
     showParticles: true
     Tp: general;12064.01;57.2;19136.0;-180.17;-3.16
     kickBack: true
@@ -214,7 +214,8 @@ general:
   playerportalritualrogue47:
     Loc: -16913.0:13.0:16555.0:-16912.0:17.0:16555.0
     enabled: true
-    effect: EnchantmentTable
+    effect: Dust
+    color: 8224125
     showParticles: true
     Tp: general;9382.45;83.36;12594.53;272.1;8.17
     kickBack: true
@@ -231,7 +232,7 @@ general:
   playertiredpamster:
     Loc: -16903.0:81.0:11635.0:-16897.0:83.0:11637.0
     enabled: true
-    effect: soul
+    effect: Soul
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -265,7 +266,8 @@ general:
   plrvloop2:
     Loc: 12752.0:31.0:12027.0:12752.0:33.0:12030.0
     enabled: true
-    effect: EnchantmentTable
+    effect: Dust
+    color: 8224125
     showParticles: true
     Tp: general;13363.54;64.19;-4280.41;-271.16;6.99
     kickBack: true
@@ -281,7 +283,7 @@ general:
   ShopsCommunityChests:
     Loc: 12535.0:78.0:-5362.0:12536.0:78.0:-5362.0
     enabled: true
-    effect: crimson_spore
+    effect: CrimsonSpore
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -298,7 +300,8 @@ general:
   shopsEnchantTableParticles:
     Loc: 12510.0:79.0:-5327.0:12514.0:81.0:-5323.0
     enabled: true
-    effect: EnchantmentTable
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -312,8 +315,7 @@ general:
   spawn_general_endportal:
     Loc: 76.0:83.0:-236.0:78.0:85.0:-234.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     Tp: end;111.23;47.0;85.48;90.27;1.7
     kickBack: true
@@ -329,8 +331,7 @@ general:
   spawn_general_nether1:
     Loc: 72.0:81.0:-207.0:82.0:88.0:-207.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     Tp: nether;328.54;80.0;-212.55;90.2;-6.17
     kickBack: true
@@ -361,7 +362,7 @@ general:
   tidaladesert1:
     Loc: 7385.0:56.0:6028.0:7385.0:59.0:6028.0
     enabled: true
-    effect: dripping_obsidian_tear
+    effect: DrippingObsidianTear
     showParticles: true
     Tp: wild;-8749.53;64.0;7304.24;-107.07;8.09
     kickBack: true
@@ -393,8 +394,7 @@ general:
   tidalminiportal:
     Loc: 7363.0:0.0:6026.0:7363.0:3.0:6026.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     Tp: general;7342.48;62.8;6026.55;-89.94;5.1
     kickBack: true
@@ -409,7 +409,7 @@ general:
   tmptidal:
     Loc: 7430.0:48.0:6024.0:7430.0:52.0:6033.0
     enabled: true
-    effect: DripWater
+    effect: Waterdrip
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -424,8 +424,7 @@ general:
   vloopendbossbar:
     Loc: -16775.0:104.0:17146.0:-16769.0:106.0:17152.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -442,8 +441,7 @@ general:
   vloopendportal:
     Loc: -15601.0:30.0:-12668.0:-15599.0:30.0:-12666.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     Tp: general;-16766.5;102.69;17123.5;-1.13;-6.95
     kickBack: true
@@ -459,8 +457,7 @@ general:
   vloopendreturnportal:
     Loc: -16774.0:103.0:17147.0:-16770.0:103.0:17151.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     Tp: general;-15603.25;31.9;-12679.72;229.44;14.74
     kickBack: true
@@ -508,8 +505,7 @@ easter:
   eastervoidrespawn:
     Loc: -294.0:-60.0:-343.0:356.0:-35.0:307.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     kickBack: false
     particlesByPermission: false
@@ -526,197 +522,11 @@ easter:
     - asConsole! cmi effect [playerName] blindness 2 1 -s
     - delay! 0.5
     - asPlayer! easter
-wild:
-  fumblemountainlaunch:
-    Loc: 609.0:227.0:1621.0:609.0:227.0:1621.0
-    enabled: true
-    effect: Reddust
-    color: 8224125
-    showParticles: false
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - asConsole! cmi launch [playerName] -nodamage p:6 a:35 d:east
-  jackperbyteportal1back:
-    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
-    enabled: true
-    effect: Reddust
-    color: 8224125
-    showParticles: true
-    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
-    kickBack: false
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 6
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - msg! [playerName] &lWhoOoOOosh!
-    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
-  koolkidportaltemp:
-    Loc: 2306.0:73.0:1811.0:2309.0:76.0:1811.0
-    enabled: true
-    effect: crimson_spore
-    showParticles: true
-    Tp: wild;1422.0;-32.0;1566.13;67.49;5.69
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-  perrynetherportal:
-    Loc: -3470.0:55.0:4109.0:-3470.0:59.0:4110.0
-    enabled: true
-    effect: reverse_portal
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 4
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! nether
-  randyendportal:
-    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
-    enabled: true
-    effect: TownAura
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! mv tp end
-  randyfortuneteller:
-    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
-    enabled: true
-    effect: composter
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 1
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
-  tidalabase2:
-    Loc: -8758.0:65.0:7323.0:-8758.0:68.0:7323.0
-    enabled: true
-    effect: cherry_leaves
-    showParticles: true
-    Tp: general;7384.41;64.0;6025.44;96.76;7.09
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 1
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-  wildend:
-    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
-    enabled: true
-    effect: DepthSuspend
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! end
-  wildgeneral:
-    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
-    enabled: true
-    effect: Totem
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! general
-  wildhalloweenprefix:
-    Loc: 105.0:54.0:67.0:106.0:57.0:68.0
-    enabled: true
-    effect: DripLava
-    showParticles: true
-    kickBack: false
-    particlesByPermission: false
-    requiresPerm: true
-    informOnMissingPerm: true
-    particleAmount: 10
-    particleHide: 0
-    activationRange: 8
-    commandsWithoutTp: true
-    commands:
-    - asConsole! cmi sound entity_wither_death [playerName]
-    - cmi effect [playerName] blindness 2 1 -s
-    - asConsole! cmi nameplate [playerName] -pref:{#cinnamon>}Halloween_{#tahitigold<}&r
-      -s
-    - msg! [playerName] {#orange}The /halloween world opens October 30th! (at some
-      point).
-    - msg! [playerName] {#orange}&l Okay, you should now have the Halloween prefix
-      in chat! :)
-  wildnether:
-    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
-    enabled: true
-    effect: Portal
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! nether
 halloween:
   halloweenfortuneteller:
     Loc: 1676.0:72.0:640.0:1679.0:73.0:640.0
     enabled: true
-    effect: glow
+    effect: Glow
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -733,7 +543,7 @@ halloween:
   halloweenLaunchPortalOne:
     Loc: 1359.0:65.0:699.0:1365.0:67.0:705.0
     enabled: true
-    effect: soul_fire_flame
+    effect: SoulFireFlame
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -769,7 +579,7 @@ halloween:
   halloweenPortal:
     Loc: 1759.0:71.0:848.0:1761.0:75.0:848.0
     enabled: true
-    effect: DepthSuspend
+    effect: VoidFog
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -787,7 +597,7 @@ halloween:
   halloweenspawnsoul:
     Loc: 1485.0:75.0:492.0:1488.0:77.0:495.0
     enabled: true
-    effect: soul
+    effect: Soul
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -821,7 +631,7 @@ halloween:
   halloweenwaterdrip:
     Loc: 1603.0:85.0:799.0:1604.0:88.0:799.0
     enabled: true
-    effect: DripWater
+    effect: Waterdrip
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -833,12 +643,180 @@ halloween:
     commandsWithoutTp: false
     commands:
     - cmi effect [playerName] blindness 2 1 -s
+wild:
+  jackperbyteportal1back:
+    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
+    enabled: true
+    effect: ColouredDust
+    showParticles: true
+    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] &lWhoOoOOosh!
+    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
+  koolkidportaltemp:
+    Loc: 2306.0:73.0:1811.0:2309.0:76.0:1811.0
+    enabled: true
+    effect: CrimsonSpore
+    showParticles: true
+    Tp: wild;1422.0;-32.0;1566.13;67.49;5.69
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  perrynetherportal:
+    Loc: -3470.0:55.0:4109.0:-3470.0:59.0:4110.0
+    enabled: true
+    effect: ReversePortal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 4
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether
+  randyendportal:
+    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
+    enabled: true
+    effect: SmallSmoke
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! mv tp end
+  randyfortuneteller:
+    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
+    enabled: true
+    effect: Composter
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
+  tidalabase2:
+    Loc: -8758.0:65.0:7323.0:-8758.0:68.0:7323.0
+    enabled: true
+    effect: CherryLeaves
+    showParticles: true
+    Tp: general;7384.41;64.0;6025.44;96.76;7.09
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  wildend:
+    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
+    enabled: true
+    effect: VoidFog
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! end
+  wildgeneral:
+    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
+    enabled: true
+    effect: Totem
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! general
+  wildhalloweenprefix:
+    Loc: 105.0:54.0:67.0:106.0:57.0:68.0
+    enabled: true
+    effect: Lavadrip
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: true
+    informOnMissingPerm: true
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 8
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound entity_wither_death [playerName]
+    - cmi effect [playerName] blindness 2 1 -s
+    - asConsole! cmi nameplate [playerName] -pref:{#cinnamon>}Halloween_{#tahitigold<}&r
+      -s
+    - msg! [playerName] {#orange}The /halloween world opens October 30th! (at some
+      point).
+    - msg! [playerName] {#orange}&l Okay, you should now have the Halloween prefix
+      in chat! :)
+  wildnether:
+    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
+    enabled: true
+    effect: Portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether
 run:
   runlevel3:
     Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -869,7 +847,7 @@ santa:
   santalecternparticles:
     Loc: -16.0:154.0:98.0:-16.0:155.0:98.0
     enabled: true
-    effect: reverse_portal
+    effect: ReversePortal
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -884,7 +862,7 @@ santa:
   santaparticlestree:
     Loc: 162.0:74.0:56.0:174.0:95.0:71.0
     enabled: true
-    effect: SnowBallPoof
+    effect: SnowballBreak
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -899,8 +877,7 @@ santa:
   santaworldfrostyperk:
     Loc: 167.0:74.0:54.0:167.0:77.0:55.0
     enabled: true
-    effect: Reddust
-    color: 12164035
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -930,8 +907,7 @@ skyblock:
   skyblockspawn:
     Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
     enabled: true
-    effect: Reddust
-    color: 8224125
+    effect: ColouredDust
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -946,11 +922,29 @@ skyblock:
     - asConsole! cmi tpopos -p:[playerName] -1 134 -5 skyblock
 summer:
   summerbuildparticles:
-    Loc: 107.0:78.0:-61.0:109.0:79.0:-61.0
+    Loc: 105.0:77.0:-64.0:111.0:82.0:-58.0
     enabled: true
     effect: Heart
     showParticles: true
     kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 20
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - msg! [playerName] {#buttercup}&l - The team at 1MoreBlock.com really appreciates
+      all the contributions from developers, build teams, builder group players, and
+      all staff members. They've done an amazing job creating a really cool summer
+      event location. <3
+  summerParkourFinish:
+    Loc: -72.0:67.0:-48.0:-70.0:67.0:-48.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: false
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
@@ -959,16 +953,179 @@ summer:
     activationRange: 16
     commandsWithoutTp: true
     commands:
-    - msg! [playerName] {#buttercup}&l - The team at 1MoreBlock.com really appreciates
-      all the contributions from developers, build teams, builder group players, and
-      all staff members. They've done an amazing job creating a really cool summer
-      event location. <3
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourFinish yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+    - delay! 2
+    - check:%cmi_user_meta_summerParkourStart%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourOne%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourThree%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourFour%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourFive%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourSix%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - check:%cmi_user_meta_summerParkourFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment summerParkourCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_summerParkourCompleted%==8!
+    - if:check1@! msg! [playerName] You haven't completed the Summer Pool Parkour
+      {#gray}(score counter has been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lSummer Pool Parkour Completed\n
+      {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! perm:cmi.kit.summerparkour@! msg! [playerName] {#buttercup}Awesome!
+      Let's unlock the reward, in a minute go check "/kits", the 'pool parkour' box
+      should be there! It is a one time kit, completing the parkour again won't unlock
+      it multiple times.
+    - if:check1! perm:cmi.kit.summerparkour@! asConsole! lp user [playerName] permission
+      set cmi.kit.summerparkour true
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove summerParkourStart
+    - asConsole! cmi usermeta [playerName] remove summerParkourOne
+    - asConsole! cmi usermeta [playerName] remove summerParkourTwo
+    - asConsole! cmi usermeta [playerName] remove summerParkourThree
+    - asConsole! cmi usermeta [playerName] remove summerParkourFour
+    - asConsole! cmi usermeta [playerName] remove summerParkourFive
+    - asConsole! cmi usermeta [playerName] remove summerParkourSix
+    - asConsole! cmi usermeta [playerName] remove summerParkourFinish
+  summerParkourFive:
+    Loc: -73.0:68.0:-57.0:-71.0:70.0:-57.0
+    enabled: true
+    effect: SoulFireFlame
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourFive yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+  summerParkourFour:
+    Loc: -70.0:67.0:-62.0:-68.0:69.0:-62.0
+    enabled: true
+    effect: WaxOn
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourFour yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+  summerParkourOne:
+    Loc: -72.0:67.0:-75.0:-70.0:69.0:-75.0
+    enabled: true
+    effect: HappyVillager
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourOne yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+  summerParkourSix:
+    Loc: -72.0:69.0:-52.0:-70.0:71.0:-52.0
+    enabled: true
+    effect: WitchMagic
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourSix yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+  summerParkourStart:
+    Loc: -71.0:67.0:-80.0:-71.0:69.0:-80.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 2
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourStart yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+  summerParkourThree:
+    Loc: -71.0:68.0:-67.0:-69.0:70.0:-67.0
+    enabled: true
+    effect: SmallFlame
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourThree yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
+  summerParkourTwo:
+    Loc: -73.0:68.0:-71.0:-71.0:70.0:-71.0
+    enabled: true
+    effect: Nautilus
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.6 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add summerParkourTwo yep
+    - asConsole! cmi usermeta [playerName] add summerParkourCompleted 0
 thanksgiving:
   thanksgivingturkey1:
     Loc: 536.0:95.0:-539.0:537.0:99.0:-538.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -987,8 +1144,7 @@ thanksgiving:
   thanksgivingturkey10:
     Loc: 349.0:72.0:-594.0:351.0:75.0:-592.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1007,8 +1163,7 @@ thanksgiving:
   thanksgivingturkey11:
     Loc: 311.0:74.0:-588.0:313.0:77.0:-586.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1027,8 +1182,7 @@ thanksgiving:
   thanksgivingturkey12:
     Loc: 280.0:72.0:-569.0:282.0:75.0:-567.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1047,8 +1201,7 @@ thanksgiving:
   thanksgivingturkey13:
     Loc: 237.0:70.0:-560.0:239.0:72.0:-559.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1067,8 +1220,7 @@ thanksgiving:
   thanksgivingturkey14:
     Loc: 237.0:70.0:-563.0:239.0:72.0:-561.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1087,8 +1239,7 @@ thanksgiving:
   thanksgivingturkey15:
     Loc: 273.0:74.0:-533.0:276.0:77.0:-529.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1107,8 +1258,7 @@ thanksgiving:
   thanksgivingturkey16:
     Loc: 308.0:72.0:-553.0:311.0:74.0:-551.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1127,8 +1277,7 @@ thanksgiving:
   thanksgivingturkey17:
     Loc: 351.0:72.0:-541.0:353.0:75.0:-539.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1147,8 +1296,7 @@ thanksgiving:
   thanksgivingturkey18:
     Loc: 355.0:77.0:-567.0:358.0:80.0:-565.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1167,8 +1315,7 @@ thanksgiving:
   thanksgivingturkey19:
     Loc: 341.0:76.0:-577.0:343.0:79.0:-574.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1187,8 +1334,7 @@ thanksgiving:
   thanksgivingturkey2:
     Loc: 560.0:122.0:-560.0:561.0:125.0:-559.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1207,8 +1353,7 @@ thanksgiving:
   thanksgivingturkey20:
     Loc: 350.0:72.0:-579.0:352.0:75.0:-577.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1227,8 +1372,7 @@ thanksgiving:
   thanksgivingturkey21:
     Loc: 321.0:74.0:-566.0:323.0:77.0:-564.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1247,8 +1391,7 @@ thanksgiving:
   thanksgivingturkey22:
     Loc: 337.0:75.0:-552.0:339.0:78.0:-550.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1267,8 +1410,7 @@ thanksgiving:
   thanksgivingturkey23:
     Loc: 352.0:72.0:-557.0:354.0:75.0:-553.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1287,8 +1429,7 @@ thanksgiving:
   thanksgivingturkey24:
     Loc: 544.0:99.0:-558.0:546.0:102.0:-556.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1307,8 +1448,7 @@ thanksgiving:
   thanksgivingturkey25:
     Loc: 253.0:73.0:-567.0:255.0:76.0:-564.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1327,8 +1467,7 @@ thanksgiving:
   thanksgivingturkey3:
     Loc: 521.0:98.0:-590.0:524.0:101.0:-588.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1347,8 +1486,7 @@ thanksgiving:
   thanksgivingturkey4:
     Loc: 508.0:96.0:-571.0:510.0:100.0:-569.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1367,8 +1505,7 @@ thanksgiving:
   thanksgivingturkey5:
     Loc: 476.0:99.0:-563.0:478.0:102.0:-560.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1387,8 +1524,7 @@ thanksgiving:
   thanksgivingturkey6:
     Loc: 444.0:99.0:-562.0:446.0:102.0:-561.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1407,8 +1543,7 @@ thanksgiving:
   thanksgivingturkey7:
     Loc: 421.0:99.0:-548.0:423.0:102.0:-546.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1427,8 +1562,7 @@ thanksgiving:
   thanksgivingturkey8:
     Loc: 386.0:76.0:-545.0:388.0:79.0:-543.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1447,8 +1581,7 @@ thanksgiving:
   thanksgivingturkey9:
     Loc: 387.0:73.0:-571.0:389.0:76.0:-569.0
     enabled: true
-    effect: Reddust
-    color: 6265725
+    effect: ColouredDust
     showParticles: true
     kickBack: true
     particlesByPermission: false

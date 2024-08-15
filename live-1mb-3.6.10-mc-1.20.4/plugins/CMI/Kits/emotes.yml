@@ -1,0 +1,48 @@
+emoteHug:
+  CommandName: emoteHug
+  Enabled: false
+  Delay: 10
+  MaxUsages: 1
+  Items:
+    '28':
+      v: 3700
+      type: SUNFLOWER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false},{"text":"☀","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5CE68B","bold":false},{"text":"]
+          /hug","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /hug","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
+        internal: H4sIAAAAAAAA/1XOuw6CMBhA4d+woC6a+AwuDAZjTBwckJsQwGCrVDZMG0CBYoFEfUlfycvmes7yDQAkkPdJRXnp0PGrnvZhGGywzsvyExsZAHpQuF0dotBMG6Zkhipwa3k4sBfLyt3hG9oK0iXhziMqL3J1ZlLOcOxqQRNxRryTjxb4EuQGSbvwmEWt+rTFE59nMYvrBzXmFrqulEhDmCRa4awlmOi+4+Vl3jJ6aJjeCcGq9guRYPS3/OT+870BINMiu8YAAAA=
+emoteCheer:
+  Description:
+  - This kit is a one time kit,
+  - it will cost $ 4500 to unlock
+  - and a little bit of vanilla exp.
+  - And it will give you a token from
+  - the Summer Festival from 2024,
+  - which lets you unlock the
+  - '1MB Emote: "/cheer".'
+  CommandName: emoteCheer
+  DisplayName: 'Emote unlock: /cheer'
+  Delay: 10
+  MaxUsages: 1
+  MoneyCost: 4500.0
+  ExpCost: 200
+  Items:
+    '28':
+      v: 3700
+      type: SUNFLOWER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false},{"text":"☀","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5CE68B","bold":false},{"text":"]
+          /cheer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /cheer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
+        internal: H4sIAAAAAAAA/1XOORKCMBhA4d+hcWksvIWFogxDY6HgFkMUE0eww0lQFIgmMOMlPK0XcOls32u+JoAB9W1ccJkvef/pvRrQIhPmyjz/RF0HgBpkqLoFNJietOiePVOxcoYZmVt2gdbsThcqrOJgjUNTZqnZm3Ip2AGNid5LEeLIp9bquCGRRppkQye5XLHt7GVMz97ipBKKksGEbi4rZtl8EI0M6Lj+Eqd5Wgq+08KtlBJF+YUY0P5bfvz4+d4YlH9hxgAAAA==

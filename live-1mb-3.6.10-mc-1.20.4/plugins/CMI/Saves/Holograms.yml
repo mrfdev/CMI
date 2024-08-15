@@ -1,7 +1,620 @@
+easterspaw:
+  Loc: easter;30.93;103.12;-18.0
+  Range: 8
+  RangeExtra: 16
+  Lines:
+  - '{#magenta}Please read the books'
+  - '{#magenta}in the lectern to start.'
+  - 'Commands:'
+  - '{#gold}/easter'
+  - '{#gold}/egghunt'
+  - '{#gold}/egghunt fly'
+santatalks:
+  Loc: santa;277.16;67.68;-66.45
+  Range: 16
+  RangeExtra: 32
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 90
+    Pitch: 15
+    Double: true
+    BColor: '{#1d3300}'
+    BAlpha: 255
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#gold} "Sorry %cmi_user_name%,'
+  - '{#gold} The advent is 24 days,'
+  - '{#yellow} and they have passed.'
+  - '{#yellow} Show floris your 24 giftbag collection'
+  - '&o'
+  - '{#orange} before 30th, for a bonus box'
+  - '&o'
+  - '{#red}- Santa'
+halloweennpcchat3:
+  Loc: halloween;1677.9;74.84;640.84
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 180
+    BColor: '{#Black}'
+    ScaleW: 0.9
+    ScaleH: 0.9
+  Lines:
+  - '{#gold}I am Madam Nixxy!'
+  - '{#gold}What will your'
+  - '{#gold}future hold?'
+halloweennpcchat2:
+  Loc: halloween;1655.24;72.55;756.77
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    Yaw: 330
+    Double: true
+    BColor: '{#Black}'
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#gold}Nice to see you in my store'
+  - '{#gold}Please look around, and'
+  - '{#gold}let me know if you need help!'
+halloweennpcchat1:
+  Loc: halloween;1672.41;72.8;715.29
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 10
+    BColor: '{#Black}'
+    BAlpha: 30
+    ScaleW: 0.7
+    ScaleH: 0.8
+  Lines:
+  - '{#gold}Welcome to the Halloween'
+  - '{#gold}Bootastic Books Bookstore!'
+  - '{#gold}Feel free to check out'
+  - '{#gold}our spooky section!'
+eastercake:
+  Loc: easter;-120.5;55.62;276.89
+  Range: 64
+  RangeExtra: 64
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    BColor: '{#Black}'
+    IScale: 7.03
+  Lines:
+  - ICON:CAKE
+summer_beachcomber_bob:
+  Loc: summer;-51.56;68.28;336.1
+  HoverParticles:
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Hey, hey! Beachcomber Bob here, collector of '
+  - '{#f7d486} treasures from land and sea. Trade your '
+  - '{#f7d486} resources with me for a keepsake of '
+  - '{#f7d486} summer''s embrace. Seek out others '
+  - '{#f7d486} like me to complete your quest!"'
+  - '{#c5f9d7} - Beachcomber Bob'
+  - '!nextpage!'
+  - '{#f7d486}"After going around these shorelines,'
+  - '{#f7d486} I''ve found no Harvest Tulips! Do you'
+  - '{#f7d486} perhaps have any to trade with me?'
+  - '{#f7d486} They symbolize the warmth of the summer'
+  - '{#f7d486} harvest. I will give you a Summer Lantern!"'
+  - '{#c5f9d7} - Beachcomber Bob'
+summer_cocnut_cathy:
+  Loc: summer;-8.69;81.28;-11.47
+  HoverParticles:
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Yaw: 90
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Aloha, traveler! Coconut Cathy here, '
+  - '{#f7d486} offering a slice of island paradise. '
+  - '{#f7d486} Trade your goods with me for a touch of'
+  - '{#f7d486} tropical charm. Keep collecting to unlock'
+  - '{#f7d486} the secrets of Sunshine Sophia''s realm!"'
+  - '{#c5f9d7} - Coconut Cathy'
+  - '!nextpage!'
+  - '{#f7d486}"I am looking to trade some light'
+  - '{#f7d486} blue candles. I am using them as'
+  - '{#f7d486} Lagoon Light Candles! They represent'
+  - '{#f7d486} the calm, crystal-clear water of'
+  - '{#f7d486} a tropical lagoon. In exchange,'
+  - '{#f7d486} I will give you Summer Beach Roots!"'
+  - '{#c5f9d7} - Coconut Cathy'
+ajlbFishingTop:
+  Loc: wild;-3870.63;97.62;-4520.63
+  Range: 8
+  RangeExtra: 16
+  Lines:
+  - The /fish top level
+  - '%ajlb_lb_pyrofishingpro_level_1_alltime_name% %ajlb_lb_pyrofishingpro_level_1_alltime_value%'
+halloweennpcchat6:
+  Loc: halloween;1558.51;73.65;759.47
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 180
+    BColor: '{#Black}'
+    BAlpha: 50
+    ScaleW: 0.8
+    ScaleH: 0.8
+  Lines:
+  - '{#gold}Under New'
+  - '{#gold}Management..'
+summer_whack_icon:
+  Loc: summer;499.5;88.82;-74.12
+  Range: 48
+  RangeExtra: 48
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    ScaleW: 5.09
+    ScaleH: 4.09
+  Lines:
+  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTFhNjA4NDk2OTM4MzNmYmJlZTIwY2Y0NmRhMTk4NjdlN2U2YTlkOTAzMGRlOWIzYWExOTdjN2ExN2NiMTM1OSJ9fX0=
+  - '{#brown>}Whack a Mole{#buttercup<}'
+halloweennpcchat5:
+  Loc: halloween;1892.46;82.29;702.01
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 85
+    BColor: '{#Black}'
+  Lines:
+  - '{#gold}Enjoy your stay!'
+halloweennpcchat4:
+  Loc: halloween;1885.0;82.85;704.31
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 90
+    BColor: '{#Black}'
+  Lines:
+  - '{#gold}Happy Halloween!'
+  - '{#gold}Book a room,'
+  - '{#gold}if you DARE!!'
+spawn_cave_topplayers:
+  Loc: cave;-124.66;55.95;301.39
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    BColor: '{#Black}'
+    ScaleW: 0.8
+    ScaleH: 0.8
+  Lines:
+  - '{#orange}&l/%player_world% Top 8 Islands'
+  - '#1 {#gold}&l %Level_caveblock_top_name_1% &r{#gold}with level: %Level_caveblock_top_value_1%'
+  - '#2 {#gold}&l %Level_caveblock_top_name_2% &r{#gold}with level: %Level_caveblock_top_value_2%'
+  - '#3 {#gold}&l %Level_caveblock_top_name_3% &r{#gold}with level: %Level_caveblock_top_value_3%'
+  - '#4 {#gold}&l %Level_caveblock_top_name_4% &r{#gold}with level: %Level_caveblock_top_value_4%'
+  - '#5 {#gold}&l %Level_caveblock_top_name_5% &r{#gold}with level: %Level_caveblock_top_value_5%'
+  - '#6 {#gold}&l %Level_caveblock_top_name_6% &r{#gold}with level: %Level_caveblock_top_value_6%'
+  - '#7 {#gold}&l %Level_caveblock_top_name_7% &r{#gold}with level: %Level_caveblock_top_value_7%'
+  - '#8 {#gold}&l %Level_caveblock_top_name_8% &r{#gold}with level: %Level_caveblock_top_value_8%'
+halloweenghosthunt:
+  Loc: halloween;1483.66;76.7;493.54
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    BColor: '{#Black}'
+  Lines:
+  - '{#gold}&lJoin the Ghost Hunt!'
+  - Right-click alll the pumpkin chests
+  - on chains (like this one) to collect
+  - all of the 50 ghosts, and
+  - you get extra loot!
+halloweenplayerface:
+  Loc: halloween;1491.42;77.01;503.38
+  Range: 8
+  RangeExtra: 16
+  Lines:
+  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU5NTVjM2MyZGNiYjZmYzY2NDdmZDVkMTFlMDNmYTI2OTgwMTI2ZmY1NTEwZDZiYjNiOWY3ODY3MWY1ODQwNyJ9fX0=
+  - 'Ghost tracker for: &l %cmi_user_name%'
+  - Ghosts found:{#orange} %ghostscavengerhunt_player_found% / 50
+  - '&7"pumpkin chests on chains ghosts"'
+summer_sandy_steve:
+  Loc: summer;-338.5;103.28;-6.87
+  HoverParticles:
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Hey, hey! Sandy Steve here, ready to'
+  - '{#f7d486} trade a special summer item with you'
+  - '{#f7d486} for some beachy delights! Collect them'
+  - '{#f7d486} all and bask in the glow of'
+  - '{#f7d486} Captain Sunshine''s rewards."'
+  - '{#c5f9d7} - Sandy Steve'
+  - '!nextpage!'
+  - '{#f7d486}"I would love to trade you some Summer'
+  - '{#f7d486} Breeze Blossoms, for my special item'
+  - '{#f7d486} Summer Sand. Because, these particle rich'
+  - '{#f7d486} summer flowers really capture the'
+  - '{#f7d486} gentle, fragrant breezes of summer."'
+  - '{#c5f9d7} - Sandy Steve'
+summer_whack_globalstats:
+  Loc: summer;501.26;86.6;-74.0
+  Interval: 5.0
+  Range: 48
+  RangeExtra: 48
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    IScale: 2.0
+  Lines:
+  - '{#gold}Top Whacks:'
+  - '#1 {#buttercup}%wmlb_top_scorer_name_1% &r-{#gold} %wmlb_top_scorer_value_1%'
+  - '#2 {#buttercup}%wmlb_top_scorer_name_2% &r-{#gold} %wmlb_top_scorer_value_2%'
+  - '#3 {#buttercup}%wmlb_top_scorer_name_3% &r-{#gold} %wmlb_top_scorer_value_3%'
+  - '&r &r'
+  - ICON:head:%wmlb_top_scorer_name_1%
+  - '&r &r'
+summer_whack_stats:
+  Loc: summer;497.81;86.6;-74.02
+  Interval: 5.0
+  Range: 48
+  RangeExtra: 48
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    IScale: 2.0
+  Lines:
+  - '{#gold}%cmi_user_name%:'
+  - '{#buttercup}Record score: {#gold}%wm_record_score%'
+  - '{#buttercup}Times played: {#gold}%wm_tours_played%'
+  - '{#buttercup}Points Streak: {#gold}%wm_longest_point_streak%'
+  - '&r &r'
+  - ICON:head:%cmi_user_name%
+  - '&r &r'
+summer_captain_sunshine:
+  Loc: summer;61.5;77.52;470.94
+  HoverParticles:
+    Effect: REVERSE_PORTAL
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Happy Summer, I have sailed to here from'
+  - '{#f7d486} the farlands, and I have something quite '
+  - '{#f7d486} special to share with you. But, it comes'
+  - '{#f7d486} at a price. Please collect some of the '
+  - '{#f7d486} summer event items, and we can trade!"'
+  - '{#c5f9d7} - Captain Sunshine'
+  - '!nextpage!'
+  - '{#f7d486}"I am not a Summer Trader, but I am'
+  - '{#f7d486} a Festival Trader. And I gladly take'
+  - '{#f7d486} those special summer items from you.'
+  - '{#f7d486} I am not a meany though. I will trade'
+  - '{#f7d486} you for it: Some suit items, and more.'
+  - '{#c5f9d7} - Captain Sunshine'
+  - '!nextpage!'
+  - '{#f7d486}"I have an inventory full to share.'
+  - '{#f7d486} And together with my festival friends'
+  - '{#f7d486} Sunshine Sophia and Ariel Azure, you'
+  - '{#f7d486} you can get the whole suit complete.'
+  - '{#f7d486} Oh a pirate took 1 item, it''s hidden.'
+  - '{#c5f9d7} - Captain Sunshine'
+valentinekits:
+  Loc: valentine;692.19;72.12;88.48
+  HoverParticles:
+    Effect: HEART
+    Spacing: 0.5
+    ExtraWidth: 0.3
+  Range: 8
+  RangeExtra: 16
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    TAlpha: 255
+    Yaw: 90
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 195
+  Commands:
+  - asPlayer! kits
+  Lines:
+  - '{#magenta}&l /kits'
+  - '{#gray}---^ Right-click ^---'
+adminstats:
+  Loc: general;-259.26;85.1;193.71
+  HoverParticles:
+    Effect: CRIMSON_SPORE
+    Spacing: 0.1
+    ExtraWidth: -0.2
+  Range: 8
+  RangeExtra: 16
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    TAlpha: 255
+    Yaw: 340
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 255
+    ScaleW: 1.2
+    ScaleH: 1.2
+  RequiresPermission: true
+  Commands:
+  - asPlayer! tps
+  - delay! 0.6
+  - asPlayer! cmi tps
+  Lines:
+  - 'Players online: {#yellow}%cmi_server_online%&r / Uptime: %cmi_server_uptime%'
+  - 'TPS: %cmi_tps_1_colored% &r/ %cmi_tps_60_colored% &r/ %cmi_tps_300_colored%'
+summer_wavey_wendy:
+  Loc: summer;508.45;84.28;29.29
+  HoverParticles:
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Hello there, adventurer! I''m Wavey Wendy,'
+  - '{#f7d486} your guide to summer fun. '
+  - '{#f7d486} Exchange your wares for a taste'
+  - '{#f7d486} of the season. Gather them all to'
+  - '{#f7d486} unlock treasures fit for a festival king!"'
+  - '{#c5f9d7} - Wavey Wendy'
+  - '!nextpage!'
+  - '{#f7d486}"If you have some Beachcomber Scute'
+  - '{#f7d486} for me, then we can trade. I can give'
+  - '{#f7d486} you a delicious Summer Melon for it.'
+  - '{#f7d486} The scute reminds me of a treasure'
+  - '{#f7d486} found while strolling along the beach."'
+  - '{#c5f9d7} - Wavey Wendy'
+yourfishstats#>:
+  Loc: general;11985.0;67.75;18934.13
+  LOSInterval: 1.0
+  Range: 6
+  RangeExtra: 12
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    BColor: '{#Black}'
+  BigButton: false
+  Lines:
+  - <T>{#yellow}More stats!</T><H>&6Click for next page</H><C>cmi hologrampages yourfishstats
+    [playerName] next</C>
+eastercakeshulker:
+  Loc: easter;-120.5;56.91;293.5
+  Range: 16
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    TAlpha: 255
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 135
+    ScaleW: 1.4
+    ScaleH: 1.4
+  Lines:
+  - '{#0085e6>}Team Bo{#caribbeangreen<>}x Spring 2024{#gold<}'
+summer_ariel_azure:
+  Loc: summer;-332.49;91.64;-142.0
+  HoverParticles:
+    Effect: REVERSE_PORTAL
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    BAlpha: 180
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Thank you for all the hard work, and for '
+  - '{#f7d486} playing on the 1MoreBlock server, greetings! '
+  - '{#f7d486} I am Ariel Azure and I have kept track of'
+  - '{#f7d486} all your game progress. And I wanted to say '
+  - '{#f7d486} that we can trade together if you have all '
+  - '{#f7d486} the right summer event items collected."'
+  - '{#c5f9d7} - Ariel Azure'
+  - '!nextpage!'
+  - '{#f7d486}"You need to trade with me, sunshine,'
+  - '{#f7d486} and sophia to get all the cool stuff.'
+  - '{#f7d486} You want to complete the special'
+  - '{#f7d486} summer festival suit? Well, I need all'
+  - '{#f7d486} those summer items, really really bad!'
+  - '{#c5f9d7} - Ariel Azure'
+  - '!nextpage!'
+  - '{#f7d486}"What''s that? Pirates? A missing item? Oh ...'
+  - '{#f7d486} You now cannot super-complete the suit?'
+  - '{#f7d486} The main island shows ALL the items that'
+  - '{#f7d486} we can trade, but yeh .. pirates did'
+  - '{#f7d486} take 1 of them, sailed away with it. :("'
+  - '{#c5f9d7} - Ariel Azure'
+spawnplaytimetop:
+  Loc: spawn;25.51;65.81;130.16
+  Interval: 60.0
+  Range: 8
+  RangeExtra: 16
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    Yaw: 90
+    BColor: '{#Black}'
+  Commands:
+  - asPlayer! playtime
+  Lines:
+  - '{#orange}Players with most /playtime'
+  - '1 - %cmi_playtimetop_name_1% : %cmi_playtimetop_time_1%'
+  - '2 - %cmi_playtimetop_name_2% : %cmi_playtimetop_time_2%'
+  - '3 - %cmi_playtimetop_name_3% : %cmi_playtimetop_time_3%'
+  - '4 - %cmi_playtimetop_name_4% : %cmi_playtimetop_time_4%'
+  - '5 - %cmi_playtimetop_name_5% : %cmi_playtimetop_time_5%'
+  - '6 - %cmi_playtimetop_name_6% : %cmi_playtimetop_time_6%'
+  - '7 - %cmi_playtimetop_name_7% : %cmi_playtimetop_time_7%'
+  - '8 - %cmi_playtimetop_name_8% : %cmi_playtimetop_time_8%'
+  - (right-click to see your /playtime)
+santareadbook:
+  Loc: santa;-15.47;157.05;97.3
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 0
+    IScale: 3.1
+  Lines:
+  - ICON:writable_book
+spawngroup:
+  Loc: spawn;0.51;66.48;156.86
+  HoverParticles:
+    Effect: HAPPY_VILLAGER
+    Spacing: 1.0
+    ExtraHeight: 0.2
+    ExtraWidth: 0.2
+    OffsetY: -0.2
+  Range: 6
+  RangeExtra: 12
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 180
+    Double: true
+    BColor: '{#Turtle_Green}'
+    BAlpha: 230
+    ScaleW: 1.2
+    ScaleH: 1.2
+  Commands:
+  - asPlayer! groups
+  Lines:
+  - Hey %cmi_user_name% :)
+  - ICON:head:%cmi_user_name%
+  - 'Your current group:'
+  - '&l %luckperms_primary_group_name% &r'
+  - '{#gray}(right-click for info)'
+summer_tiki_trader_tanya:
+  Loc: summer;322.05;86.28;-144.35
+  HoverParticles:
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Yaw: 90
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Konnichiwa, adventurer! Tiki Trader Tanya,'
+  - '{#f7d486} bringing you the flavors of the tropics. '
+  - '{#f7d486} Exchange your resources for a taste of'
+  - '{#f7d486} island culture. Keep gathering to unlock'
+  - '{#f7d486} the mysteries of Ariel Azure''s realm!"'
+  - '{#c5f9d7} - Tiki Trader Tanya'
+  - '!nextpage!'
+  - '{#f7d486}"I am looking for Marine Nest Eggs,'
+  - '{#f7d486} They represent the nurturing habitats'
+  - '{#f7d486} of sea turtles. I want to add them to'
+  - '{#f7d486} my beaches. In exchange, I can give'
+  - '{#f7d486} you one Summer Bamboo. Let''s trade!'
+  - '{#c5f9d7} - Tiki Trader Tanya'
 runtop:
   Loc: run;-141.57;98.47;-72.73
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
   Spacing: 0.2
@@ -14,27 +627,19 @@ runtop:
   - '{#Crusoe>}#5 %tntrun_leaderboard_wins_player_5% %tntrun_leaderboard_wins_score_5%{#Malachite<}'
 celebrationbarrel3:
   Loc: general;5758.55;129.91;336.24
-  HoverParticles:
-    Count: 1
   Range: 6
   RangeExtra: 6
-  Spacing: 0.24
   Lines:
   - '{#magenta}Celebration Lootbox'
 santavubbomaps:
   Loc: santa;-143.5;230.62;-265.41
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
     Align: LEFT
     TAlpha: 255
-    Shadow: true
     Yaw: 30
     Pitch: -30
     Double: true
@@ -42,46 +647,30 @@ santavubbomaps:
     BAlpha: 255
     ScaleW: 0.7
     ScaleH: 0.7
-    SL: -1
-    BL: -1
   Lines:
   - '"I can no longer trade"'
   - '- Vubbo'
 celebrationbarrel2:
   Loc: general;894.43;67.95;543.41
-  HoverParticles:
-    Count: 1
   Range: 6
   RangeExtra: 8
-  Spacing: 0.24
   Lines:
   - '{#magenta}Celebration Lootbox'
 yourfishstats:
   Loc: general;11985.22;70.29;18933.53
   Interval: 0.1
   LOSInterval: 1.0
-  HoverParticles:
-    Count: 1
   Range: 6
   RangeExtra: 12
-  Spacing: 0.24
   Interactable: true
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
     Align: LEFT
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
     Double: true
     BColor: '{#Downriver}'
-    BAlpha: 125
     ScaleW: 1.1
     ScaleH: 1.1
-    SL: -1
-    BL: -1
   BigButton: false
   Lines:
   - Personal stats
@@ -117,41 +706,49 @@ yourfishstats:
   - '{#gold}Third place:{#orange} %pyrofishingpro_tournament_third_name%{#gold} (score:{#orange}
     %pyrofishingpro_tournament_third_score%{#gold})'
   - '{#gray}Shows data on the active tournament'
-easterspaw:
-  Loc: easter;30.93;103.12;-18.0
+summer_shell_collector_sean:
+  Loc: summer;118.52;67.28;-111.29
   HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Lines:
-  - '{#magenta}Please read the books'
-  - '{#magenta}in the lectern to start.'
-  - 'Commands:'
-  - '{#gold}/easter'
-  - '{#gold}/egghunt'
-  - '{#gold}/egghunt fly'
-spawn_oneblock_topplayers:
-  Loc: oneblock;10423.25;82.62;-7999.6
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
   NewDisplay: true
   ND:
-    AutoPage: false
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Greetings, traveler! Leaf Collector Larry at'
+  - '{#f7d486} your service, seeking the finest leafs for'
+  - '{#f7d486} my palm tree shaded resort. Come trade'
+  - '{#f7d486} your goods to help me, and go find others'
+  - '{#f7d486} like me to complete all the summer items!"'
+  - '{#c5f9d7} - Leaf Collector Larry'
+  - '!nextpage!'
+  - '{#f7d486}"Looking to trade some Palm Shade Leaves,'
+  - '{#f7d486} I use them to create cool, shaded'
+  - '{#f7d486} areas under tropical palms.'
+  - '{#f7d486} And in exchange, I can give you'
+  - '{#f7d486} a refreshing Summer Snow Cone!"'
+  - '{#c5f9d7} - Leaf Collector Larry'
+spawn_oneblock_topplayers:
+  Loc: oneblock;10423.25;82.62;-7999.6
+  Range: 8
+  RangeExtra: 16
+  NewDisplay: true
+  ND:
     Bill: FIXED
     Align: LEFT
     TAlpha: 255
-    Shadow: true
     Yaw: 90
-    Pitch: 0
     Double: true
     BColor: '{#Black}'
     BAlpha: 200
-    SL: -1
-    BL: -1
   Lines:
   - '{#orange}&l/%player_world% Top 8 Islands'
   - '#1 {#gold}&l %Level_aoneblock_top_name_1% &r{#gold}with level:&l %Level_aoneblock_top_value_1%'
@@ -162,45 +759,10 @@ spawn_oneblock_topplayers:
   - '#6 {#gold}&l %Level_aoneblock_top_name_6% &r{#gold}with level: %Level_aoneblock_top_value_6%'
   - '#7 {#gold}&l %Level_aoneblock_top_name_7% &r{#gold}with level: %Level_aoneblock_top_value_7%'
   - '#8 {#gold}&l %Level_aoneblock_top_name_8% &r{#gold}with level: %Level_aoneblock_top_value_8%'
-santatalks:
-  Loc: santa;277.16;67.68;-66.45
-  HoverParticles:
-    Count: 1
-  Range: 16
-  RangeExtra: 32
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: LEFT
-    TAlpha: 255
-    Shadow: true
-    Yaw: 90
-    Pitch: 15
-    Double: true
-    BColor: '{#1d3300}'
-    BAlpha: 255
-    ScaleW: 0.5
-    ScaleH: 0.5
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold} "Sorry %cmi_user_name%,'
-  - '{#gold} The advent is 24 days,'
-  - '{#yellow} and they have passed.'
-  - '{#yellow} Show floris your 24 giftbag collection'
-  - '&o'
-  - '{#orange} before 30th, for a bonus box'
-  - '&o'
-  - '{#red}- Santa'
 spawn_acid_topplayers:
   Loc: acid;-385.47;61.75;391.53
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#orange}&l/%player_world% Top 5 Islands'
   - '#1 {#gold}&l %Level_acidisland_top_name_1% &r{#gold}with level: %Level_acidisland_top_value_1%'
@@ -210,232 +772,112 @@ spawn_acid_topplayers:
   - '#5 {#gold}&l %Level_acidisland_top_name_5% &r{#gold}with level: %Level_acidisland_top_value_5%'
 celebrationbarrel6:
   Loc: general;-14373.58;142.02;11673.48
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#magenta}Celebration Lootbox'
 celebrationbarrel5:
   Loc: wild;84.4;59.81;47.59
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#magenta}Celebration Lootbox'
 Worth:
-  Loc: general;12551.44;80.25;-5341.47
+  Loc: general;12551.51;80.3;-5341.46
   Interval: 0.3
   HoverParticles:
-    Count: 1
-  Range: 3
-  RangeExtra: 3
+    Effect: DOLPHIN
+  Range: 10
+  RangeExtra: 10
   Spacing: 0.22
   Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 270
+    Double: true
+    BAlpha: 85
+    ScaleW: 1.1
+    ScaleH: 1.1
+    IScale: 1.99
   Commands:
   - asPlayer! cmi sell hand
   Lines:
-  - '{#orange}%cmi_iteminhand_displayname% {#geyser}x %cmi_iteminhand_amount%'
+  - '&r {#orange} %cmi_iteminhand_displayname% {#geyser}x %cmi_iteminhand_amount%
+    &r'
   - '{#orange}Worth:{#gold} %cmi_iteminhand_worth%'
+  - '&r &r'
+  - '&r &r'
   - ICON:%iteminhand%
+  - '&r &r'
 celebrationbarrel4:
   Loc: general;-19985.5;14.94;10000.45
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#magenta}Celebration Lootbox'
-halloweennpcchat3:
-  Loc: halloween;1677.9;74.84;640.84
+summer_seashell_sally:
+  Loc: summer;-75.22;68.28;-63.46
   HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
   NewDisplay: true
   ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 180
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 125
-    ScaleW: 0.9
-    ScaleH: 0.9
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold}I am Madam Nixxy!'
-  - '{#gold}What will your'
-  - '{#gold}future hold?'
-halloweennpcchat2:
-  Loc: halloween;1655.24;72.55;756.77
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
+    AutoPage: true
     Bill: FIXED
     Align: LEFT
-    TAlpha: 230
-    Shadow: true
-    Yaw: 330
-    Pitch: 0
+    Yaw: 90
     Double: true
-    BColor: '{#Black}'
-    BAlpha: 125
-    ScaleW: 0.7
-    ScaleH: 0.7
-    SL: -1
-    BL: -1
+    ScaleW: 0.5
+    ScaleH: 0.5
   Lines:
-  - '{#gold}Nice to see you in my store'
-  - '{#gold}Please look around, and'
-  - '{#gold}let me know if you need help!'
-halloweennpcchat1:
-  Loc: halloween;1672.41;72.8;715.29
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: LEFT
-    TAlpha: 255
-    Shadow: true
-    Yaw: 10
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 30
-    ScaleW: 0.7
-    ScaleH: 0.8
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold}Welcome to the Halloween'
-  - '{#gold}Bootastic Books Bookstore!'
-  - '{#gold}Feel free to check out'
-  - '{#gold}our spooky section!'
-eastercake:
-  Loc: easter;-120.5;55.62;276.89
-  HoverParticles:
-    Count: 1
-  Range: 64
-  RangeExtra: 64
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-    IScale: 7.03
-  Lines:
-  - ICON:CAKE
-pizza:
-  Loc: skyblock;-6365.65;129.47;-5584.92
-  HoverParticles:
-    Count: 1
-  Range: 50
-  RangeExtra: 50
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 45
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-    IScale: 44.09
-  Lines:
-  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmYwYjEwYTRkZjYwNDZjY2JhN2I2YmM1MjM4ZTgyYmFlNjM4NWFhYjdiMWE2ZGIwYTgzMTQ4NzBjMTJmOTAwNyJ9fX0=
+  - '{#f7d486}"Hello, adventurer! Seashell Sally here, '
+  - '{#f7d486} lover of all things beachy. Trade your'
+  - '{#f7d486} wares with me for a treasure from '
+  - '{#f7d486} the ocean''s depths. Keep gathering '
+  - '{#f7d486} to unlock the ultimate festival prize!"'
+  - '{#c5f9d7} - Seashell Sally'
+  - '!nextpage!'
+  - '{#f7d486}"This Summer Quilt Terracotta is all I need'
+  - '{#f7d486} to complete my summer picnic blanket.'
+  - '{#f7d486} I like how it reflects the patchwork of'
+  - '{#f7d486} bright, sunlit patterns. Anyway, give me'
+  - '{#f7d486} enough of them, and you get a Summer Shell!"'
+  - '{#c5f9d7} - Seashell Sally'
 halloweenholo2:
   Loc: halloween;1474.37;69.54;489.97
-  HoverParticles:
-    Count: 1
   Range: 16
   RangeExtra: 16
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
     Yaw: 225
-    Pitch: 0
     Double: true
     BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
     IScale: 10.09
     IYaw: 330
   Lines:
   - ICON:pitcher_plant
 halloweenholo1:
   Loc: halloween;1463.15;65.25;480.61
-  HoverParticles:
-    Count: 1
   Range: 16
   RangeExtra: 16
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
     Yaw: 225
-    Pitch: 0
     Double: true
     BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
     IScale: 10.09
   Lines:
   - ICON:carved_pumpkin
 spawn_skygrid_topplayers:
   Loc: skygrid;19.39;131.75;9.44
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#orange}&l/%player_world% Top 5 Islands'
   - '#1 {#gold}&l %Level_skygrid_top_name_1% &r{#gold}with level: %Level_skygrid_top_value_1%'
@@ -443,135 +885,29 @@ spawn_skygrid_topplayers:
   - '#3 {#gold}&l %Level_skygrid_top_name_3% &r{#gold}with level: %Level_skygrid_top_value_3%'
   - '#4 {#gold}&l %Level_skygrid_top_name_4% &r{#gold}with level: %Level_skygrid_top_value_4%'
   - '#5 {#gold}&l %Level_skygrid_top_name_5% &r{#gold}with level: %Level_skygrid_top_value_5%'
-ajlbFishingTop:
-  Loc: wild;-3870.63;97.62;-4520.63
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Lines:
-  - The /fish top level
-  - '%ajlb_lb_pyrofishingpro_level_1_alltime_name% %ajlb_lb_pyrofishingpro_level_1_alltime_value%'
-halloweennpcchat6:
-  Loc: halloween;1558.51;73.65;759.47
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 180
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 50
-    ScaleW: 0.8
-    ScaleH: 0.8
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold}Under New'
-  - '{#gold}Management..'
-halloweennpcchat5:
-  Loc: halloween;1892.46;82.29;702.01
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 85
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold}Enjoy your stay!'
 halloweenholo4:
   Loc: halloween;1475.07;65.43;472.14
-  HoverParticles:
-    Count: 1
   Range: 16
   RangeExtra: 16
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
     Yaw: 225
-    Pitch: 0
     Double: true
     BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
     IScale: 11.09
   Lines:
   - ICON:spawner
-halloweennpcchat4:
-  Loc: halloween;1885.0;82.85;704.31
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 90
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold}Happy Halloween!'
-  - '{#gold}Book a room,'
-  - '{#gold}if you DARE!!'
 halloweenholo3:
   Loc: halloween;1484.94;82.27;491.71
-  HoverParticles:
-    Count: 1
   Range: 16
   RangeExtra: 32
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
     Yaw: 255
-    Pitch: 0
     Double: true
     BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
     IScale: 14.09
     IPitch: 30
     IYaw: 240
@@ -579,11 +915,8 @@ halloweenholo3:
   - ICON:piglin_head
 spawn_skyblock_topplayers:
   Loc: skyblock;50.48;135.75;27.52
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#orange}&l/%player_world% Top 8 Islands'
   - '#1 {#gold}&l %Level_bskyblock_top_name_1% &r{#gold}with level: %Level_bskyblock_top_value_1%'
@@ -595,80 +928,14 @@ spawn_skyblock_topplayers:
   - '#7 {#gold}&l %Level_bskyblock_top_name_7% &r{#gold}with level: %Level_bskyblock_top_value_7%'
   - '#8 {#gold}&l %Level_bskyblock_top_name_8% &r{#gold}with level: %Level_bskyblock_top_value_8%'
   - '{#gray}Players in this list can: &l/expand skyblock'
-spawn_cave_topplayers:
-  Loc: cave;-124.66;55.95;301.39
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: LEFT
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 125
-    ScaleW: 0.8
-    ScaleH: 0.8
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#orange}&l/%player_world% Top 8 Islands'
-  - '#1 {#gold}&l %Level_caveblock_top_name_1% &r{#gold}with level: %Level_caveblock_top_value_1%'
-  - '#2 {#gold}&l %Level_caveblock_top_name_2% &r{#gold}with level: %Level_caveblock_top_value_2%'
-  - '#3 {#gold}&l %Level_caveblock_top_name_3% &r{#gold}with level: %Level_caveblock_top_value_3%'
-  - '#4 {#gold}&l %Level_caveblock_top_name_4% &r{#gold}with level: %Level_caveblock_top_value_4%'
-  - '#5 {#gold}&l %Level_caveblock_top_name_5% &r{#gold}with level: %Level_caveblock_top_value_5%'
-  - '#6 {#gold}&l %Level_caveblock_top_name_6% &r{#gold}with level: %Level_caveblock_top_value_6%'
-  - '#7 {#gold}&l %Level_caveblock_top_name_7% &r{#gold}with level: %Level_caveblock_top_value_7%'
-  - '#8 {#gold}&l %Level_caveblock_top_name_8% &r{#gold}with level: %Level_caveblock_top_value_8%'
-halloweenghosthunt:
-  Loc: halloween;1483.66;76.7;493.54
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#gold}&lJoin the Ghost Hunt!'
-  - Right-click alll the pumpkin chests
-  - on chains (like this one) to collect
-  - all of the 50 ghosts, and
-  - you get extra loot!
 santasworkshopsign:
   Loc: santa;212.04;77.81;-72.03
-  HoverParticles:
-    Count: 1
   Range: 16
   RangeExtra: 56
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
-    Align: CENTER
     TAlpha: 255
-    Shadow: true
     Yaw: 90
     Pitch: 10
     Double: true
@@ -676,8 +943,6 @@ santasworkshopsign:
     BAlpha: 255
     ScaleW: 6.09
     ScaleH: 6.09
-    SL: -1
-    BL: -1
     IScale: 2.1
     IPitch: 20
   Lines:
@@ -685,217 +950,122 @@ santasworkshopsign:
   - '&o'
   - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWIxYjZhNmMwNTQzMTg3NTc5YmU4N2E5ODRjZWE5OGU4ODhmOWU2MDdjZTA4Y2I5NjU2NjJhZWFlNzMyNGE2OSJ9fX0=
   - '&o'
-newspawnmenu2:
-  Loc: builders;655.27;67.62;-646.79
+summer_marina_the_merchant:
+  Loc: summer;-45.49;78.52;-490.99
   HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Lines:
-  - '{#orange}&lServer Menu <3'
-  - menu item 1
-  - menu item 2
-  - menu item 3
-halloweenplayerface:
-  Loc: halloween;1491.42;77.01;503.38
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Lines:
-  - ICON:head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDU5NTVjM2MyZGNiYjZmYzY2NDdmZDVkMTFlMDNmYTI2OTgwMTI2ZmY1NTEwZDZiYjNiOWY3ODY3MWY1ODQwNyJ9fX0=
-  - 'Ghost tracker for: &l %cmi_user_name%'
-  - Ghosts found:{#orange} %ghostscavengerhunt_player_found% / 50
-  - '&7"pumpkin chests on chains ghosts"'
-newspawnmenu1#<:
-  Loc: builders;646.25;66.77;-646.21
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
   Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
   Lines:
-  - <T>§6Prev </T><H>§6Prev </H><C>cmi hologrampages newspawnmenu1 [playerName] prev</C>
-newspawnmenu1#>:
-  Loc: builders;645.25;66.77;-646.21
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Interactable: true
-  Lines:
-  - <T>§6 Next</T><H>§6 Next</H><C>cmi hologrampages newspawnmenu1 [playerName] next</C>
-newspawnmenu1:
-  Loc: builders;645.75;67.62;-646.71
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Interactable: true
-  Lines:
-  - <T>{#orange}&lNew Player?</T><H>{#orange}Left-click to select</H>
-  - <T>{#geyser}Read &l/rules</T><H>{#gold}Read &l/rules</H><C>asConsole! cmi ctext
-    rules [playerName]</C>
-  - <T>{#geyser}Read welcome book</T><H>{#gold}Read welcome book</H><C>asConsole!
-    cmi ctext gamemodes [playerName]</C>
+  - '{#f7d486}"Ahoy there, adventurer! Marina is the name,'
+  - '{#f7d486} trading is the game. Swap your treasures for'
+  - '{#f7d486} a piece of the sea''s bounty. Each trade bring'
+  - '{#f7d486} you closer to the ultimate festival prize!'
+  - '{#f7d486} final bit of text."'
+  - '{#c5f9d7} - Marina the Merchant'
   - '!nextpage!'
-  - <T>{#geyser}Read &l/newplayer{#geyser} info</T><H>{#gold}Read &l/newplayer{#gold}
-    info</H><C>asConsole! cmi ctext newplayer [playerName]</C>
-  - <T>{#geyser}Pick a &l/gametype{#geyser} to start..</T><H>{#gold}Pick a &l/gametype{#gold}
-    to start..</H><C>asConsole! cmi ctext gametype [playerName]</C>
-valentinekits:
-  Loc: valentine;692.19;72.12;88.48
-  HoverParticles:
-    Effect: HEART
-    Spacing: 0.5
-    Count: 1
-    ExtraWidth: 0.3
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Interactable: true
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 255
-    Shadow: true
-    Yaw: 90
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 195
-    SL: -1
-    BL: -1
-  Commands:
-  - asPlayer! kits
-  Lines:
-  - '{#magenta}&l /kits'
-  - '{#gray}---^ Right-click ^---'
-adminstats:
-  Loc: general;-259.26;85.1;193.71
-  HoverParticles:
-    Effect: CRIMSON_SPORE
-    Spacing: 0.1
-    Count: 1
-    ExtraWidth: -0.2
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Interactable: true
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 255
-    Shadow: true
-    Yaw: 340
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 255
-    ScaleW: 1.2
-    ScaleH: 1.2
-    SL: -1
-    BL: -1
-  RequiresPermission: true
-  Commands:
-  - asPlayer! tps
-  - delay! 0.6
-  - asPlayer! cmi tps
-  Lines:
-  - 'Players online: {#yellow}%cmi_server_online%&r / Uptime: %cmi_server_uptime%'
-  - 'TPS: %cmi_tps_1_colored% &r/ %cmi_tps_60_colored% &r/ %cmi_tps_300_colored%'
-yourfishstats#>:
-  Loc: general;11985.0;67.75;18934.13
-  LOSInterval: 1.0
-  HoverParticles:
-    Count: 1
-  Range: 6
-  RangeExtra: 12
-  Spacing: 0.24
-  Interactable: true
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-  BigButton: false
-  Lines:
-  - <T>{#yellow}More stats!</T><H>&6Click for next page</H><C>cmi hologrampages yourfishstats
-    [playerName] next</C>
-eastercakeshulker:
-  Loc: easter;-120.5;56.91;293.5
-  HoverParticles:
-    Count: 1
-  Range: 16
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 255
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
-    Double: true
-    BColor: '{#Black}'
-    BAlpha: 135
-    ScaleW: 1.4
-    ScaleH: 1.4
-    SL: -1
-    BL: -1
-  Lines:
-  - '{#0085e6>}Team Bo{#caribbeangreen<>}x Spring 2024{#gold<}'
+  - '{#f7d486}"My beach house has empty item frames,'
+  - '{#f7d486} if you have Marine Echo Shells for me,'
+  - '{#f7d486} then I can trade them for a Summer Crystal.'
+  - '{#f7d486} These shells are mysterious and have'
+  - '{#f7d486} an ancient feel of oceanic discoveries!"'
+  - '{#c5f9d7} - Marina the Merchant'
 ShopsCommunityChest01:
   Loc: general;12536.04;79.31;-5361.43
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#Lima}&lCommunity Chest'
   - '{#gray}(free to take from)'
-summerthankyou:
-  Loc: summer;108.51;79.73;-60.27
+summer_sunny_sam:
+  Loc: summer;86.29;78.28;-64.47
   HoverParticles:
-    Count: 1
-  Range: 11
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
   RangeExtra: 32
-  Spacing: 0.24
+  DownOrner: false
+  Interactable: true
   NewDisplay: true
   ND:
-    AutoPage: false
+    AutoPage: true
     Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
+    Align: LEFT
+    Yaw: 90
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Welcome, traveler! I am Sunny Sam,'
+  - '{#f7d486} purveyor of all things bright and sunny.'
+  - '{#f7d486} Trade your resources with me for a'
+  - '{#f7d486} token of summer joy. Collect them all to'
+  - '{#f7d486} unlock treasures with Captain Sunshine."'
+  - '{#c5f9d7} - Sunny Sam'
+  - '!nextpage!'
+  - '{#f7d486}"I hope you have some Amber Shore Sand'
+  - '{#f7d486} it mimics the golden-red sands of'
+  - '{#f7d486} picturesque beaches, and I am trying to'
+  - '{#f7d486} build one. If you have enough to trade,'
+  - '{#f7d486} then I have a Summer Flower for you!"'
+  - '{#c5f9d7} - Sunny Sam'
+summer_sunshine_sophia:
+  Loc: summer;46.5;105.52;-537.99
+  HoverParticles:
+    Effect: REVERSE_PORTAL
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"May the sun rays be with you, I am Sophia'
+  - '{#f7d486} And I have travelled through the worlds '
+  - '{#f7d486} to meet you. If you have collected the '
+  - '{#f7d486} right summer event items, then we can '
+  - '{#f7d486} make a trade that is pretty special!"'
+  - '{#c5f9d7} - Sunshine Sophia'
+  - '!nextpage!'
+  - '{#f7d486}"You found me, so cool. And I have parts'
+  - '{#f7d486} of a special suit for you, just trade'
+  - '{#f7d486} me some of those summer items, pleassse'
+  - '{#f7d486} Captain Sunshine might have mentioned'
+  - '{#f7d486} that one of the items was taken, oof."'
+  - '{#c5f9d7} - Sunshine Sophia'
+  - '!nextpage!'
+  - '{#f7d486}"Well, I have been here long enough!'
+  - '{#f7d486} And I have seen pirates climbing, digging,'
+  - '{#f7d486} and trying to find a spot on one of'
+  - '{#f7d486} the islands, maybe Ariel Azure knows'
+  - '{#f7d486} more? Anyway, thanks for the trade!"'
+  - '{#c5f9d7} - Sunshine Sophia'
+summerthankyou:
+  Loc: summer;108.51;78.93;-60.27
+  Range: 11
+  RangeExtra: 32
+  DownOrner: false
+  NewDisplay: true
+  ND:
+    Bill: FIXED
     Double: true
     BColor: '{#Black}'
     BAlpha: 155
-    SL: -1
-    BL: -1
     IScale: 2.5
   Lines:
   - ICON:CHERRY_SAPLING
@@ -906,143 +1076,120 @@ summerthankyou:
 fish:
   Loc: general;11965.58;66.62;18947.7
   LOSInterval: 1.0
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   Lines:
   - '{#gold>} Tournaments are coming back soon!! I PWOMIWESEs {#orange<}'
 halloweennpcchat69:
   Loc: halloween;1460.9;66.65;478.24
-  HoverParticles:
-    Count: 1
   Range: 8
   RangeExtra: 16
-  Spacing: 0.24
   NewDisplay: true
   ND:
-    AutoPage: false
     Bill: FIXED
     Align: LEFT
-    TAlpha: 230
-    Shadow: true
     Yaw: 35
-    Pitch: 0
     Double: true
     BColor: '{#Black}'
-    BAlpha: 125
     ScaleW: 0.7
     ScaleH: 0.7
-    SL: -1
-    BL: -1
   Lines:
   - '{#gold}"Don''t forget to {#orange}&l/vote{#gold} today'
   - '{#gold}on findmcserver for 1MB"'
   - '- stifflered'
-spawnplaytimetop:
-  Loc: spawn;25.51;65.81;130.16
-  Interval: 60.0
+summer_coral_carol:
+  Loc: summer;160.44;123.28;-455.04
   HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
   Interactable: true
   NewDisplay: true
   ND:
-    AutoPage: false
+    AutoPage: true
     Bill: FIXED
     Align: LEFT
-    TAlpha: 230
-    Shadow: true
-    Yaw: 90
-    Pitch: 0
-    Double: false
-    BColor: '{#Black}'
-    BAlpha: 125
-    SL: -1
-    BL: -1
-  Commands:
-  - asPlayer! playtime
-  Lines:
-  - '{#orange}Players with most /playtime'
-  - '1 - %cmi_playtimetop_name_1% : %cmi_playtimetop_time_1%'
-  - '2 - %cmi_playtimetop_name_2% : %cmi_playtimetop_time_2%'
-  - '3 - %cmi_playtimetop_name_3% : %cmi_playtimetop_time_3%'
-  - '4 - %cmi_playtimetop_name_4% : %cmi_playtimetop_time_4%'
-  - '5 - %cmi_playtimetop_name_5% : %cmi_playtimetop_time_5%'
-  - '6 - %cmi_playtimetop_name_6% : %cmi_playtimetop_time_6%'
-  - '7 - %cmi_playtimetop_name_7% : %cmi_playtimetop_time_7%'
-  - '8 - %cmi_playtimetop_name_8% : %cmi_playtimetop_time_8%'
-  - (right-click to see your /playtime)
-santareadbook:
-  Loc: santa;-15.47;157.05;97.3
-  HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  NewDisplay: true
-  ND:
-    AutoPage: false
-    Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 0
-    Pitch: 0
     Double: true
-    BColor: '{#Black}'
-    BAlpha: 0
-    SL: -1
-    BL: -1
-    IScale: 3.1
+    ScaleW: 0.5
+    ScaleH: 0.5
   Lines:
-  - ICON:writable_book
-celebrationbarrel:
-  Loc: general;13661.61;81.62;4040.48
+  - '{#f7d486}"Greetings, friend! '
+  - '{#f7d486} Coral Carol at your service. Trade'
+  - '{#f7d486} your goods for a glimpse of underwater'
+  - '{#f7d486} wonders. Gather them up and set sail '
+  - '{#f7d486} for Captain Sunshine''s grand reward!"'
+  - '{#c5f9d7} - Coral Carol'
+  - '!nextpage!'
+  - '{#f7d486}"A golden sunray, or Meadow Gold, is what'
+  - '{#f7d486} I seek. Sunflowers show the vibrant and'
+  - '{#f7d486} lively fields of summer meadows. Trade'
+  - '{#f7d486} them with me, for some Summer Coral.'
+  - '{#f7d486} And I can complete my fields again!'
+  - '{#c5f9d7} - Coral Carol'
+summer_oceanic_olivia:
+  Loc: summer;-428.49;103.28;-174.29
   HoverParticles:
-    Count: 1
-  Range: 8
-  RangeExtra: 16
-  Spacing: 0.24
-  Lines:
-  - '{#magenta}Celebration Lootbox'
-spawngroup:
-  Loc: spawn;0.51;66.48;156.86
-  HoverParticles:
-    Effect: HAPPY_VILLAGER
-    Spacing: 1.0
-    Count: 1
-    ExtraHeight: 0.2
-    ExtraWidth: 0.2
-    OffsetY: -0.2
-  Range: 6
-  RangeExtra: 12
-  Spacing: 0.24
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
   Interactable: true
   NewDisplay: true
   ND:
-    AutoPage: false
+    AutoPage: true
     Bill: FIXED
-    Align: CENTER
-    TAlpha: 230
-    Shadow: true
-    Yaw: 180
-    Pitch: 0
+    Align: LEFT
     Double: true
-    BColor: '{#Turtle_Green}'
-    BAlpha: 230
-    ScaleW: 1.2
-    ScaleH: 1.2
-    SL: -1
-    BL: -1
-  Commands:
-  - asPlayer! groups
+    ScaleW: 0.5
+    ScaleH: 0.5
   Lines:
-  - Hey %cmi_user_name% :)
-  - ICON:head:%cmi_user_name%
-  - 'Your current group:'
-  - '&l %luckperms_primary_group_name% &r'
-  - '{#gray}(right-click for info)'
+  - '{#f7d486}"Ahoy, matey! Oceanic Olivia here, ready'
+  - '{#f7d486} to trade treasures of the deep. Part with'
+  - '{#f7d486} your resources for a splash of seaside magic.'
+  - '{#f7d486} Collect them all to unlock the secrets '
+  - '{#f7d486} of Sunshine Sophia''s treasure trove!"'
+  - '{#c5f9d7} - Oceanic Olivia'
+  - '!nextpage!'
+  - '{#f7d486}"You know what reflects the deep blue'
+  - '{#f7d486} hues of the ocean? Yes, .. Azure Coral!'
+  - '{#f7d486} This yellow horn coral is what I need so'
+  - '{#f7d486} if you happen to have a bunch, then lets'
+  - '{#f7d486} trade it for a Summer Heart of the Ocean!'
+  - '{#c5f9d7} - Oceanic Olivia'
+celebrationbarrel:
+  Loc: general;13661.61;81.62;4040.48
+  Range: 8
+  RangeExtra: 16
+  Lines:
+  - '{#magenta}Celebration Lootbox'
+summer_palmtree_pete:
+  Loc: summer;5.48;85.28;485.29
+  HoverParticles:
+    Effect: SPORE_BLOSSOM_AIR
+  Range: 32
+  RangeExtra: 32
+  DownOrner: false
+  Interactable: true
+  NewDisplay: true
+  ND:
+    AutoPage: true
+    Bill: FIXED
+    Align: LEFT
+    Double: true
+    ScaleW: 0.5
+    ScaleH: 0.5
+  Lines:
+  - '{#f7d486}"Greetings, friend! Palmtree Pete''s the '
+  - '{#f7d486} name, relaxation''s the game. Exchange'
+  - '{#f7d486} your resources for a taste of the '
+  - '{#f7d486} shady life. Then seek out more like '
+  - '{#f7d486} me to complete your summer collection!"'
+  - '{#c5f9d7} - Palmtree Pete'
+  - '!nextpage!'
+  - '{#f7d486}"Don''t be scared, they''re friendly. And useful!'
+  - '{#f7d486} But I will take your Blossom Hives and give'
+  - '{#f7d486} you a Summer Cocoa Bean for the trouble.'
+  - '{#f7d486} Bees and their hives reflects the flourishing'
+  - '{#f7d486} flowers and busy bees of the season."'
+  - '{#c5f9d7} - Palmtree Pete'
