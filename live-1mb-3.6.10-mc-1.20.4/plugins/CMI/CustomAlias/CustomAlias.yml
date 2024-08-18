@@ -292,21 +292,6 @@ CustomAlias:
     Cmds:
     - 'msg! [playerName] {#orange}Found a bug? You can report it on /discord or on
       the /forums, otherwise /mail send mrfloris I found a bug: blah blah..'
-  skyblock beacon:
-    Cmds:
-    - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! msg! [playerName]
-      Your Skyblock Island Level is over 1000, you can now get the netherstar to create
-      your beacon. If you have enough resources in your inventory we will let you
-      trade it.
-    - 'asConsole! msg! [playerName] To obtain a beacon in Skyblock: Once you''re island
-      level is over one thousand, make sure you have the following items in your inventory:
-      32 Iron blocks, 16 Gold blocks, 8 Diamond blocks, 4 Emeraland blocks, 1 Netherite
-      block.'
-    - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! asConsole! msg!
-      [playerName] ... Opening trade in about 10 seconds ...
-    - delay! 10
-    - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! asConsole! bs
-      open SkyblockBeacon [playerName]
   fish caught:
     Cmds:
     - asConsole! cmi ctext fishcaught [playerName]
