@@ -171,7 +171,7 @@ You can avoid complex situations by breaking it down to PER line checks. They wi
 
 ```yml
 - check:[playerName]==Notch! msg! [playerName] This command get executed because your name is "Notch".
-- check:[playerName]!=Notch! msg! [playerName] This command get executed because you are nit "Notch".
+- check:[playerName]!=Notch! msg! [playerName] This command get executed because you are not "Notch".
 - check:%cmi_user_balance%>1000! msg! [playerName] This command get executed because your cmi /balance is more than 1000.
 - check:%cmi_user_balance%=<1000! msg! [playerName] This command get executed because your cmi /balance is less than or equal to 1000.
 ```
