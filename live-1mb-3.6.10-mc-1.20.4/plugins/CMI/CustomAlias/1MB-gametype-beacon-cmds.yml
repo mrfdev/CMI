@@ -1,11 +1,11 @@
-# 1MoreBlock.com (c) Floris Fiedeldij Dop, add beacon command to bbox gametypes, version 0.0.2
+# 1MoreBlock.com (c) Floris Fiedeldij Dop, add beacon command to bbox gametypes, version 0.0.3
 # valid gametypes are: bskyblock aoneblock caveblock skygrid acidisland
 
 CustomAlias:
   skyblock beacon:
     Cmds:
     - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! msg! [playerName]
-      Your Skyblock Island Level is over 1000, you can now get the netherstar to create
+      Your Skyblock Island Level is over 1000, you can now get the nether star to create
       your beacon. If you have enough resources in your inventory we will let you
       trade it.
     - 'asConsole! msg! [playerName] To obtain a beacon in Skyblock: Once you''re island
@@ -16,4 +16,64 @@ CustomAlias:
       [playerName] ... Opening trade in about 10 seconds ...
     - delay! 10
     - ifinworld:skyblock! check:%Level_bskyblock_island_level%>=1000! asConsole! bs
-      open SkyblockBeacon [playerName]
+      open GameTypeBeaconTrade [playerName]
+  oneblock beacon:
+    Cmds:
+    - ifinworld:oneblock! check:%Level_aoneblock_island_level%>=1000! msg! [playerName]
+      Your Oneblock Island Level is over 1000, you can now get the nether star to create
+      your beacon. If you have enough resources in your inventory we will let you
+      trade it.
+    - 'asConsole! msg! [playerName] To obtain a beacon in Oneblock: Once you''re island
+      level is over one thousand, make sure you have the following items in your inventory:
+      32 Iron blocks, 16 Gold blocks, 8 Diamond blocks, 4 Emeraland blocks, 1 Netherite
+      block.'
+    - ifinworld:oneblock! check:%Level_aoneblock_island_level%>=1000! asConsole! msg!
+      [playerName] ... Opening trade in about 10 seconds ...
+    - delay! 10
+    - ifinworld:oneblock! check:%Level_aoneblock_island_level%>=1000! asConsole! bs
+      open GameTypeBeaconTrade [playerName]
+  skygrid beacon:
+    Cmds:
+    - ifinworld:skygrid! check:%Level_skygrid_island_level%>=1000! msg! [playerName]
+      Your Skygrid Island Level is over 1000, you can now get the nether star to create
+      your beacon. If you have enough resources in your inventory we will let you
+      trade it.
+    - 'asConsole! msg! [playerName] To obtain a beacon in Skygrid: Once you''re island
+      level is over one thousand, make sure you have the following items in your inventory:
+      32 Iron blocks, 16 Gold blocks, 8 Diamond blocks, 4 Emeraland blocks, 1 Netherite
+      block.'
+    - ifinworld:skygrid! check:%Level_skygrid_island_level%>=1000! asConsole! msg!
+      [playerName] ... Opening trade in about 10 seconds ...
+    - delay! 10
+    - ifinworld:skygrid! check:%Level_skygrid_island_level%>=1000! asConsole! bs
+      open GameTypeBeaconTrade [playerName]
+  cave beacon:
+    Cmds:
+    - ifinworld:cave! check:%Level_caveblock_island_level%>=1000! msg! [playerName]
+      Your Cave Island Level is over 1000, you can now get the nether star to create
+      your beacon. If you have enough resources in your inventory we will let you
+      trade it.
+    - 'asConsole! msg! [playerName] To obtain a beacon in Cave: Once you''re island
+      level is over one thousand, make sure you have the following items in your inventory:
+      32 Iron blocks, 16 Gold blocks, 8 Diamond blocks, 4 Emeraland blocks, 1 Netherite
+      block.'
+    - ifinworld:cave! check:%Level_caveblock_island_level%>=1000! asConsole! msg!
+      [playerName] ... Opening trade in about 10 seconds ...
+    - delay! 10
+    - ifinworld:cave! check:%Level_caveblock_island_level%>=1000! asConsole! bs
+      open GameTypeBeaconTrade [playerName]
+  acid beacon:
+    Cmds:
+    - ifinworld:acid! check:%Level_acidisland_island_level%>=1000! msg! [playerName]
+      Your Acid Island Level is over 1000, you can now get the nether star to create
+      your beacon. If you have enough resources in your inventory we will let you
+      trade it.
+    - 'asConsole! msg! [playerName] To obtain a beacon in Acid: Once you''re island
+      level is over one thousand, make sure you have the following items in your inventory:
+      32 Iron blocks, 16 Gold blocks, 8 Diamond blocks, 4 Emeraland blocks, 1 Netherite
+      block.'
+    - ifinworld:acid! check:%Level_acidisland_island_level%>=1000! asConsole! msg!
+      [playerName] ... Opening trade in about 10 seconds ...
+    - delay! 10
+    - ifinworld:acid! check:%Level_acidisland_island_level%>=1000! asConsole! bs
+      open GameTypeBeaconTrade [playerName]
