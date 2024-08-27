@@ -28,7 +28,7 @@ CustomAlias:
   options status:
     Cmds:
     - msg! [playerName] {#gold}\nOverview Status of /cmi options Toggles:\n----------------------------------
-    - asPlayer! cmi options bassbarcompass status
+    - asPlayer! cmi options bossbarcompass status
     - asPlayer! cmi options shiftsignedit status
     - asPlayer! cmi options totembossbar status
     - asPlayer! cmi options tagsound status
@@ -42,8 +42,8 @@ CustomAlias:
     Tab: false
   togglecompass:
     Cmds:
-    - statement:check1! perm:cmi.command.options.bassbarcompass!
-    - if:check1! asPlayer! cmi options bassbarcompass toggle
+    - statement:check1! perm:cmi.command.options.bossbarcompass!
+    - if:check1! asPlayer! cmi options bossbarcompass toggle
     - if:check1! asConsole! _togglemsg [playerName] $0
     - if:check1@! asConsole! _togglemsg [playerName] $0 nope
     Tab: false
