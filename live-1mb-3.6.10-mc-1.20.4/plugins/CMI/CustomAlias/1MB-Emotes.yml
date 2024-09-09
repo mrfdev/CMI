@@ -90,9 +90,11 @@ CustomAlias:
     - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
       [displayName] {#royalblue}cheers %cmi_p_$1_display_name% {#royalblue>}on with
       much joy!{#pictonblue<} {#5ce6a3}\☺/</T>
-    - if:nullcheck@! asConsole! cmi launch [playerName] a:90 p:0.5 -nodamage
+    - if:nullcheck@! ifonline:$1! asConsole! cmi launch [playerName] a:90 p:0.5 -nodamage
     - if:nullcheck@! ifonline:$1! asConsole! cmi sound entity_experience_orb_pickup
       $1
+    - if:nullcheck@! ifoffline:$1! msg! [playerName] Oh no, that player isn't online.
+      It must be an online player.
     Perm: true
     CustomTabs:
     - '[playerName]'
@@ -242,7 +244,7 @@ CustomAlias:
       [displayName] {#orchid>}sends hugs to the whole server!{#deepblush<}</T>
     - if:nullcheck! asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
     - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
-      [displayName] {#orchid>}sends some well deserved hugs to{#deepblush<} %cmi_p_$1_display_name%!</T>
+      [displayName] {#orchid>}sends some well deserved hugs to{#deepblush<} %cmi_p_$1_display_name%{#deepblush}!</T>
     - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
     - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
     Perm: true
@@ -382,7 +384,10 @@ CustomAlias:
     - '[playername]'
   shrug:
     Cmds:
-    - broadcast! {#cerulean} [playerName] goes shrug
+    - statement:nullcheck! check:$1==null~!
+    - gcooldown:2#?!
+    - if:nullcheck! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#e6a500>}shrugs at the situation ¯\_(ツ)_/¯{#e6b945<}</T>
     Perm: true
     CustomTabs:
     - '[playername]'

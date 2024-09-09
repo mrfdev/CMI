@@ -1,0 +1,13 @@
+#
+
+CustomAlias:
+  cheque:
+    Cmds:
+    - 'msg! [playerName] &3 Current Balance: &6%cmi_user_balance_formatted%&3, trying
+      to withdraw &6$1'
+    - cmi cheque $1
+    - delay! 2
+    - 'msg! [playerName] &3 New Balance: &6%cmi_user_balance_formatted% &3/money'
+    - msg! [playerName] &e (Cheques max out to 250,000 ~ if you withdraw a bigger
+      amount it might say it will attempt to do so, but your /balance will go down
+      by max 250k)

@@ -158,16 +158,6 @@ CustomAlias:
     Cmds:
     - asConsole! cmi dispose [playerName]
     Tab: false
-  cheque:
-    Cmds:
-    - 'msg! [playerName] &3 Current Balance: &6%cmi_user_balance_formatted%&3, trying
-      to withdraw &6$1'
-    - cmi cheque $1
-    - delay! 2
-    - 'msg! [playerName] &3 New Balance: &6%cmi_user_balance_formatted% &3/money'
-    - msg! [playerName] &e (Cheques max out to 250,000 ~ if you withdraw a bigger
-      amount it might say it will attempt to do so, but your /balance will go down
-      by max 250k)
   chests:
     Cmds:
     - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Item Protection Info ❖{#orient}-----------------------•
@@ -751,11 +741,6 @@ CustomAlias:
   farm info:
     Cmds:
     - 'msg! [playerName] {#white} info: https://omgboards.com/threads/263890/'
-  parkour video:
-    Cmds:
-    - msg! [playerName] Introduction video to /parkour game type
-    - msg! [playerName] https://www.youtube.com/watch?v=-vFzIz3ej3w
-    Tab: false
   j:
     Cmds:
     - asPlayer! jump $1-
@@ -915,3 +900,8 @@ CustomAlias:
     - asPlayer! bolt trust
     CustomTabs:
     - add,remove [allIGNPlayerName]
+  parkour:
+    Cmds:
+    - msg! [playerName] Sorry, this gametype has been removed on August 2024 and will
+      most likely not return. Please try our other fun survival game types like /oneblock,
+      /cave, /acid, /skygrid, or /skyblock

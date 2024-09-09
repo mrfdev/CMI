@@ -91,8 +91,7 @@ CustomAlias:
   run:
     Cmds:
     - asConsole! cmi invsave [playerName]
-    - check:%cmi_player_world%!=run|parkour|builders! asConsole! trconsole join run
-      [playerName]
+    - check:%cmi_player_world%!=run|builders! asConsole! trconsole join run [playerName]
     - delay! 2
     - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
       the /run game.'

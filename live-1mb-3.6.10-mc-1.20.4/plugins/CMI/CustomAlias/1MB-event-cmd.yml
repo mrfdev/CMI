@@ -26,6 +26,7 @@ CustomAlias:
     - asConsole! cmi gm [playerName] survival -s
     - msg! [playerName] {#orange}The /halloween world will open the evening before
       Halloween 2024.
+    - asPlayer! event
   spooky:
     Cmds:
     - asPlayer! event
