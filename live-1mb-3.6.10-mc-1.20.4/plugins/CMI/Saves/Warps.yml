@@ -432,7 +432,7 @@ thanksfloris:
       meta-type: MAP
       map-id: 260
 spider:
-  Location: wild;-3652.5;-17.0;2624.5;-33.67;8.43
+  Location: wild;-3652.5;-17.0;2624.5;-33.66;8.43
   Page: 3
   Item:
     v: 3700
@@ -797,6 +797,9 @@ npc:
   Item:
     v: 3700
     type: COBBLESTONE_STAIRS
+blossom:
+  Location: wild;8250.5;177.0;7983.5;-90.28;-6.89
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 fishparkour:
   Location: general;11985.83;238.5;18866.04;-48.68;24.99
   Page: 7

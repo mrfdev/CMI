@@ -787,8 +787,8 @@ Worth:
   Interval: 0.3
   HoverParticles:
     Effect: DOLPHIN
-  Range: 10
-  RangeExtra: 10
+  Range: 21
+  RangeExtra: 21
   Spacing: 0.22
   Interactable: true
   NewDisplay: true
@@ -980,6 +980,21 @@ summer_marina_the_merchant:
   - '{#f7d486} These shells are mysterious and have'
   - '{#f7d486} an ancient feel of oceanic discoveries!"'
   - '{#c5f9d7} - Marina the Merchant'
+book2:
+  Loc: wild;8315.5;176.64;7991.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 45
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book2
+  Lines:
+  - ICON:EXPLORER_POTTERY_SHERD
 ShopsCommunityChest01:
   Loc: general;12536.04;79.31;-5361.43
   Range: 8
@@ -987,6 +1002,36 @@ ShopsCommunityChest01:
   Lines:
   - '{#Lima}&lCommunity Chest'
   - '{#gray}(free to take from)'
+book1:
+  Loc: wild;8312.5;176.62;7983.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 90
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book1
+  Lines:
+  - ICON:HEART_POTTERY_SHERD
+book4:
+  Loc: wild;8331.5;176.64;7991.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 315
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book4
+  Lines:
+  - ICON:SHELTER_POTTERY_SHERD
 summer_sunny_sam:
   Loc: summer;86.29;78.28;-64.47
   HoverParticles:
@@ -1018,6 +1063,20 @@ summer_sunny_sam:
   - '{#f7d486} build one. If you have enough to trade,'
   - '{#f7d486} then I have a Summer Flower for you!"'
   - '{#c5f9d7} - Sunny Sam'
+book3:
+  Loc: wild;8323.5;176.64;7994.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book3
+  Lines:
+  - ICON:PLENTY_POTTERY_SHERD
 summer_sunshine_sophia:
   Loc: summer;46.5;105.52;-537.99
   HoverParticles:
@@ -1055,6 +1114,36 @@ summer_sunshine_sophia:
   - '{#f7d486} the islands, maybe Ariel Azure knows'
   - '{#f7d486} more? Anyway, thanks for the trade!"'
   - '{#c5f9d7} - Sunshine Sophia'
+book6:
+  Loc: wild;8331.5;176.64;7975.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 240
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book6
+  Lines:
+  - ICON:SNORT_POTTERY_SHERD
+book5:
+  Loc: wild;8334.5;176.64;7983.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 270
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book5
+  Lines:
+  - ICON:FRIEND_POTTERY_SHERD
 summerthankyou:
   Loc: summer;108.51;78.93;-60.27
   Range: 11
@@ -1073,6 +1162,36 @@ summerthankyou:
   - '&r'
   - '&r &r {#darkgreen>}THANK YOU BUILDERS!!!!!!!!{#buttercup<} &r &r'
   - '&r'
+book8:
+  Loc: wild;8315.5;176.64;7975.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 135
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book8
+  Lines:
+  - ICON:MINER_POTTERY_SHERD
+book7:
+  Loc: wild;8323.5;176.64;7972.5
+  Range: 16
+  RangeExtra: 32
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Yaw: 180
+    Double: true
+    ScaleH: 4.99
+  Commands:
+  - asConsole! gui openfor [playerName] book7
+  Lines:
+  - ICON:ANGLER_POTTERY_SHERD
 fish:
   Loc: general;11965.58;66.62;18947.7
   LOSInterval: 1.0
