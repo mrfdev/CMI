@@ -2,7 +2,7 @@
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#orange} -&l 1MoreBlock 2024 Events
 {#orange} -{#gold} Next event: Probably Halloween 2024
-{#orange} -{#gold} 
+{#orange} -{#gold} Starts: October 30th (late), Ends: November 1st (early)
 {#orange} -{#gold} Command:&l /halloween
 {#orange} -{#gold} 
 {#cerulean} •&l&m                                                &r{#Cerulean}•

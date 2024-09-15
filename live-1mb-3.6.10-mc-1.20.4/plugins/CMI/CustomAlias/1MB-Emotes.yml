@@ -92,10 +92,9 @@ CustomAlias:
       much joy!{#pictonblue<} {#5ce6a3}\☺/</T>
     - if:nullcheck@! ifonline:$1! asConsole! cmi launch [playerName] a:90 p:0.5 -nodamage
     - if:nullcheck@! ifonline:$1! asConsole! cmi sound entity_experience_orb_pickup
-      $1
+      $1 -s
     - if:nullcheck@! ifoffline:$1! msg! [playerName] Oh no, that player isn't online.
       It must be an online player.
-    Perm: true
     CustomTabs:
     - '[playerName]'
   clap:
@@ -247,7 +246,6 @@ CustomAlias:
       [displayName] {#orchid>}sends some well deserved hugs to{#deepblush<} %cmi_p_$1_display_name%{#deepblush}!</T>
     - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
     - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
-    Perm: true
     CustomTabs:
     - '[playername]'
   impressed:
@@ -384,11 +382,29 @@ CustomAlias:
     - '[playername]'
   shrug:
     Cmds:
+    - gcooldown:60#?!
     - statement:nullcheck! check:$1==null~!
-    - gcooldown:2#?!
-    - if:nullcheck! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
-      [displayName] {#e6a500>}shrugs at the situation ¯\_(ツ)_/¯{#e6b945<}</T>
-    Perm: true
+    - check:$1==null! asConsole! cmi usermeta [playerName] add emoteShrug %cmi_random_1_4%
+      -s
+    - if:nullcheck! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi ctellraw
+      all <T>{#goblin}[{#5ce68b}☀{#goblin}] [displayName] {#e6a500>}shrugs at the
+      situation {#e6b945<}{#canary}¯\_(ツ)_/¯</T>
+    - if:nullcheck! check:%cmi_lastrandom_[playerName]%==2! asConsole! cmi ctellraw
+      all <T>{#goblin}[{#5ce68b}☀{#goblin}] [displayName] {#e6a500>}looks around and
+      shrugs, unsure of what just happened. {#e6b945<}{#canary}¯\_(ツ)_/¯</T>
+    - if:nullcheck! check:%cmi_lastrandom_[playerName]%==3! asConsole! cmi ctellraw
+      all <T>{#goblin}[{#5ce68b}☀{#goblin}] [displayName] {#e6a500>}shrugs while staring
+      at a half-built project. {#e6b945<}{#canary}¯\_(ツ)_/¯</T>
+    - if:nullcheck! check:%cmi_lastrandom_[playerName]%==4! asConsole! cmi ctellraw
+      all <T>{#goblin}[{#5ce68b}☀{#goblin}] [displayName] {#e6a500>}shrugs while looking
+      around the chat {#e6b945<}{#canary}¯\_(ツ)_/¯</T>
+    - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      {#e6a500>}you shrug at what {#e6b945<}%cmi_p_$1_display_name% {#e6b945}just
+      did {#canary}¯\_(ツ)_/¯</T>
+    - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw $1 <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#e6a500>}shrugs at what you just did {#e6b945<}{#canary}¯\_(ツ)_/¯</T>
+    - asConsole! cmi sit [playerName] on
+    - check:$1==null! asConsole! cmi usermeta [playerName] remove emoteShrug
     CustomTabs:
     - '[playername]'
   sick:
@@ -544,3 +560,7 @@ CustomAlias:
   emotes:
     Cmds:
     - asConsole! gui openfor [playerName] emotes
+  ghost:
+    Cmds:
+    - msg! [playerName] boo
+    Perm: true
