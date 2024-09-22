@@ -1,0 +1,23 @@
+# 1MoreBlock.com, /tps helper for CMI 9.7.x, (c) 1MoreBlock.com, version 0.0.1
+# Syntax: /tps
+# Description: You can now click on the [sub] commands to get additional information (runs asPlayer! so you can still limit to to certain groups)
+# Info: The 1MB TPS menu will show up below each run command, but vanilla plugin command can still be run individually.
+# Command Examples: /tps cmi_tps, /tps, /tps spark_healthreport .. the tab-suggestions help you tab-complete to these sub commands
+
+CustomAlias:
+  tps:
+    Cmds:
+    - statement:tps1! check:$1==null!
+    - 'if:tps1! asPlayer! cmi tps -spikes'
+    - 'if:tps1@! check:$1==spark_tps! asPlayer! spark tps'
+    - 'if:tps1@! check:$1==spark_healthreport! asPlayer! spark healthreport'
+    - 'if:tps1@! check:$1==cmi_tps! asPlayer! cmi tps'
+    - 'if:tps1@! check:$1==cmi_status! asPlayer! cmi status'
+    - 'if:tps1@! check:$1==spigot_tps! asPlayer! spigot:tps'
+    - 'if:tps1@! check:$1==paper_chunkinfo! asPlayer! paper chunkinfo'
+    - delay! 0.2
+    - 'asConsole! cmi ctellraw [playerName] <T>{#Cerulean>} 1MB TPS »{#Lochmara<}{#Feijoa} • Spark: {#gray}[{#orchid}tps{#gray}]</T><H>⇱ clickable</H><C>$0 spark_tps</C><Next><T> {#gray}[{#orchid}healthreport{#gray}]</T><H>⇱ clickable</H><C>$0 spark_healthreport</C><Next><T>{#Feijoa} • CMI: {#gray}[{#orchid}tps{#gray}]</T><H>⇱ clickable</H><C>$0 cmi_tps</C><Next><T> {#gray}[{#orchid}status{#gray}]</T><H>⇱ clickable</H><C>$0 cmi_status</C>'
+    - 'asConsole! cmi ctellraw [playerName] <T>{#Cerulean>} 1MB TPS »{#Lochmara<}{#Feijoa} • Spigot: {#gray}[{#orchid}tps{#gray}]</T><H>⇱ clickable</H><C>$0 spigot_tps</C><Next><T>{#Feijoa} • Paper: {#gray}[{#orchid}chunkinfo{#gray}]</T><H>⇱ clickable</H><C>$0 paper_chunkinfo</C>'
+    Perm: true
+    CustomTabs:
+    - 'spark__tps,cmi__tps,spark__healthreport,cmi__status,spigot__tps,paper__chunkinfo'
