@@ -1,50 +1,41 @@
-<pageLabel:welcome>
-Welcome %cmi_user_name%,
+<pageLabel:{#buttercup}Welcome>
 
-We are a family-friendly community.
-Respect all players and their builds.
-Before playing, do learn the server /rules
+{#orient}•--{#cerulean}❖ 1MB New Player Info ❖{#orient}-----------------------•
 
-Check the next page to learn about Survival, Oneblock, Skyblock, etc.
+{#orange}Welcome {#cerulean}%cmi_user_display_name%,
+
+{#Feijoa}We are a family-friendly community.
+{#Feijoa}Respect all players and their builds. 
+{#Feijoa}We never delete our survival worlds! 
+{#Feijoa}Before we tell you about our worlds and features, let's learn about our&r {#orange}&l/rules&r 
 <NextPage>
-<pageLabel:Rules>
-Before we tell you about our worlds and features, let's learn about our /rules 
+<pageLabel:{#buttercup}Rules>
 
-We perm ban rule breakers, we don't want a toxic community!
-
-We allow players over the age of 13. 
-We don't allow grief, item stealing, or use of cheats!
+{#Feijoa}We perm ban rule breakers, we don't want a toxic community!
+{#Feijoa}We are a server for the ages 13 and over! 
+{#Feijoa}We don't allow grief, item stealing, or use of cheats!
+{#Feijoa}Check the next page to learn about Survival and gametypes.&r
 <NextPage>
-<pageLabel:Features>
-Some of our features
+<pageLabel:{#buttercup}Features/Exploration>
 
-In our main world you can enjoy the most features. There we have: Jobs, mcMMO, Economy, and more. 
+{#Feijoa}Survival worlds&r {#orange}&l/wild&r {#Feijoa}and&r {#orange}&l/general&r {#Feijoa}have the most features:{#Feijoa} Jobs, mcMMO, Economy, and more!&r 
+{#Feijoa}The survival worlds also have&r {#orange}&l/end&r {#Feijoa}and&r {#orange}&l/nether.&r {#Feijoa}But not in gametype worlds. 
 
-Our /discord have indepth guides to most of our features and commands.
+{#orange}&l/rtp&r {#Feijoa}then {#orange}&l/sethome base {#Feijoa}and type {#orange}&l/home base {#Feijoa}to return!&r
 <NextPage>
-<pageLabel:Exploring>
-Our main survival world is /wild. Once you find a spot with /rtp you can /sethome base. 
+<pageLabel:{#buttercup}Gametypes>
 
-At any point you can type /home base to get there again. 
-
-We never delete our survival worlds!
+{#Feijoa}Our gametypes are:&r {#orange}&l/oneblock, /skyblock, /acid, /skygrid&r {#Feijoa}and&r {#orange}&l/cave.&r 
+{#Feijoa}To start your own skyblock just type:&r {#orange}&l/skyblock&r
+{#Feijoa}Each gametype world also has its own spawn, ie: {#orange}&l/skyblock spawn&r 
+{#Feijoa}Check&r {#orange}&l/warps&r {#Feijoa}for more of our 1MB universe!&r
 <NextPage>
-<pageLabel:Gametypes>
-The survival worlds also have /end and /nether. Not the gametype worlds though.
+<pageLabel:{#buttercup}Social>
+{#Cerulean}&2 Some 1MB links:
 
-Our gametypes are /oneblock, /skyblock, /acid, /skygrid and /cave. 
-To start your own skyblock just type: /skyblock
-
-Check /warps to more of our 1MB universe!
-<NextPage>
-<pageLabel:Social>
-&2 Some 1MB links:
-
-<T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>https://www.1moreblock.com</URL>
 <T>{#Cerulean} • {#Feijoa}/discord: {#Cerulean}discord.gg/floris</T><H>Click to load our Discord Server</H><URL>https://discord.gg/floris</URL>
-<T>{#Cerulean} • {#Feijoa}/twitch: {#Cerulean}twitch.tv/mrfloris</T><H>Click to watch our live-stream</H><URL>https://twitch.tv/mrfloris</URL>
 <T>{#Cerulean} • {#Feijoa}/youtube: {#Cerulean}youtube.com/mrfloris</T><H>Click to watch our videos</H><URL>https://youtube.com/mrfloris</URL>
-<T>{#Cerulean} • {#Feijoa}/twitter: {#Cerulean}twitter.com/floris</T><H>Click to read our tweets</H><URL>https://twitter.com/floris</URL>
+<T>{#Cerulean} • {#Feijoa}/vote: {#Cerulean}omgboards.com/vote</T><H>Click to vote for the server</H><URL>https://omgboards.com/vote/vote-servers.php</URL>
 
-{#Cerulean} 
-{#Cerulean} Need help? Ask our players, or on /discord
+{#Cerulean} &r
+{#Cerulean} Need help? Just post your question in the chat! :)
