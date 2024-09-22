@@ -1,35 +1,43 @@
-Welcome new player!
+<pageLabel:welcome>
+Welcome %cmi_user_name%,
 
-We are a family friendly community.
-Respect players and their builds.
-Before playing, learn the server /rules
+We are a family-friendly community.
+Respect all players and their builds.
+Before playing, do learn the server /rules
 
 Check the next page to learn about Survival, Oneblock, Skyblock, etc.
 <NextPage>
+<pageLabel:Rules>
 Before we tell you about our worlds and features, let's learn about our /rules 
 
-We perm ban rule breakers, we don't want a toxic community
+We perm ban rule breakers, we don't want a toxic community!
 
-We allow ages 13+, we don't allow grief, item stealing, or use of cheats.
+We allow players over the age of 13. 
+We don't allow grief, item stealing, or use of cheats!
 <NextPage>
+<pageLabel:Features>
 Some of our features
 
 In our main world you can enjoy the most features. There we have: Jobs, mcMMO, Economy, and more. 
 
-Our /forums have indepth guides to most of our features and commands.
+Our /discord have indepth guides to most of our features and commands.
 <NextPage>
-Our main survival world is /general Once you find a spot with /rtp you can /sethome base. 
+<pageLabel:Exploring>
+Our main survival world is /wild. Once you find a spot with /rtp you can /sethome base. 
 
 At any point you can type /home base to get there again. 
 
-We never delete our survival worlds.
+We never delete our survival worlds!
 <NextPage>
-You can get resources from /mine, /end, and /nether (temp worlds)
+<pageLabel:Gametypes>
+The survival worlds also have /end and /nether. Not the gametype worlds though.
 
-We also have gametypes like /oneblock, /skyblock To start your own skyblock just type: /skyblock. 
+Our gametypes are /oneblock, /skyblock, /acid, /skygrid and /cave. 
+To start your own skyblock just type: /skyblock
 
-Check /worlds to learn more
+Check /warps to more of our 1MB universe!
 <NextPage>
+<pageLabel:Social>
 &2 Some 1MB links:
 
 <T>{#Cerulean} • {#Feijoa}/forums: {#Cerulean}www.1moreblock.com</T><H>Click to open our website</H><URL>https://www.1moreblock.com</URL>

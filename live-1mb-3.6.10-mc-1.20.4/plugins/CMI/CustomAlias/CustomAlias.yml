@@ -711,12 +711,6 @@ CustomAlias:
       back. The cost is 100 per hit on the enchantment table, sneak clicking is 10x,
       and costs 1000.
     Tab: false
-  skills:
-    Cmds:
-    - msg! [playerName] This feature is currently unavailable
-    - delay! 0.5
-    - 'msg! [playerName] More MMO skills: /mcMMO \nMore Jobs skills: /jobs info'
-    Tab: false
   adapt:
     Cmds:
     - asPlayer! skills

@@ -40,12 +40,10 @@ CustomAlias:
   s:
     Cmds:
     - asPlayer! cmi staffmsg $1-
-    - 'asConsole! discordsrv broadcast #1182983665412755507 `[playerName]` said: `$1-`'
     Perm: true
     AddTabs: true
   staffmsg:
     Cmds:
     - asPlayer! cmi staffmsg $1-
-    - 'asConsole! discordsrv broadcast #1182983665412755507 `[playerName]` said: `$1-`'
     Perm: true
     AddTabs: true

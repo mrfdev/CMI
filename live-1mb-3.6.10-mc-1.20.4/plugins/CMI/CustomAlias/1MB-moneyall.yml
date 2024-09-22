@@ -22,8 +22,10 @@ CustomAlias:
     - statement:check1! check:$1!=null!
     - if:check1! asConsole! cmi money give allonline $1
     - if:check1! cmi sound ui_toast_challenge_complete -all
-    - 'if:check1! asConsole! cmi ctellraw all <T>{#cerulean}[MoneyDrop] {#buttercup}You received a Money Bag Drop from the
-      staff, valued: {#cyan}$1{#gold} - Enjoy!</T><H>A MoneyDrop is a global money booster \n which gives each player who is currently online \n some extra money in their /balance\n Click to view your balance.</H><C>balance</C>'
+    - 'if:check1! asConsole! cmi ctellraw all <T>{#cerulean}[MoneyDrop] {#buttercup}You
+      received a Money Bag Drop from the staff, valued: {#cyan}$1{#gold} - Enjoy!</T><H>A
+      MoneyDrop is a global money booster \n which gives each player who is currently
+      online \n some extra money in their /balance\n Click to view your balance.</H><C>balance</C>'
     - 'if:check1@! msg! [playerName] Syntax: /moneyall <amount>'
     Perm: true
     CustomTabs:

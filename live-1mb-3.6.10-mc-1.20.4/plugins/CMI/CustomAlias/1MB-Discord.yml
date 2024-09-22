@@ -24,29 +24,29 @@ CustomAlias:
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :zap: **power level**
       `%mcmmo_power_level%`'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmoacrobatics:
-      **acrobatics**`%mcmmo_level_acrobatics%` (rank: %mcmmo_rank_acrobatics%) / :mcmmoalchemy:
+      **acrobatics** `%mcmmo_level_acrobatics%` (rank: %mcmmo_rank_acrobatics%) / :mcmmoalchemy:
       **alchemy** `%mcmmo_level_alchemy%` (rank: %mcmmo_rank_alchemy%)'
-    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmoarchery: **archery**`%mcmmo_level_archery%`
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmoarchery: **archery** `%mcmmo_level_archery%`
       (rank: %mcmmo_rank_archery%) / :mcmmoaxes: **axes** `%mcmmo_level_axes%` (rank:
       %mcmmo_rank_axes%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmoexcavation:
-      **excavation**`%mcmmo_level_excavation%` (rank: %mcmmo_rank_excavation%) / :mcmmofishing:
+      **excavation** `%mcmmo_level_excavation%` (rank: %mcmmo_rank_excavation%) / :mcmmofishing:
       **fishing** `%mcmmo_level_fishing%` (rank: %mcmmo_rank_fishing%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmoherbalism:
-      **herbalism**`%mcmmo_level_herbalism%` (rank: %mcmmo_rank_herbalism%) / :mcmmomining:
+      **herbalism** `%mcmmo_level_herbalism%` (rank: %mcmmo_rank_herbalism%) / :mcmmomining:
       **mining** `%mcmmo_level_mining%` (rank: %mcmmo_rank_mining%)'
-    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmorepair: **repair**`%mcmmo_level_repair%`
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmorepair: **repair** `%mcmmo_level_repair%`
       (rank: %mcmmo_rank_repair%) / :mcmmoswords: **swords** `%mcmmo_level_swords%`
       (rank: %mcmmo_rank_swords%)'
-    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmotaming: **taming**`%mcmmo_level_taming%`
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmotaming: **taming** `%mcmmo_level_taming%`
       (rank: %mcmmo_rank_taming%) / :mcmmounarmed: **unarmed** `%mcmmo_level_unarmed%`
       (rank: %mcmmo_rank_unarmed%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmowoodcutting:
-      **woodcutting**`%mcmmo_level_woodcutting%` (rank: %mcmmo_rank_woodcutting%)
-      / :mcmmocrossbows: **crossbows**`%mcmmo_level_crossbows%` (rank: %mcmmo_rank_crossbows%)'
+      **woodcutting** `%mcmmo_level_woodcutting%` (rank: %mcmmo_rank_woodcutting%)
+      / :mcmmocrossbows: **crossbows** `%mcmmo_level_crossbows%` (rank: %mcmmo_rank_crossbows%)'
+    - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmotridents: **tridents** `%mcmmo_level_tridents%` (rank: %mcmmo_rank_tridents%) / :mcmmomaces: **maces** `%mcmmo_level_maces%` (rank: %mcmmo_rank_maces%)'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmosmelting:
-      **smelting**`%mcmmo_level_smelting%` / :mcmmosalvage: **salvage**`%mcmmo_level_salvage%`
-      / :mcmmotridents: **tridents**`%mcmmo_level_tridents%`'
+      **smelting** `%mcmmo_level_smelting%` / :mcmmosalvage: **salvage** `%mcmmo_level_salvage%`'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :gear: _Want more?
       Ingame type: /mcstats, /mcrank, /mctop_'
     Tab: false

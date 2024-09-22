@@ -225,6 +225,7 @@ CustomAlias:
     - check:$1!=null! asConsole! addlevels $1 repair 2
     - check:$1!=null! asConsole! addlevels $1 crossbows 1
     - check:$1!=null! asConsole! addlevels $1 tridents 1
+    - check:$1!=null! asConsole! addlevels $1 maces 2
     Perm: true
   creative:
     Cmds:
