@@ -1,0 +1,77 @@
+Scavenge:
+  ItemBreak:
+    # Defined percentage for item to break when salvaging it
+    # Value can be from 0 to 100, where 100 means that each time player extract enchant, item breaks
+    # This can allow player to extract enchantments without breaking item itself
+    # Set it to 100 if you want to always break item
+    # Keep in mind that broken item will go throw ingredient return process
+    # Attention! Items without enchants will have 100% break chance
+    Base: 8.0
+    # Adds extra chance to break item depending on how many enchants item has
+    # In example having base chance of 8% and having this set to 2 while having item with 3 enchants will result into 8+(2*3)=14% chance to break item
+    ForEachEnchant: 2.0
+    # Adds extra chance to break item depending on enchant level
+    # This will take into consideration enchantment max and current levels
+    # Having this set to 7.5 means, that enchantment at max level will have 7.5% extra chance to to break item
+    # But if you have sharpness 2 which has max level of 5, then only 3% fail chance will be added
+    ForEachEnchantLevel: 2.0
+    # Defines in percentage a max chance to break item when extracting enchants
+    # This can limit chance to particular one in case it gets to 100% and it would always break
+    MaxBreakChance: 100.0
+    # Value between 0 and 100 which defines extra fail chance when items doesnt have max durability
+    # Having this set to 50 will mean that item at 1 left durability will have fail chance increase by 50%
+    # Items which are not damaged will not experience any fail chance increase
+    BreakDurabilityCheck: 50.0
+    # When set to true, items durability will be taken into consideration when extracting ingredients
+    # In example if item has 100 max durability and current is at 50, then only half of ingredients will be considered for extraction
+    # This doesnt mean that player gets 50% of them, it only means that half of possible ingredients will go throw IngredientReturn process
+    DurabilityCheck: true
+    IngredientReturn:
+      # Defines in percentage a max chance to return ingredients of item if it fails extraction process
+      # This will apply for each ingredient that item has
+      # Recipe to make that item should exist in database, or it will not return any ingredients
+      Base: 25.0
+  EnchantExtractionFail:
+    # Adds base chance to fail enchantment extraction
+    # When enchantment fails, player will not get enchant book with appropriate enchantment
+    Base: 10.0
+    # Adds extra chance to fail enchantment extraction depending on enchantment level
+    # This will take into consideration enchantment max and current levels
+    # Having this set to 75 means, that enchantment at max level will have 75% chance to fail extraction process
+    # But if you have sharpness 2 which has max level of 5, then only 30% chance to fail will get applied
+    # While enchants like Aquaaffinity will always have max fail chance as you can only have it at level 1
+    ForEachLevel: 10.0
+    # Defines in percentage a max chance to fail enchantment extraction
+    # This can limit chance to particular one in case it gets to 100% and it would always fail
+    MaxFailChance: 75.0
+    LevelLower:
+      # Defines a chance lowering enchant level if it fails extraction
+      # This is secondary step when extraction fails and will only apply when it does
+      # If Enchant is at level 1 already, then player will not get enchanted book at all
+      # If you want to avoid lowering level of enchant when it fails extraction, set this to 100
+      # If you want to always lower level down when extracting enchantments, then set EnchantExtractionFail.Base to 100 and set this to 100
+      Base: 50.0
+      # Will adjust level lowering chance depending on enchant level to defined max amount at max level
+      # This will mean that higher levels will have higher chance to be lowered
+      ForEachLevel: 5.0
+      # Will adjust level lower chance depending on enchant level to defined max amount at max level
+      MaxChance: 75.0
+  Cost:
+    # Defined base cost of extraction. Set to 0 if you want to make it free
+    Base: 100.0
+    # Extra cost which depends on enchantment worth which can be defined with /cmi setenchantworth 
+    # This value is in percentage from worth value of that each enchantment and item
+    # So if you have base cost of 100, extra cost of 5% and you are trying to extract sharpness 5 which worth is 1000 and item sell hand worth is 100, then you will have to pay 155 for extraction process
+    Extra: 5.0
+  # List of materials to block from being scavenged
+  BlackList:
+  - diamond
+  - ironingot
+  - goldingot
+  - coal
+  # When set to true, balck list becomes whitelist and will allow scavanging of items defined in a blacklist only
+  BlackToWhiteList: false
+  # When set to false while player have open scavange UI they will not be able to pickup item from ground
+  AllowItemPickups: false
+  # When enabled items, likes swords, after being salvagted if they dint broke then their repair cost will be reset so players can enchant it as like its a new one instead of making it to dificult to be enchanted
+  ResetRepairCost: true

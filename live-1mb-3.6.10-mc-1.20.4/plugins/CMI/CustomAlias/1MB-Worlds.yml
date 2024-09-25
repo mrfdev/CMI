@@ -37,16 +37,6 @@ CustomAlias:
     - asConsole! cmi gm [playerName] survival -s
     - asPlayer! mvtp end
     Tab: false
-  mine:
-    Cmds:
-    - msg! [playerName] {#gold}Hey [playerName], sorry, in 2022 moving forward, we
-      no longer have temporary worlds. The /mine world has been removed. You can use
-      our perm worlds to play survival, including getting resources from it. Keep
-      your neighbours in mind.
-    - 'msg! [playerName] {#gold}and it wouldn''t hurt to try and keep things a little
-      bit pretty. We have the old veteran world: /general, and a new wilderness world:
-      /wild. Both support /rtp'
-    Tab: false
   builders:
     Cmds:
     - mvtp [playerName] builders
@@ -93,8 +83,6 @@ CustomAlias:
     - asConsole! cmi invsave [playerName]
     - check:%cmi_player_world%!=run|builders! asConsole! trconsole join run [playerName]
     - delay! 2
-    - 'ifinworld:run#! asConsole! cmi bossbarmsg all -t:10 Player: [playerName] joined
-      the /run game.'
     - asConsole! cmi effect [playerName] clear
   tientje:
     Cmds:

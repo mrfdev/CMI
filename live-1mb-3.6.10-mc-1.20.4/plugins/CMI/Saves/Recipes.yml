@@ -3,476 +3,446 @@ CRecipes:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: WOODEN_SHOVEL
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"text":"Leather Shovel"}],"text":""}'
+        display-name: '{"text":"","extra":["Leather Shovel"]}'
     Recipe:
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STICK
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STICK
-  f952682d-75b9-3211-a292-00861d429b3f:
-    Type: Furnace
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 3700
-      type: PAPER
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"yellow","text":"1MB
-          Hunting Cheque"}],"text":""}'
-        lore:
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Issued
-          by "},{"italic":false,"color":"gold","text":"Server"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"white","text":"Right
-          click to deposit"}],"text":""}'
-        internal: H4sIAAAAAAAA/+NiYGBh4PbNz0utdM5ILSxNZYCAaQwA5rykNhoAAAA=
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 3700
-          type: PLAYER_HEAD
-    Cook: 240
-    Exp: 0.1
   50d8ee09-6b02-362b-8e51-3696fa93356e:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: LEATHER
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gray","text":"Weak
-          Leather"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":"Weak Leather","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ROTTEN_FLESH
   529eadda-21b1-3c70-b095-43834587b522:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: GLOWSTONE_DUST
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: TORCH
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CHARCOAL
   8d824325-5fd2-3826-8907-415c9e07a786:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: SADDLE
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"Forged
-          Horse Saddle"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":"Forged Horse Saddle","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEAD
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
   44d14878-9df6-32bf-b966-a0074deedb4d:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: GOLDEN_HORSE_ARMOR
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"
-          Forged Horse Armor"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" Forged Horse Armor","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GOLD_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEAD
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
   2e022dd0-c22e-35ff-8dd3-d883af4ff04d:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: HORN_CORAL_BLOCK
       amount: 8
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: WET_SPONGE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_HORN_CORAL_BLOCK
   4592ba93-ab8c-3234-8322-e2b98bc62998:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: NAME_TAG
     Recipe:
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: PAPER
   a421ca1c-598f-37d5-aed2-a8753d128e0e:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: IRON_HORSE_ARMOR
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"
-          Forged Horse Armor"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" Forged Horse Armor","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: IRON_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEAD
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
   ff232830-5f94-3ef9-87f4-4e701e74682b:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: DIAMOND_HORSE_ARMOR
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"gold","text":"
-          Forged Horse Armor"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":" Forged Horse Armor","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEAD
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: LEATHER
   9951199f-f260-336f-ac43-56069998658b:
     Type: Furnace
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: EXPERIENCE_BOTTLE
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: ENCHANTED_BOOK
     Cook: 240
     Exp: 1.0
@@ -480,598 +450,546 @@ CRecipes:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: TUBE_CORAL_BLOCK
       amount: 8
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: WET_SPONGE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_TUBE_CORAL_BLOCK
   6dd43c20-2b4b-3c4d-9eff-ddb935d4fbe0:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: BRAIN_CORAL_BLOCK
       amount: 8
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: WET_SPONGE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BRAIN_CORAL_BLOCK
   7f8bad79-427c-3faf-8251-3f4662672c66:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: BUBBLE_CORAL_BLOCK
       amount: 8
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: WET_SPONGE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_BUBBLE_CORAL_BLOCK
   2e0919a9-c608-3e5d-832f-6f065d8eb3fc:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: FIRE_CORAL_BLOCK
       amount: 8
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: WET_SPONGE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEAD_FIRE_CORAL_BLOCK
   8f29615a-240f-3020-89eb-4d4683a29276:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: COBWEB
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: SPIDER_EYE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: SLIME_BALL
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: STRING
   b6261b41-06d5-3c95-a792-fa369540b79d:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: CAKE
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E49B0F","text":"❤"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FF681F","text":"F"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FA6C1E","text":"o"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F56F1D","text":"r"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F0741C","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#EB781B","text":"v"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E67B1A","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E18019","text":"r"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DC8418","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D78817","text":"C"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D28C16","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#CD9015","text":"k"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#C99415","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E49B0F","text":"❤"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":"❤","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E49B0F","bold":false},{"text":"F","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF681F","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FA6C1E","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F56F1D","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F0741C","bold":false},{"text":"v","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EB781B","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E67B1A","bold":false},{"text":"r","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E18019","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DC8418","bold":false},{"text":"C","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D78817","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D28C16","bold":false},{"text":"k","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#CD9015","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#C99415","bold":false},{"text":"❤","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E49B0F","bold":false}]}'
         lore:
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          A delicious cake from 1MoreBlock!"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          Once placed, you can eat, and eat"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0AD24D","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0ACB4A","text":"n"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#09C447","text":"d"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#09BD44","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#08B640","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#08AF3D","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#07A83A","text":"t"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#07A137","text":","},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#079A33","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#069330","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#068C2D","text":"n"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#05852A","text":"d"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#057D26","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#047623","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#046F20","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03681D","text":"t"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#036119","text":","},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#035A16","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#025313","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#024C10","text":"n"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#01450C","text":"d"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#013E09","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#003706","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#003003","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#002900","text":"t"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          Even when you take the last bite"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          it will be back for more noms!"}],"text":""}'
-        - '{"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          But don''t break it, or it will be gone."}],"text":""}'
+        - '{"text":"","extra":[{"text":" A delicious cake from 1MoreBlock!","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
+        - '{"text":"","extra":[{"text":" Once placed, you can eat, and eat","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
+        - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0AD24D","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0ACB4A","bold":false},{"text":"d","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#09C447","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#09BD44","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#08B640","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#08AF3D","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#07A83A","bold":false},{"text":",","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#07A137","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#079A33","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#069330","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#068C2D","bold":false},{"text":"d","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#05852A","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#057D26","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#047623","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#046F20","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03681D","bold":false},{"text":",","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#036119","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#035A16","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#025313","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#024C10","bold":false},{"text":"d","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#01450C","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#013E09","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#003706","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#003003","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#002900","bold":false}]}'
+        - '{"text":"","extra":[{"text":" Even when you take the last bite","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
+        - '{"text":"","extra":[{"text":" it will be back for more noms!","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
+        - '""'
+        - '{"text":"","extra":[{"text":" But don''t break it, or it will be gone.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
         enchants:
-          ARROW_INFINITE: 1
+          minecraft:infinity: 1
         ItemFlags:
         - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_DESTROYS
-        - HIDE_PLACED_ON
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: TOTEM_OF_UNDYING
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CAKE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: SOUL_CAMPFIRE
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DIAMOND
   de9aad02-de82-3153-a8e7-78f2ce0371f8:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: CAKE
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E49B0F","text":"❤"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#C99415","text":"C"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#CD9015","text":"h"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D18D16","text":"o"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D58917","text":"c"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#D98618","text":"o"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#DD8318","text":"l"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E17F19","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E67C1A","text":"t"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#EA781B","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#EE751B","text":"
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F2721C","text":"C"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#F66E1D","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FA6B1E","text":"k"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#FF681F","text":"e"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E49B0F","text":"❤"}],"text":""}'
+        display-name: '{"text":"","extra":[{"text":"❤","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E49B0F","bold":false},{"text":"C","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#C99415","bold":false},{"text":"h","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#CD9015","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D18D16","bold":false},{"text":"c","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D58917","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#D98618","bold":false},{"text":"l","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DD8318","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E17F19","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E67C1A","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EA781B","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#EE751B","bold":false},{"text":"C","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F2721C","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F66E1D","bold":false},{"text":"k","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FA6B1E","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF681F","bold":false},{"text":"❤","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E49B0F","bold":false}]}'
         lore:
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          A delicious cake from 1MoreBlock!"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          Crafted with the finest cocoa beans,"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#0BDA51","text":"
-          harvested from the best jungle trees."}],"text":""}'
+        - '{"text":"","extra":[{"text":" A delicious cake from 1MoreBlock!","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
+        - '{"text":"","extra":[{"text":" Crafted with the finest cocoa beans,","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
+        - '{"text":"","extra":[{"text":" harvested from the best jungle trees.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#0BDA51","bold":false}]}'
         enchants:
-          DURABILITY: 1
+          minecraft:unbreaking: 1
         ItemFlags:
         - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: CAKE
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: SOUL_CAMPFIRE
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: COCOA_BEANS
   26d2b753-af96-3ffb-a488-4164ef1d2e84:
     Type: Stonecutting
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: LEATHER
       amount: 5
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: SADDLE
-        byItem: true
-  617030e9-68f4-318d-bfa1-3709f597a2e0:
-    Type: Shapeless
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 3700
-      type: COOKIE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00D8E6","text":"D"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00D0E6","text":"i"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00CAE6","text":"a"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00C3E6","text":"m"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00BCE6","text":"o"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00B5E6","text":"n"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00AEE6","text":"d
-          "},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E67C00","text":"C"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E68400","text":"o"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E68C00","text":"o"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E69400","text":"k"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E69C00","text":"i"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#E6A500","text":"e"}],"text":""}'
-        lore:
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011635","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011736","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011937","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011A38","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021C39","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021D3A","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021F3B","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#02203C","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03223E","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03233F","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#032540","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#032641","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042842","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042943","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042B44","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042C45","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#052E47","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#052F48","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#053149","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#05324A","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06344B","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06354C","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06374D","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06384E","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#073A50","text":"-"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00AEE6","text":"Nothing
-          beats a Diamond Cookie"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#00AEE6","text":"when
-          you''re hungry *nomnom*"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011635","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011736","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011937","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011A38","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021C39","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021D3A","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021F3B","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#02203C","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03223E","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03233F","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#032540","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#032641","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042842","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042943","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042B44","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042C45","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#052E47","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#052F48","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#053149","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#05324A","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06344B","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06354C","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06374D","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06384E","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#073A50","text":"-"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#017987","text":"More
-          info: /diamondcookie"}],"text":""}'
-        - '{"extra":[{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011635","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011736","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011937","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#011A38","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021C39","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021D3A","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#021F3B","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#02203C","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03223E","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#03233F","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#032540","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#032641","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042842","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042943","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042B44","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#042C45","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#052E47","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#052F48","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#053149","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#05324A","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06344B","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06354C","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06374D","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#06384E","text":"-"},{"bold":false,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false,"color":"#073A50","text":"-"}],"text":""}'
-        enchants:
-          DURABILITY: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-        internal: H4sIAAAAAAAA/xXOS3KCMAAA0IwrtRfwDixQiUEWbtBIIkhRPlF3IUF0SvyMgXQ8icft9J3gDQEYgK/Yz5Z3pfhNvvoAgB4YJaa0rMgPlXXl31UxhrBjul4swOfsEsTaMDX4IemOT6bk+iPD+IKLfJ2odWPekd0iKCaUM+oG70fuGsfxDO/KzUxk9pZqG8PVijT7aS1pcPRQhwxtcp2EaUDKWpnbkkmK0+okN00BNTvUGJ1K++kGbTzfCf1bXQ7R3MnE0eOOb16C/M/+ALOJ72XLAAAA
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 3700
-          type: DIAMOND
-        byItem: true
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 3700
-          type: COOKIE
         byItem: true
   46cdfea5-a5d4-39a4-bce5-48cce769b2f2:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: GLOW_INK_SAC
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: INK_SAC
         byItem: true
   426880b6-71d1-3d5d-bda4-c7a6f581c303:
     Type: Shaped
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: INK_SAC
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '1':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '2':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '3':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '4':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '5':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '6':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '7':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
       '8':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: GLOW_INK_SAC
         byItem: true
   5fa38c2e-baff-35ae-891b-cd37239905d5:
     Type: Smoking
     Result:
       ==: org.bukkit.inventory.ItemStack
-      v: 3700
+      v: 3955
       type: PUMPKIN_PIE
       meta:
         ==: ItemMeta
@@ -1088,15 +1006,12 @@ CRecipes:
         - '{"text":"","extra":["And have a bite! NOM NOM NOM"]}'
         - '{"text":"","extra":["You will tell the world you''re having pizza!"]}'
         ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ATTRIBUTES
-        - HIDE_POTION_EFFECTS
-        internal: H4sIAAAAAAAA/w3O3VqCMBgA4D0dZd1A9/AdSEjP9MADRgYxBvKTGmcbLa0JqZsDvZIut94reO8QGqH7lFTBT9vy7kPfIoRu0MOyFwAJoS188UyuHM+za7Odz9EvvGF+xdtTpxrQ2Dbl+DqA+1lFyppyStT7mbl8EvHdhT5mlpxlODyFvswuaY81e4198VLnAU8PRVeIlVkMyv0+1T1lbJDPs00IR7JZe4fYSUqlF3m00zSvmpk0U8OOVS8mSVGa0Hr7PY2zGiLsgAj8/9kf4azCJMsAAAA=
+        - HIDE_ADDITIONAL_TOOLTIP
     Recipe:
       '0':
         item:
           ==: org.bukkit.inventory.ItemStack
-          v: 3700
+          v: 3955
           type: DEEPSLATE_EMERALD_ORE
           meta:
             ==: ItemMeta
@@ -1119,10 +1034,81 @@ CRecipes:
             - '{"text":"","extra":[{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011635","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011736","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011937","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011A38","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021C39","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021D3A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021F3B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#02203C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03223E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03233F","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032540","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032641","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042842","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042943","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042B44","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042C45","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052E47","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052F48","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#053149","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#05324A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06344B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06354C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06374D","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06384E","bold":false},{"text":"--","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#073A50","bold":false}]}'
             - '{"text":"","extra":[{"text":" ❖ Tier 1 Vote Item","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#555555","bold":false}]}'
             enchants:
-              DURABILITY: 1
+              minecraft:unbreaking: 1
             ItemFlags:
             - HIDE_ENCHANTS
-            - HIDE_ATTRIBUTES
         byItem: true
     Cook: 200
     Exp: 0.0
+  049b557b-7cc4-3c32-a036-875ccc0a18e5:
+    Type: Furnace
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 3955
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F3AD16","bold":false},{"text":"M","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F4B613","bold":false},{"text":"B","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F5BF11","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F7C80E","bold":false},{"text":"H","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F8D10C","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#F9DA09","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FBE307","bold":false},{"text":"d","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FCEC04","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FDF502","bold":false},{"text":"H","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFFF00","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFFF00","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFF202","bold":false},{"text":"t","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FEE505","bold":false},{"text":"i","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD907","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFCC0A","bold":false},{"text":"g","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFC00C","bold":false},{"text":"
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFB30F","bold":false},{"text":"C","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFA612","bold":false},{"text":"h","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF9A14","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF8D17","bold":false},{"text":"q","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF8119","bold":false},{"text":"u","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF741C","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FF681F","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Issued by ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false},{"text":"Server","italic":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":"Right click to deposit","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+        - '{"text":"","extra":[{"text":"$200 to /balance.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+        - '{"text":"","extra":[{"text":"-------------------------","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#808080","bold":false}]}'
+        - '{"text":"","extra":["Obtained from smelting heads!"]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmicheque": "CxI476z09wXtS7Zy/w9tUQ=="
+          }
+    Recipe:
+      '0':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: PLAYER_HEAD
+        byItem: true
+    Cook: 240
+    Exp: 0.2
+  617030e9-68f4-318d-bfa1-3709f597a2e0:
+    Type: Shapeless
+    Result:
+      ==: org.bukkit.inventory.ItemStack
+      v: 3955
+      type: COOKIE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"D","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D8E6","bold":false},{"text":"i","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00D0E6","bold":false},{"text":"a","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00CAE6","bold":false},{"text":"m","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00C3E6","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00BCE6","bold":false},{"text":"n","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00B5E6","bold":false},{"text":"d
+          ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00AEE6","bold":false},{"text":"C","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E67C00","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E68400","bold":false},{"text":"o","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E68C00","bold":false},{"text":"k","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E69400","bold":false},{"text":"i","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E69C00","bold":false},{"text":"e","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#E6A500","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011635","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011736","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011937","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011A38","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021C39","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021D3A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021F3B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#02203C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03223E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03233F","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032540","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032641","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042842","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042943","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042B44","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042C45","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052E47","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052F48","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#053149","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#05324A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06344B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06354C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06374D","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06384E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#073A50","bold":false}]}'
+        - '{"text":"","extra":[{"text":"Nothing beats a Diamond Cookie","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00AEE6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"when you''re hungry *nomnom*","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#00AEE6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011635","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011736","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011937","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011A38","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021C39","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021D3A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021F3B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#02203C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03223E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03233F","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032540","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032641","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042842","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042943","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042B44","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042C45","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052E47","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052F48","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#053149","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#05324A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06344B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06354C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06374D","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06384E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#073A50","bold":false}]}'
+        - '{"text":"","extra":[{"text":"More info: /diamondcookie","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#017987","bold":false}]}'
+        - '{"text":"","extra":[{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011635","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011736","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011937","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#011A38","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021C39","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021D3A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#021F3B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#02203C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03223E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#03233F","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032540","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#032641","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042842","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042943","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042B44","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#042C45","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052E47","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#052F48","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#053149","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#05324A","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06344B","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06354C","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06374D","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#06384E","bold":false},{"text":"-","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#073A50","bold":false}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/xXOS3KCMAAA0ExXWi/gHbIAER1ZuOBTAYMEhULKjgzFRExAZcTcxON2+k7wPgGYglnsZG4nRCXrxwQA8AHmyUghjBwkIK/wb66b5rMYztsteA/+AsGr246y2etOruw6EtwNVl4Z0FI5CSnGhcZSRmHBte5uDlhLQwvl8lDaftfizR6WaPW1c6Njj0N1YkKiPmhgGuMbYrFQgcHsBK7tp2rzKye9nnjkm54Li1qpz73mlv0sLwY5vNhOho9+qDMS/c/+AKN0iA7LAAAA
+    Recipe:
+      '0':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: DIAMOND
+        byItem: true
+      '1':
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3955
+          type: COOKIE
+        byItem: true

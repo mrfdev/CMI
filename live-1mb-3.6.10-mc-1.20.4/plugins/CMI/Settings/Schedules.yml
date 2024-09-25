@@ -256,6 +256,7 @@ mcmmoStop:
 StopServer:
   Enabled: false
   Commands:
+  - asFakeOp! pinata killall
   - actionbar! &eRestart for quick maintenance in &620 &esec!
   - delay! 5
   - actionbar! &eRestart for quick maintenance in &615 &esec!
@@ -313,6 +314,17 @@ tenyearsweekend:
     RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
   - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange>}» NETHER
     RECENTLY RESET {#gold<}{#Feijoa}&l Now a perm world
+TwentyOne:
+  Enabled: false
+  MinPlayers: 1
+  Delay: 600
+  Repeat: true
+  Randomize: false
+  Feedback: false
+  Commands:
+  - asConsole! cmi ctellraw all <T>{#buttercup>}We are now on public beta test 1.21.1
+    please check your inventory, enderchest, favourite features, warps and kits, and
+    report any issues on /discord as a new ticket. {#orange<}</T>
 Announcer:
   Enabled: true
   MinPlayers: 2

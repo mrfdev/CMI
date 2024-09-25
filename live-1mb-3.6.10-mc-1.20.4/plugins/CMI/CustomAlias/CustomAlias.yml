@@ -899,3 +899,7 @@ CustomAlias:
     - msg! [playerName] Sorry, this gametype has been removed on August 2024 and will
       most likely not return. Please try our other fun survival game types like /oneblock,
       /cave, /acid, /skygrid, or /skyblock
+  mine info:
+    Cmds:
+    - msg! [playerName] Pyro mining starts with mining deepslate ores. More info in
+      /mine journal, and /discord

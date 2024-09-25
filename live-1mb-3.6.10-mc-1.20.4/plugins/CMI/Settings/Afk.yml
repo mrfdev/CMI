@@ -1,0 +1,103 @@
+Afk:
+  # Enable or disable auto afk system entirely
+  Enabled: true
+  # When enabled shows title message informing that player is in afk mode
+  TitleMessage: true
+  # When enabled shows random subtitle message
+  SubTitleMessage: true
+  # Prevents jumping in one place to avoid afk status
+  PreventJumping: true
+  # Prevents damage while afk
+  PreventDamage: false
+  # Defines how often in seconds plugin will check for afk players state
+  CheckInterval: 10
+  # When set to true, players playtime counter stops
+  # As of nature how this system works you can see +-1second jumping up and down while checking players playtime
+  StopPlayTime: true
+  # Defines how long to wait after player stops moving to set him as afk
+  # Player needs to have cmi.command.afk.auto permission node
+  # Set to 0 if you want to disable it
+  AutoAfkIn: 450
+  # Defines commands to be performed when player enters afk mode automatically while addling
+  # Supports specialized commands
+  AutoAfkCmds:
+  - cmi broadcast !{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(Automatically)
+  # Defines commands to be performed when player enters /cmi afk
+  # Supports specialized commands
+  ManualAfkCmds:
+  - delay! 0.5
+  - cmi broadcast !{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(%cmi_user_afk_msg%)
+  LeaveCmds:
+    # Defines commands to be performed when player leaves afk mode after he entered it manually
+    Manual:
+    - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName] {#yellow}has returned
+      from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#geyser}Has been away for:
+      %cmi_user_afk_for%</H>'
+    # Defines commands to be performed when player leaves afk mode after he entered it automatically
+    Auto:
+    - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName] {#yellow}has returned
+      from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#geyser}Has been away for:
+      %cmi_user_afk_for%</H>'
+  # Defines how long to wait after player stops moving to kick player
+  # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
+  # This can be used not only to kick but to perform repeating action every x seconds if needed
+  # Keep it at -1 to disable auto kick
+  # Can be bypassed with cmi.command.afk.kickbypass permission node
+  # Additionally players kick time can be changed with cmi.command.afk.kickOutIn.[seconds] permission node where bigger value takes priority
+  AutoKickIn: -1
+  # This will define how long to wait before performing kick commands again
+  RepeatingAutoKickInterval: 300
+  # When set to true, kick command will be repeated each RepeatingAutoKickInterval seconds
+  RepeatKickCommand: false
+  # Defines commands to be performed when player can be kicked
+  # If player is not kicked then commands will be repeated every RepeatingAutoKickInterval seconds
+  AutoKickCmds:
+  - cmi warp spawn [playerName] -s
+  - cmi msg [playerName]  &eYou have been moved to spawn for idling more than [time]
+    - now you are safe!
+  # Defines worlds where players will not be placed into afk mode after they idled for defined time
+  DisabledWorlds:
+  - run
+  # Disables afk on interaction
+  DisableOnInteract: true
+  # Prevents player from going bypassing afk mode while continuously holding one button with particular items or on particular blocks
+  SmartInteractCheck: true
+  # Prevents from players abusing afk by constantly moving in afk machine
+  AntiAfkMachines: true
+  # Prevents players from being  pooled around while player is in afk mode
+  PreventHook: true
+  # EXPERIMENTAL! Prevents players from being pushed around while player is in afk mode
+  # Keep in mind that player can still be moved around the same block he is in
+  PreventPushing: true
+  # Disables afk on inventory click
+  DisableOnInventoryClick: false
+  # Disables afk on item drop
+  DisableOnitemDrop: false
+  # Disables afk on command usage
+  DisableOnCommand: false
+  # Disables afk on public chat message
+  DisableOnPublicChat: true
+  # Disables afk on private chat message
+  DisableOnPrivateChat: true
+  # Disables afk on move
+  DisableOnMove: true
+  # Disables afk on camera movement
+  DisableOnLookAround: false
+  # Disables afk on fishing when you catch fish
+  DisableOnFishing: true
+  # Disables item pickup while afk
+  DisableItemPickup: true
+  PreventMobSpawning:
+    # When enabled we can prevent mob spawning near players who are afk
+    Enabled: true
+    # Prevents natural mob spawning
+    # This can be more on heavy side of the server as it will try constantly to spawn in monsters near afk players
+    Natural: true
+    # Prevent mob spawning from spawners
+    Spawners: true
+    # Usually responsible for spawning in iron golems
+    VillageDefence: true
+  # Disables exp pickup while afk
+  # Attention! Because of weird minecraft handling of exp orbs, best way is to set orb to 0exp and allow it to be obsorbed
+  # So by enabling this exp obsorbed by afk players will have no effect
+  DisableExpPickup: true

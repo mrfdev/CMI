@@ -60,6 +60,12 @@ Block:
   Sweet_berry_bush:
     General:
     - '&2[playerDisplayName] &7was poked to a horrible death by a sweet berry bush'
+  Campfire:
+    General:
+    - '&2[playerDisplayName] &7got roasted on campfire'
+  Soul_campfire:
+    General:
+    - '&2[playerDisplayName] &7soul was taken away'
   Lava:
     General:
     - '&2[playerDisplayName] &7tried to swim in lava'
@@ -170,6 +176,9 @@ Mob:
   Primed_tnt:
     General:
     - '&2[playerDisplayName] &7was blown up'
+  Tnt_minecart:
+    General:
+    - '&2[playerDisplayName] &7blew up'
   Elder_guardian:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
@@ -370,12 +379,12 @@ Mob:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Mushroom_cow:
+  Mooshroom:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Snowman:
+  Snow_golem:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -576,6 +585,16 @@ Mob:
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Breeze:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Armadillo:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Bogged:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:

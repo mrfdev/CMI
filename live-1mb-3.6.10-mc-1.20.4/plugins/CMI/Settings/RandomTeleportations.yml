@@ -79,30 +79,6 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
-    sanctuary:
-      Enabled: false
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: 0
-        Max: 256
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
     end:
       Enabled: false
       MaxTries: 0
@@ -343,32 +319,8 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
-    TmpYellowWinter:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: 0
-        Max: 256
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
     easter:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 200
@@ -392,7 +344,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     santa:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -416,31 +368,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     thanksgiving:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: 0
-        Max: 256
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    MHPWorld:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -488,7 +416,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     valentine:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -511,32 +439,8 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
-    jackper:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
     pixelasia:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -560,31 +464,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     vubbo:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    TmpLoveInTheAir:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -608,7 +488,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     skygrid/bentobox:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -632,7 +512,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     cave/bentobox:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -656,7 +536,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     oneblock/bentobox:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -680,7 +560,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     acid/bentobox:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -704,7 +584,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     skyblock/bentobox:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -751,104 +631,8 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
-    olympus:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    rustic:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    chrome:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    parkour:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
     halloween:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -872,55 +656,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     owo:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    winter:
-      Enabled: true
-      MaxTries: 0
-      Range:
-        Max: 1000
-        Min: 500
-      Center:
-        X: 0
-        Z: 0
-      Circle: false
-      SurfaceOnly: false
-      FromAnotherWorld: true
-      RequireWorldPermission: false
-      YLimits:
-        Min: -64
-        Max: 320
-      Ignore:
-        Water: true
-        Lava: true
-        Leaves: false
-        PowderSnow: false
-        Materials: []
-        Biomes: []
-      PreferredBiomes: []
-    autosorter:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -944,7 +680,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     debug:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000
@@ -968,7 +704,7 @@ RandomTeleportation:
         Biomes: []
       PreferredBiomes: []
     summer:
-      Enabled: true
+      Enabled: false
       MaxTries: 0
       Range:
         Max: 1000

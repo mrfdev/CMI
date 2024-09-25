@@ -5,7 +5,7 @@ emoteHug:
   MaxUsages: 1
   Items:
     '28':
-      v: 3700
+      v: 3955
       type: SUNFLOWER
       meta:
         ==: ItemMeta
@@ -16,7 +16,7 @@ emoteHug:
         - '{"text":"","extra":[{"text":" Summer Festival Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
         - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /hug","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
         - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
-        internal: H4sIAAAAAAAA/1XOuw6CMBhA4d+woC6a+AwuDAZjTBwckJsQwGCrVDZMG0CBYoFEfUlfycvmes7yDQAkkPdJRXnp0PGrnvZhGGywzsvyExsZAHpQuF0dotBMG6Zkhipwa3k4sBfLyt3hG9oK0iXhziMqL3J1ZlLOcOxqQRNxRryTjxb4EuQGSbvwmEWt+rTFE59nMYvrBzXmFrqulEhDmCRa4awlmOi+4+Vl3jJ6aJjeCcGq9guRYPS3/OT+870BINMiu8YAAAA=
+        custom: H4sIAAAAAAAA/1XOuw6CMBQA0GtYUBdN/AYXBoMxJg4OyEsIYLBVKhumDaBAsUCi/qS/5GNzPdMZAEgg75OK8tKh41c97cMw2GCdl+UHGxkAelC4XR2i0EwbpmSGKnBreTiwF8vK3eEb2grSJeHOIyovcnVmUs5w7GpBE3FGvJOPFvgS5AZJu/CYRa36tMUTn2cxi+sHNeYWuq6USEOYJFrhrCUY6b7j5WXeMnpomJ/cvwkJJn+sd0Kwqv393s7d42/GAAAA
 emoteCheer:
   Description:
   - This kit is a one time kit,
@@ -28,13 +28,14 @@ emoteCheer:
   - '1MB Emote: "/cheer".'
   CommandName: emoteCheer
   DisplayName: 'Emote unlock: /cheer'
+  Enabled: false
   Delay: 10
   MaxUsages: 1
   MoneyCost: 4500.0
   ExpCost: 200
   Items:
     '28':
-      v: 3700
+      v: 3955
       type: SUNFLOWER
       meta:
         ==: ItemMeta
@@ -45,4 +46,4 @@ emoteCheer:
         - '{"text":"","extra":[{"text":" Summer Festival Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
         - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /cheer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
         - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
-        internal: H4sIAAAAAAAA/1XOORKCMBhA4d+hcWksvIWFogxDY6HgFkMUE0eww0lQFIgmMOMlPK0XcOls32u+JoAB9W1ccJkvef/pvRrQIhPmyjz/RF0HgBpkqLoFNJietOiePVOxcoYZmVt2gdbsThcqrOJgjUNTZqnZm3Ip2AGNid5LEeLIp9bquCGRRppkQye5XLHt7GVMz97ipBKKksGEbi4rZtl8EI0M6Lj+Eqd5Wgq+08KtlBJF+YUY0P5bfvz4+d4YlH9hxgAAAA==
+        custom: H4sIAAAAAAAA/1XOOw6CMBgA4N+w+FgcvIWDooSwOCj4qqWKrRHcMC2KAtUWEi/hab2Aj831m74mgAH1bVxwmS95/+m9GtAiE+bKPP+grgNADTJU3QIaTE9adM+eqVg5w4zMLbtAa3anCxVWcbDGoSmz1OxNuRTsgMZE76UIceRTa3XckEgjTbKhk1yu2Hb2MqZnb3FSCUXJYEI3lxWzbD6IRga0XX+J0zwtBd9p4cePb8KAzh+7lVKiKH+/N/aavrXGAAAA
