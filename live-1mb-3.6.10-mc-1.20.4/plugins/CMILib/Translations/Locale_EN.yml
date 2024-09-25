@@ -206,6 +206,7 @@ info:
   Spawner: '&r[type] Spawner'
   DamageCause:
     block_explosion: Explosion
+    campfire: campfire
     contact: Block Damage
     cramming: cramming
     custom: Unknown
@@ -306,6 +307,7 @@ info:
   EntityType:
     allay: Allay
     area_effect_cloud: Area effect cloud
+    armadillo: Armadillo
     armor_stand: Armor stand
     arrow: Arrow
     axolotl: Axolotl
@@ -314,37 +316,42 @@ info:
     blaze: Blaze
     block_display: Block display
     boat: Boat
+    bogged: Bogged
     breeze: Breeze
+    breeze_wind_charge: Breeze wind charge
     camel: Camel
     cat: Cat
     cave_spider: Cave spider
     chest_boat: Chest boat
+    chest_minecart: Chest minecart
     chicken: Chicken
     cod: Cod
+    command_block_minecart: Command block minecart
     cow: Cow
     creeper: Creeper
     dolphin: Dolphin
     donkey: Donkey
     dragon_fireball: Dragon fireball
-    dropped_item: Dropped item
     drowned: Drowned
     egg: Egg
     elder_guardian: Elder guardian
     enderman: Enderman
     endermite: Endermite
-    ender_crystal: Ender crystal
     ender_dragon: Ender dragon
     ender_pearl: Ender pearl
-    ender_signal: Ender signal
+    end_crystal: End crystal
     evoker: Evoker
     evoker_fangs: Evoker fangs
+    experience_bottle: Experience bottle
     experience_orb: Experience orb
+    eye_of_ender: Eye of ender
     falling_block: Falling block
     fireball: Fireball
-    firework: Firework
-    fishing_hook: Fishing hook
+    firework_rocket: Firework rocket
+    fishing_bobber: Fishing bobber
     fox: Fox
     frog: Frog
+    furnace_minecart: Furnace minecart
     ghast: Ghast
     giant: Giant
     glow_item_frame: Glow item frame
@@ -352,29 +359,26 @@ info:
     goat: Goat
     guardian: Guardian
     hoglin: Hoglin
+    hopper_minecart: Hopper minecart
     horse: Horse
     husk: Husk
     illusioner: Illusioner
     interaction: Interaction
     iron_golem: Iron golem
+    item: Item
     item_display: Item display
     item_frame: Item frame
-    leash_hitch: Leash hitch
-    lightning: Lightning
+    leash_knot: Leash knot
+    lightning_bolt: Lightning bolt
     llama: Llama
     llama_spit: Llama spit
     magma_cube: Magma cube
     marker: Marker
     minecart: Minecart
-    minecart_chest: Minecart chest
-    minecart_command: Minecart command
-    minecart_furnace: Minecart furnace
-    minecart_hopper: Minecart hopper
-    minecart_mob_spawner: Minecart mob spawner
-    minecart_tnt: Minecart tnt
+    mooshroom: Mooshroom
     mule: Mule
-    mushroom_cow: Mushroom cow
     ocelot: Ocelot
+    ominous_item_spawner: Ominous item spawner
     painting: Painting
     panda: Panda
     parrot: Parrot
@@ -385,7 +389,7 @@ info:
     pillager: Pillager
     player: Player
     polar_bear: Polar bear
-    primed_tnt: Primed tnt
+    potion: Potion
     pufferfish: Pufferfish
     rabbit: Rabbit
     ravager: Ravager
@@ -400,16 +404,17 @@ info:
     small_fireball: Small fireball
     sniffer: Sniffer
     snowball: Snowball
-    snowman: Snowman
+    snow_golem: Snow golem
+    spawner_minecart: Spawner minecart
     spectral_arrow: Spectral arrow
     spider: Spider
-    splash_potion: Splash potion
     squid: Squid
     stray: Stray
     strider: Strider
     tadpole: Tadpole
     text_display: Text display
-    thrown_exp_bottle: Thrown exp bottle
+    tnt: Tnt
+    tnt_minecart: Tnt minecart
     trader_llama: Trader llama
     trident: Trident
     tropical_fish: Tropical fish
@@ -434,10 +439,13 @@ info:
   # Avoid adding color codes to the enchant name
   EnchantNames:
     dig_speed: Efficiency
+    sweeping_edge: SweepingEdge
     loot_bonus_mobs: Looting
     quick_charge: QUICKCHARGE
     silk_touch: SilkTouch
     soul_speed: SOULSPEED
+    density: Density
+    breach: Breach
     arrow_fire: Flame
     loot_bonus_blocks: Fortune
     water_worker: AquaAffinity
@@ -466,7 +474,7 @@ info:
     damage_undead: Smite
     knockback: Knockback
     depth_strider: DepthStrider
-    sweeping_edge: SweepingEdge
+    wind_burst: Wind_burst
     arrow_infinite: Infinity
     vanishing_curse: VanishingCurse
     damage_arthropods: BaneOfArthropods
@@ -495,10 +503,14 @@ info:
     - Hunger
     slowfalling:
     - Slow falling
+    weaving:
+    - Weaving
     fireresistance:
     - Fire resistance
     saturation:
     - Saturation
+    raidomen:
+    - Raid omen
     jumpboost:
     - Jump boost
     dolphinsgrace:
@@ -517,6 +529,8 @@ info:
     - Luck
     speed:
     - Speed
+    trialomen:
+    - Trial omen
     strength:
     - Strength
     darkness:
@@ -527,16 +541,22 @@ info:
     - Levitation
     instantdamage:
     - Instant damage
+    oozing:
+    - Oozing
     weakness:
     - Weakness
     nausea:
     - Nausea
+    windcharged:
+    - Wind charged
     absorption:
     - Absorption
     wither:
     - Wither
     glowing:
     - Glowing
+    infested:
+    - Infested
     nightvision:
     - Night vision
 direction:
