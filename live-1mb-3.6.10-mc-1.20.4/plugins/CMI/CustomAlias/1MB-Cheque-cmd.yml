@@ -1,9 +1,11 @@
+#
+
 CustomAlias:
   cheque:
     Cmds:
     - 'asConsole! cmi ctellraw [playerName] <T>&r\n{#gold} 💰 {#orchid}Current Balance:
       {#gold}%cmi_user_balance_formatted%{#orchid}, trying to create a cheque ...
-      ...'
+      ...</T>'
     - delay! 1
     - statement:check1! hasmoney:$1! check:$1!=null! hasitem:paper:1! check:%cmi_iteminhand_type%==PAPER!
       check:%cmi_iteminhand_realname%==Paper! ifingamemode:survival!
