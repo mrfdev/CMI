@@ -22,3 +22,13 @@ CustomAlias:
     Cmds:
     - msg! [playerName] WIP
     Perm: true
+  _item_event_scaryprefix:
+    Cmds:
+    - statement:check1! check:%server_time_MM%==10! check:%server_time_Y%==2024!
+    - if:check1@! msg! $1 {#buttercup}Sorry $1, you can only use this in October 2024.
+      {#orange}🎃
+    - if:check1! asConsole! cmi nameplate $1 -pref:{#orange}🎃_&r
+    - if:check1! asConsole! cmi panimation circle;effect:raid_omen;twist;part:5;r:0.5;pitch:90;offset:0,0,0;dur:1;target:$1
+    - if:check1! asConsole! cmi titlemsg $1 {#orange}🎃 Done! \n {#buttercup}Scary
+      Prefix Applied
+    Perm: true

@@ -1,13 +1,18 @@
-#
-
 CustomAlias:
   cheque:
     Cmds:
-    - 'msg! [playerName] &3 Current Balance: &6%cmi_user_balance_formatted%&3, trying
-      to withdraw &6$1'
-    - cmi cheque $1
-    - delay! 2
-    - 'msg! [playerName] &3 New Balance: &6%cmi_user_balance_formatted% &3/money'
-    - msg! [playerName] &e (Cheques max out to 250,000 ~ if you withdraw a bigger
-      amount it might say it will attempt to do so, but your /balance will go down
-      by max 250k)
+    - 'asConsole! cmi ctellraw [playerName] <T>&r\n{#gold} 💰 {#orchid}Current Balance:
+      {#gold}%cmi_user_balance_formatted%{#orchid}, trying to create a cheque ...
+      ...'
+    - delay! 1
+    - statement:check1! hasmoney:$1! check:$1!=null! hasitem:paper:1! check:%cmi_iteminhand_type%==PAPER!
+      check:%cmi_iteminhand_realname%==Paper! ifingamemode:survival!
+    - if:check1! asPlayer! cmi cheque $1
+    - 'if:check1! msg! [playerName] {#gold} 💰 {#orchid}New Balance: {#gold}%cmi_user_balance_formatted%
+      {#orchid}/money'
+    - 'if:check1@! msg! [playerName] {#gold} 💰 {#orchid}Usage: Hold a Paper in your
+      hand in survival mode, and have enough money in your /balance (Cheques max out
+      to 250k)\n{#gold} 💰 {#orchid}Then type: /cheque AMOUNT. This will convert your
+      paper to a cheque.'
+    CustomTabs:
+    - 50,100,250,1000,2500,5000,10000,25000,50000,100000

@@ -155,9 +155,9 @@ CustomAlias:
     - '[playername]'
   explode:
     Cmds:
-    - statement:nullcheck! check:$1==null~!
-    - if:nullcheck! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
-      [displayName] {#sunsetorange>}Suddenly exploded! 💥 Will {#coral<}{#radicalred}%cmi_random_player_name%{#coral}
+    - gcooldown:60#?!
+    - asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}] [displayName]
+      {#sunsetorange>}Suddenly exploded! 💥 Will {#coral<}{#radicalred}%cmi_random_player_name%{#coral}
       be next?</T>
     - asConsole! cmi burn [playerName] -s
     - asConsole! cmi smite [playerName] -safe -s
@@ -571,10 +571,15 @@ CustomAlias:
     - asConsole! gui openfor [playerName] emotes
   ghost:
     Cmds:
-    - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}BOO!!
-      👻 [displayName] {#pictonblue>}turned into a ghost ╭(* _ *)╮{#aquamarine<}</T>
+    - gcooldown:60#?!
+    - asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}BOO!!
+      👻 [displayName] {#pictonblue>}turned into a ghost! ╭(* _ *)╮{#aquamarine<}</T>
     - asConsole! cmi panimation circle;effect:trial_omen;dur:5;part:5;yawc:5;offset:0,1,0;radius:0.8;target:[playerName]
     - asConsole! cmi panimation circle;effect:trial_spawner_detection_ominous;twist;part:5;r:0.5;pitch:90;offset:0,0,0;target:[playerName]
+    - asConsole! cmi sound entity_ghast_ambient [playerName] -r:5 -s
+    - asConsole! cmi sound entity_warden_ambient [playerName] -r:5 -s
+    - asConsole! cmi sound entity_wither_ambient [playerName] -r:5 -s
+    - asConsole! cmi effect [playerName] Invisibility 5 -s -visual
     Perm: true
     Tab: false
   nomnom:

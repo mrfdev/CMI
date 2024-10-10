@@ -903,3 +903,6 @@ CustomAlias:
     Cmds:
     - msg! [playerName] Pyro mining starts with mining deepslate ores. More info in
       /mine journal, and /discord
+  mine sell:
+    Cmds:
+    - asPlayer! mine shop
