@@ -20,7 +20,7 @@ CustomAlias:
   updatehome:
     Cmds:
     - asConsole! cmi sethome $1 [playerName] -overwrite
-    - msg! [playerName] {#gold}Boom! Updated&l $1
+    - asConsole! cmi msg [playerName] !{#gold}Boom! Updated&l ^_^
     Perm: true
     CustomTabs:
     - '[homes]'

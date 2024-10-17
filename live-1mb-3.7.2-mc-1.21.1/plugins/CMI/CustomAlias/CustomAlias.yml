@@ -23,8 +23,8 @@ CustomAlias:
     Tab: false
   donate:
     Cmds:
-    - msg! [playerName] >> This is an old deprecated command, but you can still become
-      a Patron, loading the "/patron" command for you now......
+    - asConsole! cmi msg [playerName] !>> This is an old deprecated command, but you
+      can still become a Patron, loading the "/patron" command for you now......
     - asPlayer! patron
   rules:
     Cmds:
@@ -35,26 +35,26 @@ CustomAlias:
     - tryme $1-
   changelog:
     Cmds:
-    - 'msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} A peek behind
-      the curtain:'
-    - msg! [playerName] {#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} https://omgboards.com/threads/263867/
-      \n&r
+    - 'asConsole! cmi msg [playerName] !&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa}
+      A peek behind the curtain:'
+    - asConsole! cmi msg [playerName] !{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa}
+      https://omgboards.com/threads/263867/ \n&r
     Tab: false
   register:
     Cmds:
-    - msg! [playerName] &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You do not
-      have to register to play on 1MB \n&r
+    - asConsole! cmi msg [playerName] !&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa}
+      You do not have to register to play on 1MB \n&r
     Tab: false
   inventory:
     Cmds:
-    - 'asConsole! msg! [playerName] &3 1MB Tip »&7 Shared only in: /spawn, /general,
-      /mine, /end, /nether, /souls, and /wild. Other worlds have unique inventories.
-      &r'
+    - 'asConsole! asConsole! cmi msg [playerName] !&3 1MB Tip »&7 Shared only in:
+      /spawn, /general, /mine, /end, /nether, /souls, and /wild. Other worlds have
+      unique inventories. &r'
     Tab: false
   ranks:
     Cmds:
-    - msg! [playerName] Roles and ranks are "/groups" on this server. Loading groups
-      command for you ..
+    - asConsole! cmi msg [playerName] !Roles and ranks are "/groups" on this server.
+      Loading groups command for you ..
     - asPlayer! groups
     Tab: false
   achievements:
@@ -68,8 +68,8 @@ CustomAlias:
     - cmi playtime
   hopper:
     Cmds:
-    - msg! [playerName] Sorry, this is an old LWC command, you cannot use this right
-      now in Bolt. Hopper flags are automatically handled now.
+    - asConsole! cmi msg [playerName] !Sorry, this is an old LWC command, you cannot
+      use this right now in Bolt. Hopper flags are automatically handled now.
     Tab: false
   menu:
     Cmds:
@@ -85,8 +85,8 @@ CustomAlias:
     - balance,info,shop [playername]
   items:
     Cmds:
-    - asConsole! msg! [playerName] &7- Your items are the things in your Inventory,
-      just press the Inventory key (E by default) to open it.
+    - asConsole! asConsole! cmi msg [playerName] !&7- Your items are the things in
+      your Inventory, just press the Inventory key (E by default) to open it.
     Tab: false
   sell:
     Cmds:
@@ -94,7 +94,7 @@ CustomAlias:
     Tab: false
   spawners:
     Cmds:
-    - asConsole! bs open Spawners [playerName]
+    - asConsole! genesis open Spawners [playerName]
     Tab: false
   murdergame:
     Cmds:
@@ -111,24 +111,27 @@ CustomAlias:
     Tab: false
   1mbfun:
     Cmds:
-    - asConsole! msg! [playerName] &3 1MB Fun »&7 &b&lA 1MoreBlock Mini-game.&r&b
-      It will ask a question, you can try to answer it correctly to have a chance
-      at winning rewards.
-    - 'asConsole! msg! [playerName] &3 1MB Fun »&7 Click the URL to learn how to play,
-      report a problem, or suggest rewards: https://omgboards.com/threads/261556/'
+    - asConsole! asConsole! cmi msg [playerName] !&3 1MB Fun »&7 &b&lA 1MoreBlock
+      Mini-game.&r&b It will ask a question, you can try to answer it correctly to
+      have a chance at winning rewards.
+    - 'asConsole! asConsole! cmi msg [playerName] !&3 1MB Fun »&7 Click the URL to
+      learn how to play, report a problem, or suggest rewards: https://omgboards.com/threads/261556/'
     Tab: false
   suggestion:
     Cmds:
-    - asConsole! msg! [playerName] &3 ------[ &bSuggestion Information&3 ]--------
-    - asConsole! msg! [playerName] &6If you have a suggestion you're free to share
-      it with us, we are excited to hear from our players on how to improve our server.
-    - asConsole! msg! [playerName] &3Discord:&7 https://discord.gg/floris
-    - 'asConsole! msg! [playerName] &3please post it in the #suggestions box :)'
-    - asConsole! msg! [playerName] &3 -------------------------------------
+    - asConsole! asConsole! cmi msg [playerName] !&3 ------[ &bSuggestion Information&3
+      ]--------
+    - asConsole! asConsole! cmi msg [playerName] !&6If you have a suggestion you're
+      free to share it with us, we are excited to hear from our players on how to
+      improve our server.
+    - asConsole! asConsole! cmi msg [playerName] !&3Discord:&7 https://discord.gg/floris
+    - 'asConsole! asConsole! cmi msg [playerName] !&3please post it in the #suggestions
+      box :)'
+    - asConsole! asConsole! cmi msg [playerName] !&3 -------------------------------------
     Tab: false
   myping:
     Cmds:
-    - cooldown:120#?! msg! [playerName] &e Checking your ping..
+    - cooldown:120#?! asConsole! cmi msg [playerName] !&e Checking your ping..
     - delay! 5
     - asConsole! cmi sound block_note_block_pling [playerName] -p:1.5 -v:0.7
     - 'asConsole! cmi bossbarmsg [playerName] -s:1 -a:2 Your ping: %cmi_user_ping%!
@@ -144,13 +147,14 @@ CustomAlias:
     Tab: false
   helper:
     Cmds:
-    - asConsole! msg! [playerName] -- To get support, post your question in the chat,
-      one of our staff or helpers will hopefully have the time to respond. If you
-      need staff 'now', you're free to contact us on /discord or leave a /mail msg.
+    - asConsole! asConsole! cmi msg [playerName] !-- To get support, post your question
+      in the chat, one of our staff or helpers will hopefully have the time to respond.
+      If you need staff 'now', you're free to contact us on /discord or leave a /mail
+      msg.
   contest:
     Cmds:
-    - 'msg! [playerName] {#blue}Info: {#orange}There is currently no contest running,
-      check {#yellow}/event'
+    - 'asConsole! cmi msg [playerName] !{#blue}Info: {#orange}There is currently no
+      contest running, check {#yellow}/event'
   brb:
     Cmds:
     - asPlayer! afk $1-
@@ -160,34 +164,38 @@ CustomAlias:
     Tab: false
   chests:
     Cmds:
-    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Item Protection Info ❖{#orient}-----------------------•
-    - msg! [playerName] {#Feijoa} When you place a door, furnace, shulker box, barrel
-      or chest, things like that, they are automatically locked into your name.
-    - msg! [playerName] {#orange}&l/lock&r{#Feijoa} (and /unlock) can be used to (un)lock
-      certain items to your name. Or to make them public again.
-    - msg! [playerName] {#orange}&l/cmodify <player>&r{#Feijoa} (To add a friend to
-      a locked item. You still remain the owner.)
-    - msg! [playerName]  {#orange}&l/cinfo &r{#Feijoa} (check locked item information)
-    - msg! [playerName] {#orange}&l/trust&r{#Feijoa} (to manage auto-trust a friend
-      to all items)
-    - msg! [playerName] {#orange}&l/cdonate&r{#Feijoa} (to let others use lecterns,
-      or to make a add-only containers)
-    - msg! [playerName] &b https://omgboards.com/threads/261546/ \n&r
+    - asConsole! cmi msg [playerName] !&r\n{#orient}•--{#cerulean}❖ 1MB Item Protection
+      Info ❖{#orient}-----------------------•
+    - asConsole! cmi msg [playerName] !{#Feijoa} When you place a door, furnace, shulker
+      box, barrel or chest, things like that, they are automatically locked into your
+      name.
+    - asConsole! cmi msg [playerName] !{#orange}&l/lock&r{#Feijoa} (and /unlock) can
+      be used to (un)lock certain items to your name. Or to make them public again.
+    - asConsole! cmi msg [playerName] !{#orange}&l/cmodify <player>&r{#Feijoa} (To
+      add a friend to a locked item. You still remain the owner.)
+    - asConsole! cmi msg [playerName] ! {#orange}&l/cinfo &r{#Feijoa} (check locked
+      item information)
+    - asConsole! cmi msg [playerName] !{#orange}&l/trust&r{#Feijoa} (to manage auto-trust
+      a friend to all items)
+    - asConsole! cmi msg [playerName] !{#orange}&l/cdonate&r{#Feijoa} (to let others
+      use lecterns, or to make a add-only containers)
+    - asConsole! cmi msg [playerName] !&b https://omgboards.com/threads/261546/ \n&r
     Tab: false
   shovel:
     Cmds:
     - excavation
   spawnerinfo:
     Cmds:
-    - msg! [playerName] &6&l • Information About the 1MB Spawners
-    - msg! [playerName] &b • &3 Buying,placing, breaking, and picking up.
-    - msg! [playerName] &b • Your group only allows you to buy a couple of specific
-      spawner types. These are also the only ones you can place. And using a special
-      tool, these are also the only ones you can break to drop as an item.
-    - 'msg! [playerName] &b • You can not pick up spawners with a regular silk touch
-      pickaxe. You will need to buy the special silk touch 5 pickaxe from /menu >
-      shops > jobs (cost: 200,000 points)'
-    - msg! [playerName] &b •&3 More info:&9 https://omgboards.com/threads/261657/
+    - asConsole! cmi msg [playerName] !&6&l • Information About the 1MB Spawners
+    - asConsole! cmi msg [playerName] !&b • &3 Buying,placing, breaking, and picking
+      up.
+    - asConsole! cmi msg [playerName] !&b • Your group only allows you to buy a couple
+      of specific spawner types. These are also the only ones you can place. And using
+      a special tool, these are also the only ones you can break to drop as an item.
+    - 'asConsole! cmi msg [playerName] !&b • You can not pick up spawners with a regular
+      silk touch pickaxe. You will need to buy the special silk touch 5 pickaxe from
+      /menu > shops > jobs (cost: 200,000 points)'
+    - asConsole! cmi msg [playerName] !&b •&3 More info:&9 https://omgboards.com/threads/261657/
   motd:
     Cmds:
     - asConsole! cmi ctext welcomeMessage [playerName] $1
@@ -205,12 +213,12 @@ CustomAlias:
   perk:
     Cmds:
     - asPlayer! cosmetics
-    - msg! [playerName] &b a 1MB Perk is unlocked or obtainable through an event,
-      reward or loot box, or as a prize.
+    - asConsole! cmi msg [playerName] !&b a 1MB Perk is unlocked or obtainable through
+      an event, reward or loot box, or as a prize.
   age:
     Cmds:
-    - msg! [playerName] &6 The 1MoreBlock.com /Discord, /Website and game-server is
-      allowing players from the ages 13 and up.
+    - asConsole! cmi msg [playerName] !&6 The 1MoreBlock.com /Discord, /Website and
+      game-server is allowing players from the ages 13 and up.
   display:
     Cmds:
     - cmodify display
@@ -223,7 +231,7 @@ CustomAlias:
     AddTabs: true
   witchery:
     Cmds:
-    - msg! [playerName] https://omgboards.com/threads/261787/
+    - asConsole! cmi msg [playerName] !https://omgboards.com/threads/261787/
   achievements top:
     Cmds:
     - aach top
@@ -238,12 +246,12 @@ CustomAlias:
     - asConsole! gui openfor [playerName] oneblock
   respawn:
     Cmds:
-    - asConsole! perm:cmi.autorespawn! msg! [playerName] &3 1MB Death » {#lochmara}Auto-respawn
-      was on, &lturned it off.
+    - asConsole! perm:cmi.autorespawn! asConsole! cmi msg [playerName] !&3 1MB Death
+      » {#lochmara}Auto-respawn was on, &lturned it off.
     - asConsole! perm:cmi.autorespawn! lp user [playerName] permission set cmi.autorespawn
       false
-    - asConsole! perm:cmi.autorespawn@! msg! [playerName] &3 1MB Death » {#lochmara}Auto-respawn
-      was off, &lturned it on.
+    - asConsole! perm:cmi.autorespawn@! asConsole! cmi msg [playerName] !&3 1MB Death
+      » {#lochmara}Auto-respawn was off, &lturned it on.
     - asConsole! perm:cmi.autorespawn@! lp user [playerName] permission set cmi.autorespawn
       true
   fish sell:
@@ -251,44 +259,46 @@ CustomAlias:
     - asPlayer! fish shop
   togglemobs:
     Cmds:
-    - 'asConsole! msg! [playerName] &3-------/ &l1MB: Which Mobs Cannot Spawn?&r&3
-      \-------'
-    - asConsole! msg! [playerName] &b This is an expensive permission-buy command
-      for a /here flag (cost is 1 million /money). It allows you to specificy which
-      mobs will no longer spawn in your owned region(s).
-    - 'asConsole! msg! [playerName] &b BEFORE YOU CONTINUE, PLEASE READ THIS THREAD
-      FIRST:'
-    - asConsole! msg! [playerName] &b ->&2 https://omgboards.com/threads/261857/
+    - 'asConsole! asConsole! cmi msg [playerName] !&3-------/ &l1MB: Which Mobs Cannot
+      Spawn?&r&3 \-------'
+    - asConsole! asConsole! cmi msg [playerName] !&b This is an expensive permission-buy
+      command for a /here flag (cost is 1 million /money). It allows you to specificy
+      which mobs will no longer spawn in your owned region(s).
+    - 'asConsole! asConsole! cmi msg [playerName] !&b BEFORE YOU CONTINUE, PLEASE
+      READ THIS THREAD FIRST:'
+    - asConsole! asConsole! cmi msg [playerName] !&b ->&2 https://omgboards.com/threads/261857/
     - 'perm:worldguard.region.flag.flags.deny-spawn.*@! hasmoney:1000000?! msg! [playerName]
       You can have this permission, it will cost one million /money, type: /togglemobs
       confirm, if you wish to continue.'
-    - perm:worldguard.region.flag.flags.deny-spawn.*! msg! [playerName] &6You already
-      have this set up.
+    - perm:worldguard.region.flag.flags.deny-spawn.*! asConsole! cmi msg [playerName]
+      !&6You already have this set up.
   togglemobs confirm:
     Cmds:
     - perm:worldguard.region.flag.flags.deny-spawn.*@! moneycost:1000000?! asConsole!
       lp user [playerName] permission set worldguard.region.flag.flags.deny-spawn.*
       true
     - delay! 1
-    - perm:worldguard.region.flag.flags.deny-spawn.*! msg! [playerName] &6Done.
+    - perm:worldguard.region.flag.flags.deny-spawn.*! asConsole! cmi msg [playerName]
+      !&6Done.
   groups:
     Cmds:
     - asConsole! cmi openbook groups [playerName]
   report:
     Cmds:
-    - msg! [playerName] {#orange}Issue with a player? You can contact staff on /discord
-      or on the /forums, otherwise leave a /mail
+    - asConsole! cmi msg [playerName] !{#orange}Issue with a player? You can contact
+      staff on /discord or on the /forums, otherwise leave a /mail
   bug:
     Cmds:
-    - 'msg! [playerName] {#orange}Found a bug? You can report it on /discord or on
-      the /forums, otherwise /mail send mrfloris I found a bug: blah blah..'
+    - 'asConsole! cmi msg [playerName] !{#orange}Found a bug? You can report it on
+      /discord or on the /forums, otherwise /mail send mrfloris I found a bug: blah
+      blah..'
   fish caught:
     Cmds:
     - asConsole! cmi ctext fishcaught [playerName]
   fish info:
     Cmds:
-    - msg! [playerName] &b We wrote some stuff out, please read
-    - msg! [playerName] &b https://omgboards.com/threads/261874/
+    - asConsole! cmi msg [playerName] !&b We wrote some stuff out, please read
+    - asConsole! cmi msg [playerName] !&b https://omgboards.com/threads/261874/
   store:
     Cmds:
     - asPlayer! warp shops
@@ -298,8 +308,8 @@ CustomAlias:
     Tab: false
   countdown:
     Cmds:
-    - cooldown:60! msg! [playerName] {#orange} Starting countdown, people within 3
-      chunks will see this.
+    - cooldown:60! asConsole! cmi msg [playerName] !{#orange} Starting countdown,
+      people within 3 chunks will see this.
     - asConsole! cmi counter start t:6 r:50 c:%player_world%:%player_x%:%player_y%:%player_z%
       msg:{#orange}Okay_fight! -f
     - asConsole! cmi sound block_note_block_bell %player_world% %player_x% %player_y%
@@ -325,9 +335,9 @@ CustomAlias:
     Tab: false
   impossible:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#Cerulean>} Get Impossible Advancements!{#Lochmara<}
-    - 'msg! [playerName] {#Feijoa}&o .. Syncing: '
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean>} Get Impossible Advancements!{#Lochmara<}
+    - 'asConsole! cmi msg [playerName] !{#Feijoa}&o .. Syncing: '
     - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Sub Space Bubble</T><H>{#Geyser}Use
       the Nether to travel 7 km in the Overworld\n(Nether)</H>
     - asConsole! advancement grant [playerName] only minecraft:nether/fast_travel
@@ -365,135 +375,146 @@ CustomAlias:
     - asConsole! cmi ctellraw [playerName] <T> {#Cerulean} »{#Feijoa} Voted 10 times</T><H>{#Geyser}Shows
       you are a fan of the server.</H>
     - asConsole! aach add 10 Custom.votes [playerName]
-    - msg! [playerName] {#Cerulean>} Syncing Completed.{#Lochmara<}
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•&r
+    - asConsole! cmi msg [playerName] !{#Cerulean>} Syncing Completed.{#Lochmara<}
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•&r
     Tab: false
   celebration:
     Cmds:
     - asPlayer! warp celebration
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#magenta} The {#yellow}1MoreBlock.com Community{#magenta}
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#magenta} The {#yellow}1MoreBlock.com Community{#magenta}
       is now TEN years old! We are celebrating our anniversary throughout the year.
       Check the {#orange}/forums{#magenta} for detailed information.
-    - msg! [playerName] {#yellow} https://omgboards.com/threads/263614/
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - 'msg! [playerName] {#orange} Available commands:'
-    - msg! [playerName] {#green} - /celebration
-    - msg! [playerName] {#green} - /celebration lootbox
-    - msg! [playerName] {#green} - /celebration mikey
-    - msg! [playerName] {#green} - /celebration stick
-    - msg! [playerName] {#green} - /celebration giveaway
-    - msg! [playerName] {#green} - /celebration soulbind
-    - msg! [playerName] {#green} - /celebration dropparty
-    - msg! [playerName] {#green} - /celebration bedrocker
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#yellow} https://omgboards.com/threads/263614/
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#orange} Available commands:'
+    - asConsole! cmi msg [playerName] !{#green} - /celebration
+    - asConsole! cmi msg [playerName] !{#green} - /celebration lootbox
+    - asConsole! cmi msg [playerName] !{#green} - /celebration mikey
+    - asConsole! cmi msg [playerName] !{#green} - /celebration stick
+    - asConsole! cmi msg [playerName] !{#green} - /celebration giveaway
+    - asConsole! cmi msg [playerName] !{#green} - /celebration soulbind
+    - asConsole! cmi msg [playerName] !{#green} - /celebration dropparty
+    - asConsole! cmi msg [playerName] !{#green} - /celebration bedrocker
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   celebration lootbox:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#orange} In 2021, in any of the main worlds, there are a
-      maximum of twelve special lootboxes available to players. The first to find
-      one will find a book and a special celebration token inside of it. Read the
-      book!
-    - msg! [playerName] {#orange} https://youtu.be/OU6_j-EV40I
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - 'msg! [playerName] {#magenta} -Lootbox: 1, Unlocked: Yes, Found: Yes (The456Gamer)'
-    - 'msg! [playerName] {#magenta} -Lootbox: 2, Unlocked: Yes, Found: Yes (RitualRogue47)'
-    - 'msg! [playerName] {#magenta} -Lootbox: 3, Unlocked: Yes, Found: Yes (_hepcat_)'
-    - 'msg! [playerName] {#magenta} -Lootbox: 4, Unlocked: Yes, Found: The456Gamer'
-    - 'msg! [playerName] {#magenta} -Lootbox: 5, Unlocked: Yes, Found: ProxDee222'
-    - 'msg! [playerName] {#magenta} -Lootbox: 6, Unlocked: Yes, Found: The456Gamer'
-    - 'msg! [playerName] {#magenta} -Lootbox: 7-12, Unlocked: No, Found: n/a'
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange} In 2021, in any of the main worlds,
+      there are a maximum of twelve special lootboxes available to players. The first
+      to find one will find a book and a special celebration token inside of it. Read
+      the book!
+    - asConsole! cmi msg [playerName] !{#orange} https://youtu.be/OU6_j-EV40I
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 1, Unlocked: Yes, Found:
+      Yes (The456Gamer)'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 2, Unlocked: Yes, Found:
+      Yes (RitualRogue47)'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 3, Unlocked: Yes, Found:
+      Yes (_hepcat_)'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 4, Unlocked: Yes, Found:
+      The456Gamer'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 5, Unlocked: Yes, Found:
+      ProxDee222'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 6, Unlocked: Yes, Found:
+      The456Gamer'
+    - 'asConsole! cmi msg [playerName] !{#magenta} -Lootbox: 7-12, Unlocked: No, Found:
+      n/a'
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   celebration mikey:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#orange}The Celebration Mikey can be found at /celebration,
-      this is a spawn point with various celebration related things. You need 3 celebration
-      tokens to trade wtih Celebration Mikey, to get some his Celebration Loot
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange}The Celebration Mikey can be found
+      at /celebration, this is a spawn point with various celebration related things.
+      You need 3 celebration tokens to trade wtih Celebration Mikey, to get some his
+      Celebration Loot
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   ride:
     Cmds:
-    - msg! [playerName] {#magenta}Whooo - you've got yourself a Celebration Stick
-      in 2021. That's so awesome. Thank you for playing. But, what can you do with
-      it?
-    - msg! [playerName] {#orange}Active players (Group Member and higher) will be
-      able to ride some additional animals. For example, a member can also jump on
-      a cow. And a boosted member on a mushroom cow. {#yellow}Just right-click the
-      mob to try!
-    - msg! [playerName] {#orange}Players need to become a full member first. Builders
-      can also sit on sheep, and rogue players can right click a chicken as well.
-    - 'msg! [playerName] {#orange}Oh, and donator: turtle, mvp: panda, and epic even
-      has permission to try a polar bear. Pretty cool huh.'
+    - asConsole! cmi msg [playerName] !{#magenta}Whooo - you've got yourself a Celebration
+      Stick in 2021. That's so awesome. Thank you for playing. But, what can you do
+      with it?
+    - asConsole! cmi msg [playerName] !{#orange}Active players (Group Member and higher)
+      will be able to ride some additional animals. For example, a member can also
+      jump on a cow. And a boosted member on a mushroom cow. {#yellow}Just right-click
+      the mob to try!
+    - asConsole! cmi msg [playerName] !{#orange}Players need to become a full member
+      first. Builders can also sit on sheep, and rogue players can right click a chicken
+      as well.
+    - 'asConsole! cmi msg [playerName] !{#orange}Oh, and donator: turtle, mvp: panda,
+      and epic even has permission to try a polar bear. Pretty cool huh.'
   celebration bedrocker:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#magenta} We have a special celebration pickaxe we call the
-      bedrocker
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#magenta} We have a special celebration pickaxe
+      we call the bedrocker
     - asPlayer! bedrock
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   celebration stick:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - 'msg! [playerName] {#magenta}You can ride more animals now (differs per group),
-      check the /market to buy the Celebration stick. once you have it: right click
-      a mob to try and ride it.'
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#magenta}You can ride more animals now (differs
+      per group), check the /market to buy the Celebration stick. once you have it:
+      right click a mob to try and ride it.'
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   soulbind:
     Cmds:
     - asPlayer! celebration soulbind
   celebration giveaway:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#orange}- Every once in a while throughout 2021 we have a
-      celebration giveaway. Some are spontanious as a surprise, others are announced
-      ahead of time in the thread
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange}- Every once in a while throughout
+      2021 we have a celebration giveaway. Some are spontanious as a surprise, others
+      are announced ahead of time in the thread
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   celebration soulbind:
     Cmds:
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - 'msg! [playerName] {#orange}- This year it will be possible to soulbind your
-      items, info will be on this thread: https://omgboards.com/threads/263617/'
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - 'asConsole! cmi msg [playerName] !{#orange}- This year it will be possible to
+      soulbind your items, info will be on this thread: https://omgboards.com/threads/263617/'
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   celebration dropparty:
     Cmds:
     - asConsole! cmi warp dropparty%cmi_random_1_4% [playerName] -s
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#orange} Chests will drop from the sky when it starts! Right-click
-      to collect. Pick up what you can and enjoy your loot. We are having a little
-      drop party because the server is celebrating its 10 Years Anniversary in 2021.
-    - msg! [playerName] {#magenta}The January/February drop parties were awesome and
-      over. Next drop parties will be in March 2021.
-    - msg! [playerName] {#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#orange} Chests will drop from the sky when
+      it starts! Right-click to collect. Pick up what you can and enjoy your loot.
+      We are having a little drop party because the server is celebrating its 10 Years
+      Anniversary in 2021.
+    - asConsole! cmi msg [playerName] !{#magenta}The January/February drop parties
+      were awesome and over. Next drop parties will be in March 2021.
+    - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
     Tab: false
   elevator:
     Cmds:
-    - msg! [playerName] {#orange} Type {#yellow}[elevator]{#orange} on the first line
-      of a sign, and straight above and below, you repeat that. Then you can use the
-      elevator to go up and down.
-    - msg! [playerName] {#orange}Note, your group needs to be Member-Boosted or higher
-      to create elevator signs. To use an elevator, right click on it to go up. and
-      sneak right click on it to go down.
+    - asConsole! cmi msg [playerName] !{#orange} Type {#yellow}[elevator]{#orange}
+      on the first line of a sign, and straight above and below, you repeat that.
+      Then you can use the elevator to go up and down.
+    - asConsole! cmi msg [playerName] !{#orange}Note, your group needs to be Member-Boosted
+      or higher to create elevator signs. To use an elevator, right click on it to
+      go up. and sneak right click on it to go down.
   birthday:
     Cmds:
-    - check:$1==null! asConsole! msg! [playerName] Birthday! \n This is /$0 command
-      can do a few things. It will explain how to use this command. It lets you create
-      a birthday item for someone else.
-    - 'check:$1==null! asConsole! msg! [playerName] It also tells you the servers''
-      birthday, to get started, type: /birthday information \n &r'
-    - check:$1==information! msg! [playerName] - /birthday buy <playername> , this
-      lets you buy a birthday cake, pie or drink. And select a gift. You can use this
-      a limited amount of times, and it costs money to make it.
-    - check:$1==information! msg! [playerName] - /birthday server , this shows you
-      the age of the server, sometimes that's pretty handy! in 2021 we celebrate our
-      10 years anniversary.
-    - check:$1==server! msg! [playerName] - The server started March 2011, that's
-      13+ years ago! --> /celebration :) Maybe give mrfloris and madmikeyb a poke
-      to congratulate them!
+    - check:$1==null! asConsole! asConsole! cmi msg [playerName] !Birthday! \n This
+      is /$0 command can do a few things. It will explain how to use this command.
+      It lets you create a birthday item for someone else.
+    - 'check:$1==null! asConsole! asConsole! cmi msg [playerName] !It also tells you
+      the servers'' birthday, to get started, type: /birthday information \n &r'
+    - check:$1==information! asConsole! cmi msg [playerName] !- /birthday buy <playername>
+      , this lets you buy a birthday cake, pie or drink. And select a gift. You can
+      use this a limited amount of times, and it costs money to make it.
+    - check:$1==information! asConsole! cmi msg [playerName] !- /birthday server ,
+      this shows you the age of the server, sometimes that's pretty handy! in 2021
+      we celebrate our 10 years anniversary.
+    - check:$1==server! asConsole! cmi msg [playerName] !- The server started March
+      2011, that's 13+ years ago! --> /celebration :) Maybe give mrfloris and madmikeyb
+      a poke to congratulate them!
     - 'check:$1==buy! check:%cmi_iteminhand_type%!=CAKE! check:%cmi_iteminhand_type%!=COOKIE!
-      check:%cmi_iteminhand_type%!=PUMPKIN_PIE! msg! [playerName] Oops: \n Eh, pls
-      hold a cake, cookie or a pumpkin pie :D \n &r'
-    - 'check:$1==buy! check:$2==null! msg! [playerName] Oops: \n Missing: playername.
-      \n Syntax: /birthday buy <player> \n Example: /birthday buy mrfloris \n &r'
+      check:%cmi_iteminhand_type%!=PUMPKIN_PIE! asConsole! cmi msg [playerName] !Oops:
+      \n Eh, pls hold a cake, cookie or a pumpkin pie :D \n &r'
+    - 'check:$1==buy! check:$2==null! asConsole! cmi msg [playerName] !Oops: \n Missing:
+      playername. \n Syntax: /birthday buy <player> \n Example: /birthday buy mrfloris
+      \n &r'
     - check:$1==buy! check:$2!=null! asConsole! cmi cuff [playerName] true -s
     - check:$1==buy! check:$2!=null! check:%cmi_iteminhand_type%==CAKE! asConsole!
       cmi usermeta [playerName] add birthdayitem Cake
@@ -525,32 +546,33 @@ CustomAlias:
     - buy [playername]
   bedrock:
     Cmds:
-    - msg! [playerName] {#orange}The 1MB Celebration Bedrocker is a special pickaxe
-      available in 1.16.5 (and maybe not 1.17) that will drop special 1MB Celebration
-      Bedrock. You can only obtain the bedrocker from events.
-    - msg! [playerName] {#orange}You could sometimes craft it by placing eight 1MB
-      Celebration Bedrocks around an ancient debris in a workbench. The purpose of
-      this special bedrocker is to help you fix wrongfully placed bedrocks.
-    - msg! [playerName] {#orange}it breaks bedrock almost instantly. But there's a
-      cooldown before you can break another bedrock. You cannot break bedrock layers
-      that make up the world borders.
-    - msg! [playerName] {#orange}Each hit takes a lot of durability, use it wisely!
-      And no, you are not allowed to repair, enchant, merge, the pickaxe. Using tricks
-      to repair it etc will possibly result in a server ban. Please play nice.
-    - msg! [playerName] {#magenta} https://omgboards.com/threads/263637/
+    - asConsole! cmi msg [playerName] !{#orange}The 1MB Celebration Bedrocker is a
+      special pickaxe available in 1.16.5 (and maybe not 1.17) that will drop special
+      1MB Celebration Bedrock. You can only obtain the bedrocker from events.
+    - asConsole! cmi msg [playerName] !{#orange}You could sometimes craft it by placing
+      eight 1MB Celebration Bedrocks around an ancient debris in a workbench. The
+      purpose of this special bedrocker is to help you fix wrongfully placed bedrocks.
+    - asConsole! cmi msg [playerName] !{#orange}it breaks bedrock almost instantly.
+      But there's a cooldown before you can break another bedrock. You cannot break
+      bedrock layers that make up the world borders.
+    - asConsole! cmi msg [playerName] !{#orange}Each hit takes a lot of durability,
+      use it wisely! And no, you are not allowed to repair, enchant, merge, the pickaxe.
+      Using tricks to repair it etc will possibly result in a server ban. Please play
+      nice.
+    - asConsole! cmi msg [playerName] !{#magenta} https://omgboards.com/threads/263637/
     Tab: false
   needstaff:
     Cmds:
-    - msg! [playerName] {#orange} You can poke in-game staff for their attention with
-      a /msg or use our /discord to open a new ticket.
+    - asConsole! cmi msg [playerName] !{#orange} You can poke in-game staff for their
+      attention with a /msg or use our /discord to open a new ticket.
   streamer:
     Cmds:
-    - 'check:$1==null! msg! [playerName] {#orange}&lHelp: \n{#gold}/streamer set streamname
-      (set your stream name!)\n{#gold}/streamer live (enable ad in top)\n{#gold}/streamer
-      clear (remove ad in top)\n&r'
-    - 'check:%cmi_user_meta_streamname%==null! msg! [playerName] {#red}&lCannot start
-      yet: {#gold}Pls set your Twitch streamname \n{#green}Example: /streamer set
-      slicedlime \n&r'
+    - 'check:$1==null! asConsole! cmi msg [playerName] !{#orange}&lHelp: \n{#gold}/streamer
+      set streamname (set your stream name!)\n{#gold}/streamer live (enable ad in
+      top)\n{#gold}/streamer clear (remove ad in top)\n&r'
+    - 'check:%cmi_user_meta_streamname%==null! asConsole! cmi msg [playerName] !{#red}&lCannot
+      start yet: {#gold}Pls set your Twitch streamname \n{#green}Example: /streamer
+      set slicedlime \n&r'
     - 'check:$1==set! check:$2==null! check:%cmi_user_meta_streamname%==null! asConsole!
       cmi msg [playerName] !{#red}Nope, try: /streamer set slicedlime'
     - check:$1==set! check:$2!=null! asConsole! cmi usermeta [playerName] add streamname
@@ -583,14 +605,14 @@ CustomAlias:
     - clear
   fishing stats:
     Cmds:
-    - msg! [playerName] &lQuick Fishing Stats
-    - msg! [playerName] -----------------------------------------------
-    - msg! [playerName] &l/mcMMO &r(detailed stats, help, ranking)
-    - 'msg! [playerName] Level: %mcmmo_level_fishing% / Rank: %mcmmo_rank_fishing%'
-    - 'msg! [playerName] Current XP: %mcmmo_xp_fishing% / Required XP: %mcmmo_xp_needed_fishing%
-      (remaining: %mcmmo_xp_remaining_fishing%)'
-    - msg! [playerName] -----------------------------------------------
-    - msg! [playerName] &l/Jobs &r(something here)
+    - asConsole! cmi msg [playerName] !&lQuick Fishing Stats
+    - asConsole! cmi msg [playerName] !-----------------------------------------------
+    - asConsole! cmi msg [playerName] !&l/mcMMO &r(detailed stats, help, ranking)
+    - 'asConsole! cmi msg [playerName] !Level: %mcmmo_level_fishing% / Rank: %mcmmo_rank_fishing%'
+    - 'asConsole! cmi msg [playerName] !Current XP: %mcmmo_xp_fishing% / Required
+      XP: %mcmmo_xp_needed_fishing% (remaining: %mcmmo_xp_remaining_fishing%)'
+    - asConsole! cmi msg [playerName] !-----------------------------------------------
+    - asConsole! cmi msg [playerName] !&l/Jobs &r(something here)
     Tab: false
   salvage toggle:
     Cmds:
@@ -599,7 +621,7 @@ CustomAlias:
     - perm:mcmmo.ability.salvage.all! asConsole! cmi usermeta [playerName] add mcmmosalvage
       false -s
     - asConsole! lp user [playerName] permission set mcmmo.ability.salvage.all %cmi_user_meta_mcmmosalvage%
-    - msg! [playerName] &r\n {#orange}Toggled mcMMO Salvage to %cmi_user_meta_mcmmosalvage%\n&r
+    - asConsole! cmi msg [playerName] !&r\n {#orange}Toggled mcMMO Salvage to %cmi_user_meta_mcmmosalvage%\n&r
     - asConsole! cmi usermeta [playerName] remove mcmmosalvage -s
   se toggle:
     Cmds:
@@ -610,9 +632,10 @@ CustomAlias:
       false -s
     - if:check1! asConsole! lp user [playerName] permission set cmi.signs.shiftedit
       %cmi_user_meta_signedittoggle%
-    - if:check1! msg! [playerName] &r\n {#orange}Toggled CMI Sign Edit to %cmi_user_meta_signedittoggle%\n&r
+    - if:check1! asConsole! cmi msg [playerName] !&r\n {#orange}Toggled CMI Sign Edit
+      to %cmi_user_meta_signedittoggle%\n&r
     - if:check1! asConsole! cmi usermeta [playerName] remove signedittoggle -s
-    - if:check1@! msg! [playerName] You cannot use this right now.
+    - if:check1@! asConsole! cmi msg [playerName] !You cannot use this right now.
     Perm: true
     Tab: false
   repair toggle:
@@ -622,7 +645,7 @@ CustomAlias:
     - perm:mcmmo.ability.repair.all! asConsole! cmi usermeta [playerName] add mcmmorepair
       false -s
     - asConsole! lp user [playerName] permission set mcmmo.ability.repair.all %cmi_user_meta_mcmmorepair%
-    - msg! [playerName] &r\n {#orange}Toggled mcMMO Repair to %cmi_user_meta_mcmmorepair%
+    - asConsole! cmi msg [playerName] !&r\n {#orange}Toggled mcMMO Repair to %cmi_user_meta_mcmmorepair%
       \n&r
     - asConsole! cmi usermeta [playerName] remove mcmmorepair -s
     Tab: false
@@ -637,35 +660,39 @@ CustomAlias:
     Tab: false
   hub:
     Cmds:
-    - msg! [playerName] {#gold} We do not really have a hub/lobby, try ./spawn (cannot
-      be used to avoid void deaths)
+    - asConsole! cmi msg [playerName] !{#gold} We do not really have a hub/lobby,
+      try ./spawn (cannot be used to avoid void deaths)
   lobby:
     Cmds:
     - hub
   mcmmo:
     Cmds:
-    - msg! [playerName] {#orient},--{#cerulean}❖ mcMMO ❖{#orient}---------------------------------------
-    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} mcMMO is a cool RPG add-on
-      that helps you gain extra
-    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} perks when you play. A
-      great way to extra fun playing.
-    - 'msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} Quick help: /mcmmo help,
-      /mcstats, /mctop, /mcrank, and'
-    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} every skill is a /skillnamecommand
-      like /mining or /axes.
-    - msg! [playerName] {#orient}| {#cerulean}»{#kangaroo} {#Feijoa}&nhttps://omgboards.com/threads/260970/
-    - msg! [playerName] {#orient}`--(1MoreBlock.com mcMMO Information)------------------\n&r
+    - asConsole! cmi msg [playerName] !{#orient},--{#cerulean}❖ mcMMO ❖{#orient}---------------------------------------
+    - asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} mcMMO is
+      a cool RPG add-on that helps you gain extra
+    - asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} perks when
+      you play. A great way to extra fun playing.
+    - 'asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} Quick help:
+      /mcmmo help, /mcstats, /mctop, /mcrank, and'
+    - asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} every skill
+      is a /skillnamecommand like /mining or /axes.
+    - asConsole! cmi msg [playerName] !{#orient}| {#cerulean}»{#kangaroo} {#Feijoa}&nhttps://omgboards.com/threads/260970/
+    - asConsole! cmi msg [playerName] !{#orient}`--(1MoreBlock.com mcMMO Information)------------------\n&r
     AddTabs: true
   ip:
     Cmds:
-    - 'msg! [playerName] {#gold}You can connect to our server via five different routings:
-      {#geyser} (very handy if you experience quite a high ping (network lag), you
-      can check your ping with: /myping by the way)'
-    - msg! [playerName] {#cerulean}•> {#geyser}Main (best for EU) :{#gold} 1MoreBlock.com
-    - msg! [playerName] {#cerulean}•> {#geyser}Cosmic (best for Int) :{#gold} play.1MoreBlock.com
-    - msg! [playerName] {#cerulean}•> {#geyser}Shield (best for US) :{#gold} play2.1MoreBlock.com
-    - msg! [playerName] {#cerulean}•> {#geyser}(OFFLINE) :{#gray} play3.1MoreBlock.com
-    - msg! [playerName] {#cerulean}•> {#geyser}Infinity (relay) :{#gold} play4.1MoreBlock.com
+    - 'asConsole! cmi msg [playerName] !{#gold}You can connect to our server via five
+      different routings: {#geyser} (very handy if you experience quite a high ping
+      (network lag), you can check your ping with: /myping by the way)'
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Main (best for EU) :{#gold}
+      1MoreBlock.com
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Cosmic (best for Int)
+      :{#gold} play.1MoreBlock.com
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Shield (best for US)
+      :{#gold} play2.1MoreBlock.com
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}(OFFLINE) :{#gray} play3.1MoreBlock.com
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Infinity (relay) :{#gold}
+      play4.1MoreBlock.com
     Tab: false
   _getRekt:
     Cmds:
@@ -693,23 +720,25 @@ CustomAlias:
     Tab: false
   ft types:
     Cmds:
-    - 'msg! [playerName] {#gold}Valid types: {#gray}LONGEST_LENGTH &rSHORTEST_LENGTH
-      {#gray}CRAB_KILLING &rRANDOM_CATCH {#gray}MOST_CATCH &rBASE_ENTROPY_EARNED {#gray}LONGEST_CAST'
+    - 'asConsole! cmi msg [playerName] !{#gold}Valid types: {#gray}LONGEST_LENGTH
+      &rSHORTEST_LENGTH {#gray}CRAB_KILLING &rRANDOM_CATCH {#gray}MOST_CATCH &rBASE_ENTROPY_EARNED
+      {#gray}LONGEST_CAST'
     Perm: true
     Tab: false
   bottle:
     Cmds:
     - check:$1==store! check:$2<0! asConsole! cmi ban [playerName] Exploiting not
       allowed.
-    - check:$1==null! msg! [playerName] {#orange}You can use dragon breath. Hold it
-      in your main hand and left-click an enchantment table. It will store some of
-      your exp into a bottle. Which you can smash later to get the exp back. The cost
-      is 100 per hit on the enchantment table, sneak clicking is 10x, and costs 1000.
-    - check:$1!=null! msg! [playerName] msg! [playerName] {#orange}You can use dragon
+    - check:$1==null! asConsole! cmi msg [playerName] !{#orange}You can use dragon
       breath. Hold it in your main hand and left-click an enchantment table. It will
       store some of your exp into a bottle. Which you can smash later to get the exp
       back. The cost is 100 per hit on the enchantment table, sneak clicking is 10x,
       and costs 1000.
+    - check:$1!=null! asConsole! cmi msg [playerName] !asConsole! cmi msg [playerName]
+      !{#orange}You can use dragon breath. Hold it in your main hand and left-click
+      an enchantment table. It will store some of your exp into a bottle. Which you
+      can smash later to get the exp back. The cost is 100 per hit on the enchantment
+      table, sneak clicking is 10x, and costs 1000.
     Tab: false
   adapt:
     Cmds:
@@ -721,48 +750,50 @@ CustomAlias:
   egghunt:
     Cmds:
     - asPlayer! event
-    - msg! [playerName] {#gold}To participate in the /easter event, type /easter,
-      this will being you to the custom Easter world where you can hunt for easter
-      eggs when they are announced. You can use /egghunt fly to get temporary fly
-      to move to new places.
+    - asConsole! cmi msg [playerName] !{#gold}To participate in the /easter event,
+      type /easter, this will being you to the custom Easter world where you can hunt
+      for easter eggs when they are announced. You can use /egghunt fly to get temporary
+      fly to move to new places.
     - asPlayer! egghunt:egghunt
   market info:
     Cmds:
-    - msg! [playerName] {#white}To sell to the global market, you can hold the item
-      in your hand and type "/market sell 5", whatever you are holding, and however
-      much of that, it will be listed on the /ah (./market) for $5 for others to buy.
+    - asConsole! cmi msg [playerName] !{#white}To sell to the global market, you can
+      hold the item in your hand and type "/market sell 5", whatever you are holding,
+      and however much of that, it will be listed on the /ah (./market) for $5 for
+      others to buy.
     Tab: false
   farm info:
     Cmds:
-    - 'msg! [playerName] {#white} info: https://omgboards.com/threads/263890/'
+    - 'asConsole! cmi msg [playerName] !{#white} info: https://omgboards.com/threads/263890/'
   j:
     Cmds:
     - asPlayer! jump $1-
     AddTabs: true
   claim:
     Cmds:
-    - msg! [playerName] {#gold}Hey, we do not let players claim land. We are a no-grief
-      server. And we perm-ban those who steal items and grief builds made by others.
-      However...
-    - msg! [playerName] {#gold}Regularly returning players who are active, and who
-      have made a nice start with their base. They can request mrfloris to region
-      protect their base. After a quick review we most likely will. Others can not
-      place/break in the region.
+    - asConsole! cmi msg [playerName] !{#gold}Hey, we do not let players claim land.
+      We are a no-grief server. And we perm-ban those who steal items and grief builds
+      made by others. However...
+    - asConsole! cmi msg [playerName] !{#gold}Regularly returning players who are
+      active, and who have made a nice start with their base. They can request mrfloris
+      to region protect their base. After a quick review we most likely will. Others
+      can not place/break in the region.
   roles:
     Cmds:
-    - msg! [playerName] &6 --> Roles and ranks are "/groups" on this server. Loading
-      groups command for you ..
+    - asConsole! cmi msg [playerName] !&6 --> Roles and ranks are "/groups" on this
+      server. Loading groups command for you ..
     - asPlayer! groups
     Tab: false
   patron:
     Cmds:
-    - 'msg! [playerName] >> {#gold} Thank you for considering supporting the server.
-      You can learn more about becoming a 1MoreBlock.com Patron member by reading
-      this information: \n *{#green} https://omgboards.com/threads/261543/ &r*'
+    - 'asConsole! cmi msg [playerName] !>> {#gold} Thank you for considering supporting
+      the server. You can learn more about becoming a 1MoreBlock.com Patron member
+      by reading this information: \n *{#green} https://omgboards.com/threads/261543/
+      &r*'
   calendar:
     Cmds:
-    - msg! [playerName] Nope sorry, please explore the /santa world and right-click
-      Santa Clause to open the calendar
+    - asConsole! cmi msg [playerName] !Nope sorry, please explore the /santa world
+      and right-click Santa Clause to open the calendar
   adventcalendar:
     Cmds:
     - asPlayer! calendar
@@ -786,8 +817,8 @@ CustomAlias:
     Tab: false
   angelchest:
     Cmds:
-    - 'msg! [playerName] {#gold}More information here:'
-    - msg! [playerName] {#gold}&n https://omgboards.com/threads/263918/
+    - 'asConsole! cmi msg [playerName] !{#gold}More information here:'
+    - asConsole! cmi msg [playerName] !{#gold}&n https://omgboards.com/threads/263918/
     - asPlayer! acgui
     Tab: false
   vote info:
@@ -797,33 +828,34 @@ CustomAlias:
     Cmds:
     - statement:check1! check:$1==null!
     - if:check1! asConsole! cmi nameplate [playerName] -pref:{#driftwood}༶ -suf:{#driftwood}༶
-    - if:check1@! msg! [playerName] Sorry, you cannot change this for others, only
-      yourself! :)
+    - if:check1@! asConsole! cmi msg [playerName] !Sorry, you cannot change this for
+      others, only yourself! :)
     - if:check1! check:[playerName]==yakirarage! asConsole! cmi nameplate [playerName]
       -pref:{#lochmara}༶ -suf:{#lochmara}༶
     Perm: true
   collect:
     Cmds:
-    - msg! [playerName] This is currently not a feature you can use. And it's only
-      available during certain (future) events
+    - asConsole! cmi msg [playerName] !This is currently not a feature you can use.
+      And it's only available during certain (future) events
   worldtrade:
     Cmds:
-    - msg! [playerName] &r\n&r\n&r\nBefore trading your "extra vote tokens" for "world
-      trade vouchers" please carefully read the information in this thread so you're
-      fully aware of any limitations.
-    - msg! [playerName] -> &nhttps://omgboards.com/threads/263926/
+    - asConsole! cmi msg [playerName] !&r\n&r\n&r\nBefore trading your "extra vote
+      tokens" for "world trade vouchers" please carefully read the information in
+      this thread so you're fully aware of any limitations.
+    - asConsole! cmi msg [playerName] !-> &nhttps://omgboards.com/threads/263926/
     - asConsole! gui openfor [playerName] worldtrade
   aprilfools:
     Cmds:
     - asConsole! undisguiseplayer [playerName]
-    - msg! [playerName] &r\n&r\n&r\nWhaaat?????????????????
-    - msg! [playerName] Is it the first of April again? Okay! HAHA .. Joke's over
-      .. Let's get back to normal you again.
-    - msg! [playerName] If you want to become a villager again, just re-log.&r\n&r\n
+    - asConsole! cmi msg [playerName] !&r\n&r\n&r\nWhaaat?????????????????
+    - asConsole! cmi msg [playerName] !Is it the first of April again? Okay! HAHA
+      .. Joke's over .. Let's get back to normal you again.
+    - asConsole! cmi msg [playerName] !If you want to become a villager again, just
+      re-log.&r\n&r\n
     Perm: true
   summer:
     Cmds:
-    - msg! [playerName] The /summer world will re-open July 2025.
+    - asConsole! cmi msg [playerName] !The /summer world will re-open July 2025.
   pw:
     Cmds:
     - asConsole! staffmsg Pay attention to me [playerName], I might have joined to
@@ -838,14 +870,17 @@ CustomAlias:
     - asPlayer! pw $1-
   bac:
     Cmds:
-    - msg! [playerName] HEY, it is BACK not BAC
+    - asConsole! cmi msg [playerName] !HEY, it is BACK not BAC
     - asPlayer! back
   teamup:
     Cmds:
-    - msg! [playerName] {#green}You can team up with others if you want!
-    - msg! [playerName] There's a wilderness warp called /warp teamup, this command
-      will bring you there too, read the lectern, it has all the info you need.
-    - msg! [playerName] Oh, looking to team up on skyblock or oneblock? Read /teams
+    - asConsole! cmi msg [playerName] !{#green}You can team up with others if you
+      want!
+    - asConsole! cmi msg [playerName] !There's a wilderness warp called /warp teamup,
+      this command will bring you there too, read the lectern, it has all the info
+      you need.
+    - asConsole! cmi msg [playerName] !Oh, looking to team up on skyblock or oneblock?
+      Read /teams
     - asPlayer! cmi warp teamup
   _lorehelp:
     Cmds:
@@ -881,14 +916,14 @@ CustomAlias:
   cmodify:
     Cmds:
     - statement:check1! check:$1==null!
-    - 'if:check1! msg! [playerName] Usage: /cmodify add|remove <playername>'
+    - 'if:check1! asConsole! cmi msg [playerName] !Usage: /cmodify add|remove <playername>'
     - if:check1@! asPlayer! bolt edit $1 $2
     CustomTabs:
     - add,remove [allIGNPlayerName]
   trust:
     Cmds:
     - statement:check1! check:$1==null!
-    - 'if:check1! msg! [playerName] Usage: /trust add|remove <playername>'
+    - 'if:check1! asConsole! cmi msg [playerName] !Usage: /trust add|remove <playername>'
     - if:check1@! asPlayer! bolt trust $1 player $2
     - delay! 0.2
     - asPlayer! bolt trust
@@ -896,13 +931,19 @@ CustomAlias:
     - add,remove [allIGNPlayerName]
   parkour:
     Cmds:
-    - msg! [playerName] Sorry, this gametype has been removed on August 2024 and will
-      most likely not return. Please try our other fun survival game types like /oneblock,
-      /cave, /acid, /skygrid, or /skyblock
+    - asConsole! cmi msg [playerName] !Sorry, this gametype has been removed on August
+      2024 and will most likely not return. Please try our other fun survival game
+      types like /oneblock, /cave, /acid, /skygrid, or /skyblock
   mine info:
     Cmds:
-    - msg! [playerName] Pyro mining starts with mining deepslate ores. More info in
-      /mine journal, and /discord
+    - asConsole! cmi msg [playerName] !Pyro mining starts with mining deepslate ores.
+      More info in /mine journal, and /discord
   mine sell:
     Cmds:
     - asPlayer! mine shop
+  dailyshop:
+    Cmds:
+    - asConsole! cmi msg [playerName] !work in progress, check back soon
+  bs:
+    Cmds:
+    - genesis open $1 $2

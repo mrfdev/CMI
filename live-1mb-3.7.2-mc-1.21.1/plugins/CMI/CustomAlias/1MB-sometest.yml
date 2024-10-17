@@ -25,7 +25,8 @@ CustomAlias:
     - subtitle! {#gold} Small title test
     - asConsole! cmi bossbarmsg all -n:sometest -c:orange &bThis is a bossbarmsg test
     - asConsole! cmi toast all &bThis is a test toast
-    - msg! [playerName] {#orange}[/msg test] {#orange>}This is a regular test message{#red<}
+    - asConsole! cmi msg [playerName] !{#orange}[/msg test] {#orange>}This is a regular
+      test message{#red<}
     - asConsole! cmi ctellraw all {#orange}[ctellraw test] <T>{#orange>}This is a
       clickable/hoverable test message{#red<}</T><H>{#green}Click me</H><CCI>cmi heal
       [playerName]</CCI>

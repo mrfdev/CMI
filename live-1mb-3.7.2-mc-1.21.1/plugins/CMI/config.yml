@@ -120,7 +120,7 @@ Optimizations:
   # Time in seconds we want to give for playes who joins server a immortality state
   # Set this to 0 to disable
   # Max 60 seconds
-  ImmortalityOnJoin: 5
+  ImmortalityOnJoin: 4
   # Enables or disables maintenance mode
   Maintenance: false
   # Automatically kicks everyone from server when enabling maintenance mode who doesnt have cmi.command.maintenance.bypass permission node
@@ -143,7 +143,7 @@ Optimizations:
     # In case you dont have GeoLiteCity.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
     GeoLiteCity: false
   # When enabled you will see skull owner name in action bar when right clicking it
-  ShowSkullOwner: false
+  ShowSkullOwner: true
   # When enabled you will see beeHive information in action bar when right clicking it
   ShowBeeHiveInformation: true
   # When enabled you will see decorated pot contents information in action bar when right clicking it
@@ -176,7 +176,7 @@ Optimizations:
   # Keep in mind that this might block you from accessing offline player with same partial name as some one currently being online
   # For example offline Luuk might no longer be accessible while Luuk666 is online
   # This can be overridden by adding -exa- suffix for a name, so luuk-exa- will return offline player object
-  PrioritizeOnlinePlayers: false
+  PrioritizeOnlinePlayers: true
   # When set to true, commands in help page will be sorted alphabeticaly
   # If set to false, commands will be sorted by priority
   CommandSorting: true
@@ -190,11 +190,11 @@ Optimizations:
   SimilarCommandChecker: 75
   # When set to true, if player enters incorrect command, then command will not gonna be performed
   # But message informing about incorrect usage and best match will be shown in any case
-  SimilarCommandPrevention: false
+  SimilarCommandPrevention: true
   # When set to true, commands in help page starting with /cmi will get shortened by hiding base command. Example /cmi back becomes /back
   # Keep in mind that this is automatic feature if alias or custom alias is set to that command
   # And keep in mind that this is only cosmetic change and will not impact command usage
-  RemoveLabel: false
+  RemoveLabel: true
   # When set to true, all players can see missing permission node by hovering over error message
   # When set to false only players with cmi.permisiononerror permission node can see missing permission node
   # Keep in mind that by default players have acces to permission node, so negate it if you want to hide missing permission nodes from them
@@ -210,11 +210,7 @@ Optimizations:
     # This will prevent player who teleported to damage others for defined time
     # Set this to 0 if you want to disable it
     # Max 60 seconds
-    Invulnerability: 5
-    # When this set to true each time player teleports to any destination he will be teleported to spawn point
-    # This is to prevent from people knowing to which direction you have teleported too
-    # As everyone noticed, teleportation doesnt actually teleport you, but moves to targetdestination in short time
-    ToSpawnBefore: false
+    Invulnerability: 4
     # Set to true if you want to use tp commands as /cmi tp [WhoYouWantToTeleport] [WhereToTeleport] when its false, its /cmi tp [whereToTeleport] [WhoYouWantToTeleport]
     SwitchPlaces: false
     CurrentLoc:
@@ -291,6 +287,7 @@ Optimizations:
       # When disabled player will need to have cmi.inventoryhat to put on mob heads as hats
       MobHeads: true
     # List of materials to be allowed on players head
+    # Keep it empty to allow all materials on player head
     WhiteList:
     - bedrock
   helpop:
@@ -723,6 +720,21 @@ Signs:
   # Usually used for preventing shop sign modifications
   editBlackList:
   - '[Shop]'
+  - '[fish]'
+  - '[mine]'
+  - '[farm]'
+  - '[sell]'
+  - '[points]'
+  - '[account]'
+  - '[anvil]'
+  - '[trash]'
+  - '[mail]'
+  - '[loom]'
+  - '[smithingtable]'
+  - '[stonecutter]'
+  - '[condense]'
+  - '[uncondense]'
+  - '[craft]'
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -856,7 +868,7 @@ NickName:
     # When true, online players nick name will be used instead of real name in tabcomplete
     ReplaceReal: true
     # When true, we will include real name on top of nickname. This only has effect when ReplaceName is enabled
-    IncludeReal: false
+    IncludeReal: true
 Dye:
   # When set to true colored lether armor will be bound to the player who receives that coloration and will not work on others if he would give it to them
   # Only applies for dynamic armor colors like biome, health and so on
@@ -1725,17 +1737,6 @@ Time:
   # Allows you to change vanilla time speed to your own liking and needs
   TimeSpeed:
     # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    spawn:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     builders:
       Enabled: false
       # Default value: 600 Starts from tick: 0 Ends at tick: 12000
@@ -1746,126 +1747,83 @@ Time:
       night: 420
       # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    cave/bentobox:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    run:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    acid:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
-    general:
-      Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
-      day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
-      sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
-      night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
-      sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     cave:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    cave/bentobox:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
     oneblock:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     skygrid/bentobox:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    run:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
     acid/bentobox:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
+    acid:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    general:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    halloween:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
+    spawn:
+      Enabled: false
+      day: 600
+      sunset: 90
+      night: 420
+      sunrise: 90
     skyblock:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     skygrid:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
-    # Time is defined in seconds. Vanilla 24 hour ingame duration is 1200 seconds of real time
     wild:
       Enabled: false
-      # Default value: 600 Starts from tick: 0 Ends at tick: 12000
       day: 600
-      # Default value: 90 Starts from tick: 12000 Ends at tick: 13800
       sunset: 90
-      # Default value: 420 Starts from tick: 13800 Ends at tick: 22200
       night: 420
-      # Default value: 90 Starts from tick: 22200 Ends at tick: 24000
       sunrise: 90
 Enchanting:
   enchantLimits:

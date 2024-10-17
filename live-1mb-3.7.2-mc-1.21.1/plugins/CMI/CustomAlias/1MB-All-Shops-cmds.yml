@@ -1,3 +1,5 @@
+#
+
 CustomAlias:
   ah:
     Cmds:
@@ -6,11 +8,12 @@ CustomAlias:
       $2
     - if:selling! check:$2!=null! check:$3!=null! asPlayer! pshop sell $3 $2
     - statement:help! check:$1==help!
-    - if:help! msg! [playerName] {#gold}/ah - opens the player shop
-    - if:help! msg! [playerName] {#gold}/ah help - opens this page
-    - if:help! msg! [playerName] {#gold}/ah sell 15 - tries to put what you are holding
-      up for sale for 15 bucks
-    - if:help! msg! [playerName] {#gold}/ah mrfloris - opens the player shop of mrfloris
+    - if:help! asConsole! cmi msg [playerName] !{#gold}/ah - opens the player shop
+    - if:help! asConsole! cmi msg [playerName] !{#gold}/ah help - opens this page
+    - if:help! asConsole! cmi msg [playerName] !{#gold}/ah sell 15 - tries to put
+      what you are holding up for sale for 15 bucks
+    - if:help! asConsole! cmi msg [playerName] !{#gold}/ah mrfloris - opens the player
+      shop of mrfloris
     - statement:players! check:$1!=null|help|sell!
     - if:players! asPlayer! pshop $1
     - statement:openshop! check:$1==null!

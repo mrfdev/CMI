@@ -19,13 +19,13 @@
 CustomAlias:
   votelink:
     Cmds:
-    - msg! [playerName] {#green}&l https://omgboards.com/vote
+    - asConsole! cmi msg [playerName] !{#green}&l https://omgboards.com/vote
     Tab: false
   doublehearts:
     Cmds:
     - ptarget:$1! perm:1mb.tier3.doublehearts?#! asConsole! cmi maxhp set $1 40 -s
-    - ptarget:$1! perm:1mb.tier3.doublehearts?#! msg! $1 !&b Tier 3 Double Hearts
-      <3 <3 <3
+    - ptarget:$1! perm:1mb.tier3.doublehearts?#! asConsole! cmi msg $1 !&b !Tier 3
+      Double Hearts <3 <3 <3
     Perm: true
   _make:
     Cmds:
@@ -43,8 +43,8 @@ CustomAlias:
     Perm: true
   _tokenitem:
     Cmds:
-    - 'msg! [playerName] Syntax reminder: /$0 <playername> <unbreakable truefalse>
-      <tier number> <item name>'
+    - 'asConsole! cmi msg [playerName] !Syntax reminder: /$0 <playername> <unbreakable
+      truefalse> <tier number> <item name>'
     - asConsole! cmi itemname -p:[playerName] {#Cerulean>} ❖ $4- {#Lochmara<}
     - asConsole! cmi itemlore -p:[playerName] 1 {#midnight}-{#011736}-{#011937}-{#011a38}-{#021c39}-{#021d3a}-{#021f3b}-{#02203c}-{#03223e}-{#03233f}-{#032540}-{#032641}-{#042842}-{#042943}-{#042b44}-{#042c45}-{#052e47}-{#052f48}-{#053149}-{#05324a}-{#06344b}-{#06354c}-{#06374d}-{#06384e}-{#tarawera}--
     - 'asConsole! cmi itemlore -p:[playerName] 2 {#hot_toddy}&o Enchantments:'
@@ -137,20 +137,20 @@ CustomAlias:
     - 1,2,3,4,5,6,7,8,9,10 [enchant]
   vote tokens:
     Cmds:
-    - msg! [playerName] &r\n{#orient}•--{#cerulean}❖ 1MB Vote ❖{#orient}-----------------------•
-    - 'msg! [playerName] {#yellow}Voting gives you a variety of items, and the vote
-      tokens are special. You can exchange them for OP items if you have a stack.
-      Please read: {#green} https://omgboards.com/vote \n&r'
+    - asConsole! cmi msg [playerName] !&r\n{#orient}•--{#cerulean}❖ 1MB Vote ❖{#orient}-----------------------•
+    - 'asConsole! cmi msg [playerName] !{#yellow}Voting gives you a variety of items,
+      and the vote tokens are special. You can exchange them for OP items if you have
+      a stack. Please read: {#green} https://omgboards.com/vote \n&r'
   charlie:
     Cmds:
-    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
-    - msg! [playerName] {#Cerulean} »{#gold} Charlie the Voting Pinata
-    - msg! [playerName] {#Cerulean} » ->&2 https://omgboards.com/threads/261749/
-    - 'msg! [playerName] {#Cerulean} »{#Feijoa} &lVotes needed: %pinataparty_votes_needed%,
+    - asConsole! cmi msg [playerName] !{#cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} »{#gold} Charlie the Voting Pinata
+    - asConsole! cmi msg [playerName] !{#Cerulean} » ->&2 https://omgboards.com/threads/261749/
+    - 'asConsole! cmi msg [playerName] !{#Cerulean} »{#Feijoa} &lVotes needed: %pinataparty_votes_needed%,
       votes left to go: %pinataparty_votes_left%'
     - 'asConsole! cmi ctellraw [playerName] <T>{#Cerulean} »{#Feijoa} Charlie will
       spawn for every %pinataparty_votes_needed% in-game votes made, at: {#orange}&l/warp
       charlie{#gray} ⇱&r</T><H>Click to go to the /warp charlie arena</H><C>warp charlie</C>'
-    - msg! [playerName] {#Cerulean} »{#Feijoa} Once Charlie has been defeated, look
-      around for shiny barrels with free loot!
-    - msg! [playerName] {#cerulean} •&l&m                                                &r{#Cerulean}•
+    - asConsole! cmi msg [playerName] !{#Cerulean} »{#Feijoa} Once Charlie has been
+      defeated, look around for shiny barrels with free loot!
+    - asConsole! cmi msg [playerName] !{#cerulean} •&l&m                                                &r{#Cerulean}•

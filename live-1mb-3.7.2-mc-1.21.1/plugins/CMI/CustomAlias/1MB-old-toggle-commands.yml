@@ -26,8 +26,8 @@ CustomAlias:
       $2
     - if:check1! check:$2!=null! ifoffline:$2! msg! $1 {#orange}Cannot run command,
       $2 is not online.
-    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is
-      intended for internal use.
+    - if:check1@! asConsole! cmi msg [playerName] !{#red}Do not call this command
+      directly, it is intended for internal use.
     Perm: true
     Tab: false
   _togglemsg:
@@ -38,13 +38,13 @@ CustomAlias:
       options</C>
     - if:check1! check:$3==nope! msg! $1 {#persianred}Oops, you have no permission
       to use /$2
-    - if:check1@! msg! [playerName] {#red}Do not call this command directly, it is
-      intended for internal use.
+    - if:check1@! asConsole! cmi msg [playerName] !{#red}Do not call this command
+      directly, it is intended for internal use.
     Perm: true
     Tab: false
   options status:
     Cmds:
-    - msg! [playerName] {#gold}\nOverview Status of /cmi options Toggles:\n----------------------------------
+    - asConsole! cmi msg [playerName] !{#gold}\nOverview Status of /cmi options Toggles:\n----------------------------------
     - asPlayer! cmi options bassbarcompass status
     - asPlayer! cmi options shiftsignedit status
     - asPlayer! cmi options totembossbar status

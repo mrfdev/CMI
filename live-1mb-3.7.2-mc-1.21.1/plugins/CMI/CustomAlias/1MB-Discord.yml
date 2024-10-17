@@ -19,8 +19,8 @@
 CustomAlias:
   mcstats discord:
     Cmds:
-    - cooldown:60?#! msg! [playerName] {#orange} .. Sending /mcstats information to
-      Discord.
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /mcstats
+      information to Discord.
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :zap: **power level**
       `%mcmmo_power_level%`'
     - 'asConsole! discordsrv broadcast **(mcMMO)** `[playerName]` :mcmmoacrobatics:
@@ -54,8 +54,8 @@ CustomAlias:
     Tab: false
   jobs discord:
     Cmds:
-    - cooldown:60?#! msg! [playerName] {#orange} .. Sending /jobs stats information
-      to Discord.
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /jobs stats
+      information to Discord.
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs Joined**:
       `%jobsr_user_joinedjobcount% / %jobsr_maxjobs%`'
     - 'asConsole! discordsrv broadcast **(Jobs)** `[playerName]` :zap: **Jobs list**:
@@ -69,8 +69,8 @@ CustomAlias:
     Tab: false
   fish discord:
     Cmds:
-    - cooldown:60?#! msg! [playerName] {#orange} .. Sending /fish stats information
-      to Discord.
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending /fish stats
+      information to Discord.
     - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :pyrofish: (/fish)
       **Level**: `%pyrofishingpro_level%`'
     - 'asConsole! discordsrv broadcast **(Fish)** `[playerName]` :pyrofish: (/fish)
@@ -86,8 +86,8 @@ CustomAlias:
     Tab: false
   account discord:
     Cmds:
-    - cooldown:60?#! msg! [playerName] {#orange} .. Sending Account Balances information
-      to Discord.
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#orange} .. Sending Account
+      Balances information to Discord.
     - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/money**:
       `%cmi_user_balance_formatted%`'
     - 'asConsole! discordsrv broadcast **(Balance)** `[playerName]` :moneybag:  **/points**:

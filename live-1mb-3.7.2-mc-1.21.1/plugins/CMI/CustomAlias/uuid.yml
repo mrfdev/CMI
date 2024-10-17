@@ -6,8 +6,8 @@ CustomAlias:
     - statement:check1! check:$1!=null! ifonline:$1!
     - 'if:check1! asConsole! cmi ctellraw [playerName] <T>uuid for $1 is: %cmi_user_uuid_$1%</T><H>click
       me!</H><SC>%cmi_user_uuid_$1%</SC>'
-    - 'if:check1@! msg! [playerName] Please provide an online username! Syntax: /$0
-      <playername>'
+    - 'if:check1@! asConsole! cmi msg [playerName] !Please provide an online username!
+      Syntax: /$0 <playername>'
     Perm: true
     CustomTabs:
     - '[playername]'

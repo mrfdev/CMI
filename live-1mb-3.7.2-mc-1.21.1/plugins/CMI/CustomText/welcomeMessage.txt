@@ -31,7 +31,7 @@ imgtext:{#Lochmara} »{#Feijoa} Online {#Geyser}&l%server_online%&r{#Feijoa}: %o
 <T>{#Cerulean} • {#Feijoa}Group / Rank : {#Geyser}%luckperms_primary_group_name% {#Feijoa}(playtime: {#Geyser}%cmi_user_playtime_days% {#Feijoa}days)</T><H>Click to check your /playtime details</H><C>playtime</C>
 <T>{#Cerulean} • {#Feijoa}Location: {#Geyser}%player_world% {#Feijoa}({#Geyser}%player_x%{#Feijoa}, {#Geyser}%player_y%{#Feijoa}, {#Geyser}%player_z%{#Feijoa})</T><H>Click to check your /pos</H><C>pos</C>
 {#Cerulean} • {#Feijoa}mcMMO PL:{#Geyser} %mcmmo_power_level% {#Feijoa}| Jobs: {#Geyser}%jobs_jobs% {#Feijoa}/ Lvls: {#Geyser}%jobs_total_levels%
-{#Cerulean} • {#Feijoa}Pyro Fishing:{#Geyser} %pyrofishingpro_level% {#Feijoa}| Pyro Farming: {#Geyser}%pyrofarming_level%
+{#Cerulean} • {#Feijoa}Pyro Fishing:{#Geyser} %pyrofishingpro_level% {#Feijoa}| Pyro Farming: {#Geyser}%pyrofarming_level% {#Feijoa}| Pyro Mining: {#Geyser}%pyromining_level%
 &r
 <NextPage>
 <pageLabel:{#gold}Social Information>

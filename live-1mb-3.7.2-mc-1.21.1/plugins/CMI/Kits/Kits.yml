@@ -18980,7 +18980,12 @@ halloween2023:
         - '{"text":"","extra":[{"text":" Thank you for playing in","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false}]}'
         - '{"text":"","extra":[{"text":" October 2023 on ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false},{"text":"1MoreBlock.com","obfuscated":false,"clickEvent":{"action":"open_url","value":"http://1MoreBlock.com"},"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false},{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#FFD700","bold":false}]}'
         - '{"text":"","extra":[{"text":"-------------------------","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
-        internal: H4sIAAAAAAAA/6XUzW7CMAwAYDNgg+4PxvjbbrvzAnuZyISMZqRxl5pN8PQLElIXIR+m3Jq2X+zWdgqAAuZrR3q3Mp4tH1aaqpp8XDRDmFTWGx3wg981eca4CgUAvHah1zjieBl9z7KpBnBlNzBrQRk3Oag1MTvThb6mvT+93wFocSfB0xbX+6reWa9qK9qrxM5bSwH91qg1+pitpLsZkXuJfbuIvHV4NBvFJgTU8ftR2qifkcR1YpcXScR66WBY9DcZsQc5NR9Kgc/41IuSLcSkHR5MUKXBjWRvM+xdhr3PsA8Z9jHDjjLsOKO+TzmNNUnw4s/RheE7zuO5sSX+LOV9HqgfIifZqWSbMhBVzm5LluwssaPWfu0x8FFi84SNL+ZXcgvp3PCGSxPiI9XEG7Xkl9Jf/kS9U6Qc+njwieFf/l9hgF8XbdXBpgYAAA==
+        internal: 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
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmibackpack": 1873427249
+          }
+        custom: H4sIAAAAAAAA/+NiYGBm4Hb29XRKTM4OAGKemP7HDAAZbTIUFgAAAA==
         blockMaterial: PURPLE_SHULKER_BOX
 VoteTier1Item1:
   CommandName: VoteTier1Item1
@@ -22794,3 +22799,59 @@ fall2024:
         - HIDE_ENCHANTS
         internal: H4sIAAAAAAAA/7VWy24bNxSlY9mRlbR1Hs6zj2SybALIz8IGCjSp61iGbcGpE1kuCoLDoSRaHHJAcmSPgvxC0a66ybqLbrrpn/Qr+he9Y8cWWYNJiiKAIA01PIf3Xp5zyRpCNXQzFor2HzFpuS0eUZVmSsLATKFrKZeMatKxK1RJS2Ckawihu+OoYoSy8Aj4CrcsraILPEFfjgCxEhYTnSqNreYpNim3PS67GCZnglg2jiaoymVJMl5+ThnHPMZPR4xpbjjFCTcUU82IVdqhGHMpLngUn48oDPxkDGfKWqYLbHpMJw7JpEsyHiLp5gbQ70dS8UiuO+XRjA0Z1sqFVl3ohAe941a222UJNhk5lJh1u6EqTIYSoD1umAAKm3c6ONac9o1Dcs8lueiRzLiCyDKoQpyLOIStetgb57Bd7cvAA0954FsjMJO0R6SF8GOl+m7yNVQbqbeGPnP2HcQCgDfQ9OT9pGADJiDzaW9bCO2VG1dq2wmn5oVzxcml/GZBKV7ycI6hwBRE4D4rQsjLHvLqCJmBDy046S2pz7jlKm2NE2JJFV0cEFgWIA4dJQMWc50E1/EL8VFI0YdKJUxicsSCgVU9AYGNVIolSRn69WXEjqwm0coPLyPoHEm00iHCsIcRVULpaCV6sLy08KRejx5G3BLB6dkEFXdyQ0FII4yB2vaZ7WmVd3tn/1pYAYg2oXOAY+9tEcqALZcJ0wKCOoW/+vFsavTKy/zjD7khjjsyTbjm0Bt4wt5zUz4JmUXBo8oNWMVaEd6YcRSFMJhAu+YdzvQbV4xWnfZWdVwErZEr+ZZy3P73XFyeLycSmTz5x+VTangu5SsfdHFnOw65TDD0DQ1N1w/hqheCQwvHHkm4EAobmnstbtrFXwv1VjgfC+iPPUaS/+6ln97ppVjk7P8b6cnxCfZOC9XcZplp1eECVF05DvXyOmS4CkaIiWFTqAav4VywnJnyljF2Oq1akuWaQc4TAwLBoz9ZsVHf3+vVk70NQYvGEox3v6+LZuMg+6ohXxTxt42lRgrv1x8vbRbLztxFS1qLoj2/0duXO3mcvqhvzj8TbP3ZLE2fD9q7jfntXVo0n66l23PP52C82B52F7Z2G7Ptg/b8duu7YbO1swDvRXO3f9RsbfDtg7V0/+lWsbX6eLg1TNL91s5cu9U4bA93FvdX27PtYmO5s1f/Gl063mdwUaXy+ue//l67//oPhH7/7ZeqL6vrYWUnQyUcRXzjwmZCakyJ7Go1YFgwaPUmhL/h4e86eGVMAR6JY8FAZpKFGG6GutBZBFopGwzgVtAOeZr1ucQZDy5928N+ce6yFhMpyzsbKe9sMnTk3gklQOEGa6BRdHIJhP6VBaF/ANe2GI1GCwAA
         blockMaterial: BARREL
+emoteGhost:
+  CommandName: emoteGhost
+  DisplayName: Spooky /ghost Emote Token
+  Delay: 10
+  MaxUsages: 1
+  Items:
+    '28':
+      v: 3955
+      type: SUNFLOWER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false},{"text":"👻","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5CE68B","bold":false},{"text":"]
+          /ghost","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" Spooky October Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /ghost","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
+        PublicBukkitValues: |-
+          {
+              "cmilib:nbtcommands": [
+                  "JupQSQEgse+hD1rTtFLTNG46nJOTqSHrXuaQOLX1oli1/EdoeTZJANsWoeXLYMS4otwZorlAUGxTS6equy2dcbJv5YAJGKGjmDOgkGb/RlE=",
+                  "JupQSQEgse+hD1rTtFLTNG46nJOTqSHrXuaQOLX1oliruQFQVElos4defxLepzulcFT5SntZGW9yPjK8iNRqEQU3tfPIlX0s9XzCYhFnsS/Lh5BA8xcPoF0xxFMKoQC+",
+                  "lBQ97wVkmZGVpl321U2AXpSrHGAvdYY6zhsWaVsmYyOPX/HdHsQJ4poDM8dFlmtN2Y67H+sYu/LFOyOL1+AuT7fto/aGWMQyLpvgTNhkXaH/75t7nfRG27kDTT7zxXB30rKDRkFd9t8TbBQaXhT8dwmOUYdw1JvPaM69CMkJs8RIpm8gw+CUF6swNkF4ixTCd+pku4xoRcjsRRmcutsNZBEkljqud7iJv2EbQZTL2AI=",
+                  "lBQ97wVkmZGVpl321U2AXt7/5EIVf9UNxuCdcEEMbH1/4xPIeG407DgoqQI81ndfp/6X1LYLIWaXyoBKLXH0KHutgPg6kwOdo5U7szm1HW8NGYa4/gOV3zUOEEHF8PmHeojf4rs45SvlYYaiG6pwVYnFTZWe1T3eY5sRL26Nnmw="
+              ]
+          }
+        custom: H4sIAAAAAAAA/1XOuw6CMBQA0GtYUBdN/AYXBoMxJg4OyEsIYLBVKhumDaBAsUCi/qS/5GNzPdMZAEgg75OK8tKh41c97cMw2GCdl+UHGxkAelC4XR2i0EwbpmSGKnBreTiwF8vK3eEb2grSJeHOIyovcnVmUs5w7GpBE3FGvJOPFvgS5AZJu/CYRa36tMUTn2cxi+sHNeYWuq6USEOYJFrhrCUY6b7j5WXeMnpomJ/cvwkJJn+sd0Kwqv393s7d42/GAAAA
+emoteExplode:
+  CommandName: emoteExplode
+  DisplayName: Spooky /explode Emote Token
+  Delay: 10
+  MaxUsages: 1
+  Items:
+    '28':
+      v: 3955
+      type: SUNFLOWER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false},{"text":"👻","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5CE68B","bold":false},{"text":"]
+          /explode","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" Spooky October Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /explode","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
+        PublicBukkitValues: |-
+          {
+              "cmilib:nbtcommands": [
+                  "JupQSQEgse+hD1rTtFLTNG46nJOTqSHrXuaQOLX1oli1/EdoeTZJANsWoeXLYMS43n7LGbxcdwtLqWvzhJTUBTMPxcurZzsQEnvWfJMOwuo=",
+                  "JupQSQEgse+hD1rTtFLTNG46nJOTqSHrXuaQOLX1oliruQFQVElos4defxLepzulqbhT+NdVJWe/OCkuHVG2UJm+qbH4Fm1K3B869tYt5S831uepUXMTpP6nqA/2EFGw",
+                  "lBQ97wVkmZGVpl321U2AXpSrHGAvdYY6zhsWaVsmYyOPX/HdHsQJ4poDM8dFlmtN2Y67H+sYu/LFOyOL1+AuT1sT17JH02YplJAr3nNovuLySvA/mbcga5t7tJ7zvepxKn1MDvFpZg0x6H3DvoqorcDOVrzTDVbBN5O/7cjRo06M4Rikh2qDDodxSWyv2eoAnCbsrXWov8yJfU8Jf5xVk/+U5UKS4zhfd0CTEk3OUfg=",
+                  "lBQ97wVkmZGVpl321U2AXt7/5EIVf9UNxuCdcEEMbH1/4xPIeG407DgoqQI81ndfp/6X1LYLIWaXyoBKLXH0KEGXHVX4Gi3zTlmiya65TSGnd8Ec8emGcPnsh0Y3RSDK1QQbClFDdEXb1FMY1pyNg1hKqlZFqzjGf7kAivQMKn4="
+              ]
+          }
+        custom: H4sIAAAAAAAA/1XOuw6CMBQA0GtYUBdN/AYXBoMxJg4OyEsIYLBVKhumDaBAsUCi/qS/5GNzPdMZAEgg75OK8tKh41c97cMw2GCdl+UHGxkAelC4XR2i0EwbpmSGKnBreTiwF8vK3eEb2grSJeHOIyovcnVmUs5w7GpBE3FGvJOPFvgS5AZJu/CYRa36tMUTn2cxi+sHNeYWuq6USEOYJFrhrCUY6b7j5WXeMnpomJ/cvwkJJn+sd0Kwqv393s7d42/GAAAA

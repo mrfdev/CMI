@@ -1,0 +1,21 @@
+<AutoPage><NoAutoAlias><NoReqPermission>
+<pageLabel:requirements>
+{#orient}•----{#cerulean}❖ How to obtain a beacon in the gametypes ❖{#orient}----•
+{#Feijoa}Once your island level is over {#orange}&l1000
+{#Feijoa}make sure to have the following items in your inventory
+&r
+{#Feijoa}• 32 {#iron}&lIron {#Feijoa}Blocks
+{#Feijoa}• 16 {#e6de2e}&lGold {#Feijoa}Blocks
+{#Feijoa}• 8 {#33fff3}&lDiamond {#Feijoa}Blocks
+{#Feijoa}• 4 {#40cc29}&lEmerald {#Feijoa}Blocks
+{#Feijoa}• 1 {#gray}&lNetherite {#Feijoa}Block
+<NextPage>
+<pageLabel:levels>
+{#orient}•----{#cerulean}❖ Gametype island levels ❖{#orient}----•
+{#Feijoa}Below are your island levels in the different gamemodes
+&r
+{#Feijoa}• Skyblock: {#orange}%Level_bskyblock_island_level%
+{#Feijoa}• Oneblock: {#orange}%Level_aoneblock_island_level%
+{#Feijoa}• Acid {#orange}%Level_acidisland_island_level%
+{#Feijoa}• Cave {#orange}%Level_caveblock_island_level%
+{#Feijoa}• Skygrid {#orange}%Level_skygrid_island_level%

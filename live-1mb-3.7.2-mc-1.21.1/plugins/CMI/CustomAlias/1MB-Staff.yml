@@ -69,18 +69,18 @@ CustomAlias:
     Tab: false
   _paste:
     Cmds:
-    - msg! [playerName] debug0 - start
+    - asConsole! cmi msg [playerName] !debug0 - start
     - schem load testthings%cmi_random_1_5%
     - delay! 1
-    - msg! [playerName] debug1 - flipping
+    - asConsole! cmi msg [playerName] !debug1 - flipping
     - asPlayer! /flip
     - delay! 1
-    - msg! [playerName] debug2 - pasting
+    - asConsole! cmi msg [playerName] !debug2 - pasting
     - asPlayer! /paste -sea
     - delay! 1
-    - msg! [playerName] debug3 - expanding
+    - asConsole! cmi msg [playerName] !debug3 - expanding
     - asPlayer! /expand vert
-    - msg! [playerName] debug4 - done
+    - asConsole! cmi msg [playerName] !debug4 - done
     - asPlayer! region define pasteStick-%cmi_user_name%-%player_world%-x%player_x%-y%player_y%-z%player_z%-%server_time_yyyy-dd-M-HHmmss%
       %cmi_user_name%
     Perm: true
@@ -91,29 +91,41 @@ CustomAlias:
     Tab: false
   _playtime:
     Cmds:
-    - 'check:$1==null! msg! [playerName] {#red}Syntax: /$0 <player>'
-    - 'check:$1!=null! ifoffline:$1! msg! [playerName] {#red}Error: $1 not found.'
-    - 'check:$1!=null! ifonline:$1! msg! [playerName] {#gold}\n\n\n\n&lPLAYTIME STATS:'
-    - 'check:$1!=null! ifonline:$1! msg! [playerName] {#gold} \nPlayers with most
-      playtime:'
-    - check:$1!=null! ifonline:$1! msg! [playerName] {#gold} %cmi_playtimetop_name_1%
+    - 'check:$1==null! asConsole! cmi msg [playerName] !{#red}Syntax: /$0 <player>'
+    - 'check:$1!=null! ifoffline:$1! asConsole! cmi msg [playerName] !{#red}Error:
+      $1 not found.'
+    - 'check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#gold}\n\n\n\n&lPLAYTIME
+      STATS:'
+    - 'check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#gold} \nPlayers
+      with most playtime:'
+    - check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#gold} %cmi_playtimetop_name_1%
       - %cmi_playtimetop_time_1%
-    - check:$1!=null! ifonline:$1! msg! [playerName] {#gold} %cmi_playtimetop_name_2%
+    - check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#gold} %cmi_playtimetop_name_2%
       - %cmi_playtimetop_time_2%
-    - check:$1!=null! ifonline:$1! msg! [playerName] {#gold} %cmi_playtimetop_name_3%
+    - check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#gold} %cmi_playtimetop_name_3%
       - %cmi_playtimetop_time_3%
-    - 'check:$1!=null! ifonline:$1! msg! [playerName] {#gold} \nPlaytime statistics
-      for $1:'
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_formatted%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_days%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_dayst%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_hours%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_hoursf%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_hourst%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_minutes%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_minutest%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_seconds%
-    - check:$1!=null! ifonline:$1! ptarget:$1! msg! [playerName] {#gold} - %cmi_user_playtime_secondst%
+    - 'check:$1!=null! ifonline:$1! asConsole! cmi msg [playerName] !{#gold} \nPlaytime
+      statistics for $1:'
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_formatted%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_days%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_dayst%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_hours%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_hoursf%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_hourst%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_minutes%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_minutest%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_seconds%
+    - check:$1!=null! ifonline:$1! ptarget:$1! asConsole! cmi msg [playerName] !{#gold}
+      - %cmi_user_playtime_secondst%
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -197,15 +209,16 @@ CustomAlias:
       true -s
     - asConsole! cmi heal %cmi_user_meta_unhidePlayer% 100% -s
     - asConsole! cmi effect %cmi_user_meta_unhidePlayer% clear -s
-    - msg! [playerName] {#gold} ± Made %cmi_user_meta_unhidePlayer% visible (%cmi_user_meta_unhideGamemode%)
+    - asConsole! cmi msg [playerName] !{#gold} ± Made %cmi_user_meta_unhidePlayer%
+      visible (%cmi_user_meta_unhideGamemode%)
     Perm: true
     CustomTabs:
     - survival,creative [allPlayername]
   recalc:
     Cmds:
-    - asConsole! skyblockadmin limits calc $1
-    - msg! [playerName] Attempted to recalculate skyblock island level for $1, it
-      probably worked.
+    - asConsole! adminskyblock limits calc $1
+    - asConsole! cmi msg [playerName] !Attempted to recalculate skyblock island level
+      for $1, it probably worked.
     Perm: true
   alvls:
     Cmds:
@@ -242,8 +255,8 @@ CustomAlias:
     - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi gm survival $1
     - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi god $1 false -s
     - if:check1@! perm:cmi.chatgroup.14! asConsole! cmi fly $1 false -s
-    - if:check1@! perm:cmi.chatgroup.14@! msg! [playerName] {#orange}You can only
-      change your own gamemode.
+    - if:check1@! perm:cmi.chatgroup.14@! asConsole! cmi msg [playerName] !{#orange}You
+      can only change your own gamemode.
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -275,7 +288,7 @@ CustomAlias:
     Perm: true
   soulbind confirm:
     Cmds:
-    - msg! [playerName] &e hi
+    - asConsole! cmi msg [playerName] !&e hi
     Perm: true
     Tab: false
   clearchat:

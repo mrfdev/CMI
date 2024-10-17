@@ -1,3 +1,5 @@
+#
+
 CustomAlias:
   cheque:
     Cmds:
@@ -8,11 +10,11 @@ CustomAlias:
     - statement:check1! hasmoney:$1! check:$1!=null! hasitem:paper:1! check:%cmi_iteminhand_type%==PAPER!
       check:%cmi_iteminhand_realname%==Paper! ifingamemode:survival!
     - if:check1! asPlayer! cmi cheque $1
-    - 'if:check1! msg! [playerName] {#gold} 💰 {#orchid}New Balance: {#gold}%cmi_user_balance_formatted%
-      {#orchid}/money'
-    - 'if:check1@! msg! [playerName] {#gold} 💰 {#orchid}Usage: Hold a Paper in your
-      hand in survival mode, and have enough money in your /balance (Cheques max out
-      to 250k)\n{#gold} 💰 {#orchid}Then type: /cheque AMOUNT. This will convert your
-      paper to a cheque.'
+    - 'if:check1! asConsole! cmi msg [playerName] !{#gold} 💰 {#orchid}New Balance:
+      {#gold}%cmi_user_balance_formatted% {#orchid}/money'
+    - 'if:check1@! asConsole! cmi msg [playerName] !{#gold} 💰 {#orchid}Usage: Hold
+      a Paper in your hand in survival mode, and have enough money in your /balance
+      (Cheques max out to 250k)\n{#gold} 💰 {#orchid}Then type: /cheque AMOUNT. This
+      will convert your paper to a cheque.'
     CustomTabs:
     - 50,100,250,1000,2500,5000,10000,25000,50000,100000

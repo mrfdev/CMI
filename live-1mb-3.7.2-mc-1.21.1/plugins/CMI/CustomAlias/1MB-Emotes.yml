@@ -1,6 +1,6 @@
-# 1MoreBlock.com /emotes thing, for CMI 9.7.6.4 for 1MB -live- 3.7.1, for Minecraft 1.21.1
+# 1MoreBlock.com /emotes thing, for CMI 9.7.6.x for 1MB -live- 3.7.2, for Minecraft 1.21.1
 # (c) Floris Fiedeldij Dop, but feel free to use this on your server, clone & pr for improvements, suggestions
-# Version 0.2.1 - dev - Internal release made by mrfloris
+# Version 0.2.2 - dev - Internal release made by mrfloris
 # Credits / Contributions:
 # /hug, /cheer, and /shrug are done, made by yakirarage
 # News: Next will be /ghost and /explode, as well as /nomnom, these are 'wip'
@@ -9,8 +9,8 @@
 CustomAlias:
   _emoteConfig:
     Cmds:
-    - msg! [playerName] You cannot run this in-game, the server owner has to manually
-      edit 1MB-Emotes.yml
+    - asConsole! cmi msg [playerName] !You cannot run this in-game, the server owner
+      has to manually edit 1MB-Emotes.yml
     - asConsole! cmi usermeta mrfloris add emoteServerOwner mrfloris
     - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteEconomy 100
     - asConsole! cmi usermeta %cmi_user_meta_emoteServerOwner% add emoteEconomy stone
@@ -95,8 +95,8 @@ CustomAlias:
     - if:nullcheck@! ifonline:$1! asConsole! cmi launch [playerName] a:90 p:0.5 -nodamage
     - if:nullcheck@! ifonline:$1! asConsole! cmi sound entity_experience_orb_pickup
       $1 -s
-    - if:nullcheck@! ifoffline:$1! msg! [playerName] Oh no, that player isn't online.
-      It must be an online player.
+    - if:nullcheck@! ifoffline:$1! asConsole! cmi msg [playerName] !Oh no, that player
+      isn't online. It must be an online player.
     CustomTabs:
     - '[playerName]'
   clap:
@@ -584,5 +584,5 @@ CustomAlias:
     Tab: false
   nomnom:
     Cmds:
-    - msg! [playerName] wip
+    - asConsole! cmi msg [playerName] !wip
     Perm: true

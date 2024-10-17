@@ -293,7 +293,7 @@ AllInOneJustExample:
       Hour: 18
   Commands:
   - cmi give [randomPlayer] diamond %rand/1-5%
-  - msg! [randomPlayer] &eYou just got diamonds!
+  - asConsole! cmi msg [randomPlayer] !{#gold}You just got diamonds!
   - broadcast! &e[randomPlayer] just got some stuff!
   - delay! 1
   - actionbar! &eRestart for quick maintenance in &61 &esec!
@@ -410,8 +410,8 @@ Announcer:
   - broadcast! {#Cerulean} 1MB Community »{#magenta} We started the server 13+ years
     ago in 2011 WHOOOO!
   - 'broadcast! {#Cerulean} 1MB Community »{#magenta} Type: {#orange}&l/celebration{#magenta}.'
-  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} You can smelt a lot
-    of mob heads in a furnace for a cheque.
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Found an issue, bug,
+    broken item? Report it as a ticket on /discord! tnx
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Learn which mobs you can {#orange}&l/ride</T><H>click to learn more</H><C>ride</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}

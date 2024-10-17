@@ -1,3 +1,5 @@
+#
+
 CustomAlias:
   _booper:
     Cmds:
@@ -12,21 +14,21 @@ CustomAlias:
     Perm: true
   _item-cracked-diamond:
     Cmds:
-    - msg! [playerName] WIP
+    - asConsole! cmi msg [playerName] !WIP
     Perm: true
   _item-event-halloween-temp-fly:
     Cmds:
-    - msg! [playerName] WIP
+    - asConsole! cmi msg [playerName] !WIP
     Perm: true
   _item-mystery-melon:
     Cmds:
-    - msg! [playerName] WIP
+    - asConsole! cmi msg [playerName] !WIP
     Perm: true
   _item_event_scaryprefix:
     Cmds:
     - statement:check1! check:%server_time_MM%==10! check:%server_time_Y%==2024!
-    - if:check1@! msg! $1 {#buttercup}Sorry $1, you can only use this in October 2024.
-      {#orange}🎃
+    - if:check1@! asConsole! cmi msg $1 !{#buttercup}Sorry $1, you can only use this
+      in October 2024. {#orange}🎃
     - if:check1! asConsole! cmi nameplate $1 -pref:{#orange}🎃_&r
     - if:check1! asConsole! cmi panimation circle;effect:raid_omen;twist;part:5;r:0.5;pitch:90;offset:0,0,0;dur:1;target:$1
     - if:check1! asConsole! cmi titlemsg $1 {#orange}🎃 Done! \n {#buttercup}Scary

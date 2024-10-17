@@ -1,70 +1,78 @@
+#
+
 CustomAlias:
   _votetier1:
     Cmds:
     - statement:check1! check:$1!=null!
-    - if:check1@! msg! [playerName] You need to provide a username to check on
-    - if:check1! msg! [playerName] Tier 1 has 6 items, all have to return true.
-    - 'if:check1! msg! [playerName] $1 VoteTier 1 Item 1: %parseother_{$1}_{cmi_user_meta_VoteTier1Item1}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 1 Item 2: %parseother_{$1}_{cmi_user_meta_VoteTier1Item2}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 1 Item 3: %parseother_{$1}_{cmi_user_meta_VoteTier1Item3}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 1 Item 4: %parseother_{$1}_{cmi_user_meta_VoteTier1Item4}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 1 Item 5: %parseother_{$1}_{cmi_user_meta_VoteTier1Item5}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 1 Item 6: %parseother_{$1}_{cmi_user_meta_VoteTier1Item6}%'
+    - if:check1@! asConsole! cmi msg [playerName] !You need to provide a username
+      to check on
+    - if:check1! asConsole! cmi msg [playerName] !Tier 1 has 6 items, all have to
+      return true.
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 1 Item 1: %parseother_{$1}_{cmi_user_meta_VoteTier1Item1}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 1 Item 2: %parseother_{$1}_{cmi_user_meta_VoteTier1Item2}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 1 Item 3: %parseother_{$1}_{cmi_user_meta_VoteTier1Item3}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 1 Item 4: %parseother_{$1}_{cmi_user_meta_VoteTier1Item4}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 1 Item 5: %parseother_{$1}_{cmi_user_meta_VoteTier1Item5}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 1 Item 6: %parseother_{$1}_{cmi_user_meta_VoteTier1Item6}%'
     Perm: true
   _votetier2:
     Cmds:
     - statement:check1! check:$1!=null!
-    - if:check1@! msg! [playerName] You need to provide a username to check on
-    - if:check1! msg! [playerName] Tier 2 has 12 items, all have to return true.
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 1: %parseother_{$1}_{cmi_user_meta_VoteTier2Item1}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 2: %parseother_{$1}_{cmi_user_meta_VoteTier2Item2}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 3: %parseother_{$1}_{cmi_user_meta_VoteTier2Item3}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 4: %parseother_{$1}_{cmi_user_meta_VoteTier2Item4}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 5: %parseother_{$1}_{cmi_user_meta_VoteTier2Item5}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 6: %parseother_{$1}_{cmi_user_meta_VoteTier2Item6}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 7: %parseother_{$1}_{cmi_user_meta_VoteTier2Item7}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 8: %parseother_{$1}_{cmi_user_meta_VoteTier2Item8}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 9: %parseother_{$1}_{cmi_user_meta_VoteTier2Item9}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 10: %parseother_{$1}_{cmi_user_meta_VoteTier2Item10}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 11: %parseother_{$1}_{cmi_user_meta_VoteTier2Item11}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 2 Item 12: %parseother_{$1}_{cmi_user_meta_VoteTier2Item12}%'
+    - if:check1@! asConsole! cmi msg [playerName] !You need to provide a username
+      to check on
+    - if:check1! asConsole! cmi msg [playerName] !Tier 2 has 12 items, all have to
+      return true.
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 1: %parseother_{$1}_{cmi_user_meta_VoteTier2Item1}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 2: %parseother_{$1}_{cmi_user_meta_VoteTier2Item2}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 3: %parseother_{$1}_{cmi_user_meta_VoteTier2Item3}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 4: %parseother_{$1}_{cmi_user_meta_VoteTier2Item4}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 5: %parseother_{$1}_{cmi_user_meta_VoteTier2Item5}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 6: %parseother_{$1}_{cmi_user_meta_VoteTier2Item6}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 7: %parseother_{$1}_{cmi_user_meta_VoteTier2Item7}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 8: %parseother_{$1}_{cmi_user_meta_VoteTier2Item8}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 9: %parseother_{$1}_{cmi_user_meta_VoteTier2Item9}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 10: %parseother_{$1}_{cmi_user_meta_VoteTier2Item10}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 11: %parseother_{$1}_{cmi_user_meta_VoteTier2Item11}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 2 Item 12: %parseother_{$1}_{cmi_user_meta_VoteTier2Item12}%'
     Perm: true
   _votetier3:
     Cmds:
     - statement:check1! check:$1!=null!
-    - if:check1@! msg! [playerName] You need to provide a username to check on
-    - if:check1! msg! [playerName] Tier 3 has 18 items, all have to return true.
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 1: %parseother_{$1}_{cmi_user_meta_VoteTier3Item1}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 2: %parseother_{$1}_{cmi_user_meta_VoteTier3Item2}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 3: %parseother_{$1}_{cmi_user_meta_VoteTier3Item3}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 4: %parseother_{$1}_{cmi_user_meta_VoteTier3Item4}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 5: %parseother_{$1}_{cmi_user_meta_VoteTier3Item5}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 6: %parseother_{$1}_{cmi_user_meta_VoteTier3Item6}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 7: %parseother_{$1}_{cmi_user_meta_VoteTier3Item7}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 8: %parseother_{$1}_{cmi_user_meta_VoteTier3Item8}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 9: %parseother_{$1}_{cmi_user_meta_VoteTier3Item9}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 10: %parseother_{$1}_{cmi_user_meta_VoteTier3Item10}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 11: %parseother_{$1}_{cmi_user_meta_VoteTier3Item11}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 12: %parseother_{$1}_{cmi_user_meta_VoteTier3Item12}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 13: %parseother_{$1}_{cmi_user_meta_VoteTier3Item13}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 14: %parseother_{$1}_{cmi_user_meta_VoteTier3Item14}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 15: %parseother_{$1}_{cmi_user_meta_VoteTier3Item15}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 16: %parseother_{$1}_{cmi_user_meta_VoteTier3Item16}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 17: %parseother_{$1}_{cmi_user_meta_VoteTier3Item17}%'
-    - 'if:check1! msg! [playerName] $1 VoteTier 3 Item 18: %parseother_{$1}_{cmi_user_meta_VoteTier3Item18}%'
+    - if:check1@! asConsole! cmi msg [playerName] !You need to provide a username
+      to check on
+    - if:check1! asConsole! cmi msg [playerName] !Tier 3 has 18 items, all have to
+      return true.
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 1: %parseother_{$1}_{cmi_user_meta_VoteTier3Item1}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 2: %parseother_{$1}_{cmi_user_meta_VoteTier3Item2}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 3: %parseother_{$1}_{cmi_user_meta_VoteTier3Item3}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 4: %parseother_{$1}_{cmi_user_meta_VoteTier3Item4}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 5: %parseother_{$1}_{cmi_user_meta_VoteTier3Item5}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 6: %parseother_{$1}_{cmi_user_meta_VoteTier3Item6}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 7: %parseother_{$1}_{cmi_user_meta_VoteTier3Item7}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 8: %parseother_{$1}_{cmi_user_meta_VoteTier3Item8}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 9: %parseother_{$1}_{cmi_user_meta_VoteTier3Item9}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 10: %parseother_{$1}_{cmi_user_meta_VoteTier3Item10}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 11: %parseother_{$1}_{cmi_user_meta_VoteTier3Item11}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 12: %parseother_{$1}_{cmi_user_meta_VoteTier3Item12}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 13: %parseother_{$1}_{cmi_user_meta_VoteTier3Item13}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 14: %parseother_{$1}_{cmi_user_meta_VoteTier3Item14}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 15: %parseother_{$1}_{cmi_user_meta_VoteTier3Item15}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 16: %parseother_{$1}_{cmi_user_meta_VoteTier3Item16}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 17: %parseother_{$1}_{cmi_user_meta_VoteTier3Item17}%'
+    - 'if:check1! asConsole! cmi msg [playerName] !$1 VoteTier 3 Item 18: %parseother_{$1}_{cmi_user_meta_VoteTier3Item18}%'
     Perm: true
   votemenu:
     Cmds:
     - asConsole! cmi usermeta [playerName] add TierCountOne 0 -s
     - asConsole! cmi usermeta [playerName] add TierCountTwo 0 -s
     - asConsole! cmi usermeta [playerName] add TierCountThree 0 -s
-    - msg! [playerName] Before opening the menu, we are gathering your 1MoreBlock.com
-      voting history and reviewing your vote item trade history. Please hold while
-      we recalculate..
+    - asConsole! cmi msg [playerName] !Before opening the menu, we are gathering your
+      1MoreBlock.com voting history and reviewing your vote item trade history. Please
+      hold while we recalculate..
     - delay! 1
     - statement:check1! perm:onemb.vote.tier.1!
-    - 'if:check1! msg! [playerName] Tier 1 items collected: 6, you have access to
-      all Tier 1 and 2 items unlocked.'
+    - 'if:check1! asConsole! cmi msg [playerName] !Tier 1 items collected: 6, you
+      have access to all Tier 1 and 2 items unlocked.'
     - if:check1@! check:%cmi_user_meta_VoteTier1Item1%==true! cmi usermeta [playerName]
       increment TierCountOne +1 -s
     - if:check1@! check:%cmi_user_meta_VoteTier1Item2%==true! cmi usermeta [playerName]
@@ -79,8 +87,8 @@ CustomAlias:
       increment TierCountOne +1 -s
     - delay! 1
     - statement:check2! perm:onemb.vote.tier.2!
-    - 'if:check2! msg! [playerName] Tier 2 items collected: 12, you have access to
-      all the Tier 1, 2, and 3 items unlocked.'
+    - 'if:check2! asConsole! cmi msg [playerName] !Tier 2 items collected: 12, you
+      have access to all the Tier 1, 2, and 3 items unlocked.'
     - if:check2@! check:%cmi_user_meta_VoteTier2Item1%==true! cmi usermeta [playerName]
       increment TierCountTwo +1 -s
     - if:check2@! check:%cmi_user_meta_VoteTier2Item2%==true! cmi usermeta [playerName]
@@ -107,8 +115,8 @@ CustomAlias:
       increment TierCountTwo +1 -s
     - delay! 1
     - statement:check3! perm:onemb.vote.tier.3!
-    - 'if:check3! msg! [playerName] Tier 3 items collected: 18, you already have collected
-      everything, there is no Tier 4.'
+    - 'if:check3! asConsole! cmi msg [playerName] !Tier 3 items collected: 18, you
+      already have collected everything, there is no Tier 4.'
     - if:check3@! check:%cmi_user_meta_VoteTier3Item1%==true! cmi usermeta [playerName]
       increment TierCountThree +1 -s
     - if:check3@! check:%cmi_user_meta_VoteTier3Item2%==true! cmi usermeta [playerName]
@@ -147,21 +155,21 @@ CustomAlias:
       increment TierCountThree +1 -s
     - delay! 1
     - statement:check4! check:%cmi_user_metaint_TierCountOne%==6! perm:onemb.vote.tier.1@!
-    - if:check4! msg! [playerName] I see you now have all Tier 1 items collected (6),
-      unlocking access to Tier 2 items!
+    - if:check4! asConsole! cmi msg [playerName] !I see you now have all Tier 1 items
+      collected (6), unlocking access to Tier 2 items!
     - if:check4! asConsole! lp user [playerName] permission set onemb.vote.tier.1
       true
     - if:check4! asConsole! lp user [playerName] permission set onemb.vote.tier.2
       true
-    - if:check4@! msg! [playerName] You have collected %cmi_user_metaint_TierCountOne%
+    - if:check4@! asConsole! cmi msg [playerName] !You have collected %cmi_user_metaint_TierCountOne%
       out of 6 Tier 1 items, I can not unlock Tier 2 for you just yet.
     - delay! 1
     - statement:check5! check:%cmi_user_metaint_TierCountTwo%==12! perm:onemb.vote.tier.3@!
-    - if:check5! msg! [playerName] I see you now have all Tier 2 items collected (12),
-      unlocking access to Tier 3 items!
+    - if:check5! asConsole! cmi msg [playerName] !I see you now have all Tier 2 items
+      collected (12), unlocking access to Tier 3 items!
     - if:check5! asConsole! lp user [playerName] permission set onemb.vote.tier.3
       true
-    - if:check5@! msg! [playerName] You have collected %cmi_user_metaint_TierCountTwo%
+    - if:check5@! asConsole! cmi msg [playerName] !You have collected %cmi_user_metaint_TierCountTwo%
       out of 12 Tier 2 items, I can not unlock Tier 3 for you just yet.
     - asConsole! cmi usermeta [playerName] remove TierCountOne 0 -s
     - asConsole! cmi usermeta [playerName] remove TierCountTwo 0 -s

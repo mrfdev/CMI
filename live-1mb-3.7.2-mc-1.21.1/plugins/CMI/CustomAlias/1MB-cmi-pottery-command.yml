@@ -1,19 +1,19 @@
-# 1MoreBlock.com 1.20.x CMI 9.6.6.x CustomAlias command: /pottery
+# 1MoreBlock.com 1.21.x CMI 9.7.6.x CustomAlias command: /pottery
 # Syntax: /pottery <player> <side1> <side2> <side3> <side4>
 # Usage: Pick either air for an empty side, or one of the suggestions. 
 # Reason: A handy (ingame only) admin command to have a more comfortable way to create any pottery pattern variety.
-# Version: 1.0.0, build 004, October 16th, 2023
+# Version: 1.1.0, build 006, October 16th, 2024
 
 CustomAlias:
   pottery:
     Cmds:
     - statement:check1! check:$1!=null! check:$2!=null! ifonline:$1!
-    - 'if:check1@! msg! [playerName] {#gold}Syntax: is &l/$0 <player> <side1> <side2>
-      <side3> <side4>'
+    - 'if:check1@! asConsole! cmi msg [playerName] !{#gold}Syntax: is &l/$0 <player>
+      <side1> <side2> <side3> <side4>'
     - if:check1! asConsole! cmi usermeta [playerName] add pottery $1 -s
-    - if:check1! asConsole! cmi give %cmi_user_meta_pottery% minecraft:decorated_pot{BlockEntityTag:{sherds:["minecraft:$2","minecraft:$3","minecraft:$4","minecraft:$5"]}}
-    - if:check1! msg! %cmi_user_meta_pottery% {#gold} - You've received one pottery
-      with sides $2-.
+    - if:check1! asConsole! minecraft:give %cmi_user_meta_pottery% minecraft:decorated_pot[minecraft:pot_decorations=["minecraft:$2","minecraft:$3","minecraft:$4","minecraft:$5"]]
+    - if:check1! asConsole! cmi msg %cmi_user_meta_pottery% !{#gold} - You've received
+      one pottery with sides $2-.
     - if:check1! asConsole! cmi usermeta [playerName] remove pottery -s
     Perm: true
     CustomTabs:

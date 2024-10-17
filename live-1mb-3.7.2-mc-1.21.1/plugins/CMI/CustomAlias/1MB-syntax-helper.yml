@@ -22,14 +22,15 @@ CustomAlias:
     - check:$1!=null! asConsole! cmi ctellraw $1 <T>{#Cerulean} ❖ Syntax:{#Feijoa}
       /$2- &r</T><H>{#Cerulean}Syntax error \n {#Feijoa}You have not used the \n {#Feijoa}command
       /$2 correctly. \n {#Feijoa}If you need help, contact /staff&r</H>
-    - 'check:$1==null! msg! [playerName] Debug: asConsole, do _syntax player command
-      params'
+    - 'check:$1==null! asConsole! cmi msg [playerName] !Debug: asConsole, do _syntax
+      player command params'
     Perm: true
     Tab: false
   examplecmd:
     Cmds:
     - statement:check1! check:$1!=null! ifonline:$1!
-    - if:check1! msg! [playerName] Nice job, you picked player $1 and $2 as fruit
+    - if:check1! asConsole! cmi msg [playerName] !Nice job, you picked player $1 and
+      $2 as fruit
     - if:check1@! asConsole! _syntax [playerName] $0 <player> <fruit>
     Perm: true
     Tab: false

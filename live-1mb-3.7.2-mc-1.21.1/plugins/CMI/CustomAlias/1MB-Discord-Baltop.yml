@@ -19,7 +19,8 @@
 CustomAlias:
   baltop discord:
     Cmds:
-    - cooldown:60?#! msg! [playerName] {#gold} .. Sending /baltop information to Discord.
+    - cooldown:60?#! asConsole! cmi msg [playerName] !{#gold} .. Sending /baltop information
+      to Discord.
     - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #1 `%cmi_baltop_name_1%`
       - `%cmi_baltop_money_1%`'
     - 'asConsole! discordsrv broadcast **(/baltop)** :moneybag: #2 `%cmi_baltop_name_2%`

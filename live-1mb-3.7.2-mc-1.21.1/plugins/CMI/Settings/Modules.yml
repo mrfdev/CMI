@@ -261,10 +261,14 @@ anvilRenameColor: true
 # Applies for servers from 1.9.x and up
 launchPad: true
 #  
-# Handling of launch custom death messages
+# Handling of custom death messages
 # Applies for servers from 1.7.x and up
 deathMessages: true
 #  
 # Handling of server links
 # Applies for servers from 1.7.x and up
 serverLinks: true
+#  
+# Handling of hats
+# Applies for servers from 1.7.x and up
+hat: true
