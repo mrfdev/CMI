@@ -121,7 +121,7 @@ info:
   cantDetermineMobType: '&cCan''t determine mob type from &e[type] &cvariable'
   cantRename: '!actionbar!&eYou can''t use this name'
   confirmRedefine: '&eClick to confirm redefining'
-  cantEdit: '&eYou can''t edit this'
+  cantEdit: '!actionbar!&e '
   wrongName: '&cWrong name'
   unknown: unknown
   invalidName: '&cInvalid name'
