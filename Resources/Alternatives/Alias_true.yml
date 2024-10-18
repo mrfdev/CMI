@@ -1156,6 +1156,11 @@ Alias:
     Enabled: true
     Tab: true
   #  
+  # /cmi scale $1-
+  /scale:
+    Enabled: true
+    Tab: true
+  #  
   # /cmi scan $1-
   /scan:
     Enabled: true
@@ -1209,6 +1214,11 @@ Alias:
   #  
   # /cmi server $1-
   /server:
+    Enabled: true
+    Tab: true
+  #  
+  # /cmi serverlinks $1-
+  /serverlinks:
     Enabled: true
     Tab: true
   #  

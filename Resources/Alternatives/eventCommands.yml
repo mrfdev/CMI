@@ -24,23 +24,23 @@
 firstJoinServer:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 joinServer:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 quitServer:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerDeath:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
   SourceCommands: []
 playerKillPlayer:
   # [sourceName] to insert source player name
@@ -54,98 +54,100 @@ playerKillPlayer:
   # Keep in mind that in case you are using specialized commands, then Commands section will be performed on player who died and SourceCommands will be performed on player who killed
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
   SourceCommands: []
 playerRespawn:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerTeleport:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 bedLeave:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 bedEnter:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerWorldChange:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerPreWorldChange:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerGameModeChange:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerKick:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerBan:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 playerLevelChange:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 voidFall:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 elytraStartGlide:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 advancementDone:
   # use [value] variable to insert advancements identificator
   # This returns path to advancement like recipes/building_blocks/emerald_block which can be used in commands in case you want to filter out specific ones
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 elytraEndGlide:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 sneakingSwapHandItems:
   Enabled: false
+  # Item swap event can be canceled if needed. This only works if event monitor is enabled
+  CancelEvent: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 swapHandItems:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 pvpstart:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!
 pvpend:
   Enabled: false
   Commands:
-  - cmi msg [playerName] This is event command example!
-  - cmi actionbarmsg [playerName] This is event command example!
+  - cmi msg [playerName] !This is event command example!
+  - cmi msg [playerName] !Originates from sneakingSwapHandItems event!

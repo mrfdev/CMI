@@ -90,7 +90,10 @@ More details and information about placeholders on the official website [here](h
 %cmi_user_jailtime%
 %cmi_user_jailreason%
 %cmi_user_jailedby%
+%cmi_user_riding%
+%cmi_user_beingriddenby%
 %cmi_user_bungeeserver%
+%cmi_user_rt_cooldown%
 %cmi_user_playtime_formatted%
 %cmi_user_playtime_days%
 %cmi_user_playtime_dayst%
@@ -205,4 +208,4 @@ More details and information about placeholders on the official website [here](h
 %cmi_world_time24_[worldName]%
 ```
 ## Miscellaneous
-Created with CMI 9.7.0.2 for Minecraft 1.20.4.
+Created with CMI 9.7.6.11 for Minecraft 1.21.1.

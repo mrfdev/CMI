@@ -9,6 +9,7 @@ cmi.buttonteleport - Allows to teleport to target location when clicking on inve
 cmi.enderedit - Allows to edit ender chest of some one else
 cmi.bedhome - Allows to set home location on interaction
 cmi.actionbar.colors - Allows to use colors in actionbarmsg command
+cmi.totem.frominventory - Consumes totem from inventory
 cmi.elevator.use - Allows to use elevator based on signs
 cmi.elevator.create - Allows to create elevator signs
 cmi.bossbar.colors - Allows to use colors in bossbarmsg command
@@ -17,6 +18,7 @@ cmi.dynmap.hidden - Hides player from dynmap map
 cmi.prewards.notification - Allows to see playtime rewards notifications
 cmi.prewards.[preward] - Allows to get particular playtime reward
 cmi.anvil.colors - Allows to use colors when renaming item
+cmi.anvil.bypassitalic - Allows to bypass italic when renaming item
 cmi.title.colors - Allows to use colors in titlemsg command
 cmi.tag.color - Tagged player name gets colorized
 cmi.colors.[type].* - Allows all color usage in particular areas
@@ -34,6 +36,7 @@ cmi.book.pages.[20to100] - Defines max pages you can create in a book
 cmi.damagecontrol.[groupname] - Defines damage multiplier by group
 cmi.chorusteleport - Allows to use chorus to teleport around
 cmi.teleport.with.[entitytype] - Allows teleportation with defined mount
+cmi.randomteleport.[worldname] - Allows to random teleport inside specific world
 cmi.randomteleport.cooldownbypass - Allows to bypass random teleport cooldown
 cmi.fullserver.bypass - Allows to join full server
 cmi.signs.shiftedit - Allows to edit signs with shift right click
@@ -107,6 +110,7 @@ cmi.keepinventory - Allows to keep inventory after death
 cmi.keepexp - Allows to keep exp after death
 cmi.informDurability - Player will be informed when durability reaches threshold
 cmi.egginteract.[entitytype] - Allows to change spawner by interacting with egg
+cmi.trialegginteract.[entitytype] - Allows to change trial spawner by interacting with egg
 cmi.placespawner - Allows to place spawner and keep its type
 cmi.placespawner.[entitytype] - Allows to place spawner by particular type and keep its type
 cmi.teleport.bypassblacklist - Allows to bypass protection from teleporting with blacklisted items
@@ -117,12 +121,13 @@ cmi.bungee.publicmessages.[servername] - Allows to send public messages to targe
 cmi.warmupbypass.[commandname] - Allows to bypass particular CMI command warmup
 cmi.warmuptime.[commandname].[timeinseconds] - Allows to set warmup time. Lower is prioritized
 cmi.command - Gives access to base usage of commands
-cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bassbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney/chatbubble/pmsound/rideme/pvedamagenumbers/pvpdamagenumbers/informdurability] - Allows to modify specific options
+cmi.command.options.[visibleholograms/shiftsignedit/totembossbar/bossbarcompass/tagsound/chatspy/cmdspy/signspy/acceptingpm/acceptingtpa/acceptingmoney/chatbubble/pmsound/rideme/pvedamagenumbers/pvpdamagenumbers/informdurability] - Allows to modify specific options
 cmi.command.jump.[[distance]] - Defines max jump distance
 cmi.costbypass.[commandname] - Allows to bypass command cost
 cmi.cooldownbypass.[commandname] - Allows to bypass command cooldown
 cmi.cooldown.[some_command].[timer] - Defines command cooldown for player. Spaces need to be separate with _
-cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightarm/leftleg/rightleg/pos/torso] - Allows to access particular armor stand editor features
+cmi.command.armorstand.[updateitems/plate/size/visible/arms/gravity/glow/invulnerable/name/interactable/head/body/leftarm/rightarm/leftleg/rightleg/pos/torso/scale] - Allows to access particular armor stand editor features
+cmi.command.armorstand.renaming - Allows to rename armor stand in armor stand editor
 cmi.command.armorstand.movebypass - Allows to move armor stand where you cant build. Can help to bypass AntiCheat plugin restrictions
 cmi.command.armorstand.admin - Allows to save/load/deleted saved armor stands
 cmi.command.armorstand.template.[[templatename]] - Allows to deploy saved armor stands
@@ -245,7 +250,6 @@ cmi.command.pweather.[sun/rain/reset] - Allows to change personal weather to spe
 cmi.command.back.ondeath - Allows returning to death location by using back command after death
 cmi.command.back.worldbypass - Allows returning to blacklisted worlds
 cmi.command.flightcharge.admin - Allows to edit flight charges for players
-cmi.command.nameplate.admin - Allows to edit nameplates for players
 cmi.command.kick.bypass - Prevent player from being kicked from server
 cmi.command.ride.[entitytype] - Allow to ride entity
 cmi.command.sit.stairs - Allows to sit on stairs automatically
@@ -305,7 +309,7 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
 ```
 ## Command permissions:
 ```
-   cmi.command.actionbarmsg:
+  cmi.command.actionbarmsg:
     description: Sends action bar message to player
     default: op
   cmi.command.afk:
@@ -576,8 +580,12 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
   cmi.command.entityinfo:
     description: Check entity information
     default: op
+  cmi.command.entityinfo.others:
+    default: op
   cmi.command.entitynbt:
     description: Check entity nbt information
+    default: op
+  cmi.command.entitynbt.others:
     default: op
   cmi.command.exp:
     description: Set players exp. Use L to set levels
@@ -1056,6 +1064,8 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
   cmi.command.recipe:
     description: Check item recipe
     default: op
+  cmi.command.recipe.others:
+    default: op
   cmi.command.reload:
     description: Reloads plugins config and locale files
     default: op
@@ -1121,6 +1131,11 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
   cmi.command.sc:
     description: Starts sign copy process
     default: op
+  cmi.command.scale:
+    description: Set entities scale
+    default: op
+  cmi.command.scale.others:
+    default: op
   cmi.command.scan:
     description: Scans for items in current world
     default: op
@@ -1160,6 +1175,9 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
     description: Connect to bungeecord server
     default: op
   cmi.command.server.others:
+    default: op
+  cmi.command.serverlinks:
+    description: Set server links
     default: op
   cmi.command.serverlist:
     description: Show server list
@@ -1498,4 +1516,4 @@ cmi.customalias.[alias] - Allows to use particular alias if it requires permissi
     default: op
 ```
 ## Miscellaneous
-Created with CMI 9.7.0.2 for Minecraft 1.20.4.
+Created with CMI 9.7.6.11 for Minecraft 1.21.1.

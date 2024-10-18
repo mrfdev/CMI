@@ -21,7 +21,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi balance (playerName) - Check money balance
 /cmi baltop (playerName) - Check top money list
 /cmi ban [playerName] (reason) (-s) - Ban player
-/cmi banlist  - Ban list
+/cmi banlist (-s) - Ban list
 /cmi bbroadcast (!) [message] (-s:[serverName,serverName]) - Sends special message to all players on all servers
 /cmi blockcycling  - Cycle block states
 /cmi blockinfo  - Check block information
@@ -71,9 +71,9 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi enchant (playerName) [enchant] [level] (-o) (-onlyvalid) (-keeponlyvalid) (-inform) (-s) (-i:[itemName(:data)]) (clear) - Enchant items
 /cmi ender (playerName) (playerName) - Opens players ender chest
 /cmi endgateway  - Toggle end gateway beam
-/cmi entityinfo  - Check entity information
-/cmi entitynbt (-console) - Check entity nbt information
-/cmi exp [playerName] [add/set/take/clear] [amount][%rand/10-20%][1%[min-max]][playerName]] (-s) - Set players exp. Use L to set levels
+/cmi entityinfo (playername) - Check entity information
+/cmi entitynbt (playername) (-console) - Check entity nbt information
+/cmi exp [playerName] [add/set/take/clear] [amount][%rand/10-20%][1%[min-max][[playerName]]] (-s) - Set players exp. Use L to set levels
 /cmi ext (playerName) (-s) - Extinguish a player
 /cmi falldistance (playerName) (number) (-s) - Set players falldistance
 /cmi feed (playerName/all) (-s) - Feed player
@@ -83,7 +83,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi fly [playerName] (true/false) (-s) - Set players fly true or false
 /cmi flyc (playerName) (true/false) (-s) - Toggle flight charge mode
 /cmi flyspeed (playerName) [amount] (-s) - Set players fly speed from 0 to 10
-/cmi gamerule  - Manage gamerules
+/cmi gamerule (world) (gamerule) (value) - Manage gamerules
 /cmi generateworth  - Auto generate possible item worth values
 /cmi getbook [cTextName] (playerName) - Get book
 /cmi give (playerName) [itemdata/hand] (playerName) (-slot:[number]) (unstack) (-s) - Give item to player
@@ -147,19 +147,19 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi mail [send/clear/read/sendtemp] [playerName] (time) (message) - Send and receive mail
 /cmi mailall [send/clear/remove] [message] - Check or send mail to all players
 /cmi maintenance (true/false) (message) - Set server into maintenance mode
-/cmi maxhp set/add/take/clear [playerName] [amount] (-s) - Set a player's max hp
+/cmi maxhp [set/add/take/clear] [playerName] [amount] (-s) - Set a player's max hp
 /cmi maxplayers [amount] - Changes maximum amount of players who can connect to server
 /cmi me [message] - Sends special message to all players
 /cmi merchant [type] (playerName) (level) - Open merchant trade window
 /cmi migratedatabase  - Changes database system and migrates all data
 /cmi mirror (start/stop) - Starts block place/break mirroring.
 /cmi mobhead [mobType] (entryNumber) (playerName) (-s) - Get mob head
-/cmi money [pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]] (-s) - Manage money balance
+/cmi money [pay/give/take/set] [playerName/all/alloffline/allonline] [amount][%rand/1-1000%][1%[min-max][[playerName]]] (-s) - Manage money balance
 /cmi more (playerName) (-clone/[amount]) - Fills item stack to maximum amount
 /cmi msg [playerName] [message] - Sends message to player
 /cmi mute [playerName] (time) (-s) (reason) - Mute player
 /cmi mutechat (time) (-s) (reason) - Prevent public messages
-/cmi nameplate (playerName) (-pref:[some_prefix]) (-suf:[some_suffix]) (-c:[colorCode]) (reset) - Set players name plate prefix, suffix or its color
+/cmi nameplate (playerName) (-pref:[some_prefix]) (-suf:[some_suffix]) (-c:[colorCode]) (reset) (-s) - Set players name plate prefix, suffix or its color
 /cmi near (distance) - Check who is near you
 /cmi nick [newNickName/off] (playerName) (-s) - Changes player name
 /cmi notarget (playerName) (true/false) (-s) - Toggle no-mob target mode
@@ -194,7 +194,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi removehome (homeName) (playerName) - Remove home
 /cmi removeuser [uuid/duplicates] - Removes user and its data
 /cmi removewarp (warpName) - Remove warp
-/cmi repair [hand/armor/all] (playerName) - Repair items
+/cmi repair [hand/offhand/armor/all] (playerName) - Repair items
 /cmi repaircost (hand/armor/all) (playerName) - Check items repair cost
 /cmi replaceblock id [blockName:data/id:data] w [blockName:data/id:data] r [range in chunks/g] y [max height] - Replaces blocks in current world around you
 /cmi reply [message] - Reply to last message sender
@@ -207,9 +207,10 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi saveall (daysRange/-online) - Saves every player inventory
 /cmi saveditems [save/get/remove/list] (savedItemName) (-t:playerName) (-a:amount) (-c:category/all) (-s) - Save or manage saved items
 /cmi sc (playerName) - Starts sign copy process
+/cmi scale [set/add/take/clear] (playerName) [amount] (-s) - Set entities scale
 /cmi scan  - Scans for items in current world
 /cmi scavenge (playerName) - Recycle item and its enchantments
-/cmi schedule [scheduleName] - Trigger schedule
+/cmi schedule [scheduleName] (-updatetimer) - Trigger schedule
 /cmi se (SignLine) [Text] - Changes sign text line.
 /cmi search  - Search items/enchants/fly/maxhp/gm/oversize modes and other stuff from all users
 /cmi seen [playerName/uuid] - Check when player was last seen
@@ -217,6 +218,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi sell (all/blocks/hand/same/gui/material) (playerName) (-s) - Sell items from inventory
 /cmi sendall [serverName] - Send all online players to target server
 /cmi server [serverName] (playerName) (-f) - Connect to bungeecord server
+/cmi serverlinks  - Set server links
 /cmi serverlist  - Show server list
 /cmi servertime  - Show server time
 /cmi setenchantworth  - Change enchantment worth
@@ -234,7 +236,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi silentchest  - Toggles silent chest
 /cmi sit (playerName) (-persistent) (-s) (location) (on/off) - Sit in your position
 /cmi skin [skinName/off/update] (playerName) (-s) - Changes players skin
-/cmi smite (playerName/location) (-s) - Strike ground or player with lightning
+/cmi smite (playerName/location) (-safe) (-s) - Strike ground or player with lightning
 /cmi smithingtable (playerName) - Open smithing table
 /cmi solve [equation] - Solve equation
 /cmi sound [sound] (-p:[pitch]) (-v:[volume]) (playerName/-all/-l:playerName) (world;x;y;z) (-r:[radius]) (-s) - Play sound at target location
@@ -251,7 +253,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi sudo [playerName] (command/c:[text]) - Force another player to perform command
 /cmi suicide [playerName] (-s) - Kill your self
 /cmi switchplayerdata [sourcePlayerName/uuid] [targetPlayerName/uuid] - Switch all data from one player to another
-/cmi tablistupdate (playerName) - Force tablist update for all or specific player
+/cmi tablistupdate (playerName) (-s) - Force tablist update for all or specific player
 /cmi tempban [playerName] [timeValue] (reason) (-s) - TempBan player
 /cmi tempipban [ip/playerName] [time] (reason) (-s) - Temp ban ip
 /cmi tfly (playerName) (timeInSec) (-s) - Set temporary players fly mode until relog or until time ends
@@ -287,7 +289,7 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi usermeta [playerName] [add/remove/clear/list/increment] (key) (value) (-s) - Manage players meta data
 /cmi util (removeseats/testtarget) - Administration tools
 /cmi vanish (playerName/list) (on/off) (-s) - Vanish player
-/cmi vanishedit (playerName) - Edit vanish mode for player
+/cmi vanishedit (playerName) (action) (true/false) - Edit vanish mode for player
 /cmi version  - Show plugin version
 /cmi viewrange [range] (playerName) - Change view range
 /cmi voteedit (playerName) [add/set/take/clear] [amount] (-s) - Manage players votes
@@ -305,4 +307,4 @@ Documented list with more details, examples, etc. can be found on [zrips.net](ht
 /cmi worthlist (playerName) (-missing) - Check list of items with set sell prices
 ```
 ## Miscellaneous
-Created with CMI 9.7.0.2 for Minecraft 1.20.4
+Created with CMI 9.7.6.11 for Minecraft 1.21.1

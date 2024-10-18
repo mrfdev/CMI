@@ -33,6 +33,26 @@ firstJoinMessages: true
 # Applies for servers from 1.7.x and up
 cuffed: true
 #  
+# Handling of elevators
+# Applies for servers from 1.7.x and up
+elevator: true
+#  
+# Handling of night speedup when players sleep in beds
+# Applies for servers from 1.7.x and up
+nightSpeedup: true
+#  
+# Handling of damage control
+# Applies for servers from 1.7.x and up
+damageControl: true
+#  
+# Handling of portal creation
+# Applies for servers from 1.7.x and up
+portalCreation: true
+#  
+# Handling of portal creation
+# Applies for servers from 1.7.x and up
+teleportWith: true
+#  
 # Handling of messages appearing when item durability gets low
 # Applies for servers from 1.7.x and up
 durabilityLoss: true
@@ -90,7 +110,7 @@ tablist: true
 paintingEditor: true
 #  
 # Handles player vanish mode
-# Applies for servers from 1.19.x and up
+# Applies for servers from 1.21.x and up
 vanish: true
 #  
 # Handles money cheques
@@ -146,7 +166,7 @@ votifier: true
 playerCombat: true
 #  
 # Handles head drops system
-# Applies for servers from 1.7.x and up
+# Applies for servers from 1.16.x and up
 headDrop: true
 #  
 # Handles kit listener, mainly to give out new player kit
@@ -172,6 +192,10 @@ flightCharge: true
 # Handles shulker box as backpacks
 # Applies for servers from 1.11.x and up
 shulkerBackpack: true
+#  
+# Handles decorated pot content display
+# Applies for servers from 1.20.x and up
+decoratedpot: true
 #  
 # Handles player skins
 # Applies for servers from 1.8.x and up
@@ -237,6 +261,14 @@ anvilRenameColor: true
 # Applies for servers from 1.9.x and up
 launchPad: true
 #  
-# Handling of launch custom death messages
+# Handling of custom death messages
 # Applies for servers from 1.7.x and up
 deathMessages: true
+#  
+# Handling of server links
+# Applies for servers from 1.7.x and up
+serverLinks: true
+#  
+# Handling of hats
+# Applies for servers from 1.7.x and up
+hat: true
