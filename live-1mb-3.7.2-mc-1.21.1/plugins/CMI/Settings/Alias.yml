@@ -153,7 +153,7 @@ Alias:
   #  
   # /cmi charges $1-
   /charges:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi chat $1-
@@ -168,7 +168,7 @@ Alias:
   #  
   # /cmi checkaccount $1-
   /checkaccount:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi checkban $1-
@@ -178,7 +178,7 @@ Alias:
   #  
   # /cmi checkcommand $1-
   /checkcommand:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi checkexp $1-
@@ -188,7 +188,7 @@ Alias:
   #  
   # /cmi checkperm $1-
   /checkperm:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi cheque $1-
@@ -297,7 +297,7 @@ Alias:
     Enabled: true
     Tab: true
   /trash:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi distance $1-
@@ -687,12 +687,12 @@ Alias:
   #  
   # /cmi itemcmdata $1-
   /itemcmdata:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi itemframe $1-
   /itemframe:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi iteminfo $1-
@@ -895,7 +895,7 @@ Alias:
   #  
   # /cmi mutechat $1-
   /mutechat:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi nameplate $1-
@@ -1025,22 +1025,22 @@ Alias:
   #  
   # /cmi rankinfo $1-
   /rankinfo:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi ranklist $1-
   /ranklist:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi rankset $1-
   /rankset:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi rankup $1-
   /rankup:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi realname $1-
@@ -1073,10 +1073,10 @@ Alias:
   #  
   # /cmi removewarp $1-
   /removewarp:
-    Enabled: true
+    Enabled: false
     Tab: true
   /delwarp:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi repair $1-
@@ -1158,7 +1158,7 @@ Alias:
   #  
   # /cmi scale $1-
   /scale:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi scan $1-
@@ -1219,7 +1219,7 @@ Alias:
   #  
   # /cmi serverlinks $1-
   /serverlinks:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi serverlist $1-
@@ -1259,12 +1259,12 @@ Alias:
   #  
   # /cmi setspawn $1-
   /setspawn:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi setwarp $1-
   /setwarp:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi setworth $1-
@@ -1315,7 +1315,7 @@ Alias:
     Enabled: true
     Tab: true
   /thor:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi smithingtable $1-
@@ -1507,7 +1507,7 @@ Alias:
   #  
   # /cmi tpdeny $1-
   /tpdeny:
-    Enabled: false
+    Enabled: true
     Tab: true
   #  
   # /cmi tphere $1-
@@ -1552,7 +1552,7 @@ Alias:
   #  
   # /cmi unbreakable $1-
   /unbreakable:
-    Enabled: true
+    Enabled: false
     Tab: true
   #  
   # /cmi uncondense $1-

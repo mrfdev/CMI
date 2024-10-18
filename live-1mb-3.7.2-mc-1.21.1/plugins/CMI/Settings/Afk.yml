@@ -21,23 +21,26 @@ Afk:
   # Defines commands to be performed when player enters afk mode automatically while addling
   # Supports specialized commands
   AutoAfkCmds:
-  - cmi broadcast !{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(Automatically)
+  - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName]&r {#yellow}has automatically
+    become idle.</T><H>{#buttercup}Away From Keyboard \n {#orchid}Learn more: /afkinfo</H><C>afkinfo</C>'
   # Defines commands to be performed when player enters /cmi afk
   # Supports specialized commands
   ManualAfkCmds:
   - delay! 0.5
-  - cmi broadcast !{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle {#geyser}(%cmi_user_afk_msg%)
+  - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName]&r {#yellow}has become idle.
+    {#geyser}(%cmi_user_afk_msg%)</T><H>{#buttercup}Away From Keyboard \n {#orchid}Learn
+    more: /afkinfo</H><C>afkinfo</C>'
   LeaveCmds:
     # Defines commands to be performed when player leaves afk mode after he entered it manually
     Manual:
     - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName] {#yellow}has returned
-      from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#geyser}Has been away for:
-      %cmi_user_afk_for%</H>'
+      from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#buttercup}Has been away for:
+      \n {#orchid}%cmi_user_afk_for%</H><C>afkinfo</C>'
     # Defines commands to be performed when player leaves afk mode after he entered it automatically
     Auto:
     - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName] {#yellow}has returned
-      from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#geyser}Has been away for:
-      %cmi_user_afk_for%</H>'
+      from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#buttercup}Has been away for:
+      \n {#orchid}%cmi_user_afk_for%</H><C>afkinfo</C>'
   # Defines how long to wait after player stops moving to kick player
   # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
   # This can be used not only to kick but to perform repeating action every x seconds if needed
