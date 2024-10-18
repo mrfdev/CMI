@@ -1,7 +1,0 @@
-#
-
-CustomAlias:
-  _snap:
-    Cmds:
-    - cmi point heart
-    Perm: true

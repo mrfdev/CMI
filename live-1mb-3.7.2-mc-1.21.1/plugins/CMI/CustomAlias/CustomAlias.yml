@@ -947,3 +947,9 @@ CustomAlias:
   bs:
     Cmds:
     - genesis open $1 $2
+  afkinfo:
+    Cmds:
+    - asConsole! cmi msg [playerName] !AFK stands for Away From Keyboard, to learn
+      more about our AFK features, consequences, and afk-rules, check out this thread
+      on the forums.
+    - asConsole! cmi msg [playerName] ! https://omgboards.com/threads/263947/
