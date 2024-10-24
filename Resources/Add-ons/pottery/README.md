@@ -14,7 +14,7 @@ The purpose of this little add-on is to demonstrate how some of the CMI features
 
 Okay, **let's get started**. Thank you for being interested in this little add-on.
 
-Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.6.x and CMILib 1.4.x in mind, for Minecraft 1.20.x
+Make sure CMI and CMILib are on the latest versions - this is made with CMI 9.7.6.x and CMILib 1.5.x in mind, for Minecraft 1.21+ only.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Download Instructions
 
@@ -40,4 +40,4 @@ You're more than welcome to offer fixes, contributions, adjustments, suggestions
 
 ## Misc.
 
-- Last updated on October 16th, 2023 | Version 1.0.0 build 004 (first public beta) by Floris
+- Last updated on October 16th, 2024 | Version: 1.1.0, build 006, October 16th, 2024 (public release) by Floris
