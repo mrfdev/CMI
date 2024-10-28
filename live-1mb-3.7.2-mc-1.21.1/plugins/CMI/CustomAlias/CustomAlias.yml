@@ -158,10 +158,6 @@ CustomAlias:
   brb:
     Cmds:
     - asPlayer! afk $1-
-  trash:
-    Cmds:
-    - asConsole! cmi dispose [playerName]
-    Tab: false
   chests:
     Cmds:
     - asConsole! cmi msg [playerName] !&r\n{#orient}•--{#cerulean}❖ 1MB Item Protection
@@ -243,7 +239,7 @@ CustomAlias:
     - cmi ctext placeholders
   oneblock menu:
     Cmds:
-    - asConsole! gui openfor [playerName] oneblock
+    - asConsole! genesis open oneblock [playerName]
   respawn:
     Cmds:
     - asConsole! perm:cmi.autorespawn! asConsole! cmi msg [playerName] !&3 1MB Death
@@ -953,3 +949,6 @@ CustomAlias:
       more about our AFK features, consequences, and afk-rules, check out this thread
       on the forums.
     - asConsole! cmi msg [playerName] ! https://omgboards.com/threads/263947/
+  buy:
+    Cmds:
+    - asPlayer! shop
