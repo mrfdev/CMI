@@ -75,7 +75,7 @@ Turn on and display a custom join and leave messages to players.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> CMI Chat + Custom Join/Leave messages
 
-- Start using CMI as Chat Manager, if you were using something else.
+- Start using CMI as Chat Manager, if you use something else.
  * https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat.md
 
 - Update `config.yml` (see below)
@@ -141,6 +141,19 @@ As you can see you can use certain variables, CMI's hex colors, and set the text
 
 Of course, if you use another language you will have to adjust that file. They are also in the `translations/` directory.
 
+### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji>  Modules.yml
+In `~/plugins/CMI/Settings/Modules.yml`, make sure these are set to `true`.
+```yaml
+#  
+# Login, logout and death messages
+# Applies for servers from 1.7.x and up
+customMessages: true
+#  
+# First join messages
+# Applies for servers from 1.7.x and up
+firstJoinMessages: true
+```
+
 ### <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Hiding certain Groups/Players
 
 If you wish to hide the join/leave messages for a certain group or user, you can use these permissions:
@@ -172,4 +185,5 @@ In the `~/plugins/CMI/Translations/` folder, the `locale_EN.yml` file has the fo
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
 ```
 
+When done, it doesn't hurt to restart your (Paper) server.
 ---
