@@ -1,8 +1,8 @@
-# 1MoreBlock.com /emotes thing, for CMI 9.7.6.x for 1MB -live- 3.7.2, for Minecraft 1.21.1
+# 1MoreBlock.com /emotes thing, for CMI 9.7.7.x for 1MB -live- 3.7.4, for Minecraft 1.21.1
 # (c) Floris Fiedeldij Dop, but feel free to use this on your server, clone & pr for improvements, suggestions
-# Version 0.2.4 - dev - Internal release made by mrfloris
+# Version 0.2.5 - dev - Internal release made by mrfloris
 # Credits / Contributions:
-# /hug, /cheer, /shrug, /ghost, and /explode are done, made by yakirarage
+# /hug, /cheer, /shrug, /ghost, /nomnom, and /explode are done, made by yakirarage
 # News: Next will be /nomnom probably
 # Installation: drop in ~/plugins/CMI/CustomAlias/ and start the server.
 
@@ -11,7 +11,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is angry</T>
+      [displayName] {#orchid}is angry</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -19,7 +19,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} applauds</T>
+      [displayName] {#orchid}applauds</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -27,7 +27,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} feels awkward</T>
+      [displayName] {#orchid}feels awkward</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -35,7 +35,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is barking</T>
+      [displayName] {#orchid}is barking</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -43,7 +43,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is begging</T>
+      [displayName] {#orchid}is begging</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -51,7 +51,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} takes a bite</T>
+      [displayName] {#orchid}takes a bite</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -59,7 +59,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is blushing</T>
+      [displayName] {#orchid}is blushing</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -67,7 +67,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is bored</T>
+      [displayName] {#orchid}is bored</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -75,7 +75,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is bowing</T>
+      [displayName] {#orchid}is bowing</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -83,7 +83,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is cheeky</T>
+      [displayName] {#orchid}is cheeky</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -91,7 +91,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is clapping</T>
+      [displayName] {#orchid}is clapping</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -99,7 +99,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is cool</T>
+      [displayName] {#orchid}is cool</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -107,7 +107,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} thinks that is cringe</T>
+      [displayName] {#orchid}thinks that is cringe</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -115,7 +115,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is crying</T>
+      [displayName] {#orchid}is crying</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -123,7 +123,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes DAB!</T>
+      [displayName] {#orchid}goes DAB!</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -131,7 +131,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is dancing</T>
+      [displayName] {#orchid}is dancing</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -139,7 +139,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} says dealwithit</T>
+      [displayName] {#orchid}says dealwithit</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -147,7 +147,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is dying</T>
+      [displayName] {#orchid}is dying</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -155,7 +155,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is feeling dizzy</T>
+      [displayName] {#orchid}is feeling dizzy</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -163,7 +163,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is facepalm</T>
+      [displayName] {#orchid}is facepalm</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -171,7 +171,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes fliptable</T>
+      [displayName] {#orchid}goes fliptable</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -179,7 +179,15 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is flirting</T>
+      [displayName] {#orchid}is flirting</T>
+    Perm: true
+    CustomTabs:
+    - '[playername]'
+  freeze:
+    Cmds:
+    - gcooldown:60#?!
+    - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
+      [displayName] {#orchid}is freezing</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -187,7 +195,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is frowning</T>
+      [displayName] {#orchid}is frowning</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -195,7 +203,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is giggling</T>
+      [displayName] {#orchid}is giggling</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -203,7 +211,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is acting goofy</T>
+      [displayName] {#orchid}is acting goofy</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -211,7 +219,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is greeting</T>
+      [displayName] {#orchid}is greeting</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -219,7 +227,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes grin!</T>
+      [displayName] {#orchid}goes grin!</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -227,7 +235,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} says growl</T>
+      [displayName] {#orchid}says growl</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -235,7 +243,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is happy</T>
+      [displayName] {#orchid}is happy</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -243,7 +251,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is hating</T>
+      [displayName] {#orchid}is hating</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -251,7 +259,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is highfive</T>
+      [displayName] {#orchid}is highfive</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -259,7 +267,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is hitting</T>
+      [displayName] {#orchid}is hitting</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -267,7 +275,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is impressed</T>
+      [displayName] {#orchid}is impressed</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -275,7 +283,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is insulting the world</T>
+      [displayName] {#orchid}is insulting the world</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -283,7 +291,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is kissing</T>
+      [displayName] {#orchid}is kissing</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -291,7 +299,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is laughing</T>
+      [displayName] {#orchid}is laughing</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -299,7 +307,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is in love</T>
+      [displayName] {#orchid}is in love</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -307,7 +315,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is lovestruck</T>
+      [displayName] {#orchid}is lovestruck</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -315,7 +323,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is lovey</T>
+      [displayName] {#orchid}is lovey</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -323,7 +331,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is mooing like a cow</T>
+      [displayName] {#orchid}is mooing like a cow</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -331,7 +339,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is showing their moustache</T>
+      [displayName] {#orchid}is showing their moustache</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -339,7 +347,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} says omg</T>
+      [displayName] {#orchid}says omg</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -347,7 +355,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is poking with a stick</T>
+      [displayName] {#orchid}is poking with a stick</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -363,7 +371,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes punch!!</T>
+      [displayName] {#orchid}goes punch!!</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -371,7 +379,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is quacking</T>
+      [displayName] {#orchid}is quacking</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -379,7 +387,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is raging at that</T>
+      [displayName] {#orchid}is raging at that</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -395,7 +403,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is relaxing all cool</T>
+      [displayName] {#orchid}is relaxing all cool</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -403,7 +411,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is resting in pieces</T>
+      [displayName] {#orchid}is resting in pieces</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -411,7 +419,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is sad</T>
+      [displayName] {#orchid}is sad</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -419,7 +427,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is screaming loudly</T>
+      [displayName] {#orchid}is screaming loudly</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -427,7 +435,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is shocked</T>
+      [displayName] {#orchid}is shocked</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -435,7 +443,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is sick</T>
+      [displayName] {#orchid}is sick</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -443,7 +451,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is sick</T>
+      [displayName] {#orchid}is sick</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -451,7 +459,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is slapping</T>
+      [displayName] {#orchid}is slapping</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -459,7 +467,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is sleeping</T>
+      [displayName] {#orchid}is sleeping</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -467,7 +475,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is sleepy</T>
+      [displayName] {#orchid}is sleepy</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -475,7 +483,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes smack!</T>
+      [displayName] {#orchid}goes smack!</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -483,7 +491,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is smiling</T>
+      [displayName] {#orchid}is smiling</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -491,7 +499,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is smirking</T>
+      [displayName] {#orchid}is smirking</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -499,7 +507,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is spicy</T>
+      [displayName] {#orchid}is spicy</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -507,7 +515,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is a star! (look at me)</T>
+      [displayName] {#orchid}is a star! (look at me)</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -515,7 +523,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is getting a tan on the beach</T>
+      [displayName] {#orchid}is getting a tan on the beach</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -523,7 +531,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is getting a sunburn</T>
+      [displayName] {#orchid}is getting a sunburn</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -531,7 +539,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is surprised</T>
+      [displayName] {#orchid}is surprised</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -539,7 +547,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is surprised</T>
+      [displayName] {#orchid}is surprised</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -547,7 +555,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is taking the L (pout)</T>
+      [displayName] {#orchid}is taking the L (pout)</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -555,7 +563,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is tanning at the beach</T>
+      [displayName] {#orchid}is tanning at the beach</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -563,7 +571,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is thankful</T>
+      [displayName] {#orchid}is thankful</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -571,7 +579,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is thinking</T>
+      [displayName] {#orchid}is thinking</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -579,7 +587,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes thumbsdown</T>
+      [displayName] {#orchid}goes thumbsdown</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -587,7 +595,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} goes thumbsup</T>
+      [displayName] {#orchid}goes thumbsup</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -603,7 +611,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is too cool for this</T>
+      [displayName] {#orchid}is too cool for this</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -611,7 +619,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} says welcome!</T>
+      [displayName] {#orchid}says welcome!</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -619,7 +627,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} is winking</T>
+      [displayName] {#orchid}is winking</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -627,7 +635,7 @@ CustomAlias:
     Cmds:
     - gcooldown:60#?!
     - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} takes that and goes YYEETTT!</T>
+      [displayName] {#orchid}takes that and goes YYEETTT!</T>
     Perm: true
     CustomTabs:
     - '[playername]'
@@ -648,12 +656,22 @@ CustomAlias:
     Tab: false
   nomnom:
     Cmds:
-    - gcooldown:60#?!
-    - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid} eats what they are holding and goes NOMNOM!</T>
+    - statement:nullcheck! check:$1==null~!
+    - 'if:nullcheck! asConsole! cmi ctellraw [playerName] <T>&ePlease use the proper
+      command usage (required). \nCommand usage: &6/$0 <type></T>'
+    - gcooldown:2#?!
+    - check:$1==breakfast! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      {#royalblue} [displayName] {#orchid} eats what they are holding and goes NOMNOM!</T>
+    - check:$1==lunch! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      {#royalblue}[displayName] {#orchid} eats what they are holding and goes NOMNOM!</T>
+    - check:$1==dinner! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      {#royalblue}[displayName] {#orchid} eats what they are holding and goes NOMNOM!</T>
+    - check:$1==snacks! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      {#royalblue}[displayName] {#orchid}Grabs some snacks! 🍨 Maybe they will share?</T>
+    - if:nullcheck@! asConsole! cmi feed [playerName]
     Perm: true
     CustomTabs:
-    - '[playername]'
+    - dinner,lunch,breakfast,snacks
   shrug:
     Cmds:
     - gcooldown:60#?!
