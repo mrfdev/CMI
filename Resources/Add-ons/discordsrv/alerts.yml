@@ -552,3 +552,39 @@ Alerts:
         ImageUrl: "https://crafatar.com/avatars/${#event.getUser().getPlayer().getUniqueId()}?overlay"
         Name: "/nick"
       Description: "Player **`${#event.getUser().getPlayer().getName()}`** has changed their name to: `${#event.getNickName()}`"
+
+################[Jail / Unjail ]################  
+# Credit goes to hyper_toxic @ dynamiccraft
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: 'punishments'
+    Conditions:
+      - '#player.hasPermission("cmi.command.jail")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#args.size() > 1)"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"jail\"))"
+    Embed:
+      Color: "#ff0000"
+      Title:
+         Text: "Someone has been Jailed"
+      #Description: "`{username}` has jail `${#args.get(1)}`\n```\n/${#command}```"
+      Description: "**Punishment Type**: jailed \n **Player**: `${#args.get(1)}` \n **staff**:`{username}` \n **Duration**: `${#args.get(2)}` \n **Jail-No**: `${#args.get(4)}` \n **Reason**: `${#args.get(6)}` `${#args.get(7)}` \n\n If You Want To Get Unbanned [Click Here](https://discord.gg/NtdmNZGsuB) And Create A Ticket For Your Unjail Request."
+      Footer:
+        Text: "Powered by Dynamic Hammer pvt.ltd | {time}"
+        IconUrl: "https://cdn.discordapp.com/attachments/1133116730386944089/1242746126088802304/dcbd.gif?ex=664ef505&is=664da385&hm=faddf273dd7ecc94f0bf9a3b73088d6f5853cc0df7aea8264bffb5c016f21523&"
+        #unjail 
+  - Trigger: PlayerCommandPreprocessEvent 
+    Channel: 'punishments'
+    Conditions:
+      - '#player.hasPermission("cmi.command.unjail")'
+      - "(#command.split(\"\\s+|$\")[0].equals(\"cmi\"))"
+      - "(#args.size() > 1)"
+      - "(#command.split(\"\\s+|$\")[1].equals(\"unjail\"))"
+    Embed:
+      Color: "#ff0000"
+      Title:
+         Text: "Someone has been unJailed"
+      #Description: "`{username}` has jail `${#args.get(1)}`\n```\n/${#command}```"
+      Description: "**Punishment Type**: unjailed \n **Player**: `${#args.get(1)}` \n **staff**:`{username}` \n\n If You Want To Get Unbanned [Click Here](https://discord.gg/NtdmNZGsuB) And Create A Ticket For Your Unjail Request."
+      Footer:
+        Text: "Powered by Dynamic Hammer pvt.ltd | {time}"
+        IconUrl: "https://cdn.discordapp.com/attachments/1133116730386944089/1242746126088802304/dcbd.gif?ex=664ef505&is=664da385&hm=faddf273dd7ecc94f0bf9a3b73088d6f5853cc0df7aea8264bffb5c016f21523&"

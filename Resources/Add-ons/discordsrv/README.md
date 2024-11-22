@@ -2,7 +2,7 @@
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> DiscordSRV `alerts.yml` collection
 
-This is a `DiscordSRV alerts.yml` collection made by @mrfloris, for CMI 9.6.x.x / CMILib 1.4.x.x / DisocrdSRV 1.26.x, and Minecraft 1.20.x ~ or newer
+This is a `DiscordSRV alerts.yml` collection made by @mrfloris, for CMI 9.7.x.x / CMILib 1.5.x.x / DisocrdSRV 1.29.x, and Minecraft 1.21.x ~ or newer
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> Purpose
 
@@ -12,9 +12,9 @@ It's so nice to have certain server events from Minecraft to show up on the Disc
 
 Okay, **let's get started**. Thank you for being interested in this little add-on.
 
-- You need the (premium) CMI plugin for most of these alerts. The focus here is CMI version 9.6.x.x and CMILib 1.4.x.x. (or newer)
+- You need the (premium) CMI plugin for most of these alerts. The focus here is CMI version 9.7.x.x and CMILib 1.5.x.x. (or newer)
 
-- You need the [DiscordSRV](https://github.com/DiscordSRV/DiscordSRV) plugin, `alerts.yml` is part of DiscordSRV. The focus here is DisordSRV version 1.26.x. (or newer)
+- You need the [DiscordSRV](https://github.com/DiscordSRV/DiscordSRV) plugin, `alerts.yml` is part of DiscordSRV. The focus here is DisordSRV version 1.29.x. (or newer)
 
 - Please note that the 'chunks' of alerts in the `alerts.yml` file have empty lines in between them. Blatantly copy/pasting can yield unexpected results. I suggest to take what you actually need, and append it to your existing file.
 
@@ -55,4 +55,4 @@ TODO, improve the readme.md file for obvious reasons.
 
 -  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
 
-- Last updated on August 10th, 2023 | Version 0.2.8, build 026, by Floris & contributors
+- Last updated on November 23rd, 2024 | Version 0.2.9, build 027, by Floris & contributors
