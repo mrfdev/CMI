@@ -44,6 +44,7 @@ You're more than welcome to offer fixes, contributions, adjustments, and suggest
 - Contributions by `@Zrips#9691` who's been showing me where to find what in the CMI API and CMI Source code, thank you for your awesome plugins.
 - Contributions by `@The456gamer#3999` who's on my 1MB team and has helped bug-fix my alerts, thank you!
 - Contributions by `@BoredManPlays#0001` manually merged with alerts.yml, thank you!
+- Contributions by `@yakirarage` for helping with the playerdeathevent alerts.yml
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> TODO
 
@@ -55,4 +56,4 @@ TODO, improve the readme.md file for obvious reasons.
 
 -  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
 
-- Last updated on November 23rd, 2024 | Version 0.2.9, build 027, by Floris & contributors
+- Last updated on December 5th, 2024 | Version 0.2.10, build 028, by Floris & contributors

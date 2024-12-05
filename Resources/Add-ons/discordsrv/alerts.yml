@@ -1,6 +1,6 @@
-## DiscordSRV 1.26.2 alerts.yml collection file by mrfloris (with contributions from others).
+## DiscordSRV 1.29.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.8, build 027
+## Version 0.2.9, build 028
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 
@@ -588,3 +588,14 @@ Alerts:
       Footer:
         Text: "Powered by Dynamic Hammer pvt.ltd | {time}"
         IconUrl: "https://cdn.discordapp.com/attachments/1133116730386944089/1242746126088802304/dcbd.gif?ex=664ef505&is=664da385&hm=faddf273dd7ecc94f0bf9a3b73088d6f5853cc0df7aea8264bffb5c016f21523&"
+
+##### player death event #####
+# Credit goes to mrfloris and yakirarage
+# note, uses cmi placeholders
+  - Trigger: PlayerDeathEvent
+    Channel: spydog
+    Embed:
+     Color: "#990000"
+     ThumbnailUrl: "https://cravatar.eu/head/${#event.getEntity().getName()}/128.png"
+     Description: "## :skull_crossbones:💥 %cmi_user_cleannickname% died \n\nItems have dropped on the floor! who gets to them first?\n**Location:** `%cmi_player_world%` **x:** `%cmi_player_x%` **y:** `%cmi_player_y%` **z:** `%cmi_player_z%` :cloud_lightning: \n **Reason**: `${getDeathMessage()}` \n **Total deaths**: `%statistic_deaths%`"
+     Timestamp: true
