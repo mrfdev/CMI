@@ -1,0 +1,110 @@
+ChatFilter:
+  Enabled: false
+  # Priority of chat filter listener
+  # Changed priority will only take effect on full server restart
+  # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+  # Default: LOW
+  Priority: LOW
+  Deny:
+    ipBlock:
+      # If not set to true, this filter will not be used
+      Enabled: true
+      # Defines filter group and defines required permission node to bypass this filter: cmi.chatfilter.bypass.[groupName]
+      Group: Advertising
+      # When set to true, each time player triggers filter, console will receive information about who triggered it, which filter and with what message
+      InformConsole: true
+      # Regex expression to filter by. How to use regex https://regexone.com/
+      Regex:
+      - '[a-zA-Z0-9\-\.]+\s?(\.|dot|\(dot\)|-|;|:|,|_|\/)\s?([a-zA-Z]{2}|aero|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel)\b'
+      - \b[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}(\.|dot|\(dot\)|-|;|:|,|(\W|\d|_)*\s)+[0-9]{1,3}\b
+      # With what we need to replace word, if not defined found expression will not be changed
+      ReplaceWith: ''
+      # possible: none, others, all
+      # Where 'none' means everyone will receive this message
+      # 'others' means that sender will get message but not other players, this is usefull to prevent advertising and silently block it
+      # 'all' means that no one will receive sent message
+      BlockType: others
+      # When enabled rule will be applied to private messages
+      includePrivateMessages: true
+      # Players with cmi.chatfilter.inform permission will receive defined message when rule is broken
+      msgToStaff: '&4!&6[playerName] &4advertising with: &r[message]'
+      # List of commands to perform when rule is broken. Use [senderName] to include message sender name. Supports global variables same as locale file
+      # Use [message] to include original players message
+      # Use [updatedmessage] to include new modified message
+      Commands: []
+    swearing1:
+      Enabled: true
+      Group: Swearing
+      InformConsole: true
+      Regex:
+      - \bass\b|\basshole
+      ReplaceWith: dude
+      BlockType: none
+      includePrivateMessages: true
+      msgToStaff: '&4!&6[playerName] &4swearing'
+      Commands:
+      - msg [senderName] &eDon't swear!
+    swearing2:
+      Enabled: true
+      Group: Swearing
+      InformConsole: true
+      Regex:
+      - \b(?i)(f+(\W|_)*(u?)+(\W|_)*(c?)+(\W|_)*k+)
+      ReplaceWith: not good
+      BlockType: none
+      includePrivateMessages: true
+      msgToStaff: '&4!&6[playerName] &4swearing'
+      Commands:
+      - msg [senderName] &eDon't swear!
+  # List of regex filter to exlude from block list. Usefull if you want to block all ip/host address but want to allow usage of your own server.
+  WhiteList:
+  - \bgoogle.\s?([a-zA-Z]{2,4})\b
+  - \bspigotmc.\s?([a-zA-Z]{2,4})\b
+  DuplicatedMessagePrevention:
+    # When set to true, plugin will prevent spaming of same or similar messages in short time range. Can be bypased with cmi.chatfilter.spambypass permission
+    Use: false
+    # Priority of chat spam listener
+    # Changed priority will only take effect on full server restart
+    # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+    # Default: LOW
+    Priority: LOW
+    # How much in percentage message is counted as same
+    Percentage: 80
+    # Defines how often in seconds you can send same/similar message
+    Interval: 5
+    # How many commands you can repeat before stopped for cooldown
+    MinAmount: 2
+  Caps:
+    # When nebaled we will try to prevent chat messages with multiple capitalized letters by defined criteria
+    # Can be bypassed with cmi.chatfilter.capbypass permission node
+    Filter: true
+    # Priority of chat capitalization listener
+    # Changed priority will only take effect on full server restart
+    # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
+    # Default: LOW
+    Priority: MONITOR
+    # Defines amount of letters we can ignore
+    # For example ':DDD' would be made of 2 letters with 3 capitalized letters which would make it 75% capitalized
+    IgnoreUnder: 6
+    # Amount in percentage of capitalized letters we should not cross over.
+    # In example 'GOOD thing' would be 4 capitalized and 5 not, spaces gets ignored, which makes it 44% capitalized and passes check
+    Percentage: 50
+    # When capitalized text is detected, should we lower case text
+    LowerCase: true
+    # Should we cancel chat event if we detect too many caps
+    CancelEvent: false
+    # List of commands you want to perform when player uses too many caps
+    Commands:
+    - asConsole! cmi titlemsg [playerName] &cToo many caps! -keep:20
+    # List of messages, excluding color codes, player can use even if it 100% capitalized
+    WhiteList:
+    - AFAIK
+    - AFK
+    - BRB
+    - IMHO
+    - OMG
+    - ROFL
+    - ROFLMAO
+    - LQTM
+    - LSMH
+    - LMHO
