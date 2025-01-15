@@ -1,8 +1,9 @@
 #!/bin/bash
+
 # @Filename: 1MB-CMI-Playtime-Report.sh
-# @Version: 0.0.1, build 001 for CMI Playtime Report
+# @Version: 0.0.2, build 003 for CMI Playtime Report
 # @Release: January 15th, 2025
-# @Description: Generates a report of the top 10 player playtimes from a CMI SQLite database, including average playtime and statistics.
+# @Description: Generates a report of the top 10 player playtimes from a CMI SQLite database, including average playtime and statistics. Long durations are expressed in years, months, days, hours, minutes, and seconds.
 # @Contact: I am @floris on Twitter, and mrfloris in Minecraft.
 # @Discord: @mrfloris on https://discord.gg/floris
 # @Install: chmod +x 1MB-CMI-Playtime-Report.sh
@@ -35,18 +36,32 @@ if [ ! -f "$DB_FILE" ]; then
   exit 1
 fi
 
-# Function to convert seconds into human-readable format
+# Function to convert seconds into human-readable format, including years and months
 convert_seconds() {
     local T=$1
-    local D=$((T / 86400))
-    local H=$(((T % 86400) / 3600))
-    local M=$(((T % 3600) / 60))
-    local S=$((T % 60))
+    # Calculate total days and remaining seconds in the day
+    local total_days=$((T / 86400))
+    local rem_secs=$((T % 86400))
+
+    # Approximate years, months, and days
+    local Y=$(( total_days / 365 ))
+    local rdays=$(( total_days % 365 ))
+    local Mon=$(( rdays / 30 ))
+    local D=$(( rdays % 30 ))
+
+    # Hours, minutes, and seconds from remaining seconds
+    local H=$(( rem_secs / 3600 ))
+    local rem_after_hours=$(( rem_secs % 3600 ))
+    local Min=$(( rem_after_hours / 60 ))
+    local S=$(( rem_after_hours % 60 ))
+
     local result=""
 
+    (( Y > 0 )) && result+="${Y} years "
+    (( Mon > 0 )) && result+="${Mon} months "
     (( D > 0 )) && result+="${D} days "
     (( H > 0 )) && result+="${H} hours "
-    (( M > 0 )) && result+="${M} minutes "
+    (( Min > 0 )) && result+="${Min} minutes "
     (( S > 0 )) && result+="${S} seconds"
 
     # Trim trailing space if any
@@ -93,3 +108,5 @@ for line in $top_players; do
   printf "%-20s : %s\n" "$name" "$human_time"
 done
 unset IFS
+
+#EOF Copyright (c) 1977-2025 - Floris Fiedeldij Dop - https://scripts.1moreblock.com
