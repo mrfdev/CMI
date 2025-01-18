@@ -116,7 +116,7 @@ Once you're using CMI as Chat Manager, make sure you stop using other chat manag
 - [set up cmi chat group chat format](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chat-format.md)
 - [chat filter](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chatfilter.md)
 - [chat rooms](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-chatrooms.md)
-- [chat bungee](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-bungee.md)
+- [chat bungee](https://faq.cmi.support/bungee)
 - [chat join/leave](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-custom-joinleave.md)
 - [chat prefixes](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-luckperms-prefix.md)
 - [chat more /msg](https://github.com/mrfdev/CMI/blob/master/Resources/FAQ/cmi-more-msg-commands.md)
