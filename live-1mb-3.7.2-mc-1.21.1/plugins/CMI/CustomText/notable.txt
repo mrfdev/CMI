@@ -1,27 +1,32 @@
-<Hidden><AutoPage><NoAutoAlias><NoReqPermission>
-{#cerulean} •&l&m                                                &r{#Cerulean}•
-&lNotable members group&r
+<AutoPage><Hidden><NoAutoAlias><NoReqPermission>
+{#orient}•------{#cerulean}❖ Notable members group ❖{#orient}------•
+{#Feijoa}&lNotable members group&r
 
-Team groups: helpers, moderators, admins. And of course, the server owner.
+{#Feijoa}Team groups: helpers, moderators, admins. And of course, the server owner.
 
-'Notable members' are a distinct subgroup (they do not inherit permissions) and are not team members.
+{#Feijoa}'Notable members' are a distinct subgroup (they do not inherit permissions) and are not team members.
 
-Notable members are expected to maintain a positive attitude and be proactive in assisting others to find the resources or information they need. This helps alleviate the workload on the team members who may already be engaged in playing, building for the server, or other tasks.
+{#Feijoa}Notable members are expected to maintain a positive attitude and be proactive in assisting others to find the resources or information they need.
+{#Feijoa}This helps alleviate the workload on the team members who may already be engaged in playing, building for the server, or other tasks.
 <NextPage>
-While notable members are not official team members, their opinions carry weight. If they communicate server rules, others are likely to adhere to them. This group ensures that information shared is seen as informative/factual, rather than speculative.
+{#Feijoa}While notable members are not official team members, their opinions carry weight.
+{#Feijoa}If they communicate server rules, others are likely to adhere to them. This group ensures that information shared is seen as informative/factual, rather than speculative.
 
-In-game, there will be a /chat group channel called "Notable." Those on the team who have chat spy enabled can monitor conversations there, keeping an eye out for questions or private messages from notable members.
+{#Feijoa}In-game, there will be a /chat group channel called "Notable." Those on the team who have chat spy enabled can monitor conversations there, keeping an eye out for questions or private messages from notable members.
 
-Notable members can not use cmd spy, chat spy, sign spy, nor can they see the staffmsg conversations. They will also not have access to private tickets, or any team channels.
+{#Feijoa}Notable members can not use cmd spy, chat spy, sign spy, nor can they see the staffmsg conversations. They will also not have access to private tickets, or any team channels.
 <NextPage>
-Additionally, there will be a dedicated Discord channel/forum where they can post concerns or questions, and access threads with relevant information.
+{#Feijoa}Additionally, there will be a dedicated Discord channel/forum where they can post concerns or questions, and access threads with relevant information.
 
-Notable members are not required to be 18+ or have good English proficiency. Their gameplay style is their own, and expectations such as encouraging player retention do not apply to them. They are not mandated to use the /chat channel notable, nor do they need to maintain an active Discord account.
+{#Feijoa}Notable members are not required to be 18+ or have good English proficiency. Their gameplay style is their own, and expectations such as encouraging player retention do not apply to them.
+{#Feijoa} They are not mandated to use the /chat channel notable, nor do they need to maintain an active Discord account.
 
-While they can remind others of server rules or request compliance, they do not have enforcement authority. They can report issues to the team/staff, who will take appropriate action. This system is designed to facilitate early detection and swift escalation of issues to the team.
+{#Feijoa}While they can remind others of server rules or request compliance, they do not have enforcement authority.
+{#Feijoa}They can report issues to the team/staff, who will take appropriate action. This system is designed to facilitate early detection and swift escalation of issues to the team.
 <NextPage>
-Over time, notable members who consistently demonstrate their value and trustworthiness may be invited to join our formal team structure when we're considering adjustments.
+{#Feijoa}Over time, notable members who consistently demonstrate their value and trustworthiness may be invited to join our formal team structure when we're considering adjustments.
 
-Players (Members+) can progress from notable members to helpers, helpers to mods, and mods to admins.
+{#Feijoa}Players (Members+) can progress from notable members to helpers, helpers to mods, and mods to admins.
 
-We value the unique strengths of each individual, and if guidance is needed, don't hesitate to ask. I want to express my sincere appreciation for everyone, and I am particularly impressed by the the kindness of everybody on the server answering questions of others and sharing a smile. 
+{#Feijoa}We value the unique strengths of each individual, and if guidance is needed, don't hesitate to ask.
+{#Feijoa}I want to express my sincere appreciation for everyone, and I am particularly impressed by the the kindness of everybody on the server answering questions of others and sharing a smile.

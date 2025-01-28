@@ -1,9 +1,8 @@
 <AutoPage><Hidden><NoAutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
-{#orange} -&l 1MoreBlock 2024 Events
-{#orange} -{#gold} Next event: Probably Halloween 2024
-{#orange} -{#gold} Starts: October 30th (late), Ends: November 1st (early)
-{#orange} -{#gold} Command:&l /halloween
+{#orange} -&l 1MoreBlock 2025 Events
+{#orange} -{#gold} Next event: Probably Valentines Day 2025
+{#orange} -{#gold} Date: 14th of February 2025
 {#orange} -{#gold} 
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 

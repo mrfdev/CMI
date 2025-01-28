@@ -1,0 +1,18 @@
+<AutoPage>
+Your builds and items are safe %cmi_user_name%, we are a no-grief server. 
+
+Players are not allowed to take and break things when they did not make it. We're also quite strict on this! 
+<NextPage>
+You don't have to worry, because we log every player interaction, from adding or removing items from containers, to placing and breaking blocks, chat, commands, etc. We can easily find out who's the culprit and take action. 
+
+We can also help roll back grief. 
+<NextPage>
+We do not have a claim system but we auto lock your doors, shulkers, chests, hoppers, etc. 
+
+Regular and active players can request a region protection to further improve their massive base builds.
+<NextPage>
+Have fun! 
+
+And thank you for not griefing and replanting!
+
+Oh, you can type /chets, to learn more about this.

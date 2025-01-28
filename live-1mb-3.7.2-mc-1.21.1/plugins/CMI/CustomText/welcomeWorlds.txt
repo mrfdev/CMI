@@ -1,0 +1,16 @@
+<AutoPage>
+I wonder what you are interested in %cmi_user_name%, maybe some wilderness survival, or some SkyBlock or a OneBlock challenges? 
+
+We have a variety of game types. 
+
+<NextPage>
+You can type "/rtp" at spawn here, it will randomly teleport you somehwere into the /wild world. This is an almost vanilla wilderness where you can play, mine, build. Just respect the builds made by others (no grief).
+<NextPage>
+If you want to play Skyblock, cave, acid, skygrid, or oneblock, just type: /skyblock, or /oneblock, .. and it will start your island. 
+To learn how to team up with a friend, type /teams
+<NextPage>
+Have fun! 
+
+And thank you for not griefing and replanting! Stay safe.
+
+Oh, you can type /warps, to see a menu with all the worlds.

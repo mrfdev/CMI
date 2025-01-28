@@ -1,0 +1,14 @@
+<AutoPage>
+Nice to meet you %cmi_user_name%, 
+
+We are a family-friendly community. We accept players over the age of 13 from all around the world.
+<NextPage>
+We also do not tolerate grief, toxic behavior, and other obvious things such as mods that give an unfair advantage. 
+
+For a quick list of our /rules, which we will assume you have read before playing, please type: /rules
+<NextPage>
+If you worry about any of our rules, feel free to reach out to existing players or staff members and ask them :) We're here to help. 
+<NextPage>
+Have fun! 
+
+And thank you for respecting our community guidelines.
