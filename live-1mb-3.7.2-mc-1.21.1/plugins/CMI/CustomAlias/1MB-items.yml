@@ -1,3 +1,5 @@
+#
+
 CustomAlias:
   _booper:
     Cmds:
@@ -29,6 +31,33 @@ CustomAlias:
       in October 2024. {#orange}🎃
     - if:check1! asConsole! cmi nameplate $1 -pref:{#orange}🎃_&r
     - if:check1! asConsole! cmi panimation circle;effect:raid_omen;twist;part:5;r:0.5;pitch:90;offset:0,0,0;dur:1;target:$1
-    - if:check1! asConsole! cmi titlemsg $1 {#orange}🎃 Done! \n {#buttercup}Scary
+    - if:check1! asConsole! cmi titlemsg $1 {#orange}🏷 Done! \n {#buttercup}Scary
       Prefix Applied
     Perm: true
+  _item_event_santamilk:
+    Cmds:
+    - statement:check1! check:%server_time_MM%==11|12! check:%server_time_Y%==2024!
+    - if:check1@! asConsole! cmi msg $1 !{#buttercup}Sorry $1, you can only use this
+      in December 2024. {#orange}🎄
+    - if:check1! asConsole! cmi nameplate $1 -pref:{#riogrande}🎁{#spray}🌌_&r -s
+    - if:check1! asConsole! cmi panimation circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - if:check1! asConsole! cmi titlemsg $1 {#riogrande}🏷 Done! \n {#riogrande}🎁{#spray}🌌{#buttercup}
+      Prefix Applied
+    - if:check1! asConsole! cmi msg $1 !{#orchid} Yummy! Santa enjoyed his treat!
+      {#buttercup} Your prefix has been updated to a Christmas Present and Winter
+      Sparkles
+    - if:check1! asConsole! cmi tablistupdate -s
+  _item_event_santacookie:
+    Cmds:
+    - statement:check1! check:%server_time_MM%==11|12! check:%server_time_Y%==2024!
+    - if:check1@! asConsole! cmi msg $1 !{#buttercup}Sorry $1, you can only use this
+      in December 2024. {#orange}🎄
+    - if:check1! asConsole! cmi nameplate $1 -pref:{#japaneselaurel}🎄{#spray}✨_&r
+      -s
+    - if:check1! asConsole! cmi panimation circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - if:check1! asConsole! cmi titlemsg $1 {#riogrande}🏷 Done! \n {#japaneselaurel}🎄{#spray}✨{#buttercup}
+      Prefix Applied
+    - if:check1! asConsole! cmi msg $1 !{#orchid} Yummy! Santa enjoyed his treat!
+      {#buttercup} Your prefix has been updated to a Christmas Tree and Winter Sky
+      Stars
+    - if:check1! asConsole! cmi tablistupdate -s

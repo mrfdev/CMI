@@ -1,0 +1,17 @@
+#
+
+CustomAlias:
+  _onjoin_admin:
+    Cmds:
+    - asConsole! cmi ctellraw $1 <T>{#gossamer}({#brightturquoise}👁{#gossamer} $2)
+      {#gray} - ban for username</T><H>does not give feedback\n Quietly ban $2 for
+      inappropriate username</H><CC>cmi ban $2 Inappropriate username \n appeal on
+      discord.gg/floris -s</CC
+    - asConsole! cmi ctellraw $1 <T>{#gossamer}({#brightturquoise}👁{#gossamer} $2)
+      {#gray} - /mail to remind about /rules</T><H>does not give feedback\n Sends
+      a /mail send $2 This is a reminder to read the /rules before playing again</H><CC>mail
+      send $2 This is
+    - asConsole! cmi ctellraw $1 <T>{#gossamer}({#brightturquoise}👁{#gossamer} $2)
+      {#gray} - Reset nameplate</T><H>does not give feedback\n Quietly removes prefix/suffix</H><CC>cmi
+      nameplate $2 reset -s</CC>
+    Perm: true

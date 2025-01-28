@@ -1,0 +1,7 @@
+CustomAlias:
+  fixtime:
+    Cmds:
+    - asConsole! cmi ptime reset [playerName] -s
+    - asConsole! cmi pweather [playerName] reset -s
+    - asConsole! cmi msg [playerName] !{#buttercup}[fix] {#orchid} .. attempting to
+      fix your weather and time if it's stuck

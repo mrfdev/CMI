@@ -186,9 +186,16 @@ CustomAlias:
   freeze:
     Cmds:
     - gcooldown:60#?!
-    - asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue}
-      [displayName] {#orchid}is freezing</T>
-    Perm: true
+    - asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}] {#royalblue} [displayName]
+      {#orchid>}needs blankets! ❄🥶 they're freezing up! {#spray<}🥶❄</T>
+    - asConsole! cmi effect [playerName] freeze 15 1 -s
+    - asConsole! cmi titlemsg [playerName] {#spray}🥶❄ \n {#spray}Frozen in Place!
+      You’re Getting Frosty! -keep:100
+    - asConsole! cmi spawnmob snow_golem:derp:sc-2:n-{#spray}&lFrosty_McChilly:dumb:glow
+      l:[playerName] sp:4
+    - asConsole! cmi panimation circle;effect:snowflake;yaw:[playerName];pitch:[playerName];r:0.2;part:4;;dur:6;rc:0.05;mr:2;twist;off:0,2.5,0;target:[playerName]
+    - delay! 4
+    - asConsole! cmi panimation circle;effect:snowflake;yaw:[playerName];pitch:[playerName];r:0.2;part:4;;dur:6;rc:0.05;mr:2;twist;off:0,2.5,0;target:[playerName]
     CustomTabs:
     - '[playername]'
   frown:
@@ -667,7 +674,7 @@ CustomAlias:
     - check:$1==dinner! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
       {#royalblue}[displayName] {#orchid} eats what they are holding and goes NOMNOM!</T>
     - check:$1==snacks! asConsole! cmi ctellraw [playerName] <T>{#goblin}[{#5ce68b}☀{#goblin}]
-      {#royalblue}[displayName] {#orchid}Grabs some snacks! 🍨 Maybe they will share?</T>
+      {#royalblue}[displayName] {#orchid}grabs some snacks! 🍨 Maybe they will share?</T>
     - if:nullcheck@! asConsole! cmi feed [playerName]
     Perm: true
     CustomTabs:

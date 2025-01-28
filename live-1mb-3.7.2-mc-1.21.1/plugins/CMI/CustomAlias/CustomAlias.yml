@@ -298,6 +298,8 @@ CustomAlias:
   store:
     Cmds:
     - asPlayer! warp shops
+    - msg! [playerName] We don't charge players, but, https://store.1moreblock.com
+      might work.
   account:
     Cmds:
     - asConsole! cmi ctext welcomeMessage [playerName] 2
@@ -542,20 +544,8 @@ CustomAlias:
     - buy [playername]
   bedrock:
     Cmds:
-    - asConsole! cmi msg [playerName] !{#orange}The 1MB Celebration Bedrocker is a
-      special pickaxe available in 1.16.5 (and maybe not 1.17) that will drop special
-      1MB Celebration Bedrock. You can only obtain the bedrocker from events.
-    - asConsole! cmi msg [playerName] !{#orange}You could sometimes craft it by placing
-      eight 1MB Celebration Bedrocks around an ancient debris in a workbench. The
-      purpose of this special bedrocker is to help you fix wrongfully placed bedrocks.
-    - asConsole! cmi msg [playerName] !{#orange}it breaks bedrock almost instantly.
-      But there's a cooldown before you can break another bedrock. You cannot break
-      bedrock layers that make up the world borders.
-    - asConsole! cmi msg [playerName] !{#orange}Each hit takes a lot of durability,
-      use it wisely! And no, you are not allowed to repair, enchant, merge, the pickaxe.
-      Using tricks to repair it etc will possibly result in a server ban. Please play
-      nice.
-    - asConsole! cmi msg [playerName] !{#magenta} https://omgboards.com/threads/263637/
+    - asConsole! cmi msg [playerName] !{#orange}The 1MB Celebration Bedrocker is no
+      longer a feature
     Tab: false
   needstaff:
     Cmds:
@@ -742,7 +732,7 @@ CustomAlias:
     Tab: false
   shop:
     Cmds:
-    - check:$1==null! asPlayer! shopgui
+    - check:$1==null! asPlayer! shopgui survival
   egghunt:
     Cmds:
     - asPlayer! event
@@ -799,6 +789,7 @@ CustomAlias:
   run2:
     Cmds:
     - asPlayer! tntrun join run2
+    Perm: true
   fish guide:
     Cmds:
     - asConsole! cmi openbook fishguide [playerName]
@@ -952,3 +943,108 @@ CustomAlias:
   buy:
     Cmds:
     - asPlayer! shop
+  spawnupdate:
+    Cmds:
+    - asPlayer! mv tp spawnupdate
+    - asConsole! cmi staffmsg [playerName] went to /spawnupdate to work on the next
+      version of spawn, staff can build there in /creative mode, please be mindful
+      about your changes. Note that we prefer if you prevent using entity (tiles)
+      as much as possible.
+    Perm: true
+  ac:
+    Cmds:
+    - asPlayer! calendar
+  _ab:
+    Cmds:
+    - asPlayer! cmi itemname {#146B3A>} &l🎄 Advent Gift{#F8B229<>}&lbag ($1 of 24)
+      🎁{#BB2528<} &r
+    - asPlayer! cmi itemlore 1 {#745085>}--------------{#ccade1<>}---------------{#8f71b1<}
+    - asPlayer! cmi itemlore 2 {#165B33} 🌟 {#5B9775}Thank you for playing this year
+    - asPlayer! cmi itemlore 3 {#165B33} 🌟 {#5B9775}on the &n1MoreBlock.com{#5B9775}
+      server.
+    - asPlayer! cmi itemlore 4 &r &r
+    - asPlayer! cmi itemlore 5 {#165B33} 🌟 {#5B9775}Enjoy all these goodies, and
+    - asPlayer! cmi itemlore 6 {#165B33} 🌟 {#5B9775}come back tomorrow for day %cmi_equationint_{$1}+1%
+    - asPlayer! cmi itemlore 7 &r &r
+    - asPlayer! cmi itemlore 8 {#165B33} 🌟 {#5B9775}Each day Santa adds more items
+    - asPlayer! cmi itemlore 9 {#165B33} 🌟 {#5B9775}to the giftbag, collect all 24!
+    - asPlayer! cmi itemlore 10 &r &r
+    - 'asPlayer! cmi itemlore 11 {#165B33} 🌟 {#5B9775}To learn more, type: {#A1C4B0}/santa
+      info'
+    - asPlayer! cmi itemlore 12 {#745085>}--------------{#ccade1<>}---------------{#8f71b1<}
+    - asPlayer! cmi hideflags hide_additional_tooltip
+    Perm: true
+  santa info:
+    Cmds:
+    - msg! [playerName] {#gold}&l Santa in his workshop. Right-click him to open the
+      DAILY advent calendar. On the 1st of December you can pick up day 1. On the
+      5th you get the 5th giftbag. Check out the lectern at /santa, it has more info,
+      please read it !
+    - msg! [playerName] {#gold}&l Collect all 24 advent giftbags and show them to
+      mrfloris, and you will rewarded a bonus giftbag !!
+    - msg! [playerName] {#gold}&l On Christmas Morning you can go to the big tree
+      with GIFTS below the tree in /santa, and find your name, that gift will open
+      - those are your xmas morning presents.
+    - msg! [playerName] {#gold}&l Throughout December you can type /kits and collect
+      the special Santa kit for this year. And throughout the winter season you can
+      get the Winter kit. ho ho ho
+  _ai:
+    Cmds:
+    - check:$1==null! asPlayer! cmi itemname {#146B3A>} 🎄 Advent {#F8B229<>}%cmi_iteminhand_displayname%
+      🎁{#BB2528<} &r
+    - check:$1!=null! asPlayer! cmi itemname {#146B3A>} 🎄 $1- 🎁{#BB2528<} &r
+    Perm: true
+  _kin:
+    Cmds:
+    - check:$1==null! asPlayer! cmi itemname {#146B3A>} 🎄 %cmi_iteminhand_displayname%
+      🎁{#BB2528<} &r
+    Perm: true
+  santainfo:
+    Cmds:
+    - cmi ctext santaInfo
+  _recording:
+    Cmds:
+    - statement:check1! check:$1==toggle!
+    - if:check1! msg! [playerName] &r \n&r \n {#orchid} 🖱 Toggling.. \n&r &r
+    - if:check1! perm:cmi.command.staffmsg! check:%cmi_user_toggle_msg%==1! asConsole!
+      lp user [playerName] permission set cmi.command.staffmsg false
+    - if:check1! perm:cmi.command.staffmsg@! check:%cmi_user_toggle_msg%==0! asConsole!
+      lp user [playerName] permission set cmi.command.staffmsg true
+    - if:check1! asConsole! cmi options [playerName] chatspy toggle
+    - if:check1! asConsole! cmi options [playerName] cmdspy toggle
+    - if:check1! asConsole! cmi options [playerName] acceptingpm toggle
+    - if:check1! asConsole! cmi options [playerName] signspy toggle
+    - if:check1! asConsole! cmi options [playerName] acceptingtpa toggle
+    - if:check1! asConsole! cmi options [playerName] tagsound toggle
+    - delay! 0.2
+    - asConsole! cmi ctellraw [playerName] <T>&r \n&r \n{#gold} 🖱 Toggle sign-, msg-,
+      and command spy. And staffmsg&r\n&r-> %cmi_user_togglename_msg% &r</T><H>Click
+      to toggle on or off</H><C>_recording toggle</C>
+    Perm: true
+  crate:
+    Cmds:
+    - asPlayer! store
+  crabmas:
+    Cmds:
+    - asPlayer! fish events crabmas
+    - asPlayer! fish events crabmas biomes
+  _santasign:
+    Cmds:
+    - asPlayer! cmi se 4 {#white}&l$1
+    Perm: true
+  jail:
+    Cmds:
+    - statement:check1! check:$1==null! check:$2==null! check:$3==null!
+    - if:check1~! msg! [playerName] correct command usage /$0 (PlayerName) (time)
+      (reason) [-s]
+    - 'check:$3==grief/stealing! cmi jail $1 $2 1MBJail 1 $4 r: $3'
+    - 'check:$3==swearing! cmi jail $1 $2 1MBJail 2 $4 r: $3'
+    - 'check:$3==cheating! cmi jail $1 $2 1MBJail 3 $4 r: $3'
+    - 'check:$3==other! cmi jail $1 $2 1MBJail 4 $4 r: breaking server rules'
+    Perm: true
+    CustomTabs:
+    - '[playerName] 5m,30m,1h grief/stealing,swearing,cheating,other -s'
+  map:
+    Cmds:
+    - msg! [playerName] {#orange}🌎 We have a livemap! Enjoy exploring ^_^
+    - msg! [playerName] {#green}⛰ http://1moreblock.com:8100/

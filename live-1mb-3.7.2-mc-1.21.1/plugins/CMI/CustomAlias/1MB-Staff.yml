@@ -44,12 +44,19 @@ CustomAlias:
     CustomTabs:
     - false,true
     - false,true
-  _donation:
+  _patron:
     Cmds:
     - asConsole! cmi toast all -t:goal -icon:diamond_block New Patron $1 in our community
     - cmi sound ui_toast_challenge_complete -all
     - broadcast! {#cerulean}[PayPal] {#orange}Patron Support received from $1 - Thanks!
       And welcome to the 1MB Patron group.
+  _epic:
+    Cmds:
+    - asConsole! cmi toast all -t:goal -icon:netherite_block New EPIC Member $1
+    - cmi sound ui_toast_challenge_complete -all
+    - broadcast! {#cerulean}[GROUPS] {#orange}Patron Support received from $1 in the
+      form of a unique EPIC slot membership - Thanks! What a way to show support!
+      Wow.
     Perm: true
   _soulbind:
     Cmds:

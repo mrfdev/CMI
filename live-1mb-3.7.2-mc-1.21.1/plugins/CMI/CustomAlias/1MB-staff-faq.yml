@@ -102,19 +102,19 @@ CustomAlias:
     - statement:check8! check:$1==dback!
     - if:check8! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi sudo [playerName]
       c:In the wilderness, if you die, type /dback to return to your death spot. Most
-      of your items will be in an Angel Chest, and the chat will display the coordinates.
+      of your items will be there on the floor, and the chat will display the coordinates.
       $2
     - if:check8! check:%cmi_lastrandom_[playerName]%==2! asConsole! cmi sudo [playerName]
       c:In the wilderness, if you die, type /dback to return to your death spot. Most
-      of your items will be in an Angel Chest, and the chat will display the coordinates.
+      of your items will be there on the floor, and the chat will display the coordinates.
       $2
     - if:check8! check:%cmi_lastrandom_[playerName]%==3! asConsole! cmi sudo [playerName]
       c:In the wilderness, if you die, type /dback to return to your death spot. Most
-      of your items will be in an Angel Chest, and the chat will display the coordinates.
+      of your items will be there on the floor, and the chat will display the coordinates.
       $2
     - if:check8! check:%cmi_lastrandom_[playerName]%==4! asConsole! cmi sudo [playerName]
       c:In the wilderness, if you die, type /dback to return to your death spot. Most
-      of your items will be in an Angel Chest, and the chat will display the coordinates.
+      of your items will be there on the floor, and the chat will display the coordinates.
       $2
     - statement:check9! check:$1==1211!
     - if:check9! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi sudo [playerName]

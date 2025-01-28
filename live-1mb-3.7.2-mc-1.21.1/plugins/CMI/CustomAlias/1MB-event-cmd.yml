@@ -24,9 +24,8 @@ CustomAlias:
   halloween:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - asConsole! cmi msg [playerName] !{#orange}The /halloween world will open the
-      evening before Halloween 2024.
-    - asPlayer! event
+    - msg! [playerName] The Halloween 2024 event has ended, check /events to see what's
+      next.
   spooky:
     Cmds:
     - asPlayer! event
@@ -35,7 +34,7 @@ CustomAlias:
     - asPlayer! event
   santa:
     Cmds:
-    - asPlayer! event
+    - asPlayer! mv tp santa
   valentine:
     Cmds:
     - asPlayer! event

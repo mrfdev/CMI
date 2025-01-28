@@ -85,6 +85,7 @@ CustomAlias:
     - check:%cmi_player_world%!=run|builders! asConsole! trconsole join run [playerName]
     - delay! 2
     - asConsole! cmi effect [playerName] clear
+    Perm: true
   tientje:
     Cmds:
     - asConsole! ifinworld:sanctuary?#! cmi gm [playerName] creative
@@ -190,10 +191,10 @@ CustomAlias:
     - asConsole! cmi msg [playerName] !&6Gobble gobble!&e Thanksgiving Turkey Hunt!
   is:
     Cmds:
-    - 'asConsole! cmi msg [playerName] !{#magenta} Hi there :) We have a survival
-      wilderness, and skyblock , oneblock, etc Each world is also a command, for example:
-      /general for the wilderness, and /oneblock to start your oneblock island. And
-      /skyblock. Enjoy !'
+    - asConsole! cmi msg [playerName] !{#magenta} We have more than one gametype,
+      so /is won't work on our server. BUT !! You can type /oneblock, to get to your
+      oneblock island, or /skyblock to go to your skyblock island .. Etc. We also
+      have /oneblock menu
   sanctuary creative:
     Cmds:
     - ifinworld:sanctuary@#! asConsole! cmi msg [playerName] !Oops, /sanctuary creative

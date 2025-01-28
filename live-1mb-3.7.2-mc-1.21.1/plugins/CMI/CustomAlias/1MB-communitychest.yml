@@ -1,0 +1,10 @@
+#
+
+CustomAlias:
+  communitychest:
+    Cmds:
+    - msg! [playerName] {#orchid} 🧰 Community Chest Information!
+    - msg! [playerName] {#buttercup} At various locations on our server you can find
+      public chests that have a hologram above them saying "Community Chest", these
+      are free to take from! They're not a /trash bin, but you are free to donate
+      items to it to share.
