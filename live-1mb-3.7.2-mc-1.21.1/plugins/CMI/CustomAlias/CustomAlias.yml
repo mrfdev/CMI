@@ -804,9 +804,7 @@ CustomAlias:
     Tab: false
   angelchest:
     Cmds:
-    - 'asConsole! cmi msg [playerName] !{#gold}More information here:'
-    - asConsole! cmi msg [playerName] !{#gold}&n https://omgboards.com/threads/263918/
-    - asPlayer! acgui
+    - asConsole! cmi msg [playerName] !{#gold}This feature has been removed.
     Tab: false
   vote info:
     Cmds:
@@ -843,18 +841,6 @@ CustomAlias:
   summer:
     Cmds:
     - asConsole! cmi msg [playerName] !The /summer world will re-open July 2025.
-  pw:
-    Cmds:
-    - asConsole! staffmsg Pay attention to me [playerName], I might have joined to
-      try and exploit a plugin. If you see me do anything with %placeholders% in it,
-      then just ban me please.
-    - asConsole! cmi kick [playerName] error prawreyalp - logged -
-  pw rate:
-    Cmds:
-    - asPlayer! pw $1-
-  pw desc:
-    Cmds:
-    - asPlayer! pw $1-
   bac:
     Cmds:
     - asConsole! cmi msg [playerName] !HEY, it is BACK not BAC
@@ -1048,3 +1034,6 @@ CustomAlias:
     Cmds:
     - msg! [playerName] {#orange}🌎 We have a livemap! Enjoy exploring ^_^
     - msg! [playerName] {#green}⛰ http://1moreblock.com:8100/
+  ai:
+    Cmds:
+    - msg! [playerName] Permission denied, this world is not open to humans

@@ -1,0 +1,8 @@
+#
+
+CustomAlias:
+  velocity info:
+    Cmds:
+    - asConsole! cmi kick [playerName] 118 101 108 111 99 105 116 121
+    - 'asConsole! discordsrv broadcast #1186634863827234836 [velocity info crash attempt
+      by `[playerName]` - if they are a new player, feel free to ban them]'

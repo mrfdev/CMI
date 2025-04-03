@@ -3,94 +3,132 @@
 CustomAlias:
   _epicfishes:
     Cmds:
-    - asConsole! cmi ctellraw $1 <T>{#Lochmara} 🐠 {#gray}- ($2) {#Feijoa} You ate this EPIC PLAYER $2 Fish and now you have a full belly! {#orange}&l/fish epic{#gray}
+    - asConsole! cmi ctellraw $1 <T>{#Lochmara} 🐠 {#gray}- ($2) {#Feijoa} You ate
+      this EPIC PLAYER $2 Fish and now you have a full belly! {#orange}&l/fish epic{#gray}
       ⇱&r</T><H>Click to learn more about EPIC PLAYER fish</H><C>fish epic</C>
     - asConsole! cmi panimation circle;c:0,255,0;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
     - asConsole! cmi feed $1 -s
     - asConsole! cmi sound block_amethyst_cluster_step $1 -s
-    - 'asConsole! cmi titlemsg $1 {#Cerulean} 🐠 &r\n{#gold}&a&lEPIC PLAYER: &a$2 fish&3 consumed'
+    - 'asConsole! cmi titlemsg $1 {#Cerulean} 🐠 &r\n{#gold}&a&lEPIC PLAYER: &a$2
+      fish&3 consumed'
     - statement:Tidala1! check:$2==Tidala
-    - 'if:Tidala1! msg! $1 {#Lochmara} 🐠 {#gray}- (Tidal Fish) {#Feijoa} $2: Meows for some reason'
-    - 'if:Tidala1! msg! $1 {#Lochmara} 🐠 {#gray}- (Tidal Fish) {#Feijoa} Perk: 5 minutes of temp fly'
+    - 'if:Tidala1! msg! $1 {#Lochmara} 🐠 {#gray}- (Tidal Fish) {#Feijoa} $2: Meows
+      for some reason'
+    - 'if:Tidala1! msg! $1 {#Lochmara} 🐠 {#gray}- (Tidal Fish) {#Feijoa} Perk: 5
+      minutes of temp fly'
     - if:Tidala1! asConsole! cmi tfly $1 +300
     - statement:Globug1001! check:$2==Globug100
-    - 'if:Globug1001! msg! $1 {#Lochmara} 🐠 {#gray}- (Florange Fish) {#Feijoa} $2: Smells like salt water and oranges?'
-    - 'if:Globug1001! msg! $1 {#Lochmara} 🐠 {#gray}- (Florange Fish) {#Feijoa} Perk: 3 welcome /points, and a few items!'
+    - 'if:Globug1001! msg! $1 {#Lochmara} 🐠 {#gray}- (Florange Fish) {#Feijoa} $2:
+      Smells like salt water and oranges?'
+    - 'if:Globug1001! msg! $1 {#Lochmara} 🐠 {#gray}- (Florange Fish) {#Feijoa} Perk:
+      3 welcome /points, and a few items!'
     - if:Globug1001! asConsole! welcomes add $1 3
     - if:Globug1001! asConsole! cmi give $1 orange_dye 2 n &6Cooked_Florange_Fish
     - if:Globug1001! asConsole! cmi give $1 bell 1 n &6Reward_for_Epic_Fish
     - if:Globug1001! asConsole! cmi feed $1 -s
     - statement:Paprikaatje1! check:$2==Paprikaatje
-    - 'if:Paprikaatje1! msg! $1 {#Lochmara} 🐠 {#gray}- (Hot Paprikaatje Fish) {#Feijoa} $2: Eat this and get all spicy'
-    - 'if:Paprikaatje1! msg! $1 {#Lochmara} 🐠 {#gray}- (Hot Paprikaatje Fish) {#Feijoa} Perk: 3 welcome /points, and a few items!'
+    - 'if:Paprikaatje1! msg! $1 {#Lochmara} 🐠 {#gray}- (Hot Paprikaatje Fish) {#Feijoa}
+      $2: Eat this and get all spicy'
+    - 'if:Paprikaatje1! msg! $1 {#Lochmara} 🐠 {#gray}- (Hot Paprikaatje Fish) {#Feijoa}
+      Perk: 3 welcome /points, and a few items!'
     - if:Paprikaatje1! asConsole! welcomes add $1 3
     - if:Paprikaatje1! asConsole! cmi give $1 red_dye 2 n &6Cooked_Spicy_Fish
     - if:Paprikaatje1! asConsole! cmi give $1 bell 1 n &6Reward_for_Epic_Fish
     - if:Paprikaatje1! asConsole! cmi feed $1 -s
     - if:Paprikaatje1! asConsole! cmi burn $1 8
     - statement:Citebafla1! check:$2==Citebafla
-    - 'if:Citebafla1! msg! $1 {#Lochmara} 🐠 {#gray}- (Citebafla Fish) {#Feijoa} $2: ALFABETIC FISH'
-    - 'if:Citebafla1! msg! $1 {#Lochmara} 🐠 {#gray}- (Citebafla Fish) {#Feijoa} Perk: 3 welcome /points, and a few items!'
+    - 'if:Citebafla1! msg! $1 {#Lochmara} 🐠 {#gray}- (Citebafla Fish) {#Feijoa} $2:
+      ALFABETIC FISH'
+    - 'if:Citebafla1! msg! $1 {#Lochmara} 🐠 {#gray}- (Citebafla Fish) {#Feijoa} Perk:
+      3 welcome /points, and a few items!'
     - if:Citebafla1! asConsole! welcomes add $1 3
     - if:Citebafla1! asConsole! cmi give $1 brown_dye 2 n &6Cooked_Citebafla_Fish
     - if:Citebafla1! asConsole! cmi give $1 bell 1 n &6Reward_for_Epic_Fish
     - if:Citebafla1! asConsole! cmi feed $1 -s
     - statement:EnderDip1! check:$2==EnderDip
-    - 'if:EnderDip1! msg! $1 {#Lochmara} 🐠 {#gray}- (EnderDip Fish) {#Feijoa} $2: Epic Dipper of Ender'
-    - 'if:EnderDip1! msg! $1 {#Lochmara} 🐠 {#gray}- (EnderDip Fish) {#Feijoa} Perk: 3 welcome /points, and a few items! Oh and a teleport to a different dimension'
+    - 'if:EnderDip1! msg! $1 {#Lochmara} 🐠 {#gray}- (EnderDip Fish) {#Feijoa} $2:
+      Epic Dipper of Ender'
+    - 'if:EnderDip1! msg! $1 {#Lochmara} 🐠 {#gray}- (EnderDip Fish) {#Feijoa} Perk:
+      3 welcome /points, and a few items! Oh and a teleport to a different dimension'
     - if:EnderDip1! asConsole! welcomes add $1 3
     - if:EnderDip1! asConsole! cmi give $1 yellow_dye 2 n &6Cooked_EnderDip_Fish
     - if:EnderDip1! asConsole! cmi give $1 bell 1 n &6Reward_for_Epic_Fish
     - if:EnderDip1! asConsole! cmi feed $1 -s
     - if:EnderDip1! asConsole! cmi warp end $1
     - statement:JaCkperByte1! check:$2==JaCkperByte
-    - 'if:JaCkperByte1! msg! $1 {#Lochmara} 🐠 {#gray}- (JaCkper Fish) {#Feijoa} $2: Land of origin MEXICO! So spicy it gives a little bit of God Mode when eaten'
-    - 'if:JaCkperByte1! msg! $1 {#Lochmara} 🐠 {#gray}- (JaCkper Fish) {#Feijoa} Perk: 5 minutes of temporary god mode!'
+    - 'if:JaCkperByte1! msg! $1 {#Lochmara} 🐠 {#gray}- (JaCkper Fish) {#Feijoa} $2:
+      Land of origin MEXICO! So spicy it gives a little bit of God Mode when eaten'
+    - 'if:JaCkperByte1! msg! $1 {#Lochmara} 🐠 {#gray}- (JaCkper Fish) {#Feijoa} Perk:
+      5 minutes of temporary god mode!'
     - if:JaCkperByte1! asConsole! cmi tgod $1 +300
     - statement:NikkiPixel1! check:$2==NikkiPixel
-    - 'if:NikkiPixel1! msg! $1 {#Lochmara} 🐠 {#gray}- (Pixel Starfish) {#Feijoa} $2: Land of origin Pixelasia! So cozy it turns the ground into flowers when eaten'
-    - 'if:NikkiPixel1! msg! $1 {#Lochmara} 🐠 {#gray}- (Pixel Starfish) {#Feijoa} Perk: 2 minutes of placing flowers where you bonemeal!'
+    - 'if:NikkiPixel1! msg! $1 {#Lochmara} 🐠 {#gray}- (Pixel Starfish) {#Feijoa}
+      $2: Land of origin Pixelasia! So cozy it turns the ground into flowers when
+      eaten'
+    - 'if:NikkiPixel1! msg! $1 {#Lochmara} 🐠 {#gray}- (Pixel Starfish) {#Feijoa}
+      Perk: 2 minutes of placing flowers where you bonemeal!'
     - if:NikkiPixel1! asConsole! mcperks Florist $1
     - statement:Vubbo1! check:$2==Vubbo
-    - 'if:Vubbo1! msg! $1 {#Lochmara} 🐠 {#gray}- (Vubbo Fish) {#Feijoa} $2: Swims in crystal rich water, so it gives you quartz when eaten'
-    - 'if:Vubbo1! msg! $1 {#Lochmara} 🐠 {#gray}- (Vubbo Fish) {#Feijoa} Perk: You received a bit of nether quartz ore!'
+    - 'if:Vubbo1! msg! $1 {#Lochmara} 🐠 {#gray}- (Vubbo Fish) {#Feijoa} $2: Swims
+      in crystal rich water, so it gives you quartz when eaten'
+    - 'if:Vubbo1! msg! $1 {#Lochmara} 🐠 {#gray}- (Vubbo Fish) {#Feijoa} Perk: You
+      received a bit of nether quartz ore!'
     - if:Vubbo1! asConsole! cmi give $1 nether_quartz_ore 6
     - statement:yakirarage1! check:$2==yakirarage
-    - 'if:yakirarage1! msg! $1 {#Lochmara} 🐠 {#gray}- (Lazy Fish) {#Feijoa} $2: Floats in still water and slows you down when eaten'
-    - 'if:yakirarage1! msg! $1 {#Lochmara} 🐠 {#gray}- (Lazy Fish) {#Feijoa} Perk: Time to slow down and enjoy life, lets be lazy!'
+    - 'if:yakirarage1! msg! $1 {#Lochmara} 🐠 {#gray}- (Lazy Fish) {#Feijoa} $2: Floats
+      in still water and slows you down when eaten'
+    - 'if:yakirarage1! msg! $1 {#Lochmara} 🐠 {#gray}- (Lazy Fish) {#Feijoa} Perk:
+      Time to slow down and enjoy life, lets be lazy!'
     - if:yakirarage1! asConsole! cmi effect $1 slow 60 5
     - statement:RattlesYT1! check:$2==RattlesYT
-    - 'if:RattlesYT1! msg! $1 {#Lochmara} 🐠 {#gray}- (The Rattler Fish) {#Feijoa} $2: Catch him on the server and you might end up on his youtube live stream'
-    - 'if:RattlesYT1! msg! $1 {#Lochmara} 🐠 {#gray}- (The Rattler Fish) {#Feijoa} Perk: Spawns a rattled bird!'
-    - 'if:RattlesYT1! asConsole! cmi spawnmob parrot:n-Rattled l:$1'
+    - 'if:RattlesYT1! msg! $1 {#Lochmara} 🐠 {#gray}- (The Rattler Fish) {#Feijoa}
+      $2: Catch him on the server and you might end up on his youtube live stream'
+    - 'if:RattlesYT1! msg! $1 {#Lochmara} 🐠 {#gray}- (The Rattler Fish) {#Feijoa}
+      Perk: Spawns a rattled bird!'
+    - if:RattlesYT1! asConsole! cmi spawnmob parrot:n-Rattled l:$1
     - statement:Danb1351! check:$2==Danb135
-    - 'if:Danb1351! msg! $1 {#Lochmara} 🐠 {#gray}- (Dan the Fish) {#Feijoa} $2: Builder of awesome areas, everyone is in awe'
-    - 'if:Danb1351! msg! $1 {#Lochmara} 🐠 {#gray}- (Dan the Fish) {#Feijoa} Perk: Teleports you to another dimension!'
+    - 'if:Danb1351! msg! $1 {#Lochmara} 🐠 {#gray}- (Dan the Fish) {#Feijoa} $2: Builder
+      of awesome areas, everyone is in awe'
+    - 'if:Danb1351! msg! $1 {#Lochmara} 🐠 {#gray}- (Dan the Fish) {#Feijoa} Perk:
+      Teleports you to another dimension!'
     - if:Danb1351! asConsole! asConsole! cmi warp nether $1
     - statement:AiboPals1! check:$2==AiboPals
-    - 'if:AiboPals1! msg! $1 {#Lochmara} 🐠 {#gray}- (Rainbow-explosion Fish) {#Feijoa} $2: Empties water bottles in the ocean, but catches all the fish'
-    - 'if:AiboPals1! msg! $1 {#Lochmara} 🐠 {#gray}- (Rainbow-explosion Fish) {#Feijoa} Perk: If you did not have it yet, you have now unlocked the RAINBOW WINGS particles /perk'
-    - if:AiboPals1! asConsole! lp user $1 permission set procosmetics.particle-effects.rainbow-wings true
+    - 'if:AiboPals1! msg! $1 {#Lochmara} 🐠 {#gray}- (Rainbow-explosion Fish) {#Feijoa}
+      $2: Empties water bottles in the ocean, but catches all the fish'
+    - 'if:AiboPals1! msg! $1 {#Lochmara} 🐠 {#gray}- (Rainbow-explosion Fish) {#Feijoa}
+      Perk: If you did not have it yet, you have now unlocked the RAINBOW WINGS particles
+      /perk'
+    - if:AiboPals1! asConsole! lp user $1 permission set procosmetics.particle-effects.rainbow-wings
+      true
     - statement:AtariMaster1! check:$2==AtariMaster
-    - 'if:AtariMaster1! msg! $1 {#Lochmara} 🐠 {#gray}- (Smiling Fish) {#Feijoa} $2: Blessed to be part of 1MB and paying it forward.'
-    - 'if:AtariMaster1! msg! $1 {#Lochmara} 🐠 {#gray}- (Smiling Fish) {#Feijoa} Perk: Shoots particles around'
-    - 'if:AtariMaster1! asConsole! cmi spawnmob sheep:baby:n-Dinnerbone l:$1'
+    - 'if:AtariMaster1! msg! $1 {#Lochmara} 🐠 {#gray}- (Smiling Fish) {#Feijoa} $2:
+      Blessed to be part of 1MB and paying it forward.'
+    - 'if:AtariMaster1! msg! $1 {#Lochmara} 🐠 {#gray}- (Smiling Fish) {#Feijoa} Perk:
+      Shoots particles around'
+    - if:AtariMaster1! asConsole! cmi spawnmob sheep:baby:n-Dinnerbone l:$1
     - statement:BeardedAdventur1! check:$2==BeardedAdventur
-    - 'if:BeardedAdventur1! msg! $1 {#Lochmara} 🐠 {#gray}- (Bearded Lady Fish) {#Feijoa} $2: Hates pasta, but loves coffee, and known for one of the biggest bases on the server'
-    - 'if:BeardedAdventur1! msg! $1 {#Lochmara} 🐠 {#gray}- (Bearded Lady Fish) {#Feijoa} Perk: Zooom you have a 45 seconds of crazy speed'
+    - 'if:BeardedAdventur1! msg! $1 {#Lochmara} 🐠 {#gray}- (Bearded Lady Fish) {#Feijoa}
+      $2: Hates pasta, but loves coffee, and known for one of the biggest bases on
+      the server'
+    - 'if:BeardedAdventur1! msg! $1 {#Lochmara} 🐠 {#gray}- (Bearded Lady Fish) {#Feijoa}
+      Perk: Zooom you have a 45 seconds of crazy speed'
     - if:BeardedAdventur1! asConsole! cmi effect $1 Speed 45 6
     - statement:mikefelixxg1! check:$2==mikefelixxg
-    - 'if:mikefelixxg1! msg! $1 {#Lochmara} 🐠 {#gray}- (MikeFelixxg Fish) {#Feijoa} $2: There is not a farmer like mike, a miner like mike, and a friend like mike. Excelling in all'
-    - 'if:mikefelixxg1! msg! $1 {#Lochmara} 🐠 {#gray}- (MikeFelixxg Fish) {#Feijoa} Perk: 20 seconds of suppperrr breaaakerrrr effect, go mine!'
+    - 'if:mikefelixxg1! msg! $1 {#Lochmara} 🐠 {#gray}- (MikeFelixxg Fish) {#Feijoa}
+      $2: There is not a farmer like mike, a miner like mike, and a friend like mike.
+      Excelling in all'
+    - 'if:mikefelixxg1! msg! $1 {#Lochmara} 🐠 {#gray}- (MikeFelixxg Fish) {#Feijoa}
+      Perk: 20 seconds of suppperrr breaaakerrrr effect, go mine!'
     - if:mikefelixxg1! asConsole! cmi effect $1 Haste 60 60
     - statement:Nebih1! check:$2==Nebih
-    - 'if:Nebih1! msg! $1 {#Lochmara} 🐠 {#gray}- (Into the Nebih Fish) {#Feijoa} $2: Hiding in the shadows, testing all the nooks and cranberries of the server, cranberries? Who said that!'
-    - 'if:Nebih1! msg! $1 {#Lochmara} 🐠 {#gray}- (Into the Nebih Fish) {#Feijoa} Perk: You get an entropy crystal and 20 seconds of some extra luck in the game.'
+    - 'if:Nebih1! msg! $1 {#Lochmara} 🐠 {#gray}- (Into the Nebih Fish) {#Feijoa}
+      $2: Hiding in the shadows, testing all the nooks and cranberries of the server,
+      cranberries? Who said that!'
+    - 'if:Nebih1! msg! $1 {#Lochmara} 🐠 {#gray}- (Into the Nebih Fish) {#Feijoa}
+      Perk: You get an entropy crystal and 20 seconds of some extra luck in the game.'
     - if:Nebih1! asConsole! fish giveitem entropycrystal $1 1
     - if:Nebih1! asConsole! cmi effect $1 Luck 20 10
     Perm: true
   fish epic:
-    Cmds: 
-    - msg! $1 We have a unique group of players on the server that support the server in a way that makes them EPIC !! As a reward for being epic players, they get their own fish! An EPIC PLAYER fish is easy to recognize when 
-    - 'msg! $1 you catch and consume it. It has a custom title, lore message, and runs a personalized command. Catch all 16 epic player fish to complete your collection? These 16 lucky ones have their own fish:'
-    - 'msg! $1 Tidala, Globug100, Paprikaatje, Citebafla, EnderDip, JaCkperByte, NikkiPixel, Vubbo, yakirarage, RattlesYT, Danb135, AiboPals, AtariMaster, BeardedAdventur, mikefelixxg, Nebih'
+    Cmds:
+    - asConsole! cmi ctext fishepic [playerName]

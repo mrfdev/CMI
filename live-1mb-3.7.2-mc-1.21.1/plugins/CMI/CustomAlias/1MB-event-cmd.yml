@@ -38,6 +38,25 @@ CustomAlias:
   valentine:
     Cmds:
     - asPlayer! event
+    - check:%cmi_user_meta_valentineQuestOne%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestOne nope
+    - check:%cmi_user_meta_valentineQuestTwo%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestTwo nope
+    - check:%cmi_user_meta_valentineQuestThree%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestThree nope
+    - check:%cmi_user_meta_valentineQuestFour%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestFour nope
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineQuestFive%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestFive nope
+    - check:%cmi_user_meta_valentineQuestSix%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestSix nope
+    - check:%cmi_user_meta_valentineQuestSeven%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestSeven nope
+    - check:%cmi_user_meta_valentineQuestEight%!=yep! asConsole! cmi usermeta [playerName]
+      add valentineQuestEight nope
+    - asConsole! cmi effect [playerName] clear -s
+    - asConsole! cmi gm [playerName] survival -s
   easter:
     Cmds:
     - asPlayer! event
