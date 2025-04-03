@@ -7,8 +7,10 @@ Afk:
   SubTitleMessage: true
   # Prevents jumping in one place to avoid afk status
   PreventJumping: true
-  # Prevents damage while afk
+  # Prevents damage to player who is afk
   PreventDamage: false
+  # Prevents damage to mobs from player who is afk
+  PreventMobDamage: true
   # Defines how often in seconds plugin will check for afk players state
   CheckInterval: 10
   # When set to true, players playtime counter stops
@@ -41,13 +43,29 @@ Afk:
     - 'cmi ctellraw all <T>{#orange} ● &l[playerDisplayName] {#yellow}has returned
       from idling {#geyser}(%cmi_user_afk_msg%)</T><H>{#buttercup}Has been away for:
       \n {#orchid}%cmi_user_afk_for%</H><C>afkinfo</C>'
-  # Defines how long to wait after player stops moving to kick player
-  # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
-  # This can be used not only to kick but to perform repeating action every x seconds if needed
-  # Keep it at -1 to disable auto kick
-  # Can be bypassed with cmi.command.afk.kickbypass permission node
-  # Additionally players kick time can be changed with cmi.command.afk.kickOutIn.[seconds] permission node where bigger value takes priority
-  AutoKickIn: -1
+  AutoKickTimes:
+    # Defines how long to wait after player stops moving to kick player
+    # This is additional timer to AutoAfkIn and in case player entered afk mode manually he will get kicked after AutoAfkIn+AutoKickIn seconds
+    # This can be used not only to kick but to perform repeating action every x seconds if needed
+    # Keep it at -1 to disable auto kick
+    # Can be bypassed with cmi.command.afk.kickbypass permission node
+    # Additionally players kick time can be changed with cmi.command.afk.kickOutIn.[seconds] permission node where bigger value takes priority
+    Default: -1
+    # Player count from which auto kick should start working
+    # Setting it to 0 will kick players independent of how many are online
+    # Recommended value: 27
+    FromPlayerCount: 0
+    # List of autoKick times based by online player count ([playerCount]-[seconds])
+    # This only aplies if default kick time is set to more than -1
+    # This will pick closest timer (in seconds) from provided list going down. For example having entries as 30-400 and 40-350 while having 35 online players we will use value of 400 seconds
+    # Keep in mind that kick out timer is picked at the moment player enters afk mode and isint being rechecked during afk mode even if player count changes during that time
+    # If we cant determine correct value then default one will be used
+    ByPlayerCount:
+    - 10-600
+    - 20-500
+    - 30-400
+    - 40-350
+    - 50-300
   # This will define how long to wait before performing kick commands again
   RepeatingAutoKickInterval: 300
   # When set to true, kick command will be repeated each RepeatingAutoKickInterval seconds

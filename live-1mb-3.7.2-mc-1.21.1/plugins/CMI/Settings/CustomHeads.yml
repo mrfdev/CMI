@@ -6,9 +6,9 @@
 # Lvl33: 35.5
 LootMobBonus:
   Enabled: true
-  Lvl1: 1.5
-  Lvl2: 3.0
-  Lvl3: 6.0
+  Lvl1: 5.0
+  Lvl2: 15.0
+  Lvl3: 30.0
 # Defines if you want to use default head lore which will be used in case head doesnt have defined lore
 useDefaultHeadLore: true
 # Default lore used when head doesnt have defined head lore set
@@ -26,9 +26,37 @@ HeadHandling:
   Maintain:
     # Defines if we should maintain heads custom name when head is placed and then broken
     # Vanilla minecraft will remove any custom information about head when you place it, this can help out to maintain data
-    Name: true
-    Lore: true
-    Enchants: true
+    Name: false
+    Lore: false
+    Enchants: false
+Player:
+  Drop: true
+  # Percentage from 0 to 100 for head to be dropped. Decimals are acceptable, like 0.2
+  # 100 will mean that head will be dropped every time player kills another player
+  # 1 will mean that there is 1% that player will drop head if he is killed by another player
+  Percentage: 20
+  # Percentage from 0 to 100 for lowering chance in getting second head of same player
+  # This will reset on each server restart
+  LowerChanceOfterDrop: 50.0
+  # When enabled player heads will have bigger chance to drop when using tools with looting enchantment
+  # Value is in % and it will add appropriate percentage to current drop chance by using drop chance itself
+  # For example player who has head drop change of 1% with looting 3 which has 30% bonus will have 1.3% as end value (default values)
+  # This only applies for player heads
+  # You can add as many levels as you want, simply duplicate line and set new number, in example
+  # Lvl33: 35.5
+  LootBonus:
+    Enabled: false
+    Lvl1: 5.0
+    Lvl2: 15.0
+    Lvl3: 30.0
+  # List of worlds where we should drop player heads. Keep it empty if you want to include all possible ones
+  Worlds: []
+Mob:
+  # Enables custom mob heads dropping from mobs with particular chance
+  # Check CustomHeads.yml for customization by entityType
+  Drop: true
+  # List of worlds where we should drop mob heads. Keep it empty if you want to include all possible ones
+  Worlds: []
 # Custom heads of every entity
 # You can have as many custom heads as you want
 # Format is [dropChance]:[texture]
@@ -119,6 +147,8 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:ZjQyNTQ4MzhjMzNlYTIyN2ZmY2EyMjNkZGRhYWJmZTBiMDIxNWY3MGRhNjQ5ZTk0NDQ3N2Y0NDM3MGNhNjk1MiJ9fX0=
+    - 100:Default:YTNmMTcyZDI5Y2Y5NGJjODk1NjA4YjdhNWRjMmFmMGRlNDljNzg4ZDViZWNiMTYwNWYxZjUzNDg4YTAxNzBiOCJ9fX0=
+    - 100:Charged Creeper:c-powered:ZjJjZWIzOWRkNGRlMjRhN2FkZmUyOTFhM2EwY2ZjN2NmNGY2NDVkZTU5YjYwM2ZjZmUwNmM2YjVhMDZlMjYifX19
   skeleton:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -133,7 +163,8 @@ EntityHeads:
   giant:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
-    Heads: []
+    Heads:
+    - 100:Default:ZWM0NTViMzgzNjhkYWU3MzBlZjE0ODNjMWRmMjVjZDg3YjQxYmVlNDQxZWYzYWIxZjNjNjBmMjFiZmUwZTUxMSJ9fX0=
   zombie:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -183,7 +214,8 @@ EntityHeads:
   ender_dragon:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
-    Heads: []
+    Heads:
+    - 100:Default:ZmZjZGFlNTg2YjUyNDAzYjkyYjE4NTdlZTQzMzFiYWM2MzZhZjA4YmFiOTJiYTU3NTBhNTRhODMzMzFhNjM1MyJ9fX0=
   wither:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -228,22 +260,22 @@ EntityHeads:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
     Heads:
-    - 100:Default:MTgzNjU2NWM3ODk3ZDQ5YTcxYmMxODk4NmQxZWE2NTYxMzIxYTBiYmY3MTFkNDFhNTZjZTNiYjJjMjE3ZTdhIn19fQ==
-    - 100:Default:YTU1YWQ2ZTVkYjU2OTJkODdmNTE1MTFmNGUwOWIzOWZmOWNjYjNkZTdiNDgxOWE3Mzc4ZmNlODU1M2I4In19fQ==
-    - 100:Default:YWU1Mjg2N2FmZWYzOGJiMTRhMjZkMTQyNmM4YzBmMTE2YWQzNDc2MWFjZDkyZTdhYWUyYzgxOWEwZDU1Yjg1In19fQ==
-    - 100:Default:MmFjNzRhMmI5YjkxNDUyZTU2ZmExZGRhNWRiODEwNzc4NTZlNDlmMjdjNmUyZGUxZTg0MWU1Yzk1YTZmYzVhYiJ9fX0=
-    - 100:Default:YTAxNzIxNWM3ZjhkYjgyMDQwYWEyYzQ3Mjk4YjY2NTQxYzJlYjVmN2Y5MzA0MGE1ZDIzZDg4ZjA2ODdkNGIzNCJ9fX0=
-    - 100:Default:OTJhMjQ0OGY1OGE0OTEzMzI0MzRlODVjNDVkNzg2ZDg3NDM5N2U4MzBhM2E3ODk0ZTZkOTI2OTljNDJiMzAifX19
-    - 100:Default:MWM4YTk3YTM4ODU2NTE0YTE2NDEzZTJjOTk1MjEyODlmNGM1MzYzZGM4MmZjOWIyODM0Y2ZlZGFjNzhiODkifX19
-    - 100:Default:ZjA5ODM5N2EyNzBiNGMzZDJiMWU1NzRiOGNmZDNjYzRlYTM0MDkwNjZjZWZlMzFlYTk5MzYzM2M5ZDU3NiJ9fX0=
-    - 100:Default:ZDllYzIyODE4ZDFmYmZjODE2N2ZiZTM2NzI4YjI4MjQwZTM0ZTE2NDY5YTI5MjlkMDNmZGY1MTFiZjJjYTEifX19
-    - 100:Default:NDZmNmM3ZTdmZDUxNGNlMGFjYzY4NTkzMjI5ZTQwZmNjNDM1MmI4NDE2NDZlNGYwZWJjY2NiMGNlMjNkMTYifX19
-    - 100:Default:MjZhNDExMmRmMWU0YmNlMmE1ZTI4NDE3ZjNhYWZmNzljZDY2ZTg4NWMzNzI0NTU0MTAyY2VmOGViOCJ9fX0=
-    - 100:Default:Y2UxYWM2ODM5OTNiZTM1NTEyZTFiZTMxZDFmNGY5OGU1ODNlZGIxNjU4YTllMjExOTJjOWIyM2I1Y2NjZGMzIn19fQ==
-    - 100:Default:ODM5YWY0NzdlYjYyNzgxNWY3MjNhNTY2MjU1NmVjOWRmY2JhYjVkNDk0ZDMzOGJkMjE0MjMyZjIzZTQ0NiJ9fX0=
-    - 100:Default:MzI2NTIwODNmMjhlZDFiNjFmOWI5NjVkZjFhYmYwMTBmMjM0NjgxYzIxNDM1OTUxYzY3ZDg4MzY0NzQ5ODIyIn19fQ==
-    - 100:Default:NDI4N2ViNTAxMzkxZjI3NTM4OWYxNjZlYzlmZWJlYTc1ZWM0YWU5NTFiODhiMzhjYWU4N2RmN2UyNGY0YyJ9fX0=
-    - 100:Default:ZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19
+    - 100:Magenta Sheep:c-magenta:MTgzNjU2NWM3ODk3ZDQ5YTcxYmMxODk4NmQxZWE2NTYxMzIxYTBiYmY3MTFkNDFhNTZjZTNiYjJjMjE3ZTdhIn19fQ==
+    - 100:Brown Sheep:c-brown:YTU1YWQ2ZTVkYjU2OTJkODdmNTE1MTFmNGUwOWIzOWZmOWNjYjNkZTdiNDgxOWE3Mzc4ZmNlODU1M2I4In19fQ==
+    - 100:Purple Sheep:c-purple:YWU1Mjg2N2FmZWYzOGJiMTRhMjZkMTQyNmM4YzBmMTE2YWQzNDc2MWFjZDkyZTdhYWUyYzgxOWEwZDU1Yjg1In19fQ==
+    - 100:Pink Sheep:c-pink:MmFjNzRhMmI5YjkxNDUyZTU2ZmExZGRhNWRiODEwNzc4NTZlNDlmMjdjNmUyZGUxZTg0MWU1Yzk1YTZmYzVhYiJ9fX0=
+    - 100:Green Sheep:c-green:YTAxNzIxNWM3ZjhkYjgyMDQwYWEyYzQ3Mjk4YjY2NTQxYzJlYjVmN2Y5MzA0MGE1ZDIzZDg4ZjA2ODdkNGIzNCJ9fX0=
+    - 100:Lime Sheep:c-lime:OTJhMjQ0OGY1OGE0OTEzMzI0MzRlODVjNDVkNzg2ZDg3NDM5N2U4MzBhM2E3ODk0ZTZkOTI2OTljNDJiMzAifX19
+    - 100:Cyan Sheep:c-cyan:MWM4YTk3YTM4ODU2NTE0YTE2NDEzZTJjOTk1MjEyODlmNGM1MzYzZGM4MmZjOWIyODM0Y2ZlZGFjNzhiODkifX19
+    - 100:Orange Sheep:c-orange:ZjA5ODM5N2EyNzBiNGMzZDJiMWU1NzRiOGNmZDNjYzRlYTM0MDkwNjZjZWZlMzFlYTk5MzYzM2M5ZDU3NiJ9fX0=
+    - 100:Blue Sheep:c-blue:ZDllYzIyODE4ZDFmYmZjODE2N2ZiZTM2NzI4YjI4MjQwZTM0ZTE2NDY5YTI5MjlkMDNmZGY1MTFiZjJjYTEifX19
+    - 100:Light Blue Sheeep:c-light_blue:NDZmNmM3ZTdmZDUxNGNlMGFjYzY4NTkzMjI5ZTQwZmNjNDM1MmI4NDE2NDZlNGYwZWJjY2NiMGNlMjNkMTYifX19
+    - 100:Yellow Sheep:c-yellow:MjZhNDExMmRmMWU0YmNlMmE1ZTI4NDE3ZjNhYWZmNzljZDY2ZTg4NWMzNzI0NTU0MTAyY2VmOGViOCJ9fX0=
+    - 100:Light Gray Sheep:c-light_gray:Y2UxYWM2ODM5OTNiZTM1NTEyZTFiZTMxZDFmNGY5OGU1ODNlZGIxNjU4YTllMjExOTJjOWIyM2I1Y2NjZGMzIn19fQ==
+    - 100:Red Sheep:c-red:ODM5YWY0NzdlYjYyNzgxNWY3MjNhNTY2MjU1NmVjOWRmY2JhYjVkNDk0ZDMzOGJkMjE0MjMyZjIzZTQ0NiJ9fX0=
+    - 100:Black Sheep:c-black:MzI2NTIwODNmMjhlZDFiNjFmOWI5NjVkZjFhYmYwMTBmMjM0NjgxYzIxNDM1OTUxYzY3ZDg4MzY0NzQ5ODIyIn19fQ==
+    - 100:Gray Sheep:c-gray:NDI4N2ViNTAxMzkxZjI3NTM4OWYxNjZlYzlmZWJlYTc1ZWM0YWU5NTFiODhiMzhjYWU4N2RmN2UyNGY0YyJ9fX0=
+    - 100:White Sheep:c-white:ZjMxZjljY2M2YjNlMzJlY2YxM2I4YTExYWMyOWNkMzNkMThjOTVmYzczZGI4YTY2YzVkNjU3Y2NiOGJlNzAifX19
   cow:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -264,7 +296,8 @@ EntityHeads:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
     Heads:
-    - 100:Default:ZTk1Y2JiNGY3NWVhODc2MTdmMmY3MTNjNmQ0OWRhYzMyMDliYTFiZDRiOTM2OTY1NGIxNDU5ZWExNTMxNyJ9fX0=
+    - 100:Default:NjlkMWQzMTEzZWM0M2FjMjk2MWRkNTlmMjgxNzVmYjQ3MTg4NzNjNmM0NDhkZmNhODcyMjMxN2Q2NyJ9fX0=
+    - 100:Angry Wolf:c-angry:ZTk1Y2JiNGY3NWVhODc2MTdmMmY3MTNjNmQ0OWRhYzMyMDliYTFiZDRiOTM2OTY1NGIxNDU5ZWExNTMxNyJ9fX0=
   mooshroom:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -499,7 +532,8 @@ EntityHeads:
   breeze:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
-    Heads: []
+    Heads:
+    - 100:Default:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTI3NTcyOGFmN2U2YTI5Yzg4MTI1YjY3NWEzOWQ4OGFlOTkxOWJiNjFmZGMyMDAzMzdmZWQ2YWIwYzQ5ZDY1YyJ9fX0=
   armadillo:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -510,3 +544,7 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTNiOTAwM2JhMmQwNTU2MmM3NTExOWI4YTYyMTg1YzY3MTMwZTkyODJmN2FjYmFjNGJjMjgyNGMyMWViOTVkOSJ9fX0=
+  creaking:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads: []

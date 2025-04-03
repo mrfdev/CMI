@@ -2,7 +2,7 @@
 # Player will get default rank group depending on set permission node cmi.rank.[groupName]
 # Not enabled ranks will be ignored
 # DisplayName section is optional and it will be used to represent rank ingame. This is NOT defining required permission node and you still need to use node name to rankup to this rank
-# DefaultRank section defines if player can be assigned to this rank if he dont have any. There can be more than one default rank, and depending on permision node, first rank will be assigned to that player when needed
+# DefaultRank section defines if player can be assigned to this rank if he don't have any. There can be more than one default rank, and depending on permision node, first rank will be assigned to that player when needed
 # PermissionRequirement section defines list of permissions player should have to rankup to that rank. Optional - For each permission node you can add its name which will be shown in /cmi rankinfo with : In example cmi.command.fly:Fly
 # McMMORequirement section defines list of McMMO skills and levels player should have to rankup to that rank.
 # AureliumRequirement section defines list of Aurelium skills and levels player should have to rankup to that rank.
@@ -47,7 +47,7 @@
 #         DamageTaken - total damage taken
 #         Deaths - count of deaths
 #         MobKills - total amount of mobs killed by player
-#         PlayerKills - total amount of players killed. Indirect kills dont count
+#         PlayerKills - total amount of players killed. Indirect kills don't count
 #         ItemEnchanted - amount of enchanted items
 #         AnimalsBred - animals bred
 #         FishCaught - fish caught

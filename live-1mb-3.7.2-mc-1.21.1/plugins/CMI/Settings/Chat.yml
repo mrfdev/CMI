@@ -1,6 +1,7 @@
 Chat:
   ModifyChatFormat:
     # Will try to modify chat to display it in defined format
+    # If this is disabled and you have 3rd party plugin handling chat messages, consider disabling ClickHoverMessages section too if you notice any problems with chat formatting
     Enabled: true
     # Priority of public message format listener
     # Changed priority will only take effect on full server restart. Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
@@ -55,10 +56,13 @@ Chat:
     # Do you want to enable public messaging over bungeecord
     # Player needs to have cmi.bungee.publicmessages.[servername] permission node to be able to send messages to target server
     PublicMessages: false
+    # When enabled public messages addressed to single player will be ignored and not sent across networkd
+    # This only applies when we have more than one player online and chat range is set to be global
+    PublicMessagesSingleIgnore: false
     # Do you want to enable staff messaging over bungeecord
     StaffMessages: false
-  # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {message} {nicknameprefix}. Supporting PlaceHolderAPI variables like %player_server%
-  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
+  # Used for simple chat messages. Optional variables: {displayName} {world} {prefix} {suffix} {group} {shout} {shoutcolor} {message} {nicknameprefix}. Supporting PlaceHolderAPI variables like %player_server% %cmi_user_chatcolor%
+  # ATTENTION! Don't use gradient colors for {message} variable, if you want to apply gradient for it, utilize GeneralMessageFormat section
   GeneralFormat: '{#Edward}{world} {#Sirocco}<&e{displayName}{#Sirocco}> {#Geyser}{message}'
   # Will define message format itself, this allows to have gradients in messages
   # It NEEDS to contain {message} otherwise we will ignore this setup
@@ -75,6 +79,8 @@ Chat:
     # GeneralRange should be enabled
     # set to 0 to shout across all worlds, -1 to disable
     Shout: -1
+    # Color code to be used as base for the shout chat message
+    ShoutColor: ''
     # Defines cost for each shout message
     ShoutCost: 0
     # List of message range limits
@@ -118,7 +124,7 @@ Chat:
   # cmi.chatgroup.[id] permnission node to use
   # Permission example: cmi.chatgroup.2
 
-  # ATTENTION! Dont use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
+  # ATTENTION! Don't use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
   GroupFormat:
     '1': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#Geyser}{message}'
@@ -190,7 +196,7 @@ Chat:
     # If set to true then /me messages will be filtered from color codes and will allow to colorize them with appropriate permission node
     # cmi.colors.me.[colorName]
     me: true
-    # If set to true, then color codes will get removed from text instead of leaving them if player dont have appropriate permission node for that color
+    # If set to true, then color codes will get removed from text instead of leaving them if player don't have appropriate permission node for that color
     CleanUp:
       publicmessage: false
       privatemessage: false

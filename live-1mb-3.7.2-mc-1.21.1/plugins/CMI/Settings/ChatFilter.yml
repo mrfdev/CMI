@@ -86,12 +86,13 @@ ChatFilter:
       - \b(?i)(p(\W|_|)+)+(a(\W|_|)+)+(y(\W|_|)+)+2(w(\W|_|)+)+(i(\W|_|)+)+(n(\W|_|)+)+
       - \b(?i)(p(\W|_|)+)+2(w(\W|_|)+)+
       - \b(?i)(r(\W|_|)+)+(e(\W|_|)+)+(t(\W|_|)+)+(a(\W|_|)+)+(r(\W|_|)+)+(d(\W|_|)+)+
+      - \b(?i)(s(\W|\d|_|)+)+(k(\W|\d|_|)+)+(i(\W|\d|_|)+)+(b(\W|\d|_|)+)+(i(\W|\d|_|)+)+(d(\W|\d|_|)+)+(i(\W|\d|_|)+)+
       ReplaceWith: ''
       BlockType: others
       includePrivateMessages: true
       msgToStaff: '&4!STAFF!&6 [playerName] &4msg filtered: &r[message]'
       Commands:
-      - cmi shadowmute [senderName] 60 -s ChatFilter - DontSaytheseThings
+      - cmi shadowmute [senderName] 15m -s ChatFilter - DontSaytheseThings
       - 'discordsrv broadcast #1186634863827234836 **Chatfilter**: `[senderName]`
         said `[message]`'
     repeatgroups:

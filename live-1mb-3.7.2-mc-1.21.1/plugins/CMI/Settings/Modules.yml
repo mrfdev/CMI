@@ -1,4 +1,4 @@
-# List of modules you can turn on and off if you dont use them to save some server resources
+# List of modules you can turn on and off if you don't use them to save some server resources
 # This will COMPLETELY disable some of the features
 # For this to take effect you will need to perform full server restart
 # Disabling some of modules will disable appropriate commands, like cuffed will disable cuff command, silentChest will disable silentChest command and so on
@@ -163,7 +163,7 @@ votifier: true
 #  
 # Handles player combat system
 # Applies for servers from 1.7.x and up
-playerCombat: true
+playerCombat: false
 #  
 # Handles head drops system
 # Applies for servers from 1.16.x and up

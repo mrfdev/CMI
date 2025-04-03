@@ -42,6 +42,10 @@ Homes:
         Use: true
         Slot: 6
         Material: TOTEM_OF_UNDYING
+      backButton:
+        Use: true
+        Slot: 7
+        Material: BONE
       prevButton:
         Slot: 46
       middleButton:

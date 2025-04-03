@@ -63,6 +63,9 @@ Scavenge:
     # This value is in percentage from worth value of that each enchantment and item
     # So if you have base cost of 100, extra cost of 5% and you are trying to extract sharpness 5 which worth is 1000 and item sell hand worth is 100, then you will have to pay 155 for extraction process
     Extra: 5.0
+  # When enabled we will allow scavenging of items which doesn't have valid recipe for ingredient return process
+  # This only applies in cases when we can return enchants to player, otherwise it doesn't allow you to scavenge item
+  WithoutIngredients: false
   # List of materials to block from being scavenged
   BlackList:
   - diamond

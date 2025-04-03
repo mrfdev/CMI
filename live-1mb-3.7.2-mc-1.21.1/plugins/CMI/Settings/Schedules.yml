@@ -25,18 +25,19 @@
 #   This defaults to false and placeholders will be translated before hand
 #   Exception for delay! specialized command variable which always gets translated before hand
 # Commands: List of commands to be performed when time is correct. 
+#   You can multiple commands defined in single line, separate each one with ;; for example: command1;;command2;;command3
 #   If command starts with msg! and then player name is given, simple message will be sent to that player if he is online.
 #   If command starts with broadcast! then message will be sent to everyone on server in simple manear
 #   If command starts with actionbar! then all players will get action bar message defined after this variable
 #   If command starts with title! then all players will get title message defined after this variable
 #   If command starts with subtitle! then all players will get subtitle message defined after this variable
 #   If command starts with kickall! then all players will be kicked from server with defined message. Usefull before server stop.
-#   If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we dont know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
+#   If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we don't know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
 #   If command starts with moneycost:[amount]! then command will get performed if player has enough money. 
 #   If command starts with expcost:[amount]! then command will get performed if player has enough exp.
 #   If command starts with allPlayers! then command will get performed by using everyones who is online name. Command itself need to contain [allPlayers] to indicate where player name needs to be added
 #   Insert line with 'delay! 5' to perform rest of commands after 5 seconds from scheduler trigger. This allows to create in example counter before server stop. Check example.
-#   [randomPlayer] placeholder can be used to get random online player name who dont have cmi.scheduler.exclude permission node. This can be used to give rewards for random players on particular time. In example: - cmi give [randomPlayer] diamond %rand/1-5% will give rando mamount from 1 to 5 diamonds to random online player
+#   [randomPlayer] placeholder can be used to get random online player name who don't have cmi.scheduler.exclude permission node. This can be used to give rewards for random players on particular time. In example: - cmi give [randomPlayer] diamond %rand/1-5% will give rando mamount from 1 to 5 diamonds to random online player
 # Supports PlaceHolderAPI variables
 # More information about specialized commands can be found at https://www.zrips.net/cmi/commands/specialized/
 
@@ -301,30 +302,39 @@ AllInOneJustExample:
 tenyearsweekend:
   Enabled: false
   MinPlayers: 1
-  Delay: 300
+  Delay: 600
   Repeat: true
   Randomize: true
   Feedback: false
   Commands:
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange>}» END
-    RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange>}» END
-    RECENTLY RESET {#gold<}{#Feijoa}&l Now a perm world.
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange>}» NETHER
-    RECENTLY RESET {#gold<}{#Feijoa}&l Old /homes can be dangerous
-  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange>}» NETHER
-    RECENTLY RESET {#gold<}{#Feijoa}&l Now a perm world
-TwentyOne:
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange}» /santa
+    event is live
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedA -c:green {#orange}» /santa
+    world is open
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange}» The
+    winter and santa /kits are live
+  - asConsole! cmi bossbarmsg all -s:90 -t:90 -n:upgradedC -c:green {#orange}» /santa
+    world has an advent calendar
+Halloweeen:
   Enabled: false
   MinPlayers: 1
   Delay: 600
   Repeat: true
-  Randomize: false
+  Randomize: true
   Feedback: false
   Commands:
-  - asConsole! cmi ctellraw all <T>{#buttercup>}We are now on public beta test 1.21.1
-    please check your inventory, enderchest, favourite features, warps and kits, and
-    report any issues on /discord as a new ticket. {#orange<}</T>
+  - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa event world is open! Read
+    the lectern at its spawn point! Enjoy.{#orange<}</T>
+  - asConsole! /cmi bossbarmsg all -n:halloween {#orange}&lThe /santa world is open!
+  - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa world has an advent calendar{#orange<}</T>
+  - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa event has a santa kit in
+    /kits{#orange<}</T>
+  - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa world has a winter kit
+    in /kits{#orange<}</T>
+  - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa world is fun to explore,
+    go check it out. Who knows what you might find!{#orange<}</T>
+  - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa event has crackers that
+    give things{#orange<}</T>
 Announcer:
   Enabled: true
   MinPlayers: 2
@@ -407,7 +417,7 @@ Announcer:
   - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Ranks: We have quite a few! Check {#orange}&l/ranks{#feijoa}.</T><H>Click to view
     /ranks.</H><C>ranks</C>'
-  - broadcast! {#Cerulean} 1MB Community »{#magenta} We started the server 13+ years
+  - broadcast! {#Cerulean} 1MB Community »{#magenta} We started the server 14+ years
     ago in 2011 WHOOOO!
   - 'broadcast! {#Cerulean} 1MB Community »{#magenta} Type: {#orange}&l/celebration{#magenta}.'
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Found an issue, bug,
@@ -465,10 +475,6 @@ Announcer:
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Type {#orange}&l/here{#feijoa} for more information about where you are.</T><H>Click
     to view /here.</H><C>here</C>
-  - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
-    Bottle your experience orbs with dragon breath, ask staff how! Location: {#orange}&l/warp
-    shops{#feijoa} (the bedrock at the enchantment table).</T><H>Click to check out
-    /warp shops.</H><C>cmi warp shops</C>'
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Collect all the vote-tokens
     for unique OP stuff.
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
@@ -510,4 +516,4 @@ updateNameplate:
   Randomize: false
   Feedback: true
   Commands:
-  - asConsole! allPlayers! cmi nameplate [allPlayers] -pref:%luckperms__prefix%
+  - asConsole! allPlayers! cmi nameplate [allPlayers] reset -s

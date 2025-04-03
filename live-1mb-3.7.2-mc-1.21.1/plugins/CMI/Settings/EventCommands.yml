@@ -6,7 +6,7 @@
 # If command starts with title! then all players will get title message defined after this variable
 # If command starts with subtitle! then all players will get subtitle message defined after this variable
 # If command starts with kickall! then all players will be kicked from server with defined message. Usefull before server stop.
-# If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we dont know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
+# If command starts with perm:[permissionNode]! then command will get performed if player has permission node. This will not work when we don't know who is target player. In example: perm:cmi.announce.vip! broadcast! Hello vip guys
 # [playerName] to insert target player name
 # [playerDisplayName] to insert player display name
 # [lvl] to insert player level
@@ -41,7 +41,7 @@ joinServer:
 quitServer:
   Enabled: true
   Commands:
-  - cmi invsave [playerName] -s
+  - asConsole! cmi invsave [playerName] -s
 playerDeath:
   Enabled: false
   Commands:
@@ -87,15 +87,15 @@ playerWorldChange:
   Commands:
   - check:%cmi_user_gamemode%==Survival! check:%cmi_user_flying%!=False! check:%cmi_user_tfly%==0!
     asConsole! cmi fly [playerName] false -s
-  - ifinworld:general#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+  - ifinworld:general#! check:%cmi_user_name%!=mrfloris|1MBRoberto|yakirarage|ender_vine|NikkiPixel|JaCkperByte|Tidala!
     asConsole! cmi gm [playerName] survival -s
-  - ifinworld:wild#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+  - ifinworld:wild#! check:%cmi_user_name%!=mrfloris|1MBRoberto|yakirarage|ender_vine|NikkiPixel|JaCkperByte|Tidala!
     asConsole! cmi gm [playerName] survival -s
-  - ifinworld:spawn#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+  - ifinworld:spawn#! check:%cmi_user_name%!=mrfloris|1MBRoberto|yakirarage|ender_vine|NikkiPixel|JaCkperByte|Tidala!
     asConsole! cmi gm [playerName] survival -s
-  - ifinworld:nether#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+  - ifinworld:nether#! check:%cmi_user_name%!=mrfloris|1MBRoberto|yakirarage|ender_vine|NikkiPixel|JaCkperByte|Tidala!
     asConsole! cmi gm [playerName] survival -s
-  - ifinworld:end#! check:%cmi_user_name%!=mrfloris|ender_vine|NikkiPixel|JaCkperByte|Tidala!
+  - ifinworld:end#! check:%cmi_user_name%!=mrfloris|1MBRoberto|yakirarage|ender_vine|NikkiPixel|JaCkperByte|Tidala!
     asConsole! cmi gm [playerName] survival -s
 playerPreWorldChange:
   Enabled: true

@@ -1,0 +1,107 @@
+# 1MoreBlock.com /rtp - CMI Teleporter Machine
+# Version 0.4.2, build 030 for CMI 9.7.10.4 / MC 1.21.4+
+# Copyright 1977 - 2025 Floris Fiedeldij Dop - but feel free to use this!
+# Installation: drop in customalias/ folder and /cmi reload, then /rtp becomes available.
+# Don't forget to edit rt: and rtp: in alias.yml to false
+# Todo: move to /rtp, map betterrtp commands to /rtp
+
+CustomAlias:
+  rtp:
+    Cmds:
+    - 'check:%cmi_player_world%!=spawn|wild|general|nether|end~! asConsole! cmi msg
+      [playerName] !{#orange}You can not "/$0" in "%cmi_player_world%" \n {#orange}RTP-able
+      worlds: /spawn, /wild, /general, /nether and /end.'
+    - cooldown:25#?!
+    - asConsole! cmi panimation circle;effect:reddust;dur:4;pitchc:5;part:10;offset:0,1,0;radius:2;yawc:5;color:rs;target:[playerName]
+    - asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald>}&lCharging
+      up teleporter{#388C54<}&r{#emerald}...
+    - asConsole! cmi sound block.conduit.deactivate -v:0.3 [playerName] -s
+    - delay! 1.3
+    - 'asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald}Loading {#7e5c99}🌸{#emerald>}
+      chorus energy{#388C54<}: {#orange}%cmi_random_10_15%'
+    - asConsole! cmi sound block.amethyst_block.hit -v:0.4 [playerName] -s
+    - delay! 0.3
+    - 'asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald}Loading {#7e5c99}🌸{#emerald>}
+      chorus energy{#388C54<}: {#orange}%cmi_random_16_25%'
+    - asConsole! cmi sound block.amethyst_block.hit -v:0.4 [playerName] -s
+    - delay! 0.5
+    - 'asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald}Loading {#7e5c99}🌸{#emerald>}
+      chorus energy{#388C54<}: {#orange}%cmi_random_26_45%'
+    - asConsole! cmi sound block.amethyst_block.hit -v:0.4 [playerName] -s
+    - delay! 0.6
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:6;r:1;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - 'asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald}Loading {#7e5c99}🌸{#emerald>}
+      chorus energy{#388C54<}: {#orange}%cmi_random_46_80%'
+    - asConsole! cmi sound block.amethyst_block.hit -v:0.5 [playerName] -s
+    - delay! 0.8
+    - 'asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald}Loading {#7e5c99}🌸{#emerald>}
+      chorus energy{#388C54<}: {#orange}%cmi_random_81_90%'
+    - asConsole! cmi sound block.amethyst_block.hit -v:0.6 [playerName] -s
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:6;r:1;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - delay! 0.8
+    - 'asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald}Loading {#7e5c99}🌸{#emerald>}
+      chorus energy{#388C54<}: {#orange}%cmi_random_91_100%'
+    - asConsole! cmi sound block.amethyst_block.hit -v:0.7 [playerName] -s
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:6;r:1;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - delay! 0.8
+    - asConsole! cmi usermeta [playerName] add tempx %cmi_player_x% -s
+    - asConsole! cmi usermeta [playerName] add tempy %cmi_player_y% -s
+    - asConsole! cmi usermeta [playerName] add tempz %cmi_player_z% -s
+    - asConsole! cmi usermeta [playerName] add tempworld %cmi_player_world% -s
+    - statement:check1! hasmoney:75!
+    - if:check1! asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald>}Teleporting
+      you now{#388C54<}...
+    - delay! 1.2
+    - if:check1! ifinworld:spawn! moneycost:75! bperm:cmi.command.rt! asPlayer! cmi
+      rt [playerName] wild
+    - if:check1! ifinworld:spawn@! moneycost:75! bperm:cmi.command.rt! asPlayer! cmi
+      rt
+    - delay! 0.4
+    - if:check1! asConsole! cmi panimation circle;c:200,50,210;twist;part:6;r:1;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - 'if:check1! asConsole! cmi ctellraw [playerName] <T> &r \n {#5c7ae6}[{#5cace6}💲{#5c7ae6}]
+      {#emerald}Cmd Cost: {#gray}${#buttercup}75 {#gray}| /balance: {#buttercup}%cmi_user_balance_formatted%&r</T><H>Click
+      to check /balance again!</H><C>balance</C>'
+    - 'if:check1! asConsole! cmi ctellraw [playerName] <T> {#5c7ae6}[{#5cace6}&l⬅&r{#5c7ae6}]
+      {#emerald}You left: {#gray}x:{#buttercup}%cmi_user_metaint_tempx% {#gray}y:{#buttercup}%cmi_user_metaint_tempy%
+      {#gray}z:{#buttercup}%cmi_user_metaint_tempz% {#gray}(/%cmi_user_meta_tempworld%){#buttercup}
+      (/back)&r</T><H>Click to go /back</H><C>back</C>'
+    - 'if:check1! asConsole! cmi ctellraw [playerName] <T> {#5c7ae6}[{#5cace6}➜{#5c7ae6}]
+      {#emerald}Arrived: {#gray}x:{#buttercup}%cmi_player_x% {#gray}y:{#buttercup}%cmi_player_y%
+      {#gray}z:{#buttercup}%cmi_player_z% {#gray}(/%cmi_player_world%){#buttercup}
+      (/rtp)\n&r </T><H>Click to /rtp again!</H><C>$0</C>'
+    - if:check1@! asConsole! cmi titlemsg [playerName] {#buttercup}⸭ 💲 ⸭\n{#emerald>}Insufficient
+      money balance{#388C54<}...
+    - 'if:check1@! asConsole! cmi ctellraw [playerName] <T> &r \n {#5c7ae6}[{#5cace6}💲{#5c7ae6}]
+      {#emerald}Cmd Cost: {#gray}${#buttercup}75 {#gray}| Your available /balance:
+      {#buttercup}%cmi_user_balance_formatted%&r</T><H>Click to check /balance again!</H><C>balance</C>'
+    - if:check1@! asConsole! cmi ctellraw [playerName] <T> {#5c7ae6}[{#5cace6}💲{#5c7ae6}]
+      {#buttercup}Try making a bit of money before trying /$0 again.\n&r </T><H>Click
+      to /sell inventory items!</H><C>sell</C>
+    - asConsole! cmi usermeta [playerName] remove tempx -s
+    - asConsole! cmi usermeta [playerName] remove tempy -s
+    - asConsole! cmi usermeta [playerName] remove tempz -s
+    - asConsole! cmi usermeta [playerName] remove tempworld -s
+    - if:check1! asConsole! cmi sound entity.generic.explode -v:0.3 [playerName] -s
+    - if:check1! asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald>}Arrived
+      at random location!{#7e5c99<}
+    - if:check1! asConsole! cmi panimation circle;effect:reddust;dur:4;pitchc:5;part:10;offset:0,1,0;radius:2;yawc:5;color:rs;target:[playerName]
+  betterrtp:
+    Cmds:
+    - asPlayer! rtp
+    - 'msg! [playerName] The $0 command is actually: &l/rtp'
+  brtp:
+    Cmds:
+    - asPlayer! rtp
+    - 'msg! [playerName] The $0 command is actually: &l/rtp'
+  randomtp:
+    Cmds:
+    - asPlayer! rtp
+    - 'msg! [playerName] The $0 command is actually: &l/rtp'
+  wildtp:
+    Cmds:
+    - asPlayer! rtp
+    - 'msg! [playerName] The $0 command is actually: &l/rtp'
+  rt:
+    Cmds:
+    - asPlayer! rtp
+    - 'msg! [playerName] The $0 command is actually: &l/rtp'
