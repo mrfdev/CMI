@@ -1,8 +1,8 @@
 <AutoPage><Hidden><NoAutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 {#orange} -&l 1MoreBlock 2025 Events
-{#orange} -{#gold} Next event: Probably Valentines Day 2025
-{#orange} -{#gold} Date: 14th of February 2025
-{#orange} -{#gold} 
+{#orange} -{#gold} Next event: Easter 2025
+{#orange} -{#gold} Date: Sunday 20th of April, 2025 (most likely)
+{#orange} -{#gold} To play, type: &l/easter&r (on that date)
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 

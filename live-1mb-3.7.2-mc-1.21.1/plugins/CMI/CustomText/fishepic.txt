@@ -1,6 +1,24 @@
-<AutoPage>
-something
+<AutoPage><NoAutoAlias><NoReqPermission>
+{#orient}•----------{#cerulean}❖ Special epic fish ❖{#orient}---------•
+{#Feijoa}We have a {#orange}unique{#Feijoa} group of players on the server that support the server in a way that makes them {#orange}EPIC{#Feijoa}!!
+{#Feijoa}As a reward for being {#orange}epic{#Feijoa} players, they get their own {#orange}fish{#Feijoa}!
+{#Feijoa}An {#orange}epic player fish{#Feijoa} is easy to recognize when you catch and consume it.
+{#Feijoa}It has a {#orange}custom{#Feijoa} title, lore message, and runs a {#orange}personalized{#Feijoa} command.
+{#Feijoa}Catch all {#orange}16{#Feijoa} epic player fish to complete your collection or eat them for {#orange}special{#Feijoa} effects/rewards?
 <NextPage>
-something
-<NextPage>
-something
+{#orange}Tidala {#Feijoa}• 5 minutes of temp fly
+{#orange}Globug100 {#Feijoa}• 3 welcome /points, and a few items!
+{#orange}Paprikaatje {#Feijoa}• 3 welcome /points, and a few items!
+{#orange}Citebafla {#Feijoa}• 3 welcome /points, and a few items!
+{#orange}EnderDip {#Feijoa}• 3 welcome /points, and a few items! Oh and a teleport to a different dimension
+{#orange}JaCkperByte {#Feijoa}• 5 minutes of temporary god mode!
+{#orange}NikkiPixel {#Feijoa}• 2 minutes of placing flowers where you bonemeal!
+{#orange}Vubbo {#Feijoa}• You received a bit of nether quartz ore!
+{#orange}yakirarage {#Feijoa}• Time to slow down and enjoy life, lets be lazy!
+{#orange}RattlesYT {#Feijoa}• Spawns a rattled bird!
+{#orange}Danb135 {#Feijoa}• Teleports you to another dimension!
+{#orange}AiboPals {#Feijoa}• If you did not have it yet, you have now unlocked the RAINBOW WINGS particles /perk
+{#orange}AtariMaster {#Feijoa}• Shoots particles around
+{#orange}BeardedAdventur {#Feijoa}• Zooom you have 45 seconds of crazy speed
+{#orange}mikefelixxg {#Feijoa}• 20 seconds of suppperrr breaaakerrrr effect, go mine!
+{#orange}Nebih {#Feijoa}• You get an entropy crystal and 20 seconds of some extra luck in the game.
