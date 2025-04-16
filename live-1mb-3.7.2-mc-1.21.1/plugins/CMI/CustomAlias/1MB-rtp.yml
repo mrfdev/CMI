@@ -1,7 +1,8 @@
 # 1MoreBlock.com /rtp - CMI Teleporter Machine
-# Version 0.4.1, build 029 for CMI 9.7.10.4 / MC 1.21.4+
+# Version 0.4.2, build 030 for CMI 9.7.10.4 / MC 1.21.4+
 # Copyright 1977 - 2025 Floris Fiedeldij Dop - but feel free to use this!
-# Installation: drop in customalias/ folder and /cmi reload, then /_rtp becomes available.
+# Installation: drop in customalias/ folder and /cmi reload, then /rtp becomes available.
+# Don't forget to edit rt: and rtp: in alias.yml to false
 # Todo: move to /rtp, map betterrtp commands to /rtp
 
 CustomAlias:
@@ -97,6 +98,10 @@ CustomAlias:
     - asPlayer! rtp
     - 'msg! [playerName] The $0 command is actually: &l/rtp'
   wildtp:
+    Cmds:
+    - asPlayer! rtp
+    - 'msg! [playerName] The $0 command is actually: &l/rtp'
+  rt:
     Cmds:
     - asPlayer! rtp
     - 'msg! [playerName] The $0 command is actually: &l/rtp'

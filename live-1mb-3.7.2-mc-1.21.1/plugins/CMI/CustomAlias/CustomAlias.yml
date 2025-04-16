@@ -1037,3 +1037,10 @@ CustomAlias:
   ai:
     Cmds:
     - msg! [playerName] Permission denied, this world is not open to humans
+  giveaways:
+    Cmds:
+    - cmi ctext giveaways
+    Perm: true
+  sb:
+    Cmds:
+    - asPlayer! animatedscoreboard toggle
