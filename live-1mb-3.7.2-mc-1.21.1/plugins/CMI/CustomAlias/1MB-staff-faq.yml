@@ -13,7 +13,7 @@ CustomAlias:
       playername is required, usually it's optional)
     - statement:check1! check:$1==welcome!
     - if:check1! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi sudo [playerName]
-      c:Begin by typing /newplayer and familiarize yourself with the /rules to begin.
+      c:Begin by typing /newplayer and familiarize yourself with the /rules to get started.
       $2
     - if:check1! check:%cmi_lastrandom_[playerName]%==2! asConsole! cmi sudo [playerName]
       c:Get started with /newplayer and go over the /rules to launch your journey.
