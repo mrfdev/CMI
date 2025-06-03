@@ -5,14 +5,14 @@
 # Language file you want to use
 Language: EN
 # Defines if you want to auto download default locale files from github repository
-# You can disable this if you are using EN or you already have your locale setup and you dont need to have other languages being downloaded
+# You can disable this if you are using EN or you already have your locale set up and you don't need other languages to be downloaded.
 LanguageDownload: true
 Economy:
-  # Enable or disable CMI economy in general
-  # In case CMIInjector is present, then this will be set to true automatically.
-  # Attention! For economy to work properly with other plugins you will need ether an injector or recompiled Vault version. 
+  # Enable or disable the CMI economy in general
+  # If CMIInjector is present, this will be set to true automatically
+  # Attention! For economy to work properly with other plugins you will need either an injector or a recompiled Vault version.
   # You can find both option at top of plugins page
-  # ATTENTION! If you disabled CMI economy while server was running, you will need to perform full server restart for this to take correct effect and avoid any issues while getting players balances
+  # ATTENTION! If you disabled CMI economy while server was running, you will need to perform a full server restart for this to take effect and avoid issues when retrieving players' balances.
   Enabled: true
   # Determines if player needs to confirm money payment by clicking on chat message
   Confirmation: false
@@ -25,23 +25,23 @@ Economy:
     - Zrips
   Cheque:
     # Determines max amount of cheque player can create
-    # Set it to 0 to remove limit
+    # Set it to 0 to remove the limit
     MaxValue: 250000.0
-    # If set to true player will be required to hold peace of paper to create cheque
+    # If set to true, the player will be required to hold a piece of paper to create a cheque.
     Paper: true
-    # When set to true player will be required to have cmi.command.cheque.withdraw permission node to withdraw cheque
+    # When set to true, the player will be required to have cmi.command.cheque.withdraw permission node to withdraw cheque
     Permission: false
-    # Should we allow checque usage in creative mode
+    # Should we allow cheque usage in creative mode?
     # If you have creative server, keep this at false or players could start duplicating items
     InCreative: false
     # Should we accept old cheque item stacks with non encoded data in them
-    # Keep it at false for most security
+    # Keep it set to false for maximum security
     AcceptNotEncoded: false
   PaymentWithShorts:
     # When set to true players will be able to make payments by using short amount formats like 10k which results into 10000 and similar
     # In addition 10.2k will result into 10200
     Allow: true
-    # List of suffixes we should accept and into what amount it results into
+    # List of suffixes we should accept and what amount they result in.
     # Only one letter is acceptable when defining suffix
     values:
     - k-1000
@@ -68,7 +68,7 @@ Economy:
     ExcludeInactive: 730
   Global:
     # Starting amount of money players will have
-    StartingAmount: 100.0
+    StartingAmount: 250.0
     # Minimal amount, can go into negative if needed
     MinimalAmount: 0.0
     # Maximal amount of money player can have. Set to -1 to disable this limit
@@ -107,12 +107,12 @@ InteractiveCommands:
   # Default format is [ic:[icName]] in example [ic:trash]
   # If you want clean format use regex like: (\[([a-zA-Z0-9]+)\])
   SignRegex: (\[([a-zA-Z0-9]+)\])
-  # Sorting of IC list ether by distance from you or alphabetically
+  # Sorting of IC list either by distance from you or alphabetically
   SortByDistance: true
 Optimizations:
   # When disabled we wont try to deop fake operator on server starup or unload while at same time disabling asFakeOp! specialized command usage
   UseFakeOperator: true
-  # When disabled we will not check for posible infinite loops while performing custom alias commands
+  # When disabled we will not check for possible infinite loops while performing custom alias commands
   InfiniteLoopDetection: true
   # When this set to true any message sent to console will be strip out of any colors
   # In case you have mohochrome console, keep this at true
@@ -132,15 +132,15 @@ Optimizations:
   DisableTeamManagement: false
   ArmorStands:
     # When set to true, plugin will check if player can manipulate armor stand by sending fake block place event and checking if any plugin would want to prevent this action
-    # This can help out to minimize posibility for players to manipulate armor stands when they dont have build permission in area where armorstand is standing
+    # This can help out to minimize posibility for players to manipulate armor stands when they don't have build permission in area where armorstand is standing
     CheckBlockPlace: false
     Templates:
-      # When set to true player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
+      # When set to true, the player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
       SpecificPermission: false
   AutoDownload:
-    # In case you dont have GeoIP.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
+    # In case you don't have GeoIP.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
     GeoIp: false
-    # In case you dont have GeoLiteCity.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
+    # In case you don't have GeoLiteCity.dat it will be downloaded automatically on server start. Restart can be needed for it to take effect
     GeoLiteCity: false
   # When enabled you will see skull owner name in action bar when right clicking it
   ShowSkullOwner: true
@@ -182,6 +182,7 @@ Optimizations:
   CommandSorting: true
   # By default we will not allow Rcon type commands, if you have your server properly setup to accept remote console commands safely and you have a need then you can enable it
   AllowRconCommands: false
+  CustomCommandSender: []
   # When enabled Rcon feedback message will not include color codes for cleaner display
   CleanRconCommands: false
   # Percentage value (1-100) to pick best command match if command cant be found
@@ -211,6 +212,16 @@ Optimizations:
     # Set this to 0 if you want to disable it
     # Max 60 seconds
     Invulnerability: 4
+    # Time in seconds player should be invulnerable after teleporting to this world
+    # If world isn't defined then default timer will be used
+    InvulnerabilityPerWorld:
+    - testWorld-5
+    # Situations where teleport invulnerability gets disabled
+    DisableInvulnerability:
+      # Disables if player breaks or places block
+      OnBlockBreakPlace: true
+      # Disables if player interacts with a block or entity
+      OnInteraction: true
     # Set to true if you want to use tp commands as /cmi tp [WhoYouWantToTeleport] [WhereToTeleport] when its false, its /cmi tp [whereToTeleport] [WhoYouWantToTeleport]
     SwitchPlaces: false
     CurrentLoc:
@@ -263,16 +274,24 @@ Optimizations:
       - DiamondBlock
       - DiamondOre
       - ironore:5
-    # Back location will not be triggered if player teleports closer than defined amount of blocks
-    BackMinDistance: 5
-    # When set to false we will not include teleport location when teleporting around with worldedit compass
-    # When set to true we will include each teleport action, even if you simply jumped around with compass
-    BackWithWE: true
-    # List of worlds to which players can't return using the /back command
-    BackBlackList:
-    - run
-    - santa
-    - winter
+    Back:
+      # Back location will not be triggered if player teleports closer than defined amount of blocks
+      MinDistance: 5
+      # When set to false we will not include teleport location when teleporting around with worldedit compass
+      # When set to true we will include each teleport action, even if you simply jumped around with compass
+      WithWE: true
+      # List of worlds to which players can't return using the /back command
+      BlackList:
+      - run
+      - santa
+      # Time in seconds /back command should expire. Set to 0 to disable
+      Expiration: 0
+    DBack:
+      # List of worlds to which players can't return using the /dback command
+      BlackList:
+      - run
+      # Time in seconds /dback command should expire. Set to 0 to disable
+      Expiration: 0
   Hat:
     Block:
       # When enabled we will not allow to place items into head slot if item has custom lore
@@ -281,15 +300,14 @@ Optimizations:
       # When enable we wont allow to equip items which are not hat type
       NoneHatItems: false
       # When enable we wont allow to equip none hat items with enchant on it
-      NoneHatEnchanted: true
+      NoneHatEnchanted: false
     Allow:
       # When enabled we will allow player to put on mob head without cmi.inventoryhat permission node
       # When disabled player will need to have cmi.inventoryhat to put on mob heads as hats
       MobHeads: true
     # List of materials to be allowed on players head
     # Keep it empty to allow all materials on player head
-    WhiteList:
-    - bedrock
+    WhiteList: []
   helpop:
     # When set to true player will not see his sent message to helpop, but rather predefined message informing that his question have been sent to online staff
     feedbackMessage: true
@@ -352,8 +370,6 @@ Optimizations:
   OnLimitedItemUse:
     # Informs about left uses of item
     Inform: true
-  # Can disable messages outputed durring start for world chunk checks
-  DisableWorldChunkCheckInfo: true
   # Can prevent animals or monsters entering boats
   PreventEntityBoatEnter:
     Monsters: false
@@ -421,6 +437,7 @@ Optimizations:
   Multicraft:
     # When set to true, will prevent multicraft servers to spam in console.
     DisableList: false
+  DisableWorldChunkCheckInfo: true
 PlaytimeRewards:
   # Enable or disable playtime rewards.
   # This is required if you want to have auto rewards
@@ -435,7 +452,7 @@ PlaytimeRewards:
   # This will show next X amount rewards from your current playtime
   # No point in listing all rewards if player is still far away
   OneTimeAmount: 2
-  # When set to true player will be required to have cmi.prewards.[name] permission node to get particular playtime reward
+  # When set to true, the player will be required to have cmi.prewards.[name] permission node to get particular playtime reward
   RequiresPermission: true
 Sleeping:
   Speedup:
@@ -659,7 +676,7 @@ Votifier:
   # [serviceName] variable can be used to insert address
   CommandsOnVote:
   - cmi msg [playerName] You're pretty awesome for voting
-  # Keep it at false if you dont want to give out extra rewards
+  # Keep it at false if you don't want to give out extra rewards
   ExtraRewardsEnabled: true
   # Commands will be performed when player collect determined amount of votes
   ExtraRewards:
@@ -735,6 +752,7 @@ Signs:
   - '[condense]'
   - '[uncondense]'
   - '[craft]'
+  - '[secret]'
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -808,7 +826,11 @@ Command:
     - cmi staffmsg
     - cmi checkaccount
     - checkaccount
+    - j
+    - jumpto
+    - cmi jump
     # Players without cmi.security.admin will only see commands from this list with command spy feature
+    # Keeping it empty will include all commands except the black listed ones
     CommandList:
     - cmi spawn
     - cmi tp
@@ -885,6 +907,9 @@ Spawners:
     # If enabled player will get spawner if using silktouch pickaxe and have cmi.dropspawner permission node
     # If player has cmi.dropspawner.nosilk permission node, player is not required to use silk touch pickaxe to get droped spawner
     Enabled: true
+    # When enabled instead of dropping spawner on the ground, player will received this item directly into their inventory
+    # In case inventory is full then item will be dropped on the ground
+    IntoInventory: false
     # If set to true, player will need to have particular permission node to break and get particular spawner.
     # In example: player should have cmi.dropspawner.pig to break pig spawner and get it dropped, or cmi.dropspawner.zombie to get zombie spawner
     RequiresExactPermission: true
@@ -895,6 +920,16 @@ Spawners:
     SilkTouchLevel: 5
     # Number in percentage from 0 up to 100 for a spawner to be dropped when you break one
     BaseDropChance: 100
+    StopDropping:
+      # Enable or disable spawner dropping stopping after certain amount of spawners being mined
+      Enabled: false
+      # Number of spawners player is able to actually mine before its drop chance is set to 0
+      # This is based on players statistics records of mined spawners in total, this INCLUDES failed drops as well, so adjust acordingly
+      # Permission as cmi.dropspawner.stopafter.[positivevalue] can be used to define limit with permission node instead
+      After: 0
+      # When enabled drop change will slowly drop down based on previous set value and how many spawners player has mined
+      # This will not go lower than 1% of drop chance until previous set value is reached
+      Linear: false
   Place:
     # Enable or disable spawner handler for spawner place
     # If enabled player will place spawner depending from what it is by its type
@@ -1024,7 +1059,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 3
-# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom, 
+# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1054,6 +1089,13 @@ Totem:
     Regeneration: 45
     FireResistance: 40
     Absorbtion: 5
+  # Worlds where totem handling will be left for server default behavior
+  BlackListedWorlds:
+  - TestWorld
+  - DeathWorld
+  # Worlds where totem usage is disabled entirely
+  FullDisableInWorlds:
+  - YouDied
 Elytra:
   # cmi.elytra - allows usage of elytra
   # cmi.elytra.boost - allows usage of boost
@@ -1153,7 +1195,7 @@ FlightCharge:
   # Set this to 'none' if you want to disable it
   GlowColor: none
 Point:
-  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, cherry_leaves, small_gust, trial_spawner_detection_ominous, vault_connection, infested, item_cobweb, ominous_spawning, raid_omen, trial_omen, poof, explosion_emitter, firework, bubble, fishing, underwater, enchanted_hit, effect, instant_effect, entity_effect, witch, dripping_water, dripping_lava, mycelium, enchant, item_snowball, item_slime, item, block, rain, elder_guardian, falling_dust, totem_of_undying, dust_color_transition, vibration, sculk_charge, shriek, egg_crack, dust_plume, white_smoke, gust, gust_emitter_large, gust_emitter_small, trial_spawner_detection, dust_pillar, 
+  # Default particle for point command. Options: fireworks_spark, crit, magic_crit, potion_swirl, potion_swirl_transparent, spell, instant_spell, witch_magic, note, portal, flying_glyph, flame, lava_pop, footstep, splash, particle_smoke, explosion_huge, explosion_large, explosion, void_fog, small_smoke, cloud, coloured_dust, dust, snowball_break, waterdrip, lavadrip, snow_shovel, slime, heart, villager_thundercloud, happy_villager, large_smoke, water_bubble, water_wake, suspended, barrier, mob_appearance, end_rod, damage_indicator, sweep_attack, totem, spit, squid_ink, bubble_pop, current_down, bubble_column_up, nautilus, dolphin, water_splash, campfire_signal_smoke, campfire_cosy_smoke, sneeze, composter, flash, falling_lava, landing_lava, falling_water, dripping_honey, falling_honey, landing_honey, falling_nectar, soul_fire_flame, ash, crimson_spore, warped_spore, soul, dripping_obsidian_tear, falling_obsidian_tear, landing_obsidian_tear, reverse_portal, white_ash, light, falling_spore_blossom, spore_blossom_air, small_flame, snowflake, dripping_dripstone_lava, falling_dripstone_lava, dripping_dripstone_water, falling_dripstone_water, glow_squid_ink, glow, wax_on, wax_off, electric_spark, scrape, block_marker, sonic_boom, sculk_soul, sculk_charge_pop, cherry_leaves, small_gust, trial_spawner_detection_ominous, vault_connection, infested, item_cobweb, ominous_spawning, raid_omen, trial_omen, poof, explosion_emitter, firework, bubble, fishing, underwater, enchanted_hit, effect, instant_effect, entity_effect, witch, dripping_water, dripping_lava, mycelium, enchant, item_snowball, item_slime, item, block, rain, elder_guardian, falling_dust, totem_of_undying, dust_color_transition, vibration, sculk_charge, shriek, egg_crack, dust_plume, white_smoke, gust, gust_emitter_large, gust_emitter_small, trial_spawner_detection, dust_pillar, pale_oak_leaves, tinted_leaves, block_crumble, trail, firefly
   DefaultParticle: COLOURED_DUST
 Messages:
   Login:
@@ -1252,12 +1294,7 @@ Spawn:
   # Defines players first spawn point when he logs into server for the first time
   FirstSpawn:
     Use: true
-    World: spawn
-    X: 0.4647041358464349
-    Y: 64.0
-    Z: 132.81813865614373
-    Pitch: 0.65329355
-    Yaw: -0.9830429
+    Location: spawn;0.5;64.0;132.5;0.38;-0.86
 Newbie:
   # Kit name to give for new players joining server
   Kit: Newbie
@@ -1269,6 +1306,8 @@ Kits:
   # When enabled players can preview kits they have access to or have cmi.kit.[kitName].preview or cmi.kit.[kitName].* permission node
   KitPreview: true
   Buttons:
+    # Icons for kit preview gui
+    # Setting icon to invalid item will hide button
     Cooldown: clock
     Usages: polished_blackstone_pressure_plate
     Money: gold_ingot
@@ -1324,7 +1363,7 @@ DynamicViewRange:
   # Don't enable if you are not using this feature on your server
   Enabled: false
 WorldLimits:
-  # By setting to true fly and gamemode limitations per world will be aplied for player on world change if they dont have appropiate permission node
+  # By setting to true fly and gamemode limitations per world will be aplied for player on world change if they don't have appropiate permission node
   Enabled: true
   # World list with default game modes
   # If player will have cmi.worldlimit.gamemode.bypass permission node, game mode wont be changed
@@ -1340,6 +1379,8 @@ WorldLimits:
   - spawn:false
   - general:false
   - wild:false
+  # When enabled player will be able to fly after death if they were flying before death
+  ReenabledFlyAfterDeath: false
   # If player will have cmi.worldlimit.elytra.bypass permission node, elytra flight will not be prevented
   # Players joining worlds with disable elytra flight will get their elytra dismounted if possible
   ElytraFlight:
@@ -1359,7 +1400,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - spawn:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, POTION_EFFECT, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
     - None
@@ -1392,7 +1433,7 @@ inv:
   # If set to true then player should have cmi.saveinv permission node for inventory to be saved on death
   RequiresPermission: false
   # How many inventories, we will keep for each player
-  SavedInventories: 24
+  SavedInventories: 20
   restore:
     # Set to false if you don't want to restore hp state on inventory load with /cmi invload command
     HP: true
@@ -1445,6 +1486,8 @@ Dispose:
   # Should we allow disposing items with attached commands in them
   CustomModelData: true
   AttachedCommands: true
+  # Black list of materials we should not allow to dispose
+  Materials: []
 ItemRepair:
   RepairShare:
     # When neabling you will need to perform full server restart for it to take effect
@@ -1574,6 +1617,7 @@ Player:
       pveDamageNumbers: true
       pvpDamageNumbers: true
       InformDurability: true
+      receivePets: true
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1592,11 +1636,12 @@ Player:
       pveDamageNumbers: WOODEN_SWORD
       pvpDamageNumbers: DIAMOND_SWORD
       InformDurability: ANVIL
+      receivePets: LEAD
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec
   # false variable is optional and when its set to false player cant move while warmup is counting
-  # If you dont want to deny empty warp command but want to deny any extra variable after that, then just add space, in example 'warp :5:false'
+  # If you don't want to deny empty warp command but want to deny any extra variable after that, then just add space, in example 'warp :5:false'
   # When setting warmups for CMI commands, use full command name and not allias, in example 'cmi warp:5:false'
   # Administration can bypass limitations with cmi.warmupbypass.[commandname] permission node
   # ATTENTION! cmi home command is being handled in special way and to prevent double warmup, add space, example: - cmi home :5:false
@@ -1628,7 +1673,7 @@ Jail:
   CountWhileOffline: false
   # When set to true jail time will not decreese if player gets into afk mode while being jailed
   # When set to false, time will pass normally
-  NoAfk: false
+  NoAfk: true
   # Do you want to prevent players damage while he is in jail
   PreventDamage: true
   # Do you want to prevent players hunger while he is in jail
@@ -1649,25 +1694,22 @@ Jail:
   - r
   - reply
   - mail
+  - rules
+  - discord
 scan:
-  # Tps cap from which to start adjusting scan speed
+  # TPS cap from which to start adjusting scan speed
   SoftCap: 19.0
-  # Staring speed when scanning. Range from 1 to 30
+  # Starting speed when scanning. Range from 1 to 30
   DefaultSpeed: 15
-  # When this set to true, when using scan feature and not providing range, whole map will be scanned
-  GlobalRangeByDefault: false
-  # Range in chunks. 2 is 25 chunks, 1 is 9 and 0 is only chunk you are standing in
+  # Range in chunks. 2 is 9 chunks (3x3), 1 is the one you stand in and 0 is global scan
   DefaultRange: 2
-  # When this set to true, all found items in containers will be removed automatically durring scan. Ex: /scan id 7 purge
-  EnablePurge: false
+  # When enabled scan command output will be printed into file for option to go over it later on
+  LogIntoFile: true
 search:
-  # When this set to true, all found items in inventories will be deleted durring search. Ex: /cmi search id 7 purge
+  # When enabled search command output will be printed into file for option to go over it later on
+  LogIntoFile: true
+  # When this set to true, all found items in inventories will be deleted during search. e.g., /cmi search diamondaxe purge
   EnablePurge: false
-lfix:
-  # Tps cap from which to start adjusting light fix speed
-  SoftCap: 19.0
-  # Staring speed when fixing light. Range from 1 to 100
-  DefaultSpeed: 15
 # Removeuser command will use same configurations when removing player data files or moving them to new place
 purge:
   # Cleans files on server startup
@@ -1714,7 +1756,7 @@ purge:
     # Do you want to enable lwc protection cleaning
     Enabled: false
 Selection:
-  # Tool id to use for selection actions
+  # Tool material name to use for selection actions
   Tool: wooden_shovel
 Time:
   # Defines preset time
@@ -1888,8 +1930,12 @@ BungeeCord:
   # When setting this to false some features like public messages over bungee cord, private messages over bungeecord, portals over bungecoord and other features will stop working
   # Keep in mind that regular behavior of those features will remain intacted
   Enabled: false
-  # When set to true player names from entire bungee network will be included into tab complete
-  NamesInTabComplete: false
+  TabComplete:
+    # When set to true player names from entire bungee network will be included into tab complete
+    PlayerNames: false
+    # List of servers we want to include into tab complete
+    # If list is empty then all servers will be used
+    Servers: []
   # When enabled player can return to previous server when using /back comand instead of being teleported to previous location on that server
   # This only applies if player came to this server without teleporting around
   BackToPreviousServer: false
@@ -1902,6 +1948,20 @@ Recipes:
     # Should we condense recipes with 4 same ingredients
     # While this is enabled and RequireBackwards disabled then oak plants might be converted into workbenches
     4Sized: true
+BlueMap:
+  Warps:
+    # Do you want to show warps in BlueMap?
+    # For most settings to take effect you need to restart the server
+    Enabled: true
+    ToggledOffDefault: false
+    # Name of the markers in BlueMap
+    Label: CMIWarps
+    # Path to an icon image. Make sure to have correctly sized icon which normally should be around 32x32 pixels
+    Icon: https://www.zrips.net/ICON_Warp.png
+    # This should generally be half the size of icon's size
+    IconAnchor: 16
+    # List of warp names we should not show. Keep in mind that hidden warps are not shown by default already
+    BlackList: []
 # If you want to disable particular sound entirely, set it to "" 
 Sounds:
   Enabled: true

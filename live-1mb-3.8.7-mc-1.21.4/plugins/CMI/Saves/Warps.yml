@@ -7,7 +7,7 @@ BlueRoseMarkison:
   HideFromList: true
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: BLUE_ORCHID
 vanillabuilds:
   Location: general;12432.28;68.0;1518.33;-272.26;11.25
@@ -21,7 +21,7 @@ uwu:
   Location: uwu;195.27;82.0;-206.95;-193.58;10.04
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: CAMPFIRE
 husk:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
@@ -32,7 +32,7 @@ teamup:
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: COOKIE
 batcave:
   Location: general;-2807.75;105.0;6467.9;-94.55;33.27
@@ -41,18 +41,18 @@ fr33:
   Location: general;7593.63;109.0;11796.52;-226.04;-4.85
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
 drowned:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
   Page: 3
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Drowned","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+      display-name: '{"text":"","extra":[{"text":"Drowned","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
       skull-owner:
         ==: PlayerProfile
         uniqueId: 04049c90-d3e9-4621-9caf-0000aaa15967
@@ -60,12 +60,12 @@ drowned:
         - name: textures
           value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0=
   OffItem:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Drowned","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+      display-name: '{"text":"","extra":[{"text":"Drowned","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
       skull-owner:
         ==: PlayerProfile
         uniqueId: 04049c90-d3e9-4621-9caf-0000aaa15967
@@ -76,7 +76,7 @@ hunting:
   Location: general;-11713.45;64.5;-5570.25;-265.29;-3.3
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: GOLDEN_SWORD
 underthesea:
   Location: general;-808.3;31.0;-198.34;97.7;38.39
@@ -86,31 +86,31 @@ nether:
   DisName: '{#gold}/nether'
   Slots: 17
   Item:
-    v: 3955
+    v: 4189
     type: NETHERRACK
   OffItem:
-    v: 3955
+    v: 4189
     type: NETHERRACK
 sanctuary:
   Location: sanctuary;-298.52;136.0;-242.46;-357.96;-3.98
   DisName: '{#gold}/sanctuary'
   Slots: 6
   Item:
-    v: 3955
+    v: 4189
     type: ORANGE_GLAZED_TERRACOTTA
   OffItem:
-    v: 3955
+    v: 4189
     type: ORANGE_GLAZED_TERRACOTTA
 floris:
   Location: general;-655.27;62.0;847.28;-180.3;7.35
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Skull of mrfloris","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      display-name: '{"text":"","extra":[{"text":"Skull of mrfloris","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
       skull-owner:
         ==: PlayerProfile
         uniqueId: 631e3896-da2a-4077-974b-d047859d76bc
@@ -123,28 +123,28 @@ mistic:
   Location: general;-332.69;64.0;121.34;5.09;0.9
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
 glo:
   Location: general;46.29;63.0;501.06;-294.32;13.79
   HideFromList: true
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
 horse:
   Location: general;10025.43;69.0;8700.2;-192.24;13.71
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: DIAMOND_HORSE_ARMOR
 florisfarm:
   Location: general;18905.54;123.0;10581.47;-179.24;2.64
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: SUGAR_CANE
 paprikaatje:
   Location: general;-528.27;68.0;1210.26;-179.63;13.19
@@ -160,7 +160,7 @@ snowball:
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: ICE
 skygrid:
   Location: skygrid;1.44;131.0;-13.52;0.31;-1.04
@@ -168,23 +168,31 @@ skygrid:
   Slots: 28
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: WHITE_STAINED_GLASS
   OffItem:
-    v: 3955
+    v: 4189
     type: WHITE_STAINED_GLASS
+creeper:
+  Location: wild;13350.87;63.0;-9855.89;-173.28;27.75
+  Page: 2
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 trading:
   Location: general;11843.21;69.5;8265.56;-318.76;-1.33
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: EMERALD
+Elysian:
+  Location: wild;4349.5;79.0;-1470.5;-90.91;-23.55
+  Page: 7
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 superfancyspot:
   Location: general;-5763.44;66.0;-4056.53;-42.74;20.06
   Page: 5
   Item:
-    v: 3955
+    v: 4189
     type: QUARTZ
 summer:
   Location: summer;0.5;84.0;0.5;-132.45;-6.15
@@ -201,39 +209,43 @@ top:
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: EMERALD
 zombie:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: ROTTEN_FLESH
 hotel:
   Location: general;4152.02;40.0;6910.53;-178.12;6.82
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: LIME_GLAZED_TERRACOTTA
+futureshops:
+  Location: wild;14800.07;64.0;-1049.82;-167.4;7.34
+  Page: 2
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
 guardian:
   Location: general;5687.0;5.0;217.09;-136.2;8.85
   Page: 3
   Item:
-    v: 3955
+    v: 4189
     type: COOKED_COD
 jessehome:
   Location: general;-788.53;71.5;-483.29;-77.33;23.24
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
 1morecity:
   Location: general;-13728.69;73.0;17586.24;-141.38;0.9
   Page: 7
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: OAK_LOG
 oneblock:
   Location: oneblock;10386.37;81.0;-7999.52;-89.85;-1.35
@@ -241,35 +253,28 @@ oneblock:
   Slots: 7
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: GREEN_STAINED_GLASS
   OffItem:
-    v: 3955
+    v: 4189
     type: GREEN_STAINED_GLASS
 wildwest:
   Location: general;14240.55;90.0;-12875.72;-173.0;10.22
   DisName: wildwest
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: SADDLE
-souls:
-  Location: souls;-349.5;97.0;12.47;-270.37;17.84
-  ReqPerm: true
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 3955
-    type: RESPAWN_ANCHOR
 tidal:
   Location: general;7439.72;65.0;6018.77;-344.23;9.2
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Skull of TidalDawn","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      display-name: '{"text":"","extra":[{"text":"Skull of TidalDawn","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
       skull-owner:
         ==: PlayerProfile
         uniqueId: 00000000-0000-0000-0000-000000000000
@@ -278,25 +283,25 @@ communitybuild01:
   Location: general;-11996.22;64.0;8727.06;-180.43;3.6
   Page: 5
   Item:
-    v: 3955
+    v: 4189
     type: OAK_STAIRS
 egghunt:
   Location: easter;33.88;100.0;-15.09;-225.26;12.71
   Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Easter Egg Surprise","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":false}]}'
+      display-name: '{"text":"","extra":[{"text":"Easter Egg Surprise","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
       Damage: 3
 dungeon:
-  Location: general;12519.92;52.0;-5343.98;-87.95;24.27
+  Location: wild;14784.0;-60.0;14655.02;-89.83;-2.06
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: WOODEN_AXE
 ritualrogue:
   Location: general;9374.41;82.0;12582.71;0.06;11.47
@@ -304,10 +309,10 @@ ritualrogue:
   Page: 6
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
 treefarm:
-  Location: general;12622.4;64.0;-5333.36;-268.98;11.66
+  Location: general;12622.82;64.0;-5333.29;93.16;16.93
   Page: 3
   Item:
-    v: 3955
+    v: 4189
     type: OAK_SAPLING
 LushCave:
   Location: wild;-6890.5;39.0;8056.5;0.72;1.04
@@ -315,13 +320,13 @@ LushCave:
   Page: 6
   Creator: 26ac30aa-7641-4a3c-a98a-81def3a5c5fa
   Item:
-    v: 3955
+    v: 4189
     type: MOSS_BLOCK
 enchant:
   Location: general;12515.58;79.0;-5325.54;-286.99;15.5
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: ENCHANTING_TABLE
 fish:
   Location: general;11975.14;64.0;18936.87;-309.25;12.64
@@ -337,37 +342,37 @@ skyblock:
   Slots: 27
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: LIGHT_BLUE_STAINED_GLASS
   OffItem:
-    v: 3955
+    v: 4189
     type: LIGHT_BLUE_STAINED_GLASS
 jacky:
   Location: general;12620.01;78.0;-5304.57;-85.87;-4.41
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: WOODEN_HOE
     meta:
       ==: ItemMeta
       meta-type: UNSPECIFIC
-      display-name: '{"text":"","extra":[{"text":"Wizard Wand","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false}]}'
+      display-name: '{"text":"","extra":[{"text":"Wizard Wand","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
       lore:
-      - '{"text":"","extra":[{"text":" :( ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"
+      - '{"text":"","extra":[{"text":" :( ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"
         Lost its magic","italic":false,"color":"white"}]}'
 heads:
   Location: general;12798.06;52.0;11436.01;180.18;0.97
   Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
 thanksfloris:
   Location: general;-3011.24;70.0;4540.72;0.96;32.31
   Page: 7
   Item:
-    v: 3955
+    v: 4189
     type: FILLED_MAP
     meta:
       ==: ItemMeta
@@ -377,24 +382,24 @@ spider:
   Location: wild;-3652.5;-17.0;2624.5;-33.66;8.43
   Page: 3
   Item:
-    v: 3955
+    v: 4189
     type: STRING
 charlie:
-  Location: general;6444.9;71.0;10281.49;-274.06;15.0
+  Location: general;6444.79;71.0;10282.1;92.65;3.06
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: BEDROCK
 mycelium:
   Location: general;-13180.15;79.0;-529.91;-279.15;3.3
   Page: 4
 enderfarm:
-  Location: end;-112.64;1.0;-348.71;179.79;-6.16
+  Location: end;-112.5;1.0;-347.5;90.2;7.1
   DisName: Public Enderman Farm
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: ENDER_PEARL
 builders:
   Location: builders;-47.5;63.0;-56.5;-0.15;-4.65
@@ -402,29 +407,29 @@ builders:
   Slots: 13
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: YELLOW_GLAZED_TERRACOTTA
   OffItem:
-    v: 3955
+    v: 4189
     type: YELLOW_GLAZED_TERRACOTTA
 bee:
   Location: general;11496.51;72.0;13800.55;-127.08;28.01
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
       meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"1.15 ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"Angry
-        Bee","italic":false,"color":"yellow","bold":true}]}'
+      display-name: '{"text":"","extra":[{"text":"1.15 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"Angry
+        Bee","bold":true,"italic":false,"color":"yellow"}]}'
       Damage: 3
 werewolf:
   Location: general;7620.36;63.0;11317.62;31.31;4.21
   Page: 6
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: BOWL
 battleship:
   Location: wild;-3069.7;65.0;2696.52;-89.9;31.35
@@ -434,7 +439,7 @@ castle:
   Location: sanctuary;-242.3;90.0;-1617.09;90.08;1.14
   Page: 7
   Item:
-    v: 3955
+    v: 4189
     type: STONE_BRICKS
 1mb:
   Location: general;874.27;63.0;543.14;-88.51;6.3
@@ -444,7 +449,7 @@ owo:
   Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: SOUL_CAMPFIRE
 dropparty2:
   Location: general;-14510.53;71.0;11881.85;-174.49;42.62
@@ -468,36 +473,36 @@ acid:
   Slots: 14
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: BLUE_STAINED_GLASS
   OffItem:
-    v: 3955
+    v: 4189
     type: BLUE_STAINED_GLASS
 madmikeyb:
   Location: general;667.61;69.0;-971.59;-341.6;16.99
   Page: 6
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
 skeleton:
   Location: wild;-11112.03;-59.0;11061.05;-0.13;-4.65
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: BONE
 halloween:
-  Location: halloween;1458.89;64.0;465.92;-44.96;-2.89
+  Location: halloween;1458.79;64.0;466.9;-34.05;-4.39
   Page: 5
   Item:
-    v: 3955
+    v: 4189
     type: PUMPKIN
 1mblogo:
   Location: wild;5558.07;103.0;-3012.23;-62.4;8.85
   Page: 7
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: FILLED_MAP
     meta:
       ==: ItemMeta
@@ -508,20 +513,20 @@ sushi:
   Location: sushi;-285.63;100.0;-304.49;-299.39;-22.55
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: TROPICAL_FISH
 train:
   Location: general;-19999.0;65.0;19998.97;-133.5;11.66
   Page: 7
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: MINECART
 freeminigame:
   Location: general;13311.06;74.56;4757.08;-147.81;60.56
   Page: 4
   Item:
-    v: 3955
+    v: 4189
     type: OAK_SIGN
 stray:
   Location: wild;-11112.03;-59.0;11061.05;-0.13;-4.65
@@ -532,7 +537,7 @@ raptorboy_tnt:
   Page: 6
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: MELON_SLICE
 cave:
   Location: cave;-126.23;65.0;258.27;-134.39;9.89
@@ -540,10 +545,10 @@ cave:
   Slots: 21
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: GRAY_STAINED_GLASS
   OffItem:
-    v: 3955
+    v: 4189
     type: GRAY_STAINED_GLASS
 turtle:
   Location: general;12640.84;63.0;11599.77;15.33;14.08
@@ -558,37 +563,37 @@ murdermansion:
   Location: general;7626.35;66.0;11539.6;234.13;-9.93
   Page: 4
   Item:
-    v: 3955
+    v: 4189
     type: ARROW
 celebration:
   Location: spawn;93.28;70.0;202.83;-265.99;20.36
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: BARREL
 shops:
-  Location: general;12567.49;78.0;-5341.45;-271.57;17.12
+  Location: general;12567.49;78.0;-5341.45;89.76;-0.85
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: PAPER
 legacy:
   Location: legacy;291.06;114.0;267.52;-270.14;49.5
   DisName: '{#gold}/legacy'
   Slots: 20
   Item:
-    v: 3955
+    v: 4189
     type: COBBLESTONE
   OffItem:
-    v: 3955
+    v: 4189
     type: COBBLESTONE
 storeExp:
   Location: general;12518.06;78.0;-5318.69;-39.49;9.93
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: DRAGON_BREATH
 disco:
   Location: general;12838.51;69.0;12052.54;-90.31;8.58
@@ -605,7 +610,7 @@ santa:
   Page: 5
   Creator: a74d508e-aa4b-48b0-868c-9385c5ed4970
   Item:
-    v: 3955
+    v: 4189
     type: PLAYER_HEAD
     meta:
       ==: ItemMeta
@@ -621,19 +626,20 @@ santa:
 general:
   Location: general;77.48;80.0;-186.42;-0.2;-0.15
   DisName: '{#gold}/general'
+  ShowWithNoPerm: true
   Slots: 3
   Item:
-    v: 3955
+    v: 4189
     type: MOSSY_STONE_BRICKS
   OffItem:
-    v: 3955
+    v: 4189
     type: MOSSY_STONE_BRICKS
 signs:
   Location: general;12419.43;78.0;-5306.44;-63.01;10.63
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: BIRCH_SIGN
 end:
   Location: end;111.23;47.0;85.48;90.27;1.7
@@ -641,22 +647,22 @@ end:
   Slots: 24
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: END_PORTAL_FRAME
   OffItem:
-    v: 3955
+    v: 4189
     type: END_PORTAL_FRAME
 vote:
   Location: general;12478.64;78.0;-5345.41;-75.61;-1.86
   Page: 2
   Item:
-    v: 3955
+    v: 4189
     type: DIAMOND
 herb:
   Location: general;12097.51;71.0;-2183.29;-359.67;8.72
   Page: 3
   Item:
-    v: 3955
+    v: 4189
     type: SUGAR_CANE
 mansion:
   Location: general;12081.45;71.5;611.76;-180.39;-4.57
@@ -665,7 +671,7 @@ npc:
   Location: general;-752.57;77.0;31.15;-86.85;16.5
   Page: 7
   Item:
-    v: 3955
+    v: 4189
     type: COBBLESTONE_STAIRS
 blossom:
   Location: wild;8250.5;177.0;7983.5;-90.28;-6.89
@@ -676,7 +682,7 @@ fishparkour:
   Page: 7
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: PURPLE_WOOL
 santarace:
   Location: santa;560.91;83.0;-108.21;90.33;9.75
@@ -691,13 +697,13 @@ banner:
   Location: general;12961.79;64.0;-5291.43;-85.42;2.02
   Page: 4
   Item:
-    v: 3955
+    v: 4189
     type: WHITE_BANNER
 kingdom:
   Location: general;8260.26;64.0;9350.32;36.07;29.2
   Page: 4
   Item:
-    v: 3955
+    v: 4189
     type: POLISHED_GRANITE
 oldtown:
   Location: general;487.86;64.5;-378.01;-359.25;5.4
@@ -706,20 +712,25 @@ acro:
   Location: general;9669.7;235.0;13105.57;187.16;10.6
   Page: 3
   Item:
-    v: 3955
+    v: 4189
     type: IRON_BOOTS
 spawn:
-  Location: spawn;0.47;64.0;134.04;-0.74;13.79
+  Location: spawn;0.5;64.0;132.5;0.38;-0.86
   DisName: '{#gold}/spawn'
   Slots: 1
   Item:
-    v: 3955
+    v: 4189
     type: BEACON
   OffItem:
-    v: 3955
+    v: 4189
     type: BEACON
 KoolKidHeads:
   Location: wild;2214.32;63.0;1732.45;89.68;3.29
+  Page: 6
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+CSM:
+  Location: wild;-6705.46;68.0;-2102.21;-169.27;-15.59
+  DisName: C.S.M House
   Page: 6
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
 wild:
@@ -729,15 +740,15 @@ wild:
   Slots: 10
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: BARREL
   OffItem:
-    v: 3955
+    v: 4189
     type: BARREL
 walk:
   Location: general;12619.59;78.0;-5304.59;-76.01;-4.31
   Page: 7
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
   Item:
-    v: 3955
+    v: 4189
     type: GOLDEN_BOOTS

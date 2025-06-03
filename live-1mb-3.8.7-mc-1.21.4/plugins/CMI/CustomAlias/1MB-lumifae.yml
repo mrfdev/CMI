@@ -1,0 +1,14 @@
+#
+
+CustomAlias:
+  lumifae:
+    Cmds:
+    - statement:check1! perm:multiverse.access.lumifae! check:$1==null!
+    - if:check1! asPlayer! mv tp lumifae
+    - if:check1@! check:$1==info! msg! [playerName] Private world, players cannot
+      join this world. Access is limited to the build team. Who can build using "/$0
+      build" \n https://omgboards.com/threads/263967/
+    - if:check1@! ifinworld:lumifae! check:$1==build! asConsole! cmi gm [playerName]
+      creative
+    CustomTabs:
+    - info,build

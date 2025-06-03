@@ -1,0 +1,5056 @@
+tot05:
+  CommandName: tot05
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: PRISMARINE_WALL
+      amount: 16
+    '2':
+      v: 4189
+      type: JUNGLE_LEAVES
+      amount: 16
+    '3':
+      v: 4189
+      type: CHERRY_HANGING_SIGN
+      amount: 6
+    '4':
+      v: 4189
+      type: VINE
+      amount: 16
+    '5':
+      v: 4189
+      type: TNT
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"Normal-Battery","italic":false,"color":"blue"},{"text":"]","italic":false,"color":"white"}]}'
+    '6':
+      v: 4189
+      type: HONEY_BOTTLE
+    '7':
+      v: 4189
+      type: BROWN_CANDLE
+      amount: 16
+    '8':
+      v: 4189
+      type: ORANGE_SHULKER_BOX
+    '9':
+      v: 4189
+      type: GOAT_HORN
+    '10':
+      v: 4189
+      type: LAPIS_ORE
+      amount: 16
+    '11':
+      v: 4189
+      type: EXPOSED_COPPER
+      amount: 4
+    '12':
+      v: 4189
+      type: DIAMOND
+    '13':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Packed Ice Shulker","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa30120
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjcyYTgzMWQxNWI4MmNiOTY3NDVjYjlkNjNkYWViMmU2M2UzMzRhNDdhNDBjZjQ1MDVmMWU0MjY1NDk2ZDUzIn19fQ==
+    '14':
+      v: 4189
+      type: GLASS_BOTTLE
+    '15':
+      v: 4189
+      type: BIG_DRIPLEAF
+      amount: 32
+    '16':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_poison
+    '17':
+      v: 4189
+      type: COOKED_PORKCHOP
+    '18':
+      v: 4189
+      type: GRAY_GLAZED_TERRACOTTA
+      amount: 16
+    '19':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:depth_strider: 2
+    '20':
+      v: 4189
+      type: CHISELED_BOOKSHELF
+    '21':
+      v: 4189
+      type: GLOW_INK_SAC
+      amount: 5
+    '22':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Rotten Apple","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa13477
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTU2NDcwNDRlZWEzYzQ1NWU0NzRiZmMyOTEzYTU3NGI0MzllMjY5MDY2MmJlOGIzNzgxYjRlNjM4ZWEwNDMyNCJ9fX0=
+    '23':
+      v: 4189
+      type: TUBE_CORAL
+      amount: 16
+    '24':
+      v: 4189
+      type: SPONGE
+    '25':
+      v: 4189
+      type: DEEPSLATE_TILE_STAIRS
+      amount: 16
+    '26':
+      v: 4189
+      type: TINTED_GLASS
+      amount: 10
+    '27':
+      v: 4189
+      type: MUD_BRICKS
+      amount: 16
+tot06:
+  CommandName: tot06
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: SPRUCE_LOG
+      amount: 16
+    '2':
+      v: 4189
+      type: CHISELED_TUFF
+      amount: 16
+    '3':
+      v: 4189
+      type: FIREWORK_ROCKET
+      amount: 32
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        firework-effects: []
+        power: 3
+    '4':
+      v: 4189
+      type: SEA_PICKLE
+      amount: 8
+    '5':
+      v: 4189
+      type: WARPED_STEM
+      amount: 16
+    '6':
+      v: 4189
+      type: END_STONE
+      amount: 16
+    '7':
+      v: 4189
+      type: FIREWORK_ROCKET
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"StrikeRocket","italic":false,"color":"blue"},{"text":"]","italic":false,"color":"white"}]}'
+        firework-effects: []
+        power: 2
+    '8':
+      v: 4189
+      type: GREEN_CANDLE
+      amount: 16
+    '9':
+      v: 4189
+      type: FILLED_MAP
+      meta:
+        ==: ItemMeta
+        meta-type: MAP
+        display-name: '{"text":"","extra":["1MB Halloween"]}'
+        map-id: 4313
+    '10':
+      v: 4189
+      type: PORKCHOP
+    '11':
+      v: 4189
+      type: PHANTOM_MEMBRANE
+    '12':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Trick Or Treat Basket (creeper)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa57694
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWM1NTI2M2EyM2Y4YWY4MjQzMjYzMGM2MTlkOTM5OTZkZWRiMTk0NDhjMWM3ZTIwN2E4NTkzZmMyYjU2NWYzIn19fQ==
+    '13':
+      v: 4189
+      type: MUSIC_DISC_OTHERSIDE
+    '14':
+      v: 4189
+      type: CLAY
+      amount: 32
+    '15':
+      v: 4189
+      type: WITHER_ROSE
+    '16':
+      v: 4189
+      type: DEAD_FIRE_CORAL_FAN
+      amount: 3
+    '17':
+      v: 4189
+      type: DEEPSLATE_DIAMOND_ORE
+      amount: 8
+    '18':
+      v: 4189
+      type: FERMENTED_SPIDER_EYE
+    '19':
+      v: 4189
+      type: DIAMOND_ORE
+      amount: 4
+    '20':
+      v: 4189
+      type: TURTLE_EGG
+    '21':
+      v: 4189
+      type: SMALL_DRIPLEAF
+      amount: 32
+    '22':
+      v: 4189
+      type: POWERED_RAIL
+      amount: 16
+    '23':
+      v: 4189
+      type: BREWER_POTTERY_SHERD
+    '24':
+      v: 4189
+      type: DEEPSLATE_BRICK_STAIRS
+      amount: 16
+    '25':
+      v: 4189
+      type: ORANGE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EA"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D6"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC1"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AD"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2F99"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3884"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4270"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5547"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E33"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:half_horizontal_bottom
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:circle
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:stripe_center
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangle_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+        - ==: Pattern
+          color: PURPLE
+          pattern: minecraft:gradient
+    '26':
+      v: 4189
+      type: OXIDIZED_COPPER
+      amount: 4
+    '27':
+      v: 4189
+      type: POINTED_DRIPSTONE
+      amount: 8
+tot03:
+  CommandName: tot03
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: WOLF_ARMOR
+    '2':
+      v: 4189
+      type: ENCHANTED_GOLDEN_APPLE
+    '3':
+      v: 4189
+      type: CAMEL_SPAWN_EGG
+    '4':
+      v: 4189
+      type: SWEET_BERRIES
+      amount: 5
+    '5':
+      v: 4189
+      type: MOSS_CARPET
+      amount: 32
+    '6':
+      v: 4189
+      type: GLOW_BERRIES
+      amount: 16
+    '7':
+      v: 4189
+      type: SPLASH_POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:water
+    '8':
+      v: 4189
+      type: DRIPSTONE_BLOCK
+      amount: 16
+    '9':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Fir Cone","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-000000aaa747
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDQ0OTFjZmRlYmE4YTIwNThjYTJjNjYzMzgxZjZjYWRiYzc1Mjc2Mzk1ZjZhY2I0ODRkZWUyMmM1MTYxOCJ9fX0=
+    '10':
+      v: 4189
+      type: BLUE_TERRACOTTA
+      amount: 32
+    '11':
+      v: 4189
+      type: LARGE_FERN
+      amount: 2
+    '12':
+      v: 4189
+      type: SPONGE
+      amount: 2
+    '13':
+      v: 4189
+      type: CHERRY_FENCE
+      amount: 32
+    '14':
+      v: 4189
+      type: DEAD_BUSH
+      amount: 16
+    '15':
+      v: 4189
+      type: DEEPSLATE_IRON_ORE
+      amount: 8
+    '16':
+      v: 4189
+      type: GUNPOWDER
+      amount: 3
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"Big-Firecracker","italic":false,"color":"blue"},{"text":"]","italic":false,"color":"white"}]}'
+    '17':
+      v: 4189
+      type: POLISHED_DEEPSLATE_SLAB
+      amount: 16
+    '18':
+      v: 4189
+      type: COCOA_BEANS
+      amount: 5
+    '19':
+      v: 4189
+      type: COPPER_BLOCK
+      amount: 4
+    '20':
+      v: 4189
+      type: DECORATED_POT
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAA/7XKsQ2AMAwF0V9QQBZANGzAAiwThcRABNiR44btoWMCytM7Bzj0yynxmIgt2z1FuYrwG7XDcGWmqGG1uYj5RFE0WBauLYAG4+cp8Ebq381Ib1930vS74wEyGpSzwAAAAA==
+        blockMaterial: DECORATED_POT
+    '21':
+      v: 4189
+      type: JUNGLE_LEAVES
+      amount: 16
+    '22':
+      v: 4189
+      type: SEA_PICKLE
+      amount: 16
+    '23':
+      v: 4189
+      type: IRON_ORE
+      amount: 8
+    '24':
+      v: 4189
+      type: RED_SAND
+      amount: 16
+    '25':
+      v: 4189
+      type: SPRUCE_LOG
+      amount: 16
+    '26':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Steve with Pumpkin Mask","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa40348
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTMxMjNmMWUyZDVlZjM3OGRmYzMwOGFiMzU4NzY3NWQwODc1M2EwZTVjNGY3MzcwNzdiMWVjMDA2MjFhNWY2ZiJ9fX0=
+    '27':
+      v: 4189
+      type: FILLED_MAP
+      meta:
+        ==: ItemMeta
+        meta-type: MAP
+        map-id: 9110
+tot04:
+  CommandName: tot04
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: WEATHERED_COPPER
+      amount: 4
+    '2':
+      v: 4189
+      type: TUBE_CORAL
+      amount: 32
+    '3':
+      v: 4189
+      type: WARPED_TRAPDOOR
+      amount: 8
+    '4':
+      v: 4189
+      type: GLOW_LICHEN
+      amount: 16
+    '5':
+      v: 4189
+      type: GOLDEN_APPLE
+    '6':
+      v: 4189
+      type: DEEPSLATE_COAL_ORE
+      amount: 8
+    '7':
+      v: 4189
+      type: SUSPICIOUS_SAND
+      amount: 2
+    '8':
+      v: 4189
+      type: CHISELED_COPPER
+      amount: 16
+    '9':
+      v: 4189
+      type: GOLDEN_CARROT
+      amount: 64
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Halloween Snack","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+    '10':
+      v: 4189
+      type: COAL_ORE
+      amount: 8
+    '11':
+      v: 4189
+      type: BRAIN_CORAL
+      amount: 16
+    '12':
+      v: 4189
+      type: BLAZE_POWDER
+    '13':
+      v: 4189
+      type: MUD
+      amount: 32
+    '14':
+      v: 4189
+      type: QUARTZ_STAIRS
+      amount: 16
+    '15':
+      v: 4189
+      type: REDSTONE_TORCH
+      amount: 32
+    '16':
+      v: 4189
+      type: HANGING_ROOTS
+      amount: 32
+    '17':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Muffin Pumpkin Pie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa34486
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzE4YjY5NGMxOGMzMmQ1YjJiODRlZTRhYWY2NzFhNzUyNTNmOWI1ZGFmNDBiMjc5NzQ4NzA3OTY3OTdhOWRmNiJ9fX0=
+    '18':
+      v: 4189
+      type: GLISTERING_MELON_SLICE
+    '19':
+      v: 4189
+      type: PODZOL
+      amount: 16
+    '20':
+      v: 4189
+      type: SMALL_DRIPLEAF
+      amount: 3
+    '21':
+      v: 4189
+      type: BLUE_CANDLE
+      amount: 16
+    '22':
+      v: 4189
+      type: COBBLED_DEEPSLATE_SLAB
+      amount: 16
+    '23':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Ghost","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-00000aaa1728
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjhkMjE4MzY0MDIxOGFiMzMwYWM1NmQyYWFiN2UyOWE5NzkwYTU0NWY2OTE2MTllMzg1NzhlYTRhNjlhZTBiNiJ9fX0=
+    '24':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:slowness
+    '25':
+      v: 4189
+      type: JUNGLE_LEAVES
+      amount: 16
+    '26':
+      v: 4189
+      type: BLACK_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE04F4"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09E9"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EDE"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF13D4"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF18C9"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE1DBE"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF22B4"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF27A9"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE2C9E"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3194"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3689"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3B7E"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4074"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4569"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4A5E"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4F54"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5449"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E34"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6329"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:creeper
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:stripe_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangle_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+        - ==: Pattern
+          color: GREEN
+          pattern: minecraft:triangles_top
+    '27':
+      v: 4189
+      type: BREWING_STAND
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"Big-Fountain","italic":false,"color":"blue"},{"text":"]","italic":false,"color":"white"}]}'
+        blockMaterial: BREWING_STAND
+tot01:
+  CommandName: tot01
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: LIGHT_GRAY_CANDLE
+      amount: 16
+    '2':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Rotten Pumpkin","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa48099
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzdiZjc4MjQzNTYyNWNjNzQ5YTVmODA5MDZjNzYyMjFkMTEyNDk2ZDFkNDMxYTA4MDBlODZiYTgyZDc5NWE2MyJ9fX0=
+    '3':
+      v: 4189
+      type: POWERED_RAIL
+      amount: 16
+    '4':
+      v: 4189
+      type: FIRE_CHARGE
+      amount: 10
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"Gyro","italic":false,"color":"blue"},{"text":"]","italic":false,"color":"white"}]}'
+    '5':
+      v: 4189
+      type: DEEPSLATE_COPPER_ORE
+      amount: 8
+    '6':
+      v: 4189
+      type: SNIFFER_EGG
+    '7':
+      v: 4189
+      type: SHORT_GRASS
+      amount: 16
+    '8':
+      v: 4189
+      type: ARMADILLO_SCUTE
+    '9':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:aqua_affinity: 1
+    '10':
+      v: 4189
+      type: CHERRY_HANGING_SIGN
+      amount: 3
+    '11':
+      v: 4189
+      type: BLUE_ORCHID
+      amount: 32
+    '12':
+      v: 4189
+      type: SPORE_BLOSSOM
+    '13':
+      v: 4189
+      type: MUD_BRICKS
+      amount: 16
+    '14':
+      v: 4189
+      type: CHERRY_LEAVES
+      amount: 64
+    '15':
+      v: 4189
+      type: BAMBOO_BLOCK
+      amount: 32
+    '16':
+      v: 4189
+      type: SADDLE
+    '17':
+      v: 4189
+      type: POLISHED_DIORITE
+      amount: 16
+    '18':
+      v: 4189
+      type: COPPER_ORE
+      amount: 8
+    '19':
+      v: 4189
+      type: HONEY_BOTTLE
+      amount: 2
+    '20':
+      v: 4189
+      type: TINTED_GLASS
+      amount: 10
+    '21':
+      v: 4189
+      type: PEARLESCENT_FROGLIGHT
+      amount: 16
+    '22':
+      v: 4189
+      type: CHISELED_BOOKSHELF
+      amount: 16
+    '23':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Halloween Cupcake","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa32607
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJlZmM4YjZjYTYxMDk3ZjAxNTgwMmI1ZjY1NjFkYTk3N2U4OTE0MmQzZjYzY2E4ODhlMmQ0OTFkOWQ4OWVkMSJ9fX0=
+    '24':
+      v: 4189
+      type: DEEPSLATE_BRICK_SLAB
+      amount: 16
+    '25':
+      v: 4189
+      type: GLOW_BERRIES
+      amount: 16
+    '26':
+      v: 4189
+      type: BUDDING_AMETHYST
+      amount: 5
+    '27':
+      v: 4189
+      type: NETHER_WART
+      amount: 8
+tot02:
+  CommandName: tot02
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: QUARTZ_STAIRS
+      amount: 16
+    '2':
+      v: 4189
+      type: BONE
+      amount: 16
+    '3':
+      v: 4189
+      type: GLOW_ITEM_FRAME
+      amount: 8
+    '4':
+      v: 4189
+      type: CYAN_CANDLE
+      amount: 16
+    '5':
+      v: 4189
+      type: TRIPWIRE_HOOK
+      amount: 8
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"Small-Confetti","italic":false,"color":"blue"},{"text":"]","italic":false,"color":"white"}]}'
+    '6':
+      v: 4189
+      type: DEEPSLATE_TILE_SLAB
+      amount: 16
+    '7':
+      v: 4189
+      type: RAW_COPPER_BLOCK
+      amount: 8
+    '8':
+      v: 4189
+      type: ARMADILLO_SPAWN_EGG
+    '9':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:breach: 2
+    '10':
+      v: 4189
+      type: MOSS_BLOCK
+      amount: 32
+    '11':
+      v: 4189
+      type: PINK_PETALS
+      amount: 40
+    '12':
+      v: 4189
+      type: OBSERVER
+      amount: 2
+    '13':
+      v: 4189
+      type: BAMBOO_MOSAIC_STAIRS
+      amount: 16
+    '14':
+      v: 4189
+      type: TADPOLE_BUCKET
+    '15':
+      v: 4189
+      type: DRAGON_BREATH
+    '16':
+      v: 4189
+      type: REDSTONE_BLOCK
+    '17':
+      v: 4189
+      type: SPIDER_EYE
+      amount: 3
+    '18':
+      v: 4189
+      type: DEEPSLATE_LAPIS_ORE
+      amount: 8
+    '19':
+      v: 4189
+      type: HORN_CORAL_BLOCK
+      amount: 32
+    '20':
+      v: 4189
+      type: IRON_GOLEM_SPAWN_EGG
+    '21':
+      v: 4189
+      type: BRAIN_CORAL
+      amount: 32
+    '22':
+      v: 4189
+      type: JUNGLE_PLANKS
+      amount: 16
+    '23':
+      v: 4189
+      type: COARSE_DIRT
+      amount: 16
+    '24':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Carved Pumpkin","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa30000
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM2NGUwMjUyOWYzOGZiN2FmZTZkMDlkYTY0NmFjZWJiMGNiMDM4MzEzNThhOWQ4NjMwOWMzYTNmMWIyNzQ2YiJ9fX0=
+    '25':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Ridley","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa15528
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmJmZWE4ZDViYjMxODRjYWQwMjc5NGZlNjQwMjExZTRiYWFhOWYyM2Y3MmMyZGY5ZGUyMDJlOWI2ZDc1ZiJ9fX0=
+    '26':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Pumpkin Pie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa40680
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDk1NGM2ZjQ5YWJlNTFkZTdiN2Q2OWRjNTNlMmQ5ODI0NjhjNzVjNmYwMWU4MjFlODNjNzllZTMwNTg5MjJlOSJ9fX0=
+    '27':
+      v: 4189
+      type: MUSIC_DISC_PIGSTEP
+tot16:
+  CommandName: tot16
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: TRIPWIRE_HOOK
+      amount: 32
+    '2':
+      v: 4189
+      type: GRASS_BLOCK
+      amount: 16
+    '3':
+      v: 4189
+      type: ORANGE_CARPET
+      amount: 8
+    '4':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_strength
+    '5':
+      v: 4189
+      type: MOSS_CARPET
+      amount: 32
+    '6':
+      v: 4189
+      type: GLOW_INK_SAC
+    '7':
+      v: 4189
+      type: SMOOTH_QUARTZ
+      amount: 16
+    '8':
+      v: 4189
+      type: MANGROVE_LEAVES
+      amount: 32
+    '9':
+      v: 4189
+      type: POLISHED_DIORITE
+      amount: 32
+    '10':
+      v: 4189
+      type: CUT_COPPER_SLAB
+      amount: 4
+    '11':
+      v: 4189
+      type: NOTE_BLOCK
+      amount: 2
+    '12':
+      v: 4189
+      type: PUFFERFISH
+    '13':
+      v: 4189
+      type: CRACKED_DEEPSLATE_TILES
+      amount: 8
+    '14':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Candy Corn Jar","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa32608
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWMzNDFjOTAxM2E2NWVkMjBlOGE5OTA0MmJiNWU0YzBhOTViZjgxNjlkMjVkMWIwMjgwY2I3MmYwMDQ1ZTYzMiJ9fX0=
+    '15':
+      v: 4189
+      type: CHERRY_LOG
+      amount: 32
+    '16':
+      v: 4189
+      type: BOOKSHELF
+      amount: 16
+    '17':
+      v: 4189
+      type: MUD
+      amount: 32
+    '18':
+      v: 4189
+      type: IRON_BARS
+      amount: 16
+    '19':
+      v: 4189
+      type: GLOW_LICHEN
+      amount: 16
+    '20':
+      v: 4189
+      type: PACKED_MUD
+      amount: 16
+    '21':
+      v: 4189
+      type: TWISTING_VINES
+      amount: 16
+    '22':
+      v: 4189
+      type: GOLD_ORE
+      amount: 8
+    '23':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_leaping
+    '24':
+      v: 4189
+      type: MEDIUM_AMETHYST_BUD
+    '25':
+      v: 4189
+      type: BRICKS
+      amount: 32
+    '26':
+      v: 4189
+      type: WIND_CHARGE
+      amount: 16
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:sweeping_edge: 3
+tot17:
+  CommandName: tot17
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: MANGROVE_BOAT
+    '2':
+      v: 4189
+      type: QUARTZ_STAIRS
+      amount: 16
+    '3':
+      v: 4189
+      type: SCULK_VEIN
+      amount: 8
+    '4':
+      v: 4189
+      type: GOLD_BLOCK
+    '5':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:weakness
+    '6':
+      v: 4189
+      type: TWISTING_VINES
+      amount: 16
+    '7':
+      v: 4189
+      type: STICKY_PISTON
+      amount: 3
+    '8':
+      v: 4189
+      type: AZALEA
+      amount: 16
+    '9':
+      v: 4189
+      type: TUBE_CORAL_BLOCK
+      amount: 32
+    '10':
+      v: 4189
+      type: SEAGRASS
+      amount: 32
+    '11':
+      v: 4189
+      type: TROPICAL_FISH
+    '12':
+      v: 4189
+      type: LARGE_AMETHYST_BUD
+    '13':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Jack O''Melon","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa21534
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc2NTNjZjQ2MjIyYjBkOGUxMTQ1ZWRjNmY5YTY3NjE2ZDllMWQ5YmM5MDA1NDhmMTkxMDI2ZjdkZTFmYzkifX19
+    '14':
+      v: 4189
+      type: NETHERITE_SCRAP
+    '15':
+      v: 4189
+      type: SMOOTH_BASALT
+      amount: 32
+    '16':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:luck
+    '17':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Frozen Alex","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa31489
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZlNjk5NTFjNTNlNGRmNzlkYjRkMzY5OGQyYzE5NWQzZjA1MzBkZTAyMTNhZTM1OGM1NmZkYTI2NzIxNWY0NCJ9fX0=
+    '18':
+      v: 4189
+      type: REDSTONE_LAMP
+      amount: 32
+    '19':
+      v: 4189
+      type: HORN_CORAL
+      amount: 64
+    '20':
+      v: 4189
+      type: PURPLE_CANDLE
+      amount: 16
+    '21':
+      v: 4189
+      type: HONEY_BLOCK
+    '22':
+      v: 4189
+      type: CHERRY_SAPLING
+      amount: 10
+    '23':
+      v: 4189
+      type: EXPOSED_CUT_COPPER_SLAB
+      amount: 4
+    '24':
+      v: 4189
+      type: REDSTONE_ORE
+      amount: 8
+    '25':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:fire_resistance
+    '26':
+      v: 4189
+      type: PUMPKIN
+      amount: 4
+    '27':
+      v: 4189
+      type: CHISELED_DEEPSLATE
+      amount: 16
+tot14:
+  CommandName: tot14
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: WARPED_NYLIUM
+      amount: 16
+    '2':
+      v: 4189
+      type: SPRUCE_LOG
+      amount: 16
+    '3':
+      v: 4189
+      type: STRIPPED_MANGROVE_WOOD
+      amount: 32
+    '4':
+      v: 4189
+      type: COPPER_ORE
+      amount: 8
+    '5':
+      v: 4189
+      type: COOKED_SALMON
+    '6':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_water_breathing
+    '7':
+      v: 4189
+      type: WEATHERED_CUT_COPPER_STAIRS
+      amount: 4
+    '8':
+      v: 4189
+      type: MANGROVE_PROPAGULE
+      amount: 2
+    '9':
+      v: 4189
+      type: RED_SAND
+      amount: 16
+    '10':
+      v: 4189
+      type: GLASS
+      amount: 32
+    '11':
+      v: 4189
+      type: BAMBOO
+      amount: 16
+    '12':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:awkward
+    '13':
+      v: 4189
+      type: BAMBOO_SIGN
+      amount: 3
+    '14':
+      v: 4189
+      type: TUBE_CORAL_BLOCK
+      amount: 16
+    '15':
+      v: 4189
+      type: DRIED_KELP_BLOCK
+      amount: 4
+    '16':
+      v: 4189
+      type: HANGING_ROOTS
+      amount: 16
+    '17':
+      v: 4189
+      type: SHROOMLIGHT
+      amount: 16
+    '18':
+      v: 4189
+      type: RESPAWN_ANCHOR
+    '19':
+      v: 4189
+      type: LIGHT
+    '20':
+      v: 4189
+      type: COARSE_DIRT
+      amount: 32
+    '21':
+      v: 4189
+      type: PAINTING
+      amount: 3
+    '22':
+      v: 4189
+      type: ENDER_PEARL
+      amount: 8
+    '23':
+      v: 4189
+      type: MYCELIUM
+      amount: 16
+    '24':
+      v: 4189
+      type: BLACK_DYE
+      amount: 16
+    '25':
+      v: 4189
+      type: CRACKED_DEEPSLATE_BRICKS
+      amount: 8
+    '26':
+      v: 4189
+      type: OMINOUS_TRIAL_KEY
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:feather_falling: 2
+tot15:
+  CommandName: tot15
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Chuckie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa49398
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTRiOWY2N2Q5ODM1YWE2MzcyYWZkYzhmMGZjNzBjNjc5NWE1NWQzZGNiOTBlNmZkNGIyNGFlYTExNTM2NDEwNiJ9fX0=
+    '2':
+      v: 4189
+      type: FLOWERING_AZALEA
+      amount: 3
+    '3':
+      v: 4189
+      type: END_STONE
+      amount: 16
+    '4':
+      v: 4189
+      type: SKELETON_SKULL
+    '5':
+      v: 4189
+      type: SMALL_AMETHYST_BUD
+    '6':
+      v: 4189
+      type: FROGSPAWN
+    '7':
+      v: 4189
+      type: CRIMSON_NYLIUM
+      amount: 16
+    '8':
+      v: 4189
+      type: OXIDIZED_CUT_COPPER_STAIRS
+      amount: 4
+    '9':
+      v: 4189
+      type: MANGROVE_WOOD
+      amount: 32
+    '10':
+      v: 4189
+      type: BUCKET
+    '11':
+      v: 4189
+      type: JUNGLE_PLANKS
+      amount: 16
+    '12':
+      v: 4189
+      type: BOOKSHELF
+      amount: 3
+    '13':
+      v: 4189
+      type: GRASS_BLOCK
+      amount: 16
+    '14':
+      v: 4189
+      type: NETHER_GOLD_ORE
+      amount: 8
+    '15':
+      v: 4189
+      type: REPEATER
+      amount: 2
+    '16':
+      v: 4189
+      type: COOKED_COD
+    '17':
+      v: 4189
+      type: GLOW_ITEM_FRAME
+      amount: 2
+    '18':
+      v: 4189
+      type: DEAD_BRAIN_CORAL
+      amount: 2
+    '19':
+      v: 4189
+      type: ACACIA_WOOD
+      amount: 32
+    '20':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_swiftness
+    '21':
+      v: 4189
+      type: CHERRY_PLANKS
+      amount: 32
+    '22':
+      v: 4189
+      type: DEEPSLATE_TILES
+      amount: 16
+    '23':
+      v: 4189
+      type: VINE
+      amount: 16
+    '24':
+      v: 4189
+      type: POLISHED_TUFF
+      amount: 16
+    '25':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:wind_burst: 3
+    '26':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:sharpness: 3
+    '27':
+      v: 4189
+      type: BEETROOT_SOUP
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF07EF"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EDE"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF16CF"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE1DBE"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AF"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE2C9E"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3B7E"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF426E"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4A5E"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF514F"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593F"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF602E"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXBNxaCMAAA0LhZjuJgDKDPgYFqiCQBQYobArYnUhW4icf1/zkAM7Bgqq+VRZG8s3YKAJiAXxccCrP4GFG1jOBZRCsN8uE08ha7e+uhiHQ54I42PMb2UMJr0FtmSCkU9FuKEpLBNceXuyU00i3pN6g7aqqJX9Xou9v4ScgXCfku9gS29d7PvdO/eGvGhl85QU6YVYcs2EnIJmE7whTWzl1viMioq8gy+AMAkGYDsQAAAA==
+tot12:
+  CommandName: tot12
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: COOKIE
+    '2':
+      v: 4189
+      type: RED_SAND
+      amount: 48
+    '3':
+      v: 4189
+      type: TURTLE_SCUTE
+      amount: 16
+    '4':
+      v: 4189
+      type: CAKE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":["❤Forever Cake❤"]}'
+        enchants:
+          minecraft:infinity: 1
+    '5':
+      v: 4189
+      type: SLIME_BLOCK
+    '6':
+      v: 4189
+      type: CAT_SPAWN_EGG
+    '7':
+      v: 4189
+      type: CRYING_OBSIDIAN
+    '8':
+      v: 4189
+      type: MUDDY_MANGROVE_ROOTS
+      amount: 32
+    '9':
+      v: 4189
+      type: WILD_ARMOR_TRIM_SMITHING_TEMPLATE
+    '10':
+      v: 4189
+      type: COAL_ORE
+      amount: 8
+    '11':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Golden Ghost","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-00000aaa3086
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTk2YTRlMjg1ZGM3ZGExMWRhY2I4N2Y3NDU5NTFhNzljOWZlMjc2NjEzNTFlOWM2ZjY3NDUyZjRhNTFlNzQ5NSJ9fX0=
+    '12':
+      v: 4189
+      type: LEAD
+    '13':
+      v: 4189
+      type: NETHER_WART
+      amount: 16
+    '14':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strength
+    '15':
+      v: 4189
+      type: SEAGRASS
+      amount: 16
+    '16':
+      v: 4189
+      type: WARPED_PLANKS
+      amount: 16
+    '17':
+      v: 4189
+      type: INFESTED_DEEPSLATE
+      amount: 4
+    '18':
+      v: 4189
+      type: FIRE_CORAL
+      amount: 32
+    '19':
+      v: 4189
+      type: SHROOMLIGHT
+      amount: 16
+    '20':
+      v: 4189
+      type: AMETHYST_BLOCK
+      amount: 5
+    '21':
+      v: 4189
+      type: TORCHFLOWER
+      amount: 16
+    '22':
+      v: 4189
+      type: CUT_COPPER_STAIRS
+      amount: 4
+    '23':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:mundane
+    '24':
+      v: 4189
+      type: CHERRY_SAPLING
+      amount: 10
+    '25':
+      v: 4189
+      type: AZALEA
+      amount: 16
+    '26':
+      v: 4189
+      type: PURPLE_WOOL
+      amount: 16
+    '27':
+      v: 4189
+      type: CRAFTER
+      amount: 3
+tot13:
+  CommandName: tot13
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: VERDANT_FROGLIGHT
+      amount: 16
+    '2':
+      v: 4189
+      type: TIPPED_ARROW
+      amount: 16
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_slow_falling
+    '3':
+      v: 4189
+      type: RED_MUSHROOM_BLOCK
+      amount: 32
+    '4':
+      v: 4189
+      type: DEAD_BRAIN_CORAL_BLOCK
+      amount: 32
+    '5':
+      v: 4189
+      type: STRIPPED_MANGROVE_LOG
+      amount: 32
+    '6':
+      v: 4189
+      type: GILDED_BLACKSTONE
+    '7':
+      v: 4189
+      type: OAK_HANGING_SIGN
+      amount: 16
+    '8':
+      v: 4189
+      type: MOSS_CARPET
+      amount: 16
+    '9':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:swiftness
+    '10':
+      v: 4189
+      type: EXPOSED_CUT_COPPER_STAIRS
+      amount: 4
+    '11':
+      v: 4189
+      type: JUNGLE_LEAVES
+      amount: 16
+    '12':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_slow_falling
+    '13':
+      v: 4189
+      type: MANGROVE_ROOTS
+      amount: 16
+    '14':
+      v: 4189
+      type: DRIED_KELP
+    '15':
+      v: 4189
+      type: PODZOL
+      amount: 16
+    '16':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Scary Clown","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-00000aaa1595
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODZkYmMxZGViYzU3NDM4YTVkZTRiYTkxNTE1MTM4MmFiYzNkOGYxMzE4ZTJhMzVlNzhkZmIzMGYwNGJjNDY3In19fQ==
+    '17':
+      v: 4189
+      type: GOLDEN_APPLE
+    '18':
+      v: 4189
+      type: CHAIN
+      amount: 8
+    '19':
+      v: 4189
+      type: CACTUS
+      amount: 5
+    '20':
+      v: 4189
+      type: PURPLE_STAINED_GLASS
+      amount: 32
+    '21':
+      v: 4189
+      type: CHORUS_FLOWER
+      amount: 4
+    '22':
+      v: 4189
+      type: CRIMSON_PLANKS
+      amount: 16
+    '23':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Club Penguin (Aqua)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa36315
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTQ3NDkwOWJlNGFjZDk2YWI0ZmZlYjc1OWNhMzI2Nzg1ZTY5YWVlYzU1NzM5ZDA2NDVjNzVlNTczMDU1NDI1NSJ9fX0=
+    '24':
+      v: 4189
+      type: SPONGE
+      amount: 8
+    '25':
+      v: 4189
+      type: DEEPSLATE_BRICKS
+      amount: 16
+    '26':
+      v: 4189
+      type: DEEPSLATE_GOLD_ORE
+      amount: 8
+    '27':
+      v: 4189
+      type: TRIAL_KEY
+      amount: 2
+tot10:
+  CommandName: tot10
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_turtle_master
+    '2':
+      v: 4189
+      type: NETHERITE_SCRAP
+    '3':
+      v: 4189
+      type: STRIPPED_CRIMSON_STEM
+      amount: 16
+    '4':
+      v: 4189
+      type: COBWEB
+      amount: 6
+    '5':
+      v: 4189
+      type: BRAIN_CORAL_BLOCK
+      amount: 32
+    '6':
+      v: 4189
+      type: DEEPSLATE_LAPIS_ORE
+      amount: 8
+    '7':
+      v: 4189
+      type: SEA_PICKLE
+      amount: 8
+    '8':
+      v: 4189
+      type: MANGROVE_LOG
+      amount: 32
+    '9':
+      v: 4189
+      type: BEDROCK
+    '10':
+      v: 4189
+      type: BAMBOO_RAFT
+    '11':
+      v: 4189
+      type: BEEF
+    '12':
+      v: 4189
+      type: LEATHER_CHESTPLATE
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":" Party Jacket ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" 1MB Party Armor! ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Constantly changes color ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Tier 1 / 2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmirainbowarmor": 1
+          }
+        custom: H4sIAAAAAAAA/+NiYGBm4Hf29QxKzMxLyi93LMrNL2JgYGBkAAD1JzcoGgAAAA==
+    '13':
+      v: 4189
+      type: GLOW_BERRIES
+      amount: 16
+    '14':
+      v: 4189
+      type: DEAD_BUSH
+      amount: 16
+    '15':
+      v: 4189
+      type: SPORE_BLOSSOM
+    '16':
+      v: 4189
+      type: ORANGE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EA"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D6"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC1"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AD"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2F99"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3884"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4270"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5547"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E33"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:half_horizontal_bottom
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:circle
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:stripe_center
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangle_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+        - ==: Pattern
+          color: PURPLE
+          pattern: minecraft:gradient
+    '17':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Scarecrow","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa33042
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2FjOGZkNGUyMzA5NjhmZTNjMWE4NzNiYWU2MTQ5MTIzMGJmNTZkNDRiMDVmZjc3MWExZTljOTNhZDM0ZmE5OCJ9fX0=
+    '18':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Pumpkin Mojang Logo","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa48025
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2ZWRkZTRjYWJmMDMzYTU5YjMyOGFiNzRmNTBlNDdlMGE5MDg5ZjI5ZTMzYjlhZjY2YWFmYTMyNjdjOTA5MSJ9fX0=
+    '19':
+      v: 4189
+      type: LANTERN
+      amount: 5
+    '20':
+      v: 4189
+      type: IRON_ORE
+      amount: 8
+    '21':
+      v: 4189
+      type: SKELETON_HORSE_SPAWN_EGG
+    '22':
+      v: 4189
+      type: WEATHERED_CUT_COPPER
+      amount: 4
+    '23':
+      v: 4189
+      type: GLOW_LICHEN
+      amount: 16
+    '24':
+      v: 4189
+      type: NAUTILUS_SHELL
+    '25':
+      v: 4189
+      type: DRIPSTONE_BLOCK
+      amount: 16
+    '26':
+      v: 4189
+      type: VAULT
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:soul_speed: 3
+tot11:
+  CommandName: tot11
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: LEATHER_HELMET
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":" Party Hat ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" 1MB Party Armor! ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Constantly changes color ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Tier 1 / 2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmirainbowarmor": 1
+          }
+        custom: H4sIAAAAAAAA/+NiYGBm4Hf29QxKzMxLyi93LMrNL2JgYGBkAAD1JzcoGgAAAA==
+    '2':
+      v: 4189
+      type: GRASS_BLOCK
+      amount: 16
+    '3':
+      v: 4189
+      type: POLISHED_DIORITE
+      amount: 16
+    '4':
+      v: 4189
+      type: PURPLE_CANDLE
+      amount: 16
+    '5':
+      v: 4189
+      type: JUNGLE_PLANKS
+      amount: 16
+    '6':
+      v: 4189
+      type: CHAIN
+      amount: 8
+    '7':
+      v: 4189
+      type: DIAMOND_ORE
+      amount: 8
+    '8':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Jack Skellington","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa11873
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzY4N2E3NDA5NWJlYzhiZjg1ZjllODEzZjEyNDk3MWExZGRkMTk5MWY3MTFiNzRmOTg0OWNmZmM5MmU0YjFjIn19fQ==
+    '9':
+      v: 4189
+      type: MELON_SLICE
+    '10':
+      v: 4189
+      type: COARSE_DIRT
+      amount: 32
+    '11':
+      v: 4189
+      type: MANGROVE_ROOTS
+      amount: 32
+    '12':
+      v: 4189
+      type: BRAIN_CORAL
+      amount: 16
+    '13':
+      v: 4189
+      type: OXIDIZED_CUT_COPPER
+      amount: 4
+    '14':
+      v: 4189
+      type: NETHER_GOLD_ORE
+      amount: 8
+    '15':
+      v: 4189
+      type: SOUL_CAMPFIRE
+    '16':
+      v: 4189
+      type: NETHER_SPROUTS
+      amount: 16
+    '17':
+      v: 4189
+      type: WHITE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"1","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF05F3"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0AE7"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF10DB"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF15CF"},{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1BC4"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF20B8"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF26AC"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2BA0"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3194"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3689"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3C7D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4171"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4765"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4C59"},{"text":"2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF524E"},{"text":"0","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5742"},{"text":"2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5D36"},{"text":"3","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622A"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:stripe_bottom
+        - ==: Pattern
+          color: MAGENTA
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: BLUE
+          pattern: minecraft:gradient
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+    '18':
+      v: 4189
+      type: FERMENTED_SPIDER_EYE
+    '19':
+      v: 4189
+      type: SKULL_POTTERY_SHERD
+    '20':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_regeneration
+    '21':
+      v: 4189
+      type: ECHO_SHARD
+    '22':
+      v: 4189
+      type: ORANGE_CARPET
+      amount: 8
+    '23':
+      v: 4189
+      type: DEEPSLATE_DIAMOND_ORE
+      amount: 2
+    '24':
+      v: 4189
+      type: TUBE_CORAL
+      amount: 16
+    '25':
+      v: 4189
+      type: ORANGE_TERRACOTTA
+      amount: 32
+    '26':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Pete The Penguin","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa29982
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjOTJjNWM2ZjdiNTQ2MWJmY2NjMTg4MzBiNWEwOTMxZTFjNGZkZjU2ODRjZWJmOTRmMGY2YzNjMTMyNTBiNSJ9fX0=
+    '27':
+      v: 4189
+      type: COPPER_GRATE
+      amount: 16
+tot09:
+  CommandName: tot09
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Zombie Eskimo","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa22113
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzEyYmVhYWRlMDBkNzlmODBkYmExMzdmMjg3ZDYzZTBmZDljN2I2ZTI1OTE4YzgzYzU4NDJmNzk3OGRiMWI5NyJ9fX0=
+    '2':
+      v: 4189
+      type: PRISMARINE_WALL
+      amount: 16
+    '3':
+      v: 4189
+      type: QUARTZ_BLOCK
+      amount: 8
+    '4':
+      v: 4189
+      type: POINTED_DRIPSTONE
+      amount: 8
+    '5':
+      v: 4189
+      type: ENDER_EYE
+    '6':
+      v: 4189
+      type: IRON_BARS
+      amount: 16
+    '7':
+      v: 4189
+      type: LEATHER_LEGGINGS
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":" Party Pants ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" 1MB Party Armor! ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Constantly changes color ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Tier 1 / 2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmirainbowarmor": 1
+          }
+        custom: H4sIAAAAAAAA/+NiYGBm4Hf29QxKzMxLyi93LMrNL2JgYGBkAAD1JzcoGgAAAA==
+    '8':
+      v: 4189
+      type: CALIBRATED_SCULK_SENSOR
+    '9':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Zombie Girl with Pumpkin Hat","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa48436
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY5NmQxZDlhY2YxZmFkMjBiN2Q4YzdmZjRlOTZkMmEzZDZiZTlkZmJjZDRjNzhkZDljZTFjNmM1OGI4YTdlMiJ9fX0=
+    '10':
+      v: 4189
+      type: END_STONE
+      amount: 16
+    '11':
+      v: 4189
+      type: BOOKSHELF
+      amount: 3
+    '12':
+      v: 4189
+      type: PINK_PETALS
+      amount: 16
+    '13':
+      v: 4189
+      type: END_ROD
+      amount: 16
+    '14':
+      v: 4189
+      type: DEEPSLATE_TILE_WALL
+      amount: 16
+    '15':
+      v: 4189
+      type: BUBBLE_CORAL
+      amount: 32
+    '16':
+      v: 4189
+      type: MANGROVE_PROPAGULE
+      amount: 32
+    '17':
+      v: 4189
+      type: STRIPPED_WARPED_STEM
+      amount: 16
+    '18':
+      v: 4189
+      type: AZALEA
+      amount: 16
+    '19':
+      v: 4189
+      type: SMALL_DRIPLEAF
+      amount: 3
+    '20':
+      v: 4189
+      type: DANGER_POTTERY_SHERD
+      amount: 2
+    '21':
+      v: 4189
+      type: SEA_LANTERN
+      amount: 32
+    '22':
+      v: 4189
+      type: COPPER_INGOT
+      amount: 5
+    '23':
+      v: 4189
+      type: ROOTED_DIRT
+      amount: 32
+    '24':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:long_slowness
+    '25':
+      v: 4189
+      type: NETHER_QUARTZ_ORE
+      amount: 16
+    '26':
+      v: 4189
+      type: COPPER_TRAPDOOR
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:thorns: 2
+tot07:
+  CommandName: tot07
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: POLISHED_DEEPSLATE_STAIRS
+      amount: 16
+    '2':
+      v: 4189
+      type: SEAGRASS
+      amount: 16
+    '3':
+      v: 4189
+      type: JACK_O_LANTERN
+    '4':
+      v: 4189
+      type: BRAIN_CORAL_BLOCK
+      amount: 32
+    '5':
+      v: 4189
+      type: ZOMBIE_HORSE_SPAWN_EGG
+    '6':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:slow_falling
+    '7':
+      v: 4189
+      type: DEEPSLATE_REDSTONE_ORE
+      amount: 8
+    '8':
+      v: 4189
+      type: NETHERITE_PICKAXE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"1MB Celebration Bedrocker","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"gold"}]}'
+        lore:
+        - '{"text":"","extra":[" ",{"text":" After 10 years of ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"},{"text":"1MoreBlock.com","strikethrough":false,"obfuscated":false,"clickEvent":{"action":"open_url","value":"http://1MoreBlock.com"},"bold":false,"italic":false,"underlined":false,"color":"aqua"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" it is time celebrate, and to let ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" players break some bedrock! ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+        - '{"text":"","extra":[" ",{"text":" Things to note: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" Every hit goes fast, but ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" has a big durability loss, and ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" you cannot enchant, repair, or ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" merge this special pickaxe. ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" Use it wisely, and only in the ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" main worlds, avoid world borders. ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"dark_aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false}]}'
+        - '{"text":"","extra":[" ",{"text":" The purpose of this bedrocker is to ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"}]}'
+        - '{"text":"","extra":[" ",{"text":" help fix placed bedrock mistakes! ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"}]}'
+        custom-model-data:
+          ==: CustomModelData
+          floats:
+          - 6969696.0
+          flags: []
+          strings: []
+          colors: []
+        enchants:
+          minecraft:silk_touch: 4
+    '9':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Jack O''Lantern","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa29999
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzYxM2U2NWVkZWZlNTY2MzgwOTE0M2RmZThhMmRlNjNiNzUwYTQ1NDc5OTRiNzllN2I5MmJhOTdiZWFlYWU0YyJ9fX0=
+    '10':
+      v: 4189
+      type: BONE
+      amount: 8
+    '11':
+      v: 4189
+      type: BREAD
+    '12':
+      v: 4189
+      type: COARSE_DIRT
+      amount: 16
+    '13':
+      v: 4189
+      type: CHAIN
+      amount: 8
+    '14':
+      v: 4189
+      type: PEARLESCENT_FROGLIGHT
+      amount: 16
+    '15':
+      v: 4189
+      type: CRIMSON_STEM
+      amount: 16
+    '16':
+      v: 4189
+      type: REDSTONE_ORE
+      amount: 8
+    '17':
+      v: 4189
+      type: TORCHFLOWER_SEEDS
+      amount: 16
+    '18':
+      v: 4189
+      type: ORANGE_TERRACOTTA
+      amount: 32
+    '19':
+      v: 4189
+      type: COPPER_BULB
+      amount: 8
+    '20':
+      v: 4189
+      type: MUSIC_DISC_WARD
+    '21':
+      v: 4189
+      type: JUNGLE_PLANKS
+      amount: 16
+    '22':
+      v: 4189
+      type: RED_CANDLE
+      amount: 16
+    '23':
+      v: 4189
+      type: FLOWERING_AZALEA_LEAVES
+      amount: 32
+    '24':
+      v: 4189
+      type: RABBIT_FOOT
+    '25':
+      v: 4189
+      type: TUFF
+      amount: 32
+    '26':
+      v: 4189
+      type: CUT_COPPER
+      amount: 4
+    '27':
+      v: 4189
+      type: RED_SAND
+      amount: 16
+tot08:
+  CommandName: tot08
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: FIRE_CORAL_BLOCK
+      amount: 16
+    '2':
+      v: 4189
+      type: TUBE_CORAL_BLOCK
+      amount: 16
+    '3':
+      v: 4189
+      type: BRUSH
+    '4':
+      v: 4189
+      type: DEAD_BUSH
+      amount: 5
+    '5':
+      v: 4189
+      type: MOSS_BLOCK
+      amount: 16
+    '6':
+      v: 4189
+      type: BAMBOO_TRAPDOOR
+      amount: 32
+    '7':
+      v: 4189
+      type: ORANGE_DYE
+      amount: 8
+    '8':
+      v: 4189
+      type: EXPOSED_CUT_COPPER
+      amount: 4
+    '9':
+      v: 4189
+      type: OCHRE_FROGLIGHT
+      amount: 16
+    '10':
+      v: 4189
+      type: BLACK_CANDLE
+      amount: 16
+    '11':
+      v: 4189
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":" Party Shoes ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" 1MB Party Armor! ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Constantly changes color ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Tier 1 / 2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmirainbowarmor": 1
+          }
+        custom: H4sIAAAAAAAA/+NiYGBm4Hf29QxKzMxLyi93LMrNL2JgYGBkAAD1JzcoGgAAAA==
+    '12':
+      v: 4189
+      type: LECTERN
+    '13':
+      v: 4189
+      type: CAULDRON
+    '14':
+      v: 4189
+      type: CRIMSON_FUNGUS
+      amount: 8
+    '15':
+      v: 4189
+      type: MANGROVE_PLANKS
+      amount: 32
+    '16':
+      v: 4189
+      type: MAGMA_CREAM
+    '17':
+      v: 4189
+      type: GLOW_ITEM_FRAME
+    '18':
+      v: 4189
+      type: MYCELIUM
+      amount: 16
+    '19':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Jack O''Melon","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa21534
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzc2NTNjZjQ2MjIyYjBkOGUxMTQ1ZWRjNmY5YTY3NjE2ZDllMWQ5YmM5MDA1NDhmMTkxMDI2ZjdkZTFmYzkifX19
+    '20':
+      v: 4189
+      type: DEEPSLATE_EMERALD_ORE
+      amount: 8
+    '21':
+      v: 4189
+      type: MANGROVE_TRAPDOOR
+      amount: 32
+    '22':
+      v: 4189
+      type: COBBLED_DEEPSLATE_STAIRS
+      amount: 16
+    '23':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Cake","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000000aaa55
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzU4NzM5YzRmMzQ4Y2Q2NjQyMzc5ZjlhZDY1NzhmYzE2YWZkNGU5MmQ1MjhiZWFiMDUzNWVjNzgyMjVjOTI3In19fQ==
+    '24':
+      v: 4189
+      type: SKULL_BANNER_PATTERN
+    '25':
+      v: 4189
+      type: REDSTONE_LAMP
+      amount: 32
+    '26':
+      v: 4189
+      type: COPPER_DOOR
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:unbreaking: 3
+tot20:
+  CommandName: tot20
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: AMETHYST_BLOCK
+    '2':
+      v: 4189
+      type: PLAYER_HEAD
+      amount: 2
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55F5FF"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55EBFF"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55E1FF"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55D7FF"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55CDFF"},{"text":"
+          ","italic":false},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55B9FF"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55AFFF"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55A5FF"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#559BFF"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5591FF"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5587FF"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#557DFF"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5573FF"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5569FF"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#555FFF"}]}'
+        lore:
+        - '{"text":"","extra":["  ",{"text":"Microblock","strikethrough":false,"obfuscated":false,"bold":false,"italic":true,"underlined":false,"color":"gray"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 192fd8c5-0000-0000-192f-d8c500000000
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmJiZWQyZmM2MzIxZWM0MTA4MzE2ZjE4NjJjYmYyY2Q4MWYzODlmMjU4N2IxZjUzNjAyNTEzYjdhN2NhNTRhIn19fQ==
+    '3':
+      v: 4189
+      type: SHROOMLIGHT
+      amount: 16
+    '4':
+      v: 4189
+      type: ACTIVATOR_RAIL
+      amount: 8
+    '5':
+      v: 4189
+      type: AZALEA
+      amount: 16
+    '6':
+      v: 4189
+      type: PURPLE_SHULKER_BOX
+    '7':
+      v: 4189
+      type: CHAIN
+      amount: 8
+    '8':
+      v: 4189
+      type: FIRE_CORAL_BLOCK
+      amount: 32
+    '9':
+      v: 4189
+      type: WARPED_DOOR
+    '10':
+      v: 4189
+      type: CUT_SANDSTONE
+      amount: 32
+    '11':
+      v: 4189
+      type: WAXED_COPPER_BLOCK
+      amount: 4
+    '12':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Jack OLantern","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa48183
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTc2YzQyOGQwYzM5MDY4ZmI2MDg5N2Q0YTMwNTU0YjNlZGVkZmNmMmVjN2NmZmJmZGYwNjkxZDAwMDc4OWJlOCJ9fX0=
+    '13':
+      v: 4189
+      type: SHORT_GRASS
+      amount: 32
+    '14':
+      v: 4189
+      type: RAW_IRON
+      amount: 8
+    '15':
+      v: 4189
+      type: MANGROVE_DOOR
+      amount: 32
+    '16':
+      v: 4189
+      type: CRIMSON_ROOTS
+      amount: 16
+    '17':
+      v: 4189
+      type: ENDER_PEARL
+      amount: 8
+    '18':
+      v: 4189
+      type: DRAGON_EGG
+    '19':
+      v: 4189
+      type: BLACKSTONE_WALL
+      amount: 32
+    '20':
+      v: 4189
+      type: SADDLE
+    '21':
+      v: 4189
+      type: COBBLED_DEEPSLATE
+      amount: 16
+    '22':
+      v: 4189
+      type: TURTLE_SCUTE
+      amount: 8
+    '23':
+      v: 4189
+      type: PURPLE_CANDLE
+      amount: 16
+    '24':
+      v: 4189
+      type: SCULK_VEIN
+      amount: 8
+    '25':
+      v: 4189
+      type: MUSIC_DISC_CREATOR
+    '26':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:fire_protection: 3
+    '27':
+      v: 4189
+      type: RABBIT_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"W","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE05F2"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0BE6"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE11D9"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF17CD"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC0"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF22B4"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF28A7"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2E9B"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3982"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3F76"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4569"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5D"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5050"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5644"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5C37"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622B"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a witch will spawn near you","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/w3IwRKBQBgA4N+4hEfwCB0qJXVUykbZNEXcMkmG3ZrapnXzph7Dle/4jQGGIEQZzSvi5eHnOx3BZGfFdkXIP1sBAAbwZoctcUnnpLWYymdtJtky5skLt2i/9u5LLRA5YkGDT8jv6zlNTbX21VvxKIuUlGeecLo1fIm5th4cTs9ExzSicZn33LmYefM8ypulERZsVV27RaKsHcW7uMSqdhxpqtRlJvwAo/+3iagAAAA=
+tot27:
+  CommandName: tot27
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: IRON_BARS
+      amount: 32
+    '2':
+      v: 4189
+      type: BLACKSTONE_STAIRS
+      amount: 32
+    '3':
+      v: 4189
+      type: WARPED_FENCE
+      amount: 16
+    '4':
+      v: 4189
+      type: CHEST
+      amount: 16
+    '5':
+      v: 4189
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FC682B"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FA6937"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F76943"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F56A4F"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F26A5C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F06B68"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#ED6B74"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EB6C80"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E86C8C"},{"text":"/","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E66D99"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E36DA5"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E16EB1"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DE6EBD"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DC6FC9"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Adds $25000 to /balance","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD700"}]}'
+        - '{"text":"","extra":[{"text":"Right click to deposit","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmicheque": "5InMpmDBfbFL2jJgeVsrkg=="
+          }
+    '6':
+      v: 4189
+      type: SCULK_CATALYST
+    '7':
+      v: 4189
+      type: LADDER
+      amount: 32
+    '8':
+      v: 4189
+      type: BOOKSHELF
+      amount: 5
+    '9':
+      v: 4189
+      type: CHERRY_CHEST_BOAT
+    '10':
+      v: 4189
+      type: MANGROVE_ROOTS
+      amount: 16
+    '11':
+      v: 4189
+      type: ENDER_EYE
+    '12':
+      v: 4189
+      type: BLUE_TERRACOTTA
+      amount: 32
+    '13':
+      v: 4189
+      type: BAMBOO_SLAB
+      amount: 32
+    '14':
+      v: 4189
+      type: AZALEA_LEAVES
+      amount: 16
+    '15':
+      v: 4189
+      type: POINTED_DRIPSTONE
+      amount: 8
+    '16':
+      v: 4189
+      type: TADPOLE_SPAWN_EGG
+    '17':
+      v: 4189
+      type: COOKED_BEEF
+    '18':
+      v: 4189
+      type: DEEPSLATE_EMERALD_ORE
+      amount: 8
+    '19':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Pumpkin on a Log","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa23295
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmM2M2OWU4NTdlZTIzYjEyZWVhNTc3NjllZjAxYWM5YmFiYjM5YzVlYWQwMTAwMTZiMjRkMmMzMzliYmU0OSJ9fX0=
+    '20':
+      v: 4189
+      type: TRIPWIRE_HOOK
+      amount: 32
+    '21':
+      v: 4189
+      type: CLAY
+      amount: 32
+    '22':
+      v: 4189
+      type: NETHERITE_UPGRADE_SMITHING_TEMPLATE
+    '23':
+      v: 4189
+      type: JUKEBOX
+    '24':
+      v: 4189
+      type: DEEPSLATE_BRICK_WALL
+      amount: 16
+    '25':
+      v: 4189
+      type: REDSTONE_BLOCK
+    '26':
+      v: 4189
+      type: FLOW_ARMOR_TRIM_SMITHING_TEMPLATE
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:swift_sneak: 3
+tot28:
+  CommandName: tot28
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: DAMAGED_ANVIL
+    '2':
+      v: 4189
+      type: NETHER_WART
+      amount: 3
+    '3':
+      v: 4189
+      type: CALCITE
+      amount: 32
+    '4':
+      v: 4189
+      type: SPONGE
+    '5':
+      v: 4189
+      type: WARPED_WART_BLOCK
+      amount: 16
+    '6':
+      v: 4189
+      type: TARGET
+      amount: 2
+    '7':
+      v: 4189
+      type: ORANGE_CARPET
+      amount: 16
+    '8':
+      v: 4189
+      type: GLOW_SQUID_SPAWN_EGG
+    '9':
+      v: 4189
+      type: MYCELIUM
+      amount: 16
+    '10':
+      v: 4189
+      type: CHORUS_FLOWER
+      amount: 8
+    '11':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Wither Melon","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa40190
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTNmZDljNjMwNjE3MzhkYjJkODNkZDE4MGI4YjUwZjdlOWYyMmUzZTc4NGM0Njc2NzgyMDIwYzU0YzA3ZTY5MiJ9fX0=
+    '12':
+      v: 4189
+      type: BLACK_GLAZED_TERRACOTTA
+      amount: 16
+    '13':
+      v: 4189
+      type: TROPICAL_FISH_BUCKET
+    '14':
+      v: 4189
+      type: ROOTED_DIRT
+      amount: 16
+    '15':
+      v: 4189
+      type: FROG_SPAWN_EGG
+    '16':
+      v: 4189
+      type: SCULK_SHRIEKER
+    '17':
+      v: 4189
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FC682B"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FA6937"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F76943"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F56A4F"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F26A5C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F06B68"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#ED6B74"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EB6C80"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E86C8C"},{"text":"/","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E66D99"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E36DA5"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E16EB1"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DE6EBD"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DC6FC9"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Adds $15000 to /balance","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD700"}]}'
+        - '{"text":"","extra":[{"text":"Right click to deposit","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmicheque": "CAsu+wZS1fRcPpQXcXPY1w=="
+          }
+    '18':
+      v: 4189
+      type: SCAFFOLDING
+      amount: 16
+    '19':
+      v: 4189
+      type: SUSPICIOUS_SAND
+      amount: 3
+    '20':
+      v: 4189
+      type: CHAIN
+      amount: 8
+    '21':
+      v: 4189
+      type: TINTED_GLASS
+      amount: 15
+    '22':
+      v: 4189
+      type: CANDLE
+      amount: 16
+    '23':
+      v: 4189
+      type: PUMPKIN_PIE
+    '24':
+      v: 4189
+      type: GILDED_BLACKSTONE
+      amount: 8
+    '25':
+      v: 4189
+      type: FLOW_BANNER_PATTERN
+    '26':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:mending: 1
+    '27':
+      v: 4189
+      type: MUSHROOM_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF05F3"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0AE8"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0FDD"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF14D2"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1AC7"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1FBB"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF24B0"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF29A5"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2E9A"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3983"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3E78"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF436D"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4862"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4E57"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF534B"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5840"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5D35"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622A"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXByxZCQAAA0GnX41Ms0JAsI2amMD0Q7TzPUWeQwaFVn969awBWYOMZvtkwltQ5XwIAFuDXh2dms8GKWiGSnspWNCU6BTPl+IpIdVBcYcK929EYn7whlchNfSXq/vsxm84RUdZDfdR5WUMSF6y8hFnhcymv3jMt0UNrqdOmJt6h8VjAuxbIyJJJajOj8SasQHFIdPAH8lXxg5kAAAA=
+tot25:
+  CommandName: tot25
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: BLACKSTONE
+      amount: 32
+    '2':
+      v: 4189
+      type: DRIPSTONE_BLOCK
+      amount: 16
+    '3':
+      v: 4189
+      type: DEEPSLATE_GOLD_ORE
+      amount: 8
+    '4':
+      v: 4189
+      type: ORANGE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"J","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF04F5"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EB"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0DE1"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D8"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF16CE"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1BC4"},{"text":"''","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1FBA"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF24B1"},{"text":"L","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF28A7"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2D9D"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3193"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF368A"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3A80"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3F76"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF436C"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4863"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4C59"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF514F"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5545"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5A3C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E32"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6328"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BROWN
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: YELLOW
+          pattern: minecraft:small_stripes
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:small_stripes
+        - ==: Pattern
+          color: LIME
+          pattern: minecraft:triangles_top
+        - ==: Pattern
+          color: YELLOW
+          pattern: minecraft:creeper
+    '5':
+      v: 4189
+      type: MUSIC_DISC_5
+    '6':
+      v: 4189
+      type: DROPPER
+    '7':
+      v: 4189
+      type: END_STONE
+      amount: 32
+    '8':
+      v: 4189
+      type: CHERRY_LEAVES
+      amount: 64
+    '9':
+      v: 4189
+      type: CHAIN
+      amount: 4
+    '10':
+      v: 4189
+      type: WAXED_EXPOSED_CUT_COPPER
+      amount: 4
+    '11':
+      v: 4189
+      type: RAW_IRON_BLOCK
+      amount: 8
+    '12':
+      v: 4189
+      type: NETHER_SPROUTS
+      amount: 8
+    '13':
+      v: 4189
+      type: MANGROVE_SLAB
+      amount: 32
+    '14':
+      v: 4189
+      type: CRIMSON_TRAPDOOR
+      amount: 16
+    '15':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Brain on a Plate","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa33334
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTE4MjUzZjNhNjhiNGFiM2U1ZDM2Yzk3NDU2YTJiMmZjNzlhNjg2NjJjMzAxODRhNTdkZDZiZTE1MWYwYmNiOSJ9fX0=
+    '16':
+      v: 4189
+      type: BAMBOO_DOOR
+      amount: 4
+    '17':
+      v: 4189
+      type: FIREWORK_ROCKET
+      amount: 32
+      meta:
+        ==: ItemMeta
+        meta-type: FIREWORK
+        firework-effects: []
+        power: 3
+    '18':
+      v: 4189
+      type: SMOOTH_QUARTZ
+      amount: 16
+    '19':
+      v: 4189
+      type: GOLDEN_HORSE_ARMOR
+    '21':
+      v: 4189
+      type: SMALL_DRIPLEAF
+      amount: 8
+    '22':
+      v: 4189
+      type: COOKED_CHICKEN
+    '23':
+      v: 4189
+      type: IRON_TRAPDOOR
+    '24':
+      v: 4189
+      type: MOSS_CARPET
+      amount: 16
+    '25':
+      v: 4189
+      type: PURPLE_CANDLE
+      amount: 16
+    '26':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:oozing
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:infinity: 1
+tot26:
+  CommandName: tot26
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: GLOW_ITEM_FRAME
+      amount: 3
+    '2':
+      v: 4189
+      type: PRISMARINE_WALL
+      amount: 16
+    '3':
+      v: 4189
+      type: SPIDER_EYE
+    '4':
+      v: 4189
+      type: PARROT_SPAWN_EGG
+    '5':
+      v: 4189
+      type: WAXED_WEATHERED_CUT_COPPER
+      amount: 4
+    '6':
+      v: 4189
+      type: MYCELIUM
+      amount: 32
+    '7':
+      v: 4189
+      type: SHEARS
+    '8':
+      v: 4189
+      type: MANGROVE_HANGING_SIGN
+      amount: 8
+    '9':
+      v: 4189
+      type: FURNACE
+    '10':
+      v: 4189
+      type: CRIMSON_FENCE
+      amount: 16
+    '11':
+      v: 4189
+      type: IRON_BLOCK
+    '12':
+      v: 4189
+      type: MANGROVE_CHEST_BOAT
+    '13':
+      v: 4189
+      type: PAPER
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FC682B"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FA6937"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F76943"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F56A4F"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F26A5C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F06B68"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#ED6B74"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EB6C80"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E86C8C"},{"text":"/","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E66D99"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E36DA5"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E16EB1"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DE6EBD"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DC6FC9"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Adds $10000 to /balance","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD700"}]}'
+        - '{"text":"","extra":[{"text":"Right click to deposit","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmicheque": "mucwDlA+P7piDfUcJpBPWA=="
+          }
+    '14':
+      v: 4189
+      type: SCULK_SENSOR
+    '15':
+      v: 4189
+      type: BELL
+    '16':
+      v: 4189
+      type: TWISTING_VINES
+      amount: 16
+    '17':
+      v: 4189
+      type: WHITE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"1","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF05F3"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0AE7"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF10DB"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF15CF"},{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1BC4"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF20B8"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF26AC"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2BA0"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3194"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3689"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3C7D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4171"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4765"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4C59"},{"text":"2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF524E"},{"text":"0","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5742"},{"text":"2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5D36"},{"text":"3","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622A"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:stripe_bottom
+        - ==: Pattern
+          color: MAGENTA
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: BLUE
+          pattern: minecraft:gradient
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+    '18':
+      v: 4189
+      type: TORCHFLOWER_SEEDS
+      amount: 16
+    '19':
+      v: 4189
+      type: MOSS_CARPET
+      amount: 16
+    '20':
+      v: 4189
+      type: BLACKSTONE_SLAB
+      amount: 32
+    '21':
+      v: 4189
+      type: TINTED_GLASS
+      amount: 14
+    '22':
+      v: 4189
+      type: CHICKEN
+    '23':
+      v: 4189
+      type: JUNGLE_LEAVES
+      amount: 64
+    '24':
+      v: 4189
+      type: DEEPSLATE_REDSTONE_ORE
+      amount: 8
+    '25':
+      v: 4189
+      type: HOWL_POTTERY_SHERD
+      amount: 2
+    '26':
+      v: 4189
+      type: END_ROD
+      amount: 16
+    '27':
+      v: 4189
+      type: FLOW_POTTERY_SHERD
+tot23:
+  CommandName: tot23
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: DISPENSER
+    '2':
+      v: 4189
+      type: ELYTRA
+    '3':
+      v: 4189
+      type: WAXED_OXIDIZED_COPPER
+      amount: 4
+    '4':
+      v: 4189
+      type: POLISHED_BLACKSTONE_BUTTON
+      amount: 64
+    '5':
+      v: 4189
+      type: PIGLIN_HEAD
+    '6':
+      v: 4189
+      type: BARREL
+      amount: 5
+    '7':
+      v: 4189
+      type: CHORUS_FLOWER
+      amount: 8
+    '8':
+      v: 4189
+      type: SOUL_CAMPFIRE
+      amount: 8
+    '9':
+      v: 4189
+      type: RAW_GOLD_BLOCK
+      amount: 8
+    '10':
+      v: 4189
+      type: MANGROVE_STAIRS
+      amount: 32
+    '11':
+      v: 4189
+      type: DEEPSLATE_IRON_ORE
+      amount: 8
+    '12':
+      v: 4189
+      type: CARROT_ON_A_STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6D1D"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF721C"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF771A"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF7C19"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF8117"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF8616"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF8B15"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9013"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9512"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9A10"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9F0F"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFA40E"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFA90C"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFAE0B"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFB309"},{"text":"L","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFB808"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFBD07"},{"text":"v","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFC205"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFC704"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFCC02"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD101"},{"text":"!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD700"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Taming","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"5","italic":false,"color":"gold"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmilimitedusecurrent": 5,
+              "cmilib:cmilimitedusemax": 5,
+              "cmilib:randomid": 1023467440
+          }
+        custom: H4sIAAAAAAAA/1XOu1KDQBhA4X+kidpY+BYpDFnlUmRG2IRLAswYICZ0gQVFWBYS2MVX842sfQFjafud5twASDDZHhvCqEuUn++va7gNzAgzSi94ngDAFTxHIsBCReqB21b66XgFPtSPHxobs3dz6Ls2E4ESzlCI+fCmtWOkOhbjhDnLleE+MbuGfW2+6KrYVTSxd22N5nI8N/aVF3VL5DJNe/UyZ6V6D4lSJP1GpmW4Jnq+2cpWEadN6Wo647NuOhiVHyp4ilBK+4aLxUKCO+y7XknLPifxOfeP42VZkuD+H+PhdMqb/i/BLx0Pohr0AAAA
+    '13':
+      v: 4189
+      type: BONE
+      amount: 8
+    '14':
+      v: 4189
+      type: MUD_BRICKS
+      amount: 16
+    '15':
+      v: 4189
+      type: CHISELED_BOOKSHELF
+      amount: 16
+    '16':
+      v: 4189
+      type: ANCIENT_DEBRIS
+    '17':
+      v: 4189
+      type: MANGROVE_TRAPDOOR
+      amount: 32
+    '18':
+      v: 4189
+      type: CHERRY_LOG
+      amount: 32
+    '19':
+      v: 4189
+      type: FLOWERING_AZALEA
+      amount: 16
+    '20':
+      v: 4189
+      type: SCULK
+      amount: 16
+    '21':
+      v: 4189
+      type: CHERRY_PLANKS
+      amount: 32
+    '22':
+      v: 4189
+      type: DIRT_PATH
+      amount: 16
+    '23':
+      v: 4189
+      type: PINK_TULIP
+      amount: 32
+    '24':
+      v: 4189
+      type: CREEPER_BANNER_PATTERN
+    '25':
+      v: 4189
+      type: SEA_LANTERN
+      amount: 32
+    '26':
+      v: 4189
+      type: ORANGE_BED
+    '27':
+      v: 4189
+      type: BREEZE_ROD
+      amount: 5
+tot24:
+  CommandName: tot24
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: ORANGE_DYE
+      amount: 8
+    '2':
+      v: 4189
+      type: SMALL_DRIPLEAF
+    '3':
+      v: 4189
+      type: NETHER_WART
+      amount: 32
+    '4':
+      v: 4189
+      type: SPIDER_EYE
+    '5':
+      v: 4189
+      type: BEE_NEST
+    '6':
+      v: 4189
+      type: NETHER_BRICKS
+      amount: 32
+    '7':
+      v: 4189
+      type: BIG_DRIPLEAF
+      amount: 8
+    '8':
+      v: 4189
+      type: GLOW_ITEM_FRAME
+      amount: 2
+    '9':
+      v: 4189
+      type: HOPPER
+    '10':
+      v: 4189
+      type: DEEPSLATE_COPPER_ORE
+      amount: 8
+    '11':
+      v: 4189
+      type: WAXED_CUT_COPPER
+      amount: 4
+    '12':
+      v: 4189
+      type: MANGROVE_FENCE
+      amount: 32
+    '13':
+      v: 4189
+      type: RED_MUSHROOM_BLOCK
+      amount: 32
+    '14':
+      v: 4189
+      type: MANGROVE_CHEST_BOAT
+    '15':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Bertie Botts Every Flavour Beans","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa12045
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWJjYTlmODNlZDAxZGI3N2ZmZWYzMTFiYjE4YmMyMzJjYjYyOWQ0NTVjNTQ0Y2NiNGM0NTU3OWQwZjMifX19
+    '16':
+      v: 4189
+      type: LILY_PAD
+      amount: 16
+    '17':
+      v: 4189
+      type: RAW_COPPER_BLOCK
+      amount: 8
+    '18':
+      v: 4189
+      type: PINK_PETALS
+      amount: 8
+    '19':
+      v: 4189
+      type: ROTTEN_FLESH
+    '20':
+      v: 4189
+      type: POLISHED_BLACKSTONE_PRESSURE_PLATE
+      amount: 32
+    '21':
+      v: 4189
+      type: REDSTONE_BLOCK
+    '22':
+      v: 4189
+      type: BLUE_ORCHID
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FC682C"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F96939"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F76946"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F46A53"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F16A60"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EF6B6D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EC6C7A"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E96C87"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E76D94"},{"text":"/","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E46DA1"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E16EAE"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DF6EBB"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DC6FC8"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Right-click to activate a BLUE glow","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD700"}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"5","italic":false,"color":"gold"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmilimitedusecurrent": 5,
+              "cmilib:cmilimitedusemax": 5,
+              "cmilib:randomid": 1957527765
+          }
+        custom: H4sIAAAAAAAA/+NiYGBm4AhKzEvJz/VMSTW0yuJk4PZzCnHOz80FChZzMDAwMDI45Gb6+hQ4emX4VqSYBjkXp3imWxRGVqSVFlkUlxpVJpunOhmGmZqkZviHlOdXZKRpa/tX+XgbuuqXGZYUR6UkGzAzCDj7evpk5maWpKaEFqf6JlYADWZlZhBBEXYuLSpKzSthADkKABN1s/+aAAAA
+    '23':
+      v: 4189
+      type: COBWEB
+      amount: 6
+    '24':
+      v: 4189
+      type: BRICK_SLAB
+      amount: 32
+    '25':
+      v: 4189
+      type: WARPED_TRAPDOOR
+      amount: 16
+    '26':
+      v: 4189
+      type: BREEZE_SPAWN_EGG
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:impaling: 5
+tot21:
+  CommandName: tot21
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: BLACK_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE04F4"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09E9"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EDE"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF13D4"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF18C9"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE1DBE"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF22B4"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF27A9"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE2C9E"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3194"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3689"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3B7E"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4074"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4569"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4A5E"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4F54"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5449"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E34"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6329"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:creeper
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:stripe_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangle_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+        - ==: Pattern
+          color: GREEN
+          pattern: minecraft:triangles_top
+    '2':
+      v: 4189
+      type: SPONGE
+      amount: 2
+    '3':
+      v: 4189
+      type: POTATO
+    '4':
+      v: 4189
+      type: WARPED_FUNGUS
+      amount: 16
+    '5':
+      v: 4189
+      type: DEAD_BRAIN_CORAL_BLOCK
+      amount: 32
+    '6':
+      v: 4189
+      type: RESPAWN_ANCHOR
+    '7':
+      v: 4189
+      type: MANGROVE_PRESSURE_PLATE
+      amount: 32
+    '8':
+      v: 4189
+      type: GLOW_BERRIES
+      amount: 16
+    '9':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Candle (pumpkin, lit)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa57782
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmVmYjVjMTk4ZmU3NGZlYjk4OGRjYjlhZjg5MGI2OWU4MTY5ZjU3MTRhN2FiNGZlODc5NWJkMWY2NmRmNjM3ZiJ9fX0=
+    '10':
+      v: 4189
+      type: ENCHANTED_GOLDEN_APPLE
+    '11':
+      v: 4189
+      type: WARPED_HANGING_SIGN
+      amount: 8
+    '12':
+      v: 4189
+      type: POLISHED_BLACKSTONE_WALL
+      amount: 32
+    '13':
+      v: 4189
+      type: POLISHED_DEEPSLATE
+      amount: 16
+    '14':
+      v: 4189
+      type: TORCHFLOWER
+      amount: 16
+    '15':
+      v: 4189
+      type: RAIL
+      amount: 32
+    '16':
+      v: 4189
+      type: SPRUCE_BOAT
+    '17':
+      v: 4189
+      type: CHORUS_FLOWER
+      amount: 5
+    '18':
+      v: 4189
+      type: RAW_COPPER
+      amount: 8
+    '19':
+      v: 4189
+      type: FERN
+      amount: 32
+    '20':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Blue Wither","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa48097
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmY0YTA3N2ZkM2Q5MTQzMjlmNzg3NDIyOGQ3MmQzYjQwM2JjZGIwNzMyMzA1NGZjMzZkNTJmZDNjN2VlMWE4YiJ9fX0=
+    '21':
+      v: 4189
+      type: FERMENTED_SPIDER_EYE
+      amount: 3
+    '22':
+      v: 4189
+      type: DRIPSTONE_BLOCK
+      amount: 8
+    '23':
+      v: 4189
+      type: FLOWERING_AZALEA_LEAVES
+      amount: 32
+    '24':
+      v: 4189
+      type: CAT_SPAWN_EGG
+    '25':
+      v: 4189
+      type: WAXED_EXPOSED_COPPER
+      amount: 4
+    '26':
+      v: 4189
+      type: MUSIC_DISC_CREATOR_MUSIC_BOX
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:quick_charge: 3
+tot22:
+  CommandName: tot22
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: SHROOMLIGHT
+      amount: 16
+    '2':
+      v: 4189
+      type: CHERRY_FENCE
+      amount: 32
+    '3':
+      v: 4189
+      type: ENCHANTING_TABLE
+    '4':
+      v: 4189
+      type: RAW_GOLD
+      amount: 8
+    '5':
+      v: 4189
+      type: ENDER_CHEST
+    '6':
+      v: 4189
+      type: FIRE_CORAL
+      amount: 32
+    '7':
+      v: 4189
+      type: SPYGLASS
+    '8':
+      v: 4189
+      type: WAXED_WEATHERED_COPPER
+      amount: 4
+    '9':
+      v: 4189
+      type: DARK_OAK_BUTTON
+      amount: 16
+    '10':
+      v: 4189
+      type: CARROT_ON_A_STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6D1D"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF721C"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF771A"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF7C19"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF8117"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF8616"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF8B15"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9013"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9512"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9A10"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF9F0F"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFA40E"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFA90C"},{"text":"O","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFAE0B"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFB309"},{"text":"L","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFB808"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFBD07"},{"text":"v","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFC205"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFC704"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFCC02"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD101"},{"text":"!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFD700"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Alchemy","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"4","italic":false,"color":"gold"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmilimitedusecurrent": 4,
+              "cmilib:cmilimitedusemax": 5,
+              "cmilib:randomid": 353917996
+          }
+        custom: H4sIAAAAAAAA/1XPO1KDQACA4R1pojYW3sKCl7KkcEZZA+zMQpQ3dDwjhM0GAgE8jTfzKsbS9vur/wYADqyc9FAwiovhG/5cg1tb8xCj9IKnFQDgCrx4k40mKMP4bOjZYpIKxe1jo7I5/9TGoTvmk624guyi84D9LyXeZdtCEBfJaoSCT5gN2lb7WMMp2NPECI6tLIm+9Brtide9yZipakhycwMJnyhVOlebxXDMeO6NMnyIGjd5qkmSep61G5PIRBlG660T8qOrw/q9q5fw2NemzHiRhsGk42cO3CELk5rWQ1n4p9JK58sGx4H7f4zGvi8Pw18Cv5WbENEIAQAA
+    '11':
+      v: 4189
+      type: POLISHED_BLACKSTONE_BRICK_WALL
+      amount: 32
+    '12':
+      v: 4189
+      type: AZALEA
+      amount: 16
+    '13':
+      v: 4189
+      type: END_ROD
+      amount: 16
+    '14':
+      v: 4189
+      type: LIME_WOOL
+      amount: 32
+    '15':
+      v: 4189
+      type: DAYLIGHT_DETECTOR
+    '16':
+      v: 4189
+      type: AMETHYST_BLOCK
+      amount: 5
+    '17':
+      v: 4189
+      type: TUFF
+      amount: 32
+    '18':
+      v: 4189
+      type: NETHER_WART
+      amount: 2
+    '19':
+      v: 4189
+      type: CARROT
+    '20':
+      v: 4189
+      type: DECORATED_POT
+      meta:
+        ==: ItemMeta
+        meta-type: TILE_ENTITY
+        internal: H4sIAAAAAAAA/5XKQQ5AMBBG4X9hgQuIBTfoBVymoUY02o5MR8Tt2VmK5cv3aqBGMwV2m6GkXi/jOO6cnsgV2ugTORkXHXZWO5NjGdVzyiWAAt3reTtCsM+lJJfNK8n8xf3Lk9BJ8tNxA6txcpO+AAAA
+        blockMaterial: DECORATED_POT
+    '21':
+      v: 4189
+      type: BUBBLE_CORAL
+      amount: 32
+    '22':
+      v: 4189
+      type: TIPPED_ARROW
+      amount: 32
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_poison
+    '23':
+      v: 4189
+      type: DEEPSLATE_COAL_ORE
+      amount: 8
+    '24':
+      v: 4189
+      type: EXPERIENCE_BOTTLE
+    '25':
+      v: 4189
+      type: MUSIC_DISC_PRECIPICE
+    '26':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:bane_of_arthropods: 5
+    '27':
+      v: 4189
+      type: SUSPICIOUS_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: SUSPICIOUS_STEW
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"F","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF04F4"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EA"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EE0"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D6"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF17CC"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC1"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF21B7"},{"text":"&","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AD"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2AA3"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2F99"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3884"},{"text":"b","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3D7A"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4270"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4666"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5C"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5051"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5547"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E33"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6329"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXBzQ6CIAAAYLr18ygcRKOcxwAVdWq6KOtmS5ct0PxpeOvR+741ACuwSciJtlKW6jEsAQAL8BvPkfTk5BYdLNANWwZFqRZzOvDMD5oDjqHmY9ynVx49aV3vs34fMlV9TB3B1sodciFW2GXf2J4bwy6RIEIRhwU66I7snUOGE1opiF47agvTd83g7knSJprjrTGVDvgDfOOe+5kAAAA=
+tot18:
+  CommandName: tot18
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: GREEN_DYE
+      amount: 16
+    '2':
+      v: 4189
+      type: SCULK
+      amount: 8
+    '3':
+      v: 4189
+      type: OBSIDIAN
+      amount: 2
+    '4':
+      v: 4189
+      type: COBBLED_DEEPSLATE_WALL
+      amount: 16
+    '5':
+      v: 4189
+      type: HOWL_POTTERY_SHERD
+    '6':
+      v: 4189
+      type: COBWEB
+      amount: 16
+    '7':
+      v: 4189
+      type: CAMEL_SPAWN_EGG
+    '8':
+      v: 4189
+      type: AMETHYST_CLUSTER
+    '9':
+      v: 4189
+      type: SEA_PICKLE
+      amount: 32
+    '10':
+      v: 4189
+      type: DEAD_BUSH
+      amount: 32
+    '11':
+      v: 4189
+      type: CAKE
+    '12':
+      v: 4189
+      type: DETECTOR_RAIL
+      amount: 8
+    '13':
+      v: 4189
+      type: BLUE_ORCHID
+      amount: 32
+    '14':
+      v: 4189
+      type: WEATHERED_CUT_COPPER_SLAB
+      amount: 4
+    '15':
+      v: 4189
+      type: EMERALD_ORE
+      amount: 8
+    '16':
+      v: 4189
+      type: MANGROVE_FENCE_GATE
+      amount: 64
+    '17':
+      v: 4189
+      type: WEEPING_VINES
+      amount: 16
+    '18':
+      v: 4189
+      type: REINFORCED_DEEPSLATE
+    '19':
+      v: 4189
+      type: FIRE_CORAL_BLOCK
+      amount: 16
+    '20':
+      v: 4189
+      type: CHAIN
+      amount: 16
+    '21':
+      v: 4189
+      type: GLOW_INK_SAC
+      amount: 5
+    '22':
+      v: 4189
+      type: EXPERIENCE_BOTTLE
+      amount: 2
+    '23':
+      v: 4189
+      type: RED_SAND
+      amount: 32
+    '24':
+      v: 4189
+      type: RED_STAINED_GLASS_PANE
+      amount: 32
+    '25':
+      v: 4189
+      type: END_STONE
+      amount: 16
+    '26':
+      v: 4189
+      type: POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:infested
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:looting: 3
+tot19:
+  CommandName: tot19
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: ALLIUM
+      amount: 32
+    '2':
+      v: 4189
+      type: GLOW_SQUID_SPAWN_EGG
+    '3':
+      v: 4189
+      type: CHAIN
+      amount: 4
+    '4':
+      v: 4189
+      type: SMALL_DRIPLEAF
+      amount: 3
+    '5':
+      v: 4189
+      type: CARROT_ON_A_STICK
+    '6':
+      v: 4189
+      type: MANGROVE_TRAPDOOR
+      amount: 64
+    '7':
+      v: 4189
+      type: PRISMARINE_WALL
+      amount: 16
+    '8':
+      v: 4189
+      type: POWERED_RAIL
+      amount: 8
+    '9':
+      v: 4189
+      type: DRAGON_EGG
+    '10':
+      v: 4189
+      type: BUDDING_AMETHYST
+    '11':
+      v: 4189
+      type: WARPED_ROOTS
+      amount: 16
+    '12':
+      v: 4189
+      type: ENDER_EYE
+    '13':
+      v: 4189
+      type: SHROOMLIGHT
+      amount: 8
+    '14':
+      v: 4189
+      type: HANGING_ROOTS
+      amount: 16
+    '15':
+      v: 4189
+      type: EXPERIENCE_BOTTLE
+      amount: 2
+    '16':
+      v: 4189
+      type: SPRUCE_PLANKS
+      amount: 32
+    '17':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Bread Toaster","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa40161
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODQ0ODZkYTJjOTMyYTc5ZmQ5MjBmMzZiZmNiNTU0ZjYwMWYyZjEwNjViZWZhYTY4YmRmN2ZjZDM2MTM5NzcwNCJ9fX0=
+    '18':
+      v: 4189
+      type: OXIDIZED_CUT_COPPER_SLAB
+      amount: 4
+    '19':
+      v: 4189
+      type: BRICKS
+      amount: 32
+    '20':
+      v: 4189
+      type: DEAD_HORN_CORAL_FAN
+      amount: 4
+    '21':
+      v: 4189
+      type: POISONOUS_POTATO
+    '22':
+      v: 4189
+      type: REPEATER
+    '23':
+      v: 4189
+      type: PITCHER_PLANT
+      amount: 31
+    '24':
+      v: 4189
+      type: ANCIENT_DEBRIS
+      amount: 4
+    '25':
+      v: 4189
+      type: DEEPSLATE
+      amount: 16
+    '26':
+      v: 4189
+      type: PURPLE_GLAZED_TERRACOTTA
+      amount: 16
+    '27':
+      v: 4189
+      type: OMINOUS_BOTTLE
+tot30:
+  CommandName: tot30
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: POLISHED_BLACKSTONE_SLAB
+      amount: 32
+    '2':
+      v: 4189
+      type: GILDED_BLACKSTONE
+      amount: 8
+    '3':
+      v: 4189
+      type: MUDDY_MANGROVE_ROOTS
+      amount: 32
+    '4':
+      v: 4189
+      type: DEAD_BUSH
+      amount: 32
+    '5':
+      v: 4189
+      type: BROWN_MUSHROOM_BLOCK
+      amount: 16
+    '6':
+      v: 4189
+      type: NETHER_SPROUTS
+      amount: 8
+    '7':
+      v: 4189
+      type: RECOVERY_COMPASS
+    '8':
+      v: 4189
+      type: HOGLIN_SPAWN_EGG
+    '9':
+      v: 4189
+      type: PURPLE_WOOL
+      amount: 16
+    '10':
+      v: 4189
+      type: SCULK
+      amount: 32
+    '11':
+      v: 4189
+      type: TUFF
+      amount: 32
+    '12':
+      v: 4189
+      type: FLOWER_POT
+      amount: 8
+    '13':
+      v: 4189
+      type: AXOLOTL_SPAWN_EGG
+    '14':
+      v: 4189
+      type: MOSS_BLOCK
+      amount: 16
+    '15':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Spooky Enderman","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa45392
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWE4NGNjODgxOGMyOTM0ODRmZGFhZmM4ZmEyZjBiZjM5ZTU1NzMzYTI0N2Q2ODAyM2RmMmM2YzZiOWI2NzFkMCJ9fX0=
+    '16':
+      v: 4189
+      type: PEARLESCENT_FROGLIGHT
+      amount: 16
+    '17':
+      v: 4189
+      type: RED_MUSHROOM
+      amount: 16
+    '18':
+      v: 4189
+      type: SALMON_BUCKET
+    '19':
+      v: 4189
+      type: ENCHANTING_TABLE
+      amount: 3
+    '20':
+      v: 4189
+      type: DIAMOND
+      amount: 2
+    '21':
+      v: 4189
+      type: WAXED_WEATHERED_CUT_COPPER_STAIRS
+      amount: 4
+    '22':
+      v: 4189
+      type: ORANGE_CANDLE
+      amount: 16
+    '23':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Wet Pumpkin","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa48187
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTM1N2YyNWRjY2E1ZmFkMWQ5YjlkNzZhMmE4ZDFiYTVkZjg5MzYwZTY0MmM3ZmIzMTcxODA4N2E4NTE1NzFlYiJ9fX0=
+    '24':
+      v: 4189
+      type: GRAY_GLAZED_TERRACOTTA
+      amount: 16
+    '25':
+      v: 4189
+      type: ACACIA_HANGING_SIGN
+      amount: 16
+    '26':
+      v: 4189
+      type: GOLDEN_CARROT
+      amount: 16
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Halloween Snack","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+    '27':
+      v: 4189
+      type: GUSTER_POTTERY_SHERD
+tot31:
+  CommandName: tot31
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: BRICKS
+      amount: 32
+    '2':
+      v: 4189
+      type: END_ROD
+      amount: 16
+    '3':
+      v: 4189
+      type: SUSPICIOUS_GRAVEL
+      amount: 4
+    '4':
+      v: 4189
+      type: TURTLE_HELMET
+    '5':
+      v: 4189
+      type: ARMOR_STAND
+      amount: 4
+    '6':
+      v: 4189
+      type: BLACK_DYE
+      amount: 16
+    '7':
+      v: 4189
+      type: GLOW_SQUID_SPAWN_EGG
+    '8':
+      v: 4189
+      type: FLOWERING_AZALEA
+      amount: 16
+    '9':
+      v: 4189
+      type: POLISHED_BLACKSTONE_STAIRS
+      amount: 32
+    '10':
+      v: 4189
+      type: BUBBLE_CORAL_BLOCK
+      amount: 32
+    '11':
+      v: 4189
+      type: BAMBOO_FENCE_GATE
+      amount: 32
+    '12':
+      v: 4189
+      type: REDSTONE_TORCH
+      amount: 32
+    '13':
+      v: 4189
+      type: DISC_FRAGMENT_5
+    '14':
+      v: 4189
+      type: GLOW_LICHEN
+      amount: 16
+    '15':
+      v: 4189
+      type: DRIED_KELP_BLOCK
+      amount: 8
+    '16':
+      v: 4189
+      type: MUSHROOM_STEM
+      amount: 16
+    '17':
+      v: 4189
+      type: PAPER
+      amount: 32
+    '18':
+      v: 4189
+      type: DRIPSTONE_BLOCK
+      amount: 8
+    '19':
+      v: 4189
+      type: ITEM_FRAME
+      amount: 8
+    '20':
+      v: 4189
+      type: PLAYER_HEAD
+      amount: 4
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"aqua"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55E3FF"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55C6FF"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#55AAFF"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#558EFF"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5571FF"}]}'
+        lore:
+        - '{"text":"","extra":["  ",{"text":"Microblock","strikethrough":false,"obfuscated":false,"bold":false,"italic":true,"underlined":false,"color":"gray"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: b56e2d7c-ffff-ffff-b56e-2d7cffffffff
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTgzMWNlODIyN2JiYzdiNzVjMzY4OTQ2NmNlYzRkYWY1ZGEyZDljNTNiYjgzZDExN2E5YmE4OTBkYWVhZjQwNiJ9fX0=
+    '21':
+      v: 4189
+      type: CRACKED_POLISHED_BLACKSTONE_BRICKS
+      amount: 8
+    '22':
+      v: 4189
+      type: COOKED_RABBIT
+    '23':
+      v: 4189
+      type: GOAT_SPAWN_EGG
+    '24':
+      v: 4189
+      type: SOUL_CAMPFIRE
+    '25':
+      v: 4189
+      type: WAXED_OXIDIZED_CUT_COPPER_STAIRS
+      amount: 4
+    '26':
+      v: 4189
+      type: MAGENTA_CANDLE
+      amount: 16
+    '27':
+      v: 4189
+      type: SCRAPE_POTTERY_SHERD
+tot36:
+  CommandName: tot36
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: GLOW_INK_SAC
+      amount: 8
+    '2':
+      v: 4189
+      type: IRON_BARS
+      amount: 16
+    '3':
+      v: 4189
+      type: GRAY_CANDLE
+      amount: 16
+    '4':
+      v: 4189
+      type: NETHER_SPROUTS
+      amount: 8
+    '5':
+      v: 4189
+      type: RED_TULIP
+      amount: 32
+    '6':
+      v: 4189
+      type: JACK_O_LANTERN
+    '7':
+      v: 4189
+      type: BRUSH
+    '8':
+      v: 4189
+      type: BLACK_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE04F4"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09E9"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EDE"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF13D4"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF18C9"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE1DBE"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF22B4"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF27A9"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE2C9E"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3194"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3689"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3B7E"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4074"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4569"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4A5E"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4F54"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5449"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E34"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6329"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:creeper
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:stripe_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangle_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+        - ==: Pattern
+          color: GREEN
+          pattern: minecraft:triangles_top
+    '9':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:blast_protection: 4
+    '10':
+      v: 4189
+      type: DIAMOND_CHESTPLATE
+    '11':
+      v: 4189
+      type: RABBIT_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"W","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE05F2"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0BE6"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE11D9"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF17CD"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC0"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF22B4"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF28A7"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2E9B"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3982"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3F76"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4569"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5D"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5050"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5644"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5C37"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622B"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a witch will spawn near you","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/w3IwRKBQBgA4N+4hEfwCB0qJXVUykbZNEXcMkmG3ZrapnXzph7Dle/4jQGGIEQZzSvi5eHnOx3BZGfFdkXIP1sBAAbwZoctcUnnpLWYymdtJtky5skLt2i/9u5LLRA5YkGDT8jv6zlNTbX21VvxKIuUlGeecLo1fIm5th4cTs9ExzSicZn33LmYefM8ypulERZsVV27RaKsHcW7uMSqdhxpqtRlJvwAo/+3iagAAAA=
+    '12':
+      v: 4189
+      type: PURPLE_GLAZED_TERRACOTTA
+      amount: 32
+    '13':
+      v: 4189
+      type: TINTED_GLASS
+      amount: 15
+    '14':
+      v: 4189
+      type: LODESTONE
+    '15':
+      v: 4189
+      type: SOUL_CAMPFIRE
+      amount: 8
+    '16':
+      v: 4189
+      type: RIB_ARMOR_TRIM_SMITHING_TEMPLATE
+    '17':
+      v: 4189
+      type: ALLIUM
+      amount: 32
+    '18':
+      v: 4189
+      type: SEA_PICKLE
+      amount: 32
+    '19':
+      v: 4189
+      type: AXOLOTL_BUCKET
+    '20':
+      v: 4189
+      type: CRACKED_POLISHED_BLACKSTONE_BRICKS
+      amount: 32
+    '21':
+      v: 4189
+      type: PEARLESCENT_FROGLIGHT
+      amount: 16
+    '22':
+      v: 4189
+      type: SPIDER_EYE
+    '23':
+      v: 4189
+      type: RAW_COPPER
+      amount: 4
+    '24':
+      v: 4189
+      type: BRICKS
+      amount: 32
+    '25':
+      v: 4189
+      type: WARDEN_SPAWN_EGG
+    '26':
+      v: 4189
+      type: BIRCH_SIGN
+      amount: 16
+    '27':
+      v: 4189
+      type: MUDDY_MANGROVE_ROOTS
+      amount: 8
+tot34:
+  CommandName: tot34
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: AMETHYST_SHARD
+    '2':
+      v: 4189
+      type: ORANGE_DYE
+      amount: 15
+    '3':
+      v: 4189
+      type: EXPERIENCE_BOTTLE
+      amount: 3
+    '4':
+      v: 4189
+      type: SPYGLASS
+    '5':
+      v: 4189
+      type: WAXED_WEATHERED_CUT_COPPER_SLAB
+      amount: 4
+    '6':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Dreadbear","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa65582
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWY5YWMxZWJiZTFkNmRiYWRiZjc4NDg1NDA0Mzg3NzA1OGE0OGU4YjdiYTk3YjBiOTRmODlhYzBjYzQxNThiZSJ9fX0=
+    '7':
+      v: 4189
+      type: ORANGE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"J","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF04F5"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EB"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0DE1"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D8"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF16CE"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1BC4"},{"text":"''","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1FBA"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF24B1"},{"text":"L","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF28A7"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2D9D"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3193"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF368A"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3A80"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3F76"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF436C"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4863"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4C59"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF514F"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5545"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5A3C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E32"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6328"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BROWN
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: YELLOW
+          pattern: minecraft:small_stripes
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:small_stripes
+        - ==: Pattern
+          color: LIME
+          pattern: minecraft:triangles_top
+        - ==: Pattern
+          color: YELLOW
+          pattern: minecraft:creeper
+    '8':
+      v: 4189
+      type: PURPLE_WOOL
+      amount: 16
+    '9':
+      v: 4189
+      type: RAVAGER_SPAWN_EGG
+    '10':
+      v: 4189
+      type: SMOOTH_BASALT
+      amount: 32
+    '11':
+      v: 4189
+      type: GLOWSTONE
+      amount: 16
+    '12':
+      v: 4189
+      type: CRYING_OBSIDIAN
+      amount: 8
+    '13':
+      v: 4189
+      type: CHERRY_HANGING_SIGN
+      amount: 6
+    '14':
+      v: 4189
+      type: CALIBRATED_SCULK_SENSOR
+      amount: 2
+    '15':
+      v: 4189
+      type: MILK_BUCKET
+    '16':
+      v: 4189
+      type: FOX_SPAWN_EGG
+    '17':
+      v: 4189
+      type: POLISHED_BLACKSTONE_BRICK_SLAB
+      amount: 32
+    '18':
+      v: 4189
+      type: BEETROOT
+    '19':
+      v: 4189
+      type: SUSPICIOUS_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: SUSPICIOUS_STEW
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"F","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF04F4"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EA"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EE0"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D6"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF17CC"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC1"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF21B7"},{"text":"&","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AD"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2AA3"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2F99"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3884"},{"text":"b","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3D7A"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4270"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4666"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5C"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5051"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5547"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E33"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF6329"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXBzQ6CIAAAYLr18ygcRKOcxwAVdWq6KOtmS5ct0PxpeOvR+741ACuwSciJtlKW6jEsAQAL8BvPkfTk5BYdLNANWwZFqRZzOvDMD5oDjqHmY9ynVx49aV3vs34fMlV9TB3B1sodciFW2GXf2J4bwy6RIEIRhwU66I7snUOGE1opiF47agvTd83g7knSJprjrTGVDvgDfOOe+5kAAAA=
+    '20':
+      v: 4189
+      type: DEAD_BUSH
+      amount: 5
+    '21':
+      v: 4189
+      type: HAY_BLOCK
+      amount: 16
+    '22':
+      v: 4189
+      type: BLACK_GLAZED_TERRACOTTA
+      amount: 16
+    '23':
+      v: 4189
+      type: GOLDEN_APPLE
+    '24':
+      v: 4189
+      type: RED_MUSHROOM_BLOCK
+      amount: 32
+    '25':
+      v: 4189
+      type: PRISMARINE_WALL
+      amount: 32
+    '26':
+      v: 4189
+      type: LEAD
+      amount: 16
+    '27':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:silk_touch: 1
+tot35:
+  CommandName: tot35
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: VINE
+      amount: 32
+    '2':
+      v: 4189
+      type: WHITE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"1","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF05F3"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0AE7"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF10DB"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF15CF"},{"text":"H","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1BC4"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF20B8"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF26AC"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2BA0"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3194"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3689"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3C7D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4171"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4765"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4C59"},{"text":"2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF524E"},{"text":"0","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5742"},{"text":"2","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5D36"},{"text":"3","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622A"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:stripe_bottom
+        - ==: Pattern
+          color: MAGENTA
+          pattern: minecraft:curly_border
+        - ==: Pattern
+          color: BLUE
+          pattern: minecraft:gradient
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+    '3':
+      v: 4189
+      type: LAPIS_BLOCK
+      amount: 3
+    '4':
+      v: 4189
+      type: PIGLIN_BANNER_PATTERN
+    '5':
+      v: 4189
+      type: MUDDY_MANGROVE_ROOTS
+      amount: 32
+    '6':
+      v: 4189
+      type: PUFFERFISH_BUCKET
+    '7':
+      v: 4189
+      type: WAXED_OXIDIZED_CUT_COPPER_SLAB
+      amount: 4
+    '8':
+      v: 4189
+      type: LIGHTNING_ROD
+    '9':
+      v: 4189
+      type: PINK_CANDLE
+      amount: 16
+    '10':
+      v: 4189
+      type: HONEYCOMB
+      amount: 8
+    '11':
+      v: 4189
+      type: PANDA_SPAWN_EGG
+    '12':
+      v: 4189
+      type: BONE
+      amount: 8
+    '13':
+      v: 4189
+      type: GLOW_BERRIES
+      amount: 16
+    '14':
+      v: 4189
+      type: MUD_BRICKS
+      amount: 16
+    '15':
+      v: 4189
+      type: AMETHYST_BLOCK
+      amount: 6
+    '16':
+      v: 4189
+      type: DEEPSLATE_BRICK_WALL
+      amount: 16
+    '17':
+      v: 4189
+      type: ICE
+      amount: 16
+    '18':
+      v: 4189
+      type: POLISHED_BLACKSTONE_BRICK_STAIRS
+      amount: 32
+    '19':
+      v: 4189
+      type: END_STONE
+      amount: 32
+    '20':
+      v: 4189
+      type: HORN_CORAL_BLOCK
+      amount: 32
+    '21':
+      v: 4189
+      type: SOUL_TORCH
+      amount: 32
+    '22':
+      v: 4189
+      type: COBWEB
+      amount: 64
+    '23':
+      v: 4189
+      type: DIAMOND_AXE
+    '24':
+      v: 4189
+      type: APPLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF06F1"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0DE3"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF13D5"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1AC7"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF20B9"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF27AB"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2D9D"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3A81"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4173"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4765"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4E57"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5449"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5B3B"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF612D"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXBzRZCQBgA0GnXz6NYmDqhTYsIMzlMJGSX46TiUzEjPEmP271zhGZo4emh8QK41nk7RQhN0I9HDlggzOQtJThdr2QDs/48sJb4Nn3s1q7UE+427EIcX4jGtDJdL7lgAstL7+O0ahGUGXm+dvXtNDYYWHMIIr7PIeUVwMGRlVClld0NkNdKQbSKdmoc+bbHuOE9aKfQ42Y0M1y27qqyPmMotHv83W7RH3o6SySxAAAA
+    '25':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:protection: 4
+    '26':
+      v: 4189
+      type: ENCHANTED_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: ENCHANTED
+        stored-enchants:
+          minecraft:fire_protection: 4
+    '27':
+      v: 4189
+      type: BEETROOT_SOUP
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF07EF"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0EDE"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF16CF"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE1DBE"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AF"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FE2C9E"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3B7E"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF426E"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4A5E"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF514F"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF593F"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF602E"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXBNxaCMAAA0LhZjuJgDKDPgYFqiCQBQYobArYnUhW4icf1/zkAM7Bgqq+VRZG8s3YKAJiAXxccCrP4GFG1jOBZRCsN8uE08ha7e+uhiHQ54I42PMb2UMJr0FtmSCkU9FuKEpLBNceXuyU00i3pN6g7aqqJX9Xou9v4ScgXCfku9gS29d7PvdO/eGvGhl85QU6YVYcs2EnIJmE7whTWzl1viMioq8gy+AMAkGYDsQAAAA==
+tot32:
+  CommandName: tot32
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: LARGE_FERN
+      amount: 16
+    '2':
+      v: 4189
+      type: MANGROVE_SIGN
+      amount: 16
+    '3':
+      v: 4189
+      type: BONE
+      amount: 8
+    '4':
+      v: 4189
+      type: CHISELED_STONE_BRICKS
+      amount: 16
+    '5':
+      v: 4189
+      type: LAVA_BUCKET
+    '6':
+      v: 4189
+      type: MULE_SPAWN_EGG
+    '7':
+      v: 4189
+      type: MANGROVE_LEAVES
+      amount: 32
+    '8':
+      v: 4189
+      type: WAXED_CUT_COPPER_SLAB
+      amount: 4
+    '9':
+      v: 4189
+      type: OBSERVER
+    '10':
+      v: 4189
+      type: TRIDENT
+    '11':
+      v: 4189
+      type: CHISELED_POLISHED_BLACKSTONE
+      amount: 32
+    '12':
+      v: 4189
+      type: APPLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF06F1"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0DE3"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF13D5"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1AC7"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF20B9"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF27AB"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2D9D"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3A81"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4173"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4765"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4E57"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5449"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5B3B"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF612D"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXBzRZCQBgA0GnXz6NYmDqhTYsIMzlMJGSX46TiUzEjPEmP271zhGZo4emh8QK41nk7RQhN0I9HDlggzOQtJThdr2QDs/48sJb4Nn3s1q7UE+427EIcX4jGtDJdL7lgAstL7+O0ahGUGXm+dvXtNDYYWHMIIr7PIeUVwMGRlVClld0NkNdKQbSKdmoc+bbHuOE9aKfQ42Y0M1y27qqyPmMotHv83W7RH3o6SySxAAAA
+    '13':
+      v: 4189
+      type: SNIFFER_EGG
+    '14':
+      v: 4189
+      type: ORANGE_BANNER
+      meta:
+        ==: ItemMeta
+        meta-type: BANNER
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF09EA"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF12D6"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1CC1"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF25AD"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2F99"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3884"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4270"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4B5C"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5547"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5E33"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        patterns:
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:half_horizontal_bottom
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:circle
+        - ==: Pattern
+          color: BLACK
+          pattern: minecraft:stripe_center
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangle_top
+        - ==: Pattern
+          color: ORANGE
+          pattern: minecraft:triangles_bottom
+        - ==: Pattern
+          color: PURPLE
+          pattern: minecraft:gradient
+    '15':
+      v: 4189
+      type: GLOW_ITEM_FRAME
+    '16':
+      v: 4189
+      type: TURTLE_SCUTE
+      amount: 8
+    '17':
+      v: 4189
+      type: FROGSPAWN
+    '18':
+      v: 4189
+      type: SHORT_GRASS
+      amount: 16
+    '19':
+      v: 4189
+      type: LIGHT_BLUE_CANDLE
+      amount: 16
+    '20':
+      v: 4189
+      type: GOAT_SPAWN_EGG
+    '21':
+      v: 4189
+      type: END_CRYSTAL
+      amount: 2
+    '22':
+      v: 4189
+      type: MANGROVE_PLANKS
+      amount: 32
+    '23':
+      v: 4189
+      type: NAME_TAG
+      amount: 16
+    '24':
+      v: 4189
+      type: MUTTON
+    '25':
+      v: 4189
+      type: PURPLE_STAINED_GLASS
+      amount: 32
+    '26':
+      v: 4189
+      type: BLACK_DYE
+      amount: 16
+    '27':
+      v: 4189
+      type: BOLT_ARMOR_TRIM_SMITHING_TEMPLATE
+tot33:
+  CommandName: tot33
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: NETHER_SPROUTS
+      amount: 8
+    '2':
+      v: 4189
+      type: ENDER_CHEST
+    '3':
+      v: 4189
+      type: HANGING_ROOTS
+      amount: 16
+    '4':
+      v: 4189
+      type: WATER_BUCKET
+    '5':
+      v: 4189
+      type: MUSHROOM_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF00FF"},{"text":"G","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF05F3"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0AE8"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF0FDD"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF14D2"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1AC7"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF1FBB"},{"text":"M","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF24B0"},{"text":"u","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF29A5"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF2E9A"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF348F"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3983"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF3E78"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF436D"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4862"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF4E57"},{"text":"S","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF534B"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5840"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF5D35"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF622A"},{"text":"
+          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Consume this special stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        - '{"text":"","extra":[{"text":"and a halloween mob will spawn!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        custom: H4sIAAAAAAAA/wXByxZCQAAA0GnX41Ms0JAsI2amMD0Q7TzPUWeQwaFVn969awBWYOMZvtkwltQ5XwIAFuDXh2dms8GKWiGSnspWNCU6BTPl+IpIdVBcYcK929EYn7whlchNfSXq/vsxm84RUdZDfdR5WUMSF6y8hFnhcymv3jMt0UNrqdOmJt6h8VjAuxbIyJJJajOj8SasQHFIdPAH8lXxg5kAAAA=
+    '6':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Jigsaw","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa11706
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODFkYjUzMmIzYzFhY2I5ZGY2M2MyZGYwMTA3NWFjMzIxZWRjNmNiODIxM2VhOTM2Y2I0MGIyNDJlYmJkIn19fQ==
+    '7':
+      v: 4189
+      type: NETHER_BRICKS
+      amount: 32
+    '8':
+      v: 4189
+      type: CALCITE
+      amount: 32
+    '9':
+      v: 4189
+      type: ALLAY_SPAWN_EGG
+    '10':
+      v: 4189
+      type: CHERRY_SAPLING
+      amount: 5
+    '11':
+      v: 4189
+      type: CHERRY_LOG
+      amount: 32
+    '12':
+      v: 4189
+      type: DANGER_POTTERY_SHERD
+    '13':
+      v: 4189
+      type: POLISHED_BLACKSTONE_BRICKS
+      amount: 32
+    '14':
+      v: 4189
+      type: WAXED_EXPOSED_CUT_COPPER_SLAB
+      amount: 4
+    '15':
+      v: 4189
+      type: WARD_ARMOR_TRIM_SMITHING_TEMPLATE
+    '16':
+      v: 4189
+      type: BAMBOO_TRAPDOOR
+      amount: 32
+    '17':
+      v: 4189
+      type: AZALEA_LEAVES
+      amount: 16
+    '18':
+      v: 4189
+      type: GLOW_INK_SAC
+      amount: 2
+    '19':
+      v: 4189
+      type: MAGMA_CUBE_SPAWN_EGG
+    '20':
+      v: 4189
+      type: EXPERIENCE_BOTTLE
+      amount: 8
+    '21':
+      v: 4189
+      type: TOTEM_OF_UNDYING
+    '22':
+      v: 4189
+      type: CREEPER_HEAD
+    '23':
+      v: 4189
+      type: COOKED_MUTTON
+    '24':
+      v: 4189
+      type: SOUL_SAND
+      amount: 16
+    '25':
+      v: 4189
+      type: BUBBLE_CORAL_BLOCK
+      amount: 32
+    '26':
+      v: 4189
+      type: GOAT_HORN
+    '27':
+      v: 4189
+      type: BOGGED_SPAWN_EGG
+tot29:
+  CommandName: tot29
+  Delay: 10
+  Items:
+    '1':
+      v: 4189
+      type: MOSSY_COBBLESTONE_WALL
+      amount: 16
+    '2':
+      v: 4189
+      type: LILAC
+      amount: 64
+    '3':
+      v: 4189
+      type: COD_BUCKET
+    '4':
+      v: 4189
+      type: CONDUIT
+    '5':
+      v: 4189
+      type: CLOCK
+    '6':
+      v: 4189
+      type: GHAST_SPAWN_EGG
+    '7':
+      v: 4189
+      type: SOUL_TORCH
+      amount: 32
+    '9':
+      v: 4189
+      type: WARPED_FUNGUS_ON_A_STICK
+    '10':
+      v: 4189
+      type: POLISHED_BLACKSTONE
+      amount: 40
+    '11':
+      v: 4189
+      type: BAMBOO_BLOCK
+      amount: 32
+    '12':
+      v: 4189
+      type: BOOKSHELF
+      amount: 3
+    '13':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Skull Apple (green)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-0000aaa65519
+          name: HeadDatabase
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGU4YzJmYWM2YTkyZDZhNTdjOWI2MGU3NTc3NmVkZGU1N2UzMTYwZjJkMTAxYjMyNzk3MTk4YmJjMTljZGU5NCJ9fX0=
+    '14':
+      v: 4189
+      type: BLUE_ICE
+      amount: 16
+    '15':
+      v: 4189
+      type: PLAYER_HEAD
+      meta:
+        ==: ItemMeta
+        meta-type: SKULL
+        display-name: '{"text":"","extra":[{"text":"Black Cake","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
+        Damage: 3
+        skull-owner:
+          ==: PlayerProfile
+          uniqueId: 04049c90-d3e9-4621-9caf-00000aaa8752
+          name: ''
+          properties:
+          - name: textures
+            value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDE2ODUyZGZhYWY4NThkMGFlOTczMWE4MWNjMzE5NWIxNDg0YTJkZjZiNDk4MTJmZjI1NmYyMGVmNWMyIn19fQ==
+    '16':
+      v: 4189
+      type: DARK_PRISMARINE
+      amount: 4
+    '17':
+      v: 4189
+      type: WAXED_EXPOSED_CUT_COPPER_STAIRS
+      amount: 4
+    '18':
+      v: 4189
+      type: HONEY_BOTTLE
+    '19':
+      v: 4189
+      type: AXOLOTL_BUCKET
+    '20':
+      v: 4189
+      type: LINGERING_POTION
+      meta:
+        ==: ItemMeta
+        meta-type: POTION
+        potion-type: minecraft:strong_leaping
+    '21':
+      v: 4189
+      type: LLAMA_SPAWN_EGG
+    '22':
+      v: 4189
+      type: DECORATED_POT
+    '23':
+      v: 4189
+      type: WHITE_CANDLE
+      amount: 16
+    '24':
+      v: 4189
+      type: ENDER_CHEST
+    '25':
+      v: 4189
+      type: GUSTER_BANNER_PATTERN
+    '26':
+      v: 4189
+      type: WARPED_TRAPDOOR
+      amount: 8
+    '27':
+      v: 4189
+      type: RABBIT

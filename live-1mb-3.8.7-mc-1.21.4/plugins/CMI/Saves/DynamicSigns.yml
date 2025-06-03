@@ -1,24 +1,4 @@
 '1':
-  Loc: general;-619.0;74.0;4897.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
-  Lines:
-  - '%cmi_jail_username_1MBJail_1%'
-  - '%cmi_jail_time_1MBJail_1%'
-  - 'Reason:'
-  - '%cmi_jail_reason_1MBJail_1%'
-'2':
-  Loc: general;-643.0;74.0;4897.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
-  Lines:
-  - '%cmi_jail_username_1MBJail_4%'
-  - '%cmi_jail_time_1MBJail_4%'
-  - 'Reason:'
-  - '%cmi_jail_reason_1MBJail_4%'
-'3':
   Loc: spawn;0.0;66.0;137.0
   Interval: 20.0
   Range: 8
@@ -28,7 +8,7 @@
   - '&l1MoreBlock.com'
   - a Minecraft %onemb_mc_version%
   - Survival Server
-'4':
+'2':
   Loc: spawn;7.0;64.0;145.0
   Interval: 20.0
   Range: 6
@@ -38,17 +18,7 @@
   - Minecraft %onemb_mc_version%
   - Survival Server
   - ^_^
-'5':
-  Loc: general;-627.0;74.0;4897.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
-  Lines:
-  - '%cmi_jail_username_1MBJail_2%'
-  - '%cmi_jail_time_1MBJail_2%'
-  - 'Reason:'
-  - '%cmi_jail_reason_1MBJail_2%'
-'6':
+'3':
   Loc: spawn;6.0;64.0;146.0
   Interval: 20.0
   Range: 6
@@ -58,13 +28,3 @@
   - 1MoreBlock.com
   - server is this?
   - 'Version: %onemb_1mb_version%'
-'7':
-  Loc: general;-635.0;74.0;4897.0
-  Interval: 5.0
-  Range: 5
-  Personal: true
-  Lines:
-  - '%cmi_jail_username_1MBJail_3%'
-  - '%cmi_jail_time_1MBJail_3%'
-  - 'Reason:'
-  - '%cmi_jail_reason_1MBJail_3%'

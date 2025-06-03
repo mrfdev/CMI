@@ -123,6 +123,9 @@ TeleportEffects:
   TpPos:
     From: ''
     To: ''
+  TpoPos:
+    From: ''
+    To: ''
   Warp:
     From: ''
     To: ''

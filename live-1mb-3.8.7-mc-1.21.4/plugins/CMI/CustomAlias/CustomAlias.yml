@@ -298,8 +298,7 @@ CustomAlias:
   store:
     Cmds:
     - asPlayer! warp shops
-    - msg! [playerName] We don't charge players, but, https://store.1moreblock.com
-      might work.
+    - msg! [playerName] We don't charge players, and don't have a https://store.1moreblock.com
   account:
     Cmds:
     - asConsole! cmi ctext welcomeMessage [playerName] 2
@@ -840,7 +839,8 @@ CustomAlias:
     Perm: true
   summer:
     Cmds:
-    - asConsole! cmi msg [playerName] !The /summer world will re-open July 2025.
+    - asConsole! cmi msg [playerName] !The /summer world will re-open July or August
+      2025.
   bac:
     Cmds:
     - asConsole! cmi msg [playerName] !HEY, it is BACK not BAC
@@ -1044,3 +1044,19 @@ CustomAlias:
   sb:
     Cmds:
     - asPlayer! animatedscoreboard toggle
+  lightning:
+    Cmds:
+    - cmi smite -s
+  hop:
+    Cmds:
+    - 'asConsole! cmi ctellraw [playerName] <T>&r\n{#cyan>}-/hop-{#denim<}&r Learn
+      more, and list of mobs you can hop on: {#cyan}/hop info&r</T><H>Click for /hop
+      info</H><C>hop info</C>'
+    - asConsole! cmi titlemsg [playerName] {#cyan>}-/hop-{#denim<}&r\nLet's Goooo
+    - asPlayer! cmi ride
+  hop info:
+    Cmds:
+    - msg! [playerName] &r\n{#cyan>}-/hop-{#denim<}&r You can not steer this mob\n{#cyan>}-/hop-{#denim<}&r
+      so enjoy the journey.\n{#cyan>}-/hop-{#denim<}&r sneak to dismount\n{#cyan>}-/hop-{#denim<}&r
+      Oh and /kit hop
+    - asPlayer! cmi ride list

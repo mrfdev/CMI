@@ -819,3 +819,29 @@ RandomTeleportation:
         Materials: []
         Biomes: []
       PreferredBiomes: []
+    lumifae:
+      Enabled: true
+      MaxTries: 0
+      Cooldown: 0
+      Range:
+        Max: 1000
+        Min: 500
+      Center:
+        X: 0
+        Z: 0
+      Circle: false
+      SurfaceOnly: false
+      FromAnotherWorld: true
+      RequireWorldPermission: false
+      YLimits:
+        Min: -64
+        Max: 320
+      Ignore:
+        Water: true
+        Lava: true
+        Leaves: true
+        PowderSnow: false
+        CrawlSpaces: false
+        Materials: []
+        Biomes: []
+      PreferredBiomes: []

@@ -10,9 +10,7 @@ easterspaw:
   - '{#gold}/egghunt'
   - '{#gold}/egghunt fly'
 santatalks:
-  Loc: santa;277.16;67.68;-66.45
-  Range: 16
-  RangeExtra: 32
+  Loc: santa;277.16;67.88;-66.45
   NewDisplay: true
   ND:
     Bill: FIXED
@@ -26,12 +24,13 @@ santatalks:
     ScaleW: 0.5
     ScaleH: 0.5
   Lines:
-  - '{#gold} "Sorry %cmi_user_name%,'
-  - '{#gold} The advent is 24 days,'
-  - '{#yellow} and they have passed.'
-  - '{#yellow} Show floris your 24 giftbag collection'
+  - '{#gold} "ho ho ho %cmi_user_name%, welcome to the daily'
+  - '{#gold} 1MB advent calendar. It has 24 days!'
+  - '{#gold} Right-click to open calendar for today.'
   - '&o'
-  - '{#orange} before 30th, for a bonus box'
+  - '{#yellow} And if you play daily, you can collect 24!'
+  - '{#yellow} Show floris your 24 giftbag collection'
+  - '{#orange} before the 30th, for a bonus box'
   - '&o'
   - '{#red}- Santa'
 halloweennpcchat3:
@@ -102,7 +101,6 @@ summer_beachcomber_bob:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -132,7 +130,6 @@ summer_cocnut_cathy:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -160,12 +157,24 @@ summer_cocnut_cathy:
   - '{#f7d486} I will give you Summer Beach Roots!"'
   - '{#c5f9d7} - Coconut Cathy'
 ajlbFishingTop:
-  Loc: wild;-3870.63;97.62;-4520.63
-  Range: 8
-  RangeExtra: 16
+  Loc: wild;-3846.5;98.33;-4499.5
+  Range: 48
+  RangeExtra: 48
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
   Lines:
-  - The /fish top level
+  - '&r &r'
+  - ICON:tropical_fish
+  - '&r &r'
+  - '{#buttercup}The Pyro {#orchid}/fish{#buttercup} top level'
   - '%ajlb_lb_pyrofishingpro_level_1_alltime_name% %ajlb_lb_pyrofishingpro_level_1_alltime_value%'
+  - '%ajlb_lb_pyrofishingpro_level_2_alltime_name% %ajlb_lb_pyrofishingpro_level_2_alltime_value%'
+  - '%ajlb_lb_pyrofishingpro_level_3_alltime_name% %ajlb_lb_pyrofishingpro_level_3_alltime_value%'
+  - '%ajlb_lb_pyrofishingpro_level_4_alltime_name% %ajlb_lb_pyrofishingpro_level_4_alltime_value%'
+  - '%ajlb_lb_pyrofishingpro_level_5_alltime_name% %ajlb_lb_pyrofishingpro_level_5_alltime_value%'
+  - '&r &r'
 halloweennpcchat6:
   Loc: halloween;1558.51;73.65;759.47
   Range: 8
@@ -269,7 +278,6 @@ summer_sandy_steve:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -336,7 +344,6 @@ summer_captain_sunshine:
   HoverParticles:
     Effect: REVERSE_PORTAL
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -411,9 +418,7 @@ adminstats:
     ScaleH: 1.2
   RequiresPermission: true
   Commands:
-  - asPlayer! tps
-  - delay! 0.6
-  - asPlayer! cmi tps
+  - asPlayer! tps cmi_tps
   Lines:
   - 'Players online: {#yellow}%cmi_server_online%&r / Uptime: %cmi_server_uptime%'
   - 'TPS: %cmi_tps_1_colored% &r/ %cmi_tps_60_colored% &r/ %cmi_tps_300_colored%'
@@ -422,7 +427,6 @@ summer_wavey_wendy:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -447,24 +451,8 @@ summer_wavey_wendy:
   - '{#f7d486} The scute reminds me of a treasure'
   - '{#f7d486} found while strolling along the beach."'
   - '{#c5f9d7} - Wavey Wendy'
-yourfishstats#>:
-  Loc: general;11985.0;67.75;18934.13
-  LOSInterval: 1.0
-  Range: 6
-  RangeExtra: 12
-  Interactable: true
-  NewDisplay: true
-  ND:
-    Bill: FIXED
-    Double: true
-    BColor: '{#Black}'
-  BigButton: false
-  Lines:
-  - <T>{#yellow}More stats!</T><H>&6Click for next page</H><C>cmi hologrampages yourfishstats
-    [playerName] next</C>
 eastercakeshulker:
   Loc: easter;-120.5;56.91;293.5
-  Range: 16
   RangeExtra: 16
   NewDisplay: true
   ND:
@@ -477,12 +465,59 @@ eastercakeshulker:
     ScaleH: 1.4
   Lines:
   - '{#0085e6>}Team Bo{#caribbeangreen<>}x Spring 2024{#gold<}'
+jailcell1:
+  Loc: general;-618.76;76.12;4897.3
+  Interval: 20.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+  Lines:
+  - '&6you have been jailed'
+  - '&r'
+  - '&6Jailed user: &e%cmi_jail_username_1mbjail_1%'
+  - '&6Jail time: &e%cmi_jail_time_1mbjail_1%'
+  - '&6Jail reason: &e%cmi_jail_reason_1mbjail_1%'
+  - '&6Jailed by: &e%cmi_user_jailedby%'
+  - '&r'
+  - '{#gray}(click for more info)'
+jailcell2:
+  Loc: general;-626.66;76.12;4897.3
+  Interval: 20.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+  Lines:
+  - '&6you have been jailed'
+  - '&r'
+  - '&6Jailed user: &e%cmi_jail_username_1mbjail_2%'
+  - '&6Jail time: &e%cmi_jail_time_1mbjail_2%'
+  - '&6Jail reason: &e%cmi_jail_reason_1mbjail_2%'
+  - '&6Jailed by: &e%cmi_user_jailedby%'
+  - '&r'
+  - '{#gray}(click for more info)'
+jailcell3:
+  Loc: general;-634.49;76.12;4897.3
+  Interval: 20.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+  Lines:
+  - '&6you have been jailed'
+  - '&r'
+  - '&6Jailed user: &e%cmi_jail_username_1mbjail_3%'
+  - '&6Jail time: &e%cmi_jail_time_1mbjail_3%'
+  - '&6Jail reason: &e%cmi_jail_reason_1mbjail_3%'
+  - '&6Jailed by: &e%cmi_user_jailedby%'
+  - '&r'
+  - '{#gray}(click for more info)'
 summer_ariel_azure:
   Loc: summer;-332.49;91.64;-142.0
   HoverParticles:
     Effect: REVERSE_PORTAL
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -554,6 +589,22 @@ santareadbook:
     IScale: 3.1
   Lines:
   - ICON:writable_book
+jailcell4:
+  Loc: general;-642.41;76.22;4897.3
+  Interval: 20.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+  Lines:
+  - '&6you have been jailed'
+  - '&r'
+  - '&6Jailed user: &e%cmi_jail_username_1mbjail_4%'
+  - '&6Jail time: &e%cmi_jail_time_1mbjail_4%'
+  - '&6Jail reason: &e%cmi_jail_reason_1mbjail_4%'
+  - '&6Jailed by: &e%cmi_user_jailedby%'
+  - '&r'
+  - '{#gray}(click for more info)'
 spawngroup:
   Loc: spawn;0.51;66.48;156.86
   HoverParticles:
@@ -587,7 +638,6 @@ summer_tiki_trader_tanya:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -658,60 +708,56 @@ celebrationbarrel2:
   - '{#magenta}Celebration Lootbox'
 yourfishstats:
   Loc: general;11985.22;70.29;18933.53
-  Interval: 0.1
   LOSInterval: 1.0
-  Range: 6
-  RangeExtra: 12
+  PageInterval: 300.0
+  Range: 10
+  RangeExtra: 25
   Interactable: true
   NewDisplay: true
   ND:
     Bill: FIXED
     Align: LEFT
     Double: true
-    BColor: '{#Downriver}'
+    BAlpha: 150
     ScaleW: 1.1
     ScaleH: 1.1
   BigButton: false
+  Commands:
+  - asConsole! cmi hologrampages yourfishstats [playerName] next
   Lines:
-  - Personal stats
+  - '{#orange}Personal stats'
+  - '{#gray}(Click to view more stats)'
   - '{#gold}Fishing level:{#orange} %pyrofishingpro_level%'
+  - '{#gold}Current xp:{#orange} %pyrofishingpro_currentxp%{#gold}/{#orange}%pyrofishingpro_requiredxp%'
   - '{#gold}Entropy balance:{#orange} %pyrofishingpro_entropy%'
-  - '{#gold}Current fishing xp:{#orange} %pyrofishingpro_currentxp%'
-  - '{#gold}Total fish caught:{#orange} %pyrofishingpro_totalfishcaught%'
-  - '{#gold}Total custom fish caught:{#orange} %pyrofishingpro_totalcustomcaught%'
   - '{#gold}Crabs killed:{#orange} %pyrofishingpro_crabskilled%'
   - '{#gold}Fish killed:{#orange} %pyrofishingpro_fishkilled%'
-  - '!nextpage!'
-  - '{#gold}Bronze fish caught:{#orange} %pyrofishingpro_bronzefishcaught%'
-  - '{#gold}Silver fish caught:{#orange} %pyrofishingpro_silverfishcaught%'
-  - '{#gold}Gold fish caught:{#orange} %pyrofishingpro_goldfishcaught%'
-  - '{#gold}Diamond fish caught:{#orange} %pyrofishingpro_diamondfishcaught%'
-  - '{#gold}Platinum fish caught:{#orange} %pyrofishingpro_platinumfishcaught%'
-  - '{#gold}Mythical fish caught:{#orange} %pyrofishingpro_mythicalfishcaught%'
-  - '!nextpage!'
-  - '{#gold}Required xp:{#orange} %pyrofishingpro_requiredxp%'
-  - '{#gold}Augments crafted in total:{#orange} %pyrofishingpro_augmentscrafted%'
-  - '{#gold}Tournaments won:{#orange} %pyrofishingpro_tournamentswon%'
-  - '{#gold}Longest fish from tournaments:{#orange} %pyrofishingpro_longestfish%'
   - '{#gold}Money made from fishing:{#orange} %pyrofishingpro_moneymade%'
-  - '{#gold}Amount of fish gutted:{#orange} %pyrofishingpro_fishgutted%'
-  - '{#gold}Deliveries made:{#orange} %pyrofishingpro_deliveriesmade%'
-  - '{#gold}How many fish until next delivery:{#orange} %pyrofishingpro_fishtilldelivery%'
+  - '{#gold}Tournaments won:{#orange} %pyrofishingpro_tournamentswon%'
+  - '{#gold}Augments crafted in total:{#orange} %pyrofishingpro_augmentscrafted%'
   - '!nextpage!'
-  - '{#gold}Time until next tournament:{#orange} %pyrofishingpro_timetilltournament%'
-  - '{#gold}First place:{#orange} %pyrofishingpro_tournament_first_name%{#gold} (score:{#orange}
-    %pyrofishingpro_tournament_first_score%{#gold})'
-  - '{#gold}Second place:{#orange} %pyrofishingpro_tournament_second_name%{#gold}
-    (score:{#orange} %pyrofishingpro_tournament_second_score%{#gold})'
-  - '{#gold}Third place:{#orange} %pyrofishingpro_tournament_third_name%{#gold} (score:{#orange}
-    %pyrofishingpro_tournament_third_score%{#gold})'
-  - '{#gray}Shows data on the active tournament'
+  - '{#orange}Total fish caught'
+  - '{#gray}(Click to view more stats)'
+  - '{#gold}Total custom fish:{#orange} %pyrofishingpro_totalcustomcaught%'
+  - '{#gold}Total vanilla fish:{#orange} %pyrofishingpro_totalfishcaught%'
+  - '{#gold}Bronze fish:{#orange} %pyrofishingpro_bronzefishcaught%'
+  - '{#gold}Silver fish:{#orange} %pyrofishingpro_silverfishcaught%'
+  - '{#gold}Gold fish:{#orange} %pyrofishingpro_goldfishcaught%'
+  - '{#gold}Diamond fish:{#orange} %pyrofishingpro_diamondfishcaught%'
+  - '{#gold}Platinum fish:{#orange} %pyrofishingpro_platinumfishcaught%'
+  - '{#gold}Mythical fish:{#orange} %pyrofishingpro_mythicalfishcaught%'
+  - '!nextpage!'
+  - '{#orange}Misc stats'
+  - '{#gray}(Click to view more stats)'
+  - '{#gold}Amount of fish gutted:{#orange} %pyrofishingpro_fishgutted%'
+  - '{#gold}Longest fish from tournaments:{#orange} %pyrofishingpro_longestfish%'
+  - '{#gold}Deliveries made:{#orange} %pyrofishingpro_deliveriesmade%'
+  - '{#gold}fish until next delivery:{#orange} %pyrofishingpro_fishtilldelivery%'
 summer_shell_collector_sean:
   Loc: summer;118.52;67.28;-111.29
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -816,12 +862,36 @@ celebrationbarrel4:
   RangeExtra: 16
   Lines:
   - '{#magenta}Celebration Lootbox'
+vdayquest8:
+  Loc: valentine;787.5;70.68;78.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 270
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}QUEST 8 :{#orchid}&l DANCE THE ROPE'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestEight%'
+  - '{#emerald}Reward :{#orchid}&l Gem 8 of 8'
+  - Find the circus and explore it!
+  - Then start the quest where it says
+  - quest dance start, so climb the ladder
+  - there, and go dance yourself to the
+  - other side, and by dance, i mean DaNcE !
+  - If you have the right moves, and you
+  - finish dancing the rope, you will get
+  - the 8th gem for completing this quest!
 summer_seashell_sally:
   Loc: summer;-75.22;68.28;-63.46
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -847,9 +917,120 @@ summer_seashell_sally:
   - '{#f7d486} bright, sunlit patterns. Anyway, give me'
   - '{#f7d486} enough of them, and you get a Summer Shell!"'
   - '{#c5f9d7} - Seashell Sally'
+vdayquest5:
+  Loc: valentine;817.5;70.68;77.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 90
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}QUEST 5 :{#orchid}&l BUILDINGS'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestFive%'
+  - '{#emerald}Reward :{#orchid}&l Gem 5 of 8'
+  - Explore this event island, it's fun!
+  - To complete this quest, explore the
+  - 'island in THIS order exactly:'
+  - Find the quest start home, and enter it,
+  - 'it has a sign called: Globug''s House!'
+  - Then, find Emma's Teddy Bear, and
+  - then enter Mikey's Shop!
+  - Next, go into Nebih's House, it has a
+  - sign as well. Then find the REALLY
+  - BIG ROOM, go to the bottom. And then
+  - finish quest by finding the AIRSHIP
+vdayquest4:
+  Loc: valentine;817.5;70.68;65.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 90
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}QUEST 4 :{#orchid}&l PRESENTS'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestFour%'
+  - '{#emerald}Reward :{#orchid}&l Gem 4 of 8'
+  - Everything in this special event world is
+  - so different! Because we as humans are!
+  - So for example, you might notice there are
+  - some HUGE presents along the main street.
+  - Find the first one, it is marked with a
+  - 'sign saying: quest presents start'
+  - Enter the present, and then find the rest.
+  - The last one to enter is marked
+  - with the Quest Presents Finish, and if
+  - you did it right, you will get the
+  - 4th quest gem!
+vdayquest7:
+  Loc: valentine;796.5;70.68;86.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 180
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}QUEST 7 :{#orchid}&l WISHING WELL'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestSeven%'
+  - '{#emerald}Reward :{#orchid}&l Gem 7 of 8'
+  - To complete this quest, go and explore
+  - the island, find the HUGE wishing well!
+  - Start where the QUEST sign is, :D
+  - Then walk up the stairs, and read
+  - the lectern. Then walk to the right
+  - maybe buy a book to write a wish in,
+  - and walk towards the wall over the
+  - lichen. Then hop on the onto the
+  - orange edge of the well, and we will
+  - give you the 7th gem! Oh, you can
+  - drop wish in the water! <3
+vdayquest6:
+  Loc: valentine;808.5;70.68;86.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 180
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}QUEST 6 :{#orchid}&l MAZE'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestSix%'
+  - '{#emerald}Reward :{#orchid}&l Gem 6 of 8'
+  - A quick quest! Unless you get lost..
+  - 'Find the maze and start where it says:'
+  - quest start maze!
+  - Then enter the maze and find your way
+  - until the center of the heart. Where the
+  - quest will finish. There's one checkpoint,
+  - I know it's tuff, but I believe in you.
+  - To exit the maze you can follow the
+  - elevator, or just type /valentine
+  - again. I am sure you will find your
+  - way out. Best of luck!
 halloweenholo2:
   Loc: halloween;1474.37;69.54;489.97
-  Range: 16
   RangeExtra: 16
   NewDisplay: true
   ND:
@@ -861,9 +1042,36 @@ halloweenholo2:
     IYaw: 330
   Lines:
   - ICON:pitcher_plant
+vdayquest1:
+  Loc: valentine;787.5;70.7;64.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    Yaw: 270
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}Quest 1 :{#orchid}&l PARKOUR'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestOne%'
+  - '{#emerald}Reward :{#orchid}&l Gem 1 of 8'
+  - When you leave the spawn area, on
+  - right, there is a small path that
+  - goes to the start of this quest.
+  - Hop on the first platform, and then
+  - finish the parkour to complete it.
+  - It will calculate your jumps, and
+  - it will let you know if you have
+  - completed the quest, or not. Or if
+  - you have already completed it
+  - before. Either way, you should end
+  - up with a gem as reward. Save it!
 halloweenholo1:
   Loc: halloween;1463.15;65.25;480.61
-  Range: 16
   RangeExtra: 16
   NewDisplay: true
   ND:
@@ -874,6 +1082,55 @@ halloweenholo1:
     IScale: 10.09
   Lines:
   - ICON:carved_pumpkin
+vdayquest3:
+  Loc: valentine;808.5;70.68;56.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}Quest 3 :{#orchid}&l BUOYs'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestThree%'
+  - '{#emerald}Reward :{#orchid}&l Gem 3 of 8'
+  - Follow the path at /valentine's spawn to
+  - the left until you are at the little
+  - fishing hut, where you can find the START BUOY.
+  - Then through the water find all the other
+  - particle rich buoys on the left, until
+  - you find the FINISH buoy.
+vdayquest2:
+  Loc: valentine;796.5;70.68;56.5
+  Interval: 10.0
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 255
+    BColor: '{#Loulou}'
+    BAlpha: 185
+    ScaleW: 0.7
+    ScaleH: 0.7
+  Lines:
+  - '{#emerald}Quest 2 :{#orchid}&l AREAS'
+  - '{#emerald}Completed?{#orchid}&l %cmi_user_meta_valentineQuestTwo%'
+  - '{#emerald}Reward :{#orchid}&l Gem 2 of 8'
+  - When you left the event world's spawn
+  - area, you might have noticed it said
+  - that a quest has started, that's this
+  - one. Now next is to find the world map!
+  - You can hit that checkpoint
+  - 'Then what''s left for you to do is:'
+  - Swim in the green-garden's fountain!
+  - Sit next to the armorstand in the
+  - pale garden! And then find out how
+  - to fly (find the pink golem)
+  - I hope you figure it out! :)
 spawn_skygrid_topplayers:
   Loc: skygrid;19.39;131.75;9.44
   Range: 8
@@ -887,7 +1144,6 @@ spawn_skygrid_topplayers:
   - '#5 {#gold}&l %Level_skygrid_top_name_5% &r{#gold}with level: %Level_skygrid_top_value_5%'
 halloweenholo4:
   Loc: halloween;1475.07;65.43;472.14
-  Range: 16
   RangeExtra: 16
   NewDisplay: true
   ND:
@@ -900,8 +1156,6 @@ halloweenholo4:
   - ICON:spawner
 halloweenholo3:
   Loc: halloween;1484.94;82.27;491.71
-  Range: 16
-  RangeExtra: 32
   NewDisplay: true
   ND:
     Bill: FIXED
@@ -930,7 +1184,6 @@ spawn_skyblock_topplayers:
   - '{#gray}Players in this list can: &l/expand skyblock'
 santasworkshopsign:
   Loc: santa;212.04;77.81;-72.03
-  Range: 16
   RangeExtra: 56
   NewDisplay: true
   ND:
@@ -955,7 +1208,6 @@ summer_marina_the_merchant:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -982,8 +1234,6 @@ summer_marina_the_merchant:
   - '{#c5f9d7} - Marina the Merchant'
 book2:
   Loc: wild;8315.5;176.64;7991.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1004,8 +1254,6 @@ ShopsCommunityChest01:
   - '{#gray}(free to take from)'
 book1:
   Loc: wild;8312.5;176.62;7983.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1019,8 +1267,6 @@ book1:
   - ICON:HEART_POTTERY_SHERD
 book4:
   Loc: wild;8331.5;176.64;7991.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1037,7 +1283,6 @@ summer_sunny_sam:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -1065,8 +1310,6 @@ summer_sunny_sam:
   - '{#c5f9d7} - Sunny Sam'
 book3:
   Loc: wild;8323.5;176.64;7994.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1082,7 +1325,6 @@ summer_sunshine_sophia:
   HoverParticles:
     Effect: REVERSE_PORTAL
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -1114,10 +1356,27 @@ summer_sunshine_sophia:
   - '{#f7d486} the islands, maybe Ariel Azure knows'
   - '{#f7d486} more? Anyway, thanks for the trade!"'
   - '{#c5f9d7} - Sunshine Sophia'
+ajldMiningTop:
+  Loc: wild;-3851.5;98.33;-4499.5
+  Range: 48
+  RangeExtra: 48
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Double: true
+  Lines:
+  - '&r &r'
+  - ICON:netherite_pickaxe
+  - '&r &r'
+  - '{#buttercup}The Pyro {#orchid}/mine{#buttercup} top level'
+  - '%ajlb_lb_pyromining_level_1_alltime_name% %ajlb_lb_pyromining_level_1_alltime_value%'
+  - '%ajlb_lb_pyromining_level_2_alltime_name% %ajlb_lb_pyromining_level_2_alltime_value%'
+  - '%ajlb_lb_pyromining_level_3_alltime_name% %ajlb_lb_pyromining_level_3_alltime_value%'
+  - '%ajlb_lb_pyromining_level_4_alltime_name% %ajlb_lb_pyromining_level_4_alltime_value%'
+  - '%ajlb_lb_pyromining_level_5_alltime_name% %ajlb_lb_pyromining_level_5_alltime_value%'
+  - '&r &r'
 book6:
   Loc: wild;8331.5;176.64;7975.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1131,8 +1390,6 @@ book6:
   - ICON:SNORT_POTTERY_SHERD
 book5:
   Loc: wild;8334.5;176.64;7983.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1147,7 +1404,6 @@ book5:
 summerthankyou:
   Loc: summer;108.51;78.93;-60.27
   Range: 11
-  RangeExtra: 32
   DownOrner: false
   NewDisplay: true
   ND:
@@ -1164,8 +1420,6 @@ summerthankyou:
   - '&r'
 book8:
   Loc: wild;8315.5;176.64;7975.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1179,8 +1433,6 @@ book8:
   - ICON:MINER_POTTERY_SHERD
 book7:
   Loc: wild;8323.5;176.64;7972.5
-  Range: 16
-  RangeExtra: 32
   Interactable: true
   NewDisplay: true
   ND:
@@ -1193,12 +1445,37 @@ book7:
   Lines:
   - ICON:ANGLER_POTTERY_SHERD
 fish:
-  Loc: general;11965.58;66.62;18947.7
+  Loc: general;11964.77;67.58;18944.7
+  Interval: 120.0
   LOSInterval: 1.0
-  Range: 8
-  RangeExtra: 16
+  Range: 12
+  RangeExtra: 18
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    Align: LEFT
+    TAlpha: 250
+    Yaw: 340
+    Double: true
+    BAlpha: 150
+    ScaleW: 0.95
+  Commands:
+  - asPlayer! fisht info
   Lines:
-  - '{#gold>} Tournaments are coming back soon!! I PWOMIWESEs {#orange<}'
+  - '{#orange}Current tournament'
+  - '{#gray}Shows data on the active tournament'
+  - '{#gold}Active tournament:{#orange} %pyrofishingpro_istournament%'
+  - '{#gold}Tournament type:{#orange} %pyrofishingpro_tournamenttype%'
+  - '&r'
+  - '{#gold}First place:{#orange} %pyrofishingpro_tournament_first_name%{#gold} (score:{#orange}
+    %pyrofishingpro_tournament_first_score%{#gold})'
+  - '{#gold}Second place:{#orange} %pyrofishingpro_tournament_second_name%{#gold}
+    (score:{#orange} %pyrofishingpro_tournament_second_score%{#gold})'
+  - '{#gold}Third place:{#orange} %pyrofishingpro_tournament_third_name%{#gold} (score:{#orange}
+    %pyrofishingpro_tournament_third_score%{#gold})'
+  - '&r'
+  - '{#gold}Next tournament:{#orange} %cmi_schedule_nextin_fishtournament%'
 halloweennpcchat69:
   Loc: halloween;1460.9;66.65;478.24
   Range: 8
@@ -1221,7 +1498,6 @@ summer_coral_carol:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -1251,7 +1527,6 @@ summer_oceanic_olivia:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true
@@ -1287,7 +1562,6 @@ summer_palmtree_pete:
   HoverParticles:
     Effect: SPORE_BLOSSOM_AIR
   Range: 32
-  RangeExtra: 32
   DownOrner: false
   Interactable: true
   NewDisplay: true

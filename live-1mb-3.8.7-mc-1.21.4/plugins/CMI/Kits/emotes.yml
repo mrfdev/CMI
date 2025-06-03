@@ -5,17 +5,17 @@ emoteHug:
   MaxUsages: 1
   Items:
     '28':
-      v: 3955
+      v: 4189
       type: SUNFLOWER
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"[","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false},{"text":"☀","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5CE68B","bold":false},{"text":"]
-          /hug","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false}]}'
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"},{"text":"☀","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5CE68B"},{"text":"]
+          /hug","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"}]}'
         lore:
-        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
-        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /hug","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
-        - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /hug","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"1","italic":false,"color":"gold"}]}'
         custom: H4sIAAAAAAAA/1XOuw6CMBQA0GtYUBdN/AYXBoMxJg4OyEsIYLBVKhumDaBAsUCi/qS/5GNzPdMZAEgg75OK8tKh41c97cMw2GCdl+UHGxkAelC4XR2i0EwbpmSGKnBreTiwF8vK3eEb2grSJeHOIyovcnVmUs5w7GpBE3FGvJOPFvgS5AZJu/CYRa36tMUTn2cxi+sHNeYWuq6USEOYJFrhrCUY6b7j5WXeMnpomJ/cvwkJJn+sd0Kwqv393s7d42/GAAAA
 emoteCheer:
   Description:
@@ -35,15 +35,15 @@ emoteCheer:
   ExpCost: 200
   Items:
     '28':
-      v: 3955
+      v: 4189
       type: SUNFLOWER
       meta:
         ==: ItemMeta
         meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"[","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false},{"text":"☀","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#5CE68B","bold":false},{"text":"]
-          /cheer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#3D7D52","bold":false}]}'
+        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"},{"text":"☀","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5CE68B"},{"text":"]
+          /cheer","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"}]}'
         lore:
-        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
-        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /cheer","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"#DA70D6","bold":false}]}'
-        - '{"text":"","extra":[{"text":"Item usages: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","italic":false,"color":"gold"}]}'
+        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /cheer","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"1","italic":false,"color":"gold"}]}'
         custom: H4sIAAAAAAAA/1XOOw6CMBgA4N+w+FgcvIWDooSwOCj4qqWKrRHcMC2KAtUWEi/hab2Aj831m74mgAH1bVxwmS95/+m9GtAiE+bKPP+grgNADTJU3QIaTE9adM+eqVg5w4zMLbtAa3anCxVWcbDGoSmz1OxNuRTsgMZE76UIceRTa3XckEgjTbKhk1yu2Hb2MqZnb3FSCUXJYEI3lxWzbD6IRga0XX+J0zwtBd9p4cePb8KAzh+7lVKiKH+/N/aavrXGAAAA

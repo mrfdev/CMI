@@ -1,0 +1,14 @@
+CustomAlias:
+  _scale:
+    Cmds:
+    - cooldown:60#?!
+    - check:$2==big! asConsole! cmi scale set $1 1.6 -s
+    - check:$2==small! asConsole! cmi scale set $1 0.6 -s
+    - asConsole! cmi msg $1 !{#cornflowerblue}🧪&l🧬&r {#sanmarino>}Phantom’s Potion
+      consumed, trying to make you $2 for 45 seconds{#cornflowerblue<}{#sanmarino}
+      &l✨
+    - delay! 45
+    - asConsole! cmi scale clear $1 -s
+    - asConsole! cmi msg $1 !{#cornflowerblue}🧪&l🧬&r {#sanmarino>}Phantom’s Potion
+      expired, you're reset to normal size again{#cornflowerblue<}{#sanmarino} &l✨
+    Perm: true

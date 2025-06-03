@@ -1,0 +1,268 @@
+SantasChimneyTreats:
+  Description:
+  - '{#orchid} Who does not love the tradition'
+  - '{#orchid} of gifting Santa some milk and'
+  - '{#orchid} cookies for when he comes'
+  - '{#orchid} down the chimney to leave you'
+  - '{#orchid} a bunch of fun gifts!'
+  - '{#buttercup} This is a one time kit, and it costs'
+  - '{#buttercup} a bit of exp, and a bit of money.'
+  - '{#buttercup} But! You get some treats, and one'
+  - '{#buttercup} of them is special! Consume it, and'
+  - '{#buttercup} you will get the xmas prefix that'
+  - '{#buttercup} everybody has in the chat {#japaneselaurel}🎄{#spray}✨'
+  CommandName: SantasChimneyTreats
+  DisplayName: '{#japaneselaurel>}🎄 Santa''s Chimney Treats ✨{#spray<}'
+  Enabled: false
+  Delay: 10
+  MaxUsages: 1
+  MoneyCost: 1000.0
+  ExpCost: 50
+  Commands:
+  - 'asConsole! cmi broadcast ! {#japaneselaurel}🎄{#spray}✨ {#orchid}Cool, [playerName]
+    just picked up the kit: Santas Chimney Treats'
+  - 'asConsole! discordsrv broadcast #661710111152275456 :christmas_tree: **[Santa]**
+    `[playerName] picked up the kit Santas Chimney Treats from /kits`'
+  Items:
+    '19':
+      v: 4189
+      type: CAKE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Cake","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Symbolic of holiday feasts and celebrations.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '20':
+      v: 4189
+      type: PUMPKIN_PIE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Pumpkin Pie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Often associated with holiday meals","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"during the colder months. yummy!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '21':
+      v: 4189
+      type: GLOW_BERRIES
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Glow Berries","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Resemble holly berries, which are commonly","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"associated with Christmas decorations.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '22':
+      v: 4189
+      type: HONEY_BOTTLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Honey Bottle","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Represents the sweet treats","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"often enjoyed during the holidays. ^_^","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '23':
+      v: 4189
+      type: GOLDEN_APPLE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Golden Apple","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Apples are a classic festive fruit, and golden","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"apples could add a magical holiday flair.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '24':
+      v: 4189
+      type: BREAD
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Bread","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Represents hearty winter meals and","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"is a staple during festive feasts.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '25':
+      v: 4189
+      type: MUSHROOM_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Mushroom Stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"A warm, hearty dish that fits the winter","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"theme, symbolizing cozy meals.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+    '26':
+      v: 4189
+      type: SUSPICIOUS_STEW
+      meta:
+        ==: ItemMeta
+        meta-type: SUSPICIOUS_STEW
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Suspicious Stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":"Another warm, mysterious dish that could be","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"associated with hearty winter meals.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+        effects:
+        - ==: PotionEffect
+          effect: minecraft:fire_resistance
+          duration: 80
+          amplifier: 0
+          ambient: true
+          has-particles: true
+          has-icon: true
+    '28':
+      v: 4189
+      type: COOKIE
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎄 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"Santa’s
+          Holly Jolly Biscuit ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFFFF"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+        - '{"text":"","extra":[{"text":" Pretend your Santa and consume","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":" this cookie to unlock the special","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":" Xmas Tree & Winter Sky prefix ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"},{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:nbtcommands": [
+                  "Pwb++LBKm+iaOeV044vWtg==",
+                  "M4RDVmG2Zucvs9Ev8Aa/Rajsds9+rrDYIqQ4XeAZJrZOhf6EA0N6VvwIIT4nMtt/"
+              ]
+          }
+    '29':
+      v: 4189
+      type: MILK_BUCKET
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"🎁 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#BBD009"},{"text":"Santa’s
+          Frosty Mug ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFFFF"},{"text":"🌌","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+        - '{"text":"","extra":[{"text":" Pretend your Santa and consume","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":" this milk to unlock the special","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
+        - '{"text":"","extra":[{"text":" Present & Sparkle prefix ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"},{"text":"🎁","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#BBD009"},{"text":"🌌","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+        enchants:
+          minecraft:unbreaking: 1
+        ItemFlags:
+        - HIDE_ENCHANTS
+        PublicBukkitValues: |-
+          {
+              "cmilib:nbtcommands": [
+                  "Pwb++LBKm+iaOeV044vWtg==",
+                  "M4RDVmG2Zucvs9Ev8Aa/RYWb3t4Yue3b3ZTPyR+2UailjDxGq6oWEFQywI4u+pPi"
+              ]
+          }
+    '30':
+      v: 4189
+      type: LEATHER_BOOTS
+      meta:
+        ==: ItemMeta
+        meta-type: COLORABLE_ARMOR
+        display-name: '{"text":"","extra":[{"text":"🎄 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"Santa’s
+          Chimney Socks ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFFFF"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        lore:
+        - '""'
+        - '{"text":"","extra":[{"text":" Santa''s Unbreaking X Socks","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3AD16"}]}'
+        - '{"text":"","extra":[{"text":" (glows in the dark when worn)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
+        enchants:
+          minecraft:unbreaking: 10
+        ItemFlags:
+        - HIDE_ENCHANTS
+        - HIDE_ADDITIONAL_TOOLTIP
+        - HIDE_DYE
+        - HIDE_ARMOR_TRIM
+        PublicBukkitValues: |-
+          {
+              "cmilib:cmiarmoreffects": [
+                  "5j5yEsD+nwvVkc08W9C3/A=="
+              ]
+          }
+        trim:
+          material: minecraft:quartz
+          pattern: minecraft:bolt
+        color:
+          ==: Color
+          ALPHA: 255
+          RED: 128
+          BLUE: 0
+          GREEN: 0
+    '31':
+      v: 4189
+      type: WRITTEN_BOOK
+      meta:
+        ==: ItemMeta
+        meta-type: BOOK_SIGNED
+        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
+          Santa''s Chimney Treats","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
+        title: chimneybox
+        author: mrfloris
+        pages:
+        - '{"text":"","extra":["\n            🎅 \n        Santa’s\n      Hearthside\n          Tale\n            🎄\n\nHo
+          ho ho! Greetings, dear friend! You’ve stumbled upon something truly magical—a
+          box of Santa’s Chimney Treats"]}'
+        - '{"text":"","extra":["a reward for your kindness in leaving out milk and
+          cookies for an old traveler coming down the chimney on frosty nights. Allow
+          me, Santa Claus, to tell you all about the goodies you’ve just received!"]}'
+        - '{"text":"","extra":["The Treats in the Box\n\nInside this festive kit,
+          you’ll find my favorite snacks:\n\n- Santa’s Frosty Mug (Milk Bucket)\n\n-
+          Santa’s Sweet Treat (Cookie)\n\n- Collectors items"]}'
+        - '{"text":"","extra":["There are also other snacks and drinks in the box,
+          and they are not just ordinary goodies—they’re collectors’ items, special
+          treasures to mark the holiday season. "]}'
+        - '{"text":"","extra":["Before you enjoy them, make sure to check out the
+          lore inscribed on each. When you’re ready, consume either the milk or the
+          cookies, and you’ll receive a magical holiday prefix, marking you as a true
+          festive spirit for all to see! "]}'
+        - '{"text":"","extra":["enjoy just one—or both, if you’re feeling extra merry.\n\nConsuming
+          the milk will give you one type of prefix, and consuming the cookie will
+          give you the other. \n\nAnd this year each prefix is not one but TWO characters!"]}'
+        - '{"text":"","extra":["The Magical Socks\n\nAnd don’t overlook the Chimney
+          Socks \n\nThese \"socks\" are no ordinary footwear. Crafted in the North
+          Pole by my finest elves"]}'
+        - '{"text":"","extra":[" they’re enchanted with Unbreaking X, ensuring they’ll
+          stay sturdy no matter how far you travel this winter.\n\nWear them proudly—you’ll
+          look just like one of my helpers!"]}'
+        - '{"text":"","extra":["Even better, they emit a soft glow, so your friends
+          and foes alike will see you shining brightly in the darkest of nights.\n\n"]}'
+        - '{"text":"","extra":["A Note of Thanks\n\nI left this little box of treats
+          for you as a thank-you for your generosity. Whether you set out milk, cookies,
+          or a simple smile, your holiday spirit warms my heart. \n\n"]}'
+        - '{"text":"","extra":["So go on—pretend you’re Santa for a day! Sip the milk,
+          nibble the cookies, and spread some joy.\n\nAnd remember, the magic of Christmas
+          lives in those who share kindness and cheer with the world."]}'
+        - '{"text":"","extra":["Ho ho ho! Stay warm, stay merry, and keep those stockings
+          hung by the chimney with care.\n\nYours truly,\n🎅 Santa Claus"]}'
+        resolved: true

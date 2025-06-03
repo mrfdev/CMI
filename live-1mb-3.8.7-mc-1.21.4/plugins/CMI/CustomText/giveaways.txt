@@ -1,0 +1,37 @@
+<AutoPage><AutoAlias><NoReqPermission>
+{#orient}•----{#cerulean}❖ Giveaway information ❖{#orient}----•
+{#Feijoa}some info on our fancy cool giveaways
+&r
+{#Feijoa}We have minecraft and discord giveaways!
+{#Feijoa}The minecraft giveaways are on the next page.
+{#Feijoa}For the discord giveaways do ?giveaways in #giveaways on /discord
+<NextPage>
+{#orient}•----{#cerulean}❖ Giveaway 1 ❖{#orient}----•
+{#Feijoa}• Start date: {#orange}1 may 2025 10pm
+{#Feijoa}• Duration: {#orange}5 days
+{#Feijoa}• Prize: {#orange}cool item!
+&r
+{#orient}•----{#cerulean}❖ Giveaway 2 ❖{#orient}----•
+{#Feijoa}• Start date: {#orange}1 may 2025 10pm
+{#Feijoa}• Duration: {#orange}5 days
+{#Feijoa}• Prize: {#orange}cool item!
+<NextPage>
+{#orient}•----{#cerulean}❖ Giveaway 3 ❖{#orient}----•
+{#Feijoa}• Start date: {#orange}1 may 2025 10pm
+{#Feijoa}• Duration: {#orange}5 days
+{#Feijoa}• Prize: {#orange}cool item!
+&r
+{#orient}•----{#cerulean}❖ Giveaway 4 ❖{#orient}----•
+{#Feijoa}• Start date: {#orange}1 may 2025 10pm
+{#Feijoa}• Duration: {#orange}5 days
+{#Feijoa}• Prize: {#orange}cool item!
+<NextPage>
+{#orient}•----{#cerulean}❖ Giveaway 5 ❖{#orient}----•
+{#Feijoa}• Start date: {#orange}1 may 2025 10pm
+{#Feijoa}• Duration: {#orange}5 days
+{#Feijoa}• Prize: {#orange}cool item!
+&r
+{#orient}•----{#cerulean}❖ Giveaway 6 ❖{#orient}----•
+{#Feijoa}• Start date: {#orange}1 may 2025 10pm
+{#Feijoa}• Duration: {#orange}5 days
+{#Feijoa}• Prize: {#orange}cool item!

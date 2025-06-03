@@ -81,22 +81,6 @@ general:
     activationRange: 16
     commandsWithoutTp: false
     commands: []
-  dungeonwaterportal:
-    Loc: 12513.0:48.0:-5351.0:12526.0:50.0:-5338.0
-    enabled: true
-    effect: WaterBubble
-    showParticles: true
-    Tp: general;12511.55;52.1;-5335.52;-306.32;11.66
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: false
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
   freemusic:
     Loc: 7576.0:66.0:11580.0:7576.0:66.0:11580.0
     enabled: true
@@ -146,7 +130,8 @@ general:
   jackperbyteportal1:
     Loc: 15400.0:67.0:-14922.0:15401.0:69.0:-14922.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     Tp: wild;2080.5;73.0;-3371.5;179.9;19.89
     kickBack: false
@@ -164,7 +149,8 @@ general:
   playermacadam:
     Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     Tp: general;6060.62;62.0;14269.23;-175.74;10.36
     kickBack: true
@@ -315,7 +301,8 @@ general:
   spawn_general_endportal:
     Loc: 76.0:83.0:-236.0:78.0:85.0:-234.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     Tp: end;111.23;47.0;85.48;90.27;1.7
     kickBack: true
@@ -331,7 +318,8 @@ general:
   spawn_general_nether1:
     Loc: 72.0:81.0:-207.0:82.0:88.0:-207.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     Tp: nether;328.54;80.0;-212.55;90.2;-6.17
     kickBack: true
@@ -394,7 +382,8 @@ general:
   tidalminiportal:
     Loc: 7363.0:0.0:6026.0:7363.0:3.0:6026.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     Tp: general;7342.48;62.8;6026.55;-89.94;5.1
     kickBack: true
@@ -424,7 +413,8 @@ general:
   vloopendbossbar:
     Loc: -16775.0:104.0:17146.0:-16769.0:106.0:17152.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -441,7 +431,8 @@ general:
   vloopendportal:
     Loc: -15601.0:30.0:-12668.0:-15599.0:30.0:-12666.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     Tp: general;-16766.5;102.69;17123.5;-1.13;-6.95
     kickBack: true
@@ -457,7 +448,8 @@ general:
   vloopendreturnportal:
     Loc: -16774.0:103.0:17147.0:-16770.0:103.0:17151.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     Tp: general;-15603.25;31.9;-12679.72;229.44;14.74
     kickBack: true
@@ -473,7 +465,7 @@ general:
   walk:
     Loc: 12640.0:80.0:-5298.0:12640.0:80.0:-5298.0
     enabled: true
-    effect: WaterWake
+    effect: Splash
     showParticles: true
     kickBack: false
     particlesByPermission: false
@@ -486,13 +478,146 @@ general:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! walk
-valentine:
-  deletemelater:
-    Loc: 368.0:63.0:-129.0:892.0:199.0:395.0
+wild:
+  dungeonfall:
+    Loc: 14777.0:-64.0:14648.0:14790.0:-62.0:14661.0
     enabled: true
-    effect: Heart
+    effect: TrialSpawnerDetection
     showParticles: true
+    Tp: wild;14792.49;-60.0;14663.48;-46.0;17.11
     kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 26
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 5 -s
+  jackperbyteportal1back:
+    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 6
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] &lWhoOoOOosh!
+    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
+  koolkidportaltemp:
+    Loc: 2306.0:73.0:1811.0:2309.0:76.0:1811.0
+    enabled: true
+    effect: CrimsonSpore
+    showParticles: true
+    Tp: wild;1422.0;-32.0;1566.13;67.49;5.69
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  koolkidsimpportalvoucher:
+    Loc: 2239.0:64.0:1754.0:2240.0:66.0:1754.0
+    enabled: true
+    effect: TrialSpawnerDetectionOminous
+    showParticles: true
+    Tp: oneblock;12009.5;81.0;-3999.5;85.05;-2.49
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  NebihPortalvoucher2:
+    Loc: 3798.0:71.0:-3806.0:3799.0:75.0:-3806.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: nether;3730.0;175.0;-9682.39;-179.9;1.01
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  perrynetherportal:
+    Loc: -3470.0:55.0:4109.0:-3470.0:59.0:4110.0
+    enabled: true
+    effect: ReversePortal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 4
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether
+  randyendportal:
+    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
+    enabled: true
+    effect: SmallSmoke
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! mv tp end
+  randyfortuneteller:
+    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
+    enabled: true
+    effect: Composter
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
+  rattlesportal:
+    Loc: -2246.0:19.0:-1713.0:-2244.0:21.0:-1713.0
+    enabled: true
+    effect: ElectricSpark
+    showParticles: true
+    Tp: wild;-2244.53;41.0;-1690.57;-0.55;18.0
+    kickBack: true
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
@@ -501,11 +626,179 @@ valentine:
     activationRange: 16
     commandsWithoutTp: true
     commands: []
+  rattlesportalback:
+    Loc: -2246.0:41.0:-1693.0:-2244.0:43.0:-1693.0
+    enabled: true
+    effect: ElectricSpark
+    showParticles: true
+    Tp: wild;-2244.52;18.93;-1714.78;-177.7;7.64
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands: []
+  tidalabase2:
+    Loc: -8758.0:65.0:7323.0:-8758.0:68.0:7323.0
+    enabled: true
+    effect: CherryLeaves
+    showParticles: true
+    Tp: general;7384.41;64.0;6025.44;96.76;7.09
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  vubboportal1:
+    Loc: -8328.0:74.0:-8626.0:-8325.0:79.0:-8626.0
+    enabled: true
+    effect: ReversePortal
+    showParticles: true
+    Tp: wild;5522.34;74.5;-2506.84;-79.51;14.99
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 1 1 -s
+  vubboportal2:
+    Loc: 5519.0:76.0:-2510.0:5519.0:83.0:-2505.0
+    enabled: true
+    effect: ReversePortal
+    showParticles: true
+    Tp: wild;-8325.66;72.0;-8621.04;3.45;14.09
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 1 1 -s
+  wildend:
+    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
+    enabled: true
+    effect: VoidFog
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! end
+  wildgeneral:
+    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
+    enabled: true
+    effect: Totem
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 2
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! general
+  wildhalloweenprefix:
+    Loc: 105.0:54.0:67.0:106.0:57.0:68.0
+    enabled: true
+    effect: Lavadrip
+    showParticles: true
+    kickBack: false
+    particlesByPermission: false
+    requiresPerm: true
+    informOnMissingPerm: true
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 8
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound entity_wither_death [playerName]
+    - cmi effect [playerName] blindness 2 1 -s
+    - asConsole! cmi nameplate [playerName] -pref:{#cinnamon>}Halloween_{#tahitigold<}&r
+      -s
+    - msg! [playerName] {#orange}The /halloween world opens October 30th! (at some
+      point).
+    - msg! [playerName] {#orange}&l Okay, you should now have the Halloween prefix
+      in chat! :)
+  wildnether:
+    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
+    enabled: true
+    effect: Portal
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+    - asPlayer! nether
+  yakiportal1:
+    Loc: 9746.0:101.0:10850.0:9746.0:104.0:10850.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: wild;9896.95;-49.0;10768.03;90.04;-0.61
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  yakiportal2:
+    Loc: 9605.0:-35.0:10732.0:9607.0:-35.0:10734.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: end;111.23;47.0;85.48;90.27;1.7
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 10
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
 easter:
   eastervoidrespawn:
     Loc: -294.0:-60.0:-343.0:356.0:-35.0:307.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     kickBack: false
     particlesByPermission: false
@@ -581,7 +874,7 @@ halloween:
     enabled: true
     effect: VoidFog
     showParticles: true
-    kickBack: true
+    kickBack: false
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
@@ -643,62 +936,14 @@ halloween:
     commandsWithoutTp: false
     commands:
     - cmi effect [playerName] blindness 2 1 -s
-wild:
-  jackperbyteportal1back:
-    Loc: 2080.0:72.0:-3377.0:2080.0:75.0:-3377.0
+nether:
+  NebihPortalvoucher1:
+    Loc: 3729.0:174.0:-9682.0:3730.0:178.0:-9682.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
-    Tp: general;15401.03;67.5;-14923.83;-0.18;36.77
-    kickBack: false
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 6
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - msg! [playerName] &lWhoOoOOosh!
-    - asConsole! cmi sound block_portal_travel [playerName] -v:0.5 -p:2
-  koolkidportaltemp:
-    Loc: 2306.0:73.0:1811.0:2309.0:76.0:1811.0
-    enabled: true
-    effect: CrimsonSpore
-    showParticles: true
-    Tp: wild;1422.0;-32.0;1566.13;67.49;5.69
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-  perrynetherportal:
-    Loc: -3470.0:55.0:4109.0:-3470.0:59.0:4110.0
-    enabled: true
-    effect: ReversePortal
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 4
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! nether
-  randyendportal:
-    Loc: 15.0:181.0:1322.0:17.0:181.0:1324.0
-    enabled: true
-    effect: SmallSmoke
-    showParticles: true
+    Tp: wild;3798.97;71.5;-3804.46;0.2;0.08
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
@@ -709,114 +954,12 @@ wild:
     commandsWithoutTp: true
     commands:
     - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! mv tp end
-  randyfortuneteller:
-    Loc: 33.0:167.0:1146.0:35.0:169.0:1148.0
-    enabled: true
-    effect: Composter
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 1
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - msg! [playerName] {#purple>}.. I see mining in your future {#magenta<}
-  tidalabase2:
-    Loc: -8758.0:65.0:7323.0:-8758.0:68.0:7323.0
-    enabled: true
-    effect: CherryLeaves
-    showParticles: true
-    Tp: general;7384.41;64.0;6025.44;96.76;7.09
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 1
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-  wildend:
-    Loc: 50.0:59.0:47.0:52.0:59.0:49.0
-    enabled: true
-    effect: VoidFog
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! end
-  wildgeneral:
-    Loc: 73.0:57.0:71.0:76.0:61.0:71.0
-    enabled: true
-    effect: Totem
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 2
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! general
-  wildhalloweenprefix:
-    Loc: 105.0:54.0:67.0:106.0:57.0:68.0
-    enabled: true
-    effect: Lavadrip
-    showParticles: true
-    kickBack: false
-    particlesByPermission: false
-    requiresPerm: true
-    informOnMissingPerm: true
-    particleAmount: 10
-    particleHide: 0
-    activationRange: 8
-    commandsWithoutTp: true
-    commands:
-    - asConsole! cmi sound entity_wither_death [playerName]
-    - cmi effect [playerName] blindness 2 1 -s
-    - asConsole! cmi nameplate [playerName] -pref:{#cinnamon>}Halloween_{#tahitigold<}&r
-      -s
-    - msg! [playerName] {#orange}The /halloween world opens October 30th! (at some
-      point).
-    - msg! [playerName] {#orange}&l Okay, you should now have the Halloween prefix
-      in chat! :)
-  wildnether:
-    Loc: 108.0:58.0:47.0:108.0:61.0:49.0
-    enabled: true
-    effect: Portal
-    showParticles: true
-    kickBack: true
-    particlesByPermission: false
-    requiresPerm: false
-    informOnMissingPerm: false
-    particleAmount: 20
-    particleHide: 0
-    activationRange: 16
-    commandsWithoutTp: true
-    commands:
-    - cmi effect [playerName] blindness 2 1 -s
-    - asPlayer! nether
 run:
   runlevel3:
     Loc: -165.0:41.0:-101.0:-140.0:44.0:-76.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -862,7 +1005,7 @@ santa:
   santaparticlestree:
     Loc: 162.0:74.0:56.0:174.0:95.0:71.0
     enabled: true
-    effect: SnowballBreak
+    effect: Crit
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -877,7 +1020,8 @@ santa:
   santaworldfrostyperk:
     Loc: 167.0:74.0:54.0:167.0:77.0:55.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -907,7 +1051,8 @@ skyblock:
   skyblockspawn:
     Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: false
     kickBack: true
     particlesByPermission: false
@@ -1125,7 +1270,8 @@ thanksgiving:
   thanksgivingturkey1:
     Loc: 536.0:95.0:-539.0:537.0:99.0:-538.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1144,7 +1290,8 @@ thanksgiving:
   thanksgivingturkey10:
     Loc: 349.0:72.0:-594.0:351.0:75.0:-592.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1163,7 +1310,8 @@ thanksgiving:
   thanksgivingturkey11:
     Loc: 311.0:74.0:-588.0:313.0:77.0:-586.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1182,7 +1330,8 @@ thanksgiving:
   thanksgivingturkey12:
     Loc: 280.0:72.0:-569.0:282.0:75.0:-567.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1201,7 +1350,8 @@ thanksgiving:
   thanksgivingturkey13:
     Loc: 237.0:70.0:-560.0:239.0:72.0:-559.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1220,7 +1370,8 @@ thanksgiving:
   thanksgivingturkey14:
     Loc: 237.0:70.0:-563.0:239.0:72.0:-561.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1239,7 +1390,8 @@ thanksgiving:
   thanksgivingturkey15:
     Loc: 273.0:74.0:-533.0:276.0:77.0:-529.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1258,7 +1410,8 @@ thanksgiving:
   thanksgivingturkey16:
     Loc: 308.0:72.0:-553.0:311.0:74.0:-551.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1277,7 +1430,8 @@ thanksgiving:
   thanksgivingturkey17:
     Loc: 351.0:72.0:-541.0:353.0:75.0:-539.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1296,7 +1450,8 @@ thanksgiving:
   thanksgivingturkey18:
     Loc: 355.0:77.0:-567.0:358.0:80.0:-565.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1315,7 +1470,8 @@ thanksgiving:
   thanksgivingturkey19:
     Loc: 341.0:76.0:-577.0:343.0:79.0:-574.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1334,7 +1490,8 @@ thanksgiving:
   thanksgivingturkey2:
     Loc: 560.0:122.0:-560.0:561.0:125.0:-559.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1353,7 +1510,8 @@ thanksgiving:
   thanksgivingturkey20:
     Loc: 350.0:72.0:-579.0:352.0:75.0:-577.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1372,7 +1530,8 @@ thanksgiving:
   thanksgivingturkey21:
     Loc: 321.0:74.0:-566.0:323.0:77.0:-564.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1391,7 +1550,8 @@ thanksgiving:
   thanksgivingturkey22:
     Loc: 337.0:75.0:-552.0:339.0:78.0:-550.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1410,7 +1570,8 @@ thanksgiving:
   thanksgivingturkey23:
     Loc: 352.0:72.0:-557.0:354.0:75.0:-553.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1429,7 +1590,8 @@ thanksgiving:
   thanksgivingturkey24:
     Loc: 544.0:99.0:-558.0:546.0:102.0:-556.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1448,7 +1610,8 @@ thanksgiving:
   thanksgivingturkey25:
     Loc: 253.0:73.0:-567.0:255.0:76.0:-564.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1467,7 +1630,8 @@ thanksgiving:
   thanksgivingturkey3:
     Loc: 521.0:98.0:-590.0:524.0:101.0:-588.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1486,7 +1650,8 @@ thanksgiving:
   thanksgivingturkey4:
     Loc: 508.0:96.0:-571.0:510.0:100.0:-569.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1505,7 +1670,8 @@ thanksgiving:
   thanksgivingturkey5:
     Loc: 476.0:99.0:-563.0:478.0:102.0:-560.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1524,7 +1690,8 @@ thanksgiving:
   thanksgivingturkey6:
     Loc: 444.0:99.0:-562.0:446.0:102.0:-561.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1543,7 +1710,8 @@ thanksgiving:
   thanksgivingturkey7:
     Loc: 421.0:99.0:-548.0:423.0:102.0:-546.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1562,7 +1730,8 @@ thanksgiving:
   thanksgivingturkey8:
     Loc: 386.0:76.0:-545.0:388.0:79.0:-543.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1581,7 +1750,8 @@ thanksgiving:
   thanksgivingturkey9:
     Loc: 387.0:73.0:-571.0:389.0:76.0:-569.0
     enabled: true
-    effect: ColouredDust
+    effect: Dust
+    color: 8224125
     showParticles: true
     kickBack: true
     particlesByPermission: false
@@ -1597,3 +1767,1617 @@ thanksgiving:
     - asConsole! cmi actionbarmsg [playerName] -s:5 {#butteredrum}Right-click!
     - asConsole! cmi panimation circle;effect:reddust;dur:5;pitchc:5;part:10;offset:0,1,0;radius:1;yawc:5;color:rs;target:[playerName]
     - asConsole! cmi effect [playerName] absorption 20 1
+valentine:
+  valentineAreaFinish:
+    Loc: 529.0:63.0:8.0:534.0:66.0:13.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 48
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineAreaFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineAreaCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Area \n Finished?! Checking ...
+      ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineAreaStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineAreaCompleted +1
+    - check:%cmi_user_meta_valentineAreaOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineAreaCompleted +1
+    - check:%cmi_user_meta_valentineAreaTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineAreaCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineAreaThree%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineAreaCompleted +1
+    - check:%cmi_user_meta_valentineAreaFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineAreaCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineAreaCompleted%==5! check:%cmi_user_meta_valentineQuestTwo%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestTwo%!=yep! msg! [playerName]
+      You haven't completed the Valentine Area Quest{#gray} (score counter has been
+      reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestTwo%==yep! msg! [playerName]
+      You have already completed the Valentine Area Quest{#gray} (score counter has
+      been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Area Quest Completed\n
+      {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      2 of 8!
+    - if:check1! asConsole! cmi kit valentinegem2of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestTwo yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentineAreaStart
+    - asConsole! cmi usermeta [playerName] remove valentineAreaOne
+    - asConsole! cmi usermeta [playerName] remove valentineAreaTwo
+    - asConsole! cmi usermeta [playerName] remove valentineAreaThree
+    - asConsole! cmi usermeta [playerName] remove valentineAreaFinish
+  valentineAreaOne:
+    Loc: 670.0:66.0:55.0:678.0:69.0:59.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineAreaOne yep
+    - asConsole! cmi usermeta [playerName] add valentineAreaCompleted 0
+    - asConsole! cmi titlemsg [playerName] Area \n Now you know where to go!
+  valentineAreaStart:
+    Loc: 733.0:72.0:-37.0:734.0:76.0:-37.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineAreaStart yep
+    - asConsole! cmi usermeta [playerName] add valentineAreaCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Area \n Started! Next: find the
+      Quest House!'
+  valentineAreaThree:
+    Loc: 698.0:70.0:299.0:700.0:74.0:301.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineAreaThree yep
+    - asConsole! cmi usermeta [playerName] add valentineAreaCompleted 0
+    - asConsole! cmi titlemsg [playerName] Area \n Hello Friend
+  valentineAreaTwo:
+    Loc: 669.0:68.0:73.0:679.0:72.0:83.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 201
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineAreaTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineAreaCompleted 0
+    - asConsole! cmi titlemsg [playerName] Area \n Nice Swim!
+  valentineBuildingFinish:
+    Loc: 436.0:185.0:-36.0:436.0:188.0:-36.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuildingFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineBuildingCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Building \n Finished?! Checking
+      ... ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineBuildingStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuildingCompleted +1
+    - check:%cmi_user_meta_valentineBuildingOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuildingCompleted +1
+    - check:%cmi_user_meta_valentineBuildingTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuildingCompleted +1
+    - check:%cmi_user_meta_valentineBuildingThree%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuildingCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineBuildingFour%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuildingCompleted +1
+    - check:%cmi_user_meta_valentineBuildingFinish%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineBuildingCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineBuildingCompleted%==6! check:%cmi_user_meta_valentineQuestFive%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestFive%!=yep! msg! [playerName]
+      You haven't completed the Valentine Building Quest{#gray} (score counter has
+      been reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestFive%==yep! msg! [playerName]
+      You have already completed the Valentine Building Quest{#gray} (score counter
+      has been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Building Quest
+      Completed\n {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      5 of 8!
+    - if:check1! asConsole! cmi kit valentinegem5of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestFive yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentineBuildingStart
+    - asConsole! cmi usermeta [playerName] remove valentineBuildingOne
+    - asConsole! cmi usermeta [playerName] remove valentineBuildingTwo
+    - asConsole! cmi usermeta [playerName] remove valentineBuildingThree
+    - asConsole! cmi usermeta [playerName] remove valentineBuildingFour
+    - asConsole! cmi usermeta [playerName] remove valentineBuildingFinish
+  valentineBuildingFour:
+    Loc: 650.0:47.0:122.0:654.0:50.0:122.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuildingFour yep
+    - asConsole! cmi usermeta [playerName] add valentineBuildingCompleted 0
+    - asConsole! cmi titlemsg [playerName] Building \n You found Fr33_S0uL's BIG Room
+  valentineBuildingOne:
+    Loc: 678.0:71.0:224.0:679.0:74.0:224.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuildingOne yep
+    - asConsole! cmi usermeta [playerName] add valentineBuildingCompleted 0
+    - asConsole! cmi titlemsg [playerName] Building \n You found Emma's Teddy Bear
+  valentineBuildingStart:
+    Loc: 738.0:70.0:88.0:738.0:73.0:88.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuildingStart yep
+    - asConsole! cmi usermeta [playerName] add valentineBuildingCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Buildings \n Started! Enter them
+      all'
+  valentineBuildingThree:
+    Loc: 615.0:68.0:49.0:615.0:71.0:49.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuildingThree yep
+    - asConsole! cmi usermeta [playerName] add valentineBuildingCompleted 0
+    - asConsole! cmi titlemsg [playerName] Building \n You found Nebih's House
+  valentineBuildingTwo:
+    Loc: 553.0:78.0:150.0:553.0:81.0:150.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuildingTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineBuildingCompleted 0
+    - asConsole! cmi titlemsg [playerName] Building \n You found Mikey's Shop
+  valentineBuoyFinish:
+    Loc: 507.0:63.0:373.0:513.0:65.0:379.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuoyFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineBuoyCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Buoy \n Finished?! Checking ...
+      ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineBuoyStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuoyCompleted +1
+    - check:%cmi_user_meta_valentineBuoyOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuoyCompleted +1
+    - check:%cmi_user_meta_valentineBuoyTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuoyCompleted +1
+    - check:%cmi_user_meta_valentineBuoyThree%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuoyCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineBuoyFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineBuoyCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineBuoyCompleted%==5! check:%cmi_user_meta_valentineQuestThree%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestThree%!=yep! msg! [playerName]
+      You haven't completed the Valentine Buoy Quest{#gray} (score counter has been
+      reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestThree%==yep! msg! [playerName]
+      You have already completed the Valentine Buoy Quest{#gray} (score counter has
+      been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Buoy Quest Completed\n
+      {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      3 of 8!
+    - if:check1! asConsole! cmi kit valentinegem3of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestThree yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentineBuoyStart
+    - asConsole! cmi usermeta [playerName] remove valentineBuoyOne
+    - asConsole! cmi usermeta [playerName] remove valentineBuoyTwo
+    - asConsole! cmi usermeta [playerName] remove valentineBuoyThree
+    - asConsole! cmi usermeta [playerName] remove valentineBuoyFinish
+  valentineBuoyOne:
+    Loc: 587.0:63.0:-99.0:593.0:65.0:-93.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuoyOne yep
+    - asConsole! cmi usermeta [playerName] add valentineBuoyCompleted 0
+  valentineBuoyStart:
+    Loc: 758.0:63.0:-119.0:764.0:65.0:-113.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuoyStart yep
+    - asConsole! cmi usermeta [playerName] add valentineBuoyCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Buoy \n Started! Climb on all floating
+      buoys (they have particles)'
+  valentineBuoyThree:
+    Loc: 376.0:63.0:251.0:382.0:65.0:257.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuoyThree yep
+    - asConsole! cmi usermeta [playerName] add valentineBuoyCompleted 0
+  valentineBuoyTwo:
+    Loc: 414.0:63.0:33.0:420.0:65.0:39.0
+    enabled: true
+    effect: EndRod
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineBuoyTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineBuoyCompleted 0
+  valentineDanceFinish:
+    Loc: 585.0:89.0:285.0:586.0:92.0:285.0
+    enabled: true
+    effect: EndRod
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineDanceFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineDanceCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Dance the Rope \n Finished?! Checking
+      ... ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineDanceStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineDanceCompleted +1
+    - check:%cmi_user_meta_valentineDanceOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineDanceCompleted +1
+    - check:%cmi_user_meta_valentineDanceTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineDanceCompleted +1
+    - check:%cmi_user_meta_valentineDanceThree%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineDanceCompleted +1
+    - check:%cmi_user_meta_valentineDanceFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineDanceCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineDanceCompleted%==5! check:%cmi_user_meta_valentineQuestEight%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestEight%!=yep! msg! [playerName]
+      You haven't completed the Valentine Dance the Rope Quest{#gray} (score counter
+      has been reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestEight%==yep! msg! [playerName]
+      You have already completed the Valentine Dance the Rope Quest{#gray} (score
+      counter has been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Dance the Rope
+      Quest Completed\n {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      8 of 8!
+    - if:check1! asConsole! cmi kit valentinegem8of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestEight yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentineDanceStart
+    - asConsole! cmi usermeta [playerName] remove valentineDanceOne
+    - asConsole! cmi usermeta [playerName] remove valentineDanceTwo
+    - asConsole! cmi usermeta [playerName] remove valentineDanceThree
+    - asConsole! cmi usermeta [playerName] remove valentineDanceFinish
+  valentineDanceOne:
+    Loc: 610.0:89.0:285.0:610.0:91.0:285.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineDanceOne yep
+    - asConsole! cmi usermeta [playerName] add valentineDanceCompleted 0
+  valentineDanceStart:
+    Loc: 614.0:89.0:285.0:615.0:92.0:285.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineDanceStart yep
+    - asConsole! cmi usermeta [playerName] add valentineDanceCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Dance the Rope \n Started! Show
+      your best moves!'
+  valentineDanceThree:
+    Loc: 594.0:90.0:285.0:594.0:91.0:285.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineDanceThree yep
+    - asConsole! cmi usermeta [playerName] add valentineDanceCompleted 0
+  valentineDanceTwo:
+    Loc: 604.0:90.0:285.0:604.0:91.0:285.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineDanceTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineDanceCompleted 0
+  valentineMazeFinish:
+    Loc: 560.0:69.0:81.0:560.0:71.0:81.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineMazeFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineMazeCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Maze \n Finished?! Checking ...
+      ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineMazeStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineMazeCompleted +1
+    - check:%cmi_user_meta_valentineMazeOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineMazeCompleted +1
+    - check:%cmi_user_meta_valentineMazeFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineMazeCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineMazeCompleted%==3! check:%cmi_user_meta_valentineQuestSix%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestSix%!=yep! msg! [playerName]
+      You haven't completed the Valentine Maze Quest{#gray} (score counter has been
+      reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestSix%==yep! msg! [playerName]
+      You have already completed the Valentine Maze Quest{#gray} (score counter has
+      been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Maze Quest Completed\n
+      {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      6 of 8!
+    - if:check1! asConsole! cmi kit valentinegem6of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestSix yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentineMazeStart
+    - asConsole! cmi usermeta [playerName] remove valentineMazeOne
+    - asConsole! cmi usermeta [playerName] remove valentineMazeFinish
+  valentineMazeOne:
+    Loc: 550.0:69.0:88.0:550.0:71.0:88.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineMazeOne yep
+    - asConsole! cmi usermeta [playerName] add valentineMazeCompleted 0
+  valentineMazeStart:
+    Loc: 559.0:69.0:70.0:561.0:71.0:70.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineMazeStart yep
+    - asConsole! cmi usermeta [playerName] add valentineMazeCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Maze \n Started! Find the center
+      <3'
+  valentineParkourEight:
+    Loc: 697.0:74.0:-104.0:699.0:76.0:-102.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourEight yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourEighteen:
+    Loc: 660.0:69.0:-87.0:662.0:71.0:-85.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourEighteen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourEleven:
+    Loc: 683.0:73.0:-115.0:685.0:75.0:-113.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourEleven yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourFifteen:
+    Loc: 663.0:70.0:-106.0:665.0:72.0:-104.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourFifteen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourFinish:
+    Loc: 724.0:63.0:-86.0:726.0:65.0:-84.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Parkour \n Finished?! Checking
+      ... ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineParkourStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineParkourThree%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourFour%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourFive%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - delay! 0.1
+    - check:%cmi_user_meta_valentineParkourSix%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourSeven%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourEight%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineParkourNine%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTen%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourEleven%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - delay! 0.1
+    - check:%cmi_user_meta_valentineParkourTwelve%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourThirteen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourFourteen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineParkourFifteen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourSixteen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourSeventeen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - delay! 0.1
+    - check:%cmi_user_meta_valentineParkourEighteen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourNineteen%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwenty%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineParkourTwentyOne%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwentyTwo%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwentyThree%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - delay! 0.1
+    - check:%cmi_user_meta_valentineParkourTwentyFour%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwentyFive%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwentySix%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - delay! 0.2
+    - check:%cmi_user_meta_valentineParkourTwentySeven%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwentyEight%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourTwentyNine%==yep! asConsole! cmi usermeta
+      [playerName] increment valentineParkourCompleted +1
+    - delay! 0.1
+    - check:%cmi_user_meta_valentineParkourThirty%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - check:%cmi_user_meta_valentineParkourFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineParkourCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineParkourCompleted%==32! check:%cmi_user_meta_valentineQuestOne%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestOne%!=yep! msg! [playerName]
+      You haven't completed the Valentine Parkour Quest{#gray} (score counter has
+      been reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestOne%==yep! msg! [playerName]
+      You have already completed the Valentine Parkour Quest{#gray} (score counter
+      has been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Parkour Quest
+      Completed\n {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      1 of 8!
+    - if:check1! asConsole! cmi kit valentinegem1of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestOne yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentineParkourStart
+    - asConsole! cmi usermeta [playerName] remove valentineParkourOne
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwo
+    - delay! 0.1
+    - asConsole! cmi usermeta [playerName] remove valentineParkourThree
+    - asConsole! cmi usermeta [playerName] remove valentineParkourFour
+    - asConsole! cmi usermeta [playerName] remove valentineParkourFive
+    - delay! 0.2
+    - asConsole! cmi usermeta [playerName] remove valentineParkourSix
+    - asConsole! cmi usermeta [playerName] remove valentineParkourSeven
+    - asConsole! cmi usermeta [playerName] remove valentineParkourEight
+    - delay! 0.1
+    - asConsole! cmi usermeta [playerName] remove valentineParkourNine
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTen
+    - asConsole! cmi usermeta [playerName] remove valentineParkourEleven
+    - delay! 0.2
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwelve
+    - asConsole! cmi usermeta [playerName] remove valentineParkourThirteen
+    - asConsole! cmi usermeta [playerName] remove valentineParkourFourteen
+    - delay! 0.1
+    - asConsole! cmi usermeta [playerName] remove valentineParkourFifteen
+    - asConsole! cmi usermeta [playerName] remove valentineParkourSixteen
+    - asConsole! cmi usermeta [playerName] remove valentineParkourSeventeen
+    - delay! 0.2
+    - asConsole! cmi usermeta [playerName] remove valentineParkourEighteen
+    - asConsole! cmi usermeta [playerName] remove valentineParkourNineteen
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwenty
+    - delay! 0.1
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyOne
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyTwo
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyThree
+    - delay! 0.2
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyFour
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyFive
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentySix
+    - delay! 0.1
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentySeven
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyEight
+    - asConsole! cmi usermeta [playerName] remove valentineParkourTwentyNine
+    - delay! 0.1
+    - asConsole! cmi usermeta [playerName] remove valentineParkourThirty
+    - asConsole! cmi usermeta [playerName] remove valentineParkourFinish
+  valentineParkourFive:
+    Loc: 693.0:76.0:-88.0:695.0:78.0:-86.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourFive yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourFour:
+    Loc: 689.0:77.0:-82.0:691.0:79.0:-80.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourFour yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourFourteen:
+    Loc: 667.0:71.0:-110.0:669.0:73.0:-108.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourFourteen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourNine:
+    Loc: 694.0:74.0:-110.0:696.0:76.0:-108.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourNine yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourNineteen:
+    Loc: 663.0:68.0:-82.0:665.0:70.0:-80.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourNineteen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourOne:
+    Loc: 682.0:77.0:-68.0:684.0:79.0:-66.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourOne yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourSeven:
+    Loc: 698.0:75.0:-99.0:700.0:77.0:-97.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourSeven yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourSeventeen:
+    Loc: 659.0:70.0:-92.0:661.0:72.0:-90.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourSeventeen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourSix:
+    Loc: 696.0:76.0:-94.0:698.0:78.0:-92.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourSix yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourSixteen:
+    Loc: 662.0:70.0:-100.0:664.0:72.0:-96.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourSixteen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourStart:
+    Loc: 678.0:76.0:-63.0:680.0:78.0:-61.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourStart yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Parkour \n Started! Hit all platforms'
+  valentineParkourTen:
+    Loc: 689.0:74.0:-115.0:691.0:76.0:-113.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourThirteen:
+    Loc: 672.0:71.0:-116.0:674.0:73.0:-114.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourThirteen yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourThirty:
+    Loc: 719.0:63.0:-90.0:721.0:65.0:-88.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourThirty yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourThree:
+    Loc: 686.0:77.0:-78.0:688.0:79.0:-76.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourThree yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwelve:
+    Loc: 677.0:72.0:-117.0:679.0:74.0:-115.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwelve yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwenty:
+    Loc: 669.0:68.0:-83.0:671.0:70.0:-81.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwenty yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyEight:
+    Loc: 708.0:63.0:-95.0:710.0:65.0:-93.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyEight yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyFive:
+    Loc: 697.0:65.0:-86.0:699.0:67.0:-84.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyFive yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyFour:
+    Loc: 691.0:66.0:-83.0:693.0:68.0:-81.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyFour yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyNine:
+    Loc: 713.0:63.0:-91.0:715.0:65.0:-89.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyNine yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyOne:
+    Loc: 675.0:67.0:-79.0:677.0:69.0:-77.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyOne yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentySeven:
+    Loc: 703.0:64.0:-95.0:705.0:66.0:-93.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentySeven yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentySix:
+    Loc: 700.0:65.0:-90.0:702.0:67.0:-88.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentySix yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyThree:
+    Loc: 686.0:66.0:-78.0:688.0:68.0:-76.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyThree yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwentyTwo:
+    Loc: 681.0:67.0:-78.0:683.0:69.0:-76.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwentyTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentineParkourTwo:
+    Loc: 684.0:77.0:-73.0:686.0:79.0:-71.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineParkourTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineParkourCompleted 0
+  valentinePresentFinish:
+    Loc: 774.0:68.0:123.0:775.0:72.0:123.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentinePresentFinish yep
+    - asConsole! cmi usermeta [playerName] add valentinePresentCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Presents \n Finished?! Checking
+      ... ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentinePresentStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentinePresentCompleted +1
+    - check:%cmi_user_meta_valentinePresentOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentinePresentCompleted +1
+    - check:%cmi_user_meta_valentinePresentTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentinePresentCompleted +1
+    - check:%cmi_user_meta_valentinePresentThree%==yep! asConsole! cmi usermeta [playerName]
+      increment valentinePresentCompleted +1
+    - check:%cmi_user_meta_valentinePresentFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentinePresentCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentinePresentCompleted%==5! check:%cmi_user_meta_valentineQuestFour%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestFour%!=yep! msg! [playerName]
+      You haven't completed the Valentine Present Quest{#gray} (score counter has
+      been reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestFour%==yep! msg! [playerName]
+      You have already completed the Valentine Present Quest{#gray} (score counter
+      has been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Present Quest
+      Completed\n {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      4 of 8!
+    - if:check1! asConsole! cmi kit valentinegem4of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestFour yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentinePresentStart
+    - asConsole! cmi usermeta [playerName] remove valentinePresentOne
+    - asConsole! cmi usermeta [playerName] remove valentinePresentTwo
+    - asConsole! cmi usermeta [playerName] remove valentinePresentThree
+    - asConsole! cmi usermeta [playerName] remove valentinePresentFinish
+  valentinePresentOne:
+    Loc: 589.0:69.0:81.0:591.0:73.0:81.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentinePresentOne yep
+    - asConsole! cmi usermeta [playerName] add valentinePresentCompleted 0
+  valentinePresentStart:
+    Loc: 510.0:69.0:75.0:510.0:73.0:76.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentinePresentStart yep
+    - asConsole! cmi usermeta [playerName] add valentinePresentCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Present \n Started! Enter all big
+      presents'
+  valentinePresentThree:
+    Loc: 687.0:72.0:134.0:687.0:75.0:134.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentinePresentThree yep
+    - asConsole! cmi usermeta [playerName] add valentinePresentCompleted 0
+  valentinePresentTwo:
+    Loc: 695.0:71.0:38.0:697.0:75.0:38.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentinePresentTwo yep
+    - asConsole! cmi usermeta [playerName] add valentinePresentCompleted 0
+  valentineWishFinish:
+    Loc: 756.0:81.0:230.0:762.0:83.0:236.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 49
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineWishFinish yep
+    - asConsole! cmi usermeta [playerName] add valentineWishCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Wishing Well \n Finished?! Checking
+      ... ... ...'
+    - delay! 2
+    - check:%cmi_user_meta_valentineWishStart%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineWishCompleted +1
+    - check:%cmi_user_meta_valentineWishOne%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineWishCompleted +1
+    - check:%cmi_user_meta_valentineWishTwo%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineWishCompleted +1
+    - check:%cmi_user_meta_valentineWishFinish%==yep! asConsole! cmi usermeta [playerName]
+      increment valentineWishCompleted +1
+    - delay! 2
+    - statement:check1! check:%cmi_user_metaint_valentineWishCompleted%==4! check:%cmi_user_meta_valentineQuestSeven%!=yep!
+    - if:check1@! check:%cmi_user_meta_valentineQuestSeven%!=yep! msg! [playerName]
+      You haven't completed the Valentine Wishing Well Quest{#gray} (score counter
+      has been reset)
+    - if:check1@! check:%cmi_user_meta_valentineQuestSeven%==yep! msg! [playerName]
+      You have already completed the Valentine Wishing Well Quest{#gray} (score counter
+      has been reset)
+    - if:check1! msg! [playerName] %onemb_header%\n{#gold}&lValentine Wishing Well
+      Quest Completed\n {#gray}(score counter has been reset)\n%onemb_footer%
+    - if:check1! msg! [playerName] {#buttercup}Awesome! Let's give you the Quest Gem
+      7 of 8!
+    - if:check1! asConsole! cmi kit valentinegem7of8 [playerName] -s
+    - if:check1! asConsole! cmi usermeta [playerName] add valentineQuestSeven yep
+    - delay! 2
+    - asConsole! cmi usermeta [playerName] remove valentinewWishStart
+    - asConsole! cmi usermeta [playerName] remove valentinewWishOne
+    - asConsole! cmi usermeta [playerName] remove valentinewWishTwo
+    - asConsole! cmi usermeta [playerName] remove valentinewWishFinish
+  valentineWishOne:
+    Loc: 744.0:80.0:219.0:744.0:81.0:224.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineWishOne yep
+    - asConsole! cmi usermeta [playerName] add valentineWishCompleted 0
+  valentineWishStart:
+    Loc: 738.0:75.0:220.0:738.0:78.0:223.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineWishStart yep
+    - asConsole! cmi usermeta [playerName] add valentineWishCompleted 0
+    - 'asConsole! cmi titlemsg [playerName] Quest: Wishing Well \n Started! Make a
+      wish!'
+  valentineWishTwo:
+    Loc: 749.0:79.0:232.0:749.0:81.0:235.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - asConsole! cmi sound block_amethyst_cluster_step -p:2.0 -v:0.9 [playerName]
+      -s
+    - asConsole! cmi usermeta [playerName] add valentineWishTwo yep
+    - asConsole! cmi usermeta [playerName] add valentineWishCompleted 0

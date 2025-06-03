@@ -291,6 +291,10 @@ Alias:
   effect:
     Enabled: true
     Tab: true
+  # /cmi emojipicker $1-
+  emojipicker:
+    Enabled: true
+    Tab: true
   # /cmi enchant $1-
   enchant:
     Enabled: true

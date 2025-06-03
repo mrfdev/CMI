@@ -61,6 +61,8 @@ CustomAlias:
     Cmds:
     - asPlayer! event
     - asPlayer! mv tp easter
+    - 'msg! [playerName] Instead of the egghunt in /easter world, we have a Discord/Minecraft
+      event, check /discord''s #announcements channel'
     Tab: false
   walk:
     Cmds:
