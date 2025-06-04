@@ -67,7 +67,7 @@ info:
   WarmUp:
     canceled: '&eCommand was cancelled due to your movement'
     counter: '!actionbar!&6--> Wait &e[time] &6seconds <--'
-    DontMove: '!title!&6Don''t move!!subtitle!&7Wait &c[time] &7seconds'
+    DontMove: '!title!&6Teleporting!!subtitle!&7Wait &c[time] &7seconds'
     Boss:
       DontMove: '&4Don''t move for &7[autoTimeLeft] &4seconds!'
       WaitFor: '&4Wait for &7[autoTimeLeft] &4seconds!'
@@ -514,7 +514,7 @@ command:
   autorecharge:
     help:
       info: '&eToggle auto flight recharge'
-      args: (playerName) [exp/money/off] (-s)
+      args: (playerName) [exp/money/off/on] (-s)
     info:
       moneyState: '&eMoney recharge: [state]'
       expState: '&eExp recharge: [state]'
@@ -644,7 +644,7 @@ command:
         by bar name
       - /cmi bossbarmsg all -sec:5 - will count for 5 seconds from 0 to 5
       - /cmi bossbarmsg all -sec:-5 - will count for 5 seconds from 5 to 0
-      - '-cmd: will perform commands ether for single player if target is specific
+      - '-cmd: will perform commands either for single player if target is specific
         player or only once if its for everyone (all). This will not translated variables
         lie [playerName] if used with ''all'' variable. Use -pcmd: instead'
       - '-pcmd: will perform commands on each player if target is ''all'''
@@ -809,7 +809,7 @@ command:
   clear:
     help:
       info: '&eClear players inventory'
-      args: (playerName) (item(:amount)(;data)) (-s) (+clearType)
+      args: (playerName) (item(:amount)(;data)) (-s) (+clearType) -exact
       explanation:
       - 'Possible clearTypes: quickbar, inventory, partinventory, weapons, armorslots,
         tools, armors, mainhand, offhand'
@@ -861,11 +861,11 @@ command:
     info:
       hovers:
       - '[color]⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛'
-      - '&f#[hex]'
-      - '&7Closest match: '
+      - '&f[hex]'
+      - '&7Closest named match: '
       - '[colorHex] - [colorName]'
       - '[closeColor]⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛'
-      - Shift+Click
+      - '&fShift+Click'
   colors:
     help:
       info: '&eShows all possible colors'
@@ -889,7 +889,7 @@ command:
       - /cmi compass Zhax LT_Craft 0 0 -s
       - /cmi compass reset Zhax
     info:
-      wrongworld: '&cYour defined world dont exist!'
+      wrongworld: '&cYour defined world don''t exist!'
       feedback: '&eYou have set &3[playerDisplayName] &ecompass arrow to &3[sourceDisplayName]
         &elocation.'
       feedbackCustom: '&eYou have set &3[playerDisplayName] &ecompass arrow to &3[x]
@@ -1157,7 +1157,8 @@ command:
   effect:
     help:
       info: '&eAdds potion effect to player. use clear to remove all effects'
-      args: '[playername/all] [effect/clear] (duration) (multiplier) (-s) (-visual)'
+      args: '[playername/all] [effect/clear] (duration/infinite) (multiplier) (-s)
+        (-visual)'
       explanation:
       - -visual will add visible bubbles and icon on top right corner
       - 'Examples:'
@@ -1192,11 +1193,11 @@ command:
       clear: '&eCleared enchantments from item for &3[playerDisplayName]'
       clearOne: '&eRemoved &3[enchant] &eenchantment from item for &3[playerDisplayName]'
       noitem: '&cNot holding any item in hand.'
-      invalidEnchant: '&cYou dont have permission to enchant item with invalid enchantment'
+      invalidEnchant: '&cYou don''t have permission to enchant item with invalid enchantment'
       clearedInvalid: '&eRemoved &6[amount] &einvalid enchantments from item'
       inccorectId: '&eIncorrect enchant name or id.'
       wrongItem: '&eWrong item in your hand'
-      enchantlimit: '&cYou dont have access to this enchantment'
+      enchantlimit: '&cYou don''t have access to this enchantment'
       levellimit: '&cLevel is too high, max allowed is &e[level].'
       conflict: '&cConflicting enchantment &7[enchant1] &c-> &7[enchant2]'
       possible: '&ePossible enchants: '
@@ -1221,7 +1222,7 @@ command:
   entityinfo:
     help:
       info: '&eCheck entity information'
-      args: ''
+      args: (playername)
     info:
       type: '&eEntity Type: &6[type]'
       customName: '&eCustom name: &6[name]'
@@ -1238,11 +1239,11 @@ command:
   entitynbt:
     help:
       info: '&eCheck entity nbt information'
-      args: (-console)
+      args: (playername) (-console)
   exp:
     help:
       info: '&eSet players exp. Use L to set levels'
-      args: '[playerName] [add/set/take/clear] [amount][%rand/10-20%][1%[min-max]][playerName]]
+      args: '[playerName] [add/set/take/clear] [amount][%rand/10-20%][1%[min-max][[playerName]]]
         (-s)'
       explanation:
       - 'Example:'
@@ -1386,7 +1387,7 @@ command:
   gamerule:
     help:
       info: '&eManage gamerules'
-      args: ''
+      args: (world) (gamerule) (value)
     info:
       updated: '&eGame rule (&6[rule]&e) changed for &6[world] &eto &6[value]'
   generateworth:
@@ -1414,23 +1415,12 @@ command:
   give:
     help:
       info: '&eGive item to player'
-      args: (playerName) [itemname/hand] (amount/playerName) (-slot:[number])
+      args: (playerName) [itemdata/hand] (playerName) (-slot:[number]) (unstack) (-s)
       explanation:
-      - Name and lore supports placeholders
-      - 'Example: /give stone'
-      - /give Zrips stone 5 n Stonehenge
-      - /give stick e knockback:1
-      - /give diamondsword 3 unstack
-      - /give Zrips sponge l Got_item_on:_%date/YY/MM/dd-HH:mm:ss%
-      - /cmi give Zrips sponge 1 e Knockback:%rand/1-5%
-      - /cmi give Zrips sponge %rand/1-10%
-      - /cmi give Zrips sponge l line_one/nline_two
-      - /cmi give Zhax hand Zrips
-      - /give sponge a maxhealth:5:mainhand
-      - /give diamond_sword unbreakable
-      - /give mob_spawner:creeper
-      - /give minecraft:diamond_helmet 1 0 {ench:[{id:0,lvl:100},{id:2,lvl:100},{id:34,lvl:100}]}
-      - /give potion:speed-true-true
+      - |-
+        Example: /cmi give diamondsword;{#Gray}My_Uber_Sword;&2Goblin_Slayer!
+        {#pink}With_Love!;sharpness:3,durability:3;hideenchants
+      - <T>More information at www.zrips.net/cmi/commands/icwol/</T><URL>https://www.zrips.net/cmi/commands/icwol/</URL>
     info:
       feedback: '&6Giving &e[amount] &6of &e[itemname] &6(&e[customitemname]&6) to
         &e[playerDisplayName]'
@@ -1464,7 +1454,8 @@ command:
       args: (playerName) [true/false/color/gui]
       explanation:
       - 'Example: /glow Zrips red'
-      - 'Permissions: cmi.command.glow.[color] - allows to set particular glow color'
+      - 'Permissions: cmi.command.glow.color.[color] - allows to set particular glow
+        color'
     info:
       feedback: '&eYou have set [color]glow &eto &3[boolean]&e for &3[playerDisplayName]&e
         (&3[offon]&e).'
@@ -1757,7 +1748,7 @@ command:
       both: (Both)
       none: (None)
       addedNew: '&eAdded new block/entity for &6[name]'
-      dontExist: '&cInteractive command dont exist by this name'
+      dontExist: '&cInteractive command don''t exist by this name'
       exists: '&cInteractive command with this name already exists'
       blockExist: '&cThis block is already being used by &e[name]'
       entityExist: '&cThis entity is already being used by &e[name]'
@@ -1831,7 +1822,6 @@ command:
       - '[nick]'
       - '[group]'
       - '[title]'
-      - '[knownAs]'
       - '[onlineoffline]'
       - '[playtime]'
       newIp: '&fIP '
@@ -1987,7 +1977,7 @@ command:
         &efor: &6[reason]'
       banedSilent: '&7[&8Silent&7]&6[playerDisplayName] &egot ip banned by &6[senderDisplayName]
         &efor: &6[reason]'
-      replacer: ˣ
+      replacer: '*'
   ipbanlist:
     help:
       info: '&eBan ip list'
@@ -2002,7 +1992,7 @@ command:
   item:
     help:
       info: '&eGive item to yourself'
-      args: '[itemname] (amount)'
+      args: '[itemdata/hand] (-slot:[number]) (unstack) (-s)'
   itemcmdata:
     help:
       info: '&eCheck or modify items custom model data'
@@ -2041,8 +2031,8 @@ command:
       info: '&eChange items lore'
       args: (-p:[playerName]) [linenumber/*] [remove/insert/ new lore line]
     info:
-      feedback: '&eYou have changed lore line [line] to ''&r&5[loreLine]&e'' for &3[playerDisplayName]&e
-        (&3[offon]&e).'
+      feedback: '&eYou have changed lore line (&6[line]&e) to ''&r&5[loreLine]&e''
+        for &3[playerDisplayName]&e (&3[offon]&e).'
       noitem: '&cNot holding any item in hand.'
       removed: '&eItem lore line &6[line] &ewas removed for &3[playerDisplayName]&e
         (&3[offon]&e).'
@@ -2168,7 +2158,7 @@ command:
   kit:
     help:
       info: '&eGives predefined kit.'
-      args: '[kitName] (playerName) (-s) (-open) (-preview)'
+      args: '[kitName] (playerName) (-s) (-open) (-preview) (-c)'
       explanation:
       - '&ePermissions:'
       - '&6cmi.kit.[kitName] &e- allows to use particular kit'
@@ -2179,7 +2169,7 @@ command:
     info:
       noMoney: '&eNot enough money. Cost: &6[cost] &eyou have &6[balance]'
       noExp: '&eNot enough exp. Cost: &6[cost] &eyou have &6[balance]'
-      noCondition: '&eYou dont have special condition permission to use this kit:
+      noCondition: '&eYou don''t have special condition permission to use this kit:
         &6[condition]'
       oneTime: '&cThis is a one time use kit and you have already used it!'
       cantUseNow: '&cYou can''t use this kit for the next [time]'
@@ -2356,8 +2346,8 @@ command:
         of 25 dgrees and with power of 2.5
       - cmi launch Zrips d:east - will launch to east direction same angle you are
         looking
-      - cmi launch Zrips d:0 - will launch at 0 degrees direction (south) same angle
-        you are looking
+      - cmi launch Zrips d:0 - will launch at 0 degrees direction (south)
+      - cmi launch Zrips d:~180 - will launch backwards
       - cmi launch d:45 a:30 p:2 - will launch south-west at 30 degree angle with
         power of 2
       - cmi launch loc:150:120:123 - will launch player to target location
@@ -2494,7 +2484,7 @@ command:
   maxhp:
     help:
       info: '&eSet a player''s max hp'
-      args: set/add/take/clear [playerName] [amount] (-s)
+      args: '[set/add/take/clear] [playerName] [amount] (-s)'
     info:
       feedback: '&eYou have set &3[maxHp] &emax hp for &3[playerDisplayName]&e (&3[offon]&e).'
       targetfeedback: '&eYour max HP was set to &3[maxHp] &eby &3[senderDisplayName]&e.'
@@ -2598,7 +2588,7 @@ command:
   money:
     help:
       info: '&eManage money balance'
-      args: '[pay/give/take/set] [playerName/all/alloffline] [amount][%rand/1-1000%][1%[min-max]][playerName]]
+      args: '[pay/give/take/set] [playerName/all/alloffline/allonline] [amount][%rand/1-1000%][1%[min-max][[playerName]]]
         (-s)'
     info:
       newBalance: '&6[playerDisplayName] &enew balance: &6[money]'
@@ -2646,6 +2636,8 @@ command:
       explanation:
       - 'Examples: '
       - /cmi mute zrips 1m
+      - /cmi mute zrips +30s
+      - /cmi mute zrips -15m
       - /cmi mute zrips 1h
       - /cmi mute zrips 1h For swearing
     info:
@@ -2669,7 +2661,7 @@ command:
     help:
       info: '&eSet players name plate prefix, suffix or its color'
       args: (playerName) (-pref:[some_prefix]) (-suf:[some_suffix]) (-c:[colorCode])
-        (reset)
+        (reset) (-s)
       explanation:
       - Use _ to add space and __ to add underscore for placeholder and similar
     info:
@@ -2695,7 +2687,7 @@ command:
       changed: '&eNickName changed to &r[newNickName] &efrom &r[oldNickName]'
       changedTarget: '&eYour nickName changed to &r[newNickName] &eby &r[senderDisplayName]'
       reset: '&eNick name set to default one'
-      sameNick: '&cYou dont have permission to change into different nick. You can
+      sameNick: '&cYou don''t have permission to change into different nick. You can
         change only colors'
       blockedNick: '&cYou can''t use this nick name'
       blockedNickLength: '&eNick name is to long. Max &6[amount] &esymbols'
@@ -2734,7 +2726,7 @@ command:
       info: '&eModify personal options'
       args: (playerName) (option) (enable/disable/toggle/status) (-s)
       explanation:
-      - 'Posible actions: visibleHolograms, shiftSignEdit, totemBossBar, bassBarCompass,
+      - 'Possible actions: visibleHolograms, shiftSignEdit, totemBossBar, bossBarCompass,
         tagSound, chatSpy, cmdSpy, signSpy, acceptingPM, acceptingTPA, acceptingMoney,
         chatbubble'
     info:
@@ -2784,7 +2776,7 @@ command:
       info: '&eShows players ping'
       args: (playerName/message)
     info:
-      feedback: '&ePing: &6[ping]ms'
+      feedback: '&e[playerName] ping: &6[ping]ms'
       selffeedback: '&eYour ping is &6[ping]ms'
   placeholders:
     help:
@@ -2966,11 +2958,11 @@ command:
       requiredPlaceholderList: '[color][message]'
       requiredPlaceholderHover: '&e[color][current]&e/&6[needed]'
       requiredMcmmo: ' &eMcmmo: '
-      requiredMcmmoList: '&e[color][name] '
+      requiredMcmmoList: '&e[color][name]'
       requiredMcmmoListHover: ' &e[color][current]&e/&6[needed]'
       requiredMcmmoPower: Power
       requiredAurelium: ' &eAurelium: '
-      requiredAureliumList: '&e[color][name] '
+      requiredAureliumList: '&e[color][name]'
       requiredAureliumListHover: ' &e[color][current]&e/&6[needed]'
       requiredAuraSkills: ' &eAuraSkills: '
       requiredAuraSkillsList: '&e[color][name]'
@@ -3093,9 +3085,10 @@ command:
   repair:
     help:
       info: '&eRepair items'
-      args: '[hand/armor/all] (playerName)'
+      args: '[hand/offhand/armor/all] (playerName)'
       explanation:
       - cmi.command.repair.hand - allows a user to repair items in their hand
+      - cmi.command.repair.offhand - allows a user to repair items in their offhand
       - cmi.command.repair.armor - allows a user to repair items in armor slots
       - cmi.command.repair.all - allows a user to repair their whole inventory
       - cmi.command.repair.repairshare.bypass - allows a user to repair items without
@@ -3167,7 +3160,7 @@ command:
   ride:
     help:
       info: '&eRide target entity'
-      args: ''
+      args: list
       explanation:
       - ' cmi.command.ride.[entityType] - to have access in riding entity'
     info:
@@ -3241,7 +3234,7 @@ command:
   scale:
     help:
       info: '&eSet entities scale'
-      args: set/add/take/clear (playerName) [amount] (-s)
+      args: '[set/add/take/clear] (playerName) [amount] (-s)'
     info:
       feedback: '&eYou have set &3[scale] &e scale for &3[entityName]&e.'
       scale: '&eScale: &3[scale]'
@@ -3251,30 +3244,7 @@ command:
       info: '&eScans for items in current world'
       args: ''
       explanation:
-      - '&6SubCommands:'
-      - '&e- &6stats &e- show current scanning stats '
-      - '&e- &6pause &e- pause scanning '
-      - '- &6continue &e- continue scanning '
-      - '- &6stop &e- stop scanning '
-      - '- &6stopall &e- stops all active scans '
-      - '- &6speed [amount] &e- set current scan speed '
-      - '- &6autospeed [true/false] &e- set AutoSpeed turned off or on '
-      - '- &6messages [true/false] &e- set message output to off or on'
-      - 'Variables:'
-      - '&eid &6[id:data]'
-      - '&eq &6[minimum quantity]'
-      - '&er &6[range in chunks] &e- option to use &6g &einstead of number to scan
-        entire map'
-      - '&en &6[item name]'
-      - '&el &6[item lore]'
-      - '&eh &6uses info from item in hand'
-      - '&ee &6[enchantname]'
-      - '&eelvl &6[enchantminlevel]'
-      - '&eoversize'
-      - '&epurge - removed found items, this feature should be enabled in config file'
-      - 'Example:'
-      - /scan id 52 r 30
-      - scan id diamond_block r g q 32
+      - More information at https://www.zrips.net/cmi/extra/scan/
     info:
       baseListEntity: '&f[number]. &7[location] &6[type] &7[amount]'
       baseListBlock: '&f[number]. &7[location] &e[type] &7[amount]'
@@ -3314,7 +3284,7 @@ command:
   schedule:
     help:
       info: '&eTrigger schedule'
-      args: '[scheduleName]'
+      args: '[scheduleName] (-updatetimer)'
   se:
     help:
       info: '&eChanges sign text line.'
@@ -3323,31 +3293,17 @@ command:
       - Use \n for additional line
   search:
     help:
-      info: '&eSearch items/enchants/fly/maxhp/gm/oversize modes and other stuff from
-        all users'
+      info: '&eSearch from all players of specific items or stats'
       args: ''
       explanation:
-      - '&eid &6[id:data] '
-      - '&ename &6[some_custom_itemname] '
-      - '&elore &6[some_custom_lore] '
-      - '&eenchant &6[lowest enchant level] '
-      - '&epotion &6[lowest custom potion effect level] '
-      - '&efly &6[true or false] '
-      - '&egm &6[0/1/2/3 or survival/creative/adventure/spectator] '
-      - '&emaxhp &6[lowest hp player have] '
-      - '&egod &6[true/false]'
-      - '&eoversize'
-      - 'Example:'
-      - /search gm 1
-      - /search id 52
-      - /search lore Uber_lore
+      - More information at https://www.zrips.net/cmi/extra/search/
     info:
       baseList: '&f[number]. &7[location] &6[playerName][amount]'
       regularList: '&f[number]. &e[playerName][amount]'
       amount: ' &7(&f[totalcount]&7)'
       found: '&eFound &3[amount] &efrom &3[files] &echecked users'
       noresults: '&eNothing found by your criteria'
-      noactive: '&eNo active or existing scan results'
+      noactive: '&eNo active or existing search results'
       active: '&eSearch is already active, wait until its done or cancel it'
       searching: '&eSearching, this can take some time to finish'
       progress: '&7Found &f[totalFound] &7out of &f[checked] &7/ &f[from] &7Speed:
@@ -3356,8 +3312,8 @@ command:
         ender: '&3Ender'
         enderS: '&3Ender->ShulkerBox'
         enderB: '&3Ender->Bundle'
-        inv: '&eInv'
-        invS: '&eShulkerBox'
+        inv: '&eInventory'
+        invS: '&eInventory->ShulkerBox'
         invB: '&eInventory->Bundle'
         PlayerVault: '&ePlayerVault'
   seen:
@@ -3405,8 +3361,8 @@ command:
       info: '&eShow server time'
       args: ''
     info:
-      time: '&eServer time: [time]'
-      format: E, dd MMMM, YYYY @ HH:mm:ss (a)
+      time: '&eServer time: &6[time]'
+      format: dd/MM/YYYY HH:mm:ss
       timeZone: '&eTime zone name: &6[name]'
       timeZoneId: '&eTime zone id: &6[id]'
       timeZoneOffset: '&eTime zone offset: &6[offset]'
@@ -3570,7 +3526,7 @@ command:
   smite:
     help:
       info: '&eStrike ground or player with lightning'
-      args: (playerName/location) (-s)
+      args: (playerName/location) (-safe) (-s)
     info:
       gotSmited: '&eYou got smited!'
       targetSmited: '&eSmiting target!'
@@ -3876,7 +3832,7 @@ command:
   tablistupdate:
     help:
       info: '&eForce tablist update for all or specific player'
-      args: (playerName)
+      args: (playerName) (-s)
     info:
       updated: '&eTablist updated'
   tempban:
@@ -3996,7 +3952,7 @@ command:
   titlemsg:
     help:
       info: '&eSends title message to player'
-      args: '[playerName/all] [title \n subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks])'
+      args: "[playerName/all] [title \n subtitle] (-in:[ticks]) (-out:[ticks]) (-keep:[ticks])"
     info:
       message: '&f[message]'
   toast:
@@ -4102,7 +4058,7 @@ command:
   tphere:
     help:
       info: '&eTeleports player to your location'
-      args: '[playerName] (playerName)'
+      args: '[playerName] (playerName) (-s)'
     info:
       feedback:
         offline: '&eYou have set ([world],[x],[y],[z]) spawn location for &3[playerDisplayName]&e
@@ -4163,7 +4119,7 @@ command:
   unbreakable:
     help:
       info: '&eMakes item unbreakable'
-      args: (playerName) (true/false)
+      args: (playerName) (true/false) (-o)
     info:
       feedback: '&eYou made item [state] &efor &3[playerDisplayName]&e (&3[offon]&e).'
       breakable: '&6breakable'
@@ -4245,7 +4201,7 @@ command:
   vanishedit:
     help:
       info: '&eEdit vanish mode for player'
-      args: (playerName)
+      args: (playerName) (action) (true/false)
     info:
       isVanished: '&eVanished'
       damageToEntity: '&eCan deal damage to others'
@@ -4331,7 +4287,7 @@ command:
       ownLine: '&2[place]. &2[playerDisplayName]: &2[votes]'
   walkspeed:
     help:
-      info: '&eSet players walk speed from 0 to 10'
+      info: '&eSet players walk speed from 0 to 5'
       args: (playerName) [amount] (-s)
     info:
       feedback: '&eYou have set &3[amount]&e walk speed for &3[playerDisplayName]&e
