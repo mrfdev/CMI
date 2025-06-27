@@ -1636,6 +1636,7 @@ command:
       shadow: '&7Text shadow: &6[state]'
       fadeIn: '&7Fade in animation: &6[state]'
       textAlpha: '&7Text transparency: &6[alpha]'
+      textWidth: '&7Text width: &6[width]'
       bgAlpha: '&7Background transparency: &6[alpha]'
       bgColor: '&7Background color: &6[color]'
       scaleWidth: '&7Scale width: &6[scale]'
@@ -3251,6 +3252,7 @@ command:
       pause: '&eScanning paused, to continue use &6/cmi scan continue'
       resume: '&eScanning resumed'
       noInformation: '&eThere is no information'
+      nothing: '&cProvided criteria for scan are incorrect'
       progress: '&7Found: &f[totalFound] &7Chunks to check: &f[checked]&7/&f[from]
         &7Skipped: &f[skipped] &7Speed: &f[speed]'
       loading: '&7Loading data...'
@@ -3303,6 +3305,7 @@ command:
       amount: ' &7(&f[totalcount]&7)'
       found: '&eFound &3[amount] &efrom &3[files] &echecked users'
       noresults: '&eNothing found by your criteria'
+      nothing: '&cProvided criteria for search are incorrect'
       noactive: '&eNo active or existing search results'
       active: '&eSearch is already active, wait until its done or cancel it'
       searching: '&eSearching, this can take some time to finish'
@@ -3698,6 +3701,7 @@ command:
         PIG_ONE_CM: Pig travel
         HORSE_ONE_CM: Horse travel
         AVIATE_ONE_CM: Elytra travel
+        HAPPY_GHAST_ONE_CM: Ghast travel
         JUMP: Jump
         DAMAGE_DEALT: Damage dealt
         DAMAGE_TAKEN: Damage taken
