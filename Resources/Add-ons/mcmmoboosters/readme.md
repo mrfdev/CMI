@@ -41,4 +41,4 @@ Oh gosh, I dunno, MIT or something? I mean, I wrote this project, I'd like to ge
 - figure out a better way to display a bunch of options once we expand and add variety
 
 ## Version
-mcMMO Boosters, version 0.0.3, build 005, July 5th, 2025. 
+mcMMO Boosters, version 0.0.4, build 006, July 6th, 2025. 

@@ -4,14 +4,15 @@
 &lmcMMO Boosters Menu:
 {#gray}(hover and click - commands are instant!)
 {#gray}---------------------
-<T>&a[x2, 25mins]</T><H>&7Booster multiplier: &a2&7, for &e25 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 2 25</CC>
-<T>&b[x3, 20mins]</T><H>&7Booster multiplier: &b3&7, for &e20 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 3 20</CC>
-<T>&3[x4, 15mins]</T><H>&7Booster multiplier: &34&7, for &e15 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 4 15</CC>
-<T>&9[x5, 12mins]</T><H>&7Booster multiplier: &95&7, for &e12 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 5 12</CC>
-<T>&e[x6, 9mins]</T><H>&7Booster multiplier: &e6&7, for &e9 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 6 9</CC>
-<T>&c[x7, 7mins]</T><H>&7Booster multiplier: &c7&7, for &e7 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 7 7</CC>
-<T>&d[x8, 5mins]</T><H>&7Booster multiplier: &d8&7, for &e5 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 8 5</CC>
-<T>&6[x9, 3mins]</T><H>&7Booster multiplier: &69&7, for &e3 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 9 3</CC>
+<T>x2 </T><Next><T>&a[15m] </T><H>&7Booster multiplier: &a2&7, for &e15 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 2 15</CC><Next><T>&a[30m] </T><H>&7Booster multiplier: &a2&7, for &e30 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 2 30</CC><Next><T>&a[45m] </T><H>&7Booster multiplier: &a2&7, for &e45 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 2 45</CC><Next><T>&a[60m] </T><H>&7Booster multiplier: &a2&7, for &e60 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 2 60</CC><Next>
+<T>x3 </T><Next><T>&b[10m] </T><H>&7Booster multiplier: &b3&7, for &e10 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 3 10</CC><Next><T>&b[20m] </T><H>&7Booster multiplier: &b3&7, for &e20 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 3 20</CC><Next><T>&b[30m] </T><H>&7Booster multiplier: &b3&7, for &e30 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 3 30</CC><Next>
+<T>x4 </T><Next><T>&3[7m] </T><H>&7Booster multiplier: &34&7, for &e7 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 4 7</CC><Next><T>&3[15m] </T><H>&7Booster multiplier: &34&7, for &e15 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 4 15</CC><Next><T>&3[25m] </T><H>&7Booster multiplier: &34&7, for &e25 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 4 25</CC><Next>
+<T>x5 </T><Next><T>&9[5m] </T><H>&7Booster multiplier: &95&7, for &e5 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 5 5</CC><Next><T>&9[12m] </T><H>&7Booster multiplier: &95&7, for &e12 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 5 12</CC><Next><T>&9[20m] </T><H>&7Booster multiplier: &95&7, for &e20 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 5 20</CC><Next>
+<T>x6 </T><Next><T>&e[4m] </T><H>&7Booster multiplier: &e6&7, for &e4 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 6 4</CC><Next><T>&e[9m] </T><H>&7Booster multiplier: &e6&7, for &e9 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 6 9</CC><Next><T>&e[15m] </T><H>&7Booster multiplier: &e6&7, for &e15 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 6 15</CC><Next>
+<T>x7 </T><Next><T>&c[3m] </T><H>&7Booster multiplier: &c7&7, for &e3 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 7 3</CC><Next><T>&c[7m] </T><H>&7Booster multiplier: &c7&7, for &e7 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 7 7</CC><Next><T>&c[12m] </T><H>&7Booster multiplier: &c7&7, for &e12 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 7 12</CC><Next>
+<T>x8 </T><Next><T>&d[2m] </T><H>&7Booster multiplier: &d8&7, for &e2 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 8 2</CC><Next><T>&d[5m] </T><H>&7Booster multiplier: &d8&7, for &e5 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 8 5</CC><Next><T>&d[8m] </T><H>&7Booster multiplier: &d8&7, for &e8 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 8 8</CC><Next>
+<T>x9 </T><Next><T>&6[1m] </T><H>&7Booster multiplier: &69&7, for &e1 minute&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 9 1</CC><Next><T>&6[3m] </T><H>&7Booster multiplier: &69&7, for &e3 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 9 3</CC><Next><T>&6[9m] </T><H>&7Booster multiplier: &69&7, for &e9 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 9 9</CC>
+
 &r 
 <NextPage>
 <pageLabel:{#gold}Help & Options>
@@ -23,5 +24,5 @@ You can hover the mouse over the options to get a bit more detail of that partic
 Please note that clicking will instantly start and announce the booster to all the players. These are global boosters. Be mindful, as the chat might be moving up due to ingame activity.
 
 Options:
-<T>&c&lForcefully Turn Off mcMMO Boosters</T><H>&7Click to turn off any active multipliers</H><CC>xprate reset</CC>
+<T>&c&lForcefully Turn Off mcMMO Boosters </T><H>&7Click to turn off any active multipliers</H><CC>xprate reset</CC>
  &r
