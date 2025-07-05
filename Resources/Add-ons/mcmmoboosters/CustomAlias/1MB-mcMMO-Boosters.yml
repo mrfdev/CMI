@@ -1,0 +1,8 @@
+CustomAlias:
+  mcmmo boosters:
+    Cmds:
+    - asConsole! cmi ctext mcmmo-boosters [playerName]
+    Perm: true
+  mcmmo -booster:
+    Cmds: []
+    Perm: true
