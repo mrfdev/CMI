@@ -1,43 +1,126 @@
 # mcMMO Boosters
-A 1MoreBlock.com Minecraft server add-on for CMI and mcMMO that helps staff with the appropriate permissions to easily start a temporary MMO booster from a clickable in-game chat menu. This way you as server owner can be selective who can start these boosters, and which boosters and for what time. Instead of all the staff having access to xprate and abusing their powers, etc. This is great for events, spontanious rewards for players, etc.
 
-## /mcmmo boosters
-<img width="669" alt="mcmmo-boosters" src="https://github.com/user-attachments/assets/31a4b315-a576-4299-ae98-c743bde02914" />
+An add-on for the 1MoreBlock.com Minecraft server that lets staff with specific permissions start temporary mcMMO boosters from a clickable in-game chat menu. This makes it easy for server owners to control who can start boosters, which boosters are available, and their duration—great for events or spontaneous rewards, while preventing potential abuse of the booster system.
 
-## installation instructions
-**LuckPerms:**
-- Nobody, including staff, should run /mcMMO -booster <multiplier> <timeInMinutes>, negate the permission from everybody. And maybe as a precaution, make sure nobody can use the /mcMMO boosters command either.
-```
+---
+
+## Features
+
+* In-game chat menu for starting mcMMO boosters
+* Fine-grained permission control using LuckPerms
+* Prevents abuse by restricting access to dangerous booster commands
+* Easy installation and configuration
+* Designed for events, special rewards, and controlled booster activations
+
+---
+
+## Requirements
+
+* Minecraft 1.21.x (or compatible)
+* [CMI](https://www.zrips.net/cmi/)
+* [mcMMO](https://www.spigotmc.org/resources/64348/)
+* [LuckPerms](https://luckperms.net/)
+
+---
+
+## Quick Start (TL;DR)
+
+1. Place `mcmmo-boosters.txt` in `~/plugins/CMI/CustomText/`
+2. Place `1MB-mcMMO-Boosters.yml` in `~/plugins/CMI/CustomAlias/`
+3. Set up LuckPerms permissions as described below
+4. `/cmi reload` and you’re ready!
+
+---
+
+## Installation & Permissions
+
+### 1. Restrict default access to boosters
+
+No staff or player should have access to `/mcMMO -booster <multiplier> <timeInMinutes>`, or the main boosters command, by default. Deny these permissions for all groups/users as a precaution:
+
+```bash
 lp group default permission set cmi.customalias.mcmmo-booster false
 lp group default permission set cmi.customalias.mcmmoboosters false
 ```
-- Then, only give selective group(s) (or user(s)) permission to use the new /mcMMO boosters command: (Yes, do NOT give the mcmmo-booster one, consider it an internal command)
-```
+
+### 2. Grant permission to trusted users/groups
+
+Allow only trusted staff or specific groups/users to use the boosters menu:
+
+```bash
 lp group 1mb_admin permission set cmi.customalias.mcmmoboosters true
-```
-- Or, per player
-```
+# Or per user:
 lp user mrfloris permission set cmi.customalias.mcmmoboosters true
 ```
 
-**CMI**
-- Put the mcmmo-boosters.txt file in the `~/plugins/CMI/CustomText/` directory,
-- And put the 1MB-mcMMO-Boosters.yml file in the `~/plugins/CMI/CustomAlias/` directory,
+### 3. Place Files
 
-You can now run `/cmi reload` and use the new commands
+* Copy `mcmmo-boosters.txt` to `~/plugins/CMI/CustomText/`
+* Copy `1MB-mcMMO-Boosters.yml` to `~/plugins/CMI/CustomAlias/`
+* Reload CMI with `/cmi reload`
 
-## New command: /mcMMO Boosters
+---
 
-Gives a menu with a selection of suggested multipliers with a time. When clicked, it will override whatever mcMMO booster is or isn't running, start a new one using the internal command /mcMMO -booster <multiplier> <time> and triggers a schedule to automatically turn off the booster later. 
+## Usage
 
-## Credit
-Thank you Nossr and Zrips for making mcMMO and CMI, and I like to thank myself, because I made this project. Yay. :p
+Use the `/mcMMO boosters` command (by alias or direct command, depending on setup). This will open an in-game menu showing a selection of recommended multipliers and durations. Clicking a button:
+
+* Instantly overrides any current mcMMO booster
+* Starts a new booster via the internal `/mcMMO -booster <multiplier> <time>` command
+* Triggers a schedule to automatically turn off the booster after the set time
+
+This allows for safe, transparent, and staff-controlled booster activation without risk of command abuse.
+
+![mcMMO Boosters Menu](https://github.com/user-attachments/assets/31a4b315-a576-4299-ae98-c743bde02914)
+
+---
+
+## Troubleshooting / FAQ
+
+**Q:** The command says "no permission"?
+
+* Check that the LuckPerms node `cmi.customalias.mcmmoboosters` is set for your group or user.
+
+**Q:** The menu does not appear or commands fail?
+
+* Double-check that the required `.txt` and `.yml` files are in the correct directories.
+* Use `/cmi reload` after making changes.
+
+**Q:** Can I add or change boosters?
+
+* Edit `1MB-mcMMO-Boosters.yml` to adjust multipliers, times, or menu layout to fit your server needs.
+
+---
+
+## Support, Suggestions, Bugs
+
+* Found an issue? Feel free to open a [new issue]<https://github.com/mrfdev/CMI/issues>.
+
+---
+
+## Credits
+
+* **Nossr** – Creator of mcMMO
+* **Zrips** – Creator of CMI
+* **@mrfloris** (1MoreBlock.com) – Project author and maintainer
+* And thanks to all contributors!
+
+---
 
 ## Contributions
-You're free to clone and use this for your own server, this is made for myself to work on my server first. If you want to share your improvements, feel free to clone/PR and I will review your changes and include you this section of the readme.md file. 
+
+This add-on was developed for use on 1MoreBlock.com, but is open to the community. You are welcome to fork, clone, or submit pull requests. If you contribute significant improvements, you will be credited in this section!
+
+---
 
 ## License
-Oh gosh, I dunno, MIT or something? I mean, I wrote this project, I'd like to get credit for it. But you're free to use it and make changes, I dunno. Credit suggestion: @mrfloris Original source <https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/mcmmoboosters>
+
+MIT License. See [LICENSE](./LICENSE). You are free to use, modify, and share this project. Please provide attribution to @mrfloris and link to the original source:
+
+[https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/mcmmoboosters](https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/mcmmoboosters)
+
+---
 
 ## Version
-mcMMO Boosters, version 0.1.1, build 008, July 6th, 2025. 
+
+mcMMO Boosters, version 0.1.2, build 009, July 6th, 2025.
