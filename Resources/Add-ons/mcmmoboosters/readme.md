@@ -37,8 +37,8 @@ Thank you Nossr and Zrips for making mcMMO and CMI, and I like to thank myself, 
 You're free to clone and use this for your own server, this is made for myself to work on my server first. If you want to share your improvements, feel free to clone/PR and I will review your changes and include you this section of the readme.md file. 
 
 ## License
-Oh gosh, I dunno, MIT or something? I mean, I wrote this project, I'd like to get credit for it. But you're free to use it and make changes, I dunno. 
+Oh gosh, I dunno, MIT or something? I mean, I wrote this project, I'd like to get credit for it. But you're free to use it and make changes, I dunno. Credit suggestion: @mrfloris Original source <https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/mcmmoboosters>
 
 ## Version
-mcMMO Boosters, version 0.0.1, build 001, July 5th, 2025. 
+mcMMO Boosters, version 0.0.1, build 002, July 5th, 2025. 
 

@@ -1,0 +1,21 @@
+<AutoPage><NoAutoAlias><ReqPermission>
+
+{#gray}---------------------
+
+&lmcMMO Boosters Menu:
+{#gray}(Booster: amount, time: length, hover over menu and click once)
+
+{#gray}---------------------
+
+<T>&a[x2, 25mins]</T><H>&7Booster multiplier: &a2&7, for &e25 minutes&7\n&bClick to activate</H><CC>mcmmo booster 2 25</CC>
+<T>&b[x3, 20mins]</T><H>&7Booster multiplier: &b3&7, for &e20 minutes&7\n&bClick to activate</H><CC>mcmmo booster 3 20</CC>
+<T>&3[x4, 15mins]</T><H>&7Booster multiplier: &34&7, for &e15 minutes&7\n&bClick to activate</H><CC>mcmmo booster 4 15</CC>
+<T>&9[x5, 12mins]</T><H>&7Booster multiplier: &95&7, for &e12 minutes&7\n&bClick to activate</H><CC>mcmmo booster 5 12</CC>
+<T>&e[x6, 9mins]</T><H>&7Booster multiplier: &e6&7, for &e9 minutes&7\n&bClick to activate</H><CC>mcmmo booster 6 9</CC>
+<T>&c[x7, 7mins]</T><H>&7Booster multiplier: &c7&7, for &e7 minutes&7\n&bClick to activate</H><CC>mcmmo booster 7 7</CC>
+<T>&d[x8, 5mins]</T><H>&7Booster multiplier: &d8&7, for &e5 minutes&7\n&bClick to activate</H><CC>mcmmo booster 8 5</CC>
+<T>&6[x9, 3mins]</T><H>&7Booster multiplier: &69&7, for &e3 minutes&7\n&bClick to activate</H><CC>mcmmo booster 9 3</CC>
+
+{#gray}---------------------
+
+<T>&c&lForcefully Turn Off mcMMO Boosters</T><H>&7Click to turn off any active multipliers</H><CC>xprate reset</CC>
