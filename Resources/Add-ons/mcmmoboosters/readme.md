@@ -36,9 +36,5 @@ You're free to clone and use this for your own server, this is made for myself t
 ## License
 Oh gosh, I dunno, MIT or something? I mean, I wrote this project, I'd like to get credit for it. But you're free to use it and make changes, I dunno. Credit suggestion: @mrfloris Original source <https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/mcmmoboosters>
 
-## TODO
-- change legacy colors to fancy soft hex colors from cmi
-- figure out a better way to display a bunch of options once we expand and add variety
-
 ## Version
-mcMMO Boosters, version 0.0.4, build 006, July 6th, 2025. 
+mcMMO Boosters, version 0.1.0, build 007, July 6th, 2025. 
