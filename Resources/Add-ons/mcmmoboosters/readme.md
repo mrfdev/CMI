@@ -27,9 +27,6 @@ You can now run `/cmi reload` and use the new commands
 
 Gives a menu with a selection of suggested multipliers with a time. When clicked, it will override whatever mcMMO booster is or isn't running, start a new one using the internal command /mcMMO -booster <multiplier> <time> and triggers a schedule to automatically turn off the booster later. 
 
-## TODO
-write scheduler installation instructions
-
 ## Credit
 Thank you Nossr and Zrips for making mcMMO and CMI, and I like to thank myself, because I made this project. Yay. :p
 
@@ -39,6 +36,9 @@ You're free to clone and use this for your own server, this is made for myself t
 ## License
 Oh gosh, I dunno, MIT or something? I mean, I wrote this project, I'd like to get credit for it. But you're free to use it and make changes, I dunno. Credit suggestion: @mrfloris Original source <https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/mcmmoboosters>
 
-## Version
-mcMMO Boosters, version 0.0.2, build 003, July 5th, 2025. 
+## TODO
+- change legacy colors to fancy soft hex colors from cmi
+- figure out a better way to display a bunch of options once we expand and add variety
 
+## Version
+mcMMO Boosters, version 0.0.3, build 005, July 5th, 2025. 
