@@ -1,7 +1,8 @@
 <AutoPage><NoAutoAlias><ReqPermission>
- &r
+<pageLabel:{#gold}Select a Booster>
+&r 
 &lmcMMO Boosters Menu:
-{#gray}(Booster: amount, time: length, hover over menu and click once)
+{#gray}(hover and click - commands are instant!)
 {#gray}---------------------
 <T>&a[x2, 25mins]</T><H>&7Booster multiplier: &a2&7, for &e25 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 2 25</CC>
 <T>&b[x3, 20mins]</T><H>&7Booster multiplier: &b3&7, for &e20 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 3 20</CC>
@@ -11,6 +12,16 @@
 <T>&c[x7, 7mins]</T><H>&7Booster multiplier: &c7&7, for &e7 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 7 7</CC>
 <T>&d[x8, 5mins]</T><H>&7Booster multiplier: &d8&7, for &e5 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 8 5</CC>
 <T>&6[x9, 3mins]</T><H>&7Booster multiplier: &69&7, for &e3 minutes&7\n&bClick to activate</H><CC>mcmmo -booster [playerName] 9 3</CC>
-{#gray}---------------------
+&r 
+<NextPage>
+<pageLabel:{#gold}Help & Options>
+info:
+Synopsis: /mcMMO boosters
+The booster amount is the mcMMO Multiplier for the booster.
+The booster time is the lenght in minutes, before it automatically stops
+You can hover the mouse over the options to get a bit more detail of that particular booster. 
+Please note that clicking will instantly start and announce the booster to all the players. These are global boosters. Be mindful, as the chat might be moving up due to ingame activity.
+
+Options:
 <T>&c&lForcefully Turn Off mcMMO Boosters</T><H>&7Click to turn off any active multipliers</H><CC>xprate reset</CC>
  &r
