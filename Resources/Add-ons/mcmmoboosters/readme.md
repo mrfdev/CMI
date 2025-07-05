@@ -121,6 +121,17 @@ MIT License. See [LICENSE](./LICENSE). You are free to use, modify, and share th
 
 ---
 
+## TODO
+
+- add -confirm to click on in case the chat moved (you've selected x for y minutes, click to start!), this way you can click on another one and confirm that one
+- add white space around the red notice msg so it stands out more
+- report bug for xprate x true/false, where false still acts like true
+- add a sound for start, stop to the -booster command
+- see if there's a way to run a global cooldown, so we stop and start another one, but not override by accidentally clicking, and we can use the cooldown to get an idea of how long it lasts?
+- see if there's a way to add a boosbar that we update with time remaining (through cmi)
+
+---
+
 ## Version
 
-mcMMO Boosters, version 0.1.2, build 009, July 6th, 2025.
+mcMMO Boosters, version 0.1.2, build 010, July 6th, 2025.
