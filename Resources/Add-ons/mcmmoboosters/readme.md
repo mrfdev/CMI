@@ -1,6 +1,9 @@
 # mcMMO Boosters
 A 1MoreBlock.com Minecraft server add-on for CMI and mcMMO that helps staff with the appropriate permissions to easily start a temporary MMO booster from a clickable in-game chat menu. This way you as server owner can be selective who can start these boosters, and which boosters and for what time. Instead of all the staff having access to xprate and abusing their powers, etc. This is great for events, spontanious rewards for players, etc.
 
+## /mcmmo boosters
+<img width="669" alt="mcmmo-boosters" src="https://github.com/user-attachments/assets/31a4b315-a576-4299-ae98-c743bde02914" />
+
 ## installation instructions
 **LuckPerms:**
 - Nobody, including staff, should run /mcMMO -booster <multiplier> <timeInMinutes>, negate the permission from everybody. And maybe as a precaution, make sure nobody can use the /mcMMO boosters command either.
