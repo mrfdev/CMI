@@ -134,4 +134,4 @@ MIT License. See [LICENSE](./LICENSE). You are free to use, modify, and share th
 
 ## Version
 
-mcMMO Boosters, version 0.1.2, build 010, July 6th, 2025.
+mcMMO Boosters, version 0.1.3, build 011, July 6th, 2025.
