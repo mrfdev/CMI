@@ -1,17 +1,21 @@
 merielmuseum:
   Location: wild;-2057.39;41.0;2851.5;-91.05;4.64
-  Page: 7
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxSkksyo4vKMoszk0sAgoyM7Am55fmlTAwMDAyAADnRaAIQgAAAA==
 BlueRoseMarkison:
   Location: general;-6001.39;66.0;-1601.35;270.01;1.71
   HideFromList: true
   Page: 6
-  Item:
-    v: 4189
-    type: BLUE_ORCHID
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSsopTY3PL0rOyExhZmBNzi/NK2FgYGBkAAABaX2ZPgAAAA==
 vanillabuilds:
   Location: general;12432.28;68.0;1518.33;-272.26;11.25
-  Page: 4
+  Slots: 20
+  Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxysnMTY0vLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAAACuKdFRQAAAA==
 MTOLYMPUS:
   Location: general;-301.27;140.5;213.13;-210.16;36.59
   HideFromList: true
@@ -20,670 +24,577 @@ MTOLYMPUS:
 uwu:
   Location: uwu;195.27;82.0;-206.95;-193.58;10.04
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: CAMPFIRE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxSk7MLUjLLEplZmBNzi/NK2FgYGBkAADqFsjPOwAAAA==
 husk:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
+  Slots: 1
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxKkpNiS9OzEthZmBNzi/NK2FgYGBkAAAn0BUsOwAAAA==
 teamup:
   Location: wild;-11018.5;66.0;-10841.5;0.32;13.17
+  Slots: 24
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: COOKIE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxKi4oKk1OjS/ISczLLmZmYE3OL80rYWBgYGQAANQuoAlAAAAA
 batcave:
   Location: general;-2807.75;105.0;6467.9;-94.55;33.27
+  Slots: 2
   Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBMQqAMAwF0K9FELu4exNnz+AmEpoIGUxKG+/vewuQkA8KOqV1dQPWa8aojO1Vk9Loib26Wgjf3LT2cJOEqfhnAWDAD9OwBthEAAAA
 fr33:
   Location: general;7593.63;109.0;11796.52;-226.04;-4.85
-  Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxyk/Mji/Pz09hZmBNzi/NK2FgYGBkAACDOyMoOwAAAA==
 drowned:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
+  Slots: 2
   Page: 3
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Drowned","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 04049c90-d3e9-4621-9caf-0000aaa15967
-        properties:
-        - name: textures
-          value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0=
-  OffItem:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Drowned","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 04049c90-d3e9-4621-9caf-0000aaa15967
-        properties:
-        - name: textures
-          value: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNmN2NjZjYxZGJjM2Y5ZmU5YTYzMzNjZGUwYzBlMTQzOTllYjJlZWE3MWQzNGNmMjIzYjNhY2UyMjA1MSJ9fX0=
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxKinKTEnNK2FmYE3OL80rYWBgYGQAAHxsHiA6AAAA
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/02QzU7bQBSFLyVIrtm0iz5AZ52FSZRUROqCljbYwkaB/I0RQuPxGNudn2g8BmzEM5QHYMO2m/Zd+hR9iw4sQpb33O8c6RwXYBt2D4khc6arQkmAdxcOvClS+CAKyagmmRmtOGmYvswZSbdhh6paGgDYcsGlSqyUZNJULrzfMGiVFZztvgQBdDqdx4e//75/fPwN8OsJX70F1yIrpk3BrNNmOdCRRDBwDLs1tWaVAzvXhNcM/rAm8OJl7qXLgNPGH9p7eubxE79cffLlvEm++kNf2P/RwfC42d9gB4YsBhz3gzyWkzoRc++4f8rZ0ekeFbNr3EYi6kVlXOLbeByUYQ8PYjEb4Cluw9bq49kNbr/wcDppT6ac4zLg8eJbP1xM2mgcibD0W1xGOe7NmrA82AvPgv1s6X0GcDbHo3VllLh8affzDtl6mqDR+R1KFE/RKCO8Yl1EFVcajVBiK6MuKgzhBV1/VZLVFSWGvRoqo4sfzORa1Vf5Wn1ez6YcanUjLdxFtUyZ5oVcO+8v1hS6B/gPxWyPjgECAAA=
 hunting:
   Location: general;-11713.45;64.5;-5570.25;-265.29;-3.3
+  Slots: 3
   Page: 2
-  Item:
-    v: 4189
-    type: GOLDEN_SWORD
-underthesea:
-  Location: general;-808.3;31.0;-198.34;97.7;38.39
-  Page: 4
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/PSUnNiy8uzy9KYWZgTc4vzSthYGBgZAAA5Wew1D8AAAA=
 nether:
   Location: nether;328.54;80.0;-212.55;90.2;-6.17
   DisName: '{#gold}/nether'
-  Slots: 17
-  Item:
-    v: 4189
-    type: NETHERRACK
-  OffItem:
-    v: 4189
-    type: NETHERRACK
-sanctuary:
-  Location: sanctuary;-298.52;136.0;-242.46;-357.96;-3.98
-  DisName: '{#gold}/sanctuary'
-  Slots: 6
-  Item:
-    v: 4189
-    type: ORANGE_GLAZED_TERRACOTTA
-  OffItem:
-    v: 4189
-    type: ORANGE_GLAZED_TERRACOTTA
+  Slots: 12
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDOzcxLTS5KTCuxKkpNic9LLclILYpPKspMzi5mZmBNzi/NK2FgYGBkAAAt/xNARAAAAA==
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxykstyUgtKkpMzmZmYE3OL80rYWBgYGQAAJmbEfI9AAAA
 floris:
   Location: general;-655.27;62.0;847.28;-180.3;7.35
-  Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Skull of mrfloris","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 631e3896-da2a-4077-974b-d047859d76bc
-        name: mrfloris
-        properties:
-        - name: textures
-          value: eyJ0aW1lc3RhbXAiOjE1NDE3Njc3ODI2MTUsInByb2ZpbGVJZCI6IjYzMWUzODk2ZGEyYTQwNzc5NzRiZDA0Nzg1OWQ3NmJjIiwicHJvZmlsZU5hbWUiOiJtcmZsb3JpcyIsInNpZ25hdHVyZVJlcXVpcmVkIjp0cnVlLCJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWJhZDI1ZmI4MzBjOTZkNjgyMDJhMzA2OGRjZmM4N2UzN2U5Zjg5NDYxNTNhMTExYjRjMzE2ZGZhMWE4ODZkMCJ9fX0=
-          signature: quOpjdGScDllMftV0XWZkGNmiSW98II+7SxqlgFG3XfdSCIEi2Vk4BaCmusTiaNSzyMAOrlq/DLG1vTfkDuGLRuhLPVtSUpmS7pxMckR560tfK4TJLJ4oCKin/Z7fkrh4NgN7d7kDqArIv7pbEUWLd8iMn/xD6TzSZaIg+mvvGQci4wfS+qBnj+gbd9gtsz1qRZ0LeRQX5gWORxxPVZxqeFKinXIRS4+iYVmUc/GCEUPExmQI2q3NKLCbYJg7HBJ05NYf333S+XEroKqosk1Yo/FiWLAMLZt1k6H1tfT479AbzP99ZxEt+atz7h8k1pQf1q4xC4w5abLfBHN0FOXHshzmvvTA10luiEEgttzntAl7S7Tde/21cKaGEIjoVkcED5lh4XEZuI1B9eAO237vj9WIK4Fbo2P41A8lWmEzh6Wcl5gT7HXQQirKoN6DnOdo4dick+APe1wKoMZn0iZaAYlkayz9K9RphO/Ct9r2DyCjgazIACekQOerZbQenRADOTNntaFR5OfIMCtggWzPNHba4Ys+07IWHbKNaPhnSD0byZsUIXJ3Xn+m2E7gxwBq+syAz4ELaEtHEodCUzxuxCVuHemweZYX6BdeSt2evRD8PsPpscE1QRSmwGi66F9H+Dhb+IFJKM6otPuXY0hQUWoI43m+7F1KnsIN3GnrCY=
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxSs/PSYlPyslPzmZmYE3OL80rYWBgYGQAAKhmb1M9AAAA
 mistic:
   Location: general;-332.69;64.0;121.34;5.09;0.9
-  Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyk/Mji/ISczLLmZmYE3OL80rYWBgYGQAAA2RSWM9AAAA
 glo:
   Location: general;46.29;63.0;501.06;-294.32;13.79
   HideFromList: true
   Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxKshJrEwtis9ITUxhZmBNzi/NK2FgYGBkAABpAXbiPgAAAA==
 horse:
   Location: general;10025.43;69.0;8700.2;-192.24;13.71
+  Slots: 4
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: DIAMOND_HORSE_ARMOR
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gIt4dgZvUkJTMYcmkMb9fW8BEtaTgq7qXUyB7Z4xCmNvorU4PXGwUDPl/Jr3msmbecJU7NMAMOAHr17J8kYAAAA=
 florisfarm:
   Location: general;18905.54;123.0;10581.47;-179.24;2.64
-  Page: 3
+  Slots: 2
+  Page: 6
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: SUGAR_CANE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKi5NTyyKT07MS2VmYE3OL80rYWBgYGQAACaQt1k9AAAA
 paprikaatje:
   Location: general;-528.27;68.0;1210.26;-179.63;13.19
-  Page: 6
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBMQqAQAwEwNVDEG0sfYu1b7ATCbkIV5hAXP/vzAQUzLtQDsu3hQPLOaJvFevT3DTl5pZWL1qmaJBSMGh8TgAdfh8QAkBBAAAA
 thingsforstaff:
   Location: wild;8476.24;112.0;1715.54;37.87;9.14
   ReqPerm: true
-  Page: 10
+  Slots: 1
+  Page: 6
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-snowball:
-  Location: general;-17045.39;63.0;10749.34;-133.17;9.22
-  ReqPerm: true
-  Page: 2
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: ICE
 skygrid:
   Location: skygrid;1.44;131.0;-13.52;0.31;-1.04
   DisName: '{#gold}/skygrid'
-  Slots: 28
+  Slots: 20
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: WHITE_STAINED_GLASS
-  OffItem:
-    v: 4189
-    type: WHITE_STAINED_GLASS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDNzcxLTS5KTCuxKs/ILEmNLy5JBIqkxKfnJBYXMzOwJueX5pUwMDAwMgAAFcF7S0YAAAA=
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDNzcxLTS5KTCuxKs/ILEmNLy5JBIqkxKfnJBYXMzOwJueX5pUwMDAwMgAAFcF7S0YAAAA=
 creeper:
   Location: wild;13350.87;63.0;-9855.89;-173.28;27.75
-  Page: 2
+  Slots: 10
+  Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDOzcxLTS5KTCuxSi/NK8gvT0ktYmZgTc4vzSthYGBgZAAARJ2atjwAAAA=
 trading:
   Location: general;11843.21;69.5;8265.56;-318.76;-1.33
-  Page: 2
+  Slots: 19
+  Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: EMERALD
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSs1NLUrMSWFmYE3OL80rYWBgYGQAAN7H+0M6AAAA
 Elysian:
   Location: wild;4349.5;79.0;-1470.5;-90.91;-23.55
-  Page: 7
+  Slots: 25
+  Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxKkpNiS/Pz89hZmBNzi/NK2FgYGBkAACdxD31OwAAAA==
 superfancyspot:
   Location: general;-5763.44;66.0;-4056.53;-42.74;20.06
-  Page: 5
-  Item:
-    v: 4189
-    type: QUARTZ
+  Slots: 21
+  Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYVDMzcxLTS5KTCuxSsvJL08tysxLj0+sSsxJTYwH4rLUYmYG1uT80rwSBgYGRgYAO/Wcd0oAAAA=
 summer:
   Location: summer;0.5;84.0;0.5;-132.45;-6.15
-  Page: 2
+  Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxKk7MS2FmYE3OL80rYWBgYGQAAPzfvh43AAAA
 slime:
   Location: general;361.47;5.0;228.74;-306.85;7.66
+  Slots: 7
   Page: 3
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxKs7JzE2NT8rJT85mZmBNzi/NK2FgYGBkAAB6zX6yPgAAAA==
 mastery:
   Location: general;57.87;80.0;-2427.67;101.38;25.2
-  Page: 7
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImzs3cTaGexEmmlFEzoyrft7bwASxpWCNqmuxYBp79EqY37UJFc6Y3nLrX4JH2QsriEJXS6fBYAGP20c16lEAAAA
 top:
   Location: wild;-3867.85;96.0;-4523.51;60.59;39.34
+  Slots: 1
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: EMERALD
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
 zombie:
   Location: wild;-11112.03;-59.0;11050.09;-179.98;0.0
+  Slots: 4
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: ROTTEN_FLESH
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxKsovKUnNi0/LSS3OYGZgTc4vzSthYGBgZAAAJFWSdT8AAAA=
 hotel:
   Location: general;4152.02;40.0;6910.53;-178.12;6.82
+  Slots: 6
   Page: 2
-  Item:
-    v: 4189
-    type: LIME_GLAZED_TERRACOTTA
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKijKLM5NLALymRlYk/NL80oYGBgYGQBW0L1qPQAAAA==
 futureshops:
   Location: wild;14800.07;64.0;-1049.82;-167.4;7.34
+  Slots: 9
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxSkosKkrNYWZgTc4vzSthYGBgZAAAN/N5TTkAAAA=
 guardian:
   Location: general;5687.0;5.0;217.09;-136.2;8.85
+  Slots: 9
   Page: 3
-  Item:
-    v: 4189
-    type: COOKED_COD
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSi9NLErJTMyLLy5ILM+LT01PZ2ZgTc4vzSthYGBgZAAAP4GRYkUAAAA=
 jessehome:
   Location: general;-788.53;71.5;-483.29;-77.33;23.24
-  Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxKk7MS2FmYE3OL80rYWBgYGQAAPzfvh43AAAA
 1morecity:
   Location: general;-13728.69;73.0;17586.24;-141.38;0.9
-  Page: 7
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: OAK_LOG
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxSi4tiS9OzEspLsnPS2VmYE3OL80rYWBgYGQAAGUM9kRAAAAA
 oneblock:
   Location: oneblock;10386.37;81.0;-7999.52;-89.85;-1.35
   DisName: '{#gold}/oneblock'
-  Slots: 7
+  Slots: 16
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: GREEN_STAINED_GLASS
-  OffItem:
-    v: 4189
-    type: GREEN_STAINED_GLASS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDNzcxLTS5KTCuxSi9KTc2LLy5JBIqkxKfnJBYXMzOwJueX5pUwMDAwMgAACZzn8UYAAAA=
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDNzcxLTS5KTCuxSi9KTc2LLy5JBIqkxKfnJBYXMzOwJueX5pUwMDAwMgAACZzn8UYAAAA=
 wildwest:
   Location: general;14240.55;90.0;-12875.72;-173.0;10.22
   DisName: wildwest
+  Slots: 5
   Page: 2
-  Item:
-    v: 4189
-    type: SADDLE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxKk5MSclJZWZgTc4vzSthYGBgZAAARdkuVDkAAAA=
 tidal:
   Location: general;7439.72;65.0;6018.77;-344.23;9.2
-  Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Skull of TidalDawn","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"white"}]}'
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: 00000000-0000-0000-0000-000000000000
-        name: tidaldawn
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSkxOTM5MjC/Pz09hZmBNzi/NK2FgYGBkAAClUttLPgAAAA==
 communitybuild01:
   Location: general;-11996.22;64.0;8727.06;-180.43;3.6
-  Page: 5
-  Item:
-    v: 4189
-    type: OAK_STAIRS
+  Page: 4
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDOzcxLTS5KTCuxKi4pyiwoSE2Jz0/Mji/Pz09hZmBNzi/NK2FgYGBkAAD9KcJfRAAAAA==
 egghunt:
   Location: easter;33.88;100.0;-15.09;-225.26;12.71
   Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"Easter Egg Surprise","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"blue"}]}'
-      Damage: 3
+  Item: !!binary |-
+    H4sIAAAAAAAA/02QMWrDQBBFJxEBozRu0pupfQLV8QkCaYIxo92RtGR3R8zOgo3xSXLZyEXktP/zHp/fAjTw+k5Gn6wlSAbYHjfwHDy8pZDZKQ3WzZEurKeJyTfw4qRmA4CnFlonaZbM2crmP+BqMUmnTInh54p8NiXsvq7YS/TYDRQL79FJFMUO+1gZ9xiMYnBrK/1QiyPjB1BMwzfbpFLHaU1t0S+WAxVj3R3GcfdRddZQ7tKaPWtchv1ZbseVwFsD28doT4lGhvsj8Au2LE8YGAEAAA==
 dungeon:
   Location: wild;14784.0;-60.0;14655.02;-89.83;-2.06
-  Page: 2
-  Item:
-    v: 4189
-    type: WOODEN_AXE
+  Slots: 11
+  Page: 3
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyizKz4svLs8vSmFmYE3OL80rYWBgYGQAAGd5DQE9AAAA
 ritualrogue:
   Location: general;9374.41;82.0;12582.71;0.06;11.47
   DisName: RitualRogue
-  Page: 6
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxKixNLCqpik/KyU/OZmZgTc4vzSthYGBgZAAAwP2DYT8AAAA=
 treefarm:
   Location: general;12622.82;64.0;-5333.29;93.16;16.93
+  Slots: 15
   Page: 3
-  Item:
-    v: 4189
-    type: OAK_SAPLING
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxyk/Mji9OLMjJzEtnZmBNzi/NK2FgYGBkAAAoN3OQPgAAAA==
 LushCave:
   Location: wild;-6890.5;39.0;8056.5;0.72;1.04
   DisName: Lush Cave
-  Page: 6
+  Slots: 19
+  Page: 2
   Creator: 26ac30aa-7641-4a3c-a98a-81def3a5c5fa
-  Item:
-    v: 4189
-    type: MOSS_BLOCK
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxys0vLo5PyslPzmZmYE3OL80rYWBgYGQAABNmM7g9AAAA
 enchant:
   Location: general;12515.58;79.0;-5325.54;-286.99;15.5
+  Slots: 10
   Page: 2
-  Item:
-    v: 4189
-    type: ENCHANTING_TABLE
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBQQ5AMBAF0E8jETbWjmLtDHYiowaT8JvUuH/f64CAfhaXRfNnicCwtqjtwPgaNWY5fVLGW+jGa3PZHw1oYvrpACoUUOPZvUMAAAA=
 fish:
   Location: general;11975.14;64.0;18936.87;-309.25;12.64
-  Page: 2
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-ironfarm:
-  Location: wild;-1739.89;192.06;-1831.57;0.45;-1.73
+  Slots: 18
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/81TTUvDQBAdjUqN4Aeo4C3sxUt/QQ6e9OZJwYstYbo7SZYku3U/xFL6F/S3+Y/cUE1aFHoQxMNe3sybeTP7JgaI4OAaHT6QsVIrgOPxALalgLNGKuIGc5fm0pZSFZnRIoJdrr1yALAVQ8x1M9WKlLPRKsHQFKXJuLZt4tE+HPaxWhsaBHQHXueMXpxBlj7O2UTXgqU51paGjOuQxVIm0FRZYXDGhkw6rCXvUvQk95ajo55lnZEVudJoX5Qd6kKPUOoqlPBKkKmDki/OYtzF2QLe/1RP8qOg4bxrVrQKvvX5pCcjdkvu0iY3zdTNEldSck84CmOsjfTfVrzN2GDVKNxbp5tMYUPwtlErPnn8vcywp+ROi41iYzjvhZLiJSrXtFaPYa+mZ6qD50/6jBAS4Ujaw4jgYsXvnleZzrPwRZklDPEoWrsHb2gJnvagVxNDWC3rReHBB5PunQeqAwAA
+ironfarm:
+  Location: wild;-1739.89;192.06;-1831.57;0.45;-1.73
+  Slots: 13
+  Page: 3
+  Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyizKz4vPzEvPL2FmYE3OL80rYWBgYGQAADCzAeY9AAAA
 skyblock:
   Location: skyblock;6.2;135.0;0.49;90.18;4.01
   DisName: '{#gold}/skyblock'
-  Slots: 27
+  Slots: 17
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: LIGHT_BLUE_STAINED_GLASS
-  OffItem:
-    v: 4189
-    type: LIGHT_BLUE_STAINED_GLASS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYVDKzcxLTS5KTCuxyslMzyiJT8opTY0vLkkECqfEp+ckFhczM7Am55fmlTAwMDAyAACAt95vSwAAAA==
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYVDKzcxLTS5KTCuxyslMzyiJT8opTY0vLkkECqfEp+ckFhczM7Am55fmlTAwMDAyAACAt95vSwAAAA==
 jacky:
   Location: general;12620.01;78.0;-5304.57;-85.87;-4.41
+  Slots: 13
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: WOODEN_HOE
-    meta:
-      ==: ItemMeta
-      meta-type: UNSPECIFIC
-      display-name: '{"text":"","extra":[{"text":"Wizard Wand","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
-      lore:
-      - '{"text":"","extra":[{"text":" :( ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"
-        Lost its magic","italic":false,"color":"white"}]}'
+  Item: !!binary |-
+    H4sIAAAAAAAA/6VPvU7DMBA+qJBCKiEG2CNPHfIEmRmZ6YCq6mpfEgvHV9kXBYjyFLwUj4U7NEECiYH1+/9ygBWsH1DwiUK07AFudxlcWgN3nfWkA9ZSDcyG/L5lWsGV5t4LAFzkkGvujuzJS7yGm0XvOFB2ksDnqOhVAqrqeVQHdkZVNbpIpdKcVKpSb+QcD6pUVtBZPfN8qPuoUWixRAn2haQN3DftjEoqSDlFtSlSSu8NBZeWnG1TOc5dQ2uFfladEx45SmElFh02iZ52M6WmDO6Xf7qPwt3eY0fw8efD5gT++9/WvmMwxRa9+fXm97EAX7IgaJ3YAQAA
 heads:
   Location: general;12798.06;52.0;11436.01;180.18;0.97
-  Page: 4
+  Slots: 17
+  Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxKshJrEwtis9ITUxhZmBNzi/NK2FgYGBkAABpAXbiPgAAAA==
 thanksfloris:
   Location: general;-3011.24;70.0;4540.72;0.96;32.31
-  Page: 7
-  Item:
-    v: 4189
-    type: FILLED_MAP
-    meta:
-      ==: ItemMeta
-      meta-type: MAP
-      map-id: 260
+  Slots: 28
+  Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/0XMvQqAIBQG0M8sCFsceprmnqEtRPwBQa+it/evrf1wFCCxnZbtFfpIlQB9r5iSx14SBddt5COmnIM3xTaJxdWHGIBQUK6WVikQDwn9+w+ab4CYgRc33hVNYgAAAA==
 spider:
   Location: wild;-3652.5;-17.0;2624.5;-33.66;8.43
+  Slots: 6
   Page: 3
-  Item:
-    v: 4189
-    type: STRING
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxKi4pysxLZ2ZgTc4vzSthYGBgZAAAqv2wbjkAAAA=
 charlie:
   Location: general;6444.79;71.0;10282.1;92.65;3.06
+  Slots: 14
   Page: 2
-  Item:
-    v: 4189
-    type: BEDROCK
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUkIbS6FNJUZc3/cmwGHeyehgfXITYDlH9DlirVk4KF22mVJk9aVQJf/c9InnlByG0F4xAB1+DHT5S0kAAAA=
 mycelium:
   Location: general;-13180.15;79.0;-529.91;-279.15;3.3
-  Page: 4
+  Slots: 18
+  Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxyq1MTs3JLM1lZmBNzi/NK2FgYGBkAADRgkqlOwAAAA==
 enderfarm:
   Location: end;-112.5;1.0;-347.5;90.2;7.1
   DisName: Public Enderman Farm
+  Slots: 8
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: ENDER_PEARL
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs1LSS2KL0hNLMphZmBNzi/NK2FgYGBkAAB0TRO0PgAAAA==
 builders:
   Location: builders;-47.5;63.0;-56.5;-0.15;-4.65
   DisName: '{#gold}/builders'
-  Slots: 13
+  Slots: 25
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: YELLOW_GLAZED_TERRACOTTA
-  OffItem:
-    v: 4189
-    type: YELLOW_GLAZED_TERRACOTTA
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDIzcxLTS5KTCuxSsxNLcmoLC6JT8rJT85mZmBNzi/NK2FgYGBkAAAkLCXTQQAAAA==
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04g2N4dgZvUkIbpVAbiBGx0/veADiMKxltrHeSAkx7jzZFzFcqHJQOWz7OWV5/ZqocvbEqBTEjhy7IUwxAgx9KjDZtSwAAAA==
 bee:
   Location: general;11496.51;72.0;13800.55;-127.08;28.01
-  Page: 2
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      display-name: '{"text":"","extra":[{"text":"1.15 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"Angry
-        Bee","bold":true,"italic":false,"color":"yellow"}]}'
-      Damage: 3
+  Slots: 14
+  Page: 3
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxSkpNjc9LLS5hZmBNzi/NK2FgYGBkAABU5RO/OwAAAA==
 werewolf:
   Location: general;7620.36;63.0;11317.62;31.31;4.21
-  Page: 6
+  Slots: 4
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: BOWL
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxqkzNyckvj0/Oz0suSi1JZWZgTc4vzSthYGBgZAAAulHcK0IAAAA=
 battleship:
   Location: wild;-3069.7;65.0;2696.52;-89.9;31.35
-  Page: 8
+  Slots: 5
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyssvSY1PyslPzmZmYE3OL80rYWBgYGQAAIbv1MM9AAAA
 castle:
   Location: sanctuary;-242.3;90.0;-1617.09;90.08;1.14
   Page: 7
-  Item:
-    v: 4189
-    type: STONE_BRICKS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxKi7Jz0uNTyrKTM4uZmZgTc4vzSthYGBgZAAAYTFO0T8AAAA=
 1mb:
   Location: general;874.27;63.0;543.14;-88.51;6.3
-  Page: 6
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxSkxOTM5MjM/JT2dmYE3OL80rYWBgYGQAAEVu7nw9AAAA
 owo:
   Location: owo;0.5;122.0;0.5;-44.8;-10.04
   Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: SOUL_CAMPFIRE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxKs4vzYlPTswtSMssSmVmYE3OL80rYWBgYGQAAIJTAa5AAAAA
 dropparty2:
   Location: general;-14510.53;71.0;11881.85;-174.49;42.62
-  Page: 7
+  Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSq5MzIsvLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAAADEACcRQAAAA==
 dropparty1:
   Location: general;-14563.35;72.0;11492.95;-20.28;31.35
-  Page: 7
+  Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxKsjMy44vLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAAAUXWJKRQAAAA==
 dropparty4:
   Location: general;-14462.52;147.0;11663.12;-350.45;36.47
-  Page: 7
+  Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDNzcxLTS5KTCuxKs/ILEmNLy5JBIqkxKfnJBYXMzOwJueX5pUwMDAwMgAAFcF7S0YAAAA=
 dropparty3:
   Location: general;-14367.28;90.0;11604.38;-266.99;29.5
-  Page: 7
+  Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDLzcxLTS5KTCuxKigtKshJjS8uSQQKpcSn5yQWFzMzsCbnl+aVMDAwMDIAAI2RxZRHAAAA
 acid:
   Location: acid;-386.46;56.0;380.53;-179.25;-2.4
   DisName: '{#gold}/acid'
-  Slots: 14
+  Slots: 18
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: BLUE_STAINED_GLASS
-  OffItem:
-    v: 4189
-    type: BLUE_STAINED_GLASS
-madmikeyb:
-  Location: general;667.61;69.0;-971.59;-341.6;16.99
-  Page: 6
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSsopTY0vLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAADjqz/xRQAAAA==
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSsopTY0vLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAADjqz/xRQAAAA==
 skeleton:
   Location: wild;-11112.03;-59.0;11061.05;-0.13;-4.65
+  Slots: 5
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: BONE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxSsrPS2VmYE3OL80rYWBgYGQAAB+axDM3AAAA
 halloween:
   Location: halloween;1458.79;64.0;466.9;-34.05;-4.39
-  Page: 5
-  Item:
-    v: 4189
-    type: PUMPKIN
+  ShowWithNoPerm: true
+  Slots: 1
+  Page: 4
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxKijNLcjOzGNmYE3OL80rYWBgYGQAAJx6OkQ6AAAA
 1mblogo:
   Location: wild;5558.07;103.0;-3012.23;-62.4;8.85
-  Page: 7
+  Slots: 23
+  Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: FILLED_MAP
-    meta:
-      ==: ItemMeta
-      meta-type: MAP
-      display-name: '"1MB by Vubbo"'
-      map-id: 3125
+  Item: !!binary |-
+    H4sIAAAAAAAA/0XNsQqDMBRG4b8NBUlLcWh38Q0cujhK165uJSQxQsDcK+Zm6NvXzf3jHA0oXN9W7Bi2HJmA+lvhHCc8UqTgNztLP8dlCZNJdlW4eC4kAE4a2nNamQJJrvA8vC9ZOBmyKeDedp+hcb9mLM5xq1Afbg+a/YTbC/gDaQ6SAIoAAAA=
 sushi:
   Location: sushi;-285.63;100.0;-304.49;-299.39;-22.55
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: TROPICAL_FISH
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxKinKL8hMTsyJT8sszmBmYE3OL80rYWBgYGQAAEwYYQhAAAAA
 train:
   Location: general;-19999.0;65.0;19998.97;-133.5;11.66
-  Page: 7
+  Slots: 27
+  Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: MINECART
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxArMSi0qYGViT80vzShgYGBgZAGfZ05Q7AAAA
 freeminigame:
   Location: general;13311.06;74.56;4757.08;-147.81;60.56
-  Page: 4
-  Item:
-    v: 4189
-    type: OAK_SIGN
+  Slots: 1
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBQQ5AUAwFwMePRNhYOou1M9iJVFXSoE2q7m+mAwr6mZIWiVfdgGFtUeuB8VETDjpz2m/ia2M3DkkpaNg/SwAVfrsT8ZxBAAAA
 stray:
   Location: wild;-11112.03;-59.0;11061.05;-0.13;-4.65
+  Slots: 3
   Page: 3
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKkhMzk5Nic9MTmVmYE3OL80rYWBgYGQAAE3dUWs9AAAA
 raptorboy_tnt:
   Location: general;-10403.53;64.0;309.55;-194.32;36.66
-  Page: 6
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: MELON_SLICE
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxKijNLcjOzGNmYE3OL80rYWBgYGQAAJx6OkQ6AAAA
 cave:
   Location: cave;-126.23;65.0;258.27;-134.39;9.89
   DisName: '{#gold}/cave'
-  Slots: 21
+  Slots: 19
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: GRAY_STAINED_GLASS
-  OffItem:
-    v: 4189
-    type: GRAY_STAINED_GLASS
-turtle:
-  Location: general;12640.84;63.0;11599.77;15.33;14.08
-  Page: 4
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSi9KrIwvLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAADdqh7ERQAAAA==
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSi9KrIwvLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAADdqh7ERQAAAA==
 mikeytown:
   Location: general;675.06;70.0;-939.69;-4.31;34.65
-  Page: 6
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxys0vLq6MLy7Jz0uNTyrKTM4uZmZgTc4vzSthYGBgZAAAxU2H2UUAAAA=
 jail:
   Location: general;-584.51;64.0;4935.27;-269.67;11.21
+  Slots: 11
   Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDOzcxLTS5KTCuxyizKz4tPSiwqZmZgTc4vzSthYGBgZAAAqky4XjwAAAA=
 murdermansion:
   Location: general;7626.35;66.0;11539.6;234.13;-9.93
-  Page: 4
-  Item:
-    v: 4189
-    type: ARROW
+  Slots: 2
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxSkksyo7PT8yOL8hJzMsuZmZgTc4vzSthYGBgZAAAvARUAUIAAAA=
 celebration:
   Location: spawn;93.28;70.0;202.83;-265.99;20.36
+  Slots: 12
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: BARREL
+  Item: !!binary |-
+    H4sIAAAAAAAA/0XMQQ5AMBBG4Z9GIrWRsHAWa2ewE2mqmEVnpB33Z8X2y8uzgEEzOXVzSJmEgXapUdKGLhIHn9yu4yFO11MSG1ReblYAhYX1Ei/hwJpr9H9OnDXd8XUMv2biY/1OwAMQ24T9ewAAAA==
 shops:
   Location: general;12567.49;78.0;-5341.45;89.76;-0.85
+  Slots: 8
   Page: 2
-  Item:
-    v: 4189
-    type: PAPER
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDPzcxLTS5KTCuxSs5ILS5hZmBNzi/NK2FgYGBkAABx2dCUOAAAAA==
 legacy:
   Location: legacy;291.06;114.0;267.52;-270.14;49.5
   DisName: '{#gold}/legacy'
-  Slots: 20
-  Item:
-    v: 4189
-    type: COBBLESTONE
-  OffItem:
-    v: 4189
-    type: COBBLESTONE
-storeExp:
-  Location: general;12518.06;78.0;-5318.69;-39.49;9.93
-  Page: 2
-  Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: DRAGON_BREATH
+  Slots: 13
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5PSspJLS7Jz0tlZmBNzi/NK2FgYGBkAAAcL5TAPgAAAA==
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5PSspJLS7Jz0tlZmBNzi/NK2FgYGBkAAAcL5TAPgAAAA==
 disco:
   Location: general;12838.51;69.0;12052.54;-90.31;8.58
-  Page: 4
+  Slots: 3
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxysnMTY0vLkkECqTEp+ckFhczM7Am55fmlTAwMDAyAAACuKdFRQAAAA==
 withergrinder:
   Location: nether;-5364.5;45.0;4648.5;89.77;-5.09
   DisName: withergrinder
-  Page: 2
+  Slots: 12
+  Page: 3
   Creator: f3d2c8fe-0789-4fdc-9164-ec193bd11cbb
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxykstyUgtii8uSSxiZmBNzi/NK2FgYGBkAAAJwEMmPgAAAA==
 santa:
   Location: santa;-15.42;154.0;102.37;179.78;2.39
   DisName: '{#gold}/santa'
   AutoLore: false
-  Page: 5
+  Page: 4
   Creator: a74d508e-aa4b-48b0-868c-9385c5ed4970
-  Item:
-    v: 4189
-    type: PLAYER_HEAD
-    meta:
-      ==: ItemMeta
-      meta-type: SKULL
-      skull-owner:
-        ==: PlayerProfile
-        uniqueId: c7fddb9a-adfd-4be3-b326-d700df252e88
-        name: Santa
-        properties:
-        - name: textures
-          value: ewogICJ0aW1lc3RhbXAiIDogMTU5ODU4NjA2ODg3MywKICAicHJvZmlsZUlkIiA6ICJjN2ZkZGI5YWFkZmQ0YmUzYjMyNmQ3MDBkZjI1MmU4OCIsCiAgInByb2ZpbGVOYW1lIiA6ICJTYW50YSIsCiAgInNpZ25hdHVyZVJlcXVpcmVkIiA6IHRydWUsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8zZjg2NjgyMWJmYmY1MWMwNWZmNzk4YWYxMDk1NzVhZmZhMThjNzc5MTUxODEwYjUyZTk5YzU0N2MzMzc5ZWI3IgogICAgfQogIH0KfQ==
-          signature: UFjVuJa/WpbzFbL5yJ0Ns0w8PLrV9nUl9hnB5wODTqAMmZ2dKNOyr/Br7lroPHVa9ROon8HZCgwEHDhxwVAMMGJeJ6AdopM5F58EVVVkqAqy6+QsnTnYHsHb+V1REq74iG6IA5uRSImz6+cjlGGfU6tf3SWqcwWR1uFozJnTeIFCrLHJRleaGZtUzJZW3Onp47oPMLUDN5UNjjp8wsMaPIw5KqDRGLqDIoy1vwzA3SkpuRjFZgRHbqzlxr1/fVAA+1f0BbI2/XGhd9G/mwwbBF2DdkzcnpBPtJAIxa1uu+8sTl8tF7WqYKkDMRFGmocimczFZe6d48kIiypOD0j70qaHWMyDztNz7JY5KIaf+SFy0qdmNWYx6h75Vf8UeTk9UxacbQmMmAdvjp0raOFJygDDVvjxAORk1NtGp6LdfvyrT7jFuACQd6M79ZifoONMeUBfUutPQExkEzeWZyvF1MCOf6w/DtIE+f2nHsOLBXLE9tKSkxL93EH4jAvcJwOaSIBco3brzg6pCMLD8jGWMWQPd7qDkLWUXMMFju5PM63XotF/OnrwkAX7PfCRzQNVBYKC94pg2NECzPZlHs4sq6j3rCRtZXY7GQdGFQ20gKmVO6V1+2b+J2DqtHltV8+V8zgJeCWk/4I9aXZCTHwf+O9OPuxji9zOlaKHEXFXv5Q=
+  Item: !!binary |-
+    H4sIAAAAAAAA/1VUS67jRBR1/6TXrycwYAkwiUTsJHYSpB44dvyLy46duByXhJD/8f8fx14BS0CsAUYsgiUwYMCAdbSE3+tuAaNS3XPuvefWPapHDHuFvWPt1oZ+3URFjmFffP+AvYw87Kssyn23toP2uzK1B7/+4erb3ivsjVt0eYth2ItH7NEtsrLI/bxtHrEv/5NQF0GU+g/Y69zOfOzNyc5b+y32OMVLv24jf6JPBT7jD61/b7vabx6wt00U5vbT5eUvBhfDTrLnZumMnCOTg4QrDd5vjnINt7mRbq/5juxV9lzRIEML76CoQz3f1eu0Lo4CtLe6WuQbATFhvxfY672HNAC85EsU7RUlIDlys4cQJhVdDdRMa/JzbgmN4Mwgoe+r9SriKZEmO/0kZiM1c+OU5wODaoPlyazc3tSJjitGKT/7IsfUsiDpqW/zqDVGCZlLNS9X6+IIZINVSEOJ43LTN8A+ij15qFidlytWLAbi1o/08pSUnR5zKNQFpxrTe03MA0jTMyLAd464mF/4q7fl51nfOztuwXrJ6Obl7thKtHi3ia6bbZpzumm5tVlZh4QFOsdnhRtl7sghn/JWm0SMhlJl8XiNV7ZggoEdW2VcSxZ5EO1gduIGvPIyxbTu1HVNwmBj+Odka9xt19EykNHeLS7x2lY5aQhZFt7iO63qCaG0fEnJXnAb6vM65jqa0TwKrLcoCgpVAb6xC4yuPWr7e7IffRMNN44AjBpQ/Zxtxf0sWORCo8q7i7zftodTcpe3y72wiumbK/WqfRJ3brF06jGkSgbI7CbmTWBqR29dsYlsGhcAuLgjj4BaXoqWm6t53Sf0ZX0MGH3UFLizDsx2VYYLZc+MR5QKzaqpqHhZM3qLLtaa1zye0xZ4eMigSkFitnBm0oKtWiFt4WYGN2Mo+YyZzFfi1r4g5iz0wUzdqsfuHkfbUU3tg7C/cJcbqb1/wN7c7LTzX/zk90UoMhJum0TqLvWrc6EjkS1CcDZIlTVWSkwvVDZcgqE/iAwduYJ0Q1naICOd1kRTU26sLFCCeJG0TC5BmYZbmTFaMRiUTFsCdpegWCRAZqxURmyYiA7FfDc4C1Q6PFStqe+nOmfLJHHr9JmjlGhBXj0BDghKqXuBpZvBjz0FffBM4xNv8rGgExM2fsSaJ51PM51PeKr+P/bEh4PDiKEa0ZEt6LjLFjd5+W8NOSNKJ4Oxm3GZx5Adumg3j4erZx2nzYjiaUFxOABTyqzMIoAJesVEmTImK2tyJGAno43wijJ0BedrrIwuOb3lXWX3vRUbAzonpDUauLIAI5gwZIpLMSyetQXadAr4IdDev8fePX9rGPb69w9//vzrh8Pfv33zB/bX19/+OMX+Ad2Y78oIBQAA
 general:
   Location: general;77.48;80.0;-186.42;-0.2;-0.15
   DisName: '{#gold}/general'
   ShowWithNoPerm: true
-  Slots: 3
-  Item:
-    v: 4189
-    type: MOSSY_STONE_BRICKS
-  OffItem:
-    v: 4189
-    type: MOSSY_STONE_BRICKS
+  Slots: 9
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxys0vLq6MLy7Jz0uNTyrKTM4uZmZgTc4vzSthYGBgZAAAxU2H2UUAAAA=
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxys0vLq6MLy7Jz0uNTyrKTM4uZmZgTc4vzSthYGBgZAAAxU2H2UUAAAA=
 signs:
   Location: general;12419.43;78.0;-5306.44;-63.01;10.63
+  Slots: 15
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: BIRCH_SIGN
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxKkjMSY3PT8yOL85Mz2NmYE3OL80rYWBgYGQAAGO7w3ZAAAAA
 end:
   Location: end;111.23;47.0;85.48;90.27;1.7
   DisName: '{#gold}/end'
-  Slots: 24
+  Slots: 11
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: END_PORTAL_FRAME
-  OffItem:
-    v: 4189
-    type: END_PORTAL_FRAME
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDKzcxLTS5KTCuxSs1LiS8uyc9LjU8qykzOLmZmYE3OL80rYWBgYGQAAPMYBkRDAAAA
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDKzcxLTS5KTCuxSs1LiS/ILypJzIlPK0rMTWVmYE3OL80rYWBgYGQAAKuA7tlDAAAA
 vote:
   Location: general;12478.64;78.0;-5345.41;-75.61;-1.86
+  Slots: 16
   Page: 2
-  Item:
-    v: 4189
-    type: DIAMOND
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSs1NLUrMSWFmYE3OL80rYWBgYGQAAN7H+0M6AAAA
 herb:
   Location: general;12097.51;71.0;-2183.29;-359.67;8.72
+  Slots: 16
   Page: 3
-  Item:
-    v: 4189
-    type: SUGAR_CANE
-mansion:
-  Location: general;12081.45;71.5;611.76;-180.39;-4.57
-  Page: 7
-npc:
-  Location: general;-752.57;77.0;31.15;-86.85;16.5
-  Page: 7
-  Item:
-    v: 4189
-    type: COBBLESTONE_STAIRS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxSk4sKsovYWZgTc4vzSthYGBgZAAAIyx/qDkAAAA=
 blossom:
   Location: wild;8250.5;177.0;7983.5;-90.28;-6.89
+  Slots: 7
   Page: 2
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxSs5ILSqqjM9JTSxLLWZmYE3OL80rYWBgYGQAABWq215AAAAA
 fishparkour:
   Location: general;11985.83;238.5;18866.04;-48.68;24.99
-  Page: 7
+  Slots: 6
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: PURPLE_WOOL
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxKigtKshJjS/Pz89hZmBNzi/NK2FgYGBkAABMCOMIPgAAAA==
 santarace:
   Location: santa;560.91;83.0;-108.21;90.33;9.75
   Page: 7
@@ -691,64 +602,63 @@ santarace:
 ender_vine:
   Location: general;689.18;71.0;-902.68;-85.61;7.35
   Slots: 1
-  Page: 8
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-banner:
-  Location: general;12961.79;64.0;-5291.43;-85.42;2.02
-  Page: 4
-  Item:
-    v: 4189
-    type: WHITE_BANNER
+  Item: !!binary |-
+    H4sIAAAAAAAA/wXBQQqAQAgF0F9DELVp21Vad4Z2EWYGQimYc//eG4CCcaWkTeJTN2Dae7R6YX7VhIPuXM6nypESQeyZVNCxV0sADX6zTgPWQgAAAA==
 kingdom:
   Location: general;8260.26;64.0;9350.32;36.07;29.2
-  Page: 4
-  Item:
-    v: 4189
-    type: POLISHED_GRANITE
+  Slots: 8
+  Page: 5
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxKi7Jz0uNTyrKTM4uZmZgTc4vzSthYGBgZAAAYTFO0T8AAAA=
 oldtown:
   Location: general;487.86;64.5;-378.01;-359.25;5.4
-  Page: 7
+  Slots: 26
+  Page: 2
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyk/Mji/ISczLLmZmYE3OL80rYWBgYGQAAA2RSWM9AAAA
 acro:
   Location: general;9669.7;235.0;13105.57;187.16;10.6
+  Slots: 17
   Page: 3
-  Item:
-    v: 4189
-    type: IRON_BOOTS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyizKz4tPys8vKWZmYE3OL80rYWBgYGQAACMHOBA9AAAA
 spawn:
   Location: spawn;0.5;64.0;132.5;0.38;-0.86
   DisName: '{#gold}/spawn'
-  Slots: 1
-  Item:
-    v: 4189
-    type: BEACON
-  OffItem:
-    v: 4189
-    type: BEACON
+  Slots: 4
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxSkpNTM7PY2ZgTc4vzSthYGBgZAAAfPA0zDkAAAA=
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxSkpNTM7PY2ZgTc4vzSthYGBgZAAAfPA0zDkAAAA=
 KoolKidHeads:
   Location: wild;2214.32;63.0;1732.45;89.68;3.29
-  Page: 6
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxKshJrEwtis9ITUxhZmBNzi/NK2FgYGBkAABpAXbiPgAAAA==
 CSM:
   Location: wild;-6705.46;68.0;-2102.21;-169.27;-15.59
   DisName: C.S.M House
-  Page: 6
+  Page: 5
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSk7MSc4sSWVmYE3OL80rYWBgYGQAAE4tEio6AAAA
 wild:
   Location: wild;79.45;86.0;48.53;0.0;-2.66
   DisName: '{#gold}/wild'
   ReqPerm: true
   Slots: 10
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: BARREL
-  OffItem:
-    v: 4189
-    type: BARREL
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyi1NiU8qykzOLmZmYE3OL80rYWBgYGQAACZqvog9AAAA
+  OffItem: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxSkosKkrNYWZgTc4vzSthYGBgZAAAN/N5TTkAAAA=
 walk:
   Location: general;12619.59;78.0;-5304.59;-76.01;-4.31
-  Page: 7
+  Slots: 7
+  Page: 4
   Creator: 631e3896-da2a-4077-974b-d047859d76bc
-  Item:
-    v: 4189
-    type: GOLDEN_BOOTS
+  Item: !!binary |-
+    H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/PSUnNi0/Kzy8pZmZgTc4vzSthYGBgZAAAoRmFxT8AAAA=

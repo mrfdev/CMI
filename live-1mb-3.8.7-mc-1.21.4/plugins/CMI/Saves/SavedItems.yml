@@ -1,5 +1,4 @@
 dc:
   temp1:
-    Item:
-      v: 3465
-      type: BIRCH_PLANKS
+    Item: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSsosSs6IL8hJzMsuZmZgTc4vzSthYGBgZAAA6ZFKFj8AAAA=

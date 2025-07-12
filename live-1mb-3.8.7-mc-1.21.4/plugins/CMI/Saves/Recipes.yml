@@ -1,1309 +1,599 @@
 CRecipes:
   6dd43c20-2b4b-3c4d-9eff-ddb935d4fbe0:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: BRAIN_CORAL_BLOCK
-      amount: 8
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDOzcxLTS5KTCuxSipKzMyLT84vSsyJT8rJT85mZmBNzi/NK2FgYOBgAAB5W0zsRAAAAA==
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: WET_SPONGE
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKk8tiS8uyM9LT2VmYE3OL80rYWBgYGQAALbffzI9AAAA
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BRAIN_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL04gnN4dgZvUtK0QrAmEOv+vjcBAfNOjY7ir5gCyzmil4z1ES3sdLUtF8oxOYlGNqcaUzW+Awa2TxuADj/tV1EzSQAAAA==
   26d2b753-af96-3ffb-a488-4164ef1d2e84:
     Type: Stonecutting
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: LEATHER
-      amount: 5
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGUAAM78b086AAAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: SADDLE
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxKk5MSclJZWZgTc4vzSthYGBgZAAARdkuVDkAAAA=
         byItem: true
-  ff232830-5f94-3ef9-87f4-4e701e74682b:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: DIAMOND_HORSE_ARMOR
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":" Forged Horse Armor","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND_BLOCK
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEAD
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-  b6261b41-06d5-3c95-a792-fa369540b79d:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: CAKE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"❤","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E49B0F"},{"text":"F","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FA6C1E"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F56F1D"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F0741C"},{"text":"v","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EB781B"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E67B1A"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E18019"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DC8418"},{"text":"C","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#D78817"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#D28C16"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#CD9015"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#C99415"},{"text":"❤","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E49B0F"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":" A delicious cake from 1MoreBlock!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        - '{"text":"","extra":[{"text":" Once placed, you can eat, and eat","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        - '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0AD24D"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0ACB4A"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#09C447"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#09BD44"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#08B640"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#08AF3D"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#07A83A"},{"text":",","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#07A137"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#079A33"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#069330"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#068C2D"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05852A"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#057D26"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#047623"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#046F20"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03681D"},{"text":",","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#036119"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#035A16"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#025313"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#024C10"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#01450C"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#013E09"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#003706"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#003003"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#002900"}]}'
-        - '{"text":"","extra":[{"text":" Even when you take the last bite","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        - '{"text":"","extra":[{"text":" it will be back for more noms!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        - '""'
-        - '{"text":"","extra":[{"text":" But don''t break it, or it will be gone.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        enchants:
-          minecraft:infinity: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: TOTEM_OF_UNDYING
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CAKE
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: SOUL_CAMPFIRE
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-  de9aad02-de82-3153-a8e7-78f2ce0371f8:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: CAKE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"❤","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E49B0F"},{"text":"C","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#C99415"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#CD9015"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#D18D16"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#D58917"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#D98618"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DD8318"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E17F19"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E67C1A"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EA781B"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#EE751B"},{"text":"C","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F2721C"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F66E1D"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FA6B1E"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FF681F"},{"text":"❤","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E49B0F"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":" A delicious cake from 1MoreBlock!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        - '{"text":"","extra":[{"text":" Crafted with the finest cocoa beans,","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        - '{"text":"","extra":[{"text":" harvested from the best jungle trees.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0BDA51"}]}'
-        enchants:
-          minecraft:unbreaking: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CAKE
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: SOUL_CAMPFIRE
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COCOA_BEANS
-  529eadda-21b1-3c70-b095-43834587b522:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: GLOWSTONE_DUST
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: TORCH
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
-  2e022dd0-c22e-35ff-8dd3-d883af4ff04d:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: HORN_CORAL_BLOCK
-      amount: 8
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: WET_SPONGE
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_HORN_CORAL_BLOCK
-  73185be5-2b4b-311e-afac-4f407c369dc4:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: LIGHT_BLUE_WOOL
-    Recipe:
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-        byItem: true
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-        byItem: true
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: EMERALD
-        byItem: true
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-        byItem: true
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
-        byItem: true
-  7f8bad79-427c-3faf-8251-3f4662672c66:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: BUBBLE_CORAL_BLOCK
-      amount: 8
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: WET_SPONGE
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_BUBBLE_CORAL_BLOCK
   94aa389c-d5a1-3438-8dc3-d4c160df4fce:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: TUBE_CORAL_BLOCK
-      amount: 8
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDKzcxLTS5KTCuxKilNSo1Pzi9KzIlPyslPzmZmYE3OL80rYWBg4GAAAD3brHpDAAAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: WET_SPONGE
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKk8tiS8uyM9LT2VmYE3OL80rYWBgYGQAALbffzI9AAAA
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_TUBE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qfdo3RnahYzjBJI5YOP9fW8BHNaTjC6pf9ICbPeMMUXsXyrClR47olD01oJ41krZh6z8OkysrRiAAR0ofKaKSAAAAA==
+  ff232830-5f94-3ef9-87f4-4e701e74682b:
+    Type: Shaped
+    Result: !!binary |-
+      H4sIAAAAAAAA/0WOMWrDQBBFJzEBozRuUhrE1D6BukAIOYGbYMR4dyQt3t0Js7MQMD5JLmupiNz+z3u8BmADrx9kdGQtQTLA7rSF5+Bhn0JmpzRY5wMlyb6fRAv3pEl0Ay9OajYAeGqgcZJ+JHO2soW3B+hqMUl9psTwd0X+NSXsvq94luixGygWPqCTKIodjst4wGAUg1tfOQ+1ODJ+AMU0XNgmlTpO62qzfra0n6Ij+/ZriW3fl9hZWrNnjXPYv+V2Wgm8AdwBciImAQkBAAA=
+    Recipe:
+      '0':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '1':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxSslMzM3PS4lPyslPzmZmYE3OL80rYWBgYGQAAOxJ3KVAAAAA
+      '2':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '3':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '4':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '5':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '6':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '7':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxyklNTGFmYE3OL80rYWBgYGQAAE761E83AAAA
+      '8':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
   2e0919a9-c608-3e5d-832f-6f065d8eb3fc:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: FIRE_CORAL_BLOCK
-      amount: 8
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDKzcxLTS5KTCuxSsssSo1Pzi9KzIlPyslPzmZmYE3OL80rYWBg4GAAAGmCOHRDAAAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: WET_SPONGE
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKk8tiS8uyM9LT2VmYE3OL80rYWBgYGQAALbffzI9AAAA
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEAD_FIRE_CORAL_BLOCK
-  8f29615a-240f-3020-89eb-4d4683a29276:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: COBWEB
-    Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
-      '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: SPIDER_EYE
-      '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: SLIME_BALL
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvUmKaQrA2EOv+vjcBAfNOjQ7xV60Cyzmi14T10SrslNuWhFLM6hLZnEq8ivEdMLB9tQHo8AN8JTKESAAAAA==
   426880b6-71d1-3d5d-bda4-c7a6f581c303:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: INK_SAC
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GLOW_INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
         byItem: true
+  b6261b41-06d5-3c95-a792-fa369540b79d:
+    Type: Shaped
+    Result: !!binary |-
+      H4sIAAAAAAAA/8WYy27UMBSG3VaUMiBAlWBtwoIFEYoT5za7XCY7xI4NqipP4ulYk9hV4rRUVZ8EsWOFYMUb8SR4FvQiFQYrJpWiKIocf398/hyfkwkAO+BhTiR5T9uOCQ7A04M9sM0q8LhhnJYtWchpSVZ0B9wrRc8lAGBrAialaI4Fp1x2D66PrEVL99SQ++D7uUU/ypZY0w/n1lzUlTVdkLqjtlUKNcqaWi+dNE98ZNkWk6Rm5eUAMV/0XUkkvXqmky1bUblsRX+0vLwrFUFNBBNYUTUBE30H11rhohUNRG+VmLQW5eqFYvS8om2thP6e9OLgcgLrYlS573hJ4XFNSlrZ8Ez0SjOHlEgbEl6tLzbKffR6RLm3qrH/iE1yF+fDsUQXm6U4GY7lmtg4wzgcjq10sWmO8fixjdIAO8OxVBebFN4dWCpMIs+ApW7/nP+GRZ4BS9m62DjxvPEtFcSeZ8BSurENosw1YCnddOFHvmvAUrrpwg9zNxg/tjgMXAOW0k0XOCjcO7CUF0TIgKV004UXIBSPny48P0F3YCnX95ABS+nG1sUZMmAp3XSBsO9k46cL5M0cA5bSja3jhY4BS+mmC8dTx/iWctzYMWCpzc0C+DZiszA7oRyeLtVp3djIdTMmlxTWpJNwzuTtsbmh9uuIapmEp6yu4ZzCOSlXcCFa2KiuEXLRdP/QNW5bFvgxot60l7AS/JVay5aSldJvQyX52mscqab8zUbhE/D8qmenvFwSLpt1M78FnnRLcXrI+KEUopbsGEzAbk1PaN3tgP2rhxhfMM7k2fp3AAB74Nm1vwV9J0VzyElDdz9tXpwZjlOnGL44Pz9/0fsCi0Jt2AbAhSY2CTI0G44Vmlg/KEyUJ60m1gkxMrCFaSb1WRpGKB2OPdHEBmGKDNT3um+LIsdEDagZ2zyLMIpGrxPyMIqQgQY508S6UWai4tWsE7I8dpA/HLvSxMYxNoHVdfJ/3gxu7N7gF5jXcIr+FgAA
+    Recipe:
+      '0':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+      '1':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDKzcxLTS5KTCuxKskvSc2Nz0+LL81LqczMS2dmYE3OL80rYWBgYGQAAE4TM3ZDAAAA
+      '2':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+      '3':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+      '4':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxSk7MTmVmYE3OL80rYWBgYGQAAHwZZ6c3AAAA
+      '5':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+      '6':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+      '7':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxKs4vzYlPTswtSMssSmVmYE3OL80rYWBgYGQAAIJTAa5AAAAA
+      '8':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+  de9aad02-de82-3153-a8e7-78f2ce0371f8:
+    Type: Shaped
+    Result: !!binary |-
+      H4sIAAAAAAAA/72Wz24TMRCHp0RACBJwoJzNco1QXJr9k1uSzd64ckFV5DiTrInXrmxvi1T1AXgIblyR4JV4ErxIJEUCRdaGXK3xfJ9HP9nuAXTgcc4ce4fGCq0Anl104Z5YwpNKKOSGrdyIsw124D7XtXIAcNKDHtfVpVaonH10t1Jqg11omn69ifCjMywavb+JFlouo9GKSYv9iGtfFY2iV4NJPh7SqB8Jx6Tg2wK9WNWWM4e7PdYZsUFXGl2vy+2q8wTfiIzJEn0DoWtLGleyMroi9K2XmUjNNy89o1ZLNNKL/m56e7FtEN3CtyPqTptR4ZJcC1cSV3pdr2Ud4ZprRhbIlO3vN/5+ROOSmStv6J1/TbZxXjTGH2q1lkicQbSv9yr34MUuKah4yZSrmgidwFNb6uu5UHOntXTiEnrwQOIVStuB57tNtVoYZBuh1k0MAbpweieltXW6mitW4cNP+4czO88mg6L9cH58/vLXk/f/BZ5m2TkdtgdPA7F5NjgEtgzD5jTNadweqwOxwzSjSXssD8RmaUzT4582T98cAivDsDOaFDRrj2WB2DiZ0nF7rAvEjpOUTtpjMRA7S4aHwJIwbHGWnNHp0W+pIo5nND96pIpxPKGz9thNILaIU3qANyg0Uv/56fvjnwI/AS8fNWBkCgAA
+    Recipe:
+      '0':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
+      '1':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
+      '2':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
+      '3':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
+      '4':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxSk7MTmVmYE3OL80rYWBgYGQAAHwZZ6c3AAAA
+      '5':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
+      '6':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
+      '7':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDPzcxLTS5KTCuxKs4vzYlPTswtSMssSmVmYE3OL80rYWBgYGQAAIJTAa5AAAAA
+      '8':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDNzcxLTS5KTCuxSs5Pzk+MT0pNzCtmZmBNzi/NK2FgYGBkAAD+rBtuPgAAAA==
   35c011fb-872e-3c1e-b231-a85dad4cc08f:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: POTION
-      meta:
-        ==: ItemMeta
-        meta-type: POTION
-        display-name: '{"text":"","extra":[{"text":"🧪","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6495ED"},{"text":"🧬","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#6495ED"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#456CAC"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#466DAE"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#476FB1"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4870B3"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4972B6"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4A73B8"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4C75BB"},{"text":"’","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4D77BD"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4E78C0"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4F7AC2"},{"text":"A","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#507BC5"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#527DC7"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#537ECA"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5480CC"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5582CF"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5683D1"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5885D4"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5986D6"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5A88D9"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5B89DB"},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5C8BDE"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5E8DE0"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5F8EE3"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6090E5"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6191E8"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6293EA"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6495ED"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#456CAC"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#456CAC"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":"\"Drink, and rise beyond mortal bounds,","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#1560BD"}]}'
-        - '{"text":"","extra":[{"text":" growing in size to leave all in awe.\"","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#1560BD"}]}'
-        enchants:
-          minecraft:unbreaking: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ADDITIONAL_TOOLTIP
-        PublicBukkitValues: |-
-          {
-              "cmilib:nbtcommands": [
-                  "Pwb++LBKm+iaOeV044vWtg==",
-                  "ZRrNCkXiODkDE2GlHWYtFggEgzgO3Ou0aLQcHS1C5A7ZWGySft4DwjCygzjYybjz"
-              ]
-          }
-        potion-type: minecraft:thick
+    Result: !!binary |-
+      H4sIAAAAAAAA/8WYTW/TMBjHvU1MXZG2aQIEtxCOq1D6kpdWmkTz0k1iooNJGxubKidxUy+JPSXOSjtN4msgceCIECcu3Pgwu098BVKNtdJAbFZCOSWyH/v3+Inj//O4CMAcuGtCBndQFGNKAFg+LIBZ7ILlEBPkRLDLGseUpV1z4I5DE8IAADNFUHRoeEwJIixeAIsT24BGqJCazIKvpyJ6yyIoNt6cijYNXLHRhUGMSqJDUyuxIT4py4qkm2JJxAwG2BkbULubxA5kaDImZhH2EetFNPF641aWEtKJDkQzwsQvCZC4QoRjJNhoQNP3kEbpzIKd+u3GpRSUPlEUpN5ezXx2OJ5FPJumz4IX0T4mnoCJEOMhEhgVAgRPkACDYNQI++jpgXijz0Xw6PqX6jiUsNGXKYD5yxawNLFhPez4oAgeTJoQcXqQsHA0ZgYsxT3a72DSYZQGDB+ntvMBOkFBPAfuTQYlxI4Q9NMljHYEAAVwf9LpJDGjYYfAEC3+uDmoSq0uWzkE9eLj94tvn/8Ys9IVm0XJP0N/+Tv614isO+dWkPECa7JiNI3sC9zixCqK2bSyY3ucWFVp6eXsWMiJ1VRJr2bHEk5sXa3oSnYs48Q21aquZcdSTqyhyrqeHRtyYk1VzePEP3/3nhNsqZohZQfHnNiW2jQqOSgcH1aWVN2Qs2ObnNiKahrq1IMsV1XLaGbHOpzYmiYZOYgB4sTKWsVoTf14lBWtauYgBi4nVtNkszZ1DZLrmmLmIAa8QW5qmlmfugbJulY3cxAD3lPK0HQzh7SGM5uSLc20cpACzmxKbmmWlUNag/mwilSXrBykIODElutlK4e0hnMnK5V61cpBCjjP5LwKn+j/lCM3/LfXqry8qOcfPt2iIv+9EHYhg0WwspXYKV1PfB+zHRgkKF4AK06IA2w3iM0cGoaQuPHlBcrDrb69urqpPw9XMWyjHalWO9ll3toaeLb/Knph+K9x2/RNq7IebOzusZbnWd7Qa1fbiQQ3Xzob22VDbqr7u+uD7S6rmf0jY+ANj/YG9tEQpDX944mTPeyiDnRdPLorgMG48AfgJ1gbBqkhEgAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PHANTOM_MEMBRANE
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImysHcXaGexEalR00Y5U3X/eG4CEcaWgjf2TYsC092jlwqxinJ3uWN6HLIoeyno6GSd0ufwWABpUWp3fs0MAAAA=
         byItem: true
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PHANTOM_MEMBRANE
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImysHcXaGexEalR00Y5U3X/eG4CEcaWgjf2TYsC092jlwqxinJ3uWN6HLIoeyno6GSd0ufwWABpUWp3fs0MAAAA=
         byItem: true
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PHANTOM_MEMBRANE
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImysHcXaGexEalR00Y5U3X/eG4CEcaWgjf2TYsC092jlwqxinJ3uWN6HLIoeyno6GSd0ufwWABpUWp3fs0MAAAA=
         byItem: true
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: OPEN_EYEBLOSSOM
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxyi9IzYtPrUxNyskvLs7PZWZgTc4vzSthYGBgZAAAjCMdYkIAAAA=
         byItem: true
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: NETHERITE_SCRAP
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxykstyUgtyixJjS8GChQwM7Am55fmlTAwMDAyAAA2NIBUQgAAAA==
         byItem: true
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: OPEN_EYEBLOSSOM
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxyi9IzYtPrUxNyskvLs7PZWZgTc4vzSthYGBgZAAAjCMdYkIAAAA=
         byItem: true
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: POTION
-          meta:
-            ==: ItemMeta
-            meta-type: POTION
-            potion-type: minecraft:water
+        item: !!binary |-
+          H4sIAAAAAAAA/12MwQ5AMBAFH0KkDlz9irNvcBNpViU92G3aFb+POEhcZyZjgALNaNVOLiYvDHRzjdyv6HbPjqLddAiitypQkhysADIDQ7IHYceaDPp/u5CwPq5G9RK0X3NadfHeXFz9zFV+AAAA
         byItem: true
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: POTION
-          meta:
-            ==: ItemMeta
-            meta-type: POTION
-            potion-type: minecraft:water
+        item: !!binary |-
+          H4sIAAAAAAAA/12MwQ5AMBAFH0KkDlz9irNvcBNpViU92G3aFb+POEhcZyZjgALNaNVOLiYvDHRzjdyv6HbPjqLddAiitypQkhysADIDQ7IHYceaDPp/u5CwPq5G9RK0X3NadfHeXFz9zFV+AAAA
         byItem: true
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: POTION
-          meta:
-            ==: ItemMeta
-            meta-type: POTION
-            potion-type: minecraft:water
+        item: !!binary |-
+          H4sIAAAAAAAA/12MwQ5AMBAFH0KkDlz9irNvcBNpViU92G3aFb+POEhcZyZjgALNaNVOLiYvDHRzjdyv6HbPjqLddAiitypQkhysADIDQ7IHYceaDPp/u5CwPq5G9RK0X3NadfHeXFz9zFV+AAAA
         byItem: true
   9951199f-f260-336f-ac43-56069998658b:
     Type: Furnace
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: EXPERIENCE_BOTTLE
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDOzcxLTS5KTCuxSq0oSC3KTM1LTo1Pyi8pyUllZmBNzi/NK2FgYGBkAACjKUj+RAAAAA==
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ENCHANTED_BOOK
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDIzcxLTS5KTCuxSs1LzkjMK0lNiU/Kz89mZmBNzi/NK2FgYGBkAACofIRPQQAAAA==
     Cook: 240
     Exp: 1.0
   5fa38c2e-baff-35ae-891b-cd37239905d5:
     Type: Smoking
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: PUMPKIN_PIE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"R","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3AD16"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3A916"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F4A616"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F4A317"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F5A017"},{"text":"y","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F59D18"},{"text":",","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F69A18"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F69718"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F79319"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F79019"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F88D1A"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F98A1A"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9871A"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FA841B"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FA811B"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FB7D1C"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FB7A1C"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FC771C"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FC741D"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FD711D"},{"text":"z","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FD6E1E"},{"text":"z","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FE6B1E"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FF681F"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":"----------------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00FF00"}]}'
-        - '{"text":"","extra":["You crafted this pizza with your imagination"]}'
-        - '{"text":"","extra":["Now just imagine this really is one!"]}'
-        - '{"text":"","extra":["And have a bite! NOM NOM NOM"]}'
-        - '{"text":"","extra":["You will tell the world you''re having pizza!"]}'
-        ItemFlags:
-        - HIDE_ADDITIONAL_TOOLTIP
+    Result: !!binary |-
+      H4sIAAAAAAAA/8XX34vTMBwA8OhxMCuIL75n8cGXCQ2b/TF86db1zRN8EESOkbXZGi9NSpo6t+P+JPFfNPO8rcNfhNbboKOU5Pv55vsNNHUAOAOPY6LJe6oqJgUATy974CHLwLOCCZoqstTjsi7KKybmJaNn4DyVtdAAgAcOcFJZlFJQoatH4MlhApeK9syQc/D1GtEvWhE0/niNFpJnaLwkvKIDlEozCo3Rc9dNEtdFA8Q04SzdD5CLZV2lRNPDnEordkV1rmS9yvdPtRFMoJf//BmjFhlV3CR6F/Tmch8A3YD4kC76IGv4Yzk0gzpnFSzZdkvgmukcbmStICvIigmiTdnQUZTXjSgXcg0/1ZX+OZrehlKUcL6B5s5Ur388e9SYHYkM5uQzhQQumKZ9ePH2zd2F/pr5mnEONd395RSupeLZLusXiu4CMrG6Xc6x3Wt2PTVZy2IuSEGdb7+2Uau62cVkGMXYa9/Fd79t0uDPatiFSu3UUeR1oRJbdYj99iq3U19F7inUMMZBe3Vjp3ph1IU6sFX9LlRop/rhEIftVW2rul2ouZ0aBDGO2qvMTg2DqAu1slX9LlTL3RQFIzy59wpHAe5CtazwxI/x9N4rPPGjLlTLd87U90+w1qk/wnF7tbRTYx93oVru4dib4Vl7dWunzrzJCdTEC3Dyv/Zw8yDrgP7hIJuzjM5JlrHdSZ3wuZaSa1aa75Pv0YRf1f8MAAA=
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DEEPSLATE_EMERALD_ORE
-          meta:
-            ==: ItemMeta
-            meta-type: UNSPECIFIC
-            display-name: '{"text":"","extra":[{"text":" ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02A4D3"},{"text":"❖","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#01A2D2"},{"text":"
-              ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#01A1D2"},{"text":"E","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#019FD1"},{"text":"x","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#019ED1"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#019CD0"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#019BD0"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#019ACF"},{"text":"
-              ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0198CF"},{"text":"V","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0197CF"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0195CE"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0194CE"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0193CD"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0191CD"},{"text":"R","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0090CC"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#008ECC"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#008DCB"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#008CCB"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#008ACB"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0089CA"},{"text":"
-              ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0087CA"},{"text":"I","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0086C9"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0085C9"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0083C8"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0082C8"},{"text":"
-              ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0080C7"},{"text":"❤","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#007FC7"},{"text":"","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#007EC7"}]}'
-            lore:
-            - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"--","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-            - '{"text":"","extra":[{"text":" Enchantments:","strikethrough":false,"obfuscated":false,"bold":false,"italic":true,"underlined":false,"color":"#B38007"}]}'
-            - '{"text":"","extra":[{"text":" • Vote I","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#B38007"}]}'
-            - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"--","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-            - '{"text":"","extra":[{"text":" Thank you for supporting us","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#015E85"}]}'
-            - '{"text":"","extra":[{"text":" at ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#015E85"},{"text":"1MoreBlock.com","strikethrough":false,"obfuscated":false,"clickEvent":{"action":"open_url","value":"http://1MoreBlock.com"},"bold":false,"italic":false,"underlined":false,"color":"#015E85"},{"text":"
-              with votes!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#015E85"}]}'
-            - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"--","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-            - '{"text":"","extra":[{"text":" Forged through Support","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#017987"}]}'
-            - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"--","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-            - '{"text":"","extra":[{"text":" ❖ Tier 1 Vote Item","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#555555"}]}'
-            enchants:
-              minecraft:unbreaking: 1
-            ItemFlags:
-            - HIDE_ENCHANTS
+        item: !!binary |-
+          H4sIAAAAAAAA/+2bT2/bNhTAmQYtMgfdemh3KlBNvWarJFK27Jsty8AOvbRBLkNhKDITC5ZFg6KcFkGAfopilwJDMWCfYN9l53ySMWsaB5thm8Gb2cPzUSL5e9YfvvcDxQYhu2S/n6r0iMsqFyUhj97skXv5iDyb5iXPZHqiOiPOZ1WRKj7kUy7TYjQUku+S+5moS0UI2WmQRiamM1HyUlXfkG8XXQvdck83aez/ee7yt0qmbueXc/dYFCO3c5IWFT9wM6FbuR33uef7TRq6B26u0iLPbhqI45O6yjR/0adSMp9wNZaiPh3fHFWaoAf6UQ9RlyMuCx3Hlz4XByuwLdq0gW3Tlg1sl0bbxwZ+TNs2sH3atYEd0J4FbODRePtYGgQ0sYGldGADGzLPBrbJ/O1jWRCxwAa2zagNbI8xG9iYWUh8YZAwCxkoDAbMQgYKqc8sZKCQBsxCBmpSxixkIF3AMQsZqElbrG8DGzELia9FuyFEBlrOfXPTwL0gv64v23s08rzb04iS9R2icZIyG6elml5JRGd9ZB/uENkdL5Rz+f6TcyQUd35eGxeKzhIsig6KDooOig6KzhIsig6KDooOig6Kzn+wWxSdPzYp28MkApi9nEPtORPnnaidEyGdqp7NhFR5eerU1dpAd/7aYqCpcja7Y5oySeba3NzOuZtmKhel7i9mvBzWstBjzNOi5vrQWKlZ58UL/6WQvFeIbPJTJqbuxf8Q/L8Qhu4AdAHPcjV25tocqx/QHNEcV2PRHNEc0RzRHNEcl2LRHNEc0RzRHL82c/y0SdneakcQC1EDIU/5yLk+7bz+rI6oFqgW64ptVAtUC1QLVAtUiyVYVAtUC1QLVIuvTS1+W1+2h//8ANTi8uMH5zDn0vGvP3VTfPmqye0IG+T7xWYffusDvh3yXTUWZ8O8HCohCpXPSIM8KPicF9UuebzoVJfHkqeTvDy92klEyB55sjiZ1ZUS02GZTvnDpxsoTNBlfYC8teGi16Ko7wZ9gCyt74Ax2IcAG//f9qAPUAwlxtgEAvvWGBv3Ad735Za+CtuDwEpjbDcGKOtTY2wEgTV/klsQ2CNjbBgDZC5hjGUQWPMnmcYA5QE3xvoQWNPywGt7MUAN9soUGyUQWNOL7EX9GKDQPTPGxhBY01nKi7oQWNM52YvaMYDEjIyxLQis6ZzsRc0YwBSXb9VYhQ0hsKaToxfRGEDHzd/bAAJr+l2VF3kxxDqIKbY1gMBefvzdGJxAgNebIvkbcBseo8tBAAA=
         byItem: true
     Cook: 200
     Exp: 0.0
   b784a398-c484-3c3f-a5be-4e12e03bc635:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: POTION
-      meta:
-        ==: ItemMeta
-        meta-type: POTION
-        display-name: '{"text":"","extra":[{"text":"🧪","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6495ED"},{"text":"🧬","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#6495ED"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false},{"text":"P","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#456CAC"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#466DAE"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#476FB1"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4870B3"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4972B6"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4B74B9"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4C75BB"},{"text":"’","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4D77BE"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#4E79C0"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#507AC3"},{"text":"D","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#517CC6"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#527EC8"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#537FCB"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5581CD"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5682D0"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5784D3"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5886D5"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5A87D8"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5B89DA"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5C8BDD"},{"text":"g","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5D8CE0"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5F8EE2"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6090E5"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6191E7"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6293EA"},{"text":"w","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#6495ED"},{"text":"
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#456CAC"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#456CAC"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":"\"Drink, and shrink beneath the","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#1560BD"}]}'
-        - '{"text":"","extra":[{"text":" weight of forgotten sorcery.\"","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#1560BD"}]}'
-        enchants:
-          minecraft:unbreaking: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ADDITIONAL_TOOLTIP
-        PublicBukkitValues: |-
-          {
-              "cmilib:nbtcommands": [
-                  "Pwb++LBKm+iaOeV044vWtg==",
-                  "ZRrNCkXiODkDE2GlHWYtFqfXoxV404UCo+jnh/xFmAVuzKLDyOXt2u/e1QC3LoQK"
-              ]
-          }
-        potion-type: minecraft:thick
+    Result: !!binary |-
+      H4sIAAAAAAAA/8WYTW/TMBjHPSamrkjbNAGCWwjHVqxveWmlSTRxCtImtiHRDdhUOYnbmCb2SJy1Y5rE10DiwBFN3LnxYXbfdyDVWCuNwWYllFtkP49/z2P/4+ifPACz4A5EHLVxGBFGAVjay4FbxAVLAaHYCVGXN/YZT6ZmwW2HxZQDAGbyIO+wYJ9RTHk0DxYmsT4LcS4JuQVOjmQ85CGSG2+PZJv5rtzoIj/CRdlhSZTckB+XFbVkQLkoE4584owDmN2NIwdxPMmJeEj6mHshi3veeJQnhGShXRmGhPaLEqKuFHmjZ8nGFCPuSdzDCSCmLg79pMqLFY/3xtny8TRrlQaY9Dwusa7UZWGPcY6pFLHQweHhk1352lrz4OHlk+k4jPLRSeTA3PkIWJzEcI84fZAH9ydDmDoeojwY5cyAxchjgw6hHc6Yz8l+Ejvn4wPsR7Pg7iQppnaIUZ/Q3kgBAOTAvcmkE0ecBR2KArwwvH4z1VpdsTLYzLMvP86+n1y5Z8ULNg/jf4b+9nf0r4y0irkRZNxgTVHNppm+wU1BrKrCppUe6wliNbVllNNjkSBW10pGNT2WCmLrWsVQ02O5INbQakY9PZYJYk1NMYz02EAQCzXNyEDJpx8/CYItrW6W0oMjMaxS0ppmBloWvKeUsmaaGWgZCmIrmmXq6bFEEFvVWub0tawoetnM4Gsn2q2qV2AGSha8HhVNr8EMlCzara6rUJn+e9vUNZiBkgW/uIqh12Fz+pts6gbMQMmikoK6aWWg5J4gtqVbVmXqd7JaqpesDJRsCGLL9bKlpceGgthKvWploOSrDeafsRk5kMH/8QXXSOqS3cqKevr56w2s8e+O1EUc5cHyZmwndCPu9wlvIz/G0TxYdgLiE7tBbe6wIEDUjc7/XDzYHNiFwrqxFhQI2sDtUq12sM17q6vg6ZuX4Quzv0M2YB9alWf+8+3XvPW+u8OG7Vqp9spkhXfUWxm2gmY7/rC2Dg83dnglXsHlLbO6zrbWQGKuH02K9IiLO8h1yci0I3/swAH4CU479v+aEQAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PHANTOM_MEMBRANE
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImysHcXaGexEalR00Y5U3X/eG4CEcaWgjf2TYsC092jlwqxinJ3uWN6HLIoeyno6GSd0ufwWABpUWp3fs0MAAAA=
         byItem: true
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PHANTOM_MEMBRANE
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImysHcXaGexEalR00Y5U3X/eG4CEcaWgjf2TYsC092jlwqxinJ3uWN6HLIoeyno6GSd0ufwWABpUWp3fs0MAAAA=
         byItem: true
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PHANTOM_MEMBRANE
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQ5AQAwF0M9EImysHcXaGexEalR00Y5U3X/eG4CEcaWgjf2TYsC092jlwqxinJ3uWN6HLIoeyno6GSd0ufwWABpUWp3fs0MAAAA=
         byItem: true
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CLOSED_EYEBLOSSOM
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDOzcxLTS5KTCuxSs7JL05NiU+tTE0Csorzc5kZWJPzS/NKGBgYGBkA6my+s0QAAAA=
         byItem: true
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: NETHERITE_SCRAP
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxykstyUgtyixJjS8GChQwM7Am55fmlTAwMDAyAAA2NIBUQgAAAA==
         byItem: true
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CLOSED_EYEBLOSSOM
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDOzcxLTS5KTCuxSs7JL05NiU+tTE0Csorzc5kZWJPzS/NKGBgYGBkA6my+s0QAAAA=
         byItem: true
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: POTION
-          meta:
-            ==: ItemMeta
-            meta-type: POTION
-            potion-type: minecraft:water
+        item: !!binary |-
+          H4sIAAAAAAAA/12MwQ5AMBAFH0KkDlz9irNvcBNpViU92G3aFb+POEhcZyZjgALNaNVOLiYvDHRzjdyv6HbPjqLddAiitypQkhysADIDQ7IHYceaDPp/u5CwPq5G9RK0X3NadfHeXFz9zFV+AAAA
         byItem: true
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: POTION
-          meta:
-            ==: ItemMeta
-            meta-type: POTION
-            potion-type: minecraft:water
+        item: !!binary |-
+          H4sIAAAAAAAA/12MwQ5AMBAFH0KkDlz9irNvcBNpViU92G3aFb+POEhcZyZjgALNaNVOLiYvDHRzjdyv6HbPjqLddAiitypQkhysADIDQ7IHYceaDPp/u5CwPq5G9RK0X3NadfHeXFz9zFV+AAAA
         byItem: true
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: POTION
-          meta:
-            ==: ItemMeta
-            meta-type: POTION
-            potion-type: minecraft:water
+        item: !!binary |-
+          H4sIAAAAAAAA/12MwQ5AMBAFH0KkDlz9irNvcBNpViU92G3aFb+POEhcZyZjgALNaNVOLiYvDHRzjdyv6HbPjqLddAiitypQkhysADIDQ7IHYceaDPp/u5CwPq5G9RK0X3NadfHeXFz9zFV+AAAA
         byItem: true
   44d14878-9df6-32bf-b966-a0074deedb4d:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: GOLDEN_HORSE_ARMOR
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":" Forged Horse Armor","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+    Result: !!binary |-
+      H4sIAAAAAAAA/0WOsWrDQAyG1YZCcJcs3TIYzXkCb4VS+gRZSjDKWbaP3J2KTgeFkCfpy+Y81Fklvu//GoANvH6Q0ZE1e0kAu9MWnv0A++gTO6XRuknCwKmfRTP3pFF0Ay9OSjIAeGqgcRJ/JHGyvIW3B+dKNol9osjwd0X+NSXsvq94rkLsRgqZD+gkiGKHywoe0BsF79avnMeSHRk/gGzqL2yzSpnm9WpVXy3tp+jEQ/u1xLbvS2yVljSwhhr2b7mdVgJvAHfSluR1CAEAAA==
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: GOLD_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxSs/PSYlPyslPzmZmYE3OL80rYWBgYGQAAKhmb1M9AAAA
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEAD
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxyklNTGFmYE3OL80rYWBgYGQAAE761E83AAAA
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
   46cdfea5-a5d4-39a4-bce5-48cce769b2f2:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: GLOW_INK_SAC
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDLzcxLTS5KTCuxSs/JL4/PzMuOL05MZmZgTc4vzSthYGBgZAAAy3ko9D8AAAA=
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
         byItem: true
   a421ca1c-598f-37d5-aed2-a8753d128e0e:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: IRON_HORSE_ARMOR
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":" Forged Horse Armor","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+    Result: !!binary |-
+      H4sIAAAAAAAA/0WOMWrDQBBFJxYBIzdp0qQSU/sE6gLB5ARpjBHj1UhavLsTZmfBYHySXDZSYbn9n/d4NUAFuy8y+mHNXhLA22kLG9/DR/SJndJgrVdJ3SSauSONohW8OinJAOClhtpJ/JXEyfIW3p+UK9kkdokiw98N+WpK2B5veJbQYztQyLxHJ0EUWxyXcY/eKHi3vnIeSnZk/ASyqb+wTSplnNbVZv1saQ6iI/fN9xLbfC6xs7SknjXMYQ/L/bQSeAf4ByPtc00GAQAA
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: IRON_BLOCK
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxyizKz4tPyslPzmZmYE3OL80rYWBgYGQAAKjuKsk9AAAA
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEAD
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxyklNTGFmYE3OL80rYWBgYGQAAE761E83AAAA
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+  2e022dd0-c22e-35ff-8dd3-d883af4ff04d:
+    Type: Shaped
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDKzcxLTS5KTCuxysgvyotPzi9KzIlPyslPzmZmYE3OL80rYWBg4GAAAFhZR+lDAAAA
+    Recipe:
+      '0':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '1':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '2':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '3':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '4':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKk8tiS8uyM9LT2VmYE3OL80rYWBgYGQAALbffzI9AAAA
+      '5':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '6':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '7':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
+      '8':
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBwQmAMAwF0K9FEL24gXt4dgZvEmJasVgTiHV/3xuAgHHlylvyN5sC096jzRHzkzWJ81mXmDjSZa4k5lzoKCZ3QCf2aQXQ4AdN/k0ZSAAAAA==
   617030e9-68f4-318d-bfa1-3709f597a2e0:
     Type: Shapeless
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: COOKIE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"D","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00D8E6"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00D0E6"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00CAE6"},{"text":"m","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00C3E6"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00BCE6"},{"text":"n","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00B5E6"},{"text":"d
-          ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00AEE6"},{"text":"C","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E67C00"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E68400"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E68C00"},{"text":"k","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E69400"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E69C00"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#E6A500"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-        - '{"text":"","extra":[{"text":"Nothing beats a Diamond Cookie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00AEE6"}]}'
-        - '{"text":"","extra":[{"text":"when you''re hungry *nomnom*","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#00AEE6"}]}'
-        - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-        - '{"text":"","extra":[{"text":"More info: /diamondcookie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#017987"}]}'
-        - '{"text":"","extra":[{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011635"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011736"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011937"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#011A38"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021C39"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021D3A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#021F3B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#02203C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03223E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#03233F"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032540"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#032641"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042842"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042943"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042B44"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#042C45"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052E47"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#052F48"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#053149"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#05324A"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06344B"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06354C"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06374D"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#06384E"},{"text":"-","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#073A50"}]}'
-        enchants:
-          minecraft:unbreaking: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-        custom: H4sIAAAAAAAA/xXOS3KCMAAA0ExXWi/gHbIAER1ZuOBTAYMEhULKjgzFRExAZcTcxON2+k7wPgGYglnsZG4nRCXrxwQA8AHmyUghjBwkIK/wb66b5rMYztsteA/+AsGr246y2etOruw6EtwNVl4Z0FI5CSnGhcZSRmHBte5uDlhLQwvl8lDaftfizR6WaPW1c6Njj0N1YkKiPmhgGuMbYrFQgcHsBK7tp2rzKye9nnjkm54Li1qpz73mlv0sLwY5vNhOho9+qDMS/c/+AKN0iA7LAAAA
+    Result: !!binary |-
+      H4sIAAAAAAAA/+2aX2/TOhiHPaYzjU46hws44jKEiyPRoaWx038SF2nSbqPbOtjoyo7Q5CRuY5rYJXHXVYjvcT4AQuKeD3gyEBsSFVukUN9Y6lVr53ndSv75qd8SAKtgw8UC90mSUs4AuPdmHdyhAbgXU0b8BA9F0+d8TMkq+MPnUyYAACslUPJ5POGMMJHeBX9ej414QtazIWsbX97r5EIkWG/++173eBTozSGOUrKp+zwbpTf1x0alUoWWvqlTgSPqXw3g3nCa+liQ6zmpSOiYiDDh01F49a7ICNmDnmaPmLKAJFFWx/c5HzZ/ga3BqgxsA9ZkYG1YXz7WrDiwIQPrQlsGtgNbErCmAZ3lY6FpwrYMLIQdGVgLGTKwVVRZPhaZdWTKwDYQlIFtISQD6yAJwWeZbSQhgSyzgyQkkAUrSEICWdBEEhKoChGSkEDZAQ5JSKAqrCFXBraOJARfDdrWb0ugN1ef6x/A51uc2g273S7g+HzARUjZSPMIFqmGNZfimLNAc77qxs2lflpeqbOQMG3Op/8kRAunbJTMtSeMx9nryY11KhFagFUipERIiZASISVCC7BKhJQIKRFSIqRE6Cfs8kTo421O7bVGvYBdZJ9nWkHZkDe1reCbBPm3cyDlFguwyi2UWyi3UG6h3GIBVrmFcgvlFsotlFv8hF2aW5TA39cNU4T5IWYivuykWgF/pSGfnVF2JjiPBJ2AEliLyDmJ0lVw/3rSlHkJwWPKRpfdWACsgwc/tGtNU8HjM4ZjsvboNnckbr2IOxI359dtuEYRWJoX69hFYHFuLCwCG+fFtpwisDw31ioCy/Jii7ntC7R83Ha15hgF7BxOXmwdFYHN+eNm2EJWmxvbKGS149zYQlabc5tqV7MsKgB7819IpQXREWCB74KNg9axw+MYsyC9bOm9Ax4ezrxyea/VjcsU90jfQOj8RIyePQP/ie1Ktxw54xkbPjda/bkd7MXU2bHc0x3vdN46HJzMKlvhUeiVT+gWT5DobR3tNrp9tn9qb/Nxr/68fNq12h1n78Wktzt/GcasO9kZlo8Oeu+64UE83zFD+7Bctc/n435EBxPj0B288kYnDa9xtE3d4bvj1/CtOdi/CDtsN52I4Hiwd1kZAP8Dsp8nfuUsAAA=
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: DIAMOND
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
         byItem: true
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: COOKIE
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxSs7Pz85MZWZgTc4vzSthYGBgZAAAbT2mVjkAAAA=
         byItem: true
-  50d8ee09-6b02-362b-8e51-3696fa93356e:
+  73185be5-2b4b-311e-afac-4f407c369dc4:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: LEATHER
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"Weak Leather","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gray"}]}'
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDMzcxLTS5KTCuxyslMzyiJT8opTY0vz8/PYWZgTc4vzSthYGBgZAAATgCX5kIAAAA=
     Recipe:
-      '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
-      '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+        byItem: true
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+        byItem: true
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: CHARCOAL
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSs1NLUrMSWFmYE3OL80rYWBgYGQAAN7H+0M6AAAA
+        byItem: true
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
-      '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+        byItem: true
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
-      '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: ROTTEN_FLESH
-  a5f9b0ec-4c0a-395d-86ab-ba8c5e73431a:
-    Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: WOODEN_SHOVEL
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":["Leather Shovel"]}'
-    Recipe:
-      '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
-      '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STICK
-      '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STICK
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxSslMzM3PS2FmYE3OL80rYWBgYGQAAO7Li506AAAA
+        byItem: true
   4592ba93-ab8c-3234-8322-e2b98bc62998:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: NAME_TAG
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDKzcxLTS5KTCuxykvMTY0vSUxnZmBNzi/NK2FgYGBkAABAxxiuOwAAAA==
     Recipe:
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: STRING
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDIzcxLTS5KTCuxKi4pysxLZ2ZgTc4vzSthYGBgZAAAqv2wbjkAAAA=
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: INK_SAC
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyszLji9OTGZmYE3OL80rYWBgYGQAAMw87+46AAAA
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: PAPER
-  8d824325-5fd2-3826-8907-415c9e07a786:
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDPzcxLTS5KTCuxKkgsSC1iZmBNzi/NK2FgYGBkAABVP2czOAAAAA==
+  7f8bad79-427c-3faf-8251-3f4662672c66:
     Type: Shaped
-    Result:
-      ==: org.bukkit.inventory.ItemStack
-      v: 4189
-      type: SADDLE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"Forged Horse Saddle","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"gold"}]}'
+    Result: !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYZDJzcxLTS5KTCuxSipNSspJjU/OL0rMiU/KyU/OZmZgTc4vzSthYGDgYAAA4yLaa0UAAAA=
     Recipe:
       '0':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '1':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '2':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '3':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '4':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDJzcxLTS5KTCuxKk8tiS8uyM9LT2VmYE3OL80rYWBgYGQAALbffzI9AAAA
       '5':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '6':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '7':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEAD
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
       '8':
-        item:
-          ==: org.bukkit.inventory.ItemStack
-          v: 4189
-          type: LEATHER
+        item: !!binary |-
+          H4sIAAAAAAAA/wXBQQqAIBAF0F8SRG26Qtdo3RnahcyME0jmgOn9fW8BHNaTKl1a/mgZ2O4ZYwzYv5hVCj31CErBc2NO6sUKJc/J5HWYxFquAAZ0GXFD+koAAAA=
+  8d824325-5fd2-3826-8907-415c9e07a786:
+    Type: Shaped
+    Result: !!binary |-
+      H4sIAAAAAAAA/0WOwYrCQBBEezcsSPbixbv02S/IeZG9C15EpJ3pxMHJtPT0gBDyJf7sZgXjtareo2qACr5/yGjPmoMkgOVxAZ/Bw7IPiZ1Sa00m7yNX8OWkJAOAjxpqJ/1NEifLC1i9t65kk/6UqGd4DMh3U8LmMOBZosempZh5g06iKDbY/YcbDEYxuLmVc1uyI+M3kE3Dle2iUrrLnNqknyxb0Y79+lc083r3PDtJS/KscTr2sozHmcAR4A8zn7nb/AAAAA==
+    Recipe:
+      '0':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '1':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '2':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '3':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '4':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '5':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '6':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA
+      '7':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYeDLzcxLTS5KTCuxyklNTGFmYE3OL80rYWBgYGQAAE761E83AAAA
+      '8':
+        item: !!binary |-
+          H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQiOVgYMpMYRDMzcxLTS5KTCuxyklNLMlILWJmYE3OL80rYWBgYGQAAMo5Ays6AAAA

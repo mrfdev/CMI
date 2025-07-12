@@ -551,6 +551,39 @@ summer_ariel_azure:
   - '{#f7d486} we can trade, but yeh .. pirates did'
   - '{#f7d486} take 1 of them, sailed away with it. :("'
   - '{#c5f9d7} - Ariel Azure'
+thingsforstaff:
+  Loc: wild;8478.69;115.13;1718.28
+  Interval: 0.7
+  HoverParticles:
+    Effect: CRIMSON_SPORE
+    Spacing: 0.1
+    ExtraWidth: -0.2
+  Range: 8
+  RangeExtra: 16
+  Interactable: true
+  NewDisplay: true
+  ND:
+    Bill: FIXED
+    TAlpha: 255
+    Yaw: 90
+    Double: true
+    BColor: '{#Black}'
+    BAlpha: 255
+    LineW: 400
+    ScaleW: 1.2
+    ScaleH: 1.2
+  RequiresPermission: true
+  Commands:
+  - asPlayer! tps cmi_tps
+  Lines:
+  - 'Players online: {#yellow}%cmi_server_online%&r / Uptime: %cmi_server_uptime%'
+  - 'TPS: %cmi_tps_1_colored% &r/ %cmi_tps_60_colored% &r/ %cmi_tps_300_colored%'
+  - '&r &r'
+  - 'Holding: &2%cmi_iteminhand_type%'
+  - 'Worth: &2%cmi_iteminhand_worth_one%&r - &2%cmi_iteminhand_worth%&r for &2%cmi_iteminhand_amount%'
+  - Should be in /shop for &2%cmi_equationint_{cmi_iteminhand_worth_one}*100%
+  - '&r &r'
+  - '%onlineplayers_displaynames%'
 spawnplaytimetop:
   Loc: spawn;25.51;65.81;130.16
   Interval: 60.0
