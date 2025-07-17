@@ -1,5 +1,3 @@
-#
-
 CustomAlias:
   mcmmo boosters:
     Cmds:
@@ -10,8 +8,8 @@ CustomAlias:
     - 'msg! $1 {#red} Please note: The delay is set, stay in-game so the booster will
       automatically stop. \n {#green} Started: $2 multiplier for mcMMO for $3 minutes.'
     - asFakeOp! xprate $2 true
-    - delay! %cmi_equationint_$3*60%
-    - asFakeOp! xprate reset
     - 'asConsole! cmi broadcast ![mcMMO] A booster multiplier of $2 has started (for
       $3 minutes) by $1 - Enjoy. \n Related commands: /mcstats, /mcrank, /mctop'
+    - delay! %cmi_equationint_$3*60%
+    - asFakeOp! xprate reset
     Perm: true
