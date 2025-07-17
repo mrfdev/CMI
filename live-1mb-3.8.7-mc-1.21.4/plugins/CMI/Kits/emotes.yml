@@ -4,19 +4,8 @@ emoteHug:
   Delay: 10
   MaxUsages: 1
   Items:
-    '28':
-      v: 4189
-      type: SUNFLOWER
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"},{"text":"☀","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5CE68B"},{"text":"]
-          /hug","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /hug","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"1","italic":false,"color":"gold"}]}'
-        custom: H4sIAAAAAAAA/1XOuw6CMBQA0GtYUBdN/AYXBoMxJg4OyEsIYLBVKhumDaBAsUCi/qS/5GNzPdMZAEgg75OK8tKh41c97cMw2GCdl+UHGxkAelC4XR2i0EwbpmSGKnBreTiwF8vK3eEb2grSJeHOIyovcnVmUs5w7GpBE3FGvJOPFvgS5AZJu/CYRa36tMUTn2cxi+sHNeYWuq6USEOYJFrhrCUY6b7j5WXeMnpomJ/cvwkJJn+sd0Kwqv393s7d42/GAAAA
+    '28': !!binary |-
+      H4sIAAAAAAAA/72U3W4SQRTHB4kJpYmpUe83a+JNSXBrS+0mXlAWKgRo6K4F2xAz7B52R+YD50NpSRN9C9/AOx/CF/AdfBIXPyCNGDQY7yYzZ/7/35lz5uQRyqJND2t8ClIRwRHa6ufQDRKhO4xwCCUealcZPqTiDcgsuhkKwzVCKJNH+VCwseDAtdpAtxbhVEjIoZnyh6kNEy2x7Z5P7YGgke0OMVVQsEORRtmufd8r7z/0SnbBJhpTEs4DxGBoVIg1LO4oLckIdCKFiZP5rk4dUiHLN4yBtGqgNHmNqVVlQoMViBHwVN3wCCRNEX/KXfXnV+0r9PE/gjoTyyhwrRMSJ9oKU62RpYVlOBXpqpiYeDXvp5W8F0DTkq2PW9fAUl4cg3KtpWCF6dw0npH8YvlDybGv5ZBD9xYtExqlBXvBMYPMu9W1eOTte3s76yd3/ruEltvuVaqlx4fr2355//bvjP9Vvv0/a6/8ktJE6YzIotwJ5pFg9ej25/GDDbTZPgwqgrF0U81+fAbRhhl3/E41VrCdeI4MdK0ZtI92S7xxHLzyn8qewZ3jZs8RlDjFaiQgOGuU26oroNd83vJ3g5dt4vVi0zlNutq5PJKXwaB4Bmfji8jbqfmjg+1u2Q96uEzrT7LobqVVbxJG0hd4pqBipITv0ymLtq4dtfDkGx9CXwFEXWAZ8wQAAA==
 emoteCheer:
   Description:
   - This kit is a one time kit,
@@ -34,16 +23,5 @@ emoteCheer:
   MoneyCost: 4500.0
   ExpCost: 200
   Items:
-    '28':
-      v: 4189
-      type: SUNFLOWER
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"[","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"},{"text":"☀","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#5CE68B"},{"text":"]
-          /cheer","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#3D7D52"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":" Summer Festival Emote Token","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":" 1x use: Right click to unlock /cheer","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"Item usages: ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"yellow"},{"text":"1","italic":false,"color":"gold"}]}'
-        custom: H4sIAAAAAAAA/1XOOw6CMBgA4N+w+FgcvIWDooSwOCj4qqWKrRHcMC2KAtUWEi/hab2Aj831m74mgAH1bVxwmS95/+m9GtAiE+bKPP+grgNADTJU3QIaTE9adM+eqVg5w4zMLbtAa3anCxVWcbDGoSmz1OxNuRTsgMZE76UIceRTa3XckEgjTbKhk1yu2Hb2MqZnb3FSCUXJYEI3lxWzbD6IRga0XX+J0zwtBd9p4cePb8KAzh+7lVKiKH+/N/aavrXGAAAA
+    '28': !!binary |-
+      H4sIAAAAAAAA/72U3W4SQRTHB4kJpYlpot5v1ktJWiilZBMvCkstFGjprhZsiBl2z36U+ajzoRjSxMRr730Db30GH8VX8AUc/IA0YtBgvJvMnPn/f2fOmZNHKIs2XazwUxAy5QyhrWEO3UpDdJemDAKBI+VIzSLCX4HIotsB10whhDJ5lA84veIMmJIb6M4inHABOTRT/jC1YaIEtp2LqT3iJLSdCBMJBTvgJsp27Afuwf6OW7ELdqowSYN5AB9FWgZYweKOVCIdg0oE13Ey31XGwQhZnqYUhHUIUqUvMbEalCuwfD4GZtQ1C0EQg/hT7no4v2pfo4//EbQ4sbQExzpL40RZgdEaW4pbmhFuVttBAiBWE39aSfwaiCna+sBNBdQQ4xikYy0FK0znpvGM5BfLH0pF+0YOOXR/0TSBlorT5wxTyLxdXY1dd9/dK62f3MXvElpuu1dvVKq19W0/v3/zd8b/Kt/hnzZYfklxQjMnsih3hlnIaTPceed+2UCb3Zpf55SaTTn79RlEWvqq5/UasYSHiVsUvjps+93H5QprnfgvvCPR17h30u4XOUmL242Qg/+sddCV5xz67UHHKx+PTrsD2ZJdsluNLsftSvWcYy9xj2IRea2oVPNOL4/9ciUsDR5l0b16p9lOaWre4ImEuhYCvk+oLNq6cdTBk298CH0FzUCDPPcEAAA=

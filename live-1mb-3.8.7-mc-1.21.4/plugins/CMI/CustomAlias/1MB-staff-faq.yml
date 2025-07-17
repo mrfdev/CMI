@@ -74,16 +74,16 @@ CustomAlias:
     - statement:check6! check:$1==teams! check:$2!=null!
     - if:check6! check:%cmi_lastrandom_[playerName]%==1! asConsole! cmi sudo [playerName]
       c:The $2 island owner can invite others from the same world via /$2 team, the
-      others have to accept the invite. More info in /teams $3
+      others have to accept the invite. :) $3
     - if:check6! check:%cmi_lastrandom_[playerName]%==2! asConsole! cmi sudo [playerName]
       c:The $2 island owner can invite others from the same world via /$2 team, the
-      others have to accept the invite. More info in /teams $3
+      others have to accept the invite. :) $3
     - if:check6! check:%cmi_lastrandom_[playerName]%==3! asConsole! cmi sudo [playerName]
       c:The $2 island owner can invite others from the same world via /$2 team, the
-      others have to accept the invite. More info in /teams $3
+      others have to accept the invite. :) $3
     - if:check6! check:%cmi_lastrandom_[playerName]%==4! asConsole! cmi sudo [playerName]
       c:The $2 island owner can invite others from the same world via /$2 team, the
-      others have to accept the invite. More info in /teams $3
+      others have to accept the invite. :) $3
     - if:check6@! check:$1==teams! asConsole! cmi msg [playerName] !Failed to send
       Teams msg - game type is required. (/faq teams skyblock)
     - statement:check7! check:$1==kits!

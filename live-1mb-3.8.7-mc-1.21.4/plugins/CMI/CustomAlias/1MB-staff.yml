@@ -50,6 +50,18 @@ CustomAlias:
     - cmi sound ui_toast_challenge_complete -all
     - broadcast! {#cerulean}[PayPal] {#orange}Patron Support received from $1 - Thanks!
       And welcome to the 1MB Patron group.
+    Perm: true
+  _specialbooster:
+    Cmds:
+    - statement:check1! check:$1!=null!
+    - if:check1! cmi schedule specialbooster
+    - if:check1! cmi sound ui_toast_challenge_complete -all
+    - if:check1! broadcast! {#cerulean}[Discord] {#orange}mcMMO Booster 5x for 25
+      minutes, unlocked by $1. - Thanks!
+    - if:check1! asConsole! cmi toast all -t:goal -icon:diamond_block 5x mcMMO Booster,
+      unlocked by $1
+    - 'if:check1@! msg! [playerName] Syntax: /$0 <playername>'
+    Perm: true
   _epic:
     Cmds:
     - asConsole! cmi toast all -t:goal -icon:netherite_block New EPIC Member $1

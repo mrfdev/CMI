@@ -253,9 +253,13 @@ elytraExploit: true
 # Applies for servers from 1.11.x and up
 totemBehavior: true
 #  
-# Handling of anvil item renaming and colorization
+# Handling of anvil item colorization
 # Applies for servers from 1.9.x and up
-anvilRenameColor: true
+anvilColor: true
+#  
+# Handling of anvil item renaming
+# Applies for servers from 1.9.x and up
+anvilRename: true
 #  
 # Handling of launch command falldamage
 # Applies for servers from 1.9.x and up

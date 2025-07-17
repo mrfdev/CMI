@@ -8,6 +8,7 @@ RandomTeleportation:
   ExcludedBiomes:
   - Ocean
   - Deep ocean
+  - Bamboo jungle
   # If this set to true we will generate random teleport default settings for all detected worlds
   # Setting to false will no longer generate world setups, but you can add them manually if needed
   AutoGenerateWorlds: true
@@ -53,6 +54,7 @@ RandomTeleportation:
         # List of floor materials we should ignore when random teleporting
         Materials:
         - magma_block
+        - bamboo
         # List of biomes we should ignore when random teleporting
         # Keeping it empty will include all of them
         # If this is empty and ExcludedBiomes contains set biomes then we will use it

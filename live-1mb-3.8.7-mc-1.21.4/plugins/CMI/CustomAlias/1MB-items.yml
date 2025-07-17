@@ -1,5 +1,3 @@
-#
-
 CustomAlias:
   _booper:
     Cmds:
@@ -47,6 +45,7 @@ CustomAlias:
       {#buttercup} Your prefix has been updated to a Christmas Present and Winter
       Sparkles
     - if:check1! asConsole! cmi tablistupdate -s
+    Perm: true
   _item_event_santacookie:
     Cmds:
     - statement:check1! check:%server_time_MM%==11|12! check:%server_time_Y%==2024!
@@ -61,3 +60,4 @@ CustomAlias:
       {#buttercup} Your prefix has been updated to a Christmas Tree and Winter Sky
       Stars
     - if:check1! asConsole! cmi tablistupdate -s
+    Perm: true

@@ -30,7 +30,7 @@ TabList:
   GeneralFormat:
     # This will define how others see players name in tab list
     PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&e[playerDisplayName]
-      {#Feijoa}%multiverse_world_alias% &r'
+      {#Feijoa}%cmi_player_world% &r'
     Header:
       '1':
       - '{#Cerulean}'
@@ -39,7 +39,7 @@ TabList:
     Footer:
       '1':
       - '{#Cerulean}&l&m                                           &r'
-      - '{#Feijoa}World: {#Geyser}%multiverse_world_alias% {#Feijoa}/ Mode: {#Geyser}%player_gamemode%
+      - '{#Feijoa}World: {#Geyser}%cmi_player_world% {#Feijoa}/ Mode: {#Geyser}%player_gamemode%
         &r'
       - '{#Feijoa} Group: {#Geyser}Player{#Feijoa} / Money: {#Geyser}%vault_eco_balance_formatted%
         &r'
@@ -55,7 +55,7 @@ TabList:
   GroupFormat:
     '1':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&e[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -71,7 +71,7 @@ TabList:
         - '{#Cerulean}'
     '2':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&2[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -87,7 +87,7 @@ TabList:
         - '{#Cerulean}'
     '3':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&9[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -103,7 +103,7 @@ TabList:
         - '{#Cerulean}'
     '4':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%{#Cerulean}[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias% &r'
+        {#sirocco}%cmi_player_world% &r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -119,7 +119,7 @@ TabList:
         - '{#Cerulean}'
     '5':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -135,7 +135,7 @@ TabList:
         - '{#Cerulean}'
     '6':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -151,7 +151,7 @@ TabList:
         - '{#Cerulean}'
     '7':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -167,7 +167,7 @@ TabList:
         - '{#Cerulean}'
     '8':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -183,7 +183,7 @@ TabList:
         - '{#Cerulean}'
     '9':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&6[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -199,7 +199,7 @@ TabList:
         - '{#Cerulean}'
     '10':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%{#895bf3}[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -215,7 +215,7 @@ TabList:
         - '{#Cerulean}'
     '11':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&9[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -231,7 +231,7 @@ TabList:
         - '{#Cerulean}'
     '12':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%{#d34087}[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias% &r'
+        {#sirocco}%cmi_player_world% &r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -247,7 +247,7 @@ TabList:
         - '{#Cerulean}'
     '13':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%{#d34087}[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -263,7 +263,7 @@ TabList:
         - '{#Cerulean}'
     '14':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&r[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -279,7 +279,7 @@ TabList:
         - '{#Cerulean}'
     '15':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -295,7 +295,7 @@ TabList:
         - '{#Cerulean}'
     '16':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'
@@ -311,7 +311,7 @@ TabList:
         - '{#Cerulean}'
     '17':
       PlayerName: ' %cmi_user_afk_symbol%%cmi_user_vanished_symbol%%cmi_user_nameplate_prefix%&4[playerDisplayName]%cmi_user_nameplate_suffix%
-        {#sirocco}%multiverse_world_alias%&r'
+        {#sirocco}%cmi_player_world%&r'
       Header:
         '1':
         - '{#Cerulean}'

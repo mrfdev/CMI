@@ -1,0 +1,14 @@
+#
+
+CustomAlias:
+  list:
+    Cmds:
+    - statement:check1! perm:cmi.customalias.list!
+    - 'if:check1! msg! [playerName] {#orange}-> Geyser (Bedrock) Player list:'
+    - if:check1! asPlayer! geyser list
+    - 'if:check1! msg! [playerName] {#orange}-> ViaVersion (Java Versions) Player
+      list:'
+    - if:check1! asPlayer! viaver list
+    - 'if:check1! msg! [playerName] {#orange}-> CMI Online (All) Player list:'
+    - if:check1! asPlayer! cmi list
+    - if:check1@! asPlayer! cmi list

@@ -1,0 +1,9 @@
+CustomAlias:
+  deletelater:
+    Cmds:
+    - statement:check1! check:%cmi_user_playtime_hoursf%>=69!
+    - 'if:check1! msg! [playerName] PASS: Your playtime is %cmi_user_playtime_hoursf%
+      which is bigger than 69.'
+    - 'if:check1@! msg! [playerName] FAIL: Your playtime is %cmi_user_playtime_hoursf%
+      and that is below 69'
+    Perm: true

@@ -25,12 +25,12 @@ CustomAlias:
       be default (New) and is ready for an upgrade to (1mb_player) Player. {#orchid}
       Check playtime next!
     - if:luckperms2! asConsole! cmi ctellraw [playerName] <T>{#gold}[looks good, click
-      to upgrade]</T><H>Change $1 from new to player group</H><CC>lp user $1 parent
-      set 1mb_player</CC>
+      to upgrade]</T><H>Change $1 from new to player group</H><CC>lp user "%parseother_{$1}_{cmi_user_uuid}%"
+      parent set 1mb_player</CC>
     - if:luckperms2! asConsole! cmi ctellraw [playerName] <T>{#gold}[looks good, click
-      to send /mail]</T><H>sends a /mail to $1</H><C>cmi mail send $1 Hey $1, thank
-      you for joining the 1MoreBlock.com server! Your rank has been upgraded from
-      NEW to PLAYER, thanks again for playing ^_^</C>
+      to send /mail]</T><H>sends a /mail to $1</H><C>cmi mail send %parseother_{$1}_{cmi_user_uuid}%
+      Hey $1, thank you for joining the 1MoreBlock.com server! Your rank has been
+      upgraded from 1MB Group NEW to PLAYER, thanks again for playing ^_^</C>
     - if:luckperms2@! asConsole! cmi msg [playerName] !&r\n ➥ {#gold}Either, $1 is
       offline, or they are not exclusively in the default group, manually review please.\n&r
     Perm: true

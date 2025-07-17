@@ -678,7 +678,7 @@ Alias:
     Tab: true
   # /cmi list $1-
   list:
-    Enabled: true
+    Enabled: false
     Tab: true
   # /cmi lockip $1-
   lockip:

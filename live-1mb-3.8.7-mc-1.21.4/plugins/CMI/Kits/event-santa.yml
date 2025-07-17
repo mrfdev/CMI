@@ -24,245 +24,27 @@ SantasChimneyTreats:
   - 'asConsole! discordsrv broadcast #661710111152275456 :christmas_tree: **[Santa]**
     `[playerName] picked up the kit Santas Chimney Treats from /kits`'
   Items:
-    '19':
-      v: 4189
-      type: CAKE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Cake","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Symbolic of holiday feasts and celebrations.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '20':
-      v: 4189
-      type: PUMPKIN_PIE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Pumpkin Pie","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Often associated with holiday meals","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"during the colder months. yummy!","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '21':
-      v: 4189
-      type: GLOW_BERRIES
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Glow Berries","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Resemble holly berries, which are commonly","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"associated with Christmas decorations.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '22':
-      v: 4189
-      type: HONEY_BOTTLE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Honey Bottle","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Represents the sweet treats","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"often enjoyed during the holidays. ^_^","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '23':
-      v: 4189
-      type: GOLDEN_APPLE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Golden Apple","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Apples are a classic festive fruit, and golden","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"apples could add a magical holiday flair.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '24':
-      v: 4189
-      type: BREAD
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Bread","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Represents hearty winter meals and","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"is a staple during festive feasts.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '25':
-      v: 4189
-      type: MUSHROOM_STEW
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Mushroom Stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"A warm, hearty dish that fits the winter","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"theme, symbolizing cozy meals.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-    '26':
-      v: 4189
-      type: SUSPICIOUS_STEW
-      meta:
-        ==: ItemMeta
-        meta-type: SUSPICIOUS_STEW
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Suspicious Stew","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":"Another warm, mysterious dish that could be","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"associated with hearty winter meals.","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":"(collectors item)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-        effects:
-        - ==: PotionEffect
-          effect: minecraft:fire_resistance
-          duration: 80
-          amplifier: 0
-          ambient: true
-          has-particles: true
-          has-icon: true
-    '28':
-      v: 4189
-      type: COOKIE
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎄 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"Santa’s
-          Holly Jolly Biscuit ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFFFF"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-        - '{"text":"","extra":[{"text":" Pretend your Santa and consume","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":" this cookie to unlock the special","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":" Xmas Tree & Winter Sky prefix ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"},{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-        enchants:
-          minecraft:unbreaking: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-        PublicBukkitValues: |-
-          {
-              "cmilib:nbtcommands": [
-                  "Pwb++LBKm+iaOeV044vWtg==",
-                  "M4RDVmG2Zucvs9Ev8Aa/Rajsds9+rrDYIqQ4XeAZJrZOhf6EA0N6VvwIIT4nMtt/"
-              ]
-          }
-    '29':
-      v: 4189
-      type: MILK_BUCKET
-      meta:
-        ==: ItemMeta
-        meta-type: UNSPECIFIC
-        display-name: '{"text":"","extra":[{"text":"🎁 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#BBD009"},{"text":"Santa’s
-          Frosty Mug ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FFFFFF"},{"text":"🌌","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-        - '{"text":"","extra":[{"text":" Pretend your Santa and consume","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":" this milk to unlock the special","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"}]}'
-        - '{"text":"","extra":[{"text":" Present & Sparkle prefix ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#DA70D6"},{"text":"🎁","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#BBD009"},{"text":"🌌","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        - '{"text":"","extra":[{"text":"-----------------------------","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-        enchants:
-          minecraft:unbreaking: 1
-        ItemFlags:
-        - HIDE_ENCHANTS
-        PublicBukkitValues: |-
-          {
-              "cmilib:nbtcommands": [
-                  "Pwb++LBKm+iaOeV044vWtg==",
-                  "M4RDVmG2Zucvs9Ev8Aa/RYWb3t4Yue3b3ZTPyR+2UailjDxGq6oWEFQywI4u+pPi"
-              ]
-          }
-    '30':
-      v: 4189
-      type: LEATHER_BOOTS
-      meta:
-        ==: ItemMeta
-        meta-type: COLORABLE_ARMOR
-        display-name: '{"text":"","extra":[{"text":"🎄 ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"Santa’s
-          Chimney Socks ","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#FFFFFF"},{"text":"✨","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        lore:
-        - '""'
-        - '{"text":"","extra":[{"text":" Santa''s Unbreaking X Socks","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#F3AD16"}]}'
-        - '{"text":"","extra":[{"text":" (glows in the dark when worn)","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#808080"}]}'
-        enchants:
-          minecraft:unbreaking: 10
-        ItemFlags:
-        - HIDE_ENCHANTS
-        - HIDE_ADDITIONAL_TOOLTIP
-        - HIDE_DYE
-        - HIDE_ARMOR_TRIM
-        PublicBukkitValues: |-
-          {
-              "cmilib:cmiarmoreffects": [
-                  "5j5yEsD+nwvVkc08W9C3/A=="
-              ]
-          }
-        trim:
-          material: minecraft:quartz
-          pattern: minecraft:bolt
-        color:
-          ==: Color
-          ALPHA: 255
-          RED: 128
-          BLUE: 0
-          GREEN: 0
-    '31':
-      v: 4189
-      type: WRITTEN_BOOK
-      meta:
-        ==: ItemMeta
-        meta-type: BOOK_SIGNED
-        display-name: '{"text":"","extra":[{"text":"🎄","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#0A6906"},{"text":"
-          Santa''s Chimney Treats","strikethrough":false,"obfuscated":false,"bold":false,"italic":false,"underlined":false,"color":"#79DEEC"}]}'
-        title: chimneybox
-        author: mrfloris
-        pages:
-        - '{"text":"","extra":["\n            🎅 \n        Santa’s\n      Hearthside\n          Tale\n            🎄\n\nHo
-          ho ho! Greetings, dear friend! You’ve stumbled upon something truly magical—a
-          box of Santa’s Chimney Treats"]}'
-        - '{"text":"","extra":["a reward for your kindness in leaving out milk and
-          cookies for an old traveler coming down the chimney on frosty nights. Allow
-          me, Santa Claus, to tell you all about the goodies you’ve just received!"]}'
-        - '{"text":"","extra":["The Treats in the Box\n\nInside this festive kit,
-          you’ll find my favorite snacks:\n\n- Santa’s Frosty Mug (Milk Bucket)\n\n-
-          Santa’s Sweet Treat (Cookie)\n\n- Collectors items"]}'
-        - '{"text":"","extra":["There are also other snacks and drinks in the box,
-          and they are not just ordinary goodies—they’re collectors’ items, special
-          treasures to mark the holiday season. "]}'
-        - '{"text":"","extra":["Before you enjoy them, make sure to check out the
-          lore inscribed on each. When you’re ready, consume either the milk or the
-          cookies, and you’ll receive a magical holiday prefix, marking you as a true
-          festive spirit for all to see! "]}'
-        - '{"text":"","extra":["enjoy just one—or both, if you’re feeling extra merry.\n\nConsuming
-          the milk will give you one type of prefix, and consuming the cookie will
-          give you the other. \n\nAnd this year each prefix is not one but TWO characters!"]}'
-        - '{"text":"","extra":["The Magical Socks\n\nAnd don’t overlook the Chimney
-          Socks \n\nThese \"socks\" are no ordinary footwear. Crafted in the North
-          Pole by my finest elves"]}'
-        - '{"text":"","extra":[" they’re enchanted with Unbreaking X, ensuring they’ll
-          stay sturdy no matter how far you travel this winter.\n\nWear them proudly—you’ll
-          look just like one of my helpers!"]}'
-        - '{"text":"","extra":["Even better, they emit a soft glow, so your friends
-          and foes alike will see you shining brightly in the darkest of nights.\n\n"]}'
-        - '{"text":"","extra":["A Note of Thanks\n\nI left this little box of treats
-          for you as a thank-you for your generosity. Whether you set out milk, cookies,
-          or a simple smile, your holiday spirit warms my heart. \n\n"]}'
-        - '{"text":"","extra":["So go on—pretend you’re Santa for a day! Sip the milk,
-          nibble the cookies, and spread some joy.\n\nAnd remember, the magic of Christmas
-          lives in those who share kindness and cheer with the world."]}'
-        - '{"text":"","extra":["Ho ho ho! Stay warm, stay merry, and keep those stockings
-          hung by the chimney with care.\n\nYours truly,\n🎅 Santa Claus"]}'
-        resolved: true
+    '19': !!binary |-
+      H4sIAAAAAAAA/62SwUoDMRCGpy1CrSJevId4USiyp9burXT7BIIXKTLNztrQbCLJLFhKbz6GB9/Ci/SN+g6mB2sPyh4quQzhz/9/k5kOQAtOMmS8Jx+0swDnkzY0dQ5npbakPBacKpxTC46UqywDQKMDHeXKZ2fJcjjeVxrnqQ1b06aU8LGU9MIeZfqwlFNncpkWaAJ1pXJRKVN5mQ37SdaTXakZjVY7gZsWVVDI9PMmsNdz4pl31dNsd8sxIRrdLcoYoJVwhZjFIseFKAgDB4E2F4oMTT1y7DDcxLTK5uRNxP62X012VnIFb/Xgt8n2HA5+FR0NKXY+CM1UXtfSteFibzRVYFc+WiypcVpPnQx7g+Qfvnvz/rlZv/6K2v0ruz/IxuPR4dliFNexfobwBbWchg/cAgAA
+    '20': !!binary |-
+      H4sIAAAAAAAA/72Tv0sDMRTHX61CrSCCuMe4KBS5qbXdiu1sJxcpJc2964VekiN5h5bSzT/DwV3wLxD/o/4Ppoitg3JDRbKF748PyXt1gCoc9ASJW3ReWQNwNKzBjorhRCuD0omEOnmh86kyo1xhFfakLQwBQKUOdWl1bg0a8vtwuDFk1mEtSHZhh3N4nXN8ICd4527OxzaLeScRmccGlzYoeYef9bqtqNfkDa5IZEquBXacFF4Kwo3Hk1NTpNTZYpKubyk0hKCbhNAw4b2VauVi94pSltpMxWLGNAZxKClMjC4LtF+pi+E6gS/g5f9448IpM2GUIgvZgYppayj1l2xWaD07LYd9Koe9ilZne9jzkJihJOs8U4T6opSu9n2KZOHJ6pERGivH5dRRt9mO/uCJl89vy/fHH1Ebv3W32r1+/3r7bjb43Bw2UFj+lfABh7ilLY4DAAA=
+    '21': !!binary |-
+      H4sIAAAAAAAA/72TvUoDQRSFbxKFGEEs1HoYG4VFtkrMdtEN9hY2EsLs7E12cH5kZpYYQjofw8JXsLAT3yjv4AQ1aZQtIjLdcO45H/enBdCA3ZR5doPWCaMB9gdNqIscjpTQyC0b+WQszWSYobUCXQO2uSm1B4BaC1rcqHujUXu3A3vrCmksNoNkC+qUwuuM4oO3jCa3M5oZmdNkxKTDiHITlDShx2mvE6dtGlHhmRR8JTDZqHSceVzXOG/FHfrCmnJcrH59SAhG1+hQZRJJYaScki/oiEwKwQvCLJJArIyW05BV6hytDNDf5vPByojO4eX/sJlzhoulnkyEL8hlYYXzijmSIzeW+TAad1aN/FSNfB4v3+bIJ8FRIvfGOiI8qtNKuiYcrjeEl84bNdRMYe2gmjrutbvxHzR68fy2eH/8ETX6LbvTTfv9y82zyVW4I3LxuZLVs4QPheqZlJ0DAAA=
+    '22': !!binary |-
+      H4sIAAAAAAAA/72Tv0sDMRTHX61CrSAO6hziolDkptbeVr2Cs4OLtCW9e9eL5pKSvENL6eaf4eDk7i7+R/0fTAu2i3JDRbIl3x8fkrw6QBX2IkHiFq2TRgMc9GqwJRM4zqXG2IqUwsxonAyGhkhhFXZiU2gCgEod6rHJx/5Uk9uF/bVDGYs1L9mGLc7hbcrxiazg4d2UD41KeJgK5bDBY+OVPOQnUacVRE3e4JKEkvFKYIZp4WJBuPY4svIBKbOmGGWrXfINPugGxxbdgodRhsw9IhIji4KcDy90glZ5yu+0WW/l5DN4/z9OkxJqhvreTDBhSWGlHi2JM6NkIibunPUH/XLkl3Lki2CxNkc+9YkKYzLWMUmYn5XS1eBo/SXiwpHJB1rkWDkspw46zXbwBxc9f/2Yfz7/iNr4rbvVjrrdq8272fVicNjlcnDK3xK+ALN2qBmOAwAA
+    '23': !!binary |-
+      H4sIAAAAAAAA/72SwUoDMRCGp1ahVhAP6jnEi8Iie2rt3opbfAMvUso0O9sGs0lJsqKU3nwMDz6EF0F8o76DaYvtRdlDRUIu4Z///2YyTYA6HKTo8Zask0YDHPUbsCMzOC2kJmEx98nIqIz0ACcTRXXYE6bUHgBqTWgKU0yMJu3dPhxuKpSx1AiSXdjhHN6nnB69RZ7cTfkwmPEkR+Uo4sIEJU/4Wdptx2mLR1x6VFKsBWaYl06gp02N81bekx9bU47G61cfEoJRd8HoGFpiyIRC56RgOTkvH4jltpQ+Yqgztmop5JU6I6sC+HfArL824zN4+z90XKGH6aqMYRYuK3AkBSo2Nkpm+MRyhdJeVlO/VFNfxYuzPfV5cFQkvLGOSU/FRSVdA042iyJK500x0FhQ7biaOu62OvEfzHr++jH/fP4RNfotu91Je73r7bPZzXL32HJVq/8SvgDMCQH6pAMAAA==
+    '24': !!binary |-
+      H4sIAAAAAAAA/72TO04DMRRFXxKQQhCfht4yDUgRmioh0wUmG6CgQRHyeN4kFh47st/wUZQuy6BgA+wAsaPsAadg0oCmCEIuLFnH9x750wFowX4iSNyi88oagONxG5oqg6NCGZRO5BSnDkXWgl1pS0MA0OhAR9piZg0a8ntwuEG1ddgOyA40OYf3OcdncoLHd3OeWp3xOBfaY5dLG0ge89Nk2I+SHu9yRUIrWQE2zUsvBeFmjyenHpCmzpaTabVKoSEE3eDMoV/7sCkKRy/sSRlCxwoMHBMmCx2lydDpIPsduhhXAXzxn7oqKDFPYqaRZaVTZsJy9KQeMczCk7+o132t172M1mN73bOQqFGSdZ4pwuK81q4NJ5tXIUtPtrg3osDGQb11NOwNoj845NXbx+pz+aNq97fu/iAZja6372ZX609Tf4nwBaTVY+CDAwAA
+    '25': !!binary |-
+      H4sIAAAAAAAA/72TMUsDMRTHX1uFWkFcimuIi8IhN7X2tuJ1dBJcpEiavusFL4kk76ht6ebHcHB1dhW/Ub+DEbRdlBsqkiWE//v/f7y81wJowH4qSFyj88oagMNhE+pqDEdaGZROZJTo0ufOWn3rCacN2JW2NAQAtRa0pNX31qAhvwcHm5LCOmwGyQ7UOYfXBccHcoInNws+ssWYJ5koPEZc2qDkCT9O+9047fCIKxKFkmuBHWWll4JwU+PJqTukgFRO8vUrhYRg1GdT4XTEchSOZmysfM4oF8QyRT7ckE2VIXQhqTRjdEVA/rZeDtc2fAkv/wcdsDRGzM90yFFzZSZM2vmMaQyys2rUp2rU8/jzbI96EhwLlGSdZ4pQn1bSNaG9mQtZegqDZITGWruaOu53evEfNHj1/LZ6f/wRNfotu9tLB4OL7bPZ5df6sKuwPtWfCR/N5cHVlQMAAA==
+    '26': !!binary |-
+      H4sIAAAAAAAA/72TwUoDMRCGx1ahVhAvIt5ivCgU2VOrvRW3d6HgRaSk2Vk3uJtIZpZaxJuP4cE38OZJfKO+g1nB9qCyB0VCIIR/5v8y5G8DNGEjVqzO0ZNxFmDrsgUNk8BuYSxqr1LuU0k3RhtX0pgYp01Y0660DAArbWhrV9w4i5ZpHTaXRbnz2AqSVWhICS93Em/ZK9m/uJMTlyeyn6qcsCO1C0rZl/vxoBfFXdmRhlVu9ELgJmlJWjEua4i9uUbOvCuvssUtB4fQaGAdZ+jFVPmiI4pZQPYVu0gMZYIzxSLg54mYYDArbYI+D9Sf3e8vF53kPTz/H7cictpUejE1nIkMledZONvwAFFgEB/VAz/WAx9H1fo98EHomKNm50kYxuKwlq4F28sPoktiV4ytKnBlp546GnRPoj8Y8/zpdf728C1q5yfv3kk8HJ7+3luMFkkSo5Ck2oGtw96PMRxjmobpU7vK4ZfMpsbj2CMZYmU1NqGVlF7xR8ThLOx3blpfffsDAAA=
+    '28': !!binary |-
+      H4sIAAAAAAAA/9VV3WpTQRCeNFTqEbQUFS+XI3iTSoOEtAkUTEzUVmtjLWmNlLBnM0nWs2c37k/aUgpe+BKCqJdF8A3Eh+l938FNxaQX1VBaCu7Cwi4z833MznwTAKThWoVaWkdtuJIA01tTMMFbMJ1wiUzTti0ypWKOaZhkykkLAKkAAqaSnpIorbkK10e2Qmmc8iaTcLAX4o7VNCy+2QsjJVphsU2FwdmQKW8VFsO7C9nBDmdDbqngbGigorYzjFoc+RireYy2q5XrdIev1iP4QPf/tXx4J1uohef4J97+1tA33Idv45lWSvPZSv78TElNo0XZIrvKafKKSksJ9VempHEJjuf6/RK52i435PfnE6uIk0Kx2L8iMT1knIqxdFNfLpHuZkINWdeI5B7Z4NKiT3C8S3oa23yHnMp19m+ksqV8IXsBpI6+/jj6+eFs2POFSrX66PzYh58OxtfTf9OlAdweqQxK1vW9kwzkJwU3TFdtN7lsWqWE5T0I4IrAPgqThpsjJycjjTTmsjOQMIApuHVC45yxKmlKmmDq8/icXGx9jClOq91J7MfH6/zYx+pz+P6jIU+VELtk+fgsc8Mct2fsl8us2eCUf2v5ERbATM1FHr3s4pjbOhUO/XCaYQkXPCrKyPqZlXi1NYMBNQF3attRJvO8/CzJcLqK9Wwu19+wncVFeLiSW6vUkycPGo71TaHaXyjRuTX61rRMIaN15fXSu5e5TSw1lnVjtdvOV0vZF/l6f3tpaT0nV6yd8/HhFx6k1AZcBwAA
+    '29': !!binary |-
+      H4sIAAAAAAAA/9WVTWsTQRjHnzRU4goqxYrHYQUviRia0DaBgo2bFNFiTDWhlRJmJ5NkzOzMOi95oRT07gfQg+BR9CsUP4z3fgcnBZMeqqGkBJy97CzPy4/Z//wfDyAJNwJscJ0qzaQAuH2YgiXWgtWICUoUbptixHivGVrSoyYJy0RaYQAg4YFHZBRLQYXR1+HmNIFLRVMuZBm+Hfl0aBT2i2+O/FDyll9sY65pxifSRflF//5mdvz4GZ8ZzBmZBMiwbTXBhk5ztFHMQXSVtJ3u5KtxHVyhh/9arrwVLaq4Y/xT7/hwkusfw/fZpMH2RjZYn58UVRU1VLTQSFqF9rAwGGG3JVJoG9HZrD8WyGq6TKOxApCRyAouiXvrUqRjShjmM2ETXxZ7sNqpET1AezFWPU5RrGibDdGFmJm/8ZRKQTZbmJ/n9OvJ6c8Pl+u9UQjK5SdX0/vk42wt/Tc31IO7U4ehgnTdvYnG1pOAW7orB00mmkZKblgMHlzjtE+5TsKdaZIVoaK4x0RnbF8AqfMmR6w2MmoKHNHEp9lncrUSmaFPo+z53pWzNX/vM+f59f6zRhUltRmhXdu55E1ZsFq9C/5Yy00vD1aqNnQAJdvrMVPH3FI3klaIMy4WFkVo3KSKnMfq8VhagnvVQZhOPy89i9IMv6D1bD7fb5jO1hY83s3Xgnq0s3ZgSV8Xyv3Nbfyott8Icya/b2kuzB28qo5q6bXXmPG3wXDn3bpslCsvR4OneZuOq8zVh9/CIpG0VwcAAA==
+    '30': !!binary |-
+      H4sIAAAAAAAA/61UQWsTQRR+aVC3K2gRrR7H8aBiwEhpbQI9xCaehWIUpCyzsy/ZcWdn4sxsYyyFHvwTBQ+eRP+D+GN6739wNmI2YCRKu3tY2Jn3vu+973svBKjD1S5zrI/GCq0A1vYDWBEJ3M6FQm7YwLUlMpeiiWKtna3DJa4L5QCgFkLIdT7SCpWzIdysQpIJJhHXUps61M0whmN/Ha7bVI8joSKntXRiBLAK1+ZwtMEASkorlMKXQ4rvnWG0/eaQxlomtD1g0mKDTvPSNr33fKPTfbJFG1Q4JgWfXdDxoLCcOaxirDMiQ5caXQzT2V/nEXwisseUY/ctealigywTakhekz3NM+uTFypBIz3L39mO9meR9Ai+Lee53SzfC+D5YCj12BKhiBeEJMxkZJyiImNt1MOlVENYr5qNiqe+6ryUboEyIVyWeIDS6z0nazHrj5cpBAjgVnXIC+t0HimWY+1keVOana1W8wLEO/v8/ezHR7Kw+sZfnTN9zg8+Nc7p8Yklu6nIFU5+ueY/2TxtdXu93fOzOf309R9M8KdkiV8AIdx4UcQe/VmRZcL1mSzQrsI6z4UUcdt/mMn9gA4GyJ0tx7QGdzbfbk56tvtIjQ/6GW9uv2rtbjzu7OyU5rhbwaQiwYgliXB+xTA5Z7K56feF5QEEuS/XCCZhrTp6VzDjPixwaQBXRsz5ADWfyTe5XE8/AfYGuLPdBAAA
+    '31': !!binary |-
+      H4sIAAAAAAAA/6VWTW8cRRAdYwUZw4ELHKPycCBIk1VOQfHN3gSSQwDJhoBwFPXM1Ox0dqZ71d2z61EUKQf4BxYSN34BvwAhcUXizBGRe7hz43X37IeTzQnLlndnuqvqvXr1sZ8ku8nbt4UTX7GxUqskeffhXvKGLJP3W6m4MKJyhwsjnWP1KNd6uptcKXSnXJIkO/vJfqHbmVasnN1Prm6/8ajQCp/dW8mVmZgwDibJO3vJrhGL5J8nKZ87I9LDb9MzRRs/L3765cWv39P64YlQTjx/9qNdPrrLwrjaypI3b56KhrdY+u5Mnam7mmr/e0CfGmYn1cRmVMIMVUayKg/oG93BxZzJuq7NGy6pAzyyumVX4zw50zU9tWIiC9E8f3YhKNfnpKt1eDSuZau4p1PDwtn0YZY6YEwP0/RpMsD+ewO2IMMLYUqqtKFed4amUpWKrSWpqGEx935156iVzZSEKqkAq5JtuCEU6aZEXGLODRu8a/35Ui8UuZqpGKIBispo63pSclI7O6KjptELajmLsdO4ER34cJocN40PhQT+i9z79qYmWpfebb8k6XFnHaIvWM65PNiK9I8NpKewEUnxyLzFY33u83JP+SziiQQmtg7mQILLBk8IogIl1PZUibmGtJAfJYqpPfS3r29w/0mEeL+b0LX7nq7jrpiy++jlcycL5D8GQ9fGgc7hzFg3DRdOGwTpuN2ev98uozJMwv81VpMGLjOEF5JVGqmmK8RQSxYe40sfbintIpHalFIJ0y95hrr8IcSLU8UqLHyPkWVkZ1xI0SD5LGxnkBokrxVmGlzVupGl6MnipVYj2oZkZ3cDyTFDUBwSz+qx7r2VNoPBKfiGeW+9qLmY0lIRjT8vlS2MzFEr0BiLoh7Rg5rVkDwcQHRlnwGCsl3LxDJQ5O8HRev4eRB1ZGeV+EFdJJY1t4I1M1zJ8yzg9YoPegXlvkR5JSM7k9BLrBSYAwLLfLCVi+TfDS4iATEvipEKGMiR24xktUZWMTfed7iGUjKmH3kZjQPU0C+WKBcS7ic+JB8obJLrZ+w7xxJIrOzNi5GSl676F0FkI/KujoKWUDi972Oe/sEg4ZnXlneVI1+nDz5H9oQRhUOr316tP79UrfcHzk801Lz0VmoF9DA8Z9MgwhDRsumFkyEw3LdMZ6kNd9NB62uVV1q7BWIe0diPDMhnKJHPNNo6faEbxN2HosdYQR64mfP2cvx9I2xa1wwr4FXe8gKSoy9VDiUGrXyd4SUkPRDdR61Z56vFdabsfaStwAgz0NsCbcdE7kOXjXwvJEybkO4HnnpfLKBed2UDexcrBQeKgpAaiULy6UDSAavmZvbaTPywAenOHNWUs48mi32DW2haYCxVjibo4mgFOs6OOMhi56k0OoIIXoOEoPyAwmKSeeS58ZMA42wgvkQleaIR3jAjPLit4f25Ed4RMuYCqFPQHXVyD4OrcpGoBqtAw8s56eIAGIbdULH+3nX/dTUDJ6wYvVy6PnST0DFC7Gjby1mYrXuGL2+ysp3BkcU7zqKZVQ+MbQBztrWRe+wOsYC24vtrA9+JRkcmL/oLVBY2mXLdAOLkDN0F9PUHdCJnq5rPQGOOJeLV9mZnvieGtYLQZ0bL0jLccpsPaY4dz3M2ro20rhWeS9RAzJdGdS2wztjaV9ZqZwhdpGbQFUTv7Sy0acrRVpwXGzjX29GJLwTPVRZrIjS2GPmUeTY4tw6V7Xcoqjuvpv7SvhG8FwgtgMNehYEalqfsTA273cbacTm4nWQPw0yj3sudveRN0cGhSfZaU2HgSCyQV5yEpAYM+4NLCCwBrvfWW2iBqtPtIyVa3rm6RvokzbEypYcVBjZnKUarNnD8wY2jm7du3EyzVDpUTbE6oPOqs4VAI1k9ss6grFyNcp/Uq6cDgrhwwk6nSrRIhLO8+DR7ne+Pb92+c2f8/31HUj98ZQvdFswlzpP/ANEOyssLDAAA

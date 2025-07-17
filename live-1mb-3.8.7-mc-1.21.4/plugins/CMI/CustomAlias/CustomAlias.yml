@@ -428,18 +428,8 @@ CustomAlias:
     - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•
   ride:
     Cmds:
-    - asConsole! cmi msg [playerName] !{#magenta}Whooo - you've got yourself a Celebration
-      Stick in 2021. That's so awesome. Thank you for playing. But, what can you do
-      with it?
-    - asConsole! cmi msg [playerName] !{#orange}Active players (Group Member and higher)
-      will be able to ride some additional animals. For example, a member can also
-      jump on a cow. And a boosted member on a mushroom cow. {#yellow}Just right-click
-      the mob to try!
-    - asConsole! cmi msg [playerName] !{#orange}Players need to become a full member
-      first. Builders can also sit on sheep, and rogue players can right click a chicken
-      as well.
-    - 'asConsole! cmi msg [playerName] !{#orange}Oh, and donator: turtle, mvp: panda,
-      and epic even has permission to try a polar bear. Pretty cool huh.'
+    - 'asConsole! cmi msg [playerName] !{#magenta} This command is now called: /hop,
+      try /hop or /hop info, to learn more :)'
   celebration bedrocker:
     Cmds:
     - asConsole! cmi msg [playerName] !{#Cerulean} •&l&m                                                &r{#Cerulean}•

@@ -20,22 +20,22 @@ CustomAlias:
   general:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - asPlayer! mv tp general
+    - asPlayer! mv tp $0
     Tab: false
   spawn:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - asPlayer! mv tp spawn
+    - asPlayer! mv tp $0
     Tab: false
   nether:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - mv tp nether
+    - asPlayer! mv tp $0
     Tab: false
   end:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - asPlayer! mvtp end
+    - asPlayer! mv tp $0
     Tab: false
   builders:
     Cmds:
@@ -76,7 +76,7 @@ CustomAlias:
   wild:
     Cmds:
     - check:$1==null! asConsole! cmi gm [playerName] survival -s
-    - check:$1==null! asPlayer! mvtp wild
+    - check:$1==null! asPlayer! mv tp $0
     - check:$1==info! asConsole! cmi ctext wild [playerName]
     Tab: false
   run:
@@ -97,7 +97,7 @@ CustomAlias:
   legacy:
     Cmds:
     - check:$1==null! asConsole! cmi gm [playerName] adventure -s
-    - asConsole! mvtp [playerName] legacy
+    - asPlayer! mv tp $0
     Tab: false
   letmejackper:
     Cmds:

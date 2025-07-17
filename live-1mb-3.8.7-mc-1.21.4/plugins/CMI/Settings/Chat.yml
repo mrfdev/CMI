@@ -126,39 +126,39 @@ Chat:
 
   # ATTENTION! Don't use gradient colors for {message} variable, if you want to apply gradient for it, utilize GroupMessageFormat section
   GroupFormat:
-    '1': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '1': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#Geyser}{message}'
-    '2': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '2': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#Geyser}{message}'
-    '3': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '3': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#Geyser}{message}'
-    '4': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '4': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#f0ecd1}{message}'
-    '5': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&2{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '5': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&2{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#d7f0d1}{message}'
-    '6': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&2{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '6': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&2{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#d7f0d1}{message}'
-    '7': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&9{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '7': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&9{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#d1d6f0}{message}'
-    '8': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&9{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '8': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&9{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#d1d6f0}{message}'
-    '9': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&6{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '9': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&6{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#f0dfd1}{message}'
-    '10': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%{#895bf3}{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '10': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%{#895bf3}{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#d3cadb}{message}'
-    '11': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '11': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&e{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#Geyser}{message}'
-    '12': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%{#d34087}{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '12': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%{#d34087}{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#dbd1ca}{message}'
-    '13': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%{#d34087}{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '13': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%{#d34087}{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#dbd1ca}{message}'
-    '14': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '14': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#dbd1ca}{message}'
-    '15': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '15': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#dbd1ca}{message}'
-    '16': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '16': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&4{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#dbd1ca}{message}'
-    '17': '{#Edward}%multiverse_world_alias% {#Sirocco}<%cmi_user_nameplate_prefix%&3{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
+    '17': '{#Edward}%cmi_player_world% {#Sirocco}<%cmi_user_nameplate_prefix%&3{displayName}%cmi_user_nameplate_suffix%{#Sirocco}>
       {#e6d1f0}{message}'
   # Use numeric increments to separate groups from each other. If player has more than one, then line with higher number will be used
   # Add as many lines as you need too

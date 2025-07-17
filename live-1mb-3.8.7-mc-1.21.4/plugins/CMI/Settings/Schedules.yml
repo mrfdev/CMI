@@ -335,6 +335,24 @@ Halloweeen:
     go check it out. Who knows what you might find!{#orange<}</T>
   - asConsole! cmi ctellraw all <T>{#buttercup>}The /santa event has crackers that
     give things{#orange<}</T>
+specialbooster:
+  Enabled: false
+  MinPlayers: 1
+  Delay: 2500
+  Repeat: false
+  Randomize: false
+  Feedback: true
+  Commands:
+  - asFakeOp! xprate 5 true
+  - delay! 1500
+  - asFakeOp! xprate reset
+updateNameplate:
+  Enabled: false
+  Repeat: false
+  Randomize: false
+  Feedback: true
+  Commands:
+  - asConsole! allPlayers! cmi nameplate [allPlayers] reset -s
 Announcer:
   Enabled: true
   MinPlayers: 2
@@ -362,11 +380,16 @@ Announcer:
     to /achievements.</H><C>achievements</C>
   - 'broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG mcMMO commands:
     {#orange}&l/mcstats{#feijoa}, {#orange}&l/mcrank{#feijoa}, {#orange}&l/mctop{#feijoa}.'
-  - 'cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG features:
+  - 'cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Some features:
     </T><Next><T>{#orange}&l/fish{#feijoa}, </T><H>Pyro Fishing feature, click to
-    learn more</H><C>fish menu</C><Next><T>{#orange}&l/pvp{#feijoa}, </T><H>Toggle
-    PVP on or off, click to start</H><C>pvp</C><Next><T>{#orange}&l/party{#feijoa}.</T><H>mcMMO
-    party feature, click to start</H><C>party</C>'
+    learn more</H><C>fish menu</C><Next><T>{#orange}&l/mine{#feijoa}, </T><H>Pyro
+    Fishing feature, click to learn more</H><C>mine menu</C><Next><T>{#orange}&l/farm{#feijoa}.</T><H>Pyro
+    Fishing feature, click to learn more</H><C>farm menu</C>'
+  - 'cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} RPG features:
+    </T><Next><T>{#orange}&l/jobs{#feijoa}, </T><H>Jobs feature, click to learn more</H><C>jobs
+    browse</C><Next><T>{#orange}&l/pvp{#feijoa}, </T><H>Toggle PVP on or off, click
+    to start</H><C>pvp</C><Next><T>{#orange}&l/party{#feijoa}.</T><H>mcMMO party feature,
+    click to start</H><C>party</C>'
   - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Protection commands: {#orange}&l/lock{#feijoa}, {#orange}&l/unlock{#feijoa}, {#orange}&l/cmodify&r</T><H>Learn
     more /chests</H><C>chests</C>'
@@ -420,10 +443,12 @@ Announcer:
   - broadcast! {#Cerulean} 1MB Community »{#magenta} We started the server 14+ years
     ago in 2011 WHOOOO!
   - 'broadcast! {#Cerulean} 1MB Community »{#magenta} Type: {#orange}&l/celebration{#magenta}.'
-  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Found an issue, bug,
-    broken item? Report it as a ticket on /discord! tnx
+  - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa}
+    Found an issue, bug, broken item? Report it as a ticket on {#orange}&l/discord{#feijoa}.
+    tnx</T><H>Click to get /discord link.</H><C>discord</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
-    Learn which mobs you can {#orange}&l/ride</T><H>click to learn more</H><C>ride</C>
+    Learn which mobs you can {#orange}&l/hop{#feijoa} on</T><H>click to learn more</H><C>hop
+    info</C>
   - asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     When you greet someone by their name when they join, you earn {#orange}&l/points{#feijoa}.</T><H>Click
     to view /points.</H><C>points</C>
@@ -510,10 +535,3 @@ Announcer:
     /ec, /anvil, and a few more! Check /warp signs
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} In a lot of worlds,
     a wandering trader offers micro-blocks!
-updateNameplate:
-  Enabled: false
-  Repeat: false
-  Randomize: false
-  Feedback: true
-  Commands:
-  - asConsole! allPlayers! cmi nameplate [allPlayers] reset -s
