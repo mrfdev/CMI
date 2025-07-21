@@ -608,6 +608,7 @@ Alerts:
      Description: "## :skull_crossbones:💥 %cmi_user_cleannickname% died \n\nItems have dropped on the floor! who gets to them first?\n**Location:** `%cmi_player_world%` **x:** `%cmi_player_x%` **y:** `%cmi_player_y%` **z:** `%cmi_player_z%` :cloud_lightning: \n **Reason**: `${getDeathMessage()}` \n **Total deaths**: `%statistic_deaths%`"
      Timestamp: true
 
+
 # spy log #logs-joins - extra info about player joins - for server owner channel only
   - Trigger: 'org.bukkit.event.player.PlayerJoinEvent'
     Channel: '1396763019069096046'
@@ -624,6 +625,12 @@ Alerts:
         - 'Location:;```/cmi tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}```;false'
         - 'Gamemode:;`${#player.getGameMode().name().toLowerCase()}`;true'
         - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId()) == null ? 'Not linked' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId())+'>'};true"
+        - 'Mod Cmds:;
+          ```/cmi kick ${#player.getName()} please play within the /rules -s```
+          ```/cmi ban ${#player.getName()} not welcome - perm ban - appeal not possible -s```
+          ```/cmi ban ${#player.getName()} rule broken - appeal on discord via a new ticket https://discord.gg/floris -s```
+          ```/cmi ban ${#player.getName()} inappropriate username, change it and appeal via a ticket to rejoin https://discord.gg/floris -s```
+          ;false'
       Footer:
         Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
 
@@ -642,5 +649,11 @@ Alerts:
         - 'Location:;```/cmi tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}```;false'
         - 'Gamemode:;`${#player.getGameMode().name().toLowerCase()}`;true'
         - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId()) == null ? 'Not linked' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId())+'>'};true"
+        - 'Mod Cmds:;
+          ```/cmi kick ${#player.getName()} please play within the /rules -s```
+          ```/cmi ban ${#player.getName()} not welcome - perm ban - appeal not possible -s```
+          ```/cmi ban ${#player.getName()} rule broken - appeal on discord via a new ticket https://discord.gg/floris -s```
+          ```/cmi ban ${#player.getName()} inappropriate username, change it and appeal via a ticket to rejoin https://discord.gg/floris -s```
+          ;false'
       Footer:
         Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
