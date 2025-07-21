@@ -1,13 +1,13 @@
 ## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.3.0, build 033
+## Version 0.3.0, build 034
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 ## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
 
 Alerts:
 
-# mrfloris > log sign changes to spylog channel
+# mrfloris > log sign changes to spylog channel - released here: https://discord.com/channels/135634590575493120/1396748112541782046
   - Trigger: 'org.bukkit.event.block.SignChangeEvent'
     Channel: '1396738538229469184'
     Conditions:
@@ -609,7 +609,7 @@ Alerts:
      Timestamp: true
 
 
-# spy log #logs-joins - extra info about player joins - for server owner channel only
+# spy log #logs-joins - extra info about player joins - for server owner channel only - released here: https://discord.com/channels/135634590575493120/1396798027296931990
   - Trigger: 'org.bukkit.event.player.PlayerJoinEvent'
     Channel: '1396763019069096046'
     Embed:
@@ -634,7 +634,7 @@ Alerts:
       Footer:
         Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
 
-# spy log #logs-joins - extra info about player joins - for staff - does not have full ip
+# spy log #logs-joins - extra info about player joins - for staff - does not have full ip - released here: https://discord.com/channels/135634590575493120/1396798027296931990
   - Trigger: 'org.bukkit.event.player.PlayerJoinEvent'
     Channel: '1396768167002509322'
     Embed:
@@ -659,7 +659,7 @@ Alerts:
         Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
 
 
-# spy log #logs-quit - extra info about player quit - for server owner channel only
+# spy log #logs-quit - extra info about player quit - for server owner channel only - released here: https://discord.com/channels/135634590575493120/1396798027296931990
   - Trigger: 'org.bukkit.event.player.PlayerQuitEvent'
     Channel: '1396763019069096046'
     Embed:
@@ -685,7 +685,7 @@ Alerts:
       Footer:
         Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
 
-# spy log #logs-quit - extra info about player quit - for server owner channel only
+# spy log #logs-quit - extra info about player quit - for server owner channel only - released here: https://discord.com/channels/135634590575493120/1396798027296931990
   - Trigger: 'org.bukkit.event.player.PlayerQuitEvent'
     Channel: '1396768167002509322'
     Embed:
