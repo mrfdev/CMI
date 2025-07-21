@@ -1,6 +1,6 @@
 ## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.3.0, build 030
+## Version 0.3.0, build 031
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 ## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
@@ -607,3 +607,40 @@ Alerts:
      ThumbnailUrl: "https://cravatar.eu/head/${#event.getEntity().getName()}/128.png"
      Description: "## :skull_crossbones:💥 %cmi_user_cleannickname% died \n\nItems have dropped on the floor! who gets to them first?\n**Location:** `%cmi_player_world%` **x:** `%cmi_player_x%` **y:** `%cmi_player_y%` **z:** `%cmi_player_z%` :cloud_lightning: \n **Reason**: `${getDeathMessage()}` \n **Total deaths**: `%statistic_deaths%`"
      Timestamp: true
+
+# spy log #logs-joins - extra info about player joins - for server owner channel only
+  - Trigger: 'org.bukkit.event.player.PlayerJoinEvent'
+    Channel: '1396763019069096046'
+    Embed:
+      Color: "#00ff00"
+      ThumbnailUrl: "https://mineskin.eu/avatar/{username}"
+      Title:
+        Text: ":arrow_right: ${!#player.hasPlayedBefore() ? 'a NEW Player has joined the server for the first time' : 'a Player has rejoined the server'}"
+      Fields:
+        - 'Realname:;[`${#player.getName()}`](https://namemc.com/profile/${#player.getUniqueId()});true'
+        - 'Nickname:;`${Class.forName("me.clip.placeholderapi.PlaceholderAPI").setPlaceholders(#player, "%cmi_user_nickname%")}`;true'
+        - 'IP:;[`${#player.getAddress().getAddress().getHostAddress()}`](https://www.ip2location.com/demo/${#player.getAddress().getAddress().getHostAddress()});true'
+        - 'UUID:;```${#player.getUniqueId()}```;false'
+        - 'Location:;```/cmi tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}```;false'
+        - 'Gamemode:;`${#player.getGameMode().name().toLowerCase()}`;true'
+        - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId()) == null ? 'Not linked' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId())+'>'};true"
+      Footer:
+        Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
+
+# spy log #logs-joins - extra info about player joins - for staff - does not have full ip
+  - Trigger: 'org.bukkit.event.player.PlayerJoinEvent'
+    Channel: '1396768167002509322'
+    Embed:
+      Color: "#00ff00"
+      ThumbnailUrl: "https://mineskin.eu/avatar/{username}"
+      Title:
+        Text: ":arrow_right: ${!#player.hasPlayedBefore() ? 'a NEW Player has joined the server for the first time' : 'a Player has rejoined the server'}"
+      Fields:
+        - 'Realname:;[`${#player.getName()}`](https://namemc.com/profile/${#player.getUniqueId()});true'
+        - 'Nickname:;`${Class.forName("me.clip.placeholderapi.PlaceholderAPI").setPlaceholders(#player, "%cmi_user_nickname%")}`;true'
+        - 'UUID:;```${#player.getUniqueId()}```;false'
+        - 'Location:;```/cmi tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}```;false'
+        - 'Gamemode:;`${#player.getGameMode().name().toLowerCase()}`;true'
+        - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId()) == null ? 'Not linked' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId())+'>'};true"
+      Footer:
+        Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
