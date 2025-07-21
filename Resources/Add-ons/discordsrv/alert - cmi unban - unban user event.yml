@@ -1,0 +1,16 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+  - Trigger: com.Zrips.CMI.events.CMIPlayerUnBanEvent
+    Channel: spydog
+    Embed:
+      Color: '#4dd77a'
+      Author:
+        ImageUrl: 'https://crafatar.com/avatars/${#event.getPlayer()?.getUniqueId()}?overlay'
+        Name: '**PLAYER UNBANNED**'
+      Description: |
+        `${#event.getBannedBy()?.getName() ?: 'Console'}` unbanned **${#event.getPlayer()?.getName() ?: 'Unknown'}** (${#event.getPlayer()?.getUniqueId() ?: 'Unknown UUID'}).

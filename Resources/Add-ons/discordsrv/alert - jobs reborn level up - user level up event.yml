@@ -1,0 +1,102 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+
+# 1MoreBlock.com - Floris Fiedeldij Dop - DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar - Paper 1.21.7 - version 0.3.1, build 004
+# Feel free to use, just copy paste to your alerts.yml and /discord reload, and level up something.
+
+# Untested, but .. optionally you can limit it to Only announce every 10th level (or whatever you want)
+# Conditions:
+#   - "(#event.level % 10) == 0"
+# Conditions:
+#  - "[25,50,75,100].contains(#event.level)"
+
+- Trigger: com.gamingmesh.jobs.api.JobsLevelUpEvent
+  Channel: global
+  Embed:
+    Color: "#00ff00"
+    Title: ":tada: {event.player.name} leveled up in {event.job.name}!"
+    Description: |
+      **${#event.getPlayer().getName()}** is now level **${#event.getLevel()}** as a **${#event.getJob().getName()}**!
+      Promotion: ${#event.getOldTitle().getName()} → ${#event.getNewTitle().getName()}
+    Timestamp: now
+
+# Other jobs boost-events
+
+- Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+  Channel: spydog
+  Conditions:
+    - '#command.split(" ")[1].equalsIgnoreCase("boost")'
+    - '#command.split(" ")[3].equalsIgnoreCase("exp")'
+  Embed:
+    Color: "#00ff00"
+    Author:
+      ImageUrl: "https://crafatar.com/avatars/${#player.getUniqueId()}?overlay"
+      Name: "Server"
+    Title:
+      Text: "**JOBS XP BOOSTER EVENT**"
+    Description: |
+      **Boost activated for Job:** ${#command.split(" ")[2]}
+      **Boost Type:** ${#command.split(" ")[3]}
+      **Boost Duration:** ${#command.split(" ")[4]}
+      **Bonus Multiplier:** ${#command.split(" ")[5]}x
+    Timestamp: true
+
+- Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+  Channel: spydog
+  Conditions:
+    - '#command.split(" ")[1].equalsIgnoreCase("boost")'
+    - '#command.split(" ")[3].equalsIgnoreCase("money")'
+  Embed:
+    Color: "#00ff00"
+    Author:
+      ImageUrl: "https://crafatar.com/avatars/${#player.getUniqueId()}?overlay"
+      Name: "Server"
+    Title:
+      Text: "**JOBS MONEY BOOSTER EVENT**"
+    Description: |
+      **Boost activated for Job:** ${#command.split(" ")[2]}
+      **Boost Type:** ${#command.split(" ")[3]}
+      **Boost Duration:** ${#command.split(" ")[4]}
+      **Bonus Multiplier:** ${#command.split(" ")[5]}x
+    Timestamp: true
+
+- Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+  Channel: spydog
+  Conditions:
+    - '#command.split(" ")[1].equalsIgnoreCase("boost")'
+    - '#command.split(" ")[3].equalsIgnoreCase("points")'
+  Embed:
+    Color: "#00ff00"
+    Author:
+      ImageUrl: "https://crafatar.com/avatars/${#player.getUniqueId()}?overlay"
+      Name: "Server"
+    Title:
+      Text: "**JOBS POINT BOOSTER EVENT**"
+    Description: |
+      **Boost activated for Job:** ${#command.split(" ")[2]}
+      **Boost Type:** ${#command.split(" ")[3]}
+      **Boost Duration:** ${#command.split(" ")[4]}
+      **Bonus Multiplier:** ${#command.split(" ")[5]}x
+    Timestamp: true
+
+- Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+  Channel: spydog
+  Conditions:
+    - '#command.split(" ")[1].equalsIgnoreCase("boost")'
+    - '#command.split(" ")[3].equalsIgnoreCase("reset")'
+  Embed:
+    Color: "#00ff00"
+    Author:
+      ImageUrl: "https://crafatar.com/avatars/${#player.getUniqueId()}?overlay"
+      Name: "Server"
+    Title:
+      Text: "**JOBS BOOSTER EVENT HAS ENDED**"
+    Description: |
+      The **${#command.split(" ")[2]}** job's boost event has **ended**!
+      Event: ${#event}
+    Timestamp: true

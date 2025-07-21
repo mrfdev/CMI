@@ -1,0 +1,22 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+- Trigger: 'org.bukkit.event.server.ServerCommandEvent'
+  Channel: global
+  Conditions:
+    - '#command != null and #command.toLowerCase().startsWith("cmi broadcast ")'
+    - '#command.split(" ", 2).length > 1 and #command.split(" ", 2)[1].trim().isEmpty() == false'
+  Embed:
+    Color: '#000001'
+    Author:
+      ImageUrl: 'https://cdn.discordapp.com/attachments/895784266976329739/1092758447893762078/console.png'
+      Name: '**BROADCAST**'
+    Description: |
+      `CONSOLE posted:`
+      ```md
+      # ${#command.split(" ", 2).length > 1 ? #command.split(" ", 2)[1] : "(no message)"}
+      ```

@@ -1,0 +1,21 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+  - Trigger: com.Zrips.CMI.events.CMIAfkLeaveEvent
+    Async: false
+    Conditions:
+      - '!T(java.lang.Class).forName("com.Zrips.CMI.Containers.CMIUser").getUser(#player).isVanished() == true'
+    Channel: global
+    Embed:
+      Color: '#869600'
+      ThumbnailUrl: '{embedavatarurl}'
+      Title:
+        Text: '{displayname} has returned after %cmi_user_afk_for%.'
+        Url: ''
+      Fields:
+        - 'AFK reason:;%cmi_user_afk_msg%;true'
+        - 'World:;`%cmi_player_world%`;true'

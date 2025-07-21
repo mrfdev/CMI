@@ -1,0 +1,23 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+- Trigger: 'org.bukkit.event.player.PlayerCommandPreprocessEvent'
+  Channel: spydog
+  Conditions:
+    - '#command != null and (#command.toLowerCase() == "cmi maintenance" or #command.toLowerCase().startsWith("cmi maintenance false"))'
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#player, '%cmi_maintenance_state%').toLowerCase().contains('false')"
+  Embed:
+    Color: '#4dd77a'
+    ThumbnailUrl: 'https://cdn.discordapp.com/attachments/895784266976329739/979217380431507516/road-works.png'
+    Title:
+      Text: 'Maintenance has Completed!'
+      Url: ''
+    Description: 'The server is open again. Thank you for your patience!'
+    Fields:
+      - 'Info:;Players can now join the server.;false'
+    Footer:
+      Text: 'Welcome back, have fun!'

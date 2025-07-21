@@ -1,0 +1,33 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+# regular event - cannot say who the kicker is - works from console too
+- Trigger: 'org.bukkit.event.player.PlayerKickEvent'
+  Channel: spydog
+  Conditions:
+    - '!#event.getPlayer().isBanned()'
+  Embed:
+    Color: '#ff0000'
+    Author:
+      ImageUrl: 'https://crafatar.com/avatars/${#event.getPlayer().getUniqueId()}?overlay'
+      Name: '🥾 %cmi_user_nameplate_prefix% ${#event.getPlayer().getDisplayName()}'
+    Description: '**Kick reason:** ${#event.getReason()}'
+
+# cmi (also works from console) - and says who the kicker is
+- Trigger: 'com.Zrips.CMI.events.CMIPlayerKickEvent'
+  Channel: spydog
+  Embed:
+    Color: '#ff0000'
+    Author:
+      ImageUrl: 'https://crafatar.com/avatars/${#event.getBanned()}?overlay'
+      Name: '🥾 KICKED'
+    Description: |
+      `${#event.getBannedBy() != null ? (#event.getBannedBy() instanceof T(org.bukkit.entity.Player) ? #event.getBannedBy().getName() : 'CONSOLE') : 'Unknown'}` kicked **`${T(org.bukkit.Bukkit).getOfflinePlayer(#event.getBanned()).getName() ?: 'Unknown'}`** `(${#event.getBanned()})`
+      
+      **Kick reason:** ${#event.getReason() ?: "(no reason provided)"}
+
+

@@ -1,0 +1,46 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+# in-game player starts /xprate 2 true
+- Trigger: 'org.bukkit.event.player.PlayerCommandPreprocessEvent'
+  Channel: global
+  Conditions:
+    - '#command != null and (#command.toLowerCase().startsWith("xprate "))'
+    - '#command.split(" ").length > 1'
+    - '!#command.split(" ")[1].toLowerCase().startsWith("reset")'
+    - '!#command.split(" ")[1].toLowerCase().startsWith("clear")'
+  Embed:
+    Color: '#000001'
+    Author:
+      ImageUrl: '${#event.getPlayer() != null ? "https://crafatar.com/avatars/" + #event.getPlayer().getUniqueId() + "?overlay" : "https://cdn.discordapp.com/embed/avatars/0.png"}'
+      Name: '**BOOSTER EVENT**'
+    Description: |
+      ```md
+      # Server Boosters have been turned on!
+      - mcMMO XP Multipliers are set to: ${#command.split(" ").length > 1 ? #command.split(" ")[1] : "??"}x
+      ```
+      Commands: `/mctop, /mcrank, /mcstats`
+
+# console starts xprate 2 true
+- Trigger: 'org.bukkit.event.server.ServerCommandEvent'
+  Channel: global
+  Conditions:
+    - '#command != null and #command.toLowerCase().startsWith("xprate ")'
+    - '#command.split(" ").length > 1'
+    - '!#command.split(" ")[1].toLowerCase().startsWith("reset")'
+    - '!#command.split(" ")[1].toLowerCase().startsWith("clear")'
+  Embed:
+    Color: '#000001'
+    Author:
+      ImageUrl: 'https://cdn.discordapp.com/embed/avatars/0.png'
+      Name: '**BOOSTER EVENT**'
+    Description: |
+      ```md
+      # Server Boosters have been turned on!
+      - mcMMO XP Rate is set to: ${#command.split(" ").length > 1 ? #command.split(" ")[1] : "??"}x
+      ```
+      Commands: `/mctop, /mcrank, /mcstats`

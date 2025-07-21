@@ -1,0 +1,24 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+- Trigger: 'org.bukkit.event.player.PlayerCommandPreprocessEvent'
+  Channel: spydog
+  Conditions:
+    - '#command != null and (#command.toLowerCase() == "cmi maintenance" or #command.toLowerCase().startsWith("cmi maintenance true"))'
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#player, '%cmi_maintenance_state%').toLowerCase().contains('true')"
+  Embed:
+    Color: '#869600'
+    ThumbnailUrl: 'https://cdn.discordapp.com/attachments/895784266976329739/979217380431507516/road-works.png'
+    Title:
+      Text: 'The Server is now in Maintenance Mode'
+      Url: ''
+    Description: '_We are oiling up the gears so the server runs a bit smoother_'
+    Fields:
+      - 'Reason:;${#command.split(" ", 4).length > 3 ? #command.split(" ", 4)[3] : "Be right back, we are working on the server"};false'
+      - 'Please note;Players cannot join during this time;false'
+    Footer:
+      Text: 'Thank you for your patience, we will be back soon.'

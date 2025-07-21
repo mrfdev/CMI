@@ -1,0 +1,140 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+- Trigger: 'com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent'
+  Channel: spydog
+  Conditions:
+    - "(T(java.lang.Integer).parseInt(Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%'))) % 100 == 0"
+  Embed:
+    Color: "#ffbf00"
+    Title:
+      Text: ":trophy: ${#event.getPlayer().getDisplayName()} hit power level **${Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%')}**!"
+    Description: |
+      New milestone! Show off your stats with `/mcstats` or `/mctop`.
+
+- Trigger: 'com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent'
+  Channel: spydog
+  Conditions:
+    - "(T(java.lang.Integer).parseInt(Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%'))) % 500 == 0"
+  Embed:
+    Color: "#e25822"
+    Title:
+      Text: ":star2: ${#event.getPlayer().getDisplayName()} reached power level **${Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%')}**!"
+    Description: |
+      :rocket: This is a huge milestone!
+
+- Trigger: 'com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent'
+  Channel: spydog
+  Conditions:
+    - "(T(java.lang.Integer).parseInt(Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%'))) % 1000 == 0"
+  Embed:
+    Color: "#ba00ff"
+    Title:
+      Text: ":crown: ${#event.getPlayer().getDisplayName()} just hit **${Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%')}** power!"
+    Description: |
+      Bow before the champion! Who can catch up?
+
+# Example for Mining Skill (repeat for other skills as needed)
+- Trigger: 'com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent'
+  Channel: spydog
+  Conditions:
+    - "(T(java.lang.Integer).parseInt(Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_level_mining%'))) % 100 == 0"
+  Embed:
+    Color: "#0055ff"
+    Title:
+      Text: ":pick: ${#event.getPlayer().getDisplayName()} reached level **${Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_level_mining%')}** Mining!"
+    Description: |
+      They've been digging deep! Keep going for 100 more.
+
+# Level-up streak example (if available)
+- Trigger: 'com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent'
+  Channel: spydog
+  Conditions:
+    - "#event.getLevelsGained() >= 5"
+  Embed:
+    Color: "#fffa1d"
+    Title:
+      Text: ":fire: ${#event.getPlayer().getDisplayName()} leveled up ${#event.getLevelsGained()} times at once!"
+    Description: |
+      Is this a world record streak?
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '100'"
+  Embed:
+    Color: '#ffbf00'
+    Title:
+      Text: ":star2: ${#event.getPlayer().getName()} hit Power Level **100**!"
+    Description: |
+      Welcome to triple digits! What's your favorite mcMMO skill?
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '250'"
+  Embed:
+    Color: '#ffe066'
+    Title:
+      Text: ":sparkles: ${#event.getPlayer().getName()} reached Power Level **250**!"
+    Description: |
+      Quarter-way to 1000! Keep grinding!
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '500'"
+  Embed:
+    Color: '#a0ff66'
+    Title:
+      Text: ":tada: ${#event.getPlayer().getName()} hit Power Level **500**!"
+    Description: |
+      Half a thousand! Not bad!
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '1000'"
+  Embed:
+    Color: '#22e2ff'
+    Title:
+      Text: ":crown: ${#event.getPlayer().getName()} reached Power Level **1000**!"
+    Description: |
+      Four digits! You’re among the elite now.
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '2500'"
+  Embed:
+    Color: '#ff9955'
+    Title:
+      Text: ":fire: ${#event.getPlayer().getName()} hit Power Level **2500**!"
+    Description: |
+      Quarter to 10k, insane progress!
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '5000'"
+  Embed:
+    Color: '#ff55aa'
+    Title:
+      Text: ":zap: ${#event.getPlayer().getName()} reached Power Level **5000**!"
+    Description: |
+      Halfway to legend status!
+
+- Trigger: com.gmail.nossr50.events.experience.McMMOPlayerLevelUpEvent
+  Channel: spydog
+  Conditions:
+    - "Class.forName('me.clip.placeholderapi.PlaceholderAPI').setPlaceholders(#event.getPlayer(), '%mcmmo_power_level%') == '10000'"
+  Embed:
+    Color: '#ff2222'
+    Title:
+      Text: ":trophy: ${#event.getPlayer().getName()} achieved Power Level **10,000**!"
+    Description: |
+      Maximum grind. Bow down to the ultimate player!

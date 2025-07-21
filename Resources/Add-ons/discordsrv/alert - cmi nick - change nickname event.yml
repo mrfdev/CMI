@@ -1,0 +1,18 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+  # 1MoreBlock.com CMI /nick change alert version 0.2.5 build 021
+  # credits: mrfloris with some great help from DiscordSRV community members
+  # published here:
+  - Trigger: com.Zrips.CMI.events.CMIPlayerNickNameChangeEvent
+    Channel: global
+    Embed:
+      Color: '#ff0000'
+      Author:
+        ImageUrl: 'https://crafatar.com/avatars/${#event.getUser().getPlayer().getUniqueId()}?overlay'
+        Name: '/nick'
+      Description: 'Player **`${#event.getUser().getPlayer().getName()}`** has changed their name to: `${#event.getNickName()}`'

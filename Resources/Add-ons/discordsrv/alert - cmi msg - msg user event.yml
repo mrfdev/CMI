@@ -1,0 +1,22 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+- Trigger: 'org.bukkit.event.player.PlayerCommandPreprocessEvent'
+  Channel: spydog
+  Conditions:
+    - '#command != null'
+    - '(#command.toLowerCase().startsWith("cmi msg ") || #command.toLowerCase().startsWith("msg ") || #command.toLowerCase().startsWith("tell ") || #command.toLowerCase().startsWith("w ") || #command.toLowerCase().startsWith("whisper ") || #command.toLowerCase().startsWith("pm ") || #command.toLowerCase().startsWith("m "))'
+  Embed:
+    Color: '#6b5cff'
+    Title:
+      Text: ':mailbox: MSG SPY'
+    Description: |
+      Sender: `${#event.getPlayer().getName()}`
+      Receiver: `${#command.split(" ")[2] ?: "Unknown"}`
+      Message: `${#command.split(" ", 3).length > 2 ? #command.split(" ", 3)[2] : "(no message)"}`
+      Location: `/tppos %cmi_player_x% %cmi_player_y% %cmi_player_z% %cmi_player_world%`
+      Full Command: `/${#command}`

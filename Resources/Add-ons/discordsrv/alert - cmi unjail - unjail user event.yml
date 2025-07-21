@@ -1,0 +1,20 @@
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
+## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
+## Version 0.3.0, build 034
+## Installation instructions (see above url)
+## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
+
+- Trigger: org.bukkit.event.player.PlayerCommandPreprocessEvent
+  Channel: spydog
+  Conditions:
+    - '#player.hasPermission("cmi.command.unjail")'
+    - '#command.toLowerCase().startsWith("cmi unjail ")'
+  Embed:
+    Color: "#99ff99"
+    Title:
+      Text: "**UNJAILED**"
+    Description: |
+      **Punishment Type**: unjailed
+      **Unjailed Player**: `${#command.split(" ")[2]}` 
+      **Unjailed by Staff**: `${#event.getPlayer().getName()}` 
