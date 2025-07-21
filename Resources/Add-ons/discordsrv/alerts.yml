@@ -1,22 +1,30 @@
-## DiscordSRV 1.29.x alerts.yml collection file by mrfloris (with contributions from others).
+## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.2.9, build 028
+## Version 0.3.0, build 029
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
+## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
 
 Alerts:
 
 # mrfloris > log sign changes to spylog channel
-  - Trigger: SignChangeEvent
-    Channel: spydog
+  - Trigger: 'org.bukkit.event.block.SignChangeEvent'
+    Channel: '1396738538229469184'
     Conditions:
-      - 'getLine(0) + getLine(1) + getLine(2) + getLine(3) != ""'
+      - "#event.getLine(0).isEmpty() == false || #event.getLine(1).isEmpty() == false || #event.getLine(2).isEmpty() == false || #event.getLine(3).isEmpty() == false"
     Embed:
-      Color: "#000001"
+      Color: '#000001'
       Author:
-        ImageUrl: "https://crafatar.com/avatars/${#event.getPlayer().getUniqueId()}?overlay"
-        Name: '**SIGN SPY**'
-      Description: "Placed by `{name}` : `[/tppos ${#event.getBlock().getLocation().getBlockX() + \" \" + #event.getBlock().getLocation().getBlockY() + \" \" + #event.getBlock().getLocation().getBlockZ()} {world}]`\n```\n${#event.getLine(0)}\n${#event.getLine(1)}\n${#event.getLine(2)}\n${#event.getLine(3)}```"
+        ImageUrl: 'https://mineskin.eu/avatar/${#event.getPlayer().getName()}'
+        Name: 'SIGN SPY'
+      Description: |
+        Placed by `${#event.getPlayer().getName()}` : ```/tppos ${#event.getBlock().getLocation().getBlockX()} ${#event.getBlock().getLocation().getBlockY()} ${#event.getBlock().getLocation().getBlockZ()} {world}```
+        ```
+        ${#event.getLine(0)}
+        ${#event.getLine(1)}
+        ${#event.getLine(2)}
+        ${#event.getLine(3)}
+        ```
 
 # mrfloris > log cmi msgs to spylog channel
 # Released here: https://discord.com/channels/135634590575493120/1118487420070006854
