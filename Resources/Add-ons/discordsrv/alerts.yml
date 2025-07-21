@@ -1,6 +1,6 @@
 ## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.3.0, build 031
+## Version 0.3.0, build 032
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 ## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
@@ -655,5 +655,57 @@ Alerts:
           ```/cmi ban ${#player.getName()} rule broken - appeal on discord via a new ticket https://discord.gg/floris -s```
           ```/cmi ban ${#player.getName()} inappropriate username, change it and appeal via a ticket to rejoin https://discord.gg/floris -s```
           ;false'
+      Footer:
+        Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
+
+
+# spy log #logs-quit - extra info about player quit - for server owner channel only
+  - Trigger: 'org.bukkit.event.player.PlayerQuitEvent'
+    Channel: '1396763019069096046'
+    Embed:
+      Color: "#ff4444"
+      ThumbnailUrl: "https://mineskin.eu/avatar/{username}"
+      Title:
+        Text: ":arrow_left: ${#player.getName()} has left the server"
+      Fields:
+        - 'Realname:;[`${#player.getName()}`](https://namemc.com/profile/${#player.getUniqueId()});true'
+        - 'Nickname:;`{displayname}`;true'
+        - 'IP:;[`${#player.getAddress().getAddress().getHostAddress()}`](https://www.ip2location.com/demo/${#player.getAddress().getAddress().getHostAddress()});true'
+        - 'UUID:;```${#player.getUniqueId()}```;false'
+        - 'Location:;```/cmi tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}```;false'
+        - 'Gamemode:;`${#player.getGameMode().name().toLowerCase()}`;true'
+        - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId()) == null ? 'Not linked' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId())+'>'};true"
+        - 'Mod Cmds:;
+          ```/cmi kick ${#player.getName()} please play within the /rules -s```
+          ```/cmi ban ${#player.getName()} not welcome - perm ban - appeal not possible -s```
+          ```/cmi ban ${#player.getName()} rule broken - appeal on discord via a new ticket https://discord.gg/floris -s```
+          ```/cmi ban ${#player.getName()} inappropriate username, change it and appeal via a ticket to rejoin https://discord.gg/floris -s```
+          ;false'
+        - 'Quit Message:;${#event.getQuitMessage() != null ? #event.getQuitMessage() : "None"};false'
+      Footer:
+        Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
+
+# spy log #logs-quit - extra info about player quit - for server owner channel only
+  - Trigger: 'org.bukkit.event.player.PlayerQuitEvent'
+    Channel: '1396768167002509322'
+    Embed:
+      Color: "#ff4444"
+      ThumbnailUrl: "https://mineskin.eu/avatar/{username}"
+      Title:
+        Text: ":arrow_left: ${#player.getName()} has left the server"
+      Fields:
+        - 'Realname:;[`${#player.getName()}`](https://namemc.com/profile/${#player.getUniqueId()});true'
+        - 'Nickname:;`{displayname}`;true'
+        - 'UUID:;```${#player.getUniqueId()}```;false'
+        - 'Location:;```/cmi tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}```;false'
+        - 'Gamemode:;`${#player.getGameMode().name().toLowerCase()}`;true'
+        - "Discord:;${#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId()) == null ? 'Not linked' : '<@'+#discordsrv.accountLinkManager.getDiscordId(#player.getUniqueId())+'>'};true"
+        - 'Mod Cmds:;
+          ```/cmi kick ${#player.getName()} please play within the /rules -s```
+          ```/cmi ban ${#player.getName()} not welcome - perm ban - appeal not possible -s```
+          ```/cmi ban ${#player.getName()} rule broken - appeal on discord via a new ticket https://discord.gg/floris -s```
+          ```/cmi ban ${#player.getName()} inappropriate username, change it and appeal via a ticket to rejoin https://discord.gg/floris -s```
+          ;false'
+        - 'Quit Message:;${#event.getQuitMessage() != null ? #event.getQuitMessage() : "None"};false'
       Footer:
         Text: 'Total players online: ${#server.getOnlinePlayers().size()}'
