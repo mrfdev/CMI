@@ -1,6 +1,6 @@
 ## DiscordSRV 1.30.x alerts.yml collection file by mrfloris (with contributions from others).
 ## More information (and the latest version) can be found here: https://github.com/mrfdev/CMI/tree/master/Resources/Add-ons/discordsrv
-## Version 0.3.0, build 035
+## Version 0.3.0, build 036
 ## Installation instructions (see above url)
 ## More info about DiscordSRV's alerts feature can be found here: https://docs.discordsrv.com/alerts/
 ## Made for Paper 1.21.8, using specifically DiscordSRV-1.30.0-SNAPSHOT-e6dbac6.jar
@@ -11,12 +11,14 @@
     Embed:
       Color: '#D89869'
       ThumbnailUrl: "https://mineskin.eu/avatar/${#event.getPlayer().getName()}"
-      Text:
-        Name: '📖 BOOK SPY: ${#event.getPlayer().getName()}'
+      Title:
+        Text: '📖 SPY: BOOK ${#event.isSigning() ? "SIGNED" : "EDITED"}'
       Description: |
         `${#event.getPlayer().getName()}` ${#event.isSigning() ? "**SIGNED a Book**" : "edited a book"}
-        **Title:** `${#event.getNewBookMeta().getTitle() ?: "Untitled"}`
-        **Author:** `${#event.getNewBookMeta().getAuthor() ?: "Unknown"}`
+        **Title:** `${#event.getNewBookMeta().getTitle() ?: "Untitled (unsngned)"}`
+        **Author:** `${#event.getNewBookMeta().getAuthor() ?: "Unknown (unsigned)"}`
+        **Coord:** `/tppos ${#player.getLocation().getBlockX()} ${#player.getLocation().getBlockY()} ${#player.getLocation().getBlockZ()} ${#player.getWorld().getName()}`
         ```
         ${T(java.lang.String).join('``` ```', #event.getNewBookMeta().getPages())}
         ```
+      Timestamp: true
