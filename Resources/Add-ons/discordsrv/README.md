@@ -56,4 +56,4 @@ TODO, improve the readme.md file for obvious reasons.
 
 -  More info about DiscordSRV's alerts feature can be found here: <https://docs.discordsrv.com/alerts/>
 
-- Last updated on July 21st, 2025 | Version 0.3.0, build 033, by Floris & contributors
+- Last updated on July 22nd, 2025 | Version 0.3.0, build 035, by Floris & contributors
