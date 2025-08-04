@@ -13,7 +13,7 @@ Quick Command Guide:
 /fish gut (Extract Entropy from fish)
 /fish deliveries (Bonus entropy & items) 
 /fish augment (For adding augments to rod)
-/fish augments (Special augments and their crafting ingredients)
+/fish augments (Special augments and their crafting recipes)
 <NextPage>
 Let's start with the basics.
 
@@ -31,8 +31,7 @@ Diamond - $5,000
 Platinum - $10,000
 Mythical - $25,000
 
-*Pufferfish, Raw Cod /
-Salmon, Tropical Fish
+*Vanilla Fish
 <NextPage>
 This menu will also show the "Special Fish" which can be sold for 1.5x it's base price. This changes every 6 hours.
 
@@ -46,18 +45,26 @@ You can earn Entropy from fishing, gutting, and doing deliveries.
 <NextPage>
 "How much Entropy do I get per catch?"
 
-You get the same amount of base xp & base entropy when catching special fish:
+You get a set amount of base entropy when catching special fish:
 
-Bronze - 30
-Silver - 60
-Gold - 100
-Diamond - 200
-Platinum - 550
-Mythical - 750
+Bronze - 45
+Silver - 110
+Gold - 200
+Diamond - 350
+Platinum - 1250
+Mythical - 10000
 <NextPage>
-Party Fishing:
-~~~~~~~~~~
-You can also gain more entropy and xp by fishing within 30 blocks of other players.
+"How much plugin xp do I get per catch?"
+
+Bronze - 75
+Silver - 150
+Gold - 300
+Diamond - 700
+Platinum - 1900
+Mythical - 6000
+<NextPage>
+Party Fishing: You can
+~~~~~~~~~~ also gain more entropy and xp by fishing within 30 blocks of other players.
 
 *To get the full buff, 4 players are required*
 
@@ -78,23 +85,22 @@ Mythical - 0.04%
 ~~~~~~~~~~~  
 Deliveries are earned every 180 custom fish caught. 
 Example Delivery: 
-- 20x Bass; You must have 20x Bass in your inventory before starting the delivery. 
-
+- 20x Bass; You must have 20x Bass in your inventory before starting the delivery.
 Once the timer runs out, you click again to claim the reward!
 <NextPage>
 "How does Augment crafting work?"
 
-- First, you need a Cauldron with water, and the exact amount of items required for the augment being crafted (including entropy and /fish lvl!)
-Throw all the items into the cauldron, and Shift-Click with your fishing rod.
+- First, you need a Cauldron with water, and the exact amount of items required for the augment being crafted (including entropy and /fish lvl!) Throw all the items into the cauldron, and Shift-Click with your fishing rod.
 <NextPage>
-- Crabs have a 4% base chance of being fished up and 20% chance of dropping a claw/scale when killed. 
+- Crabs have a 20% chance of dropping a claw/scale when killed. 
 
-- Dolphins have a 70% chance to drop a dolphin tail when killed.
+- Dolphins have a 80% chance to drop a dolphin tail when killed.
 
 - Squid have a 10% chance to drop a squid tentacle when killed.
 <NextPage>
 Hot Spot - Gives you a
-~~~~~~chance to get more than one fish per catch.
+~~~~~~chance to 
+get more than one fish per catch.
 - Fishing lvl: 10
 - Entropy: 50,000
 - Max lvl: 13 (32%)
@@ -162,6 +168,4 @@ P.S. Here's some bonus info I gathered:
 SnowGlobe randomly creates globes of snow that when fished in will give the player more entropy and fishing xp. Higher the lvl, higher the bonus.
 Works for those who fish inside of radius.
 <NextPage>
-page21?
-<NextPage>
-page22?
+
