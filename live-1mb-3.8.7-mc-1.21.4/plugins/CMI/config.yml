@@ -134,6 +134,10 @@ Optimizations:
     # When set to true, plugin will check if player can manipulate armor stand by sending fake block place event and checking if any plugin would want to prevent this action
     # This can help out to minimize posibility for players to manipulate armor stands when they don't have build permission in area where armorstand is standing
     CheckBlockPlace: false
+    # Minimal armorstand scale which can be set in armor stand editor
+    MinScale: 0.5
+    # Max armorstand scale which can be set in armor stand editor
+    MaxScale: 3
     Templates:
       # When set to true, the player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
       SpecificPermission: false
@@ -753,6 +757,11 @@ Signs:
   - '[uncondense]'
   - '[craft]'
   - '[secret]'
+  # When enabled player needs to be sneaking to edit signs
+  RequireSneaking: false
+  # When enabled sign editor will be represented with new Dialog editor introduced in 1.21.7+
+  # Only for Paper servers
+  DialogEditor: true
 Skins:
   # Applies skin to player automatically on his login to server if he doesnt have one already set
   # This will always set to skin by target player name
@@ -763,13 +772,9 @@ Skins:
   # Requests from player specific permission for that skin cmi.command.skin.perm.[skinName]
   RequireSpecificPerm: false
   # Defines time in minutes how offten we want to update skin information from online Mojang servers
-  # Keep in mind that your server can only send 1 request every minute, so keep it at a decent amount, hour or more
   # So if you have this set to 1 hour, then player skin information will be updated if player old skin information is older then 1 hour
   # This only triggers when player joins server or changes skin manually
   SkinUpdateTimer: 60
-  # Defines time in minutes how offten we want to send requests to Mojang servers
-  # This is to limit amount of requests in specific time to avoid cluter with possible requests
-  SkinRequestFrequency: 10
 Alert:
   # Time in minutes for how long we want to keep set allert on player when performing /cmi alert command. Default is 24 hours
   Timer: 1440
@@ -809,6 +814,7 @@ Command:
       - cmi baltop
       - cmi ctext
       - ctext
+      - co
     # Priority of command spam listener
     # Changed priority will only take effect on full server restart
     # Possible options: LOWEST, LOW, NORMAL, HIGH, HIGHEST
@@ -849,6 +855,10 @@ Command:
     # How many mails we should keep for each player
     # When email limit is reached oldest one will be removed
     MaxMails: 150
+    # Name of mail sender when command is performed from console
+    # This name will be used as indicator who sent it and who should receive reply if player responds to it
+    # For best experience set this value to your staff member responsible for communications with players
+    ConsoleMailSender: server
 DisplayName:
   # If you have 3rd party plugin changing players display name, set this to false
   Change: true
@@ -1059,7 +1069,7 @@ Animations:
   DoubleClickDelay: 200
   # Range in blocks from player to look up for valid chair block
   ChairRange: 3
-# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, custom, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom
+# All possible damage causes: kill, world_border, contact, entity_attack, entity_sweep_attack, projectile, suffocation, fall, fire, fire_tick, melting, lava, drowning, block_explosion, entity_explosion, void, lightning, suicide, starvation, poison, magic, wither, falling_block, thorns, dragon_breath, fly_into_wall, hot_floor, campfire, cramming, dryout, freeze, sonic_boom, custom
 # Syntax should be [permissionNode]:[damageCause]:[multiplier]
 # Example: nolavadamage:lava:0 will prevent lava damage with cmi.damagecontrol.nolavadamage permission node
 # Negative values will heal player instead of damaging him
@@ -1391,16 +1401,15 @@ WorldLimits:
   FlyAboveRoofLimitations:
   - spawn-256
   - nether-256
-  - sanctuary-256
-  - builders-256
-  - legacy-256
-  - general-256
+  - builders-320
+  - legacy-320
+  - general-320
+  - wild-320
   - end-256
-  - skygrid-256
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - spawn:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, REHYDRATION, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
     - None
@@ -1618,6 +1627,7 @@ Player:
       pvpDamageNumbers: true
       InformDurability: true
       receivePets: true
+      deathMessages: true
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1637,6 +1647,7 @@ Player:
       pvpDamageNumbers: DIAMOND_SWORD
       InformDurability: ANVIL
       receivePets: LEAD
+      deathMessages: DEAD_BUSH
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec

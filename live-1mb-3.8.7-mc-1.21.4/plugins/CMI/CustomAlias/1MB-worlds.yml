@@ -39,9 +39,10 @@ CustomAlias:
     Tab: false
   builders:
     Cmds:
-    - mvtp [playerName] builders
+    - broken builders mvtp [playerName] builders
     - delay! 0.3
     - ifinworld:builders#! asConsole! cmi gm [playerName] adventure -s
+    - msg! [playerName] For the time being /builders has been turned off.
     Tab: false
   hunting:
     Cmds:
@@ -147,16 +148,16 @@ CustomAlias:
     - mv tp uwu
   skyblock menu:
     Cmds:
-    - asConsole! gui openfor [playerName] skyblock
+    - asConsole! genesis open skyblock [playerName]
   cave menu:
     Cmds:
-    - asConsole! gui openfor [playerName] cave
+    - asConsole! genesis open cave [playerName]
   acid menu:
     Cmds:
-    - asConsole! gui openfor [playerName] acid
+    - asConsole! genesis open acid [playerName]
   skygrid menu:
     Cmds:
-    - asConsole! gui openfor [playerName] skygrid
+    - asConsole! genesis open skygrid [playerName]
   letmeuwu:
     Cmds:
     - ifinworld:uwu! check:%cmi_user_name%==globug100! asConsole! cmi gm creative

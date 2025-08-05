@@ -1,0 +1,19 @@
+randomtext:
+  Enabled: true
+  Description:
+    Randomize: true
+    Lines: 
+    - "{#yellow}Why did the creeper break up with the skeleton?\n\n{#green}Because he felt blown away!"
+    - "{#yellow}Why don't Endermen like jokes?\n\n{#green}They can't take things lightly!"
+    - '{#yellow}Why did Steve get lost?\n\n{#green}He didn’t follow the chunky breadcrumbs!'
+    - '{#yellow}How does a Minecraft player avoid sunburn?\n\n{#green}Stay in the shade biome!'
+    - '{#yellow}Why was the Minecraft player a great musician?\n\n{#green}He had perfect block timing!'
+    - '{#yellow}Why did the chicken cross the Nether?\n\n{#green}To get to the other biome!'
+    - '{#yellow}How do you start a party in Minecraft?\n\n{#green}You block the creepers!'
+    - '{#yellow}Why was the villager so good at trading?\n\n{#green}Because he had emerald standards!'
+    - '{#yellow}What do you call a Minecraft celebration?\n\n{#green}A block party!'
+    - '{#yellow}What’s a skeleton’s least favorite room?\n\n{#green}The living room!'
+  Close:
+    Label: 'Back'
+    OpenDialog: 'welcome'
+    Width: 150

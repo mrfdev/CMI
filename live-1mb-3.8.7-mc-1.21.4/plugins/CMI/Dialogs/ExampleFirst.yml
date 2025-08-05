@@ -1,0 +1,57 @@
+welcome:
+  Enabled: true
+  Label: '{#white}Welcome {#gray}%cmi_user_display_name% {#white}to {#edward}%cmi_user_world_formatted%'
+  Description:
+    Width: 300
+    Lines: 
+    - '{#green}Best minecraft server on earth!'
+    - ''
+    - '{#white}We are glad to have you here %cmi_user_display_name%{#white}!'
+    - 'If you have any questions, feel free to ask our staff'
+  Buttons:
+    Columns: 3 
+    List:
+    - Label: '{#red}Read The Rules' 
+      Width: 100
+      OpenDialog: rules
+    - Label: '{#green>}Read a joke{#darkgreen<}'
+      Width: 100
+      OpenDialog: 'randomtext'
+    - Label: '{#edward>}Start Playing{#darkgreen<}'
+      Width: 100
+      Commands: 'closeinv!'
+    - Label: '{#blue}Join our Discord'
+      Width: 100
+      Commands: 'cmi heal [playerName]'
+    - Label: ''
+      Width: 1
+    - Label: '{#yellow}Visit Google'
+      Width: 100
+      Url: www.google.com
+    - Label: '{#yellow}Visit Our Website %cmi_user_display_name%'
+      Width: 304
+      Url: www.zrips.net
+  Close:
+    Label: 'Go Away!'  
+    Commands: 
+    - 'cmi feed [playerName]'
+    Width: 150
+rules:
+  Enabled: true
+  Description:
+    Width: 300
+    Lines: 
+    - '{#white}1. {#green}No griefing'
+    - '{#white}2. {#green}No harassment or hate speech'
+    - '{#white}3. {#green}No cheating or hacked clients'
+    - '{#white}4. {#green}Respect staff and players'
+    - '{#white}5. {#green}No spamming or advertising'
+    - '{#white}6. {#green}No stealing from other players'
+    - '{#white}7. {#green}No exploiting bugs or glitches'
+    - '{#white}8. {#green}Keep builds appropriate and safe for all ages'
+    - '{#white}9. {#green}No impersonating staff or other players'
+    - '{#white}10. {#green}Use English in public chat'
+  Close:
+    Label: 'Back'
+    OpenDialog: 'welcome'
+    Width: 150

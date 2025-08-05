@@ -648,7 +648,7 @@ CustomAlias:
     - '[playername]'
   emotes:
     Cmds:
-    - asConsole! gui openfor [playerName] emotes
+    - asPlayer! gui open emotes
   ghost:
     Cmds:
     - gcooldown:60#?!

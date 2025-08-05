@@ -328,11 +328,11 @@ RandomTeleportation:
       PreferredBiomes: []
     wild:
       Enabled: true
-      MaxTries: 15
-      Cooldown: 25
+      MaxTries: 14
+      Cooldown: 26
       Range:
-        Max: 12500
-        Min: 750
+        Max: 15000
+        Min: 1250
       Center:
         X: 0
         Z: 0

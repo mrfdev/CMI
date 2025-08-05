@@ -73,8 +73,8 @@ CustomAlias:
     Tab: false
   menu:
     Cmds:
-    - check:$1==null! asConsole! gui openfor [playerName] menu
-    - check:$1!=null! asConsole! gui openfor [playerName] $1
+    - check:$1==null! asPlayer! gui open menu
+    - check:$1!=null! asPlayer! gui open $1
     Tab: false
   points:
     Cmds:
