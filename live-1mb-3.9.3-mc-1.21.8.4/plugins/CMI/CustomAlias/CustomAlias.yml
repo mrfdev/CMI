@@ -1050,3 +1050,6 @@ CustomAlias:
       so enjoy the journey.\n{#cyan>}-/hop-{#denim<}&r sneak to dismount\n{#cyan>}-/hop-{#denim<}&r
       Oh and /kit hop
     - asPlayer! cmi ride list
+  spawnsurvivalfeatures:
+    Cmds:
+    - cmi ctext spawnSurvivalFeatures

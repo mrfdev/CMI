@@ -179,37 +179,12 @@ Mob:
   Tnt_minecart:
     General:
     - '&2[playerDisplayName] &7blew up'
-  Elder_guardian:
+  Allay:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Wither_skeleton:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Stray:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Husk:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Zombie_villager:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Skeleton_horse:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Zombie_horse:
+  Armadillo:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -219,107 +194,7 @@ Mob:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Donkey:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Mule:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Evoker:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Vex:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Vindicator:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Illusioner:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Creeper:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Skeleton:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Spider:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Giant:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Zombie:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Slime:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Ghast:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Zombified_piglin:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Enderman:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Cave_spider:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Silverfish:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Blaze:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Magma_cube:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Ender_dragon:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Wither:
+  Axolotl:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -329,37 +204,37 @@ Mob:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Witch:
+  Bee:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Endermite:
+  Blaze:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Guardian:
+  Bogged:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Shulker:
+  Breeze:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Pig:
+  Camel:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Sheep:
+  Cat:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Cow:
+  Cave_spider:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -369,93 +244,32 @@ Mob:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Squid:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Wolf:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Mooshroom:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Snow_golem:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Ocelot:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Iron_golem:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Horse:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Rabbit:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Polar_bear:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Llama:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Parrot:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Villager:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Turtle:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Phantom:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    - '&2[playerDisplayName] &7failed to defeat &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Cod:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Salmon:
+  Cow:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Pufferfish:
+  Creaking:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Tropical_fish:
+  Creeper:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Dolphin:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Donkey:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -466,37 +280,27 @@ Mob:
     - '&2[playerDisplayName] &7failed to defeat a &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Dolphin:
+  Elder_guardian:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Cat:
+  Ender_dragon:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Panda:
+  Enderman:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Pillager:
+  Endermite:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Ravager:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Trader_llama:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Wandering_trader:
+  Evoker:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -506,37 +310,17 @@ Mob:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Bee:
+  Frog:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Hoglin:
+  Ghast:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Piglin:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Strider:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Zoglin:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Piglin_brute:
-    General:
-    - '&2[playerDisplayName] &7killed by &2[mobName]'
-    Item:
-    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Axolotl:
+  Giant:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -552,17 +336,223 @@ Mob:
     - '&2[playerDisplayName] &7got headbanged by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Allay:
+  Guardian:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Frog:
+  Happy_ghast:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Hoglin:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Horse:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Husk:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Illusioner:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Iron_golem:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Llama:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Magma_cube:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Mooshroom:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Mule:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Ocelot:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Panda:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Parrot:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Phantom:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    - '&2[playerDisplayName] &7failed to defeat &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Pig:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Piglin:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Piglin_brute:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Pillager:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Polar_bear:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Pufferfish:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Rabbit:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Ravager:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Salmon:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Sheep:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Shulker:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Silverfish:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Skeleton:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Skeleton_horse:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Slime:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Sniffer:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Snow_golem:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Spider:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Squid:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Stray:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Strider:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Tadpole:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Trader_llama:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Tropical_fish:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Turtle:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Vex:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Villager:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Vindicator:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Wandering_trader:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -574,32 +564,47 @@ Mob:
     - '&2[playerDisplayName] &7smashed into another dimension by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Camel:
+  Witch:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Sniffer:
+  Wither:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Breeze:
+  Wither_skeleton:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Armadillo:
+  Wolf:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Bogged:
+  Zoglin:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
-  Creaking:
+  Zombie:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Zombie_horse:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Zombie_villager:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Zombified_piglin:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:

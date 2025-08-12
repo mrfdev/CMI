@@ -114,10 +114,10 @@ info:
   # This line can have extra variables: [totalUsers] [onlinePlayers]
   FirstJoin: '{#Cerulean>} Welcome! »{#Lochmara<}{#Feijoa} A new player &6[playerDisplayName]{#Feijoa}
     joined 1MoreBlock.com!'
-  LogoutCustom: '{#Cerulean} - {#Feijoa}Player [playerDisplayName] {#Feijoa}left.
-    {#gray}'
+  LogoutCustom: '{#Cerulean} - {#Feijoa}Player [playerDisplayName] {#Feijoa}left for
+    now. {#gray}'
   LoginCustom: '{#Cerulean>} Welcome! »{#Lochmara<}{#Feijoa} &6&l[playerDisplayName]&r{#Feijoa}
-    has returned! {#Cerulean}❤'
+    has returned again! {#Cerulean}❤'
   deathlocation: \n{#Cerulean>}&l 💀 "/dback" »{#Lochmara<}{#Feijoa} You died at x:&6[x]{#Feijoa},
     y:&6[y]{#Feijoa}, z:&6[z]{#Feijoa} in &6[world]\n
   book:
@@ -192,6 +192,12 @@ info:
   CommandFormat: '&cIncorrect command format'
   ServerSwitchOut: ' &6[playerDisplayName] &eswitched server to &6[serverName]'
   ServerSwitchIn: ' &6[playerDisplayName] &ecame from &6[serverName] &eserver'
+dialog:
+  signEditor: Sign Editor
+  update: Update
+  save: Save
+  close: Close
+  line: Line [line]
 warp:
   list: '&e[pos]. &6[warpName] &f- &7[worldName] ([x]:[y]:[z])'
 afk:
@@ -1003,6 +1009,10 @@ command:
     info:
       noinfo: '&4There is no saved location to return to!'
       feedback: '&6Returned to last saved location ([world],[x],[y],[z])!'
+  dialogs:
+    help:
+      info: '&eShows specified dialog'
+      args: '[dialogName] (playerName) (-s)'
   disableenchant:
     help:
       info: '&eDisable enchantment'
@@ -2073,6 +2083,7 @@ command:
       reason: ' &eFor: &c[reason]'
       leftTime: '!title!&7Jail time:!subtitle![time]'
       jailedTarget: '&eYou have been jailed! [time]'
+      jailedTimeChange: '&eJail time changed to [time]'
       cantTalk: '&cYou cant talk while you are jailed'
       cantTalkRange: '!actionbar!&fYour chat range is limited to &c[range] &fblocks'
       failed: '&cFailed to jail player. Check target jail name, cell id or time format'
@@ -2156,6 +2167,9 @@ command:
       ambient: Ambient
       vehicles: Vehicles
       named: With custom name
+      withitems: With items
+      force: Force
+      custom: By type
   kit:
     help:
       info: '&eGives predefined kit.'
@@ -2499,6 +2513,7 @@ command:
     info:
       changed: '&eChanged max allowed players from &6[old] &eto &6[new]&e. Online:
         &6[current]'
+      label: 'Max Players. Currently: [online]/[max]'
   me:
     help:
       info: '&eSends special message to all players'
@@ -2753,6 +2768,7 @@ command:
         pvpDamageNumbers: '&eShows PvP damage numbers'
         InformDurability: '&eInform on item durability loss'
         receivePets: '&eDo you want to receive pets as gifts'
+        deathMessages: '&eDo you want to show death messages'
   panimation:
     help:
       info: '&ePlay custom particle animation'
@@ -4340,14 +4356,12 @@ command:
       noAccess: '&cNo access to this warp'
       guiTitle: '&6Warps'
       pageTitles:
-      - '&11MB {#paprika}&l World Warps'
-      - '&11MB {#paprika}&l Server Warps'
-      - '&11MB {#paprika}&l Farm Warps'
-      - '&11MB {#paprika}&l MiniGame Warps'
-      - '&11MB {#paprika}&l Server Event Warps'
-      - '&11MB {#paprika}&l Player Warps (p1)'
-      - '&11MB {#paprika}&l Player Warps (p2)'
-      - '&11MB {#paprika}&l Player Warps (p3)'
+      - '{#paprika}&l World Warps'
+      - '{#paprika}&l Explorable Warps'
+      - '{#paprika}&l Resource Warps'
+      - '{#paprika}&l Server Event Warps'
+      - '{#paprika}&l Player Warps'
+      - '{#paprika}&l Private Warps'
   warpgroups:
     help:
       info: '&eLists warp groups'

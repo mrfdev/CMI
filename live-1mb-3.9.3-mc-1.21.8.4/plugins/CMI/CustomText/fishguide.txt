@@ -1,4 +1,4 @@
-<AutoPage>
+<AutoPage><NoAutoAlias><NoReqPermission>
 This book will act like a 'quick' in-game guide for the basics of 1MB PyroFishing. 
 
 Written by: Nebih
@@ -7,13 +7,7 @@ There is also a really good thread that I took inspiration from, you should read
 
 /fish info
 <NextPage>
-Quick Command Guide:
-/fish sell (Sell fish)
-/fish bag (Store fish)
-/fish gut (Extract Entropy from fish)
-/fish deliveries (Bonus entropy & items) 
-/fish augment (For adding augments to rod)
-/fish augments (Special augments and their crafting recipes)
+Quick Command Guide: /fish sell (Sell fish) /fish bag (Store fish) /fish gut (Extract Entropy from fish) /fish deliveries (Bonus entropy/items) /fish augment (Adding augments to rod) /fish augments (details & crafting recipes)
 <NextPage>
 Let's start with the basics.
 
@@ -31,7 +25,7 @@ Diamond - $5,000
 Platinum - $10,000
 Mythical - $25,000
 
-*Vanilla Fish
+Salmon, Pufferfish, Cod & Tropical Fish
 <NextPage>
 This menu will also show the "Special Fish" which can be sold for 1.5x it's base price. This changes every 6 hours.
 
@@ -47,28 +41,25 @@ You can earn Entropy from fishing, gutting, and doing deliveries.
 
 You get a set amount of base entropy when catching special fish:
 
-Bronze - 45
-Silver - 110
-Gold - 200
-Diamond - 350
-Platinum - 1250
-Mythical - 10000
+Bronze - 30
+Silver - 60
+Gold - 100
+Diamond - 200
+Platinum - 550
+Mythical - 750
 <NextPage>
 "How much plugin xp do I get per catch?"
 
-Bronze - 75
-Silver - 150
-Gold - 300
-Diamond - 700
-Platinum - 1900
-Mythical - 6000
+Bronze - 30
+Silver - 60
+Gold - 100
+Diamond - 200
+Platinum - 550
+Mythical - 750
 <NextPage>
-Party Fishing: You can
-~~~~~~~~~~ also gain more entropy and xp by fishing within 30 blocks of other players.
-
-*To get the full buff, 4 players are required*
-
-[Fun Fact: You can Shift-Click your rod to open the '/fish menu']
+Party Fishing:
+You can also gain more entropy and xp by fishing within 30 blocks of other players. 5 players are required to get the max buff
+\n[Fun Fact: You can Shift-Click your rod to open the '/fish menu']
 <NextPage>
 "What are the odds of catching a higher tier fish?"
 
@@ -94,12 +85,11 @@ Once the timer runs out, you click again to claim the reward!
 <NextPage>
 - Crabs have a 20% chance of dropping a claw/scale when killed. 
 
-- Dolphins have a 80% chance to drop a dolphin tail when killed.
+- Dolphins have a 70% chance to drop a dolphin tail when killed.
 
 - Squid have a 10% chance to drop a squid tentacle when killed.
 <NextPage>
-Hot Spot - Gives you a
-~~~~~~chance to 
+Hot Spot - Gives you a ~~~~~~ chance to
 get more than one fish per catch.
 - Fishing lvl: 10
 - Entropy: 50,000
@@ -130,8 +120,7 @@ Precision Cutting - Get ~~~~~~~~~~~~moreentropy from gutting.
 - Entropy: 70,000
 - Max lvl: 8 (70%)
 <NextPage>
-Crab Bait - Increases
-~~~~~~~ chance to fish up a crab.
+Crab Bait - Increases ~~~~~~ chance to fish up a crab.
 - Fishing lvl: 25
 - Entropy: 40,000
 - Max lvl: 5 (1.5x)
