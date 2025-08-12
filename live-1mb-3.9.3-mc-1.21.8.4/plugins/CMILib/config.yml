@@ -1,7 +1,7 @@
 # Language file you want to use
 Language: EN
 # Defines if you want to auto download default locale files from github repository
-# You can disable this if you are using EN or you already have your locale setup and you dont need to have other languages being downloaded
+# You can disable this if you are using EN or you already have your locale setup and you don't need to have other languages being downloaded
 LanguageDownload: true
 # When enabled plugin will try to keep CMILib up to date automatically
 AutoUpdate: false
@@ -11,6 +11,15 @@ ExploitPatcher:
       # By default we are blocking PAPI %checkitem_...% placeholder to avoid potential serious issues with it
       # Only disable this if you have dedicated protection for it
       checkItem: true
+Skins:
+  # Defines time in minutes how often we want to update skin information from online Mojang servers
+  # Keep in mind that your server can only send 1 request every minute, so keep it at a decent amount, hour or more
+  # So if you have this set to 1 hour, then player skin information will be updated if player old skin information is older then 1 hour
+  # This only triggers when player joins server or changes skin manually
+  SkinUpdateTimer: 1320
+  # Defines time in minutes how often we want to send requests to Mojang servers
+  # This is to limit amount of requests in specific time to avoid clutter with possible requests
+  SkinRequestFrequency: 10
 GlobalGui:
   # Defines item type in empty fields in GUI when its needed to be filled up
   EmptyField: BLACK_STAINED_GLASS_PANE

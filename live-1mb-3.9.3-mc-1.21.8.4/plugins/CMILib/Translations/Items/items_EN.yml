@@ -1483,5 +1483,92 @@ WEATHERED_COPPER_DOOR: Weathered Copper Door
 WEATHERED_COPPER_GRATE: Weathered Copper Grate
 WEATHERED_COPPER_TRAPDOOR: Weathered Copper Trapdoor
 WIND_CHARGE: Wind Charge
+BLACK_BUNDLE: Black Bundle
+BLUE_BUNDLE: Blue Bundle
+WHITE_BUNDLE: White Bundle
+YELLOW_BUNDLE: Yellow Bundle
+BROWN_BUNDLE: Brown Bundle
+CYAN_BUNDLE: Cyan Bundle
+GRAY_BUNDLE: Gray Bundle
+GREEN_BUNDLE: Green Bundle
+LIME_BUNDLE: Lime Bundle
+MAGENTA_BUNDLE: Magenta Bundle
+ORANGE_BUNDLE: Orange Bundle
+LIGHT_BLUE_BUNDLE: Light Blue Bundle
+LIGHT_GRAY_BUNDLE: Light Gray Bundle
+PINK_BUNDLE: Pink Bundle
+PURPLE_BUNDLE: Purple Bundle
+RED_BUNDLE: Red Bundle
+BORDURE_INDENTED_BANNER_PATTERN: Bordure Indented Banner Pattern
+CREAKING_HEART: Creaking Heart
+CREAKING_SPAWN_EGG: Creaking Spawn Egg
+FIELD_MASONED_BANNER_PATTERN: Field Masoned Banner Pattern
+PALE_HANGING_MOSS: Pale Hanging Moss
+PALE_MOSS_BLOCK: Pale Moss Block
+PALE_MOSS_CARPET: Pale Moss Carpet
+PALE_OAK_BOAT: Pale Oak Boat
+PALE_OAK_BUTTON: Pale Oak Button
+PALE_OAK_CHEST_BOAT: Pale Oak Chest Boat
+PALE_OAK_DOOR: Pale Oak Door
+PALE_OAK_FENCE: Pale Oak Fence
+PALE_OAK_FENCE_GATE: Pale Oak Fence Gate
+PALE_OAK_HANGING_SIGN: Pale Oak Hanging Sign
+PALE_OAK_WALL_HANGING_SIGN: Pale Oak Wall Hanging Sign
+PALE_OAK_WALL_SIGN: Pale Oak Wall Sign
+PALE_OAK_LEAVES: Pale Oak Leaves
+PALE_OAK_LOG: Pale Oak Log
+PALE_OAK_PLANKS: Pale Oak Planks
+PALE_OAK_PRESSURE_PLATE: Pale Oak Pressure Plate
+PALE_OAK_SAPLING: Pale Oak Sapling
+PALE_OAK_SIGN: Pale Oak Sign
+PALE_OAK_SLAB: Pale Oak Slab
+PALE_OAK_STAIRS: Pale Oak Stairs
+PALE_OAK_TRAPDOOR: Pale Oak Trapdoor
+PALE_OAK_WOOD: Pale Oak Wood
+POTTED_PALE_OAK_SAPLING: Potted Pale Oak Sapling
+STRIPPED_PALE_OAK_LOG: Stripped Pale Oak Log
+STRIPPED_PALE_OAK_WOOD: Stripped Pale Oak Wood
+CHISELED_RESIN_BRICKS: Chiseled Resin Bricks
+CLOSED_EYEBLOSSOM: Closed Eyeblossom
+OPEN_EYEBLOSSOM: Open Eyeblossom
+POTTED_CLOSED_EYEBLOSSOM: Potted Closed Eyeblossom
+POTTED_OPEN_EYEBLOSSOM: Potted Open Eyeblossom
+RESIN_BLOCK: Resin Block
+RESIN_BRICK: Resin Brick
+RESIN_BRICKS: Resin Bricks
+RESIN_BRICK_SLAB: Resin Brick Slab
+RESIN_BRICK_STAIRS: Resin Brick Stairs
+RESIN_BRICK_WALL: Resin Brick Wall
+RESIN_CLUMP: Resin Clump
+BLUE_EGG: Blue Egg
+BROWN_EGG: Brown Egg
+BUSH: Bush
+CACTUS_FLOWER: Cactus Flower
+FIREFLY_BUSH: Firefly Bush
+LEAF_LITTER: Leaf Litter
+SHORT_DRY_GRASS: Short Dry Grass
+TALL_DRY_GRASS: Tall Dry Grass
+WILDFLOWERS: Wildflowers
+TEST_BLOCK: Test Block
+TEST_INSTANCE_BLOCK: Test Instance Block
+DRIED_GHAST: Dried Ghast
+HAPPY_GHAST_SPAWN_EGG: Happy Ghast Spawn Egg
+MUSIC_DISC_TEARS: Music Disc Tears
+BLACK_HARNESS: Black Harness
+BLUE_HARNESS: Blue Harness
+BROWN_HARNESS: Brown Harness
+CYAN_HARNESS: Cyan Harness
+GRAY_HARNESS: Gray Harness
+GREEN_HARNESS: Green Harness
+LIGHT_BLUE_HARNESS: Light Blue Harness
+LIGHT_GRAY_HARNESS: Light Gray Harness
+LIME_HARNESS: Lime Harness
+MAGENTA_HARNESS: Magenta Harness
+ORANGE_HARNESS: Orange Harness
+PINK_HARNESS: Pink Harness
+PURPLE_HARNESS: Purple Harness
+RED_HARNESS: Red Harness
+WHITE_HARNESS: White Harness
+YELLOW_HARNESS: Yellow Harness
 SIGN: Sign
 GRASS: Grass
