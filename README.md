@@ -42,25 +42,25 @@ The most common reason you're perhaps here is some of these 1MoreBlock.com Add-o
 - (Add-on) [1MB-finduser.sh](/Resources/Scripts/1MB-finduser.sh) 
 - (Add-on) [placeholders.txt](/Resources/Add-ons/ingame-docs)
 - (Add-on) [discord-helper.yml](/Resources/Add-ons/discord-helper.yml)
-- (Custom) [CustomAlias/](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/CustomAlias) 
-- (Custom) [worth.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/worth.yml)
+- (Custom) [CustomAlias/](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/CustomAlias) 
+- (Custom) [worth.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/worth.yml)
 
 Or maybe for one of the common CMI files that I've customized for my server:
 
-- [Alias.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/Alias.yml) (live, [all false](/Resources/Alternatives/Alias_false.yml), [all true](/Resources/Alternatives/Alias_true.yml))
-- [config.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/config.yml) (live)
-- [eventCommands.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/eventCommands.yml) (live)
-- [Modules.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/Modules.yml) (live, [all false](/Resources/Alternatives/Modules_false.yml), [all true](/Resources/Alternatives/Modules_true.yml))
-- [ranks.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/ranks.yml) (live)
-- [schedules.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/schedules.yml) (live)
-- [tabList.yml](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/tabList.yml) (live)
+- [Alias.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/Alias.yml) (live, [all false](/Resources/Alternatives/Alias_false.yml), [all true](/Resources/Alternatives/Alias_true.yml))
+- [config.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/config.yml) (live)
+- [eventCommands.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/eventCommands.yml) (live)
+- [Modules.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/Modules.yml) (live, [all false](/Resources/Alternatives/Modules_false.yml), [all true](/Resources/Alternatives/Modules_true.yml))
+- [ranks.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/ranks.yml) (live)
+- [schedules.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/schedules.yml) (live)
+- [tabList.yml](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/tabList.yml) (live)
 
 And if you came here to find examples of the 1MB CMI CustomText/ files
 
-- [rules.txt](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/CustomText/rules.txt) (handy for /rules)
-- [welcomeMessage.txt](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
+- [rules.txt](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/CustomText/rules.txt) (handy for /rules)
+- [welcomeMessage.txt](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/CustomText/welcomeMessage.txt) (handy for /motd (and onJoin msg)) 
 - [placeholders.txt](/Resources/Add-ons/placeholders.txt) (1MB CMI add-on for 1MB team command)
-- [donate.txt](/live-1mb-3.9.3-mc-1.21.8/plugins/CMI/CustomText/donate.txt) (handy for /donate)
+- [donate.txt](/live-1mb-3.10.0.2-mc-1.21.10/plugins/CMI/CustomText/donate.txt) (handy for /donate)
 
 (See further down the page for the Discord FAQ messages)
 
@@ -153,6 +153,6 @@ This is not my work, there's no salary. This is a hobby, and a hobby costs money
 
 ## :four_leaf_clover: What version?
 
-1MB CMI Project version **1.1.0 build 117** (August 12th, 2025), for live-1mb-3.9.3-mc-1.21.8
+1MB CMI Project version **1.2.1 build 118** (December 11th, 2025), for live-1mb-3.10.0.2-mc-1.21.10
 
-**TLDR;** These files are for 1.21.8 and probably any CMI version 9.8.x.x / CMILib 1.5.6.x 
+**TLDR;** These files are for 1.21.10 and probably any CMI version 9.8.x.x / CMILib 1.5.7.x 
