@@ -39,20 +39,9 @@ CustomAlias:
     Tab: false
   builders:
     Cmds:
-    - broken builders mvtp [playerName] builders
+    - asPlayer! mvtp [playerName] builders
     - delay! 0.3
     - ifinworld:builders#! asConsole! cmi gm [playerName] adventure -s
-    - msg! [playerName] For the time being /builders has been turned off.
-    Tab: false
-  hunting:
-    Cmds:
-    - asPlayer! cmi warp hunting
-    Tab: false
-  sanctuary:
-    Cmds:
-    - mv tp sanctuary
-    - delay! 0.3
-    - ifinworld:sanctuary! asConsole! cmi gm [playerName] adventure -s
     Tab: false
   here:
     Cmds:
@@ -80,17 +69,6 @@ CustomAlias:
     - check:$1==null! asPlayer! mv tp $0
     - check:$1==info! asConsole! cmi ctext wild [playerName]
     Tab: false
-  run:
-    Cmds:
-    - asConsole! cmi invsave [playerName]
-    - check:%cmi_player_world%!=run|builders! asConsole! trconsole join run [playerName]
-    - delay! 2
-    - asConsole! cmi effect [playerName] clear
-    Perm: true
-  tientje:
-    Cmds:
-    - asConsole! ifinworld:sanctuary?#! cmi gm [playerName] creative
-    Perm: true
   letmebuild:
     Cmds:
     - ifinworld:builders#! asConsole! cmi gm [playerName] creative

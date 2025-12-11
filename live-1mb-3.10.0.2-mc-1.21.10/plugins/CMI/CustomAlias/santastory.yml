@@ -1,0 +1,11 @@
+CustomAlias:
+  santa story:
+    Cmds:
+    - gcooldown:300#?!
+    - asConsole! cmi broadcast &r \n{#a4b347}✧✨⛄🌲🎄 - [playerName] has decided to
+      sit down by a fire and light a candle to take a moment and read the '/santa
+      story' "The Winter Adventure of 1MoreBlock". When they are done, the book is
+      available again.\n&r &r
+    - asConsole! cmi openbook santastory [playerName]
+    ExactMatch: true
+    Tab: false

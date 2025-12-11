@@ -1,0 +1,109 @@
+reportIssue:
+  Enabled: true
+  Label: '{#yellow}Report an issue on 1MoreBlock.com'
+  Description:
+    Width: 360
+    Lines:
+    - '{#white}Thanks for taking a moment to report a problem.'
+    - '{#white}You are currently in {#aqua}%player_world% {#white}at X:{#aqua}%player_x% {#white}Y:{#aqua}%player_y% {#white}Z:{#aqua}%player_z%.'
+    - ''
+    - '{#gray}Abuse of /report can lead to punishment.'
+
+  Inputs:
+  # 1) What are you reporting?
+  - Label: '{#gold}What are you reporting?'
+    Width: 260
+    Options:
+    - Label: '{#green}Gameplay bug / glitch'
+      Value: 'Gameplay bug or glitch'
+    - Label: '{#red}Possible exploit'
+      Value: 'Possible exploit'
+    - Label: '{#aqua}Cheating / hacked client'
+      Value: 'Cheating / hacked client'
+    - Label: '{#yellow}Grief / protection issue'
+      Value: 'Grief / protection issue'
+    - Label: '{#pink}Chat / behaviour'
+      Value: 'Chat / behaviour'
+    - Label: '{#gray}Other'
+      Value: 'Other'
+    Commands:
+    - 'asConsole! discordsrv broadcast #1266102649825001543 :page_facing_up: **Type:** `[value]`'
+
+  # 2) Where did it happen?
+  - Label: '{#gold}Where did this happen?'
+    Width: 260
+    Options:
+    - Label: '{#green}Spawn / hubs'
+      Value: 'Spawn / hubs'
+    - Label: '{#green}Wilderness / survival'
+      Value: 'Wilderness / survival'
+    - Label: '{#green}Event worlds (Santa, Halloween, etc)'
+      Value: 'Event worlds'
+    - Label: '{#green}Gamemodes (OneBlock / SkyBlock / etc)'
+      Value: 'Gamemodes'
+    - Label: '{#green}Discord'
+      Value: 'Discord'
+    - Label: '{#gray}Other / not sure'
+      Value: 'Other / not sure'
+    Commands:
+    - 'asConsole! discordsrv broadcast #1266102649825001543 :round_pushpin: **Where:** `[value]`'
+
+  # 3) Player description
+  - Label: '{#gold}Describe what happened (who / what / where)'
+    InitialText: 'Names, world, coords, time, what you did, what went wrong...'
+    MaxLength: 512
+    MaxLines: 6
+    Height: 80
+    Width: 360
+    Commands:
+    - 'asConsole! discordsrv broadcast #1266102649825001543 # :speech_left: **NEW REPORT** | ID: `[playerName]-%cmi_user_meta_lastreportid%` \n ## **Report by `%player_name%` (`%player_uuid%`), with message:**\n```[value]```'
+
+  Buttons:
+    Columns: 1
+    List:
+    - Label: '{#yellow}Send report'
+      Width: 180
+      Save: true
+      Commands:
+      # 1) Generate and store a random 5-digit report number for this player
+      # edit: done in alias _report now - 'asConsole! cmi usermeta [playerName] add lastreportid %cmi_random_10000_99999%'
+      # 2) Main header line to Discord with ID + location
+      - 'asConsole! discordsrv broadcast #1266102649825001543 :triangular_flag_on_post: **In-game location**  `[playerName]` was here: `/cmi tppos %player_x% %player_y% %player_z% %player_world%`'
+      # 3) Optional extra line with timestamp / server
+      - 'asConsole! discordsrv broadcast #1266102649825001543 :clock3: **Time:** `%server_time_HH:mm:ss%` |   **Server TPS:** `%cmi_tps_60%`'
+      # 4) Open thank-you dialog so player sees their ID
+      - 'delay! 0.2'
+      - 'cmi dialogs reportIssueThanks [playerName]'
+
+  Close:
+    Label: '{#pink}Cancel'
+    Commands:
+    - closeinv!
+    Width: 150
+
+
+reportIssueThanks:
+  Enabled: true
+  Label: '{#green}Report submitted!'
+  Description:
+    Width: 360
+    Lines:
+    - '{#white}Thank you for your report, {#aqua}%player_name%{#white}.'
+    - '{#white}Your report ID is: {#yellow}%player_name%-%cmi_user_meta_lastreportid%.'
+    - ''
+    - '{#gray}Staff will review your report as soon as possible.'
+    - '{#gray}You can mention this ID if you talk to staff or in a ticket.'
+
+  Buttons:
+    Columns: 1
+    List:
+    - Label: '{#green}Back to game'
+      Width: 160
+      Commands:
+      - closeinv!
+
+  Close:
+    Label: '{#pink}Close'
+    Commands:
+    - closeinv!
+    Width: 120

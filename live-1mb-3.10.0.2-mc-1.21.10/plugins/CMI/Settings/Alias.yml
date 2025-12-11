@@ -232,6 +232,10 @@ Alias:
   customrecipe:
     Enabled: true
     Tab: true
+  # /cmi database $1-
+  database:
+    Enabled: true
+    Tab: true
   # /cmi dback $1-
   dback:
     Enabled: true
@@ -1009,7 +1013,7 @@ Alias:
     Tab: true
   # /cmi sell $1-
   sell:
-    Enabled: true
+    Enabled: false
     Tab: true
   # /cmi sendall $1-
   sendall:
@@ -1285,6 +1289,10 @@ Alias:
     Tab: true
   # /cmi tree $1-
   tree:
+    Enabled: true
+    Tab: true
+  # /cmi trim $1-
+  trim:
     Enabled: true
     Tab: true
   # /cmi unban $1-

@@ -179,6 +179,9 @@ Mob:
   Tnt_minecart:
     General:
     - '&2[playerDisplayName] &7blew up'
+  Area_effect_cloud:
+    General:
+    - '&2[playerDisplayName] &7was killed by magic cloud'
   Allay:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
@@ -245,6 +248,11 @@ Mob:
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Cod:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Copper_golem:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:
@@ -377,6 +385,11 @@ Mob:
     Item:
     - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
   Magma_cube:
+    General:
+    - '&2[playerDisplayName] &7killed by &2[mobName]'
+    Item:
+    - '&2[playerDisplayName] &7killed by &2[mobName] &7with &2[item]'
+  Mannequin:
     General:
     - '&2[playerDisplayName] &7killed by &2[mobName]'
     Item:

@@ -157,14 +157,13 @@ CustomAlias:
     - '[playername]'
   profile:
     Cmds:
-    - cmi pos $1-
-    - cmi playtime $1-
-    - cmi seen $1-
-    - cmi info $1-
-    - cmi whowas $1-
     - cmi stats $1-
+    - cmi seen $1-
+    - cmi playtime $1-
+    - cmi pos $1-
+    - cmi info $1-
     - cmi ping $1-
-    - cmi checkaccount $1-
+    - uuid $1-
     Perm: true
   hide:
     Cmds:

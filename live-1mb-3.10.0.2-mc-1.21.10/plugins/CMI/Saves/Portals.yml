@@ -146,6 +146,74 @@ general:
     - cmi effect [playerName] blindness 2 1 -s
     - msg! [playerName] &lWhoOoOOosh!
     - asConsole! cmi sound block_portal_trigger [playerName] -v:0.5 -p:2
+  jackperbyteportal2a:
+    Loc: 15378.0:64.0:-14938.0:15378.0:66.0:-14938.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: general;15154.7;-59.0;-14904.6;-72.6;6.64
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  jackperbyteportal2b:
+    Loc: 15152.0:-59.0:-14905.0:15152.0:-57.0:-14905.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: general;15379.59;64.0;-14937.75;-94.93;-3.17
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  jackperbyteportal3:
+    Loc: 15421.0:64.0:-14939.0:15421.0:66.0:-14938.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: general;15500.85;20.0;-15038.8;11.76;22.33
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
+  jackperbyteportal3b:
+    Loc: 15500.0:20.0:-15040.0:15501.0:22.0:-15040.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: true
+    Tp: general;15418.83;64.0;-14937.81;90.61;15.87
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 5
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   playermacadam:
     Loc: 2839.0:54.0:3961.0:2841.0:56.0:3961.0
     enabled: true
@@ -464,7 +532,7 @@ general:
     - cmi effect [playerName] blindness 1 1 -s
   walk:
     Loc: 12640.0:80.0:-5298.0:12640.0:80.0:-5298.0
-    enabled: true
+    enabled: false
     effect: Splash
     showParticles: true
     kickBack: false
@@ -478,6 +546,22 @@ general:
     commands:
     - cmi effect [playerName] blindness 2 1 -s
     - asPlayer! walk
+  yakivoucherportal:
+    Loc: 17895.0:61.0:19460.0:17897.0:63.0:19462.0
+    enabled: true
+    effect: Firefly
+    showParticles: true
+    Tp: general;19982.5;72.0;19742.5;83.47;-1.14
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 1
+    particleHide: 1
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
 wild:
   dungeonfall:
     Loc: 14777.0:-64.0:14648.0:14790.0:-62.0:14661.0
@@ -838,7 +922,7 @@ halloween:
     enabled: true
     effect: SoulFireFlame
     showParticles: true
-    kickBack: true
+    kickBack: false
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
@@ -853,7 +937,7 @@ halloween:
     enabled: true
     effect: Portal
     showParticles: true
-    kickBack: true
+    kickBack: false
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
@@ -924,13 +1008,13 @@ halloween:
   halloweenwaterdrip:
     Loc: 1603.0:85.0:799.0:1604.0:88.0:799.0
     enabled: true
-    effect: Waterdrip
+    effect: Dolphin
     showParticles: true
     kickBack: true
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
-    particleAmount: 1
+    particleAmount: 7
     particleHide: 0
     activationRange: 16
     commandsWithoutTp: false
@@ -1017,6 +1101,23 @@ santa:
     commandsWithoutTp: true
     commands:
     - asConsole! cmi tfly [playerName] 120 -s
+  santapresentsecret:
+    Loc: 264.0:52.0:-71.0:264.0:53.0:-71.0
+    enabled: true
+    effect: Dust
+    color: 8224125
+    showParticles: false
+    Tp: santa;263.52;52.0;-93.5;172.06;8.84
+    kickBack: true
+    particlesByPermission: false
+    requiresPerm: false
+    informOnMissingPerm: false
+    particleAmount: 20
+    particleHide: 0
+    activationRange: 16
+    commandsWithoutTp: true
+    commands:
+    - cmi effect [playerName] blindness 2 1 -s
   santaworldfrostyperk:
     Loc: 167.0:74.0:54.0:167.0:77.0:55.0
     enabled: true
@@ -1027,7 +1128,7 @@ santa:
     particlesByPermission: false
     requiresPerm: false
     informOnMissingPerm: false
-    particleAmount: 3
+    particleAmount: 6
     particleHide: 0
     activationRange: 16
     commandsWithoutTp: true
@@ -1050,7 +1151,7 @@ santa:
 skyblock:
   skyblockspawn:
     Loc: -399.0:2.0:-399.0:398.0:12.0:398.0
-    enabled: true
+    enabled: false
     effect: Dust
     color: 8224125
     showParticles: false

@@ -11,7 +11,7 @@ easterspaw:
   - '{#gold}/egghunt'
   - '{#gold}/egghunt fly'
 santatalks:
-  Loc: santa;259.69;68.03;-68.0
+  Loc: santa;277.16;67.88;-66.45
   Filler: 245
   NewDisplay: true
   ND:
@@ -20,23 +20,21 @@ santatalks:
     TAlpha: 255
     Yaw: 90
     Pitch: 15
+    Double: true
     BColor: '{#1d3300}'
-    BAlpha: 120
+    BAlpha: 255
     ScaleW: 0.5
     ScaleH: 0.5
   Lines:
+  - '{#gold} "ho ho ho %cmi_user_name%, welcome to the daily'
+  - '{#gold} 1MB advent calendar. It has 24 days!'
+  - '{#gold} Right-click to open calendar for today.'
   - '&o'
-  - '{#gold} "Hey %cmi_user_name%, welcome! Santa''s inside :)'
-  - '{#gold} Right-click him to open the calendar!'
+  - '{#yellow} And if you play daily, you can collect 24!'
+  - '{#yellow} Show floris your 24 giftbag collection'
+  - '{#orange} before the 30th, for a bonus box'
   - '&o'
-  - '{#gold} There are 24 advent days, and you'
-  - '{#gold} can click on today''s date to collect it.'
-  - '&o'
-  - '{#yellow} Oh, and you get a bonus box if you'
-  - '{#yellow} can collect all 24 advent giftbags.'
-  - '&o'
-  - '&r {#red} - Santa'
-  - '&o'
+  - '{#red}- Santa'
 halloweennpcchat3:
   Loc: halloween;1677.9;74.84;640.84
   Range: 8
@@ -1656,7 +1654,7 @@ fish:
   - '{#gold}Third place:{#orange} %pyrofishingpro_tournament_third_name%{#gold} (score:{#orange}
     %pyrofishingpro_tournament_third_score%{#gold})'
   - '&r'
-  - '{#gold}Next tournament{#orange} %cmi_schedule_nextin_fishtournament%'
+  - '{#gold}Next tournament:{#orange} %cmi_schedule_nextin_fishtournament%'
 halloweennpcchat69:
   Loc: halloween;1460.9;66.65;478.24
   Range: 8

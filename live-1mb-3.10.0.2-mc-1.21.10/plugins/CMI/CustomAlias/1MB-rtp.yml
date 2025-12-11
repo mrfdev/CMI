@@ -85,22 +85,6 @@ CustomAlias:
     - if:check1! asConsole! cmi titlemsg [playerName] {#buttercup}⸭ ⸭ ⸭\n{#emerald>}Arrived
       at random location!{#7e5c99<}
     - if:check1! asConsole! cmi panimation circle;effect:reddust;dur:4;pitchc:5;part:10;offset:0,1,0;radius:2;yawc:5;color:rs;target:[playerName]
-  betterrtp:
-    Cmds:
-    - asPlayer! rtp
-    - 'msg! [playerName] The $0 command is actually: &l/rtp'
-  brtp:
-    Cmds:
-    - asPlayer! rtp
-    - 'msg! [playerName] The $0 command is actually: &l/rtp'
-  randomtp:
-    Cmds:
-    - asPlayer! rtp
-    - 'msg! [playerName] The $0 command is actually: &l/rtp'
-  wildtp:
-    Cmds:
-    - asPlayer! rtp
-    - 'msg! [playerName] The $0 command is actually: &l/rtp'
   rt:
     Cmds:
     - asPlayer! rtp

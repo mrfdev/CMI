@@ -1,8 +1,8 @@
 <AutoPage><Hidden><NoAutoAlias><NoReqPermission>
 {#cerulean} •&l&m                                                &r{#Cerulean}•
-{#orange} -&l 1MoreBlock 2025 Events
-{#orange} -{#gold} Current event: Easter, via /discord
-{#orange} -{#gold} The Summer Events will probably be next
-{#orange} -{#gold} To play, type: &l/summer&r (on that date)
+{#orange} <3 &l 1MoreBlock 2025 Events
+{#orange} -{#gold} Current event: {#orange}/santa
+{#orange} -{#gold} The Santa Event will be starting December 1st, 2025
+{#orange} -{#gold} To play, type: &l/santa&r in December.
 {#cerulean} •&l&m                                                &r{#Cerulean}•
 

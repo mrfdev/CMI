@@ -747,3 +747,21 @@ CustomAlias:
     - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
     CustomTabs:
     - '[playername]'
+  cozy:
+    Cmds:
+    - gcooldown:60#?!
+    - statement:nullcheck! check:$1==null~!
+    - if:nullcheck! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#orchid>}finds a cozy corner on the server to read a book and
+      quill.!{#deepblush<}</T>
+    - if:nullcheck! asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - if:nullcheck@! ifonline:$1! asConsole! cmi ctellraw all <T>{#goblin}[{#5ce68b}☀{#goblin}]
+      [displayName] {#orchid>}sends some positive cozy vibes to{#deepblush<} %cmi_p_$1_display_name%{#deepblush}!</T>
+    - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - if:nullcheck@! ifonline:$1 asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:[playerName]
+    - if:nullcheck@! msg! [playerName] {#goblin}You light a candle and let the soft
+      glow calm your heart. {#ffccee} 🕯💗
+    - 'if:nullcheck@! msg! $1 [playerName] {#d9a066>}☕ {#a47148<}hands $1 a steaming
+      mug of cocoa! 🍫☕ #cozyCorner'
+    CustomTabs:
+    - '[playername]'

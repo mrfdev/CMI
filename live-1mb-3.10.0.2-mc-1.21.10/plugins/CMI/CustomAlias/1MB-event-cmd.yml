@@ -24,17 +24,20 @@ CustomAlias:
   halloween:
     Cmds:
     - asConsole! cmi gm [playerName] survival -s
-    - msg! [playerName] The Halloween 2024 event has ended, check /events to see what's
-      next.
+    - asPlayer! event
   spooky:
     Cmds:
     - asPlayer! event
   thanksgiving:
     Cmds:
-    - asPlayer! event
+    - asPlayer! mv tp thanksgiving
   santa:
     Cmds:
+    - asConsole! cmi gm [playerName] survival -s
     - asPlayer! mv tp santa
+    - 'msg! [playerName] there''s a #santa-event channel on /discord in December 2025
+      that explains all the things that are going on this month.'
+    Tab: false
   valentine:
     Cmds:
     - asPlayer! event

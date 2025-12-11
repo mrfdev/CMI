@@ -90,7 +90,8 @@ CustomAlias:
     Tab: false
   sell:
     Cmds:
-    - asPlayer! cmi sell gui
+    - asConsole! cmi sell gui [playerName] -s
+    Perm: true
     Tab: false
   spawners:
     Cmds:
@@ -252,7 +253,8 @@ CustomAlias:
       true
   fish sell:
     Cmds:
-    - asPlayer! fish shop
+    - 'msg! [playerName] Oops, the commands are: /fish shop, /farm shop, and /mine
+      shop to sell items. this temporary sell command has no been removed.'
   togglemobs:
     Cmds:
     - 'asConsole! asConsole! cmi msg [playerName] !&3-------/ &l1MB: Which Mobs Cannot
@@ -663,9 +665,10 @@ CustomAlias:
       1MoreBlock.com
     - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Cosmic (best for Int)
       :{#gold} play.1MoreBlock.com
-    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Shield (best for US)
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Shield (best for Int)
       :{#gold} play2.1MoreBlock.com
-    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}(OFFLINE) :{#gray} play3.1MoreBlock.com
+    - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Shield (same) :{#gold}
+      play3.1MoreBlock.com
     - asConsole! cmi msg [playerName] !{#cerulean}•> {#geyser}Infinity (relay) :{#gold}
       play4.1MoreBlock.com
     Tab: false
@@ -722,6 +725,7 @@ CustomAlias:
   shop:
     Cmds:
     - check:$1==null! asPlayer! shopgui survival
+    - asConsole! _deprecated [playerName] $0 buy
   egghunt:
     Cmds:
     - asPlayer! event
@@ -791,10 +795,6 @@ CustomAlias:
     Cmds:
     - asConsole! gui openfor [playerName] nickmenu
     Tab: false
-  angelchest:
-    Cmds:
-    - asConsole! cmi msg [playerName] !{#gold}This feature has been removed.
-    Tab: false
   vote info:
     Cmds:
     - asPlayer! votelink
@@ -831,10 +831,6 @@ CustomAlias:
     Cmds:
     - asConsole! cmi msg [playerName] !The /summer world will re-open July or August
       2025.
-  bac:
-    Cmds:
-    - asConsole! cmi msg [playerName] !HEY, it is BACK not BAC
-    - asPlayer! back
   teamup:
     Cmds:
     - asConsole! cmi msg [playerName] !{#green}You can team up with others if you
@@ -858,11 +854,6 @@ CustomAlias:
   _namehelper:
     Cmds:
     - asPlayer! cmi itemname {#sandybrown>}1MB Beach{#conifer<>} Floaties{#turquoiseblue<}
-    Perm: true
-  deletemelater:
-    Cmds:
-    - check:%cmi_user_nameplate_prefix%=={#b3a636}☼! perm:cmi.customalias.hug@! asConsole!
-      cmi kit emoteHug [playerName]
     Perm: true
   cinfo:
     Cmds:
@@ -903,7 +894,8 @@ CustomAlias:
       More info in /mine journal, and /discord
   mine sell:
     Cmds:
-    - asPlayer! mine shop
+    - 'msg! [playerName] Oops, the commands are: /fish shop, /farm shop, and /mine
+      shop to sell items. this temporary sell command has no been removed.'
   dailyshop:
     Cmds:
     - asConsole! cmi msg [playerName] !work in progress, check back soon
@@ -918,7 +910,7 @@ CustomAlias:
     - asConsole! cmi msg [playerName] ! https://omgboards.com/threads/263947/
   buy:
     Cmds:
-    - asPlayer! shop
+    - check:$1==null! asPlayer! shopgui survival
   spawnupdate:
     Cmds:
     - asPlayer! mv tp spawnupdate
@@ -932,8 +924,8 @@ CustomAlias:
     - asPlayer! calendar
   _ab:
     Cmds:
-    - asPlayer! cmi itemname {#146B3A>} &l🎄 Advent Gift{#F8B229<>}&lbag ($1 of 24)
-      🎁{#BB2528<} &r
+    - asPlayer! cmi itemname {#146B3A>}🎄 &lAdvent Gif{#99482e<>}&ltbag {#BB2528<}&r{#146B3A>}($1
+      / 24) 🎁{#BB2528<}&r
     - asPlayer! cmi itemlore 1 {#745085>}--------------{#ccade1<>}---------------{#8f71b1<}
     - asPlayer! cmi itemlore 2 {#165B33} 🌟 {#5B9775}Thank you for playing this year
     - asPlayer! cmi itemlore 3 {#165B33} 🌟 {#5B9775}on the &n1MoreBlock.com{#5B9775}
@@ -952,18 +944,15 @@ CustomAlias:
     Perm: true
   santa info:
     Cmds:
-    - msg! [playerName] {#gold}&l Santa in his workshop. Right-click him to open the
-      DAILY advent calendar. On the 1st of December you can pick up day 1. On the
-      5th you get the 5th giftbag. Check out the lectern at /santa, it has more info,
-      please read it !
+    - msg! [playerName] {#gold}&l Santa's in his workshop! Right-click him to open
+      the DAILY advent calendar. Please check the lectern at {#red}&l/santa{#gold}&l,
+      it has more info!
     - msg! [playerName] {#gold}&l Collect all 24 advent giftbags and show them to
-      mrfloris, and you will rewarded a bonus giftbag !!
+      {#green}&lmrfloris{#gold}&l, and you will be rewarded with a bonus giftbag!
     - msg! [playerName] {#gold}&l On Christmas Morning you can go to the big tree
-      with GIFTS below the tree in /santa, and find your name, that gift will open
-      - those are your xmas morning presents.
-    - msg! [playerName] {#gold}&l Throughout December you can type /kits and collect
-      the special Santa kit for this year. And throughout the winter season you can
-      get the Winter kit. ho ho ho
+      with GIFTS, and find a special present, just for you, [playerName]!
+    - msg! [playerName] {#gold}&l Don't forget about about the special Santa {#red}&l/kit{#gold}&l
+      and the upcoming Winter {#red}&l/kit{#gold}&l! HO! HO! HO!
   _ai:
     Cmds:
     - check:$1==null! asPlayer! cmi itemname {#146B3A>} 🎄 Advent {#F8B229<>}%cmi_iteminhand_displayname%
@@ -1053,3 +1042,11 @@ CustomAlias:
   spawnsurvivalfeatures:
     Cmds:
     - cmi ctext spawnSurvivalFeatures
+  _deprecated:
+    Cmds:
+    - 'msg! $1 {#white}The /$2 command is old, please use: {#orange}/$3-{#white} :)'
+    Perm: true
+  snow:
+    Cmds:
+    - msg! [playerName] future command
+    Perm: true

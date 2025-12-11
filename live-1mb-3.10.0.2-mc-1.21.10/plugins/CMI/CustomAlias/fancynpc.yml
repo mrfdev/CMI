@@ -1,8 +1,0 @@
-#
-
-CustomAlias:
-  fnpc:
-    Cmds:
-    - asPlayer! fancynpc:npc $1-
-    Perm: true
-    AddTabs: true

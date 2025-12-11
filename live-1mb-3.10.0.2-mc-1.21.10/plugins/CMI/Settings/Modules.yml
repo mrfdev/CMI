@@ -98,7 +98,7 @@ armorEffects: true
 playerChatTag: true
 #  
 # Handling of chat bubbles
-# Applies for servers from 1.19.x and up
+# Applies for servers from 1.20.x and up
 chatBubble: true
 #  
 # Handling of tablist
@@ -276,3 +276,7 @@ serverLinks: true
 # Handling of hats
 # Applies for servers from 1.7.x and up
 hat: true
+#  
+# Handling of some dialogs UI aspects
+# Applies for servers from 1.21.x and up
+dialogs: true

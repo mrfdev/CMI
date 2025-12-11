@@ -1,0 +1,61 @@
+#
+
+CustomAlias:
+  _item_candycane_cookie:
+    Cmds:
+    - 'asConsole! cmi ctellraw all <T>{#3D9962}🦌✨ - $1 ate a Candy Cane Cookie, what
+      a treat! And is now floating in the air, hopping around like a reindeer.</T><H>A
+      treat earned by submitting themed builds on /discord in the #santa-builds channel
+      during the Christmas 2025 event. </H><C>event</C>'
+    - asConsole! cmi titlemsg $1 {#3D9962}🦌✨ Yummy\n {#a4b347}here we go!
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:0.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - asConsole! cmi launch $1 p:1.2 a:90 -nodamage
+    - asConsole! cmi sound entity.experience_orb.pickup $1 -p:1.5 -v:0.4 -s
+    - delay! 0.8
+    - asConsole! cmi sound entity.experience_orb.pickup $1 -p:1.4 -v:0.4 -s
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:1.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - asConsole! cmi launch $1 p:1.1 d:east a:65 -nodamage
+    - delay! 0.8
+    - asConsole! cmi sound entity.experience_orb.pickup $1 -p:1.6 -v:0.4 -s
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:1.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - asConsole! cmi launch $1 p:1.3 d:west a:65 -nodamage
+    - delay! 0.8
+    - asConsole! cmi sound entity.experience_orb.pickup $1 -p:1.5 -v:0.4 -s
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:1.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - asConsole! cmi launch $1 p:1.5 d:east a:65 -nodamage
+    - delay! 0.8
+    - asConsole! cmi sound entity.experience_orb.pickup $1 -p:1.2 -v:0.4 -s
+    - asConsole! cmi panimation circle;c:200,50,210;twist;part:5;r:1.5;pitch:90;move:0,0.33,0;offset:0,-0.2,0;target:$1
+    - asConsole! cmi launch $1 p:1.8 d:west a:65 -nodamage
+    - delay! 2
+    - msg! $1 {#A4B347} - You ate a &lCandy Cane Cookie {#A4B347}and tried to fly
+      like a reindeer. And now you are safely back with both feet on the floor again!
+      Have you tried a Peppermint Pop yet?
+    Perm: true
+  _item_peppermint_pop:
+    Cmds:
+    - 'asConsole! cmi ctellraw all <T>{#3D9962}✧✨ - $1 ate a Peppermint Pop candy
+      and is so cold they are floating away in the air like a frozen cloud. Brrrrr!</T><H>A
+      snack earned by submitting themed builds on /discord in the #santa-builds channel
+      during the Christmas 2025 event. </H><C>event</C>'
+    - asConsole! cmi titlemsg $1 {#3D9962}✧✨ Yummy\n {#a4b347}Here we go!
+    - asConsole! cmi panimation circle;c:150,200,255;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - asConsole! cmi effect $1 freeze 12 3 -s
+    - delay! 0.5
+    - asConsole! cmi sound entity.illusioner.cast_spell $1 -p:0.5 -v:0.4 -s
+    - asConsole! cmi effect $1 Levitation 10 3 -s
+    - delay! 2.4
+    - asConsole! cmi panimation circle;c:150,200,255;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - asConsole! cmi sound entity.illusioner.cast_spell $1 -p:0.4 -v:0.4 -s
+    - delay! 2.6
+    - asConsole! cmi panimation circle;c:150,200,255;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - asConsole! cmi sound entity.illusioner.cast_spell $1 -p:0.5 -v:0.4 -s
+    - delay! 2.5
+    - asConsole! cmi panimation circle;c:150,200,255;twist;part:5;r:0.75;pitch:90;move:0,0.1,0;rc:-0.02;target:$1
+    - asConsole! cmi sound entity.illusioner.cast_spell $1 -p:0.6 -v:0.4 -s
+    - delay! 2.2
+    - asConsole! cmi effect $1 SlowFalling 5 3 -s
+    - msg! $1 {#A4B347} - You ate a &lPeppermint Pop {#A4B347}and were magically floating
+      like a reindeer. And now you are safely back with both feet on the floor again!
+      Have you tried a Candy Cane Cookie yet?
+    Perm: true

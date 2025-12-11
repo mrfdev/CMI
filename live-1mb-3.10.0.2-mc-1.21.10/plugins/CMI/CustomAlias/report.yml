@@ -1,0 +1,9 @@
+#
+
+CustomAlias:
+  _report:
+    Cmds:
+    - asConsole! cmi usermeta [playerName] add lastreportid %cmi_random_10000_99999%
+    - asConsole! cmi dialogs reportIssue [playerName]
+    Perm: true
+    Tab: false

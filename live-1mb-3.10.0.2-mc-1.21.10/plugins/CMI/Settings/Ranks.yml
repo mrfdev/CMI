@@ -30,22 +30,33 @@
 #         Fall - has to fall
 #         Climb - has to climb
 #         Fly - has to fly
-#         Dive - has to walk under water
+#         Dive - has to swim under water
+#         WalkOn Water - has to walk on water
+#         WalkUnderWater - has to walk under water
 #         MinecartTravel - has to travel with minecart
 #         BoatTravel - has to travel with boat
 #         PigTravel - has to ride pig
 #         HorseTravel - has to ride horse
 #         ElytraTravel - has to fly with elytra
+#         GhastTravel - has to travel with ghast
+#         StriderTravel - has to travel with strider
 #       Time in sec:
 #         PlayTime - total play time
 #         FromLastDeath - from last death
 #         SneakTime - sneak time
+#         TotalWorldTime - total world time
 #       Amounts:
-#         GameQuit - how many times player left game
+#         LeaveGame - how many times player left game
 #         Jump - jump count
 #         DamageDealt - total damage made
 #         DamageTaken - total damage taken
+#         DamageDealtAbsorbed - total damage absorbed
+#         DamageDealtResisted - total damage resisted
+#         DamageBlockedByShield - total damage blocked with shield
+#         DamageAbsorbed - total damage absorbed
+#         DamageResisted - total damage resisted
 #         Deaths - count of deaths
+#         KilledBy - defines amount of deaths by monster. If specific monster is not defined, then total amount is used
 #         MobKills - total amount of mobs killed by player
 #         PlayerKills - total amount of players killed. Indirect kills don't count
 #         ItemEnchanted - amount of enchanted items
@@ -58,14 +69,14 @@
 #         CouldronUsed - couldron used
 #         ArmorCleaned - times armor cleaned (leather armor)
 #         BannerCleaned - times banner cleaned
-#         BrewingstandInteractions - brewingstand interactions
-#         BeaconInteractions - beacon interactions
-#         CraftingTableInteractions - crafting table interactions
-#         FurnaceInteractions - furnace interactions
+#         BrewingStandInteraction - brewingstand interactions
+#         BeaconInteraction - beacon interactions
+#         CraftingTableInteraction - crafting table interactions
+#         FurnaceInteraction - furnace interactions
 #         DispenserInspected - dispenser inspected
 #         DropperInspected - dropper inspected
 #         HopperInspected - hopper inspected
-#         ChestOpen - chest open
+#         ChestOpened - chest open
 #         TrappedChestTriggered - trapped chest triggered
 #         EnderchestOpened - enderchest opened
 #         NoteblockPlayed - noteblock played
@@ -74,15 +85,31 @@
 #         RecordPlayed - record played
 #         SleeptInBed - sleept in bed
 #         ShulkerBoxOpened - shulker box opened
-#         ItemDropped - defines amount of dropped items. If specific item is not defined, then total amount is used
-#         ItemPickups - defines amount of picked up items. If specific item is not defined, then total amount is used
-#         BlocksMined - defines amount of blocks mined. If specific block is not defined, then total amount is used
-#         BlocksPlaced - defines amount of blocks placed. If specific block is not defined, then total amount is used
-#         ItemBreaks - defines amount of broken items. If specific item is not defined, then total amount is used
-#         ItemCrafts - defines amount of crafted items. If specific item is not defined, then total amount is used
-#         ItemsUsed - defines amount of item usage. like mining with pickaxe. If specific item is not defined, then total amount is used
-#         MonsterKills - defines amount of monster kills. If specific monster is not defined, then total amount is used
-#         KilledBy - defines amount of deaths by monster. If specific monster is not defined, then total amount is used
+#         CleanShulkerBox - shulker box cleaned
+#         Drop - defines amount of dropped items. If specific item is not defined, then total amount is used
+#         MineBlock - defines amount of blocks mined. If specific block is not defined, then total amount is used
+#         PlaceBlock - defines amount of blocks placed. If specific block is not defined, then total amount is used
+#         BreakItem - defines amount of broken items. If specific item is not defined, then total amount is used
+#         CraftItem - defines amount of crafted items. If specific item is not defined, then total amount is used
+#         UseItem - defines amount of item usage. like mining with pickaxe. If specific item is not defined, then total amount is used
+#         Pickup - defines amount of picked up items. If specific item is not defined, then total amount is used
+#         KillEntity - defines amount of monster kills. If specific monster is not defined, then total amount is used
+#         InteractWithBlastFurnace - defines amount of interactions with blast furnace.
+#         InteractWithSmoker - defines amount of interactions with smoker.
+#         InteractWithLectern - defines amount of interactions with lectern.
+#         InteractWithCampfire - defines amount of interactions with campfire.
+#         InteractWithCartographyTable - defines amount of interactions with cartography table.
+#         InteractWithLoom - defines amount of interactions with loom.
+#         InteractWithStonecutter - defines amount of interactions with stonecutter.
+#         InteractWithAnvil - defines amount of interactions with anvil.
+#         InteractWithGrindstone - defines amount of interactions with grindstone.
+#         InteractWithSmithingTable - defines amount of interactions with smithing table.
+#         BellRing - defines amount of interactions with bell.
+#         RaidTrigger - defines amount of interactions with raid trigger.
+#         RaidWin - defines amount of interactions with raid win.
+#         TargetHit - defines amount of interactions with target hit.
+#         OpenBarrel - defines amount of interactions with open barrel.
+#         DropCount - defines amount of interactions with drop count.
 
 Newbie:
   Enabled: false

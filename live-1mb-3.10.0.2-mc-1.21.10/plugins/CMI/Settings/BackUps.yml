@@ -1,0 +1,26 @@
+AutoBackup:
+  # Amount of auto backup files we should keep
+  # Auto backup files will have specific format like 2025-09-04_13-20-42_cmi.sqlite.db
+  Enabled: true
+  # Amount of auto backup files we should keep
+  # Auto backup files will have specific format like 2025-09-04_13-20-42_cmi.sqlite.db
+  Max: 10
+  # Do you wan't to zip database files to make them smaller
+  Zip: true
+  # Tables you want to save with auto saves
+  # Recommendation is to skip bigger tables and only save most important ones
+  # Options: usertable inventories playtime playtimereward
+  # UserTable is always saved to be used for player ID refference when extracting data from backup
+  TablesToSave:
+  - usertable
+  - playtimereward
+  # Inteval in hours between backups
+  # Keep in mind that backuping happens shortly after server startup and gets checked once every hour on regular basis
+  Interval: 24
+ManualBackup:
+  # Tables you want to save when manually initiating backup
+  # Options: usertable inventories playtime playtimereward
+  # UserTable is always saved to be used for player ID refference when extracting data from backup
+  TablesToSave:
+  - usertable
+  - playtimereward

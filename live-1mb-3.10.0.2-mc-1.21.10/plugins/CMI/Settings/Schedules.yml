@@ -70,6 +70,7 @@ resetWeatherTime:
   - cmi bossbarmsg all -sec:10 -t:10 -n:cleanground -p:10 -c:red -s:10 {#orange}Pick
     up your stuff, cleaning ground items in 30s
   - cmi killall -monsters
+  - cmi killall skeleton -force
   - delay! 15
   - cmi bossbarmsg all -sec:10 -t:10 -n:cleanground -p:10 -c:red -s:10 {#orange}Pick
     up your stuff, cleaning ground items in 15s
@@ -88,6 +89,8 @@ resetWeatherTime:
   - delay! 1
   - cmi time unfreeze wild
   - cmi weather unlock wild
+  - delay! 1
+  - farm reload
   - delay! 1
   - save-all
 fishtournament:
@@ -433,7 +436,7 @@ Announcer:
     Did someone just /msg you? Type {#orange}&l/r{#feijoa} to quickly reply to them.</T><H>Click
     to paste the command in your chat box.</H><SC>/r</SC>
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players cannot create
-    portals, please use /end and /nether.
+    portals, please use {#orange}/end{#Feijoa} and {#orange}/nether{#Feijoa}.
   - 'asConsole! cmi ctellraw all <T>&r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#feijoa}
     Groups: We have quite a few! Check {#orange}&l/groups{#feijoa}.</T><H>Click to
     view /groups.</H><C>groups</C>'
@@ -524,14 +527,13 @@ Announcer:
     A great way to make money is with jobs. Players can join multiple. Type {#orange}&l/jobs
     browse{#feijoa} to get started.</T><H>Click to view /jobs browse.</H><C>jobs browse</C>
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
-    there will be a fishing tournament for 30 minutes (/fisht info)
+    there will be a fishing tournament for 30 minutes ({#orange}/fisht info{#Feijoa})
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
-    there will be a farming tournament for 30 minutes (/farmt info)
+    there will be a farming tournament for 30 minutes ({#orange}/farmt info{#Feijoa})
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
-    there will be an mcMMO booster for an hour (/rate)
+    there will be an mcMMO booster for an hour ({#orange}/rate{#Feijoa})
   - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Four times in the month,
     there will be a Jobs booster for an hour
-  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players can use /craft,
-    /ec, /anvil, and a few more! Check /warp signs
-  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} In a lot of worlds,
-    a wandering trader offers micro-blocks!
+  - broadcast! &r\n{#Cerulean>} 1MB Tip »{#Lochmara<}{#Feijoa} Players can use {#orange}/craft{#Feijoa},
+    {#orange}/ec{#Feijoa}, {#orange}/anvil{#Feijoa}, and a few more! Check {#orange}/warp
+    signs{#Feijoa}

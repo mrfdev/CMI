@@ -53,7 +53,7 @@ Afk:
     Default: -1
     # Player count from which auto kick should start working
     # Setting it to 0 will kick players independent of how many are online
-    # Recommended value: 27
+    # Recommended value: 62
     FromPlayerCount: 0
     # List of autoKick times based by online player count ([playerCount]-[seconds])
     # This only aplies if default kick time is set to more than -1
@@ -122,3 +122,6 @@ Afk:
   # Attention! Because of weird minecraft handling of exp orbs, best way is to set orb to 0exp and allow it to be obsorbed
   # So by enabling this exp obsorbed by afk players will have no effect
   DisableExpPickup: true
+  Disable:
+    # Disables shulker targeting at the player who is in afk mode
+    ShulkerTargeting: true

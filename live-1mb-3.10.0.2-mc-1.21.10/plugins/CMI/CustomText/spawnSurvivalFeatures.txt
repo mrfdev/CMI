@@ -1,2 +1,9 @@
 <AutoPage><NoAutoAlias><ReqPermission>
-We have /sit, /hat, /homes, /jobs browse, /mcstats, /forums, /discord, and more, questions? Ask our staff :) oh and we have /rtp, oh oh, and you can /vote
+{#orient}•----{#cerulean}❖ Survival features! ❖{#orient}----•
+{#Feijoa}Start exploring using {#orange}/worlds {#Feijoa}and {#orange}/rtp
+{#Feijoa}Ready to start your 1MB adventure? check out{#orange}/homes{#Feijoa}, {#orange}/jobs {#Feijoa}and {#orange}/mcmmo
+{#Feijoa}Want cool rewards and support the server? check {#orange}/vote
+{#Feijoa}We also have {#orange}/sit{#Feijoa}, {#orange}/hat{#Feijoa} and {#orange}/hop
+&r
+{#Feijoa}A more detailed list of our features can be found using {#orange}/forums {#Feijoa}and {#orange}/discord
+{#Feijoa}Do you have any more questions? Just ask our staff :)&r

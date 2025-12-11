@@ -65,6 +65,7 @@ Economy:
     IncludeFakes: false
     # Set to 0 or lower to disable this feature
     # Time in days of player being offline to exclude from being included in balance top list
+    # For full effect this will require server restart
     ExcludeInactive: 730
   Global:
     # Starting amount of money players will have
@@ -135,8 +136,12 @@ Optimizations:
     # This can help out to minimize posibility for players to manipulate armor stands when they don't have build permission in area where armorstand is standing
     CheckBlockPlace: false
     # Minimal armorstand scale which can be set in armor stand editor
+    # This is base min scale, can be overriden with cmi.command.armorstand.scalemin.[value] permission node
+    # Keep in mind that min value will be taken from this setting and permission node if both are set
     MinScale: 0.5
     # Max armorstand scale which can be set in armor stand editor
+    # This is base max scale, can be overriden with cmi.command.armorstand.scalemax.[value] permission node
+    # Keep in mind that max value will be taken from this setting and permission node if both are set
     MaxScale: 3
     Templates:
       # When set to true, the player will be required to have cmi.command.armorstand.template.[templatename] permission node to deploy saved template
@@ -333,8 +338,6 @@ Optimizations:
   # Do you want to run auto top playtime updater
   # This is responsible for providing players current top playtimes which gets updated on consistent intervals, useful for placeholders
   PlayTimeAutoUpdater: true
-  # When set to true, playtimetop list will be loaded on server startup
-  PreloadTopPlaytime: false
   # Do you want to use CMI playtime tracking
   # While this is enabled, player play time will be record for each hour he playied in server
   # This doesnt have effect on rankup or /playtime commands, it will only show more specific playtime by hours when using /cplaytime command
@@ -345,6 +348,7 @@ Optimizations:
   - PewDiePie
   - SantaClauseMofo
   - mrfloris
+  - ender_vine
   # Time in days for player to be offline when he will be excluded from playtimetop list
   # Set to 0 if you want to disable this
   PlaytimeTopOffline: 730
@@ -654,9 +658,13 @@ Holograms:
     # Default value for hologram view range
     # This defines from how far holograms will appear for the player or when they will disapear
     viewRange: 32
-    # Defines default update interval
-    # Bigger this number is better performance we will have
+    # Default value for hologram update range
+    # This defines how close player should get for hologram to start updating its text
+    # Keep it at reasoble numbers as there is no point to update hologram across map
     updateRange: 16
+    # Defines default update interval
+    # Higher values means that holograms will be updated less often
+    # When value is set to 0 or lower, holograms will not be updated
     updateInterval: 0.0
     # Defines default page change interval
     # When value is set to 0 or lower, pages will not be changed
@@ -835,6 +843,11 @@ Command:
     - j
     - jumpto
     - cmi jump
+    - msg
+    - cmi msg
+    - reply
+    - cmi reply
+    - r
     # Players without cmi.security.admin will only see commands from this list with command spy feature
     # Keeping it empty will include all commands except the black listed ones
     CommandList:
@@ -892,6 +905,9 @@ NickName:
   MinLength: 4
   # Max length of nick name, can be bypassed with cmi.command.nick.bypass.length
   MaxLength: 16
+  # When enabled players will not be able to choose existing real player names
+  # Can be bypassed with cmi.command.nick.bypassrealname permission node
+  PreventRealNames: true
   # Adds prefix for players nickname to indicate that its not real name. This can be added to display name with {nicknameprefix}
   Prefix: '~'
   # When true, will only add nickname prefix when its not same as original name. This can allow colorization or capitalization change without adding prefix
@@ -1030,6 +1046,9 @@ Mirror:
   # Defines how far in blocks from mirror center you can build
   # This is mainly to protect from forgeting to turn off mirror and starting to build on different side of map
   MaxRange: 64
+  # Max amount of blocks to be modified in one go
+  # Keep this realitvely low to avoid unesecerry load on server due to each block requiring separte checks
+  MaxBlocks: 16
   # When disabled block will not be broken in mirror mode
   # This is mainly to prevent this feature being used for mining purposes and not for building
   BreakDisabled: false
@@ -1409,7 +1428,7 @@ WorldLimits:
   # If player will have cmi.worldlimit.god.bypass permission node, god mode wont be changed
   GodMode:
   - spawn:False
-  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, REHYDRATION, CUSTOM, DEFAULT
+  # Prevents particular entity spawn reasons in defined worlds. All possible reasons: NATURAL, JOCKEY, CHUNK_GEN, SPAWNER, TRIAL_SPAWNER, EGG, SPAWNER_EGG, LIGHTNING, BUILD_SNOWMAN, BUILD_IRONGOLEM, BUILD_COPPERGOLEM, BUILD_WITHER, VILLAGE_DEFENSE, VILLAGE_INVASION, BREEDING, SLIME_SPLIT, REINFORCEMENTS, NETHER_PORTAL, DISPENSE_EGG, INFECTION, CURED, OCELOT_BABY, SILVERFISH_BLOCK, MOUNT, TRAP, ENDER_PEARL, SHOULDER_ENTITY, DROWNED, SHEARED, EXPLOSION, RAID, PATROL, BEEHIVE, PIGLIN_ZOMBIFIED, SPELL, FROZEN, METAMORPHOSIS, DUPLICATION, COMMAND, ENCHANTMENT, OMINOUS_ITEM_SPAWNER, BUCKET, POTION_EFFECT, REANIMATE, REHYDRATION, CUSTOM, DEFAULT
   SpawnReasons:
     spawn:
     - None
@@ -1559,6 +1578,8 @@ ShulkerBoxes:
   # When set to true, players will not have option to open shulker boxes while in combat
   # Combat timer can be defined under combat section
   PreventInCombat: true
+  # When set to true player will be required to have cmi.openshulker.edit permission to edit shulker box from inventory
+  RequirePermission: false
   # Money cost to open shulker box, if player doesn't have enough money then we will not allow to open shulker box from inventory
   # Setting this to 0 will disable money requirement
   # This can be bypassed with cmi.openshulker.free permission node
@@ -1628,6 +1649,7 @@ Player:
       InformDurability: true
       receivePets: true
       deathMessages: true
+      notarget: false
     Icons:
       visibleHolograms: BLACK_STAINED_GLASS
       shiftSignEdit: OAK_SIGN
@@ -1648,6 +1670,7 @@ Player:
       InformDurability: ANVIL
       receivePets: LEAD
       deathMessages: DEAD_BUSH
+      notarget: BEDROCK
 WarmUps:
   # You can enable any command warmup to prevent instant command usage
   # tp:5:false means that when player performs /tp command he will need to wait 5 sec

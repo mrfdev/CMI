@@ -1,0 +1,27 @@
+#
+
+CustomAlias:
+  cmil version:
+    Cmds:
+    - cmi version
+    - delay! 0.3
+    - jobs version
+    - delay! 0.3
+    - ver SelectionVisualizer
+    - delay! 0.3
+    - ver mobfarmmanager
+    - delay! 0.3
+    - ver trademe
+    - delay! 0.3
+    - ver tryme
+    - delay! 0.3
+    - ver cmilib
+    - delay! 0.3
+    - ver placeholderapi
+    - delay! 0.3
+    - ver luckperms
+    - delay! 0.3
+    - ver vault
+    - delay! 0.3
+    - ver
+    Perm: true

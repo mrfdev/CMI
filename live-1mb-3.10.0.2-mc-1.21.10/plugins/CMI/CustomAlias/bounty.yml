@@ -1,0 +1,23 @@
+#
+
+CustomAlias:
+  _bounty:
+    Cmds:
+    - statement:check1! check:$1==low|medium|high! check:$2!=null! ifonline:$2!
+    - if:check1! msg! [playerName] {#orange}[/$0] {#gold}You've sent a bounty-reward
+      to "$2"'s inventory for their "$1 severity" bug-report \n{#orange}[/$0] {#gray}(And
+      they received a /mail about it)
+    - if:check1! asConsole! cmi kit bounty$1%cmi_random_1_3% $2
+    - if:check1! asConsole! cmi mail send $2 Thank you for your bug report, as a thank
+      you we've put some items in your inventory.
+    - 'if:check1@! check:$1==null~! msg! [playerName] Empty paramter. Try again: /$0
+      low|medium|high <player>'
+    - 'if:check1@! check:$1!=low|medium|high~! msg! [playerName] Invalid 1st parameter.
+      Try again: /$0 low|medium|high <player>'
+    - 'if:check1@! check:$2==null~! msg! [playerName] Empty player paramter. Try again:
+      /$0 low|medium|high <player>'
+    - 'if:check1@! check:$2!=null~! ifoffline:$2! msg! [playerName] Invalid player
+      paramter (offline?). Try again: /$0 low|medium|high <player>'
+    Perm: true
+    CustomTabs:
+    - low,medium,high [playername]

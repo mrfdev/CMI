@@ -38,10 +38,14 @@ joinServer:
     broadcast! {#Denim>} An &lMVP player{#Cerulean<>} started playing!{#Denim<}\n&r
   - check:%cmi_user_vanished_symbol%==null! check:%luckperms_in_group_1mb_donator%==yes!
     broadcast! {#Denim>} A &lPatron member{#Cerulean<>} started playing!{#Denim<}\n&r
+  - 'asConsole! cmi bossbarmsg all -t:150 -n:santa {#gold}Event is live: {#orange}/santa{#gold}
+    {#yellow}(Advent day %cmi_server_time_d%) -p:100 -c:green -s:1'
 quitServer:
   Enabled: true
   Commands:
   - asConsole! cmi invsave [playerName] -s
+  - ifinworld:santa#! asConsole! cmi resetback [playerName]
+  - ifinworld:santa#! asConsole! cmi tppos -p:[playerName] spawn;0.86;64.0;126.55;6.83;-7.46
 playerDeath:
   Enabled: false
   Commands:
@@ -101,6 +105,7 @@ playerPreWorldChange:
   Enabled: true
   Commands:
   - cmi invsave [playerName]
+  - ifinworld:santa#! asConsole! cmi fly [playerName] false -s
 playerGameModeChange:
   Enabled: false
   Commands:

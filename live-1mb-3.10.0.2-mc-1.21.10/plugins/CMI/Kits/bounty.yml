@@ -1,0 +1,63 @@
+bountylow1:
+  CommandName: bountylow1
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountylow2:
+  CommandName: bountylow2
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountylow3:
+  CommandName: bountylow3
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountymedium1:
+  CommandName: bountymedium1
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountymedium2:
+  CommandName: bountymedium2
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountymedium3:
+  CommandName: bountymedium3
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountyhigh1:
+  CommandName: bountyhigh1
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountyhigh2:
+  CommandName: bountyhigh2
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA
+bountyhigh3:
+  CommandName: bountyhigh3
+  Enabled: false
+  Delay: 10
+  Items:
+    '28': !!binary |-
+      H4sIAAAAAAAA/+NiYGBm4HZJLEkMSy0qzszPY2AQPMPBwJSZwiCYm5mXmlyUmFZilZ+YHZ+Tn87MwJqcX5pXwsDAwMgAAJR0Mm46AAAA

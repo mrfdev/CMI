@@ -138,6 +138,13 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:NmY5OWI1ODBkNDVhNzg0ZTdhOTY0ZTdkM2IxZjk3Y2VjZTc0OTExMTczYmQyMWMxZDdjNTZhY2RjMzg1ZWQ1In19fQ==
+  copper_golem:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads:
+    - 100:Default:OTllMjRlOTRkYmU0MmUyMzBkODMyOTNhNzdkNjFmZjcxMDFhOGM2OGFiNjhiYmM2YTkzZjk2MzBmYjJmZGI0In19fQ==
+    - 100:Default:Y2MyYWFiOGEwZmVjM2NjMDZhNGQ0NzQ4MGUwMjRmODhmMmIwN2JjOTZlZTA5ZTUzMzFlNWY0ZGI2YjI3Mzg4NSJ9fX0=
+    - 100:Default:OTgyZDVjOTQ0ZjgwNzk1ZDYxM2MyMjQwNWMwMjdlZGJkMmE1NTQ0ODgyYWNiYWI5NzRhMDJmNTQ3YzE1NDY4ZCJ9fX0=
   cow:
     DropChance: 1.0
     LowerWithEachDrop: 50.0
@@ -283,6 +290,10 @@ EntityHeads:
     LowerWithEachDrop: 50.0
     Heads:
     - 100:Default:Mzg5NTdkNTAyM2M5MzdjNGM0MWFhMjQxMmQ0MzQxMGJkYTIzY2Y3OWE5ZjZhYjM2Yjc2ZmVmMmQ3YzQyOSJ9fX0=
+  mannequin:
+    DropChance: 1.0
+    LowerWithEachDrop: 50.0
+    Heads: []
   mooshroom:
     DropChance: 1.0
     LowerWithEachDrop: 50.0

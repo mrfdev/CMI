@@ -70,6 +70,7 @@ ChatFilter:
       - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(g(\W|\d|_|)+)+(a(\W|\d|_|)+)+
       - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(g(\W|\d|_|)+)+(a(\W|\d|_|)+)+(h(\W|\d|_|)+)+
       - \b(?i)(n(\W|\d|_|)+)+(i(\W|\d|_|)+)+(g(\W|\d|_|)+)+(a(\W|\d|_|)+)+(h(\W|\d|_|)+)+
+      - \b(?i)(c(\W|\d|_|)+)+(l(\W|\d|_|)+)+(a(\W|\d|_|)+)+(n(\W|\d|_|)+)+(k(\W|\d|_|)+)+(e(\W|\d|_|)+)+(r(\W|\d|_|)+)+
       ReplaceWith: -badword-
       BlockType: others
       includePrivateMessages: true
@@ -115,7 +116,8 @@ ChatFilter:
       - \b(?i)(p(\W|_|)+)+2(w(\W|_|)+)+
       - \b(?i)(r(\W|_|)+)+(e(\W|_|)+)+(t(\W|_|)+)+(a(\W|_|)+)+(r(\W|_|)+)+(d(\W|_|)+)+
       - \b(?i)(s(\W|\d|_|)+)+(k(\W|\d|_|)+)+(i(\W|\d|_|)+)+(b(\W|\d|_|)+)+(i(\W|\d|_|)+)+(d(\W|\d|_|)+)+(i(\W|\d|_|)+)+
-      ReplaceWith: ''
+      - \b(?i)(z(\W|\d|_|)+)+(e(\W|\d|_|)+)+(d(\W|\d|_|)+)+(a(\W|\d|_|)+)+(r(\W|\d|_|)+)+(m(\W|\d|_|)+)+(c(\W|\d|_|)+)+
+      ReplaceWith: -nope-
       BlockType: others
       includePrivateMessages: true
       msgToStaff: '&4!STAFF!&6 [playerName] &4msg filtered: &r[message]'
@@ -230,7 +232,7 @@ ChatFilter:
     # Default: LOWEST
     Priority: LOWEST
     # Enables simpler replacer feature for public and private messages
-    Enabled: false
+    Enabled: true
     # Quick replacer for inputs like :heart: into ❤
     Replacements:
     - heart-❤
