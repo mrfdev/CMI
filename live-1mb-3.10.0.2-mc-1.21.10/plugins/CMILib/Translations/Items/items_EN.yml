@@ -1570,5 +1570,80 @@ PURPLE_HARNESS: Purple Harness
 RED_HARNESS: Red Harness
 WHITE_HARNESS: White Harness
 YELLOW_HARNESS: Yellow Harness
+ACACIA_SHELF: Acacia Shelf
+BAMBOO_SHELF: Bamboo Shelf
+BIRCH_SHELF: Birch Shelf
+CHERRY_SHELF: Cherry Shelf
+COPPER_AXE: Copper Axe
+COPPER_BARS: Copper Bars
+COPPER_BOOTS: Copper Boots
+COPPER_CHAIN: Copper Chain
+COPPER_CHEST: Copper Chest
+COPPER_CHESTPLATE: Copper Chestplate
+COPPER_GOLEM_SPAWN_EGG: Copper Golem Spawn Egg
+COPPER_GOLEM_STATUE: Copper Golem Statue
+COPPER_HELMET: Copper Helmet
+COPPER_HOE: Copper Hoe
+COPPER_HORSE_ARMOR: Copper Horse Armor
+COPPER_LANTERN: Copper Lantern
+COPPER_LEGGINGS: Copper Leggings
+COPPER_NUGGET: Copper Nugget
+COPPER_PICKAXE: Copper Pickaxe
+COPPER_SHOVEL: Copper Shovel
+COPPER_SWORD: Copper Sword
+COPPER_TORCH: Copper Torch
+COPPER_WALL_TORCH: Copper Wall Torch
+CRIMSON_SHELF: Crimson Shelf
+DARK_OAK_SHELF: Dark Oak Shelf
+EXPOSED_COPPER_BARS: Exposed Copper Bars
+EXPOSED_COPPER_CHAIN: Exposed Copper Chain
+EXPOSED_COPPER_CHEST: Exposed Copper Chest
+EXPOSED_COPPER_GOLEM_STATUE: Exposed Copper Golem Statue
+EXPOSED_COPPER_LANTERN: Exposed Copper Lantern
+EXPOSED_LIGHTNING_ROD: Exposed Lightning Rod
+IRON_CHAIN: Iron Chain
+JUNGLE_SHELF: Jungle Shelf
+MANGROVE_SHELF: Mangrove Shelf
+MUSIC_DISC_LAVA_CHICKEN: Music Disc Lava Chicken
+OAK_SHELF: Oak Shelf
+OXIDIZED_COPPER_BARS: Oxidized Copper Bars
+OXIDIZED_COPPER_CHAIN: Oxidized Copper Chain
+OXIDIZED_COPPER_CHEST: Oxidized Copper Chest
+OXIDIZED_COPPER_GOLEM_STATUE: Oxidized Copper Golem Statue
+OXIDIZED_COPPER_LANTERN: Oxidized Copper Lantern
+OXIDIZED_LIGHTNING_ROD: Oxidized Lightning Rod
+PALE_OAK_SHELF: Pale Oak Shelf
+SPRUCE_SHELF: Spruce Shelf
+WARPED_SHELF: Warped Shelf
+WAXED_COPPER_BARS: Waxed Copper Bars
+WAXED_COPPER_CHAIN: Waxed Copper Chain
+WAXED_COPPER_CHEST: Waxed Copper Chest
+WAXED_COPPER_GOLEM_STATUE: Waxed Copper Golem Statue
+WAXED_COPPER_LANTERN: Waxed Copper Lantern
+WAXED_EXPOSED_COPPER_BARS: Waxed Exposed Copper Bars
+WAXED_EXPOSED_COPPER_CHAIN: Waxed Exposed Copper Chain
+WAXED_EXPOSED_COPPER_CHEST: Waxed Exposed Copper Chest
+WAXED_EXPOSED_COPPER_GOLEM_STATUE: Waxed Exposed Copper Golem Statue
+WAXED_EXPOSED_COPPER_LANTERN: Waxed Exposed Copper Lantern
+WAXED_EXPOSED_LIGHTNING_ROD: Waxed Exposed Lightning Rod
+WAXED_LIGHTNING_ROD: Waxed Lightning Rod
+WAXED_OXIDIZED_COPPER_BARS: Waxed Oxidized Copper Bars
+WAXED_OXIDIZED_COPPER_CHAIN: Waxed Oxidized Copper Chain
+WAXED_OXIDIZED_COPPER_CHEST: Waxed Oxidized Copper Chest
+WAXED_OXIDIZED_COPPER_GOLEM_STATUE: Waxed Oxidized Copper Golem Statue
+WAXED_OXIDIZED_COPPER_LANTERN: Waxed Oxidized Copper Lantern
+WAXED_OXIDIZED_LIGHTNING_ROD: Waxed Oxidized Lightning Rod
+WAXED_WEATHERED_COPPER_BARS: Waxed Weathered Copper Bars
+WAXED_WEATHERED_COPPER_CHAIN: Waxed Weathered Copper Chain
+WAXED_WEATHERED_COPPER_CHEST: Waxed Weathered Copper Chest
+WAXED_WEATHERED_COPPER_GOLEM_STATUE: Waxed Weathered Copper Golem Statue
+WAXED_WEATHERED_COPPER_LANTERN: Waxed Weathered Copper Lantern
+WAXED_WEATHERED_LIGHTNING_ROD: Waxed Weathered Lightning Rod
+WEATHERED_COPPER_BARS: Weathered Copper Bars
+WEATHERED_COPPER_CHAIN: Weathered Copper Chain
+WEATHERED_COPPER_CHEST: Weathered Copper Chest
+WEATHERED_COPPER_GOLEM_STATUE: Weathered Copper Golem Statue
+WEATHERED_COPPER_LANTERN: Weathered Copper Lantern
+WEATHERED_LIGHTNING_ROD: Weathered Lightning Rod
 SIGN: Sign
 GRASS: Grass

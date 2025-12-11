@@ -60,3 +60,27 @@ Colors:
   # When enabled plugin will try to detect quirky hex color codes like &#f6f6f6 or &#ff6 in adition to {#f6f6f6} and {#red}
   # Keep in mind that this adds extra checks and quirky format will not support gradients or named colors so you will still need to use more complex format for those
   QuirkyHex: false
+  # Defining global chat colors used in locale file
+  # This will allow you to modify multiple colors at once
+  Global:
+    # Use {gcp} to use this color. Default: {#gold}
+    # Primary color for general text
+    Primary: '{#gold}'
+    # Use {gcs} to use this color. Default: {#yellow}
+    # Usually used for variables and placeholders
+    Secondary: '{#yellow}'
+    # Use {gcw} to use this color. Default: {#FF7357}
+    # To indicate error in command usage, usually less important than error
+    Warning: '{#FF7357}'
+    # Use {gcn} to use this color. Default: {#gray}
+    # More neutral color for text which should not attract much of attention
+    Neutral: '{#gray}'
+    # Use {gcu} to use this color. Default: {#59C959}
+    # Positive color to indicate something good, for example creating a home record
+    Uplift: '{#59C959}'
+    # Use {gcd} to use this color. Default: {#E89280}
+    # Negative color to indicate something bad, for example removing a home record
+    Downlift: '{#E89280}'
+    # Use {gce} to use this color. Default: {#red}
+    # To indicate major error
+    Error: '{#red}'
