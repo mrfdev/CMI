@@ -107,6 +107,8 @@ Note: I am not saying this is THE WAY to do this, it's an example to help you le
     CustomTabs:
     - selfclear,selfkeep inform,quiet tellall,tellstaff noreason,user-drama,user-swearing,user-hatespeech,event,broadcast [playername]
 ```
+## Note:
+If you want your custom command to take over the CMI command, but extend it.. you can click in-game on the GUI's link to add the tabs for tab completion, the yml file will get `AddTabs: true` added. Do test this before letting your players use it.
 
 ## <g-emoji class="g-emoji" alias="information_source" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png">ℹ️</g-emoji> How to install these examples?
 
