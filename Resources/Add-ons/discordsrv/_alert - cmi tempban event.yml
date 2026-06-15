@@ -1,0 +1,26 @@
+# 1MoreBlock.com CMI TempBan Alert by Floris Fiedeldij Dop (@mrfloris)
+# Version 0.0.3 / CMI 9.8.7.x / CMILIB 1.5.9.x / Minecraft (PaperMC) 26.1.2 
+  - Trigger: com.Zrips.CMI.events.CMIPlayerBanEvent
+    Async: false
+    Channel: '1305599210141253633'
+    Conditions:
+      - '#event.getUntil() != null'
+      - '#event.getUntil() > T(java.lang.System).currentTimeMillis()'
+    Embed:
+      Color: '#ff8800'
+      ThumbnailUrl: 'https://crafatar.com/avatars/${#event.getBanned()}?overlay'
+      Author:
+        ImageUrl: '{botavatarurl}'
+        Name: 'CMI TEMPBAN'
+      Title:
+        Text: '${#plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getName()} was tempbanned'
+      Fields:
+        - 'Player:;`${#plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getName()}`;true'
+        - 'By:;`${#event.getBannedBy().getName()}`;true'
+        - 'Duration:;<t:${T(java.lang.Math).floorDiv(#event.getUntil(), 1000)}:R>;true'
+        - 'Started:;<t:${T(java.lang.Math).floorDiv(T(java.lang.System).currentTimeMillis(), 1000)}:F>;true'
+        - 'Ends:;<t:${T(java.lang.Math).floorDiv(#event.getUntil(), 1000)}:F>;true'
+        - 'World:;`${#plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation() == null ? "unknown" : #plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation().getWorld().getName()}`;true'
+        - 'Coordinates:;`${#plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation() == null ? "unknown" : "/tppos " + #plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation().getBlockX() + " " + #plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation().getBlockY() + " " + #plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation().getBlockZ() + " " + #plugins[''CMI''].getPlayerManager().getUser(#event.getBanned()).getLocation().getWorld().getName()}`;false'
+        - 'Reason:;`${#event.getReason() == null || #event.getReason().isEmpty() ? "No reason supplied" : #event.getReason()}`;false'
+      Timestamp: true
