@@ -369,7 +369,7 @@ Alerts:
         - "World:;{world};true"
 
 # boredmanplays cmi player enter vanish event
-  - Trigger: CMIPlayerVanishEvent 
+  - Trigger: com.Zrips.CMI.events.CMIPlayerVanishEvent
     Channel: global
     Embed:
       Color: "#ff0000"
@@ -378,7 +378,7 @@ Alerts:
         Name: "%cmi_user_nameplate_prefix%{displayname} quit"
 
 # boredmanplays cmi player return from vanish event
-  - Trigger: CMIPlayerUnVanishEvent 
+  - Trigger: com.Zrips.CMI.events.CMIPlayerUnVanishEvent
     Channel: global
     Embed:
       Color: "#00FF00"
