@@ -1,23 +1,35 @@
-# 1MoreBlock.com 1.21.x CMI 9.7.6.x CustomAlias command: /pottery
-# Syntax: /pottery <player> <side1> <side2> <side3> <side4>
-# Usage: Pick either air for an empty side, or one of the suggestions. 
-# Reason: A handy (ingame only) admin command to have a more comfortable way to create any pottery pattern variety.
-# Version: 1.1.0, build 006, October 16th, 2024
+# 1MoreBlock.com Minecraft 26.3 CustomAlias: /pottery (tested with CMI 9.8.11.0)
+# Version: 1.2.1, build 007, October 25th, 2026
+# Syntax: /pottery <online-player> <back> <left> <right> <front>
+# Pick a lowercase pottery sherd from tab completion, or brick for a plain side.
+# Use bare item names, without the minecraft: prefix. Exactly four sides are required.
+# Side order is unchanged: back, left, right, front (relative to the pot).
+# Minecraft 26.3 uses named item stacks; the old list and air sides are rejected.
+# Reference: https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3
+# CustomTabs deliberately uses __ so CMI suggests literal underscores.
+# Perm: true preserves the existing alias permission requirement.
+# Vanilla give reports its result to the console; no unconditional success message.
+# Install as plugins/CMI/CustomAlias/1MB-cmi-pottery-command.yml, then /cmi reload.
+# Example: /pottery mrfloris heart_pottery_sherd brick flow_pottery_sherd guster_pottery_sherd
 
 CustomAlias:
   pottery:
     Cmds:
-    - statement:check1! check:$1!=null! check:$2!=null! ifonline:$1!
-    - 'if:check1@! asConsole! cmi msg [playerName] !{#gold}Syntax: is &l/$0 <player>
-      <side1> <side2> <side3> <side4>'
-    - if:check1! asConsole! cmi usermeta [playerName] add pottery $1 -s
-    - if:check1! asConsole! minecraft:give %cmi_user_meta_pottery% minecraft:decorated_pot[minecraft:pot_decorations=["minecraft:$2","minecraft:$3","minecraft:$4","minecraft:$5"]]
-    - if:check1! asConsole! cmi msg %cmi_user_meta_pottery% !{#gold} - You've received
-      one pottery with sides $2-.
-    - if:check1! asConsole! cmi usermeta [playerName] remove pottery -s
+    - >-
+      statement:check1!
+      check:$1!=null! check:$2!=null! check:$3!=null! check:$4!=null! check:$5!=null! check:$6==null!
+      check:$2==brick|angler_pottery_sherd|archer_pottery_sherd|arms_up_pottery_sherd|blade_pottery_sherd|brewer_pottery_sherd|burn_pottery_sherd|danger_pottery_sherd|explorer_pottery_sherd|flow_pottery_sherd|friend_pottery_sherd|guster_pottery_sherd|heart_pottery_sherd|heartbreak_pottery_sherd|howl_pottery_sherd|miner_pottery_sherd|mourner_pottery_sherd|plenty_pottery_sherd|prize_pottery_sherd|scrape_pottery_sherd|sheaf_pottery_sherd|shelter_pottery_sherd|skull_pottery_sherd|snort_pottery_sherd!
+      check:$3==brick|angler_pottery_sherd|archer_pottery_sherd|arms_up_pottery_sherd|blade_pottery_sherd|brewer_pottery_sherd|burn_pottery_sherd|danger_pottery_sherd|explorer_pottery_sherd|flow_pottery_sherd|friend_pottery_sherd|guster_pottery_sherd|heart_pottery_sherd|heartbreak_pottery_sherd|howl_pottery_sherd|miner_pottery_sherd|mourner_pottery_sherd|plenty_pottery_sherd|prize_pottery_sherd|scrape_pottery_sherd|sheaf_pottery_sherd|shelter_pottery_sherd|skull_pottery_sherd|snort_pottery_sherd!
+      check:$4==brick|angler_pottery_sherd|archer_pottery_sherd|arms_up_pottery_sherd|blade_pottery_sherd|brewer_pottery_sherd|burn_pottery_sherd|danger_pottery_sherd|explorer_pottery_sherd|flow_pottery_sherd|friend_pottery_sherd|guster_pottery_sherd|heart_pottery_sherd|heartbreak_pottery_sherd|howl_pottery_sherd|miner_pottery_sherd|mourner_pottery_sherd|plenty_pottery_sherd|prize_pottery_sherd|scrape_pottery_sherd|sheaf_pottery_sherd|shelter_pottery_sherd|skull_pottery_sherd|snort_pottery_sherd!
+      check:$5==brick|angler_pottery_sherd|archer_pottery_sherd|arms_up_pottery_sherd|blade_pottery_sherd|brewer_pottery_sherd|burn_pottery_sherd|danger_pottery_sherd|explorer_pottery_sherd|flow_pottery_sherd|friend_pottery_sherd|guster_pottery_sherd|heart_pottery_sherd|heartbreak_pottery_sherd|howl_pottery_sherd|miner_pottery_sherd|mourner_pottery_sherd|plenty_pottery_sherd|prize_pottery_sherd|scrape_pottery_sherd|sheaf_pottery_sherd|shelter_pottery_sherd|skull_pottery_sherd|snort_pottery_sherd!
+      ifonline:$1!
+    - 'if:check1@! asConsole! cmi msg [playerName] !{#gold}Use /pottery <online-player> <back> <left> <right> <front>. Choose lowercase sherds from tab completion, or brick for a plain side.'
+    - 'if:check1! asConsole! minecraft:give $1 minecraft:decorated_pot[minecraft:pot_decorations={back:{id:"minecraft:$2"},left:{id:"minecraft:$3"},right:{id:"minecraft:$4"},front:{id:"minecraft:$5"}}] 1'
     Perm: true
     CustomTabs:
-    - '[playername] air,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,friend__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
-      air,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,friend__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
-      air,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,friend__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
-      air,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,friend__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd'
+    - >-
+      [playername]
+      brick,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,flow__pottery__sherd,friend__pottery__sherd,guster__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,scrape__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
+      brick,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,flow__pottery__sherd,friend__pottery__sherd,guster__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,scrape__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
+      brick,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,flow__pottery__sherd,friend__pottery__sherd,guster__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,scrape__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
+      brick,angler__pottery__sherd,archer__pottery__sherd,arms__up__pottery__sherd,blade__pottery__sherd,brewer__pottery__sherd,burn__pottery__sherd,danger__pottery__sherd,explorer__pottery__sherd,flow__pottery__sherd,friend__pottery__sherd,guster__pottery__sherd,heart__pottery__sherd,heartbreak__pottery__sherd,howl__pottery__sherd,miner__pottery__sherd,mourner__pottery__sherd,plenty__pottery__sherd,prize__pottery__sherd,scrape__pottery__sherd,sheaf__pottery__sherd,shelter__pottery__sherd,skull__pottery__sherd,snort__pottery__sherd
